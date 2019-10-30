@@ -43,7 +43,7 @@ function generate_sphinx_input {
 function generate_static_html {
 	for dir_name in `find build/input -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
 	do
-		sphinx-build-3 -M html build/input/${dir_name} build/output/${dir_name}
+		sphinx-build -M html build/input/${dir_name} build/output/${dir_name}
 	done
 
 	sphinx-build -M html build/input/homepage build/output/homepage
@@ -55,7 +55,11 @@ function main {
 	# sudo dnf install python3-sphinx
 	#
 
-	check_utils pip3 sphinx-build-3
+	python3 -m venv venv
+
+	source venv/bin/activate
+
+	check_utils pip3 sphinx-build
 
 	pip_install recommonmark sphinx-intl sphinx-markdown-tables sphinx-notfound-page
 
@@ -71,7 +75,7 @@ function pip_install {
 	do
 		if [[ -z `pip3 list --disable-pip-version-check --format=columns | grep ${package_name}` ]]
 		then
-			sudo pip3 install --disable-pip-version-check ${package_name}
+			pip3 install --disable-pip-version-check ${package_name}
 		fi
 	done
 }
