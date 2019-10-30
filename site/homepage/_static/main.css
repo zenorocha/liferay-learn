@@ -8119,7 +8119,8 @@ th {
 
 .documentations .toc {
   position: fixed;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  max-width: 12%; }
 
 h1 {
   font-size: 2rem; }

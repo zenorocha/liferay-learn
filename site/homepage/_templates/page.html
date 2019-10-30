@@ -28,7 +28,7 @@
             </div>
 
             <div class="col-md-12 row">
-                <div class="col-md-7 article-body offset-md-1">
+                <div class="col-md-6 article-body offset-md-1">
                     {% block document %}
                     {{ body }}
                     {% endblock %}
@@ -44,6 +44,8 @@
 
 <script>
     const headings = document.querySelectorAll('.article-body h2');
+
+    let activeIndex;
     let targets = [];
 
     if (headings) {
@@ -60,37 +62,55 @@
                             ${heading.innerText}
                         </a>
                     </li>`;
-
                 }
 
-                targets.push(document.getElementById(id));
+                targets.push({ id: id, isIntersecting: false });
             }
         );
     }
 
-    const toggleActiveClass = (node, bool) => {
-        if (bool) {
-            node.classList.add('active');
-        } else {
-            node.classList.remove('active');
+    const callback = entries => {
+        entries.forEach(entry => {
+            const index = targets.findIndex(target => target.id === entry.target.id);
+
+            targets[index].isIntersecting = entry.isIntersecting;
+
+            if (!targets[activeIndex] || !targets[activeIndex].isIntersecting) {
+                setActiveIndex()
+            }
+        });
+
+        toggleActiveClass(targets[activeIndex].id);
+    };
+
+    const observer = new IntersectionObserver(callback, { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1] });
+
+    const setActiveIndex = () => {
+        activeIndex = targets.findIndex(target => target.isIntersecting === true);
+    };
+
+    const toggleActiveClass = id => {
+        targets.forEach(target => {
+            const node = document.getElementById(`toc-${target.id}`);
+
+            if (node) {
+                node.classList.remove('active');
+            }
+        });
+
+        const activeNode = document.getElementById(`toc-${id}`);
+
+        if (activeNode) {
+            activeNode.classList.add('active');
         }
     }
 
-    const callback = entries => {
-        entries.forEach(entry => {
-            const tocItem = document.getElementById(`toc-${entry.target.id}`);
+    targets.forEach(target => {
+        const node = document.getElementById(target.id);
 
-            console.log(entry);
-            if (tocItem) {
-                toggleActiveClass(tocItem, entry.isIntersecting && entry.intersectionRatio > 0.25);
-            }
-        });
-    };
-
-    // height of nav bar and docs info bar is at 133px
-
-    const observer = new IntersectionObserver(callback, { rootMargin: '-133px', threshold: [0, 0.25, 0.5, 0.75, 1] });
-
-    targets.forEach(target => observer.observe(target));
+        if (node) {
+            observer.observe(node)
+        }
+    });
 </script>
 {% endblock %}
