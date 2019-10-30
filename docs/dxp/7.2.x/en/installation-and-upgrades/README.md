@@ -107,3 +107,7 @@
 * Database Templates
 * Comparing Patch Levels
 * Patching Tool Configuration
+
+## Concept
+
+* Upgrade

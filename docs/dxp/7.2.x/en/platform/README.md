@@ -1,4 +1,4 @@
-# Platform Fundamentals
+# Platform
 
 ## Customizations / Extension Points
 
@@ -8,13 +8,9 @@
 * Creating Widget Templates
 * Customizing JSPs
 * Model Listeners
-* Product Navigation
-* Form Storage Adapters
-* Dynamic Includes
 * Overriding MVC Commands
 * Creating Service Wrappers
 * Overriding Service Components
-* Developing a Theme
 * Customizing the Liferay Core
 * Hooks
 * Ext Plugins
@@ -50,21 +46,13 @@
 * Scheduler
 * Template Engine
 * Service Builder
-* Assets
-* Upgrade
 * DDM
 * Expando
-* Export/Import
 * Item Selector
 * Cache
-* Recycle Bin
-* Search
 * Stores
-* Workflow
 * Info Framework
 * Frontend
-* OSGi
-* Service Builder
 * OSGi
 * Spring
 * Hibernate
