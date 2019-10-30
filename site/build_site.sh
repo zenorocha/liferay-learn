@@ -23,7 +23,7 @@ function generate_sphinx_input {
 		do
 			mkdir -p build/input/${product_name}-${version_name}/docs
 
-			cp -R sphinx/docs/* build/input/${product_name}-${version_name}
+			cp -R docs/* build/input/${product_name}-${version_name}
 
 			cp -R ../docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}/docs
 
@@ -37,7 +37,7 @@ function generate_sphinx_input {
 	# 
 	# TODO Homepage: generate ZIP file and update links
 	#
-	rsync -a sphinx/homepage/* build/input/homepage --exclude={'*.json','node_modules'}
+	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
 }
 
 function generate_static_html {
