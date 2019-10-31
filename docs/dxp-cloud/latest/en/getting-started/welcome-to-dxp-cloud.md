@@ -108,7 +108,7 @@ to quickly understand CPU and memory usage, data transfer rates, and more.
 
 ## Next Steps
 
-* [Setting up Your Environment]()
+* [Development Requirements](./development-requirements.md)
 * [Configuring Your Github Repository](./configuring-your-github-repository.md)
 * [Overview of the DXP Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
 * [DXP Cloud Deployment Walk Through](../using-the-liferay-dxp-service/walking-through-the-deployment-life-cycle.md)
