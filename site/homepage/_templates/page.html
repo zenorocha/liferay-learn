@@ -1,7 +1,7 @@
 {%- extends "layout.html" %}
 
 {% block content %}
-<div class="container-fluid documentations">
+<div class="container-fluid documentations main-content">
     <div class="row">
         <div class="col-md-2 product-version-selector">
             <div class="info-bar">
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <div class="col-md-12 row">
+            <div class="col-md-12 doc-content row">
                 <div class="col-md-6 article-body offset-md-1">
                     {% block document %}
                     {{ body }}
@@ -83,7 +83,9 @@
         toggleActiveClass(targets[activeIndex].id);
     };
 
-    const observer = new IntersectionObserver(callback, { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1] });
+    // rootMargin of 157px is header height + info bar height + 24px gutter offset 
+
+    const observer = new IntersectionObserver(callback, { rootMargin: '-157px', threshold: [0, 0.2, 0.4, 0.6, 0.8, 1] });
 
     const setActiveIndex = () => {
         activeIndex = targets.findIndex(target => target.isIntersecting === true);
@@ -109,7 +111,9 @@
         const node = document.getElementById(target.id);
 
         if (node) {
-            observer.observe(node)
+            observer.observe(node);
+
+            node.style.cssText = "margin-top: -157px; padding-top: 157px;"
         }
     });
 </script>

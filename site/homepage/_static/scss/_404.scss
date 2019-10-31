@@ -1,6 +1,9 @@
 .not-found {
-	margin-top: 5.3125rem;
 	text-align: center;
+
+	&.main-content {
+		margin-top: 5.3125rem;
+	}
 
 	svg {
 		width: 55%;

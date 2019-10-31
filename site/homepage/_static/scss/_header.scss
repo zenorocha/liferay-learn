@@ -3,8 +3,13 @@ header {
 	background-color: $brand-secondary;
 	color: $white;
 	display: flex;
-	height: 3.5rem;
+	height: $header-height;
 	justify-content: space-between;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 
 	a {
 		color: $white;

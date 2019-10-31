@@ -10,6 +10,10 @@
 		padding: 0;
 	}
 
+	.doc-content {
+		margin-top: $info-bar-height;
+	}
+
 	.doc-nav,
 	.product-version-selector {
 		background-color: $background-color;
@@ -17,12 +21,15 @@
 
 	.info-bar {
 		border-bottom: 1px solid $hr-color;
-		height: 77px;
+		height: $info-bar-height;
 	}
 
 	.general-info {
+		background-color: $white;
 		display: flex;
 		justify-content: space-between;
+		position: fixed;
+		z-index: 1;
 
 		.actions {
 			display: inline-block;

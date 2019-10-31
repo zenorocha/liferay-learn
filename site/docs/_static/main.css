@@ -8022,8 +8022,9 @@ th {
   width: auto; }
 
 .not-found {
-  margin-top: 5.3125rem;
   text-align: center; }
+  .not-found.main-content {
+    margin-top: 5.3125rem; }
   .not-found svg {
     width: 55%; }
 
@@ -8090,17 +8091,23 @@ th {
 .documentations .product-version-selector {
   padding: 0; }
 
+.documentations .doc-content {
+  margin-top: 4.8125rem; }
+
 .documentations .doc-nav,
 .documentations .product-version-selector {
   background-color: #F4F6F9; }
 
 .documentations .info-bar {
   border-bottom: 1px solid #DADEE3;
-  height: 77px; }
+  height: 4.8125rem; }
 
 .documentations .general-info {
+  background-color: #FFF;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1; }
   .documentations .general-info .actions {
     display: inline-block; }
     .documentations .general-info .actions svg {
@@ -8225,6 +8232,9 @@ pre {
       cursor: pointer;
       font-weight: 600; }
 
+.main-content {
+  margin-top: 3.5rem; }
+
 .max-820 {
   margin: 0 auto;
   max-width: 820px; }
@@ -8252,7 +8262,12 @@ header {
   color: #FFF;
   display: flex;
   height: 3.5rem;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
   header a {
     color: #FFF; }
     header a:hover {
