@@ -73,6 +73,7 @@
 * [Low Inventory Activity](../catalog/low-stock-activity.md)
 * [Availability Estimates](./catalog/availability-estimates.md)
 * [Product Inventory Configuration Reference](./catalog/product-inventory-configuration-reference.md)
+* [Managing Product Availability](./catalog/managing-product-availability.md)
 
 ### Managing Price
 
