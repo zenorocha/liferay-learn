@@ -8098,6 +8098,29 @@ th {
 .documentations .product-version-selector {
   background-color: #F4F6F9; }
 
+.documentations .doc-nav {
+  font-weight: 600;
+  padding-top: 1rem; }
+  .documentations .doc-nav > ul {
+    margin: 0; }
+  .documentations .doc-nav a {
+    border-left: 3px solid transparent;
+    color: #A7A9BC;
+    display: block;
+    padding: 0.5rem 1rem; }
+    .documentations .doc-nav a:hover {
+      text-decoration: none; }
+  .documentations .doc-nav ul {
+    list-style: none;
+    padding: 0; }
+  .documentations .doc-nav .toctree-l1.current > a {
+    border-color: #0B5FFF;
+    color: #000; }
+  .documentations .doc-nav .toctree-l2.current a {
+    color: #0B5FFF; }
+  .documentations .doc-nav .toctree-l2 a {
+    padding: 0.5rem 1.5rem; }
+
 .documentations .info-bar {
   border-bottom: 1px solid #DADEE3;
   height: 4.8125rem; }

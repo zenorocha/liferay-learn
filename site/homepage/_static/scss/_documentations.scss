@@ -19,6 +19,50 @@
 		background-color: $background-color;
 	}
 
+	.doc-nav {
+		font-weight: $font-weight-semi-bold;
+		padding-top: $spacing-md;
+
+		> ul {
+			margin: 0;
+		}
+
+		a {
+			border-left: 3px solid transparent;
+			color: $nav-color;
+			display: block;
+			padding: $spacing-xs $spacing-md;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		.toctree-l1 {
+			&.current {
+				> a {
+					border-color: $brand-primary;
+					color: $black;
+				}
+			}
+		}
+
+		.toctree-l2 {
+			&.current a {
+				color: $brand-primary;
+			}
+
+			a {
+				padding: $spacing-xs $spacing-default;
+			}
+		}
+	}
+
 	.info-bar {
 		border-bottom: 1px solid $hr-color;
 		height: $info-bar-height;
