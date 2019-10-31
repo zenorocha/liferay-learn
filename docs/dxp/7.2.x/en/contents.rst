@@ -7,13 +7,6 @@ Contents
 
    docs/**/*
 
-.. toctree::
-   :glob:
-   :includehidden:
-   :maxdepth: 2
-
-   docs/index
-
 
 Indices and tables
 ==================

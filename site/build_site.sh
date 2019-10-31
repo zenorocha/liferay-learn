@@ -27,6 +27,10 @@ function generate_sphinx_input {
 
 			cp -R ../docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}/docs
 
+			if [ ! -f "build/input/${product_name}-${version_name}/contents.rst" ]; then
+				mv build/input/${product_name}-${version_name}/docs/contents.rst build/input/${product_name}-${version_name}
+			fi
+
 			#
 			# TODO Generate ZIP files and update links.
 			#
