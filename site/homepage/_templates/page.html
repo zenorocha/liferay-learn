@@ -80,7 +80,9 @@
             }
         });
 
-        toggleActiveClass(targets[activeIndex].id);
+        if (targets[activeIndex]) {
+            toggleActiveClass(targets[activeIndex].id);
+        }
     };
 
     // rootMargin of 157px is header height + info bar height + 24px gutter offset 
