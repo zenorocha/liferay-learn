@@ -1,7 +1,3 @@
----
-header-id: vpn-connection
----
-
 # Connecting a VPN to DXP Cloud
 
 You can use DXP Cloud's VPN feature to connect your DXP Cloud services to 

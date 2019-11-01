@@ -1,7 +1,3 @@
----
-header-id: migrating-from-an-on-premises-dxp-installation
----
-
 # Migrating from an On-Premises DXP Installation
 
 This article will walk you through the essential steps for migrating your 

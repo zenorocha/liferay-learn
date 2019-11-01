@@ -1,7 +1,3 @@
----
-header-id: reference
----
-
 # Reference
 
 This is the reference documentation for DXP Cloud. The following topics are 

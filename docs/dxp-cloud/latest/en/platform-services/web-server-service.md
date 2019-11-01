@@ -1,7 +1,3 @@
----
-header-id: web-server-service-nginx
----
-
 # Web Server Service (Nginx)
 
 The Nginx web server functions as a gateway from the open internet to your DXP 

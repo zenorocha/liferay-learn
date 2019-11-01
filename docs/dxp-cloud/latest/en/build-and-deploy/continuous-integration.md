@@ -1,7 +1,3 @@
----
-header-id: continuous-integration
----
-
 # Continuous Integration
 
 DXP Cloud uses [Jenkins](https://jenkins.io/) to power its continuous integration infrastructure service by default. When you send a pull request or push a commit to one of your pre-configured GitHub branches, an automatic and configurable build will be triggered.

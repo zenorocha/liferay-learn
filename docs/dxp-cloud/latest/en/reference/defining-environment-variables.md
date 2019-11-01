@@ -1,7 +1,3 @@
----
-header-id: defining-environment-variables
----
-
 # Defining Environment Variables
 
 Environment variables are a set of dynamic placeholders that can affect the way a service behaves within an environment.

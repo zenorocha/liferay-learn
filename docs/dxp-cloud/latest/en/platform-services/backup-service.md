@@ -1,7 +1,3 @@
----
-header-id: backup-service
----
-
 # Backup Service
 
 The backup service creates regular backups of your Liferay DXP database and 

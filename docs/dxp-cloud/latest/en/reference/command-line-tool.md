@@ -1,7 +1,3 @@
----
-header-id: command-line-tool
----
-
 # Command-line Tool
 
 Liferay DXP's command-line interface (CLI) is a tool that helps you use and 

@@ -1,7 +1,3 @@
----
-header-id: environments
----
-
 # Understanding DXP Cloud Environments
 
 A DXP Cloud project can have multiple environments, each for a different 

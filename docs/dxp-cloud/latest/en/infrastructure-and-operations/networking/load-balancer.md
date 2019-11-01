@@ -1,7 +1,3 @@
----
-header-id: load-balancer
----
-
 # Load Balancer
 
 The Ingress Load Balancer gives internet access to your environment's services 

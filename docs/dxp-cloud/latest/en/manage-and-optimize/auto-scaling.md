@@ -1,7 +1,3 @@
----
-header-id: auto-scaling
----
-
 # Auto-scaling
 
 Liferay DXP Cloud's auto-scaling feature automatically creates and destroys 

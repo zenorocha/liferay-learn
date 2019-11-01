@@ -1,7 +1,3 @@
----
-header-id: configuration-via-lcp-json
----
-
 # Configuration via LCP.json
 
 Each service in your DXP Cloud environments has an `LCP.json` file that you can 

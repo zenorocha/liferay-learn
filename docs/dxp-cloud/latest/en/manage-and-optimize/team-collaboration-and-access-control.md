@@ -1,7 +1,3 @@
----
-header-id: team-collaboration-access-control
----
-
 # Team Collaboration & Access Control
 
 Administrators can manage team members and their roles in a DXP Cloud project. 

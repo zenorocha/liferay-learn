@@ -1,7 +1,3 @@
----
-header-id: private-network
----
-
 # Private Network
 
 Every environment has its own private network. This lets services from the 

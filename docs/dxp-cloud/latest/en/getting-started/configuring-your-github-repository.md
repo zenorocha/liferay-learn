@@ -1,7 +1,3 @@
----
-header-id: configuring-your-github-repository
----
-
 # Configuring Your Github Repository
 
 Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository should be used as a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users are expected to:

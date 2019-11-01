@@ -1,7 +1,3 @@
----
-header-id: backup-and-restore
----
-
 # Backup and Restore
 
 It's important for production applications' data to be safe. DXP Cloud can 

@@ -1,7 +1,3 @@
----
-header-id: using-the-liferay-dxp-service
----
-
 # Introduction to the Liferay DXP Service
 
 The Liferay DXP service is the heartbeat of any project. It runs the application's Liferay DXP instance and interacts with other services like the web server, Elasticsearch, and MySQL database.

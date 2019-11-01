@@ -1,7 +1,3 @@
----
-header-id: real-time-alerts
----
-
 # Real-Time Alerts
 
 Liferay DXP Cloud can alert system administrators of unexpected behaviors in a 

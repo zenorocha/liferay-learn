@@ -1,7 +1,3 @@
----
-header-id: welcome-to-dxp-cloud
----
-
 # Welcome to DXP Cloud
 
 Liferay DXP Cloud is a secure and reliable enterprise cloud platform that 

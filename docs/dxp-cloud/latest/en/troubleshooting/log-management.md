@@ -1,7 +1,3 @@
----
-header-id: log-management
----
-
 # Log Management
 
 Logs are crucial for debugging. On DXP Cloud, you can access your environment's 

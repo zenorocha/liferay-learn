@@ -1,7 +1,3 @@
----
-header-id: support-access
----
-
 # Support Access
 
 Support Access is an optional setting that expedites troubleshooting by giving 

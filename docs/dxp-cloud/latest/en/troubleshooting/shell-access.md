@@ -1,7 +1,3 @@
----
-header-id: shell-access
----
-
 # Shell Access
 
 The command-line tools in DXP Cloud contribute to the developer's workflow by 

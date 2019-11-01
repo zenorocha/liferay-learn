@@ -1,7 +1,3 @@
----
-header-id: database-service-mysql
----
-
 # Database Service (MySQL)
 
 The database service (MySQL) is a distributed relational database service that 
