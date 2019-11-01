@@ -8104,7 +8104,6 @@ th {
   .documentations .doc-nav > ul {
     margin: 0; }
   .documentations .doc-nav a {
-    border-left: 3px solid transparent;
     color: #A7A9BC;
     display: block;
     padding: 0.5rem 1rem; }
@@ -8114,8 +8113,15 @@ th {
     list-style: none;
     padding: 0; }
   .documentations .doc-nav .toctree-l1.current > a {
-    border-color: #0B5FFF;
-    color: #000; }
+    color: #000;
+    padding-left: 0; }
+    .documentations .doc-nav .toctree-l1.current > a:before {
+      border-bottom: 2px solid transparent;
+      border-left: 3px solid #0B5FFF;
+      border-right: 1px solid transparent;
+      border-top: 2px solid transparent;
+      content: '';
+      padding: 0.5rem 1rem 0.5rem 0; }
   .documentations .doc-nav .toctree-l2.current a {
     color: #0B5FFF; }
   .documentations .doc-nav .toctree-l2 a {

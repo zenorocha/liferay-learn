@@ -28,7 +28,6 @@
 		}
 
 		a {
-			border-left: 3px solid transparent;
 			color: $nav-color;
 			display: block;
 			padding: $spacing-xs $spacing-md;
@@ -46,8 +45,17 @@
 		.toctree-l1 {
 			&.current {
 				> a {
-					border-color: $brand-primary;
 					color: $black;
+					padding-left: 0;
+
+					&:before {
+						border-bottom: 2px solid transparent;
+						border-left: 3px solid $brand-primary;
+						border-right: 1px solid transparent;
+						border-top: 2px solid transparent;
+						content: '';
+						padding: $spacing-xs $spacing-md $spacing-xs 0;
+					}
 				}
 			}
 		}
