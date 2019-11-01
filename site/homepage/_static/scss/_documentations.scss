@@ -21,6 +21,7 @@
 
 	.doc-nav {
 		font-weight: $font-weight-semi-bold;
+		height: 100vh;
 		padding-top: $spacing-md;
 
 		> ul {
@@ -30,7 +31,7 @@
 		a {
 			color: $nav-color;
 			display: block;
-			padding: $spacing-xs $spacing-md;
+			padding: $spacing-xs $spacing-default $spacing-xs $spacing-md;
 
 			&:hover {
 				text-decoration: none;
@@ -45,6 +46,7 @@
 		.toctree-l1 {
 			&.current {
 				> a {
+					background-image: none;
 					color: $black;
 					padding-left: 0;
 
@@ -57,6 +59,13 @@
 						padding: $spacing-xs $spacing-md $spacing-xs 0;
 					}
 				}
+			}
+
+			> a {
+				background-image: clay-icon(angle-right, $black);
+				background-position: right 0.8rem top $spacing-md;
+				background-repeat: no-repeat;
+				background-size: 0.65rem;
 			}
 		}
 
@@ -108,6 +117,7 @@
 	}
 
 	.product-version-selector {
+		margin-left: -15px;
 		max-width: 16.66667%;
 		position: fixed;
 	}
