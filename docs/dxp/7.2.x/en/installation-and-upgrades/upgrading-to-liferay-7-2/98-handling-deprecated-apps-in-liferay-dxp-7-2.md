@@ -1,44 +1,31 @@
----
-header-id: deprecated-apps-in-7-2-what-to-do
----
+# Handling Deprecated Apps in Liferay DXP 7.2
 
-# Deprecated Apps in 7.2: What to Do
-
-[TOC levels=1-4]
-
-During the development of any software product, it's sometimes necessary to stop
-development on or remove outdated or unpopular features. @product-ver@ is no
-different. In @product-ver@, Liferay has deprecated several apps and features. 
+During the development of any software product, it's sometimes necessary to stop developing or remove specific features. Liferay DXP is no different. In DXP 7.2, Liferay has deprecated several apps and features. 
 
 There are three types of deprecated apps: 
 
-1.  Deprecated apps that remain in @product@, but will be removed in a future
-    release. (Availability: *Bundled*)
+1.  Deprecated apps that remain in DXP 7.2, but will be removed in a future release. (Availability: *Bundled*)
 
-2.  Deprecated apps that have been removed from @product@, yet are still 
-    available for download via [Liferay
-    Marketplace](https://web.liferay.com/marketplace) (Availability:
-    *Marketplace*) 
+2.  Deprecated apps that have been removed from DXP 7.2, yet are still available for download via [Liferay Marketplace](https://web.liferay.com/marketplace) (Availability: *Marketplace*) 
 
-3.  Deprecated apps that have been removed from @product@ and aren't available 
-    for download. (Availability: *Removed*) 
+3.  Deprecated apps that have been removed from DXP 7.2 and aren't available for download. (Availability: *Removed*) 
 
-| **Note:** All apps deprecated by Liferay are no longer in active development.
-| You should therefore plan to stop using these apps. Such apps, however, may
-| still be available for download.
+| **Note:** All apps deprecated by Liferay are no longer in active development. You should therefore plan to stop using these apps. Such apps, however, may still be available for download.
 
-| **Note:** For information on apps deprecated in @product@ 7.1, please see 
-| [Deprecated Apps in 7.1: What to Do](/docs/7-1/deploy/-/knowledge_base/d/deprecated-apps-in-7-1-what-to-do)
+Apps deprecated in earlier versions of Liferay DXP may also need to be considered, if you are upgrading from an earlier version than 7.1. See the following deprecated apps for any versions between your version pre-upgrade and 7.2:
 
-Here are the apps deprecated in @product-ver@. 
+* Liferay DXP 7.1: [link]()
+* Liferay DXP 7.0: [link]()
+
+The deprecated apps in DXP 7.2 are as follows:
 
 ## Foundation
 
 | App |  Availability |  Notes |
 | --- | ------------- | ------ |
 | AlloyUI | Bundled | Replaced by [MetalJS](https://metaljs.com/) (temporary) exposed as [ClayUI tag](/docs/7-2/reference/-/knowledge_base/r/front-end-taglibs) equivalents. |  
-| CMIS Store | Removed | Migrate to another [Document Repository Store option](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration). Before [upgrading to @product-ver@](/docs/7-2/deploy/-/knowledge_base/d/upgrading-to-product-ver), migrate your document store data using [Data Migration in Server Administration](/docs/7-2/user/-/knowledge_base/u/server-administration). |
-| JCRStore | Removed | Migrate to another [Document Repository Store option](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration). Before [upgrading to @product-ver@](/docs/7-2/deploy/-/knowledge_base/d/upgrading-to-product-ver), migrate your document store data using [Data Migration in Server Administration](/docs/7-2/user/-/knowledge_base/u/server-administration). |
+| CMIS Store | Removed | Migrate to another [Document Repository Store option](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration). Before [upgrading to DXP 7.2](/docs/7-2/deploy/-/knowledge_base/d/upgrading-to-product-ver), migrate your document store data using [Data Migration in Server Administration](/docs/7-2/user/-/knowledge_base/u/server-administration). |
+| JCRStore | Removed | Migrate to another [Document Repository Store option](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration). Before [upgrading to DXP 7.2](/docs/7-2/deploy/-/knowledge_base/d/upgrading-to-product-ver), migrate your document store data using [Data Migration in Server Administration](/docs/7-2/user/-/knowledge_base/u/server-administration). |
 | Legacy Search Portlet | Bundled | Will be removed in a future release. Replaced by the [Search widgets](/docs/7-2/user/-/knowledge_base/u/search). |
 | Sprite framework | Bundled | Liferay's image sprite framework is deprecated and is disabled by default via the `sprite.enabled` [portal property](/docs/7-2/deploy/-/knowledge_base/d/portal-properties). You can still build image sprites using any framework you like and deploy them in your plugins. |
 
