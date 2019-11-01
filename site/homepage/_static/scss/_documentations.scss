@@ -107,6 +107,11 @@
 		}
 	}
 
+	.product-version-selector {
+		max-width: 16.66667%;
+		position: fixed;
+	}
+
 	.toc {
 		position: fixed;
 		margin-top: $spacing-default;

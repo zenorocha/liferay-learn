@@ -3,16 +3,18 @@
 {% block content %}
 <div class="container-fluid documentations main-content">
     <div class="row">
-        <div class="col-md-2 product-version-selector">
-            <div class="info-bar">
+        <div class="col-md-2">
+            <div class="product-version-selector">
+                <div class="info-bar">
 
-            </div>
+                </div>
 
-            <div class="doc-nav">
-                {% block sidebar1 %}
-                {{ toctree() }}
+                <div class="doc-nav">
+                    {% block sidebar1 %}
+                    {{ toctree() }}
 
-                {% endblock %}
+                    {% endblock %}
+                </div>
             </div>
         </div>
 
@@ -80,7 +82,9 @@
             }
         });
 
-        toggleActiveClass(targets[activeIndex].id);
+        if (targets[activeIndex]) {
+            toggleActiveClass(targets[activeIndex].id);
+        }
     };
 
     // rootMargin of 157px is header height + info bar height + 24px gutter offset 

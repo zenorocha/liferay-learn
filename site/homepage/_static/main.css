@@ -8153,6 +8153,10 @@ th {
     color: #0B5FFF;
     font-weight: 600; }
 
+.documentations .product-version-selector {
+  max-width: 16.66667%;
+  position: fixed; }
+
 .documentations .toc {
   position: fixed;
   margin-top: 1.5rem;
