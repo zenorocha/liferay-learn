@@ -4,7 +4,8 @@
 
 * Using Docker Images
 * Obtaining Liferay DXP
-* Preparing for Install
+* Optimizing the Application Server
+* Preparing the Database
 * Installing and Configuring a Bundle
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 * Activating Liferay DXP
