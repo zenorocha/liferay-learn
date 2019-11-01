@@ -80,7 +80,7 @@ To set product prices and quantities:
     * **Promo Price**: 0.00
     * **Cost**: 0.00
 
-        ![Grouped Product Pricing](./images/06.png)
+        ![Grouped Product Pricing](./creating-a-grouped-product/images/06.png)
 
 1. Click _Save_. (If Promo Price and Cost fields are left as 0.00, no discounts or promotions are applied at this point.)
 1. Click _Price List_ to apply this product to any existing [Price Lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
