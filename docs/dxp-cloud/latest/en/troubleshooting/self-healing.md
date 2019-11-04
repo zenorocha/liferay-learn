@@ -30,14 +30,16 @@ The liveness probe uses a URL Request (path/port) to validate that a service is 
 Each service's `LCP.json` file contains the following:
 
 ```json
-"livenessProbe": {
-  "httpGet": {
-    "path": "/status",
-    "port": 3000
-  },
-  "initialDelaySeconds": 40,
-  "periodSeconds": 5,
-  "successThreshold": 5
+{
+  "livenessProbe": {
+    "httpGet": {
+      "path": "/status",
+      "port": 3000
+    },
+    "initialDelaySeconds": 40,
+    "periodSeconds": 5,
+    "successThreshold": 5
+  }
 }
 ```
 
@@ -48,12 +50,14 @@ The readiness probe uses an executable command. If the command returns with the 
 Each service's `LCP.json` file contains the following:
 
 ```json
-"readinessProbe": {
-  "exec": {
-    "command": ["cat", "/tmp/healthy"]
-  },
-  "initialDelaySeconds": 40,
-  "periodSeconds": 5,
+{
+  "readinessProbe": {
+    "exec": {
+      "command": ["cat", "/tmp/healthy"]
+    },
+    "initialDelaySeconds": 40,
+    "periodSeconds": 5
+  }
 }
 ```
 
