@@ -21,14 +21,16 @@ Before using the Dynatrace advanced monitoring features, the following requireme
 * The Dynatrace secret `token` and `tenant` values have been generated.
 * Dynatrace environment variables have been added to the `LCP.json` file in the DXP Service's production environment. For example:
 
-```properties
-"environments": {
-  "prd": {
-    "env": {
-      "LCP_PROJECT_MONITOR_DYNATRACE_TENANT": "tot02934",
-      "LCP_PROJECT_MONITOR_DYNATRACE_TOKEN": "dDKSowkdID8dKDkCkepW"
-    }
-  }
+```json
+{
+	"environments": {
+	  "prd": {
+	    "env": {
+	      "LCP_PROJECT_MONITOR_DYNATRACE_TENANT": "tot02934",
+	      "LCP_PROJECT_MONITOR_DYNATRACE_TOKEN": "dDKSowkdID8dKDkCkepW"
+	    }
+	  }
+	}
 }
 ```
 

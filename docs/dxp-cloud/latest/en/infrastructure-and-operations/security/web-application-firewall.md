@@ -51,7 +51,7 @@ that DXP Cloud provides.
 Users can leverage the `allow` and `deny` directives inside the `stream` context
 or `server` block in the `nginx.conf` file:
 
-```properties
+```
 stream {
     ...
     server {
