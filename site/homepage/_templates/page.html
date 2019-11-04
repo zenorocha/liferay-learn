@@ -20,12 +20,16 @@
 
         <div class="col-md-10 doc-body">
             <div class="col-md-12 general-info info-bar">
-                {% include "breadcrumb.html" %}
+                <div class="breadcrumb-wrapper col-md-6 offset-md-1">
+                    {% include "breadcrumb.html" %}
+                </div>
 
-                <div class="actions">
-                    <svg>
-                        <use xlink:href="#github-logo"></use>
-                    </svg>
+                <div class="actions col-md-2 offset-md-1">
+                    <a href="https://github.com/liferay/liferay-learn">
+                        <svg>
+                            <use xlink:href="#github-logo"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
 

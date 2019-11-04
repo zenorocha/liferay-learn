@@ -91,6 +91,7 @@
 		margin-left: -15px;
 		max-width: 16.66667%;
 		position: fixed;
+		z-index: 1;
 	}
 
 	.info-bar {
@@ -99,18 +100,26 @@
 	}
 
 	.general-info {
+		align-items: center;
 		background-color: $white;
 		display: flex;
-		justify-content: space-between;
 		position: fixed;
+		width: calc(100% - 16.66667%);
 		z-index: 1;
 
 		.actions {
-			display: inline-block;
+			display: block;
+			padding-left: $spacing-md;
+
+			a:hover {
+				svg {
+					fill: $brand-primary;
+				}
+			}
 
 			svg {
+				fill: $nav-color;
 				height: 1rem;
-				margin: 1.8rem 0;
 				width: 1rem;
 			}
 		}
