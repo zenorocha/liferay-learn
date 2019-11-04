@@ -6,7 +6,7 @@
 	}
 
 	.doc-body,
-	.product-version-selector {
+	.doc-nav-wrapper {
 		padding: 0;
 	}
 
@@ -15,14 +15,15 @@
 	}
 
 	.doc-nav,
-	.product-version-selector {
+	.doc-nav-wrapper {
 		background-color: $background-color;
 	}
 
 	.doc-nav {
 		font-weight: $font-weight-semi-bold;
-		height: 100vh;
-		padding-top: $spacing-md;
+		height: 80vh;
+		overflow: auto;
+		padding: $spacing-md 0;
 
 		> ul {
 			margin: 0;
@@ -85,6 +86,13 @@
 		}
 	}
 
+	.doc-nav-wrapper {
+		height: 100%;
+		margin-left: -15px;
+		max-width: 16.66667%;
+		position: fixed;
+	}
+
 	.info-bar {
 		border-bottom: 1px solid $hr-color;
 		height: $info-bar-height;
@@ -119,12 +127,6 @@
 			color: $brand-primary;
 			font-weight: $font-weight-semi-bold;
 		}
-	}
-
-	.product-version-selector {
-		margin-left: -15px;
-		max-width: 16.66667%;
-		position: fixed;
 	}
 
 	.toc {

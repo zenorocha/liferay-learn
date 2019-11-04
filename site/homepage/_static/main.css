@@ -8088,20 +8088,21 @@ th {
   padding-top: 1.5rem; }
 
 .documentations .doc-body,
-.documentations .product-version-selector {
+.documentations .doc-nav-wrapper {
   padding: 0; }
 
 .documentations .doc-content {
   margin-top: 4.8125rem; }
 
 .documentations .doc-nav,
-.documentations .product-version-selector {
+.documentations .doc-nav-wrapper {
   background-color: #F4F6F9; }
 
 .documentations .doc-nav {
   font-weight: 600;
-  height: 100vh;
-  padding-top: 1rem; }
+  height: 80vh;
+  overflow: auto;
+  padding: 1rem 0; }
   .documentations .doc-nav > ul {
     margin: 0; }
   .documentations .doc-nav a {
@@ -8137,6 +8138,12 @@ th {
     .documentations .doc-nav .toctree-l2 a {
       padding: 0.5rem 2rem; }
 
+.documentations .doc-nav-wrapper {
+  height: 100%;
+  margin-left: -15px;
+  max-width: 16.66667%;
+  position: fixed; }
+
 .documentations .info-bar {
   border-bottom: 1px solid #DADEE3;
   height: 4.8125rem; }
@@ -8162,11 +8169,6 @@ th {
   .documentations .nav-link.active {
     color: #0B5FFF;
     font-weight: 600; }
-
-.documentations .product-version-selector {
-  margin-left: -15px;
-  max-width: 16.66667%;
-  position: fixed; }
 
 .documentations .toc {
   position: fixed;
