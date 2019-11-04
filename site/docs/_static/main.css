@@ -8146,6 +8146,7 @@ th {
   margin-left: -15px;
   max-width: 16.66667%;
   position: fixed;
+  width: 100%;
   z-index: 1; }
 
 .documentations .info-bar {
