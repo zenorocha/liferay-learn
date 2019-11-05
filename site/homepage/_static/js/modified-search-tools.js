@@ -335,6 +335,8 @@ var Search = {
 						)
 					);
 					document.querySelector('.no-results').classList.add('show');
+
+					Search.title.text('');
 				} else
 					Search.title.text(
 						_(`${resultCount} results for "${query}"`)

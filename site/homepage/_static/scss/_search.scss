@@ -105,6 +105,10 @@
 	}
 }
 
+.search-results-wrapper {
+	display: flex;
+}
+
 .searchbox {
 	display: inline-block;
 	margin-right: $spacing-md;

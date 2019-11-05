@@ -8554,6 +8554,9 @@ header {
     .search-page {
       margin-top: 1rem; } }
 
+.search-results-wrapper {
+  display: flex; }
+
 .searchbox {
   display: inline-block;
   margin-right: 1rem; }
