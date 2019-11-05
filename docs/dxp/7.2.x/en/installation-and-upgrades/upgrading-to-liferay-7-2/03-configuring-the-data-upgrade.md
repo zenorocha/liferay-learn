@@ -4,6 +4,25 @@ header-id: configuring-the-data-upgrade
 
 # Configuring the Data Upgrade
 
+## Disable Indexing
+
+Before starting the upgrade process in your new installation, you must disable indexing to prevent upgrade process performance issues that arise when the
+indexer attempts to re-index content. 
+
+To disable indexing, create a file called
+`com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config`
+in your `[Liferay Home]/osgi/configs` folder and add the following content: 
+
+```properties
+indexReadOnly="true"
+```
+
+After you complete the upgrade, re-enable indexing by removing the `.config`
+file or setting `indexReadOnly="false"`. 
+
+Your new @product-ver@ server is ready for upgrading your database. 
+
+
 [TOC levels=1-4]
 
 The upgrade tool provides the easiest way to upgrade the core and installed
