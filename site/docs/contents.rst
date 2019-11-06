@@ -12,7 +12,7 @@ Contents
    :includehidden:
    :maxdepth: 2
 
-   docs/table_of_contents
+   docs/index
 
 
 Indices and tables
