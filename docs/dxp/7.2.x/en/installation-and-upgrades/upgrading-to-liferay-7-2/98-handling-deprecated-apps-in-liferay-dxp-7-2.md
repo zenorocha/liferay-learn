@@ -33,7 +33,7 @@ The deprecated apps in DXP 7.2 are as follows:
 
 | App |  Availability |  Notes |
 | --- | ------------- | ------ |
-| Audience Targeting | Removed | Replaced by [Personalization](/docs/7-2/user/-/knowledge_base/u/segmentation-and-personalization). | 
+| Audience Targeting | Removed | Replaced by [Personalization](/docs/7-2/user/-/knowledge_base/u/segmentation-and-personalization) (see [Migrating from Audience Targeting](./migrating-from-audience-targeting/01-migrating-from-audience-targeting.md). | 
 
 ## Web Experience
 
