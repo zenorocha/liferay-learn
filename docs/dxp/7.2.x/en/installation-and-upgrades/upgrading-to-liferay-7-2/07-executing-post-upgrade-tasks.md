@@ -2,6 +2,10 @@
 
 Since you optimized your system for upgrading previously, after the upgrade is complete you must re-optimize it for production. In addition to your standard testing, you must also perform a couple of other steps to ensure everything is running as expected post-upgrade. This article will give an overview of tasks you will need to address before officially completing your upgrade to Liferay DXP 7.2.
 
+## Updating Configurations
+
+If you migrated from a sharded environment during your data upgrade, then you will need to make more adjustments to your configurations to complete the transition to virtual instances. See the [Upgrade and Update Properties](./08-upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) section for more information.
+
 ## Tuning Your Database for Production 
 
 Prior to upgrading your Liferay DXP database, you tuned it for upgrade (see [Tuning for the Data Upgrade](./02-tuning-for-the-data-upgrade.md). Now that the upgrade is complete, restore the production database tuning you used previously.
