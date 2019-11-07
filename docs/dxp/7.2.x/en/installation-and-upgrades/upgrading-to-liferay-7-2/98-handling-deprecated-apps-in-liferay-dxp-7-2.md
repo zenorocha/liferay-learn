@@ -66,6 +66,6 @@ The deprecated apps in DXP 7.2 are as follows:
 | --- | ------------------ |
 | Live Users | Enabled through the [`live.users.enabled`](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html) [portal property](/docs/7-2/deploy/-/knowledge_base/d/portal-properties). | 
 
-## Related Topics 
+## Apps in Maintenance Mode
 
-[Apps in Maintenance Mode](/docs/7-2/deploy/-/knowledge_base/d/apps-in-maintenance-mode)
+Although no action is immediately necessary, you may also want to consider apps that are put into maintenance mode in DXP 7.2. These apps are not being deprecated or removed, but will no longer receive updates other than bug fixes. See [Apps in Maintenance Mode](./99-apps-in-maintenance-mode.md) for more information.
