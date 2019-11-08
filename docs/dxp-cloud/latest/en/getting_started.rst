@@ -2,7 +2,6 @@ Getting Started
 ===============
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    getting-started/welcome-to-dxp-cloud.md

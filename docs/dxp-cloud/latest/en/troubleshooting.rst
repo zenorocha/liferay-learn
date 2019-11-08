@@ -2,7 +2,6 @@ Troubleshooting
 ===============
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    troubleshooting/log-management.md

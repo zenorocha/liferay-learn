@@ -2,7 +2,6 @@ Using the Liferay DXP Service
 =============================
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md

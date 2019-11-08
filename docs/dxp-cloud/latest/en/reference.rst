@@ -2,7 +2,6 @@ Reference
 =========
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    reference/configuration-via-lcp-json.md

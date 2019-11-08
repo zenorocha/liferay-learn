@@ -2,7 +2,6 @@ Manage and Optimize
 ===================
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    developer-guide/introduction/introduction-to-the-liferay-commerce-developer-guide.md

@@ -2,7 +2,6 @@ Build and Deploy
 ================
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    getting-started/overview-of-the-dxp-cloud-deployment-workflow.md

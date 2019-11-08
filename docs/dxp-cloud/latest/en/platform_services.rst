@@ -2,7 +2,6 @@ Platform Services
 =================
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
 
    build-and-deploy/continuous-integration.md
