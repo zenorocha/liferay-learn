@@ -77,4 +77,4 @@ If using the application server to manage the data source, review the documentat
 
 ## Next steps
 
-Once the database server has been configured and a DB has been created, proceed to [Install Liferay DXP]().
+Once the database server has been configured and a database has been created, proceed to the [Installing and Configuring the Bundle](./installing-and-configuring-the-bundle.md) if using deploying Liferay DXP to a bundle. Alternately, if deploying DXP 7.2 to manually to an application server, see _Installing Liferay DXP on [Application Server]_.
