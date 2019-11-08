@@ -3,7 +3,7 @@
 ## Installing Liferay DXP
 
 * Using Docker Images
-* Obtaining Liferay DXP
+* [Obtaining Liferay DXP](./obtaining-liferay.md)
 * [Optimizing the Application Server](./optimizing-the-application-server.md)
 * [Preparing the Database](./preparing-the-database.md)
 * [Installing and Configuring a Bundle](./installing-and-configuring-a-bundle.md)

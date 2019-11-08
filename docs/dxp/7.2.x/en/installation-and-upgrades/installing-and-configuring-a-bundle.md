@@ -6,9 +6,19 @@ header-id: installing-product
 
 [TOC levels=1-4]
 
-Now that the [application server has been optimized](./optimizing-the-application-server.md) and the [database has been prepared](./preparing-the-database.md), you can install and deploy it! This involves uncompressing the archive (the 7-Zip or gzip bundle file), possibly copying a JDBC driver to the application server, and starting the application server. Lastly, DXP 7.2 provides a setup wizard to configure portal essentials.
+Now that the [application server is optimized](./optimizing-the-application-server.md) and the [database server is ready](./preparing-the-database.md), Liferay DXP 7.2 is ready for installation and deployment. There are three simple steps:
 
-| **Note:** Since bundles are the easiest way to complete an installation, the installation steps here assume you're installing a DXP 7.2 bundle. If you plan to install DXP 7.2 manually, please refer to the Installing DXP 7.2 on an application Server article for the application server you're installing on.
+1. Uncompress the archive (the 7-Zip or gzip bundle file).
+1. Copy a JDBC driver (if necessary) to the application server.
+1. Start the application server. Once the application server has been started, DXP 7.2 provides a setup wizard to configure portal essentials.
+
+Since bundles are the easiest way to complete an installation, the installation steps here assume you're installing and configuring a DXP 7.2 bundle.
+
+Download the Liferay Portal CE 7.2 or a trial of the enterprise supported Liferay DXP from the [Community Downloads page](https://www.liferay.com/downloads-community).
+
+Liferay enterprise subscribers can download Liferay DXP from the [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118681159&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118681163).
+
+To install DXP 7.2 manually, please refer to the corresponding articles for the respective application servers.
 
 ## Extracting a DXP 7.2 Bundle
 
@@ -75,15 +85,21 @@ The database configuration section also has an *Add Sample Data* checkbox for ad
 After filling out the Basic Configuration form, click *Finish Configuration*. The setup wizard creates a `[LIFERAY_HOME]/portal-setup-wizard.properties` file which stores the settings that you entered. As best practices, use a [`portal-ext.properties` file](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) to make configurations or customizations without directly changing `portal.properties`.
 The [Portal properties reference documentation](@platform-ref@/7.2-latest/propertiesdoc) lists the default properties and describes all the properties set in DXP 7.2.
 
-| **Tip:** The wizard is a helpful tool, especially if you're setting up DXP 7.2 for the first time. If you're a veteran and you already have your various properties set up, you can disable the setup wizard. If you disable the setup wizard, you must configure everything manually from a portal properties file (e.g., `[LIFERAY_HOME]/portal-ext.properties`). To disable the setup wizard, set `setup.wizard.enabled=false` in the portal properties file.
+| **Tip:** The wizard is a helpful tool, especially if you're setting up DXP 7.2 for the first time. If you already have your various properties set up, you can disable the setup wizard. If you disable the setup wizard, you must configure everything manually from a portal properties file (e.g., `[LIFERAY_HOME]/portal-ext.properties`). To disable the setup wizard, set `setup.wizard.enabled=false` in the portal properties file.
 Note that property values in `portal-setup-wizard.properties` (the file the setup wizards creates in Liferay Home) override property values in `portal-ext.properties`.
 
 On finishing basic configuration, DXP 7.2 prompts you to restart the server. DXP 7.2 initializes the database during the second startup process.
 
-Now that DXP 7.2 is up and running, you can continue configuring it as desired. Here are some suggestions:
+Now that DXP 7.2 is up and running, you can continue configuring the platform:
 
-1. [Configure the mail session](https://help.liferay.com/hc/en-us/articles/360029031591-Configuring-Mail) if you haven't already configured it.
+1. [Configure the mail session](https://help.liferay.com/hc/en-us/articles/360029031591-Configuring-Mail).
 1. Install the Marketplace plugin, if it isn't already installed. If the environment has restricted access to the public network or if the database user has limited permissions (not recommended), Marketplace can still be set up by following the [Marketplace setup instructions](./setting-up-marketplace-and-portal-security.md).
 1. Read the [Configuring DXP 7.2](/docs/7-2/deploy/-/knowledge_base/d/configuring-product) articles for guidance in configuring DXP 7.2's default time zone, locales, logging, search engine, document repository, and more.
 
-You're on your way to providing your organization with terrific experiences on DXP 7.2.
+## Additional Information
+
+* [Installing Liferay DXP on Tomcat](https://help.liferay.com/hc/en-us/articles/360029031491-Installing-Liferay-DXP-on-Tomcat)
+* [Installing Liferay DXP on Wildfly](https://help.liferay.com/hc/en-us/articles/360029123751-Installing-Liferay-DXP-on-Wildfly)
+* [Installing Liferay DXP on JBoss EAP](https://help.liferay.com/hc/en-us/articles/360028810012-Installing-Liferay-DXP-on-JBoss-EAP)
+* [Installing Liferay DXP on WebLogic 12c R2](https://help.liferay.com/hc/en-us/articles/360028831932-Installing-Liferay-DXP-on-WebLogic-12c-R2)
+* [Installing Liferay DXP on WebSphere](https://help.liferay.com/hc/en-us/articles/360028810032-Installing-Liferay-DXP-on-WebSphere)
