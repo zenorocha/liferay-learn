@@ -1,4 +1,4 @@
-# Service Access Policies
+# Setting Service Access Policies
 
 *Service Access Policies* comprise a layer of web service security that defines services or service methods that can be invoked remotely. You can apply many of them at once to produce a combined effect. They are the [second layer of security](./01-securing-liferay.md#web-services) (after IP permissions) for web services. 
 
