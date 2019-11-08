@@ -46,7 +46,7 @@ The Basic Configuration page provides a convenient way to configure these things
 * Administrator user
 * Database
 
-![Figure 1: Supply the information for the portal and the portal's default administrator user on the Basic Configuration page.](./installing-and-configuring-a-bundle/images/basic-configuration1.png)
+![Figure 1: Supply the information for the portal and the portal's default administrator user on the Basic Configuration page.](./installing-and-configuring-the-bundle/images/basic-configuration1.png)
 
 ### Portal
 
