@@ -1,6 +1,8 @@
 # Pruning the Database
 
-Accumulating unneeded site data is common. For example, you may have many unused versions of Web Content articles or Documents and Media files. If you're done revising them and don't need the intermediate revisions, you can safely remove them. This saves you space and upgrade time.
+The length and performance of upgrading data to a new version of Liferay DXP varies with the amount of data, and unneeded data commonly increases the time for the upgrade. Pruning the database can reduce this impact and overall improve the speed of the upgrade.
+
+For example, you may have many unused versions of Web Content articles or Documents and Media files. If you're done revising them and don't need the intermediate revisions, you can safely remove them. This saves you space and upgrade time.
 
 ## Remove Duplicate Web Content Structure Field Names
 

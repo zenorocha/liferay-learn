@@ -1,4 +1,4 @@
-# Apps in Maintenance Mode
+# Features in Maintenance Mode
 
 Liferay may cease enhancing certain products or capabilities at a designated time. The affected products or capabilities are put into _maintenance mode_. During this mode, Liferay actively supports and provides bug fixes for the product or capability in accordance with the subscribers' subscription level and the end of service life policies of the compatible Liferay DXP version.
 

@@ -33,11 +33,11 @@ For features that use OSGi Config Admin in DXP 7.2, you must convert your proper
 If you're coming from a version prior to Liferay Portal 6.2, start with these
 property-related updates:
 
--   If you're on Liferay Portal 6.1, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](/docs/6-2/deploy/-/knowledge_base/d/upgrading-liferay#review-the-liferay-6). 
+- If you're on Liferay Portal 6.1, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](/docs/6-2/deploy/-/knowledge_base/d/upgrading-liferay#review-the-liferay-6). 
 
--   If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](/docs/7-2/deploy/-/knowledge_base/d/upgrading-a-sharded-environment).
+- If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](/docs/7-2/deploy/-/knowledge_base/d/upgrading-a-sharded-environment).
 
--   Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (new in 7.2) value with the following setting in your [`portal-ext.properties`](/docs/7-2/deploy/-/knowledge_base/d/portal-properties) file: 
+- Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (new in 7.2) value with the following setting in your [`portal-ext.properties`](/docs/7-2/deploy/-/knowledge_base/d/portal-properties) file: 
 
     ```properties
     sprite.enabled=true
@@ -47,7 +47,7 @@ property-related updates:
 
 As with most new versions of Liferay DXP, 7.2 includes changes to the default settings. If you rely on the defaults from your old version, you should review the changes and decide to keep the defaults from your old version or accept the defaults of the new.
 
-No existing properties have changed between versions 7.1 and 7.2. However, here is a list of changed values from properties that have existed since version 6.2: 
+No existing properties have changed between versions 7.1 and 7.2. However, here is a list of changed properties that have existed since version 6.2 with their new default values: 
 
 ```properties
 users.image.check.token=false
@@ -69,7 +69,7 @@ dl.file.entry.thumbnail.max.height=128
 dl.file.entry.thumbnail.max.width=128
 ```
 
-This property was has also been removed:
+This property has also been removed:
 
 ```properties
 organizations.children.types[location]
@@ -107,14 +107,13 @@ General document store configuration (e.g., `dl.store.impl=[File Store Impl Clas
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
-- JCR Store was deprecated in @product@ 7.0. The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) documentation describes other store options. [Migrate to a supported document store](/docs/7-2/user/-/knowledge_base/u/server-administration) before upgrading your data. 
+- JCR Store was deprecated in DXP 7.0. The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) documentation describes other store options. [Migrate to a supported document store](/docs/7-2/user/-/knowledge_base/u/server-administration) before upgrading your data. 
 
-- CMIS Store was deprecated since 7.0.10 Fix Pack 14 and was removed in DXP 7.2. The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) documentation describes other store options. [Migrate to a supported document store](/docs/7-2/user/-/knowledge_base/u/server-administration) before upgrading your data. 
+- CMIS Store was deprecated in 7.0.10 Fix Pack 14 and was removed in DXP 7.2. The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) documentation describes other store options. [Migrate to a supported document store](/docs/7-2/user/-/knowledge_base/u/server-administration) before upgrading your data. 
 
 - Since DXP 7.0, document store type-specific configuration (e.g., specific to Simple File Store, Advanced File Store, S3, etc.) is done in the Control Panel at _Configuration_ → _System Settings_ → File Storage_, or using OSGi configuration files (`.config` files). Type specific configuration is no longer done using `portal-ext.properties`. 
 
-    For example, use these steps to create a `.config` file specifying a root file
-    location for a Simple File Store or Advanced File Store:
+    For example, use these steps to create a `.config` file specifying a root file location for a Simple File Store or Advanced File Store:
  
     1. Create a `.config` file named after your store implementation class.
 
@@ -124,8 +123,7 @@ General document store configuration (e.g., `dl.store.impl=[File Store Impl Clas
     Advanced File Store:
     `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config`
  
-    1. Set the following `rootDir` property and replace 
-    `{document_library_path}` with  your file store's path.
+    1. Set the following `rootDir` property and replace `{document_library_path}` with  your file store's path.
 
     ```properties
     rootDir="{document_library_path}"
@@ -133,7 +131,7 @@ General document store configuration (e.g., `dl.store.impl=[File Store Impl Clas
 
     1. Copy the `.config` file to your `[Liferay Home]/osgi/configs` folder.
 
-The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration)provides more document store configuration details. 
+The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) provides more document store configuration details. 
 
 ## Configure Kerberos in place of NTLM 
 

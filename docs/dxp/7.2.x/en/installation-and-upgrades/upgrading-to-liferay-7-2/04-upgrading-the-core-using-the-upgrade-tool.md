@@ -38,7 +38,7 @@ finishing the upgrade process.
 
 ### Ensuring the Upgrade Runs Smoothly
 
- Only execute the upgrade process on a server with ideal memory, CPU, and database connection configurations. If executing an upgrade remotely using `ssh`, make sure to guard against interruptions: 
+Only execute the upgrade process on a server with ideal memory, CPU, and database connection configurations. If executing an upgrade remotely using `ssh`, make sure to guard against interruptions: 
  
 - If you're executing the upgrade using `ssh`, ignore hangups (connection loss) by using `nohup` or something similar. 
 - On the machine you're connecting from, disable settings that shutdown or put the machine into sleep mode. 
