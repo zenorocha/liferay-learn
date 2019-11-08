@@ -82,8 +82,35 @@ To create a new Service Access Policy, follow this procedure:
 !!! qualifier "Note"
     If you know all the method signatures ahead of time, you can click *Switch to Advanced Mode* and enter them all in one field on separate lines. 
 
+Liferay applications can declare their own default policies (the `SYNC_DEFAULT` policy is a good example). This policy can then be changed or disabled by administrators. In this case, the plugin can still verify that the policy exists so there is no need to redefine or update it.
 
+By default, Liferay's tunneling servlet uses the `SYSTEM_USER_PASSWORD` service access policy. You can, however, create your own policy for the tunneling servlet and use the property `service.access.policy.name` for the `TunnelingServletAuthVerifier` to specify that your policy should be used instead.
 
 ## Configuring the Service Access Policy Module
 
+Liferay's service access policy functionality is provided by the Service Access Policy module. This module includes the following important classes:
 
+- `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicy`: defines the public interface for `ServiceAccessPolicy`.
+- `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyManager`: defines the public interface for retrieving instances of `ServiceAccessPolicy`.
+- `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyManagerUtil`: bridges service access policy functionality to the parts of Liferay's core that have not yet been modularized.
+- `com.liferay.portal.kernel.security.service.access.policy.ServiceAccessPolicyThreadLocal`: makes `ServiceAccessPolicy` instances active.
+
+Liferay's Service Access Policy module resides in the `modules/apps/service-access-policy` folder in the source code. When running, these three bundles provide the service access policy functionality (they're in the `[Liferay Home]/osgi/modules` folder):
+
+- `com.liferay.service.access.policy.api.jar`
+- `com.liferay.service.access.policy.service.jar`
+- `com.liferay.service.access.policy.web.jar`
+
+These modules provide the service access policy management UI that's accessible from the Control Panel. They also provide the interface and default implementation for `ServiceAccessPolicy`.
+
+To configure the Service Access Policy module, navigate to the Control Panel, click on *System Settings*, and find the *Service Access Policies* module in the Security section. Click on its name to edit it. Here, you can edit the default service access policy configuration. You can also force a default policy to be applied even when no policies are applied by the `AuthVerifier`.
+
+There's also an `AuthenticatedAccessControlPolicy`. This policy doesn't do anything if a `ServiceAccessPolicyManager` implementation is present. If the service access policy module is disabled, however, the `AuthenticatedAccessControlPolicy` provides a fallback that still requires authenticated access for web services.
+
+## Summary
+
+Great! Now you know service access policies can restrict access to @product@'s web services. Custom service access policies can be created by portal administrators. They are applied by the portal's token authenticator, e.g., by OAuth.
+
+## Related Topics
+
+[Creating Service Access Policies](../../platform/service-access-policies.md) 
