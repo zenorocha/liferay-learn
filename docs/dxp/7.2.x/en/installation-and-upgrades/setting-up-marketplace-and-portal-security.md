@@ -2,7 +2,7 @@
 header-id: setting-up-marketplace-and-portal-security
 ---
 
-# Setting Up Marketplace
+# Setting Up Marketplace and Portal Security
 
 [TOC levels=1-4]
 

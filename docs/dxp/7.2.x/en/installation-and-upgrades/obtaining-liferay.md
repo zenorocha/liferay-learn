@@ -52,6 +52,6 @@ Manual installation requires installing the DXP 7.2 WAR and dependency JARs onto
 
 ## Next Steps
 
-* [Optimizing the Application Server]
-* [Preparing the Database]
-* [Installing and Configuring the Bundle]
+* [Optimizing the Application Server](./optimizing-the-application-server.md)
+* [Preparing the Database](./preparing-the-database.md)
+* [Installing and Configuring the Bundle](./installing-and-configuring-the-bundle.md)
