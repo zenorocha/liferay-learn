@@ -1,10 +1,18 @@
 # Upgrading the Core Using the Upgrade Tool
 
-The upgrade tool provides the easiest way to upgrade the core and installed modules. This article describes how to use it.
+This article provides an overview of how to use the upgrade tool within your application server.
 
 ## Upgrade Tool Usage
 
-The `db_upgrade.sh` script in the  `[Liferay Home]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade.bat` on Windows) invokes the upgrade tool.
+Start the upgrade tool using the `db_upgrade.sh` script in the `[Liferay Home]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade.bat` on Windows). Here are the core upgrade stages:
+
+1. Show the upgrade patch level
+
+2. Execute the core upgrade processes
+
+3. Execute the core verifiers
+
+If you configured the upgrade tool to upgrade non-core modules, the tool opens a Gogo shell and starts upgrading them after the core upgrade processes are complete. The Gogo shell lets you upgrade modules, check module upgrade status, verify upgrades, and restart module upgrades. See [Upgrading Modules Using Gogo Shell](./05-upgrading-modules-using-gogo-shell.md) for more information.
 
 This command prints the upgrade tool usage: 
 
@@ -22,6 +30,8 @@ JVM memory to 10GB, which is a good starting point for this process type:
 The `-l` option specifies the tool's log file name: 
 
     db_upgrade.sh -l "output.log"
+
+### Upgrade Tool Options
 
 Here are all the upgrade tool command line options:
 
@@ -42,24 +52,7 @@ Only execute the upgrade process on a server with ideal memory, CPU, and databas
  
 - If you're executing the upgrade using `ssh`, ignore hangups (connection loss) by using `nohup` or something similar. 
 - On the machine you're connecting from, disable settings that shutdown or put the machine into sleep mode. 
-
-The upgrade process continues on the server even if you lose connection to it. If you lose connection, reconnect and monitor upgrade status via the log (default log file is `upgrade.log`). If you're using an earlier version of Liferay DXP and upgrade execution is interrupted, check your log file for where execution stopped. 
-
-- If execution stopped during an upgrade process for DXP 7.1 or higher, restart the upgrade tool to continue the upgrade from that point. You can also use Gogo shell to [check module upgrade status](./05-upgrading-modules-using-gogo-shell#checking-upgrade-status) and continue non-core module upgrades, as long as the core upgrade processes have completed.
+- If execution stopped during an upgrade process for DXP 7.1 or higher, restart the upgrade tool to continue the upgrade from that point. You can also use Gogo shell to [check module upgrade status](./05-upgrading-modules-using-gogo-shell.md#checking-upgrade-status) and continue non-core module upgrades, as long as the core upgrade processes have completed.
 - If execution stopped during a core upgrade process for DXP 7.0 or lower, you must [restore the data from a backup](/docs/7-2/deploy/-/knowledge_base/d/backing-up-a-liferay-installation) and start the upgrade again. 
 
 **Warning:** To prevent the tool's expanded command from growing too large for Windows, execute the upgrade tool script from the `[Liferay Home]/tools/portal-tools-db-upgrade-client` folder.
-
-## Running and Managing the Core Upgrade
-
-Start the upgrade tool using the `db_upgrade.sh` command as explained above. Here are the core upgrade stages:
-
-1. Show the upgrade patch level
-
-2. Execute the core upgrade processes
-
-3. Execute the core verifiers
-
-Monitor the upgrade via the upgrade tool log file (default file is `upgrade.log`). If a core upgrade process fails, analyze the failure and resolve it before attempting the upgrade again. If a core upgrade step for DXP 7.1 (or newer) fails, executing the upgrade tool again starts it from that step without having to restore from a backup. 
-
-If you configured the upgrade tool to upgrade non-core modules, the tool opens a Gogo shell and starts upgrading them after the core upgrade processes are complete. The Gogo shell lets you upgrade modules, check module upgrade status, verify upgrades, and restart module upgrades. See [Upgrading Modules Using Gogo Shell](./05-upgrading-modules-using-gogo-shell) for more information.
