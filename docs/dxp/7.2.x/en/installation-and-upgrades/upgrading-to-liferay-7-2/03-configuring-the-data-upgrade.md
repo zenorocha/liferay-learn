@@ -21,9 +21,35 @@ You can also prevent the upgrade tool from automatically running the module upgr
 
 **Note:** Configuring the core upgrade at run-time with the upgrade tool will not provide an option to disable automatically running module upgrades. If you want to manually upgrade modules with the Gogo shell, then this must be configured prior to running the upgrade tool.
 
+## Configuring with the Upgrade Tool
+
+The core upgrade requires configuration to begin. The simplest option is to let the upgrade tool automatically create your configuration files at run-time instead of creating the files yourself. Here's an example interaction with the upgrade tool's command line interface:
+
+    Please enter your application server (tomcat): 
+    tomcat
+
+    Please enter your application server directory (../../tomcat-8.0.32): 
+
+    Please enter your extra library directories (../../tomcat-8.0.32/bin): 
+
+    Please enter your global library directory (../../tomcat-8.0.32/lib): 
+
+    Please enter your portal directory (../../tomcat-8.0.32/webapps/ROOT): 
+
+    [ db2 mariadb mysql oracle postgresql sqlserver sybase ]
+    Please enter your database (mysql): 
+    mariadb
+
+    Please enter your database host (localhost):
+
+    (etc.)
+
+> Note that the omitted values are using the defaults displayed in the prompt in parentheses.
+
+
 ## Manually Configuring the Core Upgrade
 
-The core upgrade requires configuration to begin. You can configure it at runtime via the command line interface or pre-configure it in these files in `[Liferay Home]/tools/portal-tools-db-upgrade-client/`:
+You can also pre-configure the upgrade tool to configure more values than the tool would automatically create. To manually configure the core upgrade, use these files in `[Liferay Home]/tools/portal-tools-db-upgrade-client/`:
 
 - `app-server.properties`: This specifies the server's location and libraries.
 - `portal-upgrade-database.properties`: This configures the database connection.
@@ -132,28 +158,3 @@ Here are example upgrade configuration files that you can customize and copy int
     module.framework.base.dir=/home/user/servers/liferay7/osgi
     dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
     ```
-
-## Configuring with the Upgrade Tool
-
-You can also let the upgrade tool automatically create your configuration files at run-time instead of creating the files yourself. Here's an example interaction with the upgrade tool's command line interface:
-
-    Please enter your application server (tomcat): 
-    tomcat
-
-    Please enter your application server directory (../../tomcat-8.0.32): 
-
-    Please enter your extra library directories (../../tomcat-8.0.32/bin): 
-
-    Please enter your global library directory (../../tomcat-8.0.32/lib): 
-
-    Please enter your portal directory (../../tomcat-8.0.32/webapps/ROOT): 
-
-    [ db2 mariadb mysql oracle postgresql sqlserver sybase ]
-    Please enter your database (mysql): 
-    mariadb
-
-    Please enter your database host (localhost):
-
-    (etc.)
-
-> Note that the omitted values are using the defaults displayed in the prompt in parentheses.
