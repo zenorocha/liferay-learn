@@ -2,13 +2,13 @@
 
 Upgrading impacts the database differently from daily running in production. Because of this, you should tune your database for the upgrade process before you run it, and then re-apply your production settings after the upgrade completes. 
 
-- Search indices are not needed for the upgrade itself, so reindexing will only slow the upgrade down. In extreme cases, this may cause performance issues that dramatically increase the upgrade time. Disable reindexing for the data upgrade, then re-enable it after the upgrade is complete.
+- Disable reindexing for the data upgrade, then re-enable it after the upgrade is complete. Search indices are not needed for the upgrade itself, so reindexing will only slow the upgrade down. In extreme cases, this may cause performance issues that dramatically increase the upgrade time.
 
-- Data upgrades execute many more update statements (`INSERT`, `UPDATE`, and `DELETE`) and less `SELECT` statements than production instances. When upgrading, tune your database for executing updates. 
+- When upgrading, tune your database for executing updates. Data upgrades execute many more update statements (`INSERT`, `UPDATE`, and `DELETE`) and less `SELECT` statements than production instances.
 
 - Data upgrades should be done in safe environments completely separate from production servers and should use database backup copies. If upgrade errors occur or you make mistakes, they don't impact production, and you can always restart using your database backup copy.
 
-- Transaction logging is not helpful during the upgrade, and will only slow down upgrade performance. Disable transaction logging during the data upgrade, and re-enable it after the upgrade is complete.
+- Disable transaction logging during the data upgrade, and re-enable it after the upgrade is complete. Transaction logging is not helpful during the upgrade, and will only slow down upgrade performance.
 
 **Note:** The tips given here worked well in test runs on specific versions of each database. Optimal tuning depends on your own data, infrastructure conditions, and database vendor. Analyze your data, tune for upgrade, and time your test upgrades to determine the best database and Java process configuration for your Liferay DXP data upgrade.
 
@@ -19,7 +19,6 @@ Upgrading impacts the database differently from daily running in production. Bec
 1. [Disable indexing](#disable-indexing)
 1. [Tuning the Database Upgrade Java Process](#tuning-the-database-upgrade-java-process)
 1. [Tuning the Database Transaction Engine for Executing Updates](#tuning-the-database-transaction-engine-for-executing-updates)
-1. [Tuning the Database Transaction Log](#tuning-the-database-transaction-log)
 1. [Extra Tuning Configurations](#extra-tuning-configurations)
 
 
@@ -37,11 +36,13 @@ After you complete the upgrade, re-enable indexing by removing the `.config` fil
 
 ## Tuning the Database Upgrade Java Process
 
-Make sure to provide adequate memory for the database upgrade tool's Java process. 15GB was appropriate for the test scenario. Make sure to also set the file encoding to UTF-8 and the time zone to GMT. Here are the Java process settings:
+Make sure to provide adequate memory for the database upgrade tool's Java process. Make sure to also set the file encoding to UTF-8 and the time zone to GMT. Here are the Java process settings:
 
--   Xmx 15 GB RAM 
--   File encoding UTF-8 
--   User time zone GMT
+Using a test scenario with a 3.2 GB database and a 15 GB Document Library, the following Java process settings were optimal:
+
+- Xmx 15 GB RAM 
+- File encoding UTF-8 
+- User time zone GMT
 
 Here is the `db_upgrade.sh` command corresponding to these settings:
 
@@ -53,21 +54,37 @@ db_upgrade.sh -j "-Xmx15000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
 
 Many more update statements are executed during data upgrade than in production. Consult your database vendor's official documentation for more help on tuning your database for this purpose. Listed below are some optimizations you can make for each database.
 
+## Extra Tuning Configurations
+
+You can make even more optimizations to further improve your upgrade performance. The steps used to optimize your upgrade further are database-specific, and may vary depending on your data set.
+
+The data upgrade tuning instructions given here are a starting point for tuning your Liferay DXP data upgrade. They account for data upgrade activities and a safe data upgrade environment: 
+
+- Deactivate data integrity measures that impact performance. Restore to a backup if failures occur.
+
+- Disable or minimize transaction logging, because it is insignificant for data upgrades.
+
+- Make commit-related transaction I/O operations asynchronous.
+
+- Increase the interval to flush commits to disk.
+
+**Warning:** Some database properties and configurations are global and affect schemas in the same database. 
+
 ### IBM DB2 
 
 Please consult [IBM's official DB2 documentation](https://www.ibm.com/support/pages/db2-database-product-documentation-4). 
 
 ### MariaDB
 
-In addition to the default database configuration, turn off InnoDB double-write.
-
+Turn off InnoDB double-write, and set the InnoDB flush log at transaction commit to `0`. 
+ 
 ### Microsoft SQL Server 
 
-In addition to the default database configuration, set [transaction durability](https://docs.microsoft.com/en-us/sql/relational-databases/logs/control-transaction-durability) to `FORCED`. 
+Set [transaction durability](https://docs.microsoft.com/en-us/sql/relational-databases/logs/control-transaction-durability) to `FORCED`. 
 
 ### MySQL 
 
-In addition to the default database configuration, turn off [InnoDB double-write](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite). 
+Turn off [InnoDB double-write](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite), and set the [InnoDB flush log at transaction commit](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) to `0`. 
 
 ### Oracle Database 
 
@@ -75,44 +92,4 @@ The default configuration works well. It configures [asynchronous I/O to disk](h
 
 ### PostgreSQL 
 
-In addition to the default database configuration, turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-commit.html). 
-
-## Tuning the Database Transaction Log
-
-In production, transaction logs mark safe states to roll back to. For data upgrades, however, the safe state is the original data backup. Since transaction logging is insignificant for data upgrades, it should be disabled or minimized. Listed below are log tuning instructions for each database. 
-
-### IBM DB2 
-
-Please consult [IBM's official DB2 documentation](https://www.ibm.com/support/pages/db2-database-product-documentation-4).
-
-### MariaDB
-
-In addition to the default database configuration, set the InnoDB flush log at transaction commit to `0`. 
-
-### Microsoft SQL Server 
-
-Use the default database configuration. 
-
-### MySQL 
-
-In addition to the default database configuration, set the [InnoDB flush log at transaction commit](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) to `0`. 
-
-### Oracle Database 
-
-Use the default database configuration. 
-
-### PostgreSQL 
-
-In addition to the default database configuration, Set the [write ahead log writer delay](https://www.postgresql.org/docs/10/wal-async-commit.html) to `1000` milliseconds. 
-
-## Extra Tuning Configurations
-
-You can make even more optimizations to further improve your upgrade performance. The data upgrade tuning instructions given here are a starting point for tuning your Liferay DXP data upgrade. They account for data upgrade activities and a safe data upgrade environment: 
-
-- Deactivate data integrity measures that impact performance. Restore to a backup if failures occur. 
-
-- Make commit-related transaction I/O operations asynchronous.
-
-- Increase the interval to flush commits to disk.
-
-**Warning:** Some database properties and configurations are global and affect schemas in the same database. 
+Turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-commit.html). Additionally, set the [write ahead log writer delay](https://www.postgresql.org/docs/10/wal-async-commit.html) to `1000` milliseconds.
