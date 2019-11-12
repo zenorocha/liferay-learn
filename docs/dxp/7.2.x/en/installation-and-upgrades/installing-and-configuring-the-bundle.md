@@ -1,10 +1,4 @@
----
-header-id: installing-product
----
-
 # Installing and Configuring a Bundle
-
-[TOC levels=1-4]
 
 Now that the [application server is optimized](./optimizing-the-application-server.md) and the [database server is ready](./preparing-the-database.md), Liferay DXP 7.2 is ready for installation and deployment. There are three simple steps:
 

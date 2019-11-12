@@ -1,10 +1,4 @@
----
-header-id: setting-up-marketplace-and-portal-security
----
-
 # Setting Up Marketplace and Portal Security
-
-[TOC levels=1-4]
 
 [Liferay Marketplace](https://www.liferay.com/marketplace) is more than just a store for Liferay applications. Under the hood, it provides both the store and DXP 7.2's application deployment features. For this reason, ensure that Marketplace can run and configure itself.
 

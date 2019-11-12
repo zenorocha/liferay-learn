@@ -1,10 +1,4 @@
----
-header-id: obtaining-product
----
-
 # Obtaining DXP 7.2
-
-[TOC levels=1-4]
 
 Before you begin, you should answer a few questions.
 
