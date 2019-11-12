@@ -1,10 +1,4 @@
----
-header-id: installing-liferay-dxp-on-websphere
----
-
 # Installing DXP 7.2 on WebSphere
-
-[TOC levels=1-4]
 
 IBM &reg; WebSphere &reg; is a trademark of International Business Machines Corporation, registered in many jurisdictions worldwide.
 
@@ -92,7 +86,7 @@ In `[Install Location]/WebSphere/AppServer/profiles/your-profile/config/cells/yo
 If this tag is not removed, an error similar to this may occur:
 
 ```log
-WSVR0501E: Error creating component com.ibm.ws.runtime.component.CompositionUnitMgrImpl@d74fa901    
+WSVR0501E: Error creating component com.ibm.ws.runtime.component.CompositionUnitMgrImpl@d74fa901
 com.ibm.ws.exception.RuntimeWarning: com.ibm.ws.webcontainer.exception.WebAppNotLoadedException: Failed to load webapp: Failed to load webapp: SRVE8111E: The application, LiferayEAR, is trying to modify a cookie which matches a pattern in the restricted programmatic session cookies list [domain=*, name=JSESSIONID, path=/].
 ```
 
@@ -122,7 +116,7 @@ Before starting the server, verify that all the following jars have been copied 
 1. `com.liferay.petra.nio.jar`
 1. `com.liferay.petra.process.jar`
 1. `com.liferay.petra.reflect.jar`
-1. `com.liferay.petra.string.jar`  
+1. `com.liferay.petra.string.jar`
 1. `com.liferay.registry.api.jar`
 1. `hsql.jar`
 1. A JDBC database jar (e.g. MySQL, MariaDB, IBM DB2, Postgres for production)
@@ -141,7 +135,7 @@ The following folders should be present within the `/liferay/osgi` folder:
 In addition to placing the `portlet.jar` in the correct folder, configure the `config.ini` file so that it is loaded first. Navigate to `/IBM/WebSphere/AppServer/configuration/config.ini`.
 
 1. Find the property `com.ibm.CORBA,com.ibm`
-1. Insert the property 
+1. Insert the property
     `javax.portlet,javax.portlet.filter,javax.portlet.annotations`
     after `com.ibm.CORBA` and before `com.ibm`.
 1. Save the file.
@@ -173,7 +167,7 @@ If using WebSphere to manage the database connections, follow the instructions b
     ![Figure 4: Completed JDBC provider configurations.](./installing-liferay-on-websphere/images/04.png)
 
 1. Click the new provider configuration when it appears in the table.
-1. Click *Data Sources* under *Additional Properties*. 
+1. Click *Data Sources* under *Additional Properties*.
 1. Click *New*.
 1. Enter *liferaydatabasesource* in the *Data source name* field and `jdbc/LiferayPool` in the *JNDI name* field. Click *Next*.
 1. Click *Next* in the remaining screens of the wizard to accept the default values. Then review all the changes and click *Finish*.
@@ -339,7 +333,7 @@ Now restart the application server.
 1. In DXP 7.2's setup wizard, select and configure the database type. Click *Finish*. DXP 7.2 then creates the tables it needs in the database.
 
 After deploying DXP 7.2, there may be excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust the app server's logging level or log filters to avoid excessive benign log messages.
- 
+
 ```log
 |     May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
 |     WARNING: Skipping pass gatherExternProperties
