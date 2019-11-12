@@ -12,11 +12,13 @@ This article will give an overview of the steps necessary to upgrade to Liferay 
 1. [Performing the Database Upgrade](#performing-the-database-upgrade)
 1. [Executing Post-Upgrade Tasks](#executing-post-upgrade-tasks)
 
-## Planning for Deprecated Features
+## Planning for the Upgrade
 
-The first step involves learning what the ramifications of each deprecation are, and developing a plan to adjust for them.
+The first step involves learning the ramifications of each change or deprecation, and developing a plan to adjust for them.
 
-See [Handling Deprecations in Liferay DXP 7.2](./98-handling-deprecations-in-liferay-dxp-7-2.md) for more information on handling the deprecations for DXP 7.2.
+See [Handling Deprecations in Liferay DXP 7.2](./98-handling-deprecations-in-liferay-dxp-7-2.md) for more information on handling the deprecations for DXP 7.2. These include removed features, deprecated (but still present) features, and features moved into maintenance mode.
+
+If you do not already have your own Elasticsearch installation running, then you will also need to set one up for Liferay DXP. By default, Liferay DXP ships with an embedded configuration for Elasticsearch. The embedded configuration works great for demo purposes, but is not supported in production. See [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch) for more information.
 
 ## Upgrading Custom Code and Plugins
 
@@ -34,7 +36,7 @@ The database upgrade itself will take a varying amount of time, and it can take 
 
 You must prepare an application server with your portal properties, OSGi properties, and any necessary patches before beginning your upgrade. See [Preparing a New Liferay Server for Data Upgrade](./05-preparing-a-new-application-server-for-liferay-dxp.md) for more information on setting up the application server and migrating properties to them.
 
-It may also be necessary to make several tuning changes to your application server to ensure no performance issues arise during the upgrade. This is increasingly important the larger your data set is in your instance of Liferay DXP. See [Tuning for the Data Upgrade](./02-tuning-for-the-data-upgrade.md) for more information.
+It may also be necessary to make several tuning changes to your application server to ensure no performance issues arise during the upgrade. This is an important step if you have a large data set in your instance of Liferay DXP. See [Tuning for the Data Upgrade](./02-tuning-for-the-data-upgrade.md) for more information.
 
 ## Testing the Upgrade with a Backup
 
