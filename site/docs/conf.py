@@ -55,6 +55,7 @@ class RelativePathParentsHTMLBuilder(StandaloneHTMLBuilder):
 
 			docname = readme
 
+		parents.reverse() 
 		return parents
 
 def setup(app):

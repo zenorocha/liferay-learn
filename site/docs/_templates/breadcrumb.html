@@ -4,7 +4,7 @@
     </li>
     {%- for doc in parents %}
         <li>
-            <a href="{{ doc.link|e }}">{{ doc.title }}</a>
+            <a class="breadcrumb-parent" href="{{ doc.link|e }}">{{ doc.title }}</a>
         </li>
     {%- endfor %}
     <li>{{ title }}</li>
