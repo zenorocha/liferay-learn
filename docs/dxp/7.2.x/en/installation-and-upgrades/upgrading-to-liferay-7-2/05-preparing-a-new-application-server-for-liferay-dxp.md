@@ -8,6 +8,8 @@ To upgrade your Liferay DXP database, prepare a new application server for hosti
 
 Get the latest fixes for Liferay DXP by requesting an upgrade patch. An *upgrade patch* contains the latest fix pack and hot fixes planned for the next service pack. Upgrade patches provide the latest fixes available for your data upgrade.
 
+> This applies only to Liferay Support subscribers.
+
 ## Install Liferay DXP 7.2
 
 [Install DXP 7.2 on your application server](/docs/7-2/deploy/-/knowledge_base/d/deploying-product) or [use DXP 7.2 bundled with your application server of choice](/docs/7-2/deploy/-/knowledge_base/d/installing-product). 
@@ -22,20 +24,20 @@ Install the upgrade patch (if you requested it from Liferay Support) or the [lat
 
 Copy any [OSGi configuration files](/docs/7-2/user/-/knowledge_base/u/understanding-system-configuration-files) (i.e., `.config` files) to your new application server's `[Liferay Home]/osgi/configs` folder. 
 
-## Migrate Your Portal Properties 
+## Update Your Portal Properties 
 
-It is likely that you have overridden portal properties to customize your installation. If so, you must update the properties files (e.g., `portal-setup-wizard.properties` and `portal-ext.properties`) to DXP 7.2.
+You must update any portal properties files that you may have configured for DXP 7.2 (e.g., `portal-setup-wizard.properties` and `portal-ext.properties`).
 
-For features that use OSGi Config Admin in DXP 7.2, you must convert your properties to OSGi configurations. As you do this, you must account for property changes in all versions of Liferay DXP since your current version up to and including 7.2.
+For features that use OSGi Config Admin in DXP 7.2, you must [convert your properties to OSGi configurations](#convert-applicable-properties-to-osgi-configurations). As you do this, you must account for property changes in all versions of Liferay DXP since your current version up to and including 7.2.
 
-### Update Your Portal Properties 
+### Migrating Existing Portal Properties 
 
 If you're coming from a version prior to Liferay Portal 6.2, start with these
 property-related updates:
 
 - If you're on Liferay Portal 6.1, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](/docs/6-2/deploy/-/knowledge_base/d/upgrading-liferay#review-the-liferay-6). 
 
-- If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](/docs/7-2/deploy/-/knowledge_base/d/upgrading-a-sharded-environment).
+- If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](./08-upgrading-a-sharded-environment.md).
 
 - Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (new in 7.2) value with the following setting in your [`portal-ext.properties`](/docs/7-2/deploy/-/knowledge_base/d/portal-properties) file: 
 
@@ -45,34 +47,33 @@ property-related updates:
 
 **Note:** You can build image sprites using any framework you like and deploy them in your plugins. 
 
+### Changes to Default Settings
+
 As with most new versions of Liferay DXP, 7.2 includes changes to the default settings. If you rely on the defaults from your old version, you should review the changes and decide to keep the defaults from your old version or accept the defaults of the new.
 
-No existing properties have changed between versions 7.1 and 7.2. However, here is a list of changed properties that have existed since version 6.2 with their new default values: 
+No existing properties have changed between versions 7.1 and 7.2. However, here are some properties that have changed since version 6.2: 
 
-```properties
-users.image.check.token=false
-organizations.types=regular-organization,location
-organizations.rootable[regular-organization]=true
-organizations.children.types[regular-organization]=regular-organization,location
-organizations.country.enabled[regular-organization]=false
-organizations.country.required[regular-organization]=false
-organizations.rootable[location]=false
-organizations.country.enabled[location]=true
-organizations.country.required[location]=true
-layout.set.prototype.propagate.logo=true
-editor.wysiwyg.portal-web.docroot.html.taglib.ui.discussion.jsp=simple
-web.server.servlet.check.image.gallery=true
-blogs.trackback.enabled=true
-discussion.comments.format=bbcode
-discussion.max.comments=0
-dl.file.entry.thumbnail.max.height=128
-dl.file.entry.thumbnail.max.width=128
-```
+| **Portal Property** | **Old Default** | **Default in DXP 7.2** |
+| --- | --- | --- |
+| blogs.trackback.enabled | true | false |
+| dl.file.entry.thumbnail.max.height | 128 | 300 |
+| dl.file.entry.thumbnail.max.width | 128 | 300 |
+| layout.set.prototype.propagate.logo | true | false |
+| web.server.servlet.check.image.gallery | true | false |
 
-This property has also been removed:
+The following properties have also been removed:
 
 ```properties
 organizations.children.types[location]
+organizations.children.types[regular-organization]
+organizations.country.enabled[location]
+organizations.country.enabled[regular-organization]
+organizations.country.required[location]
+organizations.country.required[regular-organization]
+organizations.rootable[location]
+organizations.rootable[regular-organization]
+organizations.types
+users.image.check.token
 ```
 
 The latest [portal properties reference](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html) provides property details and examples. Some properties are now replaced by OSGi configurations. 
@@ -80,6 +81,24 @@ The latest [portal properties reference](@platform-ref@/7.2-latest/propertiesdoc
 ### Convert Applicable Properties to OSGi Configurations 
 
 Properties in modularized features have changed and must now be deployed separately in [OSGi configuration files](/docs/7-2/user/-/knowledge_base/u/system-settings#exporting-and-importing-configurations) (OSGi Config Admin).
+
+For example, use these steps to create a `.config` file specifying a root file location for a Simple File Store or Advanced File Store:
+ 
+    1. Create a `.config` file named after your store implementation class.
+
+    Simple File Store: 
+    `com.liferay.portal.store.file.system.configuration.FileSystemStoreConfiguration.config`
+
+    Advanced File Store:
+    `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config`
+ 
+    1. Set the following `rootDir` property and replace `{document_library_path}` with  your file store's path.
+
+    ```properties
+    rootDir="{document_library_path}"
+    ```
+
+    1. Copy the `.config` file to your `[Liferay Home]/osgi/configs` folder.
 
 Use the [`blade upgradeProps`](/docs/7-2/reference/-/knowledge_base/r/blade-cli) command to scan your `portal-ext.properties` file to discover which properties are now set via OSGi Config Admin. You can also check the upgrade log from previous attempts for traces like these:
 
@@ -98,7 +117,7 @@ Install the recommended database driver and update your database connection driv
 
 General document store configuration (e.g., `dl.store.impl=[File Store Impl Class]`) continues to be done using `portal-ext.properties`. But here's what's changed for document storage:
 
-- Store implementation class package names changed from `com.liferay.portlet.documentlibrary.store.*` in Liferay Portal 6.2 to `com.liferay.portal.store.*` in @product@ 7.0+. Make sure your `portal-ext.properties` file sets `dl.store.impl` in one of these ways:
+- Store implementation class package names changed from `com.liferay.portlet.documentlibrary.store.*` in Liferay Portal 6.2 to `com.liferay.portal.store.*` in DXP 7.0+. Make sure your `portal-ext.properties` file sets `dl.store.impl` in one of these ways:
 
     ```properties
     dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
@@ -111,25 +130,7 @@ General document store configuration (e.g., `dl.store.impl=[File Store Impl Clas
 
 - CMIS Store was deprecated in 7.0.10 Fix Pack 14 and was removed in DXP 7.2. The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) documentation describes other store options. [Migrate to a supported document store](/docs/7-2/user/-/knowledge_base/u/server-administration) before upgrading your data. 
 
-- Since DXP 7.0, document store type-specific configuration (e.g., specific to Simple File Store, Advanced File Store, S3, etc.) is done in the Control Panel at _Configuration_ → _System Settings_ → File Storage_, or using OSGi configuration files (`.config` files). Type specific configuration is no longer done using `portal-ext.properties`. 
-
-    For example, use these steps to create a `.config` file specifying a root file location for a Simple File Store or Advanced File Store:
- 
-    1. Create a `.config` file named after your store implementation class.
-
-    Simple File Store: 
-    `com.liferay.portal.store.file.system.configuration.FileSystemStoreConfiguration.config`
-
-    Advanced File Store:
-    `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config`
- 
-    1. Set the following `rootDir` property and replace `{document_library_path}` with  your file store's path.
-
-    ```properties
-    rootDir="{document_library_path}"
-    ```
-
-    1. Copy the `.config` file to your `[Liferay Home]/osgi/configs` folder.
+- Since DXP 7.0, document store type-specific configuration (e.g., specific to Simple File Store, Advanced File Store, S3, etc.) is done in the Control Panel at _Configuration_ → _System Settings_ → _File Storage_, or using OSGi configuration files (`.config` files). Type specific configuration is no longer done using `portal-ext.properties`. 
 
 The [Document Repository Configuration](/docs/7-2/deploy/-/knowledge_base/d/document-repository-configuration) provides more document store configuration details. 
 
