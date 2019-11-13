@@ -4,7 +4,7 @@ This article will walk you through the steps to deploy a sample module similarly
 
 1. [Prerequisites](#prerequisites)
 1. [Add the Sample to the Repository](#add-the-sample-to-the-repository)
-1. [Deploy the Sample to the `dev` Environment](#deploy-the-sample-to-the-dev-environment)
+1. [Deploy the Sample to the Development Environment](#deploy-the-sample-to-the-development-environment)
 1. [Verify the Sample Deployment](#verify-the-sample-deployment)
 
 ## Prerequisites
@@ -34,7 +34,7 @@ cp path-to-module/my-module my-repository-path/lcp/liferay/deploy/dev
 
 > **Note:** this tutorial will assume your development environment is named `dev`, by default. If your development environment is named differently, substitute `dev` with the correct name.
 
-## Deploy the Sample to the `dev` Environment
+## Deploy the Sample to the Development Environment
 
 Deployment to DXP Cloud normally consists of pushing the changes in Git, the GitHub webhook triggering a build with the DXP Cloud CI service, and finally deploying the successful build. However, you can also skip pushing your changes to GitHub by using the CLI if desired.
 
@@ -68,7 +68,7 @@ Once you have sent the pull request to the upstream repository, the CI service w
 
 > You may view triggered builds in the Jenkins [CI service]() by visiting `https://ci-<project>-<environment>.lfr.cloud`.
 
-### Deploy the Build to `dev` from the DXP Cloud Management Console
+### Deploy the Build to the Development Environment from the DXP Cloud Management Console
 
 Navigate to the DXP Cloud Management Console, and then go to the `Builds` tab for the desired environment. The option to deploy the build will appear when the build completes successfully; click the three dots to the right side of the build to see the option.
 
