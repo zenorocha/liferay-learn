@@ -10,4 +10,3 @@ Getting Started
    getting-started/logging-into-your-dxp-cloud-services.md
    getting-started/overview-of-the-dxp-cloud-deployment-workflow.md
    getting-started/understanding-dxp-cloud-environments.md
-   build-and-deploy/walking-through-the-deployment-life-cycle.md
