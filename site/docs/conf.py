@@ -31,7 +31,9 @@ version = "1.0"
 class RelativePathParentsHTMLBuilder(StandaloneHTMLBuilder):
 	def get_doc_context(self, docname, body, metatags):
 		doc_context = super().get_doc_context(docname, body, metatags)
+
 		doc_context['parents'] = self._get_parents(self.env.titles, docname)
+
 		return doc_context
 
 	def _get_parents(self, titles, docname):
@@ -55,7 +57,8 @@ class RelativePathParentsHTMLBuilder(StandaloneHTMLBuilder):
 
 			docname = readme
 
-		parents.reverse() 
+		parents.reverse()
+
 		return parents
 
 def setup(app):
