@@ -33,27 +33,29 @@
         </div>
 
         <div class="col-md-2 offset-md-2">
-            <div class="search-filters">
-                <h3>
-                    {% trans %}Search{% endtrans %}
-                </h3>
+            <div class="search-filter-container">
+                <div class="search-filters">
+                    <h3>
+                        {% trans %}Search{% endtrans %}
+                    </h3>
 
-                {% include "searchbox.html" %}
-            </div>
+                    {% include "searchbox.html" %}
+                </div>
 
-            <div class="search-filters">
-                <h4>{% trans %}Product{% endtrans %}</h4>
+                <div class="search-filters">
+                    <h4>{% trans %}Product{% endtrans %}</h4>
 
-                <div class="filter-input-container">
-                    <label>
-                        <input class="filter-input" name="productName" type="radio" value="dxp-cloud">
-                        <span class="filter-input-label">{% trans %}DXP Cloud{% endtrans %}</span>
-                    </label>
+                    <div class="filter-input-container">
+                        <label>
+                            <input class="filter-input" name="productName" type="radio" value="dxp-cloud">
+                            <span class="filter-input-label">{% trans %}DXP Cloud{% endtrans %}</span>
+                        </label>
 
-                    <label>
-                        <input class="filter-input" name="productName" type="radio" value="commerce">
-                        <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
-                    </label>
+                        <label>
+                            <input class="filter-input" name="productName" type="radio" value="commerce">
+                            <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

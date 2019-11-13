@@ -6,7 +6,8 @@
         <div class="col-md-2">
             <div class="doc-nav-wrapper">
                 <div class="info-bar">
-                    <select class="form-control" id="productDocumentationSelector" name="product-documentation-selector">
+                    <select class="form-control" id="productDocumentationSelector"
+                        name="product-documentation-selector">
                         <option value="liferay-commerce">
                             {% trans %}Commerce{% endtrans %}
                         </option>
@@ -143,6 +144,34 @@
         const currentDocProduct = breadcrumbAncestor.innerText.replace(/\s/g, '-').toLowerCase();
 
         productDocumentationSelector.value = currentDocProduct;
+    }
+
+    // Left nav interaction
+
+    // Redirect to first article under a section if a user clicks on the section heading
+
+    const activeNavL1 = document.querySelector('.toctree-l1.current');
+
+    if (activeNavL1) {
+        const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
+
+        if (activeNavL2List) {
+            let level2Active = false;
+
+            activeNavL2List.forEach(node => {
+                if (node.classList.contains('current')) {
+                    level2Active = true;
+                }
+            });
+
+            if (!level2Active) {
+                const activeNavL2FirstChildAnchor = activeNavL2List.item(0).children[0];
+
+                if (activeNavL2FirstChildAnchor) {
+                    window.location.href = activeNavL2FirstChildAnchor.href;
+                }
+            }
+        }
     }
 </script>
 {% endblock %}
