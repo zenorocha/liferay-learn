@@ -33,7 +33,7 @@ if (!Scorer) {
 			1: 5, // used to be objectResults
 			2: -5 // used to be unimportantResults
 		},
-		//  Used when the priority is not in the mapping.
+		//  Used when the priority is not in the mappingpace
 		objPrioDefault: 0,
 
 		// query found in title
@@ -350,7 +350,7 @@ var Search = {
 				if (!resultCount) {
 					$('#noResultsMessage').text(
 						_(
-							`Sorry! We searched far into ourter space, but couldn't find "${query}".`
+							`Sorry! We searched far into outer space, but couldn't find "${query}".`
 						)
 					);
 					document.querySelector('.no-results').classList.add('show');
