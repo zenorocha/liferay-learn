@@ -96,8 +96,15 @@
 	}
 
 	.info-bar {
+		align-items: center;
 		border-bottom: 1px solid $hr-color;
+		display: flex;
 		height: $info-bar-height;
+
+		select {
+			margin-left: $spacing-sm;
+			width: 80%;
+		}
 	}
 
 	.general-info {

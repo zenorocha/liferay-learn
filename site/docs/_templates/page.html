@@ -6,7 +6,14 @@
         <div class="col-md-2">
             <div class="doc-nav-wrapper">
                 <div class="info-bar">
-
+                    <select class="form-control" id="productDocumentationSelector" name="product-documentation-selector">
+                        <option value="liferay-commerce">
+                            {% trans %}Commerce{% endtrans %}
+                        </option>
+                        <option value="liferay-dxp-cloud">
+                            {% trans %}DXP Cloud{% endtrans %}
+                        </option>
+                    </select>
                 </div>
 
                 <div class="doc-nav">
@@ -49,6 +56,8 @@
 </div>
 
 <script>
+    // Table of contents reading indicator
+
     const headings = document.querySelectorAll('.article-body h2');
 
     let activeIndex;
@@ -124,5 +133,16 @@
             node.style.cssText = "margin-top: -157px; padding-top: 157px;"
         }
     });
+
+    // Preselect documentation dropdwon to be the current article's Product
+
+    const breadcrumbAncestor = document.querySelectorAll('.breadcrumb-parent')[0];
+    const productDocumentationSelector = document.getElementById('productDocumentationSelector');
+
+    if (breadcrumbAncestor && productDocumentationSelector) {
+        const currentDocProduct = breadcrumbAncestor.innerText.replace(/\s/g, '-').toLowerCase();
+
+        productDocumentationSelector.value = currentDocProduct;
+    }
 </script>
 {% endblock %}

@@ -8141,8 +8141,13 @@ th {
   z-index: 1; }
 
 .documentations .info-bar {
+  align-items: center;
   border-bottom: 1px solid #DADEE3;
+  display: flex;
   height: 4.8125rem; }
+  .documentations .info-bar select {
+    margin-left: 0.75rem;
+    width: 80%; }
 
 .documentations .general-info {
   align-items: center;
