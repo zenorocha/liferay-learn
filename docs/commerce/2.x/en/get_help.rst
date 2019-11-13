@@ -4,4 +4,4 @@ Get Help
 .. toctree::
    :maxdepth: 1
 
-   user-guide/getting-started/accelerators.md
+   get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md
