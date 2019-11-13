@@ -12,6 +12,7 @@ User Guide
    user-guide/getting-started/store-setup-overview.md
    user-guide/getting-started/introduction-to-the-admin-account.md
    user-guide/getting-started/liferay-commerce-configuration-overview.md
+   user-guide/getting-started/sites-and-site-types.md
    user-guide/getting-started/locale-options.md
    user-guide/marketing/automating-store-emails-by-using-notification-templates.md
    user-guide/getting-started/payments.md
@@ -41,8 +42,10 @@ User Guide
    user-guide/catalog/creating-a-new-product-category.md
    user-guide/catalog/organizing-your-catalog-with-product-categories.md
    user-guide/catalog/related-products-up-sells-and-cross-sells.md
+   user-guide/catalog/managing-product-publication.md
 
    user-guide/catalog/introduction-to-managing-inventory.md
+   user-guide/catalog/warehouse-reference-guide.md
    user-guide/catalog/adding-a-new-warehouse.md
    user-guide/catalog/setting-inventory-by-warehouse.md
    user-guide/catalog/low-stock-activity.md
@@ -61,6 +64,7 @@ User Guide
 
    user-guide/content/creating-your-storefront.md
    user-guide/content/widget-reference.md
+   user-guide/content/creating-a-catalog-page.md
    user-guide/content/account-management.md
    user-guide/content/catalog.md
    user-guide/content/cart.md
@@ -85,6 +89,7 @@ User Guide
    user-guide/customers/inviting-users-to-an-account.md
    user-guide/customers/adding-addresses-to-an-account.md
    user-guide/customers/account-roles.md
+   user-guide/customers/assigning-account-roles.md
    user-guide/customers/creating-a-new-account-group.md
 
    user-guide/sales/authorize.net.md
@@ -103,6 +108,7 @@ User Guide
    user-guide/sales/orders-menu.md
    user-guide/sales/order-information.md
    user-guide/sales/order-workflows.md
+   user-guide/sales/order-management-statuses.md
    user-guide/sales/enabling-or-disabling-order-workflows.md
    user-guide/sales/approving-or-rejecting-orders-in-order-workflows.md
 
