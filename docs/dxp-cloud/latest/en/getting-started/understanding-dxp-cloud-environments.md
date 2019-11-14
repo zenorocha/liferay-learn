@@ -10,7 +10,7 @@ staging and production environments for a project named *acme* can be named
 
 Despite this naming connection, each environment is independent. They're 
 segregated by a 
-[private network](/docs/-/knowledge_base/dxp-cloud/private-network) 
+[private network](../infrastructure-and-operations/networking/private-network.md) 
 that allows services from the same environment to communicate in a secure 
 manner without having to access the public internet. 
 

@@ -8,7 +8,7 @@ By default, this feature is *disabled* in every DXP Cloud account.
 Using this feature, a service can automatically increase (upscale) the number 
 of Liferay DXP instances to a maximum of 10, or decrease (downscale) to the 
 number specified in the `scale` property in 
-[`LCP.json`](/docs/-/knowledge_base/dxp-cloud/configuration-via-lcp-json). 
+[`LCP.json`](../reference/configuration-via-lcp-json.md). 
 The `scale` property specifies the minimum number of instances to run: 
 
 ```json
@@ -49,7 +49,7 @@ situation only occurs when the average memory utilization exceeds the target.
 
 The total available memory is specified by the `memory` property in `LCP.json`, 
 as referenced in 
-[Configuration via LCP.json](/docs/-/knowledge_base/dxp-cloud/configuration-via-lcp-json). 
+[Configuration via LCP.json](../reference/configuration-via-lcp-json.md). 
 
 Specify the target average utilization in the `autoscale` property of the 
 service's `LCP.json`: 

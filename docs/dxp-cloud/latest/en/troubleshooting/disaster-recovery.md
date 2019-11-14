@@ -59,14 +59,12 @@ To ensure the two environments are connected:
 1. Click *Connect VPN*.
 
 For more information on connecting to a VPN, see
-[VPN Connection](/docs/-/knowledge_base/dxp-cloud/vpn-connection).
+[VPN Connection](../infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md).
 
 ### Deploy the Latest Stable Build from Production to the DR Environment
 
 Now you must deploy the latest stable build on production to the DR environment.
-To do so, follow the instructions in
-[Deploying to a Different Environment](/docs/-/knowledge_base/dxp-cloud/deployments#deploying-to-a-different-environment)
-to deploy that build to the DR environment.
+To do so, follow the same steps outlined in [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md).
 
 ## During an Incident
 
@@ -107,7 +105,7 @@ from the production environment. Follow these steps to do so:
 1. Navigate to the same setting in the production environment, and remove the
     custom domain configuration.
 1. Update the DNS records. For more information, see
-    [Custom Domains](/docs/-/knowledge_base/dxp-cloud/custom-domains).
+    [Custom Domains](../infrastructure-and-operations/networking/custom-domains.md).
 
 This will result in all traffic being directed to the DR environment.
 

@@ -23,7 +23,7 @@ Follow these steps to access the shell via the DXP Cloud web console:
 
 Follow these steps to access your service's shell via a terminal: 
 
-1. [Install the Liferay Cloud command line tool](/docs/-/knowledge_base/dxp-cloud/command-line-tool), 
+1. [Install the Liferay Cloud command line tool](../reference/command-line-tool.md), 
     if it's not already installed. 
 1. Run the command `lcp shell`, then select the service to access. 
 1. Run any command that you want. 

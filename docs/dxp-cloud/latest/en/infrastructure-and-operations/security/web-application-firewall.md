@@ -17,7 +17,7 @@ in DXP Cloud has its own private network, which allows services from the same
 environment to communicate through a secure communication protocol without
 interacting with the public internet. For information on configuring this
 private network, see
-[Private Network](/docs/-/knowledge_base/dxp-cloud/private-network).
+[Private Network](../networking/private-network.md).
 
 ## Public Load Balancer
 
@@ -45,7 +45,7 @@ larger set of locations to absorb the attack.
 
 The ability to permit or block incoming traffic based on IP addresses or ranges
 using allow lists and deny lists is available through the
-[Nginx service](/docs/-/knowledge_base/dxp-cloud/web-server-service-nginx)
+[Nginx service](../../platform-services/web-server-service.md)
 that DXP Cloud provides.
 
 Users can leverage the `allow` and `deny` directives inside the `stream` context
