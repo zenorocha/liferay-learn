@@ -1,4 +1,4 @@
-# Installation and Upgrade
+# Installation and Upgrades
 
 ## [Quick Start Guide](./quick-start-guide/quick-start-guide.md)
 
