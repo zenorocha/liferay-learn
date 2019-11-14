@@ -50,7 +50,7 @@ to `lcp/liferay/deploy/common/` will result in the file being copied to
 
 ## Build and Test
 
-The CI service will automatically execute builds for any of the following events: commits are merged into the DXP Cloud repository, pull requests with changes are sent to the repository, or `lcp deploy` is invoked using the Command Line Interface (CLI) to deploy to a DXP Cloud environment. The `CI` service in the `infra` environment can be modified to include additional pipeline steps, including testing. See the article on [Builds](../build-and-deploy/builds-deployments.md) for more information.
+The CI service will automatically execute builds for any of the following events: commits are merged into the DXP Cloud repository, pull requests with changes are sent to the repository, or `lcp deploy` is invoked using the Command Line Interface (CLI) to deploy to a DXP Cloud environment. The `CI` service in the `infra` environment can be modified to include additional pipeline steps, including testing. See the article on [Continuous Integration](../platform-services/continuous-integration.md) for more information.
 
 Navigate to the `Builds` tab to see all builds that have been initiated. Pending, passed, or failed builds are all displayed. If the build passes CI, then the Cloud console will offer the option in the UI to deploy the passing build to any applicable environment.
 
@@ -70,13 +70,13 @@ After logging in through the CLI, use `lcp deploy` to deploy any additions prese
 
 Another way to deploy changes is to use a completed build in CI from the DXP Cloud Management Console.
 
-Committed changes to the repository will automatically trigger a new build in CI any time a pull request is sent or merged. This allows changes to be deployed to a testing environment at any point of the review process. See [Deployments](../build-and-deploy/builds-deployments.md) to learn more.
+Committed changes to the repository will automatically trigger a new build in CI any time a pull request is sent or merged. This allows changes to be deployed to a testing environment at any point of the review process. See [Continuous Integration](./walking-through-the-deployment-life-cycle.md) for an example tutorial.
 
 ![Deploying to Prod](./overview-of-the-dxp-cloud-deployment-workflow/images/01.png)
 
 ## Additional Information
 
 * [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
-* [Environments](../build-and-deploy/environments.md)
+* [Environments](../getting-started/understanding-dxp-cloud-environments.md)
 * [Using the Command Line Interface](../reference/command-line-tool.md)
 * [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
