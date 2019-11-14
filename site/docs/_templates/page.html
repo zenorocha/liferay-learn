@@ -156,6 +156,7 @@
     // Left nav interaction
 
     const activeNavL1 = document.querySelector('.toctree-l1.current');
+    const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
     if (activeNavL1) {
         const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
@@ -180,8 +181,6 @@
 
             // Zoom in on the current section
 
-            const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
-
             nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
             // Set parent level URL
@@ -191,6 +190,21 @@
             backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
         }
     } else {
+
+        // Highlight current Product Category
+
+        const breadcrumbCurrentArticle = document.getElementById('breadcrumbCurrentArticle');
+
+        if (breadcrumbCurrentArticle) {
+            nonActiveNavL1.forEach(node => {
+                if (node && node.firstChild.innerText === breadcrumbCurrentArticle.innerText) {
+                    node.classList.add('active');
+                }
+            })
+        }
+
+        // Set backURL
+
         backURL = breadcrumbAncestor ? breadcrumbAncestor.href : 'https://learn.liferay.com';
     }
 
