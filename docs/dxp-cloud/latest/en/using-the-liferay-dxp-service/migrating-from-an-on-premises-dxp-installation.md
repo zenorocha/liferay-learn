@@ -48,11 +48,11 @@ cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
 > **Note:** If you are currently using the 
-> [Amazon S3](/docs/7-2/deploy/-/knowledge_base/d/using-amazon-simple-storage-service), 
-> [CMIS](/docs/7-1/deploy/-/knowledge_base/d/using-the-cmis-store), or 
-> [DBStore](/docs/7-2/deploy/-/knowledge_base/d/using-the-dbstore) 
+> [Amazon S3](https://help.liferay.com/hc/en-us/articles/360028810172-Using-Amazon-Simple-Storage-Service), 
+> [CMIS](https://help.liferay.com/hc/en-us/articles/360018176171-Using-the-CMIS-Store), or 
+> [DBStore](https://help.liferay.com/hc/en-us/articles/360028810192-Using-the-DBStore) 
 > storage methods, you must first 
-> [migrate to the File System Store](https://help.liferay.com/hc/en-us/articles/360017649452-Migrating-File-System-Stores-). 
+> migrate to a [File System Store](https://help.liferay.com/hc/en-us/articles/360028810132-Using-the-Simple-File-System-Store). 
 
 ### Invoke Backup Service API
 
@@ -110,14 +110,14 @@ since these must now be done through DXP Cloud's services.
 
 Web server configurations must be done through webserver service, using Nginx. 
 See 
-[Web Server Service](/docs/-/knowledge_base/dxp-cloud/web-server-service-nginx) 
+[Web Server Service](../platform-services/web-server-service.md) 
 for more information on adding configurations to this service. See the 
 [official Nginx documentation](https://docs.nginx.com/) 
 for more information on the configurations themselves. 
 
 Search configurations must be done through the search service, using 
 Elasticsearch. See 
-[Search Service](/docs/-/knowledge_base/dxp-cloud/search-service-elasticsearch) 
+[Search Service](../platform-services/continuous-integration.md) 
 for more information on adding configurations to this service. See the 
 [official Elasticsearch documentation](https://www.elastic.co/guide/index.html) 
 for more information on the configurations themselves. 
@@ -126,5 +126,5 @@ for more information on the configurations themselves.
 
 External services that do not readily map to existing services in DXP Cloud 
 (like SSO or LDAP integrations) may be connected using a VPN. See 
-[VPN Connection](/docs/-/knowledge_base/dxp-cloud/vpn-connection) 
+[Connecting a VPN to DXP Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md) 
 for more information on configuring the VPN. 
