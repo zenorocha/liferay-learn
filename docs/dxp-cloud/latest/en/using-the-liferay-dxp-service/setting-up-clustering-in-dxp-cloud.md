@@ -44,7 +44,7 @@ However, if additional portal properties for clustering are desired, the propert
 
 ## Deploy and Verify
 
-Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the DXP Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
+Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
 
 To check if clustering is working correctly, check the logs of the Liferay DXP instances for the `Accepted View` message from the `JGroupsReceiver` class.
 

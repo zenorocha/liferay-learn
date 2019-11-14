@@ -8,5 +8,4 @@ Getting Started
    getting-started/development-requirements.md
    getting-started/configuring-your-github-repository.md
    getting-started/logging-into-your-dxp-cloud-services.md
-   getting-started/overview-of-the-dxp-cloud-deployment-workflow.md
    getting-started/understanding-dxp-cloud-environments.md

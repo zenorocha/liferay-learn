@@ -7,9 +7,7 @@
 * [Development Requirements](./getting-started/development-requirements.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
 * [Logging Into Your DXP Cloud Services](./getting-started/logging-into-your-dxp-cloud-services.md)
-* [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
 * [Understanding DXP Cloud Environments](./getting-started/understanding-dxp-cloud-environments.md)
-* [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
 
 ## Using the Liferay DXP Service
 
@@ -40,7 +38,7 @@
 
 ## Build and Deploy
 
-* [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the DXP Cloud Deployment Workflow](./build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.md)
 
 ### Using the CI Service
 
