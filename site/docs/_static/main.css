@@ -8031,6 +8031,7 @@ th {
   margin: 0;
   padding: 0; }
   .breadcrumb li {
+    color: #6c757d;
     font-size: 0.875rem;
     font-weight: 600;
     margin-right: 0.5rem;
@@ -8052,7 +8053,7 @@ th {
         top: 50%;
         width: 0.75em; }
     .breadcrumb li a {
-      color: #6c757d; }
+      color: #30313F; }
       .breadcrumb li a:hover {
         text-decoration: none; }
 
