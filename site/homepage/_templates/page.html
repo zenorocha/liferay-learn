@@ -6,8 +6,7 @@
         <div class="col-md-2">
             <div class="doc-nav-wrapper">
                 <div class="info-bar">
-                    <select class="form-control" id="productDocumentationSelector"
-                        name="product-documentation-selector">
+                    <select class="form-control" id="productDocumentationSelector" name="product-documentation-selector">
                         <option value="liferay-commerce">
                             {% trans %}Commerce{% endtrans %}
                         </option>
@@ -161,7 +160,8 @@
         });
 
         if (!level2Active) {
-            // Redirect to first article under a section if a user clicks on the section heading
+
+			// Redirect to first article under a section if a user clicks on the section heading
 
             const activeNavL2FirstChildAnchor = activeNavL2List.item(0).children[0];
 
@@ -169,7 +169,8 @@
                 window.location.href = activeNavL2FirstChildAnchor.href;
             }
         } else {
-            // Zoom in on the current section
+
+			// Zoom in on the current section
 
             const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
