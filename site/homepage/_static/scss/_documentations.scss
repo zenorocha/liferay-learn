@@ -45,7 +45,16 @@
 		}
 
 		.back-link {
-			margin-left: $spacing-md;
+			align-items: center;
+			display: flex;
+			padding-left: $spacing-md;
+			width: 100%;
+
+			svg {
+				height: $spacing-default;
+				padding-right: $spacing-sm;
+				width: $spacing-default;
+			}
 		}
 
 		.toctree-l1 {

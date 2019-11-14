@@ -8110,7 +8110,14 @@ th {
     list-style: none;
     padding: 0; }
   .documentations .doc-nav .back-link {
-    margin-left: 1rem; }
+    align-items: center;
+    display: flex;
+    padding-left: 1rem;
+    width: 100%; }
+    .documentations .doc-nav .back-link svg {
+      height: 1.5rem;
+      padding-right: 0.75rem;
+      width: 1.5rem; }
   .documentations .doc-nav .toctree-l1.active a {
     color: #0B5FFF; }
   .documentations .doc-nav .toctree-l1.current > a {
