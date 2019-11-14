@@ -1,6 +1,6 @@
 # Installation Overview
 
-The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce.
+The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce. For a guide to getting started with installation, see [Quick Start Guide](../quick-start-guide/quick-start-guide.md).
 
 Liferay Commerce is built on Liferay DXP 7.1. Therefore, it is necessary to install Liferay Digital Experience Platform first before installing Liferay Commerce.
 
