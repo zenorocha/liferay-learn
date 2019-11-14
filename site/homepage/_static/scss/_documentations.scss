@@ -44,6 +44,10 @@
 			padding: 0;
 		}
 
+		.back-link {
+			margin-left: $spacing-md;
+		}
+
 		.toctree-l1 {
 			&.current {
 				> a {

@@ -8108,6 +8108,8 @@ th {
   .documentations .doc-nav ul {
     list-style: none;
     padding: 0; }
+  .documentations .doc-nav .back-link {
+    margin-left: 1rem; }
   .documentations .doc-nav .toctree-l1.current > a {
     background-image: none; }
     .documentations .doc-nav .toctree-l1.current > a:before {

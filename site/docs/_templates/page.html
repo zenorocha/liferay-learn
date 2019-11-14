@@ -137,7 +137,7 @@
 
     // Preselect documentation dropdwon to be the current article's Product
 
-    const breadcrumbAncestor = document.querySelectorAll('.breadcrumb-parent')[0];
+    const breadcrumbAncestor = document.querySelector('.breadcrumb-parent');
     const productDocumentationSelector = document.getElementById('productDocumentationSelector');
 
     if (breadcrumbAncestor && productDocumentationSelector) {
@@ -174,6 +174,26 @@
             const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
             nonActiveNavL1.forEach(node => node.classList.add('d-none'));
+
+            // Add back button
+
+            const backButton = document.createElement('div');
+            const docNav = document.querySelector('.doc-nav');
+
+            const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
+            const backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
+
+            backButton.innerHTML = `<a class="back-link btn btn-monospaced btn-link" href=${backURL}>
+                <svg id="angle-left" viewBox="0 0 512 512">
+                    <path class="lexicon-icon-outline"
+            d="M114.106 254.607c0.22 6.936 2.972 13.811 8.272 19.11l227.222 227.221c11.026 11.058 28.94 11.058 39.999 0 11.058-11.026 11.058-28.94 0-39.999l-206.333-206.333c0 0 206.333-206.333 206.333-206.333 11.058-11.059 11.058-28.973 0-39.999-11.058-11.059-28.973-11.059-39.999 0l-227.221 227.221c-5.3 5.3-8.052 12.174-8.273 19.111z">
+                    </path>
+                </svg>
+            </a>`;
+
+            if (docNav) {
+                docNav.prepend(backButton);
+            }
         }
     }
 </script>
