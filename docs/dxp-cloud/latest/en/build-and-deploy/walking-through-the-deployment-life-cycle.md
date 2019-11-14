@@ -66,7 +66,7 @@ Once you have sent the pull request to the upstream repository, the CI service w
 
 ![PR Triggered Build in CI](./walking-through-the-deployment-life-cycle/images/09.png)
 
-> You may view triggered builds in the Jenkins [CI service]() by visiting `https://ci-<project>-<environment>.lfr.cloud`.
+> You may view triggered builds in the Jenkins [CI service](../platform-services/continuous-integration.md) by visiting `https://ci-<project>-<environment>.lfr.cloud`.
 
 ### Deploy the Build to the Development Environment from the DXP Cloud Management Console
 
@@ -165,9 +165,8 @@ Once you have verified the deployment was successful, you will have completed th
 
 ## Additional Information
 
-* [Deployment]()
 * [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
-* [Environments](../build-and-deploy/environments.md)
-* [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-development-workflow.md)
+* [Environments](../getting-started/understanding-dxp-cloud-environments.md)
+* [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
 * [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development)
 * [Command-Line Tool](../reference/command-line-tool.md)
