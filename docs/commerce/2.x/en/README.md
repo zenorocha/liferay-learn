@@ -1,21 +1,67 @@
-# Liferay Commerce
+# Introduction to Liferay Commerce
 
-## [Getting Started](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)
+Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. To learn more about Liferay DXP see this [article](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction).
 
-Want to kick the tires? Get started [here](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)!
+## Overview
 
-## [Installation and Upgrades](./installation-and-upgrades/README.md)
+* [Modern Storefront Pages and Content Management](#modern-storefront-pages-and-content-management)
+* [Multi-Channel Catalog and Product Information Management](#multi-channel-catalog-and-product-information-management)
+* [B2B Focused Account Management and Purchasing Workflow](#b2b-focused-account-management-and-purchasing-workflow)
+* [Order Management and Sales](#order-management-and-sales)
+* [ML Powered Recommendations and Alerts](#ml-powered-recommendations-and-alerts)
+* [APIs and Integrations](#apis-and-integrations)
+* [Next Steps](#next-steps)
 
-Learn how to set up and maintain Liferay Commerce for the long haul.
+Just want to get started? Launch Liferay Commerce _fast_ with our [Quick Start Guide](./installation-and-upgrades/quick-start-guide/quick-start-guide.md).
 
-## [User Guide](./user-guide/README.md)
+## Modern Storefront Pages and Content Management
 
-The authoritative guide to using Liferay Commerce.
+Liferay Commerce includes a wide range of tools for setting up a storefront. New search tools, for instance, are designed specifically for product catalogs, while customizable widgets make it easy to add common UI elements—such as Checkout and View Cart—to a page. Learn more about [Building a Storefront](./user-guide/content/creating-your-storefront.md).
 
-## [Developer Guide](./developer-guide/README.md)
+![Liferay Commerce Dashboard](./introduction-to-liferay-commerce/images/01.png)
 
-Tutorials and guides to extend and customize your Liferay Commerce experience.
+## Multi-Channel Catalog and Product Information Management
 
-## [Get Help](./get-help/README.md)
+Liferay Commerce contains a catalog management system that supports a variety of [product types](./user-guide/catalog/introduction-to-product-types.md) and stores a wide range of product data. [Product options](./user-guide/catalog/customizing-your-product-with-product-options.md), [pricing](./user-guide/catalog/introduction-to-product-pricing-methods.md), [images](./user-guide/catalog/product-images.md), and [specifications](./user-guide/catalog/specifications.md) are a few examples. Products are then readily available to a distribution channel of choice.
 
-Need more help? Liferay has training, consulting, and support resources for all your needs.
+![Product catalog](./introduction-to-liferay-commerce/images/02.png)
+
+[Channels](./user-guide/catalog/introduction-to-channels.md) connect catalogs and products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales.
+
+![Channels enabled for a product](./introduction-to-liferay-commerce/images/03.png)
+
+[Categories](./user-guide/catalog/organizing-your-catalog-with-product-categories.md) and [Product Relationships](./user-guide/catalog/related-products-up-sells-and-cross-sells.md) simplify store navigation and increase revenue generating opportunities.
+
+![Product details and related products](./introduction-to-liferay-commerce/images/04.png)
+
+Managing product pricing is flexible through the use of [Price Lists](./user-guide/catalog/creating-a-price-list.md) and [Tiered Pricing](./user-guide/catalog/adding-tiered-pricing.md) - all of which can be tailored to meet unique customer needs.
+
+## B2B Focused Account Management and Purchasing Workflow
+
+Liferay Commerce is optimized for business-to-business transactions with features designed to address B2B needs. [Accounts](./user-guide/customers/introduction-to-accounts.md), [Account Groups](./user-guide/customers/creating-a-new-account-group.md), and [Account Roles](./user-guide/customers/account-roles.md) work together to ensure that customer needs are met with tailored experiences, self-service, and purchasing workflows.
+
+![User role selection](./introduction-to-liferay-commerce/images/05.png)
+
+## Order Management and Sales
+
+Liferay Commerce offers Order Management that enables buyers and sellers to prepare, place, approve, transmit, and fulfill orders.
+
+Payments for orders may be completed with several different [payment methods](./user-guide/getting-started/managing-payment-methods.md) available out-of-the-box. Integration with more payment processors may be accomplished with additional customization.
+
+![Payment Methods page](./introduction-to-liferay-commerce/images/06.png)
+
+Orders may be fulfilled using several different [shipping methods](../sales/shipping-method-reference.md):
+sellers can [impose a flat rate](../sales/using-the-flat-rate-shipping-method.md), apply [shipping method restrictions](../sales/applying-shipping-method-restrictions.md), or integrate with the [carrier rates like FedEx](../sales/using-fedex-as-a-carrier-method.md).
+
+## ML Powered Recommendations and Alerts
+
+Liferay Commerce applies machine learning and predictive analytics to enable suggested product groups, order forecasting down to the product level, smart loyalty score alerts, and personalized product recommendations.
+
+## APIs and Integrations
+
+Integrate with other business systems through a Mulesoft connector, Talend component, or using pre-built connectors for Salesforce, SAP ERP (_Coming Soon_), or MS Dynamics NAV (_Coming Soon_).
+
+## Next Steps
+
+* [Quick Start Guide](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)
+* [Setup a Complete B2B Site Using the Minium Accelerator](./user-guide/getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
