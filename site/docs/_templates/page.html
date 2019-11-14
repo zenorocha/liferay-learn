@@ -133,7 +133,7 @@
     }
 
     targets.forEach(target => {
-        const node = document.getElementById(target.id);
+        const node = target.id ? document.getElementById(target.id) : null;
 
         if (node) {
             observer.observe(node);
