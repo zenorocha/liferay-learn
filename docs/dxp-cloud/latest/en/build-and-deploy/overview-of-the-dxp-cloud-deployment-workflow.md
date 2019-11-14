@@ -77,6 +77,6 @@ Committed changes to the repository will automatically trigger a new build in CI
 ## Additional Information
 
 * [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
-* [Environments](../getting-started/understanding-dxp-cloud-environments.md)
+* [Understanding DXP Cloud Environments](../getting-started/understanding-dxp-cloud-environments.md)
 * [Using the Command Line Interface](../reference/command-line-tool.md)
 * [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
