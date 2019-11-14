@@ -6,7 +6,8 @@
         <div class="col-md-2">
             <div class="doc-nav-wrapper">
                 <div class="info-bar">
-                    <select class="form-control" id="productDocumentationSelector" name="product-documentation-selector">
+                    <select class="form-control" id="productDocumentationSelector"
+                        name="product-documentation-selector">
                         <option value="liferay-commerce">
                             {% trans %}Commerce{% endtrans %}
                         </option>
@@ -17,9 +18,16 @@
                 </div>
 
                 <div class="doc-nav">
+                    <a class="back-link btn btn-monospaced btn-link" href="javascript:;" id="backButton">
+                        <svg id="angle-left" viewBox="0 0 512 512">
+                            <path class="lexicon-icon-outline"
+                                d="M114.106 254.607c0.22 6.936 2.972 13.811 8.272 19.11l227.222 227.221c11.026 11.058 28.94 11.058 39.999 0 11.058-11.026 11.058-28.94 0-39.999l-206.333-206.333c0 0 206.333-206.333 206.333-206.333 11.058-11.059 11.058-28.973 0-39.999-11.058-11.059-28.973-11.059-39.999 0l-227.221 227.221c-5.3 5.3-8.052 12.174-8.273 19.111z">
+                            </path>
+                        </svg>
+                    </a>
+
                     {% block sidebar1 %}
                     {{ toctree() }}
-
                     {% endblock %}
                 </div>
             </div>
@@ -161,7 +169,7 @@
 
         if (!level2Active) {
 
-			// Redirect to first article under a section if a user clicks on the section heading
+            // Redirect to first article under a section if a user clicks on the section heading
 
             const activeNavL2FirstChildAnchor = activeNavL2List.item(0).children[0];
 
@@ -170,32 +178,30 @@
             }
         } else {
 
-			// Zoom in on the current section
+            // Zoom in on the current section
 
             const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
             nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
-            // Add back button
-
-            const backButton = document.createElement('div');
-            const docNav = document.querySelector('.doc-nav');
+            // Set parent level URL
 
             const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
-            const backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
 
-            backButton.innerHTML = `<a class="back-link btn btn-monospaced btn-link" href=${backURL}>
-                <svg id="angle-left" viewBox="0 0 512 512">
-                    <path class="lexicon-icon-outline"
-            d="M114.106 254.607c0.22 6.936 2.972 13.811 8.272 19.11l227.222 227.221c11.026 11.058 28.94 11.058 39.999 0 11.058-11.026 11.058-28.94 0-39.999l-206.333-206.333c0 0 206.333-206.333 206.333-206.333 11.058-11.059 11.058-28.973 0-39.999-11.058-11.059-28.973-11.059-39.999 0l-227.221 227.221c-5.3 5.3-8.052 12.174-8.273 19.111z">
-                    </path>
-                </svg>
-            </a>`;
-
-            if (docNav) {
-                docNav.prepend(backButton);
-            }
+            backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
         }
+    } else {
+        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : 'https://learn.liferay.com';
+    }
+
+    // Set href for back button
+
+    var backURL = '';
+
+    const backButton = document.getElementById('backButton');
+
+    if (backButton) {
+        backButton.href = backURL;
     }
 </script>
 {% endblock %}
