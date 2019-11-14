@@ -1,16 +1,17 @@
-# Obtaining DXP 7.2
+# Obtaining Liferay DXP
 
-Before you begin, you should answer a few questions.
+There are several options for downloading and installing Liferay DXP.
 
-* Which version of DXP 7.2 will you install?
-* Is your installation for development purposes or are you preparing to run in production?
-* Are you installing DXP 7.2 in a clustered environment?
-* Which application server do you want DXP 7.2 to run on?
-* Are you installing on an existing application server?
+The best starting point for most people is the Liferay DXP Tomcat Bundle. You can obtain Liferay DXP by visiting the [Community Downloads page](https://www.liferay.com/downloads-community). For others with more nuanced needs a .war file is provided that can be installed to a supported application server.
 
-Here you'll determine the installation that's best for you and download it.
+## Liferay Tomcat Bundle
 
-Anyone can download DXP 7.2 from [liferay.com](https://www.liferay.com). Clicking *Resources &rarr; Community Downloads* takes you to the [Community Downloads page](https://www.liferay.com/downloads-community), where you can access Liferay Portal CE or a trial of the enterprise supported Liferay DXP. The installers are available in several different formats. The formats include a Liferay Tomcat bundle (DXP 7.2 bundled with Tomcat) as well as a DXP 7.2 `.war` (WAR) file for installing DXP 7.2 on an existing application server of choice.
+The Liferay Tomcat bundle includes the Tomcat application server with DXP 7.2 pre-installed. If you prefer using another application server with DXP 7.2, you must install it manually. If you don't currently have an application server preference, consider starting with the Tomcat bundle. Tomcat is one of the most lightweight and straightforward bundles to configure.
+
+| **Note:** Application server bundles for proprietary application servers such as WebLogic or WebSphere aren't available because the licenses for these servers don't allow for redistribution. DXP 7.2's commercial offering, however, runs just as well on these application servers as it does on the others.
+
+
+Clicking *Resources &rarr; Community Downloads* takes you to the [Community Downloads page](https://www.liferay.com/downloads-community), where you can access Liferay Portal CE or a trial of the enterprise supported Liferay DXP. The installers are available in several different formats. The formats include a Liferay Tomcat bundle (DXP 7.2 bundled with Tomcat) as well as a DXP 7.2 `.war` (WAR) file for installing DXP 7.2 on an existing application server of choice.
 
 Liferay enterprise subscribers can download Liferay DXP from the [Help Center](https://help.liferay.com/hc).
 
@@ -24,9 +25,8 @@ DXP 7.2 runs on a wide variety of application servers (Check the [Support page](
 
 ## Liferay Tomcat Bundle
 
-The Liferay Tomcat bundle includes the Tomcat application server with DXP 7.2 pre-installed. If you prefer using another application server with DXP 7.2, you must install it manually. If you don't currently have an application server preference, consider starting with the Tomcat bundle. Tomcat is one of the most lightweight and straightforward bundles to configure.
 
-| **Note:** Application server bundles for proprietary application servers such as WebLogic or WebSphere aren't available because the licenses for these servers don't allow for redistribution. DXP 7.2's commercial offering, however, runs just as well on these application servers as it does on the others.
+
 
 Bundles are released as 7-Zip (`.7z`) and gzipped (`.tar.gz`) compressed file archive formats. [Installing DXP 7.2](./installing-and-configuring-a-bundle.md) demonstrates installing DXP 7.2 from a bundle. Follow its instructions once you've prepared for installing DXP 7.2 (see the next article).
 
