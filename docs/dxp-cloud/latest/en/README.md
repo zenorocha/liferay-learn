@@ -44,7 +44,6 @@
 
 ### Using the CI Service
 
-* [Continuous Integration](./build-and-deploy/continuous-integration.md)
 * Using the Jenkinsfile
 
 ### Deploying to DXP Cloud
@@ -73,7 +72,7 @@
 
 ## Platform Services
 
-* [Continuous Integration](./build-and-deploy/continuous-integration.md)
+* [Continuous Integration](./platform-services/continuous-integration.md)
 * [Using the Backup Service](./platform-services/backup-service.md)
 * [Using the Database Service](./platform-services/database-service.md)
 * [Using the Search Service](./platform-services/search-service.md)

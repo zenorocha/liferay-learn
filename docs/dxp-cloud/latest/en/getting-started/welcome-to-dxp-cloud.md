@@ -73,7 +73,7 @@ per user to receive resource utilization updates in real-time.
 
 ## Accelerated Development with Built-in CI/CD
 
-Deliver your application faster with a fully-realized CI/CD strategy available out-of-the-box. [Github and Jenkins](../build-and-deploy/continuous-integration.md) integrations allow each new commit or pull request to trigger a build that can be deployed to your [production or non-production environments](../build-and-deploy/environments.md). 
+Deliver your application faster with a fully-realized CI/CD strategy available out-of-the-box. [Github and Jenkins](../platform-services/continuous-integration.md) integrations allow each new commit or pull request to trigger a build that can be deployed to your [production or non-production environments](../build-and-deploy/environments.md). 
 
 These robust systems enable the creation of fault tolerant processes 
 to meet organizations' unique needs and detect and repair common server 
