@@ -56,4 +56,4 @@ The My Sites Directory application is similar to the Sites Directory application
 
 The Site Map application helps Users navigate a Site. A Site Administrator can configure a root page and a display depth. Just as Sites can have hierarchies, so can the pages within a Site. The display depth of the Site Map application determines how many levels of nested pages to display.
 
-![Figure 1: The Site Map application lets Users navigate among pages of a Site organized hierarchically.](/images/site-directory-site-map.png)
+![Figure 1: The Site Map application lets Users navigate among pages of a Site organized hierarchically.](./images/site-directory-site-map.png)

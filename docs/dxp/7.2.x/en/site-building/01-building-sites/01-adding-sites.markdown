@@ -20,7 +20,7 @@ The steps below describe how to add a new Site to your Liferay Portal instance.
 
 6.  Configure the remaining settings and click *Save*.
 
-![The General section provides the basic information for your Site.](/images/building-sites-general-form.png)
+![The General section provides the basic information for your Site.](./images/building-sites-general-form.png)
 
 The new Site is selected when you open the Product Menu. See [Site Settings](TODO) for an overview of all of the available Site settings.
 
