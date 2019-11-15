@@ -36,26 +36,39 @@ class RelativePathParentsHTMLBuilder(StandaloneHTMLBuilder):
 
 		return doc_context
 
+	def _get_parent(self, docname):
+		if docname == 'README':
+			return None
+
+		basename = os.path.basename(docname)
+
+		if basename == 'README':
+			dirname = os.path.dirname(os.path.dirname(docname))
+
+			if dirname == '/':
+				return basename
+			else:
+				return os.path.dirname(os.path.dirname(docname)) + '/README'
+		else:
+			return os.path.dirname(docname) + '/README'
+
 	def _get_parents(self, titles, docname):
 		parents = []
 
-		while docname != '/README':
-			basename = os.path.basename(docname)
+		last_parent = docname
 
-			if basename == 'README':
-				readme = os.path.dirname(os.path.dirname(docname)) + '/README'
-			else:
-				readme = os.path.dirname(docname) + '/README'
+		while last_parent is not None:
+			next_parent = self._get_parent(last_parent)
 
-			if readme in titles:
+			if next_parent is not None and next_parent in titles:
 				parents.append(
 					{
-						'link': self.get_relative_uri(docname, readme),
-						'title': self.render_partial(titles[readme])['title']
+						'link': self.get_relative_uri(docname, next_parent),
+						'title': self.render_partial(titles[next_parent])['title']
 					}
 				)
 
-			docname = readme
+			last_parent = next_parent
 
 		parents.reverse()
 
