@@ -8101,9 +8101,10 @@ th {
   .documentations .doc-nav > ul {
     margin: 0; }
   .documentations .doc-nav a {
+    border-left: 3px solid transparent;
     color: #6B6C7E;
     display: block;
-    padding: 0.5rem 1.5rem 0.5rem 0; }
+    padding: 0.5rem 1.5rem 0.5rem 1rem; }
     .documentations .doc-nav a:hover {
       text-decoration: none; }
   .documentations .doc-nav ul {
@@ -8115,28 +8116,21 @@ th {
     padding-left: 1rem;
     width: 100%; }
     .documentations .doc-nav .back-link svg {
+      fill: #6B6C7E;
       height: 1.5rem;
       padding-right: 0.75rem;
       width: 1.5rem; }
   .documentations .doc-nav .toctree-l1.active a {
     color: #0B5FFF; }
   .documentations .doc-nav .toctree-l1.current > a {
-    background-image: none; }
-    .documentations .doc-nav .toctree-l1.current > a:before {
-      border-left-color: #0B5FFF; }
+    background-image: none;
+    border-left-color: #0B5FFF; }
   .documentations .doc-nav .toctree-l1 > a {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3Cpath%20class='lexicon-icon-outline'%20d='M396.394%20255.607a28.207%2028.207%200%200%200-8.272-19.111L160.901%209.275c-11.026-11.059-28.94-11.059-39.999%200-11.058%2011.026-11.058%2028.941%200%2039.999l206.333%20206.333L120.902%20461.94c-11.058%2011.058-11.058%2028.973%200%2039.999%2011.059%2011.059%2028.972%2011.059%2039.999%200l227.221-227.221a28.196%2028.196%200%200%200%208.272-19.111z'%20fill='%23000'/%3E%3C/svg%3E");
     background-position: right 0.8rem top 1rem;
     background-repeat: no-repeat;
     background-size: 0.65rem;
     color: #000; }
-    .documentations .doc-nav .toctree-l1 > a:before {
-      border-bottom: 2px solid transparent;
-      border-left: 3px solid transparent;
-      border-right: 1px solid transparent;
-      border-top: 2px solid transparent;
-      content: '';
-      padding: 0.5rem 1rem 0.5rem 0; }
   .documentations .doc-nav .toctree-l2 {
     font-size: 0.875rem; }
     .documentations .doc-nav .toctree-l2.current a {

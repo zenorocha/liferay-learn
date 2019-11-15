@@ -30,9 +30,10 @@
 		}
 
 		a {
+			border-left: 3px solid transparent;
 			color: $nav-color;
 			display: block;
-			padding: $spacing-xs $spacing-default $spacing-xs 0;
+			padding: $spacing-xs $spacing-default $spacing-xs $spacing-md;
 
 			&:hover {
 				text-decoration: none;
@@ -51,6 +52,7 @@
 			width: 100%;
 
 			svg {
+				fill: $nav-color;
 				height: $spacing-default;
 				padding-right: $spacing-sm;
 				width: $spacing-default;
@@ -65,10 +67,7 @@
 			&.current {
 				> a {
 					background-image: none;
-
-					&:before {
-						border-left-color: $brand-primary;
-					}
+					border-left-color: $brand-primary; 
 				}
 			}
 
@@ -78,15 +77,6 @@
 				background-repeat: no-repeat;
 				background-size: 0.65rem;
 				color: $black;
-
-				&:before {
-					border-bottom: 2px solid transparent;
-					border-left: 3px solid transparent;
-					border-right: 1px solid transparent;
-					border-top: 2px solid transparent;
-					content: '';
-					padding: $spacing-xs $spacing-md $spacing-xs 0;
-				}
 			}
 		}
 
