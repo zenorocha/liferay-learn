@@ -8,7 +8,7 @@ There are several key features used in managing inventory: Warehouses, Availabil
 
 Warehouses represent the physical locations where product inventory is managed and sourced for order fulfillment.
 
-See the [Warehouse Reference Guide](../warehouse-reference-guide/README.md) and the [Adding a New Warehouse](../catalog/adding-a-new-warehouse.md) article for more information about how to manage warehouses.
+See the [Warehouse Reference Guide](./warehouse-reference-guide.md) and the [Adding a New Warehouse](../catalog/adding-a-new-warehouse.md) article for more information about how to manage warehouses.
 
 Warehouses must be associated for at least one channel. See the [Introduction to Channels](../catalog/introduction-to-channels.md) article on how channels work.
 
@@ -20,15 +20,15 @@ See the [Availability Estimates](../catalog/availability-estimates.md) for more 
 
 ## Low Stock Activity
 
-Low Stock Activities can be configured to perform automated actions when available product inventory reaches a specified threshold. See the [Low Stock Activity](../low-stock-activity/README.md) to learn how to configure what behavior is executed when inventory reaches a minimum threshold.
+Low Stock Activities can be configured to perform automated actions when available product inventory reaches a specified threshold. See the [Low Stock Activity](./low-stock-activity.md) to learn how to configure what behavior is executed when inventory reaches a minimum threshold.
 
 Developers interested in creating their own custom low stock activity can refer to [Implementing a Custom Low Stock Activity](../../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md).
 
 ## Setting Inventory by Warehouse
 
-In Liferay Commerce, inventory management is done per product SKU. To learn more, read the [Setting Inventory by Warehouse](../setting-inventory-by-warehouse/README.md) article.
+In Liferay Commerce, inventory management is done per product SKU. To learn more, read the [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md) article.
 
 ## Additional Information
 
 * Shipping - Creating a New Shipment (TODO)
-* [Product Inventory Configuration Reference](../product-inventory-configuration-reference/README.md)
+* [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)

@@ -25,7 +25,7 @@ The new Shipping Option has been added and is available during the checkout proc
 
 ## Additional Information
 
-* [Using the Variable Rate Shipping Method]()
+* [Using the Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
 * [Using FedEx as a Carrier Method](../sales/using-fedex-as-a-carrier-method.md)
 * [Applying Shipping Method Restrictions](../sales/applying-shipping-method-restrictions.md)
 * [Creating New Shipping Methods](https://help.liferay.com/hc/en-us/articles/360020751831)

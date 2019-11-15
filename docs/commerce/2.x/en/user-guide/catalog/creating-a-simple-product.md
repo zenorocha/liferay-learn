@@ -52,11 +52,11 @@ To set product prices and quantities:
     * **Promo Price**: 0.00
     * **Cost**: 0.00
 1. Click _Save_. (If Promo Price and Cost fields are left as 00, no discounts or promotions are applied at this point.)
-1. Click _Price List_ to apply this product to any existing [price lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
+1. Click _Price List_ to apply this product to any existing [price lists](./adding-products-to-a-price-list.md).
 
-> To learn more about pricing, see: [Introduction to Product Pricing Methods](../../../managing-price/introduction-to-product-pricing-methods/README.md)
+> To learn more about pricing, see: [Introduction to Product Pricing Methods](./introduction-to-product-pricing-methods.md)
 
-To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md).
+To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md).
 
 ### Configure Product Specifications
 
@@ -74,11 +74,11 @@ Store administrators can also add attachments that are associated with a particu
 
 ### Associate with Related Products
 
-[Product Relations](../../product-information/product-relations/README.md) are used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type.
+[Product Relations](./related-products-up-sells-and-cross-sells.md) are used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type.
 
 ## Additional Information
 
 * [Introduction to Product Types](../catalog/introduction-to-product-types.md)
 * [Creating a Grouped Product](../catalog/creating-a-grouped-product.md)
 * [Creating a Virtual Product](../catalog/creating-a-virtual-product.md)
-* [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md)
+* [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)

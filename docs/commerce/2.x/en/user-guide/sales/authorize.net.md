@@ -26,6 +26,6 @@ Once finished, Authorize.Net is now enabled.
 
 ## Additional Information
 
-* [Currencies](../getting-started/currencies.md)
+* [Adding a New Currency](../getting-started/adding-a-new-currency.md)
 * [Mercanet](../sales/mercanet.md)
 * [PayPal](../sales/mercanet.md)

@@ -13,7 +13,7 @@ To create a discount by product:
 1. Enter a name: _Christmas Sale_.
 1. Select a discount type from the _Target_ drop down. Select _Apply to Product_.
 1. Check the box for which channel this discount applies to.
-1. Select which [Account Groups](../../../customers/account-management/creating-a-new-account-group//README.md) this discount applies to. In this example, _US East Coast_.
+1. Select which [Account Groups](../customers/creating-a-new-account-group.md) this discount applies to. In this example, _US East Coast_.
 1. Switch the _Use Percentage_ toggle to _Yes_.
 1. Enter the _Maximum Discount Amount_: 20%.
 1. Enter the _Level_: 1.00

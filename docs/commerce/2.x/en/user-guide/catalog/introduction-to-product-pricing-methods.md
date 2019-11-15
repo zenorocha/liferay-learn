@@ -8,7 +8,7 @@ The pricing hierarchy determines which price applies for any given combination o
 
 The hierarchy consists of these levels:
 
-**Base Price**: This is the starting price of the product which is [set](../base-price/setting-a-products-base-price/README.md) in the product SKU sub-tab.
+**Base Price**: This is the starting price of the product which is [set](./setting-a-products-base-price.md) in the product SKU sub-tab.
 
 **Price List**: This price applies to specific products for buyers in selected [Accounts](../customers/creating-a-new-account.md) and [Account Groups](../customers/creating-a-new-account-group.md). Prices in the price list can be _higher_ or _lower_ than the base price. If a price list applies to a transaction, it supersedes the base price.
 
@@ -39,8 +39,8 @@ The pricing hierarchy can be visualized in the following diagram:
 
 ## Additional Information
 
-* [Setting a Product's Base Price](../base-price/setting-a-products-base-price/README.md)
+* [Setting a Product's Base Price](./setting-a-products-base-price.md)
 * [Creating a Price List](../catalog/creating-a-price-list.md)
-* [Adding Products to a Price List](../price-lists/adding-products-to-a-price-list/README.md)
+* [Adding Products to a Price List](./adding-products-to-a-price-list.md)
 * [Adding Tiered Pricing](../catalog/adding-products-to-a-price-list.md)
 * [Adding Discounts by Product](../marketing/adding-discounts-by-product.md)

@@ -23,7 +23,7 @@ Global configurations for Liferay Commerce include setting the store timezone, a
 
 * [Setting Locale Options](../getting-started/locale-options.md)
 * [Adding Regions](../getting-started/adding-regions.md)
-* [Setting up Warehouses](../../catalog/managing-inventory/warehouse-reference-guide/README.md)
+* [Setting up Warehouses](../catalog/warehouse-reference-guide.md)
 * [Creating Channels](../catalog/introduction-to-channels.md)
 
 ### Create a Store Site
@@ -66,7 +66,7 @@ Liferay Commerce has several options to calculate shipping rates. Commerce Enter
 
 ## Creating the Catalog
 
-After setting up the store, begin [creating a catalog](../../catalog/creating-a-catalog/README.md).
+After setting up the store, begin [creating a new catalog](../catalog/creating-a-new-catalog.md).
 
 ### Adding Products to a Catalog
 
@@ -76,14 +76,14 @@ When adding a product, there are three product types: **Simple**, **Grouped**, a
 
 The Liferay Commerce Catalog supports storing and managing a wide variety of product information. The following articles cover some of the available options:
 
-* [Product Options](../../catalog/creating-and-managing-products/customizing-your-product-with-product-options)
+* [Product Options](../catalog/customizing-your-product-with-product-options.md)
 * [Product Specifications](../catalog/specifications.md)
 * [Product Images](../catalog/product-images.md)
 * Product Attachments
 * [Product Relations](../catalog/related-products-up-sells-and-cross-sells.md)
 * [Product Categorization](../catalog/organizing-your-catalog-with-product-categories.md)
 * [Availability Estimates](../catalog/availability-estimates.md)
-* [Low Stock Activity](../../catalog/managing-inventory/low-stock-activity/README.md)
+* [Low Stock Activity](../catalog/low-stock-activity.md)
 * Applicable Tax Category
 * Associated Channels
 * Associated Account Groups
@@ -93,13 +93,13 @@ The Liferay Commerce Catalog supports storing and managing a wide variety of pro
 
 There are several ways to price products and these methods are related to one another in a pricing hierarchy: base price, price list, tiered price, promo price and discount. Pricing is managed per SKU.
 
-* [Pricing](../../catalog/managing-price/introduction-to-product-pricing-methods/README.md)
+* [Pricing](../catalog/introduction-to-product-pricing-methods.md)
 * [Price Lists](../catalog/creating-a-price-list.md)
 * [Discounts](../marketing/adding-discounts-by-product.md)
 
 #### Managing Inventory
 
-* [Introduction to Managing Inventory](../../catalog/managing-inventory/introduction-to-managing-inventory/README.md)
+* [Introduction to Managing Inventory](../catalog/introduction-to-managing-inventory.md)
 * Subscriptions (if applicable)
 
 ## Creating the Storefront

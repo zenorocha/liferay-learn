@@ -27,7 +27,3 @@ Your store may now accept Money Orders as a form of payment.
 1. Click _Save_.
 
 Your translated note will be displayed in that language whenever visitors from that locale visit that page.
-
-**Note 2**:
-
-For more information about where the money order note is published, read [Displaying Your Money Order Policy]().

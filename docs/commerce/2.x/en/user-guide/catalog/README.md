@@ -28,10 +28,10 @@
 
 ## Managing Inventory
 
-* [Introduction to Managing Inventory](../introduction-to-managing-inventory.md)
+* [Introduction to Managing Inventory](./introduction-to-managing-inventory.md)
 * [Adding a New Warehouse](./adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)
-* [Low Inventory Activity](../low-stock-activity.md)
+* [Low Inventory Activity](./low-stock-activity.md)
 * [Availability Estimates](./availability-estimates.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
 * [Managing Product Publication](./managing-product-publication.md)

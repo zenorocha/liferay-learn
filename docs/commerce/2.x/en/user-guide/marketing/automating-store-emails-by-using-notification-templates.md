@@ -39,7 +39,3 @@ The new Notification Template has been saved and your store will send an automat
 **Note 3**: To change the interval for when Liferay Commerce checks for unsent notifications, navigate to the _Control Menu_ → _Configuration_ → _System Settings_. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
 
 ![Changing Intervals](./automating-store-emails-by-using-notification-templates/images/02.png)
-
-## Additional Information
-
-* [Adding a New Notification Type](../../developer-guide/tutorial/adding-a-new-notification-template-type.md)

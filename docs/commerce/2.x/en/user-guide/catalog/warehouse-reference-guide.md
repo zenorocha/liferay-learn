@@ -40,4 +40,4 @@ If there are more than one warehouse, repeat these steps to add the others.
 
 * Introduction to Shipments (TODO)
 * [Adding a New Warehouse](../catalog/adding-a-new-warehouse.md)
-* [Setting Inventory by Warehouse](../setting-inventory-by-warehouse/README.md)
+* [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)

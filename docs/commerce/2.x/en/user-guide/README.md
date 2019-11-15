@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-* [Introduction to Liferay Commerce](./getting-started/introduction-to-liferay-commerce.md)
+* [Introduction to Liferay Commerce](../README.md)
 * What's New in Liferay Commerce 2.0.5
 
 ### Basic Configuration
@@ -67,10 +67,10 @@
 
 ### Managing Inventory
 
-* [Introduction to Managing Inventory](../catalog/introduction-to-managing-inventory.md)
+* [Introduction to Managing Inventory](./catalog/introduction-to-managing-inventory.md)
 * [Adding a New Warehouse](./catalog/adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](./catalog/setting-inventory-by-warehouse.md)
-* [Low Inventory Activity](../catalog/low-stock-activity.md)
+* [Low Inventory Activity](./catalog/low-stock-activity.md)
 * [Availability Estimates](./catalog/availability-estimates.md)
 * [Product Inventory Configuration Reference](./catalog/product-inventory-configuration-reference.md)
 * [Managing Product Publication](./catalog/managing-product-publication.md)
@@ -158,10 +158,10 @@
 
 * [Introduction to Accounts](./customers/introduction-to-accounts.md)
 * [Creating a New Account](./customers/creating-a-new-account.md)
-* [Inviting Users to an Account](../inviting-users-to-an-account.md)
-* [Adding Addresses to an Account](../adding-addresses-to-an-account.md)
+* [Inviting Users to an Account](./customers/inviting-users-to-an-account.md)
+* [Adding Addresses to an Account](./customers/adding-addresses-to-an-account.md)
 * [Account Roles](./customers/account-roles.md)
-* [Assigning Account Roles](../assigning-account-roles.md)
+* [Assigning Account Roles](./customers/assigning-account-roles.md)
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
 * Organizations and Accounts
 

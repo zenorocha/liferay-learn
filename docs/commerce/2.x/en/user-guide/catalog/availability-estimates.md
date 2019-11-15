@@ -24,5 +24,5 @@ When configuring the low stock threshold, this Availability Estimate option is d
 
 ## Additional Information
 
-* [Introduction to Managing Inventory](../introduction-to-managing-inventory/README.md)
-* [Product Inventory Configuration Reference](../product-inventory-configuration-reference/README.md)
+* [Introduction to Managing Inventory](./introduction-to-managing-inventory.md)
+* [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)

@@ -23,12 +23,12 @@ The Commerce Global Settings menu contains the following tabs:
 ![Commerce Global Settings Tab](./liferay-commerce-configuration-overview/images/02.png)
 
 * [Availability Estimates](../catalog/availability-estimates.md)
-* [Countries](../getting-started/country-options.md)
-* [Currencies](../getting-started/currencies.md)
+* [Adding a New Currency](../getting-started/adding-a-new-currency.md)
 * Default Images
 * [Measurement Units](../sales/measurement-units.md)
 * Health Check
-* [Warehouses](../../catalog/managing-inventory/warehouse-reference-guide/README.md)
+* [Regions](../getting-started/adding-regions.md)
+* [Warehouses](../catalog/warehouse-reference-guide.md)
 
 ## Commerce Site Settings
 
@@ -47,6 +47,6 @@ The following site settings are found here:
 * Order Fields
 * [Payment Methods](../getting-started/payments.md)
 * Product Display Pages
-* [Shipping Methods](../sales/shipping.md)
+* [Shipping Methods](../sales/shipping-method-reference.md)
 * [Site Types](../getting-started/sites-and-site-types.md)
 * Taxes
