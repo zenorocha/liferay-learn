@@ -48,6 +48,7 @@ h2 {
 	}
 
 	font-size: $h2-font-size;
+	margin-bottom: $spacing-xs;
 
 	@media (max-width: 576px) {
 		font-size: $h3-font-size;
