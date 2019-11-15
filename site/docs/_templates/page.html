@@ -164,6 +164,11 @@
     let backURL = null;
 
     if (activeNavL1 && backLink) {
+
+        // Zoom in on the current section
+
+        nonActiveNavL1.forEach(node => node.classList.add('d-none'));
+
         const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
         let level2Active = false;
 
@@ -174,10 +179,6 @@
         });
 
         if (level2Active) {
-
-            // Zoom in on the current section
-
-            nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
             // Set back URL
 
