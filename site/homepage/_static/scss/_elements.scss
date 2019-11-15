@@ -89,6 +89,12 @@ code {
 	padding: 0.125rem 0.25rem;
 }
 
+li {
+	p {
+		margin-bottom: 0;
+	}
+}
+
 pre {
 	background-color: $default-color;
 	color: $pre-text-color;
