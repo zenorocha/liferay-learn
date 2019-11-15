@@ -51,6 +51,11 @@ function generate_static_html {
 	do
 		sphinx-build -M html build/input/${dir_name} build/output/${dir_name}
 
+		#for readme_file_name in `find build/output/${dir_name}/html -type f -name *README.html`
+		#do
+		#	cp ${readme_file_name} $(dirname ${readme_file_name})/index.html
+		#done
+
 		mv build/output/${dir_name}/html/* build/output/${dir_name}
 	done
 
