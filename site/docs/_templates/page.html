@@ -186,18 +186,6 @@
             backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
         }
 
-        // Highlight current Product Category
-
-        const breadcrumbCurrentArticle = document.getElementById('breadcrumbCurrentArticle');
-
-        if (breadcrumbCurrentArticle) {
-            nonActiveNavL1.forEach(node => {
-                if (node && node.firstChild.innerText === breadcrumbCurrentArticle.innerText) {
-                    node.classList.add('active');
-                }
-            })
-        }
-
         // Set back URL
 
         backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
