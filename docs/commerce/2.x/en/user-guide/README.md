@@ -1,4 +1,4 @@
-# Using Liferay Commerce
+# User Guide
 
 ## Getting Started
 
