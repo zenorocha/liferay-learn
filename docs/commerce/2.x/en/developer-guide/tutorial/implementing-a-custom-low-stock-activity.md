@@ -106,7 +106,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes the low stock activity. See the implementation in [J1E4CommerceLowStockActivity.java](./implementing-a-custom-low-stock-activity/liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes the low stock activity. See the implementation in [J1E4CommerceLowStockActivity.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/implementing-a-custom-low-stock-activity/liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java) for a reference in retrieving the label with a language key.
 
 ### Complete the Low Stock Activity
 
@@ -132,7 +132,7 @@ The low stock activity is comprised of backend logic to perform the activity its
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./implementing-a-custom-low-stock-activity/liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/implementing-a-custom-low-stock-activity/liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 log-a-warning-message=Log a Warning Message
@@ -148,4 +148,4 @@ Congratulations! You now know the basics for implementing the `CommerceLowStockA
 
 * [Creating a Simple Product](../../user-guide/catalog/creating-a-simple-product.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Low Stock Activity](../../../user-guide/catalog/managing-inventory/low-stock-activity/README.md)
+* [Low Stock Activity](../../user-guide/catalog/low-stock-activity.md)
