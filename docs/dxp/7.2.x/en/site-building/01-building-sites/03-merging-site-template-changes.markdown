@@ -1,4 +1,4 @@
-## Merging Site Template and Site Changes
+# Merging Site Template and Site Changes
 
 Once changes are made to a Site created from a Site Template, the Site Template and Site become unlinked. Any changes made to the Site Template from that point on *are not propagated* to the Site. You can relink the Site to the Site Template by clicking the Information icon (![Information](../../../images/icon-control-menu-information.png)) that appears in the Control Menu and clicking the *Reset Changes* link. This merges any updates from the Site Template and also reverts any changes made to the page. If multiple Site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button for each page. 
 

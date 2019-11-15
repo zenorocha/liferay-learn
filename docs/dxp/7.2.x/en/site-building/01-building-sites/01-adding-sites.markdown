@@ -1,4 +1,4 @@
-(../../../images/icon# Adding a Site
+# Adding a Site
 
 The steps below describe how to add a new Site to your Liferay Portal instance. 
 
