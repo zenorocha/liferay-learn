@@ -25,11 +25,11 @@ function generate_sphinx_input {
 
 			cp -R docs/* build/input/${product_name}-${version_name}
 
-			cp -R ../docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}/docs
+			cp -R ../docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}
 
 			if [ ! -f "build/input/${product_name}-${version_name}/contents.rst" ]
 			then
-				mv build/input/${product_name}-${version_name}/docs/contents.rst build/input/${product_name}-${version_name}
+				mv build/input/${product_name}-${version_name}/contents.rst build/input/${product_name}-${version_name}
 			fi
 
 			#
@@ -42,6 +42,7 @@ function generate_sphinx_input {
 	# 
 	# TODO Homepage: generate ZIP file and update links
 	#
+
 	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
 }
 

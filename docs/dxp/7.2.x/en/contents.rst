@@ -5,7 +5,7 @@ Contents
    :glob:
    :hidden:
 
-   docs/**/*
+   **/*
 
 
 Indices and tables
