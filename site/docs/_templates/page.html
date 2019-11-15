@@ -146,12 +146,16 @@
     // Preselect documentation dropdwon to be the current article's Product
 
     const breadcrumbAncestor = document.querySelector('.breadcrumb-parent');
+    const breadcrumbCurrentArticle = document.getElementById('breadcrumbCurrentArticle');
+
     const productDocumentationSelector = document.getElementById('productDocumentationSelector');
 
-    if (breadcrumbAncestor && productDocumentationSelector) {
-        const currentDocProduct = breadcrumbAncestor.innerText.replace(/\s/g, '-').toLowerCase();
+    if (breadcrumbAncestor || breadcrumbCurrentArticle && productDocumentationSelector) {
+        const currentDocProduct = breadcrumbAncestor ? breadcrumbAncestor : breadcrumbCurrentArticle;
 
-        productDocumentationSelector.value = currentDocProduct;
+        const currentDocProductValue = currentDocProduct.innerText.replace(/\s/g, '-').toLowerCase();
+
+        productDocumentationSelector.value = currentDocProductValue;
     }
 
     // Left nav interaction
