@@ -159,7 +159,11 @@
     const activeNavL1 = document.querySelector('.toctree-l1.current');
     const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
-    if (activeNavL1) {
+    const backLink = document.getElementById('backLink');
+
+    let backURL = null;
+
+    if (activeNavL1 && backLink) {
         const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
         let level2Active = false;
 
@@ -175,13 +179,12 @@
 
             nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
-            // Set parent level URL
+            // Set back URL
 
             const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
 
             backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
         }
-    } else {
 
         // Highlight current Product Category
 
@@ -195,19 +198,15 @@
             })
         }
 
-        // Set backURL
+        // Set back URL
 
-        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : 'https://learn.liferay.com';
-    }
+        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
 
-    // Set href for back link
-
-    var backURL;
-
-    const backLink = document.getElementById('backLink');
-
-    if (backLink) {
         backLink.href = backURL;
+    } else {
+        if (backLink) {
+            backLink.classList.add('d-none');
+        }
     }
 </script>
 {% endblock %}
