@@ -50,9 +50,13 @@ function generate_static_html {
 	for dir_name in `find build/input -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
 	do
 		sphinx-build -M html build/input/${dir_name} build/output/${dir_name}
+
+		mv build/output/${dir_name}/html/* build/output/${dir_name}
 	done
 
-	sphinx-build -M html build/input/homepage build/output/homepage
+	mv build/output/homepage/* build/output
+
+	rmdir build/output/homepage
 }
 
 function main {
