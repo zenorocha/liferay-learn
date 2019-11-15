@@ -15,18 +15,18 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Content
 
-* [Implementing a Sample File Download to Product Details (TODO)](./tutorial/implementing-a-sample-file-download-to-product-details.md)
+* Implementing a Sample File Download to Product Details (TODO)
 * [Implementing a Custom Product Content Renderer](./tutorial/implementing-a-custom-product-content-renderer.md)
 
 ### Managing Inventory
 
-* [Using a Custom Inventory Engine (TODO)](./tutorial/using-a-custom-inventory-engine.md)
+* Using a Custom Inventory Engine (TODO)
 * [Implementing a Custom Low Stock Activity](./tutorial/implementing-a-custom-low-stock-activity.md)
-* [Customizing Warehouse Sourcing Logic for Order Shipments (TODO)](./tutorial/customizing-warehouse-sourcing-logic-for-order-shipments.md)
+* Customizing Warehouse Sourcing Logic for Order Shipments (TODO)
 
 ### Marketing
 
-* [Adding a New Notification Template Type (TODO)](./tutorial/adding-a-new-notification-template-type.md)
+* Adding a New Notification Template Type (TODO)
 * [Adding a New Product Data Source for the Product Publisher Widget](./tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget.md)
 
 ### Promotions
@@ -37,7 +37,7 @@ Welcome to the Liferay Commerce Developer Guide.
 
 * [Implementing a Custom Order Validator](./tutorial/implementing-a-custom-order-validator.md)
 * [Implementing a Custom Checkout Step](./tutorial/implementing-a-custom-checkout-step.md)
-* [Implementing a New Payment Engine (TODO)](./tutorial/implementing-a-new-payment-engine.md)
+* Implementing a New Payment Engine (TODO)
 * [Implementing a New Tax Engine](./tutorial/implementing-a-new-tax-engine.md)
 * [Implementing a New Shipping Engine](./tutorial/implementing-a-new-shipping-engine.md)
 * [Implementing an Exchange Rate Provider](./tutorial/implementing-an-exchange-rate-provider.md)
@@ -45,7 +45,7 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Store Administration
 
-* [Adding Regions Programmatically (TODO)](./tutorial/adding-regions-programmatically.md)
+* Adding Regions Programmatically (TODO)
 
 ## Leveraging Liferay Commerce APIs
 
