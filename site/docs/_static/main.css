@@ -5080,7 +5080,7 @@ textarea.form-control {
   border: 0; }
 
 .table-striped tbody tr:nth-of-type(odd), table.docutils tbody tr:nth-of-type(odd) {
-  background-color: #F2F2F2; }
+  background-color: #F4F6F9; }
 
 .table-hover tbody tr:hover {
   color: #212529;
@@ -7505,7 +7505,7 @@ th {
 
 .table, table.docutils {
   border-collapse: collapse;
-  margin-bottom: 0; }
+  margin-bottom: 1rem; }
   .table thead td, table.docutils thead td, .table thead th, table.docutils thead th {
     background-color: #FFF;
     border-top-width: 0; }
@@ -7520,7 +7520,7 @@ th {
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 1px;
-    border-color: #dee2e6;
+    border-color: transparent;
     border-style: solid;
     position: relative;
     vertical-align: middle; }
@@ -7576,7 +7576,7 @@ th {
 .table-striped tbody tr:nth-of-type(odd) td, table.docutils tbody tr:nth-of-type(odd) td,
 .table-striped tbody tr:nth-of-type(odd) th,
 table.docutils tbody tr:nth-of-type(odd) th {
-  background-color: #F2F2F2; }
+  background-color: #F4F6F9; }
 
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
@@ -7936,10 +7936,10 @@ table.docutils .table-divider th {
   padding-top: 0.75rem; }
 
 .table-striped tbody tr:nth-of-type(odd) .quick-action-menu, table.docutils tbody tr:nth-of-type(odd) .quick-action-menu {
-  background-color: #F2F2F2; }
+  background-color: #F4F6F9; }
 
 .table-striped tbody .table-active:nth-of-type(odd) .quick-action-menu, table.docutils tbody .table-active:nth-of-type(odd) .quick-action-menu {
-  background-color: #F2F2F2; }
+  background-color: #F4F6F9; }
 
 .table-hover tbody tr:hover .quick-action-menu {
   background-color: #ECECEC; }
