@@ -8218,23 +8218,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin: 0; }
 
-h2.display {
-  margin-bottom: 1rem; }
-
-@media (max-width: 576px) {
-  h2 {
-    font-size: 1rem; } }
+h2 {
+  font-size: 1.5rem; }
+  h2.display {
+    margin-bottom: 1rem; }
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 1rem; } }
 
 h3,
 h4 {
   line-height: 1.5; }
-
-h3,
-h6 {
-  text-transform: uppercase; }
-
-h2 {
-  font-size: 1.5rem; }
 
 h3 {
   margin-top: 0.75rem; }
@@ -8246,7 +8240,8 @@ h5 {
 h6 {
   font-size: 0.75rem;
   letter-spacing: 1px;
-  line-height: 16px; }
+  line-height: 16px;
+  text-transform: uppercase; }
 
 code,
 pre {

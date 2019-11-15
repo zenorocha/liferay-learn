@@ -47,6 +47,8 @@ h2 {
 		margin-bottom: $spacing-md;
 	}
 
+	font-size: $h2-font-size;
+
 	@media (max-width: 576px) {
 		font-size: $h3-font-size;
 	}
@@ -55,15 +57,6 @@ h2 {
 h3,
 h4 {
 	line-height: $line-height-base;
-}
-
-h3,
-h6 {
-	text-transform: uppercase;
-}
-
-h2 {
-	font-size: $h2-font-size;
 }
 
 h3 {
@@ -79,6 +72,7 @@ h6 {
 	font-size: $h6-font-size;
 	letter-spacing: 1px;
 	line-height: $h6-line-height;
+	text-transform: uppercase;
 }
 
 code,
