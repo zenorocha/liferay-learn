@@ -5079,7 +5079,7 @@ textarea.form-control {
 .table-borderless tbody + tbody {
   border: 0; }
 
-.table-striped tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd), table.docutils tbody tr:nth-of-type(odd) {
   background-color: #F2F2F2; }
 
 .table-hover tbody tr:hover {
@@ -5252,7 +5252,7 @@ textarea.form-control {
     border-color: #454d55; }
   .table-dark.table-bordered {
     border: 0; }
-  .table-dark.table-striped tbody tr:nth-of-type(odd) {
+  .table-dark.table-striped tbody tr:nth-of-type(odd), table.table-dark.docutils tbody tr:nth-of-type(odd) {
     background-color: rgba(255, 255, 255, 0.05); }
   .table-dark.table-hover tbody tr:hover {
     color: #FFF;
@@ -7573,8 +7573,9 @@ th {
 .table-bordered th {
   border-width: 1px; }
 
-.table-striped tbody tr:nth-of-type(odd) td,
-.table-striped tbody tr:nth-of-type(odd) th {
+.table-striped tbody tr:nth-of-type(odd) td, table.docutils tbody tr:nth-of-type(odd) td,
+.table-striped tbody tr:nth-of-type(odd) th,
+table.docutils tbody tr:nth-of-type(odd) th {
   background-color: #F2F2F2; }
 
 .table-hover tbody tr:hover td,
@@ -7604,8 +7605,9 @@ table.docutils .table-active > th {
 .table-hover .table-disabled:hover > th {
   background-color: #FFF; }
 
-.table-striped tbody .table-disabled:nth-of-type(odd) td,
-.table-striped tbody .table-disabled:nth-of-type(odd) th {
+.table-striped tbody .table-disabled:nth-of-type(odd) td, table.docutils tbody .table-disabled:nth-of-type(odd) td,
+.table-striped tbody .table-disabled:nth-of-type(odd) th,
+table.docutils tbody .table-disabled:nth-of-type(odd) th {
   background-color: #FFF; }
 
 .table-title {
@@ -7741,8 +7743,9 @@ table.docutils .table-active > th {
       padding-right: 0.8125rem;
       padding-top: 0.8125rem; }
 
-.table-list.table-striped tbody tr:nth-of-type(odd) td,
-.table-list.table-striped tbody tr:nth-of-type(odd) th {
+.table-list.table-striped tbody tr:nth-of-type(odd) td, table.table-list.docutils tbody tr:nth-of-type(odd) td,
+.table-list.table-striped tbody tr:nth-of-type(odd) th,
+table.table-list.docutils tbody tr:nth-of-type(odd) th {
   background-color: #F2F2F2; }
 
 .table-list.table-hover tbody tr:hover td,
@@ -7778,8 +7781,9 @@ table.docutils .table-active > th {
 .table-list.table-hover .table-disabled:hover > th {
   background-color: #FFF; }
 
-.table-list.table-striped tbody .table-disabled:nth-of-type(odd) td,
-.table-list.table-striped tbody .table-disabled:nth-of-type(odd) th {
+.table-list.table-striped tbody .table-disabled:nth-of-type(odd) td, table.table-list.docutils tbody .table-disabled:nth-of-type(odd) td,
+.table-list.table-striped tbody .table-disabled:nth-of-type(odd) th,
+table.table-list.docutils tbody .table-disabled:nth-of-type(odd) th {
   background-color: #FFF; }
 
 .table-list-title {
@@ -7931,10 +7935,10 @@ table.docutils .table-divider th {
   padding-bottom: 0.75rem;
   padding-top: 0.75rem; }
 
-.table-striped tbody tr:nth-of-type(odd) .quick-action-menu {
+.table-striped tbody tr:nth-of-type(odd) .quick-action-menu, table.docutils tbody tr:nth-of-type(odd) .quick-action-menu {
   background-color: #F2F2F2; }
 
-.table-striped tbody .table-active:nth-of-type(odd) .quick-action-menu {
+.table-striped tbody .table-active:nth-of-type(odd) .quick-action-menu, table.docutils tbody .table-active:nth-of-type(odd) .quick-action-menu {
   background-color: #F2F2F2; }
 
 .table-hover tbody tr:hover .quick-action-menu {
@@ -7952,10 +7956,10 @@ table.docutils .table-divider th {
   bottom: 0;
   top: 0.0625rem; }
 
-.table-list.table-striped tbody tr:nth-of-type(odd) .quick-action-menu {
+.table-list.table-striped tbody tr:nth-of-type(odd) .quick-action-menu, table.table-list.docutils tbody tr:nth-of-type(odd) .quick-action-menu {
   background-color: #F2F2F2; }
 
-.table-list.table-striped tbody .table-active:nth-of-type(odd) .quick-action-menu {
+.table-list.table-striped tbody .table-active:nth-of-type(odd) .quick-action-menu, table.table-list.docutils tbody .table-active:nth-of-type(odd) .quick-action-menu {
   background-color: #DADADA; }
 
 .table-list.table-hover tbody tr:hover .quick-action-menu {
