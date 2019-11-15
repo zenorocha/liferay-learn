@@ -4,8 +4,6 @@ User Guide
 .. toctree::
    :maxdepth: 1
 
-   user-guide/getting-started/introduction-to-liferay-commerce.md
-
    user-guide/getting-started/accelerators.md
    user-guide/getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md
 

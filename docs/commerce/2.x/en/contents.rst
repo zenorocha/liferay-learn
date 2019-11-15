@@ -12,7 +12,6 @@ Contents
    :includehidden:
    :maxdepth: 2
 
-   getting_started
    installation_and_upgrades
    user_guide
    developer_guide
