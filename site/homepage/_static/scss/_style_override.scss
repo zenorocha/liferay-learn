@@ -11,16 +11,8 @@ table {
 	font-size: $h5-font-size;
 
 	&.docutils {
-		td,
-		th {
-			padding: $spacing-sm;
-			padding-top: 0.8125rem;
-			vertical-align: middle;
-		}
-
-		th {
-			font-weight: 600;
-		}
+		@extend .table;
+		@extend .table-autofit;
 	}
 }
 

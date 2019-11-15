@@ -5044,19 +5044,20 @@ textarea.form-control {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #FFF; }
 
-.table {
+.table, table.docutils {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529; }
-  .table th,
-  .table td {
+  .table th, table.docutils th,
+  .table td,
+  table.docutils td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6; }
-  .table thead th {
+  .table thead th, table.docutils thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6; }
-  .table tbody + tbody {
+  .table tbody + tbody, table.docutils tbody + tbody {
     border-top: 2px solid #dee2e6; }
 
 .table-sm th,
@@ -5232,12 +5233,12 @@ textarea.form-control {
   .table-hover .table-active:hover > th {
     background-color: #dfdfdf; }
 
-.table .thead-dark th {
+.table .thead-dark th, table.docutils .thead-dark th {
   color: #FFF;
   background-color: #343a40;
   border-color: #454d55; }
 
-.table .thead-light th {
+.table .thead-light th, table.docutils .thead-light th {
   color: #495057;
   background-color: #FFF;
   border-color: #dee2e6; }
@@ -7502,18 +7503,19 @@ th {
 .table-head-title .inline-item-after {
   margin-left: 0.25rem; }
 
-.table {
+.table, table.docutils {
   border-collapse: collapse;
   margin-bottom: 0; }
-  .table thead td,
-  .table thead th {
+  .table thead td, table.docutils thead td, .table thead th, table.docutils thead th {
     background-color: #FFF;
     border-top-width: 0; }
-  .table th {
+  .table th, table.docutils th {
     color: #495057;
     height: 36px;
     position: relative; }
-  .table td {
+  
+  .table td,
+  table.docutils td {
     border-bottom-width: 1px;
     border-left-width: 0;
     border-right-width: 0;
@@ -7522,24 +7524,29 @@ th {
     border-style: solid;
     position: relative;
     vertical-align: middle; }
-  .table td:first-child,
+  .table td:first-child, table.docutils td:first-child,
   .table th:first-child,
-  .table .table-cell-start {
+  table.docutils th:first-child,
+  .table .table-cell-start,
+  table.docutils .table-cell-start {
     padding-left: 15px; }
-  .table td:last-child,
+  .table td:last-child, table.docutils td:last-child,
   .table th:last-child,
-  .table .table-cell-end {
+  table.docutils th:last-child,
+  .table .table-cell-end,
+  table.docutils .table-cell-end {
     padding-right: 15px; }
-  .table .autofit-col {
+  .table .autofit-col, table.docutils .autofit-col {
     justify-content: center;
     padding-left: 0.75rem;
     padding-right: 0.75rem; }
-    .table .autofit-col:first-child {
+    .table .autofit-col:first-child, table.docutils .autofit-col:first-child {
       padding-left: 0; }
-    .table .autofit-col:last-child {
+    .table .autofit-col:last-child, table.docutils .autofit-col:last-child {
       padding-right: 0; }
-  .table .custom-control,
-  .table .form-check {
+  .table .custom-control, table.docutils .custom-control,
+  .table .form-check,
+  table.docutils .form-check {
     margin-bottom: 0; }
 
 .table-column-text-start {
@@ -7551,7 +7558,7 @@ th {
 .table-column-text-end {
   text-align: right; }
 
-.table-autofit .table-cell-expand {
+.table-autofit .table-cell-expand, table.docutils .table-cell-expand {
   display: table-cell;
   max-width: 12.5rem;
   min-width: 12.5rem;
@@ -7574,8 +7581,9 @@ th {
 .table-hover tbody tr:hover th {
   background-color: #ECECEC; }
 
-.table .table-active > td,
-.table .table-active > th {
+.table .table-active > td, table.docutils .table-active > td,
+.table .table-active > th,
+table.docutils .table-active > th {
   background-color: #ECECEC; }
 
 .table-disabled {
@@ -7802,21 +7810,22 @@ th {
   .table-list-action-link .lexicon-icon {
     margin-top: 0; }
 
-.table-autofit td,
-.table-autofit th {
+.table-autofit td, table.docutils td,
+.table-autofit th,
+table.docutils th {
   width: 1%; }
 
-.table-autofit .table-cell-expand-small {
+.table-autofit .table-cell-expand-small, table.docutils .table-cell-expand-small {
   max-width: 12.5rem;
   width: 25%;
   word-wrap: break-word; }
 
-.table-autofit .table-cell-expand-smaller {
+.table-autofit .table-cell-expand-smaller, table.docutils .table-cell-expand-smaller {
   max-width: 12.5rem;
   width: 15%;
   word-wrap: break-word; }
 
-.table-autofit .table-cell-expand-smallest {
+.table-autofit .table-cell-expand-smallest, table.docutils .table-cell-expand-smallest {
   max-width: 12.5rem;
   width: 10%;
   word-wrap: break-word; }
@@ -7829,8 +7838,9 @@ th {
 .table-heading-nowrap thead th {
   white-space: nowrap; }
 
-.table .table-divider td,
-.table .table-divider th {
+.table .table-divider td, table.docutils .table-divider td,
+.table .table-divider th,
+table.docutils .table-divider th {
   background-color: #FFF;
   padding: 0.75rem; }
 
@@ -7916,7 +7926,7 @@ th {
 .show-quick-actions-on-hover .table-focus:not(.table-active):not(.table-disabled) .quick-action-menu {
   display: flex; }
 
-.table .quick-action-menu {
+.table .quick-action-menu, table.docutils .quick-action-menu {
   align-items: flex-start;
   padding-bottom: 0.75rem;
   padding-top: 0.75rem; }
@@ -7972,40 +7982,40 @@ th {
 .table-responsive {
   margin-bottom: 1.5rem; }
 
-.table .table-cell-minw-50 {
+.table .table-cell-minw-50, table.docutils .table-cell-minw-50 {
   min-width: 50px; }
 
-.table .table-cell-minw-75 {
+.table .table-cell-minw-75, table.docutils .table-cell-minw-75 {
   min-width: 75px; }
 
-.table .table-cell-minw-100 {
+.table .table-cell-minw-100, table.docutils .table-cell-minw-100 {
   min-width: 100px; }
 
-.table .table-cell-minw-150 {
+.table .table-cell-minw-150, table.docutils .table-cell-minw-150 {
   min-width: 150px; }
 
-.table .table-cell-minw-200 {
+.table .table-cell-minw-200, table.docutils .table-cell-minw-200 {
   min-width: 200px; }
 
-.table .table-cell-minw-250 {
+.table .table-cell-minw-250, table.docutils .table-cell-minw-250 {
   min-width: 250px; }
 
-.table .table-cell-minw-300 {
+.table .table-cell-minw-300, table.docutils .table-cell-minw-300 {
   min-width: 300px; }
 
-.table .table-cell-minw-350 {
+.table .table-cell-minw-350, table.docutils .table-cell-minw-350 {
   min-width: 350px; }
 
-.table .table-cell-minw-400 {
+.table .table-cell-minw-400, table.docutils .table-cell-minw-400 {
   min-width: 400px; }
 
-.table .table-cell-ws-normal {
+.table .table-cell-ws-normal, table.docutils .table-cell-ws-normal {
   white-space: normal; }
 
-.table .table-cell-ws-nowrap {
+.table .table-cell-ws-nowrap, table.docutils .table-cell-ws-nowrap {
   white-space: nowrap; }
 
-.table .table-img {
+.table .table-img, table.docutils .table-img {
   height: auto;
   max-height: 100px;
   max-width: none;
@@ -8569,13 +8579,6 @@ div.body {
 
 table {
   font-size: 0.875rem; }
-  table.docutils td,
-  table.docutils th {
-    padding: 0.75rem;
-    padding-top: 0.8125rem;
-    vertical-align: middle; }
-  table.docutils th {
-    font-weight: 600; }
 
 ul.search {
   list-style: none;
