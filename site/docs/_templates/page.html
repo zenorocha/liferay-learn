@@ -169,16 +169,7 @@
             }
         });
 
-        if (!level2Active) {
-
-            // Redirect to first article under a section if a user clicks on the section heading
-
-            const activeNavL2FirstChildAnchor = activeNavL2List.item(0).children[0];
-
-            if (activeNavL2FirstChildAnchor) {
-                window.location.href = activeNavL2FirstChildAnchor.href;
-            }
-        } else {
+        if (level2Active) {
 
             // Zoom in on the current section
 
