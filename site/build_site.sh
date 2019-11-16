@@ -70,6 +70,11 @@ function generate_static_html {
 			mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
 		done
 
+		for html_file_name in `find build/output/${dir_name} -name *.html -type f`
+		do
+			sed -i 's/.md"/.html"/' ${html_file_name}
+		done
+
 		#for readme_file_name in `find build/output/${dir_name}/html -name *README.html -type f`
 		#do
 		#	cp ${readme_file_name} $(dirname ${readme_file_name})/index.html
