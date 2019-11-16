@@ -96,7 +96,7 @@ function main {
 
 	source venv/bin/activate
 
-	check_utils pip3 sphinx-build
+	check_utils pip3 sphinx-build zip
 
 	pip_install recommonmark sphinx-intl sphinx-markdown-tables sphinx-notfound-page
 
