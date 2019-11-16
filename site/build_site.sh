@@ -58,28 +58,6 @@ function generate_static_html {
 		mv build/output/${dir_name}/html/* build/output/${dir_name}
 
 		#
-		# Make ZIP files.
-		#
-
-		for zip_dir_name in `find build/input/${dir_name} -name *.zip -type d`
-		do
-			pushd ${zip_dir_name}
-
-			local zip_file_name=$(basename ${zip_dir_name})
-
-			zip -r ${zip_file_name} .
-
-			local output_dir_name=$(dirname ${zip_dir_name})
-
-			output_dir_name=$(dirname ${output_dir_name})
-			output_dir_name=${output_dir_name/input/output}
-
-			popd
-
-			mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
-		done
-
-		#
 		# Fix broken links.
 		#
 
@@ -105,6 +83,28 @@ function generate_static_html {
 		#
 
 		sed -i 's/README"/index"/g' build/output/${dir_name}/searchindex.js
+
+		#
+		# Make ZIP files.
+		#
+
+		for zip_dir_name in `find build/input/${dir_name} -name *.zip -type d`
+		do
+			pushd ${zip_dir_name}
+
+			local zip_file_name=$(basename ${zip_dir_name})
+
+			zip -r ${zip_file_name} .
+
+			local output_dir_name=$(dirname ${zip_dir_name})
+
+			output_dir_name=$(dirname ${output_dir_name})
+			output_dir_name=${output_dir_name/input/output}
+
+			popd
+
+			mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
+		done
 	done
 
 	mv build/output/homepage/* build/output
