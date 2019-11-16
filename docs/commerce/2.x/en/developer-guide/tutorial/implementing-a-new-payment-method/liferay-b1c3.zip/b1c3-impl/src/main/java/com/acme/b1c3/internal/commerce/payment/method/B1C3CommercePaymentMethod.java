@@ -53,8 +53,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
 			"content.Language", locale, getClass());
 
-		return LanguageUtil.get(
-			resourceBundle, "example");
+		return LanguageUtil.get(resourceBundle, "example");
 	}
 
 	@Override

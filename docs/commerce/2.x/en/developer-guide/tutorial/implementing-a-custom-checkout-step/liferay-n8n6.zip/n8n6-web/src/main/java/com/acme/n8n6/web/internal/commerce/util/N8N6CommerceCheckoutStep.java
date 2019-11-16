@@ -51,9 +51,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 	@Reference
 	private JSPRenderer _jspRenderer;
 
-	@Reference(
-		target = "(osgi.web.symbolicname=com.acme.n8n6.web)"
-	)
+	@Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.web)")
 	private ServletContext _servletContext;
 
 }
