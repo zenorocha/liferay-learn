@@ -8,7 +8,7 @@ This article gives a brief overview of the three order management status types â
 
 ## Order Status
 
-The *Order Status* gives more precise information about where an order is in the [order life cycle](../sales/order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](../sales/orders-menu.md): either the [*Open*](../orders-menu/README.md#open), [*Pending*](../orders-menu/README.md#pending), or [*Transmitted*](../orders-menu/README.md#transmitted) tab.
+The *Order Status* gives more precise information about where an order is in the [order life cycle](../sales/order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](../sales/orders-menu.md): either the [*Open*](../sales/orders-menu.md#open), [*Pending*](../sales/orders-menu.md#pending), or [*Transmitted*](../sales/orders-menu.md#transmitted) tab.
 
 ### Open Tab
 
