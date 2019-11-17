@@ -85,4 +85,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    const currentDocProductValue = window.location.pathname.includes('commerce') ? 'commerce' : 'dxp-cloud';
+    const productSelect = document.querySelectorAll('[name="productName"]');
+
+    // Preselect current documentation product to let them know what product the results pertain to
+
+    productSelect.forEach(product => {
+        if (product.value === currentDocProductValue) {
+            product.checked = true;
+        }
+    })
+</script>
 {% endblock %}
