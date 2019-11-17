@@ -67,13 +67,13 @@
                     <div class="product-toggle-wrapper">
                         <button aria-haspopup="true" class="btn btn-secondary product-toggle" id="selectedProduct"
                             onclick="javascript:;" type="button">
-                            {% trans %}Commerce{% endtrans %}
+                            <span id="selectedProductText">{% trans %}Commerce{% endtrans %}</span>
 
                             {{ dropdownCaret() }}
                         </button>
                         <ul class="dropdown-menu" id="productDropdown">
-                            <li>{% trans %}Commerce{% endtrans %}</li>
-                            <li>{% trans %}DXP Cloud{% endtrans %}</li>
+                            <li data-producturl="/commerce-2.x/search.html">{% trans %}Commerce{% endtrans %}</li>
+                            <li data-producturl="/dxp-cloud-latest/search.html">{% trans %}DXP Cloud{% endtrans %}</li>
                         </ul>
                     </div>
 
@@ -81,24 +81,27 @@
                 </div>
 
                 <script>
-                    const productDropdown = document.getElementById('productDropdown');
-                    const selectedProduct = document.getElementById('selectedProduct');
+                    const productToggleWrapper = document.querySelector('.product-toggle-wrapper');
+                    const toggleProductDropdown = show => productDropdown.classList.toggle('show', show);
 
-                    const toggleProductDropdown = () => productDropdown.classList.toggle('show');
+                    // Listen for outside clicks and hide the dropdown.
 
-                    if (productDropdown && selectedProduct) {
-                        document.addEventListener('click', event => {
-                            if (productDropdown.contains(event.target)) {
-                                selectedProduct.innerHTML = event.target.innerHTML + ` {{ dropdownCaret() }}`;
+                    document.addEventListener('click', event => {
+                        if (!productToggleWrapper.contains(event.target)) {
+                            toggleProductDropdown(false);
+                        }
+                    });
 
-                                toggleProductDropdown();
-                            } else if (event.target === selectedProduct) {
-                                toggleProductDropdown();
-                            } else {
-                                productDropdown.classList.remove('show');
-                            }
-                        });
-                    }
+                    productToggleWrapper.addEventListener('click', event => {
+                        if (event.target.nodeName === 'LI') {
+                            toggleProductDropdown(false);
+
+                            document.getElementById('selectedProductText').innerText = event.target.innerText;
+                            document.querySelector('.search-form').action = event.target.dataset.producturl;
+                        } else {
+                            toggleProductDropdown();
+                        }
+                    });
                 </script>
             </div>
         </section>
