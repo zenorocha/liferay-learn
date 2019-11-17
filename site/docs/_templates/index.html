@@ -78,6 +78,10 @@
 
                 <script>
                     const productToggleWrapper = document.querySelector('.product-toggle-wrapper');
+                    const searchForm = document.querySelector('.search-form');
+
+                    searchForm.action = '/commerce-2.x/' + `{{ pathto('search') }}`;
+
                     const toggleProductDropdown = show => productDropdown.classList.toggle('show', show);
 
                     // Listen for outside clicks and hide the dropdown.
@@ -93,7 +97,7 @@
                             toggleProductDropdown(false);
 
                             document.getElementById('selectedProductText').innerText = event.target.innerText;
-                            document.querySelector('.search-form').action = event.target.dataset.producturl;
+                            searchForm.action = event.target.dataset.producturl;
                         } else {
                             toggleProductDropdown();
                         }
