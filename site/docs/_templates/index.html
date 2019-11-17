@@ -14,12 +14,6 @@
 </a>
 {%- endmacro %}
 
-{% macro dropdownCaret() -%}
-<svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
-    <use xlink:href="#caret-bottom" />
-</svg>
-{%- endmacro %}
-
 {% macro productCard(href, iconId, title) -%}
 {% if href %}
 <a class="autofit-row autofit-row-center product-card" href="{{ href }}">
@@ -69,7 +63,9 @@
                             onclick="javascript:;" type="button">
                             <span id="selectedProductText">{% trans %}Commerce{% endtrans %}</span>
 
-                            {{ dropdownCaret() }}
+                            <svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
+                                <use xlink:href="#caret-bottom" />
+                            </svg>
                         </button>
                         <ul class="dropdown-menu" id="productDropdown">
                             <li data-producturl="/commerce-2.x/search.html">{% trans %}Commerce{% endtrans %}</li>
