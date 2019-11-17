@@ -96,6 +96,14 @@
         if (product.value === currentDocProductValue) {
             product.checked = true;
         }
-    })
+
+        // Toggling product input will take user to the selected product's search page
+
+        product.addEventListener('click', event => {
+            if (event.target.value !== currentDocProductValue) {
+                window.location.pathname = currentDocProductValue === 'commerce' ? '/dxp-cloud-latest/search.html' : '/commerce-2.x/search.html';
+            }
+        })
+    });
 </script>
 {% endblock %}

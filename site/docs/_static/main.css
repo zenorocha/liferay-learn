@@ -8264,6 +8264,10 @@ code {
   color: #30313F;
   padding: 0.125rem 0.25rem; }
 
+input[type="radio"],
+input[type="checkbox"] {
+  vertical-align: middle; }
+
 li p {
   margin-bottom: 0; }
 
