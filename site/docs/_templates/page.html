@@ -171,6 +171,10 @@
 
         nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
+         // Set back URL
+
+        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
+
         const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
         let level2Active = false;
 
@@ -188,10 +192,6 @@
 
             backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
         }
-
-        // Set back URL
-
-        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
 
         backLink.href = backURL;
     } else {
