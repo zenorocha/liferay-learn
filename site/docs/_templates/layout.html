@@ -12,14 +12,14 @@
     <div class="brand">
         {%- if logo %}
 
-        <a class="company-logo" href="https://www.learn.liferay.com" title="Home">
+        <a class="company-logo" href="/index.html" title="Home">
             <img src="{{ pathto('_static/' + logo, 1) }}" alt="Logo" />
         </a>
         {%- endif %}
 
         {%- block headertitle %}
         <h2 class="header-title">
-            <a href="https://www.learn.liferay.com">{{ shorttitle|e }}</a>
+            <a href="/index.html">{{ shorttitle|e }}</a>
         </h2>
         {%- endblock %}
     </div>
