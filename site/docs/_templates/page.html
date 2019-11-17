@@ -141,19 +141,30 @@
         }
     });
 
-    // Preselect documentation dropdwon to be the current article's Product
+    // Documentation dropdwon
 
     const breadcrumbAncestor = document.querySelector('.breadcrumb-parent');
     const breadcrumbCurrentArticle = document.getElementById('breadcrumbCurrentArticle');
 
     const productDocumentationSelector = document.getElementById('productDocumentationSelector');
 
-    if (breadcrumbAncestor || breadcrumbCurrentArticle && productDocumentationSelector) {
+    if (breadcrumbCurrentArticle && productDocumentationSelector) {
+
+        // Preselect documentation dropdown to be the current article's product
+
         const currentDocProduct = breadcrumbAncestor ? breadcrumbAncestor : breadcrumbCurrentArticle;
 
         const currentDocProductValue = currentDocProduct.innerText.replace(/\s/g, '-').toLowerCase();
 
         productDocumentationSelector.value = currentDocProductValue;
+
+        // Route user to the selected documentation landing page
+
+        productDocumentationSelector.addEventListener('click', event => {
+            if (event.target.value !== currentDocProductValue) {
+                window.location.pathname = currentDocProductValue === 'commerce' ? '/dxp-cloud-latest/index.html' : '/commerce-2.x/index.html';
+            }
+        });
     }
 
     // Left nav interaction
@@ -171,7 +182,7 @@
 
         nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
-         // Set back URL
+        // Set back URL
 
         backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
 
