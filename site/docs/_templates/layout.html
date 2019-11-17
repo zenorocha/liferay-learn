@@ -39,7 +39,9 @@
         </a>
 
         {% if pagename != 'index' and pagename != 'search' %}
-        {% include "searchbox.html" %}
+        <div class="searchbox" id="searchbox" role="search">
+            {% include "searchbox.html" %}
+        </div>
         {% endif %}
     </div>
 </header>
