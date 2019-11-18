@@ -14,7 +14,7 @@ DXP Cloud accelerates application development and deployment by providing a comp
 
 Every DXP Cloud project comes with:
 
-* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
+* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-ci/cd)
 * [Application Development Tools](#application-development-tools)
 * [Insightful Monitoring](#insightful-monitoring)
 
