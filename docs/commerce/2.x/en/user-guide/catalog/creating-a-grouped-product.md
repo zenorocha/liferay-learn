@@ -25,7 +25,7 @@ Before creating a Grouped Product, ensure that the following conditions have bee
 * [Associate with Related Products](#associate-with-related-products)
 * [Selling Grouped Products](#selling-grouped-products)
 
-### Create a Grouped Product
+## Create a Grouped Product
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click the (+) button then _Grouped_.
@@ -39,7 +39,7 @@ Before creating a Grouped Product, ensure that the following conditions have bee
 
 Once the Grouped Product entity has been initially created, store administrators will need to associate the individual products to the grouped product entry.
 
-### Associate Products in Group
+## Associate Products in Group
 
 1. Click the _Grouped_ sub-tab.
 
@@ -59,15 +59,15 @@ In the image above, the product has been given priority 1.0 which means it will 
 
 ![Grouped Product Priority](./creating-a-grouped-product/images/04.png)
 
-### Apply Product Options
+## Apply Product Options
 
 [Product Options](../catalog/customizing-your-product-with-product-options.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to add various options to the product.
 
-### Generate SKUs
+## Generate SKUs
 
 Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see the article [Adding SKUs to Your Products](../catalog/adding-skus-to-your-products.md). Click the _SKUs_ sub-tab to generate the SKUs.
 
-### Set Prices and Quantities in the Inventory
+## Set Prices and Quantities in the Inventory
 
 After the SKUs have been generated, set the base price and quantities in the inventory for each item. Depending on how many SKUs were generated based on the various product options, each SKU can have its own prices. Some products are sold in bulk quantities while others are sold individually.
 
@@ -89,25 +89,25 @@ To set product prices and quantities:
 
 To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md).
 
-### Configure Product Specifications
+## Configure Product Specifications
 
 [Product specifications](../catalog/specifications.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
 
-### Upload Product Images and Attachments
+## Upload Product Images and Attachments
 
 [Product images](../catalog/product-images.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
 
 Store administrators can also add attachments that are associated with a particular product. Click the _Attachments_ sub-tab to add documents.
 
-### Organize with Categories
+## Organize with Categories
 
 [Product Categories](../catalog/creating-a-new-product-category.md) are used to organize products. Product categories may be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.
 
-### Associate with Related Products
+## Associate with Related Products
 
 [Product Relations](./related-products-up-sells-and-cross-sells.md) can be used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type.
 
-### Selling Grouped Products
+## Selling Grouped Products
 
 The new Grouped Product appears in the catalog. As long as each individual product has enough stock in the inventory, buyers can select the Grouped Product for purchase.
 
