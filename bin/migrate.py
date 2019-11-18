@@ -90,6 +90,8 @@ for line in lines:
         if (line.startswith("#")):
             newFile.write(line)
             done_title = True
+    elif (trimmed_line.startswith("[TOC")):
+        continue
     elif (trimmed_line.startswith("```")):
         # Write the code markup and note whether starting/ending code block
         newFile.write(line)
