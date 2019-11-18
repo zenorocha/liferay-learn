@@ -109,7 +109,7 @@ for line in lines:
 
             # Set the next list item line as the existing one
             list_item_line = line
-        elif (re.search("^[\w\*\@\!\(\&\s\.]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\&\s\.\[(\`\w)]", trimmed_line)):
 
             # Append the line content to the existing list item
             list_item_line = list_item_line.rstrip()
@@ -128,7 +128,7 @@ for line in lines:
 
             newFile.write(para_line)
             para_line = ""
-        elif (re.search("^[\w\*\@\!\(\-\&\.]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\-\&\.\[(\`\w)]", trimmed_line)):
 
             # Append the line content to the existing paragraph
             para_line = para_line.rstrip()
