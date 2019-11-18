@@ -29,8 +29,7 @@ With two _Order Workflows_ to choose from, _Approval Workflow_ and _Transmission
 ## Additional Information
 
 * [Order Life Cycle](../sales/order-life-cycle.md)
-* Enabling Order Workflows
-* Approving/Rejecting Orders in Order Workflows
+* [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
+* [Approving/Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
 * [Orders Menu](../sales/orders-menu.md)
-* Order Management Statuses
-* Advancing an Order to Transmitted
+* [Order Management Statuses](./order-management-statuses.md)

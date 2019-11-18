@@ -9,4 +9,3 @@ By default, this automated build will compile code and can be configured to exec
 ## Additional Information
 
 * [Logging into your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
-* Using the Jenkinsfile

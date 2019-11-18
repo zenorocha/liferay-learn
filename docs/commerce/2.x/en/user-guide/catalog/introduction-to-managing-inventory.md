@@ -30,5 +30,5 @@ In Liferay Commerce, inventory management is done per product SKU. To learn more
 
 ## Additional Information
 
-* Shipping - Creating a New Shipment (TODO)
+* [Shipping - Creating a New Shipment](../sales/creating-a-shipment.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)

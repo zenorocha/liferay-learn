@@ -23,7 +23,7 @@ Before creating a Grouped Product, ensure that the following conditions have bee
 * [Upload Product Images and Attachments](#upload-product-images-and-attachments)
 * [Organize with Categories](#organize-with-categories)
 * [Associate with Related Products](#associate-with-related-products)
-* [Selling Grouped Products](#setting-grouped-products)
+* [Selling Grouped Products](#selling-grouped-products)
 
 ### Create a Grouped Product
 

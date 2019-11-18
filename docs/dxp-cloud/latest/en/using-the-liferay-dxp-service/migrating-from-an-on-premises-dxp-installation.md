@@ -1,7 +1,6 @@
 # Migrating from an On-Premises DXP Installation
 
-This article will walk you through the essential steps for migrating your 
-existing Liferay DXP instance to DXP Cloud. 
+This article will walk you through the essential steps for migrating your existing Liferay DXP instance to DXP Cloud.
 
 1. [Migrate the Database and Document Library](#migrate-the-database-and-document-library)
 1. [Copy Liferay DXP Configurations](#copy-liferay-dxp-configurations)
@@ -104,27 +103,12 @@ folder within the Liferay DXP service for the applicable environment(s).
 
 ## Add Service Configurations
 
-Remaining configurations will primarily be handled through the services provided in DXP Cloud. It may take some 
-planning to determine how to translate the web server and search configurations, 
-since these must now be done through DXP Cloud's services. 
+Remaining configurations will primarily be handled through the services provided in DXP Cloud. It may take some planning to determine how to translate the web server and search configurations, since these must now be done through DXP Cloud's services.
 
-Web server configurations must be done through webserver service, using Nginx. 
-See 
-[Web Server Service](../platform-services/web-server-service.md) 
-for more information on adding configurations to this service. See the 
-[official Nginx documentation](https://docs.nginx.com/) 
-for more information on the configurations themselves. 
+Web server configurations must be done through webserver service, using Nginx. See [Web Server Service](../platform-services/web-server-service.md) for more information on adding configurations to this service. See the [official Nginx documentation](https://docs.nginx.com/) for more information on the configurations themselves.
 
-Search configurations must be done through the search service, using 
-Elasticsearch. See 
-[Search Service](../platform-services/continuous-integration.md) 
-for more information on adding configurations to this service. See the 
-[official Elasticsearch documentation](https://www.elastic.co/guide/index.html) 
-for more information on the configurations themselves. 
+Search configurations must be done through the search service, using Elasticsearch. See [Search Service](../platform-services/search-service.md) for more information on adding configurations to this service. See the [official Elasticsearch documentation](https://www.elastic.co/guide/index.html) for more information on the configurations themselves.
 
 ## Use a VPN to Connect External Services
 
-External services that do not readily map to existing services in DXP Cloud 
-(like SSO or LDAP integrations) may be connected using a VPN. See 
-[Connecting a VPN to DXP Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md) 
-for more information on configuring the VPN. 
+External services that do not readily map to existing services in DXP Cloud (like SSO or LDAP integrations) may be connected using a VPN. See [Connecting a VPN to DXP Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md) for more information on configuring the VPN.

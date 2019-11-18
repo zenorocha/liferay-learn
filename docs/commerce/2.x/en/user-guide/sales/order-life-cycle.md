@@ -29,7 +29,6 @@ The seller completes the remaining steps to deliver the ordered products to the 
 * [Orders Menu](../sales/orders-menu.md)
 * [Order Information](../sales/order-information.md)
 * [Order Workflows](../sales/order-workflows.md)
-* Order Management Statuses
-* Advancing an Order to Transmitted
-* Enabling Order Workflows
-* Approving/Rejecting Orders in Order Workflows
+* [Order Management Statuses](./order-management-statuses.md)
+* [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
+* [Approving/Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
