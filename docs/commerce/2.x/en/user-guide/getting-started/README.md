@@ -14,7 +14,6 @@
 * [Liferay Commerce Configuration Overview](./liferay-commerce-configuration-overview.md)
 * [Locale Options](./locale-options.md)
 * [Store Notifications](../marketing/automating-store-emails-by-using-notification-templates.md)
-* Store Email Addresses
 * [Introduction to Payments](./payments.md)
 * [Managing Payment Methods](./managing-payment-methods.md)
 * [Adding Regions](./adding-regions.md)
@@ -22,11 +21,6 @@
 * [Deactivating a Country for Billing or Shipping](./deactivating-a-country-for-billing-or-shipping.md)
 * [Managing Exchange Rates](./managing-exchange-rates.md)
 * [Shipping Methods](./shipping-methods.md)
-
-### Store Branding Basics
-
-* Logo
-* Favicon
 
 ### Site Management Basics
 

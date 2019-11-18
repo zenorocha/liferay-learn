@@ -79,15 +79,10 @@ The Liferay Commerce Catalog supports storing and managing a wide variety of pro
 * [Product Options](../catalog/customizing-your-product-with-product-options.md)
 * [Product Specifications](../catalog/specifications.md)
 * [Product Images](../catalog/product-images.md)
-* Product Attachments
 * [Product Relations](../catalog/related-products-up-sells-and-cross-sells.md)
 * [Product Categorization](../catalog/organizing-your-catalog-with-product-categories.md)
 * [Availability Estimates](../catalog/availability-estimates.md)
 * [Low Stock Activity](../catalog/low-stock-activity.md)
-* Applicable Tax Category
-* Associated Channels
-* Associated Account Groups
-* BOM / Spare Parts
 
 #### Product Pricing
 
@@ -128,4 +123,3 @@ When an order has been received, the order may be transmitted to an ERP and opti
 * [Introduction to Shipments](../sales/introduction-to-shipments.md)
 * [Creating a shipment](../sales/creating-a-shipment.md)
 * [Cancelling a Shipment](../sales/cancelling-a-shipment.md)
-* Shipping Override

@@ -11,13 +11,8 @@ Want to kick the tires? Get started [here](./quick-start-guide/quick-start-guide
 * [Deploying Liferay Commerce to an Existing Liferay Installation](./installation-guide/deploying-liferay-commerce-to-an-existing-liferay-installation.md)
 * [Using the Liferay Commerce Tomcat Bundle](./installation-guide/using-the-liferay-commerce-tomcat-bundle.md)
 * [Activating Liferay Commerce Enterprise](./installation-guide/activating-liferay-commerce-enterprise.md)
-* Deploying to Liferay DXP Cloud
-* Deploying and Configuring Addons
 
 ## Upgrades and Updates
 
 * [Upgrading from Liferay Commerce 1.1.x](./upgrades-and-updates/upgrading-from-liferay-commerce-1.1.x.md)
 * [Maintenance Versions](./upgrades-and-updates/maintenance-versions.md)
-* Migrations
-
-## Deploying to Liferay DXP Cloud

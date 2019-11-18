@@ -26,13 +26,9 @@
 * [Order Workflows](./order-workflows.md)
 * [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
-* Order Status
-* Processing an Order
-* Subscription Management
 
 ### Managing Shipments
 
-* Shipment Workflow
 * [Introduction to Shipments](./introduction-to-shipments.md)
 * [Creating a Shipment](./creating-a-shipment.md)
 * [Cancelling a Shipment](./cancelling-a-shipment.md)

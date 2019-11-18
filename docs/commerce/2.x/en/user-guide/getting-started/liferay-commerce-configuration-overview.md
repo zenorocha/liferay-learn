@@ -9,14 +9,8 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 ![Global Commerce Settings](./liferay-commerce-configuration-overview/images/01.png)
 
 * [Channels](../catalog/managing-channels.md)
-* Catalogs
-* Products
 * [Price Lists](../catalog/creating-a-price-list.md)
-* Discounts
 * [Orders](../sales/orders-menu.md)
-* Shipments
-* Subscription
-* Settings
 
 The Commerce Global Settings menu contains the following tabs:
 
@@ -24,9 +18,7 @@ The Commerce Global Settings menu contains the following tabs:
 
 * [Availability Estimates](../catalog/availability-estimates.md)
 * [Adding a New Currency](../getting-started/adding-a-new-currency.md)
-* Default Images
 * [Measurement Units](../sales/measurement-units.md)
-* Health Check
 * [Regions](../getting-started/adding-regions.md)
 * [Warehouses](../catalog/warehouse-reference-guide.md)
 
@@ -40,13 +32,9 @@ Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
 
 The following site settings are found here:
 
-* Category Display Pages
-* Health Check
 * [Notifications](../marketing/automating-store-emails-by-using-notification-templates.md)
 * [Order Workflows](../sales/order-workflows.md)
-* Order Fields
 * [Payment Methods](../getting-started/payments.md)
 * Product Display Pages
 * [Shipping Methods](../sales/shipping-method-reference.md)
 * [Site Types](../getting-started/sites-and-site-types.md)
-* Taxes

@@ -8,7 +8,6 @@
 ### Commerce Storefront Pages
 
 * [Account Management](./account-management.md)
-* BOM / Spare Parts Finder
 * [Catalog](./catalog.md)
 * [Cart](./cart.md)
 * [Checkout](./checkout.md)
