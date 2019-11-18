@@ -2,9 +2,6 @@
 
 ## Getting Started
 
-* [Introduction to Liferay Commerce](../README.md)
-* What's New in Liferay Commerce 2.0.5
-
 ### Basic Configuration
 
 #### Accelerators
