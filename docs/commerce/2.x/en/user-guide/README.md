@@ -18,7 +18,7 @@
 * [Introduction to the Admin Account](./getting-started/introduction-to-the-admin-account.md)
 * [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview.md)
 * [Locale Options](./getting-started/locale-options.md)
-* [Store Notifications](./marketing/automating-store-emails-by-using-notification-templates.md)
+* [Automating Store Emails by Using Notification Templates](./marketing/automating-store-emails-by-using-notification-templates.md)
 * Store Email Addresses
 * [Introduction to Payments](./getting-started/payments.md)
 * [Managing Payment Methods](./getting-started/managing-payment-methods.md)
