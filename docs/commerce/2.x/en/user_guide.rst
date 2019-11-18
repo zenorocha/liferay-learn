@@ -12,7 +12,6 @@ User Guide
    user-guide/getting-started/liferay-commerce-configuration-overview.md
    user-guide/getting-started/sites-and-site-types.md
    user-guide/getting-started/locale-options.md
-   user-guide/marketing/automating-store-emails-by-using-notification-templates.md
    user-guide/getting-started/payments.md
    user-guide/getting-started/managing-payment-methods.md
    user-guide/getting-started/adding-regions.md
