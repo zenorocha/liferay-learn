@@ -24,7 +24,7 @@ All Categories require a Vocabulary which is the parent container. [Create a Voc
 | Choose Asset Type| List of all Asset Types in Liferay DXP which includes _Commerce Product_ |
 | Required | Toggle to control whether all Commerce Products must have an associated Category |
 
-!Creating a vocabulary](./organizing-your-catalog-with-product-categories/images/02.png)
+![Creating a vocabulary](./organizing-your-catalog-with-product-categories/images/02.png)
 
 Once a Vocabulary has been created, create the associated categories. Click the Vocabulary then click the (+) button.
 
