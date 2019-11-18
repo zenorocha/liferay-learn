@@ -6,8 +6,8 @@ This article documents how to create a product category.
 
 ## Roadmap
 
-1. [Create a Vocabulary](#creating-a-vocabulary)
-1. [Create a Category](#creating-a-category)
+1. [Creating a Vocabulary](#creating-a-vocabulary)
+1. [Creating a Category](#creating-a-category)
 1. [Associate Categories with Products](#associating-categories-with-products)
 
 ## Creating a Vocabulary
@@ -28,7 +28,7 @@ This article documents how to create a product category.
 
 The new Vocabulary has been created and Categories can now be added.
 
-## Creating Categories
+## Creating a Category
 
 Because categories can be nested, store owners can organize their categories with subcategories. For example, a category called _Hair Products_ could have its own subcategories such as _Shampoo_, _Hair Gels_, and _Color Dyes_.
 
