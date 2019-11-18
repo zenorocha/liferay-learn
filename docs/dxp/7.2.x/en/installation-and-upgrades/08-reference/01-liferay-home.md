@@ -10,11 +10,11 @@ DXP bundles contain this folder structure regardless of application server:
 
 -   **[Liferay Home]**
     -   **[Application Server]**: This folder is named after the application server where DXP is installed. 
-    -   `data` (if HSQL database is selected): Stores an embedded HSQL database, Liferay Portal's file repository, and search indexes. The embedded HSQL database is configured by default, but it's intended for demonstration and trial purposes only. The [Portal property `jdbc.default.url`](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#JDBC) sets the Hypersonic embedded HSQL database location.
-    -   `deploy`: To auto-deploy plugins, copy them to this folder. It supports application `.lpkg` files from Liferay Marketplace, plugin `.war` files, and plugin `.jar` files. The [Portal property `auto.deploy.deploy.dir`](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) sets the auto-deploy location.
+    -   `data` (if HSQL database is selected): Stores an embedded HSQL database, Liferay Portal's file repository, and search indexes. The embedded HSQL database is configured by default, but it's intended for demonstration and trial purposes only. The [Portal property `jdbc.default.url`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) sets the Hypersonic embedded HSQL database location.
+    -   `deploy`: To auto-deploy plugins, copy them to this folder. It supports application `.lpkg` files from Liferay Marketplace, plugin `.war` files, and plugin `.jar` files. The [Portal property `auto.deploy.deploy.dir`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Auto%20Deploy) sets the auto-deploy location.
     -   `license`: DXP's copyright and version files are here.
     -   `logs`: Log files go here. Examine them as you diagnose problems. `portal-impl.jar`'s `portal-impl/src/META-INF/portal-log4j.xml` file sets the log file location. To override the log file location, you must [use an `ext-impl/src/META-INF/portal-log4j-ext.xml` file in an Ext plugin](/docs/7-2/customization/-/knowledge_base/c/customization-with-ext).
-    -   `osgi`: All the JAR files and a few configuration files for the OSGi runtime belong in this folder. The [Portal property `module.framework.base.dir`](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework) sets the OSGi folder location. Here are its subfolders:
+    -   `osgi`: All the JAR files and a few configuration files for the OSGi runtime belong in this folder. The [Portal property `module.framework.base.dir`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework) sets the OSGi folder location. Here are its subfolders:
 
         -   `configs`: Component configuration files.
         -   `core`: Liferay Portal's core modules.
