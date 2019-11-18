@@ -22,20 +22,14 @@ In this section, we will get an example tax engine up and running on your instan
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Tax Engine]().
+1. Download and unzip [Acme Commerce Tax Engine](./liferay-q4b9.zip).
 
     ```bash
-    curl liferay-q4b9.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-q4b9.zip -O
     ```
 
     ```bash
     unzip liferay-q4b9.zip
-    ```
-
-1. Go to `liferay-q4b9`.
-
-    ```bash
-    cd liferay-q4b9
     ```
 
 1. Build and deploy the example.

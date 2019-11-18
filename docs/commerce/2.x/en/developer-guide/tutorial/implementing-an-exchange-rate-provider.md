@@ -22,10 +22,10 @@ In this section, we will get an example exchange rate provider up and running on
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Exchange Rate Provider]().
+1. Download and unzip [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip).
 
     ```bash
-    curl liferay-f2y1.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-f2y1.zip -O
     ```
 
     ```bash

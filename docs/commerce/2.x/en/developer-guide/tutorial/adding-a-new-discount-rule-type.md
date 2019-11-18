@@ -22,20 +22,14 @@ In this section, we will get an example discount rule type up and running on you
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Discount Rule Type]().
+1. Download and unzip [Acme Commerce Discount Rule Type](./liferay-m6a8.zip).
 
     ```bash
-    curl liferay-m6a8.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-m6a8.zip -O
     ```
 
     ```bash
     unzip liferay-m6a8.zip
-    ```
-
-1. Go to `liferay-m6a8`.
-
-    ```bash
-    cd liferay-m6a8
     ```
 
 1. Build and deploy the example.

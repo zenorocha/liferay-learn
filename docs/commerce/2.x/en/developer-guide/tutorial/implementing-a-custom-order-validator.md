@@ -20,20 +20,14 @@ In this section, we will get an example order validator up and running on your i
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Order Validator]().
+1. Download and unzip [Acme Commerce Order Validator](./liferay-n9b2.zip).
 
     ```bash
-    curl liferay-n9b2.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-n9b2.zip -O
     ```
 
     ```bash
     unzip liferay-n9b2.zip
-    ```
-
-1. Go to `liferay-n9b2`.
-
-    ```bash
-    cd liferay-n9b2
     ```
 
 1. Build and deploy the example.
@@ -42,7 +36,7 @@ In this section, we will get an example order validator up and running on your i
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    > **Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+    >**Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Docker container console.
 

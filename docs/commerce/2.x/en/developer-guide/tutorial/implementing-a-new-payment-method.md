@@ -22,20 +22,14 @@ In this section, we will get an example payment method up and running on your in
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Payment Method]().
+1. Download and unzip [Acme Commerce Payment Method](./liferay-b1c3.zip).
 
     ```bash
-    curl liferay-b1c3.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-b1c3.zip -O
     ```
 
     ```bash
     unzip liferay-b1c3.zip
-    ```
-
-1. Go to `liferay-b1c3`.
-
-    ```bash
-    cd liferay-b1c3
     ```
 
 1. Build and deploy the example.

@@ -22,20 +22,14 @@ In this section, we will get an example product type up and running on your inst
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Product Type]().
+1. Download and unzip [Acme Commerce Product Type](./liferay-c1n4.zip).
 
     ```bash
-    curl liferay-c1n4.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-c1n4.zip -O
     ```
 
     ```bash
     unzip liferay-c1n4.zip
-    ```
-
-1. Go to `liferay-c1n4`.
-
-    ```bash
-    cd liferay-c1n4
     ```
 
 1. Build and deploy the example.

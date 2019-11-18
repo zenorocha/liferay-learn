@@ -22,20 +22,14 @@ In this section, we will get an example product content renderer up and running 
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Product Content Renderer]().
+1. Download and unzip [Acme Commerce Product Content Renderer](./liferay-q4f7.zip).
 
     ```bash
-    curl liferay-q4f7.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-q4f7.zip -O
     ```
 
     ```bash
     unzip liferay-q4f7.zip
-    ```
-
-1. Go to `liferay-q4f7`.
-
-    ```bash
-    cd liferay-q4f7
     ```
 
 1. Build and deploy the example.

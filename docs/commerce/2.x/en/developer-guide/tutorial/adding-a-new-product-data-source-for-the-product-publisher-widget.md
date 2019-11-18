@@ -22,20 +22,14 @@ In this section, we will get an example product data source up and running on yo
     docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
-1. Download and unzip [Acme Commerce Product Data Source]().
+1. Download and unzip [Acme Commerce Product Data Source](./liferay-m5x7.zip).
 
     ```bash
-    curl liferay-m5x7.zip
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-m5x7.zip -O
     ```
 
     ```bash
     unzip liferay-m5x7.zip
-    ```
-
-1. Go to `liferay-m5x7`.
-
-    ```bash
-    cd liferay-m5x7
     ```
 
 1. Build and deploy the example.
@@ -44,7 +38,7 @@ In this section, we will get an example product data source up and running on yo
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    >Note: This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+    >**Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
 1. Confirm the deployment in the Liferay Docker container console.
 
