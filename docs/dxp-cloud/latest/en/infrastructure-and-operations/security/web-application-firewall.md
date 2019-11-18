@@ -32,7 +32,7 @@ does not require user configuration.
 ## CDN Offload
 
 DXP Cloud's
-[CDN](/docs/-/knowledge_base/dxp-cloud/load-balancer#cdn)
+[CDN](../networking/load-balancer.md#cdn)
 acts as a proxy between the clients and origin servers. The CDN caches and
 serves cacheable content from points-of-presence (POPs) closer to users, instead
 of sending them to backend servers (instances).
