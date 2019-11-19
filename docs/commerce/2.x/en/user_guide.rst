@@ -60,8 +60,8 @@ User Guide
    user-guide/marketing/adding-discounts-to-the-subtotal.md
 
    user-guide/content/creating-your-storefront.md
-   user-guide/content/widget-reference.md
    user-guide/content/creating-a-catalog-page.md
+   user-guide/content/widget-reference.md
    user-guide/content/account-management.md
    user-guide/content/catalog.md
    user-guide/content/cart.md

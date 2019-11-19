@@ -89,6 +89,7 @@
 ### Pages
 
 * [Creating Your Storefront](./content/creating-your-storefront.md)
+* [Creating a Catalog Page](./content/creating-a-catalog-page.md)
 * [Widget Reference Guide](./content/widget-reference.md)
 
 #### Commerce Storefront Pages
