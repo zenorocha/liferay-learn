@@ -2,7 +2,7 @@ Installation and Upgrades
 =========================
 
 :doc:`/installation-and-upgrades/quick-start-guide/quick-start-guide`
-----------------------------------------------------------------
+---------------------------------------------------------------------
 
 Want to kick the tires? Get started :doc:`/installation-and-upgrades/quick-start-guide/quick-start-guide`!
 
