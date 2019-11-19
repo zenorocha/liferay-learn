@@ -12,3 +12,6 @@ Using the Liferay DXP Service
    Deploying Apps, Themes, and Modules </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service#themes-portlets-and-osgi-modules>
    Deploying Customizations From Source </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service#source-code>
    using-the-liferay-dxp-service/migrating-from-an-on-premises-dxp-installation.md
+
+.. include:: /using-the-liferay-dxp-service/README.rst
+	:start-line: 2

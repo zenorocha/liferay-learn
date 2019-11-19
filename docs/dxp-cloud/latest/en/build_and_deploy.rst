@@ -12,3 +12,6 @@ Build and Deploy
    Deploying Customizations From Source </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html#source-code>
    
    build-and-deploy/configuring-persistent-file-system-volumes.md
+
+.. include:: /build-and-deploy/README.rst
+	:start-line: 2

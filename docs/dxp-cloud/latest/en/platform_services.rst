@@ -11,3 +11,6 @@ Platform Services
    platform-services/web-server-service.md
 
    platform-services/backup-and-restore.md
+
+.. include:: /platform-services/README.rst
+	:start-line: 2

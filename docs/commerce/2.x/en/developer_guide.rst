@@ -16,3 +16,6 @@ Developer Guide
    developer-guide/tutorial/implementing-a-new-shipping-engine.md
    developer-guide/tutorial/implementing-a-new-tax-engine.md
    developer-guide/tutorial/implementing-an-exchange-rate-provider.md
+
+.. include:: /developer-guide/README.rst
+	:start-line: 2

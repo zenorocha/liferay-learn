@@ -14,3 +14,6 @@ Infrastructure and Operations
    infrastructure-and-operations/security/authentication.md
    infrastructure-and-operations/security/using-sso-with-dxp-cloud.md
    infrastructure-and-operations/security/web-application-firewall.md
+
+.. include:: /infrastructure-and-operations/README.rst
+	:start-line: 2

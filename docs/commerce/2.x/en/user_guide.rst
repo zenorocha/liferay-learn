@@ -116,3 +116,6 @@ User Guide
    user-guide/operations/creating-tax-categories.md
    user-guide/operations/setting-tax-rate-by-address.md
    user-guide/operations/setting-tax-rate-by-fixed-rate.md
+
+.. include:: /user-guide/README.rst
+	:start-line: 2

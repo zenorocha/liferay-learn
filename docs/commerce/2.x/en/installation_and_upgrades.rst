@@ -12,3 +12,6 @@ Installation and Upgrades
    installation-and-upgrades/installation-guide/activating-liferay-commerce-enterprise.md
    installation-and-upgrades/upgrades-and-updates/upgrading-from-liferay-commerce-1.1.x.md
    installation-and-upgrades/upgrades-and-updates/maintenance-versions.md
+
+.. include:: /installation-and-upgrades/README.rst
+	:start-line: 2
