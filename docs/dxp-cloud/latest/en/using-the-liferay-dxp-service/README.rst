@@ -6,9 +6,8 @@ Using the Liferay DXP Service
 Maintenance and Upgrades
 ------------------------
 
--  `Applying Patches <./introduction-to-the-liferay-dxp-service.md#hotfixes>`__
--  `Activating Products <./introduction-to-the-liferay-dxp-service.md#licenses>`__
--  Upgrading From Previous Versions of Liferay DXP
+-  `Applying Patches <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#hotfixes>`__
+-  `Activating Products <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#licenses>`__
 
 Configuration
 -------------
@@ -23,8 +22,8 @@ Scalability and Performance
 Customizations
 --------------
 
--  `Deploying Apps, Themes, and Modules <./introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules>`__
--  `Deploying Customizations from Source <./introduction-to-the-liferay-dxp-service.md#source-code>`__
+-  `Deploying Apps, Themes, and Modules <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules>`__
+-  `Deploying Customizations from Source <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code>`__
 
 Migrations
 ----------

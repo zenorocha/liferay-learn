@@ -4,7 +4,6 @@ Infrastructure and Operations
 .. toctree::
    :maxdepth: 1
 
-   infrastructure-and-operations/networking/intro.md
    infrastructure-and-operations/networking/private-network.md
    infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md
    infrastructure-and-operations/networking/custom-domains.md

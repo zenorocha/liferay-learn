@@ -4,7 +4,6 @@ Reference
 .. toctree::
    :maxdepth: 1
 
-   reference/intro.md
    reference/configuration-via-lcp-json.md
    reference/command-line-tool.md
    reference/defining-environment-variables.md
