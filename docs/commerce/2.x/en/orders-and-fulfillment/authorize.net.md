@@ -2,7 +2,19 @@
 
 This article details how to enable Authorize.Net as a payment method. [Authorize.Net](https://www.authorize.net/about-us/) is a subsidiary of Visa and a provider of payment gateway services that manages the submission of billions of transactions to processing networks on behalf of merchant customers.
 
-Before configuring your store to use Authorize.Net, it is necessary to generate [an API Login ID and a Transaction Key](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key).
+## Roadmap
+
+1. [Review prerequisites.](#prerequisites)
+1. [Activate Authorize.net as a Payment Method](#activate-authorize.net-as-a-payment-method)
+
+## Prerequisites
+
+Before configuring your store to use Authorize.Net, it is necessary to [generate the following](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key):
+
+1. An API Login ID
+1. A Transaction Key
+
+## Activate Authorize.net as a Payment method
 
 1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 2. Click _Authorize.Net_.
