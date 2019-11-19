@@ -5,7 +5,6 @@ Welcome to the Liferay Commerce Developer Guide.
 ## Getting Started
 
 * [Introduction to the Liferay Commerce Developer Guide](./introduction/introduction-to-the-liferay-commerce-developer-guide.md)
-* Technical Architecture Overview
 
 ## Extending and Customizing Liferay Commerce
 
@@ -15,18 +14,14 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Content
 
-* Implementing a Sample File Download to Product Details (TODO)
 * [Implementing a Custom Product Content Renderer](./tutorial/implementing-a-custom-product-content-renderer.md)
 
 ### Managing Inventory
 
-* Using a Custom Inventory Engine (TODO)
 * [Implementing a Custom Low Stock Activity](./tutorial/implementing-a-custom-low-stock-activity.md)
-* Customizing Warehouse Sourcing Logic for Order Shipments (TODO)
 
 ### Marketing
 
-* Adding a New Notification Template Type (TODO)
 * [Adding a New Product Data Source for the Product Publisher Widget](./tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget.md)
 
 ### Promotions
@@ -37,7 +32,6 @@ Welcome to the Liferay Commerce Developer Guide.
 
 * [Implementing a Custom Order Validator](./tutorial/implementing-a-custom-order-validator.md)
 * [Implementing a Custom Checkout Step](./tutorial/implementing-a-custom-checkout-step.md)
-* Implementing a New Payment Engine (TODO)
 * [Implementing a New Tax Engine](./tutorial/implementing-a-new-tax-engine.md)
 * [Implementing a New Shipping Engine](./tutorial/implementing-a-new-shipping-engine.md)
 * [Implementing an Exchange Rate Provider](./tutorial/implementing-an-exchange-rate-provider.md)
@@ -45,13 +39,8 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Store Administration
 
-* Adding Regions Programmatically (TODO)
-
 ## Leveraging Liferay Commerce APIs
 
 ## Reference Materials
 
-* Javadocs
 * [Admin APIs](https://app.swaggerhub.com/search?owner=liferayinc&query=%20commerce)
-* Headless APIs
-* API Changelog
