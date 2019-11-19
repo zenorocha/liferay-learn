@@ -3,162 +3,164 @@ import re
 import shutil
 import sys
 
-if (len(sys.argv) < 2):
-    print("Usage: migrate.py article [dest_folder]\nIMPORTANT: Run this script in the folder containing the liferay-docs article so that it copies the liferay-docs image files to [dest_folder]/images.")
-    sys.exit()
+if __name__ == "__main__":
 
-article = sys.argv[1]
+    if (len(sys.argv) < 2):
+        print("Usage: migrate.py article [dest_folder]\nIMPORTANT: Run this script in the folder containing the liferay-docs article so that it copies the liferay-docs image files to [dest_folder]/images.")
+        sys.exit()
 
-dest_folder = "."
-if (len(sys.argv)) > 2:
-    dest_folder = sys.argv[2]
+    article = sys.argv[1]
 
-# Copy the article to the destination folder
+    dest_folder = "."
+    if (len(sys.argv)) > 2:
+        dest_folder = sys.argv[2]
 
-if not (os.path.isdir(dest_folder)):
-    os.mkdir(dest_folder)
+    # Copy the article to the destination folder
 
-new_article_path = dest_folder + "/" + article.split('.markdown')[0] + ".md"
+    if not (os.path.isdir(dest_folder)):
+        os.mkdir(dest_folder)
 
-# Copy referenced image files
+    new_article_path = dest_folder + "/" + article.split('.markdown')[0] + ".md"
 
-image_folder = dest_folder + "/images"
+    # Copy referenced image files
 
-file = open(article)
-content = file.read()
-file.close()
+    image_folder = dest_folder + "/images"
 
-png_split = content.split('.png')
+    file = open(article)
+    content = file.read()
+    file.close()
 
-images = []
+    png_split = content.split('.png')
 
-png_split_len = len(png_split) - 1
-ii = 0;
+    images = []
 
-while (ii < png_split_len):
-    paran_split = png_split[ii].split('(')
+    png_split_len = len(png_split) - 1
+    ii = 0;
 
-    if (len(paran_split) > 1):
-        image = paran_split[len(paran_split) - 1] + '.png'
-        images.append(image)
+    while (ii < png_split_len):
+        paran_split = png_split[ii].split('(')
 
-    ii = ii + 1
+        if (len(paran_split) > 1):
+            image = paran_split[len(paran_split) - 1] + '.png'
+            images.append(image)
 
-if (len(images) > 0):
+        ii = ii + 1
 
-    if not os.path.isdir(image_folder):
-        os.mkdir(image_folder)
+    if (len(images) > 0):
 
-    print("Writing images to folder: " + image_folder)
+        if not os.path.isdir(image_folder):
+            os.mkdir(image_folder)
 
-for ff in images:
-    shutil.copy(ff, image_folder)
+        print("Writing images to folder: " + image_folder)
 
-# Process the text
+    for ff in images:
+        shutil.copy(ff, image_folder)
 
-file = open(article)
-lines = file.readlines()
-file.close()
+    # Process the text
 
-newFile = open(new_article_path, 'w')
+    file = open(article)
+    lines = file.readlines()
+    file.close()
 
-print("Writing article: " + new_article_path)
+    newFile = open(new_article_path, 'w')
 
-para_line = ""
-list_item_line = ""
-in_code = False
-in_header_id = False
-done_header_id = False
-done_title = False
+    print("Writing article: " + new_article_path)
 
-for line in lines:
+    para_line = ""
+    list_item_line = ""
+    in_code = False
+    in_header_id = False
+    done_header_id = False
+    done_title = False
 
-    # Set all images to go in the ./images/ folder
-    line = re.sub("\]\((../)+images/", "](./images/", line)
+    for line in lines:
 
-    trimmed_line = line.lstrip()
+        # Set all images to go in the ./images/ folder
+        line = re.sub("\]\((../)+images/", "](./images/", line)
 
-    if not (done_header_id):
+        trimmed_line = line.lstrip()
 
-        if not (in_header_id):
-            if (trimmed_line.startswith("---")):
-                in_header_id = True
-        elif (trimmed_line.startswith("---")):
-                done_header_id = True
-                in_header_id = False
-    elif not (done_title):
-        if (line.startswith("#")):
+        if not (done_header_id):
+
+            if not (in_header_id):
+                if (trimmed_line.startswith("---")):
+                    in_header_id = True
+            elif (trimmed_line.startswith("---")):
+                    done_header_id = True
+                    in_header_id = False
+        elif not (done_title):
+            if (line.startswith("#")):
+                newFile.write(line)
+                done_title = True
+        elif (trimmed_line.startswith("[TOC")):
+            continue
+        elif (trimmed_line.startswith("```")):
+            # Write the code markup and note whether starting/ending code block
             newFile.write(line)
-            done_title = True
-    elif (trimmed_line.startswith("[TOC")):
-        continue
-    elif (trimmed_line.startswith("```")):
-        # Write the code markup and note whether starting/ending code block
-        newFile.write(line)
 
-        if (in_code):
-            in_code = False
-        else:
-            in_code = True
-    elif (in_code):
-        # Write code line
-        newFile.write(line)
-    elif (list_item_line != ""):
-        if (re.search("^[\d\-]", trimmed_line)):
+            if (in_code):
+                in_code = False
+            else:
+                in_code = True
+        elif (in_code):
+            # Write code line
+            newFile.write(line)
+        elif (list_item_line != ""):
+            if (re.search("^[\d\-]", trimmed_line)):
 
-            # Write the existing list item line
-            newFile.write(list_item_line)
+                # Write the existing list item line
+                newFile.write(list_item_line)
 
-            # Set the next list item line as the existing one
+                # Set the next list item line as the existing one
+                list_item_line = line
+            elif (re.search("^[\w\*\@\!\(\&\s\.\[(\`\w)]", trimmed_line)):
+
+                # Append the line content to the existing list item
+                list_item_line = list_item_line.rstrip()
+                list_item_line = list_item_line.replace("\r","")
+                list_item_line = list_item_line.replace("\n","")
+                list_item_line = list_item_line + " " + trimmed_line
+            else:
+                # Write the existing list item and the current line
+                newFile.write(list_item_line)
+                list_item_line = ""
+                newFile.write(line)
+        elif (para_line != ""):
+            if (re.search("^[\d\-]", trimmed_line)):
+                # Write the existing paragraph and start a list item
+                list_item_line = line 
+
+                newFile.write(para_line)
+                para_line = ""
+            elif (re.search("^[\w\*\@\!\(\-\&\.\[(\`\w)]", trimmed_line)):
+
+                # Append the line content to the existing paragraph
+                para_line = para_line.rstrip()
+                para_line = para_line.replace("\r","")
+                para_line = para_line.replace("\n","")
+                para_line = para_line + " " + trimmed_line
+            else:
+
+                # Write the existing paragraph and the current line
+                newFile.write(para_line)
+                para_line = ""
+                newFile.write(line)
+        elif (re.search("^[\d\-]", trimmed_line)):
+
+            # Start a list item
             list_item_line = line
-        elif (re.search("^[\w\*\@\!\(\&\s\.\[(\`\w)]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\&\s\.]", trimmed_line)):
 
-            # Append the line content to the existing list item
-            list_item_line = list_item_line.rstrip()
-            list_item_line = list_item_line.replace("\r","")
-            list_item_line = list_item_line.replace("\n","")
-            list_item_line = list_item_line + " " + trimmed_line
-        else:
-            # Write the existing list item and the current line
-            newFile.write(list_item_line)
-            list_item_line = ""
-            newFile.write(line)
-    elif (para_line != ""):
-        if (re.search("^[\d\-]", trimmed_line)):
-            # Write the existing paragraph and start a list item
-            list_item_line = line 
-
-            newFile.write(para_line)
-            para_line = ""
-        elif (re.search("^[\w\*\@\!\(\-\&\.\[(\`\w)]", trimmed_line)):
-
-            # Append the line content to the existing paragraph
-            para_line = para_line.rstrip()
-            para_line = para_line.replace("\r","")
-            para_line = para_line.replace("\n","")
-            para_line = para_line + " " + trimmed_line
+            # Start a paragraph
+            para_line = line
         else:
 
-            # Write the existing paragraph and the current line
-            newFile.write(para_line)
-            para_line = ""
+            # Write the current line
             newFile.write(line)
-    elif (re.search("^[\d\-]", trimmed_line)):
 
-        # Start a list item
-        list_item_line = line
-    elif (re.search("^[\w\*\@\!\(\&\s\.]", trimmed_line)):
+    if (para_line != ""):
+        newFile.write(para_line)
+    elif (list_item_line != ""):
+        newFile.write(list_item_line)
 
-        # Start a paragraph
-        para_line = line
-    else:
-
-        # Write the current line
-        newFile.write(line)
-
-if (para_line != ""):
-    newFile.write(para_line)
-elif (list_item_line != ""):
-    newFile.write(list_item_line)
-
-newFile.close()
+    newFile.close()
