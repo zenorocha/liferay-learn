@@ -26,7 +26,7 @@
                     </a>
 
                     {% block sidebar1 %}
-                    {{ toctree() }}
+                    {{ toctree(titles_only=True) }}
                     {% endblock %}
                 </div>
             </div>
@@ -107,7 +107,7 @@
         }
     };
 
-    // rootMargin of 157px is header height + info bar height + 24px gutter offset 
+    // rootMargin of 157px is header height + info bar height + 24px gutter offset
 
     const observer = new IntersectionObserver(callback, { rootMargin: '-157px', threshold: [0, 0.2, 0.4, 0.6, 0.8, 1] });
 
