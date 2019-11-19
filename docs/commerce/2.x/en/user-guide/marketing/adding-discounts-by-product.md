@@ -50,7 +50,7 @@ In this example, a Discount Rule has been applied to this particular Discount. C
 
 The other two options (**Has all of these products** and **Has one of these products**) function by allowing the seller to select which products in the catalog are eligible for the discount.
 
-	![Discount rule types dropdown](./adding-discounts-by-product/images/03.png)
+![Discount rule types dropdown](./adding-discounts-by-product/images/03.png)
 
    Select which products are to be included:
 
