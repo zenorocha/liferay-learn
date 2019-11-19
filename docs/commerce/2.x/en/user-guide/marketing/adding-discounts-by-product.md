@@ -19,7 +19,7 @@ To create a discount by product:
 1. Enter the _Level_: 1.00
 1. Switch the _Active_ toggle to _YES_.
 
-	![New discount](./adding-discounts-by-product/images/01.png)
+    ![New discount](./adding-discounts-by-product/images/01.png)
 
 1. Click _Publish_.
 
@@ -39,7 +39,7 @@ These rules may be combined as needed to meet your sales and marketing goals.
 
 1. Once the discount has been created, there are 3 tabs: _Detail_, _Rules_, and _Products_. Click on the _Rules_ tab.
 
-	![Discount rules tab](./adding-discounts-by-product/images/02.png)
+    ![Discount rules tab](./adding-discounts-by-product/images/02.png)
 
 1. Click (+) button to add a new Discount Rule.
 1. Select _Cart Total_ from the _Type_ drop down menu.
@@ -52,9 +52,9 @@ The other two options (**Has all of these products** and **Has one of these prod
 
 ![Discount rule types dropdown](./adding-discounts-by-product/images/03.png)
 
-   Select which products are to be included:
+Select which products are to be included:
 
-   ![Product selection for the discount](./adding-discounts-by-product/images/04.png)
+![Product selection for the discount](./adding-discounts-by-product/images/04.png)
 
 After selecting the applicable products, customers will receive a discount for these goods depending on which of these rules has been chosen.
 
