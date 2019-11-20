@@ -277,50 +277,9 @@ The exact path to the `ibm-web-ext.xmi` file depends on the WebSphere installati
 
 Note that the DXP 7.2 `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; this format is functionally the same as `.xml` and WebSphere recognizes both formats. For more general information on how WebSphere compiles JSPs see IBM's official documentation for [WebSphere Application Server 9.0.0.x](https://www.ibm.com/support/knowledgecenter/en/SSEQTP_9.0.0/com.ibm.websphere.base.doc/ae/rweb_jspengine.html).
 
-## Resolve LCS Boot Delegation
-
-It was discovered that after applying DXP 7.1 Fix Pack 5, there is a startup error in DXP 7.2 deployed on WebSphere 9 that uses Liferay Connected Services (LCS) to manage subscription and patches. The root cause is because the LCS boot delegation property conflicts with the [Liferay Connector to Elasticsearch 6](https://help.liferay.com/hc/articles/360029031631-Elasticsearch).
-
-1. In the [`portal-ext.properties`](https://help.liferay.com/hc/articles/360028712292-Portal-Properties), add the property `com.ibm.crypto` to the existing property inside `module.framework.properties.org.osgi.framework.bootdelegation=\`:
-
-    ```properties
-    module.framework.properties.org.osgi.framework.bootdelegation=\
-    __redirected,\
-    com.liferay.aspectj,\
-    com.liferay.aspectj.*,\
-    com.liferay.portal.servlet.delegate,\
-    com.liferay.portal.servlet.delegate*,\
-    com.sun.ccpp,\
-    com.sun.ccpp.*,\
-    com.sun.crypto.*,\
-    com.sun.image.*,\
-    com.sun.jmx.*,\
-    com.sun.jna,\
-    com.sun.jndi.*,\
-    com.sun.mail.*,\
-    com.sun.management.*,\
-    com.sun.media.*,\
-    com.sun.msv.*,\
-    com.sun.org.*,\
-    com.sun.syndication,\
-    com.sun.tools.*,\
-    com.sun.xml.*,\
-    com.yourkit.*,\
-    javax.validation,\
-    javax.validation.*,\
-    jdk.*,\
-    com.ibm.crypto.*,\
-    sun.*,\
-    weblogic.jndi,\
-    weblogic.jndi.*
-    ```
-
-1. Save the file.
-
-Now restart the application server.
-
 ## Start DXP 7.2
 
+1. Start the application server.
 1. If administrators are using DXP 7.2's [setup wizard](https://help.liferay.com/hc/articles/360028711012-Installing-Liferay-DXP#using-the-setup-wizard), skip to the next step. However, if administrators are using WebSphere's data source and mail session, create a file called `portal-ext.properties` in the Liferay Home folder. Place the following configuration in the file:
 
     ```properties
