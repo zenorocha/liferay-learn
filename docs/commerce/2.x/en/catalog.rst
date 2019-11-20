@@ -37,3 +37,6 @@ Catalog
    catalog/creating-a-price-list.md
    catalog/adding-products-to-a-price-list.md
    catalog/adding-tiered-pricing.md
+
+.. include:: /catalog/README.rst
+   :start-line: 2

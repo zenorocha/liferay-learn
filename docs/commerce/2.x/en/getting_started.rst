@@ -19,3 +19,6 @@ Getting Started
    getting-started/deactivating-a-country-for-billing-or-shipping.md
    getting-started/managing-exchange-rates.md
    getting-started/shipping-methods.md
+
+.. include:: /getting-started/README.rst
+   :start-line: 2

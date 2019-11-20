@@ -7,3 +7,6 @@ Operations
    operations/creating-tax-categories.md
    operations/setting-tax-rate-by-address.md
    operations/setting-tax-rate-by-fixed-rate.md
+
+.. include:: /operations/README.rst
+   :start-line: 2

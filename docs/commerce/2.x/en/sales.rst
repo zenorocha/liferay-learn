@@ -27,3 +27,6 @@ Sales
    sales/introduction-to-shipments.md
    sales/creating-a-shipment.md
    sales/cancelling-a-shipment.md
+
+.. include:: /sales/README.rst
+   :start-line: 2

@@ -11,3 +11,6 @@ Customers
    customers/account-roles.md
    customers/assigning-account-roles.md
    customers/creating-a-new-account-group.md
+
+.. include:: /customers/README.rst
+   :start-line: 2

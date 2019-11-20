@@ -7,3 +7,5 @@ Marketing
    marketing/automating-store-emails-by-using-notification-templates.md
    marketing/adding-discounts-by-product.md
    marketing/adding-discounts-to-the-subtotal.md
+
+.. include:: /marketing/README.rst
