@@ -1,8 +1,6 @@
-# Quick Start Guide
+# Using the Liferay Commerce Docker Image
 
-Follow these steps to download the latest release of Liferay Commerce and get started.
-
-## Let's Go
+The latest version Liferay Commerce is available as a docker image. Follow these steps to download the latest Docker image release of Liferay Commerce and get started.
 
 1. Get Liferay Commerce
 

@@ -1,6 +1,6 @@
 # Upgrading from Liferay Commerce 1.1.x
 
-This article documents how to upgrade Liferay Commerce to the latest maintenance version. Store administrators should consider regularly updating to the latest available maintenance version to receive bug fixes and new features.
+This article documents how to upgrade Liferay Commerce to the latest Commerce 2.x version. Store administrators should consider regularly updating to the latest available product version to receive bug fixes and new features.
 
 ## Roadmap
 

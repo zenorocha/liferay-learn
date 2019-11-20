@@ -1,6 +1,6 @@
 # Maintenance Versions
 
-Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Updating to a new maintenance version is very similar to upgrading to a new major version of Liferay Commerce.
+Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Updating to a new maintenance version is very similar to upgrading to a new major or minor version of Liferay Commerce.
 
 To update to a new maintenance version:
 
