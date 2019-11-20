@@ -7,7 +7,13 @@ Contents
    :maxdepth: 2
 
    installation_and_upgrades
-   user_guide
+   getting_started
+   catalog
+   content
+   customers
+   marketing
+   operations
+   sales
    developer_guide
    get_help
 
