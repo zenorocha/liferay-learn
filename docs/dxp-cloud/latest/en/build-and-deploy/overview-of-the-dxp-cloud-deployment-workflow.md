@@ -8,24 +8,15 @@ This article outlines the path developers will take to develop for and deploy to
 
 ## Develop and Configure
 
-Although there are multiple paths for deploying to an environment, all paths 
-begin with adding changes to the GitHub repository 
-[you configured](../getting-started/configuring-your-github-repository.md) 
-with your DXP Cloud project. This repository is used as the basis for any custom 
-additions to a DXP Cloud project, including the Liferay DXP service instance 
-itself. 
+Although there are multiple paths for deploying to an environment, all paths begin with adding changes to the GitHub repository [you configured](../getting-started/configuring-your-github-repository.md) with your DXP Cloud project. This repository is used as the basis for any custom additions to a DXP Cloud project, including the Liferay DXP service instance itself.
 
 The repository provides the following:
 
 * Workspace for building Liferay DXP modules, themes, and extensions. 
-* Shared version control for configuration and customizations of DXP Cloud 
-    services. 
+* Shared version control for configuration and customizations of DXP Cloud services. 
 * Single source of truth for DXP Cloud project deployments. 
 
-With the exception of the `common` folder, changes added to a given service's 
-environment folder (e.g., `dev`, `uat`, `prd`) are only propagated when 
-deploying to the corresponding environment. Changes added to `common` are always 
-deployed regardless of the target deployment environment.
+With the exception of the `common` folder, changes added to a given service's environment folder (e.g., `dev`, `uat`, `prd`) are only propagated when deploying to the corresponding environment. Changes added to `common` are always deployed regardless of the target deployment environment. See [Deployment](../using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#deployment-customization-patching-and-licensing) for more information.
 
 ### Code Additions
 

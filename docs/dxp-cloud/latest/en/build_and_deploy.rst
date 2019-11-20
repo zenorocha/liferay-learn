@@ -8,9 +8,6 @@ Build and Deploy
    build-and-deploy/understanding-deployment-types.md
    build-and-deploy/walking-through-the-deployment-life-cycle.md
    
-   Deploying Apps, Themes, and Modules </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html#themes-portlets-and-osgi-modules>
-   Deploying Customizations From Source </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html#source-code>
-   
    build-and-deploy/configuring-persistent-file-system-volumes.md
 
 .. include:: /build-and-deploy/README.rst
