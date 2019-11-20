@@ -2,7 +2,7 @@
 
 Payments are processed through a Payment Method. There are three types of payment methods:
 
-**Offline**: Liferay Commerce does not process payment (for example, a buyer might pay in cash when picking up a product that has been shipped to a local store).
+**Offline**: Liferay Commerce does not process payment.
 
 **Online Standard**: Payment is processed entirely by Liferay Commerce. This option is not available out-of-the-box but can be customized using the Payment Method extension point.
 
