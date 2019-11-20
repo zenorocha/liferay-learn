@@ -1,8 +1,14 @@
 # Maintenance Versions
 
-Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Updating to a new maintenance version is very similar to upgrading to a new major or minor version of Liferay Commerce.
+Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. In particular, Maintenance Versions refer to the change in the third digit of the version number. Each maintenance version includes the latest bug fixes and provides an improved level of security and reliability. Customizations are generally safe, but reviewing the customizations are highly recommended before implementation. No new features are included.
 
-To update to a new maintenance version:
+Updating to a new maintenance version is very similar to upgrading to a new major or minor version of Liferay Commerce.
+
+## Roadmap
+
+1. [Download and Deploy](#download-and-deploy)
+1. [Clear Stale Data and Restart the Server](#clear-stale-data-and-restart-the-server)
+1. [Additional Information](#additional-information)
 
 ## Download and Deploy
 
@@ -14,7 +20,7 @@ To update to a new maintenance version:
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
 1. Verify that that the following message appears in the application server console:
 
-    ```
+    ```log
     2019-08-12 21:53:43.847 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:261] Processing Liferay Commerce Enterprise 2.0.5.lpkg
     2019-08-13 18:12:56.713 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
     2019-08-13 18:12:56.715 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
@@ -29,7 +35,7 @@ To update to a new maintenance version:
 1. Start the application server.
 1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:
 
-    ```
+    ```log
     2019-08-13 18:26:26.082 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
     2019-08-13 18:26:26.106 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
     2019-08-13 18:26:26.116 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess
@@ -44,7 +50,8 @@ To update to a new maintenance version:
     2019-08-13 18:26:26.346 INFO  [main][BaseDB:812] Dropping stale indexes
     2019-08-13 18:26:26.400 INFO  [main][BaseDB:84] Adding indexes
     ```
-    ```
+
+    ```log
     2019-08-13 18:28:19.439 INFO  [main][VerifyProcess:65] Verifying com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess
     2019-08-13 18:28:19.443 INFO  [main][LoggingTimer:83] Starting com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog
     2019-08-13 18:28:19.445 INFO  [main][LoggingTimer:43] Completed com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog in 2 ms
@@ -58,7 +65,8 @@ The Liferay Commerce instance has been updated. There is no need to reindex and 
 
 ## Additional Information
 
-Liferay Commerce is built on Liferay DXP 7.1. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest maintenance version. Fixes to Liferay Commerce are independent from Liferay.
+Liferay Commerce is built on Liferay Digital Experience Platform. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest major, minor, or maintenance version. Fixes to Liferay Commerce are independent from Liferay.
 
 * [Liferay Commerce Fix Delivery Method](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
 * [Upgrading from Liferay Commerce 1.1.x](./upgrading-from-liferay-commerce-1.1.x.md)
+* [End of Life](https://www.liferay.com/subscription-services/end-of-life/commerce)
