@@ -1,8 +1,15 @@
 Orders and Fulfillment
 ======================
 
-Payments
---------
+Order Management
+----------------
+
+-  :doc:`/orders-and-fulfillment/order-life-cycle`
+-  :doc:`/orders-and-fulfillment/orders-menu`
+-  :doc:`/orders-and-fulfillment/order-information`
+-  :doc:`/orders-and-fulfillment/order-workflows`
+-  :doc:`/orders-and-fulfillment/enabling-or-disabling-order-workflows`
+-  :doc:`/orders-and-fulfillment/approving-or-rejecting-orders-in-order-workflows`
 
 Payment Methods
 ~~~~~~~~~~~~~~~
@@ -21,16 +28,6 @@ Shipping
 -  :doc:`/orders-and-fulfillment/applying-shipping-method-restrictions`
 -  :doc:`/orders-and-fulfillment/measurement-units`
 -  :doc:`/orders-and-fulfillment/shipping-method-reference`
-
-Order Management
-----------------
-
--  :doc:`/orders-and-fulfillment/order-life-cycle`
--  :doc:`/orders-and-fulfillment/orders-menu`
--  :doc:`/orders-and-fulfillment/order-information`
--  :doc:`/orders-and-fulfillment/order-workflows`
--  :doc:`/orders-and-fulfillment/enabling-or-disabling-order-workflows`
--  :doc:`/orders-and-fulfillment/approving-or-rejecting-orders-in-order-workflows`
 
 Managing Shipments
 ------------------

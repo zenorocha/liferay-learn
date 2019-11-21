@@ -1,8 +1,6 @@
 Developer Guide
 ===============
 
-Welcome to the Liferay Commerce Developer Guide.
-
 Getting Started
 ---------------
 

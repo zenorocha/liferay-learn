@@ -7,6 +7,7 @@ Creating Store Content
    creating-store-content/creating-your-storefront.md
    creating-store-content/creating-a-catalog-page.md
    creating-store-content/widget-reference.md
+
    creating-store-content/account-management.md
    creating-store-content/catalog.md
    creating-store-content/cart.md
