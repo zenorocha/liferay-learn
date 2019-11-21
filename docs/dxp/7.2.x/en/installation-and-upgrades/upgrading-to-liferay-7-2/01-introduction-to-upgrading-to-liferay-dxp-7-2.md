@@ -6,10 +6,10 @@ This article will give an overview of the steps necessary to upgrade to Liferay 
 
 1. [Planning for Deprecated Features](#planning-for-deprecated-features)
 1. [Upgrading Custom Code and Plugins](#upgrading-custom-code-and-plugins)
-1. [Preparing the Database for Upgrade](#preparing-the-database-for-upgrade)
+1. [Preparing for the Data Upgrade](#preparing-for-the-data-upgrade)
 1. [Preparing a New Liferay DXP Server](#preparing-a-new-liferay-dxp-server)
 1. [Testing the Upgrade with a Backup](#testing-the-upgrade-with-a-backup)
-1. [Performing the Database Upgrade](#performing-the-database-upgrade)
+1. [Performing the Data Upgrade](#performing-the-data-upgrade)
 1. [Executing Post-Upgrade Tasks](#executing-post-upgrade-tasks)
 
 ## Planning for the Upgrade
@@ -26,9 +26,9 @@ Custom themes and apps must also be updated to reflect changes in the new versio
 
 You must also upgrade each Marketplace app (Kaleo, Calendar, Notifications, etc.) that you're using to its latest version for your Liferay DXP installation. Troubleshoot any issues with these apps before proceeding with the upgrade.
 
-## Preparing the Database for Upgrade
+## Preparing for the Data Upgrade
 
-The database upgrade itself will take a varying amount of time, and it can take an increasingly long time for databases with a large amount of data. Pruning unneeded data from the database before upgrading can greatly improve the time that the upgrade will take to complete. See [Pruning the Database](./02-pruning-the-database.md) for more information on how to prepare the database to optimize the upgrade itself.
+The data upgrade itself will take a varying amount of time, and it can take an increasingly long time for databases with a large amount of data. Pruning unneeded data from the database before upgrading can greatly improve the time that the upgrade will take to complete. See [Pruning the Database](./02-pruning-the-database.md) for more information on how to prepare the database to optimize the upgrade itself.
 
 **Note:** If local or remote Staging is enabled, then administrators should also publish any staged changes to live before the upgrade. If this step is skipped, then a full publish will be required, since information may be lost as to what information had changed in Staging.
 
@@ -42,12 +42,12 @@ It may also be necessary to make several tuning changes to your application serv
 
 Remember to use a test environment with the database and document library both backed up before performing the upgrade for the first time. Testing with a backup of the production database is essential for identifying issues post-upgrade that will need to be resolved.
 
-## Performing the Database Upgrade
+## Performing the Data Upgrade
 
-The database upgrade step represents the biggest landmark in the upgrade process. First, you must configure your new application server to run the upgrade. See [Configuring the Data Upgrade](./03-configuring-the-data-upgrade.md) for more information on adding these configurations.
+The data upgrade step represents the biggest landmark in the upgrade process. First, you must configure your new application server to run the upgrade. See [Configuring the Data Upgrade](./03-configuring-the-data-upgrade.md) for more information on adding these configurations.
 
 Once you are ready, use the upgrade tool to perform the core upgrade process; see [Upgrading the Core Using the Upgrade Tool](./04-upgrading-the-core-using-the-upgrade-tool.md) for more information. If you had configured modules to upgrade separately before running the upgrade, then you must also [use the Gogo shell](./05-upgrading-modules-using-gogo-shell.md) to finish the module upgrades after the core upgrade processes have completed.
 
 ## Executing Post-Upgrade Tasks
 
-After the database upgrade has completed, you will need to execute a few remaining tasks before the procedure is complete. This may include re-tuning any values that were changed prior to the upgrade and running a search reindex. See [Executing Post-Upgrade Tasks](./07-executing-post-upgrade-tasks.md) for a guide to common tasks to perform after completing the database upgrade.
+After the data upgrade has completed, you will need to execute a few remaining tasks before the procedure is complete. This may include re-tuning any values that were changed prior to the upgrade and running a search reindex. See [Executing Post-Upgrade Tasks](./07-executing-post-upgrade-tasks.md) for a guide to common tasks to perform after completing the data upgrade.

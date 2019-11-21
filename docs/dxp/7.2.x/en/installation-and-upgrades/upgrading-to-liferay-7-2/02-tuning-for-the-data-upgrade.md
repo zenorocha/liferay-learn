@@ -12,7 +12,7 @@ Upgrading impacts the database differently from daily running in production. Bec
 
 **Note:** The tips given here worked well in test runs on specific versions of each database. Optimal tuning depends on your own data, infrastructure conditions, and database vendor. Analyze your data, tune for upgrade, and time your test upgrades to determine the best database and Java process configuration for your Liferay DXP data upgrade.
 
-**Important:** Test your database configuration to determine tuning that's best for your system, and consult your DBA as appropriate. **Never** use database upgrade configurations in production. Always restore your production database settings before starting your Liferay DXP server for production use with the database. 
+**Important:** Test your database configuration to determine tuning that's best for your system, and consult your DBA as appropriate. **Never** use data upgrade configurations in production. Always restore your production database settings before starting your Liferay DXP server for production use with the database. 
 
 **Contents:**
 

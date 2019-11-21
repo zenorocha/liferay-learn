@@ -1,6 +1,6 @@
 # Preparing a New Application Server for Liferay DXP
 
-To upgrade your Liferay DXP database, prepare a new application server for hosting Liferay DXP. You'll use this server to run the database upgrade and then run Liferay DXP.
+To upgrade your Liferay DXP database, prepare a new application server for hosting Liferay DXP. You'll use this server to run the data upgrade and then run Liferay DXP.
 
 **Note:** If you are upgrading from a version prior to DXP 7.0 and using a sharded environment, you will need to migrate your shards to multiple application servers, because sharding is no longer supported. Prepare one new application server for each shard.
 
@@ -14,7 +14,7 @@ Get the latest fixes for Liferay DXP by requesting an upgrade patch. An *upgrade
 
 [Install DXP 7.2 on your application server](/docs/7-2/deploy/-/knowledge_base/d/deploying-product) or [use DXP 7.2 bundled with your application server of choice](/docs/7-2/deploy/-/knowledge_base/d/installing-product). 
 
-**Warning:** Do not start your application server with your database yet. It will not be ready to start until after the database upgrade to DXP 7.2. 
+**Warning:** Do not start your application server with your database yet. It will not be ready to start until after the data upgrade to DXP 7.2. 
 
 ## Install the Latest Upgrade Patch or Fix Pack
 
