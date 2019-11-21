@@ -6,6 +6,8 @@ Liferay Commerce allows multiple warehouses across geographic locations.
 
 To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _Settings_. Click the _Warehouses_ tab.
 
+## Warehouse Name and Scope
+
 ![Adding a Warehouse](./warehouse-reference-guide/images/01.png)
 
 | Field | Description |
@@ -14,6 +16,8 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Description | Additional Information |
 | Active | Toggle to designate warehouse as active |
 | Channels | List of checkboxes for all channels this warehouse serves |
+
+## Warehouse Address Fields
 
 ![Adding the Warehouse's Address](./warehouse-reference-guide/images/02.png)
 
@@ -27,6 +31,8 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Postal Code | Field to enter the postal code |
 | City | City where the warehouse is located |
 
+## Warehouse Geolocation Fields
+
 ![Setting the warehouse's geolocation](./warehouse-reference-guide/images/03.png)
 
 | Field | Description |
@@ -35,6 +41,8 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Longitude | Warehouse's Longitude |
 
 If there is more than one warehouse, repeat these steps to add the others.
+
+A warehouse's geolocation is used to calculate shipping costs based on distance. See [Using the Variable Rate Shipping Method](../sales/using-the-variable-rate-shipping-method.md) for more information.
 
 ## Additional Information
 
