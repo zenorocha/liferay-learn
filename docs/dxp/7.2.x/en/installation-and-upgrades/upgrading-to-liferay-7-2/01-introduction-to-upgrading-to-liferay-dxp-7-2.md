@@ -1,10 +1,11 @@
 # Introduction to Upgrading to Liferay DXP 7.2
 
-This article will give an overview of the steps necessary to upgrade to Liferay DXP 7.2. The steps involve migrating your installation and custom code to the new version, as well as optimizing and testing to ensure the upgrade goes as quickly and smoothly as possible. The complexity for each of the steps to upgrade scales up with the amount of customizations and data used in your installation.
+Upgrading to Liferay DXP 7.2 involves updating your installation, plugins, and custom code, as well as optimizing and testing to ensure the upgrade goes as quickly and smoothly as possible. The complexity for each of the steps to upgrade scales up with the amount of customizations and data used in your installation. 
 
 **Note:** It is possible to do multiple pre-upgrade steps in parallel to save time. Planning for deprecated applications, upgrading apps, pruning the database, or preparing a new application server can potentially be done at the same time if desired.
 
-1. [Planning for Deprecated Features](#planning-for-deprecated-features)
+1. [Determining Your Upgrade Path](#determining-your-upgrade-path)
+1. [Planning for the Upgrade](#planning-for-the-upgrade)
 1. [Upgrading Custom Code and Plugins](#upgrading-custom-code-and-plugins)
 1. [Preparing for the Data Upgrade](#preparing-for-the-data-upgrade)
 1. [Preparing a New Liferay DXP Server](#preparing-a-new-liferay-dxp-server)
@@ -31,23 +32,29 @@ If your path includes upgrading to Liferay DXP/Portal 7.1, continue following th
 
 ## Planning for the Upgrade
 
-The first step involves learning the ramifications of each change or deprecation, and developing a plan to adjust for them.
-
-See [Handling Deprecations in Liferay DXP 7.2](./98-handling-deprecations-in-liferay-dxp-7-2.md) for more information on handling the deprecations for DXP 7.2. These include removed features, deprecated (but still present) features, and features moved into maintenance mode.
+This step involves learning the ramifications of each feature change and deprecation, and developing a plan to adjust for them. The [DXP 7.2 deprecation handling instructions](./98-handling-deprecations-in-liferay-dxp-7-2.md) explains removed features, deprecated (but still present) features, and features moved into maintenance mode.
 
 If you do not already have your own Elasticsearch installation running, then you will also need to set one up for Liferay DXP. By default, Liferay DXP ships with an embedded configuration for Elasticsearch. The embedded configuration works great for demo purposes, but is not supported in production. See [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch) for more information.
 
+You must also upgrade each Marketplace app (Kaleo, Calendar, Notifications, etc.) that you're using to its latest version for your Liferay DXP installation. Troubleshoot any issues with these apps before upgrading your DXP/Portal installation.
+
 ## Upgrading Custom Code and Plugins
 
-Custom themes and apps must also be updated to reflect changes in the new version of Liferay DXP. This can be as simple as updating dependencies for the new version, or it may involve major code changes. See [Introduction to Upgrading Code to Liferay DXP 7.2](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) for a guide on upgrading custom code.
+Custom code upgrade involves adapting the themes and apps you've developed to the new version of Liferay DXP. This can be as simple as updating dependencies for the new version, or it may involve major code changes. The guide for [Upgrading Code to Liferay DXP 7.2](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) demonstrates the process. The code upgrade can be done in parallel with the data upgrade. 
 
-You must also upgrade each Marketplace app (Kaleo, Calendar, Notifications, etc.) that you're using to its latest version for your Liferay DXP installation. Troubleshoot any issues with these apps before proceeding with the upgrade.
+You must also upgrade each Marketplace app (Kaleo, Calendar, Notifications, etc.) that you're using to its latest version for your Liferay DXP installation. Troubleshoot any issues with these apps before proceeding with the data upgrade.
 
 ## Preparing for the Data Upgrade
 
-The data upgrade itself will take a varying amount of time, and it can take an increasingly long time for databases with a large amount of data. Pruning unneeded data from the database before upgrading can greatly improve the time that the upgrade will take to complete. See [Pruning the Database](./02-pruning-the-database.md) for more information on how to prepare the database to optimize the upgrade itself.
+It's imperative that all desired staged changes are published and that the data upgrade runs efficiently. If Staging is enabled in production and you have staged changes, publish them to Live before the data upgrade. If you skip this step, publishing staged changes requires a full publish.
 
-**Note:** If local or remote Staging is enabled, then administrators should also publish any staged changes to live before the upgrade. If this step is skipped, then a full publish will be required, since information may be lost as to what information had changed in Staging.
+Your database tuning and the amount of data in your database affect upgrade performance. Take these measures to quicken data upgrade in your test and pre-production environments. 
+
+- [Pruning unneeded data](./02-pruning-the-database.md)
+
+- [Tuning the database for upgrades](./02-tuning-for-the-data-upgrade.md)
+
+Lastly for your pre-production data upgrade and server upgrade, completely [back up](../09-mainitaining-a-liferay-dxp-installation/02-backing-up.md) your current Liferay DXP/Portal installation, pruned production database, and document repository.
 
 ## Preparing a New Liferay DXP Server
 
