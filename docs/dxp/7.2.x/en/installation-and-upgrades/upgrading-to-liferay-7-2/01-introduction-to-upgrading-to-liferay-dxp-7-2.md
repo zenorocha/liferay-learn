@@ -38,8 +38,6 @@ This step involves learning the ramifications of each feature change and depreca
 
 If you do not already have your own Elasticsearch installation running, you must set one up for Liferay DXP. By default, Liferay DXP ships with an embedded configuration for Elasticsearch. The embedded configuration works great for demo purposes, but is not supported in production. See [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch) for more information.
 
-If Staging is enabled in production and you have staged changes, you should publish them to Live before the data upgrade. If you skip this step, publishing staged changes requires a full publish.
-
 ## Upgrading Custom Code and Plugins
 
 Custom code upgrade involves adapting themes and apps you've developed to DXP 7.2. This can be as simple as updating dependencies for the new version, or it may involve major code changes. [Upgrading Code to Liferay DXP 7.2](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) (a separate guide) demonstrates the process. The code upgrade can be done in parallel with the data upgrade. 
@@ -57,6 +55,8 @@ Unnecessary data and improperly tuned databases slow down data upgrades. Take th
 - [Pruning unneeded data.](./02-pruning-the-database.md)
 
 - [Tuning the database for upgrades.](./02-tuning-for-the-data-upgrade.md)
+
+If Staging is enabled in production and you have staged changes, you should publish them to Live before the data upgrade. If you skip this step, publishing staged changes requires a full publish.
 
 Lastly for your pre-production upgrade, completely [back up](../09-mainitaining-a-liferay-dxp-installation/02-backing-up.md) your current Liferay DXP/Portal installation, pruned database, and document repository. 
 
