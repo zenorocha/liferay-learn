@@ -22,6 +22,18 @@ Liferay Commerce Channels makes managing products, sales, and fulfillment on a s
 
 >Product level configurations to scope product visibility to specific Channels.
 
+Each channel can be optimized to meet its customers' needs using various scoped features. This includes:
+
+* Category Display Pages
+* Notifications
+* Order Workflows
+* Order Fields
+* Payment Methods
+* Product Display Pages
+* Shipping Methods
+* Site Type
+* Taxes
+
 ## Additional Information
 
 * [Managing Channels](../managing-a-catalog/managing-channels.md)
