@@ -4,7 +4,7 @@ Liferay Commerce offers two different ways for store managers to manage the publ
 
 When a product is **expired**, there is a set expiration date in the future so that a product is no longer available for sale after that date. The product is placed in an _Expired_ status and is not visible in search results for the store. A store manager can configure the expiration process for the entire product (all SKUs) or for just one particular SKU.
 
-**Unpublishing** a product sets the product to a _Draft_ status and removes the product from search results. Unpublishing a product can be configured to happen automatically if the product's inventory falls below a minimum threshold; for more information, see the article on [Low Stock Activity](./low-stock-activity.md).
+**Unpublishing** a product sets the product to a _Draft_ status and removes the product from search results. Unpublishing a product can be configured to happen automatically if the product's inventory falls below a minimum threshold; for more information, see the article on [Low Stock Action](./low-stock-action.md).
 
 ## Scheduling Product's Expiration
 
@@ -51,4 +51,4 @@ The product is not searchable in the catalog. In the _Control Panel_, the produc
 * [Creating a Simple Product](./creating-a-simple-product.md)
 * [Creating a Grouped Product](./creating-a-grouped-product.md)
 * [Creating a Virtual Product](./creating-a-virtual-product.md)
-* [Low Stock Activity](./low-stock-activity.md)
+* [Low Stock Action](./low-stock-action.md)

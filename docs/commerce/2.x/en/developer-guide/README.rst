@@ -22,7 +22,7 @@ Content
 Managing Inventory
 ~~~~~~~~~~~~~~~~~~
 
--  :doc:`/developer-guide/tutorial/implementing-a-custom-low-stock-activity`
+-  :doc:`/developer-guide/tutorial/implementing-a-custom-low-stock-action`
 
 Marketing
 ~~~~~~~~~

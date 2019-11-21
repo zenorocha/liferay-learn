@@ -2,7 +2,7 @@
 
 Liferay Commerce provides the tools to manage product inventory for merchants with a single store, to organizations with multiple warehouses and stores. Store administrators can use these features to maintain quantities for sales and handle shipments to complete orders.
 
-There are several key features used in managing inventory: Warehouses, Availability Estimates, Low Stock Activity, and the ability to set inventory by warehouse.
+There are several key features used in managing inventory: Warehouses, Availability Estimates, Low Stock Actions, and the ability to set inventory by warehouse.
 
 ## Warehouses
 
@@ -18,11 +18,11 @@ Store owners may configure Availability Estimates to inform customers when an ou
 
 See the [Availability Estimates](../managing-a-catalog/availability-estimates.md) for more information.
 
-## Low Stock Activity
+## Low Stock Actions
 
-Low Stock Activities can be configured to perform automated actions when available product inventory reaches a specified threshold. See the [Low Stock Activity](./low-stock-activity.md) to learn how to configure what behavior is executed when inventory reaches a minimum threshold.
+Low Stock Actions can be configured to perform automated actions when available product inventory reaches a specified threshold. See the [Low Stock Action](./low-stock-action.md) to learn how to configure what behavior is executed when inventory reaches a minimum threshold.
 
-Developers interested in creating their own custom low stock activity can refer to [Implementing a Custom Low Stock Activity](../../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md).
+Developers interested in creating their own custom low stock action can refer to [Implementing a Custom Low Stock Action](../../developer-guide/tutorial/implementing-a-custom-low-stock-action.md).
 
 ## Setting Inventory by Warehouse
 
@@ -32,3 +32,4 @@ In Liferay Commerce, inventory management is done per product SKU. To learn more
 
 * [Shipping - Creating a New Shipment](../orders-and-fulfillment/creating-a-shipment.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
+* [Order Life Cycle](../sales/order-life-cycle.md)

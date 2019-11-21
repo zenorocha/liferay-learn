@@ -34,10 +34,10 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Latitude | Warehouse's Latitude |
 | Longitude | Warehouse's Longitude |
 
-If there are more than one warehouse, repeat these steps to add the others.
+If there is more than one warehouse, repeat these steps to add the others.
 
 ## Additional Information
 
-* Introduction to Shipments (TODO)
+* [Introduction to Shipments](../orders-and-fulfillment/introduction-to-shipments.md)
 * [Adding a New Warehouse](../managing-a-catalog/adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)
