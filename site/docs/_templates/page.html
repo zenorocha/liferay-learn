@@ -75,7 +75,7 @@
 
         headings.forEach(
             heading => {
-                const id = heading.children[0].hash.replace('#', '');
+                const id = heading.querySelector('a').hash.replace('#', '');
 
                 if (articleTOC) {
                     articleTOC.innerHTML += `
