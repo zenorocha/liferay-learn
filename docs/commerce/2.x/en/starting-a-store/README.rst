@@ -20,6 +20,7 @@ Store Administration Basics
 -  :doc:`/starting-a-store/payments`
 -  :doc:`/starting-a-store/managing-payment-methods`
 -  :doc:`/starting-a-store/adding-regions`
+-  :doc:`/starting-a-store/currencies-reference`
 -  :doc:`/starting-a-store/adding-a-new-currency`
 -  :doc:`/starting-a-store/deactivating-a-country-for-billing-or-shipping`
 -  :doc:`/starting-a-store/managing-exchange-rates`

@@ -24,17 +24,17 @@ Each details screen contains fields that determine how the payment method is ren
 
 ### Configuration Page
 
-For information about each available payment method configuration screen please see the Additional Information for each payment method.
+Although the user interface (UI) may differ between the four payment methods, there are similarities; the _Configuration_ page is where the store administrator inputs matching credentials to connect the Liferay Commerce with the respective payment gateway service.
+
+See the corresponding articles to learn how to activate each payment method:
+
+* [Authorize.net](../orders-and-fulfillment/authorize.net.md)
+* [Mercanet](../orders-and-fulfillment/mercanet.md)
+* [Money Orders](../orders-and-fulfillment/money-orders.md)
+* [PayPal](../orders-and-fulfillment/paypal.md)
 
 ### Restrictions Page
 
 A restriction deactivates a payment method for buyers in specified countries.
 
 ![Setting payment method restrictions](./managing-payment-methods/images/03.png)
-
-## Additional Information
-
-* [Authorize.net](../orders-and-fulfillment/authorize.net.md)
-* [Mercanet](../orders-and-fulfillment/mercanet.md)
-* [Money Orders](../orders-and-fulfillment/money-orders.md)
-* [PayPal](../orders-and-fulfillment/paypal.md)
