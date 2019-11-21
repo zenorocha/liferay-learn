@@ -9,7 +9,7 @@ Before configuring your store to use Authorize.Net, it is necessary to [generate
 * An API Login ID
 * A Transaction Key
 
-## Activate Authorize.net as a Payment method
+## Activating Authorize.net as a Payment Method
 
 1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 2. Click _Authorize.Net_.
@@ -34,5 +34,5 @@ Once finished, Authorize.Net is now enabled.
 ## Additional Information
 
 * [Adding a New Currency](../starting-a-store/adding-a-new-currency.md)
-* [Mercanet](../orders-and-fulfillment/mercanet.md)
-* [PayPal](../orders-and-fulfillment/mercanet.md)
+* [Mercanet](./mercanet.md)
+* [PayPal](./paypal.md)
