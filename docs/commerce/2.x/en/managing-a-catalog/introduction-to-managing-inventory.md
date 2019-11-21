@@ -8,15 +8,15 @@ There are several key features used in managing inventory: Warehouses, Availabil
 
 Warehouses represent the physical locations where product inventory is managed and sourced for order fulfillment.
 
-See the [Warehouse Reference Guide](./warehouse-reference-guide.md) and the [Adding a New Warehouse](../managing-a-catalog/adding-a-new-warehouse.md) article for more information about how to manage warehouses.
+See the [Warehouse Reference Guide](./warehouse-reference-guide.md) and the [Adding a New Warehouse](./adding-a-new-warehouse.md) article for more information about how to manage warehouses.
 
-Warehouses must be associated for at least one channel. See the [Introduction to Channels](../managing-a-catalog/introduction-to-channels.md) article on how channels work.
+Warehouses must be associated for at least one channel. See the [Introduction to Channels](./introduction-to-channels.md) article on how channels work.
 
 ## Availability Estimates
 
 Store owners may configure Availability Estimates to inform customers when an out of stock product will be available again.
 
-See the [Availability Estimates](../managing-a-catalog/availability-estimates.md) for more information.
+See the [Availability Estimates](./availability-estimates.md) for more information.
 
 ## Low Stock Actions
 
@@ -32,4 +32,4 @@ In Liferay Commerce, inventory management is done per product SKU. To learn more
 
 * [Shipping - Creating a New Shipment](../orders-and-fulfillment/creating-a-shipment.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
-* [Order Life Cycle](../sales/order-life-cycle.md)
+* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)

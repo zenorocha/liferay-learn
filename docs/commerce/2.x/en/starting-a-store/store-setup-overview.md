@@ -82,7 +82,7 @@ The Liferay Commerce Catalog supports storing and managing a wide variety of pro
 * [Product Relations](../managing-a-catalog/related-products-up-sells-and-cross-sells.md)
 * [Product Categorization](../managing-a-catalog/organizing-your-catalog-with-product-categories.md)
 * [Availability Estimates](../managing-a-catalog/availability-estimates.md)
-* [Low Stock Activity](../managing-a-catalog/low-stock-activity.md)
+* [Low Stock Action](../managing-a-catalog/low-stock-action.md)
 
 #### Product Pricing
 
@@ -95,7 +95,6 @@ There are several ways to price products and these methods are related to one an
 #### Managing Inventory
 
 * [Introduction to Managing Inventory](../managing-a-catalog/introduction-to-managing-inventory.md)
-* Subscriptions (if applicable)
 
 ## Creating the Storefront
 

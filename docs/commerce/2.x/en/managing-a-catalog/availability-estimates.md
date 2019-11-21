@@ -1,16 +1,12 @@
 # Availability Estimates
 
-This article documents how to configure Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked.
+This article documents how to create Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked.
 
-Note that the default list of Availability Estimates is not populated at first (whether using the Liferay Commerce bundle or deploying the `LPKG` to an existing installation ). They can be created with an initializer such as the [Minium (B2B) Accelerator](../getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) or the Speedwell Accelerator (B2C) store.
-
-![Availability Estimates are created with an initializer](./availability-estimates/images/04.png)
-
-If using an accelerator, the following three Availability Estimates are available as sample data.
+A set of Availability Estimates are created when using an [Accelerator](../starting-a-store/accelerators.md) to create a storefront.
 
 ![Managing Availability Estimates](./availability-estimates/images/01.png)
 
-To manage Availability Estimates:
+To create an Availability Estimate:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Settings_.
 1. Click the _Availability Estimates_ tab.

@@ -2,7 +2,7 @@
 
 Each product in the catalog can be configured to display inventory data in the storefront. Administrators can display the availability of each item as 'In Stock' or 'Out of Stock' and the available inventory total, when stock is low.
 
-The out of stock threshold indicates when a product needs to be reordered, subtracts from the salable quantity for a stock, and can be set to support backorders. Administrators can allow backorders and set a maximum amount of orders.
+The out of stock threshold indicates when a product needs to be reordered, subtracts from the salable quantity for a stock, and can be set to support back-orders. Administrators can allow back-orders and set a maximum amount of orders.
 
 To manage the inventory for each product, navigate to a Product's _Configuration_ tab then click _Inventory_ in the left menu.
 
@@ -24,5 +24,5 @@ To manage the inventory for each product, navigate to a Product's _Configuration
 
 ## Additional Information
 
-* [Implementing a Custom Low Stock Action](../../developer-guide/tutorial/implementing-a-custom-low-stock-action.md)
+* [Implementing a Custom Low Stock Activity](../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md)
 * [Low Stock Action](./low-stock-action.md)

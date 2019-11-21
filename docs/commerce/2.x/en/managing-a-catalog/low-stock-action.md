@@ -29,4 +29,4 @@ The Low Stock Action for this product has been configured. In the future, should
 ## Additional Information
 
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
-* [Implementing a Custom Low Stock Action](../developer-guide/tutorial/implementing-a-custom-low-stock-action.md)
+* [Implementing a Custom Low Stock Action](../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md)
