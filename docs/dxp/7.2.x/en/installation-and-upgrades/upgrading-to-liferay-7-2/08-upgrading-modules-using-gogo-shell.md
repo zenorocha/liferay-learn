@@ -2,7 +2,7 @@
 
 Liferay's Gogo shell can upgrade and verify individual modules. This is a fine-grained approach to upgrading the core and non-core modules separately. If you haven't already upgraded your non-core modules using the upgrade tool (or if there are modules you need to revisit upgrading), you can upgrade them using Gogo Shell. 
 
-**Note**: You must [Configure the core upgrade](./03-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default. 
+**Note**: You must [Configure the core upgrade](./06-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default. 
 
 Shown below is a list of Gogo shell commands.
 

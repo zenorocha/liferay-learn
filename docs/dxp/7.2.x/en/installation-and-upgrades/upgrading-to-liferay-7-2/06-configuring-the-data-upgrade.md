@@ -17,7 +17,7 @@ You can allow the upgrade tool to upgrade all installed modules automatically or
 
 If the upgrade tool's `autoUpgrade` property is set to `true` (the default setting), upgrade processes for all installed modules are run after the core upgrade completes. 
 
-You can also prevent the upgrade tool from automatically running the module upgrades and run them individually afterward. Set `autoUpgrade="false"` in a file named `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config` and copy the file into the `[Liferay Home]/osgi/configs` folder for the upgrade tool to instead open Gogo shell after the core upgrade. In the Gogo shell, you can [manually administer module upgrades](./05-upgrading-modules-using-gogo-shell.md).
+You can also prevent the upgrade tool from automatically running the module upgrades and run them individually afterward. Set `autoUpgrade="false"` in a file named `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config` and copy the file into the `[Liferay Home]/osgi/configs` folder for the upgrade tool to instead open Gogo shell after the core upgrade. In the Gogo shell, you can [manually administer module upgrades](./08-upgrading-modules-using-gogo-shell.md).
 
 **Note:** Configuring the core upgrade at run-time with the upgrade tool will not provide an option to disable automatically running module upgrades. If you want to manually upgrade modules with the Gogo shell, then this must be configured prior to running the upgrade tool.
 

@@ -4,9 +4,9 @@ Since you optimized your system for upgrading previously, after the upgrade is c
 
 ## Review Database Configurations
 
-Prior to upgrading your Liferay DXP database, you tuned it for upgrade (see [Tuning for the Data Upgrade](./02-tuning-for-the-data-upgrade.md)). Now that the upgrade is complete, restore the production database tuning you used previously.
+Prior to upgrading your Liferay DXP database, you tuned it for upgrade (see [Tuning for the Data Upgrade](./04-tuning-for-the-data-upgrade.md)). Now that the upgrade is complete, restore the production database tuning you used previously.
 
-> **Note:** If you migrated from a sharded environment during your data upgrade, then you will need to make more adjustments to your configurations to complete the transition to virtual instances. See the [Upgrade and Update Properties](./08-upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) section for more information.
+> **Note:** If you migrated from a sharded environment during your data upgrade, then you will need to make more adjustments to your configurations to complete the transition to virtual instances. See the [Upgrade and Update Properties](./97-upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) section for more information.
 
 ## Set Up Elasticsearch and Re-index Search Indexes
 

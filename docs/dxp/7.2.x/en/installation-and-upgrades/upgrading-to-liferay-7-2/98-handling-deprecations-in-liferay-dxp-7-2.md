@@ -33,7 +33,7 @@ The deprecations in DXP 7.2 are as follows:
 
 | Feature |  Availability |  Notes |
 | --- | ------------- | ------ |
-| Audience Targeting | Removed | Replaced by [Personalization](/docs/7-2/user/-/knowledge_base/u/segmentation-and-personalization) (see [Migrating from Audience Targeting](./migrating-from-audience-targeting/01-migrating-from-audience-targeting.md)). | 
+| Audience Targeting | Removed | Replaced by [Personalization](/docs/7-2/user/-/knowledge_base/u/segmentation-and-personalization) (see [Migrating from Audience Targeting](./96-migrating-from-audience-targeting/01-migrating-from-audience-targeting.md)). | 
 
 ## Web Experience
 

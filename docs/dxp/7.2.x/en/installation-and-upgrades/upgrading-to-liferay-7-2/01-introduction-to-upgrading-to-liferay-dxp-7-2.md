@@ -52,7 +52,7 @@ Unnecessary data and improperly tuned databases slow down data upgrades. Take th
 
 - [Pruning unneeded data.](./02-pruning-the-database.md)
 
-- [Tuning the database for upgrades.](./02-tuning-for-the-data-upgrade.md)
+- [Tuning the database for upgrades.](./04-tuning-for-the-data-upgrade.md)
 
 If Staging is enabled in production and you have staged changes, you should publish them to Live before the data upgrade. If you skip this step, publishing staged changes requires a full publish.
 
@@ -66,8 +66,8 @@ If you do not already have your own Elasticsearch installation running, you must
 
 ## Performing the Data Upgrade
 
-Data upgrade is the biggest upgrade process milestone. First, you [configure the upgrade tool on your new DXP server](./03-configuring-the-data-upgrade.md). Then you use the upgrade tool to [upgrade the Core](./04-upgrading-the-core-using-the-upgrade-tool.md). If you configure for upgrading modules separately, you [use the Gogo shell](./05-upgrading-modules-using-gogo-shell.md) to upgrade the modules after the Core upgrade completes.
+Data upgrade is the biggest upgrade process milestone. First, you [configure the upgrade tool on your new DXP server](./06-configuring-the-data-upgrade.md). Then you use the upgrade tool to [upgrade the Core](./07-upgrading-the-core-using-the-upgrade-tool.md). If you configure for upgrading modules separately, you [use the Gogo shell](./08-upgrading-modules-using-gogo-shell.md) to upgrade the modules after the Core upgrade completes.
 
 ## Executing Post-Upgrade Tasks
 
-After completing the data upgrade, you must optimize your database and DXP server for production. The [post-upgrade tasks](./07-executing-post-upgrade-tasks.md) include re-tuning database settings and running search indexes.
+After completing the data upgrade, you must optimize your database and DXP server for production. The [post-upgrade tasks](./09-executing-post-upgrade-tasks.md) include re-tuning database settings and running search indexes.

@@ -120,7 +120,7 @@ Check these object types:
     - `PortletPreference` objects associated with a portlet or layout that no longer exists. This is common in environments with many embedded portlets. These portlet instances have a different lifecycle and aren't deleted when the portlet is removed from a template.
 
 To see an example of removing intermediate object versions, see [Example: Removing Intermediate Journal Article
-Versions](./example-removing-intermediate-journal-article-versions.md).
+Versions](./03-example-removing-intermediate-journal-article-versions.md).
 
 Next, you'll test your instance with its pruned database. 
 
