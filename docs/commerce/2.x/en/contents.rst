@@ -7,13 +7,13 @@ Contents
    :maxdepth: 2
 
    installation_and_upgrades
-   getting_started
-   catalog
-   content
-   customers
-   marketing
-   operations
-   sales
+   starting_a_store
+   managing_a_catalog
+   creating_store_content
+   promoting_products
+   account_management
+   orders_and_fulfillment
+   configuring_taxes
    developer_guide
    get_help
 
