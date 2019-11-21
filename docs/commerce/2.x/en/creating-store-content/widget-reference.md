@@ -26,3 +26,8 @@ The following article documents all the Liferay Commerce Widgets and their funct
 | Specification Facet | Allows users to narrow their search using the Product's Specifications |
 | Wish List Contents | Displays the entries in the selected wish list |
 | Wish Lists | Displays all wish lists |
+
+## Additional Information
+
+* [Creating Your Storefront](./creating-your-storefront.md)
+* [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
