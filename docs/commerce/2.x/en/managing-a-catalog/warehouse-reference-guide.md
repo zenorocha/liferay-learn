@@ -40,9 +40,7 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Latitude | Warehouse's Latitude |
 | Longitude | Warehouse's Longitude |
 
-If there is more than one warehouse, repeat these steps to add the others.
-
-A warehouse's geolocation is used to calculate shipping costs based on distance. See [Using the Variable Rate Shipping Method](../sales/using-the-variable-rate-shipping-method.md) for more information.
+A warehouse's geolocation is used to calculate shipping costs based on distance. See [Using the Variable Rate Shipping Method](../orders-and-fulfillment/using-the-variable-rate-shipping-method.md) for more information.
 
 ## Additional Information
 
