@@ -249,6 +249,6 @@ Congratulations! You now know the basics for implementing the `CommerceDiscountR
 
 ## Additional Information
 
-* [Adding Discounts by Product](..//marketing/adding-discounts-by-product.md)
+* [Adding Discounts by Product](../../promoting-products/adding-discounts-by-product.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
 * [Using AUI Taglibs](https://help.liferay.com/hc/en-us/articles/360020189212-Using-AUI-Taglibs)

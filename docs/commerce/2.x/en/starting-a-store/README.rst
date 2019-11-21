@@ -1,5 +1,5 @@
 Starting a Store
-===============
+================
 
 Basic Configuration
 -------------------
