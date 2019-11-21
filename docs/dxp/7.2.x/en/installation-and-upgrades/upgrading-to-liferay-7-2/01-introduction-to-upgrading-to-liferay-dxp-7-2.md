@@ -34,7 +34,7 @@ If your path includes upgrading to Liferay DXP/Portal 7.1, continue following th
 
 ## Planning for Feature Changes
 
-New DXP versions can deprecate features, move features into maintenance mode, or remove features. The [DXP 7.2 deprecation handling instructions](./98-handling-deprecations-in-liferay-dxp-7-2.md) explain the ramifications so you can develop plans for adapting to them. 
+New DXP versions can deprecate (but keep present) features, remove features, or [move features into maintenance mode](./99-features-in-maintenance-mode.md). The [DXP 7.2 deprecation handling instructions](./98-handling-deprecations-in-liferay-dxp-7-2.md) explain the ramifications so you can develop plans for adapting to them. 
 
 ## Upgrading Custom Code and Plugins
 
@@ -56,7 +56,7 @@ Unnecessary data and improperly tuned databases slow down data upgrades. Take th
 
 If Staging is enabled in production and you have staged changes, you should publish them to Live before the data upgrade. If you skip this step, publishing staged changes requires a full publish.
 
-Lastly for your pre-production upgrade, completely [back up](../09-mainitaining-a-liferay-dxp-installation/02-backing-up.md) your current Liferay DXP/Portal installation, pruned database, and document repository. 
+Lastly for your pre-production upgrade, completely [back up](../09-maintaining-a-liferay-dxp-installation/02-backing-up.md) your current Liferay DXP/Portal installation, pruned database, and document repository. 
 
 ## Preparing a New Liferay DXP Server
 
