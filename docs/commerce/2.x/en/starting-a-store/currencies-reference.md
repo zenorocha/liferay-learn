@@ -1,6 +1,6 @@
 # Currencies Reference
 
-Liferay Commerce already has several currencies already pre-configured and ready to use. Each store must have a default currency enabled to conduct transactions. This article serves as a reference for the metadata associated with each currency.
+Liferay Commerce has several currencies pre-configured and ready to use. Each store must have a default currency enabled process orders. This article serves as a reference for the metadata associated with each currency.
 
 To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ then click the _Currencies_ tab.
 
@@ -22,4 +22,4 @@ To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ 
 ## Additional Information
 
 * [Adding a New Currency](./adding-a-new-currency.md)
-* [Mercanet](../sales/mercanet.md)
+* [Mercanet](../orders-and-fulfillment/mercanet.md)
