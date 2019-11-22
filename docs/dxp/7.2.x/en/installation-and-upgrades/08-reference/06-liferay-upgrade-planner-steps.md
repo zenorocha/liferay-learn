@@ -1,4 +1,4 @@
-# Installation Upgrade Steps
+# Liferay Upgrade Planner Steps
 
 As you dive into [installation upgrade details](../upgrading-to-liferay-7-2/01-introduction-to-upgrading-to-liferay-dxp-7-2.md), it's helpful to follow a list of steps, or at least note steps you've completed. The [Liferay Upgrade Planner](https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner) uses the steps listed below. They demonstrate an upgrade workflow and link to the upgrade details. 
 

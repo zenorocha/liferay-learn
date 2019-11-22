@@ -13,7 +13,7 @@ Here are the general upgrade steps:
 1. [Performing the Data Upgrade](#performing-the-data-upgrade)
 1. [Executing Post-Upgrade Tasks](#executing-post-upgrade-tasks)
 
-> **Note:** Dev Studio's [Upgrade Planner](https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner) walks through the upgrade process and automates parts of it. The Planner uses the [Installation Upgrade Steps](../08-reference/06-installation-upgrade-steps.md), which is a terse step listing you can follow or refer to throughout the upgrade process. 
+> **Note:** Dev Studio's [Upgrade Planner](https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner) walks through the upgrade process and automates parts of it. The Planner uses a [step listing](../08-reference/06-upgrade-planner-steps.md) you can follow or refer to throughout the upgrade process. 
 
 Determining your upgrade path is first. 
 
