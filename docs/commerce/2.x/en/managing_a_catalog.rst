@@ -28,7 +28,7 @@ Managing a Catalog
    managing-a-catalog/warehouse-reference-guide.md
    managing-a-catalog/adding-a-new-warehouse.md
    managing-a-catalog/setting-inventory-by-warehouse.md
-   managing-a-catalog/low-stock-activity.md
+   managing-a-catalog/low-stock-action.md
    managing-a-catalog/availability-estimates.md
    managing-a-catalog/product-inventory-configuration-reference.md
 
