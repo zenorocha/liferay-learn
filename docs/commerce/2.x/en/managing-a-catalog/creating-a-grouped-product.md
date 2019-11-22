@@ -12,19 +12,6 @@ Before creating a Grouped Product, ensure that the following conditions have bee
     * The products can be both simple and virtual.
 1. The individual products have sufficient quantities in the inventory.
 
-## Roadmap
-
-* [Create a Grouped Product](#create-a-grouped-product)
-* [Associate Products in Group](#associate-products-in-group)
-* [Apply Product Options](#apply-product-options)
-* [Generate SKUs](#generate-skus)
-* [Set Prices and Quantities in the Inventory](#set-prices-and-quantities-in-the-inventory)
-* [Configure Product Specifications](#configure-product-specifications)
-* [Upload Product Images and Attachments](#upload-product-images-and-attachments)
-* [Organize with Categories](#organize-with-categories)
-* [Associate with Related Products](#associate-with-related-products)
-* [Selling Grouped Products](#selling-grouped-products)
-
 ## Create a Grouped Product
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.

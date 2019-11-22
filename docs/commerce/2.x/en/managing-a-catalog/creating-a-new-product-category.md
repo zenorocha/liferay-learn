@@ -4,12 +4,6 @@ Product Categories are used to organize your products. These groupings allow mul
 
 This article documents how to create a product category.
 
-## Roadmap
-
-1. [Creating a Vocabulary](#creating-a-vocabulary)
-1. [Creating a Category](#creating-a-category)
-1. [Associate Categories with Products](#associating-categories-with-products)
-
 ## Creating a Vocabulary
 
 1. Navigate to the _Control Panel_ → ![Navigation Compass](./creating-a-new-product-category/images/01.png) _Go to Other Site_ → _My Sites_ → _Global_.

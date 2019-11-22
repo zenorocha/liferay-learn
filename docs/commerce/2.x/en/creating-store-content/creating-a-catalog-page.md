@@ -4,15 +4,6 @@ The [Catalog](./catalog.md) page is the primary entry point for users to browse 
 
 This article documents an example of how to build a Catalog page without the use of an [accelerator](../starting-a-store/accelerators.md).
 
-## Overview
-
-1. Review the Prerequisites.
-1. Add and Configure the Page.
-1. Add the Widgets to the Page.
-1. Configure the _Search Bar_ Widget.
-1. Displaying the Full Catalog Without a Search (Optional).
-1. Configure Product Channel Filters (Optional).
-
 ## Prerequisites
 
 See the following links to learn more about Site and Page Creation:

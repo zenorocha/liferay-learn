@@ -22,8 +22,8 @@ Commerce Storefront Pages
 -  :doc:`/creating-store-content/product-details`
 -  :doc:`/creating-store-content/search`
 
-Using Modern Site Building
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Using Web Experience Management
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  `Creating Page Fragments <https://help.liferay.com/hc/en-us/articles/360018171331-Creating-Page-Fragments>`__
 -  `Building Content Pages from Fragments <https://help.liferay.com/hc/en-us/articles/360018171351-Building-Content-Pages-from-Fragments->`__

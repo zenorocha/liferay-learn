@@ -2,18 +2,7 @@
 
 A Simple Product is any physical product for which inventory is tracked. This article is a full walk through on how to add a product to your store catalog. The walk through includes comprehensive instructions on basic product settings (name and description), applying product options and generating SKUs, and other important considerations such as product image, specifications, and categorizations.
 
-## Roadmap
-
-* [Create a Simple Product](#create-a-simple-product)
-* [Apply Product Options](#apply-product-options)
-* [Generate SKUs](#generate-skus)
-* [Set Prices and Quantities in the Inventory](#set-prices-and-quantities-in-the-inventory)
-* [Configure Product Specifications](#configure-product-specifications)
-* [Upload Product Images and Attachments](#upload-product-images-and-attachments)
-* [Organize with Categories](#organize-with-categories)
-* [Associate with Related Products](#associate-with-related-products)
-
-### Create a Simple Product
+## Create a Simple Product
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click the (+) button then _Simple_.
@@ -29,15 +18,15 @@ A Simple Product is any physical product for which inventory is tracked. This ar
 
 The initial product entry has been created. Continue on to learn about further configuring the product.
 
-### Apply Product Options
+## Apply Product Options
 
 [Product Options](../managing-a-catalog/customizing-your-product-with-product-options.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to add various options to the product.
 
-### Generate SKUs
+## Generate SKUs
 
 Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see [Adding SKUs to Your Products](../managing-a-catalog/adding-skus-to-your-products.md). Click the _SKUs_ sub-tab to generate the SKUs.
 
-### Set Prices and Quantities in the Inventory
+## Set Prices and Quantities in the Inventory
 
 After the SKUs have been generated, set the base price and quantities in the inventory for each item. Depending on how many SKUs were generated based on the various product options, each SKU can have its own prices. Some products are sold in bulk quantities while others are sold individually.
 
@@ -58,21 +47,21 @@ To set product prices and quantities:
 
 To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md).
 
-### Configure Product Specifications
+## Configure Product Specifications
 
 [Product specifications](../managing-a-catalog/specifications.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
 
-### Upload Product Images and Attachments
+## Upload Product Images and Attachments
 
 [Product images](../managing-a-catalog/product-images.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
 
 Store administrators can also add attachments that are associated with a particular product. Click the _Attachments_ sub-tab to add documents.
 
-### Organize with Categories
+## Organize with Categories
 
 [Product Categories](../managing-a-catalog/creating-a-new-product-category.md) are used to organize products. Product Categories may be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.
 
-### Associate with Related Products
+## Associate with Related Products
 
 [Product Relations](./related-products-up-sells-and-cross-sells.md) are used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type.
 
