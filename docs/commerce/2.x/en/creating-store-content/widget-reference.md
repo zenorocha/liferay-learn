@@ -31,3 +31,4 @@ The following article documents all the Liferay Commerce Widgets and their funct
 
 * [Creating Your Storefront](./creating-your-storefront.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
+* [Creating a Catalog Page](./creating-a-catalog-page.md)
