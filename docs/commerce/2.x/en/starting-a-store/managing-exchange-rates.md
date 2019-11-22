@@ -2,24 +2,11 @@
 
 Exchange rates can be manually managed or automatically updated by an online service. To ensure that the store has the most recent exchange rates, administrators can enable an automatic currency conversion.
 
-## Setting Exchange Rates Manually
-
-Each currency's exchange rate can be configured manually by the store administrator.
-
-1. Go to the _Control Panel_ → _Commerce_ → _Settings_.
-1. Click the _Currencies_ tab.
-1. Click on an existing currency (for example, _Chinese Yuan Renminbi_)
-1. Enter a new value in the _Exchange Rate with US Dollar_ field (for example, _6.96_).
-
-    ![Modifying an exchange rate manually](./managing-exchange-rates/images/03.png)
-
-1. Click _Save_.
-
 ## Enabling automatic currency conversion
 
-By default, Liferay Commerce relies on the European Central Bank for foreign exchange rates. The ECB updates its exchange rates approximately every 24 hours; for more timely updates, a solution may be customized to use a different source.
+By default, Liferay Commerce relies on the European Central Bank for foreign exchange rates. The ECB updates its exchange rates approximately every 24 hours. See [Implementing an Exchange Rate Provider](../developer-guide/tutorial/implementing-an-exchange-rate-provider.md) to learn how to implement an alternative exchange rate provider.
 
-To enable Liferay Commerce to update automatically the exchange rate:
+To enable automatic exchange rate updates:
 
 1. Go to the _Control Panel_ → _Commerce_ → _Settings_.
 1. Click the _Currencies_ tab.
@@ -31,7 +18,7 @@ To enable Liferay Commerce to update automatically the exchange rate:
 
 1. Click _Save_.
 
-The store is now able to update automatically the currency conversion rate from the European Cental Bank.
+Automatic exchange rate updates are now enabled.
 
 ### Changing the Update Interval
 
@@ -48,3 +35,20 @@ By default, the exchange rates will be updated every 60 minutes. To increase the
 1. Click _Save_.
 
 The Exchange Rate Auto-Update is now enabled and will update currency exchange rates every two hours.
+
+## Setting Exchange Rates Manually
+
+Currency exchange rates can be configured manually by the store administrator.
+
+1. Go to the _Control Panel_ → _Commerce_ → _Settings_.
+1. Click the _Currencies_ tab.
+1. Click on an existing currency (for example, _Chinese Yuan Renminbi_)
+1. Enter a new value in the _Exchange Rate with US Dollar_ field (for example, _6.96_).
+
+    ![Modifying an exchange rate manually](./managing-exchange-rates/images/03.png)
+
+1. Click _Save_.
+
+## Additional Information
+
+* [Implementing an Exchange Rate Provider](../developer-guide/tutorial/implementing-an-exchange-rate-provider.md)
