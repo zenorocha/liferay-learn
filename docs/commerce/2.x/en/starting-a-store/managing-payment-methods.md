@@ -1,8 +1,8 @@
 # Managing Payment Methods
 
-Payment methods in Liferay Commerce are tied or "scoped" to different [channels](../catalog/introduction-to-channels.md) and store [sites](./sites-and-site-types.md). If a Liferay Commerce instance has more than one storefront hosted on the same instance, administrators can use different payment methods on each site.
+Payment methods in Liferay Commerce scoped by [channel](../managing-a-catalog/introduction-to-channels.md) and store [site](./sites-and-site-types.md). If a Liferay Commerce instance has more than one storefront hosted on the same instance, administrators can use different payment methods on each site.
 
-To manage payment methods, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the Payment Methods tab. Select a method to edit it.
+To manage payment methods, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the Payment Methods tab.
 
 ![Payment Methods page](./managing-payment-methods/images/01.png)
 
@@ -10,7 +10,7 @@ To manage payment methods, navigate to _Site Administration_ → _Commerce_ → 
 
 ![Configuring a payment method](./managing-payment-methods/images/02.png)
 
-### Details Page
+### Details Tab
 
 Each details screen contains fields that determine how the payment method is rendered in the Checkout widget.
 
@@ -22,9 +22,9 @@ Each details screen contains fields that determine how the payment method is ren
 |Priority | Determines the order in which the payment method is displayed in the checkout process; lower numbers are displayed higher |
 |Active | Switch the toggle to activate or deactivate a payment method |  
 
-### Configuration Page
+### Configuration Tab
 
-Although the user interface (UI) may differ between the four payment methods, there are similarities; the _Configuration_ page is where the store administrator inputs matching credentials to connect the Liferay Commerce with the respective payment gateway service.
+The _Configuration_ tab for a payment method is where the store administrator configures the integration for a payment method with the store.
 
 See the corresponding articles to learn how to activate each payment method:
 
@@ -33,7 +33,7 @@ See the corresponding articles to learn how to activate each payment method:
 * [Money Orders](../orders-and-fulfillment/money-orders.md)
 * [PayPal](../orders-and-fulfillment/paypal.md)
 
-### Restrictions Page
+### Restrictions Tab
 
 A restriction deactivates a payment method for buyers in specified countries.
 
