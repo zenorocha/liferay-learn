@@ -22,14 +22,14 @@ Managing a Catalog
    managing-a-catalog/creating-a-new-product-category.md
    managing-a-catalog/organizing-your-catalog-with-product-categories.md
    managing-a-catalog/related-products-up-sells-and-cross-sells.md
-   managing-a-catalog/managing-product-publication.md
 
    managing-a-catalog/introduction-to-managing-inventory.md
-   managing-a-catalog/warehouse-reference-guide.md
    managing-a-catalog/adding-a-new-warehouse.md
    managing-a-catalog/setting-inventory-by-warehouse.md
    managing-a-catalog/low-stock-action.md
    managing-a-catalog/availability-estimates.md
+   managing-a-catalog/managing-product-publication.md
+   managing-a-catalog/warehouse-reference-guide.md
    managing-a-catalog/product-inventory-configuration-reference.md
 
    managing-a-catalog/introduction-to-product-pricing-methods.md

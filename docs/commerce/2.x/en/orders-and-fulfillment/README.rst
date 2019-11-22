@@ -8,6 +8,7 @@ Order Management
 -  :doc:`/orders-and-fulfillment/orders-menu`
 -  :doc:`/orders-and-fulfillment/order-information`
 -  :doc:`/orders-and-fulfillment/order-workflows`
+-  :doc:`/orders-and-fulfillment/order-management-statuses`
 -  :doc:`/orders-and-fulfillment/enabling-or-disabling-order-workflows`
 -  :doc:`/orders-and-fulfillment/approving-or-rejecting-orders-in-order-workflows`
 

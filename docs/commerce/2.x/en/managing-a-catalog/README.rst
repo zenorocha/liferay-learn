@@ -37,8 +37,9 @@ Managing Inventory
 -  :doc:`/managing-a-catalog/setting-inventory-by-warehouse`
 -  :doc:`/managing-a-catalog/low-stock-action`
 -  :doc:`/managing-a-catalog/availability-estimates`
--  :doc:`/managing-a-catalog/product-inventory-configuration-reference`
 -  :doc:`/managing-a-catalog/managing-product-publication`
+-  :doc:`/managing-a-catalog/warehouse-reference-guide`
+-  :doc:`/managing-a-catalog/product-inventory-configuration-reference`
 
 Managing Price
 --------------
