@@ -2,7 +2,7 @@
 
 Blue-green is a deployment technique in which you duplicate your production environment (the *blue* environment) and modify the duplicate (the *green* environment) with software and data changes. When you've successfully tested the green environment, you cut users over from the blue environment to the green environment. Blue-green eliminates system down time. 
 
-Data schema and data changes require special attention. Custom plugin/module data schema changes that break compatibility with existing code must be introduced over several releases in which the data is transitioned and maintained in old and new columns until the old columns are unnecessary. 
+Data changes and data schema changes require special attention. Custom plugin/module data schema changes that break compatibility with existing code must be introduced over several releases in which the data is transitioned and maintained in old and new columns until the old columns are unnecessary. 
 
 Data and schema changes require these steps:
 

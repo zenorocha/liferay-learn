@@ -2,8 +2,6 @@
 
 The rolling restart cluster maintenance process involves shutting down and updating nodes one at a time (while the other nodes are running) until they're all updated. It maximizes uptime while you update your cluster. Rolling restarts can be used in container and image based environments. 
 
-> **Note:** Rolling restart does not include concepts for blue-green (separate, but identical environments) architectures, as these concepts specifically address multi-cluster style developments.
-
 Here are the rolling restart steps:
 
 1.  Shut down one cluster node (JVM instance). 
@@ -34,7 +32,7 @@ The Customer Portal identifies [fix packs](../09-maintaining-a-liferay-dxp-insta
 
 Revertible fix packs can be removed in rolling restarts. 
 
-## Portal Properties controlled by `portal-ext.properties`
+## Portal Properties controlled by portal-ext.properties
  
 [Portal Properties](../08-reference/03-portal-properties.md) 
 file changes can be applied in rolling restarts. 

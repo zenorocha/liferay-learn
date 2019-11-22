@@ -1,6 +1,6 @@
 # Maintaining Clustered Installations
 
-Maintaining a [cluster](../04-performance-and-scalability/01-configuring-clustering-for-high-availability.md) is a big responsibility. It includes deploying new and updated plugins and modules, applying [fix packs](../09-maintaining-a-liferay-dxp-installation/01-installing-patches.md), making configuration changes, and more. Maximizing server uptime and minimizing risks take priority when applying changes. Liferay DXP supports using standard cluster maintenance techniques. 
+Maintaining a [cluster](../04-performance-and-scalability/01-configuring-clustering-for-high-availability.md) is a big responsibility. It includes deploying new and updated plugins and modules, [installing fix packs](../09-maintaining-a-liferay-dxp-installation/01-installing-patches.md), changing configurations, and more. Maximizing server uptime and minimizing risks take priority when applying changes. Liferay DXP supports using standard cluster maintenance techniques. 
 
 -   [Rolling restarts](./02-rolling-restarts.md): Nodes are shut down and updated one at a time. 
 -   [Blue-green deployment](./blue-green-deployments.md): Blue-green involves duplicating the current environment (*blue* environment), updating the duplicate (*green* environment), and cutting over users to the updated environment (green). 
