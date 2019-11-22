@@ -1,10 +1,18 @@
 # Upgrading Modules Using Gogo Shell
 
-Liferay's Gogo shell can upgrade and verify individual modules. This is a fine-grained approach to upgrading the core and non-core modules separately. If you haven't already upgraded your non-core modules using the upgrade tool (or if there are modules you need to revisit upgrading), you can upgrade them using Gogo Shell. 
+Liferay's Gogo shell upgrades and verifies individual modules. It uses a fine-grained approach to upgrading core and non-core modules individually. If you haven't already upgraded your non-core modules using the upgrade tool (or if there are modules you need to revisit upgrading), you can upgrade them using Gogo Shell. 
+
+Here are the module upgrade topics:
+
+- [Gogo Shell Command Usage](#command-usage)
+- [Listing Module Upgrade Processes](#listing-module-ugprade-processes)
+- [Executing Module Upgrades](#executing-module-upgrades)
+- [Checking Upgrade Status](#checking-upgrade-status)
+- [Executing Verify Processes](#executing-verify-processes)
 
 **Note**: You must [Configure the core upgrade](./06-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default. 
 
-Shown below is a list of Gogo shell commands.
+Start with learning the module upgrade Gogo shell commands.
 
 ## Command Usage
 
@@ -40,9 +48,9 @@ Here are the commands:
 
 `verify:list:` Lists all registered verifiers
 
-There are many useful [Liferay commands and standard commands available in Gogo shell](/docs/7-2/customization/-/knowledge_base/c/using-the-felix-gogo-shell). The following sections describe Liferay upgrade commands. 
+You can list the modules that are ready for upgrade.  
 
-## Listing module upgrade processes
+## Listing Module Upgrade Processes
 
 Before upgrading modules, you should find which modules have unresolved dependencies, find which modules are resolved and available to upgrade, and examine the module upgrade processes. 
 
@@ -50,16 +58,20 @@ Executing `upgrade:list` in the Gogo shell lists the modules whose upgrade depen
 
 If a module is active but not listed, its dependencies must be upgraded. The Gogo shell command `scr:info [upgrade_step_class_qualified_name]` shows the upgrade step class's unsatisfied dependencies. Here's an example `scr:info`command:
 
-    scr:info com.liferay.journal.upgrade.JournalServiceUpgrade
+```
+scr:info com.liferay.journal.upgrade.JournalServiceUpgrade
+```
 
 Invoking `upgrade:list [module_name]` lists all of the module's upgrade processes. For example, executing `upgrade:list com.liferay.bookmarks.service` (for the Bookmarks Service module), lists this:
 
-    Registered upgrade processes for com.liferay.bookmarks.service 1.0.0
-            {fromSchemaVersionString=0.0.0, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.portal.spring.extender.internal.context.ModuleApplicationContextExtender$ModuleApplicationContextExtension$1@6e9691da}
-            {fromSchemaVersionString=0.0.1, toSchemaVersionString=1.0.0-step-3, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradePortletId@5f41b7ee}
-            {fromSchemaVersionString=1.0.0-step-1, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradePortletSettings@53929b1d}
-            {fromSchemaVersionString=1.0.0-step-2, toSchemaVersionString=1.0.0-step-1, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradeLastPublishDate@3e05b7c8}
-            {fromSchemaVersionString=1.0.0-step-3, toSchemaVersionString=1.0.0-step-2, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradeClassNames@6964cb47}
+```
+Registered upgrade processes for com.liferay.bookmarks.service 1.0.0
+        {fromSchemaVersionString=0.0.0, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.portal.spring.extender.internal.context.ModuleApplicationContextExtender$ModuleApplicationContextExtension$1@6e9691da}
+        {fromSchemaVersionString=0.0.1, toSchemaVersionString=1.0.0-step-3, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradePortletId@5f41b7ee}
+        {fromSchemaVersionString=1.0.0-step-1, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradePortletSettings@53929b1d}
+        {fromSchemaVersionString=1.0.0-step-2, toSchemaVersionString=1.0.0-step-1, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradeLastPublishDate@3e05b7c8}
+        {fromSchemaVersionString=1.0.0-step-3, toSchemaVersionString=1.0.0-step-2, upgradeStep=com.liferay.bookmarks.upgrade.v1_0_0.UpgradeClassNames@6964cb47}
+```
 
 An application's upgrade step class names typically reveal their intention. For example, the example's `com.liferay.bookmarks.upgrade.v1_0_0.UpgradePortletId` upgrade step class updates the app's portlet ID. The other example upgrade step classes update class names, the `LastPublishDate`, and `PortletSettings`. The example's step from `0.0.0` to `1.0.0` upgrades the module from an empty database.
 
@@ -74,14 +86,16 @@ The overall module upgrade process starts at version `0.0.1` and finishes at ver
 
 Once you understand the module's upgrade process, you can execute it with confidence. 
 
-## Executing module upgrades
+## Executing Module Upgrades
 
 Executing `upgrade:execute [module_name]` upgrades the module. You might run into upgrade errors that you must resolve. Executing the command again starts the upgrade from the last successful step. 
 
 You can check upgrade status by executing `upgrade:list [module_name]`. For example, entering `upgrade:list com.liferay.iframe.web` outputs this:
 
-    Registered upgrade processes for com.liferay.iframe.web 0.0.1
-	   {fromSchemaVersionString=0.0.1, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.iframe.web.upgrade.IFrameWebUpgrade$1@1537752d}
+```
+Registered upgrade processes for com.liferay.iframe.web 0.0.1
+   {fromSchemaVersionString=0.0.1, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.iframe.web.upgrade.IFrameWebUpgrade$1@1537752d}
+```
 
 The first line lists the module's name and current version. The example module's current version is `0.0.1`. The `toSchemaVersionString` value is the target version. 
 
@@ -89,28 +103,34 @@ Executing `upgrade:list [module_name]` on the module after successfully upgradin
 
 For example, if you successfully upgraded `com.liferay.iframe.web` to version `1.0.0`, executing `upgrade:list com.liferay.iframe.web` shows the module's version is `1.0.0`:
 
-    Registered upgrade processes for com.liferay.iframe.web 1.0.0
-	   {fromSchemaVersionString=0.0.1, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.iframe.web.upgrade.IFrameWebUpgrade$1@1537752d}
+```
+Registered upgrade processes for com.liferay.iframe.web 1.0.0
+   {fromSchemaVersionString=0.0.1, toSchemaVersionString=1.0.0, upgradeStep=com.liferay.iframe.web.upgrade.IFrameWebUpgrade$1@1537752d}
+```
 
 For module upgrades that don't complete, you can check their status and resolve their issues. 
 
-## Checking upgrade status
+## Checking Upgrade Status
 
 The command `upgrade:check` lists modules that have impending upgrades. 
 
 For example, if module  `com.liferay.dynamic.data.mapping.service` failed in a step labeled `1.0.0-step-2`, executing `upgrade:check` shows this: 
 
-    Would upgrade com.liferay.dynamic.data.mapping.service from 1.0.0-step-2 to
-    1.0.0 and its dependent modules
+```
+Would upgrade com.liferay.dynamic.data.mapping.service from 1.0.0-step-2 to
+1.0.0 and its dependent modules
+```
 
 Modules often depend on other modules to complete upgrading. Executing `scr:info [upgrade_step_class_qualified_name]` shows the upgrade step class's dependencies. You must upgrade modules on which your module depends first.
 
 To resolve and activate a module, its upgrade must complete. The [Apache Felix Dependency Manager](http://felix.apache.org/documentation/subprojects/apache-felix-dependency-manager/tutorials/leveraging-the-shell.html) Gogo shell command `dm wtf` reveals unresolved dependencies. If your module requires a certain data schema version (e.g., its `bnd.bnd` specifies `Liferay-Require-SchemaVersion: 1.0.2`) but the module hasn't completed upgrade to that version, `dm wtf` shows that the schema version is not registered. 
 
-    1 missing dependencies found.
-    -------------------------------------
-    The following service(s) are missing:
-     * com.liferay.portal.kernel.model.Release (&(release.bundle.symbolic.name=com.liferay.journal.service)(release.schema.version=1.0.2)) is not found in the service registry
+```
+1 missing dependencies found.
+-------------------------------------
+The following service(s) are missing:
+ * com.liferay.portal.kernel.model.Release (&(release.bundle.symbolic.name=com.liferay.journal.service)(release.schema.version=1.0.2)) is not found in the service registry
+```
 
 The `dm wtf` command can also help detect errors in portlet definitions and custom portlet `schemaVersion` fields. 
 
@@ -120,8 +140,12 @@ Browsing the Liferay DXP database's `Release_` table can also help you determine
 
 Each module has one `Release_` table record, and the value for its `schemaVersion` field must be `1.0.0` or greater. `1.0.0` is the initial version for Liferay DXP modules, except for those that were previously traditional plugins intended for version 6.2 or earlier.
 
-## Executing verify processes
+## Executing Verify Processes
 
-Some modules have verify processes. These make sure the upgrade executed successfully. Verify processes in the core are automatically executed after upgrading Liferay DXP. You can also execute them by configuring the [`verify.*` portal properties](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Verify) and restarting your server.
+Some modules have verify processes. These make sure the upgrade executed successfully. Verify processes in the core are automatically executed after upgrading Liferay DXP. You can also execute them by configuring the [`verify.*` portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Verify) and restarting your server.
 
 To check for available verify processes, enter the Gogo shell command `verify:list`. To run a verify process, enter `verify:execute [verify_qualified_name]`. 
+
+## Related Topics
+
+[Liferay commands and standard commands available in Gogo shell](/docs/7-2/customization/-/knowledge_base/c/using-the-felix-gogo-shell)

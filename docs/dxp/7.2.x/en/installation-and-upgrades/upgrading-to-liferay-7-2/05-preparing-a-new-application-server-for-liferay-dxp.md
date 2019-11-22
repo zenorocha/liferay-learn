@@ -2,19 +2,19 @@
 
 To upgrade your Liferay DXP database, prepare a new application server for hosting Liferay DXP. You'll use this server to run the data upgrade and then run Liferay DXP.
 
-**Note:** If you are upgrading from a version prior to DXP 7.0 and using a sharded environment, you will need to migrate your shards to multiple application servers, because sharding is no longer supported. Prepare one new application server for each shard.
+**Note:** If you are upgrading from a version prior to DXP 7.0 and using a sharded environment, you must migrate your shards to multiple application servers, because sharding is no longer supported. Prepare one new application server for each shard.
 
 ## Request an Upgrade Patch from Liferay Support
 
 Get the latest fixes for Liferay DXP by requesting an upgrade patch. An *upgrade patch* contains the latest fix pack and hot fixes planned for the next service pack. Upgrade patches provide the latest fixes available for your data upgrade.
 
-> This applies only to Liferay Support subscribers.
+> DXP patches apply to Subscribers only.
 
 ## Install Liferay DXP 7.2
 
 [Install DXP 7.2 on your application server](/docs/7-2/deploy/-/knowledge_base/d/deploying-product) or [use DXP 7.2 bundled with your application server of choice](/docs/7-2/deploy/-/knowledge_base/d/installing-product). 
 
-**Warning:** Do not start your application server with your database yet. It will not be ready to start until after the data upgrade to DXP 7.2. 
+**Warning:** Do not start your application server with your database yet. Wait  until after you have completed the data upgrade to DXP 7.2 and post-upgrade tasks. 
 
 ## Install the Latest Upgrade Patch or Fix Pack
 
@@ -61,7 +61,7 @@ No existing properties have changed between versions 7.1 and 7.2. However, here 
 | layout.set.prototype.propagate.logo | true | false |
 | web.server.servlet.check.image.gallery | true | false |
 
-The following properties have also been removed:
+The following properties have been removed:
 
 ```properties
 organizations.children.types[location]
@@ -76,7 +76,7 @@ organizations.types
 users.image.check.token
 ```
 
-The latest [portal properties reference](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html) provides property details and examples. Some properties are now replaced by OSGi configurations. 
+The latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) provides property details and examples. Many properties are now replaced by [OSGi configurations](/docs/7-2/user/-/knowledge_base/u/system-settings#exporting-and-importing-configurations). 
 
 ### Convert Applicable Properties to OSGi Configurations 
 
@@ -84,21 +84,21 @@ Properties in modularized features have changed and must now be deployed separat
 
 For example, use these steps to create a `.config` file specifying a root file location for a Simple File Store or Advanced File Store:
  
-    1. Create a `.config` file named after your store implementation class.
+1. Create a `.config` file named after your store implementation class.
 
     Simple File Store: 
     `com.liferay.portal.store.file.system.configuration.FileSystemStoreConfiguration.config`
 
     Advanced File Store:
     `com.liferay.portal.store.file.system.configuration.AdvancedFileSystemStoreConfiguration.config`
- 
-    1. Set the following `rootDir` property and replace `{document_library_path}` with  your file store's path.
+
+1. Set the following `rootDir` property and replace `{document_library_path}` with  your file store's path.
 
     ```properties
     rootDir="{document_library_path}"
     ```
 
-    1. Copy the `.config` file to your `[Liferay Home]/osgi/configs` folder.
+1. Copy the `.config` file to your `[Liferay Home]/osgi/configs` folder.
 
 Use the [`blade upgradeProps`](/docs/7-2/reference/-/knowledge_base/r/blade-cli) command to scan your `portal-ext.properties` file to discover which properties are now set via OSGi Config Admin. You can also check the upgrade log from previous attempts for traces like these:
 

@@ -64,7 +64,7 @@ The deprecations in DXP 7.2 are as follows:
 
 | Feature |  Availability | 
 | --- | ------------------ |
-| Live Users | Enabled through the [`live.users.enabled`](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html) [portal property](/docs/7-2/deploy/-/knowledge_base/d/portal-properties). | 
+| Live Users | Enabled through the [`live.users.enabled`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) [portal property](/docs/7-2/deploy/-/knowledge_base/d/portal-properties). | 
 
 ## Applications in Maintenance Mode
 

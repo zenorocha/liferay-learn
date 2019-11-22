@@ -4,11 +4,11 @@ Upgrading impacts the database differently from daily running in production. Bec
 
 - Disable reindexing for the data upgrade, then re-enable it after the upgrade is complete. Search indices are not needed for the upgrade itself, so reindexing will only slow the upgrade down. In extreme cases, this may cause performance issues that dramatically increase the upgrade time.
 
-- When upgrading, tune your database for executing updates. Data upgrades execute many more update statements (`INSERT`, `UPDATE`, and `DELETE`) and less `SELECT` statements than production instances.
+- Tune your database for executing updates. Data upgrades execute many more update statements (`INSERT`, `UPDATE`, and `DELETE`) and less `SELECT` statements than production instances.
 
 - Data upgrades should be done in safe environments completely separate from production servers and should use database backup copies. If upgrade errors occur or you make mistakes, they don't impact production, and you can always restart using your database backup copy.
 
-- Disable transaction logging during the data upgrade, and re-enable it after the upgrade is complete. Transaction logging is not helpful during the upgrade, and will only slow down upgrade performance.
+- Disable transaction logging during the data upgrade, and re-enable it after the upgrade completes. Transaction logging is not helpful during the upgrade, and only slows down the upgrade.
 
 **Note:** The tips given here worked well in test runs on specific versions of each database. Optimal tuning depends on your own data, infrastructure conditions, and database vendor. Analyze your data, tune for upgrade, and time your test upgrades to determine the best database and Java process configuration for your Liferay DXP data upgrade.
 
@@ -76,7 +76,7 @@ Please consult [IBM's official DB2 documentation](https://www.ibm.com/support/pa
 
 ### MariaDB
 
-Turn off InnoDB double-write, and set the InnoDB flush log at transaction commit to `0`. 
+Turn off InnoDB double-write and set the InnoDB flush log at transaction commit to `0`. 
  
 ### Microsoft SQL Server 
 
@@ -84,7 +84,7 @@ Set [transaction durability](https://docs.microsoft.com/en-us/sql/relational-dat
 
 ### MySQL 
 
-Turn off [InnoDB double-write](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite), and set the [InnoDB flush log at transaction commit](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) to `0`. 
+Turn off [InnoDB double-write](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite) and set the [InnoDB flush log at transaction commit](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) to `0`. 
 
 ### Oracle Database 
 
@@ -92,4 +92,4 @@ The default configuration works well. It configures [asynchronous I/O to disk](h
 
 ### PostgreSQL 
 
-Turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-commit.html). Additionally, set the [write ahead log writer delay](https://www.postgresql.org/docs/10/wal-async-commit.html) to `1000` milliseconds.
+Turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-commit.html) and set the [write ahead log writer delay](https://www.postgresql.org/docs/10/wal-async-commit.html) to `1000` milliseconds.

@@ -6,7 +6,7 @@ Here are example steps for removing intermediate Journal Article versions:
 
 1. Decide how many of the latest versions to keep. You must keep the original version and the most recent version, but you may keep additional recent versions too. For example, you may want to keep the two latest versions or just the latest. 
 
-2. Find a method for deleting the entity versions. Liferay DXP [app APIs](@app-ref@/apps/) and [com.liferay.portal.kernel API](@platform-ref@/7.2-latest/javadocs/portal-kernel/) are available options for you to use.
+2. Find a method for deleting the entity versions. Liferay DXP [app APIs](@app-ref@/apps/) and the [com.liferay.portal.kernel API](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/) are available options for you to use.
 
     If it's a [Service Builder](/docs/7-2/appdev/-/knowledge_base/a/service-builder) entity, examine the `delete*` methods in the entity's `*LocalServiceUtil` class. For example, this `deleteArticle` in [`JournalArticleLocalServiceUtil`](@app-ref@/web-experience/latest/javadocs/com/liferay/journal/service/JournalArticleLocalServiceUtil.html#deleteArticle-long-java.lang.String-double-java.lang.String-com.liferay.portal.kernel.service.ServiceContext-) deletes a Journal Article version:
 
@@ -16,9 +16,9 @@ Here are example steps for removing intermediate Journal Article versions:
         com.liferay.portal.kernel.service.ServiceContext serviceContext)
     ```
 
-3. Aggregate the entity versions to delete and the information required to delete them. For example, get all the Journal Article versions in range that match your removal criteria and associate their entity IDs and group IDs with them (the `deleteArticle` method shown above requires the entity ID and group ID). 
+3. Aggregate the entity versions to delete and the information required to delete them. For example, get all the `JournalArticle` versions in range that match your removal criteria and associate their entity IDs and group IDs with them (the `deleteArticle` method shown above requires the entity ID and group ID). 
 
-    The entity object (e.g., `JournalArticle`) typically has a version field. `JournalArticleResource` has each Journal Article's article ID (the entity's ID) and group ID. `JournalArticleResource` is the key to getting each `JournalArticle`, which can have multiple versions. Here are steps for identifying the Journal Article versions to delete:
+    The entity object (e.g., `JournalArticle`) typically has a version field. `JournalArticleResource` has each `JournalArticle`'s article ID (the entity's ID) and group ID. `JournalArticleResource` is the key to getting each `JournalArticle`, which can have multiple versions. Here are steps for identifying the `JournalArticle` versions to delete:
 
     1.  Get all the `JournalArticleResource` objects. 
 
@@ -27,7 +27,7 @@ Here are example steps for removing intermediate Journal Article versions:
         JournalArticleLocalServiceUtil.getJournalArticleResources(start, end);
     ```
 
-    2.  Get each Journal Article version's workflow status via the `JournalArticle` object associated with each `JournalArticleResource`. Dynamic Query is an efficient way to get exactly the data you want from each object.
+    2.  Get each `JournalArticle` version's workflow status via the `JournalArticle` object associated with each `JournalArticleResource`. [Dynamic Query](https://help.liferay.com/hc/en-us/articles/360030614272-Dynamic-Query) is an efficient way to get exactly the data you want from each object.
         
         <!--Add back link for 'Dynamic Query' once dynamic-query article is available-->
 
@@ -57,7 +57,7 @@ Here are example steps for removing intermediate Journal Article versions:
     }
     ```
 
-    3. For each `JournalArticleResource` (there's one for each Journal Article entity), build a list of intermediate versions in range of the first or latest versions you want to keep and whose status qualifies them for deletion. For example, you may want to delete intermediate article versions that are approved or expired (i.e., [WorkflowConstants.STATUS_APPROVED or WorkflowConstants.STATUS_EXPIRED](@platform-ref@/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/workflow/WorkflowConstants.html)). The `MIN_NUMBER_FIRST_VERSIONS_KEPT` and `MIN_NUMBER_LATEST_VERSIONS_KEPT` variables here mark the minimum and maximum number of first (oldest) and latest (newest) versions to keep. 
+    3. For each `JournalArticleResource` (there's one for each `JournalArticle` entity), build a list of intermediate versions in range of the first or latest versions you want to keep and whose status qualifies them for deletion. For example, you may want to delete intermediate article versions that are approved or expired (i.e., [WorkflowConstants.STATUS_APPROVED or WorkflowConstants.STATUS_EXPIRED](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/workflow/WorkflowConstants.html)). The `MIN_NUMBER_FIRST_VERSIONS_KEPT` and `MIN_NUMBER_LATEST_VERSIONS_KEPT` variables here mark the minimum and maximum number of first (oldest) and latest (newest) versions to keep. 
 
     ```java 
     List<Double> journalArticlesVersionsToDelete =

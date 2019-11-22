@@ -1,6 +1,6 @@
 # Configuring the Data Upgrade
 
-The upgrade tool provides the easiest way to upgrade the core and installed modules. You can use text files or the tool's command line interface to configure your upgrade. The upgrade tool can upgrade everything (the core
+The data upgrade tool (upgrade tool) provides the easiest way to upgrade the core and installed modules. You can use text files or the tool's command line interface to configure your upgrade. The upgrade tool can upgrade everything (the core
 and all the modules) together or separately.
 
 Liferay DXP bundles include the upgrade tool. If you installed Liferay DXP manually, you can download the upgrade tool separately:
@@ -19,45 +19,46 @@ If the upgrade tool's `autoUpgrade` property is set to `true` (the default setti
 
 You can also prevent the upgrade tool from automatically running the module upgrades and run them individually afterward. Set `autoUpgrade="false"` in a file named `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config` and copy the file into the `[Liferay Home]/osgi/configs` folder for the upgrade tool to instead open Gogo shell after the core upgrade. In the Gogo shell, you can [manually administer module upgrades](./08-upgrading-modules-using-gogo-shell.md).
 
-**Note:** Configuring the core upgrade at run-time with the upgrade tool will not provide an option to disable automatically running module upgrades. If you want to manually upgrade modules with the Gogo shell, then this must be configured prior to running the upgrade tool.
+**Note:** Configuring the core upgrade at run-time with the upgrade tool does not provide an option to disable automatically running module upgrades. To prevent module upgrades from running automatically you must disable it (using the configuration above) *before* running the upgrade tool. 
 
 ## Configuring with the Upgrade Tool
 
-The core upgrade requires configuration to begin. The simplest option is to let the upgrade tool automatically create your configuration files at run-time instead of creating the files yourself. Here's an example interaction with the upgrade tool's command line interface:
+The core upgrade requires configuration. The simplest way is to use the upgrade tool to create your configuration files. Here's an example interaction with the upgrade tool's command line interface:
 
-    Please enter your application server (tomcat): 
-    tomcat
+```
+Please enter your application server (tomcat): 
+tomcat
 
-    Please enter your application server directory (../../tomcat-8.0.32): 
+Please enter your application server directory (../../tomcat-8.0.32): 
 
-    Please enter your extra library directories (../../tomcat-8.0.32/bin): 
+Please enter your extra library directories (../../tomcat-8.0.32/bin): 
 
-    Please enter your global library directory (../../tomcat-8.0.32/lib): 
+Please enter your global library directory (../../tomcat-8.0.32/lib): 
 
-    Please enter your portal directory (../../tomcat-8.0.32/webapps/ROOT): 
+Please enter your portal directory (../../tomcat-8.0.32/webapps/ROOT): 
 
-    [ db2 mariadb mysql oracle postgresql sqlserver sybase ]
-    Please enter your database (mysql): 
-    mariadb
+[ db2 mariadb mysql oracle postgresql sqlserver sybase ]
+Please enter your database (mysql): 
+mariadb
 
-    Please enter your database host (localhost):
+Please enter your database host (localhost):
 
-    (etc.)
+(etc.)
+```
 
-> Note that the omitted values are using the defaults displayed in the prompt in parentheses.
-
+> Note that the omitted values are using the defaults displayed in the parentheses.
 
 ## Manually Configuring the Core Upgrade
 
-You can also pre-configure the upgrade tool to configure more values than the tool would automatically create. To manually configure the core upgrade, use these files in `[Liferay Home]/tools/portal-tools-db-upgrade-client/`:
+You can also pre-configure the upgrade tool to set more values than the tool generates. Use these files in `[Liferay Home]/tools/portal-tools-db-upgrade-client/` to manually configure the core upgrade:
 
-- `app-server.properties`: This specifies the server's location and libraries.
-- `portal-upgrade-database.properties`: This configures the database connection.
-- `portal-upgrade-ext.properties`: This sets the rest of the portal properties that the upgrade requires. You may want to copy your current portal properties (except your database properties) into this file. Before copying your current properties, make sure you've [updated the portal properties for DXP 7.2](./05-preparing-a-new-application-server-for-liferay-dxp.md#migrate-your-portal-properties).
+- `app-server.properties`: Specifies the server location and libraries.
+- `portal-upgrade-database.properties`: Configures the database connection.
+- `portal-upgrade-ext.properties`: Sets the rest of the portal properties that the upgrade requires. To replicate your current DXP server, you can copy your current portal properties (except your database properties) into this file. Before using your current properties, make sure to [update them for DXP 7.2](./05-preparing-a-new-application-server-for-liferay-dxp.md#migrate-your-portal-properties).
 
 ### Configuring app-server.properties
 
-Specify the following information to configure Liferay DXP's application server: 
+Specify the following information to configure DXP's application server: 
 
 `dir`: the absolute path of the application server folder.
 
@@ -99,7 +100,7 @@ server.detector.server.id=tomcat
 
 ### Configuring portal-upgrade-database.properties
 
-Specify the following information to configure the database you're upgrading. Note that these properties correspond exactly to the [JDBC portal properties](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#JDBC) you'd use in a `portal-ext.properties` file.
+Specify the following information to configure the database you're upgrading. Note that these properties correspond exactly to the [JDBC portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) you'd use in a `portal-ext.properties` file.
 
 - `jdbc.default.driverClassName`
 
@@ -109,7 +110,7 @@ Specify the following information to configure the database you're upgrading. No
 
 - `jdbc.default.password`
 
-See the latest [portal properties reference](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html) for a reference on these values.
+See the latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) for a reference on these values.
 
 ### Configuring portal-upgrade-ext.properties
 
@@ -117,7 +118,7 @@ Specify the following information to configure the upgrade:
 
 - `liferay.home`: The [Liferay home folder](/docs/7-2/deploy/-/knowledge_base/d/liferay-home).
 
-- `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you [updated this property in your `portal-ext.properties`](./05-preparing-a-new-application-server-for-liferay-dxp.md#configure-your-documents-and-media-file-store), copy the new vaule here. Otherwise, set the property one of these ways:
+- `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you [updated this property in your `portal-ext.properties`](./05-preparing-a-new-application-server-for-liferay-dxp.md#configure-your-documents-and-media-file-store), copy the new value here. Otherwise, set the property one of these ways:
 
 ```properties
 dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
@@ -146,7 +147,7 @@ Here are example upgrade configuration files that you can customize and copy int
 
     ```properties
     jdbc.default.url=jdbc:mysql://lportal62?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
-    jdbc.default.driverClassName=com.mysql.jdbc.Driver
+    jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
     jdbc.default.username=root
     jdbc.default.password=
     ```

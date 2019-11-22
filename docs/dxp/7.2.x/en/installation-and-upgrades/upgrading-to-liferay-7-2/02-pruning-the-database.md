@@ -1,6 +1,6 @@
 # Pruning the Database
 
-The length and performance of upgrading data to a new version of Liferay DXP varies with the amount of data, and unneeded data commonly increases the time for the upgrade. Pruning the database can reduce this impact and overall improve the speed of the upgrade.
+The more data you have the longer your data upgrade takes. Unneeded site data is a common occurrence. Pruning the database of unneeded data quickens your data upgrade. 
 
 For example, you may have many unused versions of Web Content articles or Documents and Media files. If you're done revising them and don't need the intermediate revisions, you can safely remove them. This saves you space and upgrade time.
 
@@ -8,8 +8,10 @@ For example, you may have many unused versions of Web Content articles or Docume
 
 If you've used Web Content Management extensively, you might have structures without unique field names. Find and remove duplicate field names before upgrading. If you upgraded to Liferay Portal 6.2 previously and skipped doing  this, you'll encounter this error: 
 
-    19:29:35,298 ERROR [main][VerifyProcessTrackerOSGiCommands:221] com.liferay.portal.verify.VerifyException: com.liferay.dynamic.data.mapping.validator.DDMFormValidationException$MustNotDuplicateFieldName: The field name page cannot be defined more than once
-    com.liferay.portal.verify.VerifyException: com.liferay.dynamic.data.mapping.validator.DDMFormValidationException$MustNotDuplicateFieldName: The field name page cannot be defined more than once
+```
+19:29:35,298 ERROR [main][VerifyProcessTrackerOSGiCommands:221] com.liferay.portal.verify.VerifyException: com.liferay.dynamic.data.mapping.validator.DDMFormValidationException$MustNotDuplicateFieldName: The field name page cannot be defined more than once
+com.liferay.portal.verify.VerifyException: com.liferay.dynamic.data.mapping.validator.DDMFormValidationException$MustNotDuplicateFieldName: The field name page cannot be defined more than once
+```
  
 If this error occurs, roll back to your previous backup of Liferay Portal 6.2 and find and remove the duplicate field names.
 
@@ -86,7 +88,7 @@ Check these object types:
 
     - All other objects unique to the site 
 
-- **Instances**: Unused instances are rare, but since they are the highest object in the hierarchy, removing their objects can optimize upgrades considerably. This will remove all of their associated:
+- **Instances**: Unused instances are rare, but since they are the highest object in the hierarchy, removing their objects can optimize upgrades considerably. Removing instances removes these objects associated with them:
 
     - Sites (and all their related content)
 
@@ -119,7 +121,7 @@ Check these object types:
 
     - `PortletPreference` objects associated with a portlet or layout that no longer exists. This is common in environments with many embedded portlets. These portlet instances have a different lifecycle and aren't deleted when the portlet is removed from a template.
 
-To see an example of removing intermediate object versions, see [Example: Removing Intermediate Journal Article
+To see an example of removing intermediate object versions, read [Example: Removing Intermediate Journal Article
 Versions](./03-example-removing-intermediate-journal-article-versions.md).
 
 Next, you'll test your instance with its pruned database. 
