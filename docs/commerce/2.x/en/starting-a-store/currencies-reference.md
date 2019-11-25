@@ -1,6 +1,6 @@
 # Currencies Reference
 
-Liferay Commerce has several currencies pre-configured and ready to use. Each store must have a default currency enabled to process orders. This article serves as a reference for the metadata associated with each currency.
+Liferay Commerce has several currencies pre-configured and ready to use. Each store must have a primary currency enabled, to be able to process orders. This article serves as a reference for the metadata associated with each currency.
 
 To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ then click the _Currencies_ tab.
 
