@@ -1,6 +1,6 @@
 # Currencies Reference
 
-Liferay Commerce has several currencies pre-configured and ready to use. Each store must have a default currency enabled process orders. This article serves as a reference for the metadata associated with each currency.
+Liferay Commerce has several currencies pre-configured and ready to use. Each store must have a default currency enabled to process orders. This article serves as a reference for the metadata associated with each currency.
 
 To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ then click the _Currencies_ tab.
 
@@ -15,7 +15,7 @@ To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ 
 | Minimum Decimal Places | Minimum number of digits to the right of the decimal point allowed |
 | Rounding Mode | A type of [rounding mode](https://en.wikipedia.org/wiki/Rounding#Directed_rounding_to_an_integer) from the drop-down menu |
 | Primary | Toggle to designate whether this currency is the store's default currency |
-| Exchange Rate with US Dollar | Currency's exchange rate compared with the store's default currency; by default, USD is designated as the primary currency but can be [modified in the UI](../orders-and-fulfillment/mercanet.md#set-eur-as-the-primary-store-currency). |
+| Exchange Rate with US Dollar | Currency's exchange rate compared with the store's primary currency; by default, USD is designated as the primary currency but can be [modified in the UI](../orders-and-fulfillment/mercanet.md#set-eur-as-the-primary-store-currency). |
 | Priority | Order in which the currency is displayed in the table; the higher the number, the further down it is displayed |
 | Active | Toggle to activate this currency |
 
