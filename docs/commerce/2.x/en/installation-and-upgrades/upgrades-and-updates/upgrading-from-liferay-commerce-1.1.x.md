@@ -16,23 +16,33 @@ This article documents how to upgrade Liferay Commerce to the latest Commerce 2.
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
     > To learn more about deploying applications to Liferay DXP, see [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
-1. Verify that something similar to the following message appears in the application server console:
+1. Verify that the messages similar to those shown below appear in the application server console:
 
     ```
-    2019-08-12 21:53:43.847 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:261] Processing Liferay Commerce Enterprise 2.0.5.lpkg
-    2019-08-13 18:12:56.713 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
-    2019-08-13 18:12:56.715 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
+    Processing Liferay Commerce Enterprise x.x.x.lpkg
+    ```
+
+    ```
+    The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
+    ```
+
+    ```
+    The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
     ```
 
 1. Shut down the application server.
 
 ## Apply the Latest Fix Pack (Subscribers Only)
 
-Before upgrading Liferay Commerce, update the base Liferay Digital Experience Platform (DXP) Fix Pack to the latest release. (For example, Liferay Commerce Enterprise 2.0.6 is built on Liferay DXP 7.1 Fix Pack 14.) The latest fix pack releases are available from [Help Center](https://customer.liferay.com/downloads).
+Before upgrading Liferay Commerce, update Liferay Digital Experience Platform (DXP) to the latest available fix pack release. For example, if upgrading to Liferay Commerce Enterprise 2.0.6 - upgrading Liferay DXP to Fix Pack 14 is required. The latest fix pack releases are available from [Help Center](https://customer.liferay.com/downloads).
 
-Fix Packs are applied to the Liferay DXP installation using the Liferay Patching Tool. If the Patching Tool has not been installed yet, please see [Using the Patching Tool](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) and [Configuring the Patching Tool](https://help.liferay.com/hc/articles/360018176611-Configuring-the-Patching-Tool).
+Fix Packs are applied to a Liferay DXP installation using the Liferay Patching Tool. See [Using the Patching Tool](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) and [Configuring the Patching Tool](https://help.liferay.com/hc/articles/360018176611-Configuring-the-Patching-Tool) for more information.
 
-Next, see the instructions in [Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches) to apply the fix pack. If Liferay DXP was [installed manually](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-) (for example, on WebLogic), see [Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR).
+Next, apply the fix pack. See [Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches) for more information. If Liferay DXP was [installed manually](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-) (for example, on WebLogic), see [Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR).
+
+To verify Fix Pack installation do the following:
+
+1. Run `patching-tool info` in this `${liferay.home}/patching-tool`
 
 1. Verify that the fix pack has been applied:
 
@@ -42,7 +52,7 @@ Next, see the instructions in [Installing Patches](https://help.liferay.com/hc/e
        [*I] dxp-14-7110 :: Installed; Will be installed. :: Built for LIFERAY
     ```
 
-Note that any previously installed fix packs will be overridden by the latest. After patching, remove Liferay DXP's cache of deployed code by deleting the contents of the `[Liferay Home]/work folder`. See the next section on how to remove other stale data.
+Fix Packs are cumulative in nature and include all previously release fix packs. After patching, remove Liferay DXP's cache of deployed code by deleting the contents of the `${liferay.home}/work` folder. See the next section on how to remove other stale data.
 
 ## Clear Stale Data and Verify the Upgrade Process
 
