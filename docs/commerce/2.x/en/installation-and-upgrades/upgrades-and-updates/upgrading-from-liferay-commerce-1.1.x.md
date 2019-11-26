@@ -18,7 +18,7 @@ This article documents how to upgrade Liferay Commerce to the latest Commerce 2.
     > To learn more about deploying applications to Liferay DXP, see [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
 1. Verify that something similar to the following message appears in the application server console:
 
-    ```log
+    ```
     2019-08-12 21:53:43.847 INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:261] Processing Liferay Commerce Enterprise 2.0.5.lpkg
     2019-08-13 18:12:56.713 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
     2019-08-13 18:12:56.715 INFO  [fileinstall-/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
@@ -28,30 +28,21 @@ This article documents how to upgrade Liferay Commerce to the latest Commerce 2.
 
 ## Apply the Latest Fix Pack (Subscribers Only)
 
-Before upgrading Liferay Commerce, update the base Liferay Digital Experience Platform (DXP) Fix Pack to the latest release. (For example, Liferay Commerce Enterprise 2.0.6 is built on Liferay DXP 7.1 Fix Pack 14.) Fix Packs are applied to the Liferay DXP installation using the Liferay Patching Tool. Apply the fix pack _while the application server is shut down._
+Before upgrading Liferay Commerce, update the base Liferay Digital Experience Platform (DXP) Fix Pack to the latest release. (For example, Liferay Commerce Enterprise 2.0.6 is built on Liferay DXP 7.1 Fix Pack 14.) The latest fix pack releases are available from [Help Center](https://customer.liferay.com/downloads).
 
-1. Download the Patching Tool available from [Help Center]((https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191019&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191066)).
+Fix Packs are applied to the Liferay DXP installation using the Liferay Patching Tool. If the Patching Tool has not been installed yet, please see [Using the Patching Tool](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) and [Configuring the Patching Tool](https://help.liferay.com/hc/articles/360018176611-Configuring-the-Patching-Tool).
 
-1. Install the latest Patching Tool.
-    > For more information about installing and configuring the Patching Tool, see [Using the Patching Tool](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) and [Configuring the Patching Tool](https://help.liferay.com/hc/articles/360018176611-Configuring-the-Patching-Tool).
-
-1. Download the fix pack from [Help Center](https://customer.liferay.com/downloads).
-1. Apply the fix pack.
-
-    > See [Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches).
-
-    > If Liferay DXP was [installed manually](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-) (for example, on WebLogic), see [Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR).
-
+Next, see the instructions in [Installing Patches](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches) to apply the fix pack. If Liferay DXP was [installed manually](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually-) (for example, on WebLogic), see [Installing Patches on the Liferay DXP 7.1 WAR](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR).
 
 1. Verify that the fix pack has been applied:
 
-```log
-Detailed patch list:
-  [ -] dxp-12-7110 :: Currently not installed; Won't be installed: dxp-14 contains the fixes included in this one :: Built for LIFERAY
-  [*I] dxp-14-7110 :: Installed; Will be installed. :: Built for LIFERAY
-```
+    ```
+    Detailed patch list:
+       [ -] dxp-12-7110 :: Currently not installed; Won't be installed: dxp-14 contains the fixes included in this one :: Built for LIFERAY
+       [*I] dxp-14-7110 :: Installed; Will be installed. :: Built for LIFERAY
+    ```
 
-Note that any previously installed fix packs will be overridden by the latest. After patching, remove Liferay DXP’s cache of deployed code by deleting the contents of the `[Liferay Home]/work folder`. See the next section on how to remove other stale data.
+Note that any previously installed fix packs will be overridden by the latest. After patching, remove Liferay DXP's cache of deployed code by deleting the contents of the `[Liferay Home]/work folder`. See the next section on how to remove other stale data.
 
 ## Clear Stale Data and Verify the Upgrade Process
 
@@ -60,7 +51,7 @@ Note that any previously installed fix packs will be overridden by the latest. A
 1. Start the application server.
 1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:
 
-    ```log
+    ```
     2019-08-13 18:26:26.082 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
     2019-08-13 18:26:26.106 INFO  [main][UpgradeProcess:107] Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
     2019-08-13 18:26:26.116 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess
@@ -75,8 +66,7 @@ Note that any previously installed fix packs will be overridden by the latest. A
     2019-08-13 18:26:26.346 INFO  [main][BaseDB:812] Dropping stale indexes
     2019-08-13 18:26:26.400 INFO  [main][BaseDB:84] Adding indexes
     ```
-
-    ```log
+    ```
     2019-08-13 18:28:19.439 INFO  [main][VerifyProcess:65] Verifying com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess
     2019-08-13 18:28:19.443 INFO  [main][LoggingTimer:83] Starting com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog
     2019-08-13 18:28:19.445 INFO  [main][LoggingTimer:43] Completed com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog in 2 ms
