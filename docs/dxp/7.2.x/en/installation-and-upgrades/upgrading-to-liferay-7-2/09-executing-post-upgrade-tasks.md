@@ -1,12 +1,12 @@
 # Executing Post-Upgrade Tasks
 
-Since you optimized your system for upgrading previously, after the upgrade is complete you must re-optimize it for production. In addition to your standard testing, you must also perform a couple of other steps to ensure everything is running as expected post-upgrade. Here's an overiew of post-upgrade tasks to complete the Liferay DXP 7.2 upgrade process.
+Since you optimized your system for upgrading previously, after the upgrade is complete you must re-optimize it for production. In addition to your standard testing, you must also perform a couple of other steps to ensure everything is running as expected post-upgrade. Here's an overview of post-upgrade tasks to complete the Liferay DXP 7.2 upgrade process.
 
 ## Review Database Configurations
 
 Prior to upgrading your Liferay database, you tuned it for upgrade (see [Tuning for the Data Upgrade](./04-tuning-for-the-data-upgrade.md)). Now that the upgrade is complete, restore the production database tuning you used previously.
 
-> **Note:** If you migrated from a sharded environment during your data upgrade, then must make more adjustments to your configurations to complete the transition to virtual instances. See the [Upgrade and Update Properties](./97-upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) section for more information.
+> **Note:** If you migrated from a sharded environment during your data upgrade, then you must make more adjustments to your configurations to complete the transition to virtual instances. See the [Upgrade and Update Properties](./97-upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) section for more information.
 
 ## Set Up Elasticsearch and Re-index Search Indexes
 

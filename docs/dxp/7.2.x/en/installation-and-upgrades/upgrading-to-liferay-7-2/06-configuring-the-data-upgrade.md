@@ -1,7 +1,6 @@
 # Configuring the Data Upgrade
 
-The data upgrade tool (upgrade tool) provides the easiest way to upgrade the core and installed modules. You can use text files or the tool's command line interface to configure your upgrade. The upgrade tool can upgrade everything (the core
-and all the modules) together or separately.
+The data upgrade tool provides the easiest way to upgrade the core and installed modules. You can use text files or the tool's command line interface to configure your upgrade. The upgrade tool can upgrade everything (the core and all the modules) together or separately.
 
 Liferay DXP bundles include the upgrade tool. If you installed Liferay DXP manually, you can download the upgrade tool separately:
 

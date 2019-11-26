@@ -14,7 +14,7 @@ Get the latest fixes for Liferay DXP by requesting an upgrade patch. An *upgrade
 
 [Install DXP 7.2 on your application server](/docs/7-2/deploy/-/knowledge_base/d/deploying-product) or [use DXP 7.2 bundled with your application server of choice](/docs/7-2/deploy/-/knowledge_base/d/installing-product). 
 
-**Warning:** Do not start your application server with your database yet. Wait  until after you have completed the data upgrade to DXP 7.2 and post-upgrade tasks. 
+**Warning:** Do not start your application server with your database yet. Wait until after you have completed the data upgrade to DXP 7.2. 
 
 ## Install the Latest Upgrade Patch or Fix Pack
 

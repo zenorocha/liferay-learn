@@ -10,13 +10,11 @@ Here are the module upgrade topics:
 - [Checking Upgrade Status](#checking-upgrade-status)
 - [Executing Verify Processes](#executing-verify-processes)
 
-**Note**: You must [Configure the core upgrade](./06-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default. 
-
-Start with learning the module upgrade Gogo shell commands.
+**Note**: You must [Configure the core upgrade](./06-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default.
 
 ## Command Usage
 
-If you ran the upgrade tool and it opened Gogo shell automatically, you're already connected. Otherwise, you can execute commands using the [Gogo Shell portlet](/docs/7-2/customization/-/knowledge_base/c/using-the-felix-gogo-shell).
+If you ran the upgrade tool and it opened Gogo shell automatically, you're already connected. Otherwise, you can execute commands using the [Gogo Shell portlet](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
 
 Here are the commands:
 
@@ -48,7 +46,7 @@ Here are the commands:
 
 `verify:list:` Lists all registered verifiers
 
-You can list the modules that are ready for upgrade.  
+Next, find out each module's availability for upgrade.
 
 ## Listing Module Upgrade Processes
 
