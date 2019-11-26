@@ -3,14 +3,14 @@
 ## Installing Liferay DXP
 
 * Using Docker Images
-* [Obtaining Liferay DXP](./obtaining-liferay.md)
-* [Optimizing the Application Server](./optimizing-the-application-server.md)
-* [Preparing the Database](./preparing-the-database.md)
-* [Installing and Configuring a Bundle](./installing-and-configuring-a-bundle.md)
+* [Obtaining Liferay DXP](./installing-liferay-dxp/obtaining-liferay.md)
+* [Optimizing the Application Server](./installing-liferay-dxp/optimizing-the-application-server.md)
+* [Preparing the Database](./installing-liferay-dxp/preparing-the-database.md)
+* [Installing and Configuring a Bundle](./installing-liferay-dxp/installing-and-configuring-a-bundle.md)
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 * Activating Liferay DXP
 * Installing Trial Plugins
-* [Setting Up Marketplace and Portal Security](./setting-up-marketplace-and-portal-security.md)
+* [Setting Up Marketplace and Portal Security](./installing-liferay-dxp/setting-up-marketplace-and-portal-security.md)
 
 ### Installing Liferay on an Application Server
 
