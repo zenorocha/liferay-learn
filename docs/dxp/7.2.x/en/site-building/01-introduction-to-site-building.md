@@ -1,6 +1,6 @@
 # Introduction to Site Building
 
-A Site is a set of pages where content or applications are published. Sites can be independent or serve as an associated organization's website. You can create as many different sites as you like within the context of a single Liferay Portal instance. You can have many Sites on one Liferay instance, which work together to create one complete website, or you can simply have one Site which contains all of your pages and content---or anything in between. These topics are covered in this introduction:
+A Site is a set of pages where content or applications are published. Sites can be independent or serve as an associated organization's website. You can create as many different Sites as you like within the context of a single Liferay Portal instance. You can have many Sites on one Liferay instance, which work together to create one complete website, or you can simply have one Site which contains all of your pages and content, or anything in between. These topics are covered in this introduction:
 
 - [Site Use Cases](#site-use-cases)
 - [The Default Main Site](#the-default-main-site)
@@ -15,7 +15,7 @@ For other kinds of websites, you may want to use independent Sites to bring User
 
 ## The Default Main Site
 
-There is always one default Site, which is also known as the main Site of the instance. This Site doesn't have its own name but rather takes the name of the instance. By default the instance name is *Liferay*, but this value can be changed through the configuration of the setup wizard. You can also change the instance name later on if you need to through the Control Panel:
+There is always one default Site, which is the main Site of the instance. This Site doesn't have its own name but rather takes the name of the instance. By default the instance name is *Liferay*, but this value can be changed through the configuration of the setup wizard. You can also change the instance name at any time through the Control Panel:
 
 1.  Open the Product Menu.
 
@@ -27,15 +27,15 @@ There is always one default Site, which is also known as the main Site of the in
 
 ## Site Scope
 
-Members of a Site can be given additional privileges in the Site by using permissions. It is also possible to assign different Roles within the Site to different members. This can be done through *Site Roles*, which are defined equally for all Sites or *Teams* which are unique for each Site. These concepts are discussed in [Site Roles](TODO) and [Creating Teams for Sites](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/7.2.x/en/site-building/01-building-sites/06-creating-teams-for-sites.markdown) respectively.
+Members of a Site can be given additional privileges in the Site by using permissions. It is also possible to assign different Roles within the Site to different members. This can be done through *Site Roles*, which are defined equally for all Sites or *Teams* which are unique for each Site. These concepts are discussed in [Site Roles](TODO) and [Creating Teams for Sites](./01-building-sites/06-creating-teams-for-sites.md) respectively.
 
-Liferay Portal separates Site-scoped information from the Control Panel by placing it in the Site menu. To access Site-scoped settings,
+Liferay DXP separates Site-scoped information from the Control Panel by placing it in the Site menu. To access Site-scoped settings:
 
 1. Open the Product Menu and click your Site name.
 
 2. Click the compass icon next to the Site name to select the specific Site to work on. 
 
-3. With the Site selected, access the Build, Content & Data, Categorization, Recycle Bin, Members, Configuration, Publishing options and more from the site's panel.
+3. With the Site selected, access the Build, Content & Data, Categorization, Recycle Bin, Members, Configuration, Publishing options and more from the Site's panel.
 
 ![Figure 1: Your Site's content resides in the Site Administration menu.](/images/web-content-site-content.png)
 
@@ -47,7 +47,7 @@ A Site is composed of two kinds of Page Sets:
 
   - Can be accessed by anyone, including Users who haven't logged in
   
-  - has URLs different from Private Pages and can have unique content, applications, themes, and layouts
+  - Has URLs different from Private Pages and can have unique content, applications, themes, and layouts
 
 - **Private Pages:**
 
@@ -55,4 +55,4 @@ A Site is composed of two kinds of Page Sets:
   
   - Has URLs different from Public Pages and can have unique content, applications, themes, and layouts
 
-A Site can have public pages, private pages, or both. It's possible to restrict access to pages at the Page Set level or at the level of individual pages through the permissions system. 
+A Site can have Public Pages, Private Pages, or both. It's possible to restrict access to individual pages or entire Page Sets through the permissions system.

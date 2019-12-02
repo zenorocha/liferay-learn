@@ -24,9 +24,9 @@ Follow these steps to create a Site Template:
 
 2.  Click the *Add* icon (![Add Site Template](../../../images/icon-add.png)) and enter a name for your template.
 
-3.  Leave the *Active* option enabled. The *Active* option must be enabled for your template to be usable. If your template is still a work in progress, toggle it to NO to ensure that no one uses it until it's ready. You can also categorize your Site Template using tags and categories by selecting the *Categorization* menu from the bottom of the page. To learn more about using tags and categories in Liferay Portal, see the [Organizing Content with Tags and Categories](TODO) section. 
+3.  Leave the *Active* option enabled. The *Active* option must be enabled for your template to be usable. If your template is still a work in progress, toggle it to *NO* to ensure that no one uses it until it's ready. You can also categorize your Site Template using tags and categories by selecting the *Categorization* menu from the bottom of the page. To learn more about using tags and categories in Liferay Portal, see the [Organizing Content with Tags and Categories](TODO) section. 
 
-4.  Optionally enable the *Allow Site administrators to modify pages associated with this Site template...* option. This gives Site Administrators permission to modify or remove the pages and apps that the template introduces to their sites---if you want the templates to be completely static, you should disable this. 
+4.  Optionally enable the *Allow Site administrators to modify pages associated with this Site template, even when propagation of changes is enabled* option. This gives Site Administrators permission to modify or remove the pages and apps that the template introduces to their Sites. Disable this you want the templates to be completely static.
 
 5.  Click *Save* to create your Site Template.
 
@@ -42,9 +42,9 @@ After you've created your Site Template, you must edit it to include the layouts
 
 2.  Click the *Options* icon (![Options](../../../images/icon-options.png)) next to the Site Template and select *Manage*.
  
-    By default, the Manage Interface opens *Site Builder* &rarr; *Pages* for the Site Template. You already have a home page. The Site Template is active in the Product Menu. Any assets created within your Site Template's Product Menu can only be accessed by sites using the Site Template.
+    By default, the *Manage* interface opens *Site Builder* &rarr; *Pages* for the Site Template. You already have a home page. The Site Template is active in the Product Menu. Any assets created within your Site Template's Product Menu can only be accessed by Sites using the Site Template.
 
-3.  Add any pages you want for your Site Template. See the [Creating Pages](TODO) section for more information on creating pages. 
+3.  Add any pages you want for your Site Template. See the [Creating Pages](TODO) section for more information on creating pages.
 
 4.  Open the Product Menu and select *Go to Site* under the Site Template Menu to go to the pages you just created.
 
@@ -68,13 +68,13 @@ Once your Site Template is created and configured, you can use it to create a Si
 
 6.  Configure your [site settings](TODO).
 
-7.  Open the *Pages* panel below the form. Note the *Enable propagation of changes from the Site template* selector is enabled by default. This means that the Site receives updates if the Site Template is modified. If changes are made to a Site created from a Site Template, this link is broken and updates to the Site Template are **no longer propagated**. See [Merging Site Template Changes](./03-merging-site-template-changes.md) for more information.
+7.  Open the *Pages* panel below the form. Note the *Enable propagation of changes from the Site template* selector is enabled by default. This means that the Site receives updates if the Site Template is modified. If changes are made to a Site created from a Site Template, this link is broken and updates to the Site Template are **no longer propagated**. See [Merging Site Template Changes](./01-building-sites/03-merging-site-template-changes.md) for more information.
 
-8.  Click *Save* to create your Site. 
+8.  Click *Save* to create your Site.
 
-9.  Open the Product Menu and go to *Sites* &rarr; *Sites* under the Control Panel. 
+9.  Open the Product Menu and go to *Sites* &rarr; *Sites* under the Control Panel.
 
-10.  Click *Actions* and select *Go to Public Pages* or *Go to Private Pages* next to your new Site to view it. 
+10.  Click *Actions* and select *Go to Public Pages* or *Go to Private Pages* next to your new Site to view it.
 
 ## Additional Information
 
@@ -91,4 +91,4 @@ of changes from the Site Template is enabled (default), these rules apply to pag
 
 - Site Administrators can add or remove custom site pages. They can also reorder custom site pages as long as they're all positioned after the Site Template pages.
 
--  If a Site has both pages imported from a Site template and custom site pages, the Site Template pages appear first in the site's page hierarchy; custom pages added by Site Administrators appear after the Site Template pages. 
+-  If a Site has both pages imported from a Site Template and custom Site pages, the Site Template pages appear first in the Site's page hierarchy. Custom pages added by Site Administrators appear after the Site Template pages.

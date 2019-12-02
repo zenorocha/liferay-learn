@@ -8,7 +8,7 @@ To export a Site using a Site Template, follow these steps:
 
 2.  Open the *Actions* Menu (![Actions](../../../images/icon-actions.png)) for the Site Template you want to export and select *Manage*.
  
-3.  From the Site Template's Pages page, open the Product Menu and select  *Publishing* &rarr; *Export* under the site template's menu.
+3.  From the Site Template's *Pages* page, open the Product Menu and select *Publishing* &rarr; *Export* under the Site Template's menu.
 
 4.  Click the *Add* icon (![Add](../../../images/icon-add.png)) to create a new custom export.
  
@@ -20,6 +20,6 @@ To export a Site using a Site Template, follow these steps:
 
 8.  Open the *Actions* Menu (![Actions](../../../images/icon-actions.png)) for the Site Template and select *Manage*.
 
-9.  From the Site Template's Pages page, open the Product Menu and select  *Publishing* &rarr; *Import* under the site template's menu and import the Site Template LAR you just downloaded.
+9.  From the Site Template's Pages page, open the Product Menu and select  *Publishing* &rarr; *Import* under the Site Template's menu and import the Site Template LAR you just downloaded.
 
 Now the Site Template can be used normally in the new environment. For more information on exporting/importing content, see [Importing/Exporting Pages and Content](./09-importing-exporting-pages-and-content.md).

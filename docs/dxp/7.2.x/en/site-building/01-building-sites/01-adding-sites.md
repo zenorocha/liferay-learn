@@ -6,32 +6,32 @@ The steps below describe how to add a new Site to your Liferay Portal instance.
 
 2.  Click the Add icon (![Add Site](../../../images/icon-add.png)) at the top right of the page.
      
-3.  Select a Site Template. See [Site Templates](./02-building-sites-with-site-templates.md) for more information on creating site templates.
+3.  Select a Site Template. See [Site Templates](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/7.2.x/en/site-building/01-building-sites/02-building-sites-with-site-templates.markdown) for more information on creating Site Templates.
 
-4.  Enter a Name for the site and optionally provide a description.
+4.  Enter a Name for the Site and optionally provide a description.
 
 5.  Set the *Membership Type*. These membership types are available:
 
-    - **Open:** Users can become members of the site at any time.
+    - **Open:** Users can become members of the Site at any time.
 
-    - **Restricted:** Users can request site membership but site administrators must approve requests for users to become members.
+    - **Restricted:** Users can request Site membership but Site Administrators must approve requests for users to become members.
 
-    - **Private:** Users cannot join the site or request site membership. Site administrators must manually select users and assign them as site members.
+    - **Private:** Users cannot join the Site or request Site membership. Site Administrators must manually select users and assign them as Site members.
 
 6.  Configure the remaining settings and click *Save*.
 
-![The General section provides the basic information for your site.](./adding-sites/images/01.png)
+![The General section provides the basic information for your Site.](./images/building-sites-general-form.png)
 
-The new site is selected when you open the Product Menu. See [Site Settings](TODO) for an overview of all of the available site settings.
+The new Site is selected when you open the Product Menu. See [Site Settings](TODO) for an overview of all of the available Site settings.
 
 ## Additional Information
 
-When creating a blank Site or organization Site, the site is not immediately viewable. This is because sites without a page are impossible to view. Therefore, before you can view your site, you must first create a page for it. To add a page for your temporarily invisible site, follow these steps:
+When creating a blank Site or organization Site, the Site is not immediately viewable. This is because Sites without a page are impossible to view. Therefore, before you can view your Site, you must first create a page for it. To add a page for your temporarily invisible Site, follow these steps:
 
-1.  Open the Product Menu and expand the site menu.
+1.  Open the Product Menu and expand the Site menu.
 
-2.  Navigate to *site Builder* &rarr; *Pages*.
+2.  Navigate to *Site Builder* &rarr; *Pages*.
 
-3.  Add a public page. 
+3.  Add a public page.
 
-After adding your site's first page, it renders and your site is viewable. For more information about adding pages, see the [Creating Pages](TODO) section.
+After adding your Site's first page, it renders and your Site is viewable. For more information about adding pages, see the [Creating Pages](TODO) section.
