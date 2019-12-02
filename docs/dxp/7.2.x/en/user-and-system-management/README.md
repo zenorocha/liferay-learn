@@ -9,6 +9,7 @@
   * Roles and Permissions
     * Defining Roles
     * Setting Permissions
+  * Accounts
   * System Management
     * System Settings
     * Security Settings
