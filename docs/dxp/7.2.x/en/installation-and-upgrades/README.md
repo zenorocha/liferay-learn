@@ -2,8 +2,18 @@
 
 ## Installing Liferay DXP
 
-* Using Docker Images
+* Getting Started with Liferay DXP
+  - get the binary
+  - start the binary
+  - log in to the server
+  - reference full install information
+* Installation Overview
+  - what do i need to start?
+  - what are the overall major steps I need to be aware of?
 * [Obtaining Liferay DXP](./installing-liferay-dxp/obtaining-liferay.md)
+  - where do i start?
+  - what files are available?
+  - What do I download?
 * [Optimizing the Application Server](./installing-liferay-dxp/optimizing-the-application-server.md)
 * [Preparing the Database](./installing-liferay-dxp/preparing-the-database.md)
 * [Installing and Configuring a Bundle](./installing-liferay-dxp/installing-and-configuring-a-bundle.md)
@@ -65,7 +75,7 @@
 * Upgrading a Sharded Environment
 * Migrating from Audience Targeting to Segmentation and Personalization
 
-## Maintaining A Liferay DXP Installation
+## Maintaining a Liferay DXP Installation
 
 * Installing Patches
 * Backing Up
@@ -108,7 +118,3 @@
 * Database Templates
 * Comparing Patch Levels
 * Patching Tool Configuration
-
-## Concept
-
-* Upgrade
