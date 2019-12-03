@@ -78,6 +78,19 @@ if __name__ == "__main__":
         # Set all images to go in the ./images/ folder
         line = re.sub("\]\((../)+images/", "](./images/", line)
 
+        # Sidebar Fun
+        # check if a line has a pipe, then enter our world of pipey wonders
+        if re.search("\|",line):
+
+            # strip the whitespace from the beginning and end of all pipetastic lines
+            stripped_line = line.strip()
+
+            # if the stripped line starts with | but doesn't end with one, it's a sidebar
+            if re.search("^\|",stripped_line) and not re.search("^\|.*\|$",stripped_line):
+                # kill the first occurrence of the pipe in a sidebar line
+                # preserves indentation
+                line = re.sub("\| ","",line,1)
+
         trimmed_line = line.lstrip()
 
         if not (done_header_id):
