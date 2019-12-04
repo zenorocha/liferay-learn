@@ -1,4 +1,4 @@
-# Upgrading the Core Using the Upgrade Tool
+# Executing the Upgrade Tool
 
 This article provides an overview of how to use the upgrade tool within your application server.
 

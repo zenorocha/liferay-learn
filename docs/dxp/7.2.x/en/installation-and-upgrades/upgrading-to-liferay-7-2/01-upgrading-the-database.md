@@ -71,7 +71,9 @@ Lastly for your pre-production upgrade, completely [back up](../09-maintaining-a
 
 ## Performing the Data Upgrade
 
-Data upgrade is the biggest upgrade process milestone. First, [configure the upgrade tool on your new DXP server](./06-configuring-the-data-upgrade.md). Next, use the upgrade tool to [upgrade the Core](./07-upgrading-the-core-using-the-upgrade-tool.md). If you configure for upgrading modules separately, then [use the Gogo shell](./08-upgrading-modules-using-gogo-shell.md) to upgrade the modules after the Core upgrade completes.
+Data upgrade is the biggest upgrade process milestone. [Configure the upgrade tool on your new DXP server](./06-configuring-the-data-upgrade.md) and [execute the tool to complete it](07-upgrading-the-core-using-the-upgrade-tool.md)
+
+ execute itNext, use the upgrade tool to [upgrade the Core](./07-upgrading-the-core-using-the-upgrade-tool.md). If you configure for upgrading modules separately, then [use the Gogo shell](./08-upgrading-modules-using-gogo-shell.md) to upgrade the modules after the Core upgrade completes.
 
 ## Executing Post-Upgrade Tasks
 
