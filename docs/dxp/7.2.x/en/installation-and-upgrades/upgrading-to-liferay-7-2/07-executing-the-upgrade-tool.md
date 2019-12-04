@@ -50,8 +50,8 @@ finishing the upgrade process.
 
 Only execute the upgrade process on a server with ideal memory, CPU, and database connection configurations. If executing an upgrade remotely using `ssh`, make sure to guard against interruptions: 
  
-- If you're executing the upgrade using `ssh`, ignore hangups (connection loss) by using `nohup` or something similar. 
-- On the machine you're connecting from, disable settings that shutdown or put the machine into sleep mode. 
+- If you're executing the upgrade using `ssh`, if connection is lost, connect again and check the upgrade logs since the
+process will continue running.
 - If execution stopped during an upgrade process for DXP 7.1 or higher, restart the upgrade tool to continue the upgrade from that point. You can also use Gogo shell to [check module upgrade status](./08-upgrading-modules-using-gogo-shell.md#checking-upgrade-status) and continue non-core module upgrades, as long as the core upgrade processes have completed.
 - If execution stopped during a core upgrade process for DXP 7.0 or lower, you must [restore the data from a backup](/docs/7-2/deploy/-/knowledge_base/d/backing-up-a-liferay-installation) and start the upgrade again. 
 
