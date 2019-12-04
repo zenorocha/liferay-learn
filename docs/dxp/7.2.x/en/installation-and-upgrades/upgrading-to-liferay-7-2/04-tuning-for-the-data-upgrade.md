@@ -40,14 +40,14 @@ Make sure to provide adequate memory for the database upgrade tool's Java proces
 
 Using a test scenario with a 3.2 GB database and a 15 GB Document Library, the following Java process settings were optimal:
 
-- Xmx 15 GB RAM 
+- Xmx 8 GB RAM 
 - File encoding UTF-8 
 - User time zone GMT
 
 Here is the `db_upgrade.sh` command corresponding to these settings:
 
 ```bash
-db_upgrade.sh -j "-Xmx15000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
+db_upgrade.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
 ```
 
 ## Tuning the Database Transaction Engine for Executing Updates 
