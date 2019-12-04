@@ -10,7 +10,7 @@ Here are the module upgrade topics:
 - [Checking Upgrade Status](#checking-upgrade-status)
 - [Executing Verify Processes](#executing-verify-processes)
 
-**Note**: You must [Configure the core upgrade](./06-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default.
+**Note**: You must [Configure the core upgrade](./07-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default.
 
 ## Command Usage
 

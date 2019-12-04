@@ -100,7 +100,7 @@ Check these object types:
 
     - Global `ResourcePermission` objects
 
-- **Intermediate web content versions:** Liferay DXP generates a new web content version after any modification (including translations). Consider removing versions you don't need. This may free up significant space, especially if the removed versions have objects such as image files specific to those versions. For more details, see [Example: Removing Intermediate Journal Article Versions](./03-example-removing-intermediate-journal-article-versions.md).
+- **Intermediate web content versions:** Liferay DXP generates a new web content version after any modification (including translations). Consider removing versions you don't need. This may free up significant space, especially if the removed versions have objects such as image files specific to those versions. For more details, see [Example: Removing Intermediate Journal Article Versions](./04-example-removing-intermediate-journal-article-versions.md).
 
 - **Document versions**: As with Journal Articles, if you don't need intermediate document versions, delete them. This saves space both in the database and on the file system.
 
@@ -122,7 +122,7 @@ Check these object types:
     - `PortletPreference` objects associated with a portlet or layout that no longer exists. This is common in environments with many embedded portlets. These portlet instances have a different lifecycle and aren't deleted when the portlet is removed from a template.
 
 To see an example of removing intermediate object versions, read [Example: Removing Intermediate Journal Article
-Versions](./03-example-removing-intermediate-journal-article-versions.md).
+Versions](./04-example-removing-intermediate-journal-article-versions.md).
 
 Next, you'll test your instance with its pruned database. 
 

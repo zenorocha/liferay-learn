@@ -16,7 +16,7 @@ You can allow the upgrade tool to upgrade all installed modules automatically or
 
 If the upgrade tool's `autoUpgrade` property is set to `true` (the default setting), upgrade processes for all installed modules are run after the core upgrade completes. 
 
-You can also prevent the upgrade tool from automatically running the module upgrades and run them individually afterward. Set `autoUpgrade="false"` in a file named `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config` and copy the file into the `[Liferay Home]/osgi/configs` folder for the upgrade tool to instead open Gogo shell after the core upgrade. In the Gogo shell, you can [manually administer module upgrades](./08-upgrading-modules-using-gogo-shell.md).
+You can also prevent the upgrade tool from automatically running the module upgrades and run them individually afterward. Set `autoUpgrade="false"` in a file named `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config` and copy the file into the `[Liferay Home]/osgi/configs` folder for the upgrade tool to instead open Gogo shell after the core upgrade. In the Gogo shell, you can [manually administer module upgrades](./09-upgrading-modules-using-gogo-shell.md).
 
 **Note:** Configuring the core upgrade at run-time with the upgrade tool does not provide an option to disable automatically running module upgrades. To prevent module upgrades from running automatically you must disable it (using the configuration above) *before* running the upgrade tool. 
 
@@ -53,7 +53,7 @@ You can also pre-configure the upgrade tool to set more values than the tool gen
 
 - `app-server.properties`: Specifies the server location and libraries.
 - `portal-upgrade-database.properties`: Configures the database connection.
-- `portal-upgrade-ext.properties`: Sets the rest of the portal properties that the upgrade requires. To replicate your current DXP server, you can copy your current portal properties (except your database properties) into this file. Before using your current properties, make sure to [update them for DXP 7.2](./05-preparing-a-new-application-server-for-liferay-dxp.md#migrate-your-portal-properties).
+- `portal-upgrade-ext.properties`: Sets the rest of the portal properties that the upgrade requires. To replicate your current DXP server, you can copy your current portal properties (except your database properties) into this file. Before using your current properties, make sure to [update them for DXP 7.2](./06-preparing-a-new-application-server-for-liferay-dxp.md#migrate-your-portal-properties).
 
 ### Configuring app-server.properties
 
@@ -117,7 +117,7 @@ Specify the following information to configure the upgrade:
 
 - `liferay.home`: The [Liferay home folder](/docs/7-2/deploy/-/knowledge_base/d/liferay-home).
 
-- `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you [updated this property in your `portal-ext.properties`](./05-preparing-a-new-application-server-for-liferay-dxp.md#configure-your-documents-and-media-file-store), copy the new value here. Otherwise, set the property one of these ways:
+- `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you [updated this property in your `portal-ext.properties`](./06-preparing-a-new-application-server-for-liferay-dxp.md#configure-your-documents-and-media-file-store), copy the new value here. Otherwise, set the property one of these ways:
 
 ```properties
 dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore

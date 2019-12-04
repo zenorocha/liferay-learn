@@ -1,4 +1,4 @@
-# Executing the Upgrade Tool
+# Using the Upgrade Tool
 
 This article provides an overview of how to use the upgrade tool within your application server.
 
@@ -12,7 +12,7 @@ Start the upgrade tool using the `db_upgrade.sh` script in the `[Liferay Home]/t
 
 3. Execute the core verifiers
 
-If you configured the upgrade tool to upgrade non-core modules, the tool opens a Gogo shell and starts upgrading them after the core upgrade processes are complete. The Gogo shell lets you upgrade modules, check module upgrade status, verify upgrades, and restart module upgrades. See [Upgrading Modules Using Gogo Shell](./08-upgrading-modules-using-gogo-shell.md) for more information.
+If you configured the upgrade tool to upgrade non-core modules, the tool opens a Gogo shell and starts upgrading them after the core upgrade processes are complete. The Gogo shell lets you upgrade modules, check module upgrade status, verify upgrades, and restart module upgrades. See [Upgrading Modules Using Gogo Shell](./09-upgrading-modules-using-gogo-shell.md) for more information.
 
 This command prints the upgrade tool usage: 
 
@@ -52,7 +52,7 @@ Only execute the upgrade process on a server with ideal memory, CPU, and databas
  
 - If you're executing the upgrade using `ssh`, if connection is lost, connect again and check the upgrade logs since the
 process will continue running.
-- If execution stopped during an upgrade process for DXP 7.1 or higher, restart the upgrade tool to continue the upgrade from that point. You can also use Gogo shell to [check module upgrade status](./08-upgrading-modules-using-gogo-shell.md#checking-upgrade-status) and continue non-core module upgrades, as long as the core upgrade processes have completed.
+- If execution stopped during an upgrade process for DXP 7.1 or higher, restart the upgrade tool to continue the upgrade from that point. You can also use Gogo shell to [check module upgrade status](./09-upgrading-modules-using-gogo-shell.md#checking-upgrade-status) and continue non-core module upgrades, as long as the core upgrade processes have completed.
 - If execution stopped during a core upgrade process for DXP 7.0 or lower, you must [restore the data from a backup](/docs/7-2/deploy/-/knowledge_base/d/backing-up-a-liferay-installation) and start the upgrade again. 
 
 **Warning:** To prevent the tool's expanded command from growing too large for Windows, execute the upgrade tool script from the `[Liferay Home]/tools/portal-tools-db-upgrade-client` folder.

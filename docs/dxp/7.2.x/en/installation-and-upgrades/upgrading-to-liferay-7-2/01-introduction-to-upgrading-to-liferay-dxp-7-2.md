@@ -28,7 +28,7 @@ Upgrading the database is the biggest milestone in the upgrade process to DXP 7.
 
 ### Preparing a New Liferay DXP Server
 
-[New DXP server setup](./05-preparing-a-new-application-server-for-liferay-dxp.md) involves installing DXP 7.2, migrating and updating your portal properties and OSGi properties, and installing any necessary patches.
+[New DXP server setup](./06-preparing-a-new-application-server-for-liferay-dxp.md) involves installing DXP 7.2, migrating and updating your portal properties and OSGi properties, and installing any necessary patches.
 
 ### Installing the Search Engine
 

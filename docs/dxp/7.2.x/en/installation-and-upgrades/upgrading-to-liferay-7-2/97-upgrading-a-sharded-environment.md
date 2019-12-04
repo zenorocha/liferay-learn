@@ -6,7 +6,7 @@ Since Liferay DXP 7.0, Liferay removed its own physical partitioning implementat
 
 ## Add Configurations Before the Data Upgrade
 
-In addition to other configurations, you will need to set more properties to migrate your shards to virtual instances for your data upgrade. See [Configuring the Data Upgrade](./06-configuring-the-data-upgrade.md) for more information on other configurations.
+In addition to other configurations, you will need to set more properties to migrate your shards to virtual instances for your data upgrade. See [Configuring the Data Upgrade](./07-configuring-the-data-upgrade.md) for more information on other configurations.
 
 Here is how to configure the upgrade to migrate from sharding:
 
@@ -51,7 +51,7 @@ Here is how to configure the upgrade to migrate from sharding:
 
 ## Upgrade and Update Properties
 
-When you perform the data upgrade, upgrade the default shard first, and then each of the non-default shards. See [Upgrading the Core Using the Upgrade Tool](./07-upgrading-the-core-using-the-upgrade-tool.md) for more information on running the data upgrade.
+When you perform the data upgrade, upgrade the default shard first, and then each of the non-default shards. See [Upgrading the Core Using the Upgrade Tool](./08-using-the-upgrade-tool.md) for more information on running the data upgrade.
 
 After the data upgrade has been completed, make the following configuration changes for your application servers:
 
