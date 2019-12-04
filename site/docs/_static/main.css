@@ -8586,6 +8586,10 @@ body .search-page .admonition {
 div.body {
   min-width: initial; }
 
+dt:target,
+span.highlighted {
+  background-color: #C4D6F8; }
+
 table {
   font-size: 0.875rem; }
 

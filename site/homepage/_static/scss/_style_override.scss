@@ -7,6 +7,11 @@ div.body {
 	min-width: initial;
 }
 
+dt:target,
+span.highlighted {
+	background-color: $highlight-color;
+}
+
 table {
 	font-size: $h5-font-size;
 
