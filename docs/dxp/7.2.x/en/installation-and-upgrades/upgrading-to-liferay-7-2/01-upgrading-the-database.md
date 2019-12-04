@@ -1,17 +1,14 @@
-# Introduction to Upgrading to Liferay DXP 7.2
+# Upgrading your database
 
-Upgrading to Liferay DXP 7.2 involves updating your data, files, plugins, and custom code, as well as optimizing and testing the upgrade to ensure it goes as quickly and smoothly as possible for your final production data upgrade. Each step's complexity scales up with the amount of data and number of customizations in your installation. Steps before and during data upgrade testing can potentially be done in parallel.
+Introduction
 
-Here are the general upgrade topics:
+Here are the general database upgrade topics:
 
 1. [Determining Your Upgrade Path](#determining-your-upgrade-path)
-1. [Planning for the Upgrade](#planning-for-the-upgrade)
 1. [Using Backup Data for Upgrade Testing](#using-backup-data-for-upgrade-testing)
 1. [Preparing for the Data Upgrade](#preparing-for-the-data-upgrade)
 1. [Performing the Data Upgrade](#performing-the-data-upgrade)
 1. [Executing Post-Upgrade Tasks](#executing-post-upgrade-tasks)
-
-> **Note:** Dev Studio's [Upgrade Planner](https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner) walks through the upgrade process and automates parts of it. The Planner uses a terse [step listing](../08-reference/06-upgrade-planner-steps.md) you can follow or refer to throughout the upgrade process.
 
 ## Determining Your Upgrade Path
 
