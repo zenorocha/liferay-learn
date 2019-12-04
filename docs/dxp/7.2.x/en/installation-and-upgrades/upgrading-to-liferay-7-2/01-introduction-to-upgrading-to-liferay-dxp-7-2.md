@@ -1,6 +1,6 @@
 # Introduction to Upgrading to Liferay DXP 7.2
 
-Upgrading to Liferay DXP 7.2 involves updating your data, files, plugins, and custom code, as well as optimizing and testing the upgrade to ensure it goes as quickly and smoothly as possible for your final production data upgrade. Each step's complexity scales up with the amount of data and number of customizations in your installation. Steps before and during data upgrade testing can potentially be done in parallel.
+Upgrading to Liferay DXP 7.2 involves updating your data, files, plugins, and custom code, as well as optimizing and testing the upgrade to ensure it goes as quickly and smoothly as possible for your final production data upgrade. Each step's complexity scales up with the amount of data and number of customizations in your installation. The main steps shown below can potentially be done in parallel.
 
 > **Note:** Dev Studio's [Upgrade Planner](https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner) walks through the upgrade process and automates parts of it. The Planner uses a terse [step listing](../08-reference/06-upgrade-planner-steps.md) you can follow or refer to throughout the upgrade process.
 
@@ -8,7 +8,7 @@ Upgrading to Liferay DXP 7.2 involves updating your data, files, plugins, and cu
 
 Before starting the upgrade process, it's important to know the biggest tasks and what tasks can be done in parallel. This facilitates planning resources for tackling such tasks.
 
-Data upgrade is the biggest task and the articles that follow focus on other tasks that must be done in preparation.
+Data upgrade is the biggest task and the articles that follow focus on tasks that must be done in preparation.
 
 ### Adapting to Feature Changes
 
@@ -24,7 +24,7 @@ You must also upgrade your installation's Marketplace apps (Kaleo, Calendar, Not
 
 ### Upgrading your Database
 
-point to the databse upgrade article
+Upgrading the database is the biggest milestone in the upgrade process to DXP 7.2. See [Upgrading the Database](./02-upgrading-the-database.md) for an overview of the main steps in performing the data upgrade.
 
 ### Preparing a New Liferay DXP Server
 
@@ -32,6 +32,6 @@ point to the databse upgrade article
 
 ### Installing the Search Engine
 
-If you do not already have your own Elasticsearch/Solr installation running, you must set one up for Liferay DXP. By default, Liferay DXP ships with an embedded configuration for Elasticsearch. The embedded configuration works great for demo purposes, but is not supported in production. See [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch) or {link to Solr} for more information.
+If you do not already have your own Elasticsearch/Solr installation running, you must set one up for Liferay DXP. By default, Liferay DXP ships with an embedded configuration for Elasticsearch. The embedded configuration works great for demo purposes, but is not supported in production. See [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch) or [Installing Solr](https://help.liferay.com/hc/en-us/articles/360032264052-Installing-Solr) for more information.
 
 Once the major preparation tasks are identified, it's time to examine the data upgrade tasks.

@@ -1,6 +1,6 @@
-# Upgrading your database
+# Upgrading the Database
 
-Introduction
+Upgrading the database is the most significant part of the process in upgrading to DXP 7.2. It involves several steps of preparation which are outlined below.
 
 Here are the general database upgrade topics:
 
@@ -25,35 +25,7 @@ If your path includes upgrading to Liferay Portal 6.2, follow the [Liferay Porta
 
 If your path includes upgrading to Liferay DXP/Portal 7.1, continue following these upgrade instructions.
 
-## Planning for the Upgrade
-
-Before starting the upgrade process, it's important to know the biggest tasks and what tasks can be done in parallel. This facilitates planning resources for tackling such tasks.
-
-Data upgrade is the biggest task and the articles that follow focus on other tasks that must be done in preparation.
-
-### Adapting to Feature Changes
-
-New DXP versions can deprecate (but keep present) features, remove features, or [move features into maintenance mode](./99-features-in-maintenance-mode.md). The [DXP 7.2 deprecation handling instructions](./98-handling-deprecations-in-liferay-dxp-7-2.md) explain the ramifications so you can adapt to the changes.
-
-### Upgrading Custom Code and Plugins
-
-Custom code upgrade involves adapting themes and apps you've developed to DXP 7.2. This can be as simple as updating dependencies for the new version, or it may involve major code changes. [Upgrading Code to Liferay DXP 7.2](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) (a separate guide) demonstrates the process. The code upgrade can be done in parallel with the data upgrade.
-
-### Upgrading Marketplace Apps
-
-You must also upgrade your installation's Marketplace apps (Kaleo, Calendar, Notifications, etc.) to their latest version for your current Liferay DXP installation. Troubleshoot any issues with these apps on your current DXP installation before upgrading to DXP 7.2.
-
-### Preparing a New Liferay DXP Server
-
-[New DXP server setup](./05-preparing-a-new-application-server-for-liferay-dxp.md) involves installing DXP 7.2, migrating and updating your portal properties and OSGi properties, and installing any necessary patches.
-
-### Installing Elasticsearch
-
-If you do not already have your own Elasticsearch installation running, you must set one up for Liferay DXP. By default, Liferay DXP ships with an embedded configuration for Elasticsearch. The embedded configuration works great for demo purposes, but is not supported in production. See [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch) for more information.
-
-Once the major preparation tasks are identified, it's time to examine the data upgrade tasks.
-
-## Using Backup Data for Testing
+## Using Backup Data for Upgrade Testing
 
 Doing a trial run(s) of the upgrade process and testing an upgraded copy of your production DXP instance is essential for identifying and resolving issues that will otherwise affect your production server. Upgrade trial runs, and even the pre-production upgrade, should be done using backed up copies of the production database and document library repository. Note that the tasks discussed next on [preparing for data upgrade](#preparing-for-the-data-upgrade) and [performing the data upgrade](#performing-the-data-upgrade) should be done as a trial run first on a test server using a copy of your production server backups.
 
@@ -71,9 +43,7 @@ Lastly for your pre-production upgrade, completely [back up](../09-maintaining-a
 
 ## Performing the Data Upgrade
 
-Data upgrade is the biggest upgrade process milestone. [Configure the upgrade tool on your new DXP server](./06-configuring-the-data-upgrade.md) and [execute the tool to complete it](07-upgrading-the-core-using-the-upgrade-tool.md)
-
- execute itNext, use the upgrade tool to [upgrade the Core](./07-upgrading-the-core-using-the-upgrade-tool.md). If you configure for upgrading modules separately, then [use the Gogo shell](./08-upgrading-modules-using-gogo-shell.md) to upgrade the modules after the Core upgrade completes.
+Data upgrade is the biggest upgrade process milestone. [Configure the upgrade tool on your new DXP server](./06-configuring-the-data-upgrade.md) and then [use it to execute the data upgrade](07-upgrading-the-core-using-the-upgrade-tool.md).
 
 ## Executing Post-Upgrade Tasks
 
