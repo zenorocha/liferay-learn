@@ -30,7 +30,7 @@ if __name__ == "__main__":
     content = file.read()
     file.close()
 
-    png_split = content.split('.png')
+    png_split = content.split('.png)')
 
     images = []
 
