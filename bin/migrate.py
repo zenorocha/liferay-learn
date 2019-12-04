@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
             # Start a list item
             list_item_line = line
-        elif (re.search("^[\w\*\@\!\(\&\s\.]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\&\s\.\`]", trimmed_line)):
 
             # Start a paragraph
             para_line = line
