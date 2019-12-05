@@ -3,14 +3,14 @@
 [Liferay Marketplace](https://www.liferay.com/marketplace) is a suite of applications on Liferay DXP that provide the following functionality:
 
 * Storefront access to the Liferay Marketplace to review, purchase, and install applications
-* Liferay Subscribers have exclusive access to the Liferay Subscription App library
+* Access for Liferay Subscribers to the Liferay Subscription App library
 * An App Manager enables administrators to deploy and manage applications through the front-end
 
 ![The Liferay Marketplace Storefront](./setting-up-marketplace/images/01.png)
 
-Enabling access to the storefront and the Liferay Subscription app library requires that your Liferay DXP installation have access to the Liferay Marketplace. For most users the steps to enable Liferay Marketplace are as follows:
+Enabling access to the storefront and the Liferay Subscription app library requires that your Liferay DXP installation have access to the Liferay Marketplace. For most users, the steps to enable Liferay Marketplace are as follows:
 
-1. Logging in to your Liferay DXP installation as an Administrator
+1. Log in to your Liferay DXP installation as an Administrator
 1. Navigate to _Control Panel_ →_Apps_ → _Store_
 1. Click _Sign In_
 1. Sign in using your Liferay.com account credentials
