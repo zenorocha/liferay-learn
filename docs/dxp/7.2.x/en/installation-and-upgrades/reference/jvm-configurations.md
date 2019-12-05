@@ -92,4 +92,4 @@ CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.lang.reflect=ALL-UNNAME
 
 ## Additional Information
 
-* [Installation Overview](./installation-overview.md)
+* [Installation Overview](../installing-liferay-dxp/installation-overview.md)
