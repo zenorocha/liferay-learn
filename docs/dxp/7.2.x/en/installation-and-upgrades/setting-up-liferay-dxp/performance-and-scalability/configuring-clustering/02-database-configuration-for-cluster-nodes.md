@@ -6,7 +6,7 @@ Each node should have a data source that points to one Liferay DXP database (or 
 
 For even better performance, you can also use a read-writer database configuration. This strategy uses two different data sources for reading and writing, so you can split your database infrastructure into two sets: one optimized for reading and one optimized for writing. Since all supported databases support replication, use your database vendor's replication mechanism to keep the database nodes in sync.
 
-Set up the databases for replication first. *** TODO: Elaborate on this? ***
+Set up the databases for replication first. See your database vendor's website for information on setting your database up for replication.
 
 Then, enable a read-writer database in your `portal-ext.properties` file:
 
