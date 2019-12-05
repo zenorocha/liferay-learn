@@ -6,11 +6,11 @@
 * [Installation Overview](./installing-liferay-dxp/installation-overview.md)
 * [Obtaining Liferay DXP](./installing-liferay-dxp/obtaining-liferay.md)
 * [Connecting a Database](./installing-liferay-dxp/connecting-a-database.md)
-* [Installing and Configuring a Bundle](./installing-liferay-dxp/installing-and-configuring-a-bundle.md)
+* [Using the Setup Wizard](./installing-liferay-dxp/using-the-setup-wizard.md)
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 * Activating Liferay DXP
 * Installing Trial Plugins
-* [Setting Up Marketplace and Portal Security](./installing-liferay-dxp/setting-up-marketplace-and-portal-security.md)
+* [Setting Up Marketplace](./installing-liferay-dxp/setting-up-marketplace.md)
 
 ### Installing Liferay on an Application Server
 
