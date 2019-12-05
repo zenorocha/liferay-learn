@@ -4,7 +4,7 @@ There are several options for downloading and installing Liferay DXP.
 
 ## Tomcat Bundle
 
-The best starting point for _most_ people is the Liferay DXP Tomcat Bundle. Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with DXP pre-deployed. Download here.
+The best starting point for _most_ people is the Liferay DXP Tomcat Bundle. Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with DXP pre-deployed.
 
 ## Docker Image
 

@@ -1,18 +1,38 @@
-# Optimizing the Application Server
+# JVM Configurations
 
-Liferay DXP requires that the application server JVM use the GMT time zone and UTF-8 file encoding. Include these JVM arguments to set the required values in the application server’s environment configuration file (for example, setenv.bat|sh in Tomcat).
+The following JVM configurations are a recommended baseline set of configurations for the functionality and performance of a Liferay DXP installation:
 
-`-Dfile.encoding=UTF8 -Duser.timezone=GMT`
+## UTF-8 File Encoding
 
-On JDK 11, it is recommended to add this JVM argument to display four-digit years.
+```properties
+  -Dfile.encoding=UTF8
+```
 
-`-Djava.locale.providers=JRE,COMPAT,CLDR`
+## GMT Timezone
+
+```properties
+  -Duser.timezone=GMT
+```
+
+## Display Four Digit Years
+
+On JDK 11, it is recommended to add this JVM argument to display four-digit years. Since JDK 9, the Unicode Common Locale Data Repository (CLDR) is the default locales provider. CLDR does not provide years in a four-digit format (see [LPS-87191](https://issues.liferay.com/browse/LPS-87191)). The setting `java.locale.providers=JRE,COMPAT,CLDR` works around this issue by using JDK 8's default locales provider.
+
+```properties
+  -Djava.locale.providers=JRE,COMPAT,CLDR
+```
+
+## Memory Configurations
 
 The recommended maximum heap size is 2GB. Setting the minimum heap size to the maximum heap size value minimizes garbage collections.
 
-`-Xms2560m -Xmx2560m`
+```properties
+  -Xms2560m -Xmx2560m
+```
 
-Note: Since JDK 9, the Unicode Common Locale Data Repository (CLDR) is the default locales provider. CLDR, however, is not providing years in a four-digit format (see [LPS-87191](https://issues.liferay.com/browse/LPS-87191)). The setting `java.locale.providers=JRE,COMPAT,CLDR` works around this issue by using JDK 8's default locales provider.
+## Workaround Known Issues
+
+### LPS-87421
 
 If using JDK 11, _Illegal Access_ warnings may appear in the logs:
 
@@ -40,14 +60,7 @@ JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.rmi/sun.rmi.transport=ALL-U
 JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.xml/com.sun.org.apache.xerces.internal.parsers=ALL-UNNAMED
 ```
 
-Here is a sample `setenv.bat|sh` from Tomcat.
-
-```properties
-CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7"
-CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.io=ALL-UNNAMED"
-CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.lang.reflect=ALL-UNNAMED"
-CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.io=ALL-UNNAMED"
-```
+### LPS-87506
 
 If using JDK 11 on Linux or UNIX and are activating Liferay DXP using an LCS 5.0.0 client, the following errors might appear in the logs:
 
@@ -59,9 +72,24 @@ at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(Accessible
 at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:
 at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:198)
 at java.base/java.lang.reflect.Method.setAccessible(Method.java:192)
+```
 
-To workaround this issue, add this property after the application server JVM options:
+This is a known issue: [LPS-87506](https://issues.liferay.com/browse/LPS-87506). To workaround this issue, add this property after the application server JVM options:
 
 ```properties
 --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED
 ```
+
+## Configuration Sample
+
+Here is a sample `setenv.bat|sh` from Tomcat.
+
+```properties
+CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,COMPAT,CLDR -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7"
+CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.io=ALL-UNNAMED"
+CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.lang.reflect=ALL-UNNAMED"
+```
+
+## Additional Information
+
+* [Installation Overview](./installation-overview.md)

@@ -2,20 +2,10 @@
 
 ## Installing Liferay DXP
 
-* Getting Started with Liferay DXP
-  - get the binary
-  - start the binary
-  - log in to the server
-  - reference full install information
-* Installation Overview
-  - what do i need to start?
-  - what are the overall major steps I need to be aware of?
+* [Getting Started with Liferay DXP](./installing-liferay-dxp/getting-started-with-liferay-dxp.md)
+* [Installation Overview](./installing-liferay-dxp/installation-overview.md)
 * [Obtaining Liferay DXP](./installing-liferay-dxp/obtaining-liferay.md)
-  - where do i start?
-  - what files are available?
-  - What do I download?
-* [Optimizing the Application Server](./installing-liferay-dxp/optimizing-the-application-server.md)
-* [Preparing the Database](./installing-liferay-dxp/preparing-the-database.md)
+* [Connecting a Database](./installing-liferay-dxp/connecting-a-database.md)
 * [Installing and Configuring a Bundle](./installing-liferay-dxp/installing-and-configuring-a-bundle.md)
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 * Activating Liferay DXP
@@ -32,6 +22,7 @@
 
 ## Setting Up Liferay DXP
 
+* Configuration Overview
 * Installing a Search Engine
 * Configuring Your Document Repository
 * Connecting to a Mail Server
@@ -112,6 +103,7 @@
 ## Reference
 
 * Liferay Home
+* [JVM Configurations](./reference/jvm-configurations.md)
 * Configuration Files
 * Portal Properties
 * System Properties
