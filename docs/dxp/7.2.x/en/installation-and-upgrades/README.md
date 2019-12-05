@@ -2,15 +2,15 @@
 
 ## Installing Liferay DXP
 
-* [Getting Started with Liferay DXP](./installing-liferay-dxp/getting-started-with-liferay-dxp.md)
-* [Installation Overview](./installing-liferay-dxp/installation-overview.md)
-* [Obtaining Liferay DXP](./installing-liferay-dxp/obtaining-liferay.md)
-* [Connecting a Database](./installing-liferay-dxp/connecting-a-database.md)
-* [Using the Setup Wizard](./installing-liferay-dxp/using-the-setup-wizard.md)
+* [Getting Started with Liferay DXP](./01-installing-liferay-dxp/01-getting-started-with-liferay-dxp.md)
+* [Installation Overview](./01-installing-liferay-dxp/02-installation-overview.md)
+* [Obtaining Liferay DXP](./01-installing-liferay-dxp/03-obtaining-liferay.md)
+* [Connecting a Database](./01-installing-liferay-dxp/04-connecting-a-database.md)
+* [Using the Setup Wizard](./01-installing-liferay-dxp/05-using-the-setup-wizard.md)
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 * Activating Liferay DXP
 * Installing Trial Plugins
-* [Setting Up Marketplace](./installing-liferay-dxp/setting-up-marketplace.md)
+* [Setting Up Marketplace](./01-installing-liferay-dxp/09-setting-up-marketplace.md)
 
 ### Installing Liferay on an Application Server
 
@@ -103,10 +103,10 @@
 ## Reference
 
 * Liferay Home
-* [JVM Configurations](./reference/jvm-configurations.md)
 * Configuration Files
 * Portal Properties
 * System Properties
+* [JVM Configurations](./09-reference/05-jvm-configurations.md)
 * Database Templates
 * Comparing Patch Levels
 * Patching Tool Configuration

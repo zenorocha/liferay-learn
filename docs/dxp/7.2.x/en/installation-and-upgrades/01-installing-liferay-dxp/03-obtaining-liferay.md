@@ -39,6 +39,6 @@ The following downloads are available:
 
 ## Next Steps
 
-* [Installation Overview](./installation-overview.md)
-* [Connecting a Database](./connecting-a-database.md)
-* [Using the Setup Wizard](./using-the-setup-wizard.md)
+* [Installation Overview](./02-installation-overview.md)
+* [Connecting a Database](./04-connecting-a-database.md)
+* [Using the Setup Wizard](./05-using-the-setup-wizard.md)

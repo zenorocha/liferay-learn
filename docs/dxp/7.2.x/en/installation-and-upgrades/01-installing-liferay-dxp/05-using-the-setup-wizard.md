@@ -1,6 +1,6 @@
 # Using the Setup Wizard
 
-The entry point for many users starting Liferay DXP for the first time will be the Setup Wizard. The Setup Wizard provides a convenient way to configure the following:
+The entry point for many users starting Liferay DXP for the first time is the Setup Wizard. The Setup Wizard provides a convenient way to configure the following:
 
 * Locale and Timezone
 * Configuring the Admin User
@@ -30,9 +30,9 @@ The entry point for many users starting Liferay DXP for the first time will be t
 
 ## Database Configuration Reference
 
-> **Important:** If a database has not been created yet, create one now following [database preparation instructions](./connecting-a-database.md) article.
+> **Important:** If a database has not been created yet, create one now following [database preparation instructions](./04-connecting-a-database.md) article.
 
-Click the *Change* link if using DXP 7.2's built-in data source and configuring it to use the [database you created earlier](./connecting-a-database.md).
+Click the *Change* link if using DXP 7.2's built-in data source and configuring it to use the [database you created earlier](./04-connecting-a-database.md).
 
 | Field | Description |
 | --- | --- |
@@ -56,7 +56,7 @@ On finishing basic configuration, DXP prompts you to restart the server. DXP 7.2
 
 ## Next Steps
 
-* Installation Overview
+* [Installation Overview](./02-installation-overview.md)
 * Activating Liferay DXP
 * Configuration Overview
 * Installing and Configuring a Search Engine
