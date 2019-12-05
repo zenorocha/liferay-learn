@@ -1,10 +1,21 @@
-# Enabling Cluster Link
+# Cluster Link Overview
 
-Enabling Cluster Link automatically activates distributed caching.  The cache is distributed across multiple Liferay DXP nodes running concurrently. Cluster Link uses [Ehcache](http://www.ehcache.org) replication. The Ehcache global settings are in the [`portal.properties` file](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Ehcache).
+Enabling Cluster Link automatically activates distributed caching. The cache is distributed across multiple Liferay DXP nodes running concurrently. Cluster Link uses [Ehcache](http://www.ehcache.org) replication. The Ehcache global settings are in the [`portal.properties` file](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Ehcache).
 
 By default Liferay does not copy cached entities between nodes. If an entity is deleted or changed, for example, Cluster Link sends a *remove* message to the other nodes to invalidate this entity in their local caches. Requesting that entity on another node results in a cache *miss*; the entity is then retrieved from the database and put into the local cache. Entities added to one node's local cache are not copied to local caches of the other nodes. An attempt to retrieve a new entity on a node which doesn't have that entity cached results in a cache *miss*. The miss triggers the node to retrieve the entity from the database and store it in its local cache.
 
 ![Figure 1: Liferay DXP's cache algorithm is extremely efficient.](../../../images/clustering-cache-efficient-algorithm.png)
+
+Clustering in DXP may be configured in different ways depending on your network and the location of your cluster nodes. The following topics concerning cluster link are covered in this article:
+
+**Contents:**
+
+[Enabling Cluster Link](#enabling-cluster-link)
+[Multicast Over UDP](#multicast-over-udp)
+[Unicast Over TCP](#unicast-over-tcp)
+[Modifying the Cache Configuration with a Module](#modifying-the-cache-configuration-with-a-module)
+
+## Enabling Cluster Link
 
 To enable Cluster Link, add this [portal property](/docs/7-2/deploy/-/knowledge_base/d/portal-properties) to a `portal-ext.properties` file: 
 
