@@ -39,6 +39,6 @@ The following downloads are available:
 
 ## Next Steps
 
-* [Optimizing the Application Server](./optimizing-the-application-server.md)
-* [Preparing the Database](./preparing-the-database.md)
-* [Installing and Configuring the Bundle](./installing-and-configuring-the-bundle.md)
+* [Installation Overview](./installation-overview.md)
+* [Connecting a Database](./connecting-a-database.md)
+* [Using the Setup Wizard](./using-the-setup-wizard.md)

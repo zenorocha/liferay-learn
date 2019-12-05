@@ -30,8 +30,9 @@ The best starting point for _most_ people is the Liferay DXP Tomcat Bundle. Usin
     tar -xzf liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
     cd liferay-ce-portal-7.2.1-ga2/
   ```
+> **Note:** The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) directory.
 
-  > The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) directory.
+See [Obtaining Liferay](./obtaining-liferay.md) for more information about Liferay Downloads.
 
 Once your application server is ready, see [Connecting a Database](#connecting-a-database) for next steps.
 
@@ -39,7 +40,7 @@ Once your application server is ready, see [Connecting a Database](#connecting-a
 
 Liferay DXP can be manually deployed to [Tomcat](placeholder-link), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](placeholder-link) application servers.
 
-Manual deployments require the use of the Liferay DXP `.war` file and other dependencies. To learn more about these files see [Obtaining Liferay](./obtaining-liferay.md).
+Manual deployments require the use of the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Obtaining Liferay](./obtaining-liferay.md).
 
 ## Connecting a Database
 
