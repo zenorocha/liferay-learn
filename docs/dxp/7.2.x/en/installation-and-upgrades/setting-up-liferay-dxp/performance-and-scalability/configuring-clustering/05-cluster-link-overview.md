@@ -4,7 +4,7 @@ Enabling Cluster Link automatically activates distributed caching. The cache is 
 
 By default Liferay does not copy cached entities between nodes. If an entity is deleted or changed, for example, Cluster Link sends a *remove* message to the other nodes to invalidate this entity in their local caches. Requesting that entity on another node results in a cache *miss*; the entity is then retrieved from the database and put into the local cache. Entities added to one node's local cache are not copied to local caches of the other nodes. An attempt to retrieve a new entity on a node which doesn't have that entity cached results in a cache *miss*. The miss triggers the node to retrieve the entity from the database and store it in its local cache.
 
-![Figure 1: Liferay DXP's cache algorithm is extremely efficient.](../../../images/clustering-cache-efficient-algorithm.png)
+![Figure 1: Liferay DXP's cache algorithm is extremely efficient.](./cluster-link-overview/images/01.png)
 
 Clustering in DXP may be configured in different ways depending on your network and the location of your cluster nodes. The following topics concerning cluster link are covered in this article:
 
@@ -17,7 +17,7 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 ## Enabling Cluster Link
 
-To enable Cluster Link, add this [portal property](/docs/7-2/deploy/-/knowledge_base/d/portal-properties) to a `portal-ext.properties` file: 
+To enable Cluster Link, add this [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) to a `portal-ext.properties` file: 
 
 ```properties
 cluster.link.enabled=true
@@ -178,6 +178,6 @@ JGroups supplies other means for cluster members to discover each other, includi
 
 It's recommended to test your system under a load that best simulates the kind of traffic your system must handle. For example, if you serve a lot of message board messages, your script should reflect that. If web content is the core of your site, your script should reflect that too.
 
-As a result of a load test, you may find that the default distributed cache settings aren't optimized for your site. In this case, tweak the settings using a module. Follow instructions for [Overriding Cache](/docs/7-2/frameworks/-/knowledge_base/f/overriding-cache).
+As a result of a load test, you may find that the default distributed cache settings aren't optimized for your site. In this case, tweak the settings using a module. Follow instructions for [Overriding Cache](https://help.liferay.com/hc/en-us/articles/360035581471-Overriding-Cache).
 
 You can install the module on each node and change the settings without taking down the cluster. This is a great benefit, but beware: since Ehcache doesn't allow for changes to cache settings while the cache is active, reconfiguring a cache while the server is running flushes the cache.

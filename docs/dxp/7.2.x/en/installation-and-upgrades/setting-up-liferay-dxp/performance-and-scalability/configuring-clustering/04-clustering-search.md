@@ -1,6 +1,6 @@
 # Clustering Search
 
-Search should always run on a separate environment from your Liferay DXP server. DXP supports [Elasticsearch](/docs/7-2/deploy/-/knowledge_base/d/installing-elasticsearch), 
+Search should always run on a separate environment from your Liferay DXP server. DXP supports [Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch), 
 
 <!--Uncomment when Solr adapters is available. 
 or 
