@@ -14,9 +14,9 @@ The entry point for many users starting Liferay DXP for the first time is the Se
 
 | Field | Description |
 | --- | --- |
-| **Portal Name** | Name of the site being created. |
-| **Default Language** | Determines the default site locale. |
-| **Time Zone**  | The instance's default time zone. |
+| **Portal Name** | Name of the site being created |
+| **Default Language** | Determines the default site locale |
+| **Time Zone**  | The instance's default time zone |
 
 ## Administrator User Configuration Reference
 
@@ -40,7 +40,7 @@ Click the *Change* link if using DXP 7.2's built-in data source and configuring 
 | **JDBC URL** | Update the path to the database that has already been created for Liferay DXP |
 | **User Name** | Database user name |
 | **Password** | Database user password |
-| **Sample Data** | Flagging this value will result in Users, Sites, and Organizations being created for demonstration purposes. |
+| **Sample Data** | Flagging this value will result in Users, Sites, and Organizations being created for demonstration purposes |
 
 > **Warning:** HSQL should not be used in production DXP 7.2 instances.
 
