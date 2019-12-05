@@ -35,7 +35,9 @@ If you plan to migrate from one database vendor to another, configure the databa
 
 ### Configuring User Database Access
 
-Liferay DXP uses the database user's credentials to connect to the database either directly or through the application server. Once connected to the database, Liferay DXP creates its tables and indexes in the database automatically.
+Liferay DXP uses the database user's credentials to connect to the database either directly or through the application server.
+
+#### Create a Database User With Full Permissions
 
 The best method for ease of use and simplicity of maintenance is to create a database user for Liferay DXP that has full permissions for a database up to and including permissions to Create and Drop tables. This enables Liferay DXP to maintain its database automatically during upgrades and seamless functionality of any Liferay DXP plugins that are deployed that interact with the database.
 
