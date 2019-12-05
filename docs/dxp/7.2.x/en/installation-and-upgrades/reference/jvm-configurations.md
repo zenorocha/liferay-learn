@@ -32,7 +32,7 @@ The recommended maximum heap size is 2GB. Setting the minimum heap size to the m
 
 ## Workaround Known Issues
 
-### LPS-87421
+### JDK 11 Illegal Access Warnings
 
 If using JDK 11, _Illegal Access_ warnings may appear in the logs:
 
@@ -60,7 +60,7 @@ JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.rmi/sun.rmi.transport=ALL-U
 JDK_JAVA_OPTIONS="$JDK_JAVA_OPTIONS --add-opens=java.xml/com.sun.org.apache.xerces.internal.parsers=ALL-UNNAMED
 ```
 
-### LPS-87506
+### Unable to Determine Server Capabilities
 
 If using JDK 11 on Linux or UNIX and are activating Liferay DXP using an LCS 5.0.0 client, the following errors might appear in the logs:
 

@@ -16,7 +16,7 @@ Follow these steps to quickly take Liferay DXP for a test drive and tour its fea
 
 1. Run
 
-    `./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/catalina.sh run`
+    `./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh`
 
     > `INFO: Server startup in x ms` indicates server startup completion.
 
@@ -26,4 +26,4 @@ Follow these steps to quickly take Liferay DXP for a test drive and tour its fea
 
 ## Next Steps
 
-Now you're ready to explore Liferay DXP! To learn more about what you can build with Liferay DXP see [Building Solutions on DXP](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/7.2.x/en/solutions). To learn more about installation see the [Installation Overview](./installation-overview.md).
+Now you're ready to explore Liferay DXP! To learn more about what you can build with Liferay DXP see [Building Solutions on DXP](https://github.com/liferay/liferay-learn/tree/master/docs/dxp/7.2.x/en/solutions). To learn more about installing Liferay see the [Installation Overview](./installation-overview.md).

@@ -21,15 +21,18 @@ Liferay DXP is built with flexibility and interoperability in mind and can be ru
 
 ## Configuring an Application Server
 
+The best starting point for people new to installing Liferay, is the Liferay DXP Tomcat Bundle. Liferay DXP can also be manually deployed to a variety of application servers.
+
 ### Using the Tomcat Bundle
 
-The best starting point for _most_ people is the Liferay DXP Tomcat Bundle. Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. Follow these steps to download and unzip the Tomcat bundle:
+Using the Liferay Tomcat bundle is the simplest and fastest way to get started with Liferay DXP. The Liferay Tomcat bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. Follow these steps to download and unzip the Tomcat bundle:
 
   ```bash
     curl -L -O https://github.com/liferay/liferay-portal/releases/download/7.2.1-ga2/liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
     tar -xzf liferay-ce-portal-tomcat-7.2.1-ga2-20191111141448326.tar.gz
     cd liferay-ce-portal-7.2.1-ga2/
   ```
+
 > **Note:** The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) directory.
 
 See [Obtaining Liferay](./obtaining-liferay.md) for more information about Liferay Downloads.
@@ -48,7 +51,7 @@ Liferay DXP has some defaults configured out of the box to enable faster demonst
 
 ## Running Liferay DXP for the First Time
 
-Once the JVM, application server, and database have been configured Liferay DXP can be started for the first time. Start the application server using the start script bundled with the application server. For example, with the Tomcat bundle:
+Once the JVM, application server, and database have been configured, Liferay DXP can be started for the first time. Start the application server using the start script bundled with the application server. For example, with the Tomcat bundle:
 
 ```bash
   ./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh
@@ -70,7 +73,7 @@ Enterprise Subscribers to Liferay DXP will need to [Activate Liferay DXP](placeh
 
 ## Next Steps
 
-There are many ways to further configure and customize a Liferay DXP installation, depending on your needs. See the following topics for further information:
+There are many ways to further configure and customize a Liferay DXP installation, depending on your needs. See the following topics for more information:
 
 * [Setting up Marketplace](./setting-up-marketplace.md)
 * Configuration Overview
