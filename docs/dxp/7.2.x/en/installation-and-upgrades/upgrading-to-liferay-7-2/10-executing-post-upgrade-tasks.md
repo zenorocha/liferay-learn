@@ -16,7 +16,7 @@ Make sure to re-enable search indexing by setting this property in the `com.life
 indexReadOnly="false"
 ```
 
-> If you have not already done so, you must also [install and configure a standalone Elasticsearch instance to run in production](/docs/7-2/deploy/-/knowledge_base/d/installing-elasticsearch). By default, Liferay DXP ships with an embedded configuration for Elasticsearch. This configuration works great for demo purposes, but is not supported in production.
+> If you have not already done so, you must also [install and configure a standalone Elasticsearch instance to run in production](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch). By default, Liferay DXP ships with an embedded configuration for Elasticsearch. This configuration works great for demo purposes, but is not supported in production.
 
 Once indexing is enabled and Elasticsearch is configured, re-index Liferay DXP's search indexes. In DXP 7.2, you can do this in the UI after starting up Liferay DXP by navigating to _Control Panel_ → _Configuration_ → _Search_.
 

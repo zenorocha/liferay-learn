@@ -115,7 +115,7 @@ See the latest [portal properties reference](https://docs.liferay.com/dxp/portal
 
 Specify the following information to configure the upgrade: 
 
-- `liferay.home`: The [Liferay home folder](/docs/7-2/deploy/-/knowledge_base/d/liferay-home).
+- `liferay.home`: The [Liferay home folder](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
 
 - `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you [updated this property in your `portal-ext.properties`](./06-preparing-a-new-application-server-for-liferay-dxp.md#configure-your-documents-and-media-file-store), copy the new value here. Otherwise, set the property one of these ways:
 

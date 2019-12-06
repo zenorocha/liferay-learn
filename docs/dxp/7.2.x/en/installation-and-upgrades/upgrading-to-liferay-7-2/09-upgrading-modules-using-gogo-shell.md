@@ -146,4 +146,4 @@ To check for available verify processes, enter the Gogo shell command `verify:li
 
 ## Related Topics
 
-[Liferay commands and standard commands available in Gogo shell](/docs/7-2/customization/-/knowledge_base/c/using-the-felix-gogo-shell)
+[Liferay commands and standard commands available in Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)

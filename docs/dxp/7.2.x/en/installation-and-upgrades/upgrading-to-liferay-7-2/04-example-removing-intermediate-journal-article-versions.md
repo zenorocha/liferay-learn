@@ -1,14 +1,14 @@
 # Example: Removing Intermediate Journal Article Versions
 
-These instructions and code samples demonstrate removing intermediate Journal Article versions. In the [script console](/docs/7-2/user/-/knowledge_base/u/running-scripts-from-the-script-console), you can remove unneeded object versions by executing Java or Groovy code. 
+These instructions and code samples demonstrate removing intermediate Journal Article versions. In the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console), you can remove unneeded object versions by executing Java or Groovy code. 
 
 Here are example steps for removing intermediate Journal Article versions: 
 
 1. Decide how many of the latest versions to keep. You must keep the original version and the most recent version, but you may keep additional recent versions too. For example, you may want to keep the two latest versions or just the latest. 
 
-2. Find a method for deleting the entity versions. Liferay DXP [app APIs](@app-ref@/apps/) and the [com.liferay.portal.kernel API](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/) are available options for you to use.
+2. Find a method for deleting the entity versions. Liferay DXP [app APIs](https://docs.liferay.com/dxp/apps/) and the [com.liferay.portal.kernel API](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/) are available options for you to use.
 
-    If it's a [Service Builder](/docs/7-2/appdev/-/knowledge_base/a/service-builder) entity, examine the `delete*` methods in the entity's `*LocalServiceUtil` class. For example, this `deleteArticle` in [`JournalArticleLocalServiceUtil`](@app-ref@/web-experience/latest/javadocs/com/liferay/journal/service/JournalArticleLocalServiceUtil.html#deleteArticle-long-java.lang.String-double-java.lang.String-com.liferay.portal.kernel.service.ServiceContext-) deletes a Journal Article version:
+    If it's a [Service Builder](https://help.liferay.com/hc/en-us/articles/360030958811-Running-Service-Builder) entity, examine the `delete*` methods in the entity's `*LocalServiceUtil` class. For example, this `deleteArticle` in [`JournalArticleLocalServiceUtil`](https://docs.liferay.com/dxp/apps/web-experience/latest/javadocs/com/liferay/journal/service/JournalArticleLocalServiceUtil.html#deleteArticle-long-java.lang.String-double-java.lang.String-com.liferay.portal.kernel.service.ServiceContext-) deletes a Journal Article version:
 
     ```java
     deleteArticle(long groupId, java.lang.String articleId, double version, 

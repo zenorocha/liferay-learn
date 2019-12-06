@@ -17,7 +17,7 @@ If this error occurs, roll back to your previous backup of Liferay Portal 6.2 an
 
 ## Find and Remove Unused Objects
 
-Identify unused objects in the UI or using database queries. Then remove them via the UI or using Liferay DXP's API through the [script console](/docs/7-2/user/-/knowledge_base/u/running-scripts-from-the-script-console) or a portlet you create. 
+Identify unused objects in the UI or using database queries. Then remove them via the UI or using Liferay DXP's API through the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console) or a portlet you create. 
 
 **Warning**: You should only use Liferay's UI or API because they account for relationships between objects in Liferay DXP. Never use SQL directly on your database to remove records. Your SQL might miss object relationships, orphaning objects and causing performance problems.
 
@@ -57,7 +57,7 @@ Several items stand out in the example database import:
 -   There are many `RESOURCEPERMISSION` records.
 -   There are many `PORTLETPREFERENCES` records.
 
-Search for unused objects associated with the tables that stand out and use Liferay's API (e.g., using the [script console](/docs/7-2/user/-/knowledge_base/u/running-scripts-from-the-script-console)) to delete unneeded objects. 
+Search for unused objects associated with the tables that stand out and use Liferay's API (e.g., using the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console)) to delete unneeded objects. 
 
 ### Common Object Types Worth Checking 
 
