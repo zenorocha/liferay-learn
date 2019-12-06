@@ -1,6 +1,20 @@
 # Configuring Authentication
 
-The primary function of a security system is to make pages, content, and web applications accessible only to the appropriate users. A student logging into a university portal should not be able to access the same resources a professor can. A patient logging into a health care portal should not be able to access a doctor's resources. Some content (at least a login page) should be available to everybody, including unauthenticated users (called *guest* users). The first step is to have users *authenticate* so you know who they are and can apply the appropriate permissions. 
+Users can authenticate in several ways: 
+
+- Form authentication using the Sign In Portlet, an extensible app that by default can check and store credentials in the portal database and LDAP
+- Using Single Sign-On (SSO) solutions such as Kerberos, Token-Based Authentication, or OpenID Connect
+- Using Liferay's SAML plugin
+
+You can authenticate and authorize applications remotely using [Authentication Verifiers](./04-using-auth-verifiers.md): 
+
+- Password-based HTTP Basic + Digest authentication
+- Token-based OAuth 2.0 plugin
+- Portal session-based solution for JavaScript applications
+
+User authentication and remote application authentication are [extensible](../../platform/frameworks/authentication-pipelines.md). You can create custom portlets for logging in, extend the default Sign In portlet authentication pipeline, create `AutoLogin` extensions for Single Sign-On, or create custom authentication verifier implementations. 
+
+The first step is to have users *authenticate* so you know who they are and can apply the appropriate permissions. 
 
 You can determine the type of credentials required and configure the Sign In portlet, which is the interface presented to users for authentication. 
 
