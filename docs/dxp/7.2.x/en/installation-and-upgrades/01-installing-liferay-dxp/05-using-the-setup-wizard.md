@@ -42,7 +42,7 @@ Click the *Change* link if using DXP 7.2's built-in data source and configuring 
 | **Password** | Database user password |
 | **Sample Data** | Flagging this value will result in Users, Sites, and Organizations being created for demonstration purposes |
 
-> **Warning:** HSQL should not be used in production DXP 7.2 instances.
+> **Warning:** HSQL should not be used in production instances of Liferay DXP.
 
 ## Completing the Setup Wizard
 

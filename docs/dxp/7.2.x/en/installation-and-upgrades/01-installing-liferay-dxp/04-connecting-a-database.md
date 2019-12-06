@@ -121,7 +121,7 @@ If using the application server to manage the data source, review the installati
 * [Installing Liferay DXP on WildFly](https://help.liferay.com/hc/en-us/articles/360029123751-Installing-Liferay-DXP-on-Wildfly#database-configuration)
 * [Installing Liferay DXP on JBoss EAP](https://help.liferay.com/hc/en-us/articles/360028810012-Installing-Liferay-DXP-on-JBoss-EAP#database-configuration)
 * [Installing Liferay DXP on WebLogic 12c R2](https://help.liferay.com/hc/en-us/articles/360028831932-Installing-Liferay-DXP-on-WebLogic-12c-R2#database-configuration)
-* [Installing Liferay DXP on WebSphere](https://help.liferay.com/hc/en-us/articles/360028810032-Installing-Liferay-DXP-on-WebSphere#database-configuration)
+* [Installing Liferay DXP on WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md)
 
 ## Next steps
 

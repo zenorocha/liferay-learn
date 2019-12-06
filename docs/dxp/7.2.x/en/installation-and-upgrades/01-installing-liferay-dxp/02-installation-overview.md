@@ -41,13 +41,13 @@ Once your application server is ready, see [Connecting a Database](#connecting-a
 
 ### Manually Deploying to an Application Server
 
-Liferay DXP can be manually deployed to [Tomcat](placeholder-link), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](placeholder-link) application servers.
+Liferay DXP can be manually deployed to [Tomcat](placeholder-link), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) application servers.
 
 Manual deployments require the use of the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Obtaining Liferay](./03-obtaining-liferay.md).
 
 ## Connecting a Database
 
-Liferay DXP has some defaults configured out of the box to enable faster demonstration - this includes using HSQL as a database. Connecting Liferay DXP to a database is a highly recommended step for using Liferay DXP beyond basic exploration. See [Connecting a Database](./04-connecting-a-database.md) for more information.
+Liferay DXP has some defaults configured out of the box to enable faster demonstration - this includes using HSQL as a database. Connecting Liferay DXP to a database is required step for using Liferay DXP beyond basic exploration. See [Connecting a Database](./04-connecting-a-database.md) for more information.
 
 ## Running Liferay DXP for the First Time
 
@@ -57,7 +57,7 @@ Once the JVM, application server, and database have been configured, Liferay DXP
   ./liferay-ce-portal-7.2.1-ga2/tomcat-9.0.17/bin/startup.sh
 ```
 
-> **Note:** By default, DXP writes log files to `[Liferay Home]/logs`.
+> **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`.
 
 The first time DXP starts, it creates all of its database tables. On completing startup, a web browser is launched that displays the Basic Configuration page (the Setup Wizard). If the Basic Configuration page does not appear automatically, open a browser and navigate to the application server's address and port (for example, `http://localhost:8080`).
 
