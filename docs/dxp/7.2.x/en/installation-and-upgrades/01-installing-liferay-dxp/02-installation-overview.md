@@ -67,7 +67,7 @@ See [Using the Setup Wizard](./05-using-the-setup-wizard.md) to learn more.
 
 ## Activating Liferay DXP
 
-> Subscribers Only
+> Subscription Required
 
 Enterprise Subscribers to Liferay DXP will need to [Activate Liferay DXP](placeholder-link) in order to use the product beyond the initial trial period.
 

@@ -13,4 +13,4 @@ As of Liferay DXP 7.2, these products and capabilities have transitioned into ma
 
 ## Additional Information
 
-[Handling Deprecated Apps in Liferay DXP 7.2](./98-handling-deprecated-apps-in-liferay-dxp-7-2.md)
+[Handling Deprecated Apps in Liferay DXP 7.2](./98-handling-deprecations-in-liferay-dxp-7-2.md)

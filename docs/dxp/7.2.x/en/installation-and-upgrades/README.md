@@ -15,9 +15,9 @@
 ### Installing Liferay on an Application Server
 
 * Installing Liferay on Tomcat
-* Installing Liferay on Wildfly
+* Installing Liferay on WildFly
 * Installing Liferay on JBoss
-* Installing Liferay on Weblogic
+* Installing Liferay on WebLogic
 * [Installing Liferay on WebSphere](./01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md)
 
 ## Setting Up Liferay DXP
@@ -54,16 +54,22 @@
 
 ## Upgrading Liferay
 
-* Planning for Deprecated Applications
-* Preparing the Database for Upgrade
-* Preparing a New Liferay Server
-* Test Upgrading a Liferay Backup
-* Upgrading Liferay
-* Executing Post-Upgrade Tasks
+* [Introduction to Upgrading To Liferay DXP 7.2](./04-upgrading-liferay/01-introduction-to-upgrading-to-liferay-dxp-7-2.md)
+* [Upgrading the Database](./04-upgrading-liferay/02-upgrading-the-database.md)
+* [Pruning the Database](./04-upgrading-liferay/03-pruning-the-database.md)
+* [Example: Removing Intermediate Journal Article Versions](./04-upgrading-liferay/04-example-removing-intermediate-journal-article-versions.md)
+* [Tuning for the Data Upgrade](./04-upgrading-liferay/05-tuning-for-the-data-upgrade.md)
+* [Preparing a New Application Server for Liferay DXP](./04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md)
+* [Configuring the Data Upgrade](./04-upgrading-liferay/07-configuring-the-data-upgrade.md)
+* [Using the Upgrade Tool](./04-upgrading-liferay/08-using-the-upgrade-tool.md)
+* [Upgrading Modules Using Gogo Shell](./04-upgrading-liferay/09-upgrading-modules-using-gogo-shell.md)
+* [Executing Post Upgrade Tasks](./04-upgrading-liferay/10-executing-post-upgrade-tasks.md)
 
 ### Unique Upgrade Scenarios
 
-* Upgrading a Sharded Environment
+* [Upgrading a Sharded Environment](./04-upgrading-liferay/97-upgrading-a-sharded-environment.md)
+* [Handling Deprecations in Liferay DXP 7.2](./04-upgrading-liferay/98-handling-deprecations-in-liferay-dxp-7-2.md)
+* [Features in Maintenance Mode](./04-upgrading-liferay/99-features-in-maintenance-mode.md)
 * Migrating from Audience Targeting to Segmentation and Personalization
 
 ## Maintaining a Liferay DXP Installation
@@ -106,7 +112,8 @@
 * Configuration Files
 * Portal Properties
 * System Properties
-* [JVM Configurations](./09-reference/05-jvm-configurations.md)
+* [JVM Configurations](./08-reference/05-jvm-configurations.md)
+* [Upgrade Planner Steps](./08-reference/06-upgrade-planner-steps.md)
 * Database Templates
 * Comparing Patch Levels
 * Patching Tool Configuration

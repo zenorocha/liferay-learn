@@ -10,7 +10,7 @@ Prior to upgrading your Liferay database, you tuned it for upgrade (see [Tuning 
 
 ## Set Up Elasticsearch and Re-index Search Indexes
 
-Make sure to re-enable search indexing by setting this property in the `com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config`file from your `[Liferay Home]/osgi/configs` folder (or removing it if there are no other properties in it): 
+Make sure to re-enable search indexing by setting this property in the `com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config`file from your `[Liferay Home]/osgi/configs` folder (or removing it if there are no other properties in it):
 
 ```properties
 indexReadOnly="false"
@@ -20,16 +20,18 @@ indexReadOnly="false"
 
 Once indexing is enabled and Elasticsearch is configured, re-index Liferay DXP's search indexes. In DXP 7.2, you can do this in the UI after starting up Liferay DXP by navigating to _Control Panel_ → _Configuration_ → _Search_.
 
+<!-- screenshot please -->
+
 ## Enable Web Content View Permissions
 
 Prior to DXP 7.1, all users could view web content articles by default. Now view permissions are checked by default instead. Here are the main options for opening view permissions:
 
-Option 1: Open view permissions for all web content articles by navigating to _Control Panel_ → _Configuration_ → _System Settings_ → _Web Experience_ → _Web Content_ and de-selecting _Article view permissions check enabled_. 
+**Option 1:** Open view permissions for all web content articles by navigating to _Control Panel_ → _Configuration_ → _System Settings_ → _Web Experience_ → _Web Content_ and de-selecting _Article view permissions check enabled_.
 
-Option 2: If not many web content articles exist, then edit view permissions per web content article per role.
+**Option 2:** If not many web content articles exist, then edit view permissions per web content article per role.
 
 ## Check Web Content Images
 
 The upgrade to DXP 7.2 moves Web Content images to the Document Library and then deletes their former table, `JournalArticleImage`. To ensure this process went smoothly, check your web content articles and verify that their images still show correctly.
 
-Once you've completed all necessary post-upgrade tasks, your upgrade to Liferay DXP 7.2 is complete. Congratulations! 
+Once you've completed all necessary post-upgrade tasks, your upgrade to Liferay DXP 7.2 is complete. Congratulations!

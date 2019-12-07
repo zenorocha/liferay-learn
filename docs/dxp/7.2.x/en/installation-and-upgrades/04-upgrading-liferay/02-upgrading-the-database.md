@@ -1,6 +1,6 @@
 # Upgrading the Database
 
-Upgrading the database is the most significant part of the process in upgrading to DXP 7.2. It involves several steps of preparation which are outlined below.
+Upgrading the database is the most significant part of the process in upgrading to DXP 7.2. It involves several steps outlined below.
 
 Here are the general database upgrade topics:
 
@@ -27,15 +27,17 @@ If your path includes upgrading to Liferay DXP/Portal 7.1, continue following th
 
 ## Using Backup Data for Upgrade Testing
 
-Doing a trial run(s) of the upgrade process and testing an upgraded copy of your production DXP instance is essential for identifying and resolving issues that will otherwise affect your production server. Upgrade trial runs, and even the pre-production upgrade, should be done using backed up copies of the production database and document library repository. Note that the tasks discussed next on [preparing for data upgrade](#preparing-for-the-data-upgrade) and [performing the data upgrade](#performing-the-data-upgrade) should be done as a trial run first on a test server using a copy of your production server backups.
+Doing trial runs of the upgrade process and testing an upgraded copy of your production DXP instance is essential for identifying and resolving issues that would otherwise affect your production server. Upgrade trial runs, and even the pre-production upgrade, should be done using backed up copies of the production database and document library repository.
+
+> **Important:** The tasks discussed in the [Preparing for the Data Upgrade](#preparing-for-the-data-upgrade) and [Performing the Data Upgrade](#performing-the-data-upgrade) sections, should be done as a trial run first on a test server using a copy of your production server backups.
 
 ## Preparing for the Data Upgrade
 
-Unnecessary data and improperly tuned databases slow down data upgrades. Large data sets that have not been optimized may severely impact performing during a data upgrade. Take these measures to optimize your data upgrades: 
+Unnecessary data and improperly tuned databases slow down the upgrade process. Large data sets that have not been optimized may severely impact performing during a data upgrade. Take these measures to optimize your data upgrades:
 
-- [Prune unneeded data.](./03-pruning-the-database.md)
+* [Prune unneeded data.](./03-pruning-the-database.md)
 
-- [Tune the database for upgrades.](./05-tuning-for-the-data-upgrade.md)
+* [Tune the database for upgrades.](./05-tuning-for-the-data-upgrade.md)
 
 If Staging is enabled in production and you have staged changes, you should publish them to Live before the data upgrade. If you skip this step, publishing staged changes requires a full publish.
 

@@ -1,16 +1,16 @@
 # Upgrading Modules Using Gogo Shell
 
-Liferay's Gogo shell upgrades and verifies individual modules. It uses a fine-grained approach to upgrading core and non-core modules individually. If you haven't already upgraded your non-core modules using the upgrade tool (or if there are modules you need to revisit upgrading), you can upgrade them using Gogo Shell. 
+Liferay's Gogo shell upgrades and verifies individual modules. It uses a fine-grained approach to upgrading core and non-core modules individually. If you haven't already upgraded your non-core modules using the upgrade tool (or if there are modules you need to revisit upgrading), you can upgrade them using Gogo Shell.
 
 Here are the module upgrade topics:
 
-- [Gogo Shell Command Usage](#command-usage)
-- [Listing Module Upgrade Processes](#listing-module-ugprade-processes)
-- [Executing Module Upgrades](#executing-module-upgrades)
-- [Checking Upgrade Status](#checking-upgrade-status)
-- [Executing Verify Processes](#executing-verify-processes)
+* [Gogo Shell Command Usage](#command-usage)
+* [Listing Module Upgrade Processes](#listing-module-ugprade-processes)
+* [Executing Module Upgrades](#executing-module-upgrades)
+* [Checking Upgrade Status](#checking-upgrade-status)
+* [Executing Verify Processes](#executing-verify-processes)
 
-**Note**: You must [Configure the core upgrade](./07-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default.
+> **Note**: You must [configure the core upgrade](./07-configuring-the-data-upgrade.md#configuring-non-core-module-data-upgrades) before running the upgrade tool to upgrade modules separately from the core. Otherwise, the modules will be upgraded with it by default.
 
 ## Command Usage
 
@@ -75,10 +75,10 @@ An application's upgrade step class names typically reveal their intention. For 
 
 To examine a module's upgrade process better, you can sort the listed upgrade steps mentally or in a text editor. Here's the upgrade step order for a Bookmarks Service module to be upgraded from Liferay Portal 6.2 (the module's database exists) to schema version `1.0.0`: 
 
-- `0.0.1` to `1.0.0-step-3`
-- `0.0.1-step-3` to `1.0.0-step-2`
-- `0.0.1-step-2` to `1.0.0-step-1`
-- `0.0.1-step-1` to `1.0.0`
+* `0.0.1` to `1.0.0-step-3`
+* `0.0.1-step-3` to `1.0.0-step-2`
+* `0.0.1-step-2` to `1.0.0-step-1`
+* `0.0.1-step-1` to `1.0.0`
 
 The overall module upgrade process starts at version `0.0.1` and finishes at version `1.0.0`. The first step starts on the initial version (`0.0.1`) and finishes on the target version's highest step (`step-3`). The last step starts on the target version's lowest step (`step-1`) and finishes on the target version (`1.0.0`). 
 
@@ -142,8 +142,8 @@ Each module has one `Release_` table record, and the value for its `schemaVersio
 
 Some modules have verify processes. These make sure the upgrade executed successfully. Verify processes in the core are automatically executed after upgrading Liferay DXP. You can also execute them by configuring the [`verify.*` portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Verify) and restarting your server.
 
-To check for available verify processes, enter the Gogo shell command `verify:list`. To run a verify process, enter `verify:execute [verify_qualified_name]`. 
+To check for available verify processes, enter the Gogo shell command `verify:list`. To run a verify process, enter `verify:execute [verify_qualified_name]`.
 
 ## Related Topics
 
-[Liferay commands and standard commands available in Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)
+* [Liferay Commands and Standard Commands Available in Gogo Shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)

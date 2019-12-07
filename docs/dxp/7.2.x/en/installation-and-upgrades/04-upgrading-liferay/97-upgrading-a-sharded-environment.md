@@ -2,7 +2,7 @@
 
 Since Liferay DXP 7.0, Liferay removed its own physical partitioning implementation (also known as sharding) in favor of the capabilities provided natively by database vendors. Upgrading a sharded installation to DXP 7.0 or higher requires migrating it to as many non-sharded Liferay DXP installations (servers) as you have shards. These steps guide you through configuring the new Liferay DXP servers to use your formerly sharded data.
 
-**Note:** Liferay continues to support its logical partitioning capabilities (also known as [virtual instances](https://help.liferay.com/hc/en-us/articles/360028818692-Setting-Up-a-Virtual-Instance)) for the foreseeable future. For any further assistance with sharding contact your Liferay account manager or Liferay Support. 
+**Note:** Liferay continues to support its logical partitioning capabilities (also known as [virtual instances](https://help.liferay.com/hc/en-us/articles/360028818692-Setting-Up-a-Virtual-Instance)) for the foreseeable future. For any further assistance with sharding contact your Liferay account manager or Liferay Support.
 
 ## Add Configurations Before the Data Upgrade
 
@@ -55,11 +55,11 @@ When you perform the data upgrade, upgrade the default shard first, and then eac
 
 After the data upgrade has been completed, make the following configuration changes for your application servers:
 
-1. In each server's `portal-ext.properties`, use the JDBC *default* properties you specified in the `portal-upgrade-database.properties` (see the *default* properties above). 
+1. In each server's `portal-ext.properties`, use the JDBC *default* properties you specified in the `portal-upgrade-database.properties` (see the *default* properties above).
 
 1. Remove the non-default shard JDBC properties from the default shard server's `portal-ext.properties` file, leaving only the default shard database `jdbc.default` properties. For example:
 
-    Old JDBC properties: 
+    Old JDBC properties:
 
     ```properties
     jdbc.default.driverClassName=com.mysql.jdbc.Driver
