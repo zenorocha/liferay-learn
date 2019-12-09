@@ -21,26 +21,26 @@ If the upgrade tool's `autoUpgrade` property is set to `true` (the default setti
 
 You can also prevent the upgrade tool from automatically running the module upgrades and run them individually afterward. Set `autoUpgrade="false"` in a file named `com.liferay.portal.upgrade.internal.configuration.ReleaseManagerConfiguration.config` and copy the file into the `[LIFERAY_HOME]/osgi/configs` folder for the upgrade tool to instead open Gogo shell after the core upgrade. In the Gogo shell, you can [manually administer module upgrades](./09-upgrading-modules-using-gogo-shell.md).
 
-> **Note:** Configuring the core upgrade at run-time with the upgrade tool does not provide an option to disable automatically running module upgrades. To prevent module upgrades from running automatically you must disable it (using the configuration above) *before* running the upgrade tool. 
+> **Note:** Configuring the core upgrade at run-time with the upgrade tool does not provide an option to disable automatically running module upgrades. To prevent module upgrades from running automatically you must disable it (using the configuration above) *before* running the upgrade tool.
 
 ## Using the Command Line to Configure the Upgrade Tool
 
 The core upgrade requires configuration. The simplest way is to use the upgrade tool to create your configuration files. Here's an example interaction with the upgrade tool's command line interface:
 
 ```
-Please enter your application server (tomcat): 
+Please enter your application server (tomcat):
 tomcat
 
-Please enter your application server directory (../../tomcat-8.0.32): 
+Please enter your application server directory (../../tomcat-8.0.32):
 
-Please enter your extra library directories (../../tomcat-8.0.32/bin): 
+Please enter your extra library directories (../../tomcat-8.0.32/bin):
 
-Please enter your global library directory (../../tomcat-8.0.32/lib): 
+Please enter your global library directory (../../tomcat-8.0.32/lib):
 
-Please enter your portal directory (../../tomcat-8.0.32/webapps/ROOT): 
+Please enter your portal directory (../../tomcat-8.0.32/webapps/ROOT):
 
 [ db2 mariadb mysql oracle postgresql sqlserver sybase ]
-Please enter your database (mysql): 
+Please enter your database (mysql):
 mariadb
 
 Please enter your database host (localhost):
@@ -60,7 +60,7 @@ You can also pre-configure the upgrade tool to set more values than the tool gen
 
 ### Configuring app-server.properties
 
-Specify the following information to configure DXP's application server: 
+Specify the following information to configure DXP's application server:
 
 <!-- make this a table? -->
 

@@ -1,16 +1,18 @@
 # Handling Deprecations in Liferay DXP 7.2
 
-As with any software product, Liferay DXP will sometimes stop developing or remove features with new versions. In DXP 7.2, Liferay has deprecated several apps and features. 
+<!-- reconsider the title to "Deprecations in Liferay DXP 7.2 -->
 
-There are three types of deprecations: 
+Liferay DXP will sometimes stop developing or remove features with new versions. In DXP 7.2, Liferay has deprecated several apps and features.
+
+Liferay uses three different forms of feature deprecation:
 
 1. Deprecated features that remain in DXP 7.2, but will be removed in a future release. (Availability: *Bundled*)
 
-2. Deprecated features that have been removed from DXP 7.2, yet are still available for download via [Liferay Marketplace](https://web.liferay.com/marketplace) (Availability: *Marketplace*) 
+2. Deprecated features that have been removed from DXP 7.2, yet are still available for download via [Liferay Marketplace](https://web.liferay.com/marketplace) (Availability: *Marketplace*)
 
-3. Deprecated features that have been removed from DXP 7.2 and aren't available for download. (Availability: *Removed*) 
+3. Deprecated features that have been removed from DXP 7.2 and aren't available for download. (Availability: *Removed*) <!-- isn't this basically feature removed and not even deprecated? -->
 
-**Note:** All applications deprecated by Liferay are no longer in active development. You should therefore plan to stop using these applications. Such applications, however, may still be available for download.
+> **Note:** All applications deprecated by Liferay are no longer in active development. You should therefore plan to stop using these applications. Such applications, however, may still be available for download.
 
 Features deprecated in earlier versions of Liferay DXP may also need to be considered, if you are upgrading from an earlier version than 7.1. See the following deprecations for any versions between your version pre-upgrade and 7.2:
 
@@ -62,9 +64,9 @@ The deprecations in DXP 7.2 are as follows:
 
 ## User and System Management
 
-| Feature |  Availability | 
+| Feature |  Availability |
 | --- | ------------------ |
-| Live Users | Enabled through the [`live.users.enabled`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties). | 
+| Live Users | Enabled through the [`live.users.enabled`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties). |
 
 ## Applications in Maintenance Mode
 

@@ -2,7 +2,7 @@
 
 Since Liferay DXP 7.0, Liferay removed its own physical partitioning implementation (also known as sharding) in favor of the capabilities provided natively by database vendors. Upgrading a sharded installation to DXP 7.0 or higher requires migrating it to as many non-sharded Liferay DXP installations (servers) as you have shards. These steps guide you through configuring the new Liferay DXP servers to use your formerly sharded data.
 
-**Note:** Liferay continues to support its logical partitioning capabilities (also known as [virtual instances](https://help.liferay.com/hc/en-us/articles/360028818692-Setting-Up-a-Virtual-Instance)) for the foreseeable future. For any further assistance with sharding contact your Liferay account manager or Liferay Support.
+> **Note:** Liferay continues to support its logical partitioning capabilities (also known as [virtual instances](https://help.liferay.com/hc/en-us/articles/360028818692-Setting-Up-a-Virtual-Instance)).
 
 ## Add Configurations Before the Data Upgrade
 
@@ -29,9 +29,9 @@ Here is how to configure the upgrade to migrate from sharding:
     jdbc.two.password=
     ```
 
-1. Set the JDBC *default* connection properties in each server's `portal-upgrade-database.properties` to specify the associated shard. Here's how: 
+1. Set the JDBC *default* connection properties in each server's `portal-upgrade-database.properties` to specify the associated shard.
 
-    - Add the original JDBC properties for the respective non-default shard database. For example, shard `one`'s original properties might start with `jdbc.one`:
+    * Add the original JDBC properties for the respective non-default shard database. For example, shard `one`'s original properties might start with `jdbc.one`:
 
     ```properties
     jdbc.one.driverClassName=com.mysql.jdbc.Driver
@@ -40,7 +40,7 @@ Here is how to configure the upgrade to migrate from sharding:
     jdbc.one.password=
     ```
 
-    - Rename the properties to start with `jdbc.default`. For example:
+    * Rename the properties to start with `jdbc.default`. For example:
 
     ```properties
     jdbc.default.driverClassName=com.mysql.jdbc.Driver
@@ -53,7 +53,7 @@ Here is how to configure the upgrade to migrate from sharding:
 
 When you perform the data upgrade, upgrade the default shard first, and then each of the non-default shards. See [Upgrading the Core Using the Upgrade Tool](./08-using-the-upgrade-tool.md) for more information on running the data upgrade.
 
-After the data upgrade has been completed, make the following configuration changes for your application servers:
+After the data upgrade has been completed, make the following configuration changes to your application servers:
 
 1. In each server's `portal-ext.properties`, use the JDBC *default* properties you specified in the `portal-upgrade-database.properties` (see the *default* properties above).
 

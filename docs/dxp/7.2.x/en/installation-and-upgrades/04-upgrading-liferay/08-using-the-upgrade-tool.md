@@ -1,5 +1,6 @@
 # Using the Upgrade Tool
 
+<!-- this article feels written like a reference, for being the culminating milestone of the upgrade process - perhaps performing the upgrade should play a stronger role in the structure -->
 This article provides an overview of how to use the upgrade tool within your application server.
 
 ## Upgrade Tool Usage
@@ -31,7 +32,7 @@ JVM memory to 10GB, which is a good starting point for this process type:
 db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.timezone=GMT -Xmx10240m"
 ```
 
-The `-l` option specifies the tool's log file name: 
+The `-l` option specifies the tool's log file name:
 
 ```bash
 db_upgrade.sh -l "output.log"
