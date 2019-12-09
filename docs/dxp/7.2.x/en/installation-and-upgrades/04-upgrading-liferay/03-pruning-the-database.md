@@ -17,9 +17,9 @@ If this error occurs, roll back to your previous backup of Liferay Portal 6.2 an
 
 ## Find and Remove Unused Objects
 
-Identify unused objects in the UI or <!-* by using? --> using database queries. Then remove them via the UI, the API through the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console), or a portlet you create.
+Identify unused objects in the UI or by using using `SELECT` queries with your database. Then remove them either via the UI, the API through the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console), or a portlet you create.
 
-> **Warning**: You should only use Liferay's UI or API because they account for relationships between objects in Liferay DXP. Never use SQL directly on your database to remove records. Your SQL may miss object relationships, orphaning objects and causing performance problems.
+> **Warning**: You should only use Liferay's UI or API to manipulate data because they account for relationships between objects in Liferay DXP. Never use SQL directly on your database to remove records. Your SQL may miss object relationships, orphaning objects and causing performance problems.
 
 Listed below are some common places to check for unused objects.
 
@@ -113,4 +113,7 @@ Next, test your instance with its pruned database.
 
 Find and resolve any issues related to the objects you removed. This is an important step, in case objects were mistakenly removed, or if this affects other content. You can always restart pruning a new copy of your production database if you can't resolve an issue.
 
-<!-- Additional information -->
+## Additional Information
+
+* [Example: Removing Intermediate Journal Article Versions](./04-example-removing-intermediate-journal-article-versions.md)
+* [Tuning for the Data Upgrade](./05-tuning-for-the-data-upgrade.md)
