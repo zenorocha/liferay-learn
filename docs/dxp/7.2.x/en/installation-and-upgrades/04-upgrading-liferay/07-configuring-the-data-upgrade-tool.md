@@ -1,5 +1,4 @@
-# Configuring the Data Upgrade
-<!-- Configuring the data upgrade tool -->
+# Configuring the Data Upgrade Tool
 
 The data upgrade tool provides the easiest way to upgrade the core and installed modules. You can use text files or the tool's command line interface to configure your upgrade. The upgrade tool can upgrade everything (the core and all the modules) together or separately.
 

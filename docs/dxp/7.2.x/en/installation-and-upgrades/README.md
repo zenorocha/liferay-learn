@@ -65,7 +65,7 @@
 * [Example: Removing Intermediate Journal Article Versions](./04-upgrading-liferay/04-example-removing-intermediate-journal-article-versions.md)
 * [Tuning for the Data Upgrade](./04-upgrading-liferay/05-tuning-for-the-data-upgrade.md)
 * [Preparing a New Application Server for Liferay DXP](./04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md)
-* [Configuring the Data Upgrade](./04-upgrading-liferay/07-configuring-the-data-upgrade.md)
+* [Configuring the Data Upgrade Tool](./04-upgrading-liferay/07-configuring-the-data-upgrade-tool.md)
 * [Using the Upgrade Tool](./04-upgrading-liferay/08-using-the-upgrade-tool.md)
 * [Upgrading Modules Using Gogo Shell](./04-upgrading-liferay/09-upgrading-modules-using-gogo-shell.md)
 * [Executing Post Upgrade Tasks](./04-upgrading-liferay/10-executing-post-upgrade-tasks.md)

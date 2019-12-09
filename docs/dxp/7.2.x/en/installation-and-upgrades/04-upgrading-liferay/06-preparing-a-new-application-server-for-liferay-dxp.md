@@ -150,4 +150,4 @@ If you're using NTLM to authenticate Microsoft Windows™ accounts with Liferay 
 ## Additional Information
 
 * [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI)
-* [Configuring the Data Upgrade](./07-configuring-the-data-upgrade)
+* [Configuring the Data Upgrade Tool](./07-configuring-the-data-upgrade-tool)

@@ -45,7 +45,7 @@ Lastly for your pre-production upgrade, completely [back up](../09-maintaining-a
 
 ## Performing the Data Upgrade
 
-Data upgrade is the biggest upgrade process milestone. [Configure the upgrade tool on your new DXP server](./07-configuring-the-data-upgrade.md) and then [use it to execute the data upgrade](08-using-the-upgrade-tool.md).
+Data upgrade is the biggest upgrade process milestone. [Configure the upgrade tool on your new DXP server](./07-configuring-the-data-upgrade-tool.md) and then [use it to execute the data upgrade](08-using-the-upgrade-tool.md).
 
 ## Executing Post-Upgrade Tasks
 
