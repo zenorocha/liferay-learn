@@ -4,12 +4,6 @@ To upgrade your Liferay DXP database, prepare a new application server for hosti
 
 > **Note:** If you are upgrading from a version prior to DXP 7.0 and using a sharded environment, you must migrate your shards to multiple application servers, because sharding is no longer supported. Prepare one new application server for each shard.
 
-## Request an Upgrade Patch from Liferay Support
-
-> Subscription Required
-
-Get the latest fixes for Liferay DXP by requesting an upgrade patch. An *upgrade patch* contains the latest fix pack and hot fixes planned for the next service pack. Upgrade patches provide the latest fixes available for your data upgrade.
-
 ## Install Liferay DXP 7.2
 
 Install Liferay DXP 7.2 using a bundle or to an application server of choice. See the [Installation Overview](../01-installing-liferay-dxp/02-installation-overview.md) for more information.
@@ -17,8 +11,11 @@ Install Liferay DXP 7.2 using a bundle or to an application server of choice. Se
 > **Warning:** Do not start your application server with your database yet. Wait until after you have completed the data upgrade to DXP 7.2.
 
 ## Install the Latest Upgrade Patch or Fix Pack
-<!-- Can we combine the requesting and installing together to improve flow -->
 > Subscription Required
+
+An *upgrade patch* contains the latest fix pack and hot fixes planned for the next service pack. Upgrade patches provide the latest fixes available for your data upgrade.
+
+Get the latest fixes for Liferay DXP by requesting an upgrade patch. Request the patch in advance to ensure you will have it ready when you need it.
 
 Install the upgrade patch (if you requested it from Liferay Support) or the [latest Fix Pack](https://help.liferay.com/hc/en-us/articles/360028810452-Patching-Liferay-DXP).
 
@@ -78,7 +75,7 @@ organizations.types
 users.image.check.token
 ```
 
-The latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) provides property details and examples. Many properties are now replaced by [OSGi configurations](/docs/7-2/user/-/knowledge_base/u/system-settings#exporting-and-importing-configurations). <!-- what SHOULD this point to, help center? -->
+The latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) provides property details and examples. Many properties are now replaced by OSGi configurations, which are accessible through the UI in [System Settings](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings).
 
 ### Convert Applicable Properties to OSGi Configurations
 
@@ -146,7 +143,7 @@ General document store configuration (e.g., `dl.store.impl=[File Store Impl Clas
 
 The [Document Repository Configuration](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration) provides more document store configuration details.
 
-## Configure Kerberos in place of NTLM
+## Configure Kerberos in Place of NTLM
 
 If you're using NTLM to authenticate Microsoft Windows™ accounts with Liferay DXP, switch to using [Kerberos](https://help.liferay.com/hc/en-us/articles/360029031831-Authenticating-with-Kerberos). Security vulnerabilities persist with NTLM. NTLM has been deprecated and removed from the bundle, but you can still [build and deploy the module](https://github.com/liferay/liferay-portal/tree/7.2.x/modules/apps/portal-security-sso-ntlm).
 
