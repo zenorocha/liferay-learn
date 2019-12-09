@@ -102,14 +102,24 @@ For example, use these steps to create a `.config` file specifying a root file l
 
 1. Copy the `.config` file to your `[LIFERAY_HOME]/osgi/configs` folder.
 
-Use the [`blade upgradeProps`](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) command to scan your `portal-ext.properties` file to discover which properties are now set via OSGi Config Admin. You can also check the upgrade log from previous attempts for traces like these:
+> **Tip:** The Control Panel's _System Settings_ screens (under _Configuration_) are the most accurate way to create `.config` files. Use them to [export a screen's configuration](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations) to a `.config` file.
+
+#### Using Blade CLI to Find Migrated Properties
+
+The [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) is a tool that can be used to analyze your `portal-ext.properties` file to check for removed properties, or properties that have migrated to OSGi configurations. It is helpful to use this tool when upgrading from older versions for this purpose.
+
+The `blade upgradeProps` command is used in the following format:
+
+```cmd
+blade upgradeProps -p {old_liferay_home_path}/portal-ext.properties -d {7.2_liferay_home_path}
+```
+
+Running this command will provide the names of migrated (or removed) properties, as well as where they were migrated to. The command will provide output like the following:
 
 ```
 2019-03-09 17:05:17.678 ERROR [main][VerifyProperties:161] Portal property "layout.first.pageable[link_to_layout]" is obsolete
 2019-03-09 17:05:17.679 ERROR [main][VerifyProperties:136] Portal property "journal.article.check.interval" was modularized to com.liferay.journal.web as "check.interval"
 ```
-
-> **Tip:** The Control Panel's _System Settings_ screens (under _Configuration_) are the most accurate way to create `.config` files. Use them to [export a screen's configuration](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations) to a `.config` file.
 
 ## Update Your Database Driver
 
@@ -140,4 +150,7 @@ The [Document Repository Configuration](https://help.liferay.com/hc/en-us/articl
 
 If you're using NTLM to authenticate Microsoft Windows™ accounts with Liferay DXP, switch to using [Kerberos](https://help.liferay.com/hc/en-us/articles/360029031831-Authenticating-with-Kerberos). Security vulnerabilities persist with NTLM. NTLM has been deprecated and removed from the bundle, but you can still [build and deploy the module](https://github.com/liferay/liferay-portal/tree/7.2.x/modules/apps/portal-security-sso-ntlm).
 
-<!-- additional information / help me find my place -->
+## Additional Information
+
+* [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI)
+* [Configuring the Data Upgrade](./07-configuring-the-data-upgrade)
