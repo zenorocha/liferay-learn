@@ -1,6 +1,4 @@
-# Handling Deprecations in Liferay DXP 7.2
-
-<!-- reconsider the title to "Deprecations in Liferay DXP 7.2 -->
+# Deprecations in Liferay DXP 7.2
 
 Liferay DXP will sometimes stop developing or remove features with new versions. In DXP 7.2, Liferay has deprecated several apps and features.
 

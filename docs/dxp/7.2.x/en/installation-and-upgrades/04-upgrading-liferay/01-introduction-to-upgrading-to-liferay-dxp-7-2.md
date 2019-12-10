@@ -6,7 +6,7 @@ Upgrading to Liferay DXP 7.2 involves updating your data, files, plugins, and cu
 
 ## Adapting to Feature Changes
 
-New DXP versions can deprecate features, remove features, or [move features into maintenance mode](./99-features-in-maintenance-mode.md). The [DXP 7.2 deprecation handling instructions](./98-handling-deprecations-in-liferay-dxp-7-2.md) explain the ramifications so you can adapt to the changes.
+New DXP versions can deprecate features, remove features, or [move features into maintenance mode](./99-features-in-maintenance-mode.md). The [DXP 7.2 deprecations article](./98-deprecations-in-liferay-dxp-7-2.md) explains the ramifications so you can adapt to the changes.
 
 ## Upgrading Custom Code and Plugins
 

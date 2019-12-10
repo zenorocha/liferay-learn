@@ -14,7 +14,7 @@ Here are the installation upgrade steps:
 
     If you're upgrading a cluster, read the cluster update instructions first and apply them to your upgrade.{.summary}
 
-4.  [Plan for Handling the Deprecated Applications](./98-handling-deprecations-in-liferay-dxp-7-2.md){.title}
+4.  [Plan for Handling the Deprecated Applications](./98-deprecations-in-liferay-dxp-7-2.md){.title}
 
     Every application deprecation has different ramifications. Learn how the deprecations might affect your sites and decide how to replace the functionality you use from those applications.{.summary}
 

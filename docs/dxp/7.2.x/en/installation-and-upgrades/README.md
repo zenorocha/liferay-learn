@@ -73,7 +73,7 @@
 ### Unique Upgrade Scenarios
 
 * [Upgrading a Sharded Environment](./04-upgrading-liferay/97-upgrading-a-sharded-environment.md)
-* [Handling Deprecations in Liferay DXP 7.2](./04-upgrading-liferay/98-handling-deprecations-in-liferay-dxp-7-2.md)
+* [Deprecations in Liferay DXP 7.2](./04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2.md)
 * [Features in Maintenance Mode](./04-upgrading-liferay/99-features-in-maintenance-mode.md)
 * Migrating from Audience Targeting to Segmentation and Personalization
 
