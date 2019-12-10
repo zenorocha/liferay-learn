@@ -10,9 +10,7 @@ Liferay DXP bundles include the upgrade tool. If you installed Liferay DXP manua
 
 Before starting the data upgrade process, configure the upgrade tool for the core upgrade and specify whether the upgrade tool should upgrade non-core module data automatically.
 
-## Configuring Non-Core Module Data Upgrades
-
-<!-- think about this section title -->
+## Configuring Module Data Upgrades
 
 You can allow the upgrade tool to upgrade all installed modules automatically or to open a Gogo shell (after core upgrade completes) for you to execute module upgrades manually. 
 
@@ -61,25 +59,13 @@ You can also pre-configure the upgrade tool to set more values than the tool gen
 
 Specify the following information to configure DXP's application server:
 
-<!-- make this a table? -->
-
-`dir`: the absolute path of the application server folder.
-
-`extra.lib.dirs`: a comma delimited list of extra directories containing any binaries or resources to add to the class path. Use all absolute paths or all paths relative to `dir`.
-
-`global.lib.dir`: the application server's global library directory. Use the absolute path or a path relative to `dir`.
-
-`portal.dir:` the directory where portal is installed in your app server. Use the absolute path or a path relative to `dir`.
-
-`server.detector.server.id:` ID of a supported application server. Here are the supported IDs:
-
-* `jboss`
-* `jonas`
-* `resin`
-* `tomcat`
-* `weblogic`
-* `websphere`
-* `wildfly`
+| Property Name | Meaning | Notes |
+| --- | ---------- | --- |
+| `dir` | The absolute path of the application server folder. | |
+| `extra.lib.dirs` | A comma-delimited list of extra directories containing any binaries or resources to add to the class path. | Use all absolute paths or all paths relative to `dir`. |
+| `global.lib.dir` | The application server's global library directory. | Use the absolute path or a path relative to `dir`. |
+| `portal.dir` | The directory where portal is installed in your application server. | Use the absolute path or a path relative to `dir`. |
+| `server.detector.server.id` | The ID of a supported application server. | Supported IDs: `jboss`, `jonas`, `resin`, `tomcat`, `weblogic`, `websphere`, `wildfly` |
 
 Relative paths must use Unix style format. For example, the following properties are for Windows and use relative paths:
 
@@ -160,4 +146,7 @@ Here are example upgrade configuration files that you can customize and copy int
     dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
     ```
 
-<!-- additional info -->
+## Additional Information
+
+* [Preparing a New Application Server for Liferay DXP](./06-preparing-a-new-application-server-for-liferay-dxp.md)
+* [Using the Upgrade Tool](./08-using-the-upgrade-tool.md)
