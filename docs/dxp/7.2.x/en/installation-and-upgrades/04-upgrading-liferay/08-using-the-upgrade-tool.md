@@ -63,4 +63,7 @@ Only execute the upgrade process on a server with ideal memory, CPU, and databas
 
 **Warning:** To prevent the tool's expanded command from growing too large for Windows, execute the upgrade tool script from the `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` folder.
 
-<!-- additional information -->
+## Additional Information
+
+* [Executing Post-Upgrade Tasks](./10-executing-post-upgrade-tasks.md)
+* [Upgrading Modules Using Gogo Shell](./09-upgrading-modules-using-gogo-shell.md)
