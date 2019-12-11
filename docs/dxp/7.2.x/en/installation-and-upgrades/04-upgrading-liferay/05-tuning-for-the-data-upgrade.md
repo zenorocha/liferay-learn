@@ -1,18 +1,10 @@
 # Tuning for the Data Upgrade
 
 Performing an upgrade impacts the database differently from daily running in production. Because of this, you should tune your database for the upgrade process before you run it, and then re-apply your production settings after the upgrade completes.
-<!-- there's a lot of information for each step in this intro that maybe can be moved to be part of the headers below? -->
-* Disable indexing for the data upgrade, then re-enable it after the upgrade is complete. Search indices are not needed for the upgrade itself, so re-indexing will only slow the upgrade down. In extreme cases, this may cause performance issues that dramatically increase the upgrade time.
 
-* Tune your database for executing updates. Data upgrades execute many more update statements (`INSERT`, `UPDATE`, and `DELETE`) and less `SELECT` statements than production instances.
+> **Note:** The tips given in this article worked well in test runs on specific versions of each database. Optimal tuning depends on your own data, infrastructure conditions, and database vendor. Analyze your data, tune for upgrade, and time your test upgrades to determine the best database and Java process configuration for your Liferay DXP data upgrade.
 
-* Data upgrades should be done in safe environments completely separate from production servers and should use database backup copies. If upgrade errors occur or you make mistakes, they don't impact production, and you can always restart using your database backup copy.
-
-* Disable transaction logging during the data upgrade, and re-enable it after the upgrade completes. Transaction logging is not helpful during the upgrade, and only slows down the upgrade.
-
-> **Note:** The tips given here worked well in test runs on specific versions of each database. Optimal tuning depends on your own data, infrastructure conditions, and database vendor. Analyze your data, tune for upgrade, and time your test upgrades to determine the best database and Java process configuration for your Liferay DXP data upgrade.
-
-> **Important:** Test your database configuration to determine tuning that's best for your system, and consult your DBA as appropriate. **Never** use data upgrade configurations in production. Always restore your production database settings before starting your Liferay DXP server for production use with the database.
+> **Important:** Test your database configuration in a separate, safe environment to determine tuning that's best for your system, and consult your DBA as appropriate. **Never** use data upgrade configurations in production. Always restore your production database settings before starting your Liferay DXP server for production use with the database.
 
 **Contents:**
 
@@ -77,4 +69,6 @@ The default configuration works well. It configures [asynchronous I/O to disk](h
 
 Turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-commit.html) and set the [write ahead log writer delay](https://www.postgresql.org/docs/10/wal-async-commit.html) to `1000` milliseconds.
 
-<!-- next steps, additional information, related information -->
+## Additional Information
+
+* [Preparing a New Application Server for Liferay DXP](./06-preparing-a-new-application-server-for-liferay-dxp)
