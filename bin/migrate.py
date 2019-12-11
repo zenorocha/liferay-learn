@@ -152,6 +152,13 @@ if __name__ == "__main__":
                 para_line = para_line.replace("\r","")
                 para_line = para_line.replace("\n","")
                 para_line = para_line + " " + trimmed_line
+            elif (re.search("^[\:]", trimmed_line)):
+
+                # Write definition term
+                newFile.write(para_line)
+
+                # Start the term definition
+                para_line = line
             else:
 
                 # Write the existing paragraph and the current line
@@ -162,7 +169,7 @@ if __name__ == "__main__":
 
             # Start a list item
             list_item_line = line
-        elif (re.search("^[\w\*\@\!\(\&\s\.\`]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\&\s\.\`\:]", trimmed_line)):
 
             # Start a paragraph
             para_line = line
