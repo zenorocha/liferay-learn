@@ -1,6 +1,6 @@
-# Securing Web Services 
+# Securing Web Services
 
-Liferay Portal provides four security layers for web services: 
+Liferay Portal provides four security layers for web services:
 
 **IP permission layer:** The IP address from which a web service invocation request originates must be white-listed in the portal properties file. A web service invocation coming from a non-whitelisted IP address automatically fails.
 
@@ -10,19 +10,17 @@ Liferay Portal provides four security layers for web services:
 
 **User permission layer:** Properly implemented web services have permission checks. The user invoking a web service must have permission to invoke the service.
 
-![Figure 1: To get to a service, a request must pass through the door lock of user permissions, the padlock of the verification layer, the brick wall of service access policies, and finally the safe of predefined IP permissions.](./images/service-access-policies-security-layers.png) 
+<!-- I would prefer to not include this image until we get design to do a pass on it because I find the visual to be more distracting than helpful in its current iteration. ![Figure 1: To get to a service, a request must pass through the door lock of user permissions, the padlock of the verification layer, the brick wall of service access policies, and finally the safe of predefined IP permissions.](./images/service-access-policies-security-layers.png)  -->
 
-## Authorization 
+## Authorization
 
-Liferay Portal contains several adjustable authorization layers: 
+Liferay Portal contains several adjustable authorization layers:
 
 - Remote IP and HTTPS transport check to limit access to Liferay Portal's Java servlets
 - Extensible Access Control Policies layer to perform portal service-related authorization checks
-- Extensible Role-based permission framework for Liferay assets (stored in the database or elsewhere)
+- Extensible [Role-based permission framework](../user-and-system-management/roles-and-permissions.md) for Liferay assets (stored in the database or elsewhere)
 - Portlet container security checks that control portlet access
 - Remote IP check for remote API authentication methods
-- [Service Access Policies](./03-service-access-policies.md) to control access to remote APIs
-- [Authentication Verifiers](./04-using-auth-verifiers.md) that verify provided credentials. 
-- [Cross-Origin Resource Sharing](./05-setting-up-cors.md) configuration can enable retrieving resources from trusted sources only. 
-
-Read on to learn how to configure these security layers. 
+- [Service Access Policies](./03-setting-service-access-policies.md) to control access to remote APIs
+- [Authentication Verifiers](./04-using-auth-verifiers.md) that verify provided credentials.
+- [Cross-Origin Resource Sharing](./05-setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.

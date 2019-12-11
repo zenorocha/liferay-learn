@@ -1,57 +1,59 @@
----
-header-id: securing-liferay
----
-
 # Securing Liferay
 
-Liferay makes every effort to keep its products secure. By following the OWASP Top 10 (2013) and CWE/SANS Top 25 recommendations, we protect the product against known attacks and security vulnerabilities. Here are some examples: 
+Liferay DXP is built with security in mind. This includes mitigation of common security vulnerabilities and exploits like those described by the [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) and the [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/).
 
-- Service Builder protects Liferay Portal's persistence layer by using Hibernate and parameter-based queries. 
-- To prevent Cross Site Scripting (XSS), user-submitted values are escaped on output. 
-- Liferay Portal includes protection against other common attacks: 
-  - CSRF
-  - Local File Inclusion
-  - Open Redirects
-  - Uploading and serving files of dangerous types
-  - Content Sniffing
-  - Clickjacking
-  - Path Traversal
-  - Quadratic Blowup XXE
-  - Rosetta Flash vulnerability
-  - Reflected File Download
-  - And more.
+There are several aspects of securing a Liferay installation -- including, but not limited to, following the best security practices for your hosting environment, database, search provider, application server, and Liferay DXP itself.
 
-!!! qualifier "Note"
-    Liferay Portal relies on the application server for sanitizing CRLF in HTTP headers. You should, therefore, make sure this is configured properly in your application server, or you may experience false positives in reports from automatic security verification software such as Veracode. There is one exception to this for Resin, which does not have support for this feature. In this case, Liferay Portal sanitizes HTTP headers.
+> **Note:** As an example, Liferay DXP relies on the application server for sanitizing CRLF in HTTP headers. Administrators are responsible for ensuring this is configured properly on the application server. Skipping this configuration may result in security verification products, like Veracode, flagging false positives in security reports.
 
-When setting up Liferay Portal for use, you should review the default security configuration: 
+This section covers the basic elements to secure Liferay DXP itself. This includes configuring how to authenticate users to your Liferay DXP installation, authorizing users with permissions, configuring secure access to Liferay DXP Web Services, and fine-tuning security features on an as-needed basis.
 
-- Authentication 
-- Single Sign-On
-- Web Services access and authorization
+> **Important:** Customers are advised to deploy security patches as they are released. For community and CE installations, we recommend always using the latest community release, which contains all previous security patches.
 
-## Permission Checking
+## Authentication
 
-Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../user-and-system-management/roles-and-permissions.md) for more information.
+Liferay DXP is flexible in how users may be authenticated to the system. By default, users log into the Liferay DXP by using the _Sign In_ widget, which authenticates the user using the portal database. The _Sign In_ widget also allows guest users to create accounts with limited permissions and to log in. Nearly every element of the default authentication experience can be changed by an administrator. For example:
 
-There are additional security plugins available from [Liferay Marketplace](https://www.liferay.com/marketplace). For example, an Audit plugin tracks user actions, and an AntiSamy plugin helps clear HTML from XSS vectors. 
+* Liferay can be [integrated with an SSO to manage](placeholder) authentication.
+* Liferay can also be [integrated with LDAP](placeholder) to validate users instead of using the portal database.
+* Guest account creation can be [turned off](./02-configuring-authentication.md#disabling-guest-account-creation).
+
+To learn more, see [Configuring Authentication](./02-configuring-authentication.md).
+
+## Permissions
+
+A robust role-based access control (RBAC) system is a major part of Liferay DXP security. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../user-and-system-management/roles-and-permissions.md) for more information.
+
+## Securing Web Services
+
+Liferay Web Services have a multi-layered and configurable approach to security and authorization:
+
+* [Service Access Policies](./04-securing-web-services/03-setting-service-access-policies.md) control access to remote APIs.
+* [Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) verify provided credentials.
+* [Cross-Origin Resource Sharing](./04-securing-web-services/05-setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
+
+See [Securing Web Services](./04-securing-web-services/01-securing-web-services.md) to learn more.
 
 ## Fine-Tuning Security
 
-There are many ways to fine-tune or disable various security features: 
+There are many ways to fine-tune or disable additional security features, for example:
 
-- Disable the Sign In portlet's *Create Account* link
-- Configure Liferay Portal's HTTPS web server address
-- Configure the list of allowed servers to which users can be redirected
-- Configure the list of portlets that can be accessed from any page
-- Configure the file types allowed to be uploaded and downloaded. 
+* Configure Liferay Portal's HTTPS [web server](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Web%20Server) address.
+* Configure the list of allowed servers to which users can be [redirected](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Redirect).
+* Configure the list of [portlets](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Portlet) that can be accessed from any page.
+* Configure the [file types allowed](placeholder) to be uploaded and downloaded.
 
-Please see [portal properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html) for more information. 
+These features can be configured using [portal properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html).
 
-## Secure Configuration and Run Recommendations
+> **Important:** Liferay Portal's philosophy is "secure by default." Administrators should exercise significant caution when modifying security-specific defaults or white-lists. Such actions may lead to security misconfiguration and an insecure deployment.
 
-Liferay Portal's philosophy is "secure by default." You shouldn't disable built-in protections or allow all values in security white-lists. Such acts may lead to security misconfiguration and an insecure deployment. 
+## Additional Information
 
 For more information about securing a Liferay Portal installation, please see [our security statement](https://www.liferay.com/security), [the community security team](https://portal.liferay.dev/people/community-security-team), and the resources listed on those pages.
 
-Customers are advised to deploy security patches when they are released. For community and CE deployments, stay secure by always using the latest community version, which contains all previous security patches. 
+There are additional security plugins available from [Liferay Marketplace](https://www.liferay.com/marketplace).
+
+## Next Steps
+
+* [Configuring Authentication](./02-configuring-authentication.md)
+* [Securing Web Services](./04-securing-web-services/01-securing-web-services.md)
