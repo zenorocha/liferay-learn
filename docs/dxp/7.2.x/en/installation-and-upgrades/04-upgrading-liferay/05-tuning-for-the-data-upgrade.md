@@ -33,23 +33,6 @@ indexReadOnly="true"
 
 After you complete the upgrade, re-enable indexing by removing the `.config` file or setting `indexReadOnly="false"`.
 
-## Tuning the Database Upgrade Java Process
-<!-- move this section to configuring the upgrade tool? -->
-
-Make sure to provide adequate memory for the database upgrade tool's Java process. Make sure to also set the file encoding to UTF-8 and the time zone to GMT. Here are the Java process settings:
-
-Using a test scenario with a 3.2 GB database and a 15 GB Document Library, the following Java process settings were optimal:
-
-* Xmx 8 GB RAM
-* File encoding UTF-8
-* User time zone GMT
-
-Here is the `db_upgrade.sh` command corresponding to these settings:
-
-```bash
-db_upgrade.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
-```
-
 ## Tuning the Database Transaction Engine for Executing Updates
 
 Many more update statements are executed during data upgrade than in production. Consult your database vendor's official documentation for more help on tuning your database for this purpose. Listed below are some optimizations you can make for each database.

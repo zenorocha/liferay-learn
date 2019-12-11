@@ -38,6 +38,22 @@ The `-l` option specifies the tool's log file name:
 db_upgrade.sh -l "output.log"
 ```
 
+### Memory Allocation
+
+Make sure to provide adequate memory for the database upgrade tool's Java process. Make sure to also set the file encoding to UTF-8 and the time zone to GMT.
+
+Using a test scenario with a 3.2 GB database and a 15 GB Document Library, the following Java process settings were optimal:
+
+* Xmx 8 GB RAM
+* File encoding UTF-8
+* User time zone GMT
+
+Here is the `db_upgrade.sh` command corresponding to these settings:
+
+```bash
+db_upgrade.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
+```
+
 ### Upgrade Tool Options
 
 Here are all the upgrade tool command line options:
