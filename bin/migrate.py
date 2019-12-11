@@ -145,7 +145,7 @@ if __name__ == "__main__":
 
                 newFile.write(para_line)
                 para_line = ""
-            elif (re.search("^[\w\*\@\!\(\-\&\.\[(\`\w)]", trimmed_line)):
+            elif (re.search("^[\w\*\@\!\(\&\.\[\`\s(\w\*\@\!\(\&\.\[\`)]", trimmed_line)):
 
                 # Append the line content to the existing paragraph
                 para_line = para_line.rstrip()
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
             # Start a list item
             list_item_line = line
-        elif (re.search("^[\w\*\@\!\(\&\s\.\`\:]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\&\.\[\`\s\:(\w\*\@\!\(\&\.\[\`)]", trimmed_line)):
 
             # Start a paragraph
             para_line = line
