@@ -37,10 +37,15 @@
 
 ## Securing Liferay
 
-* Configuring Authentication
-* Setting Service Access Policies
-* Using Auth Verifiers
-* Setting up CORS
+* [Securing Liferay](./05-securing-liferay/01-securing-liferay.md)
+* [Configuring Authentication](./05-securing-liferay/02-configuring-authentication.md)
+
+### Securing Web Services
+
+* [Securing Web Services](./05-securing-liferay/04-securing-web-services/01-securing-web-services.md)
+* [Setting Service Access Policies](./05-securing-liferay/04-securing-web-services/03-setting-service-access-policies.md)
+* [Using Auth Verifiers](./05-securing-liferay/04-securing-web-services/04-using-auth-verifiers.md)
+* [Setting up CORS](./05-securing-liferay/04-securing-web-services/05-setting-up-cors.md)
 
 ### Using an SSO with Liferay DXP
 
