@@ -1,6 +1,6 @@
 # Merging Site Template and Site Changes
 
-Once changes are made to a Site created from a Site Template, the Site Template and Site become unlinked. Any changes made to the Site Template from that point on *are not propagated* to the Site. You can relink the Site to the Site Template by clicking the Information icon (![Information](../../../images/icon-control-menu-information.png)) that appears in the Control Menu and clicking the *Reset Changes* link. This merges any updates from the Site Template and also reverts any changes made to the page. If multiple Site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button for each page. 
+Once changes are made to a Site created from a Site Template, the Site Template and Site become unlinked. Any changes made to the Site Template from that point on *are not propagated* to the Site. You can relink the Site to the Site Template by clicking the Information icon (![Information](../../../images/icon-control-menu-information.png)) that appears in the Control Menu and clicking the *Reset Changes* link. This merges any updates from the Site Template and also reverts any changes made to the page. If multiple site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button for each page. 
 
 ![Figure 1: You can click the Information icon to view important information about your Site template.](./images/site-template-update-message.png)
 
@@ -12,7 +12,7 @@ Site Template Administrators can set preferences for apps on Site Template pages
 
 Site Administrators can also add data to Site Template applications. For example, Site Template Administrators can add the Wiki app to a Site Template page and use the Wiki to create lots of articles. When a Liferay Administrator creates a Site from a Site Template, data is copied from the Site Template's apps to the Site's apps. The preferences of the Site's apps are updated with the IDs of the copied data. For example, if a Site is created from a Site Template that has a Wiki app with lots of wiki articles, the wiki articles are copied from the Site Template's scope to the Site's scope and the Site's Wiki app is updated with the IDs of the copied wiki articles.
 
->**Important:** App data (such as Message Board categories), fragment-based pages, related resources, and permissions on resources are only copied from a Site Template to a Site when that Site is *first* created based on the template. No changes made to these entities are propagated to the Site after the Site is created. Neither are such changes propagated to a Site by the *Reset* or *Reset and Propagate* features.
+>**Important:** App data (such as Message Board categories), fragment-based pages, related resources, and permissions on resources are only copied from a Site Template to a Site when that site is *first* created based on the template. No changes made to these entities are propagated to the Site after the Site is created. Neither are such changes propagated to a Site by the *Reset* or *Reset and Propagate* features.
 
 ## Resolving Site Template Merge Conflicts
 
@@ -20,9 +20,9 @@ In some cases, merging Site template and Site changes fails. For example, if pag
 
 1.  Note the indicated merge fail and fix your merge conflicts. 
 
-2.  After you've squared away your conflict, open the Product Menu and go to *Configuration* &rarr; *Site Settings* under the Site Menu.
+2.  After you've squared away your conflict, open the Product Menu and go to *Configuration* &rarr; *Site Settings* under the site's menu.
 
-3.  Click the *Reset and Propagate* button to reset the merge fail count and attempts to propagate your Site changes again.
+3.  Click the *Reset and Propagate* button to reset the merge fail count and attempts to propagate your site's changes again.
 
 >**Note:** This helpful process can also be done with page template merges, which follows similar steps.
 
