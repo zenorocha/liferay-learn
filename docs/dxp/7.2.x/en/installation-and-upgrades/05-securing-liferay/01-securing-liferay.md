@@ -2,17 +2,17 @@
 
 Liferay DXP is built with security in mind. This includes mitigation of common security vulnerabilities and exploits like those described by the [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) and the [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/).
 
-There are several aspects of securing a Liferay installation -- including, but not limited to, following the best security practices for your hosting environment, database, search provider, application server, and Liferay DXP itself.
+There are several aspects of securing a Liferay installation---including, but not limited to, following the best security practices for your hosting environment, database, search provider, application server, and Liferay DXP itself.
 
-> **Note:** As an example, Liferay DXP relies on the application server for sanitizing CRLF in HTTP headers. Administrators are responsible for ensuring this is configured properly on the application server. Skipping this configuration may result in security verification products, like Veracode, flagging false positives in security reports.
+> **Note:** For example, Liferay DXP relies on the application server for sanitizing CRLF in HTTP headers. You must ensure this is configured properly on the application server. Skipping this configuration may result in security verification products, like Veracode, flagging false positives in security reports.
 
-This section covers the basic elements to secure Liferay DXP itself. This includes configuring how to authenticate users to your Liferay DXP installation, authorizing users with permissions, configuring secure access to Liferay DXP Web Services, and fine-tuning security features on an as-needed basis.
+Here you'll learn the basic elements to secure Liferay DXP itself. This includes configuring how users authenticate to your Liferay DXP installation, authorizing users with permissions, configuring secure access to Liferay DXP Web Services, and fine-tuning security features on an as-needed basis.
 
 > **Important:** Customers are advised to deploy security patches as they are released. For community and CE installations, we recommend always using the latest community release, which contains all previous security patches.
 
 ## Authentication
 
-Liferay DXP is flexible in how users may be authenticated to the system. By default, users log into the Liferay DXP by using the _Sign In_ widget, which authenticates the user using the portal database. The _Sign In_ widget also allows guest users to create accounts with limited permissions and to log in. Nearly every element of the default authentication experience can be changed by an administrator. For example:
+Liferay DXP is flexible in how users may be authenticated to the system. By default, users log into Liferay DXP by using the _Sign In_ widget, which authenticates the user using the portal database. By default, guest users can use the Sign In widget to create accounts with default permissions before logging in. Nearly every element of the default authentication experience can be changed by an administrator. For example,
 
 * Liferay can be [integrated with an SSO to manage](placeholder) authentication.
 * Liferay can also be [integrated with LDAP](placeholder) to validate users instead of using the portal database.
@@ -22,7 +22,7 @@ To learn more, see [Configuring Authentication](./02-configuring-authentication.
 
 ## Permissions
 
-A robust role-based access control (RBAC) system is a major part of Liferay DXP security. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../user-and-system-management/roles-and-permissions.md) for more information.
+Liferay DXP has a robust role-based access control (RBAC) system. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to Users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../user-and-system-management/roles-and-permissions.md) for more information.
 
 ## Securing Web Services
 
@@ -36,7 +36,7 @@ See [Securing Web Services](./04-securing-web-services/01-securing-web-services.
 
 ## Fine-Tuning Security
 
-There are many ways to fine-tune or disable additional security features, for example:
+There are many ways to fine-tune or disable additional security features: 
 
 * Configure Liferay Portal's HTTPS [web server](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Web%20Server) address.
 * Configure the list of allowed servers to which users can be [redirected](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Redirect).
