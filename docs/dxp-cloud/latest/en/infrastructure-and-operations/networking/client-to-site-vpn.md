@@ -1,6 +1,6 @@
 # Client-to-Site VPN
 
-Liferay DXP Cloud provides out-of-the-box a VPN client-to-site connection that has port forwarding and redundant tunnels support. This feature is commonly used to connect a subscriber's production environment on DXP Cloud to their internal network. For security and reliability, these VPN connections are segregated for each environment (production, staging, or development).
+Liferay DXP Cloud provides a VPN client-to-site connection that has port forwarding and redundant tunnels support. This feature is commonly used to connect a subscriber's production environment on DXP Cloud to their internal network. For security and reliability, these VPN connections are segregated for each environment (production, staging, or development).
 
 ![Topology 1 - DXP Cloud VPN client-to-site topology](./client-to-site-vpn/images/01.png)
 
@@ -13,13 +13,13 @@ The client to site VPN feature supports the following protocols:
 * IPsec (IKEv1, IKEv2, L2TP)
 * OpenVPN
 
-Subscribers can choose one of the protocols (IPSec or OpenVPN) to perform the connection from DXP Cloud Console settings page for the desired environment. See [Connecting a VPN to DXP Cloud](../infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md) for more information.
+Subscribers can choose one of the protocols (IPSec or OpenVPN) to perform the connection from DXP Cloud Console settings page for the desired environment. See [Connecting a VPN to DXP Cloud](./connecting-a-vpn-to-dxp-cloud.md) for more information.
 
 ![VPN Settings](./client-to-site-vpn/images/02.png)
 
 The image below demonstrates how the addresses and ports are mapped between the VPN server and DXP Cloud.
 
-![Forwarding ports](../infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud/images/03.png)
+![Forwarding ports](./connecting-a-vpn-to-dxp-cloud/images/03.png)
 
 ## Connecting DXP Cloud to an IPSec VPN Server
 

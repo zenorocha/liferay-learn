@@ -6,7 +6,6 @@ Performance and Monitoring
 
 -  :doc:`/manage-and-optimize/auto-scaling`
 -  :doc:`/manage-and-optimize/application-metrics`
--  :doc:`/manage-and-optimize/client-to-site-vpn`
 
 Managing Usage
 --------------

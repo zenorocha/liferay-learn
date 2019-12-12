@@ -8,6 +8,7 @@ Networking
 -  :doc:`/infrastructure-and-operations/networking/load-balancer`
 -  :doc:`/infrastructure-and-operations/networking/private-network`
 -  :doc:`/infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud`
+-  :doc:`/infrastructure-and-operations/networking/client-to-site-vpn`
 
 Security
 --------

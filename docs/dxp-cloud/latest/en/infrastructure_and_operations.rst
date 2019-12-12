@@ -6,6 +6,7 @@ Infrastructure and Operations
 
    infrastructure-and-operations/networking/private-network.md
    infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md
+   infrastructure-and-operations/networking/client-to-site-vpn.md
    infrastructure-and-operations/networking/custom-domains.md
    infrastructure-and-operations/networking/load-balancer.md
 
