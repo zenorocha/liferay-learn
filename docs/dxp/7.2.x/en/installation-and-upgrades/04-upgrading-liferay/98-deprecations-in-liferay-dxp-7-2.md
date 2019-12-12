@@ -8,8 +8,8 @@ Features in Liferay DXP that have been deprecated may still be present either in
 
 Features deprecated in earlier versions of Liferay DXP may also need to be considered, if you are upgrading from an earlier version than 7.1. See the following deprecations for any versions between your version pre-upgrade and 7.2:
 
-* Liferay DXP 7.1: [link]()
-* Liferay DXP 7.0: [link]()
+* [Liferay DXP 7.1](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [Liferay DXP 7.0](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 The deprecations in DXP 7.2 are as follows:
 
