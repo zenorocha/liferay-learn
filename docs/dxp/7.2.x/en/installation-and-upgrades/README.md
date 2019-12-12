@@ -113,12 +113,13 @@
 
 ## Reference
 
-* Liferay Home
+* [Liferay Home](./14-reference/01-liferay-home.md)
 * Configuration Files
 * Portal Properties
-* System Properties
-* [JVM Configurations](./08-reference/05-jvm-configurations.md)
-* [Upgrade Planner Steps](./08-reference/06-upgrade-planner-steps.md)
-* Database Templates
-* Comparing Patch Levels
-* Patching Tool Configuration
+* [System Properties](./14-reference/04-system-properties.md)
+* [JVM Configurations](./14-reference/05-jvm-configurations.md)
+* [Upgrade Planner Steps](./14-reference/06-upgrade-planner-steps.md)
+* [Database Templates](./14-reference/05-database-templates.md)
+* [Liferay Upgrade Planner Steps](./14-reference/06-liferay-upgrade-planner-steps.md)
+* [Comparing Patch Levels](./14-reference/07-comparing-patch-levels.md)
+* [Patching Tool Configuration](./14-reference/08-patching-tool-configuration-properties.md)
