@@ -46,7 +46,7 @@ Follow these steps to export and import your site's pages:
     
 6.  Select whether the permissions for your exported pages and content are included.
     
-    ![Figure 1: You can configure your export options manually by selecting pages, content, and permissions.](./images/export-page-templates.png)
+    ![Figure 1: You can configure your export options manually by selecting pages, content, and permissions.](./importing-exporting-pages-and-content/images/01.png)
 
 7.  Click *Export*.
 

@@ -30,7 +30,7 @@ Follow these steps to create a Site Template:
 
 5.  Click *Save* to create your Site Template.
 
-![Figure 1: Site templates have several configurable options including the option to allow Site administrators to modify pages associated with the Site template.](./images/site-template-settings.png)
+![Figure 1: Site templates have several configurable options including the option to allow Site administrators to modify pages associated with the Site template.](./building-sites-with-site-templates/images/01.png)
 
 >**Note:** If you need to modify this configuration later, select *Manage* from the Site Template's Actions Menu, and then select *Configuration* &rarr; *Site Template Settings* under site template's menu in the Product Menu.
 
@@ -50,7 +50,7 @@ After you've created your Site Template, you must edit it to include the layouts
 
 5.  Configure each page with the layout, applications, app configurations, content, etc. that you want. The changes you make to your Site Template are automatically saved in real time.
 
-![Figure 2: You can see the name of the Site template you're currently editing.](./images/editing-site-template.png)
+![Figure 2: You can see the name of the Site template you're currently editing.](./building-sites-with-site-templates/images/02.png)
 
 ## Creating a Site from a Site Template
 

@@ -6,7 +6,7 @@ The steps below describe how to add a new Site to your Liferay Portal instance.
 
 2.  Click the Add icon (![Add Site](../../../images/icon-add.png)) at the top right of the page.
      
-3.  Select a Site Template. See [Site Templates](./02-building-sites-with-site-templates.markdown) for more information on creating site templates.
+3.  Select a Site Template. See [Site Templates](./02-building-sites-with-site-templates.md) for more information on creating site templates.
 
 4.  Enter a Name for the site and optionally provide a description.
 
@@ -20,7 +20,7 @@ The steps below describe how to add a new Site to your Liferay Portal instance.
 
 6.  Configure the remaining settings and click *Save*.
 
-![The General section provides the basic information for your site.](./images/building-sites-general-form.png)
+![The General section provides the basic information for your site.](./adding-sites/images/01.png)
 
 The new site is selected when you open the Product Menu. See [Site Settings](TODO) for an overview of all of the available site settings.
 

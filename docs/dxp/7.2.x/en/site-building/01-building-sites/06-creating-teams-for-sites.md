@@ -23,7 +23,7 @@ The steps below cover these topics:
 
 4.  Enter a name and a description and click *Save*. Your new Team is displayed in the list.
 
-![Figure 1: Creating Teams within your site can foster teamwork and collaboration, as Team permissions enable Team members to access the same resources and perform the same types of tasks.](./images/creating-a-team.png)
+![Figure 1: Creating Teams within your site can foster teamwork and collaboration, as Team permissions enable Team members to access the same resources and perform the same types of tasks.](./creating-teams-for-sites/images/01.png)
 
 ## Adding Members to a Team
 
@@ -51,4 +51,4 @@ You can also manage Team permissions from an app.
 
 3.  Find the Team in the Role column and select the appropriate permissions.
 
-![Figure 2: The Lunar Resort Message Board Moderators Site Team has unlimited permissions on the Message Boards application.](./images/site-team-permissions-message-boards.png)
+![Figure 2: The Lunar Resort Message Board Moderators Site Team has unlimited permissions on the Message Boards application.](./creating-teams-for-sites/images/02.png)

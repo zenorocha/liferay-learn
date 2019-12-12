@@ -18,7 +18,7 @@ Administrators can manage Site members from that Site's *Site Membership* page.
 
 From here you can manage Site Memberships, Organization, and User Group associations. You can learn more about those in [Users and Organizations](TODO). Here you see a list of all of the current users of the Site and you can add or remove user memberships from the Site.
 
-![Figure 1: The current members of the Site as displayed on the *Site Memberships* page. ](./images/site-memberships.png)
+![Figure 1: The current members of the Site as displayed on the *Site Memberships* page. ](./adding-members-to-sites/images/01.png)
 
 ### Adding Members to a Site
 
@@ -32,7 +32,7 @@ Follow these steps to make an existing User a member of the Site:
 
 On the *Assign Users to This Site* screen, all users eligible to be added to the Site appear. Deactivated users do not appear. Site members also appear, but with a greyed-out checkbox.
 
-![Figure 2: The list of users available to add to the current Site. Note that the current members are visible but cannot be added or removed here. ](./images/assign-users.png)
+![Figure 2: The list of users available to add to the current Site. Note that the current members are visible but cannot be added or removed here. ](./adding-members-to-sites/images/02.png)
 
 ### Removing User Membership from a Site
 
@@ -44,7 +44,7 @@ There are two ways to remove a User from a Site. To remove an individual member,
 
 3.  In the pop-up that appears, confirm the removal.
 
-![Figure 3: Selecting to remove a user. ](./images/remove-user.png)
+![Figure 3: Selecting to remove a user. ](./adding-members-to-sites/images/03.png)
 
 To bulk remove Users from a Site, follow these steps:
 
@@ -67,7 +67,7 @@ Roles grant permissions in Liferay Portal. Roles can be assigned for the entire 
 
 2.  Click *Done*.
 
-![Figure 4: Assigning Site Roles.](./images/assigning-site-roles.png)
+![Figure 4: Assigning Site Roles.](./adding-members-to-sites/images/04.png)
 
 ## Additional Information
 
