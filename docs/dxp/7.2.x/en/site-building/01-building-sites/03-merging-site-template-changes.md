@@ -2,7 +2,7 @@
 
 Once changes are made to a Site created from a Site Template, the Site Template and Site become unlinked. Any changes made to the Site Template from that point on *are not propagated* to the Site. You can relink the Site to the Site Template by clicking the Information icon (![Information](../../../images/icon-control-menu-information.png)) that appears in the Control Menu and clicking the *Reset Changes* link. This merges any updates from the Site Template and also reverts any changes made to the page. If multiple site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button for each page. 
 
-![Figure 1: You can click the Information icon to view important information about your Site template.](./images/merging-site-template-changes/01.png)
+![Figure 1: You can click the Information icon to view important information about your Site template.](./merging-site-template-changes/images/01.png)
 
 ## Merging App Preferences from Site Templates
 
@@ -26,4 +26,4 @@ In some cases, merging Site template and Site changes fails. For example, if pag
 
 >**Note:** This helpful process can also be done with page template merges, which follows similar steps.
 
-![Figure 2: This type of warning is given when there are friendly URL conflicts with Site template pages.](./images/merging-site-template-changes/02.png)
+![Figure 2: This type of warning is given when there are friendly URL conflicts with Site template pages.](./merging-site-template-changes/images/02.png)
