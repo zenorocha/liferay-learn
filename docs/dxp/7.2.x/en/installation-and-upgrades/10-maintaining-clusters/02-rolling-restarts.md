@@ -34,12 +34,12 @@ Revertible fix packs can be removed in rolling restarts.
 
 ## Portal Properties controlled by portal-ext.properties
  
-[Portal Properties](../08-reference/03-portal-properties.md) 
+[Portal Properties](../14-reference/03-portal-properties.md) 
 file changes can be applied in rolling restarts. 
 
 ## System Settings controlled by Configuration Admin Files
 
-[System configuration](../08-reference/02-configuration-files.md)
+[System configuration](../14-reference/04-system-properties.md)
 files can be applied in rolling restarts. 
 
 ## Application Server or JVM setting modifications
