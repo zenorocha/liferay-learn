@@ -254,7 +254,7 @@ If UTF-8 has not been enabled by adding the `-Dfile.encoding=UTF-8` property in 
 
 Once the changes have been saved, DXP can parse special characters if there is localized content.
 
-## Deploy DXP
+## Deploying the DXP `.war` File
 
 1. In WebSphere's administrative console, click *Applications* &rarr; *New Application* &rarr; *New Enterprise Application*.
 1. Browse to the DXP `.war` file, select it, and click *Next*.

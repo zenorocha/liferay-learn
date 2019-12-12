@@ -41,7 +41,7 @@ Once your application server is ready, see [Connecting a Database](#connecting-a
 
 ### Manually Deploying to an Application Server
 
-Liferay DXP can be manually deployed to [Tomcat](placeholder-link), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) application servers.
+Liferay DXP can be manually deployed to [Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](placeholder-link), [JBoss EAP](placeholder-link), [WebLogic](placeholder-link), or [WebSphere](./01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md) application servers.
 
 Manual deployments require the use of the Liferay DXP `.war` file and other dependencies. To learn more about these files and other available Liferay DXP downloads see [Obtaining Liferay](./03-obtaining-liferay.md).
 

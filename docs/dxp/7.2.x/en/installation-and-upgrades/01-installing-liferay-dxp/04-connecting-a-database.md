@@ -117,7 +117,7 @@ Users may also [use the Setup Wizard](./05-using-the-setup-wizard.md) to configu
 
 If using the application server to manage the data source, review the installation documentation for the relevant application server:
 
-* [Installing Liferay DXP on Tomcat](https://help.liferay.com/hc/en-us/articles/360029031491-Installing-Liferay-DXP-on-Tomcat#database-configuration)
+* [Installing Liferay DXP on Tomcat](./01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md#database-configuration)
 * [Installing Liferay DXP on WildFly](https://help.liferay.com/hc/en-us/articles/360029123751-Installing-Liferay-DXP-on-Wildfly#database-configuration)
 * [Installing Liferay DXP on JBoss EAP](https://help.liferay.com/hc/en-us/articles/360028810012-Installing-Liferay-DXP-on-JBoss-EAP#database-configuration)
 * [Installing Liferay DXP on WebLogic 12c R2](https://help.liferay.com/hc/en-us/articles/360028831932-Installing-Liferay-DXP-on-WebLogic-12c-R2#database-configuration)
