@@ -1,16 +1,10 @@
 # Deprecations in Liferay DXP 7.2
 
-Liferay DXP will sometimes stop developing or remove features with new versions. In DXP 7.2, Liferay has deprecated several apps and features.
+Liferay DXP will sometimes stop developing or archive features with new versions. In DXP 7.2, Liferay has deprecated several apps and features.
 
-Liferay uses three different forms of feature deprecation:
+Features in Liferay DXP that have been deprecated may still be present either in the core product, or as a [Marketplace download](https://web.liferay.com/marketplace). Deprecated features may be archived in a future release. Archived apps are no longer maintained or released with new versions of Liferay DXP.
 
-1. Deprecated features that remain in DXP 7.2, but will be removed in a future release. (Availability: *Bundled*)
-
-2. Deprecated features that have been removed from DXP 7.2, yet are still available for download via [Liferay Marketplace](https://web.liferay.com/marketplace) (Availability: *Marketplace*)
-
-3. Deprecated features that have been removed from DXP 7.2 and aren't available for download. (Availability: *Removed*) <!-- isn't this basically feature removed and not even deprecated? -->
-
-> **Note:** All applications deprecated by Liferay are no longer in active development. You should therefore plan to stop using these applications. Such applications, however, may still be available for download.
+> **Note:** All applications deprecated by Liferay are no longer in active development. You should therefore plan to stop using these applications.
 
 Features deprecated in earlier versions of Liferay DXP may also need to be considered, if you are upgrading from an earlier version than 7.1. See the following deprecations for any versions between your version pre-upgrade and 7.2:
 
@@ -23,17 +17,17 @@ The deprecations in DXP 7.2 are as follows:
 
 | Feature |  Availability |  Notes |
 | --- | ------------- | ------ |
-| AlloyUI | Bundled | Replaced by [MetalJS](https://metaljs.com/) (temporary) exposed as [ClayUI tag](https://help.liferay.com/hc/en-us/articles/360028832192-Front-End-Taglibs) equivalents. |  
-| CMIS Store | Removed | Migrate to another [Document Repository Store option](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration). Before [upgrading to DXP 7.2](./01-introduction-to-upgrading-to-liferay-dxp-7-2.md), migrate your document store data using [Data Migration in Server Administration](https://help.liferay.com/hc/en-us/articles/360029131691-Server-Administration). |
-| JCRStore | Removed | Migrate to another [Document Repository Store option](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration). Before [upgrading to DXP 7.2](./01-introduction-to-upgrading-to-liferay-dxp-7-2.md), migrate your document store data using [Data Migration in Server Administration](https://help.liferay.com/hc/en-us/articles/360029131691-Server-Administration). |
-| Legacy Search Portlet | Bundled | Will be removed in a future release. This will be replaced by the [Search widgets](https://help.liferay.com/hc/en-us/articles/360029133791-Introduction-to-Search). |
+| AlloyUI | Bundled | Replaced by [MetalJS](https://metaljs.com/) (temporary) exposed as [ClayUI tag](https://help.liferay.com/hc/en-us/articles/360028832192-Front-End-Taglibs) equivalents. |
+| CMIS Store | Archived | Migrate to another [Document Repository Store option](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration). Before [upgrading to DXP 7.2](./01-introduction-to-upgrading-to-liferay-dxp-7-2.md), migrate your document store data using [Data Migration in Server Administration](https://help.liferay.com/hc/en-us/articles/360029131691-Server-Administration). |
+| JCRStore | Archived | Migrate to another [Document Repository Store option](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration). Before [upgrading to DXP 7.2](./01-introduction-to-upgrading-to-liferay-dxp-7-2.md), migrate your document store data using [Data Migration in Server Administration](https://help.liferay.com/hc/en-us/articles/360029131691-Server-Administration). |
+| Legacy Search Portlet | Bundled | Will be archived in a future release. This will be replaced by the [Search widgets](https://help.liferay.com/hc/en-us/articles/360029133791-Introduction-to-Search). |
 | Sprite framework | Bundled | Liferay's image sprite framework is deprecated and is disabled by default via the `sprite.enabled` [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties). You can still build image sprites using any framework you like and deploy them in your plugins. |
 
 ## Personalization
 
 | Feature |  Availability |  Notes |
 | --- | ------------- | ------ |
-| Audience Targeting | Removed | Replaced by [Personalization](https://help.liferay.com/hc/en-us/articles/360028721372-Introduction-to-Segmentation-and-Personalization) (see [Migrating from Audience Targeting](./96-migrating-from-audience-targeting/01-migrating-from-audience-targeting.md)). | 
+| Audience Targeting | Archived | Replaced by [Personalization](https://help.liferay.com/hc/en-us/articles/360028721372-Introduction-to-Segmentation-and-Personalization) (see [Migrating from Audience Targeting](./96-migrating-from-audience-targeting/01-migrating-from-audience-targeting.md)). |
 
 ## Web Experience
 
@@ -47,7 +41,13 @@ The deprecations in DXP 7.2 are as follows:
 
 | Feature | Availability | Notes |
 | --- | ------------------ | ----------- |
-| Web Form | Removed | Final version released for 7.0. |
+| Web Form | Archived | Final version released for 7.0. |
+
+## Search
+
+| Feature | Availability | Notes |
+| --- | ------------- | ------ |
+| Search Portlet | Archived | Replaced by multiple Search widgets |
 
 ## Security
 
@@ -68,4 +68,4 @@ The deprecations in DXP 7.2 are as follows:
 
 ## Applications in Maintenance Mode
 
-Although no action is immediately necessary, you may also want to consider applications that are put into maintenance mode in DXP 7.2. These applications are not being deprecated or removed, but will no longer receive updates other than bug fixes. See [Features in Maintenance Mode](./99-features-in-maintenance-mode.md) for more information.
+Although no action is immediately necessary, you may also want to consider applications that are put into maintenance mode in DXP 7.2. These applications are not being deprecated or archived, but will no longer receive updates other than bug fixes. See [Features in Maintenance Mode](./99-features-in-maintenance-mode.md) for more information.
