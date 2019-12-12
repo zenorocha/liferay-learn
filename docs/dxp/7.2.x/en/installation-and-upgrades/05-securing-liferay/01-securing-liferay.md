@@ -45,7 +45,7 @@ There are many ways to fine-tune or disable additional security features:
 
 These features can be configured using [portal properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html).
 
-> **Important:** Liferay Portal's philosophy is "secure by default." Administrators should exercise significant caution when modifying security-specific defaults or white-lists. Such actions may lead to security misconfiguration and an insecure deployment.
+> **Important:** Liferay Portal's philosophy is "secure by default." Please exercise significant caution when modifying security-specific defaults or white-lists. Such actions may lead to security misconfiguration and an insecure deployment.
 
 ## Additional Information
 
