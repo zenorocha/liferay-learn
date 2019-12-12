@@ -8,4 +8,4 @@ As an Administrator, when you view a page, you can preview the different experie
  
 Viewing the perspective of a User Segment previews any personalizations for Content Pages or Content Sets for that User Segment.
 
-![Figure 1: You can preview different experiences from the Preview Panel.](./images/personalization-segment-preview.png)
+![Figure 1: You can preview different experiences from the Preview Panel.](./previewing-user-experiences/images/01.png)

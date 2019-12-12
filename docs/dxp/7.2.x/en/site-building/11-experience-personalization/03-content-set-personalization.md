@@ -6,15 +6,15 @@ You can modify Content Sets to create a personalized variation for members of a 
 
 2.  Select an existing Content Set or [create a new Content Set](TODO).
 
-3.  Click the *Actions* button ![Actions](./images/icon-actions.png) &rarr; *Edit* for the Content Set you wish to personalize.
+3.  Click the *Actions* button ![Actions](../../../images/icon-actions.png) &rarr; *Edit* for the Content Set you wish to personalize.
 
 4.  Click the *New Personalized Variation* button next to the Content Set if there are *No Personalized Variations yet*, otherwise click the `+` button next to Personalized Variations.
 
-    ![Figure 2: Create a new Personalized Variation.](./images/create-personalized-variation.png)
+    ![Figure 1: Create a new Personalized Variation.](./content-set-personalization/images/01.png)
 
 5.  Select a User Segment from the next page to create a variation for that User Segment.
 
-    ![Figure 3: Select a User Segment to create a variation for it.](./images/select-content-set-variation.png)
+    ![Figure 2: Select a User Segment to create a variation for it.](./content-set-personalization/images/02.png)
 
 6.  Select the content that you want to display for the Content Set in the selected User Segment.
 
@@ -26,6 +26,6 @@ To edit or manage a Content Set Variation,
 
 1.  Click on the User Segment name under *Personalized Variations* or click *Anyone* to modify the default variation.
 
-2.  Click on the *Actions* button (![Actions](./images/icon-actions.png)) next to the User Segment and select *View Content* to preview the content in that set or *Delete* to remove it.
+2.  Click on the *Actions* button (![Actions](../../../images/icon-actions.png)) next to the User Segment and select *View Content* to preview the content in that set or *Delete* to remove it.
 
-![Figure 4: You can preview or delete a Personalized Variation from the *Actions* menu.](./images/manage-content-set-segments.png)
+![Figure 3: You can preview or delete a Personalized Variation from the *Actions* menu.](./content-set-personalization/images/03.png)

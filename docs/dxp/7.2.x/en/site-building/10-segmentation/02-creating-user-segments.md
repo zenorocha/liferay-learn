@@ -12,20 +12,20 @@ Segments use User data like the *Job Title* field and Organization membership fo
 
     You can prevent typos by directly selecting Organizations through the interface.
 
-    ![Figure 1: You can prevent typos by directly selecting Organizations through the interface.](./images/sp-select-orgs.png)
+    ![Figure 1: You can prevent typos by directly selecting Organizations through the interface.](./creating-user-segments/images/01.png)
 
     The example in the figure below creates a User Segment for Users that have "Engineer" as their job title.
 
-    ![Figure 2: Setting the comparator to *contains* includes variations of "Engineer" like "Software Engineer" in the segment.](./images/sp-set-date.png)
+    ![Figure 2: Setting the comparator to *contains* includes variations of "Engineer" like "Software Engineer" in the segment.](./creating-user-segments/images/02.png)
 
     As you edit, a count of members meeting the criteria appears at the top of the page. You can click on *View Members* to see the list. This helps you determine if you are correctly defining the Segment.
 
-    ![Figure 3: You can view the list of Segment members at any time.](./images/sp-segment-members.png)
+    ![Figure 3: You can view the list of Segment members at any time.](./creating-user-segments/images/03.png)
 
 5.  Click *Save* to save your User Segment.
 
 6.  After you create your User Segment, you can see it in the list of User Segments on the *Segments* page. From here you can manage the User Segment (edit it, delete it, or change the permissions (who can access the User Segment) for it) through it's Actions Menu (![Actions](./images/icon-actions.png)). You can also click on the User Segment's name to edit it.
 
-![Figure 4: You can edit, delete or manage permissions from the options menu.](./images/sp-options.png)
+![Figure 4: You can edit, delete or manage permissions from the options menu.](./creating-user-segments/images/04.png)
 
 >**Note:** You can't delete a User Segment if it's being used in an experience.

@@ -10,7 +10,7 @@ While [creating a User Segment](./02-creating-user-segments.md), you must use th
 
 At the top of the editor you can set the name, view the current members of the segment as it is defined, and choose to *Save* the Segment or *Cancel* to discard changes.
 
-![Figure 1: The top portion of the Segment Editor has the segment name and its members.](./images/sp-editor-top.png)
+![Figure 1: The top portion of the Segment Editor has the segment name and its members.](./the-segments-editor/images/01.png)
 
 On the right side of the page, there's a Properties menu with these options:
 
@@ -18,7 +18,7 @@ On the right side of the page, there's a Properties menu with these options:
 - Organization
 - Session
 
-![Figure 2: You use the Segment Editor to create new Segments.](./images/sp-segment-editor-full.png)
+![Figure 2: You use the Segment Editor to create new Segments.](./the-segments-editor/images/02.png)
 
 Operations and conjunctions are combined with the properties to define criteria.
 

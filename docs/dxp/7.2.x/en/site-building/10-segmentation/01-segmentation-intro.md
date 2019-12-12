@@ -19,4 +19,4 @@ There are two different stories that User Segments can tell:
 
 To tell the second story, you must integrate with Analytics Cloud.
 
-Analytics Cloud is a Liferay Portal service that provides in-depth information on who uses your site and how they use it. Analytics Cloud is a key component to fully utilizing User Segments and Personalization, since it enables you to see the full picture of how users and visitors on your site behave and interact with both standard and targeted content. You can learn more about this in [Using Analytics Cloud with User Segments](TODO).
+Analytics Cloud is a Liferay Portal service that provides in-depth information on who uses your site and how they use it. Analytics Cloud is a key component to fully utilizing User Segments and Personalization, since it enables you to see the full picture of how users and visitors on your site behave and interact with both standard and targeted content. You can learn more about this in [Using Analytics Cloud with User Segments](./04-analytics-cloud-segmentation.md).
