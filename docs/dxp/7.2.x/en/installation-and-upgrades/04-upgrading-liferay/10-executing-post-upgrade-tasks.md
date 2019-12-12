@@ -20,7 +20,7 @@ indexReadOnly=true
 
 Once indexing is enabled and your search engine is configured, re-index Liferay DXP's search indices. In DXP 7.2, you can do this in the UI after starting up Liferay DXP by navigating to _Control Panel_ → _Configuration_ → _Search_ and then clicking _Reindex all search indexes_.
 
-![Reindex from the _Search_ configuration page in the Control Panel.](./executing-post-upgrade-tasks/images/01.png)
+![Reindex from the Search configuration page in the Control Panel.](./executing-post-upgrade-tasks/images/01.png)
 
 ## Enable Web Content View Permissions
 
@@ -28,7 +28,7 @@ Prior to DXP 7.1, all users could view Web Content articles by default. Now view
 
 **Option 1:** Open view permissions for all web content articles by navigating to _Control Panel_ → _Configuration_ → _System Settings_ → _Web Content_ → _Virtual Instance Scope_ → _Web Content_ and de-selecting _Article view permissions check enabled_.
 
-![Disable the permissions check for viewing web content by scrolling down in the _Web Content_ menu in the System Settings.](./executing-post-upgrade-tasks/images/02.png)
+![Disable the permissions check for viewing web content by scrolling down in the Web Content menu in the System Settings.](./executing-post-upgrade-tasks/images/02.png)
 
 **Option 2:** If not many Web Content articles exist, then edit view permissions per Web Content article per role.
 
