@@ -1,6 +1,8 @@
-# Installation and Upgrades
+Installation and Upgrades
+=========================
 
-## Installing Liferay DXP
+Installing Liferay DXP
+----------------------
 
 * [Getting Started with Liferay DXP](./01-installing-liferay-dxp/01-getting-started-with-liferay-dxp.md)
 * [Installation Overview](./01-installing-liferay-dxp/02-installation-overview.md)
@@ -12,7 +14,8 @@
 * Installing Trial Plugins
 * [Setting Up Marketplace](./01-installing-liferay-dxp/09-setting-up-marketplace.md)
 
-### Installing Liferay on an Application Server
+Installing Liferay on an Application Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * [Installing Liferay on Tomcat](./01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md)
 * Installing Liferay on WildFly
@@ -20,7 +23,8 @@
 * Installing Liferay on WebLogic
 * [Installing Liferay on WebSphere](./01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md)
 
-## Setting Up Liferay DXP
+Setting Up Liferay DXP
+----------------------
 
 * Configuration Overview
 * Installing a Search Engine
@@ -28,26 +32,30 @@
 * Connecting to a Mail Server
 * Selecting Your Locale and Encoding
 
-### Performance and Scalability
+Performance and Scalability
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Configuring Clustering for High Availability
 * Using a Content Delivery Network
 * Tuning your JVM
 * Setting Up Remote Staging
 
-## Securing Liferay
+Securing Liferay
+----------------
 
 * [Securing Liferay](./05-securing-liferay/01-securing-liferay.md)
 * [Configuring Authentication](./05-securing-liferay/02-configuring-authentication.md)
 
-### Securing Web Services
+Securing Web Services
+~~~~~~~~~~~~~~~~~~~~~
 
 * [Securing Web Services](./05-securing-liferay/04-securing-web-services/01-securing-web-services.md)
 * [Setting Service Access Policies](./05-securing-liferay/04-securing-web-services/03-setting-service-access-policies.md)
 * [Using Auth Verifiers](./05-securing-liferay/04-securing-web-services/04-using-auth-verifiers.md)
 * [Setting up CORS](./05-securing-liferay/04-securing-web-services/05-setting-up-cors.md)
 
-### Using an SSO with Liferay DXP
+Using an SSO with Liferay DXP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Token-Based Authentication
 * Using OpenID Connect
@@ -57,7 +65,8 @@
 * Connecting to LDAP
 * Using OAuth 2.0
 
-## Upgrading Liferay
+Upgrading Liferay
+-----------------
 
 * [Introduction to Upgrading To Liferay DXP 7.2](./04-upgrading-liferay/01-introduction-to-upgrading-to-liferay-dxp-7-2.md)
 * [Upgrading the Database](./04-upgrading-liferay/02-upgrading-the-database.md)
@@ -70,31 +79,36 @@
 * [Upgrading Modules Using Gogo Shell](./04-upgrading-liferay/09-upgrading-modules-using-gogo-shell.md)
 * [Executing Post Upgrade Tasks](./04-upgrading-liferay/10-executing-post-upgrade-tasks.md)
 
-### Unique Upgrade Scenarios
+Unique Upgrade Scenarios
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 * [Upgrading a Sharded Environment](./04-upgrading-liferay/97-upgrading-a-sharded-environment.md)
 * [Deprecations in Liferay DXP 7.2](./04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2.md)
 * [Features in Maintenance Mode](./04-upgrading-liferay/99-features-in-maintenance-mode.md)
 * Migrating from Audience Targeting to Segmentation and Personalization
 
-## Maintaining a Liferay DXP Installation
+Maintaining a Liferay DXP Installation
+--------------------------------------
 
 * Installing Patches
 * Backing Up
 
-### Maintaining Clustered Installations
+Maintaining Clustered Installations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Rolling Restarts
 * Blue-Green Deployments
 
-## Liferay Connected Services
+Liferay Connected Services
+--------------------------
 
 * Introduction to Managing Liferay DXP with Liferay Connected Services
 * Getting Started with LCS
 * Preliminary LCS Configuration
 * Registering Your Liferay DXP Server with LCS
 
-### Using LCS
+Using LCS
+~~~~~~~~~
 
 * What LCS Stores About Your Liferay DXP Servers
 * Managing LCS Users in Your Project
@@ -106,12 +120,14 @@
 * Understanding Environment Tokens
 * Troubleshooting Your LCS Connection
 
-## Troubleshooting Deployments
+Troubleshooting Deployments
+---------------------------
 
 * Database Not Ready
 * Switching Databases
 
-## Reference
+Reference
+---------
 
 * [Liferay Home](./14-reference/01-liferay-home.md)
 * Configuration Files

@@ -3,9 +3,10 @@ Contents
 
 .. toctree::
    :glob:
-   :hidden:
+   :includehidden:
+   :maxdepth: 4
 
-   **/*
+   installation_and_upgrades
 
 
 Indices and tables
