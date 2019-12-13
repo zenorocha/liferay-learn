@@ -4,24 +4,24 @@ Installation and Upgrades
 Installing Liferay DXP
 ----------------------
 
-* [Getting Started with Liferay DXP](./01-installing-liferay-dxp/01-getting-started-with-liferay-dxp.md)
-* [Installation Overview](./01-installing-liferay-dxp/02-installation-overview.md)
-* [Obtaining Liferay DXP](./01-installing-liferay-dxp/03-obtaining-liferay.md)
-* [Connecting a Database](./01-installing-liferay-dxp/04-connecting-a-database.md)
-* [Using the Setup Wizard](./01-installing-liferay-dxp/05-using-the-setup-wizard.md)
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/01-getting-started-with-liferay-dxp`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/03-obtaining-liferay`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/04-connecting-a-database`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard`
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 * Activating Liferay DXP
 * Installing Trial Plugins
-* [Setting Up Marketplace](./01-installing-liferay-dxp/09-setting-up-marketplace.md)
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/09-setting-up-marketplace`
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* [Installing Liferay on Tomcat](./01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md)
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat`
 * Installing Liferay on WildFly
 * Installing Liferay on JBoss
 * Installing Liferay on WebLogic
-* [Installing Liferay on WebSphere](./01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md)
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere`
 
 Setting Up Liferay DXP
 ----------------------
@@ -43,16 +43,16 @@ Performance and Scalability
 Securing Liferay
 ----------------
 
-* [Securing Liferay](./05-securing-liferay/01-securing-liferay.md)
-* [Configuring Authentication](./05-securing-liferay/02-configuring-authentication.md)
+-  :doc:`/installation-and-upgrades/05-securing-liferay/01-securing-liferay`
+-  :doc:`/installation-and-upgrades/05-securing-liferay/02-configuring-authentication`
 
 Securing Web Services
 ~~~~~~~~~~~~~~~~~~~~~
 
-* [Securing Web Services](./05-securing-liferay/04-securing-web-services/01-securing-web-services.md)
-* [Setting Service Access Policies](./05-securing-liferay/04-securing-web-services/03-setting-service-access-policies.md)
-* [Using Auth Verifiers](./05-securing-liferay/04-securing-web-services/04-using-auth-verifiers.md)
-* [Setting up CORS](./05-securing-liferay/04-securing-web-services/05-setting-up-cors.md)
+-  :doc:`/installation-and-upgrades/05-securing-liferay/04-securing-web-services/01-securing-web-services`
+-  :doc:`/installation-and-upgrades/05-securing-liferay/04-securing-web-services/03-setting-service-access-policies`
+-  :doc:`/installation-and-upgrades/05-securing-liferay/04-securing-web-services/04-using-auth-verifiers`
+-  :doc:`/installation-and-upgrades/05-securing-liferay/04-securing-web-services/05-setting-up-cors`
 
 Using an SSO with Liferay DXP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,23 +68,23 @@ Using an SSO with Liferay DXP
 Upgrading Liferay
 -----------------
 
-* [Introduction to Upgrading To Liferay DXP 7.2](./04-upgrading-liferay/01-introduction-to-upgrading-to-liferay-dxp-7-2.md)
-* [Upgrading the Database](./04-upgrading-liferay/02-upgrading-the-database.md)
-* [Pruning the Database](./04-upgrading-liferay/03-pruning-the-database.md)
-* [Example: Removing Intermediate Journal Article Versions](./04-upgrading-liferay/04-example-removing-intermediate-journal-article-versions.md)
-* [Tuning for the Data Upgrade](./04-upgrading-liferay/05-tuning-for-the-data-upgrade.md)
-* [Preparing a New Application Server for Liferay DXP](./04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md)
-* [Configuring the Data Upgrade Tool](./04-upgrading-liferay/07-configuring-the-data-upgrade-tool.md)
-* [Using the Upgrade Tool](./04-upgrading-liferay/08-using-the-upgrade-tool.md)
-* [Upgrading Modules Using Gogo Shell](./04-upgrading-liferay/09-upgrading-modules-using-gogo-shell.md)
-* [Executing Post Upgrade Tasks](./04-upgrading-liferay/10-executing-post-upgrade-tasks.md)
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/01-introduction-to-upgrading-to-liferay-dxp-7-2`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/02-upgrading-the-database`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/03-pruning-the-database`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/04-example-removing-intermediate-journal-article-versions`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/05-tuning-for-the-data-upgrade`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/07-configuring-the-data-upgrade-tool`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/08-using-the-upgrade-tool`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/09-upgrading-modules-using-gogo-shell`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/10-executing-post-upgrade-tasks`
 
 Unique Upgrade Scenarios
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* [Upgrading a Sharded Environment](./04-upgrading-liferay/97-upgrading-a-sharded-environment.md)
-* [Deprecations in Liferay DXP 7.2](./04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2.md)
-* [Features in Maintenance Mode](./04-upgrading-liferay/99-features-in-maintenance-mode.md)
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/97-upgrading-a-sharded-environment`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2`
+-  :doc:`/installation-and-upgrades/04-upgrading-liferay/99-features-in-maintenance-mode`
 * Migrating from Audience Targeting to Segmentation and Personalization
 
 Maintaining a Liferay DXP Installation
@@ -129,12 +129,12 @@ Troubleshooting Deployments
 Reference
 ---------
 
-* [Liferay Home](./14-reference/01-liferay-home.md)
+-  :doc:`/installation-and-upgrades/14-reference/01-liferay-home`
 * Configuration Files
 * Portal Properties
-* [System Properties](./14-reference/04-system-properties.md)
-* [JVM Configurations](./14-reference/05-jvm-configurations.md)
-* [Database Templates](./14-reference/05-database-templates.md)
-* [Liferay Upgrade Planner Steps](./14-reference/06-liferay-upgrade-planner-steps.md)
-* [Comparing Patch Levels](./14-reference/07-comparing-patch-levels.md)
-* [Patching Tool Configuration](./14-reference/08-patching-tool-configuration-properties.md)
+-  :doc:`/installation-and-upgrades/14-reference/04-system-properties`
+-  :doc:`/installation-and-upgrades/14-reference/05-jvm-configurations`
+-  :doc:`/installation-and-upgrades/14-reference/05-database-templates`
+-  :doc:`/installation-and-upgrades/14-reference/06-liferay-upgrade-planner-steps`
+-  :doc:`/installation-and-upgrades/14-reference/07-comparing-patch-levels`
+-  :doc:`/installation-and-upgrades/14-reference/08-patching-tool-configuration-properties`
