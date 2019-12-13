@@ -15,16 +15,11 @@ You can configure other ways of authenticating users and/or applications:
 * [Token-Based solutions](../06-sso/01-token-based-authentication.md)
 * [OAuth 2.0](../06-sso/07-oauth-2.md)
 
-[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and
-[Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems. 
+[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems. 
 
-## Using and Configuring the Sign In Widget
+## Authentication Types
 
-The Sign In widget checks and stores user credentials in the portal database and can also check against users stored in an LDAP server. The Sign In widget's behavior can be configured and customized in several ways.
-
-### Authentication Types
-
-When using the Sign In widget, users can be configured to log in using one of three authentication types:
+Users can be configured to log in using one of three authentication types:
 
 | Authentication Type | Description | Used by Default? |
 | --- | --- | --- |
@@ -34,11 +29,11 @@ When using the Sign In widget, users can be configured to log in using one of th
 
 > **Note:** Only one authentication type can be used at a time.
 
-Regardless of the authentication type, users must always enter a password. [Password Policies](../../user-and-system-administration/password-policies.md) can be created and configured to place restrictions on password length, special characters, or other requirements.
+Regardless of the authentication type, users must always enter a password. You can create [Password Policies](../../user-and-system-administration/password-policies.md) to define password length, password format, expiration periods, and more.
 
-_Authentication Type_ can be configured by an Administrator through the Control Panel or through a properties file.
+_Authentication Type_ can be configured through the Control Panel or a properties file.
 
-#### Configuring Authentication Type Through the Control Panel
+### Configuring Authentication Type Through the Control Panel
 
 1. Navigate to the Control Panel
 1. Click on *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*
@@ -46,7 +41,7 @@ _Authentication Type_ can be configured by an Administrator through the Control 
 
     ![Figure 1: You can select from three types of authentication.](./configuring-authentication/images/03.png)
 
-#### Configuring Authentication Type Using Properties
+### Configuring Authentication Type Using Properties
 
 To use the [`portal-ext.properties`](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) file, paste in the below properties and uncomment the desired authentication type:
 
@@ -55,6 +50,9 @@ company.security.auth.type=emailAddress
 #company.security.auth.type=screenName
 #company.security.auth.type=userId
 ```
+## Using and Configuring the Sign In Widget
+
+The Sign In widget calls the various mechanisms (the portal database, an LDAP server, a SAML identity provider, or any of the ways users can authenticate) that authenticate users. Its behavior can be configured and customized in several ways.
 
 ### Disabling Guest Account Creation
 
