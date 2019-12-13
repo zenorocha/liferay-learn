@@ -1,5 +1,48 @@
 # Site Building
 
+* [Introduction to Site Building](./01-introduction-to-site-building.md)
+
+## Building Sites
+
+* [Adding Sites](./01-building-sites/01-adding-sites.md)
+* [Building Sites with Site Templates](./01-building-sites/02-building-sites-with-site-templates.md)
+* [Merging Site Template Changes](./01-building-sites/03-merging-site-template-changes.md)
+* [Sharing Site Templates](./01-building-sites/04-sharing-site-templates.md)
+* [Adding Members to Sites](./01-building-sites/05-adding-members-to-sites.md)
+* [Creating Teams for Sites](./01-building-sites/06-creating-teams-for-sites.md)
+* [Site Hierarchies](./01-building-sites/07-site-hierarchies.md)
+* [Customizing Personal Sites](./01-building-sites/08-customizing-personal-sites.md)
+* [Importing/Exporting Sites and Content](./01-building-sites/09-importing-exporting-pages-and-content.md)
+* Staging
+
+## Creating Pages
+
+## Displaying Content
+
+* Using Web Content Display
+* Using Asset Publisher
+* Using the Iframe Widget
+
+### Using Fragments
+
+### Configuring Content Recommendations
+
+## Site Navigation
+
+## Personalizing Site Experience
+
+### Segmentation
+
+## Site Settings
+
+### Site Localization
+
+## Optimizing Sites
+
+### SEO Optimization
+
+### A/B Testing
+
 * User Guide
   * Building sites
   * Creating pages
