@@ -1,6 +1,6 @@
 # Setting Service Access Policies
 
-*Service Access Policies* define what services or service methods can be invoked remotely. You can apply many of them at once to produce a combined effect. They are the [second layer of security](./01-securing-web-services.md) (after IP permissions) for web services. Custom service access policies can be created by portal administrators. They are applied by the portal's token authenticator, e.g., by OAuth.
+*Service Access Policies* define what services or service methods can be invoked remotely. You can apply many of them at once to produce a combined effect. They are the [second layer of security](./01-securing-web-services.md) (after IP permissions) for web services. Custom service access policies can be created by portal administrators. They are applied by the portal's token authenticator (OAuth 2).
 
 Service Access Policies define a whitelist for methods exposed via web service invocation. You can use wildcards to define classes and methods that are whitelisted. Note that Service Access Policies respect the permissions system. If a policy grants a user access to a remote service, that user must still have the appropriate permissions to invoke that service.
 
@@ -10,31 +10,25 @@ To view and manage Service Access Policies, go to *Control Panel* &rarr; *Config
 
 ![Service Access Policies View](./setting-service-access-policies/images/01.png)
 
-There are 16 Service Access Policies enabled by default. Six of these have to do with the system:
-
-<!-- In 7.2 CE GA2 there appear to be 12 available out of the box not 16. @Rich maybe we should verify this? -->
+There are 12 Service Access Policies enabled by default. Five of these have to do with the system:
 
 **ASSET_ENTRY_DEFAULT:** Allows the view counter for assets to be updated when an asset is retrieved.
 
+**AUTHORIZED_OAUTH2_SAP:** Allows all REST requests authorized by OAuth 2. 
+
 **CALENDAR_DEFAULT:** Makes it possible to search public events in the calendar.
-
-**SYNC_DEFAULT:** Allows only the `com.liferay.sync.service.SyncDLObjectService.getSyncContext` method. It applies to every Liferay Sync request, including unauthenticated Sync requests.
-
-**SYNC_TOKEN:** Allows `com.liferay.sync.service.*`, meaning that any API function that's a method of a class in this package can be invoked. It applies to Sync requests which are accompanied by an authentication token.
 
 **SYSTEM_DEFAULT:** Allows access to country/region services by JavaScript calls, so users can switch languages on the fly. Applies to every request, including unauthenticated requests.
 
 **SYSTEM_USER_PASSWORD:** Allows any method to be invoked. Of course, since API functions include permission checks, this call works only if the user has the required permission. It applies to requests for which `AuthVerifierResult.isPasswordBasedAuthentication` is `true`: i.e., whenever user authentication took place using a password. If you want to completely disallow certain API functions from being invoked, you can change the `SYSTEM_USER_PASSWORD` policy to something more restrictive than `*`.
 
-> **Note:** `SYNC_DEFAULT`, `SYSTEM_DEFAULT`, and other policies with `Default` configured to `Yes` are applied to all incoming requests, including unauthenticated requests.
+> **Note:** `SYSTEM_DEFAULT`, and other policies with `Default` configured to `Yes` are applied to all incoming requests, including unauthenticated requests.
 
-The other 10 policies have to do with OAuth and JSON web services:
+The other seven policies have to do with OAuth and JSON web services:
 
 **OAUTH2_analytics.read/write:** Integrates with [Liferay Analytics Cloud](https://www.liferay.com/products/analytics-cloud), allowing it access to JSON web services.
 
 **OAUTH2_everything/read/documents/userprofile/write:** The Everything policies grant access to all the JSON web services for various reasons. Everything is everything: all JSON web services (matches `*`). The others match method signatures appropriate to their description. For example, OAUTH2_everything.read matches all methods starting with `fetch`, `get`, `has`, `is`, or `search`.
-
-**OAUTH_READ/WRITE:** These provide access to JSON web services via the OAuth 1.0a plugin.
 
 The default configuration makes available corresponding scopes that provide access to all web services shipped with the system. The scopes must be assigned to OAuth 1 or 2 applications before they become usable. Administrators should review the ones you want to use and disable the others.
 
@@ -80,7 +74,7 @@ To create a new Service Access Policy:
 > **Note:** If you know all the method signatures ahead of time, you can click *Switch to Advanced Mode* and enter them all in one field on separate lines.
 
 <!-- The following two paragraphs feel out of place; not sure where they should go. -->
-Liferay applications can declare their own default policies (the `SYNC_DEFAULT` policy is a good example). This policy can then be changed or disabled by administrators. In this case, the plugin can still verify that the policy exists so there is no need to redefine or update it.
+Liferay applications can declare their own default policies. This policy can then be changed or disabled by administrators. In this case, the plugin can still verify that the policy exists so there is no need to redefine or update it.
 
 By default, Liferay's tunneling servlet uses the `SYSTEM_USER_PASSWORD` service access policy. You can, however, create your own policy for the tunneling servlet and use the property `service.access.policy.name` for the `TunnelingServletAuthVerifier` to specify that your policy should be used instead.
 
@@ -102,8 +96,6 @@ Liferay's Service Access Policy module resides in the `modules/apps/service-acce
 These modules provide the service access policy management UI that's accessible from the Control Panel. They also provide the interface and default implementation for `ServiceAccessPolicy`.
 
 ## Configuring the Service Access Policy Module
-
-To configure the Service Access Policy module:
 
 1. Navigate to _Control Panel_ &rarr; _System Settings_ &rarr; _API Authentication_.
     ![Service Access Policy Module Location](./setting-service-access-policies/images/02.png)
