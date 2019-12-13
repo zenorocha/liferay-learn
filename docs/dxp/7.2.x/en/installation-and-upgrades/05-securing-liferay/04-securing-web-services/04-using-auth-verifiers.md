@@ -33,7 +33,7 @@ The resolved user can be the user returned by one of the `AuthVerifier` instance
 
 ## Configuring Built-In Authentication Verifiers
 
-`AuthVerifier`s are created by developers, and are processed automatically as long as they're registered in the OSGi runtime. This layer and surrounding processes are provided by the `AuthVerifierFilter` class that implements the `javax.servlet.Filter` interface. Configuration for Auth Verifiers that ship with the product include:
+`AuthVerifier`s are created by developers, and are processed automatically as long as they're registered in the OSGi runtime. This layer and surrounding processes are provided by the `AuthVerifierFilter` class that implements the `javax.servlet.Filter` interface. Configuration for Auth Verifiers that ship with the product include
 
 * [Basic Auth Header](#basic-auth-header)*
 * [Digest Authentication](#digest-auth-header)
