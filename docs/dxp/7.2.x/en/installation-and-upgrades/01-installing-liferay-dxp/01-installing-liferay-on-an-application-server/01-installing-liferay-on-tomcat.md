@@ -93,8 +93,11 @@ DXP depends on many JARs included by DXP Tomcat bundle. Some of the bundle's JAR
   * `configs`
   * `core`
   * `marketplace`
-  * `target-platform`
-  * `test`
+  * `modules`
+  * `portal`
+  * `state`
+  * `static`
+  * `war`
 
 ## Configuring Tomcat
 

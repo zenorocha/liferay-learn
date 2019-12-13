@@ -137,6 +137,10 @@ The following folders should be present within the `[LIFERAY_HOME]/liferay/osgi`
 1. `configs`
 1. `core`
 1. `marketplace`
+1. `modules`
+1. `portal`
+1. `state`
+1. `static`
 1. `war`
 
 ### Ensuring That the DXP Portlet.jar is Loaded First
@@ -289,7 +293,7 @@ Note that the DXP `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; thi
 ## Start DXP
 
 1. Start the application server.
-1. If administrators are using DXP's [setup wizard](https://help.liferay.com/hc/articles/360028711012-Installing-Liferay-DXP#using-the-setup-wizard), skip to the next step. However, if administrators are using WebSphere's data source and mail session, create a file called `portal-ext.properties` in the Liferay Home folder. Place the following configuration in the file:
+1. If administrators are using DXP's [setup wizard](../05-using-the-setup-wizard.md), skip to the next step. However, if administrators are using WebSphere's data source and mail session, create a file called `portal-ext.properties` in the Liferay Home folder. Place the following configuration in the file:
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool

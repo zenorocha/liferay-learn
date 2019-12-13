@@ -83,8 +83,8 @@ The best option for most people is to use the built-in data source.
 
 To connect Liferay DXP to a database using the built in data source follow these steps:
 
-1. Create a [`portal-ext.properties`](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) file if one does not already exist.
-    > **Note:** Many Liferay DXP configurations are done by writing them to a [`portal-ext.properties`](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) file and placing that file in the [`LIFERAY_HOME`](../14-reference/01-liferay-home.md) directory.
+1. Create a `portal-ext.properties` file if one does not already exist.
+    > **Note:** Many Liferay DXP configurations are done by writing them to a [`portal-ext.properties`](../14-reference/03-portal-properties.md) file and placing that file in the [`LIFERAY_HOME`](../14-reference/01-liferay-home.md) directory.
 1. Copy a set of `jdbc.*` properties from one of the [JDBC templates](../14-reference/05-database-templates.md) into the `portal-ext.properties` file.
 
     The MySQL JDBC connection properties listed as an example:

@@ -26,7 +26,7 @@ The entry point for many users starting Liferay DXP for the first time is the Se
 | **Last Name** | The administrator user's last name |
 | **Email** | The administrator user's email address |
 
-> **Note:** the administrator user's email domain is used as the DXP 7.2 instance's default domain (i.e., the [`company.default.web.id`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties)).
+> **Note:** the administrator user's email domain is used as the DXP 7.2 instance's default domain (i.e., the [`company.default.web.id`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Company) [portal property](../14-reference/03-portal-properties.md)).
 
 ## Database Configuration Reference
 
@@ -48,7 +48,7 @@ Click the *Change* link if using DXP 7.2's built-in data source and configuring 
 
 After filling out the Basic Configuration form, click *Finish Configuration*.
 
-The setup wizard creates a `[LIFERAY_HOME]/portal-setup-wizard.properties` file which stores the settings that you entered. For further configurations or customizations, use a [`portal-ext.properties`](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) file to make configurations or customizations without directly changing `portal.properties`.
+The setup wizard creates a `[LIFERAY_HOME]/portal-setup-wizard.properties` file which stores the settings that you entered. For further configurations or customizations, use a [`portal-ext.properties`](../14-reference/03-portal-properties.md) file to make configurations or customizations without directly changing `portal.properties`.
 
 > **Note:** Property values in `portal-setup-wizard.properties` (the file the setup wizards creates in [Liferay Home](../14-reference/01-liferay-home.md)) override property values in `portal-ext.properties`.
 
