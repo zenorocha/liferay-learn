@@ -14,7 +14,7 @@ There are 12 Service Access Policies enabled by default. Five of these have to d
 
 **ASSET_ENTRY_DEFAULT:** Allows the view counter for assets to be updated when an asset is retrieved.
 
-**AUTHORIZED_OAUTH2_SAP:** Allows all REST requests authorized by OAuth 2. 
+**AUTHORIZED_OAUTH2_SAP:** Allows all REST requests authorized by OAuth 2.
 
 **CALENDAR_DEFAULT:** Makes it possible to search public events in the calendar.
 

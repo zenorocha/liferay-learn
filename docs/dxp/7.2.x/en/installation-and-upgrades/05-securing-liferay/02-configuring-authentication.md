@@ -1,6 +1,6 @@
 # Configuring Authentication
 
-By default, Liferay DXP uses the *Sign In* widget to authenticate users. 
+By default, Liferay DXP uses the *Sign In* widget to authenticate users.
 
 > **Note:** The Sign In widget appears on the default home page at `http[s]://[server-name:port]/web/guest/home`. If the Sign In widget is unavailable on any page, it can be accessed directly via its URL: `http[s]://[server-name:port]/c/portal/login`.
 
@@ -15,7 +15,7 @@ You can configure other ways of authenticating users and/or applications:
 * [Token-Based solutions](../06-sso/01-token-based-authentication.md)
 * [OAuth 2.0](../06-sso/07-oauth-2.md)
 
-[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems. 
+[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
 
 ## Authentication Types
 
@@ -50,6 +50,7 @@ company.security.auth.type=emailAddress
 #company.security.auth.type=screenName
 #company.security.auth.type=userId
 ```
+
 ## Using and Configuring the Sign In Widget
 
 The Sign In widget calls the various mechanisms (the portal database, an LDAP server, a SAML identity provider, or any of the ways users can authenticate) that authenticate users. Its behavior can be configured and customized in several ways.

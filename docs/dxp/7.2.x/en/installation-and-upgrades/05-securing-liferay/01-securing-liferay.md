@@ -36,7 +36,7 @@ See [Securing Web Services](./04-securing-web-services/01-securing-web-services.
 
 ## Fine-Tuning Security
 
-There are many ways to fine-tune or disable additional security features: 
+There are many ways to fine-tune or disable additional security features:
 
 * Configure Liferay Portal's HTTPS [web server](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Web%20Server) address.
 * Configure the list of allowed servers to which users can be [redirected](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Redirect).
