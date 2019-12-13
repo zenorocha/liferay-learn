@@ -1,12 +1,12 @@
 # Configuring Authentication
 
-Liferay DXP, by default, uses the *Sign In* widget to authenticate users to the portal.
+By default, Liferay DXP uses the *Sign In* widget to authenticate users. 
 
-> **Note:** The Sign In widget can be seen on the default home page at `http[s]://[server-name:port]/web/guest/home`. If the Sign In widget is unavailable on any page, it can be accessed directly via its URL: `http[s]://[server-name:port]/c/portal/login`.
+> **Note:** The Sign In widget appears on the default home page at `http[s]://[server-name:port]/web/guest/home`. If the Sign In widget is unavailable on any page, it can be accessed directly via its URL: `http[s]://[server-name:port]/c/portal/login`.
 
 ![The default Liferay home page](./configuring-authentication/images/01.png)
 
-Administrators may use other methods of authenticating users and/or applications to their Liferay system, including the following:
+You can configure other ways of authenticating users and/or applications:
 
 * [LDAP](../06-sso/06-ldap.md)
 * [SAML](../06-sso/08-saml.md)
@@ -15,9 +15,8 @@ Administrators may use other methods of authenticating users and/or applications
 * [Token-Based solutions](../06-sso/01-token-based-authentication.md)
 * [OAuth 2.0](../06-sso/07-oauth-2.md)
 
-Authentication and authorization for remote applications can be implemented and managed by using [Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md).
-
-User and remote application authentication are also extensible. See [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) to learn more.
+[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and
+[Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems. 
 
 ## Using and Configuring the Sign In Widget
 
