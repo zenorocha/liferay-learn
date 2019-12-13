@@ -118,7 +118,6 @@
 * Portal Properties
 * [System Properties](./14-reference/04-system-properties.md)
 * [JVM Configurations](./14-reference/05-jvm-configurations.md)
-* [Upgrade Planner Steps](./14-reference/06-upgrade-planner-steps.md)
 * [Database Templates](./14-reference/05-database-templates.md)
 * [Liferay Upgrade Planner Steps](./14-reference/06-liferay-upgrade-planner-steps.md)
 * [Comparing Patch Levels](./14-reference/07-comparing-patch-levels.md)

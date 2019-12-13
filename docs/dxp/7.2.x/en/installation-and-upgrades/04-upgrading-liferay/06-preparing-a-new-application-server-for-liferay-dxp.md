@@ -120,7 +120,7 @@ Running this command will provide the names of migrated (or removed) properties,
 
 ## Update Your Database Driver
 
-Install the recommended database driver and update your database connection driver specified in your `portal-ext.properties`. See the [Database Templates](https://help.liferay.com/hc/en-us/articles/360028712332-Database-Templates) for more information.
+Install the recommended database driver and update your database connection driver specified in your `portal-ext.properties`. See the [Database Templates](../14-reference/05-database-templates.md) for more information.
 
 ## Configure Your Documents and Media File Store
 

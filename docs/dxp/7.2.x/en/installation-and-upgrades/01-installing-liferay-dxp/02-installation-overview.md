@@ -33,7 +33,7 @@ Using the Liferay Tomcat bundle is the simplest and fastest way to get started w
     cd liferay-ce-portal-7.2.1-ga2/
   ```
 
-> **Note:** The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) directory.
+> **Note:** The `liferay-ce-portal-7.2.1-ga2/` directory represents the [*Liferay Home*](../14-reference/01-liferay-home.md) directory.
 
 See [Obtaining Liferay](./03-obtaining-liferay.md) for more information about Liferay Downloads.
 

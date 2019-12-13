@@ -1,6 +1,6 @@
 # Database Templates
 
-Below are templates (example [portal properties](./02-portal-properties.md)) for configuring various databases as a built-in data source for @product@. 
+Below are templates (example [portal properties](./02-portal-properties.md)) for configuring various databases as a built-in data source for Liferay DXP.
 
 ## MariaDB
 
@@ -20,7 +20,7 @@ jdbc.default.username=
 jdbc.default.password=
 ```
 
-**Note:** MySQL Connector/J 8.0 is highly recommended for use with MySQL Server 8.0 and 5.7.
+> **Note:** MySQL Connector/J 8.0 is highly recommended for use with MySQL Server 8.0 and 5.7.
 
 ## PostgreSQL
 
@@ -31,4 +31,4 @@ jdbc.default.username=sa
 jdbc.default.password
 ```
 
-See the [default portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) for more database templates. 
+See the [default portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) for more database templates.

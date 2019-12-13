@@ -1,26 +1,26 @@
 # Patching Tool Configuration
 
-The Patching Tool is configured using properties. The `default.properties` file in the tool's root folder defines the default properties---files named `[profile-name].properties` define each patching profile's properties. Here are the patching tool configuration properties: 
+The Patching Tool is configured using properties. The `default.properties` file in the tool's root folder defines the default properties---files named `[profile-name].properties` define each patching profile's properties. Here are the patching tool configuration properties:
 
 **`patching.mode`:** Patches contain updated binary and source files. The patching tool has two modes:
 
-1. `binary` (the default): For updating your DXP installation. 
+1. `binary` (the default): For updating your DXP installation.
 
-2. `source`: For updating source trees that extend DXP. 
+2. `source`: For updating source trees that extend DXP.
 
-**`patches.folder`:** Specify where to store patches. The default location is `./patches`. 
+**`patches.folder`:** Specify where to store patches. The default location is `./patches`.
 
-**`war.path`:** Specify Liferay DXP's path inside your application server. Alternatively, you can specify a DXP `.war` file to patch and deploy to your application server. 
+**`war.path`:** Specify Liferay DXP's path inside your application server. Alternatively, you can specify a DXP `.war` file to patch and deploy to your application server.
 
-**`global.lib.path`:** Specify the location for storing `.jar` files on the global classpath. If you're not sure, search for `portal-kernel.jar`; it's on the global classpath. This property is only valid if your `patching.mode` is `binary`. 
+**`global.lib.path`:** Specify the location for storing `.jar` files on the global classpath. If you're not sure, search for `portal-kernel.jar`; it's on the global classpath. This property is only valid if your `patching.mode` is `binary`.
 
-**`liferay.home`:** Specify the parent folder of the `data`, `osgi`, and `tools` folders.
+**[`liferay.home`](./01-liferay-home.md):** Specify the parent folder of the `data`, `osgi`, and `tools` folders.
 
-**`source.path`:** Specify the path to your DXP source tree. This property is only valid if your `patching.mode` is `source`. 
+**`source.path`:** Specify the path to your DXP source tree. This property is only valid if your `patching.mode` is `source`.
 
 ## Proxy Settings
 
-Service Pack detection is available behind a proxy server. To configure your proxy, use the following settings, making sure to replace `[PROXY_IP_ADDRESS]` with your proxy server's IP address and replace the port numbers with yours: 
+Service Pack detection is available behind a proxy server. To configure your proxy, use the following settings, making sure to replace `[PROXY_IP_ADDRESS]` with your proxy server's IP address and replace the port numbers with yours:
 
 ```properties
 ### Proxy settings
@@ -47,4 +47,6 @@ proxy.https.password=password
 #proxy.socks.password=password
 ```
 
-[Configuring the Patching Tool](/docs/7-2/deploy/-/knowledge_base/d/configuring-the-patching-tool) demonstrates using the configuration properties. 
+<!-- The linked article below might need to be ported to the learn repo -->
+
+[Configuring the Patching Tool](/docs/7-2/deploy/-/knowledge_base/d/configuring-the-patching-tool) demonstrates using the configuration properties.

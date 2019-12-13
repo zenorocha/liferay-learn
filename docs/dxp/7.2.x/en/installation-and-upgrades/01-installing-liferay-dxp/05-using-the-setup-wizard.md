@@ -50,7 +50,7 @@ After filling out the Basic Configuration form, click *Finish Configuration*.
 
 The setup wizard creates a `[LIFERAY_HOME]/portal-setup-wizard.properties` file which stores the settings that you entered. For further configurations or customizations, use a [`portal-ext.properties`](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) file to make configurations or customizations without directly changing `portal.properties`.
 
-> **Note:** Property values in `portal-setup-wizard.properties` (the file the setup wizards creates in Liferay Home) override property values in `portal-ext.properties`.
+> **Note:** Property values in `portal-setup-wizard.properties` (the file the setup wizards creates in [Liferay Home](../14-reference/01-liferay-home.md)) override property values in `portal-ext.properties`.
 
 On finishing basic configuration, DXP prompts you to restart the server. DXP 7.2 initializes the database during the second startup process.
 

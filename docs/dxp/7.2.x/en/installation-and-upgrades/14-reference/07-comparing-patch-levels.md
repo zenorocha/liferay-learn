@@ -2,7 +2,7 @@
 
 The Patching Tool shows you what changed between different DXP patches and versions. These commands show you information about the different patch levels:
 
-`patching-tool diff`: Prints the differences between two patch levels. At least one stored patch level must be available. This command accepts options for filtering the output: 
+`patching-tool diff`: Prints the differences between two patch levels. At least one stored patch level must be available. This command accepts options for filtering the output:
 
 - `source`: Shows the source code differences between the two patch levels.
 - `files`: Lists the modified files.
@@ -12,7 +12,7 @@ The Patching Tool shows you what changed between different DXP patches and versi
 
 For detailed usage information, run `patching-tool help diff`.
 
-`patching-tool store`: Manages patching level information for the `diff` command. Your patches must contain source code to store the patch level and to prepare usable information for the `diff` command. Here are the `store` command options: 
+`patching-tool store`: Manages patching level information for the `diff` command. Your patches must contain source code to store the patch level and to prepare usable information for the `diff` command. Here are the `store` command options:
 
 - `info`: Prints the list of patches which make up the stored patch level.
 - `add`: Stores the patch level to the patches folder.
