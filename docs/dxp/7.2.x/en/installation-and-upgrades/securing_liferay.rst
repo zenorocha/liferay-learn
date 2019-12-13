@@ -9,5 +9,5 @@ Securing Liferay
    05-securing-liferay/01-securing-liferay.md
    05-securing-liferay/02-configuring-authentication.md
 
-.. include:: /05-securing-liferay/README.rst
+.. include:: /installation-and-upgrades/05-securing-liferay/README.rst
 	:start-line: 2

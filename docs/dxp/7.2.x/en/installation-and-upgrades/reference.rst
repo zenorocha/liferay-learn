@@ -12,5 +12,5 @@ Reference
    14-reference/07-comparing-patch-levels.md
    14-reference/08-patching-tool-configuration-properties.md
 
-.. include:: /14-reference/README.rst
+.. include:: /installation-and-upgrades/14-reference/README.rst
    :start-line: 2
