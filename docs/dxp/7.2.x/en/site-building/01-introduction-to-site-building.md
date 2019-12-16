@@ -1,11 +1,59 @@
 # Introduction to Site Building
 
-<!-- An alternative outline for this article - please read less as: "use these exact words", and more like: here are core ideas that you may want to communicate. -->
+<!-- An alternative outline for this article - please read less as: "use these exact words", and more like: here are core ideas that you may want to communicate. The hope with this alternative outline is that it tees up in its organization the major categories for site building and how they fit together - it is the roadmap through which someone can make sense of the articles deeper in the section. -->
 
-<!-- Introduction -->
-Sites are a core functional element of Liferay DXP. At its most basic, a Liferay DXP Site is a collection of pages where content or applications are displayed.
+<!--
+# Introduction to Site Building
 
-There are a wide variety of configurations available for Liferay Sites to achieve a desired goal: x, y, and z.
+Sites are a core functional element of Liferay DXP. At its most basic, a Liferay DXP Site is a collection of pages where content or applications are displayed. Liferay provides numerous features to make the experience of creating, customizing, and presenting a site flexible, powerful, and beautiful.
+
+## Creating a Site
+
+Liferay provides a variety of tools and configurations to make creating a site as simple and hassle free as possible: site templates, allowing sites to have hierarchical relationships, and the ability to easily import and export entire sites with their related content.
+
+adding a site
+  - talk about the default main site here?
+site templates
+site hierarchies
+import / export
+
+## Adding Site Essentials
+
+Liferay Sites are made up of associated Users, Pages, Content, and Navigation.
+
+Users can be assigned as members of a Site with varying degrees of permissions...
+
+There are many different types of pages and ways to display content on a site. See [link] to learn more.
+
+Finally, Great sites also have great navigation. Liferay has several ways of presenting and configuring your site's navigation. See this article to learn more about Site Navigation [link].
+
+Members
+  site membership
+Pages
+  page templates
+Content
+  display content
+Navigation
+
+## Personalizing the Site Experience
+
+Liferay DXP includes powerful features to enable you to create sites that present content based on your users experience.
+
+[image]
+
+See Personalizing Site Experience to learn more.
+
+## Optimizing Sites
+
+Liferay sites are easily configured to optimize your site's SEO ranking.
+
+New, powerful A/B testing features also enable you to make better, data-driven decisions about your site --- empowering you to optimize and improve your ability to serve users and customers faster than ever before.
+
+## Configuring and Customizing Sites
+
+Sites are very flexible. Content can be shared across sites as well as scoped to a particular site. There are also many additional ways to configure sites. See [link] to learn more.
+
+-->
 
 <!-- Overall thoughts on this introduction: needs a lot of work. The article doesn't fully accomplish the goal of introducing someone to what a Liferay Site is and what array of functionality is available to someone who wants to use Liferay to build a site. The article also introduces some concepts (Default Main Site, Site Scope) that aren't fully explained or contextualized as to why they are important for someone to know in this particular article. -->
 
@@ -18,7 +66,7 @@ A Site is a set of pages where content or applications are published. <!-- do pe
 
 ## Site Use Cases
 
-<!-- Not a big fan of this section because it reads in an overly colloquial way and doesn't help (for me) add additional value. -->
+<!-- Not a big fan of this section because it reads in a colloquial way and doesn't help (for me) add additional value. -->
 Building a corporate intranet is a typical use case for Sites. A corporate intranet could have Sites for all the organizations in the company: Sales, Marketing, Information Technology, Human Resources and so on. But what about the corporate health and fitness center? That's something everybody in the company, regardless of organization, may want to join. This makes it a good candidate for an open and independent Site. Similarly, the home page for a corporate intranet should probably be placed in an open independent Site so any member of the instance can access it.
 
 For other kinds of websites, you may want to use independent Sites to bring Users together who share a common interest. If you were building a photo sharing website, you might have independent Sites based on the types of photos people want to share. For example, those who enjoy taking pictures of landscapes could join a Landscapes Site, and those who enjoy taking pictures of sunsets could join a Sunsets Site.
