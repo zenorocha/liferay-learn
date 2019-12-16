@@ -16,7 +16,7 @@ Then, enable a read-writer database in your `portal-ext.properties` file:
     jdbc.default.liferay.pool.provider=dbcp
     ```
 
-    All the portal JDBC configuration properties are documented [here](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC).
+    For more information, see the [JDBC configuration properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC).
 
     Skip to step 3 to use JNDI. 
 
@@ -41,7 +41,7 @@ Then, enable a read-writer database in your `portal-ext.properties` file:
     jdbc.write.jndi.name=**your read-write JNDI name**
     ```
 
-3.  Avoid using the `default` data source by setting this:
+3.  Use the `jdbc.write` prefix with this setting:
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -71,6 +71,6 @@ Then, enable a read-writer database in your `portal-ext.properties` file:
         [..]
     ```
 
-    The Spring configuration portal properties are documented [here](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Spring).
+    For more information, see the [Spring configuration portal properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Spring).
 
-The next time you start DXP, it will use the two data sources you have defined. 
+The next time you start DXP, it uses the two data sources you have defined. 

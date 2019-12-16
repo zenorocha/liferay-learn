@@ -8,7 +8,7 @@ Liferay DXP works well in clusters of multiple machines (horizontal cluster) or 
 
 1.  [All nodes must point to the same database or database cluster.](./02-database-configuration-for-cluster-nodes.md)
 
-2.  [Documents and Media repositories must have the same configuration and be accessible to all nodes of the cluster.](./03-documents-and-media-configuration-with-clustering.md)
+2.  [Documents and Media repositories must have the same configuration and be accessible to all nodes.](./03-documents-and-media-configuration-with-clustering.md)
 
 3.  [Search should be on a separate search server that is optionally clustered.](./04-clustering-search.md)
 

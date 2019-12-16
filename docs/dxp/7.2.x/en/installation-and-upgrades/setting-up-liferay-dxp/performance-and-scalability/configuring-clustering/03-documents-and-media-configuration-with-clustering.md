@@ -6,8 +6,8 @@ Note that if you are using the `File System` or `Advanced File System` stores, t
 
 **Checkpoint**: Verify sharing works between two nodes by executing these steps:
 
-1.  On Node 1 upload a document to the Documents and Media.
+1.  On Node 1, upload a document to the Documents and Media.
 
-2.  On Node 2 download the document. The download should be successful.
+2.  On Node 2, download the document. The download should be successful.
 
 3.  Repeat the test with reversed roles.
