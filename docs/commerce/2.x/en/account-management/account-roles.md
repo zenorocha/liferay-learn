@@ -4,7 +4,7 @@ Account Roles are sets of permissions provided by Liferay Commerce to empower us
 
 The following Account Roles are available for use:
 
-* **Account Administrator** : Users with this role have permissions to modify the account, invite and add users to join the account, and assign roles to other account members. This role also includes the permissions for all other Account Roles listed. 
+* **Account Administrator** : Users with this role have permissions to modify the account, invite and add users to join the account, and assign roles to other account members. This role also includes the permissions for all other Account Roles listed.
 
 * **Buyer**: Users with this role can view, create, and check out orders.
 

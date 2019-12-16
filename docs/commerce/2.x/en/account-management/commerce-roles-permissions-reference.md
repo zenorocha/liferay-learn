@@ -1,8 +1,8 @@
 # Commerce Roles Permissions Reference
 
-Liferay Commerce offers four Commerce [account roles](./account-roles.md) out of the box: Account Administrator, Buyer, Order Manager, and Sales Agent. This article documents the specific permissions keys associated with each role.
+Liferay Commerce offers four Commerce [account roles](./account-roles.md) out of the box: Account Administrator, Buyer, Order Manager, and Sales Agent. This article serves as a reference for the specific permissions keys associated with each role.
 
-All of the following permissions can be subject to change in the future.
+> **Note:** These permission keys may change in future updates.
 
 To view the permissions associated with each Commerce account role:
 
@@ -11,7 +11,7 @@ To view the permissions associated with each Commerce account role:
 1. Click (Commerce Role) (for example, _Account Administrator_).
 1. Click the _Define Permissions_ tab.
 
-## [Account Administrator](#account-administrator)
+## Account Administrator
 
 An Account Administrator can modify the account, invite and add users to join the account, and assign roles to other account members. Note that a Liferay Commerce account administrator cannot create or delete an account. This permission is reserved for the store administrator.
 
@@ -40,7 +40,7 @@ The following set of permissions pertain to the Account Administrator Role's abi
 | View Open Orders | Ability to view all open orders |
 | View Orders | Ability to view all orders regardless of their statuses |
 
-## [Buyer](#buyer)
+## Buyer
 
 Users assigned this role can view, create, and check out orders.
 
@@ -55,7 +55,7 @@ There are four permissions set by default:
 | View Open Orders | Ability to view all open orders |
 | View Orders | Ability to view all orders regardless of their statuses |
 
-## [Order Manager](#order-manager)
+## Order Manager
 
 Order Managers have all the permissions of buyers, and can also manage, delete and approve orders. The following permissions have been assigned to the Order Manager role.
 
@@ -73,7 +73,7 @@ The following permissions are set by default:
 | View Open Orders | Ability to view all open orders |
 | View Orders | Ability to view all orders regardless of their statuses |
 
-## [Sales Agent](#sales-agent)
+## Sales Agent
 
 The Sales Agent is a regular role in Liferay Commerce and assignees are able to manage any account assigned to the role without granting administrative permissions. Because it is a regular role, it is found in the _Regular Roles_ tab.
 
