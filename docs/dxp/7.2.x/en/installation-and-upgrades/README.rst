@@ -10,9 +10,9 @@ Installing Liferay DXP
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/04-connecting-a-database`
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard`
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
-* Activating Liferay DXP
-* Installing Trial Plugins
--  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/09-setting-up-marketplace`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/08-activating-liferay-dxp`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/09-trial-plugin-installation`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/10-setting-up-marketplace`
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
