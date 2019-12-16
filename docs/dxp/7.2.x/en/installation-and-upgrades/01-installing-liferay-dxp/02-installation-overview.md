@@ -13,7 +13,7 @@ A performant, resilient, and secure Liferay DXP installation has several differe
 
 ### Java
 
-Liferay Digital Experience Platform requires **JAVA JDK 8 or 11** in order to run. Visit [java.com](https://www.java.com/) to learn more. See [JVM Configurations](../09-reference/05-jvm-configurations.md) for specific information on how to configure the JVM for a Liferay DXP installation.
+Liferay Digital Experience Platform requires **JAVA JDK 8 or 11** in order to run. Visit [java.com](https://www.java.com/) to learn more. See [JVM Configurations](../14-reference/05-jvm-configurations.md) for specific information on how to configure the JVM for a Liferay DXP installation.
 
 ### Hosting
 
@@ -47,7 +47,7 @@ Manual deployments require the use of the Liferay DXP `.war` file and other depe
 
 ## Connecting a Database
 
-Liferay DXP has some defaults configured out of the box to enable faster demonstration - this includes using HSQL as a database. Connecting Liferay DXP to a database is required step for using Liferay DXP beyond basic exploration. See [Connecting a Database](./04-connecting-a-database.md) for more information.
+Liferay DXP has some defaults configured out of the box to enable faster demonstration - this includes using HSQL as a database. Connecting Liferay DXP to a database is a required step for using Liferay DXP beyond basic exploration. See [Connecting a Database](./04-connecting-a-database.md) for more information.
 
 ## Running Liferay DXP for the First Time
 
