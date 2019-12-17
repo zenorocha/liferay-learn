@@ -1,26 +1,28 @@
 # Database Configuration for Cluster Nodes
 
-Each node should have a data source that points to one Liferay DXP database (or database cluster) that all the nodes share. This means that DXP cannot (and should not) use the embedded HSQL database that is shipped with the bundles. And, of course, the database server should be on a separate system from the DXP server.
+Each node should have a data source that points to one Liferay DXP database (or database cluster) that all the nodes share. This means that DXP cannot (and should not) use the embedded HSQL database that is shipped with the bundles. And, of course, the database server should be set up on a separate system from the DXP server.
+
+## Database Replication
+
+Database clusters support high availability and improve DXP performance. Database clustering requires databases to stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All supported databases support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
 
 ## Read-Writer Database Configuration
 
-For even better performance, you can also use a read-writer database configuration. This strategy uses two different data sources: one for read operations and the other for read-write operations. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to one data source and read-write transactions to the other data source. 
+For even better performance, you can also use a read-writer database configuration. This strategy uses two different data sources: one for read operations and the other for read-write operations. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source. 
 
-Since all supported databases support replication, use the database vendor's replication mechanism to keep the database nodes synchronized. Set up the databases for replication first, following the database vendor's instructions. 
-
-Then, enable separate read and read-write (write) [data sources](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) in your [`portal-ext.properties` file](../../../14-reference/02-portal-properties.md) for JDBC or JNDI. 
+Connections to separate read and write [data sources](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../../installation-and-upgrades/14-reference/03-portal-properties.md) (e.g., in a [`portal-ext.properties` file](../../../14-reference/02-portal-properties.md)), as explained in the following sections. 
 
 ### JDBC
 
-Follow these steps for using [JDBC](../../../01-installing-liferay-dxp/04-connecting-a-database.md#using-the-built-in-data-source) to connect to your read and write data sources:
+Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connecting-a-database.md#using-the-built-in-data-source) to connect directly to your read and write data sources:
 
-1.  Set the default connection pool provider. For provider information, see the [JDBC properties reference](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC). Here's the default setting:
+1.  Set the default connection pool provider. For provider information, see the [JDBC properties reference](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC). The default setting specifies [HikariCP](https://github.com/brettwooldridge/HikariCP) as the pool provider:
 
     ```properties
     jdbc.default.liferay.pool.provider=hikaricp
     ```
 
-1.  Configure separate read and write data sources. Here's an example:
+1.  Configure JDBC connections to your separate read and write data sources. Here's an example:
 
     ```properties
     jdbc.read.driverClassName=com.mysql.jdbc.Driver
@@ -34,19 +36,15 @@ Follow these steps for using [JDBC](../../../01-installing-liferay-dxp/04-connec
     jdbc.write.password=**your password**
     ```
 
-1.  Use the `jdbc.write.` prefix with this setting:
+1.  Set DXP's counter to use the write data source (the data source whose prefix is `jdbc.write.`):
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
     ```
 
-1.  Optionally, test database connections by setting the following queries for running before every transaction. The queries validate the connections and prevent callers from getting bad connections.
+1.  Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections. 
 
-    ```properties
-    jdbc.default.validationQuery=
-    jdbc.read.validationQuery=SELECT releaseId FROM Release_
-    jdbc.write.validationQuery=SELECT releaseId FROM Release_
-    ```
+    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
 1.  Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
@@ -66,7 +64,7 @@ Follow these steps for using [JDBC](../../../01-installing-liferay-dxp/04-connec
 
 ### JNDI
 
-Follow these steps for using [JNDI](../../../01-installing-liferay-dxp/04-connecting-a-database.md#using-a-data-source-on-your-application-server) to connect to your read and write data sources:
+Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connecting-a-database.md#using-a-data-source-on-your-application-server) to connect to your read and write data sources on your app server:
 
 1. Set your read and write JNDI data source usernames and passwords. 
 
@@ -82,19 +80,15 @@ Follow these steps for using [JNDI](../../../01-installing-liferay-dxp/04-connec
     jdbc.write.password=**your password**
     ```
 
-1.  Use the `jdbc.write.` prefix with this setting:
+1.  Set DXP's counter to use the write data source (the data source whose prefix is `jdbc.write.`):
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
     ```
 
-1.  Optionally, test database connections by setting the following queries for running before every transaction. The queries validate the connections and prevent callers from getting bad connections.
+1.  Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections.
 
-    ```properties
-    jdbc.default.validationQuery=
-    jdbc.read.validationQuery=SELECT releaseId FROM Release_
-    jdbc.write.validationQuery=SELECT releaseId FROM Release_
-    ```
+    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
 1.  Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
