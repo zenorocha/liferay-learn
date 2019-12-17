@@ -36,7 +36,7 @@ Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connectin
     jdbc.write.password=**your password**
     ```
 
-1.  Set DXP's counter to use the write data source (the data source whose prefix is `jdbc.write.`):
+1.  Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -80,7 +80,7 @@ Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connectin
     jdbc.write.password=**your password**
     ```
 
-1.  Set DXP's counter to use the write data source (the data source whose prefix is `jdbc.write.`):
+1.  Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -106,4 +106,4 @@ Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connectin
 
     For more information, see the [Spring configuration portal properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Spring).
 
-DXP uses two data sources the next time it starts. 
+DXP uses a read data source, a write data source, and a counter data source the next time it starts. 
