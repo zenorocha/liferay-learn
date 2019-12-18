@@ -1,118 +1,33 @@
 # Introduction to Site Building
 
-<!-- An alternative outline for this article - please read less as: "use these exact words", and more like: here are core ideas that you may want to communicate. The hope with this alternative outline is that it tees up in its organization the major categories for site building and how they fit together - it is the roadmap through which someone can make sense of the articles deeper in the section. -->
+Sites are a fundamental component of Liferay DXP. At it's core, a Site is a collection of pages that contains content. However, a Site can also contain applications that provide additional functionality for the page---many are available for you to use out-of-the-box. Liferay DXP includes powerful features that you can harness to streamline the Site creation process and create unique and positive experiences for your Site's users.
 
-<!--
-# Introduction to Site Building
+## Creating Sites
 
-Sites are a core functional element of Liferay DXP. At its most basic, a Liferay DXP Site is a collection of pages where content or applications are displayed. Liferay provides numerous features to make the experience of creating, customizing, and presenting a site flexible, powerful, and beautiful.
+Liferay DXP includes all the tools you need to [build your Site](./01-building-sites/01-adding-sites.md) and [create pages](TODO). You can create a Site from an existing [Site Template](./01-building-sites/02-building-sites-with-site-templates.md) to get you started, which includes a predefined set of pages with applications, or you can create a blank Site and build it from the ground up. Pages are just as flexible. Create a page from an existing [page type](TODO) or create one from one of the default [page templates](TODO), or a page template you've created yourself, to save time. Both sites and pages can be organized hierarchically. You can add as many nested pages (child pages) and [nested sites](./01-building-sites/07-site-hierarchies.md) (child sites) as you like for the parent Site or page. It's likely that you'll have multiple sites across your Liferay DXP instance for various Organizations, employees, etc. You can share content and pages between sites with the [import and export options](./01-building-sites/09-importing-exporting-pages-and-content.md). 
 
-## Creating a Site
+[Navigation](TODO) is hassle-free. Pages are automatically added to the navigation when they're created. This is flexible as well. You can hide pages if you prefer, or simply make them private, so only [members of the Site](./01-building-sites/05-adding-members-to-sites.md) can view them with the proper permissions.
 
-Liferay provides a variety of tools and configurations to make creating a site as simple and hassle free as possible: site templates, allowing sites to have hierarchical relationships, and the ability to easily import and export entire sites with their related content.
+Liferay DXP is designed to provide the best experience possible for your users. Making changes to your Site shouldn't prevent your users from using it. And once those changes are ready, you should be able to integrate them seamlessly. Liferay DXP's [Staging environment](TODO) handles this for you. You can stage your Site to continue perfecting it in a safe environment, without affecting the live site that your users see. When your Site has reached the peak of perfection, publish your changes so your users can reap the benefits of all your hard work.
 
-adding a site
-  - talk about the default main site here?
-site templates
-site hierarchies
-import / export
+## Creating and Displaying Content
 
-## Adding Site Essentials
+Liferay DXP's Content Management System (CMS) is intuitive and user-friendly, offering a variety of tools that you can use to create and display content of many types. You can use the [Web Content Display widget](TODO) to display web content articles of your choosing, or if you'd like to display a mix of content (asset) types (blogs, images, web content articles, etc.) you can use the [Asset Publisher](TODO). You can manually select the content the Asset Publisher displays, or you can have it display assets dynamically based on specific criteria, giving you a great deal of control over the experience your users have. You can also embed content from other websites with the [Iframe widget](TODO) or by creating an [Embedded Page](TODO).
 
-Liferay Sites are made up of associated Users, Pages, Content, and Navigation.
+You can create and edit content inline with [Fragments](TODO). Fragments are individual pieces of code (CSS, HTML, and JavaScript) that you can [arrange and combine](TODO) to build a page. Several Fragments are included out-of-the-box that you can modify to create your content. If you require a more custom solution, you can [create your own](TODO).
 
-Users can be assigned as members of a Site with varying degrees of permissions...
+Each piece of content (asset) has a default page that's displayed when you view it, but you can provide a customized landing page for it by creating a [Display Page Template](TODO). A Display Page Template maps portions of the Web Content (title, main body, image, etc.) to Fragments, so you can create the look you desire.
 
-There are many different types of pages and ways to display content on a site. See [link] to learn more.
+## Personalizing User Experiences
 
-Finally, Great sites also have great navigation. Liferay has several ways of presenting and configuring your site's navigation. See this article to learn more about Site Navigation [link].
+Liferay DXP's [Personalization](./11-experience-personalization/01-personalization-intro.md) and [Segmentation](./10-segmentation/01-segmentation-intro.md) framework lets you display content based on the user's interests. You can [create Segments](./10-segmentation/02-creating-user-segments.md) that target a subset of users based on specific criteria, such as the Organizations they belong to or their Role in the Site, and then use it to display [personalized page layouts and content](./11-experience-personalization/02-content-page-personalization.md) for the user demographic, or you can [integrate with Analytics Cloud](./10-segmentation/04-analytics-cloud-segmentation.md) to analyze the behavior of the users within the Segment to see how they interact with your Site. You can even [recommend content based on a user's behavior](TODO). 
 
-Members
-  site membership
-Pages
-  page templates
-Content
-  display content
-Navigation
+## Customizing and Configuring Sites
 
-## Personalizing the Site Experience
+A multitude of [settings](TODO) are available for your Site, so you can configure it to your exact specifications. You can also [localize your Site and Content](TODO) for multiple languages if you need to. 
 
-Liferay DXP includes powerful features to enable you to create sites that present content based on your users experience.
-
-[image]
-
-See Personalizing Site Experience to learn more.
+You can further customize your Site by [creating a Theme](TODO). A Theme provides the overall look and feel for a Site. It's responsible for defining the CSS, JavaScript, and HTML for the page (via FreeMarker templates).  FreeMarker combines standard HTML elements and provides the added benefit of variables, conditional statements, looping, and more. See [Developing Themes](TODO) for more information.
 
 ## Optimizing Sites
 
-Liferay sites are easily configured to optimize your site's SEO ranking.
-
-New, powerful A/B testing features also enable you to make better, data-driven decisions about your site --- empowering you to optimize and improve your ability to serve users and customers faster than ever before.
-
-## Configuring and Customizing Sites
-
-Sites are very flexible. Content can be shared across sites as well as scoped to a particular site. There are also many additional ways to configure sites. See [link] to learn more.
-
--->
-
-<!-- Overall thoughts on this introduction: needs a lot of work. The article doesn't fully accomplish the goal of introducing someone to what a Liferay Site is and what array of functionality is available to someone who wants to use Liferay to build a site. The article also introduces some concepts (Default Main Site, Site Scope) that aren't fully explained or contextualized as to why they are important for someone to know in this particular article. -->
-
-A Site is a set of pages where content or applications are published. <!-- do people know what this even means at this point? What does it mean for a site to be independent in the context of Liferay? What does it mean for a site to be associated as an organization's website? --> Sites can be independent or serve as an associated organization's website. <!-- Yes, but does is this an important enough fact to mention in this introductory paragraph? --> You can create as many different Sites as you like within the context of a single Liferay Portal instance. <!-- This seems to repeat what was written in the previous sentence --> You can have many Sites on one Liferay instance, which work together to create one complete website, or you can simply have one Site which contains all of your pages and content, or anything in between. These topics are covered in this introduction:
-
-- [Site Use Cases](#site-use-cases)
-- [The Default Main Site](#the-default-main-site)
-- [Site Scope](#site-scope)
-- [Page Sets](#page-sets)
-
-## Site Use Cases
-
-<!-- Not a big fan of this section because it reads in a colloquial way and doesn't help (for me) add additional value. -->
-Building a corporate intranet is a typical use case for Sites. A corporate intranet could have Sites for all the organizations in the company: Sales, Marketing, Information Technology, Human Resources and so on. But what about the corporate health and fitness center? That's something everybody in the company, regardless of organization, may want to join. This makes it a good candidate for an open and independent Site. Similarly, the home page for a corporate intranet should probably be placed in an open independent Site so any member of the instance can access it.
-
-For other kinds of websites, you may want to use independent Sites to bring Users together who share a common interest. If you were building a photo sharing website, you might have independent Sites based on the types of photos people want to share. For example, those who enjoy taking pictures of landscapes could join a Landscapes Site, and those who enjoy taking pictures of sunsets could join a Sunsets Site.
-
-## The Default Main Site
-
-<!-- What does it mean for there to be a default main site? What are the implications? Why is this information important for the reader to know at this point? --> There is always one default Site, which is the main Site of the instance. This Site doesn't have its own name but rather takes the name of the instance. By default the instance name is *Liferay*, but this value can be changed through the configuration of the setup wizard. You can also change the instance name at any time through the Control Panel:
-
-1. Open the Product Menu.
-
-2. Open the Control Panel and go to *Configuration &rarr; *Instance Settings* &rarr;, and click *Instance Configuration* under the PLATFORM heading.
-
-3. Select the *General* tab under VIRTUAL INSTANCE SCOPE and enter a new name in the *Name* field of the General form.
-
-4. Click *Save* to apply the changes to the instance configuration.
-
-## Site Scope
-
-<!-- This seems pretty specific for the introductory article...Also the header is "Site Scope" but we talk mostly Roles and Site Roles in the paragraph below. --> Members of a Site can be given additional privileges in the Site by using permissions. It is also possible to assign different Roles within the Site to different members. This can be done through *Site Roles*, which are defined equally for all Sites or *Teams* which are unique for each Site. These concepts are discussed in [Site Roles](TODO) and [Creating Teams for Sites](./01-building-sites/06-creating-teams-for-sites.md) respectively.
-
-<!-- As a reader, at this point, I feel lost because I site scope has not really been defined to me. -->
-
-Liferay DXP separates Site-scoped information from the Control Panel by placing it in the Site menu. To access Site-scoped settings:
-
-1. Open the Product Menu and click your Site name.
-
-2. Click the compass icon next to the Site name to select the specific Site to work on.
-
-3. With the Site selected, access the Build, Content & Data, Categorization, Recycle Bin, Members, Configuration, Publishing options and more from the Site's panel.
-
-![Figure 1: Your Site's content resides in the Site Administration menu.](/images/web-content-site-content.png)
-
-## Page Sets
-
-A Site is composed of two kinds of Page Sets:
-
-- **Public Pages:**
-
-  - Can be accessed by anyone, including Users who haven't logged in
-  
-  - Has URLs different from Private Pages and can have unique content, applications, themes, and layouts
-
-- **Private Pages:**
-
-  - Can only be accessed by Site members
-  
-  - Has URLs different from Public Pages and can have unique content, applications, themes, and layouts
-
-A Site can have Public Pages, Private Pages, or both. It's possible to restrict access to individual pages or entire Page Sets through the permissions system.
+Liferay DXP provides multiple tools and features for optimizing your Site, from increasing your Site's [Search Engine Optimization (SEO) ranking](TODO), to [creating responsive pages](TODO) optimized for each device, to honing your messaging campaigns with [A/B Testing](TODO). A/B Testing compares the current default variation of a page with the page variant(s) to see which pages perform better for a given goal (bounce rate, clicks, etc.). This enables you to make better, data-driven decisions about your site, so you can serve users and customers faster than ever before.
