@@ -36,7 +36,7 @@ Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connectin
     jdbc.write.password=**your password**
     ```
 
-1.  Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
+1.  A separate data source is always dedicated to the counter. Apply the following setting so that DXP uses the write data source (with the prefix `jdbc.write.`) to create the [Counter](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Counter) data source:
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
