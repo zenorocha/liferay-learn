@@ -32,10 +32,10 @@ The new Notification Template has been saved and your store will send an automat
 **Note 1**: \* Liferay Commerce offers two snippets to insert programmatically the order creator's name and the order ID.
 
 * \[%ORDER_CREATOR%\] inserts the user who created the order
-* \[%ORDER_CREATOR%\] inserts the Order ID
+* \[%ORDER_ID%\] inserts the Order ID
 
 **Note 2**: An extension point lets you implement other notifications: for a shipped order, a restocked product, a carrier exception, or any other event.
 
-**Note 3**: To change the interval for when Liferay Commerce checks for unsent notifications, navigate to the _Control Menu_ → _Configuration_ → _System Settings_. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
+**Note 3**: To change the interval for when Liferay Commerce checks for unsent notifications, navigate to the _Control Panel_ → _Configuration_ → _System Settings_. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
 
 ![Changing Intervals](./automating-store-emails-by-using-notification-templates/images/02.png)

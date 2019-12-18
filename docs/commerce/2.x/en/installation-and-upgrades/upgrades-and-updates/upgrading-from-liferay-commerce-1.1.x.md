@@ -42,9 +42,11 @@ Next, apply the fix pack. See [Installing Patches](https://help.liferay.com/hc/e
 
 To verify Fix Pack installation do the following:
 
-1. Run `patching-tool info` in this `${liferay.home}/patching-tool`
+1. Navigate to the `${liferay.home}/patching-tool` folder.
 
 1. Verify that the fix pack has been applied:
+    * Execute `./patching-tool.sh info`.
+    * For Windows users, run `patching-tool info`.
 
     ```
     Detailed patch list:
