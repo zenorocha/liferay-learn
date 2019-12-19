@@ -126,9 +126,10 @@ If your network configuration or the geographical distance between nodes prevent
         port_range="0"/>
     ```
 
-    > **Important:** Make sure your `initial_hosts` attribute accounts for all nodes.
+    **Regarding Initial Hosts:**
 
-    > **Note:** An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this: `-Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]`
+    - Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
+    - An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this: `-Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]`.
 
 6.  Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. For example, on the node with IP address `192.168.224.155`, configure TCPPing like this:
 
