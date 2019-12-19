@@ -26,12 +26,8 @@ The new Site is selected when you open the Product Menu. See [Site Settings](TOD
 
 ## Additional Information
 
-When creating a blank Site or organization Site, the Site is not immediately viewable. This is because Sites without a page are impossible to view. Therefore, before you can view your Site, you must first create a page for it. To add a page for your temporarily invisible Site, follow these steps:
+When creating a blank Site or Organization Site, the Site is not immediately viewable. This is because Sites without a page are impossible to view. Therefore, before you can view your Site, you must first create a page for it. See [Adding a Page to a Site](../02-creating-pages/02-adding-a-page-to-a-site.md) for more information.
 
-1.  Open the Product Menu and expand the Site menu.
+### The Default Site
 
-2.  Navigate to *Site Builder* &rarr; *Pages*.
-
-3.  Add a public page.
-
-After adding your Site's first page, it renders and your Site is viewable. For more information about adding pages, see the [Creating Pages](TODO) section.
+When you first start and configure your Liferay Portal instance, a default Site is included. This Site doesn't have its own name but rather takes the name of the instance. By default the instance name is *Liferay*, but this value can be changed through the configuration of the setup wizard or through the Instance Configuration in the Control Panel. See [Configuring the Virtual Instance](TODO) for more information.
