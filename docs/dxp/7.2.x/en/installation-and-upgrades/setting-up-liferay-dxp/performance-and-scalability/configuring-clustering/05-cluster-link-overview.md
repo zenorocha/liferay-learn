@@ -63,14 +63,6 @@ cluster.link.bind.addr["cluster-link-control"]=localhost
 cluster.link.bind.addr["cluster-link-udp"]=localhost
 ```
 
-In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If for some reason you need this configuration, you can make DXP automatically detect its real address with this property:
-
-```properties
-cluster.link.autodetect.address=www.google.com:80
-```
-
-Set it to connect to some other host that's contactable by your server. By default, it points to Google, but this may not work if your server is behind a firewall. If you set the address manually using the properties above, you don't need to set the auto-detect address.
-
 Your network configuration may preclude the use of multicast over TCP, so below are some other ways you can get your cluster communicating. Note that these methods are all provided by JGroups.
 
 ### Test Your Cluster Link Configuration
