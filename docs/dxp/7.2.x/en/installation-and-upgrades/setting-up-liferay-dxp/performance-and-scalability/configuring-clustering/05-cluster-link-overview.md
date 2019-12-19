@@ -25,9 +25,9 @@ To enable Cluster Link, add this [portal property](https://help.liferay.com/hc/e
 cluster.link.enabled=true
 ```
 
-The [Cluster Link portal properties](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs. 
+The [Cluster Link portal properties](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs.
 
-Many of the defaults use `localhost`, instead of a real address. In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If for some reason you need this configuration, you can make DXP auto detect the real address with this property: 
+Many of the defaults use `localhost`, instead of a real address. In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If you still need this configuration, you can make DXP auto detect the real address with this property:
 
 ```properties
 cluster.link.autodetect.address=www.google.com:80
@@ -270,7 +270,7 @@ You can install the module on each node and change the settings without taking d
 
 ## Conclusion 
 
-Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`): 
+Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`):
 
 ```bash
 ------------------------------------------------------------------- 
@@ -278,4 +278,4 @@ GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168
 -------------------------------------------------------------------
 ```
 
-Congratulations! Your cluster is using Cluster Link. 
+Congratulations! Your cluster is using Cluster Link.
