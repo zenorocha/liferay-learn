@@ -24,7 +24,15 @@ To enable Cluster Link, add this [portal property](https://help.liferay.com/hc/e
 cluster.link.enabled=true
 ```
 
-> **Note:** See the [Cluster Link portal property definitions](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) for details.
+The [Cluster Link portal properties](@platform-ref@/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs. 
+
+Many of the defaults use `localhost`, instead of a real address. In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If for some reason you need this configuration, you can make DXP auto detect the real address with this property: 
+
+```properties
+cluster.link.autodetect.address=www.google.com:80
+```
+
+Set it to connect to some other host that's contactable by your server. By default, it points to Google, but this may not work if your server is behind a firewall. If you use each host's real address, you don't need to set the auto-detect address.
 
 Cluster Link depends on [JGroups](http://www.jgroups.org) and provides an API for nodes to communicate. It can:
 
