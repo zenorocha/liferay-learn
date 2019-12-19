@@ -10,11 +10,12 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 **Contents:**
 
-[Enabling Cluster Link](#enabling-cluster-link)
-[Multicast Over UDP](#multicast-over-udp)
-[Unicast Over TCP](#unicast-over-tcp)
-[Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
-[Modifying the Cache Configuration with a Module](#modifying-the-cache-configuration-with-a-module)
+- [Enabling Cluster Link](#enabling-cluster-link)
+- [Multicast Over UDP](#multicast-over-udp)
+- [Unicast Over TCP](#unicast-over-tcp)
+- [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
+- [Modifying the Cache Configuration with a Module](#modifying-the-cache-configuration-with-a-module)
+- [Conclusion](#conclusion)
 
 ## Enabling Cluster Link
 
