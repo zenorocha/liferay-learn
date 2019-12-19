@@ -41,14 +41,6 @@ Cluster Link depends on [JGroups](http://www.jgroups.org) and provides an API fo
 - Invoke methods and retrieve values from all, some, or specific nodes
 - Detect membership and notify when nodes join or leave
 
-When you start DXP in a cluster, a log file message shows your cluster's name (e.g., `cluster=liferay-channel-control`):
-
-```
--------------------------------------------------------------------
-GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168.1.10:50643 
--------------------------------------------------------------------
-```
-
 Cluster Link contains an enhanced algorithm that provides one-to-many type communication between the nodes. This is implemented by default with JGroups's UDP multicast, but unicast and TCP are also available.
 
 ## Multicast Over UDP
@@ -281,3 +273,15 @@ It's recommended to test your system under a load that best simulates the kind o
 As a result of a load test, you may find that the default distributed cache settings aren't optimized for your site. In this case, tweak the settings using a module. Follow instructions for [Overriding Cache](https://help.liferay.com/hc/en-us/articles/360035581471-Overriding-Cache).
 
 You can install the module on each node and change the settings without taking down the cluster. This is a great benefit, but beware: since Ehcache doesn't allow for changes to cache settings while the cache is active, reconfiguring a cache while the server is running flushes the cache.
+
+## Conclusion 
+
+Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`): 
+
+```bash
+------------------------------------------------------------------- 
+GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168.1.10:50643 
+-------------------------------------------------------------------
+```
+
+Congratulations! Your cluster is using Cluster Link. 
