@@ -28,9 +28,13 @@ Installing Liferay on an Application Server
 Setting Up Liferay DXP
 ----------------------
 
-* Configuration Overview
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/01-configuration-overview`
 * Installing a Search Engine
-* Configuring Your Document Repository
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/document-repository-overview`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/using-amazon-s3-store`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/using-the-advanced-file-system-store`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/using-the-dbstore`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/using-the-simple-file-system-store`
 * Connecting to a Mail Server
 * Selecting Your Locale and Encoding
 
