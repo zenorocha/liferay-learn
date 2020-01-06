@@ -47,5 +47,5 @@ backward-compatible include, but are not limited to these:
 
 ## Additional Information
 
-* Rolling Restarts
-* Blue-Green Deployments
+* [Rolling Restarts](./02-rolling-restarts.md)
+* [Blue-Green Deployments](./03-blue-green-deployments.md)
