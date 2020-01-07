@@ -44,9 +44,9 @@ To verify Fix Pack installation do the following:
 
 1. Navigate to the `${liferay.home}/patching-tool` folder.
 
-1. Verify that the fix pack has been applied:
-    * Execute `./patching-tool.sh info`.
-    * For Windows users, run `patching-tool info`.
+1. Verify that the fix pack has been applied by executing the following:
+    * Linux/Unix: `./patching-tool.sh info`
+    * Windows: `patching-tool info`
 
     ```
     Detailed patch list:
