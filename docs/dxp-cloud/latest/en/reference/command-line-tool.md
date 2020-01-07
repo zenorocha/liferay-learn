@@ -9,9 +9,13 @@ applications.
 * [Showing the Service Logs](#showing-the-service-logs)
 * [Manage Custom Domains](#manage-custom-domains)
 * [Manage Environment Variables](#manage-environment-variables)
+* [Change the number of service instances](#change-the-number-of-service-instances)
 * [List Projects or Services](#list-projects-or-services)
+* [Restart a Service](#restart-a-service)
 * [Execute Commands in a Service Container](#execute-commands-in-a-service-container)
 * [Access a Service's Shell](#access-a-services-shell)
+* [Open Console](#open-console)
+* [Uninstalling the CLI](#uninstalling-the-cli)
 
 ## Installing the CLI
 
@@ -20,7 +24,7 @@ applications.
 Open a terminal and run this command: 
 
 ```bash
-curl https://cdn.liferay.cloud/cli/latest/lcp.sh -fsSL | bash
+curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 ```
 
 If you get a permissions error, try running the same command with `sudo`. 
@@ -28,16 +32,8 @@ If you get a permissions error, try running the same command with `sudo`.
 **Windows Systems**
 
 Download the latest version of the 
-[CLI installer](https://cdn.liferay.cloud/cli/latest/lcp-installer-windows-amd64.msi). 
+[Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard. 
 
-**Other Systems**
-
-See the list of 
-[available builds](https://dl.equinox.io/wedeploy/lcp/stable).
-
-> **Note:** To deploy services on DXP Cloud, you must have 
-> [Git](https://git-scm.com/) 
-> installed. 
 
 ## Changing the CLI Remote
 
@@ -54,7 +50,7 @@ Follow these steps to change the default remote:
 1. Add a new remote if necessary: 
 
     ```shell
-    lcp remote add <remote-alias> <remote-url>
+    lcp remote set <remote-alias> <remote-url>
     ```
 
 1. Run this command to set the default remote: 
@@ -66,7 +62,7 @@ Follow these steps to change the default remote:
 Alternatively, specify the remote inline via this command: 
 
 ```shell
-lcp shell -p <project-id> -s <service-id> --remote <remote-alias>
+lcp shell --project <project-id> --service <service-id> --remote <remote-alias>
 ```
 
 ## Showing the Service Logs
@@ -84,6 +80,12 @@ View the logs of a specific service in a project:
 
 ```shell
 lcp log --project <projectID> --service <serviceID>
+```
+
+View the logs of a specific period of time: 
+
+```shell
+lcp log --project <projectID> --since <timestamp>
 ```
 
 Alternatively, view a service's logs by passing the service's full URL to 
@@ -113,7 +115,7 @@ lcp domain add example.com --project <projectID> --service <serviceID>
 Remove a custom domain from a service:
 
 ```shell
-lcp domain rm example.com --project <projectID> --service <serviceID>
+lcp domain delete example.com --project <projectID> --service <serviceID>
 ```
 
 Alternatively, run the same commands by passing the service's full URL to 
@@ -125,31 +127,50 @@ lcp domain --url <serviceID>-<projectID>.lfr.cloud
 
 ## Manage Environment Variables
 
-Use the `lcp env` command to manage environment variables. Here are some common 
-examples. 
+Use the `lcp env-var` command to manage environment variables. Here are some common examples. 
 
 Get the list of environment variables for a particular service: 
 
 ```shell
-lcp env --project <projectID> --service <serviceID>
+lcp env-var --project <projectID> --service <serviceID>
 ```
 
 Add an environment variable to a service: 
 
 ```shell
-lcp env set SOME_KEY somevalue --project <projectID> --service <serviceID>
+lcp env-var set SOME_KEY somevalue --project <projectID> --service <serviceID>
 ```
 
 Remove an environment variable from a service: 
 
 ```shell
-lcp env rm SOME_KEY --project <projectID> --service <serviceID>
+lcp env-var rm SOME_KEY --project <projectID> --service <serviceID>
 ```
 
 Alternatively, pass a service's full URL to `lcp env`: 
 
 ```shell
-lcp env --url <serviceID>-<projectID>.lfr.cloud
+lcp env-var --url <serviceID>-<projectID>.lfr.cloud
+```
+
+## Change the number of service instances
+
+Use the `lcp scale` command to change the number of instances. Here are some common examples. 
+
+```shell
+lcp scale --project <projectID> <instances>
+```
+
+Scale instances of a specific service in a project: 
+
+```shell
+lcp scale --project <projectID> --service <serviceID> <instances>
+```
+
+Alternatively, scale instances by passing its full URL to `lcp restart`: 
+
+```shell
+lcp scale --url <serviceID>-<projectID>.lfr.cloud <instances>
 ```
 
 ## List Projects or Services
@@ -157,7 +178,7 @@ lcp env --url <serviceID>-<projectID>.lfr.cloud
 Use the `lcp list` command to list projects and services. Here are some common 
 examples. 
 
-See the full list of projects and services you own or collaborate on: 
+See the full list of projects, services, and instances you own or collaborate on: 
 
 ```shell
 lcp list
@@ -179,6 +200,29 @@ Alternatively, check a service by passing its full URL to `lcp list`:
 
 ```shell
 lcp list --url <serviceID>-<projectID>.lfr.cloud
+```
+
+## Restart a Service
+
+Use the `lcp restart` command to restart a service. Here are some common 
+examples. 
+
+Restart a project's services: 
+
+```shell
+lcp restart --project <projectID>
+```
+
+Restart a specific service in a project: 
+
+```shell
+lcp restart --project <projectID> --service <serviceID>
+```
+
+Alternatively, restart a service by passing its full URL to `lcp restart`: 
+
+```shell
+lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
 ## Execute Commands in a Service Container
@@ -211,5 +255,38 @@ Alternatively, access the shell of a specific service's container by adding the
 service's project ID and service ID to the `lcp shell` command: 
 
 ```shell
-lcp shell -p <projectID> -s <serviceID>
+lcp shell --project <projectID> --service <serviceID>
 ```
+
+## Open Console
+
+Use the CLI to open the console anytime. For example, this opens the console: 
+
+```shell
+lcp console
+```
+
+This opens a specific service on the console:
+
+```shell
+lcp open --project <projectID> --service <serviceID>
+```
+
+This opens DXP Cloud documentation:
+
+```shell
+lcp docs
+```
+
+## Uninstalling the CLI
+
+For Mac and Linux, run this command:
+
+```bash
+curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
+```
+
+For Windows, navigate to `Control Panel -> Add or Remove Programs`. Find "LCP CLI" in the list of programs, select it, and click "Uninstall". Follow the steps in the wizard.
+
+
+
