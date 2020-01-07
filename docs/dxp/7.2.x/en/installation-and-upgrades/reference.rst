@@ -5,6 +5,7 @@ Reference
    :maxdepth: 3
 
    14-reference/01-liferay-home.md
+   14-reference/03-portal-properties.md
    14-reference/04-system-properties.md
    14-reference/05-database-templates.md
    14-reference/05-jvm-configurations.md
