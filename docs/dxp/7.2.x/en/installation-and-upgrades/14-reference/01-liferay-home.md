@@ -45,7 +45,7 @@ Here is a breakdown of each directory with a brief description of its purpose:
   * `modules`: Modules you've deployed.
   * `portal`: Liferay Portal's non-core modules.
   * `state`: Contains OSGi internal state files for such things as OSGi bundle installation, bundle storage, and more.
-  * `static`: Deploy customization as JAR files here.
+  * `static`: Deploy customizations as JAR files here.
   * `war`: WAR plugins you've deployed.
 * `patching-tool`: (Liferay DXP subscribers only) This folder holds patches and a utilities for installing the patches.
 * `tools`: For DXP upgrade and target platform indexer.
