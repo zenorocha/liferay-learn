@@ -1,6 +1,6 @@
 # Trial Plugin Installation
 
-For Liferay customers who are evaluating DXP 7.2 on a trial basis, **the plugins can be accessed from within the *Apps* &rarr; *Store* (i.e., Marketplace) section of the Control Panel in your product installation**.
+Liferay DXP subscribers have access to plugins and add-ons that enhance the functionality and performance of Liferay DXP. Users who are evaluating DXP on a trial basis, may access these plugins for evaluation within the *Apps* &rarr; *Store* (i.e., Marketplace) section of the Control Panel in your product installation.
 
 ## Installation Process
 
@@ -10,7 +10,7 @@ Follow the steps below to install a trial plugin:
 
     ![Figure 1: Hover over the Profile button and click *Sign In/Create Account*.](./trial-plugin-installation/images/01.png)
 
-1. Start the DXP 7.2 instance (trial license is OK).
+1. Start the DXP 7.2 instance.
 1. After signing in as an Admin in your DXP 7.2 trial server, go to the Control Panel &rarr; *Apps* &rarr; *Store* and sign in to the Marketplace using your `liferay.com` account credentials. Authorize Marketplace to access your local account.
 
     ![Figure 2: Click the *Store* link and authorize Marketplace to access your local account.](./trial-plugin-installation/images/02.png)
@@ -18,8 +18,6 @@ Follow the steps below to install a trial plugin:
 1. Once signed into the Store, click on the *Purchased* link, and then click on the *EE* tab.
 
     Here you can see a list of DXP 7.2 plugins that are installed, as well as options to update or install certain plugins. See [Using the Liferay Marketplace](/docs/7-2/user/-/knowledge_base/u/using-the-liferay-marketplace) for details.
-
-Next are answers to some common questions.
 
 ## FAQ
 
