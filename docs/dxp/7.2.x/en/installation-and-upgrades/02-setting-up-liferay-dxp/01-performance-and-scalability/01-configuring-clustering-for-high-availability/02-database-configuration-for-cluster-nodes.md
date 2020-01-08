@@ -48,7 +48,7 @@ Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connectin
 
 1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
-    ```properties
+    ```
     spring.configs=\
         [..]
         META-INF/dynamic-data-source-spring.xml,\
@@ -92,7 +92,7 @@ Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connectin
 
 1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
-    ```properties
+    ```
     spring.configs=\
         [..]
         META-INF/dynamic-data-source-spring.xml,\
