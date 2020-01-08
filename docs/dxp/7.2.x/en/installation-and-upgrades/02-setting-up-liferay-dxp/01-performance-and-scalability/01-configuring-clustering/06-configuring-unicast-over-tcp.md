@@ -106,3 +106,8 @@ Supply your Amazon keys as values for the parameters above. For further informat
 ### Other Pings
 
 JGroups supplies other means for cluster members to discover each other, including Rackspace Ping, BPing, File Ping, and others. Please see the [JGroups Documentation](http://www.jgroups.org/manual4/index.html#DiscoveryProtocols) for information about these discovery methods.
+
+## Additional Information
+
+[Cluster Link Overview](./05-cluster-link-overview.md)
+[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

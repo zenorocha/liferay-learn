@@ -44,7 +44,7 @@ Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connectin
 
 1. Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections.
 
-    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
+    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties. Specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
 1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
@@ -88,7 +88,7 @@ Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connectin
 
 1. Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections.
 
-    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
+    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties. Specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
 1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
@@ -107,3 +107,8 @@ Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connectin
     For more information, see the [Spring configuration portal properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Spring).
 
 DXP uses a read data source, a write data source, and a counter data source the next time it starts.
+
+## Additional Information
+
+[Connecting a Database](../../../01-installing-liferay-dxp/04-connecting-a-database.md)
+[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

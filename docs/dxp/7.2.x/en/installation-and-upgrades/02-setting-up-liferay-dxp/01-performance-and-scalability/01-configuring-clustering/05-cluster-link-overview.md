@@ -177,3 +177,8 @@ GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168
 ```
 
 Congratulations! Your cluster is using Cluster Link.
+
+## Additional Information
+
+[Configuring Unicast over TCP](./06-configuring-unicast-over-tcp.md)
+[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

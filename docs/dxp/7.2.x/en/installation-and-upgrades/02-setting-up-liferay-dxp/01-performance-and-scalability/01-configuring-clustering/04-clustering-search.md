@@ -24,3 +24,9 @@ For more information on how to cluster Solr, see [Apache Solr Cloud](https://cwi
 Once DXP servers have been properly configured as a cluster, deploy the Liferay Solr 5 Connector on all nodes. The app is available for download from Liferay Marketplace [here](https://web.liferay.com/marketplace/-/mp/application/117931595).
 
 Create a Solr Cloud (cluster) managed by _Apache Solr Zookeeper_. Connect the DXP cluster to Zookeeper and finish the final configurations to connect the two clusters.
+
+## Additional Information
+
+[Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch)
+[Installing Solr](https://help.liferay.com/hc/en-us/articles/360032264052-Installing-Solr)
+[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
