@@ -7,4 +7,5 @@ Installing Liferay DXP
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/04-connecting-a-database`
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard`
 -  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/08-activating-liferay-dxp`
--  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/09-setting-up-marketplace`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/09-trial-plugin-installation`
+-  :doc:`/installation-and-upgrades/01-installing-liferay-dxp/10-setting-up-marketplace.md`
