@@ -12,7 +12,6 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 - [Enabling Cluster Link](#enabling-cluster-link)
 - [Configuring Cluster Link](#configuring-cluster-link)
-- [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
 - [Modifying the Cache Configuration with a Module](#modifying-the-cache-configuration-with-a-module)
 - [Conclusion](#conclusion)
 
@@ -77,86 +76,6 @@ Your network configuration may preclude the use of multicast over TCP, so below 
     ```
 
 2. Test your load and then optimize your settings if necessary.
-
-## Using Different Control and Transport Channel Ports
-
-The control and transport channels can be configured to use different ports. Using separate control and transport channel ports lets you monitor control and transport traffic and helps you isolate information to diagnose problems.
-
-The following steps use Unicast over TCPPing to demonstrate the approach.
-
-1. Add a parameter to your app server's JVM on each node:
-
-    ```bash
-    -Djgroups.bind_addr=[node_ip_address]
-    ```
-
-2. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
-
-3. Make a copy of the `tcp.xml` in the same location and rename both files, designating one for the control channel and the other for the transport channel. For example, you could use these file names:
-
-    - `tcp-control.xml`
-    - `tcp-transport.xml`
-
-5. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
-
-    ```properties
-    cluster.link.enabled=true
-    cluster.link.channel.properties.control=/jgroups/tcp-control.xml
-    cluster.link.channel.properties.transport.0=/jgroups/tcp-transport.xml
-    ```
-
-6. Modify each `tcp-*.xml` file's TCP and TCPPing elements to account for each node's IP address and bind port.
-
-    If you're vertically clustering (i.e., you have multiple servers running on the same physical or virtual system), every channel must use a unique unused bind port for discovery communication. In each `tcp-*.xml` file, assign the TCP tag's `bind_port` attribute to a unique, unused port.
-
-    For example, your first two nodes might assign these bind ports:
-
-    | Node   | Properties File     | Port   |
-    | :----- | :------------------ | :----- |
-    | Node 1 | `tcp-control.xml`   | `7800` |
-    | Node 1 | `tcp-transport.xml` | `7801` |
-    | Node 2 | `tcp-control.xml`   | `7802` |
-    | Node 2 | `tcp-transport.xml` | `7803` |
-
-    Here are example TCP and TCPPing elements using the bind ports on nodes running on the same system (i.e., same IP address):
-
-    **Node 1 `tcp-control.xml`**
-
-    ```xml 
-    <TCP bind_port="7800"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
-        port_range="0"/>
-    ```
-
-    **Node 1 `tcp-transport.xml`**
-
-    ```xml 
-    <TCP bind_port="7801"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
-        port_range="0"/>
-    ```
-
-    **Node 2 `tcp-control.xml`**
-
-    ```xml 
-    <TCP bind_port="7802"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
-        port_range="0"/>
-    ```
-
-    **Node 2 `tcp-transport.xml`**
-
-    ```xml 
-    <TCP bind_port="7803"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
-        port_range="0"/>
-    ```
-
-If you have added entities that can be cached or you want to tune the cache configuration for your system, you can do so using a module.
 
 ## Modifying the Cache Configuration with a Module
 
