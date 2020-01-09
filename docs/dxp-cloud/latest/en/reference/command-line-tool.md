@@ -36,6 +36,7 @@ Download the latest version of the
 In January 2020, we launched a new Command-Line Interface. Because of technical limitations, we could not provide the same upgrade experience you're used to with `lcp update`. Therefore, we decided to create this guide which will help you upgrade.
 
 **UNINSTALLING VERSION 2.X**
+
 First, you must uninstall this version in order to prevent conflicts with the same binary name.
 
 **MacOS or Linux**
