@@ -7,14 +7,10 @@ applications.
 * [Installing the CLI](#installing-the-cli)
 * [Changing the CLI Remote](#changing-the-cli-remote)
 * [Showing the Service Logs](#showing-the-service-logs)
-* [Manage Custom Domains](#manage-custom-domains)
-* [Manage Environment Variables](#manage-environment-variables)
 * [Change the number of service instances](#change-the-number-of-service-instances)
 * [List Projects or Services](#list-projects-or-services)
 * [Restart a Service](#restart-a-service)
-* [Execute Commands in a Service Container](#execute-commands-in-a-service-container)
 * [Access a Service's Shell](#access-a-services-shell)
-* [Open Console](#open-console)
 * [Uninstalling the CLI](#uninstalling-the-cli)
 
 ## Installing the CLI
@@ -95,64 +91,6 @@ Alternatively, view a service's logs by passing the service's full URL to
 lcp log --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Manage Custom Domains
-
-Use the `lcp domain` command to manage custom domains in DXP Cloud projects. 
-Here are some common examples. 
-
-Get the list of custom domains for a particular service: 
-
-```shell
-lcp domain --project <projectID> --service <serviceID>
-```
-
-Add a custom domain to a service: 
-
-```shell
-lcp domain add example.com --project <projectID> --service <serviceID>
-```
-
-Remove a custom domain from a service:
-
-```shell
-lcp domain delete example.com --project <projectID> --service <serviceID>
-```
-
-Alternatively, run the same commands by passing the service's full URL to 
-`lcp domain`: 
-
-```shell
-lcp domain --url <serviceID>-<projectID>.lfr.cloud
-```
-
-## Manage Environment Variables
-
-Use the `lcp env-var` command to manage environment variables. Here are some common examples. 
-
-Get the list of environment variables for a particular service: 
-
-```shell
-lcp env-var --project <projectID> --service <serviceID>
-```
-
-Add an environment variable to a service: 
-
-```shell
-lcp env-var set SOME_KEY somevalue --project <projectID> --service <serviceID>
-```
-
-Remove an environment variable from a service: 
-
-```shell
-lcp env-var rm SOME_KEY --project <projectID> --service <serviceID>
-```
-
-Alternatively, pass a service's full URL to `lcp env`: 
-
-```shell
-lcp env-var --url <serviceID>-<projectID>.lfr.cloud
-```
-
 ## Change the number of service instances
 
 Use the `lcp scale` command to change the number of instances. Here are some common examples. 
@@ -225,21 +163,6 @@ Alternatively, restart a service by passing its full URL to `lcp restart`:
 lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Execute Commands in a Service Container
-
-Use the CLI to run commands in a service container. For example, this runs a 
-command in a specific service instance: 
-
-```shell
-lcp exec --project <projectID> --service <serviceID> --instance <abc123> -- mkdir foo
-```
-
-This runs a command in any instance of a service: 
-
-```shell
-lcp exec --project <projectID> --service <serviceID> --instance any -- mkdir foo
-```
-
 ## Access a Service's Shell
 
 To access a service container's shell, run this command: 
@@ -258,21 +181,9 @@ service's project ID and service ID to the `lcp shell` command:
 lcp shell --project <projectID> --service <serviceID>
 ```
 
-## Open Console
+## Open docs
 
-Use the CLI to open the console anytime. For example, this opens the console: 
-
-```shell
-lcp console
-```
-
-This opens a specific service on the console:
-
-```shell
-lcp open --project <projectID> --service <serviceID>
-```
-
-This opens DXP Cloud documentation:
+Use the CLI to open DXP Cloud documentation anytime. 
 
 ```shell
 lcp docs
@@ -287,6 +198,3 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 ```
 
 For Windows, navigate to `Control Panel -> Add or Remove Programs`. Find "LCP CLI" in the list of programs, select it, and click "Uninstall". Follow the steps in the wizard.
-
-
-
