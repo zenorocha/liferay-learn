@@ -1,6 +1,7 @@
-# Collaboration and Social
+# Collaboration and Social Tools
 
 * User Guide
+  * Collaboration Overview
   * Message Boards
   * Wiki
   * Social Tools
