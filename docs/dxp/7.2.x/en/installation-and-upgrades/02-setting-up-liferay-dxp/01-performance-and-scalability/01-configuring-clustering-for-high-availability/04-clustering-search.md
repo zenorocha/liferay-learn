@@ -27,6 +27,8 @@ Create a Solr Cloud (cluster) managed by _Apache Solr Zookeeper_. Connect the DX
 
 ## Additional Information
 
-[Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch)
-[Installing Solr](https://help.liferay.com/hc/en-us/articles/360032264052-Installing-Solr)
-[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
+* [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch)
+
+* [Installing Solr](https://help.liferay.com/hc/en-us/articles/360032264052-Installing-Solr)
+
+* [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

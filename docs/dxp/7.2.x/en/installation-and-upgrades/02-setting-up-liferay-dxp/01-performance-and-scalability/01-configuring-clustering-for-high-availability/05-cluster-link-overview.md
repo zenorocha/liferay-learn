@@ -180,5 +180,6 @@ Congratulations! Your cluster is using Cluster Link.
 
 ## Additional Information
 
-[Configuring Unicast over TCP](./06-configuring-unicast-over-tcp.md)
-[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
+* [Configuring Unicast over TCP](./06-configuring-unicast-over-tcp.md)
+
+* [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

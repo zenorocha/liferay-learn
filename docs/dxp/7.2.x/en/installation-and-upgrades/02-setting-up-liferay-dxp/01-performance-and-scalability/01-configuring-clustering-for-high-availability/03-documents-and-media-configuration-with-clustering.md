@@ -14,5 +14,6 @@ Note that if you are using the File System or Advanced File System stores, the f
 
 ## Additional Information
 
-[Document Repository Configuration](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration)
-[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
+* [Document Repository Configuration](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration)
+
+* [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

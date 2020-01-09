@@ -109,5 +109,6 @@ JGroups supplies other means for cluster members to discover each other, includi
 
 ## Additional Information
 
-[Cluster Link Overview](./05-cluster-link-overview.md)
-[Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
+* [Cluster Link Overview](./05-cluster-link-overview.md)
+
+* [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
