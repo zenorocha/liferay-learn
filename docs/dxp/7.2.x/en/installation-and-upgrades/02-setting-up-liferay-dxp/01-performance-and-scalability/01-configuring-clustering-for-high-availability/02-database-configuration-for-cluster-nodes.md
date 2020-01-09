@@ -42,9 +42,15 @@ Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connectin
     counter.jdbc.prefix=jdbc.write.
     ```
 
-1. Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections.
+1. Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections. Connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically.
 
-    Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties. Specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
+> **Note:** For JDBC3 or older, connection pools may require additional, vendor-specific connection validation properties. Specify these properties in a Portal Properties file for them to be passed to the appropriate connection pool. For example, for a connection `jdbc.read.*`, third-party properties of the following form are passed to the connection pool:
+>
+> ```
+> jdbc.read.someVendorConnectionTestProperty=[test value]
+> ```
+>
+> Refer to your connection pool provider documentation for details on the specific connection validation properties.
 
 1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
 
