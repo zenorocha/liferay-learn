@@ -7,6 +7,7 @@ Contents
    :maxdepth: 4
 
    installation_and_upgrades
+   site_building
 
 
 Indices and tables
