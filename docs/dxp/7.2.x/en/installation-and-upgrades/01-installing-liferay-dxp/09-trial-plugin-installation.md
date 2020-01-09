@@ -8,12 +8,12 @@ Follow the steps below to install a trial plugin:
 
 1. Register a `liferay.com` account account by visiting [Liferay's home page](https://www.liferay.com) (if necessary). Do this by clicking *Sign In/Create Account* button from the top right Profile button.
 
-    ![Figure 1: Hover over the Profile button and click *Sign In/Create Account*.](./trial-plugin-installation/images/01.png)
+    ![Figure 1: Hover over the Profile button and click Sign In/Create Account.](./trial-plugin-installation/images/01.png)
 
 1. Start the DXP 7.2 instance.
 1. After signing in as an Admin in your DXP 7.2 trial server, go to the Control Panel &rarr; *Apps* &rarr; *Store* and sign in to the Marketplace using your `liferay.com` account credentials. Authorize Marketplace to access your local account.
 
-    ![Figure 2: Click the *Store* link and authorize Marketplace to access your local account.](./trial-plugin-installation/images/02.png)
+    ![Figure 2: Click the Store link and authorize Marketplace to access your local account.](./trial-plugin-installation/images/02.png)
 
 1. Once signed into the Store, click on the *Purchased* link, and then click on the *EE* tab.
 
