@@ -30,6 +30,25 @@ If you get a permissions error, try running the same command with `sudo`.
 Download the latest version of the 
 [Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard. 
 
+## Upgrading the CLI from v2 to v3
+
+In January 2020, we launched a new Command-Line Interface. Because of technical limitations, we could not provide the same upgrade experience you're used to with `lcp update`. Therefore, we decided to create this guide which will help you upgrade.
+
+### UNINSTALLING VERSION 2.X
+First, you must uninstall this version in order to prevent conflicts with the same binary name.
+
+### MacOS or Linux
+
+1. Open a terminal and run: `lcp uninstall`
+2. Verify uninstall is complete by running lcp
+
+### Windows
+
+1. Go to `Control Panel > Programs > Uninstall a program`
+2. Select `lcp amd64-installer-0.3`
+3. Click Uninstall
+4. Confirm uninstall
+5. Verify uninstall is complete by running `lcp` or `lcp.exe` command
 
 ## Changing the CLI Remote
 
