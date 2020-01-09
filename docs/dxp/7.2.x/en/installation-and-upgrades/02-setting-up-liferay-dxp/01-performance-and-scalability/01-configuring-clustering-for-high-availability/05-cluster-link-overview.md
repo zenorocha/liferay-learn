@@ -51,6 +51,8 @@ DXP uses two groups of [channels from JGroups](http://www.jgroups.org/manual4/in
 ```properties
 cluster.link.channel.name.control=[your control channel name]
 cluster.link.channel.properties.control=[your control channel properties]
+cluster.link.channel.name.transport.0=[your transport channel name]
+cluster.link.channel.properties.transport.0=[your transport channel properties]
 ```
 
 Please see [JGroups's documentation](http://www.jgroups.org/manual4/index.html#protlist) for channel properties. The default configuration sets many properties whose settings are discussed there.
