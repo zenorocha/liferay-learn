@@ -19,6 +19,12 @@
 * Fragment OSGi Modules
 * Customizing the Web APIs
 
+## Managing Applications
+
+* Managing and Configuring Apps
+* App Types
+* Blacklisting OSGi Bundles and Components
+
 ## Database
 
 * Service Builder

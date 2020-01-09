@@ -5,6 +5,7 @@
 ## Building Sites
 
 * [Adding Sites](./01-building-sites/01-adding-sites.md)
+* Understanding Site Membership
 * [Building Sites with Site Templates](./01-building-sites/02-building-sites-with-site-templates.md)
 * [Merging Site Template Changes](./01-building-sites/03-merging-site-template-changes.md)
 * [Sharing Site Templates](./01-building-sites/04-sharing-site-templates.md)
