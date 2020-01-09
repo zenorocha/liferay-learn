@@ -5,6 +5,7 @@ manage DXP Cloud. For example, you can use the CLI to create, manage, and scale
 applications. 
 
 * [Installing the CLI](#installing-the-cli)
+* [Upgrading the CLI from v2 to v3](#uninstalling-version-2x)
 * [Changing the CLI Remote](#changing-the-cli-remote)
 * [Showing the Service Logs](#showing-the-service-logs)
 * [Change the number of service instances](#change-the-number-of-service-instances)
@@ -34,15 +35,15 @@ Download the latest version of the
 
 In January 2020, we launched a new Command-Line Interface. Because of technical limitations, we could not provide the same upgrade experience you're used to with `lcp update`. Therefore, we decided to create this guide which will help you upgrade.
 
-### UNINSTALLING VERSION 2.X
+**UNINSTALLING VERSION 2.X**
 First, you must uninstall this version in order to prevent conflicts with the same binary name.
 
-### MacOS or Linux
+**MacOS or Linux**
 
 1. Open a terminal and run: `lcp uninstall`
 2. Verify uninstall is complete by running lcp
 
-### Windows
+**Windows**
 
 1. Go to `Control Panel > Programs > Uninstall a program`
 2. Select `lcp amd64-installer-0.3`
