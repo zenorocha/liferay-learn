@@ -18,7 +18,7 @@ Administrators can manage Site members from that Site's *Site Membership* page.
 
 From here you can manage Site memberships, Organizations, and User Group associations. You can learn more about those in [Users and Organizations](TODO). On this page, you can see a list of all of the current Users of the Site and you can add or remove user memberships from the Site.
 
-![Figure 1: The current members of the Site as displayed on the *Site Memberships* page.](./adding-members-to-sites/images/01.png)
+![Figure 1: The current members of the Site as displayed on the Site Memberships page.](./adding-members-to-sites/images/01.png)
 
 ### Adding Members to a Site
 
