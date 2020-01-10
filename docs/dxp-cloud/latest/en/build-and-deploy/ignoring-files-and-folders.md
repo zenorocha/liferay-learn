@@ -33,9 +33,9 @@ The `.lcpignore` file uses globbing patterns to match against file names. (These
 | `txts/*day/file.txt`| `txts/monday/file.txt` or `txts/tuesday/file.txt`, but not `txts/latest/file.txt` | Wildcards can be used in folder names as well. |
 | `txts/file.txt` | `txts/file.txt`, but not `file.txt` `build/txts/file.txt` | Patterns specifying a file in a particular folder are relative to the repository root. Note that prepending a slash has no effect. |
 
-As best practice, keep the `.lcpignore` file in the top level folder of your project. If your repository has multiple `.lcpignore` files (not recommended), LCP will read them as a unified document.
+As best practice, keep the `.lcpignore` file in the top level folder of your project. If your repository has multiple `.lcpignore` files (not recommended), DXP Cloud will read them as a unified document.
 
-NOTES: If a file or folder has been deployed and administrators want to ignore it later, LCP will not ignore the file if a subsequent rule tries to include that file or folder. Rather, that file or folder will not be updated.
+NOTES: If a file or folder has been deployed and administrators want to ignore it later, DXP Cloud will not ignore the file if a subsequent rule tries to include that file or folder. Rather, that file or folder will not be updated.
 
 ## Additional Information
 
