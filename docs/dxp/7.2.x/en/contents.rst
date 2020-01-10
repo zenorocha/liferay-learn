@@ -6,6 +6,7 @@ Contents
    :includehidden:
    :maxdepth: 4
 
+   getting_started
    installation_and_upgrades
    site_building
 
