@@ -1,8 +1,6 @@
 # Command-line Tool
 
-Liferay DXP's command-line interface (CLI) is a tool that helps you use and 
-manage DXP Cloud. For example, you can use the CLI to create, manage, and scale 
-applications. 
+Liferay DXP's command-line interface (CLI) is a tool that helps you use and manage DXP Cloud. For example, you can use the CLI to create, manage, and scale applications.
 
 * [Installing the CLI](#installing-the-cli)
 * [Upgrading the CLI from v2 to v3](#uninstalling-version-2x)
@@ -18,65 +16,49 @@ applications.
 
 **\*nix Systems**
 
-Open a terminal and run this command: 
+Open a terminal and run this command:
 
 ```bash
 curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 ```
 
-If you get a permissions error, try running the same command with `sudo`. 
+If you get a permissions error, try running the same command with `sudo`.
 
 **Windows Systems**
 
-Download the latest version of the 
-[Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard. 
+Download the latest version of the [Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard.
 
 ## Upgrading the CLI from v2 to v3
 
-In January 2020, we launched a new Command-Line Interface. Because of technical limitations, we could not provide the same upgrade experience you're used to with `lcp update`. Therefore, we decided to create this guide which will help you upgrade.
+The latest version of Command-Line Interface tool is version 3. Because of technical limitations, the CLI tool cannot be updated using the command `lcp update`. Therefore the legacy versions have to be uninstalled first before the version 3 can be used. This prevent conflicts with the same binary name.
 
-**UNINSTALLING VERSION 2.X**
+Follow the instructions in the [Uninstalling the CLI](#uninstalling-the-cli) section for the \*Nix and Windows environments.
 
-First, you must uninstall this version in order to prevent conflicts with the same binary name.
-
-**MacOS or Linux**
-
-1. Open a terminal and run: `lcp uninstall`
-2. Verify uninstall is complete by running lcp
-
-**Windows**
-
-1. Go to `Control Panel > Programs > Uninstall a program`
-2. Select `lcp amd64-installer-0.3`
-3. Click Uninstall
-4. Confirm uninstall
-5. Verify uninstall is complete by running `lcp` or `lcp.exe` command
+Verify that CLI version 2 has been uninstalled before installing version 3.
 
 ## Changing the CLI Remote
 
-To access DXP Cloud services via the CLI, the CLI must be pointed to the right 
-DXP Cloud. The remote URL for DXP Cloud is `liferay.cloud`. To list the CLI's 
-remotes, run this command: 
+To access DXP Cloud services via the CLI, the CLI must be pointed to the right DXP Cloud. The remote URL for DXP Cloud is `liferay.cloud`. To list the CLI's remotes, run this command:
 
 ```shell
 lcp remote
 ```
 
-Follow these steps to change the default remote: 
+Follow these steps to change the default remote:
 
-1. Add a new remote if necessary: 
+1. Add a new remote if necessary:
 
     ```shell
     lcp remote set <remote-alias> <remote-url>
     ```
 
-1. Run this command to set the default remote: 
+1. Run this command to set the default remote:
 
     ```shell
     lcp remote default <remote-alias>
     ```
 
-Alternatively, specify the remote inline via this command: 
+Alternatively, specify the remote inline via this command:
 
 ```shell
 lcp shell --project <project-id> --service <service-id> --remote <remote-alias>
@@ -84,8 +66,7 @@ lcp shell --project <project-id> --service <service-id> --remote <remote-alias>
 
 ## Showing the Service Logs
 
-The `lcp log` command displays the DXP Cloud project's service logs. Here are 
-some common examples. 
+The `lcp log` command displays the DXP Cloud project's service logs. Here are some common examples.
 
 Check an entire project's logs: 
 
@@ -126,7 +107,7 @@ Scale instances of a specific service in a project:
 lcp scale --project <projectID> --service <serviceID> <instances>
 ```
 
-Alternatively, scale instances by passing its full URL to `lcp restart`: 
+Alternatively, scale instances by passing its full URL to `lcp restart`:
 
 ```shell
 lcp scale --url <serviceID>-<projectID>.lfr.cloud <instances>
@@ -149,7 +130,7 @@ List a project's services:
 lcp list --project <projectID>
 ```
 
-Check a specific service in a project: 
+Check a specific service in a project:
 
 ```shell
 lcp list --project <projectID> --service <serviceID>
@@ -218,4 +199,4 @@ For Mac and Linux, run this command:
 curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 ```
 
-For Windows, navigate to `Control Panel -> Add or Remove Programs`. Find "LCP CLI" in the list of programs, select it, and click "Uninstall". Follow the steps in the wizard.
+For Windows 7 and 8, navigate to `Control Panel > Add or Remove Programs`. In Windows 10, navigate to `Control Panel` > `Programs` > `Uninstall a program`. Find "LCP CLI" in the list of programs, select it, and click "Uninstall". Follow the steps in the wizard.
