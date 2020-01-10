@@ -1,20 +1,20 @@
 # Command-line Tool
 
-Liferay DXP's command-line interface (CLI) is a tool that helps you use and manage DXP Cloud. For example, you can use the CLI to create, manage, and scale applications.
+Liferay DXP's command-line interface (CLI) is a tool that helps you use and manage DXP Cloud services. The CLI can be used to create, manage, and scale applications. See the following actions:
 
 * [Installing the CLI](#installing-the-cli)
 * [Upgrading the CLI from v2 to v3](#uninstalling-version-2x)
 * [Changing the CLI Remote](#changing-the-cli-remote)
 * [Showing the Service Logs](#showing-the-service-logs)
-* [Change the number of service instances](#change-the-number-of-service-instances)
-* [List Projects or Services](#list-projects-or-services)
-* [Restart a Service](#restart-a-service)
-* [Access a Service's Shell](#access-a-services-shell)
+* [Changing the Number of Service Instances](#changing-the-number-of-service-instances)
+* [Listing Projects or Services](#listing-projects-or-services)
+* [Restarting a Service](#restarting-a-service)
+* [Accessing a Service's Shell](#accessing-a-services-shell)
 * [Uninstalling the CLI](#uninstalling-the-cli)
 
 ## Installing the CLI
 
-**\*nix Systems**
+### \*nix Systems
 
 Open a terminal and run this command:
 
@@ -24,13 +24,13 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 If you get a permissions error, try running the same command with `sudo`.
 
-**Windows Systems**
+### Windows Systems
 
 Download the latest version of the [Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard.
 
 ## Upgrading the CLI from v2 to v3
 
-The latest version of Command-Line Interface tool is version 3. Because of technical limitations, the CLI tool cannot be updated using the command `lcp update`. Therefore the legacy versions have to be uninstalled first before the version 3 can be used. This prevent conflicts with the same binary name.
+The latest version of Command-Line Interface tool is version 3. Because of technical limitations, the CLI tool cannot be updated using the command `lcp update`. Legacy versions must be uninstalled first before the version 3 can be used. This prevent conflicts with the same binary name.
 
 Follow the instructions in the [Uninstalling the CLI](#uninstalling-the-cli) section for the \*Nix and Windows environments.
 
@@ -68,40 +68,40 @@ lcp shell --project <project-id> --service <service-id> --remote <remote-alias>
 
 The `lcp log` command displays the DXP Cloud project's service logs. Here are some common examples.
 
-Check an entire project's logs: 
+Check an entire project's logs:
 
 ```shell
 lcp log --project <projectID>
 ```
 
-View the logs of a specific service in a project: 
+View the logs of a specific service in a project:
 
 ```shell
 lcp log --project <projectID> --service <serviceID>
 ```
 
-View the logs of a specific period of time: 
+View the logs of a specific period of time:
 
 ```shell
 lcp log --project <projectID> --since <timestamp>
 ```
 
-Alternatively, view a service's logs by passing the service's full URL to 
-`lcp log`: 
+Alternatively, view a service's logs by passing the service's full URL to
+`lcp log`:
 
 ```shell
 lcp log --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Change the number of service instances
+## Changing the Number of Service Instances
 
-Use the `lcp scale` command to change the number of instances. Here are some common examples. 
+Use the `lcp scale` command to change the number of instances. Here are some common examples.
 
 ```shell
 lcp scale --project <projectID> <instances>
 ```
 
-Scale instances of a specific service in a project: 
+Scale instances of a specific service in a project:
 
 ```shell
 lcp scale --project <projectID> --service <serviceID> <instances>
@@ -113,18 +113,18 @@ Alternatively, scale instances by passing its full URL to `lcp restart`:
 lcp scale --url <serviceID>-<projectID>.lfr.cloud <instances>
 ```
 
-## List Projects or Services
+## Listing Projects or Services
 
-Use the `lcp list` command to list projects and services. Here are some common 
-examples. 
+Use the `lcp list` command to list projects and services. Here are some common
+examples.
 
-See the full list of projects, services, and instances you own or collaborate on: 
+See the full list of projects, services, and instances you own or collaborate on:
 
 ```shell
 lcp list
 ```
 
-List a project's services: 
+List a project's services:
 
 ```shell
 lcp list --project <projectID>
@@ -136,48 +136,48 @@ Check a specific service in a project:
 lcp list --project <projectID> --service <serviceID>
 ```
 
-Alternatively, check a service by passing its full URL to `lcp list`: 
+Alternatively, check a service by passing its full URL to `lcp list`:
 
 ```shell
 lcp list --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Restart a Service
+## Restarting a Service
 
-Use the `lcp restart` command to restart a service. Here are some common 
-examples. 
+Use the `lcp restart` command to restart a service. Here are some common
+examples.
 
-Restart a project's services: 
+Restart a project's services:
 
 ```shell
 lcp restart --project <projectID>
 ```
 
-Restart a specific service in a project: 
+Restart a specific service in a project:
 
 ```shell
 lcp restart --project <projectID> --service <serviceID>
 ```
 
-Alternatively, restart a service by passing its full URL to `lcp restart`: 
+Alternatively, restart a service by passing its full URL to `lcp restart`:
 
 ```shell
 lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
-## Access a Service's Shell
+## Accessing a Service's Shell
 
-To access a service container's shell, run this command: 
+To access a service container's shell, run this command:
 
 ```shell
 lcp shell
 ```
 
-This lists all the services in the container and lets administrators choose 
-which one to access. 
+This lists all the services in the container and lets administrators choose
+which one to access.
 
-Alternatively, access the shell of a specific service's container by adding the 
-service's project ID and service ID to the `lcp shell` command: 
+Alternatively, access the shell of a specific service's container by adding the
+service's project ID and service ID to the `lcp shell` command:
 
 ```shell
 lcp shell --project <projectID> --service <serviceID>
@@ -185,7 +185,7 @@ lcp shell --project <projectID> --service <serviceID>
 
 ## Open docs
 
-Use the CLI to open DXP Cloud documentation anytime. 
+Use the CLI to open DXP Cloud documentation anytime.
 
 ```shell
 lcp docs
