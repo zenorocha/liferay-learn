@@ -32,7 +32,21 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 
 The latest version of Command-Line Interface tool is version 3. Because of technical limitations, the CLI tool cannot be updated using the command `lcp update`. Legacy versions must be uninstalled first before the version 3 can be used. This prevent conflicts with the same binary name.
 
-Follow the instructions in the [Uninstalling the CLI](#uninstalling-the-cli) section for the \*Nix and Windows environments.
+**Important note**: The following instructions differ from those found in the [Uninstalling the CLI](#uninstalling-the-cli) section for the \*Nix and Windows environments.
+
+### MacOS or Linux
+
+1. Open a terminal and run: `lcp uninstall`.
+1. Verify uninstall is complete by running the command `lcp`.
+
+### Windows
+
+For Windows 7 and 8, navigate to `Control Panel > Add or Remove Programs`. In Windows 10, navigate to `Control Panel` > `Programs` > `Uninstall a program`.
+
+1. Go to Control Panel > Programs > Uninstall a program
+1. Select `lcp amd64-installer-0.3`
+1. Click _Uninstall_ then confirm.
+1. Verify uninstall is complete by running the command `lcp` or `lcp.exe`.
 
 Verify that CLI version 2 has been uninstalled before installing version 3.
 
