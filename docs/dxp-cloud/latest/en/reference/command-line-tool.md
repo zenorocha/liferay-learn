@@ -32,7 +32,7 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 
 The latest version of Command-Line Interface tool is version 3. Because of technical limitations, the CLI tool cannot be updated using the command `lcp update`. Legacy versions must be uninstalled first before the version 3 can be used. This prevent conflicts with the same binary name.
 
-**Important note**: The following instructions differ from those found in the [Uninstalling the CLI](#uninstalling-the-cli) section for the \*Nix and Windows environments.
+**Important note**: The following instructions are specific to uninstalling CLI version **2** and are **not** the same as those for [Uninstalling the CLI](#uninstalling-the-cli).
 
 ### MacOS or Linux
 
