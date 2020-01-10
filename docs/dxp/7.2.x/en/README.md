@@ -4,7 +4,7 @@
 
 First time? Start here!
 
-## [Building Solutions on DXP](./solutions/README.md)
+## [Building Solutions on DXP](./building-solutions-on-dxp/README.md)
 
 Solve big problems. We'll show you how.
 
