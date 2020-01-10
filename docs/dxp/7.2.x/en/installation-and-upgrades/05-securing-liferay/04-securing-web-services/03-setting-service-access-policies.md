@@ -60,7 +60,7 @@ com.liferay.document.library.kernel.service.DLAppService#get*
 To create a new Service Access Policy:
 
 1. Navigate to the *Configuration* &rarr; *Service Access Policy* section of the Control Panel.
-1. Click *Add* (![add](../../images/icon-add.png)).
+1. Click *Add* (![add](../../../../images/icon-add.png)).
 1. Give your policy a name.
 1. Flip the *Enabled* toggle to enable your policy.
 1. If you want the policy applied to unauthenticated requests as well as authenticated requests, flip the toggle labeled *Default*.
