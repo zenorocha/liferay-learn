@@ -2,7 +2,7 @@ Building Sites
 ==============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    01-building-sites/01-adding-sites.md
    01-building-sites/02-building-sites-with-site-templates.md
