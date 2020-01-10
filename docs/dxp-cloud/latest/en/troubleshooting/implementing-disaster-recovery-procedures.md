@@ -1,7 +1,6 @@
 # Disaster Recovery
 
-DXP Cloud provides two ways for customers to take advantage of the Disaster
-Recovery (DR) procedure in the case of major incidents.
+DXP Cloud provides two ways for customers to take advantage of the Disaster Recovery (DR) procedure in the case of major incidents.
 
 **Automatic Disaster Recovery**: DXP Cloud performs automatic disaster recovery protocols by replicating services between three Availability Zones in different geographic locations within the same Region. In case any of the Availability Zones become unavailable, the Load Balancer will automatically route to the remaining Availability Zones without requiring DNS changes on the customer side. In this situation, *no action is required from the customer during an incident*.
 
