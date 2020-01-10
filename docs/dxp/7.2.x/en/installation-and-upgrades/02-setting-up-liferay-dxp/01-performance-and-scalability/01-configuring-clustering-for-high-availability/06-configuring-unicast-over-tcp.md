@@ -1,12 +1,12 @@
 # Configuring Unicast over TCP
 
-If your network configuration or the geographical distance between nodes prevents you from using UDP Multicast clustering, you can configure TCP Unicast. You must use this if you have a firewall separating any of your nodes or if your nodes are in different geographical locations.
+If your network configuration or the geographical distance between cluster nodes prevents you from using UDP Multicast clustering, you can configure TCP Unicast. You must use this if you have a firewall separating any of your nodes or if your nodes are in different geographical locations.
 
 **Contents:**
 
-- [Unicast Configurations](#unicast-configurations)
-- [Alternative Discovery Protocols](#alternative-discovery-protocols)
-- [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
+* [Unicast Configurations](#unicast-configurations)
+* [Alternative Discovery Protocols](#alternative-discovery-protocols)
+* [Using Different Control and Transport Channel Ports](#using-different-control-and-transport-channel-ports)
 
 ## Unicast Configurations
 
@@ -17,33 +17,33 @@ Use the following steps to configure Unicast:
     ```bash
     -Djgroups.bind_addr=[node_ip_address]
     ```
- 
+
     Use the node's IP address.
 
-2. Select a discovery protocol for the nodes to use to find each other. Here are the protocol choices:
+1. Select a discovery protocol for the nodes to use to find each other. Here are the protocol choices:
 
-    - TCPPing
-    - JDBCPing
-    - S3_Ping
-    - Rackspace_Ping
+    * TCPPing
+    * JDBCPing
+    * S3_Ping
+    * Rackspace_Ping
 
     If you aren't sure which one to choose, use TCPPing. The rest of these steps use TCPPing. See [Alternative Discovery Protocols](#alternative-discovery-protocols) for more information on the others.
 
-3. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
+1. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
 
     ```
     WEB-INF/classes/jgroups/tcp.xml
     ```
 
-4. In the `tcp.xml` file, set the TCP bind port to an unused port on your node. Here's an example:
+1. In the `tcp.xml` file, set the TCP bind port to an unused port on your node. Here's an example:
 
-    ```xml 
+    ```xml
     <TCP bind_port="7800"/>
     ```
 
-5. In the `tcp.xml` file, make each node discoverable to TCPPing by specifying the node's IP address and an unused port on that node. Building off of the previous step, here's an example `<TCPPing>` element:
+1. In the `tcp.xml` file, make each node discoverable to TCPPing by specifying the node's IP address and an unused port on that node. Building off of the previous step, here's an example `<TCPPing>` element:
 
-    ```xml 
+    ```xml
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7800],192.168.224.155[7800]"
@@ -52,19 +52,19 @@ Use the following steps to configure Unicast:
 
     **Regarding Initial Hosts:**
 
-    - Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
-    - An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this: `-Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]`.
+    * Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
+    * An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this: `-Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]`.
 
-6. Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. For example, on the node with IP address `192.168.224.155`, configure TCPPing like this:
+1. Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. For example, on the node with IP address `192.168.224.155`, configure TCPPing like this:
 
-    ```xml 
+    ```xml
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7800],192.168.224.155[7800]"
         port_range="0"/>
     ```
 
-7. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -103,7 +103,7 @@ Amazon S3 Ping can be used for servers running on Amazon's EC2 cloud service. Ea
 To configure S3 Ping, replace the `TCPPING` tag with the corresponding `S3_PING` tag:
 
 ```xml
-<S3_PING 
+<S3_PING
     secret_access_key="[SECRETKEY]"
     access_key="[ACCESSKEY]"
     location="ControlBucket"/>
@@ -127,14 +127,14 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
     -Djgroups.bind_addr=[node_ip_address]
     ```
 
-2. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
+1. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
 
-3. Make a copy of the `tcp.xml` in the same location and rename both files, designating one for the control channel and the other for the transport channel. For example, you could use these file names:
+1. Make a copy of the `tcp.xml` in the same location and rename both files, designating one for the control channel and the other for the transport channel. For example, you could use these file names:
 
-    - `tcp-control.xml`
-    - `tcp-transport.xml`
+    * `tcp-control.xml`
+    * `tcp-transport.xml`
 
-5. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -142,7 +142,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
     cluster.link.channel.properties.transport.0=/jgroups/tcp-transport.xml
     ```
 
-6. Modify each `tcp-*.xml` file's TCP and TCPPing elements to account for each node's IP address and bind port.
+1. Modify each `tcp-*.xml` file's TCP and TCPPing elements to account for each node's IP address and bind port.
 
     If you're vertically clustering (i.e., you have multiple servers running on the same physical or virtual system), every channel must use a unique unused bind port for discovery communication. In each `tcp-*.xml` file, assign the TCP tag's `bind_port` attribute to a unique, unused port.
 
@@ -159,7 +159,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
     **Node 1 `tcp-control.xml`**
 
-    ```xml 
+    ```xml
     <TCP bind_port="7800"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
@@ -168,7 +168,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
     **Node 1 `tcp-transport.xml`**
 
-    ```xml 
+    ```xml
     <TCP bind_port="7801"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
@@ -177,7 +177,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
     **Node 2 `tcp-control.xml`**
 
-    ```xml 
+    ```xml
     <TCP bind_port="7802"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
@@ -186,7 +186,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
     **Node 2 `tcp-transport.xml`**
 
-    ```xml 
+    ```xml
     <TCP bind_port="7803"/>
     <TCPPING async_discovery="true"
         initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
@@ -198,5 +198,4 @@ If you have added entities that can be cached or you want to tune the cache conf
 ## Additional Information
 
 * [Cluster Link Overview](./05-cluster-link-overview.md)
-
 * [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
