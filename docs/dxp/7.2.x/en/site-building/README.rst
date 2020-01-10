@@ -1,7 +1,7 @@
 Site Building
 =============
 
--  :doc:`/installation-and-upgrades/01-introduction-to-site-building`
+-  :doc:`/site-building/01-introduction-to-site-building`
 
 Building Sites
 --------------
