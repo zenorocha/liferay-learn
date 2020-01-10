@@ -11,8 +11,8 @@
 * [Merging Site Template Changes](./01-building-sites/03-merging-site-template-changes.md)
 * [Sharing Site Templates](./01-building-sites/04-sharing-site-templates.md)
 * [Site Hierarchies](./01-building-sites/07-site-hierarchies.md)
-* [Importing/Exporting Sites and Content](./01-building-sites/09-importing-exporting-pages-and-content.md)
 * [Customizing Personal Sites](./01-building-sites/08-customizing-personal-sites.md)
+* [Importing/Exporting Sites and Content](./01-building-sites/09-importing-exporting-pages-and-content.md)
 * Staging
 
 ### Site Membership

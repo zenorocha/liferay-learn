@@ -19,7 +19,7 @@ The steps below cover these topics:
 
     > **Note:** You can configure other Site membership groupings, such as *Users*, *Organizations*, and *User Groups* in the *Site Memberships* app, which is also in the *Members* tab. You can visit [User Management](TODO) for more information on how Site memberships work.
 
-1. Click the *Add Team* icon (![Add Team](../../../images/icon-add.png)).
+1. Click the *Add Team* icon (![Add Team](../../images/icon-add.png)).
 
 1. Enter a name and a description and click *Save*. Your new Team is displayed in the list.
 
@@ -29,13 +29,13 @@ The steps below cover these topics:
 
 1. Click on the Team name link.
 
-1. Click the Add button (![Add Button](../../../images/icon-add.png)).
+1. Click the Add button (![Add Button](../../images/icon-add.png)).
 
 1. Select the Users to add to the Team and click *Add*.
 
 ## Managing Team Permissions
 
-1. Click the *Actions* icon (![Actions](../../../images/icon-actions.png)) next to the Team and select *Permissions*.
+1. Click the *Actions* icon (![Actions](../../images/icon-actions.png)) next to the Team and select *Permissions*.
 
     >**Note:** Setting permissions for the Team assigns those permissions to all the Team's members. Only Administrators who can edit/manage the Team can manage Team permissions.
 
@@ -47,7 +47,7 @@ You can also manage Team permissions from an app.
 
 1. Open the Product Menu and select the app under the Site's menu (Message Boards for example).
 
-1. Open the *Options* (![Options](../../../images/icon-options.png)) Menu in the top right of the screen and select the *permissions*-related option.
+1. Open the *Options* (![Options](../../images/icon-options.png)) Menu in the top right of the screen and select the *permissions*-related option.
 
 1. Find the Team in the Role column and select the appropriate permissions.
 

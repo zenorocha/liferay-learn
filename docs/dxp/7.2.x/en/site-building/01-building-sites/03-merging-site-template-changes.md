@@ -4,7 +4,7 @@ Once changes are made to a Site created from a Site Template, the Site Template 
 
 <!-- Make the following sentences into numbered steps. -->
 
-You can relink the Site to the Site Template by clicking the Information icon (![Information](../../../images/icon-control-menu-information.png)) that appears in the Control Menu and clicking the *Reset Changes* link. This merges any updates from the Site Template and also reverts any changes made to the page <!-- Should the part about reverting any changes made to the page be a warning? Could this result unexpectedly in someone losing work/data? -->. If multiple site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button for each page.
+You can relink the Site to the Site Template by clicking the Information icon (![Information](../../images/icon-control-menu-information.png)) that appears in the Control Menu and clicking the *Reset Changes* link. This merges any updates from the Site Template and also reverts any changes made to the page <!-- Should the part about reverting any changes made to the page be a warning? Could this result unexpectedly in someone losing work/data? -->. If multiple site pages have been modified and you'd like to re-apply the Site Template pages to them, you must click the *Reset Changes* button for each page.
 
 ![Figure 1: You can click the Information icon to view important information about your Site Template.](./merging-site-template-changes/images/01.png)
 

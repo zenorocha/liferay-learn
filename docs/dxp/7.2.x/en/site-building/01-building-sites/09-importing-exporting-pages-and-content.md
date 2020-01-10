@@ -19,7 +19,7 @@ If you want to regularly move pages from one server to another, you should use L
 Follow these steps to export and import your Site's pages:
 
 1. Open the Product Menu and select *Publishing* &rarr; *Export* under your Site's Menu.
-1. Click *Add* (![Custom Export](../../../images/icon-add.png)).
+1. Click *Add* (![Custom Export](../../images/icon-add.png)).
 
     A *New Custom Export* page loads, so you can choose the pages and content you want to export from your Site:
 
@@ -46,7 +46,7 @@ Follow these steps to export and import your Site's pages:
 
 1. Click *Export*. The menu automatically switches to the *Processes* tab, where you see the status of your exported LAR file.
 
-1. Select the *Download* icon (![Download](../../../images/icon-download.png)) <!-- Broken image link --> to download the export to your local machine and copy it to a secure location for safekeeping or import it into another installation of Liferay Portal.
+1. Select the *Download* icon (![Download](../../images/icon-download.png)) <!-- Broken image link --> to download the export to your local machine and copy it to a secure location for safekeeping or import it into another installation of Liferay Portal.
 1. To rebuild or revert back to this version of your Site, you can import this file by clicking the *Import* button from the Publishing menu, browsing to it, and selecting it. You can also drag a LAR file inside the dotted area, which also executes the import process.
 
 ## Creating Export Templates
@@ -54,11 +54,11 @@ Follow these steps to export and import your Site's pages:
 Instead of manually creating an export process every time you export pages and/or content, you can create an Export Template to store the export process settings so they can be reused. To create an Export Template, follow these steps:
 
 1. Open the Product Menu and select *Publishing* &rarr; *Export* under your site's Menu.
-1. Select the *Options* icon (![Options](../../../images/icon-options.png)) from the top right corner of the screen and select *Export Templates*.
+1. Select the *Options* icon (![Options](../../images/icon-options.png)) from the top right corner of the screen and select *Export Templates*.
 
   <!-- Screenshot -->
 
-1. Click the *Add* button (![Add Export Template](../../../images/icon-add.png)).
+1. Click the *Add* button (![Add Export Template](../../images/icon-add.png)).
 1. Provide a *Name* and *Description* for the template.
 1. Fill out the configuration options for your export process.
 1. Click *Save*.
@@ -69,7 +69,7 @@ Your template is now available to use from the *Export Templates* menu.
 
 To use an Export Template, follow these steps:
 
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) Menu next to the Export Template and select *Export*.
+1. Click the *Actions* (![Actions](../../images/icon-actions.png)) Menu next to the Export Template and select *Export*.
 
     This automatically fills in the fields and options for exporting pages and their content.
 

@@ -24,7 +24,7 @@ To create a site using a Site Template, follow these steps:
 
   <!-- Screenshot -->
 
-1. Click the *Add* icon (![Add Site](../../../images/icon-add.png)) and select your Site Template from the menu.
+1. Click the *Add* icon (![Add Site](../../images/icon-add.png)) and select your Site Template from the menu.
 1. Enter a name for the Site.
 1. Check the *Create default pages as private (available only to members).*
 
@@ -50,7 +50,7 @@ Follow these steps to create a new Site Template:
 
 <!-- Screenshot -->
 
-1. Click the *Add* icon (![Add Site Template](../../../images/icon-add.png)) and enter a name for your template.
+1. Click the *Add* icon (![Add Site Template](../../images/icon-add.png)) and enter a name for your template.
 
 1. Leave the *Active* option enabled.
 
@@ -75,7 +75,7 @@ Follow these steps to create a new Site Template:
 After you've created your Site Template, you must edit it to include the layouts, pages, apps, etc. that you want. Follow these steps:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Sites* &rarr; *Site Templates*.
-1. Click the *Options* icon (![Options](../../../images/icon-options.png)) next to the Site Template and select *Manage*.
+1. Click the *Options* icon (![Options](../../images/icon-options.png)) next to the Site Template and select *Manage*.
 
     By default, the *Manage* interface opens *Site Builder* &rarr; *Pages* for the Site Template. You already have a home page.
 

@@ -46,7 +46,7 @@ The Sites Directory application is a configurable app that shows a hierarchy of 
 1. Open its *Configuration* window
 1. Select *List Hierarchy* under Display Style
 
-The My Sites Directory application is similar to the Sites Directory application, except that it lists only the Sites a User belongs to. You can view the available open and restricted Sites by adding the My Sites application to a page and accessing the *Available Sites* tab. You can request access to any of the Sites you're not a member of by selecting the Site's *Options* button (![Options](../../../images/icon-actions.png)) and clicking *Join*.
+The My Sites Directory application is similar to the Sites Directory application, except that it lists only the Sites a User belongs to. You can view the available open and restricted Sites by adding the My Sites application to a page and accessing the *Available Sites* tab. You can request access to any of the Sites you're not a member of by selecting the Site's *Options* button (![Options](../../images/icon-actions.png)) and clicking *Join*.
 
 ### The Site Map Application
 

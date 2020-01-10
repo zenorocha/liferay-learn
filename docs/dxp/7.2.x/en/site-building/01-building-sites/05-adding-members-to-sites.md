@@ -24,7 +24,7 @@ From here you can manage Site memberships, Organizations, and User Group associa
 
 Follow these steps to make an existing User a member of the Site:
 
-1. Click the *New* (![Add User](../../../images/icon-add.png)) button in the top right of the screen.
+1. Click the *New* (![Add User](../../images/icon-add.png)) button in the top right of the screen.
 
 1. Use *Filter and Order* or the *Search* function to locate the User you want to add to the Site.
 
@@ -38,7 +38,7 @@ On the *Assign Users to This Site* screen, all users eligible to be added to the
 
 There are two ways to remove a User from a Site. To remove an individual member, follow these steps:
 
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) icon for the User that you want to remove.
+1. Click the *Actions* (![Actions](../../images/icon-actions.png)) icon for the User that you want to remove.
 
 2. Select *Remove Membership*.
 
