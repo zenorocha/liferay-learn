@@ -10,7 +10,7 @@ Contents
    building_solutions_on_dxp
    installation_and_upgrades
    site_building
-
+   content_authoring_and_management
 
 Indices and tables
 ==================
