@@ -1,8 +1,15 @@
-# Configuration Overview
+# Setting Up Liferay DXP
 
-Once Liferay DXP has been installed, you can begin using DXP immediately with many out-of-the-box features, especially in a development environment. For production-level environments, there are several major facets to consider to promote resiliency and performance.
+<!-- 
 
-Here is a list of important configurations:
+* Connecting to a Mail Server
+* Configuring a Storage Method for Documents and Media
+* Installing a Dedicated Search Engine
+* Configuring a Locale for a Multi-lingual Site
+
+-->
+
+Once Liferay DXP has been installed, you can begin using DXP immediately. To enable some additional functionality or improve overall resilience and performance for a DXP installation, we recommend reviewing the following common configurations:
 
 1. [Installing a Search Engine](#installing-a-search-engine)
 1. [Storing Documents and Assets](#storing-documents-and-assets)
