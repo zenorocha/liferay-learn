@@ -12,6 +12,7 @@ Contents
    site_building
    content_authoring_and_management
    process_automation
+   search
 
 Indices and tables
 ==================

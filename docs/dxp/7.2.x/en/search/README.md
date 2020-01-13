@@ -1,6 +1,6 @@
 # Search
 
-* User Guide
+## User Guide
   * What's New in Search
   * Configuring Search Pages
   * Searching for Assets
@@ -10,13 +10,15 @@
   * Searching for Localized Content
   * Configuring Search
   * Low Level Search
-* Dev Guide
+
+## Dev Guide
   * Aggregations
   * Model Entity Indexing
   * Search Queries and Filters
-* APIs
+
+## APIs
   * ?
 
-## Concept
+## Concepts
 
 * Search
