@@ -165,7 +165,13 @@
 
         productDocumentationSelector.addEventListener('click', event => {
             if (event.target.value !== currentDocProductValue) {
-                window.location.pathname = currentDocProductValue === 'commerce' ? '/dxp-cloud-latest/index.html' : '/commerce-2.x/index.html';
+                if (currentDocProductValue === 'commerce') {
+                    window.location.pathname = '/commerce-2.x/index.html';
+                } else if (currentDocProductValue === 'dxp-cloud') {
+                    window.location.pathname = '/dxp-cloud-latest/index.html';
+                } else {
+                    window.location.pathname = '/dxp-7.2.x/index.html';
+                }
             }
         });
     }
