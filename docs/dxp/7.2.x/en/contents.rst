@@ -17,6 +17,7 @@ Contents
    user_and_system_management
    platform
    headless_delivery
+   get_help
 
 Indices and tables
 ==================
