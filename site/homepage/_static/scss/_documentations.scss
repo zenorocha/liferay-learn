@@ -67,7 +67,7 @@
 			&.current {
 				> a {
 					background-image: none;
-					border-left-color: $brand-primary; 
+					border-left-color: $brand-primary;
 				}
 			}
 
@@ -80,14 +80,25 @@
 			}
 		}
 
-		.toctree-l2 {
+		.toctree-l2,
+		.toctree-l3 {
 			font-size: $h5-font-size;
 
-			&.current a {
-				color: $brand-primary;
+			&.current {
+				&.top-level > a {
+					background-image: none;
+					border-left-color: $brand-primary;
+					color: inherit;
+					font-size: initial;
+					padding: $spacing-xs $spacing-default $spacing-xs $spacing-md;
+				}
+
+				> a {
+					color: $brand-primary;
+				}
 			}
 
-			a {
+			> a {
 				padding: $spacing-xs 2rem;
 			}
 		}

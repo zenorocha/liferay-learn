@@ -179,15 +179,14 @@
     // Left nav interaction
 
     const activeNavL1 = document.querySelector('.toctree-l1.current');
-    const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
-
     const backLink = document.getElementById('backLink');
 
     let backURL = null;
 
     if (activeNavL1 && backLink) {
-
         // Zoom in on the current section
+
+        const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
         nonActiveNavL1.forEach(node => node.classList.add('d-none'));
 
@@ -195,22 +194,47 @@
 
         backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
 
+        let activeNavL2 = null;
         const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
-        let level2Active = false;
 
         activeNavL2List.forEach(node => {
             if (node.classList.contains('current')) {
-                level2Active = true;
+                activeNavL2 = node;
             }
         });
 
-        if (level2Active) {
+        if (activeNavL2) {
 
             // Set back URL
 
             const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
 
             backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
+
+            let activeNavL3 = null;
+            const activeNavL3List = activeNavL2.querySelectorAll('li.toctree-l3');
+
+            if (activeNavL3List.length) {
+                activeNavL3List.forEach(node => {
+                    if (node.classList.contains('current')) {
+                        activeNavL3 = node;
+                    }
+                });
+
+                // Zoom in on the current selection 
+
+                activeNavL1.querySelector('a').classList.add('d-none');
+
+                const nonActiveNavL2 = activeNavL1.querySelectorAll('.toctree-l2:not(.current)');
+
+                nonActiveNavL2.forEach(node => node.classList.add('d-none'));
+
+                activeNavL2.classList.add('top-level');
+
+                // Set back URL
+
+                backURL = breadcrumbParents[breadcrumbParents.length - 2].href;
+            }
         }
 
         backLink.href = backURL;
