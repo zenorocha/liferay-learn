@@ -15,6 +15,7 @@ Contents
    search
    collaboration_and_social
    user_and_system_management
+   platform
 
 Indices and tables
 ==================
