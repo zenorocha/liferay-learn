@@ -61,19 +61,16 @@
                     <div class="product-toggle-wrapper">
                         <button aria-haspopup="true" class="btn btn-secondary product-toggle" id="selectedProduct"
                             onclick="javascript:;" type="button">
-                            <span id="selectedProductText">{% trans %}DXP 7.2{% endtrans %}</span>
+                            <span id="selectedProductText">{% trans %}DXP{% endtrans %}</span>
 
                             <svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
                                 <use xlink:href="#caret-bottom" />
                             </svg>
                         </button>
                         <ul class="dropdown-menu" id="productDropdown">
-                            <li data-producturl="/dxp-7.2.x/{{ pathto('search') }}">{% trans %}DXP 7.2{% endtrans %}
-                            </li>
-                            <li data-producturl="/dxp-cloud-latest/{{ pathto('search') }}">{% trans %}DXP
-                                Cloud{% endtrans %}</li>
-                            <li data-producturl="/commerce-2.x/{{ pathto('search') }}">{% trans %}Commerce{% endtrans %}
-                            </li>
+                            <li data-producturl="/dxp-7.2.x/{{ pathto('search') }}">{% trans %}DXP{% endtrans %}</li>
+                            <li data-producturl="/dxp-cloud-latest/{{ pathto('search') }}">{% trans %}DXP Cloud{% endtrans %}</li>
+                            <li data-producturl="/commerce-2.x/{{ pathto('search') }}">{% trans %}Commerce{% endtrans %}</li>
                         </ul>
                     </div>
 
@@ -116,7 +113,7 @@
 
                 <div class="col-md-12 row">
                     <div class="col-lg-4">
-                        {{ productCard(href="/dxp-7.2.x/index.html", iconId="#dxp-logo", title="DXP 7.2") }}
+                        {{ productCard(href="/dxp-7.2.x/index.html", iconId="#dxp-logo", title="DXP") }}
                     </div>
 
                     <div class="col-lg-4">
