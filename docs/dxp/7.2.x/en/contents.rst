@@ -11,6 +11,7 @@ Contents
    installation_and_upgrades
    site_building
    content_authoring_and_management
+   process_automation
 
 Indices and tables
 ==================
