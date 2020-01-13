@@ -16,6 +16,7 @@ Contents
    collaboration_and_social
    user_and_system_management
    platform
+   headless_delivery
 
 Indices and tables
 ==================

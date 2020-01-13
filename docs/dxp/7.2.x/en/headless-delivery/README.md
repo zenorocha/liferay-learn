@@ -1,8 +1,8 @@
 # Headless Delivery
 
 * Web APIs
-  * Content Delivery API
+  * Content Delivery APIs
     * REST
     * GraphQL
-* Content Administration API
-* Data Engine API
+* Content Administration APIs
+* Data Engine APIs
