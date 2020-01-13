@@ -61,15 +61,19 @@
                     <div class="product-toggle-wrapper">
                         <button aria-haspopup="true" class="btn btn-secondary product-toggle" id="selectedProduct"
                             onclick="javascript:;" type="button">
-                            <span id="selectedProductText">{% trans %}Commerce{% endtrans %}</span>
+                            <span id="selectedProductText">{% trans %}DXP 7.2{% endtrans %}</span>
 
                             <svg class="lexicon-icon lexicon-icon-caret-bottom" focusable="false" role="presentation">
                                 <use xlink:href="#caret-bottom" />
                             </svg>
                         </button>
                         <ul class="dropdown-menu" id="productDropdown">
-                            <li data-producturl="/commerce-2.x/{{ pathto('search') }}">{% trans %}Commerce{% endtrans %}</li>
-                            <li data-producturl="/dxp-cloud-latest/{{ pathto('search') }}">{% trans %}DXP Cloud{% endtrans %}</li>
+                            <li data-producturl="/dxp-7.2.x/{{ pathto('search') }}">{% trans %}DXP 7.2{% endtrans %}
+                            </li>
+                            <li data-producturl="/dxp-cloud-latest/{{ pathto('search') }}">{% trans %}DXP
+                                Cloud{% endtrans %}</li>
+                            <li data-producturl="/commerce-2.x/{{ pathto('search') }}">{% trans %}Commerce{% endtrans %}
+                            </li>
                         </ul>
                     </div>
 
@@ -80,7 +84,7 @@
                     const productToggleWrapper = document.querySelector('.product-toggle-wrapper');
                     const searchForm = document.querySelector('.search-form');
 
-                    searchForm.action = '/commerce-2.x/' + `{{ pathto('search') }}`;
+                    searchForm.action = '/dxp-7.2.x/' + `{{ pathto('search') }}`;
 
                     const toggleProductDropdown = show => productDropdown.classList.toggle('show', show);
 
@@ -111,20 +115,20 @@
                 <h2 class="display">{% trans %}Browse by Product{% endtrans %}</h2>
 
                 <div class="col-md-12 row">
-                    <div class="col-lg-6">
-                        {{ productCard(href="/commerce-2.x/index.html", iconId="#commerce-logo", title="Commerce") }}
+                    <div class="col-lg-4">
+                        {{ productCard(href="/dxp-7.2.x/index.html", iconId="#dxp-logo", title="DXP 7.2") }}
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         {{ productCard(href="/dxp-cloud-latest/index.html", iconId="#dxp-cloud-logo", title="DXP Cloud")}}
                     </div>
 
                     <div class="col-lg-4">
-                        {{ productCard(iconId="#analytics-cloud-logo", title="Analytics Cloud") }}
+                        {{ productCard(href="/commerce-2.x/index.html", iconId="#commerce-logo", title="Commerce") }}
                     </div>
 
                     <div class="col-lg-4">
-                        {{ productCard(iconId="#dxp-logo", title="DXP") }}
+                        {{ productCard(iconId="#analytics-cloud-logo", title="Analytics Cloud") }}
                     </div>
 
                     <div class="col-lg-4">
