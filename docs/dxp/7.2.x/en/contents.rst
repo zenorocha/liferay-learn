@@ -13,6 +13,7 @@ Contents
    content_authoring_and_management
    process_automation
    search
+   collaboration_and_social
 
 Indices and tables
 ==================
