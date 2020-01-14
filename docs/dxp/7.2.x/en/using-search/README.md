@@ -1,4 +1,4 @@
-# Search
+# Using Search
 
 ## User Guide
   * What's New in Search

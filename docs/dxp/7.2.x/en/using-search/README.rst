@@ -1,5 +1,5 @@
-Search
-======
+Using Search
+============
 
 User Guide
 ----------
