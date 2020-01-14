@@ -164,10 +164,12 @@
         // Route user to the selected documentation landing page
 
         productDocumentationSelector.addEventListener('click', event => {
-            if (event.target.value !== currentDocProductValue) {
-                if (currentDocProductValue === 'commerce') {
+            const target = event.target.value;
+
+            if (target !== currentDocProductValue) {
+                if (target === 'commerce') {
                     window.location.pathname = '/commerce-2.x/index.html';
-                } else if (currentDocProductValue === 'dxp-cloud') {
+                } else if (target === 'dxp-cloud') {
                     window.location.pathname = '/dxp-cloud-latest/index.html';
                 } else {
                     window.location.pathname = '/dxp-7.2.x/index.html';
