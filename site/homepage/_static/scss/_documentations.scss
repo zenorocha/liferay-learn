@@ -137,16 +137,9 @@
 			display: block;
 			padding-left: $spacing-md;
 
-			a:hover {
-				svg {
-					fill: $brand-primary;
-				}
-			}
-
 			svg {
-				fill: $nav-color;
-				height: 1rem;
-				width: 1rem;
+				height: 2.375rem;
+				width: 2.375rem;
 			}
 		}
 

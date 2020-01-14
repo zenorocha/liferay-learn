@@ -8199,12 +8199,9 @@ table.docutils .table-divider th {
   .documentations .general-info .actions {
     display: block;
     padding-left: 1rem; }
-    .documentations .general-info .actions a:hover svg {
-      fill: #0B5FFF; }
     .documentations .general-info .actions svg {
-      fill: #6B6C7E;
-      height: 1rem;
-      width: 1rem; }
+      height: 2.375rem;
+      width: 2.375rem; }
   @media (max-width: 576px) {
     .documentations .general-info {
       display: none; } }
