@@ -1,6 +1,6 @@
 # Setting Up Liferay DXP
 
-Once Liferay DXP has been installed, you can begin using DXP immediately. To enable some additional functionality or improve overall resilience and performance for a DXP installation, we recommend reviewing the following common configurations:
+Once Liferay DXP has been installed, you can begin using DXP immediately. To enable additional functionality and improve overall resilience and performance for a DXP installation, we recommend reviewing the following common configurations:
 
 * [Connecting to a Mail Server to Send Notifications](#connecting-to-a-mail-server-to-send-notifications)
 * [Configuring Storage of Documents and Assets](#configuring-storage-of-documents-and-assets)
