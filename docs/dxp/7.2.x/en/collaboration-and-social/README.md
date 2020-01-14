@@ -1,16 +1,30 @@
 # Collaboration and Social
 
+* Message Boards
+  * User Guide
+  * Dev Guide
+  * APIs
+* Wiki
+  * User Guide
+  * Dev Guide
+  * APIs
+* Social Tools
+  * User Guide
+  * Dev Guide
+  * APIs
+* Alerts and Announcements
+  * User Guide
+  * Dev Guide
+  * APIs
+* Notifications and Requests
+  * User Guide
+  * Dev Guide
+  * APIs
+* Invitations
+  * User Guide
+  * Dev Guide
+  * APIs
+* Knowledge Base
 * User Guide
-  * Message Boards
-  * Wiki
-  * Social Tools
-  * Alerts and Announcements
-  * Notifications and Requests
-  * Invitations
-  * Knowledge Base
-* Dev Guide (weird division of asset content here and in Web Content above)
-  * Enabling Assets
-  * Creating an Asset Renderer
-  * Relating Assets
-  * Implementing Asset Priority
+* Dev Guide
 * APIs

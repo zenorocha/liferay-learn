@@ -1,4 +1,0 @@
-Knowledge Base
-==============
-
-Coming soon!

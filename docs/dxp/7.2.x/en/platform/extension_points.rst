@@ -20,6 +20,10 @@ Extension Points
    01-extension-points/osgi_extension_points.rst
    01-extension-points/fragment_osgi_modules.rst
    01-extension-points/customizing_the_web_apis.rst
+   01-extension-points/enabling_assets.rst
+   01-extension-points/creating_an_asset_renderer.rst
+   01-extension-points/relating_assets.rst
+   01-extension-points/implementing_asset_priority.rst
 
 .. include:: /platform/01-extension-points/README.rst
    :start-line: 2

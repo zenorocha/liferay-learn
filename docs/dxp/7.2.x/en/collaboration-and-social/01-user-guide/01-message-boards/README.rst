@@ -1,4 +1,0 @@
-Message Boards
-==============
-
-Coming soon!

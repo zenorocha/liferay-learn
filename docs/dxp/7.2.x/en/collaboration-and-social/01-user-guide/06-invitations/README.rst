@@ -1,4 +1,0 @@
-Invitations
-===========
-
-Coming soon!
