@@ -1,4 +1,4 @@
-# Liferay DXP
+# DXP
 
 ## [Getting Started](./getting-started/README.md)
 
