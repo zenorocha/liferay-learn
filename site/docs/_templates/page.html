@@ -1,5 +1,36 @@
 {%- extends "layout.html" %}
 
+{% macro githubEdit() -%}
+    {%- if parents|length > 1 %}
+        {% set product = parents[0].title.lower() %}
+
+        {# hardcode version values for now #}
+        {% if product == "commerce" %}
+            {% set version = "2.x" %}
+        {% elif product == "dxp" %}
+            {% set version = "7.2.x" %}
+        {% else %}
+            {% set version = "latest" %}
+        {% endif %}
+
+        {% set parentPath %}
+            {%- for item in parents -%}
+                {{ item.title.lower().replace(' ', '-') }}/
+            {%- endfor -%}
+        {% endset %}
+
+        {% set folderPath = parentPath.replace(product + "/", '', 1) %}
+
+        {% set fileName = title.lower().replace(' ', '-') %}
+
+        <a href='https://github.com/liferay/liferay-learn/edit/master/docs/{{ product }}/{{ version }}/{{ language }}/{{ folderPath }}{{ fileName }}.md'>
+            <svg>
+                <use xlink:href="#edit"></use>
+            </svg>
+        </a>
+    {%- endif %}
+{%- endmacro %}
+
 {% block content %}
 <div class="container-fluid documentations main-content" role="main">
     <div class="row">
@@ -42,11 +73,7 @@
                 </div>
 
                 <div class="actions col-md-2 offset-md-1">
-                    <a href="https://github.com/liferay/liferay-learn">
-                        <svg>
-                            <use xlink:href="#edit"></use>
-                        </svg>
-                    </a>
+                    {{ githubEdit() }}
                 </div>
             </div>
 
