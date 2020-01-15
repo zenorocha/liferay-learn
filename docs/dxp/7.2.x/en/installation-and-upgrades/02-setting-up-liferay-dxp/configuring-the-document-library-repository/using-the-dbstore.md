@@ -16,4 +16,4 @@ Documents and Media now uses DXP's database via DBStore.
 
 ## Additional Information
 
-* [Document Repository Overview](./configuring-the-document-library-repository/document-repository-overview.md)
+* [Document Repository Overview](./document-repository-overview.md)

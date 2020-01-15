@@ -46,6 +46,6 @@ In a [clustered environment](https://help.liferay.com/hc/articles/360029123831-L
 
 ## Additional Information
 
-* [Document Repository Overview](./configuring-the-document-library-repository/document-repository-overview.md)
+* [Document Repository Overview](./document-repository-overview.md)
 * [Using Amazon S3 Store](./using-amazon-s3-store.md)
 * [Using the DBStore](./using-the-dbstore.md)

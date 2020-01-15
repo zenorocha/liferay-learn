@@ -4,7 +4,7 @@ Users and Sites are central concepts in Liferay DXP. Sites are where all your co
 
 * [Managing Site Membership](#managing-site-membership)
 * Configuring Users to Automatically Join a Site
-* [Creating Teams]((./06-creating-teams-for-sites.md)) or groups of Site Members for various site functions
+* [Creating Teams](./06-creating-teams-for-sites.md) or groups of Site Members for various site functions
 
 The steps below show how to add Users manually to Sites and how to provide options for self management.
 
