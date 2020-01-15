@@ -12,7 +12,7 @@ Creating a mail session in DXP or on the application server requires the followi
 * SMTP Password
 * All optional JavaMail properties
 
-<!-- Let's provide some information here that can help someone who DOES NOT have this information or know where to start to find this information - some helpful information or links. For example: "To learn more about this topic see: x." Maybe can we create supplemental articles to this one that say explain how to use GMAIL as an SMTP server to send emails from Liferay (if this actually works) something more practical. https://portaldevelopment.wordpress.com/2008/06/16/sending-email-in-liferay-portal/ , https://www.siteground.com/kb/google_free_smtp_server/ , https://docs.bitnami.com/bch/apps/drupal/configuration/configure-smtp/ for reference. -->
+<!-- Let's provide some information here that can help someone who DOES NOT have this information or know where to start to find this information - some helpful information or links. For example: "To learn more about this topic see: x." Maybe can we create supplemental articles to this one that say explain how to use gmail as an SMTP server to send emails from Liferay (if this actually works) something more practical. https://portaldevelopment.wordpress.com/2008/06/16/sending-email-in-liferay-portal/ , https://www.siteground.com/kb/google_free_smtp_server/ , https://docs.bitnami.com/bch/apps/drupal/configuration/configure-smtp/ for reference. -->
 
 ## Configuring DXP Built-in Mail Session
 
@@ -45,7 +45,7 @@ After deploying DXP, you can configure the mail session from the Control Panel.
 
 1. Click *Save*.
 
-For more information, please see the [Mail Server Reference](./mail-server-reference.md).
+For more information, please see the [Mail Server Reference](./mail-server-configuration-reference.md).
 
 DXP connects to the mail session immediately.
 
@@ -135,6 +135,6 @@ Here are some important configurations:
 The mail server has been configured and ready to send notifications.
 
 ## Additional Information
-
 <!-- Should tomcat be here? -->
+* [Mail Server Configuration Reference](./mail-server-configuration-reference.md)
 * [Configuring a WebSphere-Managed Mail Session](../01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md#mail-configuration)

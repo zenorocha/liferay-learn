@@ -12,15 +12,9 @@ Once Liferay DXP has been installed, you can begin using DXP immediately. To ena
 
 Liferay DXP uses a mail server and SMTP to send email notifications for a variety of purposes: user registration and password management, site membership notifications, and content updates, to name a few. In order for Liferay DXP to send email notifications we recommend configuring the built-in mail session. As an alternative, you can opt to configure and use your application server's mail session.
 
-See [Configuring the Built-in Mail Session](placeholder) for more information on how to configure the default mail server.
+See [Connecting to a Mail Server](./connecting-to-a-mail-server.md) for more information on how to configure the default mail server.
 
-To configure the Application Server mail session, see the manual installation material for your application server of choice:
-
-* [Tomcat](../01-installing-dxp/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md/#mail-configuration)
-* [WildFly](placeholder)
-* [JBoss EAP](placeholder)
-* [WebLogic](placeholder)
-* [WebSphere](../01-installing-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md#mail-configuration).
+<!-- Screenshot -->
 
 ## Configuring Storage of Documents and Assets
 
