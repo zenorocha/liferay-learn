@@ -16,6 +16,7 @@ Developer Tools
    06-developer-tools/screens.rst
    06-developer-tools/mobile_sdk.rst
    06-developer-tools/push.rst
+   06-developer-tools/sync.rst
 
 .. include:: /platform/06-developer-tools/README.rst
    :start-line: 2

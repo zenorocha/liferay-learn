@@ -182,3 +182,7 @@ Coming soon!
 Push
 ~~~~
 Coming soon!
+
+Sync
+~~~~
+Coming soon!
