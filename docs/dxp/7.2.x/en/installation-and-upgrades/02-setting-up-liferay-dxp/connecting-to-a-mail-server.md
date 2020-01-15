@@ -81,7 +81,7 @@ DXP connects to the mail session on the next startup.
 
 Users can opt to configure a mail session for DXP using their application server.
 
-1. Create a mail session on your application server; please see each application server's documentation.
+1. Create a mail session on your application server; please see the application server's documentation.
 1. Point DXP to that mail session using the Control Panel or portal properties. <!-- What does both mean? --> Here are instructions for both:
 
     * Configure the JNDI name in the *Mail* page at *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*. Enter the value in the _JavaMail Properties_ field. <!-- screenshot -->
