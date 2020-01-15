@@ -1,6 +1,6 @@
 # Using the Advanced File System Store
 
-The advanced file system store is similar to the [simple file system store](./using-the-simple-file-system-store.md) (the default store). Like that store, it saves files to a file system path (local or on a network). The advanced file system store uses a slightly different folder structure to store files which is pictured below.
+The advanced file system store is similar to the [simple file system store](./using-the-file-system-store.md) (the default store). Like that store, it saves files to a file system path (local or on a network). The advanced file system store uses a slightly different folder structure to store files which is pictured below.
 
 ![Figure 1: The advanced file system store creates a more nested folder structure than the file system store.](./using-the-advanced-file-system-store/images/01.png)
 
@@ -28,7 +28,7 @@ To use the advanced file system store, follow these steps:
 
 ### Configuration for a Clustered Environment
 
-1. Copy the `portal-ext.properties` to each node's [`[Liferay Home]` folder](../14-reference/01-liferay-home.md).
+1. Copy the `portal-ext.properties` to each node's [`[Liferay Home]` folder](../../14-reference/01-liferay-home.md).
 1. Export the configuration from the *Advanced File System Store* screen to a [`.config` file](https://help.liferay.com/hc/articles/360029131651-Understanding-System-Configuration-Files).
 1. Copy the `.config` file to each node's `[Liferay Home]/osgi/configs` folder.
 1. Restart DXP on the nodes.
@@ -46,6 +46,6 @@ In a [clustered environment](https://help.liferay.com/hc/articles/360029123831-L
 
 ## Additional Information
 
-* [Document Repository Overview](./document-repository-overview.md)
+* [Document Repository Overview](./configuring-the-document-library-repository/document-repository-overview.md)
 * [Using Amazon S3 Store](./using-amazon-s3-store.md)
 * [Using the DBStore](./using-the-dbstore.md)

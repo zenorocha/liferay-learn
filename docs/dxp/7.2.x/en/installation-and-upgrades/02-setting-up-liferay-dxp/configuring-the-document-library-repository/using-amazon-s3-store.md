@@ -59,5 +59,5 @@ Consult the Amazon Simple Storage documentation for additional details on using 
 
 ## Additional Information
 
-* [Document Repository Overview](./document-repository-overview.md)
+* [Document Repository Overview](./configuring-the-document-library-repository/document-repository-overview.md)
 * [Bucket Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/dev//BucketRestrictions.html#bucketnamingrules)

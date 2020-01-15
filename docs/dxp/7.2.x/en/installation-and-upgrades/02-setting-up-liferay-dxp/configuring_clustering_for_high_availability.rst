@@ -11,5 +11,5 @@ Configuring Clustering for High Availability
    configuring-clustering-for-high-availability/05-cluster-link-overview.md
    configuring-clustering-for-high-availability/06-configuring-unicast-over-tcp.md
 
-.. include:: /installation-and-upgrades/02-setting-up-liferay-dxp/01-performance-and-scalability/configuring-clustering-for-high-availability/README.rst
+.. include:: /installation-and-upgrades/02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/README.rst
    :start-line: 2

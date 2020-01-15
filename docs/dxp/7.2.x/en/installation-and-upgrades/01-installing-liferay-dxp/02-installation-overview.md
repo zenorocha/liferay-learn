@@ -69,15 +69,15 @@ See [Using the Setup Wizard](./05-using-the-setup-wizard.md) to learn more.
 
 > Subscription Required
 
-Enterprise Subscribers to Liferay DXP will need to [Activate Liferay DXP](placeholder-link) in order to use the product beyond the initial trial period.
+Enterprise Subscribers to Liferay DXP will need to [activate Liferay DXP](./08-activating-liferay-dxp.md) in order to use the product beyond the initial trial period.
 
 ## Next Steps
 
 There are many ways to further configure and customize a Liferay DXP installation, depending on your needs. See the following topics for more information:
 
-* [Setting up Marketplace](./09-setting-up-marketplace.md)
-* Configuration Overview
+* [Setting up Marketplace](./10-setting-up-marketplace.md)
+* [Setting up Liferay DXP](../02-setting-up-liferay-dxp/setting-up-liferay-dxp.md)
 * Installing and Configuring a Search Engine
-* Securing Liferay DXP
-* Configuring Clustering for High Availability
+* [Securing Liferay DXP](../05-securing-liferay/01-securing-liferay.md)
+* [Introduction to Clustering Liferay DXP](../02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
 * Maintaining Liferay DXP

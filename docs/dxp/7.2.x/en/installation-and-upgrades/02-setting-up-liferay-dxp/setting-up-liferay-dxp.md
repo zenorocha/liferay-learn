@@ -24,7 +24,7 @@ To configure the Application Server mail session, see the manual installation ma
 
 ## Configuring Storage of Documents and Assets
 
-Documents, Images, and other assets that are uploaded to DXP are stored in a [document repository](./document-repository-overview.md). By default, DXP is configured to store those files locally to the server DXP is installed on, using the "[File System Store](./configuring-the-document-library-repository/using-the-file-system-store.md)" method which stores the files in the `${liferay.home}/data` folder. This configuration may be sufficient for basic usage scenarios - but must be changed if expecting a large number of documents to be uploaded, configuring for a high availability scenario, or if improved performance is desired.
+Documents, Images, and other assets that are uploaded to DXP are stored in a [document repository](./configuring-the-document-library-repository/document-repository-overview.md). By default, DXP is configured to store those files locally to the server DXP is installed on, using the "[File System Store](./configuring-the-document-library-repository/using-the-file-system-store.md)" method which stores the files in the `${liferay.home}/data` folder. This configuration may be sufficient for basic usage scenarios - but must be changed if expecting a large number of documents to be uploaded, configuring for a high availability scenario, or if improved performance is desired.
 
 DXP supports the following alternative file store methods:
 

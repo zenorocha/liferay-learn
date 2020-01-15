@@ -34,11 +34,11 @@ Revertible fix packs can be removed in rolling restarts.
 
 ## Portal Properties controlled by portal-ext.properties
 
-[Portal Properties](../14-reference/03-portal-properties.md) file changes can be applied in rolling restarts.
+[Portal Properties](../../14-reference/03-portal-properties.md) file changes can be applied in rolling restarts.
 
 ## System Settings controlled by Configuration Admin Files
 
-[System configuration](../14-reference/04-system-properties.md) files can be applied in rolling restarts.
+[System configuration](../../14-reference/04-system-properties.md) files can be applied in rolling restarts.
 
 ## Application Server or JVM setting modifications
 
@@ -53,5 +53,5 @@ All rolling restart eligible updates can be applied using the rolling restart st
 ## Related Topics
 
 * [Blue Green Deployment](./03-blue-green-deployments.md)
-* [Configuring Clustering for High Availability](../04-performance-and-scalability/01-configuring-clustering-for-high-availability.md)
+* [Introduction to Clustering Liferay DXP](../../02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
 * [Installing Patches](../10-maintaining-a-liferay-dxp-installation/01-installing-patches.md)

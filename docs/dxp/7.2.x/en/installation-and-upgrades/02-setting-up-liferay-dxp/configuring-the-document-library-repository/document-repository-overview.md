@@ -12,7 +12,7 @@
 
 ## Configuring the System File Store
 
-Each option is a type of store, or storage method, which can be configured through the [`portal-ext.properties`](../14-reference/03-portal-properties.md) file by setting the [`dl.store.impl=`property](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Document%20Library%20Service).
+Each option is a type of store, or storage method, which can be configured through the [`portal-ext.properties`](../../14-reference/03-portal-properties.md) file by setting the [`dl.store.impl=`property](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Document%20Library%20Service).
 
 ## Document Repositories in a Clustered Environment
 

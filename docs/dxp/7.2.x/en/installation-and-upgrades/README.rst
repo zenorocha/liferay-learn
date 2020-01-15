@@ -153,7 +153,7 @@ Reference
 
 -  :doc:`/installation-and-upgrades/14-reference/01-liferay-home`
 * Configuration Files
--  :doc:`/installation-and-upgrades/14-reference/03-portal-properties.md`
+-  :doc:`/installation-and-upgrades/14-reference/03-portal-properties`
 -  :doc:`/installation-and-upgrades/14-reference/04-system-properties`
 -  :doc:`/installation-and-upgrades/14-reference/05-jvm-configurations`
 -  :doc:`/installation-and-upgrades/14-reference/05-database-templates`
