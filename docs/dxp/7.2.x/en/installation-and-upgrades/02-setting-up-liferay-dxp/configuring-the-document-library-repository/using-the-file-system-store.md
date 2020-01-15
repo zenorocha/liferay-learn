@@ -21,12 +21,12 @@ The first folder name is the site’s company ID. The second folder name is the 
 
 ## Changing the Root Storage Directory
 
-1. Click the _Menu_ (![Menu](./using-the-simple-file-system-store/images/02.png)) button to access the _Control Panel_.
+1. Click the _Menu_ (![Menu](./using-the-file-system-store/images/02.png)) button to access the _Control Panel_.
 1. Navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_.
 1. In the _Platform_ section, click _File Storage_.
 1. Click _Simple File System Store_.
 
-    ![Figure 1: The File Storage page in System Settings lets you configure document repository storage.](./using-the-simple-file-system-store/images/01.png)
+    ![Figure 1: The File Storage page in System Settings lets you configure document repository storage.](./using-the-file-system-store/images/01.png)
 
 1. For the store's _Root directory_ value, specify its absolute path or its path relative to [Liferay Home](https://help.liferay.com/hc/articles/360028712272-Liferay-Home).
 1. Click the _Save_ button.
