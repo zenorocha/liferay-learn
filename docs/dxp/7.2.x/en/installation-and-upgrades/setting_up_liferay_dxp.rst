@@ -7,7 +7,7 @@ Setting Up Liferay DXP
    02-setting-up-liferay-dxp/setting-up-liferay-dxp.md
 
    02-setting-up-liferay-dxp/configuring_the_document_library_repository.rst
-   02-setting-up-liferay-dxp/performance_and_scalability.rst
+   02-setting-up-liferay-dxp/configuring_the_document_library_repository.rst
 
 .. include:: /installation-and-upgrades/02-setting-up-liferay-dxp/README.rst
    :start-line: 2
