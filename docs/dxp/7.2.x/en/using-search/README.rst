@@ -1,6 +1,8 @@
 Using Search
 ============
 
+* Introduction to Search
+
 User Guide
 ----------
 
@@ -24,8 +26,3 @@ Developer Guide
 APIs
 ----
 Coming soon!
-
-Concepts
---------
-
-* Search

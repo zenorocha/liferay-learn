@@ -1,5 +1,9 @@
 # Content Authoring and Management
 
+* Introduction to Assets
+* Introduction to Export/Import
+* Introduction to Recycle Bin
+
 ## Web Content
 
 * User Guide
@@ -97,9 +101,3 @@
   * Resolving Recycling Conflicts
 * APIs
   * Javadoc
-
-## Concepts
-
-* Assets
-* Export/Import
-* Recycle Bin

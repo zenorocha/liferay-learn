@@ -10,7 +10,6 @@ Content Authoring and Management
    content-authoring-and-management/content_sets.rst
    content-authoring-and-management/tags_and_categories.rst
    content-authoring-and-management/recycle_bin.rst
-   content-authoring-and-management/concepts.rst
 
 .. include:: /content-authoring-and-management/README.rst
    :start-line: 2

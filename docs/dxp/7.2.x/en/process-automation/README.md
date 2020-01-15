@@ -46,6 +46,8 @@
 
 ## Workflow
 
+* Introduction to Workflow
+
 * User Guide
   * Activating Workflow
   * Managing Workflows
@@ -56,5 +58,3 @@
   * Implementing Workflow
 * APIs
   * ?
-* Concept
-  * Workflow

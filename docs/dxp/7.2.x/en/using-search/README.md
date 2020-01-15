@@ -1,5 +1,7 @@
 # Using Search
 
+* Introduction to Search
+
 ## User Guide
   * What's New in Search
   * Configuring Search Pages
@@ -18,7 +20,3 @@
 
 ## APIs
   * ?
-
-## Concepts
-
-* Search

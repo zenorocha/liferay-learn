@@ -1,6 +1,10 @@
 Content Authoring and Management
 ================================
 
+* Introduction to Assets
+* Introduction to Export/Import
+* Introduction to Recycle Bin
+
 Web Content
 -----------
 
@@ -134,10 +138,3 @@ Developer Guide
 APIs
 ~~~~
 Coming soon!
-
-Concepts
---------
-
-* Assets
-* Export/Import
-* Recycle Bin

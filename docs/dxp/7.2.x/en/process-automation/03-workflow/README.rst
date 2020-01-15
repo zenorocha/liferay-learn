@@ -1,6 +1,8 @@
 Workflow
 ========
 
+* Introduction to Workflow
+
 User Guide
 ----------
 
@@ -18,8 +20,3 @@ Developer Guide
 APIs
 ----
 Coming soon!
-
-Concepts
---------
-
-* Workflow
