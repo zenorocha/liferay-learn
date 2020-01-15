@@ -1,25 +1,28 @@
-# Mail Server Reference
+# Mail Server Configuration Reference
 
-Liferay DXP 7.2 uses a mail server and SMTP to email notifications. This article serves as a reference for all the values required to connect successfully a DXP 7.2 instance to a mail server.
+Liferay DXP uses a mail server and SMTP to send email notifications. This article serves as a reference for all the values required to connect successfully a DXP instance to a mail server.
 
-To manage DXP 7.2's mail settings, navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
+To manage DXP's mail settings, navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 
-| Note that the sample values which have been populated are for a _development_ environment. Replace the values for a production environment.
+<!-- screenshot -->
 
+> **Note:** Sample values which have been populated are for a _development_ environment. Replace the values for a production environment.
+
+<!-- Image broken; was not included. -->
 ![Server Administration - Mail](./mail-server-reference/images/01.png)
 
 | Field | Description |
 | --- | --- |
-| Incoming POP Server | The hostname for a server running the Post Office Protocol. DXP 7.2 checks this mailbox for incoming messages, such as message board replies. |
+| Incoming POP Server | The hostname for a server running the Post Office Protocol. DXP checks this mailbox for incoming messages, such as message board replies. |
 | Incoming Port | The port on which the POP server is listening. |
 | Use a Secure Network Connection | The checkbox to enable whether to use an encrypted connection when connecting to the POP server. |
-| User Name | The user ID DXP 7.2 should use to log into the POP server. |
-| Password | The password DXP 7.2 should use to log into the POP server. |
-| Outgoing SMTP Server | The hostname for a server running the Simple Mail Transfer Protocol. DXP 7.2 uses this server to send emails, such as password change emails and other notifications. |
+| User Name | The user ID DXP uses to log into the POP server. |
+| Password | The password DXP uses to log into the POP server. |
+| Outgoing SMTP Server | The hostname for a server running the Simple Mail Transfer Protocol. DXP uses this server to send emails, such as password change emails and other notifications. |
 | Outgoing Port | The port on which the SMTP server is listening. |
 | Use a Secure Network Connection | Use an encrypted connection when connecting to the SMTP server. |
-| User Name | The user ID DXP 7.2 should use to log into the SMTP server. |
-| Password | The password DXP 7.2 should use to log into the SMTP server. |
+| User Name | The user ID DXP uses to log into the SMTP server. |
+| Password | The password DXP uses to log into the SMTP server. |
 | Manually specify additional JavaMail properties to override the above configuration| This field is for any additional JavaMail settings. |
 
 ## Additional Information

@@ -10,7 +10,7 @@ Once Liferay DXP has been installed, you can begin using DXP immediately. To ena
 
 ## Connecting to a Mail Server to Send Notifications
 
-Liferay DXP sends uses a mail server and SMTP to send email notifications for a variety of purposes: user registration and password management, site membership notifications, and content updates, to name a few. In order for Liferay DXP to send email notifications we recommend configuring the built-in mail session. As an alternative, you can opt to configure and use your application server's mail session.
+Liferay DXP uses a mail server and SMTP to send email notifications for a variety of purposes: user registration and password management, site membership notifications, and content updates, to name a few. In order for Liferay DXP to send email notifications we recommend configuring the built-in mail session. As an alternative, you can opt to configure and use your application server's mail session.
 
 See [Configuring the Built-in Mail Session](placeholder) for more information on how to configure the default mail server.
 
