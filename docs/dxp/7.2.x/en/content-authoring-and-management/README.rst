@@ -47,6 +47,10 @@ Developer Guide
 * Copying and Moving Files and Folders
 * Getting Files and Folders
 
+APIs
+~~~~
+Coming soon!
+
 Blogs
 -----
 

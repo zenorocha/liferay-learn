@@ -35,6 +35,8 @@
   * File Check in and Check out
   * Copying and Moving Files and Folders
   * Getting Files and Folders
+* APIs
+  * Javadoc
 
 ## Blogs
 

@@ -30,3 +30,7 @@ Developer Guide
 * Updating Media
 * File Check In and Check Out
 * Copying and Moving Files and Folders
+
+APIs
+----
+Coming soon!
