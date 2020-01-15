@@ -4,7 +4,7 @@ Setting Up Liferay DXP
 .. toctree::
    :maxdepth: 3
 
--  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-liferay-dxp.md
+   02-setting-up-liferay-dxp/setting-up-liferay-dxp.md
    02-setting-up-liferay-dxp/configuring_the_document_library_repository.rst
    02-setting-up-liferay-dxp/configuring-clustering-for-high-availability.rst
 
