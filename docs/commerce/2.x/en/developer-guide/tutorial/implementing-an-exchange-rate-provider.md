@@ -138,5 +138,5 @@ Congratulations! You now know the basics for implementing the `ExchangeRateProvi
 
 ## Additional Information
 
-* [Adding a New Currency](../../starting-a-store/adding-a-new-currency.md)
-* [Managing Exchange Rates](../../starting-a-store/managing-exchange-rates.md)
+* [Adding a New Currency](../../starting-a-store/store-administration/adding-a-new-currency.md)
+* [Managing Exchange Rates](../../starting-a-store/store-administration/managing-exchange-rates.md)

@@ -4,7 +4,7 @@ Contents
 .. toctree::
    :glob:
    :includehidden:
-   :maxdepth: 2
+   :maxdepth: 3
 
    installation_and_upgrades
    starting_a_store

@@ -8,19 +8,19 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 
 ![Global Commerce Settings](./liferay-commerce-configuration-overview/images/01.png)
 
-* [Channels](../managing-a-catalog/managing-channels.md)
-* [Price Lists](../managing-a-catalog/creating-a-price-list.md)
-* [Orders](../orders-and-fulfillment/orders-menu.md)
+* [Channels](../../managing-a-catalog/creating-and-managing-products/managing-channels.md)
+* [Price Lists](../../managing-a-catalog/creating-a-price-list.md)
+* [Orders](../../orders-and-fulfillment/orders-menu.md)
 
 The Commerce Global Settings menu contains the following tabs:
 
 ![Commerce Global Settings Tab](./liferay-commerce-configuration-overview/images/02.png)
 
-* [Availability Estimates](../managing-a-catalog/availability-estimates.md)
-* [Adding a New Currency](../starting-a-store/adding-a-new-currency.md)
-* [Measurement Units](../orders-and-fulfillment/measurement-units.md)
-* [Regions](../starting-a-store/adding-regions.md)
-* [Warehouses](../managing-a-catalog/warehouse-reference-guide.md)
+* [Availability Estimates](../../managing-a-catalog/availability-estimates.md)
+* [Adding a New Currency](../../starting-a-store/store-administration/adding-a-new-currency.md)
+* [Measurement Units](../../orders-and-fulfillment/measurement-units.md)
+* [Regions](../../starting-a-store/store-administration/adding-regions.md)
+* [Warehouses](../../managing-a-catalog/warehouse-reference-guide.md)
 
 ## Commerce Site Settings
 
@@ -32,9 +32,9 @@ Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
 
 The following site settings are found here:
 
-* [Notifications](../promoting-products/automating-store-emails-by-using-notification-templates.md)
-* [Order Workflows](../orders-and-fulfillment/order-workflows.md)
-* [Payment Methods](../starting-a-store/payments.md)
+* [Notifications](../../promoting-products/automating-store-emails-by-using-notification-templates.md)
+* [Order Workflows](../../orders-and-fulfillment/order-workflows.md)
+* [Payment Methods](../../starting-a-store/store-administration/payments.md)
 * Product Display Pages
-* [Shipping Methods](../orders-and-fulfillment/shipping-method-reference.md)
-* [Site Types](../starting-a-store/sites-and-site-types.md)
+* [Shipping Methods](../../orders-and-fulfillment/shipping-method-reference.md)
+* [Site Types](../../sites-and-site-types.md)

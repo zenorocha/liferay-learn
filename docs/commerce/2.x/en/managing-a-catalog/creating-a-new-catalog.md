@@ -21,5 +21,5 @@ The new catalog has been created and will be selectable when adding a new produc
 
 ## Additional Information
 
-* [Locale Options](../starting-a-store/locale-options.md)
-* [Adding a New Currency](../starting-a-store/adding-a-new-currency.md)
+* [Locale Options](../starting-a-store/store-administration/locale-options.md)
+* [Adding a New Currency](../starting-a-store/store-administration/adding-a-new-currency.md)

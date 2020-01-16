@@ -4,7 +4,7 @@ Exchange rates can be manually managed or automatically updated by an online ser
 
 ## Enabling automatic currency conversion
 
-By default, Liferay Commerce relies on the European Central Bank for foreign exchange rates. The ECB updates its exchange rates approximately every 24 hours. See [Implementing an Exchange Rate Provider](../developer-guide/tutorial/implementing-an-exchange-rate-provider.md) to learn how to implement an alternative exchange rate provider.
+By default, Liferay Commerce relies on the European Central Bank for foreign exchange rates. The ECB updates its exchange rates approximately every 24 hours. See [Implementing an Exchange Rate Provider](../../developer-guide/tutorial/implementing-an-exchange-rate-provider.md) to learn how to implement an alternative exchange rate provider.
 
 To enable automatic exchange rate updates:
 
@@ -51,4 +51,4 @@ Currency exchange rates can be configured manually by the store administrator.
 
 ## Additional Information
 
-* [Implementing an Exchange Rate Provider](../developer-guide/tutorial/implementing-an-exchange-rate-provider.md)
+* [Implementing an Exchange Rate Provider](../../developer-guide/tutorial/implementing-an-exchange-rate-provider.md)
