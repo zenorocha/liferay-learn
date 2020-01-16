@@ -48,6 +48,11 @@ $h6-line-height: 16px !default;
 $code-line-height: 24px !default; // set pixel value to prevent nested <pre> and <code> from scaling down line height
 $secondary-text-line-height: 1.429 !default;
 
+$blockquote-color: $nav-color !default;
+$blockquote-font-weight: 300 !default;
+$blockquote-line-height: 30px !default;
+$blockquote-margin-y: 3.125rem !default;
+
 $breadcrumb-divider-svg-icon: clay-icon(angle-right, $breadcrumb-divider-color) !default;
 $breadcrumb-divider-svg-icon-height: 0.75em !default; // 12px
 $breadcrumb-divider-svg-icon-width: $breadcrumb-divider-svg-icon-height !default;

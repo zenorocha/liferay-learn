@@ -8269,6 +8269,15 @@ h6 {
   line-height: 16px;
   text-transform: uppercase; }
 
+blockquote {
+  border-left: 2px solid #0B5FFF;
+  color: #6B6C7E;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 3.125rem 0;
+  padding-left: 1.5rem; }
+
 code,
 pre {
   border-radius: 0.25rem;
