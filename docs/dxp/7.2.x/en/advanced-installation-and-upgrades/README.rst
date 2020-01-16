@@ -1,5 +1,5 @@
-Installation and Upgrades
-=========================
+Advanced Installation and Upgrades
+==================================
 
 Installing Liferay DXP
 ----------------------
