@@ -1,6 +1,9 @@
 import os
 from sphinx.builders.html import StandaloneHTMLBuilder
 
+import recommonmark
+from recommonmark.transform import AutoStructify
+
 #
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 #
@@ -76,3 +79,10 @@ class RelativePathParentsHTMLBuilder(StandaloneHTMLBuilder):
 
 def setup(app):
 	app.add_builder(RelativePathParentsHTMLBuilder, True)
+
+	app.add_config_value('recommonmark_config', {
+		'enable_math': False,
+		'enable_inline_math': False
+	}, True)
+
+	app.add_transform(AutoStructify)
