@@ -6,7 +6,7 @@ Welcome to Liferay Learn. This repository represents an initiative to organize, 
 
 ## [Commerce](./docs/commerce/2.x/en/README.md)
 
-## [DXP](./docs/dxp/7.2.x/en/README.md)
+## [DXP](./docs/dxp/7.x/en/README.md)
 
 ## [DXP Cloud](./docs/dxp-cloud/latest/en/README.md)
 
