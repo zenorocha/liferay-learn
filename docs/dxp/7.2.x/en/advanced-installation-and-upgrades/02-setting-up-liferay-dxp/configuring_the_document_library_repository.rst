@@ -10,5 +10,5 @@ Configuring the Document Library Repository
    configuring-the-document-library-repository/using-amazon-s3-store.md
    configuring-the-document-library-repository/using-the-dbstore.md
 
-.. include:: /installation-and-upgrades/02-setting-up-liferay-dxp/configuring-the-document-library-repository/README.rst
+.. include:: /advanced-installation-and-upgrades/02-setting-up-liferay-dxp/configuring-the-document-library-repository/README.rst
    :start-line: 2

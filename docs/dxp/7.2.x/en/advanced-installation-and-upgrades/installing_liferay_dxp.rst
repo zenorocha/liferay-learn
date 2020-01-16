@@ -13,5 +13,5 @@ Installing Liferay DXP
    01-installing-liferay-dxp/09-trial-plugin-installation.md
    01-installing-liferay-dxp/10-setting-up-marketplace.md
 
-.. include:: /installation-and-upgrades/01-installing-liferay-dxp/README.rst
+.. include:: /advanced-installation-and-upgrades/01-installing-liferay-dxp/README.rst
    :start-line: 2

@@ -18,5 +18,5 @@ Upgrading Liferay
    04-upgrading-liferay/98-deprecations-in-liferay-dxp-7-2.md
    04-upgrading-liferay/99-features-in-maintenance-mode.md
 
-.. include:: /installation-and-upgrades/04-upgrading-liferay/README.rst
+.. include:: /advanced-installation-and-upgrades/04-upgrading-liferay/README.rst
    :start-line: 2

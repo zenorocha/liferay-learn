@@ -9,5 +9,5 @@ Securing Liferay
 
    05-securing-liferay/securing_web_services.rst
 
-.. include:: /installation-and-upgrades/05-securing-liferay/README.rst
+.. include:: /advanced-installation-and-upgrades/05-securing-liferay/README.rst
 	:start-line: 2

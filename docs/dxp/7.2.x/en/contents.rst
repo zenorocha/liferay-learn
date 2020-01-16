@@ -8,7 +8,6 @@ Contents
 
    getting_started
    building_solutions_on_dxp
-   installation_and_upgrades
    site_building
    content_authoring_and_management
    process_automation
@@ -17,6 +16,7 @@ Contents
    user_and_system_management
    platform
    headless_delivery
+   advanced_installation_and_upgrades
    get_help
 
 Indices and tables
