@@ -213,15 +213,16 @@
     let backURL = null;
 
     if (activeNavL1 && backLink) {
+
+        // Set back URL
+
+        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
+
         // Zoom in on the current section
 
         const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
 
         nonActiveNavL1.forEach(node => node.classList.add('d-none'));
-
-        // Set back URL
-
-        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
 
         let activeNavL2 = null;
         const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
@@ -240,17 +241,20 @@
 
             backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
 
+            // Check if there is L3
+
             let activeNavL3 = null;
             const activeNavL3List = activeNavL2.querySelectorAll('li.toctree-l3');
 
-            if (activeNavL3List.length) {
-                activeNavL3List.forEach(node => {
+            activeNavL3List.forEach(node => {
                     if (node.classList.contains('current')) {
                         activeNavL3 = node;
                     }
                 });
 
-                // Zoom in on the current selection 
+            if (activeNavL3List.length) {
+                
+                // Zoom in on the current selection so only active L2 and L3 are displayed
 
                 activeNavL1.querySelector('a').classList.add('d-none');
 
@@ -259,10 +263,33 @@
                 nonActiveNavL2.forEach(node => node.classList.add('d-none'));
 
                 activeNavL2.classList.add('top-level');
+            }
 
-                // Set back URL
+            if (activeNavL3) {
 
-                backURL = breadcrumbParents[breadcrumbParents.length - 2].href;
+                // Check if there is L4
+
+                let activeNavL4 = null;
+                const activeNavL4List = activeNavL3.querySelectorAll('li.toctree-l4');
+
+                activeNavL4List.forEach(node => {
+                    if (node.classList.contains('current')) {
+                        activeNavL4 = node;
+                    }
+                });
+
+                if (activeNavL4List.length) {
+
+                    // Zoom in on the current selection so only active L3 and L4 are displayed
+
+                    activeNavL2.querySelector('a').classList.add('d-none');
+
+                    const nonActiveNavL3 = activeNavL2.querySelectorAll('.toctree-l3:not(.current)');
+
+                    nonActiveNavL3.forEach(node => node.classList.add('d-none'));
+
+                    activeNavL3.classList.add('top-level');
+                }
             }
         }
 
