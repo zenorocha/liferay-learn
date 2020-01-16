@@ -2,9 +2,9 @@
 
 Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./06-configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
 
-1.  Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu.
+1.  Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
     
-2.  Click the Gear icon next to the Page Set to configure its pages.
+2.  Click the Gear icon, or select *Configure* from the Actions Menu in the Page Tree Menu, next to the Page Set to configure its pages.
 
 3.  Configure the options under the [*Look and Feel* tab](#look-and-feel) and [*Advanced* tab](#advanced) (if required) for the Page Set.
     

@@ -7,6 +7,7 @@ Your tools for building the page are all found on the right side of the page. Fr
 - [Sections](#sections)
 - [Section Builder](#section-builder)
 - [Widgets](#widgets)
+- [Contents](#contents)
 - [Page Structure](#page-structure)
 - [Look and Feel](#look-and-feel) 
 
@@ -20,13 +21,13 @@ Sections are complete Fragments that serve a purpose by themselves. A large bann
 
 When you open *Sections* you see a list of Collections available. Initially, you only have the **Basic Sections** Collection which is included out-of-the-box. You can open the Collection and drag Sections directly onto the page.
 
-![Figure 2: *Sections* contains Fragments that fully define spaces on your page.](./content-page-elements/images/02.png)
+![Figure 2: Sections contain Fragments that fully define spaces on your page.](./content-page-elements/images/02.png)
 
 ## Section Builder
 
 In Section Builder, you start with *Layouts* and *Basic Components*. Add Layouts to the page to provide spaces where you can add Components.
 
-![Figure 3: *Sections Builder* contains *Component* Fragments which are intended to be combined to create Sections.](./content-page-elements/images/03.png)
+![Figure 3: Sections Builder contains Component Fragments which are intended to be combined to create Sections.](./content-page-elements/images/03.png)
 
 ### Layouts
 
@@ -46,11 +47,27 @@ The Widgets section functions just like the *Add* menu on a Widget Page. The ful
 
 ![Figure 6: The Widgets section provides a list of Widgets that can be added inside of a Layout.](./content-page-elements/images/06.png)
 
+## Contents
+
+Since Liferay DXP 7.3, the Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform these actions for each piece of content used on the page:
+
+- *Edit:* Edit the web content 
+- *Permissions:* Update the web content's permissions
+- *View Usages:* See where the web content is used on the site
+
+>**Note:** To edit inline content, you must have the "Edit Inline Content" permission assigned to your Role. However, if you don't have permission to edit the page, you can still edit content (web content, blog, etc.) that you have permission to edit that's displayed through one of these methods: mapped content, web content display, or an Asset Publisher (with manual selection).  
+
+Hover over the content in the list to highlight the widget(s), mapped content fields, and Fragments that display the content on the page.
+
+![Figure 7: You can manage web content on a Content Page from the Contents panel.](./content-page-elements/images/07.png)
+
+>**Note:** Web content that's displayed in an Asset Publisher with dynamic selection isn't listed in the Contents panel. You must manage this content directly from the Web Content admin app in the Control Panel.
+
 ## Page Structure
 
 Page Structure provides a high level view of every Fragment and every field within each Fragment on the page. Click on a field in the page structure to highlight it on the page and quickly locate it amongst all the other elements.  
 
-![Figure 7: *Page Structure* shows you a hierarchy of your page.](./content-page-elements/images/07.png)
+![Figure 8: *Page Structure* shows you a hierarchy of your page.](./content-page-elements/images/08.png)
 
 ## Look and Feel
 
@@ -66,7 +83,7 @@ You can comment on a Page Fragment to discuss changes and collaborate. Comments 
 
 This enables content page comments for all instances. To control this on an instance-by-instance basis, navigate to the same setting in *Instance Settings* (instead of System Settings). 
 
-![Figure 8: Administrators can enable comments for content pages.](./content-page-elements/images/08.png)
+![Figure 9: Administrators can enable comments for content pages.](./content-page-elements/images/09.png)
 
 If comments are enabled, you can access them via the *Comments* icon (![Comments](../../../../../images/icon-comments.png)). The comments appear for the selected Fragment. These actions are available for Fragment comments:
 
@@ -76,13 +93,13 @@ If comments are enabled, you can access them via the *Comments* icon (![Comments
 
 If you de-select a Fragment or enter the comments UI without a Fragment selected, a list of the Fragments on the page appears with the number of comments for each. Selecting a Fragment then shows its comments. 
 
-![Figure 9: When creating content pages, you and your team can comment on any fragments.](./content-page-elements/images/09.png)
+![Figure 10: When creating content pages, you and your team can comment on any fragments.](./content-page-elements/images/10.png)
 
 ## The Title Bar
 
 The title bar provides navigation back to the Main Menu or live view of the page, a link to page configuration, and the ability to search for other pages. 
 
-![Figure 10: The title bar has several tools built into it.](./content-page-elements/images/10.png)
+![Figure 11: The title bar has several tools built into it.](./content-page-elements/images/11.png)
 
 ## Editable Elements
 
@@ -96,13 +113,13 @@ Now you'll learn about each editable type.
 
 Editable text can be plain or rich text. Plain text has no special styling. Rich text enables text styles, typographical emphasis, alignment, and list formatting.
 
-![Figure 11: The rich text editor provides a simple WYSIWYG interface with a number of formatting options.](./content-page-elements/images/11.png)
+![Figure 12: The rich text editor provides a simple WYSIWYG interface with a number of formatting options.](./content-page-elements/images/12.png)
 
 ### Editable Images
 
 Editable image elements let you replace the placeholder image with a provided URL or an image from your Documents and Media library. You can also provide a link target for the image.
 
-![Figure 12: Editing an image allows you to enter a URL, select an image from Documents and Media or set a link for the image.](./content-page-elements/images/12.png)
+![Figure 13: Editing an image allows you to enter a URL, select an image from Documents and Media or set a link for the image.](./content-page-elements/images/13.png)
 
 You can also define a link for your image. You'll learn about this next.
 
