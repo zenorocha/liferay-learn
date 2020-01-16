@@ -8,7 +8,7 @@
         {% if product == "commerce" %}
             {% set version = "2.x" %}
         {% elif product == "dxp" %}
-            {% set version = "7.2.x" %}
+            {% set version = "7.x" %}
         {% else %}
             {% set version = "latest" %}
         {% endif %}
@@ -199,7 +199,7 @@
                 } else if (target === 'dxp-cloud') {
                     window.location.pathname = '/dxp-cloud-latest/index.html';
                 } else {
-                    window.location.pathname = '/dxp-7.2.x/index.html';
+                    window.location.pathname = '/dxp-7.x/index.html';
                 }
             }
         });

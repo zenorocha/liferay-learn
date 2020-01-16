@@ -68,7 +68,7 @@
                             </svg>
                         </button>
                         <ul class="dropdown-menu" id="productDropdown">
-                            <li data-producturl="/dxp-7.2.x/{{ pathto('search') }}">{% trans %}DXP{% endtrans %}</li>
+                            <li data-producturl="/dxp-7.x/{{ pathto('search') }}">{% trans %}DXP{% endtrans %}</li>
                             <li data-producturl="/dxp-cloud-latest/{{ pathto('search') }}">{% trans %}DXP Cloud{% endtrans %}</li>
                             <li data-producturl="/commerce-2.x/{{ pathto('search') }}">{% trans %}Commerce{% endtrans %}</li>
                         </ul>
@@ -81,7 +81,7 @@
                     const productToggleWrapper = document.querySelector('.product-toggle-wrapper');
                     const searchForm = document.querySelector('.search-form');
 
-                    searchForm.action = '/dxp-7.2.x/' + `{{ pathto('search') }}`;
+                    searchForm.action = '/dxp-7.x/' + `{{ pathto('search') }}`;
 
                     const toggleProductDropdown = show => productDropdown.classList.toggle('show', show);
 
@@ -113,7 +113,7 @@
 
                 <div class="col-md-12 row">
                     <div class="col-lg-4">
-                        {{ productCard(href="/dxp-7.2.x/index.html", iconId="#dxp-logo", title="DXP") }}
+                        {{ productCard(href="/dxp-7.x/index.html", iconId="#dxp-logo", title="DXP") }}
                     </div>
 
                     <div class="col-lg-4">
