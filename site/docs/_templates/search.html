@@ -49,13 +49,18 @@
 
                     <div class="filter-input-container">
                         <label>
-                            <input class="filter-input" name="productName" type="radio" value="commerce">
-                            <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
+                            <input class="filter-input" name="productName" type="radio" value="dxp">
+                            <span class="filter-input-label">{% trans %}DXP{% endtrans %}</span>
                         </label>
 
                         <label>
                             <input class="filter-input" name="productName" type="radio" value="dxp-cloud">
                             <span class="filter-input-label">{% trans %}DXP Cloud{% endtrans %}</span>
+                        </label>
+
+                        <label>
+                            <input class="filter-input" name="productName" type="radio" value="commerce">
+                            <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
                         </label>
                     </div>
                 </div>
@@ -87,23 +92,41 @@
 </div>
 
 <script>
-    const currentDocProductValue = window.location.pathname.includes('commerce') ? 'commerce' : 'dxp-cloud';
+    const pathname = window.location.pathname;
+    console.log(pathname);
+    let currentDocProduct = {
+        product: 'dxp',
+        pathname: '/dxp-7.x/search.html'
+    };
+
+    if (pathname.includes('commerce')) {
+        currentDocProduct = {
+            product: 'commerce',
+            pathname: '/commerce-2.x/search.html'
+        }
+    } else if (pathname.includes('dxp-cloud')) {
+        currentDocProduct = {
+            product: 'dxp-cloud',
+            pathname: '/dxp-cloud-latest/search.html'
+        }
+    }
+
     const productSelect = document.querySelectorAll('[name="productName"]');
 
-    // Preselect current documentation product to let them know what product the results pertain to
+    // Preselect current documentation product to let user know what product the results pertain to
 
     productSelect.forEach(product => {
-        if (product.value === currentDocProductValue) {
+        if (product.value === currentDocProduct.product) {
             product.checked = true;
         }
 
         // Toggling product input will take user to the selected product's search page
 
         product.addEventListener('click', event => {
-            if (event.target.value !== currentDocProductValue) {
-                window.location.pathname = currentDocProductValue === 'commerce' ? '/dxp-cloud-latest/search.html' : '/commerce-2.x/search.html';
+            if (event.target.value !== currentDocProduct.product) {
+                pathname = currentDocProduct.pathname;
             }
-        })
+        });
     });
 </script>
 {% endblock %}
