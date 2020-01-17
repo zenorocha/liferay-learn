@@ -1,6 +1,6 @@
 # Starting With the DXP Docker Image
 
-The latest version of Liferay DXP is available as a Docker image. Follow these steps to download and launch the latest Docker image release of Liferay DXP.
+The latest version of Liferay DXP is available as a Docker image. Follow these steps to download, launch, and begin touring the latest release of Liferay DXP.
 
 1. Get Liferay DXP.
 
@@ -13,10 +13,10 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
 1. Start Liferay DXP
 
     ```bash
-    docker run -it -p 8080:8080 liferay/dxp:7.2.10.1
+    docker run --name my_dxp_container -it -p 8080:8080 liferay/dxp:7.2.10.1
     ```
 
-    > **Note:** Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`
+    > **Note:** Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
 
 1. Open your browser to `https://localhost:8080`
 

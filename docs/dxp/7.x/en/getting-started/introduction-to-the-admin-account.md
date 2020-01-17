@@ -1,6 +1,6 @@
 # Introduction to the Admin Account
 
-The Admin user is created by default in any new installation of Liferay DXP and has full permissions to modify every facet of a Liferay DXP instance. The Admin user can create, modify, and delete sites, pages, users, accounts, catalogs and products, and perform all store and site administrative tasks.
+The Admin user is created by default in any new installation of Liferay DXP and has full permissions to modify every facet of a Liferay DXP instance. The Admin user can create, modify, and delete Sites, Users, pages, and perform all Site administrative tasks.
 
 ## Accessing Liferay DXP as the Admin User
 
@@ -11,7 +11,10 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 
     > **Note:** If a Liferay DXP bundle is being used, you may be presented with the [_Setup Wizard_](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP-#using-the-setup-wizard). Follow the on-screen instructions to configure your Admin user.
 
-1. Enter the default admin credentials to log in. Email Address: `test@liferay.com` Password: `test`
+1. Enter the default admin credentials to log in.
+
+    * Email address: `test@liferay.com`
+    * Password: `test`
 
     > **Important:** It is **highly** recommended that the default login credentials be updated when starting a new Liferay DXP installation.
 
