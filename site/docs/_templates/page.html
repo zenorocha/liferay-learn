@@ -23,7 +23,8 @@
 
         {% set fileName = title.lower().replace(' ', '-') %}
 
-        <a href='https://github.com/liferay/liferay-learn/edit/master/docs/{{ product }}/{{ version }}/{{ language }}/{{ folderPath }}{{ fileName }}.md'>
+        <a
+            href='https://github.com/liferay/liferay-learn/edit/master/docs/{{ product }}/{{ version }}/{{ language }}/{{ folderPath }}{{ fileName }}.md'>
             <svg>
                 <use xlink:href="#edit"></use>
             </svg>
@@ -212,92 +213,54 @@
 
     let backURL = null;
 
-    if (activeNavL1 && backLink) {
+    const checkDescendantLevel = (level, lastActiveItem) => {
+        const grandparent = document.querySelector(`.toctree-l${level - 2}.current`);
+        const parent = lastActiveItem || document.querySelector(`.toctree-l${level - 1}.current`);
+        const parentSiblings = document.querySelectorAll(`.toctree-l${level - 1}:not(.current)`);
+    
+        const currentLevel = parent ?
+            parent.querySelectorAll(`li.toctree-l${level}`) :
+            document.querySelectorAll(`li.toctree-l${level}`);
 
-        // Set back URL
+        if (currentLevel.length) {
+            let activeItem = null;
 
-        backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
-
-        // Zoom in on the current section
-
-        const nonActiveNavL1 = document.querySelectorAll('.toctree-l1:not(.current)');
-
-        nonActiveNavL1.forEach(node => node.classList.add('d-none'));
-
-        let activeNavL2 = null;
-        const activeNavL2List = activeNavL1.querySelectorAll('li.toctree-l2');
-
-        activeNavL2List.forEach(node => {
-            if (node.classList.contains('current')) {
-                activeNavL2 = node;
-            }
-        });
-
-        if (activeNavL2) {
+            grandparent ? grandparent.querySelector('a').classList.add('d-none') : '';
+            parentSiblings.forEach(node => node.classList.add('d-none'));
+            parent ? parent.classList.add('parent-level') : '';
 
             // Set back URL
 
-            const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
+            if (level === 1) {
+                backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
+            } else if (level === 2) {
+                const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
 
-            backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
-
-            // Check if there is L3
-
-            let activeNavL3 = null;
-            const activeNavL3List = activeNavL2.querySelectorAll('li.toctree-l3');
-
-            activeNavL3List.forEach(node => {
-                    if (node.classList.contains('current')) {
-                        activeNavL3 = node;
-                    }
-                });
-
-            if (activeNavL3List.length) {
-                
-                // Zoom in on the current selection so only active L2 and L3 are displayed
-
-                activeNavL1.querySelector('a').classList.add('d-none');
-
-                const nonActiveNavL2 = activeNavL1.querySelectorAll('.toctree-l2:not(.current)');
-
-                nonActiveNavL2.forEach(node => node.classList.add('d-none'));
-
-                activeNavL2.classList.add('top-level');
+                backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
             }
 
-            if (activeNavL3) {
+            backLink.href = backURL;
 
-                // Check if there is L4
-
-                let activeNavL4 = null;
-                const activeNavL4List = activeNavL3.querySelectorAll('li.toctree-l4');
-
-                activeNavL4List.forEach(node => {
-                    if (node.classList.contains('current')) {
-                        activeNavL4 = node;
-                    }
-                });
-
-                if (activeNavL4List.length) {
-
-                    // Zoom in on the current selection so only active L3 and L4 are displayed
-
-                    activeNavL2.querySelector('a').classList.add('d-none');
-
-                    const nonActiveNavL3 = activeNavL2.querySelectorAll('.toctree-l3:not(.current)');
-
-                    nonActiveNavL3.forEach(node => node.classList.add('d-none'));
-
-                    activeNavL3.classList.add('top-level');
+            currentLevel.forEach(node => {
+                if (node.classList.contains('current')) {
+                    activeItem = node;
                 }
+            })
+
+            if (activeItem) {
+                level++;
+
+                checkDescendantLevel(level, activeItem);
+            } else {
+                return;
             }
         }
+    }
 
-        backLink.href = backURL;
-    } else {
-        if (backLink) {
-            backLink.classList.add('d-none');
-        }
+    if (activeNavL1 && backLink) {
+        checkDescendantLevel(1);
+    } else if (backLink) {
+        backLink.classList.add('d-none');
     }
 </script>
 {% endblock %}

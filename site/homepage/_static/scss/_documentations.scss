@@ -81,11 +81,12 @@
 		}
 
 		.toctree-l2,
-		.toctree-l3 {
+		.toctree-l3,
+		.toctree-l4 {
 			font-size: $h5-font-size;
 
 			&.current {
-				&.top-level > a {
+				&.parent-level > a {
 					background-image: none;
 					border-left-color: $brand-primary;
 					color: inherit;

@@ -8156,20 +8156,24 @@ table.docutils .table-divider th {
     background-size: 0.65rem;
     color: #000; }
   .documentations .doc-nav .toctree-l2,
-  .documentations .doc-nav .toctree-l3 {
+  .documentations .doc-nav .toctree-l3,
+  .documentations .doc-nav .toctree-l4 {
     font-size: 0.875rem; }
-    .documentations .doc-nav .toctree-l2.current.top-level > a,
-    .documentations .doc-nav .toctree-l3.current.top-level > a {
+    .documentations .doc-nav .toctree-l2.current.parent-level > a,
+    .documentations .doc-nav .toctree-l3.current.parent-level > a,
+    .documentations .doc-nav .toctree-l4.current.parent-level > a {
       background-image: none;
       border-left-color: #0B5FFF;
       color: inherit;
       font-size: initial;
       padding: 0.5rem 1.5rem 0.5rem 1rem; }
     .documentations .doc-nav .toctree-l2.current > a,
-    .documentations .doc-nav .toctree-l3.current > a {
+    .documentations .doc-nav .toctree-l3.current > a,
+    .documentations .doc-nav .toctree-l4.current > a {
       color: #0B5FFF; }
     .documentations .doc-nav .toctree-l2 > a,
-    .documentations .doc-nav .toctree-l3 > a {
+    .documentations .doc-nav .toctree-l3 > a,
+    .documentations .doc-nav .toctree-l4 > a {
       padding: 0.5rem 2rem; }
 
 .documentations .doc-nav-wrapper {
