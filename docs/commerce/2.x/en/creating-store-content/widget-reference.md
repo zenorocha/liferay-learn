@@ -12,7 +12,7 @@ The following article documents all the Liferay Commerce Widgets and their funct
 | Cart | Displays all items to be purchased before checkout |
 | Category Facet | Displays and sorts all product categories |
 | Dashboard Date Range Selector | Allows users to specify a date range to refine their search  |
-| Dashboard KPI | Displays a summary of number of orders, average order size, and total spent  |
+| Dashboard Forecasts Chart | Allows users to see future projected sales based on current data; using machine learning (ML) architecture |
 | Open Carts| Displays a list of all pending orders |
 | Option Facet | Allows users to search using all the Product Options associated with this product  |
 | Orders | Displays a list of a placed orders |
