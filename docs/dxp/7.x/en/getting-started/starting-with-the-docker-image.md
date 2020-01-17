@@ -28,4 +28,4 @@ Continue our Getting Started walkthrough and learn about the [Setup Wizard](./us
 
 Doing more than just checking things out? See the [Advanced Installation Overview](../advanced-installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview.md) to learn more.
 
-Want to learn more about what you can build with Liferay DXP? Learn how to [Build Solutions on DXP](../building-solutions-on-dxp/README.rst).
+Want to learn more about what you can build with Liferay DXP? Learn how to [Build Solutions on DXP](../building-solutions-on-dxp/README.md).
