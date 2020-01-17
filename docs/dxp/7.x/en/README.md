@@ -40,7 +40,7 @@ Customize and extend the core DXP platform.
 
 Manage and deliver content to any channel.
 
-## [Installation and Upgrades](./advanced-installation-and-upgrades/README.md)
+## [Advanced Installation and Upgrades](./advanced-installation-and-upgrades/README.md)
 
 Set up and maintain Liferay DXP.
 
