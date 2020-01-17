@@ -1,4 +1,4 @@
-# Starting With the Docker Image
+# Starting With the DXP Docker Image
 
 The latest version of Liferay DXP is available as a Docker image. Follow these steps to download and launch the latest Docker image release of Liferay DXP.
 
@@ -20,11 +20,9 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
 
 1. Open your browser to `https://localhost:8080`
 
-    > **Note:** Your browser may automatically launch to this URL once the server has completed startup.
-
 ## What's Next
 
-Continue our Getting Started walkthrough and learn about the [Setup Wizard](./using-the-setup-wizard.md).
+Continue our Getting Started walkthrough and learn about logging in for the first time using [the Admin account](./introduction-to-the-admin-account.md).
 
 Doing more than just checking things out? See the [Advanced Installation Overview](../advanced-installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview.md) to learn more.
 
