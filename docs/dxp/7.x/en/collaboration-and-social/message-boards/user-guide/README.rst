@@ -1,5 +1,5 @@
-Message Boards
-==============
+User Guide
+==========
 
 -  :doc:`/collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards`
 -  :doc:`/collaboration-and-social/message-boards/user-guide/creating-message-boards-categories`
