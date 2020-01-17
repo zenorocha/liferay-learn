@@ -4,7 +4,7 @@ Getting Started
 .. toctree::
    :maxdepth: 3
 
-   getting-started/starting-with-the-dxp-docker-image.md
+   getting-started/starting-with-the-docker-image.md
    getting-started/using-the-setup-wizard.md
    getting-started/introduction-to-the-admin-account.md
    getting-started/using-the-product-menu.md

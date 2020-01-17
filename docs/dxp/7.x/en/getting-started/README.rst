@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
--  :doc:`/getting-started/starting-with-the-dxp-docker-image`
+-  :doc:`/getting-started/starting-with-the-docker-image`
 -  :doc:`/getting-started/using-the-setup-wizard`
 -  :doc:`/getting-started/introduction-to-the-admin-account`
 -  :doc:`/getting-started/using-the-product-menu`
