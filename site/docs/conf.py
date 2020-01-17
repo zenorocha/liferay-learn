@@ -81,6 +81,7 @@ def setup(app):
 	app.add_builder(RelativePathParentsHTMLBuilder, True)
 
 	app.add_config_value('recommonmark_config', {
+		'enable_auto_toc_tree': False,
 		'enable_math': False,
 		'enable_inline_math': False
 	}, True)
