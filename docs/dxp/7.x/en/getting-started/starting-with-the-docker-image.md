@@ -10,7 +10,7 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
     docker pull liferay/dxp:7.2.10.1
     ```
 
-1. Start Liferay Commerce
+1. Start Liferay DXP
 
     ```bash
     docker run -it -p 8080:8080 liferay/dxp:7.2.10.1
