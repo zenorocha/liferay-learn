@@ -7,18 +7,20 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
     > **Note:** Don't have Docker? Go here first: [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/)
 
     ```bash
-    docker pull liferay/dxp:7.2.10.1
+    docker pull liferay/dxp:7.2.10.1-sp1
     ```
 
 1. Start Liferay DXP
 
     ```bash
-    docker run --name my_dxp_container -it -p 8080:8080 liferay/dxp:7.2.10.1
+    docker run --name my_dxp_container -it -p 8080:8080 liferay/dxp:7.2.10.1-sp1
     ```
 
     > **Note:** Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
 
 1. Open your browser to `https://localhost:8080`
+
+    ![The Liferay DXP initial landing page.](./starting-with-the-dxp-docker-image/images/01.png)
 
 ## What's Next
 
