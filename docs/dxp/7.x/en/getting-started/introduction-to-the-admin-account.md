@@ -22,14 +22,14 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 
 ### Changing the Login Password
 
-1. Open the [_Product Menu_](./using-the-product-menu.md) and navigate to the _Account Menu_ -> _My Account_ -> _Account Settings_ -> _Password_.
+1. Open the [_Product Menu_](./using-the-product-menu.md) and navigate to the _User Avatar_ -> _Account Settings_ -> _Password_.
 1. Enter your _Current Password_ and provide a _New Password_.
 
     ![Setting a Password](./introduction-to-the-admin-account/images/04.png "Setting a Password")
 
 ### Changing Account Information
 
-1. Open the _Product Menu_ and navigate to the _Account Menu_ -> _My Account_ -> _Account Settings_.
+1. Open the _Product Menu_ and navigate to the _User Avatar_ -> _Account Settings_.
 
     ![Account Settings](./introduction-to-the-admin-account/images/02.png "Account Settings")
 
@@ -41,7 +41,7 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 
 To log out of your account:
 
-1. Open the _Product Menu_ and navigate to the _Account Menu_ -> _Sign Out_.
+1. Open the _Product Menu_ and click the _User Avatar_ -> _Sign Out_.
 
     ![Signing Out](./introduction-to-the-admin-account/images/05.png "Signing Out")
 
