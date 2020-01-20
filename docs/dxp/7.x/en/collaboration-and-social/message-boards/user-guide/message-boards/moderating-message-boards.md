@@ -15,7 +15,7 @@ Site administrators can halt activity on a thread by selecting _Lock_ from the t
 
 To lock a thread:
 
-1. Click (![Actions](./creating-message-boards-categories/images/05.png)) next to the thread to be locked.
+1. Click (![Actions](./moderating-message-boards/images/07.png)) next to the thread to be locked.
 1. Click _Lock_.
 
     ![Locking a Thread](./moderating-message-boards/images/02.png)
@@ -77,6 +77,6 @@ When a thread has been reported for possible abuse, the _Message Boards_ apps us
 
 Moderators have the option to delete the thread if it was deemed offensive or violates the terms of use. To delete a thread:
 
-1. Click on (![Actions](./creating-message-boards-categories/images/05.png))
+1. Click _Actions_ (![Actions](./moderating-message-boards/images/07.png))
 1. Click _Delete_
 1. Click _OK_ to confirm the deletion.
