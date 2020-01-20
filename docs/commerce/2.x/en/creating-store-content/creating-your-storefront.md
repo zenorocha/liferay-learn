@@ -8,16 +8,16 @@ The following types of pages may be created:
 
 | Page Name | Purpose | Widget(s) Used |
 | --- | --- | --- |
-| [Account Management](../creating-store-content/account-management.md) | Page where store administrators can manage Users and Accounts | _Accounts_ |
-| [Catalog](../creating-store-content/catalog.md) | Main page where customers can search for products and refine their search results. | _Search_, _Option Facet_, _Specification Facet_, _Category Facet_ and _Search Results_.|
-| [Cart](../creating-store-content/cart.md) | Displays all items in the shopping cart | _Cart_, _Cart Summary_, _Mini Cart_ |
-| [Checkout](../creating-store-content/checkout.md) | Displays a summary of all selected goods for purchase | _Checkout_ |
-| [Compare](../creating-store-content/compare.md) | Displays a side by side comparison of the different selected products | _Cart_ |
-| [List](../creating-store-content/list.md) | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
-| [Pending Orders](../creating-store-content/pending-orders.md) | Displays a list of all pending orders | _Open Carts_ |
-| [Placed Orders](../creating-store-content/placed-orders.md) | Displays a list of all orders in all statuses | _Orders_ |
-| [Product Details](../creating-store-content/product-details.md) | Displays information about the product and related products | _Product Details_ and _Product Publisher_ |
-| [Search](../creating-store-content/search.md) | Allows users to search | _Search_, _Tag_, _Category Facet_, _Option Facet_, _Specification Facet_ |
+| [Account Management](./commerce-storefront-pages/account-management.md) | Page where store administrators can manage Users and Accounts | _Accounts_ |
+| [Catalog](./commerce-storefront-pages/catalog.md) | Main page where customers can search for products and refine their search results. | _Search_, _Option Facet_, _Specification Facet_, _Category Facet_ and _Search Results_.|
+| [Cart](./commerce-storefront-pages/cart.md) | Displays all items in the shopping cart | _Cart_, _Cart Summary_, _Mini Cart_ |
+| [Checkout](./commerce-storefront-pages/checkout.md) | Displays a summary of all selected goods for purchase | _Checkout_ |
+| [Compare](./commerce-storefront-pages/compare.md) | Displays a side by side comparison of the different selected products | _Cart_ |
+| [List](./commerce-storefront-pages/list.md) | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
+| [Pending Orders](./commerce-storefront-pages/pending-orders.md) | Displays a list of all pending orders | _Open Carts_ |
+| [Placed Orders](./commerce-storefront-pages/placed-orders.md) | Displays a list of all orders in all statuses | _Orders_ |
+| [Product Details](./commerce-storefront-pages/product-details.md) | Displays information about the product and related products | _Product Details_ and _Product Publisher_ |
+| [Search](./commerce-storefront-pages/search.md) | Allows users to search | _Search_, _Tag_, _Category Facet_, _Option Facet_, _Specification Facet_ |
 | Spare Parts Finder / BOM| Displays a list of materials that make up a particular product | _Commerce BOM_ |
 
 ## Additional Information

@@ -1,6 +1,6 @@
 # Creating a Catalog Page
 
-The [Catalog](./catalog.md) page is the primary entry point for users to browse products that are being offered in a store. It includes the following widgets: _Search Bar_, _Options Facets_, _Specification Facet_, _Category Facet_ and _Search Results_. To learn more about Commerce widgets see the [Widget Reference](./widget-reference.md).
+The [Catalog](./commerce-storefront-pages/catalog.md) page is the primary entry point for users to browse products that are being offered in a store. It includes the following widgets: _Search Bar_, _Options Facets_, _Specification Facet_, _Category Facet_ and _Search Results_. To learn more about Commerce widgets see the [Widget Reference](./widget-reference.md).
 
 This article documents an example of how to build a Catalog page without the use of an [accelerator](../starting-a-store/accelerators.md).
 

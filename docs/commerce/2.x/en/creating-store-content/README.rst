@@ -11,16 +11,16 @@ Pages
 Commerce Storefront Pages
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  :doc:`/creating-store-content/account-management`
--  :doc:`/creating-store-content/catalog`
--  :doc:`/creating-store-content/cart`
--  :doc:`/creating-store-content/checkout`
--  :doc:`/creating-store-content/compare`
--  :doc:`/creating-store-content/list`
--  :doc:`/creating-store-content/pending-orders`
--  :doc:`/creating-store-content/placed-orders`
--  :doc:`/creating-store-content/product-details`
--  :doc:`/creating-store-content/search`
+-  :doc:`/creating-store-content/commerce-storefront-pages/account-management`
+-  :doc:`/creating-store-content/commerce-storefront-pages/catalog`
+-  :doc:`/creating-store-content/commerce-storefront-pages/cart`
+-  :doc:`/creating-store-content/commerce-storefront-pages/checkout`
+-  :doc:`/creating-store-content/commerce-storefront-pages/compare`
+-  :doc:`/creating-store-content/commerce-storefront-pages/list`
+-  :doc:`/creating-store-content/commerce-storefront-pages/pending-orders`
+-  :doc:`/creating-store-content/commerce-storefront-pages/placed-orders`
+-  :doc:`/creating-store-content/commerce-storefront-pages/product-details`
+-  :doc:`/creating-store-content/commerce-storefront-pages/search`
 
 Using Web Experience Management
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

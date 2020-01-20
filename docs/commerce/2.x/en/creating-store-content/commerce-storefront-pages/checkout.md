@@ -16,7 +16,7 @@ Note that if the buyer checks the _Use shipping address as billing address_, thi
 
 ![Shipping Method step](./checkout/images/03.png)
 
-Shipping methods available to a buyer are configured by changing _Shipping Methods_ in _Site Administration_ → _Commerce_ → _Settings_ -> _Shipping Methods_. See [Using the Flat Rate Shipping Method](../orders-and-fulfillment/using-the-flat-rate-shipping-method.md) for more information.
+Shipping methods available to a buyer are configured by changing _Shipping Methods_ in _Site Administration_ → _Commerce_ → _Settings_ -> _Shipping Methods_. See [Using the Flat Rate Shipping Method](../../orders-and-fulfillment/using-the-flat-rate-shipping-method.md) for more information.
 
 ## Entering a Billing Address
 
@@ -32,11 +32,11 @@ As noted above, this page appears only if the buyer's billing address is differe
 
 ![Order Confirmation step](./checkout/images/06.png)
 
-When an order is confirmed, the order is ready for processing by the seller. See [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md) for more information.
+When an order is confirmed, the order is ready for processing by the seller. See [Order Life Cycle](../../orders-and-fulfillment/order-life-cycle.md) for more information.
 
 ## Additional Information
 
-* [Widget Reference Guide](../creating-store-content/widget-reference.md)
+* [Widget Reference Guide](../widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
 * [Implementing a Custom Checkout Step](../../developer-guide/tutorial/implementing-a-custom-checkout-step.md)
-* [Using the Flat Rate Shipping Method](../orders-and-fulfillment/using-the-flat-rate-shipping-method.md)
+* [Using the Flat Rate Shipping Method](../../orders-and-fulfillment/using-the-flat-rate-shipping-method.md)
