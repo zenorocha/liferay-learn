@@ -54,7 +54,7 @@ Minium applies a number of other site configurations that are not set out-of-the
 
 | Feature | Details |
 | --- | --- |
-| [Warehouses](../managing-a-catalog/adding-a-new-warehouse.md) | Italy, United States Northeast, United States Southwest |
+| [Warehouses](../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) | Italy, United States Northeast, United States Southwest |
 | [Site Type](../starting-a-store/sites-and-site-types.md) | B2B |
 | [Shipping Method Options](../orders-and-fulfillment/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
 | Channels | Minium Portal |

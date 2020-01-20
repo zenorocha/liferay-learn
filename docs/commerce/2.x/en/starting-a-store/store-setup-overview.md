@@ -23,7 +23,7 @@ Global configurations for Liferay Commerce include setting the store timezone, a
 
 * [Setting Locale Options](../starting-a-store/store-administration/locale-options.md)
 * [Adding Regions](../starting-a-store/store-administration/adding-regions.md)
-* [Setting up Warehouses](../managing-a-catalog/warehouse-reference-guide.md)
+* [Setting up Warehouses](../managing-a-catalog/managing-inventory/warehouse-reference-guide.md)
 * [Creating Channels](../managing-a-catalog/creating-and-managing-products/introduction-to-channels.md)
 
 ### Create a Store Site
@@ -81,20 +81,20 @@ The Liferay Commerce Catalog supports storing and managing a wide variety of pro
 * [Product Images](../managing-a-catalog/creating-and-managing-products/product-images.md)
 * [Product Relations](../managing-a-catalog/creating-and-managing-products/related-products-up-sells-and-cross-sells.md)
 * [Product Categorization](../managing-a-catalog/creating-and-managing-products/organizing-your-catalog-with-product-categories.md)
-* [Availability Estimates](../managing-a-catalog/availability-estimates.md)
-* [Low Stock Action](../managing-a-catalog/low-stock-action.md)
+* [Availability Estimates](../managing-a-catalog/managing-inventory/availability-estimates.md)
+* [Low Stock Action](../managing-a-catalog/managing-inventory/low-stock-action.md)
 
 #### Product Pricing
 
 There are several ways to price products and these methods are related to one another in a pricing hierarchy: base price, price list, tiered price, promo price and discount. Pricing is managed per SKU.
 
-* [Pricing](../managing-a-catalog/introduction-to-product-pricing-methods.md)
-* [Price Lists](../managing-a-catalog/creating-a-price-list.md)
+* [Pricing](../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md)
+* [Price Lists](../managing-a-catalog/managing-price/creating-a-price-list.md)
 * [Discounts](../promoting-products/adding-discounts-by-product.md)
 
 #### Managing Inventory
 
-* [Introduction to Managing Inventory](../managing-a-catalog/introduction-to-managing-inventory.md)
+* [Introduction to Managing Inventory](../managing-a-catalog/managing-inventory/introduction-to-managing-inventory.md)
 
 ## Creating the Storefront
 

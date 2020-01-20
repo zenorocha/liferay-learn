@@ -2,11 +2,11 @@
 
 The catalog supports three product types: Simple, Grouped, and Virtual.
 
-**[Simple Product](../managing-a-catalog/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
+**[Simple Product](./creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
 
-**[Grouped Product](../managing-a-catalog/creating-a-grouped-product.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are tracked in inventory. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
+**[Grouped Product](./creating-a-grouped-product.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are tracked in inventory. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
 
-**[Virtual Products](../managing-a-catalog/creating-a-virtual-product.md)**: A Virtual Product is a non-tangible product that can be downloaded or have a specified duration. Examples include music files, electronic publications, services, and warranties. Otherwise, use a Simple product type.
+**[Virtual Products](./creating-a-virtual-product.md)**: A Virtual Product is a non-tangible product that can be downloaded or have a specified duration. Examples include music files, electronic publications, services, and warranties. Otherwise, use a Simple product type.
 
 ## Product Detail Reference
 
@@ -39,7 +39,7 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 
 ## Additional Information
 
-* [Creating a Simple Product](../managing-a-catalog/creating-a-simple-product.md)
-* [Creating a Grouped Product](../managing-a-catalog/creating-a-grouped-product.md)
-* [Creating a Virtual Product](../managing-a-catalog/creating-a-virtual-product.md)
-* [Virtual Product Reference](../managing-a-catalog/virtual-product-reference.md)
+* [Creating a Simple Product](./creating-a-simple-product.md)
+* [Creating a Grouped Product](./creating-a-grouped-product.md)
+* [Creating a Virtual Product](./creating-a-virtual-product.md)
+* [Virtual Product Reference](./virtual-product-reference.md)

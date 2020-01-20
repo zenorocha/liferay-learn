@@ -2,7 +2,7 @@
 
 This article documents how to create Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked.
 
-A set of Availability Estimates are created when using an [Accelerator](../starting-a-store/accelerators.md) to create a storefront.
+A set of Availability Estimates are created when using an [Accelerator](../../starting-a-store/accelerators.md) to create a storefront.
 
 ![Managing Availability Estimates](./availability-estimates/images/01.png)
 

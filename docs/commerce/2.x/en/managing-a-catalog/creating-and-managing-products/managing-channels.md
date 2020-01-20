@@ -21,4 +21,4 @@ The channel is created and associated with the selected site. Products may now b
 ## Additional Information
 
 * [Introduction to Channels](./introduction-to-channels.md)
-* [Configuring Product Visibility by Site Using Channels](../managing-a-catalog/configuring-product-visibility-by-site-using-channels.md)
+* [Configuring Product Visibility by Site Using Channels](./configuring-product-visibility-by-site-using-channels.md)

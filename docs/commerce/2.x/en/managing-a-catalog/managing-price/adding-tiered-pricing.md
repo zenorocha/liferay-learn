@@ -25,5 +25,5 @@ A pricing tier ($90) has been created for orders that reach the minimum quantity
 
 **Note**: Price Tier Entries can also be reached by directly viewing Product SKUs.
 
-* [Creating a Price List](../managing-a-catalog/creating-a-price-list.md)
+* [Creating a Price List](./creating-a-price-list.md)
 * [Adding Products to a Price List](./adding-products-to-a-price-list.md)

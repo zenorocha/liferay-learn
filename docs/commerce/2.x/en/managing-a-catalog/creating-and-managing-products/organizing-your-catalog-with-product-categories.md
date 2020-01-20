@@ -52,4 +52,4 @@ Click on the _Select_ button under the label for the appropriate vocabulary, and
 
 Click _Save_ to apply the changes. You can always change it back to the default view later.
 
-See [Creating a New Product Category](../managing-a-catalog/creating-a-new-product-category.md) to start organizing your products.
+See [Creating a New Product Category](./creating-a-new-product-category.md) to start organizing your products.

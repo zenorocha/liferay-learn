@@ -1,6 +1,6 @@
 # Creating a Catalog
 
-A catalog is the complete list of related products that can be displayed on a store site. Multiple catalogs may be created and associated with [channels](../managing-a-catalog/introduction-to-channels.md).
+A catalog is the complete list of related products that can be displayed on a store site. Multiple catalogs may be created and associated with [channels](./creating-and-managing-products/introduction-to-channels.md).
 
 To create a new catalog:
 

@@ -37,11 +37,11 @@ Once this virtual product has been created, store administrators need to associa
 
 1. Click _Save_.
 
-For more information about each field, see the [Virtual Product Reference](../managing-a-catalog/virtual-product-reference.md) article.
+For more information about each field, see the [Virtual Product Reference](./virtual-product-reference.md) article.
 
 ## Apply Product Options
 
-You can apply [Product Options](../managing-a-catalog/customizing-your-product-with-product-options.md) templates to the virtual product. For example, an e-book might have alternate front covers depending on different markets.
+You can apply [Product Options](./customizing-your-product-with-product-options.md) templates to the virtual product. For example, an e-book might have alternate front covers depending on different markets.
 
 Click the _Options_ sub-tab to continue.
 
@@ -56,25 +56,25 @@ To set product prices and quantities:
     * **Promo Price**: 0.00
     * **Cost**: 0.00
 1. Click _Save_. (If Promo Price and Cost fields are left as 0.00, no discounts or promotions are applied at this point.)
-1. Click _Price List_ to apply this product to any existing [Price Lists](./adding-products-to-a-price-list.md).
+1. Click _Price List_ to apply this product to any existing [Price Lists](../managing-price/adding-products-to-a-price-list.md).
 
->To learn more about pricing see: [Introduction to Product Pricing Methods](./introduction-to-product-pricing-methods.md)
+>To learn more about pricing see: [Introduction to Product Pricing Methods](../managing-price/introduction-to-product-pricing-methods.md)
 
-To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md).
+To learn how to configure inventory for your product, see: [Setting Inventory by Warehouse](../managing-inventory/setting-inventory-by-warehouse.md).
 
 ## Add Product Specifications
 
-[Product specifications](../managing-a-catalog/specifications.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
+[Product specifications](./specifications.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
 
 ## Upload Product Images and Attachments
 
-[Product images](../managing-a-catalog/product-images.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
+[Product images](./product-images.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
 
 Store administrators can also add attachments that are associated with a particular product. Click the _Attachments_ sub-tab to add documents.
 
 ## Organize with Categories
 
-[Product Categories](../managing-a-catalog/creating-a-new-product-category.md) are used to organize products. Product categories may be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.
+[Product Categories](./creating-a-new-product-category.md) are used to organize products. Product categories may be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.
 
 ## Associate with Related Products
 
@@ -82,7 +82,7 @@ Store administrators can also add attachments that are associated with a particu
 
 ## Additional Information
 
-* [Introduction to Product Types](../managing-a-catalog/introduction-to-product-types.md)
-* [Creating a Grouped Product](../managing-a-catalog/creating-a-grouped-product.md)
-* [Creating a Simple Product](../managing-a-catalog/creating-a-simple-product.md)
-* [Virtual Product Reference](../managing-a-catalog/virtual-product-reference.md)
+* [Introduction to Product Types](./introduction-to-product-types.md)
+* [Creating a Grouped Product](./creating-a-grouped-product.md)
+* [Creating a Simple Product](./creating-a-simple-product.md)
+* [Virtual Product Reference](./virtual-product-reference.md)

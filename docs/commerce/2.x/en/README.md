@@ -22,19 +22,19 @@ Liferay Commerce includes a wide range of tools for setting up a storefront. New
 
 ## Multi-Channel Catalog and Product Information Management
 
-Liferay Commerce contains a catalog management system that supports a variety of [product types](./managing-a-catalog/introduction-to-product-types.md) and stores a wide range of product data. [Product options](./managing-a-catalog/customizing-your-product-with-product-options.md), [pricing](./managing-a-catalog/introduction-to-product-pricing-methods.md), [images](./managing-a-catalog/product-images.md), and [specifications](./managing-a-catalog/specifications.md) are a few examples. Products are then readily available to a distribution channel of choice.
+Liferay Commerce contains a catalog management system that supports a variety of [product types](./managing-a-catalog/creating-and-managing-products/introduction-to-product-types.md) and stores a wide range of product data. [Product options](./managing-a-catalog/creating-and-managing-products/customizing-your-product-with-product-options.md), [pricing](./managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md), [images](./managing-a-catalog/creating-and-managing-products/product-images.md), and [specifications](./managing-a-catalog/creating-and-managing-products/specifications.md) are a few examples. Products are then readily available to a distribution channel of choice.
 
 ![Product catalog](./introduction-to-liferay-commerce/images/02.png)
 
-[Channels](./managing-a-catalog/introduction-to-channels.md) connect catalogs and products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales.
+[Channels](./managing-a-catalog/creating-and-managing-products/introduction-to-channels.md) connect catalogs and products to any place products are sold: a Liferay Commerce based storefront, third party marketplaces, or even back office phone sales.
 
 ![Channels enabled for a product](./introduction-to-liferay-commerce/images/03.png)
 
-[Categories](./managing-a-catalog/organizing-your-catalog-with-product-categories.md) and [Product Relationships](./managing-a-catalog/related-products-up-sells-and-cross-sells.md) simplify store navigation and increase revenue generating opportunities.
+[Categories](./managing-a-catalog/creating-and-managing-products/organizing-your-catalog-with-product-categories.md) and [Product Relationships](./managing-a-catalog/creating-and-managing-products/related-products-up-sells-and-cross-sells.md) simplify store navigation and increase revenue generating opportunities.
 
 ![Product details and related products](./introduction-to-liferay-commerce/images/04.png)
 
-Managing product pricing is flexible through the use of [Price Lists](./managing-a-catalog/creating-a-price-list.md) and [Tiered Pricing](./managing-a-catalog/adding-tiered-pricing.md) - all of which can be tailored to meet unique customer needs.
+Managing product pricing is flexible through the use of [Price Lists](./managing-a-catalog/managing-price/creating-a-price-list.md) and [Tiered Pricing](./managing-a-catalog/managing-price/adding-tiered-pricing.md) - all of which can be tailored to meet unique customer needs.
 
 ## B2B Focused Account Management and Purchasing Workflow
 

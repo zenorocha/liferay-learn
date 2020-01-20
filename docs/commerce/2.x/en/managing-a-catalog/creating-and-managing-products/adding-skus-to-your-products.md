@@ -9,7 +9,7 @@ In order to auto-generate SKUs, the following must be completed:
 * Product options templates have been created.
 * Product options have been applied to your product(s).
 
-See [Customizing Your Product with Product Options](../managing-a-catalog/customizing-your-product-with-product-options.md) for more information.
+See [Customizing Your Product with Product Options](./customizing-your-product-with-product-options.md) for more information.
 
 ## Generating All SKU Combinations (Automatic)
 

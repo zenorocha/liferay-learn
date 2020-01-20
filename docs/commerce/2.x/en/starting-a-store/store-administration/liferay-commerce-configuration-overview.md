@@ -9,18 +9,18 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 ![Global Commerce Settings](./liferay-commerce-configuration-overview/images/01.png)
 
 * [Channels](../../managing-a-catalog/creating-and-managing-products/managing-channels.md)
-* [Price Lists](../../managing-a-catalog/creating-a-price-list.md)
+* [Price Lists](../../managing-a-catalog/managing-price/creating-a-price-list.md)
 * [Orders](../../orders-and-fulfillment/orders-menu.md)
 
 The Commerce Global Settings menu contains the following tabs:
 
 ![Commerce Global Settings Tab](./liferay-commerce-configuration-overview/images/02.png)
 
-* [Availability Estimates](../../managing-a-catalog/availability-estimates.md)
+* [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md)
 * [Adding a New Currency](../../starting-a-store/store-administration/adding-a-new-currency.md)
 * [Measurement Units](../../orders-and-fulfillment/measurement-units.md)
 * [Regions](../../starting-a-store/store-administration/adding-regions.md)
-* [Warehouses](../../managing-a-catalog/warehouse-reference-guide.md)
+* [Warehouses](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md)
 
 ## Commerce Site Settings
 

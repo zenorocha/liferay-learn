@@ -10,9 +10,9 @@ The hierarchy consists of these levels:
 
 **Base Price**: This is the starting price of the product which is [set](./setting-a-products-base-price.md) in the product SKU sub-tab.
 
-**Price List**: This price applies to specific products for buyers in selected [Accounts](../account-management/creating-a-new-account.md) and [Account Groups](../account-management/creating-a-new-account-group.md). Prices in the price list can be _higher_ or _lower_ than the base price. If a price list applies to a transaction, it supersedes the base price.
+**Price List**: This price applies to specific products for buyers in selected [Accounts](../../account-management/creating-a-new-account.md) and [Account Groups](../../account-management/creating-a-new-account-group.md). Prices in the price list can be _higher_ or _lower_ than the base price. If a price list applies to a transaction, it supersedes the base price.
 
-**Tiered Price**: This price applies to orders that meet specified minimum quantity requirements (bulk orders). It is only available in the context of a [price list](../managing-a-catalog/creating-a-price-list.md) and it supersedes the list's price.
+**Tiered Price**: This price applies to orders that meet specified minimum quantity requirements (bulk orders). It is only available in the context of a [price list](./creating-a-price-list.md) and it supersedes the list's price.
 
 **Promo Price**: This price can be applied to a base price, a price list price, and to a tiered price. Once applied, the promo price supersedes each of them. When a base price is superseded by a price list or tiered price, its promo price is superseded as well. _The applicable price and promo price appear together on the product page so that buyers see the markdown._
 
@@ -40,7 +40,7 @@ The pricing hierarchy can be visualized in the following diagram:
 ## Additional Information
 
 * [Setting a Product's Base Price](./setting-a-products-base-price.md)
-* [Creating a Price List](../managing-a-catalog/creating-a-price-list.md)
+* [Creating a Price List](./creating-a-price-list.md)
 * [Adding Products to a Price List](./adding-products-to-a-price-list.md)
-* [Adding Tiered Pricing](../managing-a-catalog/adding-products-to-a-price-list.md)
-* [Adding Discounts by Product](../promoting-products/adding-discounts-by-product.md)
+* [Adding Tiered Pricing](./adding-products-to-a-price-list.md)
+* [Adding Discounts by Product](../../promoting-products/adding-discounts-by-product.md)

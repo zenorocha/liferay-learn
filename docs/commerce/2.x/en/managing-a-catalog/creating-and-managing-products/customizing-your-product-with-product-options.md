@@ -36,7 +36,7 @@ The Option Template has been added and can be applied to all products.
 
 **Note 1**: When _Use in Faceted Navigation_ is switched to _Active_, this enable to allow search results to be filtered for this option.
 
-**Note 2**: A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](../managing-a-catalog/adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
+**Note 2**: A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
 
 ## Adding Option Values
 

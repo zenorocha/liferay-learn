@@ -1,6 +1,6 @@
 # Adding Discounts to the Subtotal
 
-A discount applies a modifier to a product’s base price. It can be an absolute number or a percentage, and can be applied to a limited number of products or to the entire catalog. It can be available to all buyers, a defined Account Group, or to a more narrowly defined group of customers that meet certain qualifications. Unlike a price list, a discount always _reduces_ the base price. For more information on Pricing see [Introduction to Product Pricing Methods](../managing-a-catalog/introduction-to-product-pricing-methods.md).
+A discount applies a modifier to a product’s base price. It can be an absolute number or a percentage, and can be applied to a limited number of products or to the entire catalog. It can be available to all buyers, a defined Account Group, or to a more narrowly defined group of customers that meet certain qualifications. Unlike a price list, a discount always _reduces_ the base price. For more information on Pricing see [Introduction to Product Pricing Methods](../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md).
 
 There are five different types of discounts: Categories, Products, Shipment, Subtotal, and Total. This article is a walk through on how to add discounts to the Subtotal.
 
