@@ -42,7 +42,7 @@ The DXP _Site Menu_ drop down contains actions, content, and configurations that
 
 ![A view of the expanded Site Menu so that all options are visible.](./navigating-dxp/images/03.png)
 
-> **Note:** The _Site Menu_ indicates which site you are working with when using the Site Menu. You may change what site you are working with by clicking the ![Compass Icon](../images/icon-compass.png) in the Site Menu.
+> **Note:** The _Site Menu_ indicates which site you are working with when using the Site Menu. In this example the site is `Liferay DXP`. You may change what site you are working with by clicking the ![Compass Icon](../images/icon-compass.png) in the Site Menu.
 
 The following common site building and management activities can be done in the _Site Menu_:
 
