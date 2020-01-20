@@ -22,7 +22,7 @@ To lock a thread:
 
 To unlock a thread:
 
-1. Click (![Actions](./creating-message-boards-categories/images/05.png)) next to the thread to be unlocked.
+1. Click (![Actions](./moderating-message-boards/images/07.png)) next to the thread to be unlocked.
 1. Click _Unlock_.
 
 When a thread is unlocked, forum members can resume all thread activities.
@@ -31,7 +31,7 @@ When a thread is unlocked, forum members can resume all thread activities.
 
 If someone posts a thread to the wrong category, site administrators can move it to the proper one. Follow these steps:
 
-1. Select _Move_ from the thread’s Actions menu (![Actions](./creating-message-boards-categories/images/05.png)).
+1. Select _Move_ from the thread’s Actions menu (![Actions](./moderating-message-boards/images/07.png)).
 1. Click the _Select_ button and select the new category.
 1. To add a post explaining the move, check _Add explanation post_.
 
@@ -46,7 +46,7 @@ The thread is now in the new category.
 Unfortunately, message board users can be abusive. In this case, moderators can ban the user from the message boards. To ban a user:
 
 1. Click on the thread that contains the user to be banned.
-1. Click the post’s Actions menu (![Actions](./creating-message-boards-categories/images/05.png)) and select Ban this User.
+1. Click the post’s Actions menu (![Actions](./moderating-message-boards/images/07.png)) and select Ban this User.
 
 ![Banning a user](./moderating-message-boards/images/04.png)
 
