@@ -5,14 +5,15 @@ fwoe=$2
 file="${2}.md"
 dir1=$3
 dir2=$4
+extraparam=$5
 
 if [ "$1" == "--help" ] || [ "$1" == "--usage" ]
 then
 	echo "Moves markdown file and fixes all links to and from other markdown files. Only use for files with unique names."
 	echo
-	echo "Usage: ./refactor_file.sh <product> <file-name> <current-dir> <target-dir>"
+	echo "Usage: ./refactor_file.sh <product> <file-name> <current-dir> <target-dir> -rename=<optional-new-name>"
 	echo
-	echo "Example: ./refactor_file.sh dxp-cloud introduction-to-x.md build-and-deploy getting-started"
+	echo "Example: ./refactor_file.sh dxp-cloud introduction-to-x build-and-deploy getting-started -rename=introduction-to-y"
 
 	exit 1
 fi
@@ -56,6 +57,15 @@ then
 	echo "File not found in specified location! (Are you sure it's a .md file?)"
 
 	exit 1
+fi
+
+if [[ "$extraparam" == "-rename="* ]]
+then
+	renameto=${extraparam#"-rename="}.md
+	renamefolderto=${extraparam#"-rename="}
+else
+	renameto="$file"
+	renamefolderto="$fwoe"
 fi
 
 rootpath="$(pwd)/${prefixwos}"
@@ -111,11 +121,11 @@ then
 	mkdir -p "${prefix}${dir2}"
 fi
 
-mv "${prefix}${dir1}${file}" "${prefix}${dir2}${file}"
+mv "${prefix}${dir1}${file}" "${prefix}${dir2}${renameto}"
 
 if test -d "${prefix}${dir1}${fwoe}"
 then
-	mv "${prefix}${dir1}${fwoe}" "${prefix}${dir2}${fwoe}"
+	mv "${prefix}${dir1}${fwoe}" "${prefix}${dir2}${renamefolderto}"
 fi
 
 # fixing links in other files
@@ -162,7 +172,7 @@ do
 
 	correctedpath="${correctedpath}${pathtodir2}"
 
-	sed -i "s~([^)]*/${file})~(${correctedpath}${file})~g" "$f"
+	sed -i "s~([^)]*/${file})~(${correctedpath}${renameto})~g" "$f"
 done
 
 # fixing links just within the moved file itself
@@ -216,7 +226,21 @@ do
 		relativepath="${relativepath}/"
 	fi
 
-	sed -i "s~${links[$i]}~(${relativepath}${fname})~g" "${prefix}${dir2}${file}"
+	sed -i "s~${links[$i]}~(${relativepath}${fname})~g" "${prefix}${dir2}${renameto}"
 done
 
-echo "${file} refactored to ${dir2}. Please update the corresponding .rst files."
+# If the file was renamed, then image links need to be fixed, too
+
+if [ "$file" != "$renameto" ]
+then
+	sed -i "s~(\./${fwoe}/~(\./${renamefolderto}/~g" "${prefix}${dir2}${renameto}"
+fi
+
+renamestring=""
+
+if [ "$file" != "$renameto" ]
+then
+	renamestring=" and renamed to $renameto"
+fi
+
+echo "${file} refactored to ${dir2}${renamestring}. Please update the corresponding .rst files."
