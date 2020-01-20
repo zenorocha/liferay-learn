@@ -42,10 +42,10 @@ Liferay Commerce provides support for several third party payment processors and
 
 * [Payments](../starting-a-store/store-administration/payments.md)
 * [Managing Payment Methods](../starting-a-store/store-administration/managing-payment-methods.md)
-* [Authorize.net](../orders-and-fulfillment/authorize.net.md)
-* [PayPal](../orders-and-fulfillment/mercanet.md)
-* [Mercanet](../orders-and-fulfillment/mercanet.md)
-* [Money Orders](../orders-and-fulfillment/mercanet.md)
+* [Authorize.net](../orders-and-fulfillment/payment-methods/authorize.net.md)
+* [PayPal](../orders-and-fulfillment/payment-methods/mercanet.md)
+* [Mercanet](../orders-and-fulfillment/payment-methods/mercanet.md)
+* [Money Orders](../orders-and-fulfillment/payment-methods/mercanet.md)
 
 #### Collecting Applicable Taxes
 
@@ -60,9 +60,9 @@ In order to collect the applicable taxes, Liferay Commerce has the ability to cr
 Liferay Commerce has several options to calculate shipping rates. Commerce Enterprise subscribers receive FedEx carrier integration out-of-the-box.
 
 * [Shipping Methods](../starting-a-store/store-administration/shipping-methods.md)
-* [Variable Rate](../orders-and-fulfillment/using-the-variable-rate-shipping-method.md)
-* [Flat Rate](../orders-and-fulfillment/using-the-flat-rate-shipping-method.md)
-* [Using FedEx as a Carrier](../orders-and-fulfillment/using-fedex-as-a-carrier-method.md)
+* [Variable Rate](../orders-and-fulfillment/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
+* [Flat Rate](../orders-and-fulfillment/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
+* [Using FedEx as a Carrier](../orders-and-fulfillment/configuring-shipping-methods/using-fedex-as-a-carrier-method.md)
 
 ## Creating the Catalog
 
@@ -118,7 +118,7 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 
 When an order has been received, the order may be transmitted to an ERP and optionally to a CRM. Once the requested goods are available for shipping, the store's inventory specialists may track the shipment. See the following articles to learn about the life cycle of an order and the shipment processes.
 
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
-* [Introduction to Shipments](../orders-and-fulfillment/introduction-to-shipments.md)
-* [Creating a shipment](../orders-and-fulfillment/creating-a-shipment.md)
-* [Cancelling a Shipment](../orders-and-fulfillment/cancelling-a-shipment.md)
+* [Order Life Cycle](../orders-and-fulfillment/order-management/order-life-cycle.md)
+* [Introduction to Shipments](../orders-and-fulfillment/managing-shipments/introduction-to-shipments.md)
+* [Creating a shipment](../orders-and-fulfillment/managing-shipments/creating-a-shipment.md)
+* [Cancelling a Shipment](../orders-and-fulfillment/managing-shipments/cancelling-a-shipment.md)

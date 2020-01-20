@@ -2,7 +2,7 @@
 
 Minium is a Liferay Commerce [Accelerator](./accelerators.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a manufacturer, showcasing a modern B2B digital commerce experience. It is designed with features that make the experience as smooth as possible by having elements that are both functional and elegant.
 
-The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../account-management/account-roles.md), [Account Groups](../account-management/creating-a-new-account-group.md), and [Order Workflows](../orders-and-fulfillment/order-workflows.md).
+The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../account-management/account-roles.md), [Account Groups](../account-management/creating-a-new-account-group.md), and [Order Workflows](../orders-and-fulfillment/order-management/order-workflows.md).
 
 This article serves as a walk-through for the main features of the Minium Accelerator.
 
@@ -56,13 +56,13 @@ Minium applies a number of other site configurations that are not set out-of-the
 | --- | --- |
 | [Warehouses](../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) | Italy, United States Northeast, United States Southwest |
 | [Site Type](../starting-a-store/sites-and-site-types.md) | B2B |
-| [Shipping Method Options](../orders-and-fulfillment/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
+| [Shipping Method Options](../orders-and-fulfillment/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
 | Channels | Minium Portal |
 | Countries | France, China, United States, and 245 more |
 | [Currencies](../starting-a-store/store-administration/adding-a-new-currency.md) | USD, AUD, GBP, and 7 more |
 | Default Image | &#10003; |
-| [Measurement Units](../orders-and-fulfillment/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
-| [Measurement Units](../orders-and-fulfillment/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
+| [Measurement Units](../orders-and-fulfillment/configuring-shipping-methods/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
+| [Measurement Units](../orders-and-fulfillment/configuring-shipping-methods/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
 | [Account Roles](../account-management/account-roles.md) | Buyer, Account Manager, Sales Agent
 | Availability Estimates | 3-5 days, 5-7 days, 7-14 days |
 | [Product Relation Type](../managing-a-catalog/creating-and-managing-products/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |

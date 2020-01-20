@@ -1,6 +1,6 @@
 # Approving or Rejecting Orders in Order Workflows
 
-[Order workflows](../orders-and-fulfillment/order-workflows.md), when enabled, empower the buyer or seller to require internal prior approval for an order before it can be processed. This article documents how to approve or reject an order when *Approval Workflow* or *Transmission Workflow* is enabled with the *Single Approver (Version 1)* option.
+[Order workflows](./order-workflows.md), when enabled, empower the buyer or seller to require internal prior approval for an order before it can be processed. This article documents how to approve or reject an order when *Approval Workflow* or *Transmission Workflow* is enabled with the *Single Approver (Version 1)* option.
 
 ## Approving or Rejecting an Order
 
@@ -38,8 +38,8 @@ The order has been approved (or rejected). To review additional orders, return t
 
 ## Additional Information
 
-* [Order Workflows](../README.md)
-* [Enabling or Disabling Order Workflows](../orders-and-fulfillment/enabling-or-disabling-order-workflows.md)
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
-* [Orders Menu](../orders-and-fulfillment/orders-menu.md)
+* [Order Workflows](../.././README.md)
+* [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
+* [Order Life Cycle](./order-life-cycle.md)
+* [Orders Menu](./orders-menu.md)
 * Order Management Statuses

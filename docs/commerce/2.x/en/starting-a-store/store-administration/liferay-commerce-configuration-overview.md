@@ -10,7 +10,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 
 * [Channels](../../managing-a-catalog/creating-and-managing-products/managing-channels.md)
 * [Price Lists](../../managing-a-catalog/managing-price/creating-a-price-list.md)
-* [Orders](../../orders-and-fulfillment/orders-menu.md)
+* [Orders](../../orders-and-fulfillment/order-management/orders-menu.md)
 
 The Commerce Global Settings menu contains the following tabs:
 
@@ -18,7 +18,7 @@ The Commerce Global Settings menu contains the following tabs:
 
 * [Availability Estimates](../../managing-a-catalog/managing-inventory/availability-estimates.md)
 * [Adding a New Currency](../../starting-a-store/store-administration/adding-a-new-currency.md)
-* [Measurement Units](../../orders-and-fulfillment/measurement-units.md)
+* [Measurement Units](../../orders-and-fulfillment/configuring-shipping-methods/measurement-units.md)
 * [Regions](../../starting-a-store/store-administration/adding-regions.md)
 * [Warehouses](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md)
 
@@ -33,8 +33,8 @@ Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
 The following site settings are found here:
 
 * [Notifications](../../promoting-products/automating-store-emails-by-using-notification-templates.md)
-* [Order Workflows](../../orders-and-fulfillment/order-workflows.md)
+* [Order Workflows](../../orders-and-fulfillment/order-management/order-workflows.md)
 * [Payment Methods](../../starting-a-store/store-administration/payments.md)
 * Product Display Pages
-* [Shipping Methods](../../orders-and-fulfillment/shipping-method-reference.md)
+* [Shipping Methods](../../orders-and-fulfillment/configuring-shipping-methods/shipping-method-reference.md)
 * [Site Types](../../sites-and-site-types.md)

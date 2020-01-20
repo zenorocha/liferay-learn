@@ -31,4 +31,4 @@ To add a new currency:
 
 * _Rounding Mode_ requires a type of [rounding mode](https://en.wikipedia.org/wiki/Rounding#Directed_rounding_to_an_integer) from the drop-down menu.
 
-* Some payment methods require a specific primary currency to be configured for the store in order to function. [Mercanet](../../orders-and-fulfillment/mercanet.md) requires EUR as the primary currency.
+* Some payment methods require a specific primary currency to be configured for the store in order to function. [Mercanet](../../orders-and-fulfillment/payment-methods/mercanet.md) requires EUR as the primary currency.

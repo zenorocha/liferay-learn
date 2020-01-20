@@ -1,14 +1,14 @@
 # Order Management Statuses
 
-Every order in Liferay Commerce contains important [order information](../orders-and-fulfillment/order-information.md), including order management statuses.
+Every order in Liferay Commerce contains important [order information](./order-information.md), including order management statuses.
 
-This article gives a brief overview of the three order management status types – *Order Status*, *Payment Status*, and *Workflow Status* –  found on the [*Orders* Menu](../orders-and-fulfillment/orders-menu.md).
+This article gives a brief overview of the three order management status types – *Order Status*, *Payment Status*, and *Workflow Status* –  found on the [*Orders* Menu](./orders-menu.md).
 
    ![Order Management Statuses](./order-management-statuses/images/01.png)
 
 ## Order Status
 
-The *Order Status* gives more precise information about where an order is in the [order life cycle](../orders-and-fulfillment/order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](../orders-and-fulfillment/orders-menu.md): either the [*Open*](../orders-and-fulfillment/orders-menu.md#open), [*Pending*](../orders-and-fulfillment/orders-menu.md#pending), or [*Transmitted*](../orders-and-fulfillment/orders-menu.md#transmitted) tab.
+The *Order Status* gives more precise information about where an order is in the [order life cycle](./order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](./orders-menu.md): either the [*Open*](../orders-and-fulfillment/orders-menu.md#open), [*Pending*](../orders-and-fulfillment/orders-menu.md#pending), or [*Transmitted*](../orders-and-fulfillment/orders-menu.md#transmitted) tab.
 
 ### Open Tab
 
@@ -54,7 +54,7 @@ There are twelve order statuses available on the *Transmitted* tab, as listed be
 
 ## Payment Status
 
-The *Payment Status* gives information about whether payment has been made and received for an order. On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](../orders-and-fulfillment/orders-menu.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
+The *Payment Status* gives information about whether payment has been made and received for an order. On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](./orders-menu.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
 
    ![Payment Status](./order-management-statuses/images/05.png)
 
@@ -66,7 +66,7 @@ The *Payment Status* gives information about whether payment has been made and r
 
 ## Workflow Status
 
-The *Workflow Status* gives information about where an order is in one of the two [order workflows](../orders-and-fulfillment/order-workflows.md). (../orders-and-fulfillment/orders-menu.md) it is found.)
+The *Workflow Status* gives information about where an order is in one of the two [order workflows](./order-workflows.md). (./orders-menu.md) it is found.)
 
 ### Open Tab
 
@@ -93,9 +93,9 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 ## Additional Information
 
-* [Orders Menu](../orders-and-fulfillment/orders-menu.md)
-* [Order Information](../orders-and-fulfillment/order-information.md)
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
-* [Order Workflows](../orders-and-fulfillment/order-workflows.md)
-* [Enabling or Disabling Order Workflows](../orders-and-fulfillment/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](../orders-and-fulfillment/approving-or-rejecting-orders-in-order-workflows.md)
+* [Orders Menu](./orders-menu.md)
+* [Order Information](./order-information.md)
+* [Order Life Cycle](./order-life-cycle.md)
+* [Order Workflows](./order-workflows.md)
+* [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)

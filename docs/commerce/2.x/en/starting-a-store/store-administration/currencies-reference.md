@@ -22,4 +22,4 @@ To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ 
 ## Additional Information
 
 * [Adding a New Currency](./adding-a-new-currency.md)
-* [Mercanet](../../orders-and-fulfillment/mercanet.md)
+* [Mercanet](../../orders-and-fulfillment/payment-methods/mercanet.md)

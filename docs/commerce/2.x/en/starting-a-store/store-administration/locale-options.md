@@ -4,4 +4,4 @@ Liferay Commerce can be configured to work in different regions and languages. S
 
 * [Locales and Timezones](https://help.liferay.com/hc/en-us/articles/360018176071-Locales-and-Encoding-Configuration)
 * [Adding a New Currency](../../starting-a-store/store-administration/adding-a-new-currency.md)
-* [Measurement Units](../../orders-and-fulfillment/measurement-units.md)
+* [Measurement Units](../../orders-and-fulfillment/configuring-shipping-methods/measurement-units.md)

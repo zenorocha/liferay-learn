@@ -1,6 +1,6 @@
 # Enabling or Disabling Order Workflows
 
-[Order workflows](../README.md) are a site-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
+[Order workflows](../.././README.md) are a site-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
 
 This article documents how to enable and disable Order Workflows.
 
@@ -35,8 +35,8 @@ To disable an order workflow, simply navigate to the _Order Workflows_ tab, sele
 
 **Note**: Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](https://help.liferay.com/hc/en-us/articles/360018174111-Introduction-to-Workflow) can be created and may then be selected in the _Order Workflows_ tab.
 
-* [Order Workflows](../README.md)
+* [Order Workflows](../.././README.md)
 * [Approving or Rejecting Orders](./approving-or-rejecting-orders-in-order-workflows.md)
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
-* [Orders Menu](../orders-and-fulfillment/orders-menu.md)
+* [Order Life Cycle](./order-life-cycle.md)
+* [Orders Menu](./orders-menu.md)
 * [Order Management Statuses](./order-management-statuses.md)

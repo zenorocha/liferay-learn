@@ -1,6 +1,6 @@
 # Orders Menu
 
-All orders in Liferay Commerce can be viewed and managed by an administrator in the _Orders_ menu. Here, orders are displayed in the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](../orders-and-fulfillment/order-life-cycle.md).
+All orders in Liferay Commerce can be viewed and managed by an administrator in the _Orders_ menu. Here, orders are displayed in the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](./order-life-cycle.md).
 
    ![Orders Menu Overview](./orders-menu/images/01.png "Orders Menu Overview")
 
@@ -30,11 +30,11 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 ## Additional Information
 
-Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../creating-store-content/commerce-storefront-pages/pending-orders.md) and [Placed Orders](../creating-store-content/commerce-storefront-pages/placed-orders.md) for details.
+Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../../creating-store-content/commerce-storefront-pages/pending-orders.md) and [Placed Orders](../../creating-store-content/commerce-storefront-pages/placed-orders.md) for details.
 
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
-* [Order Information](../orders-and-fulfillment/order-information.md)
-* [Order Workflows](../orders-and-fulfillment/order-workflows.md)
+* [Order Life Cycle](./order-life-cycle.md)
+* [Order Information](./order-information.md)
+* [Order Workflows](./order-workflows.md)
 * [Order Management Statuses](./order-management-statuses.md)
-* [Enabling or Disabling Order Workflows](../orders-and-fulfillment/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](../orders-and-fulfillment/approving-or-rejecting-orders-in-order-workflows.md)
+* [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)

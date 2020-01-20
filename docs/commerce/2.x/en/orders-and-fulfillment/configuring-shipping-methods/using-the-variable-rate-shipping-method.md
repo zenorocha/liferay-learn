@@ -61,9 +61,9 @@ The shipment method is now active.
 
 ## Additional Information
 
-* [Using a Flat Rate Shipping Method](../orders-and-fulfillment/using-the-flat-rate-shipping-method.md)
-* [Using FedEx as a Carrier Method](../orders-and-fulfillment/using-fedex-as-a-carrier-method.md)
-* [Applying Shipping Method Restrictions](../orders-and-fulfillment/applying-shipping-method-restrictions.md)
-* [Measurement Units](../orders-and-fulfillment/measurement-units.md)
-* [Shipping Method Reference](../orders-and-fulfillment/shipping-method-reference.md)
-* [Creating a New Shipment](../orders-and-fulfillment/creating-a-shipment.md)
+* [Using a Flat Rate Shipping Method](./using-the-flat-rate-shipping-method.md)
+* [Using FedEx as a Carrier Method](./using-fedex-as-a-carrier-method.md)
+* [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
+* [Measurement Units](./measurement-units.md)
+* [Shipping Method Reference](./shipping-method-reference.md)
+* [Creating a New Shipment](../managing-shipments/creating-a-shipment.md)

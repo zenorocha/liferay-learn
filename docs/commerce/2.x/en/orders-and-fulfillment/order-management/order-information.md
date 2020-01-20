@@ -1,6 +1,6 @@
 # Order Information
 
-Administrators can view and edit order information by clicking an order in the [Orders Menu](../orders-and-fulfillment/orders-menu.md).
+Administrators can view and edit order information by clicking an order in the [Orders Menu](./orders-menu.md).
 
    ![Orders Menu](./order-information/images/01.png)
 
@@ -39,9 +39,9 @@ The *Notes* tab displays notes that have been previously added to an order and a
 
 ## Additional Information
 
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
-* [Orders Menu](../orders-and-fulfillment/orders-menu.md)
-* [Order Workflows](../orders-and-fulfillment/order-workflows.md)
+* [Order Life Cycle](./order-life-cycle.md)
+* [Orders Menu](./orders-menu.md)
+* [Order Workflows](./order-workflows.md)
 * [Order Management Statuses](./order-management-statuses.md)
-* [Enabling or Disabling Order Workflows](../orders-and-fulfillment/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](../orders-and-fulfillment/approving-or-rejecting-orders-in-order-workflows.md)
+* [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)

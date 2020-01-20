@@ -28,10 +28,10 @@ The _Configuration_ tab for a payment method is where the store administrator co
 
 See the corresponding articles to learn how to activate each payment method:
 
-* [Authorize.net](../../orders-and-fulfillment/authorize.net.md)
-* [Mercanet](../../orders-and-fulfillment/mercanet.md)
-* [Money Orders](../../orders-and-fulfillment/money-orders.md)
-* [PayPal](../../orders-and-fulfillment/paypal.md)
+* [Authorize.net](../../orders-and-fulfillment/payment-methods/authorize.net.md)
+* [Mercanet](../../orders-and-fulfillment/payment-methods/mercanet.md)
+* [Money Orders](../../orders-and-fulfillment/payment-methods/money-orders.md)
+* [PayPal](../../orders-and-fulfillment/payment-methods/paypal.md)
 
 ### Restrictions Tab
 

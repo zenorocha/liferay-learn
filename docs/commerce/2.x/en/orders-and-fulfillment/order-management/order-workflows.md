@@ -28,8 +28,8 @@ With two _Order Workflows_ to choose from, _Approval Workflow_ and _Transmission
 
 ## Additional Information
 
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
+* [Order Life Cycle](./order-life-cycle.md)
 * [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
-* [Orders Menu](../orders-and-fulfillment/orders-menu.md)
+* [Orders Menu](./orders-menu.md)
 * [Order Management Statuses](./order-management-statuses.md)

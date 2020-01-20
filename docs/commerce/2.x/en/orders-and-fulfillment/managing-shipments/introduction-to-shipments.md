@@ -50,5 +50,5 @@ In addition, clicking the (+) Add Shipment button opens a window to add more ite
 
 ## Additional Information
 
-* [Creating a Shipment](../orders-and-fulfillment/creating-a-shipment.md)
-* [Cancelling a Shipment](../orders-and-fulfillment/cancelling-a-shipment.md)
+* [Creating a Shipment](./creating-a-shipment.md)
+* [Cancelling a Shipment](./cancelling-a-shipment.md)
