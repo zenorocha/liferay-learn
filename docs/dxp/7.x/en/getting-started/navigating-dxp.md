@@ -4,7 +4,7 @@ Liferay DXP's out-of-the-box navigation is organized into two major areas: the _
 
 ## Personal Menu
 
-The personal menu is the hub for information and activities for the currently logged in user.
+The Personal Menu is the hub for information and activities for a user that is logged in.
 
 ![A view of the Liferay DXP Personal Menu.](./navigating-dxp/images/01.png)
 
@@ -20,7 +20,7 @@ Users can use the personal menu to:
 
 The DXP Product menu contains the _Control Panel_ and the _Site Menu_.
 
-> **Note:** By default, users with _Guest_ or _User_ roles are not be able to access the Product Menu.
+> **Note:** By default, users with the _Guest_ or _User_ roles are not be able to access the Product Menu.
 
 ### Control Panel
 
