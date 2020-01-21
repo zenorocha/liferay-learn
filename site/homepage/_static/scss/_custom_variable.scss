@@ -35,10 +35,11 @@ $code-font-size: 14px !default; // set pixel value to prevent nested <pre> and <
 $mobile-font-size: 1.75rem !default; // 28px
 
 $breadcrumb-divider-color: null !default;
+$breadcrumb-text-truncate-max-width: 10rem !default; // 160px
 
 $table-accent-bg: $background-color !default;
 $table-data-border-color: transparent !default;
-$table-margin-bottom: 1rem !default; //16px
+$table-margin-bottom: 1rem !default; // 16px
 
 // Custom Variables
 

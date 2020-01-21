@@ -5387,6 +5387,53 @@ textarea.form-control {
 .modal-body .alert-list .alert-fluid:last-child {
   margin-bottom: -1px; }
 
+.breadcrumb-link {
+  color: #007BFF;
+  display: block;
+  text-decoration: none; }
+  .breadcrumb-link:hover {
+    color: #0056b3;
+    text-decoration: underline; }
+  .breadcrumb-link:focus {
+    color: #0056b3;
+    text-decoration: underline; }
+  .breadcrumb-link > .breadcrumb-text-truncate {
+    text-decoration: none; }
+    .breadcrumb-link > .breadcrumb-text-truncate:hover, .breadcrumb-link > .breadcrumb-text-truncate:focus {
+      text-decoration: underline; }
+
+.breadcrumb-item {
+  margin-right: 0.5em;
+  position: relative; }
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 1em; }
+    .breadcrumb-item + .breadcrumb-item::before {
+      float: left;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20512%20512'%3E%3Cpath%20class='lexicon-icon-outline'%20d='M396.394%20255.607a28.207%2028.207%200%200%200-8.272-19.111L160.901%209.275c-11.026-11.059-28.94-11.059-39.999%200-11.058%2011.026-11.058%2028.941%200%2039.999l206.333%20206.333L120.902%20461.94c-11.058%2011.058-11.058%2028.973%200%2039.999%2011.059%2011.059%2028.972%2011.059%2039.999%200l227.221-227.221a28.196%2028.196%200%200%200%208.272-19.111z'%20fill=''/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      display: block;
+      height: 0.75em;
+      left: 0;
+      margin-top: -0.375em;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      width: 0.75em; }
+  .breadcrumb-item .dropdown-toggle {
+    text-decoration: none; }
+    .breadcrumb-item .dropdown-toggle:hover, .breadcrumb-item .dropdown-toggle:focus {
+      text-decoration: none; }
+
+.breadcrumb-text-truncate {
+  display: inline-block;
+  max-width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom; }
+
 .btn {
   font-size: 1rem; }
   .btn:not(:disabled):not(.disabled) {
