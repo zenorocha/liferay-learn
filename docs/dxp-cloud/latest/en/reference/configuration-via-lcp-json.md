@@ -1,10 +1,10 @@
 # Configuration via LCP.json
 
-Each service in your DXP Cloud environments has an `LCP.json` file that you can 
-use to configure the service. You can configure properties like the service ID, 
-memory, number of CPUs, environment variables, volumes, and much more. 
+Each service in your DXP Cloud environments has an `LCP.json` file that you can
+use to configure the service. You can configure properties like the service ID,
+memory, number of CPUs, environment variables, volumes, and much more.
 
-This table lists and describes the properties you can add in `LCP.json`: 
+This table lists and describes the properties you can add in `LCP.json`:
 
 | Field | Type | Default Value | Description |
 | --- | --- | --- | --- |
@@ -16,8 +16,8 @@ This table lists and describes the properties you can add in `LCP.json`:
 | `scale` | Number | `1` | Starting number of instances |
 | `memory` | Number | `512` | Amount of memory (MB) |
 | `volumes` | Object | undefined | Paths to persist data |
-| `readinessProbe` | Object | `{}` | Service readiness check |
-| `livenessProbe` | Object | `{}` | Service liveness check |
+| `readinessProbe` | Object | `{"timeoutSeconds": 5}` | Service readiness check |
+| `livenessProbe` | Object | `{"timeoutSeconds": 5}` | Service liveness check |
 | `dependencies` | Array | `[]` | Dependency deployment order |
 | `kind` | String | Deployment | Deployment type (e.g, Deployment or StatefulSet) |
 | `ports` | Array | `[]` | Declaration of ports and protocols |
@@ -27,7 +27,7 @@ This table lists and describes the properties you can add in `LCP.json`:
 
 ## Usage
 
-Here's an example `LCP.json` file that uses all the properties: 
+Here's an example `LCP.json` file that uses all the properties:
 
 ```json
 {
@@ -53,6 +53,7 @@ Here's an example `LCP.json` file that uses all the properties:
     "storage": "/opt/storage"
   },
   "livenessProbe": {
+    "timeoutSeconds": 5,
     "httpGet": {
       "path": "/status",
       "port": 3000
@@ -62,6 +63,7 @@ Here's an example `LCP.json` file that uses all the properties:
     "successThreshold": 5
   },
   "readinessProbe": {
+    "timeoutSeconds": 5,
     "exec": {
       "command": ["cat", "/tmp/healthy"]
     },
