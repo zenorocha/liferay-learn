@@ -8303,6 +8303,7 @@ li p {
 pre {
   background-color: #30313F;
   color: #F8FAFF;
+  margin-top: 1rem;
   padding: 1rem 1.25rem; }
   pre code {
     background-color: inherit;
