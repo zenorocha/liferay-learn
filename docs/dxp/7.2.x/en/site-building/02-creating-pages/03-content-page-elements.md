@@ -71,7 +71,7 @@ Page Structure provides a high level view of every Fragment and every field with
 
 ## Look and Feel
 
-Click the *Look and Feel* icon (![Look and Feel](../../../images/icon-look-and-feel.png)) to change the Theme or manage other options for the page. These options are fully documented in [Configuring Individual Pages](./06-configuring-individual-pages.md#look-and-feel). 
+Click the *Look and Feel* icon (![Look and Feel](../../images/icon-look-and-feel.png)) to change the Theme or manage other options for the page. These options are fully documented in [Configuring Individual Pages](./06-configuring-individual-pages.md#look-and-feel). 
 
 ## Comments
 
@@ -89,7 +89,7 @@ If comments are enabled, you can access them via the *Comments* icon (![Comments
 
 -   Add new comments and reply to any existing ones. 
 -   Resolve comments by clicking the checkbox for each. Resolving a comment hides it from view, unless *Show Resolved Comments* is selected. 
--   Edit and delete your own comments via the Actions button (![Actions](../../../images/icon-actions.png)) for each. 
+-   Edit and delete your own comments via the Actions button (![Actions](../../images/icon-actions.png)) for each. 
 
 If you de-select a Fragment or enter the comments UI without a Fragment selected, a list of the Fragments on the page appears with the number of comments for each. Selecting a Fragment then shows its comments. 
 

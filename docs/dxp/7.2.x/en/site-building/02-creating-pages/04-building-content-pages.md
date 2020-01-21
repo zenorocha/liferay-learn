@@ -35,7 +35,7 @@ Several Fragments are available by default that you can use to build your Conten
 
 2.  Open the Collection that the Section belongs to and drag it directly onto the page.
 
-3.  Optionally edit the Section's background color ![Background Color](../../../images/icon-color.png), background image, and spacing. Since these options are available to marketers and Administrators editing a page, the options are limited, and the color palette can be set by the Fragment developer.
+3.  Optionally edit the Section's background color ![Background Color](../../images/icon-color.png), background image, and spacing. Since these options are available to marketers and Administrators editing a page, the options are limited, and the color palette can be set by the Fragment developer.
 
     ![Figure 4: The Section management tool provides powerful tools, but with the training wheels still on.](./building-content-pages/images/04.png)
 
@@ -81,7 +81,7 @@ Several Fragments are available by default that you can use to build your Conten
 
 1.  Click on the image Component that you want to replace.
 
-2.  Click ![Image Properties](../../../images/icon-edit.png).
+2.  Click ![Image Properties](../../images/icon-edit.png).
 
 3.  Click *Select* to upload an image from Docs and Media or define an image URL. Click *Clear* to reset the image. You can also specify an image description.
 
@@ -95,7 +95,7 @@ Several Fragments are available by default that you can use to build your Conten
 
 1.  Click on the link or button that you want to edit.
 
-2.  Click on ![Edit](../../../images/icon-edit.png) to edit the link text, ![Link](../../../images/icon-link.png) to edit the link properties, or ![Map](../../../images/icon-map.png) to edit the link mapping (described earlier).
+2.  Click on ![Edit](../../images/icon-edit.png) to edit the link text, ![Link](../../images/icon-link.png) to edit the link properties, or ![Map](../../images/icon-map.png) to edit the link mapping (described earlier).
 
     From the Link Properties popup, you can define these link options:
 
@@ -140,7 +140,7 @@ You can also map these elements to content. You can set the *Content* for the
 element (web content article, document, or blog) and choose its applicable
 *Field* to display (e.g., title, author name, tags, etc.). You can configure
 this by selecting the element's *Map* button
-(![Map](../../../images/icon-map.png)).
+(![Map](../../images/icon-map.png)).
 
 >**Note:** Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map [custom fields](TODO). To ensure you leverage the latest editable element mapping features, upgrade to these versions.
 

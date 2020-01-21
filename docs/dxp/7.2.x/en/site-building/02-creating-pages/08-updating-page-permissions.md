@@ -6,7 +6,7 @@ Public Pages can be viewed by anyone, and private pages are only private from no
 
 2.  Select the Page Set (*Public Pages* or *Private Pages*) that contains the page you want to update permissions for.
 
-3.  Open the *Options* (![Options](../../../images/icon-options.png)) Menu next to the page and select *Permissions*.
+3.  Open the *Options* (![Options](../../images/icon-options.png)) Menu next to the page and select *Permissions*.
 
 4.  Check/uncheck the permissions for the Role(s). For example, you could uncheck the *View* and *Add Discussion* permissions next to the Site Member Role for a private page to create a page that only site administrators can view.
 

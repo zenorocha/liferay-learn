@@ -20,7 +20,7 @@ Follow these steps to add a page:
 
 1.  If you're not currently on the Site you want to edit, Open the Product Menu and click the *Site Selector* button (![Switch](../../images/icon-switch.png)) (previously the (![Compass](../../images/icon-compass.png)) icon) next to your current Site name and select your desired Site.
 
-2.  Go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu. You can use the Page Tree Menu to quickly find a page by keyword in the search bar, navigate to a page by selecting it, or even add pages through the Actions Menu. 
+2.  Go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../images/icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu. You can use the Page Tree Menu to quickly find a page by keyword in the search bar, navigate to a page by selecting it, or even add pages through the Actions Menu. 
  
     ![Figure 1: The Pages screen lets you edit your Site pages as a whole.](./adding-a-page-to-a-site/images/01.png)
 

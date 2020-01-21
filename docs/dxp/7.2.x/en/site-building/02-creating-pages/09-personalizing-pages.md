@@ -31,7 +31,7 @@ With customization activated for a page, site members can add apps to the custom
 
 >**Note:** Site members can't change a non-instanceable app's configuration inside a customizable region since those apps are tied to the site they've been added to.
 
-Site members have access to these contextual options from the page's *Options* menu (![Options](../../../images/icon-options.png)) in the Control Menu:
+Site members have access to these contextual options from the page's *Options* menu (![Options](../../images/icon-options.png)) in the Control Menu:
 
 - *View Page without my customizations*: Displays the default page and hides the Add menu.
 
