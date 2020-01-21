@@ -31,54 +31,33 @@ source_suffix = [".md", ".rst"]
 templates_path = ["_templates"]
 version = "1.0"
 
-class RelativePathParentsHTMLBuilder(StandaloneHTMLBuilder):
+class WithRootSiteHTMLBuilder(StandaloneHTMLBuilder):
 	def get_doc_context(self, docname, body, metatags):
 		doc_context = super().get_doc_context(docname, body, metatags)
 
-		doc_context['parents'] = self._get_parents(self.env.titles, docname)
+		if docname != 'README':
+			# Set the README.md on the root level as the "fake" parent
+			# ie: docs/commerce/README.md
+			site_parent = self.get_relative_uri(docname, 'README')
+
+			# Set the document title as site title
+			# ie: Commerce or DXP Cloud, etc
+			site_title = self.render_partial(self.env.titles['README'])['title']
+
+			# Add the "fake" parent to the parents object, so that "DXP", "Commerce", etc.
+			# is visible in the breadcrumbs
+			doc_context['parents'].insert(
+				0,
+				{
+					'link': site_parent,
+					'title': site_title
+				}
+			)
 
 		return doc_context
 
-	def _get_parent(self, docname):
-		if docname == 'README':
-			return None
-
-		basename = os.path.basename(docname)
-
-		if basename == 'README':
-			dirname = os.path.dirname(os.path.dirname(docname))
-
-			if dirname == '/':
-				return basename
-			else:
-				return os.path.dirname(os.path.dirname(docname)) + '/README'
-		else:
-			return os.path.dirname(docname) + '/README'
-
-	def _get_parents(self, titles, docname):
-		parents = []
-
-		last_parent = docname
-
-		while last_parent is not None:
-			next_parent = self._get_parent(last_parent)
-
-			if next_parent is not None and next_parent in titles:
-				parents.append(
-					{
-						'link': self.get_relative_uri(docname, next_parent),
-						'title': self.render_partial(titles[next_parent])['title']
-					}
-				)
-
-			last_parent = next_parent
-
-		parents.reverse()
-
-		return parents
-
 def setup(app):
-	app.add_builder(RelativePathParentsHTMLBuilder, True)
+	app.add_builder(WithRootSiteHTMLBuilder, True)
 
 	app.add_config_value('recommonmark_config', {
 		'enable_auto_toc_tree': False,
