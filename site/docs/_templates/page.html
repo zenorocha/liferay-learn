@@ -14,8 +14,8 @@
         {% endif %}
 
         {% set parentPath %}
-            {%- for item in parents -%}
-                {{ item.title.lower().replace(' ', '-') }}/
+            {%- for doc in parents -%}
+                {{ doc.title.lower().replace(' ', '-') }}/
             {%- endfor -%}
         {% endset %}
 
@@ -53,15 +53,27 @@
                 </div>
 
                 <div class="doc-nav">
-                    <a class="back-link btn btn-monospaced btn-link" href="javascript:;" id="backLink">
-                        <svg class="lexicon-icon lexicon-icon-angle-left" role="presentation" viewBox="0 0 512 512">
-                            <use xlink:href="#angle-left" />
-                        </svg>
-                        {% trans %}Go Back{% endtrans %}
-                    </a>
+                    {% if parents|length > 0 %}
+                        {% set backURL %}
+                            {%- for doc in parents -%}
+                                {% if loop.last %}
+                                    {{ doc.link|e }}
+                                {% endif %}
+                            {%- endfor -%}
+                        {% endset %}
+
+                        {% set backURL = backURL.replace("README", "index") %}
+
+                        <a class="back-link btn btn-monospaced btn-link" href="{{ backURL }}" id="backLink">
+                            <svg class="lexicon-icon lexicon-icon-angle-left" role="presentation" viewBox="0 0 512 512">
+                                <use xlink:href="#angle-left" />
+                            </svg>
+                            {% trans %}Go Back{% endtrans %}
+                        </a>
+                    {% endif %}
 
                     {% block sidebar1 %}
-                    {{ toctree(titles_only=True) }}
+                        {{ toctree(titles_only=True) }}
                     {% endblock %}
                 </div>
             </div>
@@ -209,9 +221,6 @@
     // Left nav interaction
 
     const activeNavL1 = document.querySelector('.toctree-l1.current');
-    const backLink = document.getElementById('backLink');
-
-    let backURL = null;
 
     const checkDescendantLevel = (level, lastActiveItem) => {
         const grandparent = document.querySelector(`.toctree-l${level - 2}.current`);
@@ -229,18 +238,6 @@
             parentSiblings.forEach(node => node.classList.add('d-none'));
             parent ? parent.classList.add('parent-level') : '';
 
-            // Set back URL
-
-            if (level === 1) {
-                backURL = breadcrumbAncestor ? breadcrumbAncestor.href : '';
-            } else if (level === 2) {
-                const breadcrumbParents = document.querySelectorAll('.breadcrumb-parent');
-
-                backURL = breadcrumbParents[breadcrumbParents.length - 1].href;
-            }
-
-            backLink.href = backURL;
-
             currentLevel.forEach(node => {
                 if (node.classList.contains('current')) {
                     activeItem = node;
@@ -257,10 +254,8 @@
         }
     }
 
-    if (activeNavL1 && backLink) {
+    if (activeNavL1) {
         checkDescendantLevel(1);
-    } else if (backLink) {
-        backLink.classList.add('d-none');
     }
 </script>
 {% endblock %}
