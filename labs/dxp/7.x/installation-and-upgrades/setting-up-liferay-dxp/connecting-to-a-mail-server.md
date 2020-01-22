@@ -14,6 +14,8 @@ Creating a mail session in DXP or on the application server requires the followi
 
 <!-- Let's provide some information here that can help someone who DOES NOT have this information or know where to start to find this information - some helpful information or links. For example: "To learn more about this topic see: x." Maybe can we create supplemental articles to this one that say explain how to use gmail as an SMTP server to send emails from Liferay (if this actually works) something more practical. https://portaldevelopment.wordpress.com/2008/06/16/sending-email-in-liferay-portal/ , https://www.siteground.com/kb/google_free_smtp_server/ , https://docs.bitnami.com/bch/apps/drupal/configuration/configure-smtp/ for reference. -->
 
+For more information, see [Read Gmail messages on other email clients using POP](https://support.google.com/mail/answer/7104828?hl=en) and [Check Gmail through other email platforms](https://support.google.com/mail/answer/7126229?hl=en). If using the [IMAP](https://support.google.com/mail/answer/7126229?hl=en) protocol for a category’s mailing list, make sure to [configure the IMAP inbox to delete messages](https://support.google.com/mail/answer/78892?hl=en) as they are pulled by the email client that sends messages to the users on the mailing list. Otherwise, each email message retained on the server is sent to the mailing list each time there's a new post or update in the category.
+
 ## Configuring DXP Built-in Mail Session
 
 The built-in mail session setup can be done using either of these methods:
@@ -59,15 +61,15 @@ To configure the mail session offline or before deploying DXP:
 
     ```properties
     mail.session.mail=false
-    mail.session.mail.pop3.host=localhost
-    mail.session.mail.pop3.password=
-    mail.session.mail.pop3.port=110
-    mail.session.mail.pop3.user=
-    mail.session.mail.smtp.auth=false
-    mail.session.mail.smtp.host=localhost
-    mail.session.mail.smtp.password=
-    mail.session.mail.smtp.port=25
-    mail.session.mail.smtp.user=
+    mail.session.mail.pop3.host=pop.gmail.com
+    mail.session.mail.pop3.password=*******
+    mail.session.mail.pop3.port=465
+    mail.session.mail.pop3.user=acme.org
+    mail.session.mail.smtp.auth=true
+    mail.session.mail.smtp.host=smtp.gmail.com
+    mail.session.mail.smtp.password=*******
+    mail.session.mail.smtp.port=110
+    mail.session.mail.smtp.user=acme.org
     mail.session.mail.store.protocol=pop3
     mail.session.mail.transport.protocol=smtp
     ```
@@ -91,50 +93,10 @@ Users can opt to configure a mail session for DXP using their application server
             mail.session.jndi.name=mail/MailSession
         ```
 
-Lastly, configure the instance's email senders.
-
-## Configuring Default Email Senders
-
-<!-- This section does not fit the title of the article. Either should change the article name, or break this out. -->
-
-Email senders are the default name and email address DXP uses to send administrative emails and announcement emails. Default email senders are configured in the [`portal-ext.properties` file](../reference/portal-properties.md).  
-
-Here are some important configurations:
-
-* Admin email configuration:
-
-    ```properties
-    admin.email.from.name=Joe Bloggs
-    admin.email.from.address=test@domain.invalid
-    ```
-
-* Announcements email configuration:
-
-    ```properties
-    announcements.email.to.name=
-    announcements.email.to.address=noreply@domain.invalid
-    ```
-
-1. Replace the names and email addresses above with your values.
-
-    **Note:** The following emails are blacklisted by default and cannot be used in any DXP installation:
-
-    * `noreply@liferay.com`
-    * `test@liferay.com`
-    * `noreply@domain.invalid`
-    * `test@domain.invalid`
-
-    Otherwise, DXP logs a `WARN` trace:
-
-    ```
-    Email xxx will be ignored because it is included in mail.send.blacklist
-    ```
-
-1. Restart the application server.
-
 The mail server has been configured and ready to send notifications.
 
 ## Additional Information
-<!-- Should tomcat be here? -->
+
+* [Configuring a Tomcat-Managed Mail Session](../01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md#mail-configuration)
 * [Mail Server Configuration Reference](./mail-server-configuration-reference.md)
 * [Configuring a WebSphere-Managed Mail Session](../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md#mail-configuration)
