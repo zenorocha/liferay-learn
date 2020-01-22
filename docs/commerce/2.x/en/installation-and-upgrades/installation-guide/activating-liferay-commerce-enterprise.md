@@ -18,3 +18,33 @@ Liferay Commerce Enterprise is now ready to be used.
 ## Additional Information
 
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)
+
+## Admonitions:
+
+```eval_rst
+.. error::
+   This is an error admonition using the `eval_rst` codeblock style.
+```
+
+```error::
+   This is an error admonition again using the shorthand codeblock.
+
+   - Please note the spacing (3 spaces).
+   - It does not take a title argument.
+```
+
+```important::
+   This is an important admonition.
+```
+
+```note::
+   This is a note admonition.
+```
+
+```tip::
+   This is a tip admonition.
+```
+
+```warning::
+   This is a warning admonition.
+```
