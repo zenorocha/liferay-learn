@@ -84,10 +84,14 @@ DXP connects to the mail session on the next startup.
 Users can opt to configure a mail session for DXP using their application server.
 
 1. Create a mail session on your application server; please see the application server's documentation.
-1. Point DXP to that mail session using the Control Panel or portal properties. <!-- What does both mean? --> Here are instructions for both:
+1. Point DXP to that mail session.
+1. If using the _Control Panel_, navigate to _Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail_.
+1. Enter the value in the _JavaMail Properties_ field.
 
-    * Configure the JNDI name in the *Mail* page at *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*. Enter the value in the _JavaMail Properties_ field. <!-- screenshot -->
-    * Set a `mail.session.jndi.name` portal property in a `${LIFERAY_HOME}/portal-ext.properties` file. Here's an example property:
+    ![JavaMail](./connecting-to-a-mail-server/images/02.png)
+
+1. Click _Save_.
+1. Alternately, set the `mail.session.jndi.name` portal property in a `${LIFERAY_HOME}/portal-ext.properties` file. Here's an example property:
 
         ```properties
             mail.session.jndi.name=mail/MailSession
@@ -100,3 +104,4 @@ The mail server has been configured and ready to send notifications.
 * [Configuring a Tomcat-Managed Mail Session](../01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md#mail-configuration)
 * [Mail Server Configuration Reference](./mail-server-configuration-reference.md)
 * [Configuring a WebSphere-Managed Mail Session](../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md#mail-configuration)
+* [Apache Tomcat 9 JavaMail Sessions](https://tomcat.apache.org/tomcat-9.0-doc/jndi-resources-howto.html#JavaMail_Sessions)

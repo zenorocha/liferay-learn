@@ -4,12 +4,9 @@ Liferay DXP uses a mail server and SMTP to send email notifications. This articl
 
 To manage DXP's mail settings, navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 
-<!-- screenshot -->
+![Configuring a Mail Server](./mail-server-configuration-reference/images/01.png)
 
 > **Note:** Sample values which have been populated are for a _development_ environment. Replace the values for a production environment.
-
-<!-- Image broken; was not included. -->
-![Server Administration - Mail](./mail-server-configuration-reference/images/01.png)
 
 | Field | Description |
 | --- | --- |
