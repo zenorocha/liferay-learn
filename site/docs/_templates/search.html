@@ -49,11 +49,6 @@
 
                     <div class="filter-input-container">
                         <label>
-                            <input class="filter-input" name="productName" type="radio" value="dxp">
-                            <span class="filter-input-label">{% trans %}DXP{% endtrans %}</span>
-                        </label>
-
-                        <label>
                             <input class="filter-input" name="productName" type="radio" value="dxp-cloud">
                             <span class="filter-input-label">{% trans %}DXP Cloud{% endtrans %}</span>
                         </label>
@@ -95,19 +90,14 @@
     const pathname = window.location.pathname;
     console.log(pathname);
     let currentDocProduct = {
-        product: 'dxp',
-        pathname: '/dxp-7.x/search.html'
+        product: 'dxp-cloud',
+        pathname: '/dxp-cloud-latest/search.html'
     };
 
     if (pathname.includes('commerce')) {
         currentDocProduct = {
             product: 'commerce',
             pathname: '/commerce-2.x/search.html'
-        }
-    } else if (pathname.includes('dxp-cloud')) {
-        currentDocProduct = {
-            product: 'dxp-cloud',
-            pathname: '/dxp-cloud-latest/search.html'
         }
     }
 

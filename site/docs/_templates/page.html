@@ -40,9 +40,6 @@
                 <div class="info-bar">
                     <select class="form-control" id="productDocumentationSelector"
                         name="product-documentation-selector">
-                        <option value="dxp">
-                            {% trans %}DXP{% endtrans %}
-                        </option>
                         <option value="dxp-cloud">
                             {% trans %}DXP Cloud{% endtrans %}
                         </option>
@@ -211,8 +208,6 @@
                     window.location.pathname = '/commerce-2.x/index.html';
                 } else if (target === 'dxp-cloud') {
                     window.location.pathname = '/dxp-cloud-latest/index.html';
-                } else {
-                    window.location.pathname = '/dxp-7.x/index.html';
                 }
             }
         });
