@@ -11,73 +11,30 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 <!-- TODO Update the matrix link to the 7.3 matrix, when it's published - jhinkey -->
 
-Connecting Liferay DXP to a database requires:
+Configure the database:
 
-* [Database Configuration](#database-configuration)
-* [Installing a JDBC Connector](#installing-a-jdbc-connector)
-* [Configuring a Data Source](#configure-a-data-source)
+1. Use the GMT time zone on your database server.
 
-## Database Configuration
+1. Create a database that uses UTF-8. Here is a MySQL command example:
 
-Once you've selected a database, follow these steps to configure it:
+    ```sql
+    create database lportal character set utf8;
+    ```
 
-* [Use the GMT Time Zone](#use-the-gmt-time-zone)
-* [Create a Blank Database With UTF-8 Support](#creatre-a-blank-database-with-utf-8-support)
-* [Configure Database User Access](#configure-user-database-access)
-* [Configure the Query Result Sort Order (Optional)](#configure-the-query-result-sort-order-optional)
+1. Set up a database user with full database permissions. If your organization requires the DXP database user to have limited database access, see [High Security Database User Practices](../14-reference/database-configuration.md#high-security-database-user-practices).
 
-> **Note:** Always consult the database vendor's documentation before modifying the database.
+1. Install a JDBC Connector. The DXP bundle includes several open source JDBC connectors in the `/lib/ext` folder. Connectors for proprietary database, like Oracle or DB2 (see the table below), must be downloaded from the vendor.
 
-### Use the GMT Time Zone
+    **Proprietary Databases:**
 
-Configure your database server to use the GMT Time Zone. Setting it to GMT preserves database integrity through Liferay DXP database upgrades, no matter the time zones you set in Liferay DXP. Refer to your database vendor documentation for details.
-
-### Create a Blank Database With UTF-8 Support
-
-Multilingual character sets require using UTF-8. Create a database that uses UTF-8. Here is a MySQL command example:
-
-```sql
-create database lportal character set utf8;
-```
-
-### Configure Database User Access
-
-Liferay DXP requires database user credentials to persist data. The simplest, easiest way is through a database user that has full database permissions up to and including permissions to create and drop tables. With such a user DXP plugins interact with the database seamlessly and upgrade operations are done automatically. Restricting the database user permissions more than this is not recommended.
-
-However, if your organization requires limiting Liferay DXP database user permissions once the database is initialized, see [High Security Database User Practices](../02-setting-up-liferay-dxp/high-security-database-user-practices.md).
-
-### Configure the Query Result Sort Order (Optional)
-
-Every database has a default order for sorting results (see [this article](https://help.liferay.com/hc/en-us/articles/360029315971-Sort-Order-Changed-with-a-Different-Database)). If you're concerned about this order, consult the database vendor documentation to learn its sort order and if necessary, configure the database to use a default query result order you prefer for Liferay DXP entities.
-
-You've configured your database server, database, and database user. You're ready to install a JDBC connecter that Liferay DXP uses to communicate with the database.
-
-## Install a JDBC Connector
-
-Liferay DXP requires a JDBC connector for communicating with your database. 
-
-### Open Source Databases
-
-The Liferay DXP bundle includes several open source JDBC connectors. Connector files are normally provided and installed to a global folder on the application server, such as `/lib/ext` on Tomcat or `/module` on JBoss EAP and WildFly.
-
-If you're connecting to a proprietary database, like Oracle or DB2, download the connector from the vendor and install it to a global folder on the applications server. 
-
-**Proprietary Databases:**
-
-| Database | Connector | Vendor Site | Notes |
-| :------- | :-------- | :---------- | :---- |
-| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
-| DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
-
-## Configuring a Data Source
-
-The best option for most people is to set up a built-in data source connection during [DXP startup](./running-liferay-dxp-for-the-first-time.md) using the Setup Wizard (next).
-
-![The Setup Wizard's database section lets you configure DXP's built-in data source.](./configuring-a-database/images/01.png)
-
-> **Note:** If you're using a data source managed on your application server. See the instructions for your application server: [Tomcat](./installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](./installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](./installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](./installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](./installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md).
+    | Database | Connector | Vendor Site | Notes |
+    | :------- | :-------- | :---------- | :---- |
+    | Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
+    | DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
 
 Congratulations! You configured a database for Liferay DXP.
+
+> **Note:** For database configuration details, see the [Database Configuration Reference](../14-reference/database-configuration.md)
 
 ## Next steps
 
