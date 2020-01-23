@@ -30,7 +30,7 @@ if __name__ == "__main__":
     content = file.read()
     file.close()
 
-    png_split = content.split('.png')
+    png_split = content.split('.png)')
 
     images = []
 
@@ -77,6 +77,19 @@ if __name__ == "__main__":
 
         # Set all images to go in the ./images/ folder
         line = re.sub("\]\((../)+images/", "](./images/", line)
+
+        # Sidebar Fun
+        # check if a line has a pipe, then enter our world of pipey wonders
+        if re.search("\|",line):
+
+            # strip the whitespace from the beginning and end of all pipetastic lines
+            stripped_line = line.strip()
+
+            # if the stripped line starts with | but doesn't end with one, it's a sidebar
+            if re.search("^\|",stripped_line) and not re.search("^\|.*\|$",stripped_line):
+                # kill the first occurrence of the pipe in a sidebar line
+                # preserves indentation
+                line = re.sub("\| ","",line,1)
 
         trimmed_line = line.lstrip()
 
@@ -132,13 +145,20 @@ if __name__ == "__main__":
 
                 newFile.write(para_line)
                 para_line = ""
-            elif (re.search("^[\w\*\@\!\(\-\&\.\[(\`\w)]", trimmed_line)):
+            elif (re.search("^[\w\*\@\!\(\&\.\[\`\s(\w\*\@\!\(\&\.\[\`)]", trimmed_line)):
 
                 # Append the line content to the existing paragraph
                 para_line = para_line.rstrip()
                 para_line = para_line.replace("\r","")
                 para_line = para_line.replace("\n","")
                 para_line = para_line + " " + trimmed_line
+            elif (re.search("^[\:]", trimmed_line)):
+
+                # Write definition term
+                newFile.write(para_line)
+
+                # Start the term definition
+                para_line = line
             else:
 
                 # Write the existing paragraph and the current line
@@ -149,7 +169,7 @@ if __name__ == "__main__":
 
             # Start a list item
             list_item_line = line
-        elif (re.search("^[\w\*\@\!\(\&\s\.]", trimmed_line)):
+        elif (re.search("^[\w\*\@\!\(\&\.\[\`\s\:(\w\*\@\!\(\&\.\[\`)]", trimmed_line)):
 
             # Start a paragraph
             para_line = line
