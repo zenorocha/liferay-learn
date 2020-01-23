@@ -33,7 +33,7 @@ Some production environments do not have the necessary database permissions for 
 1. Install Liferay DXP and start it so that it populates its database.
 1. Once the database is created, remove the permissions for creating tables and dropping tables from the Liferay DXP database user.
 
-See the article [Connecting a Database](./04-connecting-a-database.md) for more information. Note that many sophisticated Liferay DXP apps---not just the Marketplace app---require new tables when deployed. If the environment restricts database access, it is necessary to repeat the above steps when deploying a new app.
+See the article [Configuring a Database](./configuring-a-database.md) for more information. Note that many sophisticated Liferay DXP apps---not just the Marketplace app---require new tables when deployed. If the environment restricts database access, it is necessary to repeat the above steps when deploying a new app.
 
 ## Additional Information
 

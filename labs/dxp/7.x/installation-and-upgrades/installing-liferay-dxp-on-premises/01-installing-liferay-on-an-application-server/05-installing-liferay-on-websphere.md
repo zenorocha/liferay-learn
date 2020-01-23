@@ -6,7 +6,7 @@ IBM&reg; WebSphere&reg; is a trademark of International Business Machines Corpor
 
 For Liferay DXP to work correctly, WebSphere 9 (Fix Pack 11 is the latest) must be installed. Go to [IBM Support](http://www-01.ibm.com/support/docview.wss?uid=swg24043005) to find out more information about this fix pack. Liferay DXP does not currently support the WebSphere Application Liberty Profile.
 
-> **Important:** Before installing DXP, please review the [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) and [Connecting a Database](../04-connecting-a-database.md) articles.
+> **Important:** Before installing DXP, please review the [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) and [Configuring a Database](../configuring-a-database.md) articles.
 
 ## Prerequisites
 
@@ -163,7 +163,7 @@ Start the application server profile.
 ## Database Configuration
 
 Administrators can use either Liferay's built-in Data Source Configuration or use WebSphere to manage their database connections.
-If using WebSphere to manage the database connections, follow the instructions below. Skip this section if you plan to use DXP's built in data source. See [Connecting a Database](../04-connecting-a-database.md) for more information.
+If using WebSphere to manage the database connections, follow the instructions below. Skip this section if you plan to use DXP's built in data source. See [Configuring a Database](../configuring-a-database.md) for more information.
 
 > **Warning:** Liferay uses HSQL by default for demo purposes. HSQL should _not_ be used in production instances of Liferay DXP.
 

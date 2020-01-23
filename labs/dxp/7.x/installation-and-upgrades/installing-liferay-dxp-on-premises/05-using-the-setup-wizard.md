@@ -4,7 +4,7 @@ The entry point for many users starting Liferay DXP for the first time is the Se
 
 * Locale and Timezone
 * Configuring the Admin User
-* Connecting a Database
+* Configuring a Database
 
 > **Note**: Experienced users who have already configured Liferay by creating `.properties` files can disable and skip using the Setup Wizard by appending `setup.wizard.enabled=false` to an already created `.properties` file.
 
@@ -30,9 +30,9 @@ The entry point for many users starting Liferay DXP for the first time is the Se
 
 ## Database Configuration Reference
 
-> **Important:** If a database has not been created yet, create one now following [database preparation instructions](./04-connecting-a-database.md) article.
+> **Important:** If a database has not been created yet, create one now following [database preparation instructions](./configuring-a-database.md) article.
 
-Click the *Change* link if using DXP 7.2's built-in data source and configuring it to use the [database you created earlier](./04-connecting-a-database.md).
+Click the *Change* link if using DXP 7.2's built-in data source and configuring it to use the [database you created earlier](./configuring-a-database.md).
 
 | Field | Description |
 | --- | --- |

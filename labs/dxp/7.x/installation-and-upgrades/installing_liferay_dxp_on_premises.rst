@@ -5,7 +5,7 @@ Installing Liferay DXP
    :maxdepth: 2
 
    installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle.md
-   installing-liferay-dxp-on-premises/04-connecting-a-database.md
+   installing-liferay-dxp-on-premises/configuring-a-database.md
    installing-liferay-dxp-on-premises/05-using-the-setup-wizard.md
    02-setting-up-liferay-dxp/activating-liferay-dxp.md
    02-setting-up-liferay-dxp/trial-plugin-installation.md

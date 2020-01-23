@@ -10,7 +10,7 @@ In addition to copying dependencies, scripts, and configurations from the Lifera
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-> **Important:** Review the [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) and [Connecting a Database](../04-connecting-a-database.md) articles before continuing.
+> **Important:** Review the [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) and [Configuring a Database](../configuring-a-database.md) articles before continuing.
 
 Here are the basic steps for installing DXP on Tomcat:
 
@@ -289,7 +289,7 @@ The application server is configured to run DXP.
 
 ### Database Configuration
 
-The easiest way to handle the database configuration is to let DXP manage the data source. If using the [built-in data source](../04-connecting-a-database.md#using-the-built-in-data-source), skip this section.
+The easiest way to handle the database configuration is to let DXP manage the data source. If using the [built-in data source](../configuring-a-database.md), skip this section.
 
 If administrators want to use Tomcat to manage the data source, follow these steps:
 
