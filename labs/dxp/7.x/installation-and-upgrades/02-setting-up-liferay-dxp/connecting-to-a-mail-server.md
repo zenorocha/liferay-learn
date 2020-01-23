@@ -25,7 +25,7 @@ The built-in mail session setup can be done using either of these methods:
 
 After deploying DXP, you can configure the mail session from the Control Panel.
 
-1. Sign in as the administrative user (the user specified on the [Basic Configuration page](../01-installing-liferay-dxp/05-using-the-setup-wizard.md)).
+1. Sign in as the administrative user (the user specified on the [Basic Configuration page](../installing-liferay-dxp-on-premises/05-using-the-setup-wizard.md)).
 1. Navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 1. Enter the following:
 
@@ -137,4 +137,4 @@ The mail server has been configured and ready to send notifications.
 ## Additional Information
 <!-- Should tomcat be here? -->
 * [Mail Server Configuration Reference](./mail-server-configuration-reference.md)
-* [Configuring a WebSphere-Managed Mail Session](../01-installing-liferay-dxp/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md#mail-configuration)
+* [Configuring a WebSphere-Managed Mail Session](../installing-liferay-dxp-on-premises/01-installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md#mail-configuration)

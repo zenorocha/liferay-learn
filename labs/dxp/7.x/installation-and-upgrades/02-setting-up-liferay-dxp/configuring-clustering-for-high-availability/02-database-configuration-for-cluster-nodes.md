@@ -14,7 +14,7 @@ Connections to separate read and write [data sources](https://docs.liferay.com/p
 
 ### JDBC
 
-Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connecting-a-database.md#using-the-built-in-data-source) to connect directly to your read and write data sources:
+Follow these steps to use [JDBC](../../../installing-liferay-dxp-on-premises/04-connecting-a-database.md#using-the-built-in-data-source) to connect directly to your read and write data sources:
 
 1. Set the default connection pool provider. For provider information, see the [JDBC properties reference](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC). The default setting specifies [HikariCP](https://github.com/brettwooldridge/HikariCP) as the pool provider:
 
@@ -70,7 +70,7 @@ Follow these steps to use [JDBC](../../../01-installing-liferay-dxp/04-connectin
 
 ### JNDI
 
-Follow these steps to use [JNDI](../../../01-installing-liferay-dxp/04-connecting-a-database.md#using-a-data-source-on-your-application-server) to connect to your read and write data sources on your app server:
+Follow these steps to use [JNDI](../../../installing-liferay-dxp-on-premises/04-connecting-a-database.md#using-a-data-source-on-your-application-server) to connect to your read and write data sources on your app server:
 
 1. Set your read and write JNDI data source usernames and passwords.
 
@@ -116,5 +116,5 @@ DXP uses a read data source, a write data source, and a counter data source the 
 
 ## Additional Information
 
-* [Connecting a Database](../../01-installing-liferay-dxp/04-connecting-a-database.md)
+* [Connecting a Database](../../installing-liferay-dxp-on-premises/04-connecting-a-database.md)
 * [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
