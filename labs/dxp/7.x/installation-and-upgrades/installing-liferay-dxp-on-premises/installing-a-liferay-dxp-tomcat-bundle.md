@@ -2,7 +2,7 @@
 
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. It's the easiest, fastest way to install Liferay DXP on premises.
 
-> **Note:** If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: [Tomcat](./installing-liferay-on-an-application-server/01-installing-liferay-on-tomcat.md), [WildFly](./installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](./installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](./installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](./installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md).
+> **Note:** If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: [Tomcat](./01-installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md), WildFly, JBoss EAP, WebLogic, or [WebSphere](./01-installing-liferay-on-an-application-server/installing-liferay-on-websphere.md).
 
 > **Note:** To start a Liferay DXP instance fast for touring or demonstration purposes, see [Starting with the DXP Docker Image](../../getting-started/starting-with-the-dxp-docker-image.md).
 
@@ -18,10 +18,10 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
 
 3. Download a Tomcat Bundle:
 
-    | File | Description |
-    | :--- | :---------- |
-    | Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS |
-    | Tomcat Bundle (`.7z`) | 7-Zipped bundle archive that installs on any OS |
+| File | Description |
+| :--- | :---------- |
+| Tomcat Bundle (`.tar.gz`) | GZipped bundle archive that installs on any OS |
+| Tomcat Bundle (`.7z`) | 7-Zipped bundle archive that installs on any OS |
 
 ## Install DXP
 
@@ -31,4 +31,4 @@ Congratulations! You've installed Liferay DXP. It's time to configure a database
 
 ## Next Steps
 
-[Configuring a Database](./configuring-a-database.md)
+* [Configuring a Database](./configuring-a-database.md)
