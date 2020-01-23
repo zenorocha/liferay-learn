@@ -32,6 +32,10 @@ Setting Up Liferay DXP
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/mail-server-configuration-reference`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/trial-plugin-installation`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-marketplace`
+* Using the Liferay Marketplace
+* Installing Apps Manually
 * Using a Content Delivery Network
 * Tuning your JVM
 * Setting Up Remote Staging
