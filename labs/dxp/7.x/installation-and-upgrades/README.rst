@@ -6,7 +6,7 @@ Installing Liferay DXP
 
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle`
 -  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/configuring-a-database`
--  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/05-using-the-setup-wizard`
+-  :doc:`/installation-and-upgrades/installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time`
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/trial-plugin-installation`

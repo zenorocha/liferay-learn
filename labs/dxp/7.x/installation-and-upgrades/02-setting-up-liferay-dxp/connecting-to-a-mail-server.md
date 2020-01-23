@@ -25,7 +25,7 @@ The built-in mail session setup can be done using either of these methods:
 
 After deploying DXP, you can configure the mail session from the Control Panel.
 
-1. Sign in as the administrative user (the user specified on the [Basic Configuration page](../installing-liferay-dxp-on-premises/05-using-the-setup-wizard.md)).
+1. Sign in as the administrative user (the user specified on the [Basic Configuration page](../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md)).
 1. Navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 1. Enter the following:
 

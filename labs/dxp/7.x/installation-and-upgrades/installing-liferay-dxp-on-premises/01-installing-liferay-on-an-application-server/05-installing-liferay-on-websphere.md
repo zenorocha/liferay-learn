@@ -293,7 +293,7 @@ Note that the DXP `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; thi
 ## Start DXP
 
 1. Start the application server.
-1. If administrators are using DXP's [setup wizard](../05-using-the-setup-wizard.md), skip to the next step. However, if administrators are using WebSphere's data source and mail session, create a file called `portal-ext.properties` in the Liferay Home folder. Place the following configuration in the file:
+1. If administrators are using DXP's [setup wizard](../running-liferay-dxp-for-the-first-time.md), skip to the next step. However, if administrators are using WebSphere's data source and mail session, create a file called `portal-ext.properties` in the Liferay Home folder. Place the following configuration in the file:
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool
