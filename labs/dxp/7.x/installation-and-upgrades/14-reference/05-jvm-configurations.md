@@ -89,7 +89,3 @@ CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF-8 -Djava.locale.providers=JRE,
 CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.io=ALL-UNNAMED"
 CATALINA_OPTS="$CATALINA_OPTS --add-opens=java.base/java.lang.reflect=ALL-UNNAMED"
 ```
-
-## Additional Information
-
-* [Installation Overview](../installing-liferay-dxp-on-premises/02-installation-overview.md)

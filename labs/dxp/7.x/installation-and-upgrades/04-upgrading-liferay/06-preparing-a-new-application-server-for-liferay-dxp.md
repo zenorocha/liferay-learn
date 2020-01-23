@@ -6,7 +6,7 @@ To upgrade your Liferay DXP database, prepare a new application server for hosti
 
 ## Install Liferay DXP 7.2
 
-Install Liferay DXP 7.2 using a bundle or to an application server of choice. See the [Installation Overview](../installing-liferay-dxp-on-premises/02-installation-overview.md) for more information.
+Install Liferay DXP 7.2 using a bundle or to an application server of choice. See the [Installing a Liferay DXP Tomcat Bundle](../installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle.md) for more information.
 
 > **Warning:** Do not start your application server with your database yet. Wait until after you have completed the data upgrade to DXP 7.2.
 

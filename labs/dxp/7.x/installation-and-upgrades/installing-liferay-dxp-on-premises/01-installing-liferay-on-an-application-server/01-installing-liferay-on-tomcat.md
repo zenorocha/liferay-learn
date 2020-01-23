@@ -2,7 +2,7 @@
 
 Installing Liferay DXP on Tomcat requires deploying dependencies, modifying scripts, modifying config `xml`s file, and deploying the DXP WAR file.
 
-For most administrators, the simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../03-obtaining-liferay.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. Administrators may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
+For most administrators, the simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../installing-a-liferay-dxp-tomcat-bundle.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. Administrators may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
 
 In addition to copying dependencies, scripts, and configurations from the Liferay Tomcat bundle files (or manually downloading and configuring), administrators must also download:
 
@@ -10,7 +10,7 @@ In addition to copying dependencies, scripts, and configurations from the Lifera
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-> **Important:** Review the [Installation Overview](../02-installation-overview.md) and [Connecting a Database](../04-connecting-a-database.md) articles before continuing.
+> **Important:** Review the [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) and [Connecting a Database](../04-connecting-a-database.md) articles before continuing.
 
 Here are the basic steps for installing DXP on Tomcat:
 
@@ -375,7 +375,7 @@ The mail session for Tomcat has been configured.
 
 ## Next Steps
 
-* [Installation Overview](../02-installation-overview.md)
+* [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md)
 * Configuration Overview
 * Installing and Configuring a Search Engine
 * Securing Liferay DXP

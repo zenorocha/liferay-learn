@@ -56,7 +56,7 @@ On finishing basic configuration, DXP prompts you to restart the server. DXP 7.2
 
 ## Next Steps
 
-* [Installation Overview](./02-installation-overview.md)
+* [Installing a Liferay DXP Tomcat Bundle](./installing-a-liferay-dxp-tomcat-bundle.md)
 * Activating Liferay DXP
 * Configuration Overview
 * Installing and Configuring a Search Engine

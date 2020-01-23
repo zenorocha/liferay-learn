@@ -48,7 +48,7 @@ Here are the installation upgrade steps:
 
     1. [Request an Upgrade Patch From Liferay Support \(Liferay enterprise subscribers only\)](../04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md#install-the-latest-upgrade-patch-or-fix-pack){.title}
 
-    2. [Install the DXP Version You're Upgrading To](../installing-liferay-dxp-on-premises/02-installation-overview.md){.title}
+    2. [Install the DXP Version You're Upgrading To](../installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle.md){.title}
 
     3. [Install the Latest Upgrade Patch or Fix Pack \(Liferay enterprise subscribers only\)](../04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md#install-the-latest-upgrade-patch-or-fix-pack){.title}
 
@@ -154,7 +154,7 @@ Here are the installation upgrade steps:
 
     1. [Request an Upgrade Patch From Liferay Support \(Liferay entreprise subscribers only\)](../04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md#install-the-latest-upgrade-patch-or-fix-pack){.title}
 
-    2. [Install the DXP Version You're Upgrading To](../installing-liferay-dxp-on-premises/02-installation-overview.md){.title}
+    2. [Install the DXP Version You're Upgrading To](../installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle.md){.title}
 
     3. [Install the Latest Upgrade Patch or Fix Pack \(Liferay enterprise subscribers only\)](../04-upgrading-liferay/06-preparing-a-new-application-server-for-liferay-dxp.md#install-the-latest-upgrade-patch-or-fix-pack){.title}
 

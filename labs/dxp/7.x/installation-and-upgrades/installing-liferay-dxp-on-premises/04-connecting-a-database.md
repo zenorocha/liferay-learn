@@ -125,4 +125,4 @@ If using the application server to manage the data source, review the installati
 
 ## Next steps
 
-Once the database connection has been configured - either through the [use of the Setup Wizard](./05-using-the-setup-wizard.md) or through the creation of a `.properties` file - the application server may be started. See the [Installation Overview](./02-installation-overview.md) for more information.
+Once the database connection has been configured - either through the [use of the Setup Wizard](./05-using-the-setup-wizard.md) or through the creation of a `.properties` file - the application server may be started. See the [Installing a Liferay DXP Tomcat Bundle](./installing-a-liferay-dxp-tomcat-bundle.md) for more information.
