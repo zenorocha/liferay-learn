@@ -1,6 +1,6 @@
 # Running Liferay DXP for the First Time
 
-Once you've [installed Liferay DXP](./installing-liferay-dxp-on-premises.md#installing) and [configured a database](configuring-a-database.md) for it, Liferay DXP is ready to run.
+Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#installing) and [configured a database](configuring-a-database.md) for it, Liferay DXP is ready to run.
 
 1. Run the startup script bundled with your application server. Tomcat bundle example:
 
@@ -16,26 +16,26 @@ Once you've [installed Liferay DXP](./installing-liferay-dxp-on-premises.md#inst
 
 2. Set your portal's *Name*, *Default Language* and *Time Zone*.
 
-5. Set the *Administrator User* first name, last name, and email address.
+3. Set the *Administrator User* first name, last name, and email address.
 
-6. In the *Database* section, click *Change* to display the database form.
+4. In the *Database* section, click *Change* to display the database form.
 
     > **Warning:** DO NOT use HSQL in production-grade Liferay DXP instances.
 
     ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-dxp-for-the-first-time/images/02.png)
 
-7. Specify your database.
+5. Specify your database.
 
-    | Field | Description |
-    | --- | --- |
-    | *Database Type* | Select the database type to connect to |
-    | *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
-    | *User Name* | Database user name |
-    | *Password* | Database user password |
+| Field | Description |
+| --- | --- |
+| *Database Type* | Select the database type to connect to |
+| *JDBC URL* | Update the path to the database that you have created for Liferay DXP |
+| *User Name* | Database user name |
+| *Password* | Database user password |
 
-8. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6\. Regarding *Sample Data*: If you're creating a production-grade DXP instance or otherwise don't need the data, leave the sample data field unselected. The sample data includes Users, Sites, and Organizations for demonstration purposes.
 
-9. Click *Finish Configuration*.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7\. Click *Finish Configuration*.
 
 The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../14-reference/01-liferay-home.md).
 
@@ -45,15 +45,15 @@ Lastly DXP prompts you to restart your server.
 
 ## Restart the Server
 
-Stop your server using the shutdown script bundled with your application server. Tomcat commands:
+Stop your server using the shutdown script bundled with your application server. Tomcat example commands:
 
-Shutdown
+### Shutdown
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/shutdown.sh
 ```
 
-Startup
+### Startup
 
 ```bash
 ./liferay-dxp-version/tomcat-version/bin/startup.sh
@@ -67,7 +67,7 @@ Congratulations! You have launched your on premises Liferay DXP instance.
 
 ## Next Steps
 
-You can sign in as your administrator user and start [building a solution on DXP](TODO). Or you can explore [additional Liferay DXP setup](../02-setting-up-liferay-dxp/01-config-overview.md) topics:
+You can sign in as your administrator user and start [building a solution on DXP](../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../02-setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
 * [Setting up Marketplace](../02-setting-up-liferay-dxp/setting-up-marketplace.md)
 * [Trial Plugin Installation](../02-setting-up-liferay-dxp/trial-plugin-installation.md)
