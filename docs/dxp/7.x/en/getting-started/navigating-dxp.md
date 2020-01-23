@@ -31,7 +31,7 @@ The _Control Panel_ contains general administrative actions and configurations t
 The following common administrative activities can be done in the Control Panel:
 
 * [Manage Users, Permissions, and Roles](../user-and-system-management/README.md)
-* [Change the System Password Policy](../advanced-installation-and-upgrades/05-securing-liferay/README.md)
+* [Change the System Password Policy](../installation-and-upgrades/05-securing-liferay/README.md)
 * [Create new Sites](../site-building/01-introduction-to-site-building.md)
 * Add new Custom Fields to applications on the site
 * And more...

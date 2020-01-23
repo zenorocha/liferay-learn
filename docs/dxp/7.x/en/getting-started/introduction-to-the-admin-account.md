@@ -9,7 +9,7 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 
     ![Sign In Link](./introduction-to-the-admin-account/images/01.png "Sign In Link")
 
-    > **Note:** If a Liferay DXP bundle is being used, you may be presented with the [_Setup Wizard_](../advanced-installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard.md). Follow the on-screen instructions to configure your Admin user.
+    > **Note:** If a Liferay DXP bundle is being used, you may be presented with the [_Setup Wizard_](../installation-and-upgrades/01-installing-liferay-dxp/05-using-the-setup-wizard.md). Follow the on-screen instructions to configure your Admin user.
 
 1. Enter the default admin credentials to log in.
 
@@ -49,4 +49,4 @@ To log out of your account:
 
 Continue our Getting Started walkthrough by familiarizing yourself with the [DXP Product Menu](./navigating-dxp.md).
 
-Learn more about [configuring how users log into DXP](../advanced-installation-and-upgrades/05-securing-liferay/02-configuring-authentication.md).
+Learn more about [configuring how users log into DXP](../installation-and-upgrades/05-securing-liferay/02-configuring-authentication.md).

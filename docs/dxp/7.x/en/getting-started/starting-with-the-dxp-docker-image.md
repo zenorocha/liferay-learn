@@ -26,6 +26,6 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
 
 Continue our Getting Started walkthrough and learn about logging in for the first time using [the Admin account](./introduction-to-the-admin-account.md).
 
-Doing more than just checking things out? See the [Advanced Installation Overview](../advanced-installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview.md) to learn more.
+Doing more than just checking things out? See the [Advanced Installation Overview](../installation-and-upgrades/01-installing-liferay-dxp/02-installation-overview.md) to learn more.
 
 Want to learn more about what you can build with Liferay DXP? Learn how to [Build Solutions on DXP](../building-solutions-on-dxp/README.md).

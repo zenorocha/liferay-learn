@@ -16,7 +16,7 @@ Contents
    user_and_system_management
    platform
    headless_delivery
-   advanced_installation_and_upgrades
+   installation_and_upgrades
    get_help
 
 Indices and tables
