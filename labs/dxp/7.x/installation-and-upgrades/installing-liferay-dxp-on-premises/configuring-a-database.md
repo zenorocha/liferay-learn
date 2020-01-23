@@ -25,17 +25,17 @@ Configure the database:
 
 1. Install a JDBC Connector. The DXP bundle includes several open source JDBC connectors in the `/lib/ext` folder. Connectors for proprietary database, like Oracle or DB2 (see the table below), must be downloaded from the vendor.
 
-    **Proprietary Databases:**
+**Proprietary Databases:**
 
-    | Database | Connector | Vendor Site | Notes |
-    | :------- | :-------- | :---------- | :---- |
-    | Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
-    | DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
+| Database | Connector | Vendor Site | Notes |
+| :------- | :-------- | :---------- | :---- |
+| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
+| DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
 
 Congratulations! You configured a database for Liferay DXP.
 
 > **Note:** For database configuration details, see the [Database Configuration Reference](../14-reference/database-configurations.md)
 
-## Next steps
+## Next Steps
 
 * [Running Liferay DXP for the First Time](./running-liferay-dxp-for-the-first-time.md)
