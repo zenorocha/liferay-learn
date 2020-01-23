@@ -14,6 +14,22 @@ $nav-color: #6B6C7E !default;
 $pre-text-color: #F8FAFF !default;
 $white: #FFF !default;
 
+$admonition-error: #DA1414 !default;
+$admonition-error-bg: #FEEFEF !default;
+$admonition-error-highlight: $alert !default;  
+$admonition-important: #2E5AAC !default;
+$admonition-important-bg: #EEF2FA !default;
+$admonition-important-highlight: #89A7E0 !default;
+$admonition-note: #287D3C !default;
+$admonition-note-bg: #EDF9F0 !default;
+$admonition-note-highlight: #5ACA75 !default;
+$admonition-tip: #0B7543 !default;
+$admonition-tip-bg: #EAFAF7 !default;
+$admonition-tip-highlight: #50D2A0 !default;
+$admonition-warning: #B95000 !default;
+$admonition-warning-bg: #FFF4EC !default;
+$admonition-warning-highlight: #FF8F39 !default;
+
 // Variable Overrides
 
 $font-family-base: "Source Sans Pro", "Source Serif Pro", -apple-system,
