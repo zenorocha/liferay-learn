@@ -2,7 +2,7 @@
 
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. It's the easiest, fastest way to install Liferay DXP on premises.
 
-> **Note:** If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: [Tomcat](./01-installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md), WildFly, JBoss EAP, WebLogic, or [WebSphere](./01-installing-liferay-on-an-application-server/installing-liferay-on-websphere.md).
+> **Note:** If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: [Tomcat](./installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md), WildFly, JBoss EAP, WebLogic, or [WebSphere](./installing-liferay-on-an-application-server/installing-liferay-on-websphere.md).
 
 > **Note:** To start a Liferay DXP instance fast for touring or demonstration purposes, see [Starting with the DXP Docker Image](../../getting-started/starting-with-the-dxp-docker-image.md).
 

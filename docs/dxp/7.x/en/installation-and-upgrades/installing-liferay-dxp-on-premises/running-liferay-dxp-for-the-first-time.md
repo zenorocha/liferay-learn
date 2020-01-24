@@ -2,6 +2,8 @@
 
 Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#installing) and [configured a database](configuring-a-database.md) for it, Liferay DXP is ready to run.
 
+## Start Liferay DXP
+
 1. Run the startup script bundled with your application server. Tomcat bundle example:
 
     ```bash
@@ -45,7 +47,7 @@ Lastly DXP prompts you to restart your server.
 
 ## Restart the Server
 
-Stop your server using the shutdown script bundled with your application server. Tomcat example commands:
+Restart your server using the shutdown and startup scripts bundled with your application server. Tomcat example commands:
 
 ### Shutdown
 
