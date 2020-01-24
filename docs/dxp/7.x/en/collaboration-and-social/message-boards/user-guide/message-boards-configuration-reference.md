@@ -62,7 +62,7 @@ Expand the _Definition of Terms_ menu to learn more about how to create an autom
 | Default Language | The instance's default language is set to English and cannot be modified here. |
 | Localized Language | Dropdown menu for all supported languages; allows administrators to input different ranks in different languages. |
 | Name | Name of the priority level |
-| Image | Name of the icon associated with the priority level <!-- how do I change the icon? --> |
+| Image | Name of the icon associated with the priority level; can be a complete URL or a path relative to the theme  |
 | Priority | Priority level of the thread; threads with a higher number are more important; enter them in the descending order. |
 
 ## User Ranks

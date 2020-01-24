@@ -4,7 +4,7 @@ Liferay DXP's Message Boards app is a forum application which can be added to an
 
 ## Adding Message Boards to a Site
 
-The fastest way to begin using the _Message Boards_ app is to deploy the MB widget to a [Site Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages).
+The fastest way to begin using the _Message Boards_ app is to deploy the widget to a [Site Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages).
 
 1. Navigate to the site and page desired (e.g. _Forum Page_).
 
