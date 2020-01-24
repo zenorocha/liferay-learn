@@ -11,7 +11,7 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 <!-- TODO Update the matrix link to the 7.3 matrix, when it's published - jhinkey -->
 
-Configure the database:
+## Configure the database
 
 1. Use the GMT time zone on your database server.
 

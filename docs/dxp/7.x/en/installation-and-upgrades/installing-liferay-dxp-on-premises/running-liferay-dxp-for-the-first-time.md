@@ -69,7 +69,7 @@ Congratulations! You have launched your on premises Liferay DXP instance.
 
 ## Next Steps
 
-You can sign in as your administrator user and start [building a solution on DXP](../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../02-setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
+You can [sign in as your administrator user](../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../02-setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
 * [Setting up Marketplace](../02-setting-up-liferay-dxp/setting-up-marketplace.md)
 * [Trial Plugin Installation](../02-setting-up-liferay-dxp/trial-plugin-installation.md)
