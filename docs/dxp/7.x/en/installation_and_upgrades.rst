@@ -4,6 +4,8 @@ Installation and Upgrades
 .. toctree::
    :maxdepth: 3
 
+   installation-and-upgrades/hosting-liferay-dxp.md
+
    installation-and-upgrades/installing_liferay_dxp_on_premises.rst
    installation-and-upgrades/setting_up_liferay_dxp.rst
    installation-and-upgrades/upgrading_liferay.rst
