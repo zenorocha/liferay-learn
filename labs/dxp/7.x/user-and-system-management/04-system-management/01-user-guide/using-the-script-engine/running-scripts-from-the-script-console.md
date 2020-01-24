@@ -32,7 +32,7 @@ Here's how to run the sample script in the Script Console:
 
 4.  Click *Execute* and check the Script Console *Output* for the User count.
 
-![Figure 1: The Script Console's sample Groovy script prints the User count to Script Console output.](./images/groovy-script-sample.png)
+![Figure 1: The Script Console's sample Groovy script prints the User count to Script Console output.](./running-scripts-from-the-script-console/images/groovy-script-sample.png)
 
 The Groovy sample invokes the Liferay service utility [`UserLocalServiceUtil`](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) to get the user count. Then it uses `out` (a built-in `PrintWriter`) to write the count to the Script Console.
 
@@ -68,7 +68,7 @@ userInfo.each {
 }
 ```
 
-![Figure 2: Here's an example of invoking a Groovy script that uses the predefined out, actionRequest, and userInfo variables to print information about the Company and User.](./images/groovy-script-current-user-info.png)
+![Figure 2: Here's an example of invoking a Groovy script that uses the predefined out, actionRequest, and userInfo variables to print information about the Company and User.](./running-scripts-from-the-script-console/images/groovy-script-current-user-info.png)
 
 ## Tips
 
