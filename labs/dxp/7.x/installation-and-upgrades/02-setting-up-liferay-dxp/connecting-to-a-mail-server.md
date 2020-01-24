@@ -137,4 +137,4 @@ The mail server has been configured and ready to send notifications.
 ## Additional Information
 <!-- Should tomcat be here? -->
 * [Mail Server Configuration Reference](./mail-server-configuration-reference.md)
-* [Configuring a WebSphere-Managed Mail Session](../installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/05-installing-liferay-on-websphere.md#mail-configuration)
+* [Configuring a WebSphere-Managed Mail Session](../installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md#mail-configuration)
