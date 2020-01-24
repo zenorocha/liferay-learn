@@ -1,5 +1,5 @@
-Getting Started
-===============
+Using the Script Engine
+=======================
 
 -  :doc:`/using-the-script-engine/using-the-script-engine`
 -  :doc:`/using-the-script-engine/invoking-liferay-services-from-scripts`
