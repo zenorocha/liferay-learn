@@ -1,11 +1,11 @@
 # Using the Script Engine in Workflow
 
-Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](./running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during the execution of the workflow.
+Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](./running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during workflow execution.
 
 Here are the workflow scripting topics:
 
 - [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
-- [Predefined Variables](#predefined-variables)
+- [Using Predefined Variables](#predefined-variables)
 - [Script Example](#script-examples)
 - [Calling OSGi Services](#calling-osgi-services)
 
@@ -32,7 +32,7 @@ Here's the format for an action that invokes a script:
 </actions>
 ```
 
-This snippet from the default workflow definition's state node, for example, defines a script that sets the workflow status to *approved*.
+These script elements from the default workflow definition's state node, for example, set the workflow status to *approved*.
 
 ```xml
 <script>
@@ -48,7 +48,7 @@ This snippet from the default workflow definition's state node, for example, def
 
 ## Predefined Variables
 
-Some variables are available to the node types mentioned above while others are exclusively available to task nodes.
+Some variables are available to the node types mentioned above while others are exclusively available to `task` nodes.
 
 ### Variables that are Always Available
 
@@ -61,7 +61,7 @@ These variables are available from anywhere that you can run a workflow script:
 : The `userId` returned is context dependent. Technically, the logic works like this: if the `KaleoTaskInstanceToke.getcompletionUserId()` is null, check `KaloeTaskInstanceToken.getUserId()`. If that's null too, call `KaleoInstanceToken.getUserId()`. It's the ID of the last User to intervene in the workflow at the time the script is run. In the `created` node, this would be the User that clicked _Submit for Publication_, whereas it's the ID of the reviewer upon exit of the `review` node of the Single Approver definition.
 
 `workflowContext` (`Map<String, Serializable>`)
-: The workflow context contains information you can use in your scripts. The context is typically passed as a parameter, but all of the `WorkflowContext`'s attributes are available in the script as well. The workflow context in the script is context dependent. If a call to `ExecutionContext.getWorkflowContext()` comes back null, then the workflow context is obtained by `KaleoInstanceModel.getWorkflowContext()`.
+: The workflow context contains information you can use in scripts. The context is typically passed as a parameter, but all of the `WorkflowContext`'s attributes are available in the script as well. The workflow context in the script is context dependent. If a call to `ExecutionContext.getWorkflowContext()` comes back null, then the workflow context is obtained by `KaleoInstanceModel.getWorkflowContext()`.
 
 ### Variables Injected into Task Nodes
 
@@ -85,7 +85,7 @@ At virtually any point in a workflow, you can use Liferay's script engine to acc
 - Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
 - Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
 
-The following workflow script is written using Groovy and is used with a `Condition` statement. The script uses Liferay's asset framework to determine an asset's category and uses the category to determine the correct approval process automatically.  If the asset is in the `legal` category , it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
+The following workflow script is written using Groovy and is used with a `Condition` statement. The script uses Liferay's [asset framework](https://help.liferay.com/hc/en-us/articles/360028725412-Introduction-to-Asset-Framework) to determine an asset's category and uses the category to determine the correct approval process automatically.  If the asset is in the `legal` category , it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
 
 ```xml
 <script>
@@ -139,7 +139,9 @@ The following workflow script is written using Groovy and is used with a `Condit
 <script-language>groovy</script-language>
 ```
 
-> **Note:** A script's return value determines the next task or state.
+```note::
+   A script's return value determines the next task or state.
+```
 
 See [Embedded Workflows](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow#embedded-workflows) for more workflow script examples.
 

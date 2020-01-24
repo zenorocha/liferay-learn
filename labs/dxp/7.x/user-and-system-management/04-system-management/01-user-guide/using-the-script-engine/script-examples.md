@@ -1,14 +1,6 @@
 # Script Examples
 
-Here are some examples to help you use scripts in DXP. Most of the examples originated from the Liferay blog post [5 Tips to Improve Usage of the Liferay Script Console](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console). 
-
-- [Example 1: Presenting New Terms of Use to Users](#example-1-presenting-new-terms-of-use-to-users)
-
-- [Example 2: Embedding HTML Markup in Script Output](#example-2-embedding-html-markup-in-script-output)
-
-- [Example 3: Showing Exceptions in the Script Console](#example-3-showing-exceptions-in-the-script-console)
-
-- [Example 4: Logging Output to a File Scripts](#example-5-logging-output-to-a-file)
+Here are some examples to help you use scripts in DXP. Most of the examples originated from the Liferay blog post [5 Tips to Improve Usage of the Liferay Script Console](https://liferay.dev/blogs/-/blogs/5-tips-to-improve-usage-of-the-liferay-script-console).
 
 ## Example 1: Presenting New Terms of Use to Users
 

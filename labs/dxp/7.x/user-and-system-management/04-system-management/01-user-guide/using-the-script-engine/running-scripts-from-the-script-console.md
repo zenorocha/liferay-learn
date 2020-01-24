@@ -2,23 +2,25 @@
 
 The Script Console provides a single view for executing Groovy scripts and printing their output. It has predefined variables that facilitate with portlets and users. Here you'll learn these things:
 
-- [Running a script in the Script Console](#running-the-sample-script) 
+- [How to run a script in the Script Console](#running-a-sample-script-in-the-script-console) 
 
 - [Predefined variables available in the Script Console](#predefined-variables)
 
 - [Tips for running scripts in the Script Console](#tips)
 
-> **Important:** The Script Console is for system operations and maintenance---it's not for end users. Limit Script Console access to portal administrators.
+```important::
+   The Script Console is for system operations and maintenance---it's not for end users. Limit Script Console access to portal administrators.
+```
 
 Start with running the Script Console's sample script. 
 
-## Running the Sample Script
+## Running a Sample Script in the Script Console
 
 Here's how to run the sample script in the Script Console:
 
 1.  Sign in as an administrator.
 
-2.  In the Product Menu, navigate to *Control Panel* &rarr; *Configuration* &rarr; *Server Administration*. 
+2.  In the Product Menu, navigate to *Control Panel* and select *Configuration* &rarr; *Server Administration*. 
 
 3.  Click on *Script*. This is the Script Console. The default sample script prints the User count to the console output.
 
@@ -36,7 +38,9 @@ Here's how to run the sample script in the Script Console:
 
 The Groovy sample invokes the Liferay service utility [`UserLocalServiceUtil`](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) to get the user count. Then it uses `out` (a built-in `PrintWriter`) to write the count to the Script Console.
 
-> **Note:** If you use `System.out.println` instead of `out.println`, your output is printed to Liferay's log file rather than to the Script Console.
+```note::
+   If you use *System.out.println* instead of *out.println*, your output is printed to Liferay's log file rather than to the Script Console.
+```
 
 ## Predefined Variables
 
