@@ -1,6 +1,6 @@
 # Using the Script Engine in Workflow
 
-Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](./08-running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during the execution of the workflow.
+Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](./running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during the execution of the workflow.
 
 Here are the workflow scripting topics:
 
@@ -202,6 +202,6 @@ Liferay's Kaleo Workflow Engine and Liferay's Script Engine makes for a powerful
 
 [Introduction to Workflow](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow)
 
-[Running Scripts From the Script Console](./08-running-scripts-from-the-script-console)
+[Running Scripts From the Script Console](./running-scripts-from-the-script-console)
 
-[Script Examples](./10-script-examples.md)
+[Script Examples](./script-examples.md)

@@ -6,12 +6,12 @@ DXP provides a robust script engine for executing [Groovy](http://groovy-lang.or
 
 Here are the scripting topics: 
 
-- [Invoking Liferay services](./07-invoking-liferay-services-from-scripts.md)
+- [Invoking Liferay services](./invoking-liferay-services-from-scripts.md)
 
-- [Running scripts from the Script Console](./08-running-scripts-from-the-script-console.md)
+- [Running scripts from the Script Console](./running-scripts-from-the-script-console.md)
 
-- [Using the script engine with workflow](./09-using-the-script-engine-in-workflow.md)
+- [Using the script engine with workflow](./using-the-script-engine-in-workflow.md)
 
-- [Script examples](./10-script-examples.md)
+- [Script examples](./script-examples.md)
 
 The scripting console is most commonly used to invoke Liferay's services, so that's covered first.  

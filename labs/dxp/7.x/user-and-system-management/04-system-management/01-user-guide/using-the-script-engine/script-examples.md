@@ -125,7 +125,7 @@ users.each { u ->
 } 
 ```
 
-This script creates a subfolder in [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) called `scripting` and saves the script output to a file in this folder. 
+This script creates a subfolder in [Liferay Home](../../../../installation-and-upgrades/installing-liferay-dxp-on-premises/14-reference/01-liferay-home.md) called `scripting` and saves the script output to a file in this folder. 
 
 If you don't have direct access to the file system, you can use this code to print the file content to the Script Console:
 
@@ -139,8 +139,8 @@ Congratulations! You've executed various scripts in the Script Console.
 
 ## Additional Information
 
-[Running Scripts From the Script Console](./08-running-scripts-from-the-script-console.md)
+[Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
 
-[Using the Script Engine in Workflow](./09-using-the-script-engine-in-workflow.md)
+[Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
 
-[Using thes Script Engine](./06-using-the-script-engine.md)
+[Using thes Script Engine](./using-the-script-engine.md)
