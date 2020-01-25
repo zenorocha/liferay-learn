@@ -15,7 +15,7 @@ To manage a message board in the global scope, follow these steps:
 
 1. Select _Message Boards_ from the _Content & Data_ menu. Any changes made here apply to the global scope.
 
-    ![Figure 2: After changing to the global scope, select _Message Boards_ from the _Content & Data_ menu in Site Administration.](./scoping-your-message-boards/images/04.png)
+    ![Figure 2: After changing to the global scope, select Message Boards from the Content & Data menu in Site Administration.](./scoping-your-message-boards/images/04.png)
 
 ## Site-scoped Message Boards
 
@@ -25,7 +25,7 @@ By default, the _Message Boards_ app in _Site Administration_ is scoped to the c
 
 Creating page-scoped message boards allows forum members to view different message boards on different pages housed on the same site. The example below have the same content on both site pages (_Forum 1_ and _Forum 2_.)
 
-![Figure 4: Site-scoped content](./scoping-your-message-boards/images/05.png)
+![Figure 3: Site-scoped content](./scoping-your-message-boards/images/05.png)
 
 To create a page-scoped message board, follow these steps:
 
@@ -34,7 +34,7 @@ To create a page-scoped message board, follow these steps:
 1. Click the _Scope_ tab.
 1. Select the page's name or _PageName (Create New)_ if the page scope doesn't exist yet.
 
-   ![Page-scoped content](./scoping-your-message-boards/images/07.png)
+   ![Figure 4. Page-scoped content](./scoping-your-message-boards/images/07.png)
 
 1. Click _Save_ then close the dialog window.
 
@@ -50,6 +50,6 @@ Note that administrators must still use the _Site Administration_ menu to admini
 
 1. The current scope appears just below the _Content & Data_ heading. _Default Scope_ is the current Site. To change this, click the gear icon (![Gear](./scoping-your-message-boards/images/09.png)) and then select your desired scope. This changes the Site Administration menu to reflect scope you selected. To work in a page's scope, for example, select that page from the gear icon. That page's name then becomes the _Site Administration_ menu's title.
 
-    ![Figure 6: Select the page's scope under the _Content & Data_ menu in Site Administration.](./scoping-your-message-boards/images/10.png)
+    ![Figure 6: Select the page's scope under the Content & Data menu in Site Administration.](./scoping-your-message-boards/images/10.png)
 
 1. Select *Message Boards* from the _Content & Data_ menu. Any changes you make here apply to the scope that you selected in the previous step.
