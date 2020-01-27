@@ -1,8 +1,6 @@
 # Creating Message Boards Threads
 
-This article documents how to create Message Boards threads in Liferay DXP.
-
-Note that only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+By default, only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads.
 
 ## Posting a New Thread
 
@@ -95,3 +93,4 @@ In addition to replying to a message, you can rate it or flag it as objectionabl
 * [Creating Message Boards Categories](./creating-message-boards-categories.md).
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
 * See the [Configuration Reference](./message-boards-configuration-reference.md).
+ To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).

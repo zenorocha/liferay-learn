@@ -13,7 +13,7 @@ The fastest way to begin using the _Message Boards_ app is to deploy the widget 
 1. Click the _Add_ button.
 1. Click _Widgets_ then _Collaboration_ to expand the menu.
 
-    ![Adding the MB Widget](./getting-started-with-message-boards/images/06.png)
+    ![Adding the Message Boards Widget to using the Add Application menu.](./getting-started-with-message-boards/images/06.png)
 
 1. Drag and drop the _Message Boards_ widget to the desired location on the page.
 
