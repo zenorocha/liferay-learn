@@ -1,6 +1,6 @@
 # Creating Message Boards Threads
 
-By default, only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads.
+By default, only authenticated users with the requisite permissions (at minimum, _Add Message_, _Reply to Message_, _Add File_,and _View_) have the ability to create threads. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information. Administrators can enable the feature to allow guests to post threads.
 
 ## Posting a New Thread
 

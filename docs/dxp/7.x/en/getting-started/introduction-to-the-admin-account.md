@@ -22,7 +22,7 @@ The Admin user is created by default in any new installation of Liferay DXP and 
 
 ### Changing the Login Password
 
-1. Open the [_Product Menu_](./using-the-product-menu.md) and navigate to the _User Avatar_ &rarr; _Account Settings_ &rarr; _Password_.
+1. Open the [_Product Menu_](./navigating-dxp.md) and navigate to the _User Avatar_ &rarr; _Account Settings_ &rarr; _Password_.
 1. Enter your _Current Password_ and provide a new password.
 
     ![Setting a Password](./introduction-to-the-admin-account/images/04.png "Setting a Password")
