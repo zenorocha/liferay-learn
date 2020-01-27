@@ -23,7 +23,7 @@ To add a mailing list to a Message Boards Category:
    * **Email Address (Outgoing)**: use the same email if you want your users to reply to the categories using email.
    * **Use Custom Outgoing Server**: leave blank if using a different mail server than the global default.
 
-    ![Configuring a categories mailing list](./configuring-a-mb-category-mailing-list/images/01.png)
+    ![Configuring a categories mailing list](./configuring-a-message-boards-category-mailing-list/images/01.png)
 
 1. Click _Save_.
 
