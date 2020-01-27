@@ -8393,6 +8393,9 @@ input[type="radio"],
 input[type="checkbox"] {
   vertical-align: middle; }
 
+li img {
+  margin: 1rem 0; }
+
 li p {
   margin-bottom: 0; }
 

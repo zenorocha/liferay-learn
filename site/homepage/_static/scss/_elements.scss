@@ -105,6 +105,10 @@ input[type="checkbox"] {
 }
 
 li {
+	img {
+		margin: $spacing-md 0;
+	}
+
 	p {
 		margin-bottom: 0;
 	}
