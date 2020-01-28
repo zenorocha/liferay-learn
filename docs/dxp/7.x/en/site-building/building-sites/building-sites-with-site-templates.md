@@ -22,7 +22,7 @@ To create a site using a Site Template, follow these steps:
 1. Enter a name for the Site.
 
     * Checking *Create default pages as private (available only to members).* will prevent guest users from viewing site pages.
-    
+
 1. Click *Save*.
 1. Configure your [site settings](../06-site-settings/README.md).
 1. Open the *Pages* panel below the form.
