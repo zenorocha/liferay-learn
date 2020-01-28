@@ -2,23 +2,23 @@
 
 While [creating a User Segment](./02-creating-user-segments.md), you must use the Segments editor. An overview of the Segments editor UI is discussed here. To access the Segments editor follow these steps:
 
-1.  Go to *Site Administration* and select the site that you wish to create segments for.
+1. Go to *Site Administration* and select the site that you wish to create segments for.
 
-2.  Click *People* &rarr; *Segments* under the Site's menu.
+1. Click *People* &rarr; *Segments* under the Site's menu.
 
-3.  Click the *Add User Segment* button (![Add](./images/icon-add.png)).
+1. Click the *Add User Segment* button (![Add](../../../../images/icon-add.png)).
 
 At the top of the editor you can set the name, view the current members of the segment as it is defined, and choose to *Save* the Segment or *Cancel* to discard changes.
 
-![Figure 1: The top portion of the Segment Editor has the segment name and its members.](./the-segments-editor/images/01.png)
+![The top portion of the Segment Editor has the segment name and its members.](./the-segments-editor/images/01.png)
 
 On the right side of the page, there's a Properties menu with these options:
 
-- User
-- Organization
-- Session
+* User
+* Organization
+* Session
 
-![Figure 2: You use the Segment Editor to create new Segments.](./the-segments-editor/images/02.png)
+![You use the Segment Editor to create new Segments.](./the-segments-editor/images/02.png)
 
 Operations and conjunctions are combined with the properties to define criteria.
 
@@ -26,21 +26,21 @@ Operations and conjunctions are combined with the properties to define criteria.
 
 Several types of information can be collected by the User Segment interface. Some data is entered in text boxes, while others use selectors to select specific criteria or tools like a date picker. Some fields use an operator, which, depending on the specific context lets you select the relationship between the User or agent data and the criteria:
 
-- *equals*
+* *equals*
 
-- *not equals*
+* *not equals*
 
-- *greater than*
+* *greater than*
 
-- *greater than or equals*
+* *greater than or equals*
 
-- *less than*
+* *less than*
 
-- *less than or equals*
+* *less than or equals*
 
-- *contains*
+* *contains*
 
-- *does not contain*
+* *does not contain*
 
 Depending on the nature of the criteria, the operator selection may contain different combinations. For example, the *Date* selection described below contains all the previously listed options except *contains* and *does not contain*, whereas the *Email Address* selection has *equals*, *not equals*, *contains* and *does not contain*.
 

@@ -2,7 +2,7 @@
 
 Segmentation provides a way to group a collection of Users into a *User Segment*, based on certain criteria. By using data like User attributes or visitor interactions, you can dynamically target relevant content to your site's users and guests. Once these User Segments are created, you can use them to analyze the selected Users' behaviors and actions or create personalized experiences for them. Segmentation is the first half of the equation; Personalization is the other.
 
-This section focuses on creating and managing User Segments. See the [Personalization section](../11-experience-personalization/01-personalization-intro.md) for more information on using User Segments to create personalized experiences for your Users.
+This section focuses on creating and managing User Segments. See the [Personalization section](../02-experience-personalization/01-personalization-intro.md) for more information on using User Segments to create personalized experiences for your Users.
 
 ## Defining Segments
 
@@ -14,8 +14,8 @@ You can create Segments to capture every case. Segments are composed of differen
 
 There are two different stories that User Segments can tell:
 
-- Targeting content to specific audiences that encourages engagement and positive user experiences
-- The other is defining groups of users and visitors to analyze their behavior and interactions with your site.
+* Targeting content to specific audiences that encourages engagement and positive user experiences
+* The other is defining groups of users and visitors to analyze their behavior and interactions with your site.
 
 To tell the second story, you must integrate with Analytics Cloud.
 
