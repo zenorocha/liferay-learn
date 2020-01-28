@@ -39,7 +39,7 @@ These tools are building blocks for building an integrated, social experience fo
 
 ## Invitations
 
-The _Invite Members_ widget lets Site Administrators send invitations to join the Site. When Users confirm such invitations, they become Site members assigned to the Roles defined by the site administrator. Click to learn more about [Site Membership](../site-building/01-building-sites/05-adding-members-to-sites.md).
+The _Invite Members_ widget lets Site Administrators send invitations to join the Site. When Users confirm such invitations, they become Site members assigned to the Roles defined by the site administrator. Click to learn more about [Site Membership](../site-building/building-sites/adding-members-to-sites.md).
 
 ![Figure 4: Inviting members to a site.](./collaboration-overview/images/04.png)
 

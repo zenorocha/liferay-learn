@@ -36,7 +36,7 @@ To create a site using a Site Template, follow these steps:
   
     <!-- Screenshot -->
 
-    > **Note:** *Enable propagation of changes from the Site template* selector is enabled by default. This means that the Site receives updates if the Site Template is modified. If changes are made to a Site created from a Site Template, this link is broken and updates to the Site Template are **no longer propagated**. See [Merging Site Template Changes](./03-merging-site-template-changes.md) for more information.
+    > **Note:** *Enable propagation of changes from the Site template* selector is enabled by default. This means that the Site receives updates if the Site Template is modified. If changes are made to a Site created from a Site Template, this link is broken and updates to the Site Template are **no longer propagated**. See [Merging Site Template Changes](./merging-site-template-changes.md) for more information.
 
 1. Click *Save* to create your Site.
 1. Open the Product Menu and go to *Sites* &rarr; *Sites* under the Control Panel.

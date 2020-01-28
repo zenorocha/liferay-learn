@@ -19,4 +19,4 @@ To export a Site using a Site Template, follow these steps:
 
 <!-- Screenshot -->
 
-The Site Template can be used normally in the new environment. For more information on exporting/importing content, see [Importing/Exporting Pages and Content](./09-importing-exporting-pages-and-content.md).
+The Site Template can be used normally in the new environment. For more information on exporting/importing content, see [Importing/Exporting Pages and Content](./importing-exporting-pages-and-content.md).

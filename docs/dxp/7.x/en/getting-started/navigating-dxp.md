@@ -11,7 +11,7 @@ The Personal Menu is the hub for information and activities for a user that is l
 Users can use the personal menu to:
 
 * [Change account information](../user-and-system-management/README.md) (Name, Password, etc.)
-* [See what sites they are members of](../site-building/01-building-sites/05-adding-members-to-sites.md)
+* [See what sites they are members of](../site-building/building-sites/adding-members-to-sites.md)
 * [Review site notifications](../collaboration-and-social/05-notifications-and-requests/README.md)
 * [Sign out](./introduction-to-the-admin-account.md#signing-out)
 * And more...
@@ -48,7 +48,7 @@ The following common site building and management activities can be done in the 
 
 * [Adding Pages](../site-building/02-creating-pages/README.md)
 * [Creating Content](../content-authoring-and-management/README.md)
-* [Managing Site Memberships](../site-building/01-building-sites/05-adding-members-to-sites.md)
+* [Managing Site Memberships](../site-building/building-sites/adding-members-to-sites.md)
 * [Configuring and Optimizing Site Behavior and Functionality](../site-building/07-optimizing-sites/README.md)
 * And more...
 
