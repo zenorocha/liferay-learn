@@ -4,7 +4,7 @@ Site Building
 .. toctree::
    :maxdepth: 4
 
-   site-building/01-introduction-to-site-building.md
+   site-building/introduction-to-site-building.md
 
    site-building/building_sites.rst
    site-building/creating_pages.rst

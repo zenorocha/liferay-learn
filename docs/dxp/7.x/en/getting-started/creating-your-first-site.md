@@ -19,7 +19,7 @@ To create a new Site, follow these steps:
 1. Enter a name for the site.
 1. Click _Save_.
 
-A new site is created and ready for use. Users will be presented a variety of Site Settings options to further configure their new site. Click to learn more about [Site Settings](../site-building/01-introduction-to-site-building.md).
+A new site is created and ready for use. Users will be presented a variety of Site Settings options to further configure their new site. Click to learn more about [Site Settings](../site-building/introduction-to-site-building.md).
 
 ## Viewing the Site
 
@@ -39,4 +39,4 @@ Sites built with the _Community Site_ template come with two pages: _Home_ and _
 
 Continue our Getting Started guide by learning how to change the look and feel of your site by [changing your site's theme](./changing-your-theme.md).
 
-Liferay Sites are flexible, powerful, and can be configured to meet many different needs. See our [Introduction to Site Building](../site-building/01-introduction-to-site-building.md).
+Liferay Sites are flexible, powerful, and can be configured to meet many different needs. See our [Introduction to Site Building](../site-building/introduction-to-site-building.md).

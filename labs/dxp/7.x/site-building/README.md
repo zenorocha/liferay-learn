@@ -2,7 +2,7 @@
 
 <!-- Please update the Introduction to give an initial mention about Site Membership and link to Site Membership articles -->
 
-* [Introduction to Site Building](./01-introduction-to-site-building.md)
+* [Introduction to Site Building](./introduction-to-site-building.md)
 
 ## Building Sites
 
