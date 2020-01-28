@@ -20,20 +20,17 @@ To create a site using a Site Template, follow these steps:
 
 1. Click the *Add* icon (![Add Site](../../images/icon-add.png)) and select your Site Template from the menu.
 1. Enter a name for the Site.
-1. Check the *Create default pages as private (available only to members).*
 
-    ```note::
-       If unchecked, the Site Pages will be public (available to anyone).
-    ```
-
+    * Checking *Create default pages as private (available only to members).* will prevent guest users from viewing site pages.
+    
 1. Click *Save*.
 1. Configure your [site settings](../06-site-settings/README.md).
 1. Open the *Pages* panel below the form.
 
     ![The Site Configuration Pages drop down expanded to show Site Template options.](building-sites-with-site-templates/images/04.png)
 
-    ```tip::
-       *Enable propagation of changes from the Site template* enables the Site to receive updates if the Site Template is modified. If changes are made directly to a Site created from a Site Template, the Site will no longer recieve updates from the Site Template. See `Merging Site Template Changes <./merging-site-template-changes.md>`_  for more information.
+    ```note::
+       *Enable propagation of changes from the Site template* enables the Site to receive updates if the Site Template is modified. If changes are made directly to a Site created from a Site Template, the Site will no longer receive updates from the Site Template. See `Merging Site Template Changes <./merging-site-template-changes.md>`_ for more information.
     ```
 
 1. Click *Save* to create your Site.
