@@ -4,7 +4,7 @@ Building Sites
 .. toctree::
    :maxdepth: 3
 
-   building-sites/adding-sites.md
+   building-sites/adding-a-site.md
    building-sites/building-sites-with-site-templates.md
    building-sites/merging-site-template-changes.md
    building-sites/sharing-site-templates.md

@@ -6,7 +6,7 @@ Site Building
 Building Sites
 --------------
 
--  :doc:`/site-building/building-sites/adding-sites`
+-  :doc:`/site-building/building-sites/adding-a-site`
 -  :doc:`/site-building/building-sites/building-sites-with-site-templates`
 -  :doc:`/site-building/building-sites/merging-site-template-changes`
 -  :doc:`/site-building/building-sites/sharing-site-templates`

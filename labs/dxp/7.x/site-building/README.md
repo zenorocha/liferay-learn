@@ -6,7 +6,7 @@
 
 ## Building Sites
 
-* [Adding Sites](./building-sites/adding-sites.md)
+* [Adding Sites](./building-sites/adding-a-site.md)
 * [Building Sites with Site Templates](./building-sites/building-sites-with-site-templates.md)
 * [Merging Site Template Changes](./building-sites/merging-site-template-changes.md)
 * [Sharing Site Templates](./building-sites/sharing-site-templates.md)
