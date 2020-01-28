@@ -27,9 +27,9 @@ The new Site is selected when you open the Product Menu. See [Site Settings](../
 
 ## Additional Information
 
-* Introduction to Site Building
-* Building Sites with Site Templates
-* Adding Members to Sites
+* [Introduction to Site Building](../introduction-to-site-building.md)
+* [Building Sites with Site Templates](./building-sites-with-site-templates.md)
+* [Adding Members to Sites](./adding-members-to-sites.md)
 
 <!-- ### The Default Site
 
