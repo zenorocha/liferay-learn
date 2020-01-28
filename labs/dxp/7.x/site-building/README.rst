@@ -20,7 +20,7 @@ Site Membership
 
 * Understanding Site Membership
 -  :doc:`/site-building/building-sites/adding-members-to-sites`
--  :doc:`/site-building/building-sites/06-creating-teams-for-sites`
+-  :doc:`/site-building/building-sites/creating-teams-for-sites`
 
 Creating Pages
 --------------

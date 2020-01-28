@@ -10,4 +10,4 @@ Building Sites
 -  :doc:`/site-building/building-sites/importing-exporting-pages-and-content`
 
 -  :doc:`/site-building/building-sites/adding-members-to-sites`
--  :doc:`/site-building/building-sites/06-creating-teams-for-sites`
+-  :doc:`/site-building/building-sites/creating-teams-for-sites`
