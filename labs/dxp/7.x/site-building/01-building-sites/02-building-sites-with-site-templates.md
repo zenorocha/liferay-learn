@@ -1,6 +1,6 @@
 # Building Sites with Site Templates
 
-Site Templates define a preconfigured structure for a Site, which includes the pages, theme, content, layouts, page templates, applications and app configurations defined for each page. You can use them to create multiple sites to keep the overall look and feel consistent between them, even if each Site that's created from a given Site Template ends up being very different. Any changes you make to a Site Template are automatically propagated to the sites that use it (unless specified otherwise).
+Site Templates define a preconfigured structure for a Site, which includes the pages, theme, content, layouts, page templates, applications and app configurations defined for each page. Changes made to a Site Template are automatically propagated to the sites that use it, unless specified otherwise.
 
 By default, three Site Templates are provided out-of-the-box:
 
@@ -28,15 +28,19 @@ To create a site using a Site Template, follow these steps:
 1. Enter a name for the Site.
 1. Check the *Create default pages as private (available only to members).*
 
-    > **Note:** If unchecked, the Site Pages will be public (available to anyone).
+    ```note::
+       If unchecked, the Site Pages will be public (available to anyone).
+    ```
 
 1. Click *Save*.
-1. Configure your [site settings](TODO).
+1. Configure your [site settings](../06-site-settings/README.md).
 1. Open the *Pages* panel below the form.
   
     <!-- Screenshot -->
 
-    > **Note:** *Enable propagation of changes from the Site template* selector is enabled by default. This means that the Site receives updates if the Site Template is modified. If changes are made to a Site created from a Site Template, this link is broken and updates to the Site Template are **no longer propagated**. See [Merging Site Template Changes](./merging-site-template-changes.md) for more information.
+    ```tip::
+       *Enable propagation of changes from the Site template* enables the Site to receive updates if the Site Template is modified. If changes are made directly to a Site created from a Site Template, the Site will no longer recieve updates from the Site Template. See `Merging Site Template Changes <./merging-site-template-changes.md>`_  for more information.
+    ```
 
 1. Click *Save* to create your Site.
 1. Open the Product Menu and go to *Sites* &rarr; *Sites* under the Control Panel.
@@ -107,3 +111,5 @@ When a Site's Page Set is created from a Site Template and the propagation of ch
 <!-- ## Related Topics
 * Link to intro article
 * Links to other site templates articles -->
+
+You can use them to create multiple sites to keep the overall look and feel consistent between them, even if each Site that's created from a given Site Template ends up being very different. Any changes you make to a Site Template are automatically propagated to the sites that use it (unless specified otherwise).

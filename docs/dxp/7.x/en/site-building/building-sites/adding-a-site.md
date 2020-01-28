@@ -19,7 +19,7 @@ To add a new Site to your Liferay Portal instance:
 
     ![The General section provides the basic information for your Site.](./adding-a-site/images/01.png)
 
-```note::
+```tip::
    In order to view a newly created *blank site*, you must first create a page for it. See `Adding a Page to a Site <../02-creating-pages/README.md>`_ for more information.
 ```
 
