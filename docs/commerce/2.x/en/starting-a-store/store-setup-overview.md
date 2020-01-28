@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is intended to provide a walk through for users who are new to building a store in Liferay Commerce. It assumes that Liferay Commerce (and Liferay DXP) have been appropriately installed and configured. For more information on installation, see the [Installation Overview](../../installation-and-upgrades/installation-guide/installation-overview.md).
+This article is intended to provide a walk through for users who are new to building a store in Liferay Commerce. It assumes that Liferay Commerce (and Liferay DXP) have been appropriately installed and configured. For more information on installation, see the [Installation Overview](../../installation-and-upgrades/installation-overview.md).
 
 ## Road Map
 

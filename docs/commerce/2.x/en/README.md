@@ -12,7 +12,7 @@ Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform bu
 * [APIs and Integrations](#apis-and-integrations)
 * [Next Steps](#next-steps)
 
-Just want to get started? Launch Liferay Commerce _fast_ [using the Liferay Commerce Docker image](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md).
+Just want to get started? Launch Liferay Commerce _fast_ [using the Liferay Commerce Docker image](./installation-and-upgrades/using-the-liferay-commerce-docker-image.md).
 
 ## Modern Storefront Pages and Content Management
 
@@ -63,6 +63,6 @@ Integrate with other business systems through a Mulesoft connector, Talend compo
 
 ## Next Steps
 
-* [Installation Overview](./installation-and-upgrades/installation-guide/installation-overview.md)
+* [Installation Overview](./installation-and-upgrades/installation-overview.md)
 * [Using the Liferay Commerce Docker Image](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md)
 * [Setup a Complete B2B Site Using the Minium Accelerator](./starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
