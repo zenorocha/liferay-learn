@@ -2,13 +2,13 @@
 
 Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./06-configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
 
-1.  Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
+1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
     
-2.  Click the Gear icon, or select *Configure* from the Actions Menu in the Page Tree Menu, next to the Page Set to configure its pages.
+1. Click the Gear icon, or select *Configure* from the Actions Menu in the Page Tree Menu, next to the Page Set to configure its pages.
 
-3.  Configure the options under the [*Look and Feel* tab](#look-and-feel) and [*Advanced* tab](#advanced) (if required) for the Page Set.
+1. Configure the options under the [*Look and Feel* tab](#look-and-feel) and [*Advanced* tab](#advanced) (if required) for the Page Set.
     
-4.  Click *Save* to apply the updates to the Page Set.
+1. Click *Save* to apply the updates to the Page Set.
 
 The available Page Set settings are described below.
 
@@ -24,11 +24,11 @@ Themes create the overall feel for the Site and can transform the look entirely.
 
 To apply a Theme to the Page Set, follow these steps:
 
-1.  Click the *Change Current Theme* button and select the Theme from the window that appears.
+1. Click the *Change Current Theme* button and select the Theme from the window that appears.
 
-2.  Configure the Theme's settings.
+1. Configure the Theme's settings.
 
-3.  Click *Save* to apply the new Theme to the Page Set.
+1. Click *Save* to apply the new Theme to the Page Set.
 
 ![Figure 2: The Look and Feel interface allows you to choose a theme for the current site.](./configuring-page-sets/images/02.png)
 
@@ -38,19 +38,23 @@ See the [Themes](TODO) section for information on creating and developing your o
 
 By default, the Liferay logo is used for your Site's pages. To use your own logo for a Site, follow these steps:
 
-1.  Expand the *Logo* panel under the *Look and Feel* tab.
+1. Expand the *Logo* panel under the *Look and Feel* tab.
 
-2.  Click the *Change* button and browse to the location of your logo. Make sure your logo fits the space in the top left corner of the Theme you're using for your Site. If you don't, you could wind up with a Site that's difficult to navigate, as other page elements are pushed aside to make way for the logo.
+1. Click the *Change* button and browse to the location of your logo. Make sure your logo fits the space in the top left corner of the Theme you're using for your Site. If you don't, you could wind up with a Site that's difficult to navigate, as other page elements are pushed aside to make way for the logo.
 
-3.  Choose whether to display the Site name on the Site. When *Show Site Name* is enabled, the Site name appears next to the logo. 
+1. Choose whether to display the Site name on the Site. When *Show Site Name* is enabled, the Site name appears next to the logo. 
 
-    > **Note:** This option is enabled by default and can't be disabled if the *Allow Site Administrators to set their own logo* option is disabled in *Instance Settings*. Removing the Site name is not available for the default Liferay Site---you can configure this only for new Sites and User pages.
+  ```note::
+    This option is enabled by default and can't be disabled if the *Allow Site Administrators to set their own logo* option is disabled in *Instance Settings*. Removing the Site name is not available for the default Liferay Site---you can configure this only for new Sites and User pages.
+  ```
     
-4.  Click *Save* to apply the changes. 
+1. Click *Save* to apply the changes. 
 
 ## Advanced
 
->**Warning:** The *Advanced* tab contains powerful options that should only be used by those with a firm command of the technology, or they could have major unintended side effects. Proceed with caution.
+```warning::
+  The *Advanced* tab contains powerful options that should only be used by those with a firm command of the technology, or they could have major unintended side effects. Proceed with caution.
+```
 
 ### JavaScript
 

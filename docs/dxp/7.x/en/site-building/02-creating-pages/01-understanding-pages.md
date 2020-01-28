@@ -16,10 +16,10 @@ Page Fragments can contain anything from images, to text, to carousels, and anyt
 
 You should always opt for Content Pages, unless there's a concrete reason otherwise. Content Pages offer many key features of Widget Pages plus more. Some key features of Content Pages are listed below:
 
-- [personalized Experiences](../11-experience-personalization/01-personalization-intro.md)
-- [A/B Testing](TODO) 
-- Easier to use overall 
-- More powerful for non-technical users compared to Widget Pages
+* [personalized Experiences](../../05-personalizing-site-experience/02-experience-personalization/01-personalization-intro.md)
+* [A/B Testing](TODO) 
+* Easier to use overall 
+* More powerful for non-technical users compared to Widget Pages
 
 ### Widget Pages
 
@@ -29,15 +29,15 @@ Once the Widget Page is created, you can either browse through the categories of
 
 There are some use cases (particularly if a page's sole purpose is to host an application) to prefer Widget Pages. There are still a few things that Widget Pages provide that are not possible with Content Pages:
 
-- *Developing an advanced custom layout*: Using Content Pages, authors can create their own page layouts. This prevents developers from creating pre-selectable, custom layouts with FreeMarker like Widget Pages allowed for. Though Content Pages let you create a layout visually (a more user-friendly approach), the programmatic approach of Widget Pages allows for more advanced capabilities.
+* *Developing an advanced custom layout*: Using Content Pages, authors can create their own page layouts. This prevents developers from creating pre-selectable, custom layouts with FreeMarker like Widget Pages allowed for. Though Content Pages let you create a layout visually (a more user-friendly approach), the programmatic approach of Widget Pages allows for more advanced capabilities.
 
-- *User-Customizable columns*: This is a rarely used feature of Widget Pages that is not provided in Content Pages. If your page requires a user-customizable column, you must use a Widget Page.
+* *User-Customizable columns*: This is a rarely used feature of Widget Pages that is not provided in Content Pages. If your page requires a user-customizable column, you must use a Widget Page.
 
-- *Using Staging with Page Variations*: Content Pages do not support Staging's Page Variations. This avoids possible confusion with the similar capability to create variations of a page that are used in personalization and A/B Testing.
+* *Using Staging with Page Variations*: Content Pages do not support Staging's Page Variations. This avoids possible confusion with the similar capability to create variations of a page that are used in personalization and A/B Testing.
 
-- *Widget permissions*: You can configure widget permissions on a Widget Page. This is not yet possible for Content Pages; it's planned for a future release.
+* *Widget permissions*: You can configure widget permissions on a Widget Page. This is not yet possible for Content Pages; it's planned for a future release.
 
-- *Widget Look & Feel*: On Widget Pages you can access the [Look and Feel](TODO) tool for widgets, offering fine-grained control over its CSS. This is not available for widgets on Content Pages, since the look and feel of your content is defined in the theme or by using Fragments.
+* *Widget Look & Feel*: On Widget Pages you can access the [Look and Feel](TODO) tool for widgets, offering fine-grained control over its CSS. This is not available for widgets on Content Pages, since the look and feel of your content is defined in the theme or by using Fragments.
 
 ### Full Page Application
 
@@ -49,14 +49,13 @@ Note that all of the applications that can be added to the page are non-instance
 
 If you want to configure the application to be scoped to a specific page of a wiki, you can configure that through the application's settings.
 
-1.  From the page, click the (![Options](../../../images/icon-options.png))
-    button for the Wiki and select *Configuration*.
+1. From the page, click the (![Options](../../../../images/icon-options.png)) button for the Wiki and select *Configuration*.
  
-2.  From the *Wiki - Configuration* page, select the *Scope* tab.
+1. From the *Wiki - Configuration* page, select the *Scope* tab.
 
-3.  Open the *Scope* menu and select Wiki page you want.
+1. Open the *Scope* menu and select Wiki page you want.
 
-![Figure 2: Configuring the scope.](./understanding-pages/images/02.png)
+![Configuring the scope.](./understanding-pages/images/02.png)
 
 ### Page Set
 

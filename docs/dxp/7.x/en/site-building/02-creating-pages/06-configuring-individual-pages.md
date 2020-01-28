@@ -4,15 +4,17 @@ After you've configured your Page Set, you can reconfigure some options at the i
 
 To configure an individual page, follow these steps:
 
-1.  Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your site's menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
+1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your site's menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
     
-2.  Open the Actions menu (![Options](../../images/icon-options.png)) next to the page you want to configure and select &rarr; *Configure*. Alternatively, you can click the *Configure* icon on the top right of any page.
+1. Open the Actions menu (![Options](../../../../images/icon-options.png)) next to the page you want to configure and select &rarr; *Configure*. Alternatively, you can click the *Configure* icon on the top right of any page.
 
-3.  Update the settings under the [*General*](#general), [*SEO*](#seo), [*Look and Feel*](#look-and-feel), and [*Advanced*](#advanced) tabs with the new values. Note that the *Look and Feel* and *Advanced* tabs aren't available for Content Pages
+1. Update the settings under the [*General*](#general), [*SEO*](#seo), [*Look and Feel*](#look-and-feel), and [*Advanced*](#advanced) tabs with the new values. Note that the *Look and Feel* and *Advanced* tabs aren't available for Content Pages
 
-    >**Note:** Many of the configuration field values are localizable. Click the language flag next to a localized field, select the desired flag for the localization, and provide the translation for the user's locale to translate the field.
+  ```note::
+    Many of the configuration field values are localizable. Click the language flag next to a localized field, select the desired flag for the localization, and provide the translation for the user's locale to translate the field.
+  ```
 
-4.  Click *Save* to apply the updates to the page.
+1. Click *Save* to apply the updates to the page.
 
 The available page settings are described in more detail below.
 
@@ -30,7 +32,7 @@ The *General* tab lets you configure the basic information and the design for Wi
 
 **Page Layout (only available for Widget Pages):** For Widget Pages, you can select a Layout Template that defines droppable locations for widgets. Layout Templates define a number of sections with columns and rows. Widgets added to a section expand (or contract) horizontally to fill the space and can be stacked vertically. 
 
-![Figure 1: Setting a layout template for your page.](./configuring-individual-pages/images/01.png)
+![Setting a layout template for your page.](./configuring-individual-pages/images/01.png)
 
 ## SEO
 
@@ -50,33 +52,35 @@ SEO provides several ways to optimize the data the page provides to an indexer t
 
 **Sitemap:** tells robots how frequently the page is updated and how it should be prioritized.
 
-  - *Include:* Whether to include the page in the sitemap.
+  * *Include:* Whether to include the page in the sitemap.
   
-  - *Page Priority:* The priority of the page's URL relative to other URLs for the site. See the Sitemap Protocol's [`<priority>` tag](https://www.sitemaps.org/protocol.html#prioritydef) for more information.
+  * *Page Priority:* The priority of the page's URL relative to other URLs for the site. See the Sitemap Protocol's [`<priority>` tag](https://www.sitemaps.org/protocol.html#prioritydef) for more information.
   
-  - *Change Frequency:* How frequently the page is likely to change. See the Sitemap Protocol's [`<changefreq>` tag](https://www.sitemaps.org/protocol.html#changefreqdef) for more information.
+  * *Change Frequency:* How frequently the page is likely to change. See the Sitemap Protocol's [`<changefreq>` tag](https://www.sitemaps.org/protocol.html#changefreqdef) for more information.
 
 **Canonical URL:** Each asset (web content article, blog entry, etc.) has a unique URL. From the search engine's point of view, this makes your pages rank higher since any references to variations of a specific URL are considered references to the same page. You can also use a canonical URL. If the page is localized, you can set whether to generate canonical links by language. If you want to set some of these settings for the entire Site, you can specify them from the Sitemaps and Robots tabs of the Manage Site Settings dialog box (see below).
 
-  - *Use Custom Canonical URL:* Whether to use a custom canonical URL for the page instead of using the System Settings configuration. Once enabled, enter your desired canonical URL in the field that appears. You can define a custom canonical URL for each language. If there's no value for a specific language, the canonical URL for that language is controlled by the global/instance-level setting. 
+  * *Use Custom Canonical URL:* Whether to use a custom canonical URL for the page instead of using the System Settings configuration. Once enabled, enter your desired canonical URL in the field that appears. You can define a custom canonical URL for each language. If there's no value for a specific language, the canonical URL for that language is controlled by the global/instance-level setting. 
 
-  ![Figure 2: Enter the custom canonical URL that you want to use for the page.](./configuring-individual-pages/images/02.png)
+  ![Enter the custom canonical URL that you want to use for the page.](./configuring-individual-pages/images/02.png)
 
 You can also configure canonical URLs at the global and instance levels. 
 
->**Note:** Any custom canonical URLs set for individual pages take precedent over the global and instance level settings.
+```note::
+  Any custom canonical URLs set for individual pages take precedent over the global and instance level settings.
+```
 
-1.  Open the Product Menu and go to *Control Panel* &rarr; *Configuration* 
+1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* 
 
-2.  Click on the scope: *System Settings* or *Instance Settings*. 
+1. Click on the scope: *System Settings* or *Instance Settings*. 
 
-3.  Go to *Pages* &rarr; *SEO* and choose one of these options in the *Canonical URL* menu:
+1. Go to *Pages* &rarr; *SEO* and choose one of these options in the *Canonical URL* menu:
 
-    **Use Default Language URL (default):** When a user visits a page in any supported language, the default language's URL is used as the canonical URL. 
+  **Use Default Language URL (default):** When a user visits a page in any supported language, the default language's URL is used as the canonical URL. 
 
-    **Use Localized URL:** The page's localized URL is used as the canonical URL.
+  **Use Localized URL:** The page's localized URL is used as the canonical URL.
 
-![Figure 3: You can also configure canonical URLs at the global and instance levels.](./configuring-individual-pages/images/03.png)
+![You can also configure canonical URLs at the global and instance levels.](./configuring-individual-pages/images/03.png)
 
 ## Look and Feel
 
@@ -84,19 +88,21 @@ You can also configure canonical URLs at the global and instance levels.
 
 Follow these steps to manage the Theme for a page:
 
-1.  Click the radio button for *Define a specific look and feel for this page*.
+1. Click the radio button for *Define a specific look and feel for this page*.
 
-2.  Optionally click the *Change Current Theme* button to choose a different Theme.
+1. Optionally click the *Change Current Theme* button to choose a different Theme.
 
-3.  Modify the available theme settings, color scheme(s), and CSS for the Theme and click *Save* to apply the changes to the page. See the [Configuring Page Sets](./05-configuring-page-sets.md#current-theme) for more information on the available settings for themes.
+1. Modify the available theme settings, color scheme(s), and CSS for the Theme and click *Save* to apply the changes to the page. See the [Configuring Page Sets](./05-configuring-page-sets.md#current-theme) for more information on the available settings for themes.
 
-![Figure 4: You can define a specific look and feel for a page.](./configuring-individual-pages/images/04.png)
+![You can define a specific look and feel for a page.](./configuring-individual-pages/images/04.png)
 
 ## Advanced
 
 The *Advanced* tab contains options useful for specific cases. Some of these are the same as the options available at the Site or Page Set level, but *Custom Fields*, *Embedded Widgets*, and *Customization Settings* are unique to the individual page configuration.
 
->**Warning:** The *Advanced* section contains powerful options that should only be used by those with a firm command of the technology, or they can have major unintended side effects. Proceed with caution.
+```warning::
+  The *Advanced* section contains powerful options that should only be used by those with a firm command of the technology, or they can have major unintended side effects. Proceed with caution.
+```
 
 ### Advanced Section
 
