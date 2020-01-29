@@ -12,8 +12,6 @@ Installing Liferay DXP
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-marketplace`
-* Using the Liferay Marketplace
-* Installing Apps Manually
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
