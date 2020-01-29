@@ -4,7 +4,7 @@ Developer Guide
 Getting Started
 ---------------
 
--  :doc:`/developer-guide/introduction/introduction-to-the-liferay-commerce-developer-guide`
+-  :doc:`/developer-guide/introduction-to-the-liferay-commerce-developer-guide`
 
 Extending and Customizing Liferay Commerce
 ------------------------------------------

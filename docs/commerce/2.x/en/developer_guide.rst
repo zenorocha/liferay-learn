@@ -4,7 +4,7 @@ Developer Guide
 .. toctree::
    :maxdepth: 1
 
-   developer-guide/introduction/introduction-to-the-liferay-commerce-developer-guide.md
+   developer-guide/introduction-to-the-liferay-commerce-developer-guide.md
    
    developer-guide/tutorial.rst
 
