@@ -11,7 +11,6 @@ Installing Liferay DXP
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-marketplace`
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
