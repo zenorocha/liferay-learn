@@ -4,7 +4,7 @@ Contents
 .. toctree::
    :glob:
    :includehidden:
-   :maxdepth: 2
+   :maxdepth: 3
 
    getting_started
    using_the_liferay_dxp_service
