@@ -23,7 +23,7 @@ In this section, we will get an example order validator up and running on your i
 1. Download and unzip [Acme Commerce Order Validator](./liferay-n9b2.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-n9b2.zip -O
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-n9b2.zip -O
     ```
 
     ```bash
@@ -173,7 +173,7 @@ public CommerceOrderValidatorResult validate(
 
 #### Add the Language Keys to `Language.properties`
 
-Add the language keys and their values to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/implementing-a-custom-order-validator/liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/implementing-a-custom-order-validator/liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 expensive-items-have-a-maximum-quantity-of-10=Expensive items have a maximum quantity of 10.

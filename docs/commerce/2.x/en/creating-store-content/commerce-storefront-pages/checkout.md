@@ -1,6 +1,6 @@
 # Checkout
 
-The Checkout page is a required page that contains the _Checkout_ widget. This widget is populated once a buyer clicks _Checkout_ to submit an order. Custom checkout steps can also be implemented using extension points. To learn more see [Implementing a Custom Checkout Step](../../developer-guide/tutorial/implementing-a-custom-checkout-step.md).
+The Checkout page is a required page that contains the _Checkout_ widget. This widget is populated once a buyer clicks _Checkout_ to submit an order. Custom checkout steps can also be implemented using extension points. To learn more see [Implementing a Custom Checkout Step](../../developer-guide/tutorials/implementing-a-custom-checkout-step.md).
 
 ![Checkout widget](./checkout/images/01.png)
 
@@ -38,5 +38,5 @@ When an order is confirmed, the order is ready for processing by the seller. See
 
 * [Widget Reference Guide](../widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
-* [Implementing a Custom Checkout Step](../../developer-guide/tutorial/implementing-a-custom-checkout-step.md)
+* [Implementing a Custom Checkout Step](../../developer-guide/tutorials/implementing-a-custom-checkout-step.md)
 * [Using the Flat Rate Shipping Method](../../orders-and-fulfillment/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)

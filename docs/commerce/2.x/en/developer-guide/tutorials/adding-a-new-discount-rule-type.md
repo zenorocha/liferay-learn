@@ -25,7 +25,7 @@ First, you must deploy an example discount rule type on your instance of Liferay
 1. Download and unzip [Acme Commerce Discount Rule Type](./liferay-m6a8.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-m6a8.zip -O
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-m6a8.zip -O
     ```
 
     ```bash
@@ -109,7 +109,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes how the discount rule is applied. See the implementation in [M6A8CommerceDiscountRuleType.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleType.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes how the discount rule is applied. See the implementation in [M6A8CommerceDiscountRuleType.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleType.java) for a reference in retrieving the label with a language key.
 
 ### Annotate the JSP Contributor Class for OSGi Registration
 
@@ -159,9 +159,9 @@ Define the `ServletContext` in the JSP contributor class using the bundle's symb
 private ServletContext _servletContext;
 ```
 
-> The value set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in the [bnd.bnd file](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
+> The value set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in the [bnd.bnd file](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
-> Declare a unique value for `Web-ContextPath` in the bnd.bnd file so the `ServletContext` is correctly generated. In this example, `Web-ContextPath` is set to `/m6a8-web`. See [bnd.bnd](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/bnd.bnd) for a reference on these values.
+> Declare a unique value for `Web-ContextPath` in the bnd.bnd file so the `ServletContext` is correctly generated. In this example, `Web-ContextPath` is set to `/m6a8-web`. See [bnd.bnd](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/bnd.bnd) for a reference on these values.
 
 #### Implement the `CommerceDiscountRuleTypeJSPContributor`'s `render` Method
 
@@ -178,7 +178,7 @@ public void render(
 }
 ```
 
-> Use a `JSPRenderer` to render the JSP for the discount rule type's custom UI input (in our example, [view.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/src/main/resources/META-INF/resources/view.jsp)). Provide the `ServletContext` as a parameter to find the JSP.
+> Use a `JSPRenderer` to render the JSP for the discount rule type's custom UI input (in our example, [view.jsp](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/src/main/resources/META-INF/resources/view.jsp)). Provide the `ServletContext` as a parameter to find the JSP.
 
 #### Add the Evaluation Logic to `evaluate`
 
@@ -234,7 +234,7 @@ The example adds a JSP with a numeric input for a minimum number of products.
 
 #### Add the Language Keys to `Language.properties`
 
-Add the language keys and their values to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/src/main/resources/content/Language.properties) file:
+Add the language keys and their values to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-discount-rule-type/liferay-m6a8.zip/m6a8-web/src/main/resources/content/Language.properties) file:
 
 ```
 has-a-minimum-number-of-products=Has a minimum number of products

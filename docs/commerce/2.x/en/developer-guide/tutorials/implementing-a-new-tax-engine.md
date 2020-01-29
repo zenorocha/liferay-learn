@@ -25,7 +25,7 @@ In this section, we will get an example tax engine up and running on your instan
 1. Download and unzip [Acme Commerce Tax Engine](./liferay-q4b9.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-q4b9.zip -O
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-q4b9.zip -O
     ```
 
     ```bash
@@ -89,7 +89,7 @@ public CommerceTaxValue getCommerceTaxValue(
 public String getDescription(Locale locale);
 ```
 
-> This returns a brief description of our tax engine. See the implementation in [Q4B9CommerceTaxEngine.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/implementing-a-new-tax-engine/liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java) for a reference in retrieving the description with a language key.
+> This returns a brief description of our tax engine. See the implementation in [Q4B9CommerceTaxEngine.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/implementing-a-new-tax-engine/liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java) for a reference in retrieving the description with a language key.
 
 ```java
 public String getName(Locale locale);
@@ -129,7 +129,7 @@ public CommerceTaxValue getCommerceTaxValue(
 
 #### Add the Language Keys to `Language.properties`
 
-Add the language keys and their values to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/implementing-a-new-tax-engine/liferay-q4b9.zip/q4b9-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/implementing-a-new-tax-engine/liferay-q4b9.zip/q4b9-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 a-flat-tax-rate-that-does-not-adjust=A flat tax rate that does not adjust.

@@ -25,7 +25,7 @@ In this section, we will get an example product data source up and running on yo
 1. Download and unzip [Acme Commerce Product Data Source](./liferay-m5x7.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorial/liferay-m5x7.zip -O
+    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-m5x7.zip -O
     ```
 
     ```bash
@@ -81,7 +81,7 @@ Implement the following methods:
 public String getLabel(Locale locale);
 ```
 
-> This method returns a text label that describes how product data source will search for related products. See the implementation in [M5X7CPDataSource.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget/liferay-m5x7.zip/m5x7-impl/src/main/java/com/acme/m5x7/internal/commerce/product/data/source/M5X7CPDataSource.java) for a reference in retrieving the label with a language key.
+> This method returns a text label that describes how product data source will search for related products. See the implementation in [M5X7CPDataSource.java](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-product-data-source-for-the-product-publisher-widget/liferay-m5x7.zip/m5x7-impl/src/main/java/com/acme/m5x7/internal/commerce/product/data/source/M5X7CPDataSource.java) for a reference in retrieving the label with a language key.
 
 ```java
 public String getName();
@@ -145,11 +145,11 @@ public CPDataSourceResult getResult(
 
 > We use a [CPDefinitionHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/util/CPDefinitionHelperImpl.java) to perform the search. The `CPDefinitionHelper` combines logic specific to product definitions with `BaseIndexer`'s search functionality; see [BaseIndexer.java](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/portal-kernel/src/com/liferay/portal/kernel/search/BaseIndexer.java) for more information.
 >
-> Add the product definition's ID as the value for the `"excludedCPDefinitionId"` attribute to the `SearchContext`. This will omit the original product from the results. In our example, we also specify the last word of product name to search for. See the implementation of `_getLastWordOfName` by visiting [M5X7CPDataSource](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget/liferay-m5x7.zip/m5x7-impl/src/main/java/com/acme/m5x7/internal/commerce/product/data/source/M5X7CPDataSource.java).
+> Add the product definition's ID as the value for the `"excludedCPDefinitionId"` attribute to the `SearchContext`. This will omit the original product from the results. In our example, we also specify the last word of product name to search for. See the implementation of `_getLastWordOfName` by visiting [M5X7CPDataSource](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-product-data-source-for-the-product-publisher-widget/liferay-m5x7.zip/m5x7-impl/src/main/java/com/acme/m5x7/internal/commerce/product/data/source/M5X7CPDataSource.java).
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget/liferay-m5x7.zip/m5x7-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](https://github.com/liferay/liferay-learn/blob/master/docs/commerce/2.x/en/developer-guide/tutorials/adding-a-new-product-data-source-for-the-product-publisher-widget/liferay-m5x7.zip/m5x7-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 products-ending-in-the-same-word=Products Ending in the Same Word
