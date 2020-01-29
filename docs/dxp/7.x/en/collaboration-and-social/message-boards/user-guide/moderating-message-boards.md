@@ -73,3 +73,7 @@ Moderators have the option to delete the thread if it was deemed offensive or vi
 1. Click _OK_ to confirm the deletion.
 
 The thread is now deleted.
+
+## Additional Information
+
+* [Notifications and Requests](../../05-notifications-and-requests/01-user-guide/README.rst)
