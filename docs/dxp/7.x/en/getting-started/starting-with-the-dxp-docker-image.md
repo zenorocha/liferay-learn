@@ -13,7 +13,7 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
 1. Start Liferay DXP
 
     ```bash
-    docker run --name my_dxp_container -it -p 8080:8080 liferay/dxp:7.2.10.1-sp1
+    docker run -it -p 8080:8080 liferay/dxp:7.2.10.1-sp1
     ```
 
     > **Note:** Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
