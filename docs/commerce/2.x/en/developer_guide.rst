@@ -6,7 +6,7 @@ Developer Guide
 
    developer-guide/introduction-to-the-liferay-commerce-developer-guide.md
    
-   developer-guidetutorials.rst
+   developer-guide/tutorials.rst
 
 .. include:: /developer-guide/README.rst
 	:start-line: 2
