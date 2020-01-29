@@ -8,7 +8,7 @@ The quickest, most convenient way to download an app is via its receipt.
 
 An app's receipt displays immediately on purchasing the app. 
 
-![On the Marketplace website, a receipt displays immediately on purchasing an app.](./downloading-apps/images/01.png)
+![Figure 1: On the Marketplace website, a receipt displays immediately on purchasing an app.](./downloading-apps/images/01.png)
 
 Here's how to download the app from its receipt:
 
@@ -26,9 +26,9 @@ If you don't happen to download the app via the receipt, there's no need to worr
 
 ### Downloading via the Purchased Apps Page 
 
-The *Purchased Apps* page lists your purchased apps by project. You can drill down to specific apps and download them.
+The *Purchased Apps* page lets you download your purchased apps any time. It shows the apps you purchased, organized by project.
 
-Here are the steps for downloading an app in the Purchased Apps UI:
+Here are the steps for using the Purchased Apps page:
 
 1. Navigate to the Purchased Apps page via the Marketplace website or Liferay.com.
 
@@ -36,7 +36,7 @@ Here are the steps for downloading an app in the Purchased Apps UI:
 
     **Liferay.com:** Go to [liferay.com](https://www.liferay.com) and sign in. Click on your profile picture in the top right corner, select *Account Home* from the menu, and select *Apps* in the navigation panel on the left.
 
-    ![You can manage your purchased apps from the Marketplace and your Liferay.com account home page.](./downloading-apps/images/02.png)
+    ![Figure 1: You can manage your purchased apps from the Marketplace and your Liferay.com account home page.](./downloading-apps/images/02.png)
 
 1. Select a project to view its registered apps.
 
@@ -44,7 +44,7 @@ Here are the steps for downloading an app in the Purchased Apps UI:
 
 1. Click the icon of the app you're downloading. A listing for the purchased app version appears.
 
-    ![The app's page provides an App link for downloading the current app version and a Past Versions link for viewing older versions of the app.](./downloading-apps/images/03.png)
+    ![Figure 3: The app's page provides an App link for downloading the current app version and a Past Versions link for viewing older versions of the app.](./downloading-apps/images/03.png)
 
 1. If you're interested in an earlier version of the app, click *Past Versions*. (Optional)
 
