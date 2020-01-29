@@ -27,10 +27,10 @@ Learn how to use the features of the Message Boards application:
 
 * [Creating and Managing Message Boards Categories](./creating-message-boards-categories.md)
 * [Creating Threads](./creating-message-boards-threads.md)
-* Subscribing to a Message Board
-* Moderating Message Boards
-* Configuring a Message Boards Mailing List
-* Advanced Topics: Understanding Message Boards Scope
+* [Subscribing to a Message Board](./subscribing-to-a-message-board.md)
+* [Moderating Message Boards](./moderating-message-boards.md)
+* [Configuring a Message Boards Mailing List](./configuring-a-message-boards-category-mailing-list.md)
+* [Advanced Topics: Understanding Message Boards Scope](./scoping-your-message-boards.md)
 
 ### Reference
 

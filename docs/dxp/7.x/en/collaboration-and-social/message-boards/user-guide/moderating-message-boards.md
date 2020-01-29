@@ -1,6 +1,6 @@
 # Moderating Message Boards
 
-Liferay DXP's _Message Boards_ include features that enable effective day to day administration. This includes thread locking, thread moving and merging, user bans, and thread flagging. See the [Message Boards Permissions Reference](./08-message-boards-permissions-reference.md) for more information on assigning _Message Boards_ permissions to a role. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+Liferay DXP's _Message Boards_ include features that enable effective day to day administration. This includes thread locking, thread moving and merging, user bans, and thread flagging. See the [Message Boards Permissions Reference](./message-boards-permissions-reference.md) for more information on assigning _Message Boards_ permissions to a role. To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Locking Threads
 
@@ -15,7 +15,7 @@ To lock a thread:
 
 To unlock a thread:
 
-1. Click (![Actions](../../../images/icon-actions.png))) next to the thread to be unlocked.
+1. Click (![Actions](../../../images/icon-actions.png)) next to the thread to be unlocked.
 1. Click _Unlock_.
 
 The thread is now unlocked.
@@ -37,7 +37,7 @@ The thread is now in the new category.
 ## Banning Users
 
 1. Click on the thread that contains the user to be banned.
-1. Click the post’s Actions menu (![Actions](../../../images/icon-actions.png))) and select Ban this User.
+1. Click the post’s Actions menu (![Actions](../../../images/icon-actions.png)) and select Ban this User.
 
 ![Banning a user](./moderating-message-boards/images/04.png)
 
@@ -60,7 +60,7 @@ When a thread has been reported for possible abuse, the _Message Boards_ apps us
 
 ![Notification icon](./moderating-message-boards/images/01.png)
 
-1. Click _Notifications
+1. Click _Notifications_.
 
     ![Notifications widget displays message boards](./moderating-message-boards/images/06.png)
 
@@ -68,7 +68,7 @@ When a thread has been reported for possible abuse, the _Message Boards_ apps us
 
 Moderators have the option to delete the thread if it was deemed offensive or violates the terms of use. To delete a thread:
 
-1. Click _Actions_ (![Actions](../../../images/icon-actions.png)))
+1. Click _Actions_ (![Actions](../../../images/icon-actions.png))
 1. Click _Delete_
 1. Click _OK_ to confirm the deletion.
 
