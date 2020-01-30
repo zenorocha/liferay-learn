@@ -19,7 +19,7 @@ Liferay Portal ships with several Layouts, Sections, Components, and Widgets to 
 
 Sections are complete Fragments that can be immediately used and customized as soon as they are added to a page. A large banner image with a text overlay is an example of a Section that is ready for immediate use.
 
-![A Section named *Banner* being displayed while editing a Content Page.](./content-page-elements/images/01.png)
+![A Section named Banner being displayed while editing a Content Page.](./content-page-elements/images/01.png)
 
 When you open *Sections* you see a list of Collections available. Initially, you only have the **Basic Sections** Collection which is included out-of-the-box. You can open the Collection and drag Sections directly onto the page.
 
@@ -73,7 +73,7 @@ Hover over the content in the list to highlight the widget(s), mapped content fi
 
 Page Structure provides a high level view of every Fragment and every field within each Fragment on the page. Click on a field in the page structure to highlight it on the page and quickly locate it amongst all the other elements.
 
-![*Page Structure* shows you a hierarchy of your page.](./content-page-elements/images/08.png)
+![Page Structure shows you a hierarchy of your page.](./content-page-elements/images/08.png)
 
 ## Look and Feel
 

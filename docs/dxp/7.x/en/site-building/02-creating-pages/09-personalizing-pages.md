@@ -18,7 +18,7 @@ To enable page customizations, follow these steps:
 
 1. Toggle the *Customizable* option to Yes.
 
-  ![To enable page customizations, click on the *Configure Page* button next to the page, expand the *Customization Settings* area, and click on the *Customizable* button.](./personalizing-pages/images/01.png)
+  ![To enable page customizations, click on the Configure Page button next to the page, expand the Customization Settings area, and click on the Customizable button.](./personalizing-pages/images/01.png)
 
 1. Toggle the *Not Customizable* option to *Customizable* for each section you want to make customizable.
 
