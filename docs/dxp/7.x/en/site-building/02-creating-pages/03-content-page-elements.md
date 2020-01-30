@@ -1,21 +1,23 @@
 # Content Page Elements and Interface
 
-Content Pages, like Widget Pages, are built by dragging and dropping elements onto the page and then configuring the way those elements appear. These elements, called *Fragments*, are described here, along with an overview of the Content Page UI. See [Building Content Pages](./04-building-content-pages.md) to learn how to use these elements to build a Content Page. 
+<!-- Another working title that is a bit more useful to me: Content Pages Overview, Understanding Content Pages, Working With Content Pages -->
 
-Your tools for building the page are all found on the right side of the page. From top to bottom, these options are available:
+Content Pages are built by dragging and dropping elements onto the page and then configuring the way those elements appear. These elements, called *Fragments*, are described here, along with an overview of the Content Page UI. See [Building Content Pages](./04-building-content-pages.md) to learn how to use these elements to build a Content Page.
+
+The following types of fragments are available for use:
 
 * [Sections](#sections)
 * [Section Builder](#section-builder)
 * [Widgets](#widgets)
 * [Contents](#contents)
 * [Page Structure](#page-structure)
-* [Look and Feel](#look-and-feel) 
+* [Look and Feel](#look-and-feel)
 
-Liferay Portal ships with a plethora of Layouts, Sections, Components, and Widgets to use to build pages, and a [web developer can create their own Fragments](TODO) to add to these.
+Liferay Portal ships with several Layouts, Sections, Components, and Widgets to use to build pages, and a [developers can create their own Fragments](TODO) to add to these.
 
 ## Sections
 
-Sections are complete Fragments that serve a purpose by themselves. A large banner image with a text overlay is an example of something you might build as a section. 
+Sections are complete Fragments that can be immediately used and customized as soon as they are added to a page. A large banner image with a text overlay is an example of a Section that is ready for immediate use.
 
 ![A Section named *Banner* being displayed while editing a Content Page.](./content-page-elements/images/01.png)
 
@@ -51,12 +53,12 @@ The Widgets section functions just like the *Add* menu on a Widget Page. The ful
 
 Since Liferay DXP 7.3, the Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform these actions for each piece of content used on the page:
 
-* *Edit:* Edit the web content 
+* *Edit:* Edit the web content
 * *Permissions:* Update the web content's permissions
 * *View Usages:* See where the web content is used on the site
 
 ```note::
-  To edit inline content, you must have the "Edit Inline Content" permission assigned to your Role. However, if you don't have permission to edit the page, you can still edit content (web content, blog, etc.) that you have permission to edit that's displayed through one of these methods: mapped content, web content display, or an Asset Publisher (with manual selection).  
+  To edit inline content, you must have the "Edit Inline Content" permission assigned to your Role. However, if you don't have permission to edit the page, you can still edit content (web content, blog, etc.) that you have permission to edit that's displayed through one of these methods: mapped content, web content display, or an Asset Publisher (with manual selection).
 ```
 
 Hover over the content in the list to highlight the widget(s), mapped content fields, and Fragments that display the content on the page.
@@ -69,13 +71,13 @@ Hover over the content in the list to highlight the widget(s), mapped content fi
 
 ## Page Structure
 
-Page Structure provides a high level view of every Fragment and every field within each Fragment on the page. Click on a field in the page structure to highlight it on the page and quickly locate it amongst all the other elements.  
+Page Structure provides a high level view of every Fragment and every field within each Fragment on the page. Click on a field in the page structure to highlight it on the page and quickly locate it amongst all the other elements.
 
 ![*Page Structure* shows you a hierarchy of your page.](./content-page-elements/images/08.png)
 
 ## Look and Feel
 
-Click the *Look and Feel* icon (![Look and Feel](../../images/icon-look-and-feel.png)) to change the Theme or manage other options for the page. These options are fully documented in [Configuring Individual Pages](./06-configuring-individual-pages.md#look-and-feel). 
+Click the *Look and Feel* icon (![Look and Feel](../../images/icon-look-and-feel.png)) to change the Theme or manage other options for the page. These options are fully documented in [Configuring Individual Pages](./06-configuring-individual-pages.md#look-and-feel).
 
 ## Comments
 
@@ -83,31 +85,31 @@ You can comment on a Page Fragment to discuss changes and collaborate. Comments 
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Pages* &rarr; *Content Page Editor*.
 
-1. Select the *Comments Enabled* checkbox and click *Update*. 
+1. Select the *Comments Enabled* checkbox and click *Update*.
 
-This enables content page comments for all instances. To control this on an instance-by-instance basis, navigate to the same setting in *Instance Settings* (instead of System Settings). 
+This enables content page comments for all instances. To control this on an instance-by-instance basis, navigate to the same setting in *Instance Settings* (instead of System Settings).
 
 ![Administrators can enable comments for content pages.](./content-page-elements/images/09.png)
 
 If comments are enabled, you can access them via the *Comments* icon (![Comments](../../../../../images/icon-comments.png)). The comments appear for the selected Fragment. These actions are available for Fragment comments:
 
-* Add new comments and reply to any existing ones. 
-* Resolve comments by clicking the checkbox for each. Resolving a comment hides it from view, unless *Show Resolved Comments* is selected. 
-* Edit and delete your own comments via the Actions button (![Actions](../../images/icon-actions.png)) for each. 
+* Add new comments and reply to any existing ones.
+* Resolve comments by clicking the checkbox for each. Resolving a comment hides it from view, unless *Show Resolved Comments* is selected.
+* Edit and delete your own comments via the Actions button (![Actions](../../images/icon-actions.png)) for each.
 
-If you de-select a Fragment or enter the comments UI without a Fragment selected, a list of the Fragments on the page appears with the number of comments for each. Selecting a Fragment then shows its comments. 
+If you de-select a Fragment or enter the comments UI without a Fragment selected, a list of the Fragments on the page appears with the number of comments for each. Selecting a Fragment then shows its comments.
 
 ![When creating content pages, you and your team can comment on any fragments.](./content-page-elements/images/10.png)
 
 ## The Title Bar
 
-The title bar provides navigation back to the Main Menu or live view of the page, a link to page configuration, and the ability to search for other pages. 
+The title bar provides navigation back to the Main Menu or live view of the page, a link to page configuration, and the ability to search for other pages.
 
 ![The title bar has several tools built into it.](./content-page-elements/images/11.png)
 
 ## Editable Elements
 
-Fragments can have editable elements. After a Fragment has been added to a page, you can click on an editable area to provide your own text, image, or links in place of the default defined in the Fragment. You can also [map these elements](./04-building-content-pages.md#mapping-elements) to content. 
+Fragments can have editable elements. After a Fragment has been added to a page, you can click on an editable area to provide your own text, image, or links in place of the default defined in the Fragment. You can also [map these elements](./04-building-content-pages.md#mapping-elements) to content.
 
 For more information on developing these elements, see [Fragment Specific Tags](TODO).
 

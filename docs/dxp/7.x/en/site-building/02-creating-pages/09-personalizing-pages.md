@@ -11,9 +11,9 @@ Administrators can designate some or all of the sections (rows and columns of th
 To enable page customizations, follow these steps:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your site's menu.
-    
+
 1. Open the Actions menu next to the page you want to let Site members modify and select *Configure*.
- 
+
 1. Select the *Advanced* tab at the top of the page and expand the *Customization Settings* panel.
 
 1. Toggle the *Customizable* option to Yes.
@@ -41,7 +41,7 @@ Site members have access to these contextual options from the page's *Options* m
 
 * *View My Customized Page*: Displays the page with the user's customizations and makes the Add menu available so users can add widgets to the page.
 
-![Customizable areas are highlighted green when organizing apps on the page.](./personalizing-pages/images/02.png) 
+![Customizable areas are highlighted green when organizing apps on the page.](./personalizing-pages/images/02.png)
 
 Administrators of customizable pages have the same two views as Site members: the *default page* view and the *customized page* view. Changes they make to the non-customizable sections of the default page affect all users just like other pages, whereas changes they make to the customized sections affect only themselves and do *not* overwrite users' customizations.
 

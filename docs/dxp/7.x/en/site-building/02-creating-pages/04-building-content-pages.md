@@ -14,7 +14,7 @@ Several Fragments are available by default that you can use to build your Conten
   * [Layout](#add-a-layout)
   * [Section](#add-a-section)
   * [Widget](#add-a-widget)
-  
+
   ![Add Fragments to the page to create the mockup you want.](./building-content-pages/images/02.png)
 
 1. Modify the editable portions of the Page Fragments to complete the design for the Content Page. Click the editable element below that you want to update and follow the instructions in the section:
@@ -43,10 +43,10 @@ Several Fragments are available by default that you can use to build your Conten
 
 ## Add a Layout
 
-1. Open the *Section Builder* Menu and open the *Layouts* panel. 
+1. Open the *Section Builder* Menu and open the *Layouts* panel.
 
 1. Drag the Layout onto the page, above or below an existing Layout or Section.
-    
+
 1. Optionally resize the Layout's columns. Click inside the Section containing the Layout and drag one of the blue handles that appear left or right to adjust the column widths.
 
 1. Optionally specify a background image for a Layout from Section Builder. Click the Layout, select *Layout Background Image*, and define the image to display.
@@ -68,7 +68,7 @@ Several Fragments are available by default that you can use to build your Conten
 1. Optionally modify the basic styling of the Component. Click the Component and select the Fragment Configuration Cog icon. Any changes you make are applied live. You can remove, duplicate, and configure the Components you add to the page.
 
   ![Add some images, and the big picture comes together.](./building-content-pages/images/06.png)
-    
+
 1. [Complete the remaining steps to build the Content Page](#building-the-content-page).
 
 ## Add a Widget
@@ -76,7 +76,7 @@ Several Fragments are available by default that you can use to build your Conten
 1. Open the *Widgets* Menu and click the category that contains the Widget.
 
 1. Drag the Widget to a column of an existing Layout, or add it outside an existing Layout to automatically place it in a one column Layout.
-    
+
 1. [Complete the remaining steps to build the Content Page](#building-the-content-page).
 
 ## Modify Editable Images
@@ -108,7 +108,7 @@ Several Fragments are available by default that you can use to build your Conten
   * *URL:* sets the link's URL.
   * *Target:* set the link's behavior.
 
-  *From Content Field:* 
+  *From Content Field:*
 
   * *Content:* sets the content type.
   * *Field:* sets the field to display for the selected content.

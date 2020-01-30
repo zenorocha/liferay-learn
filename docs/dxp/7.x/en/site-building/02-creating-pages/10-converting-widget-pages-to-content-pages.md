@@ -7,11 +7,11 @@ In previous versions, Widget Pages provided exclusive features, such as custom l
 To preview a conversion draft before converting your Widget Page, follow these steps:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your Site's menu.
-   
+
 1. Open the Actions Menu (![Actions](../../../../images/icon-actions.png)) next to Widget Page and select the *Preview and convert to Content Page* option.
-   
+
 1. Acknowledge any warnings and make any required adjustments to the conversion draft. You can also add any Fragments you'd like to the draft at this point.
-   
+
 1. Click *Publish* to publish the preview draft, or click *Discard Conversion Draft* to reset the Widget Page back to its original state. If there are warnings, a best-effort conversion, as described below, is completed.
 
 ### Best Effort Conversions
@@ -33,7 +33,7 @@ Some features of Widget Pages aren't supported by Content Pages and therefore ca
 Follow these steps to convert Widget Pages to Content Pages without a preview:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your Site's menu.
-   
+
 1. Check the box for the Widget Page, or multiple Widget Pages, and open the Actions Menu in the Management Toolbar and select the *Convert to Content Page* option.
 
  ![You can convert multiple Widget Pages through the Context Menu](./converting-widget-pages-to-content-pages/images/01.png)
@@ -45,9 +45,9 @@ Follow these steps to convert Widget Pages to Content Pages without a preview:
 You can bulk convert all Widget Pages on a Site to Content Pages using the built-in script editor. Follow these steps:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *Server Administration* &rarr; *Script*.
-   
+
 1. Enter this script in the script window, making sure to replace the Group ID with your own. The Groovy script uses the [`BulkLayoutConverter` interface](https://github.com/liferay/liferay-portal/blob/master/modules/apps/layout/layout-api/src/main/java/com/liferay/layout/util/BulkLayoutConverter.java) to convert all Widget Pages with the given Group ID to Content Pages:
-   
+
   ```groovy
   import com.liferay.layout.util.BulkLayoutConverter
   import com.liferay.portal.kernel.util.ArrayUtil
@@ -78,7 +78,7 @@ You can bulk convert all Widget Pages on a Site to Content Pages using the built
 
   out.println("Convertible layouts after conversion: " + ArrayUtil.toStringArray(plids))
   ```
-    
+
 1. Click *Execute* to run the script.
 
 1. The output should look similar to the snippet below to show that no convertible layouts (pages) remain:

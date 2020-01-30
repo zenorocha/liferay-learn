@@ -1,10 +1,20 @@
 # Understanding Pages
 
-Pages on Liferay DXP are primarily used to display content and applications to users of a Site. Pages can be categorized as either: Public Pages or Private Pages. By default, anyone can access Public Pages, even non-logged in users (guests). Only authenticated users who are members of the Site can access a site's Private Pages.
+Pages on Liferay DXP are primarily used to display content and applications to users of a Site.
+
+## Page Sets
+
+When adding Pages for a site, the pages are created as part of a Page Set: **Public Pages** or **Private Pages**.
+
+| Behavior | Public Pages | Private Pages |
+| --- | --- |---|
+| Visible to unauthenticated users | &#10004; |  |
+| Viewing requires Login and Site Membership |  | &#10004; |
+| Distinct URL pattern | &#10004; | &#10004; |
 
 ## Page Types
 
-There are several page types available when you [add a page](./02-adding-a-page-to-a-site.md). The two most commonly used types are Content pages and Widget pages. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). The available page types and Page Templates are described here.
+There are several page types available when you [add a page](./02-adding-a-page-to-a-site.md). The two most commonly used types are **Content Pages** and **Widget Pages**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). The available page types and Page Templates are described here.
 
 ![Figure 1: You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
@@ -53,6 +63,8 @@ A Widget Page is a page with a [set layout](link-to-something-about-layout-templ
 ### Other Page Types
 
 There are several other page types that are available in DXP - each can help to satisfy particular use cases:
+
+<!-- Either create separate articles for each, or just create an "Other Page Types" article -->
 
 * [Every](full-page-application-page-type.md)
 * Other
@@ -107,18 +119,30 @@ The *Embedded* option displays content from another website inside your instance
 
 The *Link to URL* option adds a link to the provided URL. This can be an external page or a link across Sites in the same Liferay Portal instance. -->
 
-<!-- Move this to "Creating Pages with Global Page Templates" ## Global Page Templates
+## Global Page Templates
 
-When adding a page, you also have the option to choose a Page Template. By default, only *Global Templates* are available, but additional collections you create appear as an option as well. The global Page Templates are described here.
+When adding a page, you also have the option to choose a Page Template. Page Templates are pre-set pages with applications already deployed to the page. By default, only *Global Templates* are available, but additional collections you create appear as an option as well.
 
-#### Blog
+| Global Page Template | Description |
+| --- | --- |
+| Blog | Creates a Blogs Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget. |
+| Search | Creates a Widget Page with a Search Bar widget, a Search Results widget, and a Search Options widget. |
+| Wiki | Creates a Widget Page with a Wiki widget, a Categories Navigation widget, and a Tags Navigation widget. |
 
-The *Blog* global Page Template creates a Blogs Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget.
+Learn more about Page Templates:
 
-#### Search
+* Adding a Page Using a Page Template
+* [Creating a Page Template](./07-creating-a-page-template)
 
-The *Search* global Page Template creates a Widget Page with a Search Bar widget, a Search Results widget, and a Search Options widget.
+## Child Pages and Page Hierarchy
 
-#### Wiki
+Pages can also be created in a hierarchical fashion by creating Child Pages. Child Pages can be useful if you have multiple pages that can be organized into categories.
 
-The *Wiki* global Page Template creates a Widget Page with a Wiki widget, a Categories Navigation widget, and a Tags Navigation widget. -->
+<!-- (Screenshot) -->
+
+## Next Steps
+
+* [Adding a Page](link)
+* Other
+* Related
+* Links

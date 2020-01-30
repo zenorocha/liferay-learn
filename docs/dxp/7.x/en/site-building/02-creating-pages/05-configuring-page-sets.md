@@ -3,11 +3,11 @@
 Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./06-configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
-    
+
 1. Click the Gear icon, or select *Configure* from the Actions Menu in the Page Tree Menu, next to the Page Set to configure its pages.
 
 1. Configure the options under the [*Look and Feel* tab](#look-and-feel) and [*Advanced* tab](#advanced) (if required) for the Page Set.
-    
+
 1. Click *Save* to apply the updates to the Page Set.
 
 The available Page Set settings are described below.
@@ -20,7 +20,7 @@ Page Set configuration starts with the *Look and Feel* tab. Here you can choose 
 
 ### Current Theme
 
-Themes create the overall feel for the Site and can transform the look entirely. The *Current Theme* section displays the Theme currently applied to the Page Set, along with any configurable theme settings and color schemes that the Theme has. Many Themes include more than one color scheme, which keeps the existing look and feel while giving the Site a different flavor. The *CSS* section lets you enter custom CSS for tweaking your Theme. You can apply Themes to the entire Site (described here) or to individual pages (described in [Configuring Pages](./06-configuring-individual-pages.md#look-and-feel)). 
+Themes create the overall feel for the Site and can transform the look entirely. The *Current Theme* section displays the Theme currently applied to the Page Set, along with any configurable theme settings and color schemes that the Theme has. Many Themes include more than one color scheme, which keeps the existing look and feel while giving the Site a different flavor. The *CSS* section lets you enter custom CSS for tweaking your Theme. You can apply Themes to the entire Site (described here) or to individual pages (described in [Configuring Pages](./06-configuring-individual-pages.md#look-and-feel)).
 
 To apply a Theme to the Page Set, follow these steps:
 
@@ -42,13 +42,13 @@ By default, the Liferay logo is used for your Site's pages. To use your own logo
 
 1. Click the *Change* button and browse to the location of your logo. Make sure your logo fits the space in the top left corner of the Theme you're using for your Site. If you don't, you could wind up with a Site that's difficult to navigate, as other page elements are pushed aside to make way for the logo.
 
-1. Choose whether to display the Site name on the Site. When *Show Site Name* is enabled, the Site name appears next to the logo. 
+1. Choose whether to display the Site name on the Site. When *Show Site Name* is enabled, the Site name appears next to the logo.
 
   ```note::
     This option is enabled by default and can't be disabled if the *Allow Site Administrators to set their own logo* option is disabled in *Instance Settings*. Removing the Site name is not available for the default Liferay Site---you can configure this only for new Sites and User pages.
   ```
-    
-1. Click *Save* to apply the changes. 
+
+1. Click *Save* to apply the changes.
 
 ## Advanced
 
