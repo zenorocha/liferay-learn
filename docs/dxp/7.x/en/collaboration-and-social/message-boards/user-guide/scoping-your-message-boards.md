@@ -1,6 +1,6 @@
 # Scoping Your Message Boards
 
-Forum administrators can create and manage message boards in the Global, Site, and Page [scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope). The following sections show administrators how to manage message boards in each of these scopes.
+Forum administrators can create and choose to manage Message Boards in either the [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope). The following sections show administrators how to manage Message Boards in each of these scopes.
 
 ## Globally-scoped Message Boards
 
@@ -38,9 +38,9 @@ To create a page-scoped message board, follow these steps:
 
 1. Click _Save_ then close the dialog window.
 
-![Figure 5: Page-scoped content](./scoping-your-message-boards/images/05.png)
+    ![Figure 5: Page-scoped content](./scoping-your-message-boards/images/05.png)
 
-The _Message Boards Categories_ and _Threads_ added om Page 2 will be displayed only on this page.
+The _Message Boards Categories_ and _Threads_ added on the _Forum 2_ page will be displayed only on that page.
 
 ### Managing Page-scoped Content
 
@@ -53,3 +53,7 @@ Note that administrators must still use the _Site Administration_ menu to admini
     ![Figure 6: Select the page's scope under the Content & Data menu in Site Administration.](./scoping-your-message-boards/images/06.png)
 
 1. Select *Message Boards* from the _Content & Data_ menu. Any changes you make here apply to the scope that you selected in the previous step.
+
+<!-- ## Related Information
+
+* Understanding Scope in Liferay DXP -->
