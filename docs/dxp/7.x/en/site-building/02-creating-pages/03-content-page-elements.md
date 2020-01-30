@@ -1,11 +1,63 @@
+<!-- Recommended restructuring of this article:
+# Content Pages Overview
+
+The default type of page used in Liferay DXP is a Content Page. The Content Pages Editing UI provides access to many different drag-and-drop elements that are available for use immediately with minimal configuration.
+
+![Using the Content Page sidebar to add elements to the page.](content-page-elements/images/14.png)
+
+The Content Page sidebar gives access to the following elements and tools:
+
+* Fragments
+* Widgets
+* Contents
+* Page Structure
+* Look and Feel
+* Comments
+
+## Fragments
+
+Fragments can be easily drag-and-dropped to a page. Most fragments can be easily customized by editing them or mapping them to content that you have already created or uploaded to your Liferay DXP instance. See [Editing and Mapping Content to Fragments]() to learn more. Continue reading to learn more about the types of fragments available in Liferay DXP.
+
+### Layouts
+
+### Basic Components
+
+### Featured Content
+
+### Footers
+
+### Navigation Bars
+
+## Widgets
+
+Widgets are x. Click [Using Widgets on a Content Page](), to learn more.
+
+## Contents
+
+## Page Structure
+
+## Look and Feel
+
+## Comments
+
+Comments are x and enable y. See [Enabling and Using Comments for Fragments]() to learn more.
+
+-->
+
+
 # Content Page Elements and Interface
 
 <!-- Another working title that is a bit more useful to me: Content Pages Overview, Understanding Content Pages, Working With Content Pages -->
 
-Content Pages are built by dragging and dropping elements onto the page and then configuring the way those elements appear. These elements, called *Fragments*, are described here, along with an overview of the Content Page UI. See [Building Content Pages](./04-building-content-pages.md) to learn how to use these elements to build a Content Page.
+Content Pages are built by dragging and dropping elements onto the page and then configuring the way those elements appear. These elements, called *Fragments*, are described here, along with an overview of the Content Page UI. See [Building Content Pages](./04-building-content-pages.md) to jump directly in to building a Content Page.
+
+<!-- Ground users in what the overall UI should look like in context. -->
+
+![Using the Content Page sidebar to add elements to the page.](content-page-elements/images/14.png)
 
 The following types of fragments are available for use:
 
+<!-- It looks like this is different now in 7.3? -->
 * [Sections](#sections)
 * [Section Builder](#section-builder)
 * [Widgets](#widgets)
@@ -51,7 +103,11 @@ The Widgets section functions just like the *Add* menu on a Widget Page. The ful
 
 ## Contents
 
-Since Liferay DXP 7.3, the Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform these actions for each piece of content used on the page:
+```note::
+   Available in Liferay DXP 7.3+
+```
+
+The Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform these actions for each piece of content used on the page:
 
 * *Edit:* Edit the web content
 * *Permissions:* Update the web content's permissions
@@ -101,13 +157,13 @@ If you de-select a Fragment or enter the comments UI without a Fragment selected
 
 ![When creating content pages, you and your team can comment on any fragments.](./content-page-elements/images/10.png)
 
-## The Title Bar
+<!-- ## The Title Bar
 
 The title bar provides navigation back to the Main Menu or live view of the page, a link to page configuration, and the ability to search for other pages.
 
-![The title bar has several tools built into it.](./content-page-elements/images/11.png)
+![The title bar has several tools built into it.](./content-page-elements/images/11.png) -->
 
-## Editable Elements
+<!-- ## Editable Elements
 
 Fragments can have editable elements. After a Fragment has been added to a page, you can click on an editable area to provide your own text, image, or links in place of the default defined in the Fragment. You can also [map these elements](./04-building-content-pages.md#mapping-elements) to content.
 
@@ -133,4 +189,10 @@ You can also define a link for your image. You'll learn about this next.
 
 Editable links can be associated with entities that redirect you to a content type or Page (e.g., buttons).
 
-For more information on developing editable links, see [Creating Editable Links](TODO).
+For more information on developing editable links, see [Creating Editable Links](TODO). -->
+
+## Next Steps
+
+* Building Content Pages
+* Link 2
+* Link 3
