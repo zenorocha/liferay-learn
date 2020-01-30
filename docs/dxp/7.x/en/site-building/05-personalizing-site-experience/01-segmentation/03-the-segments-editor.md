@@ -74,6 +74,12 @@ User Properties are user attributes you want to capture. This is made up of user
 
 **Name:** The full name of the user.
 
+Since Liferay Portal CE 7.3 SP2, these properties are also available for Users:
+
+**Date of Birth:** Provides a date picker and an relationship selector to select the date of birth of the User
+
+**Tag:** Enter the tags that apply to the Users. 
+
 ## Organization Properties
 
 Organization Properties is a selectable list of Organizations to include in your Segment. They contain similar criteria as the User selection, like *Name* and *Date Modified*. These Organization properties are available:
@@ -89,6 +95,14 @@ Organization Properties is a selectable list of Organizations to include in your
 **Parent Organization:** Select a specific parent organization.
 
 **Type:** Select the type of organization, if organization types have been defined.
+
+Since Liferay Portal CE 7.3 SP2, these properties are also available for Organizations:
+
+**Country:** Select a specific country that the Organization is connected to.
+
+**Region:** Select a specific region that the Organization is connected to.
+
+**Tag:** Enter the tags that apply to the Organization.
 
 ## Session Properties
 
@@ -119,3 +133,9 @@ Session Properties contains criteria based on the user's activity, browser, and 
 **URL:** Enter the current URL.
 
 **User Agent:** Enter a User Agent property.
+
+Since Liferay Portal CE 7.3 SP2, these properties are also available for Organizations:
+
+**Hostname:** Enter a virtual host name.
+
+**Request Parameters:** Enter the name and value of a request parameter.

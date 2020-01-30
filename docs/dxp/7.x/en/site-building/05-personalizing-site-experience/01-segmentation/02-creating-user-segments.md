@@ -8,7 +8,7 @@ Segments use User data like the *Job Title* field and Organization membership fo
 
 1. Click in the top text area and enter a name for your User Segment.
 
-1. Drag the *User*, *Organization*, and/or *Session* properties that you need to the Conditions box, and configure the fields to create the condition for the User Segment. See the [Defining Segmentation Criteria](./04-defining-segment-criteria.markdown) reference for an explanation of all the properties you can use. You can add properties to the default list by creating a [Custom Field](TODO) for Users or Organizations.
+1. Drag the *User*, *Organization*, and/or *Session* properties that you need to the Conditions box, and configure the fields to create the condition for the User Segment. See the [The Segments Editor](./03-the-segments-editor.md) for more information on using the editor and an explanation of all the properties you can use. You can add properties to the default list by creating a [Custom Field](TODO) for Users or Organizations.
 
   You can prevent typos by directly selecting Organizations through the interface.
 
