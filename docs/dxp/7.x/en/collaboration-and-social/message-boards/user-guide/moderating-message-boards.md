@@ -4,7 +4,7 @@ _Message Boards_ includes features that enable effective forum moderation. This 
 
 ## Locking Threads
 
-Site administrators can halt activity on a thread by selecting _Lock_ from the thread's Actions menu. Once a thread is locked, no one can reply to the thread.
+Site administrators can halt activity on a thread by selecting _Lock_ from the thread's Actions menu. Once a thread is locked, additional responses are disallowed.
 
 To lock a thread:
 

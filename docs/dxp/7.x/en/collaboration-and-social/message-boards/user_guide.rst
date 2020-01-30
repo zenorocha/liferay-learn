@@ -8,9 +8,9 @@ User Guide
    user-guide/creating-message-boards-categories.md
    user-guide/creating-message-boards-threads.md
    user-guide/moderating-message-boards.md
-   user-guide/scoping-your-message-boards.md
    user-guide/subscribing-to-a-message-board.md
    user-guide/configuring-a-message-boards-category-mailing-list.md
+   user-guide/scoping-your-message-boards.md
    user-guide/message-boards-widget-ui-reference.md
    user-guide/message-boards-configuration-reference.md
    user-guide/message-boards-permissions-reference.md

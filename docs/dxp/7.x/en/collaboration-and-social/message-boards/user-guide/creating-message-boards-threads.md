@@ -46,7 +46,7 @@ A Message Boards thread can be prioritized as _Urgent_, _Sticky_, or _Announceme
 
 1. Expand the _More Settings_ section.
 
-    ![Figure 4. Setting a thread priority](./creating-message-boards-threads/images/07.png)
+    <!-- Broken Image Link ![Figure 4. Setting a thread priority](./creating-message-boards-threads/images/07.png) -->
 
 1. Select the thread's priority.
 1. Click _Publish_.
