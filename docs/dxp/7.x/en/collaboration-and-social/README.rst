@@ -24,7 +24,7 @@ provides tools for moderation, subscriptions, and thread management.
 
 To begin using the Message Board app to build a forum, see the `Getting
 Started with Message
-Boards <./message-boards/user-guide/getting-started-with-message-boards.md>`__
+Boards <./collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md>`__
 article.
 
 Wiki
@@ -69,7 +69,7 @@ The *Invite Members* widget lets Site Administrators send invitations to
 join the Site. When Users confirm such invitations, they become Site
 members assigned to the Roles defined by the site administrator. Click
 to learn more about `Site
-Membership <../site-building/building-sites/adding-members-to-sites.md>`__.
+Membership <./site-building/building-sites/adding-members-to-sites.md>`__.
 
 .. image:: ./collaboration-and-social/readme/images/04.png
    :alt: Figure 4: Inviting members to a site.
