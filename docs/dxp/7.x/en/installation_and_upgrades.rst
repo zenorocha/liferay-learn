@@ -4,7 +4,6 @@ Installation and Upgrades
 .. toctree::
    :maxdepth: 3
 
-   getting-started/starting-with-the-dxp-docker-image.md
    installation-and-upgrades/hosting-liferay-dxp.md
 
    installation-and-upgrades/installing_liferay_dxp_on_premises.rst
