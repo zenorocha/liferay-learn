@@ -10,9 +10,9 @@ Before configuring the Message Boards app's email lists, see the [Connecting to 
 
 To add a mailing list to a Message Boards Category:
 
-1. On the _Message Boards_ widget, click the _Actions_ icon next to a Category (in this example, _Category 1_)
+1. On the _Message Boards_ widget, click the _Actions_ (![Actions](../../../images/icon-actions.png)) icon next to a Category (in this example, _Category 1_).
 
-    <!-- Screenshot -->
+    ![Editing a Category](./configuring-a-message-boards-category-mailing-list/images/02.png)
 
 1. Click _Edit_ to modify an existing category.
 1. Expand the _Mailing List_ section.
@@ -42,7 +42,7 @@ The mailing list is now active for this category. Users who have subscribed to t
    If using the `IMAP <https://support.google.com/mail/answer/7126229?hl=en>`_ protocol for a category’s mailing list, make sure to `configure the IMAP inbox to delete messages <https://support.google.com/mail/answer/78892?hl=en>`_ as they are pulled by the email client that sends messages to the users on the mailing list. Otherwise, each email message retained on the server is sent to the mailing list each time there's a new post or update in the category.
 ```
 
-<!-- ## Related Information
+## Related Information
 
-* Connecting to a Mail Server
-* Creating a Message Board Category -->
+* [Connecting to a Mail Server](../../../installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server.md)
+* [Creating Message Board Categories](./creating-message-boards-categories.md)

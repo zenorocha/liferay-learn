@@ -13,15 +13,13 @@ To subscribe to a thread or category:
 
 The user has now subscribed to _Category 1_. The user will be notified of any changes, such as new threads and subcategories being created under _Category 1_.
 
-<!-- This section needs more content. ### Managing Message Boards Subscriptions
+### Managing Your Message Boards Subscriptions
 
 To see which categories and threads you have subscribed to:
 
 1. On the _Message Boards_ widget (on a site page), click _My Subscriptions_.
 
-    Screenshot
-
--->
+![Managing your subscriptions](./subscribing-to-a-message-board/images/03.png)
 
 ## Subscribing using RSS Feeds
 
@@ -31,4 +29,4 @@ Message Boards can be published as [RSS](https://en.wikipedia.org/wiki/RSS) feed
 
 * [Message Boards Mailing Lists Overview](./message-boards-mailing-lists-overview.md)
 * [Configuring a Message Boards Category Mailing List](./configuring-a-mb-category-mailing-list.md)
-<!-- * Connecting to a Mail Server -->
+* [Connecting to a Mail Server](../../../installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server.md)

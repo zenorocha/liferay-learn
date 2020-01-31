@@ -39,7 +39,7 @@ The thread is now in the new category.
 1. Click on the thread that contains the user to be banned.
 1. Click the post’s Actions menu (![Actions](../../../images/icon-actions.png)) and select _Ban this User_.
 
-<!-- Please re-take this screenshot with even more bland content ![Banning a user](./moderating-message-boards/images/04.png) -->
+![Banning a user](./moderating-message-boards/images/04.png)
 
 The user is now banned.
 
@@ -74,7 +74,7 @@ Moderators have the option to delete the flagged reply. To delete a flagged repl
 
 1. Click _Actions_ (![Actions](../../../images/icon-actions.png))
 
-<!-- screenshot -->
+    ![Deleting a flagged reply](./moderating-message-boards/images/07.png)
 
 1. Click _Delete_
 1. Click _OK_ to confirm the deletion.
