@@ -94,3 +94,4 @@ In addition to replying to a message, you can rate it or flag it as objectionabl
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
 * See the [Configuration Reference](./message-boards-configuration-reference.md).
  To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+ 
