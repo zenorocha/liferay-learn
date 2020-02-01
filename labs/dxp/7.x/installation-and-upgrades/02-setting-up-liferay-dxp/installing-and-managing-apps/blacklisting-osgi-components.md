@@ -4,8 +4,8 @@ The Component Blacklist is a convenient way to manage multiple [OSGi Declarative
 
 The blacklist can be exported from the Control Panel to an OSGi configuration (`.config`) file. Modifying the file and deploying it to DXP has these additional effects:
 
-- Persists the changes across DXP server startups
-- Propagates the changes from a local cluster node to all the other nodes.
+* Persists the changes across DXP server startups
+* Propagates the changes from a local cluster node to all the other nodes.
 
 Blacklisting components using the UI and a config file is demonstrated. 
 
@@ -17,7 +17,7 @@ Follow these steps to disable OSGi components:
 
 1.  In the Component Blacklist screen, add the names of components to disable, and click the *Save* button. The components disable immediately.
 
-    ![Figure 2: This blacklist disables the components `com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth` and `com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet`.](./blacklisting-osgi-components/images/01.png)
+    ![This blacklist disables the components `com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth` and `com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet`.](./blacklisting-osgi-components/images/01.png)
 
 1.  To export the blacklist, click on the Component Blacklist module's Actions button (![Actions](./blacklisting-osgi-components/images/02.png)) and then click *Export*. The blacklist configuration file then downloads (`com.liferay.portal.component.blacklist.internal.ComponentBlacklistConfiguration.config`). Here are contents of the file produced from the example list:
 
@@ -27,7 +27,9 @@ Follow these steps to disable OSGi components:
 
 1.  Add the names of any components not already listed (e.g., components of modules not yet installed) that you want to prevent from enabling.
 
-    **Important**: Configuration values can't contain extra spaces. Extra spaces can short-circuit lists or invalidate the configuration entry.
+    ```important::
+       Configuration values can't contain extra spaces. Extra spaces can short-circuit lists or invalidate the configuration entry.
+    ```
 
 1.  To deploy the configuration file, copy it into the folder `[Liferay Home]/osgi/configs`. The Liferay Home folder is typically the app server's parent folder.
 
@@ -49,8 +51,8 @@ Congratulations! Now you can manage multiple components using a simple list.
 
 ## Additional Information
 
-[Blacklisting Apps](./blacklisting-apps.md)
+* [Blacklisting Apps](./blacklisting-apps.md)
 
-[Managing Apps](./managing-apps.md)
+* [Managing Apps](./managing-apps.md)
 
-[Using the Felix Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)
+* [Using the Felix Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)
