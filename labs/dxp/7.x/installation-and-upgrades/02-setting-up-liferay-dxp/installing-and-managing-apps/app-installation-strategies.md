@@ -25,9 +25,13 @@ Auto deployment copies the app (or [Configuration file](https://help.liferay.com
 - `war`: WAR files
 - `configs`: [Configuration files](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations)
 
-**Important:** Avoid repeatedly auto deploying new versions of apps that aren't designed for auto deployment.
+```important::
+   Avoid repeatedly auto deploying new versions of apps that aren't designed for auto deployment.
+```
 
-**Warning:** LPKG packages that have the `restart-required=true` property in their `liferay-marketplace.properties` file (inside the LPKG file) require restarting the server to complete installation. If you inadvertently auto deploy such an LPKG package, the installation hangs and reports a message like this: `INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:252] Processing Liferay Push 2.1.0.lpkg`
+```warning::
+   LPKG packages that have the restart-required=true property in their liferay-marketplace.properties file (inside the LPKG file) require restarting the server to complete installation. If you inadvertently auto deploy such an LPKG package, the installation hangs and reports a message like this: Processing xxx.lpkg
+```
 
 ## Installation Strategies
 
@@ -41,7 +45,7 @@ Auto deployment is a convenient way to deploy apps and is used by several instal
 
 #### Marketplace via the Control Panel
 
-The DXP Control Panel lets you browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Using the Liferay Marketplace]((../using-the-liferay-marketplace.md)) for more information.
+The DXP Control Panel accesses the Marketplace. You browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Using the Liferay Marketplace]((../using-the-liferay-marketplace.md)) for more information.
 
 #### Purchased Apps Screen
 
@@ -49,7 +53,7 @@ The Purchased page in the Control Panel at *Apps* &rarr; *Purchased* lists apps 
 
 #### Application Manager
 
-The App Manager lets you manually upload and install Marketplace apps that you've previously purchased and downloaded. See [Managing Apps](./managing-apps.md) for details.
+In DXP's App Manager, you can upload and install Marketplace apps. See [Managing Apps](./managing-apps.md) for details.
 
 #### File System
 
