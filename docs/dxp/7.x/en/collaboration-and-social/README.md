@@ -24,7 +24,7 @@ DXP includes a full-featured Wiki application that provides a rich writing envir
 
 ![Figure 2: The Wiki widget displays your wiki on a Site page.](./readme/images/02.png)
 
-To create a wiki, see the [Wiki](https://help.liferay.com/hc/articles/360028720912-Working-Together-with-the-Wiki) article.
+To begin creating a wiki, see the [Getting Started with Wikis](./wiki/user-guide/getting-started-with-wikis.md) article.
 
 ## Social Tools
 

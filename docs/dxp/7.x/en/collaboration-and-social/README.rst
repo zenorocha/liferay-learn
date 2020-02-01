@@ -42,7 +42,7 @@ features.
    :alt: Figure 2: The Wiki widget displays your wiki on a Site page.
 
 To create a wiki, see the
-`Wiki <https://help.liferay.com/hc/articles/360028720912-Working-Together-with-the-Wiki>`__
+`Wiki </collaboration-and-social/wiki/user-guide/getting-started-with-wikis.md>`__
 article.
 
 Social Tools
