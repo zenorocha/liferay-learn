@@ -4,7 +4,7 @@ Pages on Liferay DXP are primarily used to display content and applications to u
 
 ## Page Sets
 
-When adding Pages for a site, the pages are created as part of a Page Set: **Public Pages** or **Private Pages**.
+When adding Pages to a site, the pages are created as part of a [Page Set](./05-configuring-page-sets.md): **Public Pages** or **Private Pages**. Public and Private Page Sets are compared below:
 
 | Behavior | Public Pages | Private Pages |
 | --- | --- |---|
@@ -18,38 +18,38 @@ There are several page types available when you [add a page](./02-adding-a-page-
 
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
-After you've added a page, it may be difficult to track what kind of page you're currently viewing. The page type appears at the top of the page to help you determine the administration options you have and where you need to go to configure the page.
-
-![Here are three different page types as they're displayed in the heading.](./understanding-pages/images/03.png)
+```tip::
+   After you've added a page, it may be difficult to track what kind of page you're currently viewing. The page type appears at the top of the page to help you determine the administration options you have and where you need to go to configure the page.
+```
 
 ### Content Pages
 
-Content Pages enable users to build pages that can be easily managed and have their content edited in-line on the fly. Content Pages are primarily built using [Page Fragments](TODO), but also allow users to add widgets.
+Content Pages enable users to build professional pages that can be easily managed and have their content edited in-line on the fly. Content Pages are primarily built using [Page Fragments](TODO), but also allow widgets.
 
 ![Content Pages can be composed of multiple Fragments.](./understanding-pages/images/04.png)
 
-Some key features of Content Pages are listed below:
+Using Content Pages allows access to additional powerful features and benefits:
 
-<!-- To clarify: Are the below features exclusively usable only when using Content Pages? Someone cannot do a/b testing or personalize experiences for users (however we define that) w/ a widget page?-->
-<!--Yes, that is correct-->
+* [Personalized and Adaptive Site Experiences](../05-personalizing-site-experience/README.md)
+* [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
+* Approachable Content and Site Building Experience
 
-* [Personalized Experiences](../../05-personalizing-site-experience/02-experience-personalization/01-personalization-intro.md)
-* [A/B Testing](TODO)
-* Simplified User
-* More powerful for non-technical users compared to Widget Pages
+To learn more about Content Pages see the [Content Page Overview](./03-content-page-overview.md). To jump right into building one see [Building Content Pages](./04-building-content-pages.md).
 
 ### Widget Pages
 
-A Widget Page is a page with a [set layout](link-to-something-about-layout-templates) that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, you get a Widget Page by default as your home page. See [Adding Widgets to a Page](./adding-widgets-to-a-page.md) for more information.
+A Widget Page is a page with a [set layout](link-to-something-about-layout-templates) that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](./adding-widgets-to-a-page.md) for more information.
 
 ![Widget Pages can provide a number of functions, such as a dedicated Wiki Page solution.](./understanding-pages/images/05.png)
 
 ### Content Pages and Widget Pages Compared
 
-<!-- Example table -->
 | Feature |  Content Pages | Widget Pages |
 | --- | --- |---|
 | Ability to Add Widgets | &#10004; | &#10004; |
+| Personalized Site Experiences | &#10004; |  |
+| Access to A/B Testing | &#10004; |  |
+| Easy Layout and Content Editing | &#10004; |  |
 | Advanced Custom Layouts |  | &#10004; |
 | User-Customizable Columns |  | &#10004; |
 | Staging Page Variations |  | &#10004; |
@@ -64,7 +64,7 @@ When adding a page, you also have the option to choose a Page Template. Page Tem
 
 | Global Page Template | Description |
 | --- | --- |
-| Blog | Creates a Blogs Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget. |
+| Blog | Creates a Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget. |
 | Search | Creates a Widget Page with a Search Bar widget, a Search Results widget, and a Search Options widget. |
 | Wiki | Creates a Widget Page with a Wiki widget, a Categories Navigation widget, and a Tags Navigation widget. |
 
@@ -81,6 +81,6 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 ## Next Steps
 
-* [Adding a Page](./adding-a-page-to-a-site.md)
-* [Configuring Individual Pages](./configuring-individual-pages.md)
+* [Adding a Page](./02-adding-a-page-to-a-site.md)
+* [Configuring Individual Pages](./06-configuring-individual-pages.md)
 * [Personalizing Pages](./personalizing-pages.md)
