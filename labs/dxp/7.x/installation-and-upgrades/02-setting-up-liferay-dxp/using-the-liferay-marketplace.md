@@ -2,7 +2,7 @@
 
 Liferay Marketplace is a hub for sharing, browsing, and downloading apps. Marketplace leverages the entire Liferay ecosystem to release and share apps in a user-friendly, one-stop shop.
 
-![Figure 1: The Liferay Marketplace home page lets you browse and search for apps.](./using-the-liferay-marketplace/images/01.png)
+![The Liferay Marketplace home page highlights new apps, lists apps by categories, and has search.](./using-the-liferay-marketplace/images/01.png)
 
 The easiest way to use the Marketplace is from the Control Panel.
 
@@ -42,55 +42,55 @@ The Marketplace appears. It's time to check out some apps.
 
 Marketplace provides a familiar app store experience. Apps are in the center of the page, in the following sections:
 
-- *Featured Apps:* Liferay features a different set of apps each month.
+* *Featured Apps:* Liferay features a different set of apps each month.
 
-- *New and Interesting:* The latest apps added to Marketplace.
+* *New and Interesting:* The latest apps added to Marketplace.
 
-- *Most Viewed in the Past Month:* The top 5 most viewed apps in the last month.
+* *Most Viewed in the Past Month:* The top 5 most viewed apps in the last month.
 
-- *Liferay Subscription Apps:* Apps available to enterprise subscribers only.
+* *Liferay Subscription Apps:* Apps available to enterprise subscribers only.
 
-- *Templates and Themes:* Apps for organizing site content and changing your site's look and feel.
+* *Templates and Themes:* Apps for organizing site content and changing your site's look and feel.
 
-- And app categories: *Communication*, *Productivity*, *Security*, and more.
+* And app categories: *Communication*, *Productivity*, *Security*, and more.
 
 Each section's *See All* link lists all the apps for that section.
 
-![Figure 2: Each app category page, such as the Communication app page, lists the apps published to that category.](./using-the-liferay-marketplace/images/02.png)
+![Each app category page, such as the Communication app page, lists the apps published to that category.](./using-the-liferay-marketplace/images/02.png)
 
 At the top of the page, you can search Marketplace in these ways:
 
-- Keywords
-- Category
-- Liferay (DXP) version
-- Price (free or paid)
+* Keywords
+* Category
+* Liferay (DXP) version
+* Price (free or paid)
 
 At the bottom of the page, *Weekly Stats* lists the newest apps and latest updated apps, and shows a trend chart for app downloads and views.
 
-![Figure 3: Weekly stats shows lists new apps, app updates, and Marketplace activity trends.](./using-the-liferay-marketplace/images/03.png)
+![Weekly stats shows lists new apps, app updates, and Marketplace activity trends.](./using-the-liferay-marketplace/images/03.png)
 
 ## App Details
 
 Click an app to view these app details:
 
-- Description
-- Screenshots
-- Purchase button (labeled Free or Buy, depending on the price)
-- Latest version
-- Number of downloads
-- Developer website link
-- Documentation website link
-- Support website link
-- License agreement link
-- Current requirements
-- Past DXP versions the app works with
-- Latest changes list
-- Reviews 
-- Version history 
-- Access control 
-- Installation instructions
+* Description
+* Screenshots
+* Purchase button (labeled Free or Buy, depending on the price)
+* Latest version
+* Number of downloads
+* Developer website link
+* Documentation website link
+* Support website link
+* License agreement link
+* Current requirements
+* Past DXP versions the app works with
+* Latest changes list
+* Reviews 
+* Version history 
+* Access control 
+* Installation instructions
 
-![Figure 4: Click an app to see screenshots and app details.](./using-the-liferay-marketplace/images/04.png)
+![Click an app to see screenshots and app details.](./using-the-liferay-marketplace/images/04.png)
 
 ## Purchasing an App
 
