@@ -13,13 +13,11 @@ To subscribe to a thread or category:
 
 The user has now subscribed to _Category 1_. The user will be notified of any changes, such as new threads and subcategories being created under _Category 1_.
 
-### Managing Your Message Boards Subscriptions
-
 To see which categories and threads you have subscribed to:
 
 1. On the _Message Boards_ widget (on a site page), click _My Subscriptions_.
 
-![Managing your subscriptions](./subscribing-to-a-message-board/images/03.png)
+    ![Managing your subscriptions](./subscribing-to-a-message-board/images/03.png)
 
 ## Subscribing using RSS Feeds
 

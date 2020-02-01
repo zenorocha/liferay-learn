@@ -90,8 +90,9 @@ In addition to replying to a message, you can rate it or flag it as objectionabl
 
 ## Additional Information
 
-* [Creating Message Boards Categories](./creating-message-boards-categories.md).
+* [Creating Message Boards Categories](./creating-message-boards-categories.md)
+
+<!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
-* See the [Configuration Reference](./message-boards-configuration-reference.md).
- To learn more about the generic Roles and Permissions, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
- 
+-->
+* [Message Boards Configuration Reference](./message-boards-configuration-reference.md)
