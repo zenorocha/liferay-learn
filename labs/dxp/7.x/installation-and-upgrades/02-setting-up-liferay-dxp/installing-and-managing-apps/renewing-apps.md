@@ -8,7 +8,7 @@ Here are the steps:
 
 1. Click your profile picture in the upper right corner and select *Purchased Apps*. The Purchased Apps page appears and shows icons of your purchased apps organized by project.
 
-    ![Figure 1: You can manage your purchased apps from the Marketplace and your liferay.com account home page.](./renewing-apps/images/01.png)
+    ![You can manage your purchased apps from the Marketplace and your liferay.com account home page.](./renewing-apps/images/01.png)
 
 1. Click your app's icon. The app's details appear.
 
