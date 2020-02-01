@@ -3,7 +3,7 @@
 DXP provides a robust script engine for executing [Groovy](http://groovy-lang.org/) scripts to maintain your Liferay DXP instance. The 
 Script Console is available in the Control Panel. You can execute scripts to perform maintenance tasks involving data cleanup, user maintenance operations, bulk Liferay API invocations, or even system level operations.
 
-![Figure 1: The Script Console provides context variables, such as the current actionRequest and lets you invoke Liferay services using Groovy. ](./using-the-script-engine/images/groovy-script-current-user-info.png)
+![The Script Console executes Groovy scripts and provides context variables, such as the current actionRequest. The Script Console was designed for invoking Liferay Services.](./using-the-script-engine/images/01.png)
 
 Here are the scripting topics: 
 

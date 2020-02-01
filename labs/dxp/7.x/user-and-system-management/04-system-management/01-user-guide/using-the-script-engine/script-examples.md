@@ -66,7 +66,7 @@ out.println(
         """);
 ```
 
-![Figure 1: This script styles its output using HTML.](./script-examples/images/groovy-script-embed-html-markup.png)
+![This script styles its output using HTML.](./script-examples/images/01.png)
 
 ## Example 3: Showing Exceptions in the Script Console
 
@@ -88,7 +88,7 @@ try {
 }
 ```
 
-![Figure 2: Here's an example of a Groovy script that catches exceptions and prints exception information to the Script Console.](./script-examples/images/groovy-script-show-exception.png)
+![Here's an example of a Groovy script that catches exceptions and prints exception information to the Script Console.](./script-examples/images/02.png)
 
 ## Example 4: Logging Output to a Files
 

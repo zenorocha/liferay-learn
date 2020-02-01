@@ -1,8 +1,8 @@
 # Running Scripts From the Script Console
 
-The Script Console provides a single view for executing Groovy scripts and printing their output. It has predefined variables that facilitate with portlets and users. Here you'll learn these things:
+The Script Console provides a single view for executing Groovy scripts and printing their output. It has predefined variables that facilitate with portlets and users. The following topics get you started with the Script Console:
 
-- [How to run a script in the Script Console](#running-a-sample-script-in-the-script-console) 
+- [Running a Sample Script in the Script Console](#running-a-sample-script-in-the-script-console) 
 
 - [Predefined variables available in the Script Console](#predefined-variables)
 
@@ -34,7 +34,7 @@ Here's how to run the sample script in the Script Console:
 
 4.  Click *Execute* and check the Script Console *Output* for the User count.
 
-![Figure 1: The Script Console's sample Groovy script prints the User count to Script Console output.](./running-scripts-from-the-script-console/images/groovy-script-sample.png)
+![The Script Console's sample Groovy script prints the User count to Script Console output.](./running-scripts-from-the-script-console/images/01.png)
 
 The Groovy sample invokes the Liferay service utility [`UserLocalServiceUtil`](https://docs.liferay.com/dxp/portal/7.2-latest/javadocs/portal-kernel/com/liferay/portal/kernel/service/UserLocalServiceUtil.html) to get the user count. Then it uses `out` (a built-in `PrintWriter`) to write the count to the Script Console.
 
@@ -72,7 +72,7 @@ userInfo.each {
 }
 ```
 
-![Figure 2: Here's an example of invoking a Groovy script that uses the predefined out, actionRequest, and userInfo variables to print information about the Company and User.](./running-scripts-from-the-script-console/images/groovy-script-current-user-info.png)
+![Here's an example of invoking a Groovy script that uses the predefined out, actionRequest, and userInfo variables to print information about the Company and User.](./running-scripts-from-the-script-console/images/02.png)
 
 ## Tips
 
