@@ -118,9 +118,9 @@ function main {
 	# sudo dnf install python3-sphinx
 	#
 
-	python -m venv C:/projects/liferay-learn/site/venv
+	python3 -m venv venv
 
-	source C:/projects/liferay-learn/site/venv/scripts/activate
+	source venv/bin/activate
 
 	check_utils pip3 sphinx-build zip
 
