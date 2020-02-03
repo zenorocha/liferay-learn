@@ -25,6 +25,5 @@ Message Boards can be published as [RSS](https://en.wikipedia.org/wiki/RSS) feed
 
 ## Additional Information
 
-* [Message Boards Mailing Lists Overview](./message-boards-mailing-lists-overview.md)
-* [Configuring a Message Boards Category Mailing List](./configuring-a-mb-category-mailing-list.md)
+* [Configuring a Message Boards Category Mailing List](./configuring-a-message-boards-category-mailing-list.md)
 * [Connecting to a Mail Server](../../../installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server.md)

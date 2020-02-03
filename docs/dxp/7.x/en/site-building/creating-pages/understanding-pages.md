@@ -87,4 +87,4 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 * [Adding a Page](./adding-a-page-to-a-site.md)
 * [Configuring Individual Pages](./06-configuring-individual-pages.md)
-* [Personalizing Pages](./personalizing-pages.md)
+* [Personalizing Pages](./09-personalizing-pages.md)

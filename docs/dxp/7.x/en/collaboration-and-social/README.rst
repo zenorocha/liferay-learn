@@ -19,8 +19,7 @@ The Message Boards app is a platform for content-rich discussions and
 provides tools for moderation, subscriptions, and thread management.
 
 .. image:: ./collaboration-and-social/readme/images/01.png
-   :alt: Figure 1: The Message Boards app is fantastic for facilitating
-   discussions.
+   :alt: Figure 1: The Message Boards app is fantastic for facilitating discussions.
 
 To begin using the Message Board app to build a forum, see the `Getting
 Started with Message
@@ -90,5 +89,4 @@ engine <https://help.liferay.com/hc/articles/360028721732-Introduction-to-Workfl
 so content editors can review and approve articles before publication.
 
 .. image:: ./collaboration-and-social/readme/images/06.png
-   :alt: Figure 6: The Knowledge Base widget can also be used to publish
-   articles.
+   :alt: Figure 6: The Knowledge Base widget can also be used to publish articles.
