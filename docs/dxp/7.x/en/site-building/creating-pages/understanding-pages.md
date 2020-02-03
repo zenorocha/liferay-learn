@@ -14,7 +14,7 @@ When adding Pages to a site, the pages are created as part of a Site's [Page Set
 
 ## Page Types
 
-There are several page types available when you [add a page](./02-adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
+There are several page types available when you [add a page](./adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
 
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
@@ -34,7 +34,7 @@ Using Content Pages allows access to additional powerful features and benefits:
 * [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
 * Approachable Content and Site Building Experience
 
-To learn more about Content Pages see the [Content Page Overview](./03-content-page-overview.md). To jump right into building one, see [Building Content Pages](./04-building-content-pages.md).
+To learn more about Content Pages see the [Content Page Overview](./content-pages-overview.md). To jump right into building one, see [Building Content Pages](./04-building-content-pages.md).
 
 ### Widget Pages
 
@@ -85,6 +85,6 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 ## Next Steps
 
-* [Adding a Page](./02-adding-a-page-to-a-site.md)
+* [Adding a Page](./adding-a-page-to-a-site.md)
 * [Configuring Individual Pages](./06-configuring-individual-pages.md)
 * [Personalizing Pages](./personalizing-pages.md)

@@ -2,10 +2,10 @@
 
 Page Templates let you create pages based on predefined layouts and content. There are two types of Page Templates you can create:
 
-* [Widget Page](./01-understanding-pages.md#widget-pages) Template
+* [Widget Page](./understanding-pages.md#widget-pages) Template
 * [Content Page](./04-building-content-pages.md) Template
 
-By default, the [Search](./02-adding-a-page-to-a-site.md#search), [Wiki](./02-adding-a-page-to-a-site.md#wiki), and [Blog](./02-adding-a-page-to-a-site.md#blog) global Widget Page Templates are available.
+By default, the [Search](./adding-a-page-to-a-site.md#search), [Wiki](./adding-a-page-to-a-site.md#wiki), and [Blog](./adding-a-page-to-a-site.md#blog) global Widget Page Templates are available.
 
 ![The Blog Page Template is already available for use along with the Search and Wiki Page Templates.](./creating-a-page-template/images/01.png)
 
@@ -23,7 +23,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
 1. Click *Save*.
 
-1. You're automatically transported to the new Page Template. Follow the instructions in [Widget Pages](./01-understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](./04-building-content-pages.md) to configure your Content Page Template.
+1. You're automatically transported to the new Page Template. Follow the instructions in [Widget Pages](./understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](./04-building-content-pages.md) to configure your Content Page Template.
 
 ```note::
   After a Page Template has been created, by default only the creator of the Page Template can use it. To give other users access to it, select *Permissions* from the Page Template's Actions menu and check the *View* permission for the Roles that you want to view the Page Template. If you want any user who can create a page to be able to use the Page Template, check the *View* permission for the *User* Role.

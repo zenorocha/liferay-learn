@@ -1,6 +1,6 @@
 # Building Content Pages
 
-Several Fragments are available by default that you can use to build your Content Page. You can also [develop your own Page Fragments](TODO). Once you've [added a Content Page](./02-adding-a-page-to-a-site.md) and have the [Content Page elements](./03-content-page-overview.md) you need (Sections, Components, Widgets, etc.), follow these steps to build your Content Page:
+Several Fragments are available by default that you can use to build your Content Page. You can also [develop your own Page Fragments](TODO). Once you've [added a Content Page](./adding-a-page-to-a-site.md) and have the [Content Page elements](./content-pages-overview.md) you need (Sections, Components, Widgets, etc.), follow these steps to build your Content Page:
 
 1. If you're not already on your Content Page, open the Product Menu and go to *Site Builder* &rarr; *Pages* under your Site's Menu. Content Pages can't be edited live; they must be edited through the *Site Builder*.
 
@@ -8,7 +8,7 @@ Several Fragments are available by default that you can use to build your Conten
 
   ![A Content Page is blank to begin with. You must add Fragments to it to build it.](./building-content-pages/images/01.png)
 
-1. Add a combination of these Page Fragment UI pieces to build the foundation for the Content Page. See [Content Page Elements](./03-content-page-overview.md) for an explanation of these elements. Click the UI element below that you want to add and follow the instructions in the section:
+1. Add a combination of these Page Fragment UI pieces to build the foundation for the Content Page. See [Content Page Elements](./content-pages-overview.md) for an explanation of these elements. Click the UI element below that you want to add and follow the instructions in the section:
 
   * [Component](#add-a-component)
   * [Layout](#add-a-layout)

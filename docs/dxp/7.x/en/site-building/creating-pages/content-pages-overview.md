@@ -2,7 +2,7 @@
 
 The default type of page used in Liferay DXP is a Content Page. The Content Page editing UI provides access to many different drag-and-drop elements (Fragments) that are available for immediate use with minimal configuration. Continue reading to get an overview of the Content Pages UI. See [Building Content Pages](./04-building-content-pages.md) to jump directly in to building a Content Page.
 
-![Using the Content Page sidebar to add elements to the page.](./content-page-overview/images/14.png)
+![Using the Content Page sidebar to add elements to the page.](./content-pages-overview/images/14.png)
 
 The Content Page sidebar contains these elements and tools for Content Pages:
 
@@ -27,19 +27,19 @@ You can drag-and-drop Fragments on a page. Fragments can have editable elements,
 
 Layouts provide a canvas where you can add Fragments or Widgets. Each Layout you add fills the width of the page. Multiple layouts can be added to a page.
 
-![The Layouts section contains layouts for organizing Fragments.](content-page-overview/images/16.png)
+![The Layouts section contains layouts for organizing Fragments.](content-pages-overview/images/16.png)
 
 ### Basic Components
 
 Basic Components are small design elements or pieces that add functionality to the page. A Component might be an image with formatting or a block of text with styling pre-applied. Components work together to build pages piece by piece.
 
-![Here are several out of the box components arranged in a Layout.](./content-page-overview/images/05.png)
+![Here are several out of the box components arranged in a Layout.](./content-pages-overview/images/05.png)
 
 ### Featured Content
 
 The Featured Content panel contains complete Fragments (composed of multiple components) that can be immediately used and customized as soon as they are added to a page. A large banner image with a text overlay and customizable CTA (Call to Action) is an example of a Fragment that is ready for immediate use.
 <!-- An image with better text contrast would probably be a better example here - to help the image / text / CTA button stand out from one another more. -->
-![A Section named Banner being displayed while editing a Content Page.](./content-page-overview/images/01.png)
+![A Section named Banner being displayed while editing a Content Page.](./content-pages-overview/images/01.png)
 
 ### Footers
 
@@ -77,7 +77,7 @@ Rather than spend valuable real estate here comparing to how its different from 
 
 The Widgets section functions just like the *Add* menu on a Widget Page. The full list of available widgets is displayed, and you can add them to the page. The main difference is that only the main configuration options for Widgets on Content Pages. Various other configurations like *Look and Feel* are only available for Widgets on Widget Pages.
 
-![The Widgets section provides a list of Widgets that can be added inside of a Layout.](./content-page-overview/images/06.png)
+![The Widgets section provides a list of Widgets that can be added inside of a Layout.](./content-pages-overview/images/06.png)
 
 ## Contents
 
@@ -91,7 +91,7 @@ The Contents section provides a list of the web content that's used on the page.
 
 Page Structure provides a hierarchical view of every Fragment and field within each Fragment on the page. Click on a field in the page structure to highlight it on the page and quickly locate it amongst other elements.
 
-![Page Structure shows you a hierarchy of your page.](./content-page-overview/images/08.png)
+![Page Structure shows you a hierarchy of your page.](./content-pages-overview/images/08.png)
 
 ## Look and Feel
 
