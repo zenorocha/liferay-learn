@@ -4,7 +4,7 @@ Pages on Liferay DXP are primarily used to display content and applications to u
 
 ## Page Sets
 
-When adding Pages to a site, the pages are created as part of a [Page Set](./05-configuring-page-sets.md): **Public Pages** or **Private Pages**. Public and Private Page Sets are compared below:
+When adding Pages to a site, the pages are created as part of a Site's [Page Set](./05-configuring-page-sets.md): **Public Pages** or **Private Pages**. Public and Private Page Sets are compared below:
 
 | Behavior | Public Pages | Private Pages |
 | --- | --- |---|
@@ -14,12 +14,12 @@ When adding Pages to a site, the pages are created as part of a [Page Set](./05-
 
 ## Page Types
 
-There are several page types available when you [add a page](./02-adding-a-page-to-a-site.md). The two most commonly used types are **Content Pages** and **Widget Pages**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). The available page types and Page Templates are described here.
+There are several page types available when you [add a page](./02-adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
 
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
 ```tip::
-   After you've added a page, it may be difficult to track what kind of page you're currently viewing. The page type appears at the top of the page to help you determine the administration options you have and where you need to go to configure the page.
+   The Page Type of the currently viewed page appears at the top of the page to help you determine the administration options you have and where you need to go to configure the page.
 ```
 
 ### Content Pages
@@ -34,7 +34,7 @@ Using Content Pages allows access to additional powerful features and benefits:
 * [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
 * Approachable Content and Site Building Experience
 
-To learn more about Content Pages see the [Content Page Overview](./03-content-page-overview.md). To jump right into building one see [Building Content Pages](./04-building-content-pages.md).
+To learn more about Content Pages see the [Content Page Overview](./03-content-page-overview.md). To jump right into building one, see [Building Content Pages](./04-building-content-pages.md).
 
 ### Widget Pages
 
@@ -43,6 +43,8 @@ A Widget Page is a page with a [set layout](link-to-something-about-layout-templ
 ![Widget Pages can provide a number of functions, such as a dedicated Wiki Page solution.](./understanding-pages/images/05.png)
 
 ### Content Pages and Widget Pages Compared
+
+This table compares some of the distinctions between a Content Page and a Widget Page:
 
 | Feature |  Content Pages | Widget Pages |
 | --- | --- |---|
@@ -56,7 +58,7 @@ A Widget Page is a page with a [set layout](link-to-something-about-layout-templ
 
 ### Other Page Types
 
-There are several other page types that are available in DXP - each can help to satisfy particular use cases. See [Other Page Types](./other-page-types.md) for more information.
+There are several other page types that are available - each can help to satisfy particular use cases. See [Other Page Types](./other-page-types.md) for more information.
 
 ## Global Page Templates
 
