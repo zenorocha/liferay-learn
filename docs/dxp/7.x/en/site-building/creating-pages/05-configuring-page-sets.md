@@ -1,6 +1,8 @@
 # Configuring Page Sets
 
-Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./06-configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
+Coming soon!
+
+<!-- Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./06-configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
 
@@ -74,4 +76,4 @@ The *Robots* option lets you configure `robots.txt` rules for the domain's publi
 
 ### Sitemap
 
-The *Sitemap* option generates a sitemap you can send to some search engines so they can crawl your site. It uses the industry standard sitemap protocol. Select a search engine link to send the sitemap to it (only required once per Site), or select the *preview* link to see the generated XML that is sent to search engines.
+The *Sitemap* option generates a sitemap you can send to some search engines so they can crawl your site. It uses the industry standard sitemap protocol. Select a search engine link to send the sitemap to it (only required once per Site), or select the *preview* link to see the generated XML that is sent to search engines. -->

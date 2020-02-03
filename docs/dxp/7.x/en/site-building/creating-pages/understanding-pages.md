@@ -24,7 +24,7 @@ There are several page types available when you [add a page](./adding-a-page-to-
 
 ### Content Pages
 
-Content Pages enable users to build professional pages that can be easily managed and have their content edited in-line on the fly. Content Pages are primarily built using [Page Fragments](./README.md#using-fragments), but also allow widgets.
+Content Pages enable users to build professional pages that can be easily managed and have their content edited in-line on the fly. Content Pages are primarily built using [Page Fragments](../README.md#using-fragments), but also allow widgets.
 
 ![Content Pages can be composed of multiple Fragments.](./understanding-pages/images/04.png)
 

@@ -1,6 +1,8 @@
 # Enabling and Using Fragment Comments
 
-Comments are a useful tool for collaborating on Fragments. They're included out-of-the-box in Liferay Portal CE 7.3, but they are disabled in Liferay Portal CE 7.2.
+Coming soon!
+
+<!-- Comments are a useful tool for collaborating on Fragments. They're included out-of-the-box in Liferay Portal CE 7.3, but they are disabled in Liferay Portal CE 7.2.
 
 ## Disabling and Enabling Fragment Comments
 
@@ -24,4 +26,4 @@ If comments are enabled, you can access them via the *Comments* icon (![Comments
 
 If you de-select a Fragment or enter the comments UI without a Fragment selected, a list of the Fragments on the page appears with the number of comments for each. Selecting a Fragment then shows its comments.
 
-![When creating content pages, you and your team can comment on any fragments.](./using-fragment-comments/images/10.png)
+![When creating content pages, you and your team can comment on any fragments.](./using-fragment-comments/images/10.png) -->

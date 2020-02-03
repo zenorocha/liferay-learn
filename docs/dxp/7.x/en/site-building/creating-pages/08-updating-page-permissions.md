@@ -1,6 +1,8 @@
 # Updating Page Permissions
 
-Public Pages can be viewed by anyone, and private pages are only private from non-members of the Site. If someone has joined your site or is a member of your Organization, that person can see all the private pages. You can override this default behavior by modifying the permissions of an individual page so only certain users can view them. Follow these steps to update the permissions for a page:
+Coming soon!
+
+<!-- Public Pages can be viewed by anyone, and private pages are only private from non-members of the Site. If someone has joined your site or is a member of your Organization, that person can see all the private pages. You can override this default behavior by modifying the permissions of an individual page so only certain users can view them. Follow these steps to update the permissions for a page:
 
 1. Open the Product Menu and select *Site Builder* &rarr; *Pages* under your site's menu.
 
@@ -12,4 +14,4 @@ Public Pages can be viewed by anyone, and private pages are only private from no
 
 1. Click *Save* to apply the changes.
 
-![The Permissions offer a plethora of options for each role.](./updating-page-permissions/images/01.png)
+![The Permissions offer a plethora of options for each role.](./updating-page-permissions/images/01.png) -->

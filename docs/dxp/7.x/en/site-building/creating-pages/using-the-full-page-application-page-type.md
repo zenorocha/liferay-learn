@@ -1,11 +1,13 @@
 # Using the Full Page Application Page Type
 
-Follow these steps to create and configure a Full Page Application Page:
+Coming soon!
+
+<!-- Follow these steps to create and configure a Full Page Application Page:
 
 1. [Create a new Page](./adding-a-page-to-a-site.md) and select *Full Page Application* under the *Other* heading.
 1. Enter a name and click *Add*.
-1. Select the application you want to display from the list of applications under the *Full Page Application* heading. By default, you can set the Blogs, Wiki, Media Gallery, Message Boards, RSS, Documents and Media, Form, or Application Authorization Request to be the sole application for the page. Developers can make their applications Full Page Applications. <!--TODO: Link to a write doc on making your app a full page app-->
-
+1. Select the application you want to display from the list of applications under the *Full Page Application* heading. By default, you can set the Blogs, Wiki, Media Gallery, Message Boards, RSS, Documents and Media, Form, or Application Authorization Request to be the sole application for the page. Developers can make their applications Full Page Applications. TODO: Link to a write doc on making your app a full page app -->
+<!-- 
     ![A Full Page Application Page supports many applications.](./using-the-full-page-application-page/images/01.png)
 
 1. Click *Save* to apply the changes.
@@ -20,4 +22,4 @@ All applications supported by the Full Page Application page type are non-instan
 
 1. Open the *Scope* menu and select Wiki page you want.
 
-![Configuring the scope.](./using-the-full-page-application-page/images/02.png)
+![Configuring the scope.](./using-the-full-page-application-page/images/02.png) -->

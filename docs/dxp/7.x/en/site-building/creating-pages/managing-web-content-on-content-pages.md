@@ -1,5 +1,8 @@
 # Managing Web Content on Content Pages
 
+Coming soon!
+
+<!-- 
 ```note::
    Available in Liferay DXP 7.3+
 ```
@@ -22,4 +25,4 @@ From the [Contents panel](./content-pages-overview.md#contents) on a Content Pag
 
 ```note::
   To edit inline content, you must have the "Edit Inline Content" permission assigned to your Role. However, if you don't have permission to edit the page, you can still edit content (web content, blog, etc.) that you have permission to edit that's displayed through one of these methods: mapped content, web content display, or an Asset Publisher (with manual selection).
-```
+``` -->

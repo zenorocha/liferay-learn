@@ -1,6 +1,8 @@
 # Personalizing Sections of Widget Pages
 
-Administrators can designate some or all of the sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations are only visible to the user who made the customizations. The steps below cover these topics:
+Coming soon!
+
+<!-- Administrators can designate some or all of the sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations are only visible to the user who made the customizations. The steps below cover these topics:
 
 * [Making page sections customizable](#enabling-page-customizations)
 * [Modifying customizable page sections](#customizing-pages)
@@ -61,4 +63,4 @@ By default, site members can make page customizations but non-site members and g
 
 ```note::
   The *Customize* permission also lets users customize the look and feel of apps and import or export app settings.
-```
+``` -->

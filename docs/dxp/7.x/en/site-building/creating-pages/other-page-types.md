@@ -1,6 +1,8 @@
 # Other Page Types
 
-[Content Pages](./content-pages-overview.md) are the most commonly used page type, but other page types are available that you may find beneficial for certain use cases.
+Coming soon!
+
+<!-- [Content Pages](./content-pages-overview.md) are the most commonly used page type, but other page types are available that you may find beneficial for certain use cases.
 
 ## Full Page Application
 
@@ -30,4 +32,4 @@ The *Embedded* option displays content from another website inside your instance
 
 ### Link to URL
 
-The *Link to URL* option adds a link to the provided URL. This can be an external page or a link across Sites in the same Liferay Portal instance.
+The *Link to URL* option adds a link to the provided URL. This can be an external page or a link across Sites in the same Liferay Portal instance. -->

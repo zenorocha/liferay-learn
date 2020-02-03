@@ -1,6 +1,8 @@
 # Creating a Page Template
 
-Page Templates let you create pages based on predefined layouts and content. There are two types of Page Templates you can create:
+Coming soon!
+
+<!-- Page Templates let you create pages based on predefined layouts and content. There are two types of Page Templates you can create:
 
 * [Widget Page](./understanding-pages.md#widget-pages) Template
 * [Content Page](./04-building-content-pages.md) Template
@@ -41,4 +43,4 @@ When creating a page from a Widget Page Template, changes are inherited from the
 
 ```note::
   You can share your Page Templates with other sites using the same process as you would for pages. Follow the instructions in [Importing and Exporting Pages and Content](../01-building-sites/09-importing-exporting-pages-and-content.md) to learn how.
-```
+``` -->

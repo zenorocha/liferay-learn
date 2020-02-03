@@ -1,6 +1,8 @@
 # Building Content Pages
 
-Several Fragments are available by default that you can use to build your Content Page. You can also [develop your own Page Fragments](TODO). Once you've [added a Content Page](./adding-a-page-to-a-site.md) and have the [Content Page elements](./content-pages-overview.md) you need (Sections, Components, Widgets, etc.), follow these steps to build your Content Page:
+Coming soon!
+
+<!-- Several Fragments are available by default that you can use to build your Content Page. You can also [develop your own Page Fragments](TODO). Once you've [added a Content Page](./adding-a-page-to-a-site.md) and have the [Content Page elements](./content-pages-overview.md) you need (Sections, Components, Widgets, etc.), follow these steps to build your Content Page:
 
 1. If you're not already on your Content Page, open the Product Menu and go to *Site Builder* &rarr; *Pages* under your Site's Menu. Content Pages can't be edited live; they must be edited through the *Site Builder*.
 
@@ -146,4 +148,4 @@ You can also map these elements to content. You can set the *Content* for the el
   Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map [custom fields](TODO). To ensure you leverage the latest editable element mapping features, upgrade to these versions.
 ```
 
-When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../11-experience-personalization/02-content-page-personalization.md).
+When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../11-experience-personalization/02-content-page-personalization.md). -->

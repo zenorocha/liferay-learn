@@ -1,6 +1,8 @@
 # Configuring Individual Pages
 
-After you've configured your Page Set, you can reconfigure some options at the individual page level, including options that weren't available when you initially created the page. Options selected here only affect the page you've selected; they don't affect other pages of the site. Many of these options are the same as those that configure the complete Page Set; See [Configuring Page Sets](./05-configuring-page-sets.md) for more information on those.
+Coming soon!
+
+<!-- After you've configured your Page Set, you can reconfigure some options at the individual page level, including options that weren't available when you initially created the page. Options selected here only affect the page you've selected; they don't affect other pages of the site. Many of these options are the same as those that configure the complete Page Set; See [Configuring Page Sets](./05-configuring-page-sets.md) for more information on those.
 
 To configure an individual page, follow these steps:
 
@@ -134,4 +136,4 @@ Apply rules for how this page should render for various mobile devices here. See
 
 ### Customization Settings
 
-This configuration option is only available for Widget Pages. It lets you make portions of the page customizable for site members. You can learn more about page customizations in [Personalizing Pages](./09-personalizing-pages.md).
+This configuration option is only available for Widget Pages. It lets you make portions of the page customizable for site members. You can learn more about page customizations in [Personalizing Pages](./09-personalizing-pages.md). -->
