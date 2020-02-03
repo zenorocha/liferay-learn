@@ -1,49 +1,3 @@
-<!-- Recommended restructuring of this article:
-# Content Pages Overview
-
-The default type of page used in Liferay DXP is a Content Page. The Content Pages Editing UI provides access to many different drag-and-drop elements that are available for use immediately with minimal configuration.
-
-![Using the Content Page sidebar to add elements to the page.](content-page-overview/images/14.png)
-
-The Content Page sidebar gives access to the following elements and tools:
-
-* Fragments
-* Widgets
-* Contents
-* Page Structure
-* Look and Feel
-* Comments
-
-## Fragments
-
-Fragments can be easily drag-and-dropped to a page. Most fragments can be easily customized by editing them or mapping them to content that you have already created or uploaded to your Liferay DXP instance. See [Editing and Mapping Content to Fragments]() to learn more. Continue reading to learn more about the types of fragments available in Liferay DXP.
-
-### Layouts
-
-### Basic Components
-
-### Featured Content
-
-### Footers
-
-### Navigation Bars
-
-## Widgets
-
-Widgets are x. Click [Using Widgets on a Content Page](), to learn more.
-
-## Contents
-
-## Page Structure
-
-## Look and Feel
-
-## Comments
-
-Comments are x and enable y. See [Enabling and Using Comments for Fragments]() to learn more.
-
--->
-
 # Content Pages Overview
 
 The default type of page used in Liferay DXP is a Content Page. The Content Page editing UI provides access to many different drag-and-drop elements (Fragments) that are available for immediate use with minimal configuration. Continue reading to get an overview of the Content Pages UI. See [Building Content Pages](./04-building-content-pages.md) to jump directly in to building a Content Page.
@@ -145,7 +99,7 @@ Click the *Look and Feel* icon (![Look and Feel](../../images/icon-look-and-feel
 
 ## Comments
 
-You can comment on a Page Fragment to discuss changes and collaborate. Comments are disabled by default in Liferay DXP 7.2, but Administrators can enable them. See [Using Fragment Comments](./using-fragment-comments.md) for more information.
+You can comment on a Page Fragment to discuss changes and collaborate. Comments are disabled by default in Liferay DXP 7.2+, but Administrators can enable them. See [Using Fragment Comments](./using-fragment-comments.md) for more information.
 
 ## Next Steps
 
