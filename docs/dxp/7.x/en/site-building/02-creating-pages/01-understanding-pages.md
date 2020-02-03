@@ -24,7 +24,7 @@ There are several page types available when you [add a page](./02-adding-a-page-
 
 ### Content Pages
 
-Content Pages enable users to build professional pages that can be easily managed and have their content edited in-line on the fly. Content Pages are primarily built using [Page Fragments](TODO), but also allow widgets.
+Content Pages enable users to build professional pages that can be easily managed and have their content edited in-line on the fly. Content Pages are primarily built using [Page Fragments](./README.md#using-fragments), but also allow widgets.
 
 ![Content Pages can be composed of multiple Fragments.](./understanding-pages/images/04.png)
 
@@ -38,7 +38,9 @@ To learn more about Content Pages see the [Content Page Overview](./03-content-p
 
 ### Widget Pages
 
-A Widget Page is a page with a [set layout](link-to-something-about-layout-templates) that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](./adding-widgets-to-a-page.md) for more information.
+<!-- Should there be an article that covers layouts and layout templates? -->
+
+A Widget Page is a page with a set layout that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](./adding-widgets-to-a-page.md) for more information.
 
 ![Widget Pages can provide a number of functions, such as a dedicated Wiki Page solution.](./understanding-pages/images/05.png)
 

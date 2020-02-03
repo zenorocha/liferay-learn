@@ -1,6 +1,6 @@
 # Adding a Page to a Site
 
-The steps below describe how to add a new page to your Site and configure the general options. To learn how to configure the remaining page settings, see [Configuring Individual Pages](./06-configuring-individual-pages.md), or see [Configuring Page Sets](./05-configuring-page-sets.md) to configure options for the [Page Set](./01-understanding-pages.md#page-sets).
+The steps below describe how to add a new page to your Site and configure the general options. To learn how to configure the remaining page settings, see [Configuring Individual Pages](./06-configuring-individual-pages.md), or see [Configuring Page Sets](./05-configuring-page-sets.md) to configure options for a [Page Set](./01-understanding-pages.md#page-sets).
 
 ## Adding a New Page
 
@@ -15,7 +15,7 @@ Follow these steps to add a page:
     ![The Pages screen lets you edit your Site pages as a whole.](./adding-a-page-to-a-site/images/01.png)
 
     ```tip::
-       Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../images/icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu. You can use the Page Tree Menu to quickly find a page by keyword in the search bar, navigate to a page by selecting it, or even add pages through the Actions Menu.
+       Alternatively, since Liferay DXP 7.3, you can click the page tree icon next to the Site name to open the Page Tree Menu. You can use the Page Tree Menu to quickly find a page by keyword in the search bar, navigate to a page by selecting it, or even add pages through the Actions Menu.
     ```
 
 1. Click the *Blank* Master Page Template to create a [Content Page](./01-understanding-pages.md#page-types), or select [another page type](./other-page-types.md) under the *Other* heading or a Page Template listed under the *Global Template* menu. Prior to Liferay DXP 7.3, page types are listed under *Basic Pages*.
