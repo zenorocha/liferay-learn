@@ -6,6 +6,46 @@ The _FrontPage_ tab is the landing page for the _Wiki_ widget. From here, conten
 
 ![FrontPage](./wiki-widget-ui-reference/images/01.png)
 
+### Details
+
+Clicking the _Details_ link on the _FrontPage_ tab displays information about that wiki page.
+
+#### Content Tab
+
+This is similar to the _Edit_ function; users can edit the wiki page.
+
+![Content Tab](./wiki-widget-ui-reference/images/11.png)
+
+#### Details Tab
+
+The _Details_ function displays the _FrontPage_'s metadata:
+
+![Details Tab](./wiki-widget-ui-reference/images/06.png)
+
+#### History
+
+The _History_ tab displays the wiki page's revision history.
+
+![History](./wiki-widget-ui-reference/images/07.png)
+
+#### Incoming Links
+
+The _Incoming Links_ tab lists all pages that link to this wiki page.
+
+![Incoming Links](./wiki-widget-ui-reference/images/08.png)
+
+#### Outgoing Links
+
+The _Outgoing Links_ tab lists all links found in the wiki page.
+
+![Outgoing Links](./wiki-widget-ui-reference/images/09.png)
+
+#### Attachments
+
+The _Attachments_ tab lists all of the wiki page's attachments.
+
+![Attachments](./wiki-widget-ui-reference/images/10.png)
+
 ## Recent Changes
 
 The _Recent Changes_ tab lists all the pages in the selected node, starting from the most recent.
