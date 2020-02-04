@@ -63,3 +63,9 @@ service's `LCP.json`:
 
 If the `autoscale` property isn't set, the target average utilization defaults 
 to 80 for both CPU and memory utilization. 
+
+## Handling Licenses
+
+One common question about Auto Scaling is related to how Liferay DXP licenses 
+are handled. The good news is that Liferay DXP Cloud already takes care of that 
+for you. New licenses are added and removed as needed for Auto Scaling. 
