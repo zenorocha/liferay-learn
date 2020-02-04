@@ -14,5 +14,5 @@ Account Management
    account-management/creating-a-new-account-group.md
    account-management/commerce-roles-permissions-reference.md
 
-.. include:: /account-management/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: account-management/landing.html
