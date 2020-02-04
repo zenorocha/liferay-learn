@@ -2,6 +2,28 @@
 
 This article documents permissions in the _Wiki_ widget and serves as a reference when assigning permissions to users and roles. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
+## Wiki Node Permissions
+
+1. Navigate to _Site Administration_ &rarr; _Content & Data_ &rarr; _Wiki_.
+1. Click _Options_ (![Options](../../../images/icon-options.png)) then _Permissions.
+
+    ![Viewing Wiki Node Permissions](./wiki-permissions/images/06.png)
+
+The available _wiki node_ permissions are:
+
+![Viewing Wiki Node Permissions](./wiki-permissions/images/05.png)
+
+| Permission | Description |
+| --- | --- |
+| Add Page | Grants users the ability to add a wiki page to the node |
+| Import | Grants users the ability to import wiki pages as a `.lar` file; see [Exporting and Importing a Wiki](./exporting-and-importing-a-wiki.md) |
+| Delete | Grants users the ability to delete a _Wiki Node_ |
+| Permissions | Grants users the ability to view a wiki node's permissions |
+| Update | Grants users the ability to modify the _Wiki Node_ |
+| Add Attachment | Grants users the ability to add an attachment |
+| Subscribe | Grants users the ability to subscribe to the node |
+| View | Allows users to view the _Wiki Node_ |
+
 ## Wiki Page Permissions
 
 ![Viewing Wiki Page Permissions](./wiki-permissions/images/04.png)
