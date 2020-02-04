@@ -9,10 +9,10 @@ Account Management
    account-management/inviting-users-to-an-account.md
    account-management/adding-addresses-to-an-account.md
    account-management/account-roles.md
-   account-management/commerce-roles-permissions-reference.md
-   account-management/creating-a-custom-account-role.md
    account-management/assigning-account-roles.md
+   account-management/creating-a-custom-account-role.md
    account-management/creating-a-new-account-group.md
+   account-management/commerce-roles-permissions-reference.md
 
 .. include:: /account-management/README.rst
    :start-line: 2
