@@ -60,12 +60,12 @@ The _All Pages_ tab lists all the pages created in the selected wiki node.
 
 ## Orphan Pages
 
-Orphan Pages are pages existing on a website without any other page linking to them.
+Orphan Pages are wiki pages existing on a DXP site without any other pages linking to them.
 
 ![Orphan Pages](./wiki-widget-ui-reference/images/04.png)
 
 ## Draft Pages
 
-The _Draft Pages_ tab lists all _Wiki pages_ saves as a draft.
+The _Draft Pages_ tab lists all _Wiki pages_ that have been saved as a draft.
 
 ![Draft Pages](./wiki-widget-ui-reference/images/05.png)

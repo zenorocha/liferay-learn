@@ -1,6 +1,9 @@
 Wiki
 ====
 
+User Guide
+----------
+
 -  :doc:`/collaboration-and-social/wiki/user-guide/getting-started-with-wikis`
 -  :doc:`/collaboration-and-social/wiki/user-guide/creating-wiki-pages`
 -  :doc:`/collaboration-and-social/wiki/user-guide/creating-a-node`
@@ -11,10 +14,6 @@ Wiki
 -  :doc:`/collaboration-and-social/wiki/user-guide/using-the-wiki-display-widget`
 -  :doc:`/collaboration-and-social/wiki/user-guide/wiki-permissions`
 -  :doc:`/collaboration-and-social/wiki/user-guide/wiki-widget-ui-reference`
-
-User Guide
-----------
-Coming soon!
 
 Developer Guide
 ---------------

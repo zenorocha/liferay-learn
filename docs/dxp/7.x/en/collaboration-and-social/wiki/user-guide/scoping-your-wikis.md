@@ -4,12 +4,15 @@ Besides using [Wiki Nodes](./creating-a-node.md) to organize your content, you c
 
 ## Global
 
-Content created at the global site scope level is available on all other sites. However, content will not be automatically published. Administrators must configure the _Wiki_ widget's scope to _Global_.
+Wiki pages created at the global site scope level are available on all other sites. However, content will not be automatically published. Administrators must configure the _Wiki_ widget's scope to _Global_.
 
 ### Creating Globally Scoped Wiki Pages
 
 1. Navigate to the site page where the _Wiki_ widget is deployed.
-1. Click _Options_ ![Icon Options](../../../images/icon-widget-options.png) then _Configuration_.
+1. Mouse over the _Wiki_ widget's name and click _Options_ ![Icon Options](../../../images/icon-widget-options.png) then _Configuration_.
+
+    ![Wiki Options](./scoping-your-wikis/images/10.png)
+
 1. Click _Scope_.
 1. Select **Global** from the _Scope_ dropdown menu.
 
@@ -62,7 +65,7 @@ The second page has been configured for page scope.
 
 ### Managing Page Scoped Wikis
 
-Note that administrators must still use the _Site Administration_ menu to administer a page scoped Wiki widget by setting the _Site Administration menu_'s active scope. Follow these steps to do this:
+Note that administrators must still use the _Site Administration_ menu to administer a page scoped Wiki widget by setting the _Site Administration menu_'s active scope. Follow these steps:
 
 1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)), expand the menu for your Site, and then click _Content & Data_.
 1. The current scope appears just below the Content & Data heading. Default Scope is the current Site. To change this, click the gear icon (![Gear](../../../images/icon-control-menu-gear.png)) and then select your desired scope. This changes the Site Administration menu to reflect scope you selected. To work in a page's scope, for example, select that page from the gear icon. That page's name then becomes the Site Administration menu's title.

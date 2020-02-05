@@ -1,6 +1,8 @@
 # Creating a Node
 
-Wiki nodes organize wiki pages and create a structure. Only authenticated users with the [requisite permissions](./wiki-permissions.md) (at minimum, _Add Node_ and _Permissions_) can create a node. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+DXP's wiki nodes allows site content creators to organize wiki pages on the same site. Use cases include (but not limited to): creating a wiki node for a unique subject matter; or each node containing the localized versions of a particular wiki page.
+
+Only authenticated users with the [requisite permissions](./wiki-permissions.md) (at minimum, _Add Node_ and _Permissions_) can create a node. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Creating a New Node
 
@@ -13,7 +15,7 @@ Wiki nodes organize wiki pages and create a structure. Only authenticated users 
     * **Description**: This is a new node for DXP Guest wiki site.
 1. Click _Save_.
 
-A new Node has been created.
+A new Node has been created. You can create multiple nodes on the same site.
 
 ![Creating a new Node](./creating-a-node/images/01.png)
 

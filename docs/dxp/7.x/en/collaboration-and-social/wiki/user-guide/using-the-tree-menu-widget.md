@@ -27,5 +27,5 @@ Once the _Tree Menu_ widget has been added to a page, it lists all the pages and
 
 ## Additional Information
 
-* [Page Menu widget](./using-the-page-menu-widget.md)
-* [Wiki Display widget](./using-the-wiki-display-widget.md)
+* [Page Menu Widget](./using-the-page-menu-widget.md)
+* [Wiki Display Widget](./using-the-wiki-display-widget.md)

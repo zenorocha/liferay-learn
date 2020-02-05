@@ -1,11 +1,11 @@
-# Wiki Permissions
+# Wiki Permissions Reference
 
 This article documents permissions in the _Wiki_ widget and serves as a reference when assigning permissions to users and roles. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Wiki Node Permissions
 
 1. Navigate to _Site Administration_ &rarr; _Content & Data_ &rarr; _Wiki_.
-1. Click _Options_ (![Options](../../../images/icon-options.png)) then _Permissions.
+1. Click _Options_ (![Options](../../../images/icon-options.png)) next to the node (for example, _New Node_) then _Permissions_.
 
     ![Viewing Wiki Node Permissions](./wiki-permissions/images/06.png)
 

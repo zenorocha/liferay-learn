@@ -26,5 +26,5 @@ The _Wiki Display_ widget now displays the selected _Wiki Page_.
 
 ## Additional Information
 
-* [Page Menu widget](./using-the-page-menu-widget.md)
-* [Tree Menu widget](./using-the-tree-menu-widget.md)
+* [Page Menu Widget](./using-the-page-menu-widget.md)
+* [Tree Menu Widget](./using-the-tree-menu-widget.md)
