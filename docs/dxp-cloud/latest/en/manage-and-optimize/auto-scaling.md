@@ -8,8 +8,9 @@ Using this feature, a service can automatically increase (upscale) the number of
   "scale": 2,
 ```
 
-> **Note:** Currently, auto-scaling is only available for the Liferay DXP service in production environments.
-> **Note:** For more information on how auto-scaling is charged, see [How Auto-scaling is Charged](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-).
+```note::
+   Auto-scaling is only available for the Liferay DXP service in production environments. For more information on how auto-scaling is charged, see `How Auto-scaling is Charged <https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged->`_.
+```
 
 ## Managing Auto-scaling
 
@@ -30,7 +31,7 @@ System administrators can specify a *target average utilization*. This value is 
 For example, if three service instances utilize 70%, 90%, and 95% of memory, respectively, then the average memory utilization is 85%. If the target average
 utilization is set to 90, then no upscaling is needed; upscaling in this situation only occurs when the average memory utilization exceeds the target.
 
-The total available memory is specified by the `memory` property in `LCP.json`, as referenced in [Configuration via LCP.json](../reference/configuration-via-lcp-json.md). 
+The total available memory is specified by the `memory` property in `LCP.json`, as referenced in [Configuration via LCP.json](../reference/configuration-via-lcp-json.md).
 
 Specify the target average utilization in the `autoscale` property of the service's `LCP.json`:
 
@@ -43,6 +44,6 @@ Specify the target average utilization in the `autoscale` property of the servic
 
 If the `autoscale` property isn't set, the target average utilization defaults to 80 for both CPU and memory utilization.
 
-## Handling Activation Keys
+## Auto-scaling and DXP Activation Keys
 
-The Liferay DXP Cloud team resolves all DXP Activation Keys issues; the team adds new keys and removes old ones as needed for auto-scaling.
+An activation key is typically required to be deployed and validated in order to use Liferay DXP on premises. On DXP Cloud when Auto-scaling is enabled, the DXP Cloud team resolves any DXP Activation key issues and will add and remove activation keys on an as needed basis.
