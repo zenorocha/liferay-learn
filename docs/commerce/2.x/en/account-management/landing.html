@@ -1,1 +1,78 @@
-<div>Hello World!</div>
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<a class="autofit-row autofit-row-center" :href="card.sectionURL">
+			<div class="autofit-col autofit-col-expand">
+				<h4 class="title">{{ card.sectionName }}</h4>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a class="subsection-link" :href="subsection.url">
+							{{ subsection.name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</a>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Introduction to Accounts',
+					sectionURL: 'account-management/introduction-to-accounts.html',
+					subsections: [
+						{
+							name: 'test',
+							url: '/'
+						},
+						{
+							name: 'test1',
+							url: '/'
+						},
+						{
+							name: 'test2',
+							url: '/'
+						}
+					]
+				},
+				{
+					sectionName: 'Creating a New Account',
+					sectionURL: 'account-management/creating-a-new-account.html'
+				},
+				{
+					sectionName: 'Inviting Users to an Account',
+					sectionURL: 'account-management/inviting-users-to-an-account.html'
+				},
+				{
+					sectionName: 'Adding Addresses to an Account',
+					sectionURL: 'account-management/adding-addresses-to-an-account.html'
+				},
+				{
+					sectionName: 'Account Roles',
+					sectionURL: 'account-management/account-roles.html'
+				},
+				{
+					sectionName: 'Commerce Roles Permissions Reference',
+					sectionURL: 'account-management/commerce-roles-permissions-reference.html'
+				},
+				{
+					sectionName: 'Creating a Custom Account Role',
+					sectionURL: 'account-management/creating-a-custom-account-role.html'
+				},
+				{
+					sectionName: 'Assigning User Roles',
+					sectionURL: 'account-management/assigning-account-roles.html'
+				},
+				{
+					sectionName: 'Creating a New Account Group',
+					sectionURL: 'account-management/creating-a-new-account-group.html'
+				}
+			]
+		}
+	})
+</script>

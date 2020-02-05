@@ -8631,6 +8631,33 @@ header {
 .homepage .sub-heading {
   margin: 1.5rem 0 1.5rem; }
 
+.landing-page {
+  display: flex;
+  flex-wrap: wrap; }
+  .landing-page .section-card {
+    border: 1px solid rgba(9, 16, 24, 0.12);
+    border-radius: 0.25rem;
+    box-shadow: 0 6px 15px -6px rgba(9, 16, 29, 0.06);
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    transition: transform 0.2s ease;
+    width: 45%; }
+    .landing-page .section-card:hover {
+      border-bottom: 3px solid #0B5FFF;
+      box-shadow: 0 6px 11px 0 rgba(9, 16, 29, 0.09);
+      margin-bottom: -3px;
+      text-decoration: none;
+      transform: translateY(-4px); }
+      .landing-page .section-card:hover h4:hover {
+        text-decoration: none; }
+    .landing-page .section-card h4 {
+      font-size: 1.125rem; }
+  .landing-page .subsection {
+    font-size: 0.875rem;
+    list-style: none;
+    padding-inline-start: 0; }
+
 .highlight-link {
   display: none; }
 
