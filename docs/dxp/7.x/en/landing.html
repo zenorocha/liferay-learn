@@ -1,0 +1,255 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<a class="autofit-row autofit-row-center" :href="card.sectionURL">
+			<div class="autofit-col autofit-col-expand">
+				<h4 class="title">{{ card.sectionName }}</h4>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a class="subsection-link" :href="subsection.url">
+							{{ subsection.name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</a>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Getting Started',
+					sectionURL: 'getting_started.html',
+					subsections: [
+						{
+							name: 'Starting With the DXP Docker Image',
+							url: 'getting-started/starting-with-the-dxp-docker-image.html'
+						},
+						{
+							name: 'Introduction to the Admin Account',
+							url: 'getting-started/introduction-to-the-admin-account.html'
+						},
+						{
+							name: 'Navigating DXP',
+							url: 'getting-started/navigating-dxp.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Building Solutions on DXP',
+					subsections: [
+						{
+							name: 'Building an Intranet (Coming Soon)',
+							url: 'building-solutions-on-dxp/building_an_intranet.html'
+						},
+						{
+							name: 'Building a Public Website (Coming Soon)',
+							url: 'building-solutions-on-dxp/building_a_public_website.html'
+						},
+						{
+							name: 'Building an Customer Portal (Coming Soon)',
+							url: 'building-solutions-on-dxp/building_a_customer_portal.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Site Building',
+					sectionURL: 'site_building.html',
+					subsections: [
+						{
+							name: 'Adding a Site',
+							url: 'site-building/building-sites/adding-a-site.html'
+						},
+						{
+							name: 'Understanding Pages',
+							url: 'site-building/creating-pages/understanding-pages.html'
+						},
+						{
+							name: 'Content Page Overview',
+							url: 'creating-pages/content-pages-overview.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Content Authoring and Management',
+					subsections: [
+						{
+							name: 'Introduction to Assets (Coming Soon)',
+							url: '/'
+						},
+						{
+							name: 'Creating Web Content (Coming Soon)',
+							url: 'content-authoring-and-management/01-web-content/01-user-guide/web_content_articles.html'
+						},
+						{
+							name: 'Creating Content Sets (Coming Soon)',
+							url: 'content-authoring-and-management/04-content-sets/user_guide.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Process Automation',
+					subsections: [
+						{
+							name: 'Creating and Managing Forms (Coming Soon)',
+							url: 'process-automation/01-forms/user_guide.html'
+						},
+						{
+							name: 'Creating Low-Code Applications With App Builder (Coming Soon)',
+							url: 'process-automation/02-app-builder/user_guide.html'
+						},
+						{
+							name: 'Introduction to Workflow (Coming Soon)',
+							url: 'process-automation/workflow.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Using Search',
+					subsections: [
+						{
+							name: 'Introduction to Search (Coming Soon)',
+							url: 'using_search.html'
+						},
+						{
+							name: 'Configuring Search (Coming Soon)',
+							url: 'using-search/user_guide.html'
+						},
+						{
+							name: 'Search Developer Guide (Coming Soon)',
+							url: 'using-search/developer_guide.html'
+						},
+					]
+        },
+				{
+					sectionName: 'Collaboration and Social',
+					subsections: [
+						{
+							name: 'Getting Started with Message Boards',
+							url: 'collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.html'
+						},
+						{
+							name: 'Using Social Tools (Coming Soon)',
+							url: 'collaboration-and-social/social_tools.html'
+						},
+						{
+							name: 'Notifications and Requests (Coming Soon)',
+							url: 'collaboration-and-social/notifications_and_requests.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Users and Permissions',
+					subsections: [
+						{
+							name: 'Introduction to Users (Coming Soon)',
+							url: 'user-and-system-management/01-user-management/user_guide.html'
+						},
+						{
+							name: 'Creating and Managing Organizations (Coming Soon)',
+							url: 'user-and-system-management/01-user-management/user_guide.html'
+						},
+						{
+							name: 'Understanding Roles and Permissions (Coming Soon)',
+							url: 'user-and-system-management/roles_and_permissions.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Users and Permissions',
+					subsections: [
+						{
+							name: 'Introduction to Users (Coming Soon)',
+							url: 'user-and-system-management/01-user-management/user_guide.html'
+						},
+						{
+							name: 'Creating and Managing Organizations (Coming Soon)',
+							url: 'user-and-system-management/01-user-management/user_guide.html'
+						},
+						{
+							name: 'Understanding Roles and Permissions (Coming Soon)',
+							url: 'user-and-system-management/roles_and_permissions.html'
+						},
+					]
+				},
+				{
+					sectionName: 'System Management',
+					subsections: [
+						{
+							name: 'Understanding System Settings (Coming Soon)',
+							url: 'user-and-system-management/04-system-management/01-user-guide/system_settings.html'
+						},
+						{
+							name: 'Creating Virtual Instances (Coming Soon)',
+							url: 'user-and-system-management/04-system-management/01-user-guide/virtual_instances.html'
+						},
+						{
+							name: 'Configuring Security Settings (Coming Soon)',
+							url: 'user-and-system-management/04-system-management/01-user-guide/security_settings.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Platform',
+					subsections: [
+						{
+							name: 'Developing a Single Page Application with React (Coming Soon)',
+							url: 'platform/04-developing-applications/developing_a_javascript_application.html'
+						},
+						{
+							name: 'Understanding Service Builder (Coming Soon)',
+							url: 'platform/concepts.html'
+						},
+						{
+							name: 'Using Liferay Workspace to Accelerate Development (Coming Soon)',
+							url: 'platform/06-developer-tools/liferay_workspace.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Headless Delivery',
+					subsections: [
+						{
+							name: 'Using Content Delivery APIs (Coming Soon)',
+							url: 'headless-delivery/01-web-apis/content_delivery_apis.html'
+						},
+						{
+							name: 'Using Content Administration APIs (Coming Soon)',
+							url: 'headless-delivery/content_administration_apis.html'
+						},
+						{
+							name: 'Using Data Administration APIs (Coming Soon)',
+							url: 'headless-delivery/data_engine_apis.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Installation and Upgrades',
+					subsections: [
+						{
+							name: 'Installing a Liferay DXP Tomcat Bundle',
+							url: 'installation-and-upgrades/installing-liferay-dxp-on-premises/installing-a-liferay-dxp-tomcat-bundle.html'
+						},
+						{
+							name: 'Running Liferay DXP for the First Time',
+							url: 'installation-and-upgrades/installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.html'
+						},
+						{
+							name: 'Portal Properties',
+							url: 'installation-and-upgrades/14-reference/03-portal-properties.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Get Help',
+					sectionURL: 'get_help.html',
+				},
+			]
+		}
+	})
+</script>
