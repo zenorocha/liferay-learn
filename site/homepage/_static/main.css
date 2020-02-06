@@ -8638,6 +8638,7 @@ header {
     border: 1px solid rgba(9, 16, 24, 0.12);
     border-radius: 0.25rem;
     box-shadow: 0 6px 15px -6px rgba(9, 16, 29, 0.06);
+    cursor: pointer;
     margin-left: 1rem;
     margin-right: 0.5rem;
     margin-top: 1.5rem;
