@@ -50,3 +50,7 @@ The best way to get stable outgoing external IP addresses is to use the DXP Clou
 ### DXP Cloud IP Ranges for Private Cluster
 
 Liferay DXP Cloud offers optional Private Clusters which isolate each subscriber's services into their own dedicated cluster. Each cluster is configured with a dedicated gateway for all outbound Internet traffic from the subscriber's cluster and is assigned a static external IP.
+
+## What's Next
+
+* [Setting up a Client-to-Site VPN example](./setting-up-a-client-to-site-vpn-example.md)
