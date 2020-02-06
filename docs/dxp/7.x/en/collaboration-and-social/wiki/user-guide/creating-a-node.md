@@ -1,6 +1,6 @@
 # Creating a Node
 
-As more and more wiki pages are created in a single DXP site, creating multiple wiki nodes often provides a loose structure to arrange your wiki pages accordingly. For example, users can create a node for particular subject matter (astronomy).
+As more wiki pages are created in a single DXP site, creating additional wiki nodes can provide a loose structure to organize your wiki pages accordingly. Users can create a nodes to segment articles that cover different topics.
 
 Only authenticated users with the [requisite permissions](./wiki-permissions.md) (at minimum, _Add Node_ and _Permissions_) can create a node. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 

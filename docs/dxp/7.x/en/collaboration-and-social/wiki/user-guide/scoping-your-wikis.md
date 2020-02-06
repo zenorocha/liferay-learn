@@ -1,6 +1,6 @@
 # Scoping Your Wikis
 
-Besides using [Wiki Nodes](./creating-a-node.md) to organize your content, you can create wiki pages in the [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope).
+Besides using [Wiki Nodes](./creating-a-node.md) to organize your content, you can scope a wiki to the [Global, Site, or Page Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope).
 
 ## Global
 

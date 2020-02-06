@@ -1,6 +1,6 @@
 # Getting Started with Wikis
 
-Liferay DXP comes with a _Wiki_ application that contains a rich-text WYSIWYG editor, version tracking, and the ability to create multiple wiki nodes - all things that you expect from wikis. Wikis are integrated with Liferay DXP's users and permissions.
+The _Wiki_ application includes a rich-text WYSIWYG editor, version tracking, and the ability to create multiple wiki nodes. Wikis are integrated with Liferay DXP's users and permissions.
 
 ## Adding a Wiki Widget to a Site
 

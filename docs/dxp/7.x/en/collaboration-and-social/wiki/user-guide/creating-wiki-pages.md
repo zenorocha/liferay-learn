@@ -1,6 +1,6 @@
 # Creating Wiki Pages
 
-When navigating to the _Wiki_ widget for the first time, there is a default wiki page called _FrontPage_. Users can use this to make their first wiki page.
+The _Wiki_ widget starts with a default wiki page called _FrontPage_. Users can edit this page to make their first wiki page.
 
 By default, only authenticated users have the ability to create _Wiki_ articles; guests must sign in first.
 
@@ -46,7 +46,7 @@ Once the _FrontPage_ Page has been created, users can create a _Child Page_. Thi
 
 ![Add a child page](./creating-wiki-pages/images/06.png)
 
-It opens the same _Wiki_ page form editor.
+It opens the same _Wiki_ page editor.
 
 ![The Wiki Page editor is the same for all pages at all levels.](./creating-wiki-pages/images/07.png)
 
@@ -59,7 +59,7 @@ As noted above in the _Creating Child Pages_, future wiki pages are created as c
 
    ![Add another wiki top level page](./creating-wiki-pages/images/04.png)
 
-This opens the same _Wiki_ page form.
+This opens the same _Wiki_ page editor.
 
 A _Wiki_ widget can have multiple top-level pages; while the main _Wiki_ widget displays only the _FrontPage_ wiki page, site content creators can use the [Wiki Display Widget](./using-the-wiki-display-widget.md) to display the other top-level pages.
 
