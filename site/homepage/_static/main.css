@@ -8096,6 +8096,7 @@ table.docutils .table-divider th {
   padding-top: 10%; }
 
 div.admonition {
+  border-radius: 0.25rem;
   margin: 1rem 0;
   padding: 0.75rem 1.5rem 1rem 2.625rem; }
   div.admonition.error {
