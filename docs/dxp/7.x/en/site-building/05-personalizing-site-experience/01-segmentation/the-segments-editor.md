@@ -1,12 +1,12 @@
 # The Segments Editor
 
-While [creating a User Segment](./02-creating-user-segments.md), you must use the Segments editor. An overview of the Segments editor UI is discussed here. To access the Segments editor follow these steps:
+While [creating a User Segment](./creating-user-segments.md), you must use the Segments editor. An overview of the Segments editor UI is discussed here. To access the Segments editor follow these steps:
 
 1. Go to *Site Administration* and select the site that you wish to create segments for.
 
 1. Click *People* &rarr; *Segments* under the Site's menu.
 
-1. Click the *Add User Segment* button (![Add](../../../../images/icon-add.png)).
+1. Click the *Add User Segment* button (![Add](../../../images/icon-add.png)).
 
 At the top of the editor you can set the name, view the current members of the segment as it is defined, and choose to *Save* the Segment or *Cancel* to discard changes.
 

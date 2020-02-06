@@ -13,12 +13,11 @@ Follow these steps to get Segment analytics:
 
 1. [Create a Segment in Analytics Cloud](TODO) if you haven't already.
 
-  ```note::
-    Only Segments that contain at least one member are synchronized with Liferay DXP. This means that empty Segments created with Analytics Cloud are unavailable to use on Liferay DXP.
-  ```
+    ```note::
+      Only Segments that contain at least one member are synchronized with Liferay DXP. This means that empty Segments created with Analytics Cloud are unavailable to use on Liferay DXP.
+    ```
 
 1. Once the Segment is synced, go to the *Segments* page.
-
 1. Click on the new Segment to view and customize it.
 
 ![When you see Analytics Cloud Segments in the list of Segments, they are marked with the Analytics Cloud icon.](./analytics-cloud-segmentation/images/01.png)
