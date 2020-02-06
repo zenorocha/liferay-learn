@@ -10,7 +10,7 @@ Get Help
 `Liferay University <https://university.liferay.com/>`__
 --------------------------------------------------------
 
-`Join the Community <https://liferay.dev/forums/-/message_boards/category/110421633>`__
+`Join the Community <https://liferay.dev/forums/-/message_boards/category/8408627>`__
 ---------------------------------------------------------------------------------------
 
 `Subscription Services <https://help.liferay.com>`__
