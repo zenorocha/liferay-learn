@@ -6,7 +6,8 @@
 		border: 1px solid rgba(9, 16, 24, 0.12);
 		border-radius: $border-radius;
 		box-shadow: 0 6px 15px -6px rgba(9, 16, 29, 0.06);
-		margin-right: $spacing-default;
+		margin-left: $spacing-md;
+		margin-right: $spacing-xs;
 		margin-top: $spacing-default;
 		padding: 1.25rem $spacing-default;
 		transition: transform 0.2s ease;
@@ -18,14 +19,15 @@
 			margin-bottom: -3px;
 			text-decoration: none;
 			transform: translateY(-4px);
-        
-            h4 {
-                text-decoration: none;
-            }
-        }
+
+			h4 {
+				text-decoration: none;
+			}
+		}
 
 		h4 {
 			font-size: 1.125rem;
+			margin-bottom: $spacing-xs;
 		}
 	}
 
