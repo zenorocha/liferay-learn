@@ -1,6 +1,6 @@
 # Using the Wiki Display Widget
 
-Site content creators can use the  _Wiki Display_ widget to highlight a specific wiki page regardless of whether it is a top level page or a child page. To use the _Wiki Display_ widget:
+Users can use the  _Wiki Display_ widget to highlight a specific wiki page regardless of whether it is a top level page or a child page. To use the _Wiki Display_ widget:
 
 1. Navigate to the site page where the _Wiki_ widget has been deployed.
 1. Click _Add_ &rarr; _Widgets_.

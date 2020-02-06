@@ -1,6 +1,6 @@
 # Creating Wiki Pages
 
-When navigating to the _Wiki_ widget for the first time, there is a default wiki page called _FrontPage_. Site content creators can use this to make their first wiki page.
+When navigating to the _Wiki_ widget for the first time, there is a default wiki page called _FrontPage_. Users can use this to make their first wiki page.
 
 By default, only authenticated users have the ability to create _Wiki_ articles; guests must sign in first.
 

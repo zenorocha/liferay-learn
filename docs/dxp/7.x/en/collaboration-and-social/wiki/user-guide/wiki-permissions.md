@@ -26,6 +26,11 @@ The available _wiki node_ permissions are:
 
 ## Wiki Page Permissions
 
+To view a wiki page's permissions:
+
+1. On any wiki page, click _Details_.
+1. Click _Permissions_ in the _Advanced Actions_ section.
+
 ![Viewing Wiki Page Permissions](./wiki-permissions/images/04.png)
 
 | Permission | Description |
@@ -39,6 +44,10 @@ The available _wiki node_ permissions are:
 | Add Discussion | Allows users to comment on the _Wiki Page_ |
 
 ## Wiki Widget Permissions
+
+1. Navigate to the site page where the _Wiki_ widget has been deployed.
+1. Mouse over the _Wiki_ and click _Options_ (![Options](../../../images/icon-widget-options.png))
+1. Click _Permissions_.
 
 ![Viewing Wiki Widget Permissions](./wiki-permissions/images/03.png)
 
