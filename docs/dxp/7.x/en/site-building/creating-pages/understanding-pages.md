@@ -34,7 +34,7 @@ Using Content Pages allows access to additional powerful features and benefits:
 * [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
 * Approachable Content and Site Building Experience
 
-To learn more about Content Pages see the [Content Page Overview](./content-pages-overview.md). To jump right into building one, see [Building Content Pages](./04-building-content-pages.md).
+To learn more about Content Pages see the [Content Page Overview](./content-pages-overview.md). To jump right into building one, see [Building Content Pages](./building-content-pages.md).
 
 ### Widget Pages
 

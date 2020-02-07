@@ -1,6 +1,6 @@
 # Content Pages Overview
 
-The default type of page used in Liferay DXP is a Content Page. The Content Page editing UI provides access to many different drag-and-drop elements (Fragments) that are available for immediate use with minimal configuration. Continue reading to get an overview of the Content Pages UI. See [Building Content Pages](./04-building-content-pages.md) to jump directly in to building a Content Page.
+The default type of page used in Liferay DXP is a Content Page. The Content Page editing UI provides access to many different drag-and-drop elements (Fragments) that are available for immediate use with minimal configuration. Continue reading to get an overview of the Content Pages UI. See [Building Content Pages](./building-content-pages.md) to jump directly in to building a Content Page.
 
 ![Using the Content Page sidebar to add elements to the page.](./content-pages-overview/images/14.png)
 
@@ -21,7 +21,7 @@ Liferay Portal ships with several Layouts, Fragments, and Widgets that you can u
    Available in Liferay DXP 7.3+. This section was previously divided between the *Sections* and *Section Builder* panels.
 ```
 
-You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./04-building-content-pages.md#modify-editable-text), [images](./04-building-content-pages.md#modify-editable-images), or [links](./04-building-content-pages.md#modify-editable-links), that you can replace with custom content. You can also [map these elements](./04-building-content-pages.md#mapping-elements) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](./README.md#using-fragments).
+You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./building-content-pages.md#modify-editable-text), [images](./building-content-pages.md#modify-editable-images), or [links](./building-content-pages.md#modify-editable-links), that you can replace with custom content. You can also [map these elements](./building-content-pages.md#mapping-elements) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](./README.md#using-fragments).
 
 ### Layouts
 
@@ -103,6 +103,6 @@ You can comment on a Page Fragment to discuss changes and collaborate. Comments 
 
 ## Next Steps
 
-* [Building Content Pages](./04-building-content-pages.md)
+* [Building Content Pages](./building-content-pages.md)
 * [Page Fragments](./README.md#using-fragments)
 * [Using Fragment Comments](./using-fragment-comments.md)
