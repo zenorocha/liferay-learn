@@ -21,10 +21,16 @@ You can see the [SimilarResultsContributor interface](https://github.com/liferay
 
 In this section, we will get an example product type up and running on your instance of Liferay Commerce. Follow these steps:
 
-1. Start Liferay DXP.
+1. Start Liferay DXP. If you don't already have a docker container, use
 
     ```bash
     docker run -it -p 8080:8080 liferay/portal:7.3.0-ga1
+    ```
+
+    If you already have a docker container, use
+
+    ```bash 
+    docker start [container_name] 
     ```
 
     If you're running a different Liferay Portal CE version or Liferay DXP, adjust the above command accordingly.
