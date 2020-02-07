@@ -1,51 +1,91 @@
 # Building Content Pages
 
-Coming soon!
+Once you've [added a Content Page](./adding-a-page-to-a-site.md) you may begin building your page by adding and configuring the various [Content Page elements](./content-pages-overview.md).
 
-<!-- Several Fragments are available by default that you can use to build your Content Page. You can also [develop your own Page Fragments](TODO). Once you've [added a Content Page](./adding-a-page-to-a-site.md) and have the [Content Page elements](./content-pages-overview.md) you need (Sections, Components, Widgets, etc.), follow these steps to build your Content Page:
+## Adding Elements to a Content Page
 
-1. If you're not already on your Content Page, open the Product Menu and go to *Site Builder* &rarr; *Pages* under your Site's Menu. Content Pages can't be edited live; they must be edited through the *Site Builder*.
+To begin building a Content Page:
 
-1. Open the *Actions* Menu for the Content Page in the Public or Private Page Set and select *Edit*, or go to the Content Page on the Site and click the pencil icon ![pencil](../../../../icon-pencil.png) in the Control Menu to edit the Content Page. You're presented with a blank page at first.
+1. Enter the Site Builder view for your Content Page. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under your Site's Menu.
 
-  ![A Content Page is blank to begin with. You must add Fragments to it to build it.](./building-content-pages/images/01.png)
+    ![Begin by editing your new Content Page in the Site Builder menu.](building-content-pages/images/07.png)
 
-1. Add a combination of these Page Fragment UI pieces to build the foundation for the Content Page. See [Content Page Elements](./content-pages-overview.md) for an explanation of these elements. Click the UI element below that you want to add and follow the instructions in the section:
+    ![A Content Page is blank to begin with. You must add Fragments to it to build it.](./building-content-pages/images/01.png)
 
-  * [Component](#add-a-component)
-  * [Layout](#add-a-layout)
-  * [Section](#add-a-section)
-  * [Widget](#add-a-widget)
+    ```note::
+       New Content Pages start empty and in a *Draft* status that is not visible until the page is published.
+    ```
 
-  ![Add Fragments to the page to create the mockup you want.](./building-content-pages/images/02.png)
+1. Open the Content Page sidebar and begin adding Page Fragment elements.
 
-1. Modify the editable portions of the Page Fragments to complete the design for the Content Page. Click the editable element below that you want to update and follow the instructions in the section:
+    ![Add Fragments to the page to create the mockup you want.](./building-content-pages/images/08.png)
 
-  * [Images](#modify-editable-images)
-  * [Links/buttons](#modify-editable-links)
-  * [Text](#modify-editable-text)
+1. Configure the editable portions of the Page Fragments to customize the look of your Content Page. Elements can be configured in some of the following ways:
 
-  You can also map the editable fragments. Follow the instructions in the [Mapping Fragments](#mapping-fragments) section to learn how.
+    * Changing a Background Color
+    * Using a Background Image
+    * Editing Text
+    * Adding a Hyperlink
+    * Copying a Fragment
+    * Adjusting Spacing
+    * General Configuration
+    * Mapping Content
 
-  ![Modify the Fragments to display the content you want.](./building-content-pages/images/03.png)
+    ![Modify the Fragments to display the content you want.](./building-content-pages/images/03.png)
 
-1. As you work, a draft of the page is automatically saved. Click the *Publish* button in the top right to make the updates available to the live page.
+    As you work, a draft of the page is automatically saved.
 
-## Add a Section
+1. Click the *Publish* button in the top right to make the updates available to the live page.
 
-1. Open the Sections Menu.
+## Configuring Elements on a Content Page
 
-1. Open the Collection that the Section belongs to and drag it directly onto the page.
+Many elements that can be added to a content page can be configured and customized in a variety of ways. Clicking on an element provides a management toolbar with access to available configurations.
 
-1. Optionally edit the Section's background color (![Background Color](../../../../images/icon-color.png)), background image, and spacing. Since these options are available to marketers and Administrators editing a page, the options are limited, and the color palette can be set by the Fragment developer.
+### Changing a Background Color
 
-  ![The Section management tool provides powerful tools, but with the training wheels still on.](./building-content-pages/images/04.png)
+### Using a Background Image
 
-1. [Complete the remaining steps to build the Content Page](#building-the-content-page).
+### Editing Text
+
+### Adding a Hyperlink
+
+### Copying a Fragment
+
+### Adjusting Spacing
+
+### General Configuration
+
+Available for some out-of-the-box fragments. This menu option presents context specific fragment configurations. For a reference on these configurations, see Basic Component Configuration Reference.
+
+### Mapping Content
+
+Users can click on layouts that have been added to a page and use the layout management toolbar to configure a layout further.
+
+![The Section management tool provides powerful tools.](./building-content-pages/images/04.png)
+
+## Additional Information
+
+* Developing a Page Fragment
+* Using Master Pages
+* Changing Content Pages Look and Feel
+
+<!-- ### Changing Layout Background Color
+
+Edit a layout's background color by clicking (![Background Color](../../images/icon-color.png)).
+
+```note::
+   The available color palette can be configured by the Fragment developer.
+```
+
+### Using a Background Image with a Layout
+
+### Adjusting Layout Column Width
+
+1. Optionally edit the Section's background color (![Background Color](../../images/icon-color.png)), background image, and spacing.
 
 ## Add a Layout
 
-1. Open the *Section Builder* Menu and open the *Layouts* panel.
+1. Open the *Fragments* Menu and open the *Layouts* panel.
 
 1. Drag the Layout onto the page, above or below an existing Layout or Section.
 
@@ -101,7 +141,7 @@ Coming soon!
 
 1. Click on the link or button that you want to edit.
 
-1. Click on (![Edit](../../../../images/icon-edit.png)) to edit the link text, (![Link](../../../../images/icon-link.png)) to edit the link properties, or (![Map](../../../../images/icon-map.png)) to edit the link mapping (described earlier).
+1. Click on (![Edit](../../images/icon-edit.png)) to edit the link text, (![Link](../../images/icon-link.png)) to edit the link properties, or (![Map](../../images/icon-map.png)) to edit the link mapping (described earlier).
 
   From the Link Properties popup, you can define these link options:
 
@@ -140,7 +180,7 @@ For more information on developing editable links, see [Creating Editable Links]
 
 1. [Complete the remaining steps to build the Content Page](#building-the-content-page).
 
-## Mapping Elements
+## Mapping Existing Content to Elements on a Content Page
 
 You can also map these elements to content. You can set the *Content* for the element (web content article, document, or blog) and choose its applicable *Field* to display (e.g., title, author name, tags, etc.). You can configure this by selecting the element's *Map* button (![Map](../../../../images/icon-map.png)).
 
@@ -148,4 +188,9 @@ You can also map these elements to content. You can set the *Content* for the el
   Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map [custom fields](TODO). To ensure you leverage the latest editable element mapping features, upgrade to these versions.
 ```
 
-When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../11-experience-personalization/02-content-page-personalization.md). -->
+When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../11-experience-personalization/02-content-page-personalization.md).
+
+## Additional Information
+
+* [Developing a Page Fragment](TODO).
+-->
