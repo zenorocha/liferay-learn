@@ -59,10 +59,6 @@ Available for some out-of-the-box fragments. This menu option presents context s
 
 ### Mapping Content
 
-Users can click on layouts that have been added to a page and use the layout management toolbar to configure a layout further.
-
-![The Section management tool provides powerful tools.](./building-content-pages/images/04.png)
-
 ## Additional Information
 
 * Developing a Page Fragment
