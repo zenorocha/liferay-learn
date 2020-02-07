@@ -1,0 +1,121 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<a class="autofit-row autofit-row-center" :href="card.sectionURL">
+			<div class="autofit-col autofit-col-expand">
+				<h4 class="title">{{ card.sectionName }}</h4>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a class="subsection-link" :href="subsection.url">
+							{{ subsection.name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</a>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Building Sites',
+					sectionURL: 'site-building/building_sites.html',
+					subsections: [
+						{
+							name: 'Adding a Site',
+							url: 'site-building/building-sites/adding-a-site.html'
+						},
+						{
+							name: 'Building a Site with Site Templates',
+							url: 'site-building/building-sites/building-sites-with-site-templates.html'
+						},
+						{
+							name: 'Understanding Site Membership (Coming Soon)',
+							url: ''
+						}
+					]
+				},
+				{
+					sectionName: 'Creating Pages',
+					sectionURL: 'site-building/creating_pages.html',
+					subsections: [
+						{
+							name: 'Understanding Pages',
+							url: 'site-building/creating-pages/understanding-pages.html'
+						},
+						{
+							name: 'Adding a Page to a Site',
+							url: 'site-building/creating-pages/adding-a-page-to-a-site.html'
+						},
+						{
+							name: 'Content Pages Overview',
+							url: 'site-building/creating-pages/content-pages-overview.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Displaying Content',
+					sectionURL: 'site-building/displaying_content.html',
+					subsections: [
+						{
+							name: 'Using Web Content Display (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Using the Asset Publisher (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Using Fragments (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+				{
+					sectionName: 'Site Navigation (Coming Soon)',
+					subsections: [
+						{
+							name: 'Configuring Site Navigation (Coming Soon)',
+							url: ''
+						},
+				},
+				{
+					sectionName: 'Personalizing Site Experience',
+					subsections: [
+						{
+							name: 'Using Segmentation (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+				{
+					sectionName: 'Optimizing Sites',
+					subsections: [
+						{
+							name: 'Optimizing Site SEO (Coming Soon)',
+							url: 'site-building/07-optimizing-sites/seo_optimization.html'
+						},
+						{
+							name: 'Setting up A/B Testing (Coming Soon)',
+							url: 'site-building/07-optimizing-sites/ab_testing.html'
+						},
+					]
+        },
+				{
+					sectionName: 'Site Settings',
+					subsections: [
+						{
+							name: 'Site Localization (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+			]
+		}
+	})
+</script>

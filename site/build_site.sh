@@ -19,7 +19,7 @@ function generate_sphinx_input {
 
 	cd ../docs
 
-	git clean -dfx .
+	# git clean -dfx .
 
 	./update_examples.sh && ./update_permissions.sh
 
@@ -88,23 +88,23 @@ function generate_static_html {
 		# Make ZIP files.
 		#
 
-		for zip_dir_name in `find build/input/${dir_name} -name *.zip -type d`
-		do
-			pushd ${zip_dir_name}
+		# for zip_dir_name in `find build/input/${dir_name} -name *.zip -type d`
+		# do
+		# 	pushd ${zip_dir_name}
 
-			local zip_file_name=$(basename ${zip_dir_name})
+		# 	local zip_file_name=$(basename ${zip_dir_name})
 
-			zip -r ${zip_file_name} .
+		# 	zip -r ${zip_file_name} .
 
-			local output_dir_name=$(dirname ${zip_dir_name})
+		# 	local output_dir_name=$(dirname ${zip_dir_name})
 
-			output_dir_name=$(dirname ${output_dir_name})
-			output_dir_name=${output_dir_name/input/output}
+		# 	output_dir_name=$(dirname ${output_dir_name})
+		# 	output_dir_name=${output_dir_name/input/output}
 
-			popd
+		# 	popd
 
-			mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
-		done
+		# 	mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
+		# done
 	done
 
 	mv build/output/homepage/* build/output
@@ -118,9 +118,9 @@ function main {
 	# sudo dnf install python3-sphinx
 	#
 
-	python3 -m venv venv
+	python -m venv C:/projects/liferay-learn/site/venv
 
-	source venv/bin/activate
+	source C:/projects/liferay-learn/site/venv/scripts/activate
 
 	check_utils pip3 sphinx-build zip
 
