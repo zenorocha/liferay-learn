@@ -13,7 +13,7 @@ To begin building a Content Page:
     ![A Content Page is blank to begin with. You must add Fragments to it to build it.](./building-content-pages/images/01.png)
 
     ```note::
-       New Content Pages start empty and in a *Draft* status that is not visible until the page is published.
+       New Content Pages start empty and in a *Draft* status. The page is not visible until it is published.
     ```
 
 1. Open the Content Page sidebar and begin adding Page Fragment elements.
@@ -33,13 +33,15 @@ To begin building a Content Page:
 
     ![Modify the Fragments to display the content you want.](./building-content-pages/images/03.png)
 
-    As you work, a draft of the page is automatically saved.
+    ```tip::
+       In progress work on a Content Page is automatically saved.
+    ```
 
 1. Click the *Publish* button in the top right to make the updates available to the live page.
 
 ## Configuring Elements on a Content Page
 
-Many elements that can be added to a content page can be configured and customized in a variety of ways. Clicking on an element provides a management toolbar with access to available configurations.
+Many elements that can be added to a content page can be configured and customized. Clicking on an element provides a management toolbar with access to available configurations.
 
 ### Changing a Background Color
 
