@@ -1,9 +1,9 @@
 # Setting up a Client-to-Site VPN Example
 
-Liferay DXP Cloud team has published the following examples demonstrate to set up an IPsec and also an OpenVPN test server using Ubuntu Server 18.0.4. See the [client to site VPN](./client-to-site-vpn.md) article to learn more about client-to-site VPNs in general.
+See the following examples demonstrating how to set up an IPsec or an OpenVPN test server. Once the VPN server is configured, users are able to connect securely their internal network to their production environment on DXP Cloud. The examples use Ubuntu Server 18.0.4 as the proof of concept. Please read the [client to site VPN](./client-to-site-vpn.md) article to learn more about client-to-site VPNs in general.
 
 ```warning::
-   Note that example and values may be subject to change and should be adapted for each customer's specific environment.
+   Examples and values may be subject to change and should be adapted for each customer's specific environment.
 ```
 
 ## Basic Setup for the IPsec Server
