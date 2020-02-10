@@ -1,0 +1,3 @@
+# IntelliJ Plugin
+
+Coming soon!

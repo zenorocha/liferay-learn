@@ -14,7 +14,7 @@ Contents
    using_search
    collaboration_and_social
    user_and_system_management
-   building_applications
+   developing_applications
    liferay_internals
    headless_delivery
    installation_and_upgrades
