@@ -31,7 +31,7 @@ Customizing the Core
 * Using EXT Plugins
 
 Contributing to Liferay Development
----------------------
+-----------------------------------
 
 * Liferay Development Environment
 * Source Formatting Guidelines

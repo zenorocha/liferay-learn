@@ -1,13 +1,13 @@
 Other Tools
 ===========
 
--  :doc:`/developing-applications/developing-a-single-page-application/fragments-cli`
--  :doc:`/developing-applications/developing-a-single-page-application/liferay-js-generator`
--  :doc:`/developing-applications/developing-a-single-page-application/intellij-plugin`
--  :doc:`/developing-applications/developing-a-single-page-application/theme-generator`
--  :doc:`/developing-applications/developing-a-single-page-application/maven-plugins`
--  :doc:`/developing-applications/developing-a-single-page-application/gradle-plugins`
--  :doc:`/developing-applications/developing-a-single-page-application/screens`
--  :doc:`/developing-applications/developing-a-single-page-application/mobile-sdk`
--  :doc:`/developing-applications/developing-a-single-page-application/push`
--  :doc:`/developing-applications/developing-a-single-page-application/sync`
+-  :doc:`/developing-applications/tooling/other-tools/fragments-cli`
+-  :doc:`/developing-applications/tooling/other-tools/liferay-js-generator`
+-  :doc:`/developing-applications/tooling/other-tools/intellij-plugin`
+-  :doc:`/developing-applications/tooling/other-tools/theme-generator`
+-  :doc:`/developing-applications/tooling/other-tools/maven-plugins`
+-  :doc:`/developing-applications/tooling/other-tools/gradle-plugins`
+-  :doc:`/developing-applications/tooling/other-tools/screens`
+-  :doc:`/developing-applications/tooling/other-tools/mobile-sdk`
+-  :doc:`/developing-applications/tooling/other-tools/push`
+-  :doc:`/developing-applications/tooling/other-tools/sync`
