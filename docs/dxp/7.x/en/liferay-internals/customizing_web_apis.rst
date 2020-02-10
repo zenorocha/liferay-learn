@@ -7,5 +7,5 @@ Customizing Web APIs
    customizing-web-apis/customizing-graphql-apis.md
    customizing-web-apis/customizing-rest-apis.md
 
-.. include:: /developing-applications/customizing-web-apis/README.rst
+.. include:: /liferay-internals/customizing-web-apis/README.rst
    :start-line: 2

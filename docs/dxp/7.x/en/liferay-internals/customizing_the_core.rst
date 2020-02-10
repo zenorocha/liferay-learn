@@ -8,5 +8,5 @@ Customizing the Core
    customizing-the-core/using-ext-plugins.md
    customizing-the-core/using-hooks.md
 
-.. include:: /developing-applications/customizing-the-core/README.rst
+.. include:: /liferay-internals/customizing-the-core/README.rst
    :start-line: 2
