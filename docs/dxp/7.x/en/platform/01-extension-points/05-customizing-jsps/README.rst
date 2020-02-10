@@ -1,4 +1,0 @@
-Customizing JSPs
-================
-
-Coming soon!

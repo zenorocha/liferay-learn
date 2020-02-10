@@ -1,4 +1,0 @@
-Blade
-=====
-
-Coming soon!

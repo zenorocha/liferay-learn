@@ -1,4 +1,0 @@
-Control Panel
-=============
-
-Coming soon!

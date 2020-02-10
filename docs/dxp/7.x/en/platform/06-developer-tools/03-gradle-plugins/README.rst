@@ -1,4 +1,0 @@
-Gradle Plugins
-==============
-
-Coming soon!

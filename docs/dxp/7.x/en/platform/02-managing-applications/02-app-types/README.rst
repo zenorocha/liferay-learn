@@ -1,4 +1,0 @@
-App Types
-=========
-
-Coming soon!
