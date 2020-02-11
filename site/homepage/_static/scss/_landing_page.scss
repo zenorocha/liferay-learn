@@ -39,6 +39,12 @@
 		h4 {
 			font-size: 1.125rem;
 			margin-bottom: $spacing-xs;
+
+			&.sidebar {
+				border-left: 3px solid $card-sidebar;
+				margin-left: -$spacing-default;
+				padding-left: 1.25rem;
+			}
 		}
 	}
 

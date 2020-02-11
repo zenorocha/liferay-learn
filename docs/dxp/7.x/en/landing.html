@@ -8,7 +8,8 @@
 			</div>
 			<div class="autofit-col autofit-col-expand">
 				<a :href="card.sectionURL">
-					<h4 class="title">{{ card.sectionName }}</h4>
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
 				</a>
 				<ul class="subsection" v-if="card.subsections">
 					<li v-for="subsection in card.subsections">

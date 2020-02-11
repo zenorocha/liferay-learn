@@ -8663,6 +8663,10 @@ header {
     .landing-page .section-card h4 {
       font-size: 1.125rem;
       margin-bottom: 0.5rem; }
+      .landing-page .section-card h4.sidebar {
+        border-left: 3px solid #42BFC2;
+        margin-left: -1.5rem;
+        padding-left: 1.25rem; }
   .landing-page .subsection {
     font-size: 0.875rem;
     list-style: none;
