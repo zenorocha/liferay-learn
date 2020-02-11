@@ -80,20 +80,6 @@ public class KBSimilarResultsContributor implements SimilarResultsContributor {
 		criteriaBuilder.uid(Field.getUID(assetEntry.getClassName(), String.valueOf(kbArticle.getClassPK())));
 	}
 
-	@Reference(unbind = "-")
-	public void setAssetEntryLocalService(
-		AssetEntryLocalService assetEntryLocalService) {
-
-		_assetEntryLocalService = assetEntryLocalService;
-	}
-
-	@Reference(unbind = "-")
-	public void setKBarticleLocalService(
-		KBArticleLocalService kbArticleLocalService) {
-
-		_kbArticleLocalService = kbArticleLocalService;
-	}
-
 	@Override
 	public void writeDestination(DestinationBuilder destinationBuilder, DestinationHelper destinationHelper) {
 
@@ -105,6 +91,9 @@ public class KBSimilarResultsContributor implements SimilarResultsContributor {
 		destinationBuilder.replace(urlTitle, assetRenderer.getUrlTitle());
 	}
 
+	@Reference
 	private KBArticleLocalService _kbArticleLocalService;
+
+	@Reference
 	private AssetEntryLocalService _assetEntryLocalService;
 }

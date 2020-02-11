@@ -35,14 +35,14 @@ In this section, we will get an example product type up and running on your inst
 
     If you're running a different Liferay Portal CE version or Liferay DXP, adjust the above command accordingly.
 
-1. Download and unzip [the Guestbook Similar Results Contributor](./blah.zip).
+1. Download and unzip [the KB Article Similar Results Contributor](./ZIPNAME.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp-7.x/[???]/blah.zip -O
+    curl https://learn.liferay.com/dxp-7.x/[???]/ZIPNAME.zip -O
     ```
 
     ```bash
-    unzip blah.zip
+    unzip ZIPNAME.zip
     ```
 
 1. From the module root, build and deploy.
@@ -56,28 +56,28 @@ In this section, we will get an example product type up and running on your inst
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.blah.web_1.0.0
+    STARTED com.liferay.learn.r1s1.impl_1.0.0 [1009]
     ```
 
 1. Verify that the example contributor is working. Begin by opening your browser to `https://localhost:8080`
 
-1.  Add a Guestbook at  _Site Menu_ &rarr; _Content_ &rarr; _Guestbook_.
+1.  Add some KB Articles at  _Site Menu_ &rarr; _Content_ &rarr; _Knowledge Base_.
 
-1.  Add the Guestbook widget to a page, followed by the Similar Results widget.
+    Make sure they have similar _Title_ and _Content_ fields. You can use these Strings to create three articles (use the same string for title and content):
 
-1.  Add some Guestbook Entries with the same word in the _Message_ field, like these:
+    _Test KB Article one_
 
-    _Test the Similar Results widget_
+    _Test KB Article two_
 
-    _Test the Guestbook SimilarResultsContributor_
+    _Test KB Article three_
 
-    _Test displaying custom content types in the Similar Results widget_
+1.  Add the Knowledge Base Display widget to a page, followed by the Similar Results widget.
 
-1.  Click on one of the Guestbook Entries do select it for display, as the main asset.
+1.  Click on one of the KB Articles to select it for display, as the main asset.
 
-    The Similar Results widget now shows other related Geustbook Entries.
+    The Similar Results widget now shows other related KB Articles.
 
-![New product type](./adding-a-new-product-type/images/02.png "New product type")
+![Similar Results widget can display KB Articles.](./adding-a-new-product-type/images/01.png "KB Similar Results")
 
 Now that you verified that the example behaves properly, enter the deep end to learn more.
 
@@ -90,11 +90,11 @@ Let's review the deployed example. It contains just one class: the contributor t
 
 ### Annotate the Contributor Class for OSGi Registration
 
-The `GuestbookSimilarResultsContributor` implements the `SimilarResultsContributor` interface:
+The `KBSimilarResultsContributor` implements the `SimilarResultsContributor` interface:
 
 ```java
 @Component(service = SimilarResultsContributor.class)
-public class GuestbookSimilarResultsContributor implements SimilarResultsContributor {
+public class KBSimilarResultsContributor implements SimilarResultsContributor {
 ```
 
 The `service` component property registers your implementation as a `SimilarResultsContributor` service. 
@@ -125,128 +125,77 @@ Implement `writeDestination` to update the main asset when a User clicks a link 
 
 #### Implement the `detectRoute` Method
 
-    // Code example needs to be updated
+```java
+@Override
+public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper) {
 
-	@Override
-	public void detectRoute(
-		RouteBuilder routeBuilder, RouteHelper routeHelper) {
+    String[] subpath = StringUtil.split(HttpUtil.getPath(routeHelper.getURLString()),
+            Portal.FRIENDLY_URL_SEPARATOR);
 
-		String urlString = routeHelper.getURLString();
+    String[] parameters = StringUtil.split(subpath[subpath.length - 1], CharPool.FORWARD_SLASH);
 
+    if (parameters[0].matches("knowledge_base")) {
 
-    // check if the detected URL begins with "com_liferay_wiki_web_portlet_WikiDisplayPortlet"
-    // but can't use SearchStringUtil since it's an internal class to sim res
-    // use if statement instead
+        routeBuilder.addAttribute("urlTitle", parameters[1]);
+    }
+}
+```
 
-    // this might be messed up, see how this url really looks
-        String portletId = _httpHelper.getPortletIdParameter(urlString, "p_p_id")
-        if (portletId.ing.contains("p_p_id=" + WikiPortletKeys.WIKI_DISPLAY)) {
+    // get the friendly url parameter that matches the urlString
+    //uses the friendly url separator constant, which is /-/, to extract the last 1/2 of the URL:
+    //   "/-/knowledge_base/test-kb-article-two"
+    // i don't know if this check of the array value is appropriate
+    // if the first fruendlyUrl parameter is for the knowledge base, add the second param 
+    // as the attribute that similar results will use to grab our contributor
 
-        // here, from the url, we use _httpHelper to add the nodeName and title of the detected entity to the URL route
-            routeBuilder.addAttribute(
-                "nodeName", _httpHelper.getPortletIdParameter(urlString, "nodeName")
-            ).addAttribute(
-                "title", _httpHelper.getPortletIdParameter(urlString, "title")
-            );
-        }
-
-        /*
-            SearchStringUtil.requireStartsWith(
-                    WikiPortletKeys.WIKI_DISPLAY,
-                    _httpHelper.getPortletIdParameter(urlString, "p_p_id"));
-        */
-
-	}
-
-	@Override
-	public void detectRoute(
-		RouteBuilder routeBuilder, RouteHelper routeHelper) {
-
-		String[] parameters = _httpHelper.getFriendlyURLParameters(
-			routeHelper.getURLString());
-
-    //check with if statement instead
-		SearchStringUtil.requireEquals("blogs", parameters[0]);
-
-		routeBuilder.addAttribute("urlTitle", parameters[1]);
-	}
-
-Now you know the ID for the detected entity, so you can use it to fetch it and the corresponding search engine document.
-
-Implement `detectRoute` to have a distinctive portion of your entity's URL pattern injected into the logic that the Similar results widget uses to find the correct Contributor.
-This method doesn't return anything, but it will be called  to check the detected URL for the Similar Results widget's page against your entity's own display URL. If your entity display URL is detected, you must add at least one attribute to the URL route for use later.
-CHECK ACCURACY
-
-One strategy that can be helpful is to check the portlet ID parameter for your content display portlet's ID.
-
-, and further check whether the URL string contains a characteristic string that indicates
-a particular entity is being displayed. For example, the Contributor logic for Liferay Wiki Pages first checks for `wikiDisplayPortlet` in the URL, then looks for `myEntityDisplay` to 
-Match the URL of the _main asset_ being displayed on the page where the Similar Results widget is deployed. To decide if this is really the contributor you want. Provide logic to find your custom content URLs.
+Implement `detectRoute` to inject logic checking for a distinctive portion of your entity's URL pattern. The Similar results widget uses this check to find the correct Contributor. If your entity's display URL is detected, you must add at least one attribute to the URL route for use later. Here we're checking for `"knowledge_base"` in the Friendly URL, and adding `"urlTitle"` as an attribute to the `RouteBuilder` passed in the method signature if it's detected.
 
 `routehlper.getUrlString` is important. Check if the portlet ID parameter starts with "wikiDisplayPortlet". If yes, this contributor is resolved. After the detecting that you are in the right page, extract the `entityID` form the URL. When you have the ID, add at least one attribute to the route in order to use later.
 
-Now you know the ID for the detected entity, so you can use it to fetch it and the corresponding search engine document.
+The ID added as an attribute to the `RouteBuilder` is used to fetch the entity and the corresponding search engine document in the `resolveCriteria` method.
 
 #### Implement the `resolveCriteria` Method
 
-1.  Implement `resolveCriteria` to match the main entity to the corresponding search engine document. The most important concept is that you must give the `criteriaBuilder.uid` method a unique search index identifier. In the Liferay DXP index, this is done using a combination of the entry class name and the class primary key. Pass both as Strings to `Field.getUID`. This example starts by fetching the model entity using the ID you added to the attribute in the `detectRoute` method, and then uses it to retrieve the asset entry. 
+```java
+@Override
+public void resolveCriteria(CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper) {
 
-	@Override
-	public void resolveCriteria(
-		CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper) {
+    long groupId = criteriaHelper.getGroupId();
 
-		long groupId = criteriaHelper.getGroupId();
+    String urlTitle = (String) criteriaHelper.getRouteParameter("urlTitle");
 
-		String urlTitle = (String)criteriaHelper.getRouteParameter("urlTitle");
+    /*
+     * need help here. how would i retrieve the folder? is there a service
+     * call to fetch it using the url title of the article maybe?
+     */ long kbFolderId = 0;
+    KBArticle kbArticle = _kbArticleLocalService.fetchKBArticleByUrlTitle(groupId, kbFolderId, urlTitle);
 
-		BlogsEntry blogsEntry = _blogsEntryLocalService.fetchEntry(
-			groupId, urlTitle);
+    if (kbArticle == null) {
+        return;
+    }
 
-        // find the blog entry in the db using the id we extracted from the url
+    AssetEntry assetEntry = _assetEntryLocalService.fetchEntry(groupId, kbArticle.getUuid());
 
-		if (blogsEntry == null) {
-			return;
-		}
+    if (assetEntry == null) {
+        return;
+    }
 
-        // i think we'll not do this, right?  or is this a must-have null check for all assets?
-		AssetEntry assetEntry = _assetEntryLocalService.fetchEntry(
-			groupId, blogsEntry.getUuid());
-        // why use the Uuid here?
+    criteriaBuilder.uid(Field.getUID(assetEntry.getClassName(), String.valueOf(kbArticle.getClassPK())));
+}
+```
 
-		if (assetEntry == null) {
-			return;
-		}
+Match the page's displayed entity to the corresponding search engine document. You must provide the `criteriaBuilder.uid` method the value of the appropriate search engine document's `uid` field. In the Liferay DXP index, this is done using a combination of the entry class name and the class primary key. Pass both as Strings to `Field.getUID`. This example starts by fetching the model entity using the ID you added to the attribute in the `detectRoute` method, and then uses it to retrieve the asset entry. 
 
-        // this Field.getUID doesn't make sense to me, need learnin'
-		criteriaBuilder.uid(
-			Field.getUID(
-				assetEntry.getClassName(),
-				String.valueOf(blogsEntry.getEntryId())));
-	}
 
-Set the UID to the search engine document identifier. This is a combination of entryClassName and classPK for portal. Field.getUID is helpful in this.
-
-It would be simpler if it wasn't a liferay entity (e.g., application contributed index) because the id in the url might be the document id itself (e.g., synonyms).
-
-Now that you told the criteria what document to match, write the destination URL so the similar results are update.
-
-Implement `resolveCriteria` to match the main entity to the corresponding search engine document. The most important concept is that you must give the `criteriaBuilder.uid` method a unique search index identifier. In the Liferay DXP index, this is done using a combination of the entry class name and the class primary key. Pass both as Strings to `Field.getUID`. This example starts by fetching the model entity using the ID you added to the attribute in the `detectRoute` method, and then uses it to retrieve the asset entry.
-
-Set the UID to the search engine document identifier. This is a combination of entryClassName and classPK for portal. Field.getUID is helpful in this.
-
-It would be simpler if it wasn't a liferay entity (e.g., application contributed index) because the id in the url might be the document id itself (e.g., synonyms).
+<!-- for blogs this sets something like this as the uid: com.liferay.blogs.model.BlogsEntry_PORTLET_38805 might need to doc this uid thing a bit. it wasn't clear which field from the model entity was going to be used to match the uid. i tried getPrimaryKey(), getKBArticleId(), and finally found that getEntryClassPK was the golden ticket for kb articles. -->
 
 Now that you told the criteria what document to match, write the destination URL so the similar results are updated.
 
 #### Implement the `writeDestination` Method
 
-1.  Implement `writeDestination` to update the main asset when a User clicks a link in the similar results widget. The similar results list is re-rendered to match the new main asset. The entirety of the work here is to replace the ID in the original URL for each similar result (to render the clickable links)
-
 ```java
 @Override
-public void writeDestination(
-    DestinationBuilder destinationBuilder,
-    DestinationHelper destinationHelper) {
+public void writeDestination(DestinationBuilder destinationBuilder, DestinationHelper destinationHelper) {
 
     String urlTitle = (String)destinationHelper.getRouteParameter(
         "urlTitle");
@@ -257,41 +206,26 @@ public void writeDestination(
 }
 ```
 
-In addition to re-sending the qeury re-populating the Similar Results list, replace the ID (in this case urlTitle) with the new ID for each entry in the list of similar results.
+Implement `writeDestination` to update the main asset when a user clicks a link in the Similar Results widget. The More Like This query is re-sent to thes earch engine, and the Similar Results list is re-rendered to match the new main asset. The entirety of the work here is to replace the ID in the original URL for each similar result (to render the clickable links)
 
+In addition to re-sending the qeury re-populating the Similar Results list, replace the `urlTitle` in each result with the appropriate ID for each entry.
+<!-- My code, copied from blogs example, has a bug and doesn't do this currently. It keeps the url of the current main asset for some reason -->
 
-Implement `writeDestination` to update the main asset when a User clicks a link in the similar results widget. The similar results list is re-rendered to match the new main asset. The entirety of the work here is to replace the ID in the original URL for each similar result (to render the clickable links)
-
-In addition to re-sending the qeury re-populating the Similar Results list, replace the ID (in this case urlTitle) with the new ID for each entry in the list of similar results.
-<!-- Does this mean that the URL for each one contains the ID of the main asset as a param? Doesn't appear so from my investigation:
-
-main asset
-http://localhost:8080/web/guest/home/-/blogs/the-lunar-distinction-blogs-entry?
-_com_liferay_blogs_web_portlet_BlogsPortlet_redirect=http%3A%2F%2Flocalhost%3A8080%2Fweb%2Fguest%2Fhome%3F
-p_p_id&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_blogs_web_portlet_BlogsPortlet_cur=1&_com_liferay_blogs_web_portlet_BlogsPortlet_delta=20
-
-one of the sim res
-http://localhost:8080/web/guest/home/-/blogs/the-lunar-resort-convention-and-diplomacy-center-blogs-entry?
-_com_liferay_blogs_web_portlet_BlogsPortlet_redirect=http://localhost:8080/web/guest/home?
-p_p_id&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_com_liferay_blogs_web_portlet_BlogsPortlet_cur=1&_com_liferay_blogs_web_portlet_BlogsPortlet_delta=20
--->
 #### Declare the Service Dependencies
 
-The services this code relies on are deployed to an OSGi container. You can use Declarative Services to declare your need for them. Do this at the bottom of your class:
-There's at least one important reference you need:
+This code relies on two services deployed to an OSGi container: `AssetEntryLocalService` and `KBArticleLocalService`. Declare your need for them using the Declarative Services `@Reference` annotation, provided by `org.osgi.service.component.annotations.Reference`. Set them into private fields.
 
 ```java
-@Reference(unbind = "-")
-public void setHttpHelper(HttpHelper httpHelper) {
-    _httpHelper = httpHelper;
-}
+@Reference
+private AssetEntryLocalService _assetEntryLocalService;
+
+@Reference
+private KBArticleLocalService _kbArticleLocalService;
 ```
 
-The `HttpHelper` service ... 
-
-<!-- Bulk this up with our specific example's references. -->
-
 ## Additional Information
+
+<!-- I'm not exactly sure what to say here. We may not need this section this time.These are my notes from ur dicsussion at SearchCon-->
 
 NOT ALWAYS MANDATORY
 
@@ -313,6 +247,7 @@ Here's how Blogs entries URLs are constructed: https://github.com/liferay/lifera
 [Most code examples won't cover every option, method, etc. available to third party developers. Tell them what else they can do with the feature or API, and explain how]
 
 [Are the APIs and other classes discussed here useful in some other cool process? Is there something cool third party devs can do? Let's tell them about it!]
+
 ## Conclusion
 
 By implementing a `SimilarResultsContributor`, you can contribute your own custom content for display in the Similar Results widget.
