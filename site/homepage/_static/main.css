@@ -8635,6 +8635,12 @@ header {
 .landing-page {
   display: flex;
   flex-wrap: wrap; }
+  .landing-page .autofit-row-center > .autofit-col {
+    justify-content: initial; }
+  .landing-page .icon {
+    height: 2rem;
+    margin-right: 1.5rem;
+    width: 2rem; }
   .landing-page .section-card {
     border: 1px solid rgba(9, 16, 24, 0.12);
     border-radius: 0.25rem;

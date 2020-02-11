@@ -1,17 +1,22 @@
 <div class="landing-page" id="landingPage">
 	<div class="section-card" v-for="card in cards">
-		<a class="autofit-row autofit-row-center" :href="card.sectionURL">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
 			<div class="autofit-col autofit-col-expand">
-				<h4 class="title">{{ card.sectionName }}</h4>
+				<a :href="card.sectionURL">
+					<h4 class="title">{{ card.sectionName }}</h4>
+				</a>
 				<ul class="subsection" v-if="card.subsections">
 					<li v-for="subsection in card.subsections">
-						<a class="subsection-link" :href="subsection.url">
-							{{ subsection.name}}
-						</a>
+						<a :href="subsection.url">{{ subsection.name}}</a>
 					</li>
 				</ul>
 			</div>
-		</a>
+		</div>
 	</div>
 </div>
 
@@ -23,6 +28,7 @@
 		data: {
 			cards: [
 				{
+					icon: '#analytics-cloud-logo',
 					sectionName: 'Getting Started',
 					sectionURL: 'getting_started.html',
 					subsections: [
