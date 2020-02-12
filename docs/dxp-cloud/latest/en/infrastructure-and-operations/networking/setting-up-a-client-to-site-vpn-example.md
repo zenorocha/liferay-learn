@@ -1,14 +1,14 @@
-# Setting up a Client-to-Site VPN Example
+# Client-to-Site VPN Example
 
-See the following examples demonstrating how to set up an IPsec or an OpenVPN test server. Once the VPN server is configured, users are able to connect securely their internal network to their production environment on DXP Cloud. The examples use Ubuntu Server 18.0.4 as the proof of concept. Please read the [client to site VPN](./client-to-site-vpn.md) article to learn more about client-to-site VPNs in general.
+The following scenario walks through how to set up an IPsec or an OpenVPN test server. Once the VPN server is configured, a secure connection is established between the internal network and the production environment on DXP Cloud. This example uses Ubuntu Server 18.0.4 as a proof of concept. Please read the [Client to Site VPN](./client-to-site-vpn.md) article for an overview on DXP Cloud's Client-to-Site VPNs functionality.
 
 ```warning::
-   Examples and values may be subject to change and should be adapted for each customer's specific environment.
+   Examples and values may be subject to change and should be adapted for your specific environment.
 ```
 
-## Basic Setup for the IPsec Server
+## Basic Setup for an IPsec Server
 
-To configure a IPsec test server:
+To configure an IPsec test server:
 
 1. Save the following file as `~/ipsec.conf` and replace the `leftid` value with your VPN server's external IP.
 
@@ -41,12 +41,12 @@ To configure a IPsec test server:
         eap_identity=%identity
     ```
 
-1. In your server, replace the `SERVER_EXTERNAL_IP` with your VPN server's external IP and `USERNAME/PASSWORD` with your values:
+1. On your server, replace the `SERVER_EXTERNAL_IP` with your VPN server's external IP and `USERNAME/PASSWORD` with your values:
 
     ```properties
     SERVER_EXTERNAL_IP="18.188.145.101"
     USERNAME="myuser"
-    PASSWORD="mypassword
+    PASSWORD="mypassword"
     ```
 
 1. Install the necessary dependencies:
@@ -59,7 +59,6 @@ To configure a IPsec test server:
 1. Set up the security certificates and keys:
 
     ```bash
-
         mkdir -p ~/pki/{cacerts,certs,private}
         chmod 700 ~/pki
         ipsec pki --gen --type rsa --size 4096 --outform pem > ~/pki/private/ca-key.pem
@@ -79,7 +78,7 @@ To configure a IPsec test server:
         sudo cp -r ~/pki/* /etc/ipsec.d/
     ```
 
-1. Configure StrongSwan (see the `server.conf` file described above).
+1. Configure [StrongSwan](https://www.strongswan.org/) (see the `server.conf` file described above).
 
     ```bash
         sudo cp ~/ipsec.conf /etc/ipsec.conf
