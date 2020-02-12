@@ -167,15 +167,6 @@ Otherwise, you can configure the data source in WebLogic.
     jdbc.default.jndi.name=jdbc/LiferayPool
     ```
 
-Alternatively, the above configuration can be made strictly via properties in the `portal-ext.properties` file. To do so, place the following properties and values in the file. Make sure to change the `your*` values with the values appropriate for the database's configuration (if using MySQL):
-
-```properties
-jdbc.default.driverClassName=com.mysql.jdbc.Driver
-jdbc.default.url=jdbc:mysql://your.db.ip.address/yourdbname?useUnicode?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-jdbc.default.username=yourdbuser
-jdbc.default.password=yourdbpassword
-```
-
 ## Mail Configuration
 
 Liferay DXP can be [connected to a mail server](../../02-setting-up-liferay-dxp/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
