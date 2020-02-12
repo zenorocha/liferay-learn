@@ -14,7 +14,7 @@ Setting Up Liferay DXP
 Installing and Managing Apps
 ----------------------------
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/introduction-to-managing-apps`
--  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/using-the-liferay-marketplace`
+-  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/purchasing-apps-on-liferay-marketplace`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/downloading-apps`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/app-installation-strategies`
 -  :doc:`/installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/installing-apps-in-production`
