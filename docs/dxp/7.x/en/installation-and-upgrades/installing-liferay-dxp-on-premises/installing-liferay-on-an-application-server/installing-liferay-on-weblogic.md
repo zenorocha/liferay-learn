@@ -29,13 +29,15 @@ Here are the basic steps for installing DXP on WebLogic:
 
 ### Configuring WebLogic's Node Manager
 
-WebLogic requires a Node Manager to start and stop managed servers. Before installing DXP, configure the Node Manager included with the WebLogic installation. This is set in the `domains/your_domain_name/nodemanager/nodemanager.properties` file. Open this file and set the `SecureListener` property to `false`:
+WebLogic's Node Manager starts and stops managed servers.
+
+To avoid difficulties running DXP with the encryption requirement enabled in the Node Manager, it's recommended to disable the requirement by setting the following property in the `domains/your_domain_name/nodemanager/nodemanager.properties` file:
 
 ```properties
 SecureListener=false
 ```
 
-This setting disables the encryption (SSL) requirement for the Node Manager, allowing it to accept unencrypted connections. Although it's possible to run DXP with this property set to `true`, there may be some difficulties doing so. Furthermore, if `SecureListener` set to `true`, then configure the machine in the Admin Server's console to accept unencrypted connections from the Node Manager. To do this:
+This disables the encryption (SSL) requirement for the Node Manager, allowing it to accept unencrypted connections. With the encryption requirement disabled, configure the machine in the Admin Server's console to accept unencrypted connections from the Node Manager:
 
 1. Log in to the Admin Server and select *Environment* &rarr; *Machines* from the *Domain Structure* box on the left.
 1. Click the corresponding machine in the table and then select the *Configuration* &rarr; *Node Manager* tab.
