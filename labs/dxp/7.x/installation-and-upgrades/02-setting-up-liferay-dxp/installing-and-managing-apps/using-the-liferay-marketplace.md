@@ -83,10 +83,10 @@ The app downloads and installs to Liferay DXP automatically. Congratulations! Yo
 
 ## Additional information
 
-* [App Installation Strategies](./installing-and-managing-apps/app-installation-strategies.md)
+* [App Installation Strategies](./app-installation-strategies.md)
 
-* [Installing Apps In Production](./installing-and-managing-apps/installing-apps-in-production.md)
+* [Installing Apps In Production](./installing-apps-in-production.md)
 
-* [Renewing Apps](./installing-and-managing-apps/renewing-apps.md)
+* [Renewing Apps](./renewing-apps.md)
 
 * [Liferay Marketplace Developer Portal](https://marketplace.liferay.dev/)

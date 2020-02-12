@@ -4,6 +4,8 @@ Installing Apps Manually
 .. toctree::
    :maxdepth: 2
    
+   installing-and-managing-apps/introduction-to-managing-apps.md
+   installing-and-managing-apps/using-the-liferay-marketplace.md
    installing-and-managing-apps/installing-the-marketplace-plugin.md
    installing-and-managing-apps/downloading-apps.md
    installing-and-managing-apps/app-installation-strategies.md
