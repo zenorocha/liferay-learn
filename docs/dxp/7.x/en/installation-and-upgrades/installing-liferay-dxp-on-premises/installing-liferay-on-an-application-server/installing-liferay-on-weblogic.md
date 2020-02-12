@@ -2,13 +2,13 @@
 
 Installing Liferay DXP on WebLogic requires deploying dependencies, modifying configuration files, configuring a database and a mail session, and deploying the DXP WAR file on a WebLogic server.
 
-It is **highly recommended** to install web apps, including DXP, in a WebLogic Managed server. Deploying to a Managed Server lets administrators to start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP in a Managed Server.
+It is **highly recommended** to install web apps, including DXP, in a WebLogic Managed server. Deploying to a Managed Server lets you to start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP in a Managed Server.
 
 Before getting started, create the Admin and Managed Servers. See [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html) for instructions on setting up and configuring Admin and Managed Servers.
 
 Liferay DXP requires Java JDK 8 or 11. Please consult the [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?) to learn more about the supported environments.
 
-To install Liferay DXP on WebLogic, download the following:
+To install Liferay DXP on WebLogic, download the following from [Liferay Community Downloads site](https://www.liferay.com/downloads-community):
 
 * DXP WAR file
 * Dependencies ZIP file
@@ -59,7 +59,7 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
 1. `your-domain/bin/startWebLogic.sh`: This is the startup script for
     Managed Servers.
 
-    Add the following variables to both `startWebLogic.[cmd|sh]` scripts:
+    Add the following variables to both `startWebLogic.sh` scripts:
 
     ```bash
     export DERBY_FLAG="false"
