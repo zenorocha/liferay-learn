@@ -4,7 +4,7 @@ Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deployin
 
 It is **highly recommended** to install DXP to a WebLogic Managed server. Deploying to a Managed Server lets you start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP to a Managed Server.
 
-Before installing DXP, configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html.
+Before installing DXP, configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html).
 
 Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java.com/) to install a JDK.
 
@@ -43,13 +43,15 @@ This setting disables the encryption (SSL) requirement for the Node Manager, all
 1. Click *Save*.
 1. Restart the Admin Server for this change to take effect.
 
-If running WebLogic on certain *UNIX* systems, you may also need to set the `NativeVersionEnabled` property to `false`:
+If you're running WebLogic on a UNIX system other than Solaris or Linux, use the Java Node Manager, instead of the native version of the Node Manager, by configuring these Node Manager properties in the `domains/your_domain_name/nodemanager/nodemanager.properties` file:
 
 ```properties
 NativeVersionEnabled=false
+
+StartScriptEnabled=true
 ```
 
-This tells the Node Manager to start in non-native mode and use the start script specified by the `StartScriptEnabled` property to start Managed Servers. Otherwise, if running Solaris or Linux, use the default value of `true`. See Oracle's [Configuring Java Node Manager](https://docs.oracle.com/middleware/1212/wls/NODEM/java_nodemgr.htm#NODEM173) documentation.
+See Oracle's [Configuring Java Node Manager](https://docs.oracle.com/middleware/1212/wls/NODEM/java_nodemgr.htm#NODEM173) documentation for details.
 
 ### Configuring WebLogic's JVM
 
