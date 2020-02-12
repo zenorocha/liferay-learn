@@ -104,19 +104,23 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
 
 ## Declaring the Liferay Home Folder
 
-Before installing DXP, set the [*Liferay Home*](../../14-reference/01-liferay-home.md) folder's location via the `liferay.home` property in a [`portal-ext.properties`](../../14-reference/03-portal-properties.md) file. (Use this file to override [other DXP properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) as needed.) In WebLogic, the user domain's folder is generally Liferay Home, but any other folder on the machine can be used.
+Before installing DXP, set your [*Liferay Home*](../../14-reference/01-liferay-home.md) folder location.
 
-1. Add the `liferay.home` property:
+1. Create a file called [`portal-ext.properties`](../../14-reference/03-portal-properties.md). (It overrides [DXP properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html).) 
+
+1. In the `portal-ext.properties` file, set the `liferay.home` property to your Liferay Home folder path. In WebLogic, the user domain's folder is generally Liferay Home, but any other folder on the machine can be used:
 
 ```properties
 liferay.home=/full/path/to/your/liferay/home/folder
 ```
 
-Remember to change this file path to the location on your machine that serving as Liferay Home.
+1. Package the `portal-ext.properties` in your DXP WAR file by expanding the DXP WAR file and copying the `portal-ext.properties` file into the `WEB-INF/classes` folder. 
 
-Put the updated `portal-ext.properties` inside the DXP WAR file by expanding the DXP WAR file. Navigate to the `WEB-INF/classes` folder then place the `portal-ext.properties` file here. Next, deploy the expanded archive to WebLogic. Alternatively, you can re-WAR the expanded archive for later deployment. In either case, DXP reads the property settings once it starts up.
+1. Optionally, you can re-WAR the expanded DXP WAR. When you're ready to deploy DXP, you can deploy it as an expanded archive or WAR file. In both cases, DXP reads the property settings once it starts up.
 
-If the `portal-ext.properties` has to be modified after DXP deploys, the file is found in the user domain's `autodeploy/ROOT/WEB-INF/classes` folder. Note that the `autodeploy/ROOT` folder contains the DXP deployment.
+```note::
+   If you need to update `portal-ext.properties` after DXP deploys, it is in the user domain's `autodeploy/ROOT/WEB-INF/classes` folder. Note that the `autodeploy/ROOT` folder contains the DXP deployment.
+```
 
 ## Installing DXP Dependencies
 
