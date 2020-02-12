@@ -1,6 +1,6 @@
 # Installing DXP on WebLogic
 
-Installing Liferay DXP on WebLogic requires deploying dependencies, modifying configuration files, configuring a database and a mail session, and deploying the DXP WAR file on a WebLogic server.
+Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebLogic Server for DXP.
 
 It is **highly recommended** to install web apps, including DXP, in a WebLogic Managed server. Deploying to a Managed Server lets you to start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP in a Managed Server.
 
