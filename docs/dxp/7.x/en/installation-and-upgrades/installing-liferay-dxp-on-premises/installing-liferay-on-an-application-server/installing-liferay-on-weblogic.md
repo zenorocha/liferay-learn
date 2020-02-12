@@ -23,6 +23,8 @@ Here are the basic steps for installing DXP on WebLogic:
 1. [Configuring WebLogic for DXP](#configuring-weblogic)
 1. [Declaring the `Liferay Home` folder](#declaring-the-liferay-home-folder)
 1. [Installing the dependencies](#installing-dxp-dependencies)
+1. [Database Configuration](#database-configuration)
+1. [Mail Configuration](#mail-configuration)
 1. [Deploying the WAR](#deploying-dxp)
 
 ## Configuring WebLogic
@@ -139,13 +141,13 @@ DXP communicates with your database via JDBC. Add your database JDBC driver JAR 
 
 Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, **do not** use it for production DXP instances.
 
-### Database Configuration
+## Database Configuration
 
 DXP contains a built-in Hypersonic database which is great for demonstration purposes but _should not be used in production_. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS. See [Configure a Database](../configuring-a-database.md) to set up your database. 
 
 Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server. 
 
-To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). 
+To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on the [Database Template](../../14-reference/05-database-templates.md) for your database.
 
 Otherwise, you can configure the data source in WebLogic.
 
@@ -174,7 +176,7 @@ jdbc.default.username=yourdbuser
 jdbc.default.password=yourdbpassword
 ```
 
-### Mail Configuration
+## Mail Configuration
 
 Liferay DXP can be [connected to a mail server](../../02-setting-up-liferay-dxp/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
 
