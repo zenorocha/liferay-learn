@@ -55,15 +55,9 @@ See Oracle's [Configuring Java Node Manager](https://docs.oracle.com/middleware/
 
 ### Configuring WebLogic's JVM
 
-Set the following variables in the two respective WebLogic startup scripts. These variables and scripts are as follows. Be sure to use `set` instead of `export` if you're on Windows.
+Configure the JVM using variables and options in the WebLogic scripts and Managed Server.
 
-1. `your-domain/startWebLogic.sh`: This is the Admin Server's startup
-    script.
-
-1. `your-domain/bin/startWebLogic.sh`: This is the startup script for
-    Managed Servers.
-
-    Add the following variables to both `startWebLogic.sh` scripts:
+1. Add the following variables to both your Admin Server startup script (`your-domain/startWebLogic.sh`) and Managed Server startup script (`your-domain/bin/startWebLogic.sh`)
 
     ```bash
     export DERBY_FLAG="false"
@@ -72,15 +66,19 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
     export USER_MEM_ARGS="-Xmx2560m -Xms2560m"
     ```
 
-    | **Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+    The `DERBY_FLAG` setting disables the Derby server built in to WebLogic, as DXP does not require this server. The remaining settings support DXP's memory requirements, UTF-8 requirement, Lucene usage, and Aspect Oriented Programming via AspectJ.
 
-    The `DERBY_FLAG` setting disables the Derby server built in to WebLogic, as DXP does not require this server. The remaining settings support DXP's memory requirements, UTF-8 requirement, Lucene usage, and Aspect Oriented Programming via AspectJ. Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example:
+    ```important::
+       For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+    ```
+
+    Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example:
 
     ```bash
     export MW_HOME="/Users/ray/Oracle/wls12210"
     ```
 
-1. Some of the settings are also found in the `your-domain/bin/SetDomainEnv.sh`:
+1. Make sure `your-domain/bin/SetDomainEnv.sh` uses these memory settings:
 
     ```bash
     WLS_MEM_ARGS_64BIT="-Xms2560m -Xmx2560m"
@@ -102,7 +100,7 @@ Set the following variables in the two respective WebLogic startup scripts. Thes
     -Xmx2560m -Xms2560m -XX:MaxMetaspaceSize=512m
     ```
 
-1. Click *Save* when finished.
+1. Click *Save*.
 
 ## Declaring the Liferay Home Folder
 
