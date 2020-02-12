@@ -139,9 +139,13 @@ Note that although a Hypersonic database is bundled with DXP and is fine for tes
 
 ### Database Configuration
 
-DXP contains a built-in Hypersonic database which is great for testing and demonstration purposes but _should not be used in production_. See the [Configure a Database](../configuring-a-database.md) article to learn more about  database configurations in general. You can also use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md) to configure your database when starting a DXP bundle for the first time.
+DXP contains a built-in Hypersonic database which is great for demonstration purposes but _should not be used in production_. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS. See [Configure a Database](../configuring-a-database.md) to set up your database. 
 
-Otherwise, use the following procedure if using WebLogic to manage the database for DXP.
+Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server. 
+
+To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). 
+
+Otherwise, you can configure the data source in WebLogic.
 
 1. Log in to the AdminServer console.
 1. In the *Domain Structure* tree, find the domain and navigate to *Services* &rarr; *JDBC* &rarr; *Data Sources*.
@@ -159,7 +163,7 @@ Otherwise, use the following procedure if using WebLogic to manage the database 
     jdbc.default.jndi.name=jdbc/LiferayPool
     ```
 
-Alternatively, the above configuration can be made strictly via properties in the `portal-ext.properties` file. To do so, place the following properties and values in the file. Be sure to change the `your*` values with the values appropriate for the database's configuration (if using MySQL):
+Alternatively, the above configuration can be made strictly via properties in the `portal-ext.properties` file. To do so, place the following properties and values in the file. Make sure to change the `your*` values with the values appropriate for the database's configuration (if using MySQL):
 
 ```properties
 jdbc.default.driverClassName=com.mysql.jdbc.Driver
@@ -206,6 +210,8 @@ Follow these steps to deploy DXP:
 1. Start the Managed Server where DXP is deployed on. DXP precompiles all the JSPs and then launches.
 
 If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../../02-setting-up-liferay-dxp/activating-liferay-dxp.md).
+
+Congratulations! You're running DXP on WebLogic.
 
 ```note::
      Adjust the application server's logging level or log filters to avoid excessive benign log messages such as the ones below involving `PhaseOptimizer`.
