@@ -43,9 +43,9 @@ Here are steps for using the App Manager to install an app:
 
 The app installs via [auto deploy](./app-installation-strategies.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
 
-```note::
-   To uninstall an app installed with the App Manager, use an app [blacklist](./blacklisting-apps.md).
-```
+## Disabling Apps
+
+To disable an installed app, use an app blacklist to do so. This will mark the app as unavailable, so it is no longer used. See [Blacklisting Apps](./blacklisting-apps.md) for more information.
 
 Congratulations! You can use the App Manager to examine and manage application deployments.
 
