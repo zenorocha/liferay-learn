@@ -53,4 +53,4 @@ Liferay DXP Cloud offers optional Private Clusters which isolate each subscriber
 
 ## What's Next
 
-* [Setting up a Client-to-Site VPN example](./setting-up-a-client-to-site-vpn-example.md)
+* [Setting up a Client-to-Site VPN example](./vpn-setup-example.md)

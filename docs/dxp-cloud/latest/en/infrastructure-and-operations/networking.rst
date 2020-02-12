@@ -5,8 +5,9 @@ Networking
    :maxdepth: 1
 
    networking/private-network.md
-   networking/connecting-a-vpn-to-dxp-cloud.md
    networking/client-to-site-vpn.md
+   networking/connecting-a-vpn-to-dxp-cloud.md
+   networking/vpn-setup-example.md
    networking/custom-domains.md
    networking/load-balancer.md
 
