@@ -2,11 +2,15 @@
 
 Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebLogic Server for DXP.
 
-It is **highly recommended** to install web apps, including DXP, in a WebLogic Managed server. Deploying to a Managed Server lets you to start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP in a Managed Server.
+It is **highly recommended** to install DXP to a WebLogic Managed server. Deploying to a Managed Server lets you start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP to a Managed Server.
 
-Before getting started, create the Admin and Managed Servers. See [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html) for instructions on setting up and configuring Admin and Managed Servers.
+Before installing DXP, configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html.
 
-Liferay DXP requires Java JDK 8 or 11. Please consult the [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?) to learn more about the supported environments.
+Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java.com/) to install a JDK.
+
+```note::
+   The [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?) specifies supported databases and environments.
+```
 
 To install Liferay DXP on WebLogic, download the following from the [Liferay Community Downloads site](https://www.liferay.com/downloads-community):
 
