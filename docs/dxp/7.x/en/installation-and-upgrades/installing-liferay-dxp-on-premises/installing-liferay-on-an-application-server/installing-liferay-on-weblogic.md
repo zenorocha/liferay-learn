@@ -12,13 +12,11 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
    The [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?) specifies supported databases and environments.
 ```
 
-To install Liferay DXP on WebLogic, download the following from the [Liferay Community Downloads site](https://www.liferay.com/downloads-community):
+Download these files from the [Help Center](https://customer.liferay.com/downloads) (Subscribers) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
 * DXP WAR file
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
-
-Enterprise subscribers can download the files from [Help Center](https://customer.liferay.com/downloads). Subscribers also need an order number or activation key for Liferay DXP. See the [Activating Liferay DXP](../../02-setting-up-liferay-dxp/activating-liferay-dxp.md) article.
 
 Here are the basic steps for installing DXP on WebLogic:
 
@@ -199,6 +197,8 @@ Follow these steps to deploy DXP:
 1. Click *Finish*.
 1. After the deployment finishes, click *Save* if the configuration is correct.
 1. Start the Managed Server where DXP is deployed on. DXP precompiles all the JSPs and then launches.
+
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../../02-setting-up-liferay-dxp/activating-liferay-dxp.md).
 
 ```note::
      Adjust the application server's logging level or log filters to avoid excessive benign log messages such as the ones below involving `PhaseOptimizer`.
