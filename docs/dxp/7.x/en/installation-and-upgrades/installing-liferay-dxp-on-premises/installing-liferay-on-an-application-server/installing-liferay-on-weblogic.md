@@ -124,15 +124,18 @@ liferay.home=/full/path/to/your/liferay/home/folder
 
 ## Installing DXP Dependencies
 
-1. Unzip the Dependencies ZIP file and place its contents in the WebLogic domain's `lib` folder.
-1. Unzip the OSGi Dependencies ZIP file and place its contents in the `Liferay_Home/osgi` folder (create this folder if it doesn't exist).
-1. Add the database's driver JAR file to the user domain's `lib` folder. Note that although Hypersonic is fine for testing purposes, **do not** use it for production DXP instances.
+DXP depends on libraries (Dependencies ZIP) and OSGi modules (OSGi Dependencies ZIP).
 
-A JDBC driver for the database has been added to the user domain's `lib` folder. Here are some common JDBC drivers:
+1. Unzip the Dependencies ZIP file contents in the WebLogic domain's `lib` folder.
+1. Unzip the OSGi Dependencies ZIP file\ contents in the `Liferay_Home/osgi` folder (create this folder if it doesn't exist).
+
+DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. Here are some common JDBC drivers:
 
 * [`mariadb.jar`](https://downloads.mariadb.org/)
 * [`mysql.jar`](http://dev.mysql.com/downloads/connector/j)
 * [`postgres.jar`](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
+
+Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, **do not** use it for production DXP instances.
 
 ### Database Configuration
 
