@@ -43,9 +43,13 @@ Here are steps for using the App Manager to install an app:
 
 The app installs via [auto deploy](./app-installation-strategies.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
 
-## Disabling Apps
+## Uninstalling Apps
 
-To disable an installed app, use an app blacklist to do so. This will mark the app as unavailable, so it is no longer used. See [Blacklisting Apps](./blacklisting-apps.md) for more information.
+Uninstalling an app deactivates it (if it's active) and makes it unavailable for activation.
+
+```note::
+   The App Manager's uninstall, re-install, and re-activation features have known issues (see `LPS-102506 <https://issues.liferay.com/browse/LPS-102506>`). As a workaround, [use a blacklist](./blacklisting-apps.md) to disable installed apps.
+```
 
 Congratulations! You can use the App Manager to examine and manage application deployments.
 
