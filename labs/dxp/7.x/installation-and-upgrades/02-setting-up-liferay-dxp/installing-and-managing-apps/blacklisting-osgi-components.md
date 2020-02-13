@@ -17,7 +17,7 @@ Follow these steps to disable OSGi components:
 
 1.  In the Component Blacklist screen, add the names of components to disable, and click the *Save* button. The components disable immediately.
 
-    ![This blacklist disables the components `com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth` and `com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet`.](./blacklisting-osgi-components/images/01.png)
+    ![This blacklist disables the components com.liferay.portal.security.ldap.internal.authenticator.LDAPAuth and com.liferay.ip.geocoder.sample.web.internal.portlet.IPGeocoderSamplePortlet.](./blacklisting-osgi-components/images/01.png)
 
 1.  To export the blacklist, click on the Component Blacklist module's Actions button (![Actions](./blacklisting-osgi-components/images/02.png)) and then click *Export*. The blacklist configuration file then downloads (`com.liferay.portal.component.blacklist.internal.ComponentBlacklistConfiguration.config`). Here are contents of the file produced from the example list:
 

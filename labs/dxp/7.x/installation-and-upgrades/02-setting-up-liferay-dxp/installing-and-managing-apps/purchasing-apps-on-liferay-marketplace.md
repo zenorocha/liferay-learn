@@ -77,7 +77,7 @@ Here are the app purchase steps:
 
 1. Accept the EULA and Terms of Service.
 
-1. Click "Purchase" to complete the transaction.
+1. Click *Purchase* to complete the transaction.
 
 The app downloads and installs to Liferay DXP automatically. Congratulations! You know how to find, purchase, and install Liferay Marketplace apps.
 

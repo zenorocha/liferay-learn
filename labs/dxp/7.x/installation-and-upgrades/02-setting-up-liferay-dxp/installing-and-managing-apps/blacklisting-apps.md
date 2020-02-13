@@ -23,7 +23,7 @@ Follow these steps to blacklist an app, module, and plugin:
 
 1.  In the Bundle Blacklist screen, add the bundle symbolic names (see the table below) for the [module](https://help.liferay.com/hc/en-us/articles/360035467532-OSGi-and-Modularity#modules) JARs, LPKG files, or WARs to uninstall. Click the *Save* button when you're finished. DXP uninstalls the blacklisted modules immediately.
  
-    ![This blacklist uninstalls the `com.liferay.docs.greeting.api` module, Liferay Marketplace app LPKG, and `classic-theme` plugin WAR.](./blacklisting-apps/images/02.png)
+    ![This blacklist uninstalls the com.liferay.docs.greeting.api module, Liferay Marketplace app LPKG, and classic-theme plugin WAR.](./blacklisting-apps/images/02.png)
 
 1.  To export the blacklist, click its Actions button (![Actions](./blacklisting-apps/images/03.png)) and then click *Export*. The blacklist config file then downloads (`com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config`). Here are file contents from exporting the example blacklist:
 
@@ -39,7 +39,7 @@ Follow these steps to blacklist an app, module, and plugin:
 
 1.  To deploy the configuration file, copy it into the folder `[Liferay Home]/osgi/configs`. The [Liferay Home](../../14-reference/01-liferay-home.md) folder is typically the app server's parent folder.
 
-###Blacklist Bundle Symbolic Names
+### Blacklist Bundle Symbolic Names
 
 | Type       | Bundle Symbolic Name |
 | ---------- | --------------|
