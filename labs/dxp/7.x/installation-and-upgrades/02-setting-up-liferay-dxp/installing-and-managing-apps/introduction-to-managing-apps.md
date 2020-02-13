@@ -22,4 +22,4 @@ Once apps have been installed to your instance, you can manage them from there u
 
 ### Blacklisting Apps and OSGi Components
 
-The blacklisting feature allows you to designate apps or components as unavailable so they will not be used in your installation. See [Blacklisting Apps](./blacklisting-apps.md) or [Blacklisting OSGi Components](./blacklisting-osgi-components.md) for more information.
+The blacklisting feature lets you designate apps or components as unavailable, preventing them from being used. See [Blacklisting Apps](./blacklisting-apps.md) or [Blacklisting OSGi Components](./blacklisting-osgi-components.md) for more information.

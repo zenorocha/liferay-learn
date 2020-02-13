@@ -2,7 +2,7 @@
 
 The *bundle blacklist* is a convenient way to manage multiple apps, OSGi bundles (modules), and plugin WAR installations. The list is an [OSGi configuration](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations) that DXP uses to uninstall apps. You can set the list in the Control Panel or by using a `.config` file. It saves you the trouble of managing app, module, and plugin installations individually with the [Application Manager](./managing-apps.md) or [Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
 
-The blacklist can be exported from the Control Panel, so that you have the correct file name and syntax. Modifying the file and deploy it to DXP has these additional effects:
+The blacklist can be exported from the Control Panel to an OSGi configuration (`.config`) file. Modifying the file and deploying it to DXP has these additional effects:
 
 * Persists the changes across DXP server startups
 * Propagates the changes from a local cluster node to all the other nodes.
