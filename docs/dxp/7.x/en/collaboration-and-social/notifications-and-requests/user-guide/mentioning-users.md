@@ -1,8 +1,8 @@
 # Mentioning Users
 
-Users can "mention" other users by entering the `@` character in front of each user's user name (`@john.smith`) in a blog entry, [a message boards post](../../message-boards/user-guide/creating-message-boards-threads.md), or comments in any app that supports comments.
+Mentioning other users in a DXP asset draws their attention to a particular asset (for example, a _Message Boards_ or blog post or comment) by sending them a notification and a link. To "mention" other users, enter the `@` character in front of each user's user name (`@john.smith`) in a blog entry, [a message boards post](../../message-boards/user-guide/creating-message-boards-threads.md), or comments in any app that supports comments.
 
-## Using the Mentions Function in a _Message Boards_ Thread
+## Using the Mentions Function in a Message Boards Thread
 
 1. Navigate to the site page where a _Message Boards_ widget has been deployed.
 1. Click on _Add Message_.
@@ -24,4 +24,4 @@ The notification and email indicate the author's name and content type, and cont
 
 ## Additional Information
 
-[Configuring Mentions](./configuring-mentions.md)
+* [Configuring Mentions](./configuring-mentions.md)

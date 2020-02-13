@@ -1,6 +1,6 @@
 # Managing Notifications and Requests
 
-Users receive notifications and requests if they have subscribed to a blog or message board, or if someone sent them a private message, invitation, event reminder, or were mentioned in a post.
+Users receive notifications and requests if they have subscribed to a blog or message board or mentioned in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review an asset before publication because notifications are fully integrated with DXP's [Kaleo Workflow](../../../process-automation/03-workflow/01-user-guide/README.rst) system.
 
 To access notifications and requests:
 
@@ -14,7 +14,7 @@ To access notifications and requests:
 
 ## Managing Notifications
 
-Notifications can pile up after some time, especially if you were away for a few days. To filter and sort your notifications:
+To manage and sort accumulated notifications:
 
 1. Click the _Filter and Order_ dropdown menu.
 1. Choose from:
@@ -24,7 +24,7 @@ Notifications can pile up after some time, especially if you were away for a few
     * **Read:** Displays notifications that have been marked as read.
     * **Date:** Order notifications by date.
 
-![Filter and Order menu](./managing-notifications-and-requests/images/03.png)
+    ![Filter and Order menu](./managing-notifications-and-requests/images/03.png)
 
 By default, notifications are listed by date in descending order. To sort notifications by ascending order, click the up/down arrow icon in the management bar.
 
@@ -49,7 +49,7 @@ You can also manage multiple notifications at once:
 
     ![Managing Multiple Notification status](./managing-notifications-and-requests/images/05.png)
 
-## Managing Requests
+## Managing Requests to Join a Site
 
 When a user gets a request to join a site, it appears in the *Requests List* tab. Users have the option to click _Confirm_ to join the site or click _Ignore_ to decline.
 
