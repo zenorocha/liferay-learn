@@ -20,7 +20,7 @@ To create custom objects,
 
 1.  To create a form view for the object and define the data fields present in the object, leave the _Continue and Create Form View_ setting checked and click _Continue_.
 
-![Creating a custom object is the first step to writing an App Builder application.](./creating-applications-with-app-builder/images/app-builder-custom-object.png)
+![Creating a custom object is the first step to writing an App Builder application.](./creating-applications-with-app-builder/images/01.png)
 
 Define the data present in your custom object by creating a form view.
 
@@ -32,7 +32,7 @@ Once you're ready to define the data fields handled by your custom object, write
 
 1.  From the _Form Views_ tab, click the Add button. The Form Builder is displayed.
 
-![Use the form builder embedded inside the App Builder to create form views.](./creating-applications-with-app-builder/images/app-builder-form-builder.png)
+![Use the form builder embedded inside the App Builder to create form views.](./creating-applications-with-app-builder/images/02.png)
 
 In addition to the embedded form builder, any fields included in the custom object (via the existence of other form views) are available to add to the form view in the left sidebar.
 
@@ -48,7 +48,7 @@ To create a table view,
 
 1.  From the _Table Views_ tab, click the Add button. The Table Builder is displayed.
 
-![Use the table builder embedded inside the App Builder to create table views.](./creating-applications-with-app-builder/images/app-builder-table-builder.png)
+![Use the table builder embedded inside the App Builder to create table views.](./creating-applications-with-app-builder/images/03.png)
 
 ## Deploying the Application
 
@@ -70,7 +70,7 @@ A custom object can have multiple applications. To create an application,
 
 Once your deployment options are defined, click Deploy. The app is live!
 
-![Here's a simple application deployed to the Site Menu (one of the Product Menu deployment options).](./creating-applications-with-app-builder/images/app-builder-table-builder.png)
+![Here's a simple application deployed to the Site Menu (one of the Product Menu deployment options).](./creating-applications-with-app-builder/images/04.png)
 
 In addition to deploying, you can undeploy an App Builder application at any time (e.g., deploy the annual Christmas party sign-up application each year). To undeploy,
 
