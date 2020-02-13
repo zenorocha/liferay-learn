@@ -1,6 +1,6 @@
 # Installing Apps via the UI
 
-Installing apps via the UI leverages auto deployment; the app will install (from the LPKG, module JAR, or plugin WAR) while the DXP server is running. Auto deployment copies the app to the appropriate subfolder in `[Liferay Home]/osgi`, converts it to an OSGi bundle (LPKGs and WARs need converting), and deploys the bundle to the OSGi container.
+You can use DXP's app management UIs to install apps to local and remote DXP servers while they're running. Behind the scenes, DXP copies the app file to the appropriate subfolder in `[Liferay Home]/osgi`, converts it to an OSGi bundle (LPKGs and WARs need converting), and deploys the bundle to the OSGi container.
 
 ```warning::
    LPKG packages that have the restart-required=true property in their liferay-marketplace.properties file (inside the LPKG file) require restarting the server to complete installation. If you auto deploy such an LPKG package, the installation hangs and reports a message like this: Processing xxx.lpkg
@@ -29,3 +29,7 @@ The Purchased page in the Control Panel at *Apps* &rarr; *Purchased* lists apps 
 ## Application Manager
 
 In DXP's App Manager, you can upload and install Marketplace apps. See [Managing Apps](./managing-apps.md) for more information.
+
+## Additional Information
+
+* [Installing Apps via the File System](./installing-apps-via-the-file-system.md)
