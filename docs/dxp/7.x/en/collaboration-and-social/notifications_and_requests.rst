@@ -8,5 +8,5 @@ Notifications and Requests
    notifications-and-requests/developer_guide.rst
    notifications-and-requests/apis.rst
 
-.. include:: /collaboration-and-social/05-notifications-and-requests/README.rst
+.. include:: /collaboration-and-social/notifications-and-requests/README.rst
    :start-line: 2

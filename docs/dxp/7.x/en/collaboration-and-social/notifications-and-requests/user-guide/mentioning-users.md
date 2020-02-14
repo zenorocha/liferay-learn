@@ -1,6 +1,6 @@
 # Mentioning Users
 
-Mentioning other users in a DXP asset draws their attention to a particular asset (for example, a _Message Boards_ or blog post or comment) by sending them a notification and a link. To "mention" other users, enter the `@` character in front of each user's user name (`@john.smith`) in a blog entry, [a message boards post](../../message-boards/user-guide/creating-message-boards-threads.md), or comments in any app that supports comments.
+Mentioning other users in a DXP asset draws their attention to a particular asset (for example, a message boards thread, blog post, or comment) by sending them a site and email notification and link. To "mention" other users, enter the `@` character in front of each user's user name (`@john.smith`) in a blog entry, [a message boards thread](../../message-boards/user-guide/creating-message-boards-threads.md), or comments in any app that supports comments.
 
 ## Using the Mentions Function in a Message Boards Thread
 
@@ -16,7 +16,7 @@ On publishing the content, there is a link to the user's profile page.
 
 ![Mentioned users are linked to their user profile page.](./mentioning-users/images/02.png)
 
-Mentioned users receive a notification and an email informing them that they've been mentioned.
+Mentioned users receive a site notification and an email informing them that they've been mentioned.
 
 ![Mentioned users receive a notification whenever they are mentioned.](./mentioning-users/images/03.png)
 

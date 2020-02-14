@@ -1,6 +1,6 @@
 # Managing Notifications and Requests
 
-Users receive notifications and requests if they have subscribed to a blog or message board or mentioned in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review an asset before publication because notifications are fully integrated with DXP's [Kaleo Workflow](../../../process-automation/03-workflow/01-user-guide/README.rst) system.
+Users receive notifications and requests if they have subscribed to a blog or message board or are [mentioned](./mentioning-users.md) in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review content and asset creation when those activities are used with Liferay's built-in [Workflow](../../../process-automation/03-workflow/01-user-guide/README.rst) capabilities.
 
 To access notifications and requests:
 
@@ -24,7 +24,7 @@ To manage and sort accumulated notifications:
     * **Read:** Displays notifications that have been marked as read.
     * **Date:** Order notifications by date.
 
-    ![Filter and Order menu](./managing-notifications-and-requests/images/03.png)
+      ![Filter and Order menu](./managing-notifications-and-requests/images/03.png)
 
 By default, notifications are listed by date in descending order. To sort notifications by ascending order, click the up/down arrow icon in the management bar.
 
@@ -45,7 +45,7 @@ You can also manage multiple notifications at once:
 1. Several icons appear:
     * **Mark as Read** (![Open Envelope](./managing-notifications-and-requests/images/icon-envelope-open.png))
     * **Mark as Unread** (![Closed Envelope](./managing-notifications-and-requests/images/icon-envelope-closed.png))
-    * **Delete** ![Delete Button](./managing-notifications-and-requests/images/icon-delete.png))
+    * **Delete** (![Delete Button](./managing-notifications-and-requests/images/icon-delete.png))
 
     ![Managing Multiple Notification status](./managing-notifications-and-requests/images/05.png)
 
