@@ -1,4 +1,0 @@
-Setting Permissions
-===================
-
-Coming soon!

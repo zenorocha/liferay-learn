@@ -1,4 +1,0 @@
-Using LDAP
-==========
-
-Coming soon!
