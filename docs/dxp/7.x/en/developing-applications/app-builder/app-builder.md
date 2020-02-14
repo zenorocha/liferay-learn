@@ -51,3 +51,7 @@ Once a custom object is defined and at least one form and table view are created
 **Product Menu:** Deploy the application to the Control Panel, the Site Menu, or both. This gives you flexibility in deciding where administrative Users will access the application.
 
 A Standalone or Product Menu application always includes both the form and table view. The table view is the default view, while an add button provides access to the form view.
+
+## Next Steps
+
+* [Creating Applications with App Builder](./creating-applications-with-app-builder.md)
