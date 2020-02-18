@@ -17,11 +17,11 @@ See [Creating and Managing a Segment] to get started.
 
 ### Advanced and Segmentation with Liferay Analytics Cloud
 
-Supercharge your Segments by integrating your Liferay DXP instance with Anaytics Cloud. Analytics Cloud enables you to integrate DXP with Salesforce(tm) and other data sources to provide even more ways to understand and segment your user base.
+Supercharge your Segments by integrating your Liferay DXP instance with Liferay Analytics Cloud. Analytics Cloud enables you to integrate DXP with Salesforce(tm) and other data sources to provide even more ways to understand and segment your user base.
 
 <!-- screenshot of AC view -->
 
-Integration with AC also provides in-depth (ML powered?) data analytics capabilities to help you understand user behavior and session data for every page of your DXP site.
+Integration with Analytics Cloud also provides in-depth (ML powered?) data analytics capabilities to help you understand user behavior and session data for every page of your DXP site.
 
 ## Personalization
 
