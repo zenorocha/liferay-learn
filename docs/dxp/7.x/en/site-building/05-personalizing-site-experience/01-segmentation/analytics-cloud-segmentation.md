@@ -1,7 +1,6 @@
 # Using Analytics Cloud With User Segments
 
-> **Subscribers Only**
-
+> **Subscription**
 
 To use Analytics Cloud with User Segments, you must first connect your DXP data source to Analytics Cloud and enable synchronization of users and analytics. For more information about Analytics Cloud, including instructions for connecting it with DXP, see the official [Analytics Cloud Documentation](TODO).
 

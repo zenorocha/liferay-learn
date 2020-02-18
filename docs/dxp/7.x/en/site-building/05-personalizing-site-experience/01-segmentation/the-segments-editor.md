@@ -1,6 +1,6 @@
-# The Segments Editor
+# Segments Editor UI Reference
 
-While [creating a User Segment](./creating-user-segments.md), you must use the Segments editor. An overview of the Segments editor UI is discussed here. To access the Segments editor follow these steps:
+An overview of the Segments editor UI is discussed here. To access the Segments editor follow these steps:
 
 1. Go to *Site Administration* and select the site that you wish to create segments for.
 
@@ -18,7 +18,7 @@ On the right side of the page, there's a Properties menu with these options:
 * Organization
 * Session
 
-![You use the Segment Editor to create new Segments.](./the-segments-editor/images/02.png)
+  ![You use the Segment Editor to create new Segments.](./the-segments-editor/images/02.png)
 
 Operations and conjunctions are combined with the properties to define criteria.
 

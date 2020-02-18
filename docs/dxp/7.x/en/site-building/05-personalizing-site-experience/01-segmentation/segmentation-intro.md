@@ -6,9 +6,7 @@ This section focuses on creating and managing User Segments. See the [Personaliz
 
 ## Defining Segments
 
-You can create Segments to capture every case. Segments are composed of different criteria. For example, you might have a User Segment for *Free Checking Account Prospects* that contains criteria based on User data, like customers that don't currently have an open checking account; or based on User behavior, like visitors who came to the site through specific channels. To learn more about Segmentation options, see the 
-[overview of the Segment editor](./the-segments-editor.md) and practice
-[creating Segments](./creating-user-segments.md).
+You can create Segments to capture every case. Segments are composed of different criteria. For example, you might have a User Segment for *Free Checking Account Prospects* that contains criteria based on User data, like customers that don't currently have an open checking account; or based on User behavior, like visitors who came to the site through specific channels. To learn more about Segmentation options, see the [overview of the Segment editor](./the-segments-editor.md) and practice [creating Segments](./creating-user-segments.md).
 
 ## Integrating Segments with Analytics Cloud
 
