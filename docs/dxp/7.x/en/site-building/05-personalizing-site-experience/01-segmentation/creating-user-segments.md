@@ -1,8 +1,9 @@
 # Creating and Managing User Segments
 
-Segments use User data like the *Job Title* field and Organization membership for evaluating segments. These steps describe how to create a new User Segment.
+Segments use User data like the *Job Title* field and Organization membership for evaluating segments. These steps describe how to create a new User Segment:
 
 1. Open the Product Menu and go to *People* &rarr; *Segments* under your Site's Menu.
+    <!-- screenshot for context -->
 1. Click the *Add* button (![Add](../../../images/icon-add.png)).
 1. Click in the top text area and enter a name for your User Segment.
 1. Drag the *User*, *Organization*, and/or *Session* properties that you need to the Conditions box, and configure the fields to create the condition for the User Segment. See the [The Segments Editor](./the-segments-editor.md) for more information on using the editor and an explanation of all the properties you can use. You can add properties to the default list by creating a [Custom Field](TODO) for Users or Organizations.
@@ -27,3 +28,9 @@ Segments use User data like the *Job Title* field and Organization membership fo
 ```note::
   You can't delete a User Segment if it's being used in an experience.
 ```
+
+<!-- ## Related Information
+
+* Links
+* To other
+* Related content -->
