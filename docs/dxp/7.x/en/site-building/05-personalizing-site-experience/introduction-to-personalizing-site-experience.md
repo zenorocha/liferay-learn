@@ -33,6 +33,10 @@ Content Page Personalization and Content List Personalization are two methods de
 
 Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../../02-creating-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the user viewing the page. See [Content Page Personalization](./content-page-personalization.md) for more information.
 
+<!-- Screenshot of content pages personalization -->
+
 ### Content Sets
 
 [Content Sets](TODO) organize and display content. Content Set Personalization provides dynamic selection of Content Sets based on User Segments. This means the Content Set which displays in a given context is determined by their User Segment criteria. For example, you could use a content list to display "featured" articles at the top of a page. Then you could create User Segments containing users who should receive more specialized content, rather than the default. Those Segments would then see content personalized to their interest rather than the default. See [Content Set Personalization](./content-set-personalization.md) for more information.
+
+<!-- Screenshot of content sets personalization -->
