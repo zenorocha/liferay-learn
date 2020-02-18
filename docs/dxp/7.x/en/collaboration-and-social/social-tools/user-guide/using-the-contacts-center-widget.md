@@ -1,12 +1,22 @@
 # Using the Contacts Center Widget
 
-## Adding the Contacts Center to a Site Page
+ The _Contacts Center_ widget lets users form these connection types:
 
-1. Navigate to the site page where it is to be deployed (the _Community Site Social_ page).
+* Connection: A two-way relationship formed by a user accepting a connection request from another user. The Activities widget on each user’s private Dashboard displays the activities of the other user.
+* Following: A one-way relationship in which one user follows another user. The followed user’s activities appear in the Activities widget on the follower's private Dashboard.
+
+After the widget is deployed on a user's private Dashboard, users can form their own social connections.
+
+## Adding the Contacts Center to a User Dashboard
+
+1. Click on the user avatar > _My Dashboard_.
+
+    ![Navigating to My Dashboard](./using-the-contacts-center-widget/images/01.png)
+
 1. Click the _Add_ button.
 1. Click _Widgets_ then _Social_ to expand the menu.
 
-    ![Adding the Contacts Center Widget](./using-the-contacts-center-widget/images/01.png)
+    ![Adding the Contacts Center Widget](./using-the-contacts-center-widget/images/12.png)
 
 1. Drag and drop the _Contacts Center_ widget to the desired location on the page.
 
