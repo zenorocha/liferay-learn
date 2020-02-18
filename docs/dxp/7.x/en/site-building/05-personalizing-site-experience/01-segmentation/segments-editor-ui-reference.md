@@ -50,6 +50,8 @@ In between each criteria and each category, you can define an "and" or "or" conj
 
 User Properties are user attributes you want to capture. This is made up of user metadata as defined in their accounts, but also contains certain group memberships (like Roles and User Groups) as well as information like the date the user profile was last modified. These User properties are available:
 
+<!-- Consider putting these into a table to make the formatting a bit more digestible -->
+
 **Date Modified:** Provides a date picker and an relationship selector to select the date that user information was last changed
 
 **Email Address:** Provides a text box to enter the email provided in the user's profile.
