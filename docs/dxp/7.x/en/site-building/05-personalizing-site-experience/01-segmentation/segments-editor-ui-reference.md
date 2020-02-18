@@ -10,7 +10,7 @@ An overview of the Segments editor UI is discussed here. To access the Segments 
 
 At the top of the editor you can set the name, view the current members of the segment as it is defined, and choose to *Save* the Segment or *Cancel* to discard changes.
 
-![The top portion of the Segment Editor has the segment name and its members.](./the-segments-editor/images/01.png)
+![The top portion of the Segment Editor has the segment name and its members.](./segments-editor-ui-reference/images/01.png)
 
 On the right side of the page, there's a Properties menu with these options:
 
@@ -18,7 +18,7 @@ On the right side of the page, there's a Properties menu with these options:
 * Organization
 * Session
 
-  ![You use the Segment Editor to create new Segments.](./the-segments-editor/images/02.png)
+  ![You use the Segment Editor to create new Segments.](./segments-editor-ui-reference/images/02.png)
 
 Operations and conjunctions are combined with the properties to define criteria.
 
