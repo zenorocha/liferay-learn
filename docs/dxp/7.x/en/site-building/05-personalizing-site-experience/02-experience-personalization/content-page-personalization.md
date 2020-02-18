@@ -15,7 +15,7 @@ These steps show how to personalize and manage Content Page user experiences bas
 1. Modify the page layout and content to display the information you want to show to the selected User Segment.
 1. Click *Publish*.
 
-The *Default* version of the page appears for everyone except for members of the selected User Segment, which are presented with an experience created just for them. The example in the figure below creates a new experience for a fictional *Premium Card Prospects* User Segment.
+The *Default* version of the page appears for everyone except for members of the selected User Segment, who are presented with a version of the site for their defined User Segment. The example in the figure below creates a new experience for a fictional *Premium Card Prospects* User Segment.
 
 ![Your final result for the card prospects might look something like this.](./content-page-personalization/images/03.png)
 
