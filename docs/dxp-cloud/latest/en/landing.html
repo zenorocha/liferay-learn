@@ -1,0 +1,167 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					icon: '#getting-started-logo',
+					sectionName: 'Getting Started',
+					sectionURL: 'getting_started.html',
+					subsections: [
+						{
+							name: 'Introduction to DXP Cloud',
+							url: 'getting-started/introduction-to-dxp-cloud.html'
+						},
+						{
+							name: 'Development Requirements',
+							url: 'getting-started/development-requirements.html'
+						},
+						{
+							name: 'Configuring Your Github Repository',
+							url: 'getting-started/configuring-your-github-repository.html'
+						}
+					]
+				},
+				{
+					icon: '#building-solutions-on-dxp-logo',
+					sectionName: 'Build and Deploy',
+					sectionURL: 'build_and_deploy.html',
+					subsections: [
+						{
+							name: 'Overview of the DXP Cloud Deployment Workflow',
+							url: 'build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow.html'
+						},
+						{
+							name: 'Walking Through the Deployment Life Cycle',
+							url: 'build-and-deploy/walking-through-the-deployment-life-cycle.html'
+						},
+						{
+							name: 'Configuring Persistent File Storage Volumes',
+							url: 'build-and-deploy/configuring-persistent-file-storage-volumes.html'
+						},
+					]
+				},
+				{
+					icon: '#site-building-logo',
+					sectionName: 'Manage and Optimize',
+					sectionURL: 'manage_and_optimize.html',
+					subsections: [
+						{
+							name: 'Auto-Scaling',
+							url: 'manage-and-optimize/auto-scaling.html'
+						},
+						{
+							name: 'Real-Time Alerts',
+							url: 'manage-and-optimize/real-time-alerts.html'
+						},
+						{
+							name: 'Team Collaboration & Access Control',
+							url: 'manage-and-optimize/team-collaboration-and-access-control.html'
+						},
+					]
+				},
+				{
+					icon: '#content-authoring-and-management-logo',
+					sectionName: 'Platform Services',
+					sectionURL: 'platform_services.html',
+					subsections: [
+						{
+							name: 'Backup Service',
+							url: 'platform-services/backup-service.html'
+						},
+						{
+							name: 'Continuous Integration',
+							url: 'platform-services/continuous-integration.html'
+						},
+						{
+							name: 'Database Service',
+							url: 'platform-services/database-service.html'
+						},
+					]
+				},
+				{
+					icon: '#process-automation-logo',
+					sectionName: 'Infrastructure and Operations',
+					sectionURL: 'infrastructure_and_operations.html',
+					subsections: [
+						{
+							name: 'Custom Domains',
+							url: 'infrastructure-and-operations/networking/custom-domains.html'
+						},
+						{
+							name: 'Client-to-Site VPN',
+							url: 'infrastructure-and-operations/networking/client-to-site-vpn.html'
+						},
+						{
+							name: 'Using SSO with DXP Cloud',
+							url: 'infrastructure-and-operations/security/using-sso-with-dxp-cloud.html'
+						},
+					]
+				},
+				{
+					icon: '#using-search-logo',
+					sectionName: 'Troubleshooting',
+					sectionURL: 'troubleshooting.html',
+					subsections: [
+						{
+							name: 'Log Management',
+							url: 'troubleshooting/log-management.html'
+						},
+						{
+							name: 'Shell Access',
+							url: 'troubleshooting/shell-access.html'
+						},
+						{
+							name: 'Disaster Recovery Overview',
+							url: 'troubleshooting/disaster-recovery-overview.html'
+						},
+					]
+        		},
+				{
+					icon: '#collaboration-and-social-logo',
+					sectionName: 'Reference',
+					sectionURL: 'reference.html',
+					subsections: [
+						{
+							name: 'Configuration via LCP.json',
+							url: 'reference/configuration-via-lcp-json.html'
+						},
+						{
+							name: 'Command-line Tool',
+							url: 'reference/command-line-tool.html'
+						},
+						{
+							name: 'Defining Environment Variables',
+							url: 'reference/defining-environment-variables.html'
+						},
+					]
+				},
+			]
+		}
+	})
+</script>

@@ -31,7 +31,7 @@ In general, the `Deployment` type is more lightweight and allows for faster depl
 
 The Network File System (NFS) is available to all `Deployment` type services. NFS will persist regardless of whether a service is re-deployed or even deleted. Any volumes stored outside of NFS, however, are lost upon the service being re-deployed.
 
-The volumes stored in NFS are also available to all `Deployment` type services. NFS is used out-of-the-box for the `Liferay` and `Backup` services to share access to the document library. See [Configuring Persistent File System Volumes](./configuring-persistent-file-system-volumes.md) for more information on configuring volumes for NFS.
+The volumes stored in NFS are also available to all `Deployment` type services. NFS is used out-of-the-box for the `Liferay` and `Backup` services to share access to the document library. See [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md) for more information on configuring volumes for NFS.
 
 `StatefulSet` type services instead have a dedicated SSD for all volume storage. The dedicated SSD available to `StatefulSet` type services is not accessible to other services. Volumes stored on the SSD will persist on re-deployment, but not after service deletion.
 
@@ -62,4 +62,4 @@ By default, the services in DXP Cloud are pre-configured in order to fit a major
 
 ## Additional Information
 
-* [Configuring Persistent File System Volumes](./configuring-persistent-file-system-volumes.md)
+* [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md)
