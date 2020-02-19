@@ -19,7 +19,6 @@ Contents
    liferay_internals
    headless_delivery
    installation_and_upgrades
-   get_help
 
 Indices and tables
 ==================
