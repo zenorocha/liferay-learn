@@ -8,5 +8,5 @@ Social Tools
    social-tools/developer_guide.rst
    social-tools/apis.rst
 
-.. include:: /collaboration-and-social/03-social-tools/README.rst
+.. include:: /collaboration-and-social/social-tools/README.rst
    :start-line: 2

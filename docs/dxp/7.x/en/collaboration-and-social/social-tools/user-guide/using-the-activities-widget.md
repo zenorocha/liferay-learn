@@ -23,3 +23,7 @@ Each item listed in the widget contains a link to the user and the asset (for ex
 Clicking on the link redirects to the site page where the asset is located.
 
 Lastly, click _RSS_ to subscribe to the user activities.
+
+## Additional Information
+
+* [Using the Contacts Center Widget](./using-the-contacts-center-widget.md)

@@ -10,9 +10,6 @@ After the widget is deployed on a user's private Dashboard, users can form their
 ## Adding the Contacts Center to a User Dashboard
 
 1. Click on the user avatar > _My Dashboard_.
-
-    ![Navigating to My Dashboard](./using-the-contacts-center-widget/images/01.png)
-
 1. Click the _Add_ button.
 1. Click _Widgets_ then _Social_ to expand the menu.
 
@@ -22,7 +19,7 @@ After the widget is deployed on a user's private Dashboard, users can form their
 
     ![Contacts Center Widget](./using-the-contacts-center-widget/images/02.png)
 
-## Connecting a User
+## Connecting With a User
 
 1. Click the person you want to connect to (_Richard Roe_).
 1. Click _Connect_.
@@ -38,8 +35,6 @@ After the widget is deployed on a user's private Dashboard, users can form their
     ![Viewing the connections request](./using-the-contacts-center-widget/images/05.png)
 
 Once the person accepts the connections request, he or she appears in the list of connections. To disconnect, click on the user avatar then _Disconnect_.
-
-![Viewing the list of connections](./using-the-contacts-center-widget/images/06.png)
 
 ## Following a User
 
