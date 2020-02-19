@@ -1,4 +1,0 @@
-Enabling Assets
-===============
-
-Coming soon!

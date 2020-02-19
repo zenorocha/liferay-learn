@@ -1,4 +1,0 @@
-Virtual Instances
-=================
-
-Coming soon!

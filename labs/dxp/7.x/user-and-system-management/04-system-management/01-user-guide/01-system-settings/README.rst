@@ -1,4 +1,0 @@
-System Settings
-===============
-
-Coming soon!

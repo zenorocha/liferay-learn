@@ -1,4 +1,0 @@
-Personalization
-===============
-
-Coming soon!

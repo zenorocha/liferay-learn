@@ -1,4 +1,0 @@
-Liferay IDE
-===========
-
-Coming soon!

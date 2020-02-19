@@ -1,4 +1,0 @@
-Auto Tagging
-============
-
-Coming soon!

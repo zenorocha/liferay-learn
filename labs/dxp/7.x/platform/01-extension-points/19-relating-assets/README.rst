@@ -1,4 +1,0 @@
-Relating Assets
-===============
-
-Coming soon!

@@ -1,4 +1,0 @@
-IntelliJ Plugin
-===============
-
-Coming soon!

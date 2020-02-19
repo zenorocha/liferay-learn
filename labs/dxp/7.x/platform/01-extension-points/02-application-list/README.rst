@@ -1,4 +1,0 @@
-Application List
-================
-
-Coming soon!

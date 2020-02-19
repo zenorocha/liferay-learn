@@ -1,4 +1,0 @@
-Ext Plugins
-===========
-
-Coming soon!

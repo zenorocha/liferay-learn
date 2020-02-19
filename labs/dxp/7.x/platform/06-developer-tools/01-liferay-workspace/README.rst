@@ -1,4 +1,0 @@
-Liferay Workspace
-=================
-
-Coming soon!

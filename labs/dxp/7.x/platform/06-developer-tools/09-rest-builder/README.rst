@@ -1,4 +1,0 @@
-REST Builder
-============
-
-Coming soon!

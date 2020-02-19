@@ -1,4 +1,0 @@
-Maven Plugins
-=============
-
-Coming soon!
