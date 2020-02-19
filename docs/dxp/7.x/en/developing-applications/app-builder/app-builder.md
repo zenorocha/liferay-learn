@@ -2,7 +2,7 @@
 
 > Available: Liferay DXP 7.3+
 
-App Builder provides a low-code application development solution integrated with Liferay DXP. There are four concepts at the root of App Builder applications:
+App Builder provides a low-code application development solution for Liferay DXP. There are four concepts at the root of App Builder applications:
 
 * [App Builder Objects](#app-builder-objects)
 * [Form Views](#form-views)
@@ -22,33 +22,41 @@ An _Object_ is at the foundation of every App Builder application. It defines th
    Native Objects are not present in the App Builder at the time of this writing. In future versions of the App Builder, Native Objects with default fieldsets will be bundled with Liferay DXP to jump-start your app development.
 ```
 
-To create applications based on a custom object: create at least one form view, create at least one table view, and deploy the application.
+To create applications based on a custom object, create at least one form view, create at least one table view, and deploy the application.
 
 The data fields of a custom object are defined at the same time as creating its form views.
 
 ## Form Views
 
-A Form View defines what data fields of the custom object are to be filled out by the application's users. The Liferay Forms application's form builder tool is leveraged in this pursuit. An App Builder object can have multiple form views.
+A form view defines what data fields of the custom object are to be filled out by the application's users. The Liferay Forms application's form builder tool is leveraged in this pursuit. An App Builder object can have multiple form views.
 
-Adding fields to a form view automatically adds them to the object. Fields that were added to the object via a previously created form view can be re-used by dragging the field from a dedicated section for the form builder that holds the object's existing fields.
+Adding fields to a form view automatically adds them to the object. Fields that were added to the object via a previously created form view can be re-used by dragging the field from a dedicated section of the form builder that shows all the object's existing fields.
 
 ## Table Views
 
-Table views display the data records collected for an object. In addition, users with permissions can also access the _Add new entry_ functionality, see the details of an entry, and manage the application's entries. Tables views can display all of the object's fields, or a subset. Every app has one table view, though the object can have as many as needed. A drag-and-drop interface lets you create table views from the existing fields of the custom object.
+Table views display the data records collected for an object. In addition, users with permission can access the _Add new entry_ functionality, see the details of an entry, and manage the application's entries. Table views can display all of the object's fields, or a subset. Every app has one table view, though the object can have as many as needed. A drag-and-drop interface lets you create table views from the existing fields of the custom object.
 
 ## Deployment
 
 Once a custom object is defined and at least one form and table view are created, you can deploy an application. You have several deployment options:
 
-**Widget:** Deploy the application to the widget menu, and add it to a page using the Add Widgets menu (from Add &rarr; Widgets, search for your application by name). Deploying as a widget really deploys three versions of the application to the Add Widgets menu:
+**Widget:** Deploy the application to the widget menu, and add it to a page using the Add Widgets menu (from Add &rarr; Widgets, search for your application by name). Deploying as a widget really deploys three versions of the application to the Add Widgets menu, each with a different label. Each option exposes different features for your application's users: 
 
-1. A widget with both a table view and a form view
-1. A widget with only a table view
-1. A widget with only a form view
+| Widget Menu Label     | Form View | Table View | Add Records | Manage Records |
+|-----------------------|-----------|------------|-------------|----------------|
+| App Name              |     (y)   |      (y)   |    (y)      |      (y)       |
+| App Name [Form View]  |     (y)   |      (n)   |    (y)      |      (n)       |
+| App Name [Table View] |     (n)   |      (y)   |    (n)      |      (y)       |
+
+![App Builder widgets are placed on Liferay DXP pages.](./app-builder/images/01.png)
 
 **Standalone:** Deploy the application to a dedicated page that's not part of a site and not visible to any navigation menu. This limits access to only people with the link.
 
+![Standalone App Builder applications are accessible only by direct link](./app-builder/images/02.png)
+
 **Product Menu:** Deploy the application to the Control Panel, the Site Menu, or both. This gives you flexibility in deciding where administrative Users will access the application.
+
+![App Builder applications can be added to the Product Menu.](./app-builder/images/03.png)
 
 A Standalone or Product Menu application always includes both the form and table view. The table view is the default view, while an add button provides access to the form view.
 
