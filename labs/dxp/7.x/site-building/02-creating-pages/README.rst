@@ -1,4 +1,0 @@
-Creating Pages
-==============
-
-Coming soon!
