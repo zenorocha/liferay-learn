@@ -10,9 +10,9 @@ The Personal Menu is the hub for information and activities for a user that is l
 
 Users can use the personal menu to:
 
-* [Change account information](../user-and-system-management/README.md) (Name, Password, etc.)
+* [Change account information](../users-and-permissions/README.md) (Name, Password, etc.)
 * [See what sites they are members of](../site-building/building-sites/adding-members-to-sites.md)
-* [Review site notifications](../collaboration-and-social/05-notifications-and-requests/README.md)
+* [Review site notifications](../collaboration-and-social/notifications-and-requests/README.md)
 * [Sign out](./introduction-to-the-admin-account.md#signing-out)
 * And more...
 
@@ -30,7 +30,7 @@ The _Control Panel_ contains general administrative actions and configurations t
 
 The following common administrative activities can be done in the Control Panel:
 
-* [Manage Users, Permissions, and Roles](../user-and-system-management/README.md)
+* [Manage Users, Permissions, and Roles](../users-and-permissions/README.md)
 * [Change the System Password Policy](../installation-and-upgrades/05-securing-liferay/README.md)
 * [Create new Sites](../site-building/introduction-to-site-building.md)
 * Add new Custom Fields to applications on the site

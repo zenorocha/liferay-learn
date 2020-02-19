@@ -18,7 +18,7 @@ Liferay Portal contains several adjustable authorization layers:
 
 - Remote IP and HTTPS transport check to limit access to Liferay Portal's Java servlets
 - Extensible Access Control Policies layer to perform portal service-related authorization checks
-- Extensible [Role-based permission framework](../user-and-system-management/roles-and-permissions.md) for Liferay assets (stored in the database or elsewhere)
+- Extensible [Role-based permission framework](../users-and-permissions/roles-and-permissions/README.md) for Liferay assets (stored in the database or elsewhere)
 - Portlet container security checks that control portlet access
 - Remote IP check for remote API authentication methods
 - [Service Access Policies](./03-setting-service-access-policies.md) to control access to remote APIs
