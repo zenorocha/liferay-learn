@@ -22,15 +22,6 @@ Master Page Templates solve all these limitations by letting you create common e
 
 ## Master Page Elements
 
-Master Pages are divided into three main sections by default: 
+A Master Page Template can contain any number of Page Fragments, like a Content Page. However, a Master Page Template differs in that it has one key area defined, called a *Drop Zone*, that specifies where you can place Page Fragments. This area can't be removed, but it can be drag and dropped somewhere else in the page layout. You can also define which Page Fragments can be added to the Drop Zone. A typical use case for a Master Page Template is to have a Header, a Footer, and a Drop Zone. See [Creating Custom Master Pages](./creating-a-master-page-template.md) for more information.
 
-**Header elements:** Where common Header elements are placed.
-
-**Drop Zone:** Defines where you can place Page Fragments. This area can't be removed. 
-You can define which Page Fragments can be added to the Drop Zone. See 
-[Creating Custom Master Pages](creating-custom-master-pages) for more 
-information.
-
-**Footer elements:** Where common Footer elements are placed.
-
-![The Page Template is organized into three key areas: Header, Drop Zone, and Footer.](./master-pages/images/02.png)
+![A typical use case for a Master Page Template has a Header, a Drop Zone, and a Footer.](./master-pages/images/02.png)
