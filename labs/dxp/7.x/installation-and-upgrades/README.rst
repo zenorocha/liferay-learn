@@ -64,16 +64,16 @@ Configuring Clustering for High Availability
 Securing Liferay
 ----------------
 
--  :doc:`/installation-and-upgrades/securing-liferay/01-securing-liferay`
--  :doc:`/installation-and-upgrades/securing-liferay/02-configuring-authentication`
+-  :doc:`/installation-and-upgrades/securing-liferay/securing-liferay`
+-  :doc:`/installation-and-upgrades/securing-liferay/configuring-authentication`
 
 Securing Web Services
 ~~~~~~~~~~~~~~~~~~~~~
 
--  :doc:`/installation-and-upgrades/securing-liferay/04-securing-web-services/01-securing-web-services`
--  :doc:`/installation-and-upgrades/securing-liferay/04-securing-web-services/03-setting-service-access-policies`
--  :doc:`/installation-and-upgrades/securing-liferay/04-securing-web-services/04-using-auth-verifiers`
--  :doc:`/installation-and-upgrades/securing-liferay/04-securing-web-services/05-setting-up-cors`
+-  :doc:`/installation-and-upgrades/securing-liferay/securing-web-services/01-securing-web-services`
+-  :doc:`/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies`
+-  :doc:`/installation-and-upgrades/securing-liferay/securing-web-services/using-auth-verifiers`
+-  :doc:`/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors`
 
 Using an SSO with Liferay DXP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

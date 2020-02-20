@@ -15,7 +15,7 @@ You can configure other ways of authenticating users and/or applications:
 * [Token-Based solutions](../06-sso/01-token-based-authentication.md)
 * [OAuth 2.0](../06-sso/07-oauth-2.md)
 
-[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
+[Authentication Verifiers](./securing-web-services/using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
 
 ## Authentication Types
 
@@ -89,5 +89,5 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 ## Additional Information
 
-* [Securing Liferay](./01-securing-liferay.md)
-* [Securing Web Services](./04-securing-web-services/01-securing-web-services.md)
+* [Securing Liferay](./securing-liferay.md)
+* [Securing Web Services](./securing-web-services/securing-web-services)

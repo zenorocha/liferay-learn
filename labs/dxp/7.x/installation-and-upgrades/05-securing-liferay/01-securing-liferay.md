@@ -16,9 +16,9 @@ Liferay DXP is flexible in how users may be authenticated to the system. By defa
 
 * Liferay can be [integrated with an SSO to manage](placeholder) authentication.
 * Liferay can also be [integrated with LDAP](placeholder) to validate users instead of using the portal database.
-* Guest account creation can be [turned off](./02-configuring-authentication.md#disabling-guest-account-creation).
+* Guest account creation can be [turned off](./configuring-authentication.md#disabling-guest-account-creation).
 
-To learn more, see [Configuring Authentication](./02-configuring-authentication.md).
+To learn more, see [Configuring Authentication](./configuring-authentication.md).
 
 ## Permissions
 
@@ -28,11 +28,11 @@ Liferay DXP has a robust role-based access control (RBAC) system. Users can be a
 
 Liferay Web Services have a multi-layered and configurable approach to security and authorization:
 
-* [Service Access Policies](./04-securing-web-services/03-setting-service-access-policies.md) control access to remote APIs.
-* [Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) verify provided credentials.
-* [Cross-Origin Resource Sharing](./04-securing-web-services/05-setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
+* [Service Access Policies](./securing-web-services/setting-service-access-policies.md) control access to remote APIs.
+* [Authentication Verifiers](./securing-web-services/using-auth-verifiers.md) verify provided credentials.
+* [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
 
-See [Securing Web Services](./04-securing-web-services/01-securing-web-services.md) to learn more.
+See [Securing Web Services](./securing-web-services/securing-web-services) to learn more.
 
 ## Fine-Tuning Security
 
@@ -55,5 +55,5 @@ There are additional security plugins available from [Liferay Marketplace](https
 
 ## Next Steps
 
-* [Configuring Authentication](./02-configuring-authentication.md)
-* [Securing Web Services](./04-securing-web-services/01-securing-web-services.md)
+* [Configuring Authentication](./configuring-authentication.md)
+* [Securing Web Services](./securing-web-services/securing-web-services)
