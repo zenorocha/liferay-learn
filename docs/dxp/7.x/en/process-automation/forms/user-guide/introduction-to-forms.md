@@ -26,13 +26,11 @@ Despite this long list of more complex options, developing a simple, elegant for
 
 ## Forms and Lists
 
-There are two applications for building forms to collect precisely the data you need:
+There are three applications for building forms to collect precisely the data you need:
 
-1. [Liferay Forms](./creating-forms.md): The primary form building application is for the simplest one or two question survey to the most complex, multi-page, homeowners insurance application containing rules and lists populated by a REST data provider.
-
-1. [Dynamic Data Lists (DDL)](./dynamic-data-lists/getting-started-with-dynamic-data-lists.md): Provides a user interface tool for building reusable form- and list-based applications intended for display on pages, using [templates](./dynamic-data-lists/using-templates-to-display-forms-and-lists.md).
-
-**Kaleo Forms:** If you're a Liferay Digital Enterprise customer, there's a third form building tool called [Kaleo Forms](https://help.liferay.com/hc/en-us/articles/360028821952-Kaleo-Forms). It integrates form building with workflow to create form-based business processes, like a Conference Room Checkout Form, or a Support Ticket Process so support tickets go through the proper channels on their way to resolution. Read more about Kaleo Forms in the workflow [section](https://help.liferay.com/hc/en-us/articles/360028821952-Kaleo-Forms).
+* [Liferay Forms](./creating-forms.md): The primary form building application is for the simplest one or two question survey to the most complex, multi-page, homeowners insurance application containing rules and lists populated by a REST data provider.
+* [Dynamic Data Lists (DDL)](./dynamic-data-lists/getting-started-with-dynamic-data-lists.md): Provides a user interface tool for building reusable form- and list-based applications intended for display on pages, using [templates](./dynamic-data-lists/using-templates-to-display-forms-and-lists.md).
+* **Kaleo Forms:** If you're a Liferay Digital Enterprise customer, there's a third form building tool called [Kaleo Forms](https://help.liferay.com/hc/en-us/articles/360028821952-Kaleo-Forms). It integrates form building with workflow to create form-based business processes, like a Conference Room Checkout Form, or a Support Ticket Process so support tickets go through the proper channels on their way to resolution. Read more about Kaleo Forms in the workflow [section](https://help.liferay.com/hc/en-us/articles/360028821952-Kaleo-Forms).
 
 ## Using Dynamic Data Lists
 
