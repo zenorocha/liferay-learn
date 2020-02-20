@@ -5,6 +5,7 @@ Extending Liferay
 -  :doc:`/liferay-internals/extending-liferay/application-lists`
 -  :doc:`/liferay-internals/extending-liferay/control-panel`
 -  :doc:`/liferay-internals/extending-liferay/creating-a-widget-template`
+-  :doc:`/liferay-internals/extending-liferay/customizing-a-widget-with-a-widget-template`
 -  :doc:`/liferay-internals/extending-liferay/creating-service-wrappers`
 -  :doc:`/liferay-internals/extending-liferay/customizing-applications`
 -  :doc:`/liferay-internals/extending-liferay/customizing-jsps`
