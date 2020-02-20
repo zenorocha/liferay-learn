@@ -1,6 +1,6 @@
 # Assigning Roles to User Segments
 
-Since Liferay Portal CE 7.3 GA1, you can assign User Segments to Roles <!-- Should this be: "you can assign roles to user segments"? This task enables users to make it so anyone who has role [x] is part of segment [y], is that right? -->. Follow these steps:
+Since Liferay Portal CE 7.3 GA1, you can assign Roles to User Segments. Follow these steps:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 1. Open the Actions Menu next to the Role and select *Edit*.
@@ -18,3 +18,9 @@ Since Liferay Portal CE 7.3 GA1, you can assign User Segments to Roles <!-- Shou
 The selected User Segment(s) appear(s) in the list of assignees for the Role.
 
 ![The User Segment appears under the list of Assignees for the Role.](./assigning-roles-to-user-segments/images/04.png)
+
+## Related Information
+
+* [Creating User Segments](./creating-user-segments.md)
+* [Getting Analytics for User Segments](./getting-analytics-for-user-segments.md)
+* [Content Page Personalization](../02-experience-personalization/content-page-personlization.md)

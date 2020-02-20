@@ -25,3 +25,9 @@ To edit or manage a Content Set Variation,
 1. Click on the *Actions* button (![Actions](../../../images/icon-actions.png)) next to the User Segment and select *View Content* to preview the content in that set or *Delete* to remove it.
 
     ![You can preview or delete a Personalized Variation from the Actions menu.](./content-set-personalization/images/03.png)
+
+## Related Information
+
+* [Content Page Personalization](./content-page-personlization.md)
+* [Creating User Segments](../01-segmentation/creating-user-segments.md)
+* [Assigning Roles to User Segments](../01-segmentation/assigning-roles-to-user-segments.md)

@@ -44,3 +44,9 @@ From here you have three options:
 ```note::
   Creating new Segments from the New Experience interface is available in Liferay DXP 7.2 Fix Pack 1+ and Liferay Portal 7.2 CE GA2+.
 ```
+
+## Related Information
+
+* [Content Set Personalization](./content-set-personlization.md)
+* [Getting Analytics for User Segments](../01-segmentation/getting-analytics-for-user-segments.md)
+* [Creating User Segments](../01-segmentation/creating-user-segments.md)
