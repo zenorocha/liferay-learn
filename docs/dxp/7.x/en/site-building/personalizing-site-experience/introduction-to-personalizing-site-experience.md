@@ -8,10 +8,10 @@ Using the Segment Builder, you can group similar Users by user profile attribute
 
 ![Build User Segments by checking for different User property values.](./introduction-to-personalizing-site-experience/images/01.png)
 
-See [Creating and Managing a Segment](./segmentation/creating-user-segments.md) to get started.
+See [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md) to get started.
 
 ```note::
-   User Segments can also be used to assign Roles. See `Assigning Roles to User Segments <../../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_ for more information.
+   User Segments can also be used to assign Roles. See `Assigning Roles to User Segments <../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_ for more information.
 ```
 
 ### Tracking Behavior of User Segments with Liferay Analytics Cloud
@@ -24,7 +24,7 @@ Integration with Analytics Cloud provides in-depth, machine-learning powered, da
 
 ## Personalization
 
-Once you've [created User Segments](./segmentation/creating-user-segments.md), you can begin tailoring Site experiences specific to a User Segment. Content Page Personalization and Content Set Personalization are two methods you can use to deliver personalized user experiences.
+Once you've [created User Segments](./segmentation/creating-and-managing-user-segments.md), you can begin tailoring Site experiences specific to a User Segment. Content Page Personalization and Content Set Personalization are two methods you can use to deliver personalized user experiences.
 
 ### Content Pages
 
@@ -48,5 +48,5 @@ Viewing the perspective of a User Segment previews any personalizations for Cont
 
 ## Next Steps
 
-* [Creating and Managing a Segment](./segmentation/creating-user-segments.md)
+* [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md)
 * [Content Page Personalization](./experience-personalization/content-page-personalization.md)

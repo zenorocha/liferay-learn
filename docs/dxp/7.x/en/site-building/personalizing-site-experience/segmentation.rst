@@ -4,7 +4,7 @@ Segmentation
 .. toctree::
    :maxdepth: 3
 
-   segmentation/creating-user-segments.md
+   segmentation/creating-and-managing-user-segments.md
    segmentation/getting-analytics-for-user-segments.md
    segmentation/segments-editor-ui-reference.md
 

@@ -29,5 +29,5 @@ To edit or manage a Content Set Variation,
 ## Related Information
 
 * [Content Page Personalization](./content-page-personalization.md)
-* [Creating User Segments](../segmentation/creating-user-segments.md)
+* [Creating User Segments](../segmentation/creating-and-managing-user-segments.md)
 * [Assigning Roles to User Segments](../segmentation/assigning-roles-to-user-segments.md)
