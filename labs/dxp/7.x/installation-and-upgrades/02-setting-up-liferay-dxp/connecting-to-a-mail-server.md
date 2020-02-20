@@ -25,7 +25,7 @@ The built-in mail session setup can be done using either of these methods:
 
 After deploying DXP, you can configure the mail session from the Control Panel.
 
-1. Sign in as the administrative user (the user specified on the [Basic Configuration page](../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md)).
+1. Sign in as the administrative user (the user specified on the [Basic Configuration page](../installing-liferay/running-liferay-dxp-for-the-first-time.md)).
 1. Navigate to *Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail*.
 1. Enter the following:
 
@@ -53,7 +53,7 @@ DXP connects to the mail session immediately.
 
 To configure the mail session offline or before deploying DXP:
 
-1. Create a [`portal-ext.properties` file](../14-reference/03-portal-properties.md) (if the file does not already exist).
+1. Create a [`portal-ext.properties` file](../reference/03-portal-properties.md) (if the file does not already exist).
 
 1. Copy these default property settings into the `portal-ext.properties` file:
 
@@ -73,7 +73,7 @@ To configure the mail session offline or before deploying DXP:
     ```
 
 1. Replace the default mail session values with your own. (See the example above.)
-1. Put the `portal-ext.properties` file into the [LIFERAY_HOME](../14-reference/01-liferay-home.md).
+1. Put the `portal-ext.properties` file into the [LIFERAY_HOME](../reference/01-liferay-home.md).
 
 DXP connects to the mail session on the next startup.
 
@@ -97,7 +97,7 @@ Lastly, configure the instance's email senders.
 
 <!-- This section does not fit the title of the article. Either should change the article name, or break this out. -->
 
-Email senders are the default name and email address DXP uses to send administrative emails and announcement emails. Default email senders are configured in the [`portal-ext.properties` file](../14-reference/03-portal-properties.md).  
+Email senders are the default name and email address DXP uses to send administrative emails and announcement emails. Default email senders are configured in the [`portal-ext.properties` file](../reference/03-portal-properties.md).  
 
 Here are some important configurations:
 
@@ -137,4 +137,4 @@ The mail server has been configured and ready to send notifications.
 ## Additional Information
 <!-- Should tomcat be here? -->
 * [Mail Server Configuration Reference](./mail-server-configuration-reference.md)
-* [Configuring a WebSphere-Managed Mail Session](../installing-liferay-dxp-on-premises/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md#mail-configuration)
+* [Configuring a WebSphere-Managed Mail Session](../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md#mail-configuration)

@@ -1,5 +1,5 @@
-Installing Liferay DXP on Premises
-==================================
+Installing Liferay
+==================
 
 .. toctree::
    :maxdepth: 2

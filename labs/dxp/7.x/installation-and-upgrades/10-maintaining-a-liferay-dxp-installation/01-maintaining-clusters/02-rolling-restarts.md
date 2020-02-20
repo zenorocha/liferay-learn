@@ -26,7 +26,7 @@ For a new version of an existing plugin or module to be eligible for rolling res
 
 ## Applying Fix Packs (Enterprise subscribers only)
 
-The Customer Portal identifies [fix packs](../10-maintaining-a-liferay-dxp-installation/01-installing-patches.md) that are not revertible, and therefore ineligible for rolling restart. All other fix packs are eligible.
+The Customer Portal identifies [fix packs](../maintaining-a-liferay-dxp-installation/01-installing-patches.md) that are not revertible, and therefore ineligible for rolling restart. All other fix packs are eligible.
 
 ## Reverting Fix Packs (Enterprise subscribers only)
 
@@ -34,11 +34,11 @@ Revertible fix packs can be removed in rolling restarts.
 
 ## Portal Properties controlled by portal-ext.properties
 
-[Portal Properties](../../14-reference/03-portal-properties.md) file changes can be applied in rolling restarts.
+[Portal Properties](../../reference/03-portal-properties.md) file changes can be applied in rolling restarts.
 
 ## System Settings controlled by Configuration Admin Files
 
-[System configuration](../../14-reference/04-system-properties.md) files can be applied in rolling restarts.
+[System configuration](../../reference/04-system-properties.md) files can be applied in rolling restarts.
 
 ## Application Server or JVM setting modifications
 
@@ -53,5 +53,5 @@ All rolling restart eligible updates can be applied using the rolling restart st
 ## Related Topics
 
 * [Blue Green Deployment](./03-blue-green-deployments.md)
-* [Introduction to Clustering Liferay DXP](../../02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
-* [Installing Patches](../10-maintaining-a-liferay-dxp-installation/01-installing-patches.md)
+* [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Installing Patches](../maintaining-a-liferay-dxp-installation/01-installing-patches.md)

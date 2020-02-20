@@ -10,7 +10,7 @@ One strong reason to use the Advanced File System Store is because several opera
 
 To use the advanced file system store, follow these steps:
 
-1. Configure [`portal-ext.properties`](../../14-reference/03-portal-properties.md) with this property:
+1. Configure [`portal-ext.properties`](../../reference/03-portal-properties.md) with this property:
 
     ```properties
     dl.store.impl=com.liferay.portal.store.file.system.AdvancedFileSystemStore
@@ -28,7 +28,7 @@ To use the advanced file system store, follow these steps:
 
 ### Configuration for a Clustered Environment
 
-1. Copy the `portal-ext.properties` to each node's [`[Liferay Home]` folder](../../14-reference/01-liferay-home.md).
+1. Copy the `portal-ext.properties` to each node's [`[Liferay Home]` folder](../../reference/01-liferay-home.md).
 1. Export the configuration from the *Advanced File System Store* screen to a [`.config` file](https://help.liferay.com/hc/articles/360029131651-Understanding-System-Configuration-Files).
 1. Copy the `.config` file to each node's `[Liferay Home]/osgi/configs` folder.
 1. Restart DXP on the nodes.

@@ -4,7 +4,7 @@ You can store Documents and Media files in Liferay DXP's database using DBStore.
 
 ## Configuring DXP to Use DBStore
 
-1. Set the following property in a [`portal-ext.properties`](https://help.liferay.com/hc/articles/360028712292-Portal-Properties) file in your [Liferay Home](../../14-reference/01-liferay-home.md) folder:
+1. Set the following property in a [`portal-ext.properties`](https://help.liferay.com/hc/articles/360028712292-Portal-Properties) file in your [Liferay Home](../../reference/01-liferay-home.md) folder:
 
     ```properties
     dl.store.impl=com.liferay.portal.store.db.DBStore

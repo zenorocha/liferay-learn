@@ -27,4 +27,4 @@ To manage DXP's mail settings, navigate to *Control Panel &rarr; Configuration &
 
 ## Additional Information
 
-* [Connecting to a Mail Server](../02-setting-up-liferay-dxp/connecting-to-a-mail-server.md)
+* [Connecting to a Mail Server](../setting-up-liferay-dxp/connecting-to-a-mail-server.md)

@@ -22,7 +22,7 @@ In some deployment situations, additional configuration may be required to setup
 
 The server might be behind a firewall that prevents access to the Internet. Or an organization's security policy may not allow direct download and installation from the Internet. In these cases, there are two options:
 
-1. From an Internet-enabled computer, download the [Marketplace plugin](https://www.liferay.com/marketplace/download). Then deploy the plugin (`.lpkg` file) by copying it into the `deploy` folder in [Liferay Home](../14-reference/01-liferay-home.md).
+1. From an Internet-enabled computer, download the [Marketplace plugin](https://www.liferay.com/marketplace/download). Then deploy the plugin (`.lpkg` file) by copying it into the `deploy` folder in [Liferay Home](../reference/01-liferay-home.md).
 1. Alternately, download the `.lpkg` file and deploy it using the [App Manager](https://help.liferay.com/hc/en-us/articles/360029134911-Managing-and-Configuring-Apps).
 
 ## Limited Database Access

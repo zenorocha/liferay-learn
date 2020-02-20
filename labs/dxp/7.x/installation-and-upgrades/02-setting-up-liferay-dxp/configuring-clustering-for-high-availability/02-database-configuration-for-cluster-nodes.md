@@ -10,11 +10,11 @@ Database clusters support high availability and improve DXP performance. Databas
 
 For even better performance, you can also use a read-writer database configuration. This strategy uses two different data sources: one for read operations and the other for read-write operations. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source.
 
-Connections to separate read and write [data sources](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../14-reference/03-portal-properties.md) (e.g., in a `portal-ext.properties` file), as explained in the following sections.
+Connections to separate read and write [data sources](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../reference/03-portal-properties.md) (e.g., in a `portal-ext.properties` file), as explained in the following sections.
 
 ### JDBC
 
-Follow these steps to use [JDBC](../../../installing-liferay-dxp-on-premises/configuring-a-database.md) to connect directly to your read and write data sources:
+Follow these steps to use [JDBC](../../../installing-liferay/configuring-a-database.md) to connect directly to your read and write data sources:
 
 1. Set the default connection pool provider. For provider information, see the [JDBC properties reference](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC). The default setting specifies [HikariCP](https://github.com/brettwooldridge/HikariCP) as the pool provider:
 
@@ -116,5 +116,5 @@ DXP uses a read data source, a write data source, and a counter data source the 
 
 ## Additional Information
 
-* [Configuring a Database](../../installing-liferay-dxp-on-premises/configuring-a-database.md)
+* [Configuring a Database](../../installing-liferay/configuring-a-database.md)
 * [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)

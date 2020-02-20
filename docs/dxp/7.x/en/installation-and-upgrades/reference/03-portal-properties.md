@@ -29,7 +29,7 @@ jdbc.default.username=joe.bloggs
 jdbc.default.password=123456
 ```
 
-> For more database configuration details, see [Configuring a Database](../installing-liferay/configuring-a-database.md) and [Database Templates](./05-database-templates.md).
+> For more database configuration details, see [Connecting to a Database](../installing-liferay/configuring-a-database.md) and [Database Templates](./05-database-templates.md).
 
 ### Setting Liferay Home
 
