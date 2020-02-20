@@ -10,11 +10,17 @@ Using the Segment Builder, you can group similar Users by user profile attribute
 
 See [Creating and Managing a Segment](./01-segmentation/creating-user-segments.md) to get started.
 
+```note::
+   User Segments can also be used to assign Roles. See `Assigining Roles to User Segments <../../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_for more information.
+```
+
 ### Tracking Behavior of User Segments with Liferay Analytics Cloud
 
 Supercharge your Segments by integrating your Liferay DXP instance with Liferay Analytics Cloud. Analytics Cloud enables you to integrate DXP with Salesforce(tm) and other data sources to provide even more ways to understand your user base.
 
-Integration with Analytics Cloud provides in-depth (Machine Learning powered) data analytics capabilities to help you understand user behavior and session data for every page of your DXP Site, so you can see how users and visitors on your Site behave and interact with both standard and targeted content. See [Getting Analytics for User Segments](./01-segmentation/getting-analytics-for-user-segments.md) for more information.
+Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics capabilities to help you understand user behavior and and engagement for every page of your DXP Site. Analytics Cloud enables you to see how users and visitors on your Site behave and interact with both standard and targeted content. See [Getting Analytics for User Segments](./01-segmentation/getting-analytics-for-user-segments.md) for more information.
+
+![Site Metrics using Analytics Cloud.](./introduction-to-personalizing-site-experience/images/05.png)
 
 ## Personalization
 
@@ -39,3 +45,8 @@ You can preview the different experiences that users can have on a page by click
 Viewing the perspective of a User Segment previews any personalizations for Content Pages or Content Sets for that User Segment.
 
 ![You can preview different experiences from the Preview Panel.](./introduction-to-personalizing-site-experience/images/04.png)
+
+## Next Steps
+
+* [Creating and Managing a Segment](./01-segmentation/creating-user-segments.md)
+* [Content Page Personalization](./02-experience-personalization/content-page-personalization.md)

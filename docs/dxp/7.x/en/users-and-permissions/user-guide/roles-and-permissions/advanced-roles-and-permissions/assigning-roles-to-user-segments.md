@@ -21,6 +21,4 @@ The selected User Segment(s) appear(s) in the list of assignees for the Role.
 
 ## Related Information
 
-* [Creating User Segments](./creating-user-segments.md)
-* [Getting Analytics for User Segments](./getting-analytics-for-user-segments.md)
-* [Content Page Personalization](../02-experience-personalization/content-page-personlization.md)
+* [Creating User Segments](../../../../site-building/05-personalizing-site-experience/01-segmentation/creating-user-segments.md)

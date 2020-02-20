@@ -15,7 +15,7 @@ You can modify Content Sets to create a personalized variation for members of a 
 
 1. Select the content that you want to display for the Content Set in the selected User Segment.
 
-Now anytime a member of the User Segment views this Content Set in context, such as in an Asset Publisher, they see the personalized version and not the default. Each new variation copies the default Content Set, but then essentially functions as its own Content Set after that. 
+Now anytime a member of the User Segment views this Content Set in context, such as in an Asset Publisher, they see the personalized version and not the default. Each new variation copies the default Content Set, but then essentially functions as its own Content Set after that.
 
 ## Managing Content Set Personalization
 
@@ -28,6 +28,6 @@ To edit or manage a Content Set Variation,
 
 ## Related Information
 
-* [Content Page Personalization](./content-page-personlization.md)
+* [Content Page Personalization](./content-page-personalization.md)
 * [Creating User Segments](../01-segmentation/creating-user-segments.md)
 * [Assigning Roles to User Segments](../01-segmentation/assigning-roles-to-user-segments.md)

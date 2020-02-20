@@ -2,6 +2,8 @@
 
 These steps show how to personalize and manage Content Page user experiences based on User Segments.
 
+## Creating a New Content Page Experience
+
 1. Navigate to an existing Content Page or [create a new Content Page](../../creating-pages/04-building-content-pages.md).
 1. At the top of the page, for the *Experience* click on *Default* to open the experience selection dialog.
 
@@ -47,6 +49,6 @@ From here you have three options:
 
 ## Related Information
 
-* [Content Set Personalization](./content-set-personlization.md)
+* [Content Set Personalization](./content-set-personalization.md)
 * [Getting Analytics for User Segments](../01-segmentation/getting-analytics-for-user-segments.md)
 * [Creating User Segments](../01-segmentation/creating-user-segments.md)
