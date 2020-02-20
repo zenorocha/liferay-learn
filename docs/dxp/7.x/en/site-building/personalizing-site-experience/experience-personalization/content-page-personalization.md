@@ -50,5 +50,5 @@ From here you have three options:
 ## Related Information
 
 * [Content Set Personalization](./content-set-personalization.md)
-* [Getting Analytics for User Segments](../01-segmentation/getting-analytics-for-user-segments.md)
-* [Creating User Segments](../01-segmentation/creating-user-segments.md)
+* [Getting Analytics for User Segments](../segmentation/getting-analytics-for-user-segments.md)
+* [Creating User Segments](../segmentation/creating-user-segments.md)

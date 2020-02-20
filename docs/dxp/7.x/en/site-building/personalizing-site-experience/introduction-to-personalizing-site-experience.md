@@ -8,7 +8,7 @@ Using the Segment Builder, you can group similar Users by user profile attribute
 
 ![Build User Segments by checking for different User property values.](./introduction-to-personalizing-site-experience/images/01.png)
 
-See [Creating and Managing a Segment](./01-segmentation/creating-user-segments.md) to get started.
+See [Creating and Managing a Segment](./segmentation/creating-user-segments.md) to get started.
 
 ```note::
    User Segments can also be used to assign Roles. See `Assigining Roles to User Segments <../../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_for more information.
@@ -18,23 +18,23 @@ See [Creating and Managing a Segment](./01-segmentation/creating-user-segments.m
 
 Supercharge your Segments by integrating your Liferay DXP instance with Liferay Analytics Cloud. Analytics Cloud enables you to integrate DXP with Salesforce(tm) and other data sources to provide even more ways to understand your user base.
 
-Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics capabilities to help you understand user behavior and and engagement for every page of your DXP Site. Analytics Cloud enables you to see how users and visitors on your Site behave and interact with both standard and targeted content. See [Getting Analytics for User Segments](./01-segmentation/getting-analytics-for-user-segments.md) for more information.
+Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics capabilities to help you understand user behavior and and engagement for every page of your DXP Site. Analytics Cloud enables you to see how users and visitors on your Site behave and interact with both standard and targeted content. See [Getting Analytics for User Segments](./segmentation/getting-analytics-for-user-segments.md) for more information.
 
 ![Site Metrics using Analytics Cloud.](./introduction-to-personalizing-site-experience/images/05.png)
 
 ## Personalization
 
-Once you've [created User Segments](./01-segmentation/creating-user-segments.md), you can begin tailoring Site experiences specific to a User Segment. Content Page Personalization and Content Set Personalization are two methods you can use to deliver personalized user experiences.
+Once you've [created User Segments](./segmentation/creating-user-segments.md), you can begin tailoring Site experiences specific to a User Segment. Content Page Personalization and Content Set Personalization are two methods you can use to deliver personalized user experiences.
 
 ### Content Pages
 
-Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../../02-creating-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./02-experience-personalization/content-page-personalization.md) for more information.
+Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../../02-creating-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./experience-personalization/content-page-personalization.md) for more information.
 
 ![You can create unique experiences for different segments of Users.](./introduction-to-personalizing-site-experience/images/02.png)
 
 ### Content Sets
 
-[Content Sets](TODO) organize and display content. Content Set Personalization provides selection of Content Sets based on User Segments. This means the Content Set which displays in a given context is determined by the User Segment criteria. For example, you could use a Content Set to display "featured" articles at the top of a page. Then you could create User Segments containing users who should receive more specialized content, rather than the default. Those Segments would then see content personalized to their interest rather than the default. See [Content Set Personalization](./02-experience-personalization/content-set-personalization.md) for more information.
+[Content Sets](TODO) organize and display content. Content Set Personalization provides selection of Content Sets based on User Segments. This means the Content Set which displays in a given context is determined by the User Segment criteria. For example, you could use a Content Set to display "featured" articles at the top of a page. Then you could create User Segments containing users who should receive more specialized content, rather than the default. Those Segments would then see content personalized to their interest rather than the default. See [Content Set Personalization](./experience-personalization/content-set-personalization.md) for more information.
 
 ![You can personalize Content Sets to display assets for specific User Segments.](./introduction-to-personalizing-site-experience/images/03.png)
 
@@ -48,5 +48,5 @@ Viewing the perspective of a User Segment previews any personalizations for Cont
 
 ## Next Steps
 
-* [Creating and Managing a Segment](./01-segmentation/creating-user-segments.md)
-* [Content Page Personalization](./02-experience-personalization/content-page-personalization.md)
+* [Creating and Managing a Segment](./segmentation/creating-user-segments.md)
+* [Content Page Personalization](./experience-personalization/content-page-personalization.md)

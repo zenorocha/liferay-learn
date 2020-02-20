@@ -30,7 +30,7 @@ Content Pages enable users to build professional pages that can be easily manage
 
 Using Content Pages allows access to additional powerful features and benefits:
 
-* [Personalized and Adaptive Site Experiences](../05-personalizing-site-experience/README.md)
+* [Personalized and Adaptive Site Experiences](../personalizing-site-experience/README.md)
 * [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
 * Approachable Content and Site Building Experience
 
