@@ -11,5 +11,5 @@ Installation and Upgrades
    installation-and-upgrades/upgrading_liferay.rst
    installation-and-upgrades/reference.rst
 
-.. include:: /installation-and-upgrades/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: installation-and-upgrades/landing.html
