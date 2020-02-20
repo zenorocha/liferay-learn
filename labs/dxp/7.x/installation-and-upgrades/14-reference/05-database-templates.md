@@ -1,6 +1,6 @@
 # Database Templates
 
-Below are templates (example [portal properties](./03-portal-properties.md)) for configuring various databases as a built-in data source for Liferay DXP.
+Below are templates (example [portal properties](./portal-properties.md)) for configuring various databases as a built-in data source for Liferay DXP.
 
 ## MariaDB
 

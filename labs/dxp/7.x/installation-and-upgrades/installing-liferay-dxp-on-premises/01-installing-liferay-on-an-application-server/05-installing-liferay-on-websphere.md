@@ -18,7 +18,7 @@ The following files are required to install Liferay on the WebSphere application
 
 See [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
 
-The [`LIFERAY_HOME` directory](../../reference/01-liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` directory is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
+The [`LIFERAY_HOME` directory](../../reference/liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` directory is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
 
 ## Preparing WebSphere for DXP
 
@@ -198,7 +198,7 @@ If using WebSphere to manage the database connections, follow the instructions b
     jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
     ```
 
-    > **Tip:** For more example URLs, see the `jdbc.default.url` values in [Database Templates](../../reference/05-database-templates.md).
+    > **Tip:** For more example URLs, see the `jdbc.default.url` values in [Database Templates](../../reference/database-templates.md).
 
     Click *OK* and save to master configuration.
 

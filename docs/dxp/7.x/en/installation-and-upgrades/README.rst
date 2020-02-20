@@ -123,9 +123,9 @@ Maintaining a Liferay DXP Installation
 Maintaining Clusters
 ~~~~~~~~~~~~~~~~~~~~
 
--  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/01-maintaining-clusters/01-maintaining-clustered-installations`
--  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/01-maintaining-clusters/02-rolling-restarts`
--  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/01-maintaining-clusters/03-blue-green-deployments`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/01-maintaining-clustered-installations`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/02-rolling-restarts`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/03-blue-green-deployments`
 
 Liferay Connected Services
 --------------------------
@@ -157,12 +157,12 @@ Troubleshooting Deployments
 Reference
 ---------
 
--  :doc:`/installation-and-upgrades/reference/01-liferay-home`
+-  :doc:`/installation-and-upgrades/reference/liferay-home`
 * Configuration Files
--  :doc:`/installation-and-upgrades/reference/03-portal-properties`
--  :doc:`/installation-and-upgrades/reference/04-system-properties`
--  :doc:`/installation-and-upgrades/reference/05-jvm-configurations`
--  :doc:`/installation-and-upgrades/reference/05-database-templates`
--  :doc:`/installation-and-upgrades/reference/06-liferay-upgrade-planner-steps`
--  :doc:`/installation-and-upgrades/reference/07-comparing-patch-levels`
--  :doc:`/installation-and-upgrades/reference/08-patching-tool-configuration-properties`
+-  :doc:`/installation-and-upgrades/reference/portal-properties`
+-  :doc:`/installation-and-upgrades/reference/system-properties`
+-  :doc:`/installation-and-upgrades/reference/jvm-configurations`
+-  :doc:`/installation-and-upgrades/reference/database-templates`
+-  :doc:`/installation-and-upgrades/reference/liferay-upgrade-planner-steps`
+-  :doc:`/installation-and-upgrades/reference/comparing-patch-levels`
+-  :doc:`/installation-and-upgrades/reference/patching-tool-configuration-properties`

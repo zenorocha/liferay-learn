@@ -8,7 +8,7 @@ When you sign up for the service, Amazon assigns [unique keys](https://docs.aws.
 
 Here are the steps for configuring Liferay DXP to use your S3 account for file storage:
 
-1. Amazon S3 requires a `SAXParser` from the application server (for example, Apache Tomcat) to operate. To use S3 Store, include this property in a [`system-ext.properties`](../../reference/04-system-properties.md) file:
+1. Amazon S3 requires a `SAXParser` from the application server (for example, Apache Tomcat) to operate. To use S3 Store, include this property in a [`system-ext.properties`](../../reference/system-properties.md) file:
 
     ```properties
     org.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser
@@ -16,7 +16,7 @@ Here are the steps for configuring Liferay DXP to use your S3 account for file s
 
 1. Place the `system-ext.properties` file in a folder that resides in the Liferay DXP installation's class path (for example: `/WEB-INF/classes/`).
 
-1. Set the following property in a [`portal-ext.properties`](../../reference/03-portal-properties.md) file in the [Liferay Home](../../reference/01-liferay-home.md) folder:
+1. Set the following property in a [`portal-ext.properties`](../../reference/portal-properties.md) file in the [Liferay Home](../../reference/liferay-home.md) folder:
 
     ```properties
     dl.store.impl=com.liferay.portal.store.s3.S3Store
@@ -47,7 +47,7 @@ To use the S3 store in a [cluster](https://help.liferay.com/hc/articles/36002912
 
 1. [Export](https://help.liferay.com/hc/articles/360029131591-System-Settings#exporting-and-importing-configurations) the configuration from the *S3 Store Configuration* screen to a [`.config` file](https://help.liferay.com/hc/articles/360029131651-Understanding-System-Configuration-Files).
 1. Copy the `.config` file to each node's `[Liferay Home]/osgi/configs` folder.
-1. Copy the `portal-ext.properties` to each node's [Liferay Home](../../reference/01-liferay-home.md) folder.
+1. Copy the `portal-ext.properties` to each node's [Liferay Home](../../reference/liferay-home.md) folder.
 1. Copy the `system-ext.properties` (if you're using one) to a folder in the app server class path on each node.
 1. Restart Liferay DXP on all nodes.
 

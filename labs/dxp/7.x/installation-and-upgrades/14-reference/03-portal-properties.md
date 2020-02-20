@@ -2,9 +2,9 @@
 
 All the configurations that DXP requires to run out-of-the-box are specified using *Portal Properties*. The properties are a set of name/value pairs that DXP reads from properties files on server startup. The property defaults are specified in the DXP installation's `portal-impl.jar/portal.properties` file. The [Portal Properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) reference lists all of the properties and includes descriptions, example values, and default values.
 
-While some properties can be changed through the user interface (UI) once application server startup completes, other properties must be changed in a properties file before the server is started. Some examples of configurations that _must_ be done through a properties file include but are not limited to: connecting to a database, declaring the location of the [`[LIFERAY_HOME]`](./01-liferay-home.md) folder, changing how users authenticate (by screen name instead of by email address), and increasing the size limit for file uploads.
+While some properties can be changed through the user interface (UI) once application server startup completes, other properties must be changed in a properties file before the server is started. Some examples of configurations that _must_ be done through a properties file include but are not limited to: connecting to a database, declaring the location of the [`[LIFERAY_HOME]`](./liferay-home.md) folder, changing how users authenticate (by screen name instead of by email address), and increasing the size limit for file uploads.
 
-> **Warning:** Never directly modify the `portal-impl.jar/portal.properties` file; rather, use another properties file (an extension file) to override properties you want to change. The typical extension file to create is called `portal-ext.properties`, in your [`[LIFERAY_HOME]`](./01-liferay-home.md) or `[USER_HOME]` folder.
+> **Warning:** Never directly modify the `portal-impl.jar/portal.properties` file; rather, use another properties file (an extension file) to override properties you want to change. The typical extension file to create is called `portal-ext.properties`, in your [`[LIFERAY_HOME]`](./liferay-home.md) or `[USER_HOME]` folder.
 
 Using Portal Properties to configure a DXP installation is the most common and recommended method of configuring Liferay DXP and also provides the following benefits:
 
@@ -20,7 +20,7 @@ Here are a few examples of configurations that can be set in a `portal.propertie
 
 ### Setting a Database Connection
 
-Database connection properties are most commonly set in a `portal-ext.properties` file. If you want to change the database connection, for example, create a `portal-ext.properties` file and set the [database connection properties](./05-database-templates.md) to the values you want:
+Database connection properties are most commonly set in a `portal-ext.properties` file. If you want to change the database connection, for example, create a `portal-ext.properties` file and set the [database connection properties](./database-templates.md) to the values you want:
 
 ```properties
 jdbc.default.driverClassName=org.mariadb.jdbc.Driver
@@ -29,7 +29,7 @@ jdbc.default.username=joe.bloggs
 jdbc.default.password=123456
 ```
 
-> For more database configuration details, see [Configuring a Database](../installing-liferay/configuring-a-database.md) and [Database Templates](./05-database-templates.md).
+> For more database configuration details, see [Configuring a Database](../installing-liferay/configuring-a-database.md) and [Database Templates](./database-templates.md).
 
 ### Setting Liferay Home
 

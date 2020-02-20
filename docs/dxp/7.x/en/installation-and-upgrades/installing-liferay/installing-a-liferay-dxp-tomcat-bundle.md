@@ -25,7 +25,7 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
 
 ## Install DXP
 
-Extract the bundle to a location on your DXP host. This location is called your [Liferay Home](../reference/01-liferay-home.md).
+Extract the bundle to a location on your DXP host. This location is called your [Liferay Home](../reference/liferay-home.md).
 
 Congratulations! You've installed Liferay DXP. It's time to configure a database for it.
 

@@ -18,7 +18,7 @@ Here are the basic steps for installing DXP on Tomcat:
 * [Configuring the application server for DXP](#configuring-tomcat)
 * [Deploying the DXP WAR file to the application server](#deploying-product)
 
-[*LIFERAY_HOME*](../../reference/01-liferay-home.md) is Tomcat server's parent folder. `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
+[*LIFERAY_HOME*](../../reference/liferay-home.md) is Tomcat server's parent folder. `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
 
 ## Installing Dependencies
 

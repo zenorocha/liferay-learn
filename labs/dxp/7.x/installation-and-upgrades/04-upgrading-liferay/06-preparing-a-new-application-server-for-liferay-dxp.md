@@ -120,7 +120,7 @@ Running this command will provide the names of migrated (or removed) properties,
 
 ## Update Your Database Driver
 
-Install the recommended database driver and update your database connection driver specified in your `portal-ext.properties`. See the [Database Templates](../reference/05-database-templates.md) for more information.
+Install the recommended database driver and update your database connection driver specified in your `portal-ext.properties`. See the [Database Templates](../reference/database-templates.md) for more information.
 
 ## Configure Your Documents and Media File Store
 

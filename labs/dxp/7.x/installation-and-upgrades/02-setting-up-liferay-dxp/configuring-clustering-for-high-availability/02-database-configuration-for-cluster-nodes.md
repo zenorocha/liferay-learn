@@ -10,7 +10,7 @@ Database clusters support high availability and improve DXP performance. Databas
 
 For even better performance, you can also use a read-writer database configuration. This strategy uses two different data sources: one for read operations and the other for read-write operations. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source.
 
-Connections to separate read and write [data sources](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../reference/03-portal-properties.md) (e.g., in a `portal-ext.properties` file), as explained in the following sections.
+Connections to separate read and write [data sources](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../reference/portal-properties.md) (e.g., in a `portal-ext.properties` file), as explained in the following sections.
 
 ### JDBC
 

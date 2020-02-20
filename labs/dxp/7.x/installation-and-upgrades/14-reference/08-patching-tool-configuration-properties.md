@@ -14,7 +14,7 @@ The Patching Tool is configured using properties. The `default.properties` file 
 
 **`global.lib.path`:** Specify the location for storing `.jar` files on the global classpath. If you're not sure, search for `portal-kernel.jar`; it's on the global classpath. This property is only valid if your `patching.mode` is `binary`.
 
-**[`liferay.home`](./01-liferay-home.md):** Specify the parent folder of the `data`, `osgi`, and `tools` folders.
+**[`liferay.home`](./liferay-home.md):** Specify the parent folder of the `data`, `osgi`, and `tools` folders.
 
 **`source.path`:** Specify the path to your DXP source tree. This property is only valid if your `patching.mode` is `source`.
 

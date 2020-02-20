@@ -16,7 +16,7 @@ Liferay DXP works well in clusters of multiple machines (horizontal cluster) or 
 
 5. [Applications must be deployed to each node individually.](#deploying-to-all-nodes)
 
-Many of these configuration changes can be made by adding or modifying properties in your `portal-ext.properties` file. Remember that this file overrides the [defaults](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html) in the [`portal.properties`](../../reference/03-portal-properties.md) file. Best practice is to copy the relevant section you want to modify from `portal.properties` into your `portal-ext.properties` file, and then modify the values there.
+Many of these configuration changes can be made by adding or modifying properties in your `portal-ext.properties` file. Remember that this file overrides the [defaults](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html) in the [`portal.properties`](../../reference/portal-properties.md) file. Best practice is to copy the relevant section you want to modify from `portal.properties` into your `portal-ext.properties` file, and then modify the values there.
 
 > **Note:** This documentation describes a DXP-specific cluster configuration without getting into specific implementations of third party software, such as Java EE application servers, HTTP servers, and load balancers. Please consult the documentation for those components of your cluster to configure them. Before creating a DXP cluster, make sure your OS is not defining the hostname of your system to the local network at 127.0.0.1.
 
