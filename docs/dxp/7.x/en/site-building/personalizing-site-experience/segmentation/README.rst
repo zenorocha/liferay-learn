@@ -1,6 +1,6 @@
 Segmentation
 ============
 
--  :doc:`/segmentation/creating-user-segments.md`
--  :doc:`/segmentation/getting-analytics-for-user-segments.md`
--  :doc:`/segmentation/segments-editor-ui-reference.md`
+-  :doc:`/personalizing-site-experience/segmentation/creating-user-segments`
+-  :doc:`/personalizing-site-experience/segmentation/getting-analytics-for-user-segments`
+-  :doc:`/personalizing-site-experience/segmentation/segments-editor-ui-reference`

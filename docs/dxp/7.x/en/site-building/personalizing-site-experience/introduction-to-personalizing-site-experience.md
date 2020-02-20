@@ -11,7 +11,7 @@ Using the Segment Builder, you can group similar Users by user profile attribute
 See [Creating and Managing a Segment](./segmentation/creating-user-segments.md) to get started.
 
 ```note::
-   User Segments can also be used to assign Roles. See `Assigining Roles to User Segments <../../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_for more information.
+   User Segments can also be used to assign Roles. See `Assigning Roles to User Segments <../../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_ for more information.
 ```
 
 ### Tracking Behavior of User Segments with Liferay Analytics Cloud
@@ -34,7 +34,7 @@ Content Page Personalization dynamically changes the page layout and content bas
 
 ### Content Sets
 
-[Content Sets](TODO) organize and display content. Content Set Personalization provides selection of Content Sets based on User Segments. This means the Content Set which displays in a given context is determined by the User Segment criteria. For example, you could use a Content Set to display "featured" articles at the top of a page. Then you could create User Segments containing users who should receive more specialized content, rather than the default. Those Segments would then see content personalized to their interest rather than the default. See [Content Set Personalization](./experience-personalization/content-set-personalization.md) for more information.
+Content Sets <!-- Link to Content Sets documentation placeholder --> organize and display content. Content Set Personalization provides selection of Content Sets based on User Segments. This means the Content Set which displays in a given context is determined by the User Segment criteria. For example, you could use a Content Set to display "featured" articles at the top of a page. Then you could create User Segments containing users who should receive more specialized content, rather than the default. Those Segments would then see content personalized to their interest rather than the default. See [Content Set Personalization](./experience-personalization/content-set-personalization.md) for more information.
 
 ![You can personalize Content Sets to display assets for specific User Segments.](./introduction-to-personalizing-site-experience/images/03.png)
 
