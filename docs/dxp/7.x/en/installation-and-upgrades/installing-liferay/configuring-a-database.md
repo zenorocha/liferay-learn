@@ -13,8 +13,6 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 ## Configure the database
 
-1. Use the GMT time zone on your database server.
-
 1. Create a database that uses UTF-8. Here is a MySQL command example:
 
     ```sql
