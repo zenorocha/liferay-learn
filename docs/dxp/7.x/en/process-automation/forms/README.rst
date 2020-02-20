@@ -4,7 +4,8 @@ Forms
 User Guide
 ----------
 
-* Creating and Managing Forms
+* Creating Forms
+* Displaying Forms
 * Managing Form Entries
 * Form Field Types
 * Form Rules
@@ -24,6 +25,7 @@ User Guide
 * Redirecting Users
 * Form Permissions
 * Styling Form Pages
+* Process Automation Permissions
 * Dynamic Data Lists
 
 Developer Guide

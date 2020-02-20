@@ -3,7 +3,8 @@
 ## Forms
 
 * User Guide
-  * Creating and Managing Forms
+  * Creating Forms
+  * Displaying Forms
   * Managing Form Entries
   * Form Field Types
   * Form Rules

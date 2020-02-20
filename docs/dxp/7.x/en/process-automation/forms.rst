@@ -8,5 +8,5 @@ Forms
    forms/developer_guide.rst
    forms/apis.rst
 
-.. include:: /process-automation/01-forms/README.rst
+.. include:: /process-automation/forms/README.rst
    :start-line: 2

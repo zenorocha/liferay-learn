@@ -1,12 +1,16 @@
 User Guide
 ==========
 
-* Creating and Managing Forms
-* Managing Form Entries
+-  :doc:`/process-automation/forms/user-guide/introduction-to-forms`
+-  :doc:`/process-automation/forms/user-guide/creating-forms`
+-  :doc:`/process-automation/forms/user-guide/displaying-forms`
+-  :doc:`/process-automation/forms/user-guide/managing-form-entries`
+-  :doc:`/process-automation/forms/user-guide/data-providers`
+-  :doc:`/process-automation/forms/user-guide/process-automation-permissions`
+
 * Form Field Types
 * Form Rules
 * Form Element Sets
-* Data Providers
 * Auto Save
 * Translating Forms
 * Autocompleting Text Fields
@@ -21,4 +25,4 @@ User Guide
 * Redirecting Users
 * Form Permissions
 * Styling Form Pages
-* Dynamic Data Lists
+-  :doc:`/process-automation/forms/user-guide/dynamic-data-lists/getting-started-with-dynamic-data-lists`
