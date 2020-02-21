@@ -73,6 +73,11 @@ In this section, we will get an example product type up and running on your inst
 
 1.  Add the Knowledge Base Display widget to a page, followed by the Similar Results widget.
 
+1.  Open the widget configuration of the Similar Results widget, and make sure to set a value of _1_ for these settings:
+
+    Minimum Term Frequency: 1 
+    Minimum Document Frequency: 1
+
 1.  Click on one of the KB Articles to select it for display, as the main asset.
 
     The Similar Results widget now shows other related KB Articles.

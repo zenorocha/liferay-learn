@@ -12,4 +12,6 @@ buildscript {
 	}
 }
 
+apply plugin: "java"
+apply plugin: "eclipse"
 apply plugin: "com.liferay.root.defaults.plugin"
