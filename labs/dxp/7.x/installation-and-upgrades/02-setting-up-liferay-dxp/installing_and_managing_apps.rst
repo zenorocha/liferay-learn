@@ -16,5 +16,5 @@ Installing Apps Manually
    installing-and-managing-apps/blacklisting-osgi-components.md
    installing-and-managing-apps/renewing-apps.md
 
-.. include:: /installation-and-upgrades/02-setting-up-liferay-dxp/installing-and-managing-apps/README.rst
+.. include:: /installation-and-upgrades/setting-up-liferay-dxp/installing-and-managing-apps/README.rst
    :start-line: 2
