@@ -1,6 +1,6 @@
-# Creating a Time Off Management Application with App Builder
+# Creating an Application with App Builder
 
-Objects are the foundation of every App Builder application. They define all of the data fields that can be contained in the application. To create applications based on an object, you have four tasks: create a custom object, create at least one form view, create at least one table view, and deploy the application.
+To create applications based on a custom object, you have four tasks: create the object, create at least one form view, create at least one table view, and deploy the application.
 
 * [Creating a custom object](#creating-a-custom-object)
 * [Creating form views](#creating-form-views)
