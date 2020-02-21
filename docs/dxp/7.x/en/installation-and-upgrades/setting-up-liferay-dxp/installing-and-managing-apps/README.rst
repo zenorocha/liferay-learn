@@ -1,5 +1,5 @@
-Installing Apps Manually
-========================
+Installing and Managing Apps
+============================
 
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/installing-and-managing-apps/introduction-to-managing-apps`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/installing-and-managing-apps/purchasing-apps-on-liferay-marketplace`
