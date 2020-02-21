@@ -7,8 +7,6 @@ Extending Liferay
    extending-liferay/adding-a-language.md
    extending-liferay/application-lists.md
    extending-liferay/control-panel.md
-   extending-liferay/creating-a-widget-template.md
-   extending-liferay/customizing-a-widget-with-a-widget-template.md
    extending-liferay/creating-service-wrappers.md
    extending-liferay/customizing-applications.md
    extending-liferay/customizing-jsps.md

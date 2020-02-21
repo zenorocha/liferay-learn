@@ -7,8 +7,6 @@ Extending Liferay
 * Adding a Language
 * Application Lists
 * Control Panel
-* Creating a Widget Template
-* Customizing a Widget with a Widget Template
 * Customizing JSPs
 * Model Listeners
 * Overriding MVC Commands
