@@ -12,9 +12,7 @@ Once you have purchased an app, there are also a couple of options for how to do
 
 ## Installing Apps
 
-Apps can be installed to your DXP Installation either through the UI or through the file system. You can [use the file system](./installing-apps-via-the-file-system.md) to drop an LPKG file into your deployment directory, either with a server restart or using auto deployment. Note that you should install apps through the file system with a server restart in production-grade environments.
-
-You can also use the UI to install apps by using auto deployment, either through [the Marketplace plugin](./purchasing-apps-on-liferay-marketplace.md), the Purchased Apps screen in the Control Panel, or the [App Manager](./managing-apps.md). See [Installing Apps via the UI](./installing-apps-via-the-ui.md) for an overview of this approach.
+Apps can be installed to your DXP Installation either through the UI (including the Purchased Apps or App Manager screens in the Control Panel) or through the file system. Installing an app will require a server restart, so plan the installation accordingly. See [Installing Apps](./installing-apps) for more information on both of these installation methods.
 
 ## App Management
 
