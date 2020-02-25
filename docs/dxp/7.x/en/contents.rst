@@ -4,7 +4,7 @@ Contents
 .. toctree::
    :glob:
    :includehidden:
-   :maxdepth: 4
+   :maxdepth: 5
 
    getting_started
    building_solutions_on_dxp
