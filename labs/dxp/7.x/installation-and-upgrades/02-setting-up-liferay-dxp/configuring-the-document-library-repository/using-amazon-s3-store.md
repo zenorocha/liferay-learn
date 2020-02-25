@@ -41,7 +41,7 @@ Your DXP instance is now using the Amazon S3 store.
 ## Amazon S3 Store in a Clustered Environment
 
 <!-- Please update the below links to the relevant clustering articles as needed. -->
-To propagate store configuration in a [cluster](https://help.liferay.com/hc/articles/360029123831-Liferay-DXP-Clustering), [export](https://help.liferay.com/hc/articles/360029131591-System-Settings#exporting-and-importing-configurations) your store settings from your store's *File Storage* screen in System Settings to a `.config` file and copy the file to the `[Liferay-Home]/osgi/config` folder in each node.
+To propagate store configuration in a [cluster](https://help.liferay.com/hc/articles/360029123831-Liferay-DXP-Clustering), [export](https://help.liferay.com/hc/articles/360029131591-System-Settings#exporting-and-importing-configurations) your store settings from your store's *File Storage* screen in System Settings to a `.config` file and copy the file to the `[Liferay-Home]/osgi/configs` folder in each node.
 
 To use the S3 store in a [cluster](https://help.liferay.com/hc/articles/360029123831-Liferay-DXP-Clustering), follow these steps:
 
