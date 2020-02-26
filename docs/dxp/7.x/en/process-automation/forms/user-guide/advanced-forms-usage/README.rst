@@ -1,15 +1,5 @@
-User Guide
-==========
-
--  :doc:`/process-automation/forms/user-guide/introduction-to-forms`
--  :doc:`/process-automation/forms/user-guide/creating-forms`
--  :doc:`/process-automation/forms/user-guide/sharing-forms`
--  :doc:`/process-automation/forms/user-guide/managing-form-entries`
--  :doc:`/process-automation/forms/user-guide/forms-field-types-reference`
--  :doc:`/process-automation/forms/user-guide/forms-permissions-reference`
-
 Advanced Forms Usage
---------------------
+====================
 
 -  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/building-forms-with-conditional-fields`
 -  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/customizing-auto-save-behavior`
@@ -24,7 +14,7 @@ Advanced Forms Usage
 -  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/validating-text-and-numeric-field-entries`
 
 Kaleo Forms
-~~~~~~~~~~~
+-----------
 
 Dynamic Data Lists
-~~~~~~~~~~~~~~~~~~
+------------------
