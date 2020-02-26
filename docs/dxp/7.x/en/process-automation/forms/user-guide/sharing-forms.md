@@ -37,8 +37,6 @@ The link is available while still viewing the _Form Builder_ in the top right.
 
 Once you have the URL, embed the URL in an email or other notification types. Users who click on the link receive direct access to just the form.
 
-![Get the URL from the Copy URL button](./sharing-forms/images/06.png)
-
 ## What's Next
 
 * [Managing Form Entries](./managing-form-entries.md)

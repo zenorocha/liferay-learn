@@ -70,7 +70,7 @@ Alternately, users can delete just one entry; check the box next to the chosen e
 ## Additional Information
 
 ```note::
-   The Forms application itself has an _Import/Export_ window accessible from the application's Configuration menu. This is how you import and export the application configuration and its data (forms and form entries). The file format for this type of import and export is a LAR file.
+   The Forms application itself has an Import/Export window accessible from the application's Configuration menu. This is how you import and export the application configuration and its data (forms and form entries). The file format for this type of import and export is a LAR file.
 ```
 
 ![Exporting Form contents as a LAR](./managing-form-entries/images/08.png)

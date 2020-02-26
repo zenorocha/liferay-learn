@@ -19,7 +19,7 @@ See the [Creating Forms](./creating-forms.md) article to get started.
 
 Liferay Forms also include many additional features and tools to enable users to efficiently build high engagement forms. These features include:
 
-* Populating a field options by integrating with a [Data Provider](./data-providers.md)
+* Populating a field options by integrating with a [Data Provider](./advanced-forms-usage/using-data-providers-to-populate-form-options.md)
 * [Conditional fields](./advanced-forms-usage/building-forms-with-conditional-fields.md)
 * Integration with Liferay's built-in [workflow system](./advanced-forms-usage/using-forms-with-a-workflow.md)
 * [And more...](./advanced-forms-usage/README.md)
@@ -34,5 +34,5 @@ Liferay Forms also include many additional features and tools to enable users to
 
 ## Next Steps
 
-* [Create a form](./creating-forms.md)
-* [Sharing a form](./sharing-forms.md)
+* [Creating a Form](./creating-forms.md)
+* [Sharing a Form](./sharing-forms.md)
