@@ -16,17 +16,17 @@ User Guide
 Advanced Forms Usage
 ~~~~~~~~~~~~~~~~~~~~
 
-* Building Forms with Conditional Fields
-* Customizing Auto-Save Behavior
-* Customizing Form Layouts
-* Enabling CAPTCHA on Form Submissions
-* Providing Predefined Values for a Form
-* Redirecting Users on Form Submission
-* Reusing Sets of Form Elements
-* Translating Forms
-* Using Data Providers to Populate Form Options
-* Using Forms with a Workflow
-* Validating Text and Numeric Field Entries
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/building-forms-with-conditional-fields`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/customizing-auto-save-behavior`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/customizing-form-layouts`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/enabling-captcha-on-form-submissions`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/providing-predefined-values-for-a-form`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/redirecting-users-on-form-submission`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/reusing-sets-of-form-elements`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/translating-forms`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/using-data-providers-to-populate-form-options`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/using-forms-with-a-workflow`
+-  :doc:`/process-automation/forms/user-guide/advanced-forms-usage/validating-text-and-numeric-field-entries`
 
 
 Developer Guide
