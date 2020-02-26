@@ -2,15 +2,17 @@
 
 > Available: Liferay DXP 7.3+
 
-App Builder provides a low-code application development solution for Liferay DXP. Build a data model, define the application's forms (for entering data) and tables (for viewing and manging data records), then deploy the application anywhere Liferay DXP applications can be deployed. With App Builder, you'll create a functional business application with dedicated user interfaces and data separation, all without seeing a single line of code.
+App Builder is a low-code application development solution for Liferay DXP. Build a data model, define the application's forms (for entering data) and tables (for viewing and managing data records), then deploy your application to your Liferay DXP site, or as a completely standalone application. With App Builder, creating functional business applications with dedicated user interfaces and data separation, can be done without a single line of code.
+
+<!-- Wiz-bang screenshot of App Builder -->
 
 ## Creating an App
 
-Apps made with App builder are made up of 3 components that are easily defined in the app builder UI: objects, form views, and table views. These concepts are explained below. To skip straight to building an application, see the next article on [Creating Applications with App Builder](./creating-applications-with-app-builder.md).
+Apps made with App builder are made up of 3 components that are defined in the app builder UI: objects, form views, and table views. To skip straight to building an application, see the next article on [Creating Applications with App Builder](./creating-applications-with-app-builder.md).
 
 ### App Builder Objects
 
-An _Object_ is at the foundation of every App Builder application. It defines the data fields contained in the application. For example, a Guestbook object would contain a _Name_ field and a _Message_ field, at least. There are two kinds of object in App Builder:
+An _Object_ is at the foundation of every App Builder application. It defines the information and types of information that you want to the application to collect and interact with. For example, a Guestbook object would contain a _Name_ field and a _Message_ field, at least. There are two kinds of objects in App Builder:
 
 * _Custom Objects_ are created using a drag-and-drop Form Builder interface.
 * _Native Objects_ are pre-defined sets of data fields that can be used out of the box or extended to suit your needs.
@@ -37,26 +39,26 @@ Table views display the data records collected for an object. In addition, users
 
 Once an object is defined and at least one form and table view are created, you can deploy an application. You have several deployment options:
 
-**Widget:** Deploy the application to the widget menu, and add it to a page using the Add Widgets menu (from Add &rarr; Widgets, search for your application by name). Deploying as a widget really deploys three versions of the application to the Add Widgets menu, each with a different label. Each option exposes different features for your application's users: 
+**Widget:** Deploy the application to the widget menu, and add it to a page using the Add Widgets menu (from Add &rarr; Widgets, search for your application by name). Deploying as a widget really deploys three variations of the application to the Add Widgets menu, each with a different label. Each option exposes different features for your application's users:
 
-| Widget Menu Label     | Form View | Table View | Add Records | Manage Records |
-|-----------------------|-----------|------------|-------------|----------------|
-| App Name              |     (y)   |      (y)   |    (y)      |      (y)       |
-| App Name [Form View]  |     (y)   |      (n)   |    (y)      |      (n)       |
-| App Name [Table View] |     (n)   |      (y)   |    (n)      |      (y)       |
+| Widget Menu Label     | Submit Form Entries | View Entries | Update and Delete Entries |
+|-----------------------|-----------|------------|----------------|
+| App Name              |     &#10004;   |      &#10004;   |      &#10004;       |
+| App Name [Form View]  |     &#10004;   |         |          |
+| App Name [Table View] |        |      &#10004;   |      &#10004;       |
 
-![App Builder widgets are placed on Liferay DXP pages.](./app-builder/images/01.png)
+![App Builder widgets are placed on Liferay DXP pages.](./app-builder-overview/images/01.png)
 
 **Standalone:** Deploy the application to a dedicated page that's not part of a site and not visible to any navigation menu. This limits access to only people with the link.
 
-![Standalone App Builder applications are accessible only by direct link](./app-builder/images/02.png)
+![Standalone App Builder applications are accessible only by direct link](./app-builder-overview/images/02.png)
 
 **Product Menu:** Deploy the application to the Control Panel, the Site Menu, or both. This gives you flexibility in deciding where administrative Users will access the application.
 
-![App Builder applications can be added to the Product Menu.](./app-builder/images/03.png)
+![App Builder applications can be added to the Product Menu.](./app-builder-overview/images/03.png)
 
 A Standalone or Product Menu application always includes both the form and table view. The table view is the default view, while an add button provides access to the form view.
 
 ## Next Steps
 
-* [Creating Applications with App Builder](./creating-applications-with-app-builder.md)
+* [Creating Applications with App Builder](./creating-applications-with-app-builder-overview.md)
