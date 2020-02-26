@@ -1,6 +1,6 @@
 # Managing Form Entries
 
-Once users begin submitting form entries, you will want to be able to access the data and process the information accordingly. Liferay _Forms_ allows users to manage the entries and export them as a CSV file.
+Once users begin submitting form entries, you can access the form entry data through the UI or export the data to a different file format for further analysis and review.
 
 ## Viewing Form Entries
 
@@ -35,7 +35,7 @@ To export the form entries:
 
 1. Click *Okay* then open the file or save it locally.
 
-### Enabling or Disabling Exports
+### Enabling or Disabling Exporting of Forms Data
 
 There is a system level setting to determine whether administrators can export entries in CSV format:
 
@@ -69,7 +69,9 @@ Alternately, users can delete just one entry; check the box next to the chosen e
 
 ## Additional Information
 
-**Note:** The Forms application itself has an _Import/Export_ window accessible from the application's Configuration menu (![Configuration](../../../images/icon-options.png)). This is how you import and export the application configuration and its data (forms and form entries). The file format for this type of import and export is a LAR file.
+```note::
+   The Forms application itself has an _Import/Export_ window accessible from the application's Configuration menu. This is how you import and export the application configuration and its data (forms and form entries). The file format for this type of import and export is a LAR file.
+```
 
 ![Exporting Form contents as a LAR](./managing-form-entries/images/08.png)
 

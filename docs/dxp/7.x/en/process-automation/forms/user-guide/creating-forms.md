@@ -47,12 +47,10 @@ The sample below is a hotel guest feedback survey form.
     * **Field Type**: Click the _Multiple Lines_ radio button to allow longer comments.
     * **Required Field:** Leave the toggle to _NO_.
 
-    ![Adding a Text Field](./creating-forms/images/04.png)
-
 1. Close the sidebar.
 1. Click _Save Form_ to save the form as a draft.
 
-### Adding Additional Pages and the Success Page
+### Adding Additional Pages
 
 If you decide multiple pages are appropriate for your form, Liferay _Forms_ supports multi-page forms.
 
@@ -70,6 +68,8 @@ To add a subsequent page to the form:
 
     ![Adding a second page.](./creating-forms/images/07.png)
 
+### Adding a Success Page
+
 One very useful page is the _Success Page_ which lets the user know they have reached the end of form and that the form has been successfully submitted.
 
 To add a _Success Page_:
@@ -83,13 +83,19 @@ To add a _Success Page_:
 
     ![Adding a Success Page](./creating-forms/images/08.png)
 
-1. When satisfied, click _Publish Form_.
+### Publishing a Form
 
-A dedicated URL to the form is generated; users can add the form to a page. Alternately, the link can be provided as an email to the page where the form is located.
+Once you have completed your form, you must publish it before users can begin submitting responses. Click the _Publish Form_ to publish.
+
+When you publish a form, a URL is generated that can be sent to users to fill out the form.
+
+![Once a form has been published, a URL is generated that can be shared.](creating-forms/images/11.png)
+
+See [Sharing Forms](./sharing-forms.md) to learn more.
 
 ## Duplicating a Form
 
-If you like this form and want to create similar forms without having to start from the beginning, use the _Duplicate_ function.
+Forms can be duplicated in order to create similar forms without having to create one from scratch. To duplicate a form follow these steps:
 
 1. Navigate to _Site Administration_ &rarr; _Content & Data_ &rarr; _Forms_.
 1. Click the _Actions_ button (![Actions](../../../images/icon-actions.png)) next to the original form.

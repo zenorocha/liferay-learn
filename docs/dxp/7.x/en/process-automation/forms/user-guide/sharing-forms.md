@@ -1,13 +1,11 @@
 # Sharing Forms
 
-Once you [created](./creating-forms.md) a form and published it, the form needs to be shared in order to collect the information you want. Depending on the _type of site_ (see the [Adding a Site](../../../site-building/building-sites/adding-a-site.md) article) you created, access to the form is dependent on that user's level of permissions to view the site and the [widget](./process-automation-permissions.md) itself.
+There are two ways to share a form:
 
-There are two ways to share the form:
+* Placing the _Form_ widget on a site page and configuring the widget to display the particular form. This allows the form to be seen and submitted by any user who has access to the [site page](../../../site-building/creating-pages/understanding-pages.md).
+* Sharing the dedicated form URL directly with users. This limits access to the form to only those users who have the direct link.
 
-* Place the _Form_ widget on a site page then select the particular form. This approach lets users navigate to the page in the site.
-* Copy the dedicated form URL and provide it to users (for example, via email). This limits access to the form to only those users who have the direct link.
-
-## Using the Form Widget on a Site Page
+## Displaying a Form on a Site Page
 
 1. Navigate to the site page (for example, _Contact Us_).
 1. Click the _Add_ button.
@@ -15,7 +13,7 @@ There are two ways to share the form:
 
     ![Selecting the Form widget](./sharing-forms/images/04.png)
 
-1. Add the _Form_ widget to the page. (If you had used a full page application template to create the page, use the page configuration to choose _Form_ from the _Full Page Application_ dropdown.)
+1. Add the _Form_ widget to the page.
 
     ![The blank Form widget on a page](./sharing-forms/images/01.png)
 
@@ -25,7 +23,7 @@ There are two ways to share the form:
 
     ![The Form widget displays the Guest Survey form](./sharing-forms/images/05.png)
 
-## Obtaining the Form Using Its URL
+## Getting the Direct URL to a Form
 
 You must first publish a form before you can get a shareable link. Otherwise, you might see this warning message:
 
