@@ -7,7 +7,9 @@ Advanced Forms Usage
    advanced-forms-usage/building-forms-with-conditional-fields.md
    advanced-forms-usage/customizing-auto-save-behavior.md
    advanced-forms-usage/customizing-form-layouts.md
+   advanced-forms-usage/enabling-captcha-on-form-submissions.md
    advanced-forms-usage/providing-predefined-values-for-a-form.md
+   advanced-forms-usage/redirecting-users-on-form-submission.md
    advanced-forms-usage/reusing-sets-of-form-elements.md
    advanced-forms-usage/translating-forms.md
    advanced-forms-usage/using-data-providers-to-populate-form-options.md
