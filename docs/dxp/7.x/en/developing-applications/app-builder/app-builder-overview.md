@@ -61,4 +61,4 @@ A Standalone or Product Menu application always includes both the form and table
 
 ## Next Steps
 
-* [Creating Applications with App Builder](./creating-applications-with-app-builder-overview.md)
+* [Creating an Application with App Builder](./creating-an-application-with-app-builder.md)
