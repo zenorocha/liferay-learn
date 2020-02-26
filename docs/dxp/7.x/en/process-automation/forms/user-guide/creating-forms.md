@@ -1,6 +1,6 @@
 # Creating Forms
 
-The _Forms_ application allows users to create multi-field forms. Only authenticated users with the requisite [Process Automation Permissions](./process-automation-permissions.md) have the ability to create forms. (At minimum, they should have the ability to access the _Site Administration_ menu and the _Forms_ application.) To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+The _Forms_ application allows users to create multi-field forms. Only authenticated users with the requisite [Process Automation Permissions](./forms-permissions-reference.md) have the ability to create forms. (At minimum, they should have the ability to access the _Site Administration_ menu and the _Forms_ application.) To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ![Forms are displayed in List format by default.](./creating-forms/images/01.png)
 

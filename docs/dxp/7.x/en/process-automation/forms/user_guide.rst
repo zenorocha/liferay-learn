@@ -9,7 +9,7 @@ User Guide
    user-guide/displaying-forms
    user-guide/managing-form-entries.md
    user-guide/data-providers.md
-   user-guide/process-automation-permissions.md
+   user-guide/forms-permissions-reference.md
    user-guide/dynamic-data-lists/getting-started-with-dynamic-data-lists.md
    user-guide/dynamic-data-lists/using-templates-to-display-forms-and-lists.md
 
