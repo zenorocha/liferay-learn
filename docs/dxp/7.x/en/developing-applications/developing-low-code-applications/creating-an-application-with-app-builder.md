@@ -78,9 +78,7 @@ We will deploy two applications for the Time Off Request object: one is a widget
 
 1. Open the Time Off Request (Control Panel &rarr; App Builder &rarr; Custom Objects).
 
-1. From the _Apps_ tab, click the Add button.
-
-    <!-- screenshot -->
+1. From the _Apps_ tab, click the Add button (![Add](../../images/icon-add.png)).
 
 1. Name the app _Time Off Requester_.
 
@@ -94,9 +92,9 @@ We will deploy two applications for the Time Off Request object: one is a widget
 
 Administrators can now access the _Time Off Manager_ application in the Product Menu to begin monitoring time off requests from site users.
 
-### Undeploying an Application
+## Undeploying an Application
 
-You can undeploy and redeploy App Builder applications at any time (e.g., if a new set of time off management applications are created). To undeploy,
+You can undeploy and redeploy App Builder applications at any time (e.g., if a new set of time off management applications are created). If you undeploy an application, any entries already submitted are preserved, but no new entries can be added. To undeploy,
 
 1. Open the custom object (Control Panel &rarr; App Builder &rarr; Custom Objects).
 
@@ -104,7 +102,29 @@ You can undeploy and redeploy App Builder applications at any time (e.g., if a n
 
 1. Select _Undeploy_.
 
-<!-- Potentially obvious but, does Undeploying an application pose any risk of losing entries that have been submitted? What if I change the data object after entries have been submitted? -->
+## Editing an Object with Data Records
+
+The App Builder is designed to prevent data corruption or loss. Deleting, adding, or editing a field, even after data records have been added for it, is permitted. 
+
+### Deleting Fields 
+
+Deleting a field from an object that already has data records prevents the field from display in the UI, but doesn't delete the data. If you create a field with same name and type as a deleted field, the field's data will be restored for records that already hold its data.
+
+To remove a field from an existing object, hover over it in the object view and click the *x*. You'll be asked for confirmation and warned about data loss.
+
+![Deleting a field will cause data loss for existing records.](./creating-an-application-with-app-builder/images/06.png)
+
+### Adding and Editing Fields
+
+When you add or edit a field already being used in an object, the changes to the object will only affect records added after the add or edit. All existing records remain, unaffected by the change to the object.
+
+To add a field directly to an existing object, open the any of the object's form views and click the add button in the left pane of the form builder.
+
+![You can add a field directly to an existing object.](./creating-an-application-with-app-builder/images/05.png)
+
+To edit a field, navigate to the form view where it exists and click the field in the form builder. The field properties will open.
+
+![You can edit a field from its form view.](./creating-an-application-with-app-builder/images/07.png)
 
 ## Related Information
 
