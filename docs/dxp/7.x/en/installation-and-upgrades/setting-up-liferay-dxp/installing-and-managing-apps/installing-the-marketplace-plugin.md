@@ -10,6 +10,6 @@ Follow these steps to install the Marketplace plugin:
 
 1. Download the [Marketplace plugin](https://www.liferay.com/marketplace/download).
 
-2. Deploy the plugin (`.lpkg` file) by copying it to the `deploy` folder in [Liferay Home](../14-reference/01-liferay-home.md) or installing it using the [App Manager](./installing-and-managing-apps/managing-apps.md).
+2. Deploy the plugin (`.lpkg` file) by copying it to the `deploy` folder in [Liferay Home](../14-reference/liferay-home.md) or installing it using the [App Manager](./installing-and-managing-apps/managing-apps.md).
 
 The Marketplace is now available to use in the Control Panel.

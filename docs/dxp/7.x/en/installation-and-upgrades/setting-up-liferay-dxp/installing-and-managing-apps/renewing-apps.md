@@ -24,6 +24,6 @@ Here are the steps:
 
 1. Click *Download*. The new app activation key for your server downloads.
 
-1. Copy the activation key file to your `deploy/` folder in your [`[Liferay Home]`](../../14-reference/01-liferay-home.md).
+1. Copy the activation key file to your `deploy/` folder in your [`[Liferay Home]`](../../reference/liferay-home.md).
 
 Continue using the application on your server.

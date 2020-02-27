@@ -25,6 +25,8 @@ To view an item's contents, click its name in the table.
 
 The component/portlet level is the farthest you can go without getting into the source code. At any level in the App Manager, there's a link trail above the listing that shows the item's hierarchical context.
 
+<!-- Why does this section exist when we have a separate article called "Installing Apps"? It's confusing for the reader. Maybe this article should be called "Using the App Manager". -->
+
 ## Installing Apps
 
 The App Manager is a convenient way to install a [downloaded app](./downloading-apps.md) from your local machine to a local or remote DXP server.

@@ -19,9 +19,9 @@ Here's how to enter the Marketplace from within DXP:
 1. In the Control Panel, navigate to *Apps* &rarr; *Store*.
 
 1. Sign in with your liferay.com account.
-
+`Adding a Page to a Site <../02-creating-pages/README.md>`_ 
 ``` important::
-   Purchasing apps requires that you have a [liferay.com](https://www.liferay.com) account and agree to the Marketplace Terms of Use.
+   Purchasing apps requires that you have a `liferay.com <https://www.liferay.com>`_ account and agree to the Marketplace Terms of Use.
 ```
 
 The Marketplace appears. It's time to check out some apps.
@@ -64,7 +64,7 @@ Click an app to view details:
 ## Purchasing an App
 
 ```warning::
-   In production-grade environments, only purchase apps via the [Marketplace website](https://web.liferay.com/marketplace). Apps purchased in the Control Panel download and install using auto deploy automatically; apps that aren't designed for auto deployment can cause class loading issues and memory leaks.
+   In production-grade environments, only purchase apps via the `Marketplace website <https://web.liferay.com/marketplace>`_. Apps purchased in the Control Panel download and install using auto deploy automatically; apps that aren't designed for auto deployment can cause class loading issues and memory leaks.
 ```
 
 Here are the app purchase steps:

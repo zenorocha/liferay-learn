@@ -2,6 +2,8 @@
 
 The Components listing is the easiest way to configure [portlets](https://help.liferay.com/hc/en-us/articles/360029046351-Introduction-to-Portlets), [themes](https://help.liferay.com/hc/en-us/articles/360035581011-UI-Architecture#themes), and [layout templates](https://help.liferay.com/hc/en-us/articles/360028726612-Layout-Templates). In the Components UI, you can enable/disable them and configure permissions on them.
 
+<!-- Why? To what end would I need to do this? What's the value? -->
+
 1. Access the Components UI in the Control Panel, by navigating to *Configuration* &rarr; *Components*. A table of installed portlets appears.
 
     ![In the Components UI, you can manage the portlets, themes, and layout templates installed on your DXP instance.](./configuring-portlets-themes-and-layout-templates/images/01.png)

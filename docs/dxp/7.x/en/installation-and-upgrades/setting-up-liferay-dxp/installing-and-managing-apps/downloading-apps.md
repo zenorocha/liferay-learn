@@ -4,9 +4,9 @@ When you purchase an app via the [Liferay Marketplace website](https://web.lifer
 
 The quickest, most convenient way to download an app is via its receipt.
 
-### Downloading via the Receipt
+## Downloading via the Receipt
 
-An app's receipt displays immediately on purchasing the app. 
+An app's receipt displays immediately on purchasing the app.
 
 ![On the Marketplace website, a receipt displays immediately on purchasing an app.](./downloading-apps/images/01.png)
 
@@ -22,9 +22,9 @@ The LPKG file downloads to your machine.
    The receipt Liferay emails you also links to the Purchased App page.
 ```
 
-If you don't happen to download the app via the receipt, there's no need to worry. Your purchased apps are available to download via the Purchased Apps page on the Marketplace website and your Liferay.com account home. 
+If you don't happen to download the app via the receipt, there's no need to worry. Your purchased apps are available to download via the Purchased Apps page on the Marketplace website and your Liferay.com account home.
 
-### Downloading via the Purchased Apps Page 
+## Downloading via the Purchased Apps Page
 
 The *Purchased Apps* page lists your purchased apps by project. You can drill down to specific apps and download them.
 
@@ -32,7 +32,7 @@ Here are the steps for downloading an app in the Purchased Apps UI:
 
 1. Navigate to the Purchased Apps page via the Marketplace website or Liferay.com.
 
-    **Marketplace website:** Go to https://web.liferay.com/marketplace and sign in. Click on your profile picture in the top right corner and select *Purchased Apps*. 
+    **Marketplace website:** Go to [https://web.liferay.com/marketplace](https://web.liferay.com/marketplace) and sign in. Click on your profile picture in the top right corner and select *Purchased Apps*.
 
     **Liferay.com:** Go to [liferay.com](https://www.liferay.com) and sign in. Click on your profile picture in the top right corner, select *Account Home* from the menu, and select *Apps* in the navigation panel on the left.
 

@@ -4,7 +4,7 @@ After downloading an app as an LPKG file from the [Marketplace website](https://
 
 You can use either of the following methods to install a new app to your instance:
 
-- [Install via the file system](#installing-apps-via-the-file-system)
+- [Install via the File System](#installing-apps-via-the-file-system)
 - [Installing Apps via the UI](#installing-apps-via-the-ui)
 
 ```important::
@@ -15,11 +15,11 @@ You can use either of the following methods to install a new app to your instanc
 
 Follow these steps to install an app via the file system with a server restart:
 
-1. [Stop your DXP server](../../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md#shutdown).
+1. [Stop your DXP server](../../installing-liferay/running-liferay-dxp-for-the-first-time.md#shutdown).
 
-1. Copy your app file (LPKG, module JAR, or plugin WAR) to your `[Liferay Home]/deploy` folder. The [Liferay Home](../../14-reference/01-liferay-home.md) folder is typically the app server's parent folder. DXP deploys apps from the `[Liferay Home]/deploy` folder.
+1. Copy your app file (LPKG, module JAR, or plugin WAR) to your `[Liferay Home]/deploy` folder. The [Liferay Home](../../reference/liferay-home.md) folder is typically the app server's parent folder. DXP deploys apps from the `[Liferay Home]/deploy` folder.
 
-1. [Start your DXP server](../../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md#startup).
+1. [Start your DXP server](../../installing-liferay/running-liferay-dxp-for-the-first-time.md#startup).
 
 The app file is copied from the `[Liferay Home]/deploy` folder to one an appropriate subfolder under `[Liferay Home]/osgi`:
 
@@ -52,6 +52,8 @@ The DXP Control Panel accesses the Marketplace. You browse the Marketplace the s
 ### Purchased Apps Screen
 
 The Purchased page in the Control Panel at *Apps* &rarr; *Purchased* lists apps that you've previously purchased. Apps that aren't installed have an *Install* button for installing the app on the DXP instance.
+
+<!-- This screenshot needs a highlight to draw attention to the Install button. -->
 
 ![The Purchased Apps screen as it appears in the Control Panel.](./installing-apps/images/01.png)
 
