@@ -6,20 +6,20 @@ App Builder is a low-code application development solution for Liferay DXP. Buil
 
 ![Two separate applications are deployed for this App Builder object.](./app-builder-overview/images/01.png)
 
-Why use App Builder when the Liferay Forms application includes almost identical form-building capability? If you're asking that question, you may not need the added features and flexibility App Builder provides. Here's an overview of the differences:
+Why use App Builder when the [Liferay Forms](../../process-automation/forms/user-guide/introduction-to-forms.md) application includes similar form-building capabilities? Here's an overview of the differences:
 
-| Capability | Liferay Forms | App Builder | 
+| Capability | Liferay Forms | App Builder |
 |------------|:-------------:|:-----------:|
 | Create simple or complex forms | &#10004; | &#10004; |
 | Deploy the form in a widget or at a dedicated URL | &#10004; | &#10004; |
-| Keep my form data separate from other forms' data |  | &#10004; |
+| Keep form data separate from other forms' data |  | &#10004; |
 | Deploy the form to the product menu |     |      &#10004;   |
 | Display collected data in multiple places |     &#10004;   |         |
-| Exert control over the display of form data |        |      &#10004;   |
+| Control over the presentation and display of form data |        |      &#10004;   |
 | Deploy multiple forms for one data object |        |      &#10004;   |
 | Deploy multiple data record views for one data object |        |      &#10004;   |
 
-It's about flexibility. The ability to combine forms, data display tables, and flexible deployment options, all backed by a single data object, are what distinguish App Builder use cases from standard Forms.
+The ability to combine forms, data display tables, and flexible deployment options, all backed by a single data object, are what distinguish App Builder use cases from standard Forms.
 
 ## Creating an App
 

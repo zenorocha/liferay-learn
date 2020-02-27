@@ -104,9 +104,9 @@ You can undeploy and redeploy App Builder applications at any time (e.g., if a n
 
 ## Editing an Object with Data Records
 
-The App Builder is designed to prevent data corruption or loss. Deleting, adding, or editing a field, even after data records have been added for it, is permitted. 
+The App Builder is designed to prevent data corruption or loss. Deleting, adding, or editing a field, even after data records have been added for it, is permitted.
 
-### Deleting Fields 
+### Deleting Fields
 
 Deleting a field from an object that already has data records prevents the field from display in the UI, but doesn't delete the data. If you create a field with same name and type as a deleted field, the field's data will be restored for records that already hold its data.
 
