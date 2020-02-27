@@ -10,7 +10,7 @@ Subscribers can use redundant VPN tunnels by mapping their connections between t
 
 The client to site VPN feature supports the following protocols:
 
-* IPsec (IKEv1, IKEv2, L2TP)
+* IPsec (IKEv2)
 * OpenVPN
 
 Subscribers can choose one of the protocols (IPSec or OpenVPN) to perform the connection from DXP Cloud Console settings page for the desired environment. See [Connecting a VPN to DXP Cloud](./connecting-a-vpn-to-dxp-cloud.md) for more information.
