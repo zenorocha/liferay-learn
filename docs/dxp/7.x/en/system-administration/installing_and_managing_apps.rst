@@ -1,5 +1,5 @@
-Installing Apps Manually
-========================
+Installing And Managing Apps
+============================
 
 .. toctree::
    :maxdepth: 2
