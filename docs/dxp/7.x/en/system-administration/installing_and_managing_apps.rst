@@ -9,7 +9,7 @@ Installing And Managing Apps
    installing-and-managing-apps/installing-the-marketplace-plugin.md
    installing-and-managing-apps/downloading-apps.md
    installing-and-managing-apps/installing-apps.md
-   installing-and-managing-apps/managing-apps.md
+   installing-and-managing-apps/using-the-app-manager.md
    installing-and-managing-apps/configuring-portlets-themes-and-layout-templates.md
    installing-and-managing-apps/blacklisting-apps.md
    installing-and-managing-apps/blacklisting-osgi-components.md
