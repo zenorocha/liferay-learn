@@ -77,8 +77,6 @@ To add a _Success Page_:
 1. Click the _Actions_ button (![Actions](../../../images/icon-actions.png)) at the top-right corner of the form.
 1. Click _Add Success Page_.
 
-    ![Adding a Success Page](./creating-forms/images/09.png)
-
 1. Modify the default the _Title_ and _Content_ fields with your values. Note that you cannot rename the _Success Page_.
 
     ![Adding a Success Page](./creating-forms/images/08.png)
