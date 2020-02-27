@@ -4,7 +4,9 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
 
 1. Get Liferay DXP.
 
-    > **Note:** Don't have Docker? Go here first: [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/)
+    ```tip::
+       Don't have Docker? Go here first: `Linux <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_ | `Windows <https://docs.docker.com/docker-for-windows/install/>`_ | `OSX <https://docs.docker.com/docker-for-mac/install/>`_
+    ```
 
     ```bash
     docker pull liferay/portal:7.3.0-ga1
@@ -16,7 +18,9 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
     docker run -it -p 8080:8080 liferay/portal:7.3.0-ga1
     ```
 
-    > **Note:** Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
+    ```tip::
+       Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
+    ```
 
 1. Open your browser to `https://localhost:8080`
 
