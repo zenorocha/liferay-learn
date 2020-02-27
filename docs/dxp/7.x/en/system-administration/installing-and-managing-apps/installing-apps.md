@@ -53,8 +53,6 @@ The DXP Control Panel accesses the Marketplace. You browse the Marketplace the s
 
 The Purchased page in the Control Panel at *Apps* &rarr; *Purchased* lists apps that you've previously purchased. Apps that aren't installed have an *Install* button for installing the app on the DXP instance.
 
-<!-- This screenshot needs a highlight to draw attention to the Install button. -->
-
 ![The Purchased Apps screen as it appears in the Control Panel.](./installing-apps/images/01.png)
 
 ### Application Manager
