@@ -1,0 +1,138 @@
+# Activating Workflow
+
+You can activate a workflow process for an asset either across the DXP instance or only on a specific site. When a workflow process is activated across the instance, every submitted asset (for example, _Wiki Pages_) must go through the review process regardless of which **site** the _Wiki Page_ is created on. The only asset workflow that must be activated at the instance level is _User_.
+
+Alternately, you can choose enable or disable workflow on individual _sites_. By default, workflows are disabled on a site. Lastly, there are some workflows which must be enabled inside the respective applications (see below).
+
+## Activating Workflow Across a DXP Instance
+
+1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) and click _Control Panel_.
+1. Click _Workflow_ then _Process Builder_.
+1. Click the _Configurations_ tab.
+
+    ![Activating Workflow Across the Instance](./activating-workflow/images/02.png)
+
+1. Click _Edit_ next to the Asset Type which will go through the workflow process (for example, _Knowledge Base Article_).
+
+    ![Activating Workflow Across the Instance](./activating-workflow/images/03.png)
+
+1. Select the workflow desired for this asset type (_Single Approver_ is out-of-the-box).
+1. Click _Save_.
+1. Repeat for all the other asset types which require workflow.
+
+## Activating Workflow on a Site
+
+1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu.
+1. Select the site where the form will be created (for example, _Community Site_).
+1. In the _Site Administration_ menu, click _Configuration_ &rarr; _Workflow_.
+1. Click _Edit_ next to the Asset Type which will go through the workflow process.
+1. Select the workflow desired for this asset type.
+
+    ![Activating Blog Entry on Community Site](./activating-workflow/images/01.png)
+
+1. Click _Save_.
+1. Repeat for all the other asset types which require workflow.
+
+Once enabled, the selected asset types will always require a review process before publication on this site. Other sites are not affected if configured in the _Site Administration_. Also note that if you have enabled any workflow on across the portal instance, the settings are reflected here. You can always disable workflow for an asset type on a site even if it was enabled instance wide.
+
+## Activating Workflow in Specific Applications
+
+Some assets that are workflow-enabled are activated in their respective application:
+
+### Web Content Folders
+
+To activate a workflow for a _Web Content Folder_:
+
+1. Navigate to the _Site Administration_ menu for your site.
+1. Click _Content & Data_ &rarr; _Web Content_.
+1. Click (![Options](../../../images/icon-options.png)) then _Edit_ next to the desired folder.
+
+    ![Activate workflow on Web Content folders from the folder's edit screen.](./activating-workflow/images/04.png)
+
+1. Expand the _Structure Restrictions and Workflow_ menu.
+1. Click the radio button for _Default Workflow for This Folder (Lunar Resort Holiday Getaway Content)_.
+
+    ![Selecting workflow for a Web Content Folder.](./activating-workflow/images/05.png)
+
+1. Select the workflow definition ( for example, _Single Approver_).
+1. Click the _Save_ button.
+
+### Document and Media Folders
+
+To activate a workflow for a _Documents and Media Folder_:
+
+1. Navigate to the _Site Administration_ menu for your site.
+1. Click _Content & Data_ &rarr; _Documents and Media_.
+1. Click (![Options](../../../images/icon-options.png)) then _Edit_ next to the desired folder.
+
+    ![Selecting workflow for a DM Folder.](./activating-workflow/images/06.png)
+
+1. Expand the _Document Type Restrictions and Workflow_ menu.
+1. Click the radio button for _Default Workflow for This Folder (DM Folder 1)_.
+
+    ![Selecting workflow for a DM Folder.](./activating-workflow/images/07.png)
+
+1. Select the workflow definition ( for example, _Single Approver_).
+1. Click the _Save_ button.
+
+### Dynamic Data Lists
+
+To activate a workflow for a _DDL Form_:
+
+1. Navigate to the _Site Administration_ menu for your site.
+1. Click _Content & Data_ &rarr; _Dynamic Data Lists_.
+1. Click (![Add](../../../images/icon-add.png)) to add a new form.
+1. Enter a name for the DDL form.
+1. Click _Select_ to choose a Data Definition associated with this form.
+1. Select the Data Definition (_Contacts_).
+1. Under _Workflow_, select the desired workflow (_Single Approver_).
+
+    ![Activate workflow for each individual Dynamic Data List.](./activating-workflow/images/08.png)
+
+1. Click _Save_.
+
+This particular DDL form now goes through the submission process.
+
+### Forms
+
+To activate workflow for each individual form's entries
+
+1. Navigate to the _Site Administration_ menu for your site.
+1. Click _Content & Data_ &rarr; _Forms_.
+1. In the _Form Builder_ view (it does not matter whether this is a new form or an existing one), click _Options_ (![Options](../../../images/icon-options.png)) then _Settings_.
+
+    ![Navigating to Form Settings](./activating-workflow/images/09.png)
+
+1. Under _Select a workflow_, select the desired workflow (_Single Approver_).
+
+    ![Activate workflow on each form's entries from the Form Settings window.](./activating-workflow/images/10.png)
+
+1. Click _Done_ then close the dialog window.
+
+The form now requires approval before the information is submitted.
+
+## Page Variations
+
+Page revisions are slightly different.
+
+As a prerequisite, [Staging](https://help.liferay.com/hc/articles/360029041811-Enabling-Staging) and furthermore [Page Versioning](https://help.liferay.com/hc/articles/360028721532-Enabling-Page-Versioning-and-Staged-Content) have been enabled.
+
+Page revisions only occur in [staging environments](https://help.liferay.com/hc/en-us/articles/360029041851-Staging-Content) that have Page Versioning enabled. When a Page Variation or Site Page Variation is created, its creator must click _Submit for Publication_ at the top of the page, and the variation must be approved in the workflow before it can be published to the live Site.
+
+To enable a workflow for Page Variations:
+
+1. Navigate to the _Site Administration_ menu for your site.
+1. Verify that the Staging has been enabled for this site.
+
+    ![Verify that the site is now staged.](./activating-workflow/images/11.png)
+
+1. Click _Configuration_ &rarr; _Workflow_.
+1. Select the workflow desired for _Page Revision_.
+
+    ![Verify that the site is now staged.](./activating-workflow/images/12.png)
+
+1. Click _Save_.
+
+Page revisions now have to go through the workflow process.
+
+![With workflow enabled on Page Revisions, the Site administrator must submit their page variation for publication before it can go live.](./activating-workflow/images/13.png)
