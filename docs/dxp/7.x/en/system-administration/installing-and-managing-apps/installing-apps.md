@@ -30,7 +30,7 @@ The app file is copied from the `[Liferay Home]/deploy` folder to one an appropr
 DXP listens on those subfolders, processes the file (converting it to an OSGi bundle if it is a WAR or contains a WAR), and installs the OSGi bundle(s) to the OSGi container.
 
 ```note::
-   Using a source control repository (such as Git or BitBucket) and an orchestration tool (such as [Jenkins](https://jenkins.io/)) is recommended for promoting DXP environments through [DevOps](https://en.wikipedia.org/wiki/DevOps) pipelines.
+   Using a source control repository (such as Git or BitBucket) and an orchestration tool (such as `Jenkins <https://jenkins.io>`_) is recommended for promoting DXP environments through `DevOps <https://en.wikipedia.org/wiki/DevOps>`_ pipelines.
 
    You should commit your app file to the deploy folder within your DevOps pipeline for production-grade environments.
 ```

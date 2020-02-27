@@ -32,7 +32,7 @@ The component/portlet level is the farthest you can go without getting into the 
 The App Manager is a convenient way to install a [downloaded app](./downloading-apps.md) from your local machine to a local or remote DXP server.
 
 ```important::
-   For installing and uninstalling apps in production-grade environments, install apps [using server startup](./installing-apps-in-production.md) instead of using the App Manager.
+   For installing and uninstalling apps in production-grade environments, install apps `using server startup <./installing-apps-in-production.md>`_ instead of using the App Manager.
 ```
 
 Here are steps for using the App Manager to install an app:
@@ -50,7 +50,7 @@ The app installs via [auto deploy](./app-installation-strategies.md#auto-deploym
 Uninstalling an app deactivates it (if it's active) and makes it unavailable for activation.
 
 ```note::
-   The App Manager's uninstall, re-install, and re-activation features have known issues (see `LPS-102506 <https://issues.liferay.com/browse/LPS-102506>`). As a workaround, [use a blacklist](./blacklisting-apps.md) to disable installed apps.
+   The App Manager's uninstall, re-install, and re-activation features have known issues (see `LPS-102506 <https://issues.liferay.com/browse/LPS-102506>`). As a workaround, `use a blacklist <./blacklisting-apps.md>`_ to disable installed apps.
 ```
 
 Congratulations! You can use the App Manager to examine and manage application deployments.
