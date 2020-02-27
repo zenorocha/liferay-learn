@@ -2,9 +2,24 @@
 
 > Available: Liferay DXP 7.3+
 
-App Builder is a low-code application development solution for Liferay DXP. Build a data model, define the application's forms (for entering data) and tables (for viewing and managing data records), then deploy your application to your Liferay DXP site, or as a completely standalone application. With App Builder, creating functional business applications with dedicated user interfaces and data separation, can be done without a single line of code.
+App Builder is a low-code application development solution for Liferay DXP. Build a data model, define the application's forms (for entering data) and tables (for viewing and managing data records), then deploy your application to your Liferay DXP site, or as a completely standalone application. With App Builder, creating functional business applications with dedicated user interfaces and data separation is accomplished without a single line of code.
 
-<!-- Wiz-bang screenshot of App Builder -->
+![Two separate applications are deployed for this App Builder object.](./app-builder-overview/images/01.png)
+
+Why use app Builder when the Liferay Forms application includes almost identical form-building capability? If you're asking that question, you may not need the added features and flexibility App Builder provides. Here's an overview of the differences:
+
+| Capability | Liferay Forms | App Builder | 
+|------------|:-------------:|:-----------:|
+| Create simple or complex forms | &#10004; | &#10004; |
+| Deploy the form in a widget or at a dedicated URL | &#10004; | &#10004; |
+| Keep my form data separate from other forms' data |  | &#10004; |
+| Deploy the form to the product menu |     |      &#10004;   |
+| Display collected data in multiple places |     &#10004;   |         |
+| Exert control over the display of form data |        |      &#10004;   |
+| Deploy multiple forms for one data object |        |      &#10004;   |
+| Deploy multiple data record views for one data object |        |      &#10004;   |
+
+It's about flexibility. The ability to combine forms, data display tables, and flexible deployment options, all backed by a single data object, are what distinguish App Builder use cases from standard Forms.
 
 ## Creating an App
 
@@ -42,20 +57,20 @@ Once an object is defined and at least one form and table view are created, you 
 **Widget:** Deploy the application to the widget menu, and add it to a page using the Add Widgets menu (from Add &rarr; Widgets, search for your application by name). Deploying as a widget really deploys three variations of the application to the Add Widgets menu, each with a different label. Each option exposes different features for your application's users:
 
 | Widget Menu Label     | Submit Form Entries | View Entries | Update and Delete Entries |
-|-----------------------|-----------|------------|----------------|
+|-----------------------|:-----------:|:------------:|:----------------:|
 | App Name              |     &#10004;   |      &#10004;   |      &#10004;       |
 | App Name [Form View]  |     &#10004;   |         |          |
 | App Name [Table View] |        |      &#10004;   |      &#10004;       |
 
-![App Builder widgets are placed on Liferay DXP pages.](./app-builder-overview/images/01.png)
+![App Builder widgets are placed on Liferay DXP pages.](./app-builder-overview/images/02.png)
 
 **Standalone:** Deploy the application to a dedicated page that's not part of a site and not visible to any navigation menu. This limits access to only people with the link.
 
-![Standalone App Builder applications are accessible only by direct link](./app-builder-overview/images/02.png)
+![Standalone App Builder applications are accessible only by direct link](./app-builder-overview/images/03.png)
 
 **Product Menu:** Deploy the application to the Control Panel, the Site Menu, or both. This gives you flexibility in deciding where administrative Users will access the application.
 
-![App Builder applications can be added to the Product Menu.](./app-builder-overview/images/03.png)
+![App Builder applications can be added to the Product Menu.](./app-builder-overview/images/04.png)
 
 A Standalone or Product Menu application always includes both the form and table view. The table view is the default view, while an add button provides access to the form view.
 
