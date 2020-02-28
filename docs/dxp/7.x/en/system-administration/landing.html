@@ -1,0 +1,68 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Installing and Managing Apps',
+					sectionURL: 'system-administration/installing-and-managing-apps.html',
+					subsections: [
+						{
+							name: 'Introduction to Managing Apps',
+							url: 'system-administration/installing-and-managing-apps/introduction-to-managing-apps.html'
+						},
+						{
+							name: 'Installing Apps',
+							url: 'system-administration/installing-and-managing-apps/installing-and-managing-apps/installing-apps.html'
+						},
+						{
+							name: 'Using the App Manager',
+							url: 'system-administration/installing-and-managing-apps/installing-and-managing-apps/using-the-app-manager.html'
+						},
+					]
+				},
+				{
+					sectionName: 'System Settings (Coming Soon)',
+					sectionURL: 'system-administration/system-settings.html',
+        },
+				{
+					sectionName: 'Using the Server Administration Panel (Coming Soon)',
+					sectionURL: 'system-administration/using-the-server-administration-panel.html',
+        },
+				{
+					sectionName: 'Security Settings',
+					sectionURL: 'system-administration/security-settings.html',
+        },
+				{
+					sectionName: 'Virtual Instances',
+					sectionURL: 'system-administration/virtual-instances.html',
+        },
+			]
+		}
+	})
+</script>

@@ -10,5 +10,5 @@ System Administration
    system-administration/security_settings.rst
    system-administration/virtual_instances.rst
 
-.. include:: /system-administration/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: system-administration/landing.html
