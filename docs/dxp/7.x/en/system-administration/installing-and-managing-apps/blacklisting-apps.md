@@ -1,6 +1,6 @@
 # Blacklisting Apps
 
-The bundle blacklist is a convenient way to uninstall or reinstall multiple apps, OSGi bundles (modules), and WAR plugins at once. It saves you the trouble of managing app, module, and plugin installations individually with the [Application Manager](./managing-apps.md) or [Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
+The bundle blacklist is a convenient way to uninstall or reinstall multiple apps, OSGi bundles (modules), and WAR plugins at once. It saves you the trouble of managing app, module, and plugin installations individually with the [Application Manager](./using-the-app-manager.md) or [Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
 
 ```important::
    The blacklist is an `OSGi configuration <https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations>`_ that DXP uses to uninstall apps. Using it will prevent any apps listed from being installed until they are removed.
@@ -47,7 +47,7 @@ Use these steps to blacklist using a configuration file:
        Configuration values can't contain extra spaces. Extra spaces can short-circuit lists or invalidate the configuration entry.
     ```
 
-1. To deploy the configuration file, copy it into the folder `[Liferay Home]/osgi/configs`. The [Liferay Home](../../reference/liferay-home.md) folder is typically the app server's parent folder.
+1. To deploy the configuration file, copy it into the folder `[Liferay Home]/osgi/configs`. The [Liferay Home](../../installation-and-upgrades/reference/liferay-home.md) folder is typically the app server's parent folder.
 
 ### Blacklist Bundle Symbolic Names
 
@@ -68,7 +68,7 @@ To reinstall blacklisted items, follow these steps:
 To reinstall *all* the blacklisted items execute one of these options:
 
 * Remove the configuration file.
-* Uninstall the module `com.liferay.portal.bundle.blacklist` using the [Application Manager](./managing-apps.md) or [Felix Gogo Shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
+* Uninstall the module `com.liferay.portal.bundle.blacklist` using the [Application Manager](./using-the-app-manager.md) or [Felix Gogo Shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
 
 ```tip::
    To temporarily reinstall an item that's been blacklisted, you can remove its symbolic name from the Bundle Blacklist module in *System Settings* and click the *Update* button. If you're using a blacklist config file (in the `[Liferay Home]/osgi/configs` folder) and want the item to install on subsequent server startup, make sure to remove the item's symbolic name from the file.
@@ -80,10 +80,7 @@ Congratulations! Now you can manage multiple app, module, and plugin installatio
 
 ## Additional Information
 
-* [Managing Apps](./managing-apps.md)
-
+* [Managing Apps](./using-the-app-manager.md)
 * [Using the Felix Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)
-
 * [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
-
 * [Configuring Portlets, Themes, and Layout Templates](./configuring-portlets-themes-and-layout-templates.md)

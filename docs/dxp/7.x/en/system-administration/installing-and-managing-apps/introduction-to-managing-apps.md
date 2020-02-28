@@ -1,6 +1,6 @@
 # Introduction to Managing Apps
 
-You can add all kinds of functionality to your DXP installation by purchasing and installing apps. Apps are available in the [Liferay Marketplace](./purchasing-apps-on-liferay-marketplace.md), and tools such as the [App Manager](./managing-apps.md) are also available to help you manage apps in your installation.
+You can add all kinds of functionality to your DXP installation by purchasing and installing apps. Apps are available in the [Liferay Marketplace](./purchasing-apps-on-liferay-marketplace.md), and tools such as the [App Manager](./using-the-app-manager.md) are also available to help you manage apps in your installation.
 
 ## Liferay Marketplace
 
@@ -16,7 +16,7 @@ Apps can be installed to your DXP Installation either through the UI (including 
 
 ## App Management
 
-Once apps have been installed to your instance, you can manage them from there using the [App Manager](./managing-apps.md) in the Control Panel. The App Manager provides an interface to browse, install, and uninstall all currently available apps.
+Once apps have been installed to your instance, you can manage them from there using the [App Manager](./using-the-app-manager.md) in the Control Panel. The App Manager provides an interface to browse, install, and uninstall all currently available apps.
 
 ### Blacklisting Apps and OSGi Components
 

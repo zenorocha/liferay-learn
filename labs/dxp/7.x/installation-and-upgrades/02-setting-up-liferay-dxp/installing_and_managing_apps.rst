@@ -10,7 +10,7 @@ Installing Apps Manually
    installing-and-managing-apps/downloading-apps.md
    installing-and-managing-apps/installing-apps-via-the-file-system.md
    installing-and-managing-apps/installing-apps-via-the-ui.md
-   installing-and-managing-apps/managing-apps.md
+   installing-and-managing-apps/using-the-app-manager.md
    installing-and-managing-apps/configuring-portlets-themes-and-layout-templates.md
    installing-and-managing-apps/blacklisting-apps.md
    installing-and-managing-apps/blacklisting-osgi-components.md

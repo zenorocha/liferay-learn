@@ -30,7 +30,7 @@ The component/portlet level is the farthest you can go without getting into the 
 The App Manager is a convenient way to install a [downloaded app](./downloading-apps.md) from your local machine to a local or remote DXP server.
 
 ```important::
-   For installing and uninstalling apps in production-grade environments, install apps `using server startup <./installing-apps-in-production.md>`_ instead of using the App Manager.
+   For installing and uninstalling apps in production-grade environments, install apps `using server startup <../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup>`_ instead of using the App Manager.
 ```
 
 Here are steps for using the App Manager to install an app:
@@ -41,14 +41,14 @@ Here are steps for using the App Manager to install an app:
 
 1. Click *Install*.
 
-The app installs via [auto deploy](./app-installation-strategies.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
+The app installs via [auto deploy](./installing-apps.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
 
 ## Uninstalling Apps
 
 Uninstalling an app deactivates it (if it's active) and makes it unavailable for activation.
 
 ```note::
-   The App Manager's uninstall, re-install, and re-activation features have known issues (see `LPS-102506 <https://issues.liferay.com/browse/LPS-102506>`). As a workaround, `use a blacklist <./blacklisting-apps.md>`_ to disable installed apps.
+   The App Manager's uninstall, re-install, and re-activation features have known issues (see `LPS-102506 <https://issues.liferay.com/browse/LPS-102506>`_). As a workaround, `use a blacklist <./blacklisting-apps.md>`_ to disable installed apps.
 ```
 
 Congratulations! You can use the App Manager to examine and manage application deployments.
@@ -59,4 +59,4 @@ Congratulations! You can use the App Manager to examine and manage application d
 
 * [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
 
-* [Maintaining a Clustered Installation](../../10-maintaining-a-liferay-dxp-installation/10-maintaining-clusters/01-maintaining-clustered-installations.md)
+* [Maintaining a Clustered Installation](../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/01-maintaining-clustered-installations.md)
