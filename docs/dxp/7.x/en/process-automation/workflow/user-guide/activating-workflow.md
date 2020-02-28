@@ -33,7 +33,7 @@ Alternately, you can choose enable or disable workflow on individual _sites_. By
 1. Click _Save_.
 1. Repeat for all the other asset types which require workflow.
 
-Once enabled, the selected asset types will always require a review process before publication on this site. Other sites are not affected if configured in the _Site Administration_. Also note that if you have enabled any workflow on across the portal instance, the settings are reflected here. You can always disable workflow for an asset type on a site even if it was enabled instance wide.
+Once enabled, the selected asset types always require a review process before publication on this site. Other sites are not affected if configured in the _Site Administration_. Also note that if you have enabled any workflow on across the portal instance, the settings are reflected here. You can always disable workflow for an asset type on a site even if it was enabled instance wide.
 
 ## Activating Workflow in Specific Applications
 

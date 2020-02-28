@@ -54,8 +54,9 @@
   * Managing Workflows
   * Reviewing Assets
   * Building Workflows
-  * Workflow Metrics
+  * Using Workflow Metrics
 * Dev Guide
   * Implementing Workflow
+  * Implementing a Custom SLA Calendar
 * APIs
   * ?
