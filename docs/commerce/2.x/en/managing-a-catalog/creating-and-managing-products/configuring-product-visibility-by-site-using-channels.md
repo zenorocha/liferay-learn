@@ -10,7 +10,7 @@ To learn more about the using Channels in Liferay Commerce, see: [Introduction t
 
 ## Prerequisites
 
-1. More than one site has been created.
+1. One or more sites have been created.
 1. Each site has an associated channel.
 1. Products have been added to a catalog.
 
