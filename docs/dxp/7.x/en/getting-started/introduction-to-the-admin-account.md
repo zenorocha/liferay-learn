@@ -49,4 +49,4 @@ To log out of your account:
 
 Continue our Getting Started walkthrough by familiarizing yourself with the [DXP Product Menu](./navigating-dxp.md).
 
-Learn more about [configuring how users log into DXP](../installation-and-upgrades/securing-liferay/configuring-authentication.md).
+Learn more about [configuring how users log into DXP](../installation-and-upgrades/securing-liferay/authentication-basics.md).

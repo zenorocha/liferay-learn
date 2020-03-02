@@ -16,9 +16,9 @@ Liferay DXP is flexible in how users may be authenticated to the system. By defa
 
 * Liferay can be [integrated with an SSO to manage](placeholder) authentication.
 * Liferay can also be [integrated with LDAP](placeholder) to validate users instead of using the portal database.
-* Guest account creation can be [turned off](./configuring-authentication.md#disabling-guest-account-creation).
+* Guest account creation can be [turned off](./authentication-basics.md#disabling-guest-account-creation).
 
-To learn more, see [Configuring Authentication](./configuring-authentication.md).
+To learn more, see [Configuring Authentication](./authentication-basics.md).
 
 ## Permissions
 
@@ -55,5 +55,5 @@ There are additional security plugins available from [Liferay Marketplace](https
 
 ## Next Steps
 
-* [Configuring Authentication](./configuring-authentication.md)
+* [Configuring Authentication](./authentication-basics.md)
 * [Securing Web Services](./securing-web-services/securing-web-services)
