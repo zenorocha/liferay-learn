@@ -1,6 +1,6 @@
 # Activating Workflow
 
-You can activate a workflow process for an asset type either across the DXP instance or only on a specific site. When a workflow process is activated across the instance for a particular asset type such as _Wiki Pages_, all _Wiki Page_ submitted for publication must go through the review process regardless of which **Site** the _Wiki Page_ is created on.
+You can activate a workflow process for an asset type either across the DXP instance or only on a specific site. When a workflow process is activated across the instance for a particular asset type such as _Wiki Pages_, all _Wiki Page_ submitted for publication must go through the review process regardless of which Site the _Wiki Page_ is created on.
 
 Alternately, you can choose to enable or disable workflow on individual sites. By default, workflows are disabled on a site. Lastly, there are some workflows which must be enabled inside the respective applications (see below).
 
