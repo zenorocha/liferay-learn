@@ -1,10 +1,9 @@
 Configuring SSO
 ===============
 
+-  :doc:`/installation-and-upgrades/securing-liferay/configuring-sso/token-based-authentication`
 -  :doc:`/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-cas`
 -  :doc:`/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-kerberos`
--  :doc:`/installation-and-upgrades/securing-liferay/configuring-sso/token-based-authentication`
--  :doc:`/installation-and-upgrades/securing-liferay/configuring-sso/setting-up-cors`
 
 Using OAuth2
 ~~~~~~~~~~~~
