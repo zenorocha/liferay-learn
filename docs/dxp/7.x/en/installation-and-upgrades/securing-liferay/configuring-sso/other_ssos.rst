@@ -10,5 +10,5 @@ Configuring SSO
    configuring-sso/authenticating-with-kerberos.md
    configuring-sso/other_ssos.rst
 
-.. include:: /installation-and-upgrades/securing-liferay/configuring-sso/README.rst
+.. include:: /installation-and-upgrades/securing-liferay/configuring-sso/other-ssos/README.rst
 	:start-line: 2
