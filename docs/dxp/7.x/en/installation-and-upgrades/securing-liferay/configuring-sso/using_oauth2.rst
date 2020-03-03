@@ -1,5 +1,5 @@
-Configuring SSO
-===============
+Using OAuth2
+============
 
 .. toctree::
    :maxdepth: 3

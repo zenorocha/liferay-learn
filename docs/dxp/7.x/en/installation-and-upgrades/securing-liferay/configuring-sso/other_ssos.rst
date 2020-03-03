@@ -1,5 +1,5 @@
-Configuring SSO
-===============
+Other SSOs
+==========
 
 .. toctree::
    :maxdepth: 3
