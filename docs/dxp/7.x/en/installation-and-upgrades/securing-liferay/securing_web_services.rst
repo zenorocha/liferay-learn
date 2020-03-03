@@ -4,7 +4,7 @@ Securing Web Services
 .. toctree::
    :maxdepth: 2
 
-   securing-web-services/securing-web-services
+   securing-web-services/introduction-to-securing-web-services.md
    securing-web-services/setting-service-access-policies.md
    securing-web-services/using-authentication-verifiers.md
    securing-web-services/setting-up-cors.md

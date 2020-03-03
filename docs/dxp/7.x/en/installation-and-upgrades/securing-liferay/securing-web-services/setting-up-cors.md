@@ -48,4 +48,4 @@ You'll find the settings in Configuration &rarr; System Settings &rarr; Security
 ## Additional Information
 
 * [Securing Liferay](../introduction-to-securing-liferay.md)
-* [Securing Web Services](./securing-web-services.md)
+* [Securing Web Services](./introduction-to-securing-web-services.md)

@@ -36,7 +36,7 @@ Liferay Web Services have a multi-layered and configurable approach to security 
 * [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) verify provided credentials.
 * [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
 
-See [Securing Web Services](./securing-web-services/securing-web-services.md) to learn more.
+See [Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md) to learn more.
 
 ## Fine-Tuning Security
 
@@ -62,4 +62,4 @@ There are additional security plugins available from [Liferay Marketplace](https
 ## Next Steps
 
 * [Configuring Authentication](./authentication-basics.md)
-* [Securing Web Services](./securing-web-services/securing-web-services.md)
+* [Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)

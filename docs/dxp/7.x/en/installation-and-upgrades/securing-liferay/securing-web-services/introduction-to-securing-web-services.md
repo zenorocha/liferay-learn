@@ -1,4 +1,4 @@
-# Securing Web Services
+# Introduction to Securing Web Services
 
 Liferay Portal provides four security layers for web services:
 
