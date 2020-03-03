@@ -89,5 +89,5 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 ## Additional Information
 
-* [Securing Liferay](./securing-liferay.md)
+* [Securing Liferay](./introduction-to-securing-liferay.md)
 * [Securing Web Services](./securing-web-services/securing-web-services)

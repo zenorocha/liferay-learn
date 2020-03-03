@@ -72,5 +72,5 @@ You can sign in as your administrator user and start [building a solution on DXP
 * [Using the Liferay Marketplace](../setting-up-liferay-dxp/using-the-liferay-marketplace.md)
 * [Trial Plugin Installation](../setting-up-liferay-dxp/trial-plugin-installation.md)
 * Installing and Configuring a Search Engine
-* [Securing Liferay DXP](../securing-liferay/securing-liferay.md)
+* [Securing Liferay DXP](../securing-liferay/introduction-to-securing-liferay.md)
 * [Introduction to Clustering Liferay DXP](../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)

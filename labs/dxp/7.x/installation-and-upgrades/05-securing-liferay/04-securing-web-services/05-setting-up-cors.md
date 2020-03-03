@@ -60,5 +60,5 @@ It applies CORS headers to all deployed JAX-RS whiteboard applications without a
 
 ## Additional Information
 
-* [Securing Liferay](../securing-liferay.md)
+* [Securing Liferay](../introduction-to-securing-liferay.md)
 * [Securing Web Services](./securing-web-services)

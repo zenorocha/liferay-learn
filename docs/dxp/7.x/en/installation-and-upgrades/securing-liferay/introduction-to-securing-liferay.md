@@ -1,4 +1,4 @@
-# Securing Liferay
+# Introduction to Securing Liferay
 
 Liferay DXP is built with security in mind. This includes mitigation of common security vulnerabilities and exploits like those described by the [OWASP Top 10](https://www.owasp.org/index.php/Top_10_2013-Top_10) and the [CWE/SANS Top 25](https://www.sans.org/top25-software-errors/).
 
@@ -20,23 +20,23 @@ Liferay DXP is flexible in how users may be authenticated to the system. By defa
 
 * Liferay can be [integrated with an SSO to manage](placeholder) authentication.
 * Liferay can also be [integrated with LDAP](placeholder) to validate users instead of using the portal database.
-* Guest account creation can be [turned off](./02-authentication-basics.md#disabling-guest-account-creation).
+* Guest account creation can be [turned off](./authentication-basics.md#disabling-guest-account-creation).
 
-To learn more, see [Configuring Authentication](./02-authentication-basics.md).
+To learn more, see [Configuring Authentication](./authentication-basics.md).
 
 ## Permissions
 
-Liferay DXP has a robust role-based access control (RBAC) system. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to Users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../user-and-system-management/roles-and-permissions.md) for more information.
+Liferay DXP has a robust role-based access control (RBAC) system. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to Users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../../../users-and-permissions/user-guide/roles-and-permissions/README.md) for more information.
 
 ## Securing Web Services
 
 Liferay Web Services have a multi-layered and configurable approach to security and authorization:
 
-* [Service Access Policies](./04-securing-web-services/03-setting-service-access-policies.md) control access to remote APIs.
-* [Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) verify provided credentials.
-* [Cross-Origin Resource Sharing](./04-securing-web-services/05-setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
+* [Service Access Policies](./securing-web-services/setting-service-access-policies.md) control access to remote APIs.
+* [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) verify provided credentials.
+* [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
 
-See [Securing Web Services](./04-securing-web-services/01-securing-web-services.md) to learn more.
+See [Securing Web Services](./securing-web-services/securing-web-services.md) to learn more.
 
 ## Fine-Tuning Security
 
@@ -61,5 +61,5 @@ There are additional security plugins available from [Liferay Marketplace](https
 
 ## Next Steps
 
-* [Configuring Authentication](./02-authentication-basics.md)
-* [Securing Web Services](./04-securing-web-services/01-securing-web-services.md)
+* [Configuring Authentication](./authentication-basics.md)
+* [Securing Web Services](./securing-web-services/securing-web-services.md)

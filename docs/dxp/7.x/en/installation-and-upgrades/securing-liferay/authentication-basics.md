@@ -6,7 +6,7 @@ By default, Liferay DXP uses the *Sign In* widget to authenticate users.
    The Sign In widget appears on the default home page at `http[s]://[server-name:port]/web/guest/home`. If the Sign In widget is unavailable on any page, it can be accessed directly via its URL: `http[s]://[server-name:port]/c/portal/login`.
 ```
 
-![The default Liferay home page](./configuring-authentication/images/01.png)
+![The default Liferay home page](./authentication-basics/images/01.png)
 
 You can configure other methods of authenticating users and/or applications:
 
@@ -17,7 +17,7 @@ You can configure other methods of authenticating users and/or applications:
 * [Token-Based solutions](../06-sso/01-token-based-authentication.md)
 * [OAuth 2.0](../06-sso/07-oauth-2.md)
 
-[Authentication Verifiers](./04-securing-web-services/04-using-auth-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
+[Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
 
 ## Authentication Types
 
@@ -43,7 +43,7 @@ _Authentication Type_ can be configured through the Control Panel or a propertie
 1. Click on *Configuration* &rarr; *Instance Settings* &rarr; *Platform* &rarr; *User Authentication*
 1. Choose an option under the *How do users authenticate?* selector.
 
-    ![Figure 1: You can select from three types of authentication.](./configuring-authentication/images/03.png)
+    ![Figure 1: You can select from three types of authentication.](./authentication-basics/images/03.png)
 
 ### Configuring Authentication Type Using Properties
 
@@ -67,7 +67,7 @@ To prevent guest users from creating new user accounts:
 1. Un-check *Allow strangers to create accounts?*.
 1. Click *Save*.
 
-    ![Figure 2: Guests can't create accounts if this box is unchecked.](./configuring-authentication/images/04.png)
+    ![Figure 2: Guests can't create accounts if this box is unchecked.](./authentication-basics/images/04.png)
 
 ### Preventing Password Resets
 
@@ -83,7 +83,7 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 1. Navigate to the Control Panel &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security Tools* &rarr; *CAPTCHA*.
 
-    ![The CAPTCHA configuration screen.](./configuring-authentication/images/02.png)
+    ![The CAPTCHA configuration screen.](./authentication-basics/images/02.png)
 
     ```note::
        By default, _Create Account CAPTCHA_ and _Send Password CAPTCHA_ are enabled. If necessary, enable Message Boards CAPTCHA.
@@ -95,5 +95,5 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 
 ## Additional Information
 
-* [Securing Liferay](./01-securing-liferay.md)
-* [Securing Web Services](./04-securing-web-services/01-securing-web-services.md)
+* [Securing Liferay](./introduction-to-securing-liferay.md)
+* [Securing Web Services](./securing-web-services/securing-web-services.md)

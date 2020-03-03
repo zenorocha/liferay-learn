@@ -99,4 +99,4 @@ Even though the default configuration is enabled by default, access is limited t
 
 ## Related Topics
 
-[Service Access Policies](./03-setting-service-access-policies.md)
+[Service Access Policies](./setting-service-access-policies.md)
