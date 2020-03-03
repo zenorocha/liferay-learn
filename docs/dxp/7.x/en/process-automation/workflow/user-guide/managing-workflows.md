@@ -1,6 +1,6 @@
 # Managing Workflows
 
-Liferay DXP's _Workflow_ application allows users to manage their workflow processes; they can upload a new workflow definition, and make changes to the definitions. Lastly, they can delete workflows.
+The _Workflow_ application allows users to manage their workflow processes; they can upload a new workflow definition, and make changes to the definitions. Lastly, they can delete workflows.
 
 ## Uploading a New Workflow Definition
 
@@ -17,10 +17,6 @@ To upload a new definition:
     ![Adding a new definition by uploading one](./managing-workflows/images/01.png)
 
 1. Click the _Save_ button.
-1. Click the _Diagram_ tab to view the workflow definition as an image.
-
-    ![Verifying the newly uploaded definition](./managing-workflows/images/02.png)
-
 1. Click the _Publish_ button.
 
 The newly added definition is ready to be used as a workflow process.
@@ -34,24 +30,26 @@ Users can edit the workflow definitions and all changes are tracked in the _Deta
 
     ![Editing a definition](./managing-workflows/images/03.png)
 
-### Workflow Versions
+### Viewing Workflow Versions
 
 To view the workflow definition details and the revision history:
 
 1. Click the *Information* button (![Information](../../../images/icon-information.png))
 1. Next to a previous version on the _Revision History_ tab, click the *Actions* button (![Actions](../../../images/icon-actions.png)) and select either *Preview* or *Restore*.
 
-    ![View and restore prior versions of a workflow.](./managing-workflows/images/workflow-revisions.png)
+    ![View and restore prior versions of a workflow.](./managing-workflows/images/02.png)
 
 1. When you click *Restore* and see the success message, the prior version is the current version of the workflow. You can now edit the restored version of the workflow.
 1. If edits are necessary, edit and click *Update*. This creates another version of the workflow.
 
-## Deleting a Definition
+## Deleting a Workflow Definition
+
+Only Unpublished workflows can be deleted.
 
 There are two statuses for a workflow:
 
-* **Published:** Validation is complete, and the workflow can be assigned to assets; cannot be deleted.
-* **Unpublished:** Validation is not performed on the unpublished workflow, and it cannot be assigned to assets until it is published; _can_ be deleted.
+* **Published:** Validation is complete, and the workflow can be assigned to assets.
+* **Unpublished:** Validation is not performed on the unpublished workflow, and it cannot be assigned to assets until it is published.
 
 _Published_ workflow definitions cannot be deleted if they are current associated with an asset type. Users have to first deactivate the workflow process and then place the workflow in the _Unpublished_ status.
 
@@ -64,6 +62,12 @@ _Published_ workflow definitions cannot be deleted if they are current associate
 1. The selected definition is now in the _Unpublished_ section. Click the _Actions_ button (![Actions](../../../images/icon-actions.png)) for the workflow then _Delete_.
 
     ![Deleting a Workflow](./managing-workflows/images/05.png)
+
+## Configuring Workflow Definition Permissions
+
+In the _System Settings_, you can enable or disable permissions for site administrators to publish workflows and scripts.
+
+![Explicit permission must be granted before administrators are allowed to publish and edit workflow definitions.](./managing-workflows/images/06.png)
 
 ## Additional Information
 
