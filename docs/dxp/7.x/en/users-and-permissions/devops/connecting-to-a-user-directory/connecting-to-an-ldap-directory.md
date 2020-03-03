@@ -1,10 +1,42 @@
 # Connecting to an LDAP Directory
 
-Coming soon!
+Lightweight Directory Access Protocol (LDAP) servers are common user stores for Liferay DXP. You can configure LDAP at the system scope in System Settings or at the instance scope in Instance settings. Users can be imported from or exported to LDAP.
 
-<!-- Lightweight Directory Access Protocol (LDAP) servers are common user stores for Liferay DXP. You can configure LDAP at the system scope in System Settings or at the instance scope in Instance settings. Users can be imported from or exported to LDAP. To access LDAP configuration settings, navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings*. At the bottom of the list on the left, click *Servers*.
+## Adding a New LDAP Server Connection
 
-Click the *Add* button to add an LDAP server connection. If you have more than one LDAP server, you can arrange the servers by order of preference using the up/down arrows. Regardless of how many LDAP servers you add, each server has the same configuration options.
+To access LDAP configuration settings at the Instance level,
+
+1. Navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings*
+
+    ![LDAP configurations are available at the instance level and at the System level.](./connecting-to-an-ldap-directory/images/01.png)
+
+1. Click *LDAP* &rarr; and click *Servers*
+1. Click the *Add* button to add an LDAP server connection.
+1. Enter configuration values for your LDAP server. See the [configuration reference](#ldap-server-configuration-reference) for details.
+
+If you have more than one LDAP server, you can arrange the servers by order of preference using the up/down arrows. Regardless of how many LDAP servers you add, each server has the same configuration options.
+
+### Using the System Settings Scope
+
+Alternatively, you can define an LDAP server connection at the System Settings scope through the System Settings menu or with the usage of OSGi `.config` files.
+
+```tip::
+   The LDAP server configuration screen in _Instance Settings_ has utilities to assist with configuring an LDAP connection. You can use this utility to validate your settings first, before entering them at the System Settings scope.
+```
+
+The easiest way to do use `.config` files is to use the GUI and export the configuration. Then you can use the resulting `.config` file anywhere you need it (such as other nodes in a cluster).
+
+```note::
+   To use `config` files for LDAP server configuration, you must specify the Virtual Instance ID (in the source, the variable name is `companyId`) in the exported configuration file, because servers are defined at the instance scope, not the system scope. To do this, specify the virtual instance ID somewhere in the file like this:
+
+   ::
+     properties
+     companyId=1234
+
+   You can find your Virtual Instance ID in *Control Panel* &rarr; *Configuration* &rarr; *Virtual Instances*.
+```
+
+## LDAP Server Configuration Reference
 
 **Server Name:** Enter a name for your LDAP server.
 
@@ -32,19 +64,6 @@ Before proceeding to fine tune Liferay's LDAP connections, ensure the following 
 
 1. When adding the LDAP server, the *Server Name*, *Default Values*, *Connection* values are correct. It is always a good idea to click the *Test LDAP Connection* before saving.
 
-## Instance Settings vs. System Settings
-
-You can also define an LDAP server connection at the System Settings scope. Because this user interface is auto-generated, it's not as helpful as the one in Instance Settings. For this reason, you should define and troubleshoot your settings in Instance Settings first. If you decide you want your LDAP connection at the system scope, you can copy your configuration from Instance Settings and then delete the server from Instance Settings.
-
-Of course, you can also configure LDAP servers at the system scope using OSGi `.config` files. The easiest way to do this is to use the GUI and export the configuration. Then you can use the resulting `.config` file anywhere you need it (such as other nodes in a cluster).
-
-**Note:** To use `config` files for LDAP server configuration, you must specify the Virtual Instance ID (in the source, the variable name is `companyId`) in the exported configuration file, because servers are defined at the instance scope, not the system scope. To do this, specify the virtual instance ID somewhere in the file like this:
-
-```properties
-companyId=1234
-```
-You can find your Virtual Instance ID in *Control Panel* &rarr; *Configuration* &rarr; *Virtual Instances*.
-
 ## Security
 
 If you run your LDAP directory in SSL mode to encrypt credential information on the network, you must perform extra steps to share the encryption key and certificate between the two systems.
@@ -63,4 +82,4 @@ Once this is done, go back to the LDAP page in the Control Panel. Modify the LDA
 
 Save the changes. Communication to LDAP is now encrypted.
 
-To tune or configure how Liferay DXP matches users in LDAP for syncing, please see [configuring import and export](/.02-configuring-import-export.md). -->
+To tune or configure how Liferay DXP matches users in LDAP for syncing, please see [configuring import and export](./synchronizing-users-and-user-groups-with-an-ldap-directory.md).
