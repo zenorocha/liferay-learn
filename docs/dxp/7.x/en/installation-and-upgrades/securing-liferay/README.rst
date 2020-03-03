@@ -1,7 +1,7 @@
 Securing Liferay
 ================
 
--  :doc:`/installation-and-upgrades/securing-liferay/securing-liferay`
+-  :doc:`/installation-and-upgrades/securing-liferay/introduction-to-securing-liferay`
 -  :doc:`/installation-and-upgrades/securing-liferay/authentication-basics`
 
 Securing Web Services

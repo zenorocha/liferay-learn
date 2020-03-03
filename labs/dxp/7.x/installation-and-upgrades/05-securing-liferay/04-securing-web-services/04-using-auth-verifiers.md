@@ -15,7 +15,7 @@ There are built-in `AuthVerifier` implementations for the most common situations
 
 To configure Authentication Verifiers, go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Security* &rarr; *API Authentication*.
 
-![The Authentication Verifier Configuration Screen](./using-auth-verifiers/images/01.png)
+![The Authentication Verifier Configuration Screen](./using-authentication-verifiers/images/01.png)
 
 ### Step 1: Verify Request Credentials
 

@@ -22,5 +22,5 @@ Liferay Portal contains several adjustable authorization layers:
 - Portlet container security checks that control portlet access
 - Remote IP check for remote API authentication methods
 - [Service Access Policies](./setting-service-access-policies.md) to control access to remote APIs
-- [Authentication Verifiers](./using-auth-verifiers.md) that verify provided credentials.
+- [Authentication Verifiers](./using-authentication-verifiers.md) that verify provided credentials.
 - [Cross-Origin Resource Sharing](./setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.

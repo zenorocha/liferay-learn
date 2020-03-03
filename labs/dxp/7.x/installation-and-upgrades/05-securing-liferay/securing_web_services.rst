@@ -6,7 +6,7 @@ Securing Web Services
 
    securing-web-services/securing-web-services
    securing-web-services/setting-service-access-policies.md
-   securing-web-services/using-auth-verifiers.md
+   securing-web-services/using-authentication-verifiers.md
    securing-web-services/setting-up-cors.md
 
 .. include:: /installation-and-upgrades/securing-liferay/securing-web-services/README.rst
