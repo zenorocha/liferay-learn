@@ -4,11 +4,8 @@ Other SSOs
 .. toctree::
    :maxdepth: 3
 
-   configuring-sso/token-based-authentication.md
-   configuring-sso/using_oauth2.rst
-   configuring-sso/authenticating-with-cas.md
-   configuring-sso/authenticating-with-kerberos.md
-   configuring-sso/other_ssos.rst
+   other-ssos/using-openam.md
+   other-ssos/using-openid-connect.md
 
 .. include:: /installation-and-upgrades/securing-liferay/configuring-sso/other-ssos/README.rst
 	:start-line: 2

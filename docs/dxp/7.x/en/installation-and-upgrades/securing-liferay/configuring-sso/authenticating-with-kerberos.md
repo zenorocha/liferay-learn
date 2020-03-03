@@ -133,19 +133,19 @@ The last line is commented out based on user preference. If you want the domain 
 
 1. Connect Liferay DXP to AD over LDAP by going to Configuration &rarr; Instance Settings &rarr; Authentication &rarr; LDAP and adding an LDAP server. Provide the information appropriate to your installation:
 
-    | Configuration | Description |
-    | --- | --- |
-    | **Base Provider URL** | Your AD server on the proper port. |
-    | **Base DN** | Your domain configuration. The example above might be `DC=INTDOMAIN.DC=LOCAL`. |
-    | **Principal/Credentials** | Supply the credentials for the user exported to the keytab file. |
-    | **Authentication Search Filter** | Supply the appropriate search filter to return user objects. For example, `(&(objectCategory=person)(sAMAccountName=*))` |
-    | **UUID** | Supply what uniquely identifies a user, such as `sAMAccountName`. |
-    | **Screen Name** | Supply the field that should be mapped to Liferay DXP's screen name field, such as `sAMAccountName`. |
-    | **Password** | Supply the field that contains the user's password, such as `userPassword`. |
+   | Configuration | Description |
+   | --- | --- |
+   | **Base Provider URL** | Your AD server on the proper port. |
+   | **Base DN** | Your domain configuration. The example above might be `DC=INTDOMAIN.DC=LOCAL`. |
+   | **Principal/Credentials** | Supply the credentials for the user exported to the keytab file. |
+   | **Authentication Search Filter** | Supply the appropriate search filter to return user objects. For example, `(&(objectCategory=person)(sAMAccountName=*))` |
+   | **UUID** | Supply what uniquely identifies a user, such as `sAMAccountName`. |
+   | **Screen Name** | Supply the field that should be mapped to Liferay DXP's screen name field, such as `sAMAccountName`. |
+   | **Password** | Supply the field that contains the user's password, such as `userPassword`. |
 
-1. Test the connection, save, and enable the configuration.
+3. Test the connection, save, and enable the configuration.
 
-1. Finally, configure the token for single sign-on at Configuration &rarr; System Settings &rarr; Security &rarr; SSO &rarr; Token Based SSO. Make sure the User Token Name matches *exactly* the token you configured in your web server. Click the *Enabled* and *Import from LDAP* boxes and click *Save*.
+4. Finally, configure the token for single sign-on at Configuration &rarr; System Settings &rarr; Security &rarr; SSO &rarr; Token Based SSO. Make sure the User Token Name matches *exactly* the token you configured in your web server. Click the *Enabled* and *Import from LDAP* boxes and click *Save*.
 
     ![Enabling SSO in the Instance Settings menu.](authenticating-with-kerberos/images/02.png)
 
