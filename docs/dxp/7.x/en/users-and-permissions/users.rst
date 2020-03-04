@@ -10,5 +10,5 @@ Users
    users/user-management-ui-reference.md
    users/managing_user_data_gdpr_compliance.rst
 
-.. include:: /users-and-permissions/user-guide/users/README.rst
+.. include:: /users-and-permissions/users/README.rst
    :start-line: 2

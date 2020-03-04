@@ -4,9 +4,13 @@ Users and Permissions
 .. toctree::
    :maxdepth: 4
 
-   users-and-permissions/user_guide.rst
+   users-and-permissions/users.rst
+   users-and-permissions/organizations.rst
+   users-and-permissions/user_groups.rst
+   users-and-permissions/accounts.rst
+   users-and-permissions/roles_and_permissions.rst
    users-and-permissions/devops.rst
    users-and-permissions/developer_guide.rst
 
-.. include:: /users-and-permissions/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: users-and-permissions/landing.html

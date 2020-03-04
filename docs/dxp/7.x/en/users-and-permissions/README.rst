@@ -1,36 +1,73 @@
-Users and Permissions
-=====================
-
 User Guide
-----------
+==========
 
 Users
-~~~~~
+-----
+
+* Introduction to Users
+
+* User Management UI Overview
+
+Managing Users
+~~~~~~~~~~~~~~
+
+* Adding a User
+
+* Editing Users
+
+* Removing Users
+
+* Configuring Users
+
+* Impersonating a User
+
+* Adding a New Admin User
+
+* Configuring User Profile Picture Defaults
+
+Managing User Data (GDPR Compliance)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Coming soon!
 
 Organizations and User Groups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
+
+* Introduction to Organizations and User Groups
+
+Creating and Managing Organizations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Coming soon!
+
+Creating and Managing User Groups
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Coming soon!
 
 Roles and Permissions
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
+
+* Introduction to Roles and Permissions
+
+* Creating a New Role
+
+* Defining Permissions for a Role
+
+* Assigning a Role to a User
+
+* Assigning Roles to Groups of Users
+
+Advanced Roles and Permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Coming soon!
 
 Accounts
-~~~~~~~~
-Coming soon!
+--------
 
-DevOps
-------
+* Introduction to Accounts
 
-* Configuring a Password Policy
+* Creating a New Account
 
-* Adding Custom Fields to Users
+* Inviting Users to an Account
 
-* Using a New Default User Profile Image
+* Adding Contacts to an Account
 
-* Changing the Order of Initials for the Default Profile Image
-
-Developer Guide
----------------
-Coming soon!
+* Creating Account Groups

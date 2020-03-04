@@ -1,0 +1,138 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Users',
+					sectionURL: 'users-and-permissions/users.html',
+					subsections: [
+						{
+							name: 'Understanding Users',
+							url: 'users-and-permissions/users/understanding-users.html'
+						},
+						{
+							name: 'Adding and Managing Users',
+							url: 'users-and-permissions/users/adding-and-managing-users.html'
+						},
+						{
+							name: 'Updating User Profile Pictures',
+							url: 'users-and-permissions/users/updating-user-profile-pictures.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Organizations',
+					sectionURL: 'users-and-permissions/organizations.html',
+					subsections: [
+            {
+							name: 'Understanding Organizations',
+							url: 'users-and-permissions/organizations/understanding-organizations.html'
+						},
+						{
+							name: 'Creating and Managing Organizations',
+							url: 'users-and-permissions/organizations/creating-and-managing-organizations.html'
+						},
+						{
+							name: 'Adding a New Organization Type',
+							url: 'users-and-permissions/organizations/adding-a-new-organization-type.html'
+						},
+					]
+        },
+				{
+					sectionName: 'User Groups',
+					sectionURL: 'users-and-permissions/user-groups.html',
+					subsections: [
+						{
+							name: 'Creating and Managing User Groups (Coming Soon)',
+							url: 'users-and-permissions/user-groups.html'
+						},
+						{
+							name: 'User Group Sites (Coming Soon)',
+							url: 'users-and-permissions/user-groups.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Accounts',
+					sectionURL: 'users-and-permissions/accounts.html',
+					subsections: [
+            {
+							name: 'Understanding Accounts (Coming Soon)',
+							url: 'users-and-permissions/accounts.html'
+						},
+						{
+							name: 'Creating and Managing Accounts (Coming Soon)',
+							url: 'users-and-permissions/accounts.html'
+						},
+          ]
+				},
+				{
+					sectionName: 'Roles and Permissions',
+					sectionURL: 'users-and-permissions/roles-and-permissions.html',
+					subsections: [
+            {
+							name: 'Understanding Roles and Permissions (Coming Soon)',
+							url: 'users-and-permissions/roles-and-permissions.html'
+						},
+						{
+							name: 'Creating a New Role (Coming Soon)',
+							url: 'users-and-permissions/roles-and-permissions.html'
+						},
+						{
+							name: 'Defining Permissions for a Role (Coming Soon)',
+							url: 'users-and-permissions/roles-and-permissions.html'
+						},
+          ]
+				},
+				{
+					sectionName: 'DevOps',
+					sectionURL: 'users-and-permissions/devops.html',
+					subsections: [
+            {
+							name: 'Connecting to an LDAP Directory',
+							url: 'users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html'
+						},
+						{
+							name: 'Configuring User Import and Export',
+							url: 'users-and-permissions/devops/connecting-to-a-user-directory/configuring-user-import-and-export.html'
+						},
+						{
+							name: 'LDAP Configuration Reference',
+							url: 'users-and-permissions/devops/connecting-to-a-user-directory/ldap-configuration-reference.html'
+						},
+          ]
+				},
+				{
+					sectionName: 'Developer Guide (Coming Soon)',
+					sectionURL: 'users-and-permissions/developer-guide.html',
+				},
+			]
+		}
+	})
+</script>

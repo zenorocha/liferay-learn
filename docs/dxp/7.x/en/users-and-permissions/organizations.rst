@@ -10,5 +10,5 @@ Organizations
    organizations/organization-sites.md
    organizations/adding-a-new-organization-type.md
 
-.. include:: /users-and-permissions/user-guide/organizations/README.rst
+.. include:: /users-and-permissions/organizations/README.rst
    :start-line: 2
