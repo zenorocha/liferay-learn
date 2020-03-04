@@ -24,7 +24,7 @@ A bunch of search widgets are bundled with Liferay DXP:
 - Suggestions
 - X-Pack Monitoring (LES)
 
-<!--wiz-bang image of widgets-->
+![Compose the search widgets to build your search page any way you see fit.](./using-search/images/05.png)
 
 Administrative search functionality is also included:
 
@@ -35,7 +35,7 @@ Administrative search functionality is also included:
 - Viewing Indexes and Field Mappings
 - Indexing Actions
 
-<!--wiz-bang image of admin stuff -->
+![Much of the administrative configuration is done via System Settings.](./using-search/images/06.png)
 
 The behavior and configuration of these features is described in the User Guide section.
 
@@ -47,11 +47,12 @@ Custom code for search usually involves intervening in at least one of these sea
 
 **Searching** is sending a search query and obtaining results (a.k.a. hits) from the search engine. Queries and filters can be part of the search request, both of which specify a field to search within and the value to match against. The search engine iterates through each field within the nested queries and filters and may perform special analysis prior to executing the query (search time analysis). Search time analysis can be configured for each field via the mapping definitions.
 
-Search SPIs
-<!--List our extension points -->
+The development functionality around Search can be broken into two categories: 
 
-Search APIs
-<!-- List the APIs we want people using -->
+- Service Provider Interfaces (SPIs) are meant to be implemented. In the source code, these are found in modules ending in `-spi` (for example, the [`portal-search-spi` module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-search/portal-search-spi)).
+Search SPIs
+
+- APIs contain methods you can call in your own code. In the source code, these are found in modules ending in `-api` (for example, the [`portal-search-api` module](https://github.com/liferay/liferay-portal/tree/master/modules/apps/portal-search/portal-search-api)).
 
 Further detail on the usage of these APIs and extension points  is provided in the Developer Guide.
  
@@ -59,7 +60,8 @@ Further detail on the usage of these APIs and extension points  is provided in t
 
 The default search engine is Elasticsearch, which is backed by the Lucene search library. There's an Elasticsearch server embedded in all bundles, which is handy for testing and development purposes. Production environments must install a separate, remote Elasticsearch server (or even better, cluster of servers).  For information on how to install Elasticsearch, read the [deployment guide](https://help.liferay.com/hc/en-us/sections/360004655831-Installing-a-Search-Engine).
 
-<!-- Actually the rest of this stuff is probably unnecessary -->
+<!-- Actually the rest of this stuff is probably unnecessary here. Preserving for now in a commented out section -->
+<!--
 ## Searching
 
 Find a search bar (there's one embedded in every page by default), enter a term, and click *Enter*.
@@ -96,3 +98,4 @@ Facets allow users of the Search application to filter search results. Think of 
 ![Site and Type are two of the facet sets you'll encounter. They let you drill down to results that contain the search terms you entered.](./using-search/images/04.png)
 
 You've probably used something similar on any number of sites. You search for an item, are presented with a list of results alongside a list of buckets you can click to further drill down into the search results, without entering additional search terms. Search facets work the same way.
+-->
