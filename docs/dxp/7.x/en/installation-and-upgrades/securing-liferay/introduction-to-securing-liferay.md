@@ -18,11 +18,11 @@ Here you'll learn the basic elements to secure Liferay DXP itself. This includes
 
 Liferay DXP is flexible in how users may be authenticated to the system. By default, users log into Liferay DXP by using the _Sign In_ widget, which authenticates the user using the portal database. By default, guest users can use the Sign In widget to create accounts with default permissions before logging in. Nearly every element of the default authentication experience can be changed by an administrator. For example,
 
-* Liferay can be [integrated with an SSO to manage](placeholder) authentication.
-* Liferay can also be [integrated with LDAP](placeholder) to validate users instead of using the portal database.
+* Liferay can be [integrated with an SSO to manage](./configuring-sso/README.md) authentication.
+* Liferay can also be [integrated with LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) to validate users instead of using the portal database.
 * Guest account creation can be [turned off](./authentication-basics.md#disabling-guest-account-creation).
 
-To learn more, see [Configuring Authentication](./authentication-basics.md).
+To learn more, see [Authentication Basics](./authentication-basics.md).
 
 ## Permissions
 
@@ -36,7 +36,7 @@ Liferay Web Services have a multi-layered and configurable approach to security 
 * [Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) verify provided credentials.
 * [Cross-Origin Resource Sharing](./securing-web-services/setting-up-cors.md) configuration can enable retrieving resources from trusted sources only.
 
-See [Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md) to learn more.
+See [Introduction to Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md) to learn more.
 
 ## Fine-Tuning Security
 
@@ -61,5 +61,5 @@ There are additional security plugins available from [Liferay Marketplace](https
 
 ## Next Steps
 
-* [Configuring Authentication](./authentication-basics.md)
-* [Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)
+* [Authentication Basics](./authentication-basics.md)
+* [Introduction to Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)

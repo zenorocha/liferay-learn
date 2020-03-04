@@ -1,8 +1,8 @@
-# How SAML Does Single Sign-On
+# SAML Authentication Process Overview
 
 Coming soon!
 
-<!-- Both the IdP and the SP can initiate the Single Sign On process, and the SSO flow is different depending on each one. Regardless of how it's initiated, SSO is configured for HTTPS between the SP and IdP, so all transport-level communication is encrypted. SAML requests are signed using certificates configured in Liferay DXP, using the SAML Web Browser SSO profile as defined in the [SAML 2.0 specification](http://saml.xml.org/saml-specifications). In all cases, responses are sent using HTTP-POST or HTTP-Redirect. HTTP-POST is preferred because it reduces the risk that the URL is too long for a browser to handle.
+<!--Both the IdP and the SP can initiate the Single Sign On process, and the SSO flow is different depending on each one. Regardless of how it's initiated, SSO is configured for HTTPS between the SP and IdP, so all transport-level communication is encrypted. SAML requests are signed using certificates configured in Liferay DXP, using the SAML Web Browser SSO profile as defined in the [SAML 2.0 specification](http://saml.xml.org/saml-specifications). In all cases, responses are sent using HTTP-POST or HTTP-Redirect. HTTP-POST is preferred because it reduces the risk that the URL is too long for a browser to handle.
 
 Consider IdP initiated SSO first.
 

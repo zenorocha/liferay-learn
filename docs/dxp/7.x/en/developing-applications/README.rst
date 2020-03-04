@@ -48,6 +48,12 @@ Data Frameworks
 * Workflow
 * Info Framework
 
+Security Frameworks
+-------------------
+
+* Defining Application Permissions
+* Authentication Pipelines
+
 Tooling
 -------
 

@@ -4,9 +4,9 @@ OAuth 2.0 is an industry-standard authorization protocol. Users can seamlessly s
 
 You can jump into creating OAuth 2.0 apps or continue reading to learn how it works.
 
-1. [Creating an OAuth 2.0 Application](./02-creating-oauth2-applications.md)
-2. [Defining Scopes](./03-scopes.md)
-3. [Authorizing Account Access](./04-authorizing-access.md)
+1. [Creating an OAuth 2.0 Application](./creating-oauth2-applications.md)
+2. [Defining Scopes](./oauth2-scopes.md)
+3. [Authorizing Account Access](./authorizing-account-access-with-oauth2.md)
 
 ## Flow of OAuth 2.0
 
@@ -52,4 +52,4 @@ That description throws around a lot of terms. Definitions provided below.
 
 **Callback URI:** Also called a Redirection Endpoint URI. After authorization is complete, the authorization server (i.e., Liferay) sends the client to this location.
 
-Ready to start configuring OAuth 2.0? The next step is to [create an application](./02-creating-oauth2-applications.md).
+Ready to start configuring OAuth 2.0? The next step is to [create an application](./creating-oauth2-applications.md).

@@ -10,14 +10,14 @@ By default, Liferay DXP uses the *Sign In* widget to authenticate users.
 
 You can configure other methods of authenticating users and/or applications:
 
-* [LDAP](../06-sso/06-ldap.md)
-* [SAML](../06-sso/08-saml.md)
-* [Kerberos](../06-sso/05-kerberos.md)
-* [OpenID Connect](../06-sso/02-openid-connect.md)
-* [Token-Based solutions](../06-sso/01-token-based-authentication.md)
-* [OAuth 2.0](../06-sso/07-oauth-2.md)
+* [LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)
+* [SAML](./configuring-sso/authenticating-with-saml/01-intro.md)
+* [Kerberos](./configuring-sso/authenticating-with-kerberos.md)
+* [OpenID Connect](./configuring-sso/other-ssos/using-openid-connect.md)
+* [Token-Based solutions](./configuring-sso/token-based-authentication.md)
+* [OAuth 2.0](./configuring-sso/using-oauth2/introduction-to-using-oauth2.md)
 
-[Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../platform/frameworks/authentication-pipelines.md) define the ways users are validated by one or several systems.
+[Authentication Verifiers](./securing-web-services/using-authentication-verifiers.md) can manage authentication for remote applications, and [Authentication Pipelines](../../developing-applications/README.md) define the ways users are validated by one or several systems.
 
 ## Authentication Types
 
@@ -33,7 +33,7 @@ Users can be configured to log in using one of three authentication types:
    Only one authentication type can be used at a time.
 ```
 
-Regardless of the authentication type, users must always enter a password. You can create [Password Policies](../../user-and-system-administration/password-policies.md) to define password length, password format, expiration periods, and more.
+Regardless of the authentication type, users must always enter a password. You can create [Password Policies](../../users-and-permissions/devops/README.md) to define password length, password format, expiration periods, and more.
 
 _Authentication Type_ can be configured through the Control Panel or a properties file.
 
@@ -86,7 +86,7 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
     ![The CAPTCHA configuration screen.](./authentication-basics/images/02.png)
 
     ```note::
-       By default, _Create Account CAPTCHA_ and _Send Password CAPTCHA_ are enabled. If necessary, enable Message Boards CAPTCHA.
+       By default, *Create Account CAPTCHA* and *Send Password CAPTCHA* are enabled. If necessary, enable Message Boards CAPTCHA.
     ```
 
 1. Choose a CAPTCHA engine. By default, Simple CAPTCHA is enabled. You can also select Google's reCAPTCHA, which requires you configure the external service separately. If you select reCAPTCHA, supply your public and private key from Google.
@@ -96,4 +96,4 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 ## Additional Information
 
 * [Securing Liferay](./introduction-to-securing-liferay.md)
-* [Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)
+* [Introduction to Securing Web Services](./securing-web-services/introduction-to-securing-web-services.md)

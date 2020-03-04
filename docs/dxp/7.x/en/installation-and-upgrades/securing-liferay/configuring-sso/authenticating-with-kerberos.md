@@ -143,9 +143,9 @@ The last line is commented out based on user preference. If you want the domain 
    | **Screen Name** | Supply the field that should be mapped to Liferay DXP's screen name field, such as `sAMAccountName`. |
    | **Password** | Supply the field that contains the user's password, such as `userPassword`. |
 
-3. Test the connection, save, and enable the configuration.
+1. Test the connection, save, and enable the configuration.
 
-4. Finally, configure the token for single sign-on at Configuration &rarr; System Settings &rarr; Security &rarr; SSO &rarr; Token Based SSO. Make sure the User Token Name matches *exactly* the token you configured in your web server. Click the *Enabled* and *Import from LDAP* boxes and click *Save*.
+1. Finally, configure the token for single sign-on at Configuration &rarr; System Settings &rarr; Security &rarr; SSO &rarr; Token Based SSO. Make sure the User Token Name matches *exactly* the token you configured in your web server. Click the *Enabled* and *Import from LDAP* boxes and click *Save*.
 
     ![Enabling SSO in the Instance Settings menu.](authenticating-with-kerberos/images/02.png)
 
@@ -157,14 +157,14 @@ You must do two things: make your computer log into the domain and configure you
 
 1. Join your computer to your domain. In keeping with the example above, you'd make your computer a member of the `INTDOMAIN.LOCAL` domain.
 
-2. Log in as a user in that domain.
+1. Log in as a user in that domain.
 
-3. Internet Explorer, Edge, and Chrome use the Windows&trade; settings for trusted sites. If you use these browsers, go to Internet Options &rarr; Security &rarr; Local Intranet Sites and add your Liferay DXP server's URL. For example, add `http://mywebserver.intdomain.local:10080`.
+1. Internet Explorer, Edge, and Chrome use the Windows&trade; settings for trusted sites. If you use these browsers, go to Internet Options &rarr; Security &rarr; Local Intranet Sites and add your Liferay DXP server's URL. For example, add `http://mywebserver.intdomain.local:10080`.
 
-4. Firefox can be configured by typing `about:config` in its address bar. Search for the below two preferences and add the Liferay DXP server's URL as the value for both:
+1. Firefox can be configured by typing `about:config` in its address bar. Search for the below two preferences and add the Liferay DXP server's URL as the value for both:
 
-   - `network.negotiate-auth.delegation-uris`
-   - `network.negotiate-auth.trusted-uris`
+   * `network.negotiate-auth.delegation-uris`
+   * `network.negotiate-auth.trusted-uris`
 
 After configuring these things, test your configuration by accessing Liferay DXP through the web server's URL. Since you are already logged into your client machine, you should be automatically logged into Liferay DXP without a user/password prompt.
 

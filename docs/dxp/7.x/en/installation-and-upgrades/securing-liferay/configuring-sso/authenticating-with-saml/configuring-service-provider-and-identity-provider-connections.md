@@ -1,4 +1,4 @@
-# Changing the Settings for Service Provider and Identity Provider Connections
+# Configuring Service Provider and Identity Provider Connections
 
 Coming soon!
 

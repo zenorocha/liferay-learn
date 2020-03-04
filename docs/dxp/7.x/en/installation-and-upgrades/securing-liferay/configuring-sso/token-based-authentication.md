@@ -47,10 +47,10 @@ Remember to click *Save* to activate Token Based SSO.
 If you use SiteMinder, note that Liferay Portal sometimes uses the tilde character in its URLs. By default, SiteMinder treats the tilde character (and others) as bad characters and returns an HTTP 500 error if it processes a URL containing any of them. To avoid this issue, change this default setting in the SiteMinder configuration to this one:
 
 ```
-	BadUrlChars       //,./,/.,/*,*.,\,%00-%1f,%7f-%ff,%25
+BadUrlChars       //,./,/.,/*,*.,\,%00-%1f,%7f-%ff,%25
 ```
 
-The configuration above is the same as the default except without the `~` character. Restart SiteMinder to make your configuration update take effect. For more information, please refer to SiteMinder's [documentation](https://techdocs.broadcom.com/us/product-content/recommended-reading/technical-document-index/ca-siteminder-informational-documentation-index.html)
+The configuration above is the same as the default except without the `~` character. Restart SiteMinder to make your configuration update take effect. For more information, please refer to SiteMinder's [documentation](https://techdocs.broadcom.com/us/product-content/recommended-reading/technical-document-index/ca-siteminder-informational-documentation-index.html).
 
 ## Summary
 

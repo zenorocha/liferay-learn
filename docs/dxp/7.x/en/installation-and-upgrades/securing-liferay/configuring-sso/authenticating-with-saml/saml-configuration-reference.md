@@ -1,4 +1,4 @@
-# Configuring SAML
+# SAML Configuration Reference
 
 Coming soon!
 

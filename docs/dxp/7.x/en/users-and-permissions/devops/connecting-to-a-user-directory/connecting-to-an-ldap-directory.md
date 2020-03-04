@@ -29,13 +29,11 @@ Alternatively, you can define an LDAP server connection at the System Settings s
 The easiest way to do use `.config` files is to use the GUI and export the configuration. Then you can use the resulting `.config` file anywhere you need it (such as other nodes in a cluster).
 
 ```note::
-   To use `config` files for LDAP server configuration, you must specify the Virtual Instance ID (in the source, the variable name is `companyId`) in the exported configuration file, because servers are defined at the instance scope, not the system scope. To do this, specify the virtual instance ID somewhere in the file like this:
-
+    To use `config` files for LDAP server configuration, you must specify the Virtual Instance ID (in the source, the variable name is `companyId`) in the exported configuration file, because servers are defined at the instance scope, not the system scope. To do this, specify the virtual instance ID somewhere in the file like this:
     ::
-       properties
-       companyId=1234
+      companyId=1234
 
-   You can find your Virtual Instance ID in *Control Panel* &rarr; *Configuration* &rarr; *Virtual Instances*.
+    You can find your Virtual Instance ID in *Control Panel* -> *Configuration* -> *Virtual Instances*.
 ```
 
 ## LDAP Server Configuration Reference
@@ -76,7 +74,7 @@ For example, if your LDAP directory is Microsoft Active Directory on Windows Ser
 
 1. From the General menu, click *View Certificate*.
 
-1. Select the Details view, and click *Copy To File*. Use the resulting wizard to save the certificate as a file. 
+1. Select the Details view, and click *Copy To File*. Use the resulting wizard to save the certificate as a file.
 
 1. Import the certificate into the *cacerts keystore* like this:
 
