@@ -1,6 +1,6 @@
 # Using the Recycle Bin
 
-You can recycle several different types of assets:
+Recycle Bin functionality is available for the following asset types:
 
 * Blogs
 * Bookmarks
@@ -12,7 +12,7 @@ You can recycle several different types of assets:
 ![The Recycle Bin provides a seamless administrative experience for deleting and removing content.](./using-the-recycle-bin/images/01.png)
 
 ```note::
-   Attachments added to Wiki and Message Board entries do not go to the Recycle Bin when they are deleted. They can be restored in a similar fashion from the _Removed Attachments_ menu within the application.
+   Attachments added to Wiki and Message Board entries do not go to the Recycle Bin when they are deleted. They can be restored in a similar fashion from the *Removed Attachments* menu within the application.
 ```
 
 ## Moving an Asset to the Recycle Bin
@@ -20,7 +20,7 @@ You can recycle several different types of assets:
 1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu.
 1. Select the site.
 1. Click *Content & Data* &rarr; *Web Content*.
-1. Click the article's *Actions* button (![Actions](../../../images/icon-actions.png)) and click _Move to the Recycle Bin_. Note that the _Delete_ button is not listed. DXP avoids the risk of accidental deletion of your files by funneling the content through the Recycle Bin.
+1. Click the article's *Actions* button (![Actions](../../../images/icon-actions.png)) and click _Move to the Recycle Bin_. Note that the _Delete_ button is not listed.
 
     ![Moving the web content article to the recycle bin](./using-the-recycle-bin/images/02.png)
 
@@ -29,9 +29,9 @@ You can recycle several different types of assets:
 
     ![Confirmation window allows users to restore immediately](./using-the-recycle-bin/images/03.png)
 
-Some applications, such as Web Content and Documents and Media, support folders for organizing content. You can also send folders to the Recycle Bin. Keep in mind that this sends any sub-folders of the deleted folder all the files it contains to the Recycle Bin. Folders are restored and deleted the same way as a single file.
+Some applications, such as Web Content and Documents and Media, support folders for organizing content. You can also send folders to the Recycle Bin. Keep in mind that this action recursively sends all sub-folders and files to the Recycle Bin. Folders are restored and deleted the same way as a single file.
 
-## Drag and Drop
+### Drag and Drop
 
 You can also drag and drop items into the Recycle Bin.
 

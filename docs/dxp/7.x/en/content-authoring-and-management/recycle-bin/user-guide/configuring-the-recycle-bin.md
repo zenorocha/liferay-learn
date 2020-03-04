@@ -3,7 +3,7 @@
 The Recycle Bin supports instance-wide scope or site-specific scope. By default, the Recycle Bin is enabled instance-wide.
 
 ```tip::
-   You can disable the Recycle Bin on a specific site. If you disable the Recycle Bin while it is still holding recycled items, the recycled items remain stored and reappear in the Recycle Bin if it is re-enabled.
+   You can disable the Recycle Bin for a specific site. If you disable the Recycle Bin while it is still holding recycled items, the recycled items remain stored and reappear in the Recycle Bin if it is re-enabled.
 ```
 
 To configure the Recycle Bin:
@@ -23,7 +23,7 @@ To configure the Recycle Bin:
 
 1. Click _Save_ when finished.
 
-The Trash Entries Max Age values must be expressed in minutes. By default, items sit in the Recycle Bin for 30 days before they are deleted automatically. You can shorten or lengthen the period.
+The Trash Entries Max Age value must be expressed in minutes. By default, items sit in the Recycle Bin for 30 days before they are deleted automatically.
 
 ## What's Next
 

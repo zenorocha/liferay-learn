@@ -1,16 +1,16 @@
 # Introduction to the Recycle Bin
 
-Liferay DXP's Recycle Bin application allows users to temporarily delete an asset and place it in the Recycle Bin. Once in the Recycle Bin, the content is now temporarily stored there and users can later restore the content to its original state. Recycled items can expire after a certain period of time which results in their permanent deletion. By default, Recycle Bin is enabled across the DXP instance and can be disabled on a site by site basis.
+Assets that are deleted are placed it in the Recycle Bin. Assets in the Recycle Bin can be restored by users. Assets in the Recycle Bin can expire after a configured period of time, resulting in permanent deletion. By default, the Recycle Bin is enabled instance-wide and can be disabled on a site by site basis.
 
-With the Recycle Bin enabled, the _Move to the Recycle Bin_ action replaces _Delete_ for certain asset types.
+With the Recycle Bin enabled, the _Move to the Recycle Bin_ action replaces _Delete_ for certain asset types.<!-- What asset types? -->
 
 ![The folder is moved to Recycle Bin and not deleted immediately.](./introduction-to-the-recycle-bin/images/01.png)
 
-Inside the Recycle Bin, users can restore or delete an asset.
+When viewing the Recycle Bin, users can restore or permanently delete an asset.
 
 ![There is an option to delete or restore a file.](./introduction-to-the-recycle-bin/images/02.png)
 
-If the Recycle Bin is disabled on a site, all assets are automatically deleted.
+If the Recycle Bin is disabled on a site, assets that are deleted are permanently deleted and cannot be restored.
 
 ![Delete an asset.](./introduction-to-the-recycle-bin/images/03.png)
 
