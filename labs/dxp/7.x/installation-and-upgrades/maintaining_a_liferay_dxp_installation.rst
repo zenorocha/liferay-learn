@@ -4,8 +4,8 @@ Maintaining a Liferay DXP Installation
 .. toctree::
    :maxdepth: 2
 
-   installing-liferay/introduction-to-maintaining-a-liferay-dxp-installation.md
-   installing-liferay/backing-up.md
+   maintaining-a-liferay-dxp-installation/introduction-to-maintaining-a-liferay-dxp-installation.md
+   maintaining-a-liferay-dxp-installation/backing-up.md
    
    maintaining-a-liferay-dxp-installation/installing_patches.rst
    maintaining-a-liferay-dxp-installation/maintaining_clustered_installations.rst

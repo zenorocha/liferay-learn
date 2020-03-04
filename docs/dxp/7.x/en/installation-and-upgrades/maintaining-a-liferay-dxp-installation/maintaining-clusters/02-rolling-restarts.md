@@ -1,3 +1,0 @@
-# Rolling Restarts
-
-Coming soon!
