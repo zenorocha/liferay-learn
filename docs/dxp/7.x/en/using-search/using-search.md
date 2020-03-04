@@ -4,15 +4,13 @@ Search is a fundamental component of Liferay DXP. If you're testing out the buil
 
 Once a search engine holding your indexed data is freely communicating with Liferay DXP, you're ready to configure or customize the search experience.
 
-Sites often feature lots of content split over lots of asset types. Web content articles, documents and media files, and blogs entries are just a few examples. Most content types are *assets*.Under the hood, assets use the [Asset API](/docs/7-2/frameworks/-/knowledge_base/f/asset-framework) and indexing code. Any content that has these features can be searched in Liferay DXP's out-of-the-box search widgets. 
+Sites often feature lots of content split over lots of asset types. Web content articles, documents and media files, and blogs entries are just a few examples. Most content types are *assets*.Under the hood, assets use the [Asset API](https://help.liferay.com/hc/en-us/sections/360004656831-Asset-Framework) and [indexing code](#custom-development-in-search). Any content that has these features can be searched in Liferay DXP's out-of-the-box search widgets. 
 
 ![The Type Facet configuration lists the searchable out-of-the-box asset types.](./using-search/images/01.png)
 
-<!-->Intro needs massaging</!-->
-
 ## Bundled Search Features
 
-Search widgets are bundled:
+A bunch of search widgets are bundled with Liferay DXP:
 
 - Search Bar
 - Search Results
@@ -28,7 +26,7 @@ Search widgets are bundled:
 
 <!--wiz-bang image of widgets-->
 
-Administrative search functionality is bundled:
+Administrative search functionality is also included:
 
 - Search Tuning
 - Search Engine Connection Configuration
@@ -61,6 +59,7 @@ Further detail on the usage of these APIs and extension points  is provided in t
 
 The default search engine is Elasticsearch, which is backed by the Lucene search library. There's an Elasticsearch server embedded in all bundles, which is handy for testing and development purposes. Production environments must install a separate, remote Elasticsearch server (or even better, cluster of servers).  For information on how to install Elasticsearch, read the [deployment guide](https://help.liferay.com/hc/en-us/sections/360004655831-Installing-a-Search-Engine).
 
+<!-- Actually the rest of this stuff is probably unnecessary -->
 ## Searching
 
 Find a search bar (there's one embedded in every page by default), enter a term, and click *Enter*.
