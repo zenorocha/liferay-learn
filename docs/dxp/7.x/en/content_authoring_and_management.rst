@@ -11,5 +11,5 @@ Content Authoring and Management
    content-authoring-and-management/tags_and_categories.rst
    content-authoring-and-management/recycle_bin.rst
 
-.. include:: /content-authoring-and-management/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: content-authoring-and-management/landing.html

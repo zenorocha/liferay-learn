@@ -1,0 +1,141 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Writing and Managing Web Content (Coming Soon)',
+					sectionURL: '',
+					subsections: [
+						{
+							name: 'Web Content Articles (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Understanding Structures and Templates (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Auto Tagging (Coming Soon)',
+							url: ''
+						}
+					]
+				},
+				{
+					sectionName: 'Documents and Media',
+					sectionURL: '',
+					subsections: [
+						{
+							name: 'Managing Documents, Media, and Video (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Using the Image Editor (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Displaying Documents in a Site (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+				{
+					sectionName: 'Blogs',
+					sectionURL: '',
+					subsections: [
+						{
+							name: 'Adding Blog Entries (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Using the Blog Entry Editor (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Displaying Blogs (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+				{
+					sectionName: 'Content Sets',
+					sectionURL: '',
+					subsections: [
+            {
+							name: 'Understanding Content Sets (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Manually and Dynamically Creating a Content Set (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Driving Personalization with Content Sets (Coming Soon)',
+							url: ''
+						},
+          ]
+				},
+				{
+					sectionName: 'Tags and Categories',
+					sectionURL: '',
+					subsections: [
+          {
+							name: 'Tagging Content (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Defining Categories for Content (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Geolocating Assets (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+				{
+					sectionName: 'Recycle Bin',
+					subsections: [
+						{
+							name: 'Introduction to the Recycle Bin',
+							url: 'content-authoring-and-management/recycle-bin/user-guide/introduction-to-the-recycle-bin.html'
+						},
+						{
+							name: 'Using the Recycle Bin',
+							url: 'content-authoring-and-management/recycle-bin/user-guide/using-the-recycle-bin.html'
+						},
+						{
+							name: 'Configuring the Recycle Bin',
+							url: 'content-authoring-and-management/recycle-bin/user-guide/configuring-the-recycle-bin.html'
+						},
+					]
+        },
+			]
+		}
+	})
+</script>
