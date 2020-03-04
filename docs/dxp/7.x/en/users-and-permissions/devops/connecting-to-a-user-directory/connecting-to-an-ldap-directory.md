@@ -93,6 +93,7 @@ For example, if your LDAP directory is Microsoft Active Directory on Windows Ser
     ```
     ldaps://myLdapServerHostname:636
     ```
+
 Save the changes. Communication to LDAP is now encrypted.
 
-To tune or configure how Liferay DXP matches users in LDAP for syncing, please see [configuring import and export](./synchronizing-users-and-user-groups-with-an-ldap-directory.md).
+To tune or configure how Liferay DXP matches users in LDAP for syncing, please see [configuring import and export](./configuring-user-import-and-export.md).
