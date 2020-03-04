@@ -8,9 +8,9 @@ This structure can be modeled in Liferay DXP, empowering you to delegate adminis
 
 ## Organization Roles and Permissions
 
-Organizations can have Roles scoped only to them. An Organization Role's permissions affect only applications and content within that Organization hierarchy. For example, the difference between a portal-scoped Role versus an Organization-scoped Role that define access to Message Boards is twofold: 
+Organizations can have Roles scoped only to them. An Organization Role's permissions affect only applications and content within that Organization hierarchy. For example, the difference between a portal-scoped Role versus an Organization-scoped Role that define access to Message Boards is twofold:
 
-1. The Organization Role affects only Message Boards in that Organization (or its children). 
+1. The Organization Role affects only Message Boards in that Organization (or its children).
 1. The portal Role affects all Message Boards installation-wide.
 
 ![Organization Roles take effect only within the Organization.](./understanding-organizations/images/02.png)
@@ -32,3 +32,7 @@ Organization administrators can't access the Control Panel by default. Instead, 
 ## Organization Sites
 
 An Organization can have its own Site. Organization Sites are owned by Organization Administrators, who have permissions similar to the Site Administrators: they can manage the Site's pages, widgets, content, and Users. Members of an Organization with an attached Site are members of the Organization's Site. This means that they can access the private pages of the Organization's Site, along with any portlets or content there.
+
+## Next Steps
+
+* [Creating and Managing Organizations](./creating-and-managing-organizations.md)

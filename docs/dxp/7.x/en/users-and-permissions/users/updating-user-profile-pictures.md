@@ -32,7 +32,7 @@ Now, instead of the default icon, the icon is a generic silhouette.
 
 ### Changing the Order of Initials in the Default User Profile Image
 
-The default user icon (with the user initials) can be configured to work for your locale. These settings are configured in a [Language Settings module](../../platform/adding-language.md).
+The default user icon (with the user initials) can be configured to work for your locale. These settings are configured in a [Language Settings module](../../liferay-internals/extending-liferay/adding-a-language.md).
 
 `lang.user.default.portrait=initials` sets the type of icon to use for avatars. The default value is *initials*. If set to initials, the next property configures which initials to display, and in what order. Alternatively, specify *image*, which gives you the same non-initials default image shown above.
 
@@ -46,7 +46,7 @@ You can use your own default profile image:
 
 1. Place it somewhere on the application server's classpath. For example, in Tomcat you could place it in the `tomcat/webapps/ROOT/WEB-INF/classes` folder.
 
-1. Set the following property in a [`portal-ext.properties`](../../../../installation-and-upgrades/reference/portal-properties.md) file:
+1. Set the following property in a [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) file:
 
     ```properties
     image.default.user.portrait=image-filename-here.png
