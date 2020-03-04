@@ -1,6 +1,6 @@
 # LDAP Configuration Reference
 
-To access LDAP configuration settings, navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *LDAP*. There are four categories on the left: Export, General, Import, and Servers. You've already configured Servers; the other settings are described below.
+To access LDAP configuration settings, navigate to *Control Panel &rarr; Configuration* &rarr; *Instance Settings* &rarr; *Security* &rarr; *LDAP*. There are four categories on the left: Export, General, Import, and Servers.
 
 ## Export
 
@@ -11,6 +11,8 @@ users.update.last.login=false
 ```
 
 **Enable Group Export:** Export groups to LDAP.
+
+![The Export tab.](./ldap-configuration-reference/images/01.png)
 
 ## General
 
@@ -24,13 +26,15 @@ users.update.last.login=false
 
 **Password Encryption Algorithm:** Choose the password encryption algorithm your LDAP server uses to encrypt passwords so they can be compared if using the Password Compare bind method. This is rarely used.
 
+![The General configuration tab.](./ldap-configuration-reference/images/02.png)
+
 ## Import
 
 You can import user data from LDAP directories using the following options:
 
 **Enable Import:** Check this box to do a mass import from your LDAP directories. Otherwise, Users are imported as they log in.
 
-![Ziltoid and Rex have been imported because they logged in.](./images/imported-ldap-users.png)
+![Ziltoid and Rex have been imported because they logged in.](./ldap-configuration-reference/images/03.png)
 
 **Enable Import on Startup:** Check this box to do the mass import when Liferay starts. Note: this box only appears if you check **Enable Import**, described above. Definitely leave this unchecked if you have a Liferay cluster, or all your nodes will do a mass import when each of them starts up.
 
@@ -52,9 +56,27 @@ You can import user data from LDAP directories using the following options:
 
 **Create Role per Group on Import:** For every LDAP group, create a corresponding Liferay Role.
 
+![The Import screen.](./ldap-configuration-reference/images/04.png)
+
 ## Servers
 
-**LDAP Servers:** Liferay supports connections to multiple LDAP servers. Use the *Add* button to add LDAP servers. Each LDAP server has several [configuration options](./01-ldap-servers-intro.md).
+**LDAP Servers:** Liferay supports connections to multiple LDAP servers. Use the *Add* button to add LDAP servers.
+
+**Server Name:** Enter a name for your LDAP server.
+
+**Default Values:** Several common directory servers appear here. If you use one of these, select it to populate the rest of the form with default values for that directory.
+
+These settings cover the connection to LDAP.
+
+**Base Provider URL:** The link to the LDAP server. Make sure the Liferay server can communicate with the LDAP server. If there is a firewall between the two systems, make sure the appropriate ports are opened.
+
+**Base DN:** The Base Distinguished Name for your LDAP directory, usually modeled after your organization. It may look like this: `dc=companynamehere,dc=com`.
+
+**Principal:** The default LDAP administrator user ID is populated here. If your administrator ID differs, use that credential instead. You need an administrative credential because Liferay uses this ID to synchronize user accounts to and from LDAP.
+
+**Credentials:** Enter the password for the LDAP administrative user.
+
+![Adding a new LDAP server.](./ldap-configuration-reference/images/05.png)
 
 Once you've finished configuring LDAP, click the *Save* button.
 
