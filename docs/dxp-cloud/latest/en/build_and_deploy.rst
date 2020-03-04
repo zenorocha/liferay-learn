@@ -8,7 +8,6 @@ Build and Deploy
    build-and-deploy/understanding-deployment-types.md
    build-and-deploy/walking-through-the-deployment-life-cycle.md
 
-   build-and-deploy/using-a-custom-service.md
    build-and-deploy/configuring-persistent-file-storage-volumes.md
    build-and-deploy/ignoring-files-and-folders.md
 
