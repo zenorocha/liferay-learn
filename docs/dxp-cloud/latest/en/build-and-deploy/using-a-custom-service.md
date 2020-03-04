@@ -56,7 +56,7 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
     * **If you are using a Docker image from a public repository:** Add the name of your image to an `image` property within your `LCP.json`:
 
       ```
-      "image": "@my.custom.service.docker.image@"
+      "image": "mydockerimages/myservice:1.0.0"
       ```
 
     * **If you are using a local Dockerfile:** Add the Dockerfile into your custom service's directory. When your service is built, the Docker image from the Dockerfile will automatically be picked up as the image for the service.
