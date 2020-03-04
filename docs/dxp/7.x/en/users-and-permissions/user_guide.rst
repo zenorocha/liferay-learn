@@ -5,7 +5,8 @@ User Guide
    :maxdepth: 4
 
    user-guide/users.rst
-   user-guide/organizations_and_user_groups.rst
+   user-guide/organizations.rst
+   user-guide/user_groups.rst
    user-guide/roles_and_permissions.rst
    user-guide/accounts.rst
 
