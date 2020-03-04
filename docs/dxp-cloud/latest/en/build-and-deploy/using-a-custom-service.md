@@ -17,14 +17,14 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
 1. Add a new directory for your service alongside the other service directories (e.g., `liferay` and `database`), with an `LCP.json` file in it:
 
 	```
-	   ├── backup
-	   ├── ci
-	   ├── database
-	   ├── liferay
-	   ├── search
-	   ├── webserver
-	   └── myCustomService
-	       └── LCP.json
+    ├── backup
+    ├── ci
+    ├── database
+    ├── liferay
+    ├── search
+    ├── webserver
+    └── myCustomService
+        └── LCP.json
 	```
 
 	See [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) for more information on adding configurations to this file.
@@ -56,7 +56,7 @@ Use the following steps to add your own custom service to a build in DXP Cloud:
     * **If you are using a Docker image from a public repository:** Add the name of your image to an `image` property within your `LCP.json`:
 
       ```
-        "image": "@my.custom.service.docker.image@"
+      "image": "@my.custom.service.docker.image@"
       ```
 
     * **If you are using a local Dockerfile:** Add the Dockerfile into your custom service's directory. When your service is built, the Docker image from the Dockerfile will automatically be picked up as the image for the service.
