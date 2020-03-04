@@ -4,9 +4,9 @@ Recycle Bin
 .. toctree::
    :maxdepth: 3
 
-   06-recycle-bin/user_guide.rst
-   06-recycle-bin/developer_guide.rst
-   06-recycle-bin/apis.rst
+   recycle-bin/user_guide.rst
+   recycle-bin/developer_guide.rst
+   recycle-bin/apis.rst
 
-.. include:: /content-authoring-and-management/06-recycle-bin/README.rst
+.. include:: /content-authoring-and-management/recycle-bin/README.rst
    :start-line: 2

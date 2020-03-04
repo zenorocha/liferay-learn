@@ -3,7 +3,7 @@ Content Authoring and Management
 
 * Introduction to Assets
 * Introduction to Export/Import
-* Introduction to Recycle Bin
+-  :doc:`/content-authoring-and-management/recycle-bin/user-guide/introduction-to-the-recycle-bin`
 
 Web Content
 -----------
@@ -122,9 +122,9 @@ Recycle Bin
 User Guide
 ~~~~~~~~~~
 
-* Restoring Deleted Assets
-* Configuring the Recycle Bin
-* Using the Recycle Bin
+-  :doc:`/content-authoring-and-management/recycle-bin/user-guide/configuring-the-recycle-bin`
+-  :doc:`/content-authoring-and-management/recycle-bin/user-guide/using-the-recycle-bin`
+-  :doc:`/content-authoring-and-management/recycle-bin/user-guide/recycle-bin-intelligence`
 
 Developer Guide
 ~~~~~~~~~~~~~~~
