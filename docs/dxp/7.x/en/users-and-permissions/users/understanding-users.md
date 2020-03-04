@@ -20,7 +20,7 @@ Here, you can manage user metadata (name, department, etc.), permissions, and ac
 
 ### Adding Users
 
-Administrators can add Users through the Users and Organizations section of the Control Panel or [through the API](future-article?). New users can be created by administrators, can register themselves if open registration is configured, or can be synced from an LDAP server. See [Adding and Managing Users](./adding-and-managing-users.md) to learn more.
+Administrators can add Users through the Users and Organizations section of the Control Panel or [through the API](../developer-guide/README.md). New users can be created by administrators, can register themselves if open registration is configured, or can be synced from an LDAP server. See [Adding and Managing Users](./adding-and-managing-users.md) to learn more.
 
 #### Open Registration
 

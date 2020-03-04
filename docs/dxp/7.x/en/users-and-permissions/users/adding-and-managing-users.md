@@ -97,7 +97,7 @@ The Add User functionality includes a *Require Password Reset* check box at the 
 1. Click on the *Default Password Policy*.
 1. De-select the *Change Required* switcher in the Password Changes section. Now you can decide whether users you add must reset their passwords.
 
-See [Password Policies](../../devops/README.md) for more information on editing the default policy or creating your own.
+See [Password Policies](../devops/README.md) for more information on editing the default policy or creating your own.
 
 ## Related Information
 

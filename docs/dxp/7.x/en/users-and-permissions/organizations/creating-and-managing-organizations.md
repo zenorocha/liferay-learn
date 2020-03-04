@@ -1,6 +1,6 @@
 # Creating and Managing Organizations
 
-If you're not sure what Organizations are or whether you need them, start [here](./understanding-organizations.md). This article gets right to the practical stuff: how to manage Organizations.
+If you're not sure what Organizations are or whether you need them, start [here](./understanding-organizations.md).
 
 ## Adding Organizations
 
