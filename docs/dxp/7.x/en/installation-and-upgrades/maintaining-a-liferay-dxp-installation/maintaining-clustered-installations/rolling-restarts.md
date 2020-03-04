@@ -26,7 +26,7 @@ For a new version of an existing plugin or module to be eligible for rolling res
 
 ## Applying Fix Packs (Enterprise subscribers only)
 
-The Customer Portal identifies [fix packs](../maintaining-a-liferay-dxp-installation/01-installing-patches.md) that are not revertible, and therefore ineligible for rolling restart. All other fix packs are eligible.
+The Customer Portal identifies [fix packs](../maintaining-a-liferay-dxp-installation/installing-patches/introduction-to-installing-patches.md) that are not revertible, and therefore ineligible for rolling restart. All other fix packs are eligible.
 
 ## Reverting Fix Packs (Enterprise subscribers only)
 
@@ -52,6 +52,6 @@ All rolling restart eligible updates can be applied using the rolling restart st
 
 ## Related Topics
 
-* [Blue Green Deployment](./03-blue-green-deployments.md)
+* [Blue Green Deployment](./blue-green-deployments.md)
 * [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
-* [Installing Patches](../maintaining-a-liferay-dxp-installation/01-installing-patches.md)
+* [Installing Patches](../maintaining-a-liferay-dxp-installation/installing-patches/introduction-to-installing-patches.md)

@@ -1,9 +1,9 @@
 # Maintaining Clustered Installations
 
-Setting up your Liferay DXP installation to function in a [cluster](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md) provides performance and scalability improvements, but also requires additional consideration to properly support and maintain. This includes deploying new and updated plugins and modules, [installing patches and fix packs](../../maintaining-a-liferay-dxp-installation/01-installing-patches.md), changing configurations, and more. The Liferay DXP cluster maintenance methods outlined maximize server uptime and minimize risks for server maintenance. Liferay DXP supports using standard cluster maintenance techniques:
+Setting up your Liferay DXP installation to function in a [cluster](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md) provides performance and scalability improvements, but also requires additional consideration to properly support and maintain. This includes deploying new and updated plugins and modules, [installing patches and fix packs](../../maintaining-a-liferay-dxp-installation/installing-patches/introduction-to-installing-patches.md), changing configurations, and more. The Liferay DXP cluster maintenance methods outlined maximize server uptime and minimize risks for server maintenance. Liferay DXP supports using standard cluster maintenance techniques:
 
-* [Rolling restarts](./02-rolling-restarts.md): Nodes are shut down and updated one at a time.
-* [Blue-Green deployment](./03-blue-green-deployments.md): Blue-Green involves duplicating the current environment (*blue* environment), updating the duplicate (*green* environment), and cutting over users to the updated environment (green).
+* [Rolling restarts](./rolling-restarts.md): Nodes are shut down and updated one at a time.
+* [Blue-Green deployment](./blue-green-deployments.md): Blue-Green involves duplicating the current environment (*blue* environment), updating the duplicate (*green* environment), and cutting over users to the updated environment (green).
 
 The techniques are compared below.
 
@@ -47,5 +47,5 @@ backward-compatible include, but are not limited to these:
 
 ## Additional Information
 
-* [Rolling Restarts](./02-rolling-restarts.md)
-* [Blue-Green Deployments](./03-blue-green-deployments.md)
+* [Rolling Restarts](./rolling-restarts.md)
+* [Blue-Green Deployments](./blue-green-deployments.md)
