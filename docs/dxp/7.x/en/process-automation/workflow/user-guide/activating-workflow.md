@@ -2,7 +2,7 @@
 
 You can activate a workflow process for an asset type either across the DXP instance or only on a specific site. When a workflow process is activated across the instance for a particular asset type such as _Wiki Pages_, all _Wiki Page_ submitted for publication must go through the review process regardless of which Site the _Wiki Page_ is created on.
 
-Alternately, you can choose to enable or disable workflow on individual sites. By default, workflows are disabled on a site. Lastly, there are some workflows which must be enabled inside the respective applications (see below).
+Alternately, you can choose to enable or disable workflow on individual sites. By default, workflow is disabled on a site.
 
 ## Activating Workflow Across a DXP Instance
 
@@ -41,7 +41,7 @@ Once enabled, the selected asset types always require a review process before pu
    You can always disable workflow for an asset type on a site even if it was enabled instance wide.
 ```
 
-## Activating Workflow in Specific Applications
+## Activating Workflow For Specific Applications
 
 There are several assets types where workflow is enabled in their respective applications.
 
@@ -119,7 +119,7 @@ To activate workflow for each individual form's entries
 
 The form now requires approval before the information is submitted.
 
-<!--
+<!-- Leaving this commented out until Staging materials are pushed up.
 ## Page Variations
 
 In a [staged environment](https://help.liferay.com/hc/en-us/articles/360029041851-Staging-Content), you can activate workflow for _Page Variations_.

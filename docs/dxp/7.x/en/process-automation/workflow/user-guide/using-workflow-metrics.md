@@ -1,16 +1,13 @@
 # Using Workflow Metrics
 
-```tip::
-   Subscribers only
-```
+> Subscription
 
-_Workflow Metrics_ gives insights into the time spent to complete certain workflow events. To use it, set up deadlines on a workflow process's events. These deadline configurations are referred to as SLAs (Service Level Agreements). Once defined, Workflow Reports measure compliance with the SLAs. They're like a contract between the workflow participants and Users submitting workflow items. _Workflow Reports_ shows data for all processes with SLAs, including each workflow item's SLA status: on time or overdue.
-
+_Workflow Metrics_ gives insight into the time spent to complete certain workflow events. To use it, set up deadlines on a workflow process's events. These deadline configurations are referred to as SLAs (Service Level Agreements). Once defined, Workflow Reports measure compliance with the SLAs. They're like a contract between the workflow participants and Users submitting workflow items. _Workflow Reports_ shows data for all processes with SLAs, including each workflow item's SLA status: on time or overdue.
 
 ```important::
-   * **Editing a Workflow with SLAs:** Editing a workflow (e.g., removing nodes, editing a task name) with SLAs defined on it may invalidate the SLA for items already in the workflow/SLA pipeline.
+   * *Editing a Workflow with SLAs:* Editing a workflow (e.g., removing nodes, editing a task name) with SLAs defined on it may invalidate the SLA for items already in the workflow/SLA pipeline.
 
-   * **Creating or Editing SLAs for Active Processes:** Editing an SLA's duration or defining a new SLA while items are already in the workflow process causes a recalculation for all instances currently in the workflow. Completed workflow instances are not recalculated.
+   * *Creating or Editing SLAs for Active Processes:* Editing an SLA's duration or defining a new SLA while items are already in the workflow process causes a recalculation for all instances currently in the workflow. Completed workflow instances are not recalculated.
 ```
 
 ## Prerequisites
