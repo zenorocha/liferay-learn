@@ -49,6 +49,18 @@ To log out of your account:
 
     ![Signing Out](./introduction-to-the-admin-account/images/05.png "Signing Out")
 
+## Creating a New Admin User
+
+Now that you know how to log in, we strongly recommend that you create a new admin user for everyday use.
+
+To create a new admin account follow these steps:
+
+1. Create a new user. See [Adding Users](../users-and-permissions/users/adding-and-managing-users.md) to learn how.
+1. Click the *Roles* link in the left navigation pane (in the *Edit User* page's *General* tab).
+1. Click *Select* under Regular Roles. Select the Administrator role from the list (click *Choose*). The dialog box disappears and the Role is added to the list of Roles associated with your account.
+
+The user is now a portal administrator. Log out and then log back in with your new user account.
+
 ## What's Next
 
 Continue our Getting Started walkthrough by familiarizing yourself with the [DXP Product Menu](./navigating-dxp.md).
