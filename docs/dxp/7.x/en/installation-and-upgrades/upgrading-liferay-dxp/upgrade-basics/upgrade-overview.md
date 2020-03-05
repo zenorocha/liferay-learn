@@ -22,9 +22,9 @@ Look up your current Liferay DXP/Portal version in this table to determine your 
 
 | Upgrade Path                            | Description |
 | --------------------------------------- | ----------- |
-| Liferay Portal 5.x and 6.0.x &rarr; Liferay Portal 6.2 &rarr; Liferay DXP 7.3 | Support life ended for Liferay Portal 5.0, 5.1, 5.2, and 6.0 |
-| Liferay Portal 6.1.x &rarr; DXP/Portal 7.1 &rarr; DXP 7.3 | Support life ended for Liferay Portal 6.1 |
 | Liferay DXP/Portal 6.2+ &rarr; DXP 7.3      |             |
+| Liferay Portal 6.1.x &rarr; DXP/Portal 7.1 &rarr; DXP 7.3 | Support life ended for Liferay Portal 6.1 |
+| Liferay Portal 5.x and 6.0.x &rarr; Liferay Portal 6.2 &rarr; Liferay DXP 7.3 | Support life ended for Liferay Portal 5.0, 5.1, 5.2, and 6.0 |
 
 If your path includes upgrading to Liferay Portal 6.2, follow the [Liferay Portal 6.2 upgrade instructions](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay) first.
 
@@ -34,7 +34,7 @@ Features and configuration defaults may change in new versions of Liferay DXP. S
 
 * [Deprecations](../reference/deprecations-in-liferay-dxp-7-3.md)
 * [Features in Maintenance Mode](../reference/features-in-maintenance-mode.md)
-* [Changes to Default Settings](../reference/changes-to-default-settings-in-liferay-dxp-7-3.md)
+* [Changes to Default Settings](../reference/changes-to-default-settings.md)
 
 ### Request an Upgrade Patch (Subscription)
 
@@ -96,9 +96,9 @@ For larger installations and production environments we recommend using the Life
 
 Once you complete the tasks outlined above, your upgrade is complete. But before using DXP, you must re-establish desired runtime settings and undo any upgrade-specific tuning. Plus there may be applications that weren't available on your previous Liferay version that are recommended for new DXP production instances. See the [Post-Upgrade Considerations](./post-upgrade-considerations.md) for more information.
 
-Now that you're familiar with the DXP upgrade components, you can start upgrading your DXP instance. First examine the [Basic Upgrade Steps](./basic-database-upgrade-steps.md) and consider whether they fit your upgrade. If they don't, follow the topics outlined above and execute the database upgrade using the [Database Upgrade Tool](./using-the-upgrade-tool.md).
+Now that you're familiar with the DXP upgrade components, you can start upgrading your DXP instance. First examine the [Basic Database Upgrade Steps](./basic-database-upgrade-steps.md) and consider whether they fit your upgrade. If they don't, follow the topics outlined above and execute the database upgrade using the [Database Upgrade Tool](./using-the-upgrade-tool.md).
 
 Additionally, refer to these other upgrade scenarios if they relate to your upgrade:
 
 * [Upgrading a Sharded Environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md)
-* [Updating a Cluster](../10-Maintaining-a-liferay-dxp-installation/10-maintaining-clusters/01-maintaining-clustered-installations.md)
+* [Maintaining Clustered Installations](../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

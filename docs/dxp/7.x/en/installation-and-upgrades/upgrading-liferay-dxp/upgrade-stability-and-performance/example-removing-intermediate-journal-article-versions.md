@@ -107,5 +107,5 @@ You can write similar code to remove intermediate versions of other entities. On
 
 ## Additional Information
 
-* [Pruning the Database](./pruning-the-database.md)
-* [Tuning for the Data Upgrade](./tuning-for-the-data-upgrade.md)
+* [Pruning the Database](./database-pruning-for-faster-upgrades.md)
+* [Tuning for the Data Upgrade](./database-tuning-for-upgrades.md)

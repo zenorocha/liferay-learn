@@ -17,5 +17,5 @@ As of Liferay DXP 7.2, these products and capabilities have transitioned into ma
 
 ## Additional Information
 
-* [Deprecated Apps in Liferay DXP 7.3](./deprecations-in-liferay-dxp-7-3.md)
-* [Deprecated Apps in Liferay DXP 7.2](./deprecations-in-liferay-dxp-7-2.md)
+* [Deprecations in Liferay DXP 7.3](./deprecations-in-liferay-dxp-7-3.md)
+* [Deprecations in Liferay DXP 7.2](./deprecations-in-liferay-dxp-7-2.md)

@@ -29,7 +29,7 @@ The tool is available to download separately, as described in the table below.
 | DXP Edition | Download Instructions |
 | :---------- | :-------------------- |
 | Liferay DXP (Subscription) | Go to the [*Downloads* page](https://customer.liferay.com/group/customer/downloads) and select the DXP version and the _Product/Service Packs_ file type. In the listing that appears, click _Download_ for the _Liferay DXP Upgrade Client_. |
-| _Liferay DXP CE_ | Go to the [_Downloads_ page](https://www.liferay.com/downloads-community) and select _Download_ for _Liferay Portal Tools for 7.x_. |
+| Liferay DXP CE | Go to the [_Downloads_ page](https://www.liferay.com/downloads-community) and select _Download_ for _Liferay Portal Tools for 7.x_. |
 
 You can a configure the upgrade before invoking the upgrade tool using properties files or at the start of the upgrade tool run using the tool's command line interface (CLI). Both ways produce properties files that specify the database connection, DXP and application server library locations, and required portal properties. To create the properties files ahead of time, follow the [Upgrade Tool Reference](../reference/database-upgrade-tool-reference.md). Otherwise, configure the upgrade on the fly as you run the upgrade tool next.
 
@@ -85,7 +85,7 @@ Here's how you run an upgrade using the tool:
     db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
     ```
 
-   If you haven't created [upgrade properties files](../reference/database-upgrade-tool-reference.md), the upgrade tool prompts you for configuration values, and shows default values in parentheses. Here's an example interaction:
+   If you haven't created [upgrade properties files](../reference/database-upgrade-tool-reference.md#manual-configuration), the upgrade tool prompts you for configuration values, and shows default values in parentheses. Here's an example interaction:
 
     ```
     Please enter your application server (tomcat):

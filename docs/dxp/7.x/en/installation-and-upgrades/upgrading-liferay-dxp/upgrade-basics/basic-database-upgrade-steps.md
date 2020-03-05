@@ -87,8 +87,8 @@ If the upgraded DXP database is all you need, then enjoy using your new version 
 
 * [Upgrade Overview](./upgrade-overview.md) describes all of the upgrade topics. Maybe there's a topic you still need to address.
 
-* [Using the Liferay Database Upgrade Tool](./using-the-database-upgrade-tool.md) demonstrates upgrading the database while the DXP server is offline. If auto-upgrade (above) took too long or you'd like to upgrade a larger data set or an enterprise-level DXP environment, [tuning the database, pruning unneeded data](../upgrade-stability-and-performance/database-tuning-for-upgrades), and using database upgrade tool is recommended.
+* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) demonstrates upgrading the database while the DXP server is offline. If auto-upgrade (above) took too long or you'd like to upgrade a larger data set or an enterprise-level DXP environment, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [pruning unneeded data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md), and using database upgrade tool is recommended.
 
 * [Custom Code Upgrade](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) guides you in adapting custom plugin code you've developed to the new DXP version.
 
-* [Updating a Cluster](../10-Maintaining-a-liferay-dxp-installation/10-maintaining-clusters/01-maintaining-clustered-installations.md) describes how to upgrade DXP in a clustered environment.
+* [Maintaining Clustered Installations](../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md) describes how to upgrade DXP in a clustered environment.
