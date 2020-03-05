@@ -6,7 +6,7 @@ Using Search
 
    using-search/user_guide.rst
    using-search/developer_guide.rst
-   using-search/apis.rst
+   using-search/devops.rst
 
 .. raw:: html
    :file: using-search/landing.html
