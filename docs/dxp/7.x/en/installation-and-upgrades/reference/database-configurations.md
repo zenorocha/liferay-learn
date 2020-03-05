@@ -7,7 +7,9 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 * Oracle
 * PostgreSQL
 
-> **Note:** The [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7) lists the supported databases and versions.
+```note::
+   The `Liferay DXP Compatibility Matrix <https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7>`_ lists the supported databases and versions.
+```
 
 <!-- TODO Update the matrix link to the 7.3 matrix, when it's published - jhinkey -->
 
@@ -21,16 +23,13 @@ Connecting Liferay DXP to a database requires:
 
 Once you've selected a database, follow these steps to configure it:
 
-* [Use the GMT Time Zone](#use-the-gmt-time-zone)
 * [Create a Blank Database With UTF-8 Support](#creatre-a-blank-database-with-utf-8-support)
-* [Configure Database User Access](#configure-user-database-access)
+* [Configure Database User Access](#configure-database-user-access)
 * [Configure the Query Result Sort Order (Optional)](#configure-the-query-result-sort-order-optional)
 
-> **Note:** Always consult the database vendor's documentation before modifying the database.
-
-### Use the GMT Time Zone
-
-Configure your database server to use the GMT Time Zone. Setting it to GMT preserves database integrity through Liferay DXP database upgrades, no matter the time zones you set in Liferay DXP. Refer to your database vendor documentation for details.
+```important::
+   Always consult the database vendor's documentation before modifying the database.
+```
 
 ### Create a Blank Database With UTF-8 Support
 
@@ -54,7 +53,9 @@ Your organization may have more stringent security policies that require limitin
 1. Install Liferay DXP and start it so that it automatically populates the database.
 1. Once the database has been populated with the Liferay DXP tables, remove all permissions from the Liferay DXP database user except permissions to perform Select, Insert, Update and Delete operations.
 
-> **Warning:** There are some caveats to running Liferay DXP with these constraints. Many plugins create new tables when they’re deployed. Additionally, you must manually run the database upgrade function to upgrade Liferay DXP. If the Liferay DXP database user does not have adequate rights to create/modify/drop tables in the database, you must grant those rights to that user before deploying one of these plugins or starting the Liferay DXP upgrade. Once the tables are created or the upgrade completes, you can remove those rights until the next deploy or upgrade. If your team creates plugins that create their own tables, you must similarly grant temporary rights to the Liferay DXP database user before deploying the plugin.
+```warning::
+   There are some caveats to running Liferay DXP with these constraints. Many plugins create new tables when they’re deployed. Additionally, you must manually run the database upgrade function to upgrade Liferay DXP. If the Liferay DXP database user does not have adequate rights to create/modify/drop tables in the database, you must grant those rights to that user before deploying one of these plugins or starting the Liferay DXP upgrade. Once the tables are created or the upgrade completes, you can remove those rights until the next deploy or upgrade. If your team creates plugins that create their own tables, you must similarly grant temporary rights to the Liferay DXP database user before deploying the plugin.
+```
 
 ### Configure the Query Result Sort Order (Optional)
 
@@ -81,8 +82,10 @@ If you're connecting to a proprietary database, like Oracle or DB2, download the
 
 ## Configuring a Data Source
 
-The best option for most people is to set up a built-in data source connection during [DXP startup](./running-liferay-dxp-for-the-first-time.md) using the Setup Wizard.
+The best option for most people is to set up a built-in data source connection during [DXP startup](../installing-liferay/running-liferay-dxp-for-the-first-time.md) using the Setup Wizard.
 
-![The Setup Wizard's database section lets you configure DXP's built-in data source.](./configuring-a-database/images/01.png)
+![The Setup Wizard's database section lets you configure DXP's built-in data source.](./database-configurations/images/01.png)
 
-> **Note:** If you're using a data source managed on your application server. See the instructions for your application server: [Tomcat](../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md), [WildFly](../installing-liferay/installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md), [JBoss EAP](../installing-liferay/installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md), [WebLogic](../installing-liferay/installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md), or [WebSphere](../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md).
+```note::
+If you're using a data source managed on your application server. See the instructions for your application server: `Tomcat <../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md>`_, `WildFly <../installing-liferay/installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md>`_, `JBoss EAP <../installing-liferay/installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md>`_, `WebLogic <../installing-liferay/installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md>`_, or `WebSphere <../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md>`_.
+```
