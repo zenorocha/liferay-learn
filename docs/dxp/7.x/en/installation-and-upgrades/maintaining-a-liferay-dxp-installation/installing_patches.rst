@@ -12,7 +12,7 @@ Installing Patches
    installing-patches/configuring-the-patching-tool.md
    installing-patches/working-with-patches.md
    installing-patches/keeping-up-with-fix-packs.md
-   installing-patches/updating-dxp-ce.md
+   installing-patches/updating-community-edition.md
 
 .. include:: /installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/README.rst
 	:start-line: 2

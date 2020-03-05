@@ -9,4 +9,4 @@ Installing Patches
 -  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/configuring-the-patching-tool`
 -  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/working-with-patches`
 -  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/keeping-up-with-fix-packs`
--  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/updating-dxp-ce`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/updating-community-edition`
