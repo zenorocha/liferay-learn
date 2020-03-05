@@ -63,7 +63,7 @@ To activate a workflow for a _Web Content Folder_:
 1. Select the workflow definition ( for example, _Single Approver_).
 1. Click the _Save_ button.
 
-### Document and Media Folders
+### Documents and Media Folders
 
 Workflow can be enabled for the entire _Documents and Media_ application in the _Root_ folder or for individual folders.
 

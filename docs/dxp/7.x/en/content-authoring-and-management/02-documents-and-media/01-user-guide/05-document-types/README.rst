@@ -1,4 +1,0 @@
-Document Types
-==============
-
-Coming soon!

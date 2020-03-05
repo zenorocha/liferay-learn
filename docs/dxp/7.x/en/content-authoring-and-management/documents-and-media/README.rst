@@ -6,11 +6,13 @@ User Guide
 
 Managing Documents, Images, and Video
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Coming soon!
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/managing-folders`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/uploading-files`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/document-types/documents-and-media-permissions-reference`
 
 Displaying Documents in a Site
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Coming soon!
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/using-the-media-gallery
 
 Image Editor
 ~~~~~~~~~~~~
@@ -22,7 +24,8 @@ Coming soon!
 
 Document Types
 ~~~~~~~~~~~~~~
-Coming soon!
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/document-types/creating-document-types`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/document-types/creating-metadata-sets`
 
 Connectors
 ~~~~~~~~~~

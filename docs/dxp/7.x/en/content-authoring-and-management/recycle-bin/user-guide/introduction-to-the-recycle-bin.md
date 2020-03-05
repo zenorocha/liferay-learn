@@ -1,6 +1,6 @@
 # Introduction to the Recycle Bin
 
-Assets that are deleted are placed it in the Recycle Bin. Assets in the Recycle Bin can be restored by users. Assets in the Recycle Bin can expire after a configured period of time, resulting in permanent deletion. By default, the Recycle Bin is enabled instance-wide and can be disabled on a site by site basis.
+Assets that are deleted are placed in the Recycle Bin. Assets in the Recycle Bin can be restored by users. Assets in the Recycle Bin can expire after a configured period of time, resulting in permanent deletion. By default, the Recycle Bin is enabled instance-wide and can be disabled on a site by site basis.
 
 With the Recycle Bin enabled, the _Move to the Recycle Bin_ action replaces _Delete_ for certain asset types. <!-- What asset types? -->
 

@@ -30,11 +30,15 @@ Documents and Media
 User Guide
 ~~~~~~~~~~
 
-* Managing Documents, Images, and Video
-* Displaying Documents in a Site
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/managing-folders`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/uploading-files`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/using-the-media-gallery`
 * Image Editor
 * Image Auto Tagging
-* Document Types
+* Checking Out and Editing Files
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/document-types/creating-document-types`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/document-types/creating-metadata-sets`
+-  :doc:`/content-authoring-and-management/documents-and-media/user-guide/document-types/documents-and-media-permissions-reference`
 * Connectors
 
 Developer Guide
