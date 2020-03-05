@@ -1,6 +1,6 @@
 # Backing Up
 
-Once you have your DXP installation running, you should implement a comprehensive backup plan. In case some kind of catastrophic hardware failure occurs, you'll be thankful to have backups and procedures for restoring DXP from one of them. The backup copies are also valuable for testing updates (e.g., DXP upgrades, new plugins, and more). In this way, DXP backups and updates work hand in hand.
+Once you have your DXP installation running, you should implement a comprehensive backup plan that accounts for unforeseen events. Backup copies are also valuable for testing updates (e.g., DXP upgrades, new plugins, and more).
 
 When considering a back up plan for Liferay DXP, we recommend backing up the following areas:
 
