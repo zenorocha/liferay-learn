@@ -28,8 +28,8 @@ Upgrade processes in DXP and in some Marketplace apps use portal properties and 
 
 Here are the settings updates DXP upgrade processes require:
 
-* [Document library store implementation name](#document-library-store-implementation-name)
 * [Database driver](#database-driver)
+* Document library store implementation name (See [Updating the File Store](./updating-the-file-store#updating-the-store implementation-class-name))
 
 ```important::
    Check your Marketplace apps and custom code for settings updates they require.
@@ -60,12 +60,13 @@ The properties discussed here can be updated after database upgrade. Here are th
 
 ### Property Updates
 
-If you're coming from a version prior to Liferay Portal 6.2, start with these
-property-related updates:
+New versions of Liferay introduce new and modified properties.
 
-* If you're on Liferay Portal 6.1, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults).
+* If you're on Liferay Portal 6.1 or earlier, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults).
 
 * If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md).
+
+* Examine the default settings changes in 7.0+ [here](../reference/changes-to-default-settings.md).
 
 * Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (since 7.2) value with the following setting in your [`portal-ext.properties`](../../reference/portal-properties.md) file:
 
