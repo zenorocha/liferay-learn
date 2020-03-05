@@ -1,6 +1,6 @@
 # Working with Search Pages
 
-If you have a running Liferay DXP with some content in it, navigate to [localhost:8080/web/guest/search](http://localhost:8080/web/guest/search). This is the default search page, a hidden page in the default site that's based on a Globally scoped page template. Search pages are where users go to enter search terms and browse search results. Users with the proper permissions can add, remove, and configure the Page's search widgets to provide the precise search experience needed for the Site's Users. While Search Pages are highly configurable, the [default](#default-search-pages) configuration is handy. It provides a sensible starting point that can be modified later, as needed.
+If you have a running Liferay DXP with some content in it, navigate to [localhost:8080/web/guest/search](http://localhost:8080/web/guest/search) and execute a search. This is the default search page, a hidden page in the default site that's based on a Globally scoped page template. Search pages are where users are routed when they enter search terms in a Search Bar widget, and where they browse search results. Users with the proper permissions can add, remove, and configure the page's search widgets to provide the precise search experience needed for the Site's Users. While Search Pages are highly configurable, the [default](#default-search-pages) configuration is handy. It provides a sensible starting point that can be modified later, as needed.
 
 Newly created sites do not get a Search Page created by default. You'll need to create one. You can use the page template or, if you're in need of a fully customized experience, [build your own search page from the ground up.](#manual-search-page-configuration)
 
@@ -17,7 +17,7 @@ The default search page is backed by a Global scope page template, and manually 
 
 Out-of-the-box, the Search Page Template includes a Search Bar, Search Results, Search Suggestions, Search Options, and a bunch of Search Facets:
 
-![](./working-with-search-pages/images/01.png)
+![The Search Page template gets you up and running.](./working-with-search-pages/images/01.png)
 
 By default, all widgets use the _Barebone_ Application Decorator: unless there's content to render in the widget, the widget body is hidden. The header and the widget options icon are displayed if you hover over the widget with your mouse. Because of this, when you visit a search page created from the default search page template, you won't see certain widgets fully rendered.
 
