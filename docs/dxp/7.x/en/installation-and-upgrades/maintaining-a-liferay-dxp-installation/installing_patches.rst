@@ -6,7 +6,7 @@ Installing Patches
 
    installing-patches/introduction-to-installing-patches.md
    installing-patches/patch-types.md
-   installing-patches/the-patching-process.md
+   installing-patches/patching-process-overview.md
    installing-patches/patching-the-dxp-war.md
    installing-patches/installing-the-patching-tool.md
    installing-patches/configuring-the-patching-tool.md
