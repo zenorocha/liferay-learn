@@ -1,11 +1,15 @@
 # Configuring Search
 
+Coming soon!
+
+<!-- I commented out everything here because it's an overwhelming amount of information and I am not sure about what the identity/goal of this article is. Is it primarily a configuration reference? "Here's all the configurations, organized by scope, and a description of what the configuratoins are for" - is the takeaway from this article. If it is, then it maybe is better titled as a something like "Search Configuration Reference"
+
 Search in Liferay DXP can be configured in lots of ways. Once you understand the concept of [configuration scope](https://help.liferay.com/hc/en-us/articles/360029131551-Introduction-to-Setting-Up#configuration-scope), you'll understand where to find a certain configuration screen.
 
-- Many search configurations affect the system scope (e.g., re-indexing actions and configuring the search engine connector).
-- Search tuning configurations affect the virtual instance.
-- Creating new Search Pages affects search at the site scope.
-- Configuring the search widgets is widget-scoped configuration, but some can also be thought of as page-scoped configuration.
+* Many search configurations affect the system scope (e.g., re-indexing actions and configuring the search engine connector).
+* Search tuning configurations affect the virtual instance.
+* Creating new Search Pages affects search at the site scope.
+* Configuring the search widgets is widget-scoped configuration, but some can also be thought of as page-scoped configuration.
 
 ![Many of the Search configuration screens are found in System Settings.](./configuring-search/images/04.png)
 
@@ -23,10 +27,10 @@ Several search widgets are available to place on Pages. Each one has its own con
 
 **Search Facets**: Configure each facet's behavior and URL parameters. See [here](https://help.liferay.com/hc/en-us/articles/360029133851-Facets) for more information.
 
-**Search Options**: This is a special case, where configuring this widget defines page scoped behavior. Add the Search Option widget to a page and define two booleans for the Search Page: 
+**Search Options**: This is a special case, where configuring this widget defines page scoped behavior. Add the Search Option widget to a page and define two booleans for the Search Page:
 
-- Allow Empty Searches: By default, failure to enter a keyword returns no results. Enabling this ensure that _all_ results are returned when no keyword is entered in the Search Bar.
-- Basic Facet Selection: By default, facet counts are recalculated after each facet selection. Enable this to turn off facet recounting.
+* Allow Empty Searches: By default, failure to enter a keyword returns no results. Enabling this ensure that _all_ results are returned when no keyword is entered in the Search Bar.
+* Basic Facet Selection: By default, facet counts are recalculated after each facet selection. Enable this to turn off facet recounting.
 
 **Search Suggestions**: Suggest better queries and spell check queries. See [here](https://help.liferay.com/hc/en-us/articles/360029133811-Searching-for-Assets#search-suggestions) for more information.
 
@@ -55,9 +59,9 @@ If the Header Search (the search bar embedded in the default theme) uses the Sea
 The Search Bar widget is instanceable, so one page can contain multiple Search Bar widgets configured differently. All Search Bar instances must point to a Search Page within the Site to be effective.
 
 ```important::
-    If the destination Search Page has a Search Bar widget instance besides the embedded Header Search, the configurations of the Header Search take precedence over the page's widget instance. 
+    If the destination Search Page has a Search Bar widget instance besides the embedded Header Search, the configurations of the Header Search take precedence over the page's widget instance.
 
-    Conversely, searching from a Search Bar widget instance on other pages honors their configurations, even if they differ from the Header Search configuration. 
+    Conversely, searching from a Search Bar widget instance on other pages honors their configurations, even if they differ from the Header Search configuration.
 ```
 
 See the documentation on [configuring a Search Bar](https://help.liferay.com/hc/en-us/articles/360029133811-Searching-for-Assets#configuring-the-search-bar) for more information.
@@ -74,9 +78,9 @@ The only instance scoped configuration for search are the entries in Control Pan
 
 System scoped search configurations are primarily found in [System Settings](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings).
 
-1.  Go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
+1. Go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
 
-2.  Click the *Search* category under the Platform section.
+1. Click the *Search* category under the Platform section.
 
     Alternatively, search for *search*.
 
@@ -92,9 +96,9 @@ The Default Keyword Query entry contains one setting:
 
 The Default Search Result Permission Filter entry allows configuration of *post-filtering permission checking* (database permission checking that occurs after the results are returned from the search index). Read [here](https://help.liferay.com/hc/en-us/articles/360029134011-Search-Results-Behavior#final-permissions-checking) for more information on these settings:
 
-- **`permissionFilteredSearchResultAccurateCountThreshold`**
+* **`permissionFilteredSearchResultAccurateCountThreshold`**
 
-- **`searchQueryResultWindowLimit`**
+* **`searchQueryResultWindowLimit`**
 
 ### Index Status Manager
 
@@ -116,7 +120,7 @@ Configure the buffering of index requests:
 
 **`bufferedExecutionMode`**: Allow administrators to select a different `IndexerRequestBufferExecutor`, used to execute a `IndexerRequest`. One implementation of the executor is provided out of the box (_DEFAULT_). When a new `IndexerRequestBufferExecutor` implementation is deployed, one of the required properties is a `buffered.execution.mode`. This value can then be used in place of _DEFAULT_.
 
-**`maximumBufferSize`**: If buffering is enabled, set the Maximum Buffer Size so that any additional indexing requests are executed immediately. 
+**`maximumBufferSize`**: If buffering is enabled, set the Maximum Buffer Size so that any additional indexing requests are executed immediately.
 
 **`minimumBufferAvailabilityPercentage`**: When the capacity of the buffer has only the specified percent of space left, the existing requests in the buffer are executed in one batch and removed from the buffer.
 
@@ -134,7 +138,7 @@ This entry contains only one property:
 
 ### Engine Helper
 
-This entry has one repeatable property (use array syntax if you're defining via 
+This entry has one repeatable property (use array syntax if you're defining via
 [OSGi configuration file](https://help.liferay.com/hc/en-us/articles/360029131671-Creating-Configuration-Files)):
 
 **`excludedEntryClassNames`**: Exclude an asset type from being searched in the catchall query constructed for the Search application. For example, fields of the Organization asset must be indexed to be searchable from the Users and Organizations application, but should not be searched in the Search application. Thus, Organizations are added to `excludedEntryClassNames`.
@@ -163,31 +167,31 @@ You'll only see this entry if you have deployed the Cross-Cluster Replication mo
 
 ### Search Web
 
-This entry contains one property: `classicSearchPortletInFrontPage`: Revert the default search experience from using the new Search Widgets to the classic Search Portlet that was standard in past releases.
+This entry contains one property: `classicSearchPortletInFrontPage`: Revert the default search experience from using the new Search Widgets to the classic Search Portlet that was standard in past releases. -->
 
-<!-- Need coverage of some new 7.3 screens and the LES/DXP only screens: Similar Results Web Template Configuration Name (DXP only), Search Results Web Template (new in 7.3), X-Pack Monitoring (LES only), X-Pack Security (default now), Learning to Rank (LES only). There are also widget scoped sys settings for Similar Results Configuration and a lot of other widgets we could just briefly mention --> 
+<!-- Need coverage of some new 7.3 screens and the LES/DXP only screens: Similar Results Web Template Configuration Name (DXP only), Search Results Web Template (new in 7.3), X-Pack Monitoring (LES only), X-Pack Security (default now), Learning to Rank (LES only). There are also widget scoped sys settings for Similar Results Configuration and a lot of other widgets we could just briefly mention -->
 
-### Search Administration
+<!-- ### Search Administration
 
 In *Control Panel* &rarr; *Configuration* &rarr; *Search* there are three administrative UIs: Connections, Index Actions, and Field Mappings.
 
 #### Connections
 
-Information about the search engine connection(s) is displayed here. For example, 
+Information about the search engine connection(s) is displayed here. For example,
 
 ```bash
 Search Engine Vendor: Elasticsearch (Embedded), Client Version: 6.5.0, Nodes: A0D6GlN (6.5.0)
-```
+``` -->
 
 <!-- Left a screenshot out on purpose, since this is still changing -->
 
-#### Index Actions
+<!-- #### Index Actions
 
 In Index Actions, re-index at one of these levels:
 
-    - All indexable assets
-    - An individual indexable asset
-    - All spell check indexes
+    * All indexable assets
+    * An individual indexable asset
+    * All spell check indexes
 
 #### Field Mappings
 
@@ -195,4 +199,4 @@ The Field Mappings tab shows you all field mappings that are effective in the sy
 
 ### Portal Properties
 
-Portal properties are system scoped as well. The [Lucene Search](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Lucene%20Search) portal properties configure low level search behavior. Review the properties and their descriptions and determine if they apply to your search requirements.
+Portal properties are system scoped as well. The [Lucene Search](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Lucene%20Search) portal properties configure low level search behavior. Review the properties and their descriptions and determine if they apply to your search requirements. -->

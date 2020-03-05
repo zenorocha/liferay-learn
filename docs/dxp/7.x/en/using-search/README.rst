@@ -1,8 +1,6 @@
 Using Search
 ============
 
-* Introduction to Search
-
 User Guide
 ----------
 

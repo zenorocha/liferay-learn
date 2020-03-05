@@ -4,5 +4,8 @@ User Guide
 .. toctree::
    :maxdepth: 2
 
-.. include:: /using-search/01-user-guide/README.rst
+   user-guide/search-overview.md
+   user-guide/configuring-search.md
+
+.. include:: /using-search/user-guide/README.rst
    :start-line: 2
