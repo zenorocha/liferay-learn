@@ -142,7 +142,7 @@ Specify the following information to configure the upgrade:
 
 * `liferay.home`: The [LIFERAY_HOME folder](../../reference/liferay-home.md).
 
-* `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you [updated this property in your `portal-ext.properties`](./preparing-a-new-application-server.md#configure-your-documents-and-media-file-store), copy the new value here. Otherwise, set the property one of these ways:
+* `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you updated this property in your `portal-ext.properties`, copy the new value here. Otherwise, set the property one of these ways:
 
 ```properties
 dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore

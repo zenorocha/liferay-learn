@@ -53,7 +53,7 @@ Here is how to configure the upgrade to migrate from sharding:
 
 ## Upgrade and Update Properties
 
-When you perform the database upgrade, upgrade the default shard first, and then each of the non-default shards. See [Using the Database Upgrade Tool](../upgrade-basics/using-thedatabase-upgrade-tool.md) for more information on running the database upgrade.
+When you perform the database upgrade, upgrade the default shard first, and then each of the non-default shards. See [Using the Database Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md) for more information on running the database upgrade.
 
 After the database upgrade has been completed, make the following configuration changes to your application servers:
 
