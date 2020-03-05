@@ -8,6 +8,7 @@ Reference
    reference/portal-properties.md
    reference/system-properties.md
    reference/database-templates.md
+   reference/database-configurations.md
    reference/jvm-configurations.md
    reference/liferay-upgrade-planner-steps.md
    reference/comparing-patch-levels.md
