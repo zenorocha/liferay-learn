@@ -6,7 +6,7 @@ Upgrade Basics
 
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview`
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-basics/basic-database-upgrade-steps`
--  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-basics/using-the-database-upgrade-tool
+-  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-basics/using-the-database-upgrade-tool`
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-basics/post-upgrade-considerations`
 
 Configuration and Infrastructure
