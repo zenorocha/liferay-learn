@@ -11,7 +11,7 @@ When considering a back up plan for Liferay DXP, we recommend backing up the fol
 * [Source Code](#source-code)
 
 ```note::
-   DXP Cloud automates and simplifies the process of creating and managing backups of the Document Library and Liferay DXP database. And because DXP Cloud uses a Git-based DevOps pipeline, all configurations for Liferay are also automatically backed up as well. To learn more, see `DXP Cloud Backup Service <https://learn.liferay.com/dxp-cloud-latest/platform-services/backup-service.html>`_ for more information.
+   DXP Cloud automates and simplifies the process of creating and managing backups of the Document Library and Liferay DXP database. Because DXP Cloud uses a Git-based DevOps pipeline, all configurations for Liferay are also automatically backed up as well. To learn more, see `DXP Cloud Backup Service <https://learn.liferay.com/dxp-cloud-latest/platform-services/backup-service.html>`_ for more information.
 ```
 
 ## Liferay Home
@@ -30,10 +30,6 @@ The Liferay Home folder is important to back up because it contains the followin
 
 Using a source control repository such as Git, BitBucket, Subversion, or CVS, is a great way to back up your Liferay Home folder.
 
-```tip::
-   Using a source control repository and an orchestration tool such as `Jenkins <https://jenkins.io/>`_ is recommended for promoting DXP environments through `DevOps <https://en.wikipedia.org/wiki/DevOps>`_ pipelines.
-```
-
 ```important::
    If you configured your `Documents and Media repository <https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration>`_ to a location other than the default location, back up that location.
 ```
@@ -46,7 +42,13 @@ The application server has the DXP descriptors, deployments, and dependencies yo
 
 DXP's database is the central repository for all of the portal's information. It's the most important component to back up. You can back up the database live (if your database allows this) or by exporting (dumping) the database into a file and then backing up the exported file.
 
-For example, MySQL's `mysqldump` utility exports the entire database and data into a large SQL file. This file can then be backed up. On restoring the database you can import this file into the database to recreate the database state to that of the time you exported the database.
+For example, [MySQL's `mysqldump`](https://dev.mysql.com/doc/refman/5.7/en/using-mysqldump.html) utility exports the entire database and data into a large SQL file:
+
+```bash
+mysqldump --databases my-liferay-database > my-liferay-database-backup.sql
+```
+
+This file can then be backed up. On restoring the database you can import this file into the database to recreate the database state to that of the time you exported the database.
 
 ## Search Indexes
 

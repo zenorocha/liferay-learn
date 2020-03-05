@@ -1,12 +1,12 @@
-Maintaining Clusters
-====================
+Maintaining Clustered Installations
+===================================
 
 .. toctree::
    :maxdepth: 2
 
-   maintaining-clusters/maintaining-clustered-installations.md
-   maintaining-clusters/rolling-restarts.md
-   maintaining-clusters/blue-green-deployments.md
+   maintaining-clustered-installations/maintaining-clustered-installations.md
+   maintaining-clustered-installations/rolling-restarts.md
+   maintaining-clustered-installations/blue-green-deployments.md
 
-.. include:: /installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/README.rst
+.. include:: /installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/README.rst
 	:start-line: 2
