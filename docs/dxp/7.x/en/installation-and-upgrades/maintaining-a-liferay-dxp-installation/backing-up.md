@@ -6,7 +6,7 @@ When considering a back up plan for Liferay DXP, we recommend backing up the fol
 
 * [Liferay Home directory](#liferay-home)
 * [Application Server](#application-server)
-* [Liferay Database](#liferay-database)
+* [Database](#database)
 * [Search Indexes](#search-indexes)
 * [Source Code](#source-code)
 
