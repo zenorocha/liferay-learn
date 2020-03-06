@@ -4,9 +4,9 @@ Blogs
 .. toctree::
    :maxdepth: 3
 
-   03-blogs/user_guide.rst
-   03-blogs/developer_guide.rst
-   03-blogs/apis.rst
+   blogs/user_guide.rst
+   blogs/developer_guide.rst
+   blogs/apis.rst
 
-.. include:: /content-authoring-and-management/03-blogs/README.rst
+.. include:: /content-authoring-and-management/blogs/README.rst
    :start-line: 2
