@@ -7,7 +7,9 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 * Oracle
 * PostgreSQL
 
-> **Note:** The [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7) lists the supported databases and versions.
+```important::
+   The `Liferay DXP Compatibility Matrix <https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7>`_ lists the supported databases and versions.
+```
 
 <!-- TODO Update the matrix link to the 7.3 matrix, when it's published - jhinkey -->
 
@@ -32,7 +34,9 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 Congratulations! You configured a database for Liferay DXP.
 
-> **Note:** For database configuration details, see the [Database Configuration Reference](../reference/database-templates.md)
+```note::
+   For database configuration details, see the `Database Configuration Reference <../reference/database-configurations.md>`_.
+```
 
 ## Next Steps
 
