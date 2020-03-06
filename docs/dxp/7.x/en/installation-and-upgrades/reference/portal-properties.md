@@ -5,7 +5,7 @@ All the configurations that DXP requires to run out-of-the-box are specified usi
 While some properties can be changed through the user interface (UI) once application server startup completes, other properties must be changed in a properties file before the server is started. Some examples of configurations that _must_ be done through a properties file include but are not limited to: connecting to a database, declaring the location of the [`[Liferay Home]`](./liferay-home.md) folder, changing how users authenticate (by screen name instead of by email address), and increasing the size limit for file uploads.
 
 ```warning::
-   Never directly modify the `portal-impl.jar/portal.properties` file; rather, use another properties file (an extension file) to override properties you want to change. The typical extension file to create is called `portal-ext.properties`, in your ``[Liferay Home]` <./liferay-home.md>`_ or `[USER_HOME]` folder.
+   Never directly modify the portal-impl.jar/portal.properties file; rather, use another properties file (an extension file) to override properties you want to change. The typical extension file to create is called portal-ext.properties, in your `[Liferay Home] <./liferay-home.md>`_ or [USER_HOME] folder.
 ```
 
 Using Portal Properties to configure a DXP installation is the most common and recommended method of configuring Liferay DXP and also provides the following benefits:
@@ -33,7 +33,7 @@ jdbc.default.password=123456
 
 For more database configuration details, see [Database Configurations](./database-configurations.md) and [Database Templates](./database-templates.md).
 
-### Setting Liferay Home
+### Setting the Location of Liferay Home
 
 Some application servers (e.g., WebLogic) require customizing the [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028831932-Installing-Liferay-DXP-on-WebLogic-12c-R2) location before deploying the DXP WAR file. The [`liferay.home`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Liferay%20Home) property lets you set the location.
 
@@ -41,19 +41,17 @@ Some application servers (e.g., WebLogic) require customizing the [Liferay Home]
 liferay.home=/home/jbloggs/liferay
 ```
 
-<!-- ### Changing How Users Authenticate
+### Changing How Users Authenticate
 
 To change how users authenticate to your Liferay DXP server the following to your `portal-ext.properties` file.
 
 ```properties
-#company.security.auth.type=emailAddress
-company.security.auth.type=screenName
+company.security.auth.type=emailAddress
+#company.security.auth.type=screenName
 #company.security.auth.type=userId
-``` -->
+```
 
-<!-- ### Increasing the Size Limit for File Uploads -->
-
-## Configuration Prioritization
+## Configuration Priority
 
 There are nuances to configuring Liferay where some configurations can be set in multiples places - whether in the multiple portal properties files or the UI.
 
@@ -86,5 +84,5 @@ Some Portal Properties are available to change as [System Settings](https://help
 
 ## Additional Information
 
-* [Portal Properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html)
+* [7.2 Portal Properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html)
 * [System Settings](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings)

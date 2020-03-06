@@ -9,4 +9,3 @@ Reference
 -  :doc:`/installation-and-upgrades/reference/liferay-upgrade-planner-steps`
 -  :doc:`/installation-and-upgrades/reference/comparing-patch-levels`
 -  :doc:`/installation-and-upgrades/reference/patching-tool-configuration-properties`
--  :doc:`/installation-and-upgrades/reference/mail-server-reference`
