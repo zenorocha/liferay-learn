@@ -77,8 +77,8 @@ If you're connecting to a proprietary database, like Oracle or DB2, download the
 
 | Database | Connector | Vendor Site | Notes |
 | :------- | :-------- | :---------- | :---- |
-| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
 | DB2 | `db2jcc4.jar` | [IBM](https://www.ibm.com/) |  The `dbc2jcc` connector has been deprecated after 3.72. |
+| Oracle | `ojdbc8.jar` | [Oracle](https://www.oracle.com/index.html) | The `ojdbc8.jar` library with at least Oracle 12.2.0.1.0 JDBC 4.2 versioning is required because of [data truncation issues](https://issues.liferay.com/browse/LPS-79229) that have been detected reading data from CLOB columns. |
 
 ## Configuring a Data Source
 
@@ -87,5 +87,5 @@ The best option for most people is to set up a built-in data source connection d
 ![The Setup Wizard's database section lets you configure DXP's built-in data source.](./database-configurations/images/01.png)
 
 ```note::
-If you're using a data source managed on your application server. See the instructions for your application server: `Tomcat <../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md>`_, `WildFly <../installing-liferay/installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md>`_, `JBoss EAP <../installing-liferay/installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md>`_, `WebLogic <../installing-liferay/installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md>`_, or `WebSphere <../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md>`_.
+   If you're using a data source managed on your application server. See the instructions for your application server: `Tomcat <../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md>`_, `WildFly <../installing-liferay/installing-liferay-on-an-application-server/02-installing-liferay-on-wildfly.md>`_, `JBoss EAP <../installing-liferay/installing-liferay-on-an-application-server/03-installing-liferay-on-jboss-eap.md>`_, `WebLogic <../installing-liferay/installing-liferay-on-an-application-server/04-installing-liferay-on-weblogic.md>`_, or `WebSphere <../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-websphere.md>`_.
 ```
