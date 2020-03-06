@@ -1,4 +1,4 @@
-# Collaboration and Social
+# Collaboration and Social Overview
 
 Liferay DXP empowers users to build robust communities with flexible, social, and extensible collaborative applications.
 

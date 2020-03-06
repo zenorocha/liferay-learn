@@ -1,0 +1,120 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Message Boards',
+					sectionURL: 'collaboration-and-social/message_boards.html',
+					subsections: [
+						{
+							name: 'Getting Started with Message Boards',
+							url: 'collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.html'
+						},
+						{
+							name: 'Creating Message Boards Threads',
+							url: 'collaboration-and-social/message-boards/user-guide/creating-message-boards-threads.html'
+						},
+						{
+							name: 'Configuring a Message Boards Mailing List',
+							url: 'collaboration-and-social/message-boards/user-guide/configuring-a-message-boards-category-mailing-list.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Notifications and Requests',
+					sectionURL: 'collaboration-and-social/notifications_and_requests.html',
+					subsections: [
+						{
+							name: 'Mentioning Users',
+							url: 'collaboration-and-social/notifications-and-requests/user-guide/mentioning-users.html'
+						},
+						{
+							name: 'Managing Notifications and Requests',
+							url: 'collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.html'
+						},
+						{
+							name: 'Configuring Mentions',
+							url: 'collaboration-and-social/notifications-and-requests/user-guide/configuring-mentions.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Social Tools',
+					sectionURL: 'collaboration-and-social/social_tools.html',
+					subsections: [
+						{
+							name: 'Using the Activities Widget',
+							url: 'collaboration-and-social/social-tools/user-guide/using-the-activities-widget.html'
+						},
+						{
+							name: 'Using the Contacts Center Widget',
+							url: 'collaboration-and-social/social-tools/user-guide/using-the-contacts-center-widget.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Wiki',
+					sectionURL: 'collaboration-and-social/wiki.html',
+					subsections: [
+            {
+							name: 'Getting Started with Wikis',
+							url: 'collaboration-and-social/wiki/user-guide/getting-started-with-wikis.html'
+						},
+						{
+							name: 'Creating Wiki Pages',
+							url: 'collaboration-and-social/wiki/user-guide/creating-wiki-pages.html'
+						},
+						{
+							name: 'Wiki Widget UI Reference',
+							url: 'collaboration-and-social/wiki/user-guide/wiki-widget-ui-reference.html'
+						},
+          ]
+				},
+				{
+					sectionName: 'Alerts and Announcements',
+					sectionURL: 'collaboration-and-social/alerts_and_announcements.html',
+					subsections: [
+					]
+				},
+				{
+					sectionName: 'Invitations',
+					sectionURL: 'collaboration-and-social/invitations.html',
+					subsections: [
+					]
+        },
+				{
+					sectionName: 'Knowledge Base',
+					sectionURL: 'collaboration-and-social/knowledge_base.html',
+					subsections: [
+					]
+				},
+			]
+		}
+	})
+</script>
