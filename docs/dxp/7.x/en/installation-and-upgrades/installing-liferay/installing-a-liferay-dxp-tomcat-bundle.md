@@ -7,7 +7,7 @@ The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP
 ```
 
 ```note::
-   To start a Liferay DXP instance fast for touring or demonstration purposes, see `Starting with the DXP Docker Image <../../getting-started/starting-with-the-dxp-docker-image.md>`_.
+   To start a Liferay DXP instance fast for touring or demonstration purposes, see `Starting with a DXP Docker Image <../../getting-started/starting-with-a-dxp-docker-image.md>`_.
 ```
 
 ## Prerequisites
