@@ -29,8 +29,8 @@ jdbc.default.password=
 ```properties
 jdbc.default.driverClassName=org.postgresql.Driver
 jdbc.default.url=jdbc:postgresql://localhost:5432/lportal
-jdbc.default.username=sa
-jdbc.default.password
+jdbc.default.username=
+jdbc.default.password=
 ```
 
 See the [default portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#JDBC) for more database templates.
