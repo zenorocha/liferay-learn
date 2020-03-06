@@ -19,7 +19,7 @@ Here's how to enter the Marketplace from within DXP:
 1. In the Control Panel, navigate to *Apps* &rarr; *Store*.
 
 1. Sign in with your liferay.com account.
-`Adding a Page to a Site <../02-creating-pages/README.md>`_ 
+
 ``` important::
    Purchasing apps requires that you have a `liferay.com <https://www.liferay.com>`_ account and agree to the Marketplace Terms of Use.
 ```
