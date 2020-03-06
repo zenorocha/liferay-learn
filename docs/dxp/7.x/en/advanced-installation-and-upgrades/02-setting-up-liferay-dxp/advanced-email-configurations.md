@@ -1,6 +1,6 @@
 # Advanced Email Configurations
 
-This article documents advanced email configurations. The simplest way to get started is to [use Gmail to send email notifications](./using-gmail-for-email-notifications.md). Administrators have the option to configure the built-in mail session using Portal Properties or use their application server's mail session.
+This article documents advanced email configurations. The simplest way to get started is to [use Gmail to send email notifications](./connecting-to-a-mail-server.md). Administrators have the option to configure the built-in mail session using Portal Properties or use their application server's mail session.
 
 ## Configuring the Built-in Mail Session Using Portal Properties
 

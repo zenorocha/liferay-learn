@@ -2,7 +2,7 @@ Setting Up Liferay DXP
 ======================
 
 -  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/setting-up-liferay-dxp`
--  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/using-gmail-for-email-notifications`
+-  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/connecting-to-a-mail-server`
 -  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/advanced-email-notifications`
 -  :doc:`/advanced-installation-and-upgrades/02-setting-up-liferay-dxp/mail-server-configuration-reference`
 * Installing a Search Engine

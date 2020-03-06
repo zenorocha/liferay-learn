@@ -1,4 +1,4 @@
-# Using Gmail for Email Notifications
+# Connecting to a Mail Server
 
 Liferay DXP can be configured to use a mail server to send email notifications for a variety of purposes: user registration and password management, site membership notifications, and content updates. This article will demonstrate how to configure DXP to use Gmail as its mail server.
 
@@ -24,7 +24,7 @@ Follow these steps to configure the mail session from the Control Panel:
     * **Password:** *****
     * **Manually specify additional JavaMail properties to override the above configuration:** If there are additional properties you need to specify, supply them here.
 
-      ![Configuring a Mail Server](./using-gmail-for-email-notifications/images/01.png)
+      ![Configuring a Mail Server](./connecting-to-a-mail-server/images/01.png)
 
 1. Click *Save*.
 
