@@ -10,5 +10,5 @@ Building Solutions on DXP
    building-solutions-on-dxp/building_a_public_website.rst
    building-solutions-on-dxp/building_an_integration_platform.rst
 
-.. include:: /building-solutions-on-dxp/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: building-solutions-on-dxp/landing.html

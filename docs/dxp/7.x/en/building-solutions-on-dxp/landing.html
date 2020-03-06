@@ -1,0 +1,54 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Building an Intranet (Coming Soon)',
+					sectionURL: 'building-solutions-on-dxp/building_an_intranet.html',
+				},
+				{
+					sectionName: 'Building a Partner Portal (Coming Soon)',
+					sectionURL: 'building-solutions-on-dxp/building_a_partner_portal.html',
+        },
+				{
+					sectionName: 'Building a Customer Portal (Coming Soon)',
+					sectionURL: 'building-solutions-on-dxp/building_a_customer_portal.html',
+        },
+				{
+					sectionName: 'Building a Public Website (Coming Soon)',
+					sectionURL: 'building-solutions-on-dxp/building_a_public_website.html',
+        },
+				{
+					sectionName: 'Building an Integration Platform (Coming Soon)',
+					sectionURL: 'building-solutions-on-dxp/building_an_integration_platform.html',
+        },
+			]
+		}
+	})
+</script>
