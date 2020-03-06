@@ -6,7 +6,8 @@ User Guide
 
 Web Content Articles
 ~~~~~~~~~~~~~~~~~~~~
-Coming soon!
+
+-  :doc:`/content-authoring-and-management/web-content/user-guide/web-content-articles/adding-a-basic-web-content-article`
 
 Web Content Structures
 ~~~~~~~~~~~~~~~~~~~~~~

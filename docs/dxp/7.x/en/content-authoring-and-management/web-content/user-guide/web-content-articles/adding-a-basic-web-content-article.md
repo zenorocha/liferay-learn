@@ -1,6 +1,6 @@
-# Adding Web Content Articles
+# Adding a Basic Web Content Article
 
-Web content is the most practical method of creating content to Users in DXP. Once they are created, web content articles can be displayed through widgets on pages, or on special [display pages](https://help.liferay.com/hc/en-us/articles/360029133291-Creating-Display-Page-Templates) designed specifically to display the content.
+Web content is one of the most practical and essential methods for creating site content in DXP. Web content articles can be displayed through widgets on pages, or on special [display pages](https://help.liferay.com/hc/en-us/articles/360029133291-Creating-Display-Page-Templates) designed specifically to display the content.
 
 All web content articles are based on a structure that defines the fields available to it. <!-- TODO: See the [Introduction to Web Content Structures](../web-content-structures/introduction-to-web-content-structures.md) for more information.--> DXP provides one default structure out-of-the-box, _Basic Web Content._ The steps below will use this default structure.
 
@@ -12,11 +12,11 @@ Use the following steps to create a _Basic Web Content_ article:
 
 1. On the _Web Content_ screen, click the add ![Add icon](../../../../images/icon-add.png) button, and then click _Basic Web Content_ in the menu that appears.
 
-	![The Web Content administration page.](./adding-web-content-articles/images/01.png).
+    ![The Web Content administration page.](./adding-a-basic-web-content-article/images/01.png).
 
 1. Add a title and content into their respective fields.
 
-	![The edit screen for a new web content article.](./adding-web-content-articles/images/02.png).
+    ![The edit screen for a new web content article.](./adding-a-basic-web-content-article/images/02.png).
 
 1. Click _Publish_.
 
@@ -26,7 +26,7 @@ Congratulations! You have added a basic web content article to your Site. <!-- T
 
 You can see and edit more details for the article you are editing by opening the _Properties_ tab on the right side of the screen. The following properties are available here:
 
-| **Property** | **Purpose** | **Extra Information** |
+| **Property** | **Purpose** | **Additional Notes** |
 | --- | --- | --- |
 | **Basic Information** | Displays the structure the web content is based on, and a Summary field where you can enter a short description. | The structure cannot be edited once the article is created. See [Web Content Structures](https://help.liferay.com/hc/en-us/articles/360029133211-Editing-Structures) for more information. |
 | **Default Template** | Used to select which template to use to display this web content, by default. | See [Adding Web Content Templates](https://help.liferay.com/hc/en-us/articles/360028820252-Adding-Templates-with-Structures) for more information. |
