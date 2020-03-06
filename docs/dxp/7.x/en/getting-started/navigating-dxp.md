@@ -21,7 +21,7 @@ Users can use the personal menu to:
 The DXP Product menu contains the _Control Panel_ and the _Site Menu_.
 
 ```note::
-   By default, users with the _Guest_ or _User_ roles are not be able to access the Product Menu.
+   By default, users with the *Guest* or *User* roles are not be able to access the Product Menu.
 ```
 
 ### Control Panel
