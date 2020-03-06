@@ -32,7 +32,7 @@ By default for demonstration purposes, Liferay DXP is configured to use an embed
 
 Congratulations! You configured a database for Liferay DXP.
 
-> **Note:** For database configuration details, see the [Database Configuration Reference](../reference/database-configurations.md)
+> **Note:** For database configuration details, see the [Database Configuration Reference](../reference/database-templates.md)
 
 ## Next Steps
 

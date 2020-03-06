@@ -83,4 +83,4 @@ The reply is now deleted.
 
 ## Additional Information
 
-* [Notifications and Requests](../../05-notifications-and-requests/01-user-guide/README.rst)
+* [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

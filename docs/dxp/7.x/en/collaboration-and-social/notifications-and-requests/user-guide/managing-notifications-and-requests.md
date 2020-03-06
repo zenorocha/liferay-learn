@@ -1,6 +1,6 @@
 # Managing Notifications and Requests
 
-Users receive notifications and requests if they have subscribed to a blog or message board or are [mentioned](./mentioning-users.md) in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review content and asset creation when those activities are used with Liferay's built-in [Workflow](../../../process-automation/03-workflow/01-user-guide/README.rst) capabilities.
+Users receive notifications and requests if they have subscribed to a blog or message board or are [mentioned](./mentioning-users.md) in a post. They may also be notified if someone sent them a private message, invitation to join a site, or an event reminder. Lastly, users are notified to review content and asset creation when those activities are used with Liferay's built-in [Workflow](../../../process-automation/workflow/user-guide/introduction-to-workflow.md) capabilities.
 
 To access notifications and requests:
 

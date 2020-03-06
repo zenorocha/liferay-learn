@@ -113,4 +113,4 @@ There's also an `AuthenticatedAccessControlPolicy`. This policy doesn't do anyth
 
 ## Related Topics
 
-[Creating Service Access Policies](../../platform/service-access-policies.md)
+[Creating Service Access Policies]()

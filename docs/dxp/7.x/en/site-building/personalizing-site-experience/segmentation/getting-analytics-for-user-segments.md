@@ -25,6 +25,6 @@ Analytics are based on the criteria that you set on Analytics Cloud, but you can
 
 ## Related Information
 
-* [Assigning Roles to User Segments](../../../users-and-permissions/user-guide/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md)
+* [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md)
 * [Creating User Segments](./creating-and-managing-user-segments.md)
 * [Content Set Personalization](../experience-personalization/content-set-personalization.md)

@@ -20,6 +20,5 @@ Congratulations! You can use the Components listing to examine and manage instal
 
 ## Additional Items
 
-* [Maintaining Clustered Installations](../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/01-maintaining-clustered-installations.md)
-
+* [Maintaining Clustered Installations](../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
 * [Blacklisting Apps](./blacklisting-apps.md)

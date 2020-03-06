@@ -26,7 +26,7 @@ To learn more, see [Authentication Basics](./authentication-basics.md).
 
 ## Permissions
 
-Liferay DXP has a robust role-based access control (RBAC) system. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to Users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../../../users-and-permissions/user-guide/roles-and-permissions/README.md) for more information.
+Liferay DXP has a robust role-based access control (RBAC) system. Users can be assigned to Sites, Teams, User Groups, or Organizations. Custom Roles can be created, permissions can be assigned to these Roles, and those Roles can be assigned to Users. Roles are scoped to apply only in a specific context, such as a Site, Organization, or globally. See [Roles and Permissions](../../users-and-permissions/roles-and-permissions/README.md) for more information.
 
 ## Securing Web Services
 

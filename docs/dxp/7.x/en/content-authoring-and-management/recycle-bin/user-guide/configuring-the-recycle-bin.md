@@ -28,4 +28,3 @@ The Trash Entries Max Age value must be expressed in minutes. By default, items 
 ## What's Next
 
 * [Using the Recycle Bin](./using-the-recycle-bin.md)
-* [Restoring Deleted Assets](./restoring-deleted-assets.md)

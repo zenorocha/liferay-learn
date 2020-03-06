@@ -4,7 +4,7 @@ These steps show how to personalize and manage Content Page user experiences bas
 
 ## Creating a New Content Page Experience
 
-1. Navigate to an existing Content Page or [create a new Content Page](../../creating-pages/04-building-content-pages.md).
+1. Navigate to an existing Content Page or [create a new Content Page](../../creating-pages/building-content-pages.md).
 1. At the top of the page, for the *Experience* click on *Default* to open the experience selection dialog.
 
     ![Click on the current experience to create a new one or select a different existing experience.](./content-page-personalization/images/01.png)

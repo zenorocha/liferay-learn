@@ -82,4 +82,4 @@ If you deploy this build to one of your environments (by clicking _Deploy Build 
 
 ## Additional Information
 
-* [Overview of the DXP Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow)
+* [Overview of the DXP Cloud Deployment Workflow](../build-and-deploy/overview-of-the-dxp-cloud-deployment-workflow)

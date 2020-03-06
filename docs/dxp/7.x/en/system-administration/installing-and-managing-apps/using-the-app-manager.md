@@ -56,7 +56,5 @@ Congratulations! You can use the App Manager to examine and manage application d
 ## Additional Information
 
 * [Blacklisting Apps](./blacklisting-apps.md)
-
 * [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
-
-* [Maintaining a Clustered Installation](../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clusters/01-maintaining-clustered-installations.md)
+* [Maintaining a Clustered Installation](../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

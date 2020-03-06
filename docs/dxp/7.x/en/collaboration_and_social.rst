@@ -13,7 +13,7 @@ Collaboration and Social
    collaboration-and-social/invitations.rst
    collaboration-and-social/knowledge_base.rst
 
-Liferay DXP comes with a wide suite of flexible applications that can be used to build sites and communities that foster collaboration and communication. For an overview of these features, see the `Collaboration and Social Overview <./collaboration-and-social/collaboration-and-social-overview.md>`_
+Liferay DXP comes with a wide suite of flexible applications that can be used to build sites and communities that foster collaboration and communication. For an overview of these features, see the `Collaboration and Social Overview <./collaboration-and-social/collaboration-and-social-overview.md>`_.
 
 .. raw:: html
    :file: collaboration-and-social/landing.html

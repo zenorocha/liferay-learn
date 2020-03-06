@@ -25,7 +25,7 @@ Once you have it installed, you must do two things:
 1. Create a Liferay DXP administrative user in OpenAM
 1. Enable OpenAM for authentication
 
-Users are mapped back and forth by screen names, so be sure to match the OpenAM's user ID to the screen name of your Liferay administrative user. For example, if the Liferay DXP administrative user has a screen name of *admin*, register the user in OpenAM with the ID of *admin* and the email address specified in the [`admin.email.from.address`](http://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Admin%20Portlet) [portal property](../../08-reference/03-portal-properties.md)). Once you have the user set up, log in to OpenAM using this user.
+Users are mapped back and forth by screen names, so be sure to match the OpenAM's user ID to the screen name of your Liferay administrative user. For example, if the Liferay DXP administrative user has a screen name of *admin*, register the user in OpenAM with the ID of *admin* and the email address specified in the [`admin.email.from.address`](http://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Admin%20Portlet) [portal property](../../../reference/portal-properties.md). Once you have the user set up, log in to OpenAM using this user.
 
 1. In the same browser window, log in to Liferay DXP as the administrative user (using the previous admin email address).
 

@@ -8,7 +8,7 @@ In OAuth 2.0, applications are granted access to limited subsets of user data. T
 
 ## Creating a Scope for a JSONWS Service
 
-The most common way to create a scope is to create a [Service Access Policy](/../../securing-web-services/setting-service-access-policies.md) prefixed with the name `OAUTH2_`. This naming convention causes the policy to appear in the OAuth application configuration screen as a scope.
+The most common way to create a scope is to create a [Service Access Policy](../../securing-web-services/setting-service-access-policies.md) prefixed with the name `OAUTH2_`. This naming convention causes the policy to appear in the OAuth application configuration screen as a scope.
 
 For example, say the application needs access to a user's profile information to retrieve the email address. To grant the application access to this, go to *Control Panel* &rarr; *Configuration* &rarr; *Service Access Policy*, and create the policy pictured below.
 

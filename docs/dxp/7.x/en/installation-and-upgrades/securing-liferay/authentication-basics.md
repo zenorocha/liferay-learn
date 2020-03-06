@@ -11,7 +11,7 @@ By default, Liferay DXP uses the *Sign In* widget to authenticate users.
 You can configure other methods of authenticating users and/or applications:
 
 * [LDAP](../../users-and-permissions/devops/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md)
-* [SAML](./configuring-sso/authenticating-with-saml/01-intro.md)
+* [SAML](./configuring-sso/authenticating-with-saml/saml-authentication-process-overview.md.md)
 * [Kerberos](./configuring-sso/authenticating-with-kerberos.md)
 * [OpenID Connect](./configuring-sso/other-ssos/using-openid-connect.md)
 * [Token-Based solutions](./configuring-sso/token-based-authentication.md)

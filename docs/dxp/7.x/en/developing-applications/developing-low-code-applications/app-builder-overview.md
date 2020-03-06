@@ -23,7 +23,7 @@ The ability to combine forms, data display tables, and flexible deployment optio
 
 ## Creating an App
 
-Apps made with App builder are made up of 3 components that are defined in the app builder UI: objects, form views, and table views. To skip straight to building an application, see the next article on [Creating Applications with App Builder](./creating-applications-with-app-builder.md).
+Apps made with App builder are made up of 3 components that are defined in the app builder UI: objects, form views, and table views. To skip straight to building an application, see the next article on [Creating an Application with App Builder](./creating-an-application-with-app-builder.md).
 
 ### App Builder Objects
 
