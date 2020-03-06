@@ -34,7 +34,7 @@ The following common administrative activities can be done in the Control Panel:
 
 * [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
 * [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
-* [Create new Sites](../site-building/introduction-to-site-building.md)
+* [Create new Sites](../site-building/building-sites/adding-a-site.md)
 * Add new Custom Fields to applications on the site
 * And more...
 
