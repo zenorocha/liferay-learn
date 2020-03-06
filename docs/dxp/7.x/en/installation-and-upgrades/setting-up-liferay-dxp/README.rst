@@ -4,6 +4,7 @@ Setting Up Liferay DXP
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-liferay-dxp`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/connecting-to-a-mail-server`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/mail-server-configuration-reference`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/advanced-email-configurations`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
