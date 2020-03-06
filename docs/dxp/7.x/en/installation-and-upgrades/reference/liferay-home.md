@@ -2,11 +2,12 @@
 
 *Liferay Home* is the folder from which Liferay DXP launches applications, reads and applies configurations, loads JAR files, generates logs, and more.
 
-Here's where Liferay Home is located:
+Liferay Home's location varies depending on installation type:
 
 * *In a DXP bundle*, Liferay Home is the installation's top-level folder and it contains the application server.
+* *In an installation on an application server*, the Liferay Home folder varies by application server. If you're installing on an application server, please refer to the article covering that app server (e.g., *Installing DXP on [app server]*) for the Liferay Home location.
 
-* *In an installation on an application server,* the Liferay Home folder varies by application server. If you're installing on an application server, please refer to the article covering that app server (e.g., *Installing DXP on [app server]*) for the Liferay Home location.
+## Liferay Home Structure
 
 DXP installations contain this folder structure regardless of application server:
 
@@ -52,5 +53,5 @@ Here is a breakdown of each folder with a brief description of its purpose:
 * `work`: Module Jasper work files.
 
 ```note::
-   If DXP cannot create resources in the Liferay Home folder or when DXP runs on certain application servers, it creates a folder called `liferay` in the home folder of the operating system user that is running DXP. In this case, that `liferay` folder becomes the Liferay Home. For example, if your operating system user name is jbloggs, the `liferay` folder path is `/home/jbloggs/liferay` or `C:\Users\jbloggs\liferay`.
+   If DXP cannot create resources in the Liferay Home folder or when DXP runs on certain application servers, it creates a folder called `liferay` in the home folder of the operating system user that is running DXP. In this case, that ``liferay`` folder becomes the Liferay Home. For example, if your operating system user name is *jbloggs*, the `liferay` folder path is ``/home/jbloggs/liferay`` or ``C:\Users\jbloggs\liferay``.
 ```
