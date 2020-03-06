@@ -10,29 +10,35 @@ This example uses Docker image with a fresh install of Liferay DXP.
 
 ## Identify the Service to Consume
 
-Liferay DXP's REST services are published on [Swagger Hub](https://app.swaggerhub.com/apis/liferayinc/headless-delivery). This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the services listed on Swagger Hub. The documentation there shows all the parameters necessary for performing the call and includes example JSON or XML that the service returns.
-
-## Identify the Site Containing the Data
-
 You need a running Liferay DXP to call its REST services. To obtain one using Docker, run this command:
 
 ```bash
 docker run -it -p 8080:8080 liferay/portal:7.3.0-ga1
 ```
 
+Liferay DXP's REST services are published at this URL: 
+
+```
+http[s]://[hostname]:[port]/o/api
+```
+
+On your Docker instance, you can find them here: 
+
+```
+http://localhost:8080/o/api
+```
+
+This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the published services. 
+
+## Identify the Site Containing the Data
+
 After Liferay DXP initializes, visit it with your browser at `http://localhost:8080`.
 
-You must first create a blog entry so it can be retrieved:
+Now you must find the default Site ID:
 
 1. Sign in using the default credentials:
    **User Name:** `test@liferay.com`
    **Password:** `test`
-1. Click *Content & Data* &rarr; *Blogs*.
-1. Click the blue Plus button (![Add](../../images/icon-add.png)) to add a blog entry.
-1. When finished typing your blog entry, click *Publish*.
-
-Now that you have a blog entry, you need only find the Site ID:
-
 1. Go to Control Panel &rarr; Sites &rarr; Sites.
 1. Click the Actions button, and then choose *Go to Site Settings*.
 
@@ -52,8 +58,6 @@ To call a service using Basic Auth, provide the credentials in the URL:
 curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings/" -u 'test@liferay.com:test'
 ```
 
-The service returns a JSON representation of the data (see below).
-
 ### Calling a Service Using OAuth2
 
 For production, create an [OAuth2 application](../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/creating-oauth2-applications.md) and use the OAuth2 process to get an authorization token. Once you have the token, provide it in the HTTP header:
@@ -62,11 +66,125 @@ For production, create an [OAuth2 application](../../installation-and-upgrades/s
 curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings
 ```
 
-The service returns a JSON representation of the data (see below).
+## Getting and Posting Data
 
-## Data Returned by Services
+If you run the query above to get all blog postings, you'll see there aren't any: 
 
-If you added a blog entry through the UI, you'll see that entry now, represented in JSON:
+```json
+{
+  "actions" : {
+    "subscribe" : {
+      "method" : "PUT",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/subscribe"
+    },
+    "unsubscribe" : {
+      "method" : "PUT",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings/unsubscribe"
+    },
+    "create" : {
+      "method" : "POST",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/sites/{siteId}/blog-postings"
+    }
+  },
+  "items" : [ ],
+  "lastPage" : 1,
+  "page" : 1,
+  "pageSize" : 20,
+  "totalCount" : 0
+}
+```
+
+First, you'll post a blog entry. 
+
+### Posting a Blog Entry
+
+The API discovery revealed that blog posting services are available in the `headless-delivery` application. 
+
+1. Query `headless-delivery` to find the `BlogPosting` schema: 
+
+    ```
+    curl http://localhost:8080/o/headless-delivery/v1.0/openapi.yaml -u test@liferay.com:test
+    ```
+
+    This reveals the schema for a `BlogPosting` (among many others). There are only two required fields: 
+
+    - `articleBody`
+    - `headline`
+
+2. Now you can construct a simple JSON document to post a blog entry: 
+
+    ```json
+    {
+        "headline": "Test Blog Entry from REST Services",
+        "articleBody": "This article was posted via REST services provided by Liferay DXP."
+    }
+    ```
+
+3. Make the request: 
+
+    ```
+    curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings -u test@liferay.com:test
+    ```
+
+Liferay DXP returns the full JSON representation of your blog entry: 
+
+```json
+{
+  "actions" : {
+    "get" : {
+      "method" : "GET",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}"
+    },
+    "replace" : {
+      "method" : "PUT",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}"
+    },
+    "update" : {
+      "method" : "PATCH",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}"
+    },
+    "delete" : {
+      "method" : "DELETE",
+      "href" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}"
+    }
+  },
+  "alternativeHeadline" : "",
+  "articleBody" : "This article was posted via REST services provided by Liferay DXP.",
+  "creator" : {
+    "additionalName" : "",
+    "contentType" : "UserAccount",
+    "familyName" : "Test",
+    "givenName" : "Test",
+    "id" : 20125,
+    "name" : "Test Test",
+    "profileURL" : "/web/test"
+  },
+  "customFields" : [ ],
+  "dateCreated" : "2020-03-06T18:02:26Z",
+  "dateModified" : "2020-03-06T18:02:27Z",
+  "datePublished" : "2020-03-06T18:02:00Z",
+  "description" : "",
+  "encodingFormat" : "text/html",
+  "friendlyUrlPath" : "test-blog-entry-from-rest-services",
+  "headline" : "Test Blog Entry from REST Services",
+  "id" : 35215,
+  "keywords" : [ ],
+  "numberOfComments" : 0,
+  "relatedContents" : [ ],
+  "siteId" : 20119,
+  "taxonomyCategories" : [ ]
+}
+```
+
+### Getting All Blog Entries
+
+Now you can repeat the first query you did to see that the blog entry you posted is there: 
+
+```
+curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings/" -u 'test@liferay.com:test'
+```
+
+This returns a list of blog entries. The entry you added is the only one in the list: 
 
 ```json
 {
@@ -103,8 +221,8 @@ If you added a blog entry through the UI, you'll see that entry now, represented
         "href" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/{blogPostingId}"
       }
     },
-    "alternativeHeadline" : "This is a Blog entry added via the UI",
-    "articleBody" : "<p>I'm typing this entry into Liferay's UI so that I can retrieve it via REST services. The editor is&nbsp;<em>AlloyEditor</em>, an editor written specifically for Liferay's various kinds of content.&nbsp;</p>",
+    "alternativeHeadline" : "",
+    "articleBody" : "This article was posted via REST services provided by Liferay DXP.",
     "creator" : {
       "additionalName" : "",
       "contentType" : "UserAccount",
@@ -115,14 +233,14 @@ If you added a blog entry through the UI, you'll see that entry now, represented
       "profileURL" : "/web/test"
     },
     "customFields" : [ ],
-    "dateCreated" : "2020-02-10T23:03:20Z",
-    "dateModified" : "2020-02-10T23:03:55Z",
-    "datePublished" : "2020-02-10T23:02:00Z",
+    "dateCreated" : "2020-03-06T18:02:26Z",
+    "dateModified" : "2020-03-06T18:02:27Z",
+    "datePublished" : "2020-03-06T18:02:00Z",
     "description" : "",
     "encodingFormat" : "text/html",
-    "friendlyUrlPath" : "test-blog-entry-from-ui",
-    "headline" : "Test Blog Entry from UI",
-    "id" : 35216,
+    "friendlyUrlPath" : "test-blog-entry-from-rest-services",
+    "headline" : "Test Blog Entry from REST Services",
+    "id" : 35215,
     "keywords" : [ ],
     "numberOfComments" : 0,
     "relatedContents" : [ ],
@@ -136,4 +254,36 @@ If you added a blog entry through the UI, you'll see that entry now, represented
 }
 ```
 
-Congratulations! You've successfully retrieved data from Liferay's headless delivery services!
+### Getting a Single Blog Entry
+
+Each time you've made a request, Liferay DXP has returned other possible endpoints. One of these is to get a single blog entry by its ID. If you know your entry's ID, you can retrieve it: 
+
+```
+curl http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215 -u test@liferay.com:test
+```
+
+This returns the same blog entry. 
+
+### Deleting a Blog Entry
+
+If you know its ID, you can also delete your blog entry: 
+
+```
+curl -X DELETE http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215 -u test@liferay.com:test
+```
+
+In this case, nothing is returned, but you can verify your entry is gone by requesting it as you did above: 
+
+```
+curl http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35215 -u test@liferay.com:test
+```
+
+Liferay DXP then returns this JSON document in response: 
+
+```json
+{
+  "status" : "NOT_FOUND",
+  "title" : "No BlogsEntry exists with the primary key 35215"
+}
+```
+Congratulations! You've now learned how to call Liferay DXP's REST services. Remember that the examples above use Basic Auth: for production, use OAuth2 to call services in a secure way. 
