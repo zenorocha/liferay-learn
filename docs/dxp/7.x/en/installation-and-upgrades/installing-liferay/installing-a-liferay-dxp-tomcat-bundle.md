@@ -2,9 +2,13 @@
 
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. It's the easiest, fastest way to install Liferay DXP on premises.
 
-> **Note:** If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: [Tomcat](./installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md), WildFly, JBoss EAP, WebLogic, or [WebSphere](./installing-liferay-on-an-application-server/installing-liferay-on-websphere.md).
+```note::
+   If you're using one of the following application servers already, click the name of the one you're using to see instructions for deploying DXP to it: `Tomcat <./installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md>`_, WildFly, JBoss EAP, WebLogic, or `WebSphere <./installing-liferay-on-an-application-server/installing-liferay-on-websphere.md>`_.
+```
 
-> **Note:** To start a Liferay DXP instance fast for touring or demonstration purposes, see [Starting with a DXP Docker Image](../../getting-started/starting-with-a-dxp-docker-image.md).
+```note::
+   To start a Liferay DXP instance fast for touring or demonstration purposes, see `Starting with the DXP Docker Image <../../getting-started/starting-with-the-dxp-docker-image.md>`_.
+```
 
 ## Prerequisites
 
@@ -12,7 +16,7 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
 
 ## Download DXP
 
-1. Go to the [Help Center](https://help.liferay.com/hc) (subscribers only) or [Community Downloads](https://www.liferay.com/downloads-community).
+1. Go to the [Help Center](https://help.liferay.com/hc) (subscription) or [Community Downloads](https://www.liferay.com/downloads-community).
 
 2. Navigate to the Liferay DXP version you want.
 

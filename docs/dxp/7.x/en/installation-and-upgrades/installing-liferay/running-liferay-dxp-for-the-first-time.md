@@ -10,7 +10,9 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
     ./liferay-dxp-version/tomcat-version/bin/startup.sh
     ```
 
-    > **Note:** By default, DXP writes log files to `[LIFERAY_HOME]/logs`
+    ```note::
+       By default, DXP writes log files to `[Liferay Home]/logs`
+    ```
 
     The Setup Wizard appears in your web browser at `http://localhost:8080`.
 
@@ -22,7 +24,9 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
 
 4. In the *Database* section, click *Change* to display the database form.
 
-    > **Warning:** DO NOT use HSQL in production-grade Liferay DXP instances.
+    ```warning::
+       DO NOT use HSQL in production-grade Liferay DXP instances.
+    ```
 
     ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-dxp-for-the-first-time/images/02.png)
 
@@ -71,7 +75,7 @@ Congratulations! You have launched your on premises Liferay DXP instance.
 
 You can [sign in as your administrator user](../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Setting up Marketplace](../setting-up-liferay-dxp/setting-up-marketplace.md)
+* [Introduction to Managing Apps](../../system-administration/installing-and-managing-apps/introduction-to-managing-apps.md)
 * [Trial Plugin Installation](../setting-up-liferay-dxp/trial-plugin-installation.md)
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../securing-liferay/introduction-to-securing-liferay.md)
