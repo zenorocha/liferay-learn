@@ -26,6 +26,7 @@ To configure the mail session offline or before deploying DXP:
     ```
 
 1. Replace the default mail session values with your own.
+
 1. Put the `portal-ext.properties` file into the [LIFERAY_HOME](../14-reference/01-liferay-home.md).
 
 DXP connects to the mail session on the next startup.
@@ -35,8 +36,11 @@ DXP connects to the mail session on the next startup.
 Users can opt to configure a mail session for DXP using their application server.
 
 1. Create a mail session on your application server; please see the application server's documentation.
+
 1. Point DXP to that mail session.
+
 1. If using the _Control Panel_, navigate to _Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail_.
+
 1. Enter the value in the _JavaMail Properties_ field.
 
     ![JavaMail](./advanced-email-configurations/images/01.png)
