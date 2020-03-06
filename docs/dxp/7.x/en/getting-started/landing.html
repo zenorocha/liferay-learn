@@ -1,0 +1,54 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Starting with the DXP Docker Image',
+					sectionURL: 'getting-started/starting-with-the-dxp-docker-image.html',
+				},
+				{
+					sectionName: 'Introduction to the Admin Account',
+					sectionURL: 'getting-started/introduction-to-the-admin-account.html',
+				},
+				{
+					sectionName: 'Navigating DXP',
+					sectionURL: 'getting-started/navigating-dxp.html',
+				},
+				{
+					sectionName: 'Creating your First Site',
+					sectionURL: 'getting-started/creating-your-first-site.html',
+				},
+				{
+					sectionName: 'Changing Your Theme (Coming Soon)',
+					sectionURL: 'getting-started/changing-your-theme.html',
+				},
+			]
+		}
+	})
+</script>

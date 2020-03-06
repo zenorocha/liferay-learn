@@ -10,5 +10,5 @@ Getting Started
    getting-started/creating-your-first-site.md
    getting-started/changing-your-theme.md
 
-.. include:: /getting-started/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: getting-started/landing.html
