@@ -32,12 +32,12 @@ You can see and edit more details for the article you are editing by opening the
 | **Default Template** | Used to select which template to use to display this web content, by default. | See [Adding Web Content Templates](https://help.liferay.com/hc/en-us/articles/360028820252-Adding-Templates-with-Structures) for more information. |
 | **Display Page Template** | Used to select a Display Page Template for this article, if one is desired. | See [Display Page Templates](https://help.liferay.com/hc/en-us/articles/360029133291-Creating-Display-Page-Templates) for more information. |
 | **Featured Image** | Used to select a small image to use as the article's thumbnail. | The image can come from a URL or uploaded from your system. |
-| **Metadata** | Used to set any tags or priority for the article. | See [Tagging Content](../../../tags-and-categories/user-guide/tagging-content.md) for more information. |
+| **Metadata** | Used to set any tags or priority for the article. | See [Tagging Content](../../../05-tags-and-categories/01-user-guide/README.md) for more information. |
 | **Friendly URL** | Used to set a custom friendly URL for this article. | |
 | **Schedule** | Used to schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](https://help.liferay.com/hc/en-us/articles/360029042011-Scheduling-Web-Content-Publication) for more information. |
 | **Search** | Used to set whether this article will be indexed for search. | |
 | **Related Assets** | Used to select any related assets, if desired. | |
-| **Permissions** | Used to set any permissions for Guests or Site Members, specific to the article. | Click More Options to see permissions for more than who can view the article. See [Roles and Permissions](../../../../users-and-permissions/roles-and-permissions/introduction-to-roles-and-permissions.md) for more information. | 
+| **Permissions** | Used to set any permissions for Guests or Site Members, specific to the article. | Click More Options to see permissions for more than who can view the article. See [Roles and Permissions](../../../../users-and-permissions/roles-and-permissions/README.md) for more information. |
 
 ## Additional Information
 
