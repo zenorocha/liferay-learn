@@ -37,4 +37,4 @@ The following site settings are found here:
 * [Payment Methods](../../starting-a-store/store-administration/payments.md)
 * Product Display Pages
 * [Shipping Methods](../../orders-and-fulfillment/configuring-shipping-methods/shipping-method-reference.md)
-* [Site Types](../../sites-and-site-types.md)
+* [Site Types](../sites-and-site-types.md)

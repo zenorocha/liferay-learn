@@ -64,5 +64,5 @@ Integrate with other business systems through a Mulesoft connector, Talend compo
 ## Next Steps
 
 * [Installation Overview](./installation-and-upgrades/installation-overview.md)
-* [Using the Liferay Commerce Docker Image](./installation-and-upgrades/installation-guide/using-the-liferay-commerce-docker-image.md)
+* [Using the Liferay Commerce Docker Image](./installation-and-upgrades/using-the-liferay-commerce-docker-image.md)
 * [Setup a Complete B2B Site Using the Minium Accelerator](./starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
