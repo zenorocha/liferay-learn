@@ -15,7 +15,7 @@ The Script Console is available in the Control Panel. To use the Script Engine, 
 
 ## Next Steps
 
-* [Invoking Liferay services](./invoking-liferay-services-from-scripts.md)
-* [Running scripts from the Script Console](./running-scripts-from-the-script-console.md)
-* [Using the script engine with workflow](./using-the-script-engine-in-workflow.md)
-* [Script examples](./script-examples.md)
+* [Invoking Liferay Services](./invoking-liferay-services-from-scripts.md)
+* [Running Scripts from the Script Console](./running-scripts-from-the-script-console.md)
+* [Using the Script Engine with Workflow](./using-the-script-engine-in-workflow.md)
+* [Script Examples](./script-examples.md)

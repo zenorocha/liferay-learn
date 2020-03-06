@@ -4,19 +4,19 @@ Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360
 
 Here are the workflow scripting topics:
 
-- [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
-- [Using Predefined Variables](#predefined-variables)
-- [Script Example](#script-examples)
-- [Calling OSGi Services](#calling-osgi-services)
+* [Adding Scripts to Workflow Nodes](#adding-scripts-to-workflow-nodes)
+* [Using Predefined Variables](#predefined-variables)
+* [Script Example](#script-examples)
+* [Calling OSGi Services](#calling-osgi-services)
 
 ## Adding Scripts to Workflow Nodes
 
 Workflow scripts can be invoked from actions in these workflow node types:
 
-- `<fork>`
-- `<join>`
-- `<state>`
-- `<task>`
+* `<fork>`
+* `<join>`
+* `<state>`
+* `<task>`
 
 Here's the format for an action that invokes a script:
 
@@ -81,9 +81,9 @@ These variables are available from anywhere that you can run a workflow script:
 
 At virtually any point in a workflow, you can use Liferay's script engine to access workflow APIs or other Liferay APIs. Here are a few practical ways you can use workflow scripts:
 
-- Getting a list of users with a specific workflow-related role
-- Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
-- Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
+* Getting a list of users with a specific workflow-related role
+* Sending an email to the designated content approver with a list of people to contact if he is unable to review the content
+* Creating an alert to be displayed in the Alerts portlet for any user assigned to approve content
 
 The following workflow script is written using Groovy and is used with a `Condition` statement. The script uses Liferay's [asset framework](https://help.liferay.com/hc/en-us/articles/360028725412-Introduction-to-Asset-Framework) to determine an asset's category and uses the category to determine the correct approval process automatically.  If the asset is in the `legal` category , it is sent to the `Legal Review` task upon submission. Otherwise, the asset is sent to the `Default Review` task.
 
@@ -202,8 +202,6 @@ Liferay's Kaleo Workflow Engine and Liferay's Script Engine makes for a powerful
 
 ## Additional Information
 
-[Introduction to Workflow](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow)
-
-[Running Scripts From the Script Console](./running-scripts-from-the-script-console)
-
-[Script Examples](./script-examples.md)
+* [Introduction to Workflow](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow)
+* [Running Scripts From the Script Console](./running-scripts-from-the-script-console)
+* [Script Examples](./script-examples.md)

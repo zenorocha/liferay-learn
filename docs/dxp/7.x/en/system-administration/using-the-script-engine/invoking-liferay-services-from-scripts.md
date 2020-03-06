@@ -14,7 +14,7 @@ import com.liferay.portal.kernel.service.UserLocalServiceUtil;
 import java.util.List;
 
 ...
-            
+
 int userCount = UserLocalServiceUtil.getUsersCount();
 List<User> users = UserLocalServiceUtil.getUsers(0, userCount);
 
@@ -24,7 +24,6 @@ for (User user:users) {
 
 ...
 ```
-
 
 ## Groovy
 
@@ -43,12 +42,8 @@ for (user in users){
 
 Importing `com.liferay.portal.kernel.model.User` and `java.util.List` isn't necessary because the Script Console makes them available. And the Groovy syntax is simpler than the Java syntax.
 
-Running scripts in the Script Console is next.
+## Next Steps
 
-## Additional Information
-
-[Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
-
-[Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
-
-[Script Examples](./script-examples.md)
+* [Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
+* [Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
+* [Script Examples](./script-examples.md)
