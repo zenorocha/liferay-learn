@@ -10,9 +10,9 @@ The Personal Menu is the hub for information and activities for a user that is l
 
 Users can use the personal menu to:
 
-* [Change account information](../users-and-permissions/README.md) (Name, Password, etc.)
+* [Change account information](./introduction-to-the-admin-account.md#changing-account-information) (Name, Password, etc.)
 * [See what sites they are members of](../site-building/building-sites/adding-members-to-sites.md)
-* [Review site notifications](../collaboration-and-social/notifications-and-requests/README.md)
+* [Review site notifications](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
 * [Sign out](./introduction-to-the-admin-account.md#signing-out)
 * And more...
 
@@ -20,7 +20,9 @@ Users can use the personal menu to:
 
 The DXP Product menu contains the _Control Panel_ and the _Site Menu_.
 
-> **Note:** By default, users with the _Guest_ or _User_ roles are not be able to access the Product Menu.
+```note::
+   By default, users with the _Guest_ or _User_ roles are not be able to access the Product Menu.
+```
 
 ### Control Panel
 
@@ -30,8 +32,8 @@ The _Control Panel_ contains general administrative actions and configurations t
 
 The following common administrative activities can be done in the Control Panel:
 
-* [Manage Users, Permissions, and Roles](../users-and-permissions/README.md)
-* [Change the System Password Policy](../installation-and-upgrades/securing-liferay/README.md)
+* [Manage Users, Permissions, and Roles](../users-and-permissions/users/adding-and-managing-users.md)
+* [Change how users login](../installation-and-upgrades/securing-liferay/authentication-basics.md)
 * [Create new Sites](../site-building/introduction-to-site-building.md)
 * Add new Custom Fields to applications on the site
 * And more...
@@ -42,14 +44,16 @@ The DXP _Site Menu_ drop down contains actions, content, and configurations that
 
 ![A view of the expanded Site Menu so that all options are visible.](./navigating-dxp/images/03.png)
 
-> **Note:** The _Site Menu_ indicates which site you are working with when using the Site Menu. In this example the site is `Liferay DXP`. You may change what site you are working with by clicking the ![Compass Icon](../images/icon-compass.png) in the Site Menu.
+```note::
+   The *Site Menu* indicates which site you are working with when using the Site Menu. In this example the site is `Liferay DXP`. You may change what site you are working with by clicking the Compass Icon in the Site Menu.
+```
 
 The following common site building and management activities can be done in the _Site Menu_:
 
 * [Adding Pages](../site-building/creating-pages/adding-a-page-to-a-site.md)
 * [Creating Content](../content-authoring-and-management/README.md)
 * [Managing Site Memberships](../site-building/building-sites/adding-members-to-sites.md)
-* [Configuring and Optimizing Site Behavior and Functionality](../site-building/07-optimizing-sites/README.md)
+* [Configuring and Optimizing Site Behavior and Functionality](../site-building/optimizing-sites/README.md)
 * And more...
 
 ## What's Next
