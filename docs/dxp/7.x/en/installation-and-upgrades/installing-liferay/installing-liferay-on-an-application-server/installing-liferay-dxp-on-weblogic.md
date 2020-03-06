@@ -1,4 +1,4 @@
-# Installing DXP on WebLogic
+# Installing Liferay DXP on WebLogic
 
 Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebLogic Server for DXP.
 
@@ -9,10 +9,10 @@ Before installing DXP, configure an Admin Server and a Managed Server following 
 Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java.com/) to install a JDK.
 
 ```note::
-   The [Liferay DXP Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?) specifies supported databases and environments.
+   The `Liferay DXP Compatibility Matrix <https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?>`_ specifies supported databases and environments.
 ```
 
-Download these files from the [Help Center](https://customer.liferay.com/downloads) (Subscribers) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
+Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
 * DXP WAR file
 * Dependencies ZIP file
@@ -21,7 +21,7 @@ Download these files from the [Help Center](https://customer.liferay.com/downloa
 Here are the basic steps for installing DXP on WebLogic:
 
 1. [Configuring WebLogic for DXP](#configuring-weblogic)
-1. [Declaring the `Liferay Home` folder](#declaring-the-liferay-home-folder)
+1. [Declaring the Liferay Home folder](#declaring-the-liferay-home-folder)
 1. [Installing the dependencies](#installing-dxp-dependencies)
 1. [Database Configuration](#database-configuration)
 1. [Mail Configuration](#mail-configuration)
@@ -108,15 +108,15 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
 
 ## Declaring the Liferay Home Folder
 
-Before installing DXP, set your [*Liferay Home*](../../14-reference/01-liferay-home.md) folder location.
+Before installing DXP, set your [*Liferay Home*](../../reference/liferay-home.md) folder location.
 
-1. Create a file called [`portal-ext.properties`](../../14-reference/03-portal-properties.md). (It overrides [DXP properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html).) 
+1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md). (It overrides [portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html).) 
 
 1. In the `portal-ext.properties` file, set the `liferay.home` property to your Liferay Home folder path. In WebLogic, the user domain's folder is generally Liferay Home, but any other folder on the machine can be used:
 
-```properties
-liferay.home=/full/path/to/your/liferay/home/folder
-```
+    ```properties
+    liferay.home=/full/path/to/your/liferay/home/folder
+    ```
 
 1. Package the `portal-ext.properties` in your DXP WAR file by expanding the DXP WAR file and copying the `portal-ext.properties` file into the `WEB-INF/classes` folder. 
 
@@ -131,13 +131,13 @@ liferay.home=/full/path/to/your/liferay/home/folder
 DXP depends on libraries (Dependencies ZIP) and OSGi modules (OSGi Dependencies ZIP).
 
 1. Unzip the Dependencies ZIP file contents in the WebLogic domain's `lib` folder.
-1. Unzip the OSGi Dependencies ZIP file\ contents in the `Liferay_Home/osgi` folder (create this folder if it doesn't exist).
+1. Unzip the OSGi Dependencies ZIP file contents in the `Liferay_Home/osgi` folder (create this folder if it doesn't exist).
 
-DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. Here are some common JDBC drivers:
+DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. You can download JDBC driver JARs for these databases:
 
-* [`mariadb.jar`](https://downloads.mariadb.org/)
-* [`mysql.jar`](http://dev.mysql.com/downloads/connector/j)
-* [`postgres.jar`](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
+* [MariaDB](https://downloads.mariadb.org/)
+* [MySQL](http://dev.mysql.com/downloads/connector/j)
+* [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
 
 Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, **do not** use it for production DXP instances.
 
@@ -147,7 +147,7 @@ DXP contains a built-in Hypersonic database which is great for demonstration pur
 
 Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server. 
 
-To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on the [Database Template](../../14-reference/05-database-templates.md) for your database.
+To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on the [Database Template](../../reference/database-templates.md) for your database.
 
 Otherwise, you can configure the data source in WebLogic.
 
@@ -169,7 +169,7 @@ Otherwise, you can configure the data source in WebLogic.
 
 ## Mail Configuration
 
-Liferay DXP can be [connected to a mail server](../../02-setting-up-liferay-dxp/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
+Liferay DXP can be [connected to a mail server](../../setting-up-liferay-dxp/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
 
 1. Start WebLogic and log in to the Admin Server's console.
 1. Select *Services* &rarr; *Mail Sessions* from the *Domain Structure* box on the left hand side of the Admin Server's console UI.
@@ -204,12 +204,12 @@ Follow these steps to deploy DXP:
 1. After the deployment finishes, click *Save* if the configuration is correct.
 1. Start the Managed Server where DXP is deployed on. DXP precompiles all the JSPs and then launches.
 
-If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../../02-setting-up-liferay-dxp/activating-liferay-dxp.md).
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md).
 
 Congratulations! You're running DXP on WebLogic.
 
 ```note::
-     Adjust the application server's logging level or log filters to avoid excessive benign log messages such as the ones below involving `PhaseOptimizer`.
+   Adjust the application server's logging level or log filters to avoid excessive benign log messages such as the ones below involving `PhaseOptimizer`.
 ```
 
 ```
@@ -224,10 +224,10 @@ May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass pr
 
 ## Next Steps
 
-You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../02-setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
+You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Setting up Marketplace](../../02-setting-up-liferay-dxp/setting-up-marketplace.md)
-* [Trial Plugin Installation](../../02-setting-up-liferay-dxp/trial-plugin-installation.md)
+* [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/installing-the-marketplace-plugin.md)
+* [Trial Plugin Installation](../../setting-up-liferay-dxp/trial-plugin-installation.md)
 * Installing and Configuring a Search Engine
-* [Securing Liferay DXP](../../05-securing-liferay/01-securing-liferay.md)
-* [Introduction to Clustering Liferay DXP](../../02-setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Securing Liferay DXP](../../securing-liferay/securing-liferay.md)
+* [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
