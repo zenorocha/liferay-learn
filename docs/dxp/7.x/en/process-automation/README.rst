@@ -80,6 +80,7 @@ Developer Guide
 ~~~~~~~~~~~~~~~
 
 * Implementing a Workflow
+-  :doc:`/process-automation/workflow/developer-guide/using-the-script-engine-in-workflow`
 
 APIs
 ~~~~

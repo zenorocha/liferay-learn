@@ -1,6 +1,6 @@
 # Using the Script Engine in Workflow
 
-Liferay's [Kaleo workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](./running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during workflow execution.
+Liferay's [workflow engine](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow) is a robust system for reviewing and approving content in enterprise environments. Even if you don't leverage scripts, it's a powerful and robust workflow solution. Adding scripts takes it to the next level. These scripts aren't run from the [Script Console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md), but are embedded in [XML workflow definitions](https://help.liferay.com/hc/en-us/articles/360029147791-Introduction-to-Crafting-XML-Workflow-Definitions) and run during workflow execution.
 
 Here are the workflow scripting topics:
 
@@ -147,7 +147,7 @@ See [Embedded Workflows](https://help.liferay.com/hc/en-us/articles/360028721732
 
 ## Calling OSGi Services
 
-[Service Trackers](https://help.liferay.com/hc/en-us/articles/360028846472-Service-Trackers-for-OSGi-Services) retrieve OSGi services that are available. If the Service Tracker returns null for the service, that service is unavailable and you can do something appropriate in response. 
+[Service Trackers](https://help.liferay.com/hc/en-us/articles/360028846472-Service-Trackers-for-OSGi-Services) retrieve OSGi services that are available. If the Service Tracker returns null for the service, that service is unavailable and you can do something appropriate in response.
 
 Here's a workflow script written in Groovy that uses a `JournalArticleLocalService` to get an article count:
 
@@ -169,7 +169,7 @@ try {
     st.open();
 
     JournalArticleLocalService jaService = st.waitForService(500);
-    
+
     if (jaService == null) {
         _log.warn("The required service 'JournalArticleLocalService' is not available.");
     }
@@ -202,6 +202,6 @@ Liferay's Kaleo Workflow Engine and Liferay's Script Engine makes for a powerful
 
 ## Additional Information
 
-* [Introduction to Workflow](https://help.liferay.com/hc/en-us/articles/360028721732-Introduction-to-Workflow)
-* [Running Scripts From the Script Console](./running-scripts-from-the-script-console)
-* [Script Examples](./script-examples.md)
+* [Introduction to Workflow](../user-guide/introduction-to-workflow.md)
+* [Running Scripts From the Script Console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console)
+* [Script Examples](../../../system-administration/using-the-script-engine/script-examples.md)

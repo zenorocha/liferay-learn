@@ -6,7 +6,7 @@ Here are some examples to help you use scripts in DXP. Most of the examples orig
 
 This example retrieves user information from the database, modifies Users, and then saves the changes to the database. Suppose that your company updates its [terms of use](https://help.liferay.com/hc/en-us/articles/360031899692-Instance-Configuration-Instance-Settings#terms-of-use) and wants present them to the users. When a user agrees to the terms of use, a Boolean field called `agreedToTermsOfUse` is set in the User record associated with that user. As long as the field value is `true`, the user isn't presented with the terms of use. If you set the field `false` for all users, they must agree to the terms of use again before they can sign in.
 
-1.  Enter and execute this script in the Script Console:
+1. Enter and execute this script in the Script Console:
 
     ```groovy
     import com.liferay.portal.kernel.service.UserLocalServiceUtil
@@ -20,7 +20,7 @@ This example retrieves user information from the database, modifies Users, and t
 
     This script prints each User's `agreedToTermsOfUse` field value.
 
-2.  Replace the script with this:
+1. Replace the script with this:
 
     ```groovy
     import com.liferay.portal.kernel.service.UserLocalServiceUtil
@@ -44,9 +44,9 @@ This example retrieves user information from the database, modifies Users, and t
 
     The script sets each User's `agreedToTermsOfUse` field to `false`. It skips the default User as well as the default admin User that's currently signed in and running the script.
 
-3.  Click *Execute*.
- 
-4.  Verify the script updated the records by running the first script again.
+1. Click *Execute*.
+
+1. Verify the script updated the records by running the first script again.
 
 All Users (except the default User and your User) are updated. You've enabled the new terms of use agreement for all users to accept.
 
@@ -59,7 +59,7 @@ import com.liferay.portal.kernel.service.*
 
 number = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsersCount();
 out.println(
-        """	
+        """
                 <div style="background-color:black; text-align: center">
                         <h1 style="color: #37A9CC; font-size:xx-large">${number}</h1>
                 </div>
@@ -114,10 +114,10 @@ def trace(message) {
 users = UserLocalServiceUtil.getUsers(QueryUtil.ALL_POS, QueryUtil.ALL_POS)
 users.each { u ->
         trace(u.getFullName())
-} 
+}
 ```
 
-This script creates a subfolder in [Liferay Home](../../../../installation-and-upgrades/installing-liferay-dxp-on-premises/14-reference/01-liferay-home.md) called `scripting` and saves the script output to a file in this folder. 
+This script creates a subfolder in [Liferay Home](../../installation-and-upgrades/reference/liferay-home.md) called `scripting` and saves the script output to a file in this folder.
 
 If you don't have direct access to the file system, you can use this code to print the file content to the Script Console:
 
@@ -131,8 +131,6 @@ Congratulations! You've executed various scripts in the Script Console.
 
 ## Additional Information
 
-[Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
-
-[Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
-
-[Using thes Script Engine](./using-the-script-engine.md)
+* [Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
+* [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
+* [Using the Script Engine](./using-the-script-engine.md)
