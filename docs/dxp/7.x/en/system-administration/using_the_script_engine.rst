@@ -10,5 +10,5 @@ Using the Script Engine
    using-the-script-engine/using-the-script-engine-in-workflow.md
    using-the-script-engine/script-examples.md
 
-.. include:: /using-the-script-engine/README.rst
+.. include:: using-the-script-engine/README.rst
    :start-line: 2
