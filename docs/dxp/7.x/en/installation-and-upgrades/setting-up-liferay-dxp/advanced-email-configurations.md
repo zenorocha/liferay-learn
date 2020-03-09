@@ -37,27 +37,19 @@ Users can opt to configure a mail session for DXP using their application server
 
 1. Create a mail session on your application server; please see the application server's documentation.
 
-1. Point DXP to that mail session.
-
 1. If using the _Control Panel_, navigate to _Control Panel &rarr; Configuration &rarr; Server Administration &rarr; Mail_.
 
 1. Enter the value in the _JavaMail Properties_ field.
 
     ![JavaMail](./advanced-email-configurations/images/01.png)
 
-1. Click _Save_.
-
-### Using Portal Properties
-
-1. Alternately, set the `mail.session.jndi.name` portal property in a `${LIFERAY_HOME}/portal-ext.properties` file. Here's an example property:
-
-    ```properties
-        mail.session.jndi.name=mail/MailSession
-    ```
-
-1. Restart DXP.
+1. Click _Save_. This points DXP to the mail session on your application server.
 
 The mail server has been connected to DXP and ready to send notifications.
+
+```note::
+Setting the following property in `portal-ext.properties <../reference/portal-properties.md>`__ and restarting your server will have the same effect as setting the value in the Control Panel: mail.session.jndi.name=mail/MailSession
+```
 
 ## Additional Information
 
