@@ -1,3 +1,0 @@
-# Patch Types
-
-Coming soon!
