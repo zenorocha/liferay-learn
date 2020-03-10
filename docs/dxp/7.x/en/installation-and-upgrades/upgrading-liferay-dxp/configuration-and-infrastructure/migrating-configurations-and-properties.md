@@ -5,8 +5,8 @@ Your current DXP installation's OSGi configurations (7.0+) and properties (such 
 ## Overview
 
 * [Migrating Liferay Home](#migrating-liferay-home)
-* [Updating Settings Used by the Database Upgrade](#updating-settings-used-by-the-database-upgrade)
-* [Updating Settings for Run Time](#updating-settings-for-run-time)
+* [Updating Settings for the Database Upgrade](#updating-settings-used-by-the-database-upgrade)
+* [Migrating Portal Properties](#migrating-portal-properties)
 
 ## Migrating Liferay Home
 
@@ -22,7 +22,7 @@ Alternatively if your Liferay Home is in source control, create a new branch for
 git checkout -b new-version
 ```
 
-## Updating Settings Used by the Database Upgrade
+## Updating Settings For the Database Upgrade
 
 Upgrade processes in DXP and in some Marketplace apps use portal properties and OSGi configurations. Upgrade processes in your custom code may also require property updates and configuration updates. These settings and updates must be in place _before_ the database upgrade. Other updates can be done after the database upgrade.
 
@@ -47,20 +47,19 @@ jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
 
 See the [Database Templates](../../reference/database-templates.md) for more driver examples.
 
-## Updating Settings for Run Time
+## Migrating Portal Properties
 
-The properties discussed here can be updated after database upgrade. Here are the kinds of property changes you'll see:
+The properties discussed here can be updated after database upgrade. Migrating properties involves these things:
 
-* Property updates: Property removal/replacement and new default values
-* Properties converted to an OSGi configurations
+* Special property migration considerations
+* Using [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) to report property changes 
+* Converting properties to OSGi configurations 
 
-```note:
-   Updates to file store settings are discussed in` Updating the File Store <./updating-the-file-store.md>`_.
-```
+### Special Property Migration Considerations 
 
-### Property Updates
+There are resources for migrating properties related to specific environments, Liferay versions, and features. They're called out here for convenience.
 
-New versions of Liferay introduce new and modified properties.
+* Updates to file store settings are discussed in [Updating the File Store](./updating-the-file-store.md).
 
 * If you're on Liferay Portal 6.1 or earlier, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults).
 
@@ -76,6 +75,56 @@ New versions of Liferay introduce new and modified properties.
 
 ```note::
    You can build image sprites using any framework you like and deploy them in your plugins.
+```
+
+### Using Blade CLI to Report Incompatible Properties
+
+The [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) tool's `upgradeProps` command reports changes between portal properties files. The tool reports these types of changes.
+
+* Properties that cause exceptions, if not updated.
+* Properties moved to a module `portal.properties` file.
+* Properties moved to OSGi configuration.
+* Properties not found in the new DXP version.
+
+In many cases, the `upgradeProps` command explains the required update or references more information on the property change.
+
+The `blade upgradeProps` command format:
+
+```bash
+blade upgradeProps -p {old_liferay_home_path}/portal-ext.properties -d {new_liferay_home_path}
+```
+
+Here are example output samples from running the `blade upgradeProps` command:
+
+```
+Checking the location for old properties in the new version
+-----------------------------------------------------------
+Following portal properties present an exception:
+        asset.categories.navigation.display.templates.config has been removed.  Overwrite the method in the ADT handler. Se
+e LPS-67466
+        asset.publisher.display.templates.config has been removed.  Overwrite the method in the ADT handler. See LPS-67466
+        ...
+        
+Some properties have been moved to a module portlet.properties:
+        asset.publisher.search.with.index can match with the following portlet properties:
+                search.with.database from osgi/marketplace/Liferay CE Web Experience - Liferay CE Asset - Impl.lpkg/com.lif
+eray.asset.browser.web-4.0.4.jar/portlet.properties
+        dynamic.data.lists.error.template[ftl] can match with the following portlet properties:
+                dynamic.data.lists.error.template[ftl] from osgi/marketplace/Liferay CE Forms and Workflow - Liferay CE Dyn
+amic Data Lists - Impl.lpkg/com.liferay.dynamic.data.lists.web-5.0.4.jar/portlet.properties
+        ...
+
+Properties moved to OSGI configuration:
+        asset.publisher.check.interval can match with the following OSGI properties:
+                checkInterval from com.liferay.asset.publisher.web.internal.configuration.AssetPublisherWebConfiguration
+        asset.publisher.display.style.default can match with the following OSGI properties:
+                defaultDisplayStyle from com.liferay.asset.publisher.web.internal.configuration.AssetPublisherPortletInstanceConfiguration
+        ...
+
+We have not found a new property for the following old properties (check if you still need them or check the documentation to find a replacement):
+        admin.email.password.sent.body
+        admin.email.password.sent.subject
+        ...
 ```
 
 ### Converting Properties to OSGi Configurations
@@ -98,37 +147,6 @@ Put the `.config` files in a folder called `[Liferay Home]/osgi/configs`.
 
 ```tip::
    The Control Panel's _System Settings_ screens (under _Configuration_) manage the OSGi Config Admin values. These screens are the most accurate way to create `.config` files. Find the screen that configures the feature you want to configure, click _Save_, and then use the options button to `export the screen's configuration <https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations>`_ to a `.config` file.
-```
-
-## Using Blade CLI to Report Incompatible Properties
-
-The [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) tool's `upgradeProps` command checks your portal properties file for removed properties and properties that have migrated to OSGi configurations.
-
-The `blade upgradeProps` command is used in the following format:
-
-```bash
-blade upgradeProps -p {old_liferay_home_path}/portal-ext.properties -d {new_liferay_home_path}
-```
-
-Here is example output from running the `blade upgradeProps` command:
-
-```
-Checking the location for old properties in the new version
------------------------------------------------------------
-
-
-Properties moved to OSGI configuration:
-        blogs.image.extensions can match with the following OSGI properties:
-                imageExtensions from com.liferay.blogs.configuration.BlogsFileUploadsConfiguration
-        blogs.image.max.size can match with the following OSGI properties:
-                imageMaxSize from com.liferay.adaptive.media.image.internal.configuration.AMImageConfiguration
-                imageMaxSize from com.liferay.blogs.configuration.BlogsFileUploadsConfiguration
-
-We have not found a new property for the following old properties (check if you still need them or check the documentation to find a replacement):
-        admin.email.password.sent.body
-        admin.email.password.sent.subject
-        admin.email.user.added.body
-...
 ```
 
 ## Next Steps
