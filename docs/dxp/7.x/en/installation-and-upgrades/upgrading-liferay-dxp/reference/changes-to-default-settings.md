@@ -19,7 +19,7 @@ The settings changes are listed by release.
 | cluster.link.channel.properties.transport.0= | see [value](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) | jgroups/udp_transport.xml |
 | jsonws.web.service.paths.excludes | *blank* | /user/update-password |
 | retry.data.source.max.retries | 100 | 0 |
-| admin.obfuscated.properties | see [value](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.3-ga1/propertiesdoc/portal.properties.html) |
+| admin.obfuscated.properties | see [value](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.3-latest/propertiesdoc/portal.properties.html) |
 | spring.configs | see [value](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) | dropped META-INF/fabric-spring.xml and META-INF/asset-spring.xml |
 | session.shared.attributes | see [value](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) | dropped org.apache.struts.action.LOCALE |
 | session.phishing.protected.attributes | see [value](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) | added SETUP_WIZARD_PASSWORD_UPDATED |
