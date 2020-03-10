@@ -2,14 +2,16 @@
 
 All indexed content (a.k.a. _assets_ in Liferay DXP) can be returned as search results. [Custom content can also be indexed](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework), so your installation might have additional asset types beyond the ones included by default. 
 
-<!-- screenshot of type facet showing the default content types -->
+![If these apps are deployed, their content is searchable by default.](./searching-for-content/08.png)
 
-<!-- remove or move -->
+<!-- move to search results documentation, most likely-->
+<!-->
 **Searching for Users:** When you click an asset in the search results, it's displayed in an Asset Publisher (unless the *View in Context* option is selected in the Search Results portlet). Users are different, though. Think of them as invisible assets, not intended for display in the Asset Publisher application.  While Users appear as search results with other indexed assets, when you click one you're taken to the User's profile page. If public personal pages are disabled, clicking on a User from the list of search results shows you a blank page.
+</!-->
 
 ## Search Bar
 
-Using the default Liferay DXP setup, you enter the search context by entering search terms in the search bar, then hitting the *Enter* button (or clicking the magnifying glass icon). You're taken to a [search page](./working-with-search-pages.md) with various search widgets deployed. 
+Using the default Liferay DXP setup, you enter the search context by entering search terms in the search bar. Execute a search and you're taken to a [search page](./working-with-search-pages.md) with various search widgets deployed. 
 
 ![The default search configuration displays a search bar in its default view, beckoning users to enter the search context.](./searching-for-content/01.png)
 
@@ -19,7 +21,7 @@ Liferay's search infrastructure supports full text search as implemented by its 
 
 Full text search compares all the words entered in a search query (for example, *space vacation*) to all the words in each indexed document. A search engine like Elasticsearch calculates relevance scores to ensure the best results are returned first (like a Blogs Entry titled *Is a vacation in space right for you?*) and lots of matching results are returned (anything with either the word *vacation* or *space* is returned). 
 
-In addition to full text search, advanced search syntax is supported. @product@ relies on the underlying search engine for this behavior, so consult the [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) or [Solr](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html) documentation for the details.
+In addition to full text search, advanced search syntax is supported. The underlying search engine determines the precise behavior, so consult the [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) or [Solr](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html) documentation for the details.
 
 ![Search for text in a specific field using Elasticsearch's Query String syntax.](./searching-for-content/images/02.png)
 
@@ -31,7 +33,7 @@ What if users want their search terms (for example, _agile frameworks_) to produ
 
 ### Prefix Searching
 
-With prefix searching, searching for the term *instrument* returns documents with the full word in them, and it also returns variants with *instrument* as the prefix. For example, results with *instruments*, *instrumental*, and *instrumentation* are also returned.
+With prefix searching, searching for the term *instrument* returns documents not only containing the full word, bit also variants with *instrument* as the prefix. For example, results with *instruments*, *instrumental*, and *instrumentation* are also returned.
 
 ![Searching for "lever" also returns "leverage" and "leveraging".](./searching-for-content/images/03.png)
 
