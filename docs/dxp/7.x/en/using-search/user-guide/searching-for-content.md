@@ -33,7 +33,7 @@ What if users want their search terms (for example, _agile frameworks_) to produ
 
 ### Prefix Searching
 
-With prefix searching, searching for the term *instrument* returns documents not only containing the full word, bit also variants with *instrument* as the prefix. For example, results with *instruments*, *instrumental*, and *instrumentation* are also returned.
+With prefix searching, searching for the term *instrument* returns documents not only containing the full word, but also variants with *instrument* as the prefix. For example, results with *instruments*, *instrumental*, and *instrumentation* are also returned.
 
 ![Searching for "lever" also returns "leverage" and "leveraging".](./searching-for-content/images/03.png)
 
@@ -50,22 +50,22 @@ Configure the Search Bar's behavior via its portlet configuration screen.
 ![Configure the search bar behavior in its configuration screen.](./searching-for-content/images/05.png)
 
 ```note::
-   When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the destination [Search Page's](./working-with-search-pages.md) Search Bar portlet, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
+   When you configure the globally embedded Search Bar widget at the top of one page, it configures the page-top Search Bar widget on all pages in the site. It also overrides the `destination Search Page's<./working-with-search-pages.md>`__ Search Bar portlet, if they're configured differently. However, it does not override Search Bar widgets manually placed on other pages.
 ```
 
 There are several options:
 
 **Keywords Parameter Name:** Edit the parameter name for the keywords entered in the search. For example, the default URL when searching for the keyword term _data_ looks like this: 
 
-    ```
-    http://localhost:8080/web/guest/search?q=data
-    ```
+```
+http://localhost:8080/web/guest/search?q=data
+```
 
 If you change the Keywords Parameter Name to _keyword_ it looks like this:
 
-    ```
-    http://localhost:8080/web/guest/search?keyword=data
-    ```
+```
+http://localhost:8080/web/guest/search?keyword=data
+```
 
 **Scope:** Choose between three options: This Site (default), Everything, and Let the User Choose. *This Site* means only the assets associated with the site where the search is executed are searched. Expand the scope of the search to all sites by selecting *Everything*. To let users choose which scope they want to search, select *Let the User Choose*.
 
@@ -73,15 +73,15 @@ If you change the Keywords Parameter Name to _keyword_ it looks like this:
 
 **Scope Parameter Name:** Set the URL parameter name for the scope where the search is taking place. This parameter only appears in the URL if the scope _Let the User Choose_ is selected. The default value is _scope_, so searching for the word _data_ produces the default URL of
 
-    ```
-    http://localhost:8080/web/guest/search?q=data&scope=this-site
-    ```
+```
+http://localhost:8080/web/guest/search?q=data&scope=this-site
+```
 
 Changing _scope_ to _target_ would produce this URL:
 
-    ```
-    http://localhost:8080/web/guest/search?q=data&target=this-site
-    ```
+```
+http://localhost:8080/web/guest/search?q=data&target=this-site
+```
 
 **Destination Page:** Provide a friendly URL to the [search page](./working-with-search-pages.md). If not configured or if it points to a page that doesn't exist, a message appears for administrators that the search bar must be configured for it to appear to users.
 
@@ -93,7 +93,7 @@ Suggest search terms to users when their initial queries are suboptimal. Spell c
 
 To configure the spell check settings, 
 
-1  You must first reindex the spell check indexes. Go to *Control Panel* &rarr; *Configuration* &rarr; *Search*, and open the Index Actions screen.
+1.  You must first reindex the spell check indexes. Go to *Control Panel* &rarr; *Configuration* &rarr; *Search*, and open the Index Actions screen.
 
     Click *Execute* next to *Reindex all spell check indexes*.
 
