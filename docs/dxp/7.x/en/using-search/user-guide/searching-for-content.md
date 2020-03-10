@@ -2,7 +2,7 @@
 
 All indexed content (a.k.a. _assets_ in Liferay DXP) can be returned as search results. [Custom content can also be indexed](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework), so your installation might have additional asset types beyond the ones included by default. 
 
-![If these apps are deployed, their content is searchable by default.](./searching-for-content/08.png)
+![If these apps are deployed, their content is searchable by default.](./searching-for-content/images/08.png)
 
 <!-- move to search results documentation, most likely-->
 <!-->
@@ -13,7 +13,7 @@ All indexed content (a.k.a. _assets_ in Liferay DXP) can be returned as search r
 
 Using the default Liferay DXP setup, you enter the search context by entering search terms in the search bar. Execute a search and you're taken to a [search page](./working-with-search-pages.md) with various search widgets deployed. 
 
-![The default search configuration displays a search bar in its default view, beckoning users to enter the search context.](./searching-for-content/01.png)
+![The default search configuration displays a search bar in its default view, beckoning users to enter the search context.](./searching-for-content/images/01.png)
 
 ### Entering Search Terms
 
