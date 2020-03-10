@@ -73,7 +73,7 @@ Here are the steps for using the Docker image:
 
 1. Validate your upgraded database.
 
-    ![Here is the Liferay DXP landing screen.](./basic-database-upgrade-steps/images/01.png)
+    ![Here is the Liferay DXP landing screen.](./upgrading-via-docker/images/01.png)
 
 Your Liferay DXP database upgrade is now complete!
 

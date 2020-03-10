@@ -5,7 +5,7 @@ Upgrade Basics
    :maxdepth: 2
 
    upgrade-basics/upgrade-overview.md
-   upgrade-basics/basic-database-upgrade-steps.md
+   upgrade-basics/upgrading-via-docker.md
    upgrade-basics/using-the-database-upgrade-tool.md
    upgrade-basics/post-upgrade-considerations.md
 

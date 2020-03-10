@@ -86,7 +86,7 @@ The search engine typically indexes regularly while Liferay DXP is running. Howe
 
 There are two ways to upgrade your DXP database:
 
-* [Upgrade via Docker)](./basic-database-upgrade-steps.md) involves passing an auto upgrade parameter to the command for starting a DXP Docker image. DXP updates the database and then starts up using the upgraded database.
+* [Upgrade via Docker)](./upgrading-via-docker.md) involves passing an auto upgrade parameter to the command for starting a DXP Docker image. DXP updates the database and then starts up using the upgraded database.
 
 * [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) is a client program for updating the DXP database while it's detached from any DXP instance. It facilitates focusing on the upgrade process, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) for upgrade operations, and [pruning unnecessary data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) to quicken the database upgrade.
 
@@ -96,7 +96,7 @@ Once you complete the tasks outlined above, your upgrade is complete. But before
 
 Now that you're familiar with the DXP upgrade components, you can upgrade your DXP instance. Make sure to do preliminary tasks on your current installation, before upgrading the database. It's common to upgrade custom plugin code and execute the database upgrade in parallel. Since, database upgrade is a popular task to start first, here are links to the two methods:
 
-* [Using Auto Upgrade \(Basic Database Upgrade Steps\)](./basic-database-upgrade-steps.md)
+* [Upgrading Via Docker](./upgrading-via-docker.md)
 * [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md)
 
 Additionally, refer to these other upgrade scenarios if they relate to your upgrade:
