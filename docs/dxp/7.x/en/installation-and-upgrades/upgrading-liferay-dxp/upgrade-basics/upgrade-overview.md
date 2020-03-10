@@ -1,6 +1,6 @@
 # Upgrade Overview
 
-The complexity and scale of a DXP installation correlates directly to the planning and effort that may be required to upgrade it. Installations that have few custom apps and small data sets can likely be upgraded successfully using the [Basic Upgrade Steps](./basic-database-upgrade-steps.md). Large, complex installations and enterprise-level installations typically require additional planning and testing to upgrade safely and efficiently. The Liferay DXP upgrade topics fall into these categories:
+The complexity and scale of a DXP installation correlates directly to the planning and effort that may be required to upgrade it. The larger your data set it and the more custom apps you have the longer your upgrade will typically take. The Liferay DXP upgrade topics fall into these categories:
 
 * [Preparation and Planning](#preparation-and-planning)
 * [Updating Custom Plugin Code](#updating-custom-plugin-code)
@@ -9,7 +9,7 @@ The complexity and scale of a DXP installation correlates directly to the planni
 * [Executing the Database Upgrade](#executing-the-database-upgrade)
 
 ```warning::
-   **Always** `back up <../../10-maintaining-a-liferay-dxp-installation/backing-up.md>`_ your database and installation before upgrading. Testing the upgrade process on backup copies is advised.
+   **Always** `back up <../../maintaining-a-liferay-dxp-installation/backing-up.md>`_ your database and installation before upgrading. Testing the upgrade process on backup copies is advised.
 ```
 
 ## Preparation and Planning
@@ -84,19 +84,20 @@ The search engine typically indexes regularly while Liferay DXP is running. Howe
 
 ## Executing the Database Upgrade
 
-There are two primary database upgrade methods:
+There are two ways to upgrade your DXP database:
 
-* [Using Auto Upgrade \(Basic Database Upgrade Steps\)](./basic-database-upgrade-steps.md): This involves setting an auto upgrade property and launching the new DXP server. The database upgrades executes as DXP starts up. After the upgrades and DXP startup complete successfully, your new DXP server is operating with the upgraded database.
+* [Upgrade via Docker)](./basic-database-upgrade-steps.md) involves passing an auto upgrade parameter to the command for starting a DXP Docker image. DXP updates the database and then starts up using the upgraded database.
 
-* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md): This client program updates a DXP database while it's offline, detached from any DXP instance. [Tuning a database for upgrade](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) and using the upgrade tool is recommended for upgrading large data sets. Additionally, the upgrade tool works well in cycles where you're [pruning data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md), upgrading, and testing.
-
-For larger installations and production environments we recommend using the Liferay Database Upgrade Tool.
+* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) is a client program for updating the DXP database while it's detached from any DXP instance. It facilitates focusing on the upgrade process, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) for upgrade operations, and [pruning unnecessary data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) to quicken the database upgrade.
 
 ## Conclusion
 
 Once you complete the tasks outlined above, your upgrade is complete. But before using DXP, you must re-establish desired runtime settings and undo any upgrade-specific tuning. Plus there may be applications that weren't available on your previous Liferay version that are recommended for new DXP production instances. See the [Post-Upgrade Considerations](./post-upgrade-considerations.md) for more information.
 
-Now that you're familiar with the DXP upgrade components, you can start upgrading your DXP instance. First examine the [Basic Database Upgrade Steps](./basic-database-upgrade-steps.md) and consider whether they fit your upgrade. If they don't, follow the topics outlined above and execute the database upgrade using the [Database Upgrade Tool](./using-the-upgrade-tool.md).
+Now that you're familiar with the DXP upgrade components, you can upgrade your DXP instance. Make sure to do preliminary tasks on your current installation, before upgrading the database. It's common to upgrade custom plugin code and execute the database upgrade in parallel. Since, database upgrade is a popular task to start first, here are links to the two methods:
+
+* [Using Auto Upgrade \(Basic Database Upgrade Steps\)](./basic-database-upgrade-steps.md)
+* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md)
 
 Additionally, refer to these other upgrade scenarios if they relate to your upgrade:
 

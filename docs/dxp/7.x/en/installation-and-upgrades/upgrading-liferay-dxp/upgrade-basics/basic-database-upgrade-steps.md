@@ -1,19 +1,19 @@
-# Basic Database Upgrade Steps
+# Upgrading Via Docker
 
-The fastest way to upgrade to DXP 7.3+ is by using the latest Liferay Docker image and the _Auto Upgrade_ feature. Auto Upgrade is a mode of running DXP that invokes all upgrade processes on DXP startup. When Auto Upgrade completes, DXP launches on the upgraded database. If your data set is small and you're upgrading to DXP 7.3+, these basic database upgrade steps may be for you.
+A DXP Docker image invokes all DXP upgrade processes when an auto upgrade parameter is passed to the command for running the image. When the upgrade processes complete, DXP launches on the upgraded database.
 
-The Docker Desktop is available from [here](https://www.docker.com/products/docker-desktop). Liferay provides [DXP images](https://hub.docker.com/r/liferay/dxp) (Subscription) and [Community Edition images](https://hub.docker.com/r/liferay/portal).
+The Docker Desktop is available from [here](https://www.docker.com/products/docker-desktop). Liferay provides DXP Community Edition images [here](https://hub.docker.com/r/liferay/portal).
 
 ```important::
-   Before running the basic database upgrade steps, review the `Upgrade Overview <./upgrade-overview.md>`_.
+   Before running these steps, review the `Upgrade Overview <./upgrade-overview.md>`_.
 ```
 
 ```important::
-   For production and enterprise level deployments of Liferay, use the Upgrade Tool to perform upgrades. For more information see `Using the Liferay Upgrade Tool <./using-the-database-upgrade-tool.md>`_.
+   If you have an Enterprise Subscription, use the Database Upgrade Tool. For more information see `Using the Liferay Upgrade Tool <./using-the-database-upgrade-tool.md>`_.
 ```
 
 ```warning::
-   **Always** `back up <../../10-maintaining-a-liferay-dxp-installation/backing-up.md>`_ your database and installation before upgrading. Testing the upgrade process on backup copies is advised.
+   **Always** `back up <../../maintaining-a-liferay-dxp-installation/backing-up.md>`_ your database and installation before upgrading. Testing the upgrade process on backup copies is advised.
 ```
 
 ```important::
@@ -22,7 +22,7 @@ The Docker Desktop is available from [here](https://www.docker.com/products/dock
 
 ## Using the Latest Docker Image
 
-Here are the data upgrade steps:
+Here are the steps for using the Docker image:
 
 1. Set up a new [Liferay Home](../../reference/liferay-home.md) folder with the contents of your current Liferay Home. You'll bind this new Liferay Home to the Docker image in a later step.
 
@@ -44,7 +44,7 @@ Here are the data upgrade steps:
     echo "indexReadOnly=\"true\"" > osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
     ```
 
-1. Run the latest DXP Docker image mounted to your new Liferay Home using the following command, substituting your environment values as needed:
+1. Run the DXP Docker image mounted to your new Liferay Home using the following command, substituting your environment values as needed:
 
     ```bash
     docker run -it -p 8080:8080 \
@@ -55,7 +55,7 @@ Here are the data upgrade steps:
 
     The `-v /path/to/liferay-home:/mnt/liferay` arguments bind mount the `/path/to/liferay-home` folder on the host to `/mnt/liferay` in the container.
 
-    The database upgrade processes run.
+    The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade processes to run.
 
 1. In the console or log, confirm successful database upgrade and DXP startup. Upgrade process messages report starting and completing each upgrade process. A message like this one indicates DXP startup completion:
 
@@ -87,7 +87,7 @@ If the upgraded DXP database is all you need, then enjoy using your new version 
 
 * [Upgrade Overview](./upgrade-overview.md) describes all of the upgrade topics. Maybe there's a topic you still need to address.
 
-* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) demonstrates upgrading the database while the DXP server is offline. If auto-upgrade (above) took too long or you'd like to upgrade a larger data set or an enterprise-level DXP environment, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [pruning unneeded data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md), and using database upgrade tool is recommended.
+* [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md) demonstrates upgrading the database while the DXP server is offline. If the upgrade took too long, [tuning the database](../upgrade-stability-and-performance/database-tuning-for-upgrades.md), [pruning unneeded data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md), and using database upgrade tool is recommended.
 
 * [Custom Code Upgrade](https://help.liferay.com/hc/en-us/articles/360029316391-Introduction-to-Upgrading-Code-to-Liferay-DXP-7-2) guides you in adapting custom plugin code you've developed to the new DXP version.
 

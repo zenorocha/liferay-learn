@@ -6,10 +6,10 @@ The Liferay Database Upgrade Tool is a client program for upgrading DXP database
 * [Prune unnecessary data](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) (e.g., unneeded versions of Web Content, Documents, and more) to improve upgrade performance
 * Resolve upgrade issues
 
-The topics mentioned above are especially important for upgrading large, enterprise-level DXP environments safely and as quickly as possible. The [Upgrade Overview](./upgrade-overview.md) introduces the topics and links to articles that demonstrate them. After you've accounted for the tasks described in these upgrade topics, you're ready to upgrade the database using the upgrade tool.
+The topics mentioned above are especially important for upgrading large, enterprise-level DXP environments safely and as quickly as possible. After you've accounted for tuning and pruning the database and completing relevant tasks described in the [Upgrade Overview](./upgrade-overview.md), you're ready to upgrade the database using the upgrade tool.
 
 ```warning::
-   **Always** `back up <../../10-maintaining-a-liferay-dxp-installation/backing-up.md>`_ your data and installation before upgrading. Testing the upgrade process on backup copies is advised.
+   **Always** `back up <../../maintaining-a-liferay-dxp-installation/backing-up.md>`_ your data and installation before upgrading. Testing the upgrade process on backup copies is advised.
 ```
 
 ```important::
@@ -47,13 +47,13 @@ You can specify a log file using these parameters:
 -l <logfile>
 ```
 
-You can pass in JVM parameters using this format:
+JVM options are passed in using this format:
 
 ```
 -j "<JVM Options>"
 ```
 
-You should specify the `UTF-8` file encoding and the `GMT` user time zone as JVM options. Since the database upgrade tool operates on your DXP database, you should also configure the upgrade tool with the same JVM options that you use for your DXP application server. If you used country and language JVM options, specify them for the upgrade tool. While you're at it, you should allocate the initial memory (`-Xmx value`) for the upgrade tool too. Use 2 GB at a minimum. If your DXP database has over 10 GB of data, increase the initial memory.
+Since the database upgrade tool operates on your DXP database, you should also configure the upgrade tool with the same JVM options that you use for your DXP application server. You should specify the `UTF-8` file encoding and the `GMT` user time zone as JVM options. If you used country and language JVM options, specify them for the upgrade tool too. While you're at it, you should allocate the initial memory (`-Xmx value`) for the upgrade tool too. Use 2 GB at a minimum. If your DXP database has over 10 GB of data, increase the initial memory.
 
 Here's an example command that specifies JVM options and a log file:
 
@@ -63,13 +63,14 @@ db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "outpu
 
 ## Running the Upgrade Tool
 
-Here's how you run an upgrade using the tool:
+Here's how you upgrade the database using the tool:
 
 1. Set up a new [Liferay Home](../../reference/liferay-home.md) folder with the contents of your current Liferay Home.
 
     ```bash
     cp /old-version/liferay-home/ /new-version/liferay-home/
     ```
+
     If your current Liferay Home is in source control, create a new branch.
 
     ```bash
@@ -78,7 +79,7 @@ Here's how you run an upgrade using the tool:
 
 1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in `portal-ext.properties` and replace the MySQL JDBC driver JAR your app server uses. See this [Database Drivers](../configuration-and-infrastructure/migrating-configurations-and-properties.md#database-drivers) for more details.
 
-1. Execute the upgrade tool:
+1. Execute the upgrade tool. Here's an example command:
 
     ```bash
     cd [Liferay Home]/tools/portal-tools-db-upgrade-client
@@ -108,7 +109,7 @@ Here's how you run an upgrade using the tool:
     (etc.)
     ```
 
-    To use the default value shown in a prompt, press enter.
+    If you want to use the default value shown in a prompt, press enter.
 
     After configuration is complete, the upgrade starts. You can monitor the log file. Log messages are reported for the start and completion of each upgrade process.
 
