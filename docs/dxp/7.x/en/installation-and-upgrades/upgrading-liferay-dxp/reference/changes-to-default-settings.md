@@ -93,13 +93,82 @@ Here are some properties that have changed since version 6.2:
 
 | **Portal Property** | **6.2 Default** | **7.0 Default**|
 | --- | --- | --- |
+| verify.process.concurrency.threshold | 3 | 5 |
+| auto.deploy.listeners | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | dropped com.liferay.portal.deploy.auto.LiferayPackageAutoDeployListener, com.liferay.portal.deploy.auto.exploded.tomcat.HookExplodedTomcatListener, com.liferay.portal.deploy.auto.exploded.tomcat.LayoutTemplateExplodedTomcatListener, com.liferay.portal.deploy.auto.exploded.tomcat.PortletExplodedTomcatListener, com.liferay.portal.deploy.auto.exploded.tomcat.ThemeExplodedTomcatListener |
+| hot.deploy.listeners | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added com.liferay.portal.deploy.hot.OSGiHotDeployListener |
+| portlet.add.default.resource.check.whitelist | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| portlet.add.default.resource.check.whitelist.actions | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | *blank* |
+| portlet.interrupted.request.whitelist.actions | /language/view | *blank* |
+| portlet.preferences.strict.store | false | true |
+| resource.actions.configs | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added META-INF/resource-actions/default.xml |
+| model.hints.configs | replaced META-INF/portlet-model-hints.xml | with classpath*:META-INF/portlet-model-hints.xml |
+| spring.configs | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| jdbc.default.* | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| transactional.cache.names | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| ehcache.* | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| javascript.barebone.files | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| javascript.everything.files | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | dropped liferay/address.js and liferay/dockbar.js |
+| javascript.bundle.dir[javascript.barebone.files] | /html/js | / |
+| javascript.bundle.dir[javascript.everything.files] | /html/js | / |
+| SQL Data | replace `sql.data.com.liferay.portal.model.*` | with `sql.data.com.liferay.portal.kernel.model.*` |
+| company.settings.form.authentication | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | *blank* |
+| locales | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added th_TH |
+| locales.beta | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | dropped nl_NL |
+| locales.enabled | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added nl_NL |
+| locale.use.default.if.not.available | true | false |
+| time.zones | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added Australia/Perth, Australia/Eucla, Australia/Lord_Howe |
+| Look and Feel | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| session.phishing.protected.attributes | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added CAS_LOGIN |
+| LDAP props | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| auth.login.portlet.name | 58 | com_liferay_login_web_portlet_LoginPortlet |
+| auth.public.paths | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Authentication Token | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| auth.token.ignore.portlets | 82 | *blank* |
+| Passwords | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| permissions.inline.sql.resource.block.query.threshhold | | renamed permissions.inline.sql.resource.block.query.threshold |
+| Captcha props | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| application.startup.events | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Portal Events | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Default * Layouts | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| layout.friendly.url.keywords | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added sprite and user; dropped software_catalog* |
+| layout.parallel.render.thread.pool.core.thread.count | 0 | 1 |
+| layout.set.prototype.propagate.logo | true | false |
+| Editors | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| field.enable.com.liferay.portal.model.* props |  | renamed field.enable.com.liferay.portal.kernel.model.* |
+| Lucene Search | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Setup Wizard | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| value.object.entity.cache.enabled.com.liferay.portal.model.* props | | renamed value.object.entity.cache.enabled.com.liferay.portal.kernel.model.* |
+| value.object.finder.cache.enabled.com.liferay.portal.model.* props | | renamed value.object.finder.cache.enabled.com.liferay.portal.kernel.model.* |
+| Audit Message | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Cluster Link | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| counter.increment.com.liferay.portal.model.Layout | | renamed counter.increment.com.liferay.portal.kernel.model.Layout |
+| com.liferay.portal.service.http.TunnelUtil.verify.ssl.hostname | | renamed com.liferay.portal.kernel.service.http.TunnelUtil.verify.ssl.hostname |
+| JSON props | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Lock | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Module Framework | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Quartz | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| search.container.page.iterator.max.pages | 10 | 25 |
+| Staging | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| virtual.hosts.ignore.paths | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | added /c/portal/edit_layout; dropped /c/layouts_admin/update_page |
+| xuggler.jar.file[64-win] | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| xuggler.jar.url | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| com.liferay.portal.servlet.filters.gzip.GZipFilter=false | true | false |
+| web.server.servlet.check.image.gallery | true | false |
+| admin.default.role.names | `Power User\nUser` | `User` |
+| admin.obfuscated.properties | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Blogs Portlet and Service | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
 | blogs.trackback.enabled | true | false |
+| Discussion Tag Library | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Document Library Portlet and Service | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
 | dl.file.entry.thumbnail.max.height | 128 | 300 |
 | dl.file.entry.thumbnail.max.width | 128 | 300 |
-| layout.set.prototype.propagate.logo | true | false |
-| web.server.servlet.check.image.gallery | true | false |
+| login.form.navigation.pre | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| login.form.navigation.post | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Message Boards Service | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
+| Ratings Tag Library | see [value](https://docs.liferay.com/ce/portal/6.2-sp17/propertiesdoc/portal.properties.html) | see [value](https://docs.liferay.com/ce/portal/7.0-latest/propertiesdoc/portal.properties.html) |
 
-The latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html) provides property details and examples. Many properties are now replaced by OSGi configurations, which are accessible through the UI in [System Settings](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings).
+
+The latest [portal properties reference](https://docs.liferay.com/ce/portal/7.3-latest/propertiesdoc/portal.properties.html) provides property details and examples. Many properties are now replaced by OSGi configurations, which are accessible through the UI in [System Settings](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings).
 
 ## Related Topics
 
