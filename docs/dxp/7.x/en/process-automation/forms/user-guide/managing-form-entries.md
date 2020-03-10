@@ -58,8 +58,8 @@ There is a system level setting to determine whether administrators can export e
 ## Deleting Form Entries
 
 1. Navigate to _Site Adminstration_ &rarr; _Content & Data_ &rarr; _Forms_.
-1. Click the *Actions* (![Actions](../../../images/icon-actions.png)) button next to the selected form and select _View Entries_.
-1. Select all entries by checking the box next to *Filter and Order*. An _X_ appears in the top right corner of the Form Entries screen.
+1. Click the _Actions_ (![Actions](../../../images/icon-actions.png)) button next to the selected form and select _View Entries_.
+1. Select all entries by checking the box next to **Filter and Order**. An _X_ appears in the top right corner of the Form Entries screen.
 
     ![Delete all form entries in one fell swoop.](./managing-form-entries/images/07.png)
 
