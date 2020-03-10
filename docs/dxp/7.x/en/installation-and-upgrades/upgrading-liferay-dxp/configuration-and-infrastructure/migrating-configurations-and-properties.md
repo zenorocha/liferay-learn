@@ -110,11 +110,25 @@ The `blade upgradeProps` command is used in the following format:
 blade upgradeProps -p {old_liferay_home_path}/portal-ext.properties -d {new_liferay_home_path}
 ```
 
-This command reports the names of modified properties, as well as how they must be migrated to the new DXP version. Here is a command output example:
+Here is example output from running the `blade upgradeProps` command:
 
 ```
-ERROR [main][VerifyProperties:161] Portal property "layout.first.pageable[link_to_layout]" is obsolete
-ERROR [main][VerifyProperties:136] Portal property "journal.article.check.interval" was modularized to com.liferay.journal.web as "check.interval"
+Checking the location for old properties in the new version
+-----------------------------------------------------------
+
+
+Properties moved to OSGI configuration:
+        blogs.image.extensions can match with the following OSGI properties:
+                imageExtensions from com.liferay.blogs.configuration.BlogsFileUploadsConfiguration
+        blogs.image.max.size can match with the following OSGI properties:
+                imageMaxSize from com.liferay.adaptive.media.image.internal.configuration.AMImageConfiguration
+                imageMaxSize from com.liferay.blogs.configuration.BlogsFileUploadsConfiguration
+
+We have not found a new property for the following old properties (check if you still need them or check the documentation to find a replacement):
+        admin.email.password.sent.body
+        admin.email.password.sent.subject
+        admin.email.user.added.body
+...
 ```
 
 ## Next Steps
