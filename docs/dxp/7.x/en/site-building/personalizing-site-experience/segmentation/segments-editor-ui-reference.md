@@ -65,7 +65,7 @@ User Properties are user attributes you want to capture. This is made up of user
 | User | Select a specific User from a list. |
 | Name | The full name of the User. |
 
-Since Liferay Portal CE 7.3 GA1, these properties are also available for Users:
+Since Liferay DXP 7.2 SP2+, these properties are also available for Users:
 
 | Property | Description |
 | --- | --- |
@@ -85,7 +85,7 @@ Organization Properties is a selectable list of Organizations to include in your
 | Parent Organization | Select a specific parent Organization. |
 | Type | Select the type of Organization, if Organization types have been defined. |
 
-Since Liferay Portal CE 7.3 GA1, these properties are also available for Organizations:
+Since Liferay DXP 7.2 SP2+, these properties are also available for Organizations:
 
 | Property | Description |
 | --- | --- |
@@ -113,7 +113,7 @@ Session Properties contains criteria based on the user's activity, browser, and 
 | URL | Enter the current URL. |
 | User Agent | Enter a User Agent property. |
 
-Since Liferay Portal CE 7.3 GA1, these properties are also available for Organizations:
+Since Liferay DXP 7.2 SP2+, these properties are also available for Organizations:
 
 | Property | Description |
 | --- | --- |

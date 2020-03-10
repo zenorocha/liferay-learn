@@ -2,11 +2,11 @@
 
 Coming soon!
 
-<!-- Comments are a useful tool for collaborating on Fragments. They're included out-of-the-box in Liferay Portal CE 7.3, but they are disabled in Liferay Portal CE 7.2.
+<!-- Comments are a useful tool for collaborating on Fragments. They're included out-of-the-box in Liferay DXP 7.3, but they are disabled in Liferay DXP 7.2.
 
 ## Disabling and Enabling Fragment Comments
 
-You can enable/disable comments for Fragments in Liferay Portal CE 7.2 and Liferay Portal CE 7.3 through System Settings. Follow these steps:
+You can enable/disable comments for Fragments in Liferay DXP 7.2 and Liferay DXP 7.3 through System Settings. Follow these steps:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Content and Data* &rarr; *Pages*.
 1. Select *Content Page Editor* under the Virtual Instance scope.
