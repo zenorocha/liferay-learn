@@ -17,7 +17,7 @@ Using the default Liferay DXP setup, you enter the search context by entering se
 
 ### Entering Search Terms
 
-Liferay's search infrastructure supports full text search as implemented by its supported search engines ([Elasticsearch]((https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) and [Solr](http://lucene.apache.org/solr/features.html)).
+Liferay's search infrastructure supports full text search as implemented by its supported search engines ([Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) and [Solr](http://lucene.apache.org/solr/features.html)).
 
 Full text search compares all the words entered in a search query (for example, *space vacation*) to all the words in each indexed document. A search engine like Elasticsearch calculates relevance scores to ensure the best results are returned first (like a Blogs Entry titled *Is a vacation in space right for you?*) and lots of matching results are returned (anything with either the word *vacation* or *space* is returned). 
 
