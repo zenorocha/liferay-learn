@@ -63,7 +63,6 @@ public class KBArticleSimilarResultsContributor implements SimilarResultsContrib
 
 		long groupId = criteriaHelper.getGroupId();
 
-		String urlFolderTitle = (String) criteriaHelper.getRouteParameter("urlFolderTitle");
 		String urlTitle = (String) criteriaHelper.getRouteParameter("urlTitle");
 
 		KBArticle kbArticle = _kbArticleLocalService.fetchKBArticleByUrlTitle(groupId,

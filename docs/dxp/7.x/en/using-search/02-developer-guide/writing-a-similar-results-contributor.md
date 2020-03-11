@@ -1,12 +1,13 @@
 # Contributing Custom Content to the Similar Results Widget
 
+> **Subscribers**
 > Available: This functionality relies on a Service Provider Interface (SPI) that's bundled with Liferay DXP 7.3+. It's available in Liferay DXP 7.2, from Fix Pack 5+, via installation of the Similar Results widget from [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/MP_ID_FOR_SIMILAR_RESULTS_APP).
 
 You can display your application's custom content in the [Similar Results widget](https://help.liferay.com/hc/en-us/sections/360004673411-Search) by implementing a `SimilarResultsContributor`. Note that for the contributor to work, the Similar Results widget must be able to detect your content as the main asset on a page. That means it must be displayable via a URL in a "Display Widget", like the supported Liferay DXP assets (e.g., blogs entries and wiki pages). Keep in mind that the Similar Results widget can already be used with any content displayed in Lifery DXP's Asset Publisher, without the need for a custom contributor.
 
 ![The Blogs display widget works with Similar Results because of its contributor.](./writing-a-similar-results-contributor/images/01.png "Blogs Similar Results")
 
-Since the Knowledge Base application does not implement a `SimilarResultsContributor` for KB Articles out of the box, this example implements one.
+Since the Knowledge Base application does not implement a `SimilarResultsContributor` for KB Articles out of the box, this example implements one. For simplicity, only KB Articles in the root folder of the application are dealt with here.
 
 ## Overview
 
@@ -113,11 +114,15 @@ public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper);
 
 Implement `detectRoute` to provide a distinctive portion of your entity's URL pattern, so that the Similar Results widget can detect if your contributor should be invoked. The URL pattern is added as an attribute of the `RouteBuilder` object. The `RouteHelper` is useful for retrieving the whole URL String for parsing.
 
+```note::
+   Only one `SimilarResultsContributor` is supported for each entity.
+```
+
 ```java
 public void resolveCriteria(CriteriaBuilder criteriaBuilder, CriteriaHelper criteriaHelper);
 ```
 
-Implement `resolveCriteria` to match the main entity on the page to the corresponding search engine document. This will be invoked if route detected indicates that your Contributor is the appropriate one.
+Implement `resolveCriteria` to use the main entity on the page to look up the corresponding search engine document. This will be invoked if the route detected indicates that your contributor is the appropriate one.
 
 ```java
 public void writeDestination(DestinationBuilder destinationBuilder, DestinationHelper destinationHelper);
@@ -125,7 +130,7 @@ public void writeDestination(DestinationBuilder destinationBuilder, DestinationH
 
 Implement `writeDestination` to
 - update the main asset when a User clicks a link in the similar results widget
-- re-run the backing More Like This Query that's used to populate the Similar Results widget. 
+- Run the backing More Like This Query that's used to populate the Similar Results widget. 
 
 ### Complete the Similar Results Contributor
 
@@ -165,7 +170,6 @@ public void resolveCriteria(CriteriaBuilder criteriaBuilder, CriteriaHelper crit
 
     long groupId = criteriaHelper.getGroupId();
 
-    String urlFolderTitle = (String) criteriaHelper.getRouteParameter("urlFolderTitle");
     String urlTitle = (String) criteriaHelper.getRouteParameter("urlTitle");
 
     KBArticle kbArticle = _kbArticleLocalService.fetchKBArticleByUrlTitle(groupId,
@@ -194,10 +198,11 @@ public void resolveCriteria(CriteriaBuilder criteriaBuilder, CriteriaHelper crit
 }
 ```
 
-Match the page's displayed entity to the corresponding search engine document. You must provide the `criteriaBuilder.uid` method the value of the appropriate search engine document's `uid` field. In the Liferay DXP index, this is done using a combination of the entry class name and the class primary key. Pass both as Strings to `Field.getUID`. This example starts by fetching the model entity using the ID you added to the attribute in the `detectRoute` method (the `urlTitle`), and then uses it to retrieve the asset entry. 
+Look up the search engine document corresponding to the page's displayed entity. You must provide the `criteriaBuilder.uid` method the value of the appropriate search engine document's `uid` field (this is usually equal to the Elasticsearch-specified `_id` field in the document). In the Liferay DXP index, this field is a composition of the entry class name and the class primary key. Pass both as Strings to `Field.getUID` to obtain the value. Our example starts by fetching the model entity using the ID you added to the attribute in the `detectRoute` method (the `urlTitle`), and then uses it to retrieve the asset entry. 
 
-> There's a difference between Liferay DXP 7.2 and Liferay DXP 7.3, so a condition to check the version, with logic for each, is provided here. In Liferay DXP 7.3, `getPrimaryKeyObj` is used in conjunction with the class name, whereas in Liferay DXP 7.2, `getResourcePrimKey` is needed.
-
+```important::
+   There's a difference between Liferay DXP 7.2 and Liferay DXP 7.3, so a condition to check the version, with logic for each, is provided here. In Liferay DXP 7.3, `getPrimaryKeyObj` is used in conjunction with the class name, whereas in Liferay DXP 7.2, `getResourcePrimKey` is needed.
+```
 Now that matching documents can be found, write the destination URL so the similar results are updated.
 
 #### Implement the `writeDestination` Method
@@ -218,7 +223,7 @@ public void writeDestination(DestinationBuilder destinationBuilder, DestinationH
 
 Implement `writeDestination` to update the main asset when a user clicks a link in the Similar Results widget. The More Like This query is re-sent to the search engine, and the Similar Results list is re-rendered to match the new main asset. For KB Articles, the entirety of the work is to replace the `urlTitle` in the original URL (for the main asset) with the `urlTitle` of the matched entity.
 
-The `destinationHelper.getRouteParameter` call is important, because it's the only method from the `DestinationHelper` is a pre-search operator. It will always return data from the currently selected main asset, prior to re-rendering the main asset or the Similar Results links. The remainder of the `DestinationHelper` methods, including the other one shown here, `getAssetRenderer`, return data for a matched asset. This method is run iteratively for each matched result.
+The `destinationHelper.getRouteParameter` call is important. As the only method from the `DestinationHelper` that is a pre-search operator, it will always return data from the currently selected main asset, prior to re-rendering the main asset or the Similar Results links. The remainder of the `DestinationHelper` methods, including the other one shown here, `getAssetRenderer`, return data for a matched asset. This method is run iteratively for each matched result.
 
 #### Declare the Service Dependencies
 
@@ -241,47 +246,21 @@ Since each implementation of an entity's URLs is likely to differ significantly,
 
 Much of the work involved in contributing your application's custom content to the Similar Results widget is in working with the display URL. To learn how Liferay's own assets create their display URLs, inspect the `getURLView` method of an entity's `*AssetRenderer` class.
 
+- [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383), Liferay DXP 7.3.0 GA1
+- [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249), Liferay DXP 7.3.0 GA1
+- [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218), Liferay DXP 7.3.0 GA1
+- [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297), Liferay DXP 7.3.0 GA1
 
-<!-- 
-Constructing the UID:
+As mentioned earlier, this example demonstrates creating a `SimilarResultsModelDocumentContributor` that will work with KB Articles in the root folder of the application. Adding support for KB Folders is possible, and is an interesting exercise for the motivated reader. Look at the source code for the [`DocumentLibrarySimilarResultsContributor`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/document/library/DocumentLibrarySimilarResultsContributor.java) for inspiration.
 
-So in 7.3 it's constructed using `classedModel.getPrimaryKeyObj()` by `com.liferay.portal.search.internal.model.uid.UIDFactoryImpl._getUID(ClassedModel)`.
+### Troubleshooting: Asset UID Architecture
 
-In 7.2 and 7.1 in case of entities using the composite Indexer APIs, it's determined in com.liferay.portal.search.internal.indexer.BaseModelDocumentFactoryImpl.createDocument(BaseModel<?>) as
+The `uid` is constructed in a standard way as of Liferay DXP 7.3. The `com.liferay.portal.search.internal.model.uid.UIDFactoryImpl` class is responsible for setting the `uid` for all documents under control by Liferay's indexing architecture. Since it's now standardized, there need be no guesswork on your part.
 
-		if (baseModel instanceof ResourcedModel) {
-			ResourcedModel resourcedModel = (ResourcedModel)baseModel;
+Similarly, in versions 7.2 and 7.1, if an entity is indexed with the Composite Indexer APIs (i.e., it has a `ModelDocumentContributor` class), the `uid` is set by Liferay's implementation and is standardized.
 
-			classPK = resourcedModel.getResourcePrimKey();
-			resourcePrimKey = resourcedModel.getResourcePrimKey();
-		}
-		else {
-			classPK = (Long)baseModel.getPrimaryKeyObj();
-		}
+However, entities indexed with the legacy Indexer API (i.e., the entity has a `*Indexer` class that extends Liferay's `BaseIndexer`) may have overridden the logic that sets the `uid`, so it's worth looking into an entity's indexing implementation.
 
-In 7.2 and prior version for entities using the legacy Indexer API, the same logic is in com.liferay.portal.kernel.search.BaseIndexer.getBaseModelDocument(String, BaseModel<?>, BaseModel<?>).
-
-Though some entities may set a different UID, like for example JournalArticleIndexer which does this:
-
-		if (!isIndexAllArticleVersions()) {
-			classPK = journalArticle.getResourcePrimKey();
-		}
-
-		document.addUID(CLASS_NAME, classPK);
-
-So in case of OOTB Liferay entities it's worth to check their underlying Indexer / ModelDocumentContributor class to see if they set it differently.
-
-I think it applies to custom entities too.
-If you have a URL with plain parameters, use blah if you have friendly url separateors, do it this way
-
-sidebar for folders: kbFolders could be an interesting exercise, would want to look at the src for doc library contributor to see how folders work
-
-You can see, debugging the writeDestination method for blogs, that the method is called multiple times as the similar results widget replaces the links for each asset in the list.
-
-
-getRouteParameter is the only pre-search call from DestinationHelper, and operates on the current URL path. it always returns the main asset's urlTitle, for blogs and kb articles
--->
 ## Conclusion
 
 By implementing a `SimilarResultsContributor`, you can contribute your own custom content for display in the Similar Results widget.
-
