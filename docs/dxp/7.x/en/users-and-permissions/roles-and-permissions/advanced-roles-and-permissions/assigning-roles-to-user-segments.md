@@ -2,7 +2,9 @@
 
 > Available: Liferay DXP 7.2 SP2+
 
-you can assign Roles to User Segments. Follow these steps:
+<!-- We will need a proper introduction here about what this is all about / value proposition. -->
+
+To assign Roles to a User Segment follow these steps:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 1. Open the Actions Menu next to the Role and select *Edit*.
