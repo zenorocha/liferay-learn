@@ -10,15 +10,15 @@ Navigate to the site page where the _Form_ widget has been deployed. Click the O
 
 | Permission | Description |
 | --- | --- |
-| Permissions | Grants the ability to view and set permissions |
-| Preferences | Grants the ability to view and set the widget's preferences |
-| Configuration | Grants the ability to configure the widget; can select which question is displayed  |
+| Permissions | Grants the ability to view and widget permissions for other users |
+| Preferences | Grants the ability to view and set widget preferences |
+| Configuration | Grants the ability to configure the widget; can select which form is displayed  |
 | View | Grants the ability to view the _Form_ widget |
 | Add to Page | Grants the ability to add the _Form_ widget to a site page |
 
 ## Forms Permissions
 
-1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu. Select the site where the form will be created.
+1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu. Select the site that contains the form.
 1. Click _Content & Data_  &rarr; _Forms_.
 1. Click the _Actions_ button (![Actions](../../../images/icon-actions.png)) next to the form.
 

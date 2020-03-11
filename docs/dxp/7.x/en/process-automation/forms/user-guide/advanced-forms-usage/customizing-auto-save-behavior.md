@@ -1,6 +1,6 @@
 # Customizing Auto-Save Behavior
 
-The _Forms_ application automatically saves the form's progress as you [create a form](../creating-forms.md). By default, a form's draft is auto-saved every minute.
+The _Forms_ application automatically saves the form creation progress as you [create a form](../creating-forms.md). By default, a form's draft is auto-saved every minute.
 
 To change the duration:
 

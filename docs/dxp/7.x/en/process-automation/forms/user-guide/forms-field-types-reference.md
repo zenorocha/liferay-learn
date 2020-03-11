@@ -9,6 +9,8 @@ This article documents the available elements when building a form.
 
      ![There are many useful out-of-the-box form field types.](./form-field-types-reference/images/01.png)
 
+<!-- This table is OK for starters but each of these fields has "Basic", "Advanced", and in some cases "Autocomplete" configurations. We need to document those as well eventually.  -->
+
 | Form Element | Description |
 | --- | --- |
 | **Paragraph** | This is static text on the form. Users do not enter data into form text fields. The form creator enters text that form users see displayed on the form. This is useful for longer instructions. |
