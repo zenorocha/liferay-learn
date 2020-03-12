@@ -4,7 +4,7 @@ File store options and configuration values changed in Liferay DXP 7.0. If you'r
 
 This table lists the required updates per Liferay version.
 
-| Current Liferay Version | Required Updates | 
+| Current Liferay Version | Required Updates |
 | :---------------------- | :--------------- |
 | Liferay DXP 7.0 | 1. Migrate from CMIS Store and JCR Store. |
 | Liferay Portal 6.2 and earlier | 1. Update your store implementation class name.<br>2. Migrate from CMIS Store and JCR Store.<br>3. Configure the file store in System Settings. |
@@ -13,7 +13,7 @@ The following sections explain how to update your file store.
 
 ## Updating the Store Implementation Class Name
 
-The store implementation class package names changed from `com.liferay.portlet.documentlibrary.store.*` in Liferay Portal 6.2 to `com.liferay.portal.store.*` in DXP 7.0. Set your `dl.store.impl` property in `portal-ext.properties` one of these ways:
+The store implementation class package names changed from `com.liferay.portlet.documentlibrary.store.*` in Liferay Portal 6.2 to `com.liferay.portal.store.*` in DXP 7.0. Set your `dl.store.impl` property in [`portal-ext.properties`](../../reference/portal-properties.md) one of these ways:
 
 ```properties
 dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore

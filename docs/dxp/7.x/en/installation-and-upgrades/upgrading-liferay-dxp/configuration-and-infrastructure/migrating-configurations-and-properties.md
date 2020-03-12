@@ -51,31 +51,9 @@ See the [Database Templates](../../reference/database-templates.md) for more dri
 
 The properties discussed here can be updated after database upgrade. Migrating properties involves these things:
 
+* Using [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) to report property changes
+* Converting properties to OSGi configurations
 * Special property migration considerations
-* Using [Blade CLI](https://help.liferay.com/hc/en-us/articles/360029147071-Blade-CLI) to report property changes 
-* Converting properties to OSGi configurations 
-
-### Special Property Migration Considerations 
-
-There are resources for migrating properties related to specific environments, Liferay versions, and features. They're called out here for convenience.
-
-* Updates to file store settings are discussed in [Updating the File Store](./updating-the-file-store.md).
-
-* If you're on Liferay Portal 6.1 or earlier, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults).
-
-* If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md).
-
-* Examine the default settings changes in 7.0+ [here](../reference/changes-to-default-settings.md).
-
-* Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (since 7.2) value with the following setting in your [`portal-ext.properties`](../../reference/portal-properties.md) file:
-
-    ```properties
-    sprite.enabled=true
-    ```
-
-```note::
-   You can build image sprites using any framework you like and deploy them in your plugins.
-```
 
 ### Using Blade CLI to Report Incompatible Properties
 
@@ -104,7 +82,7 @@ Following portal properties present an exception:
 e LPS-67466
         asset.publisher.display.templates.config has been removed.  Overwrite the method in the ADT handler. See LPS-67466
         ...
-        
+
 Some properties have been moved to a module portlet.properties:
         asset.publisher.search.with.index can match with the following portlet properties:
                 search.with.database from osgi/marketplace/Liferay CE Web Experience - Liferay CE Asset - Impl.lpkg/com.lif
@@ -146,7 +124,29 @@ rootDir="{document_library_path}"
 Put the `.config` files in a folder called `[Liferay Home]/osgi/configs`.
 
 ```tip::
-   The Control Panel's _System Settings_ screens (under _Configuration_) manage the OSGi Config Admin values. These screens are the most accurate way to create `.config` files. Find the screen that configures the feature you want to configure, click _Save_, and then use the options button to `export the screen's configuration <https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations>`_ to a `.config` file.
+   The Control Panel's *System Settings* screens (under *Configuration*) manage the OSGi Config Admin values. These screens are the most accurate way to create ``.config`` files. Find the screen that configures the feature you want to configure, click *Save*, and then use the options button to `export the screen's configuration <https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations>`_ to a ``.config`` file.
+```
+
+### Special Property Migration Considerations
+
+There are resources for migrating properties related to specific environments, Liferay versions, and features. They're called out here for convenience.
+
+* Updates to file store settings are discussed in [Updating the File Store](./updating-the-file-store.md).
+
+* If you're on Liferay Portal 6.1 or earlier, [adapt your properties to the new defaults that Liferay Portal 6.2 introduced](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay#review-the-liferay-62-properties-defaults).
+
+* If you have a sharded environment, [configure your upgrade to generate a non-sharded environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md).
+
+* Examine the default settings changes in 7.0+ [here](../reference/changes-to-default-settings.md).
+
+* Liferay's image sprite framework is deprecated as of 7.2 and is disabled by default. The framework requires scanning plugins for image sprites. If you don't use the framework, there's no need for it to scan for images sprites. If you use the framework yourself, enable it by overriding the default `sprite.enabled` portal property (since 7.2) value with the following setting in your [`portal-ext.properties`](../../reference/portal-properties.md) file:
+
+    ```properties
+    sprite.enabled=true
+    ```
+
+```note::
+   You can build image sprites using any framework you like and deploy them in your plugins.
 ```
 
 ## Next Steps

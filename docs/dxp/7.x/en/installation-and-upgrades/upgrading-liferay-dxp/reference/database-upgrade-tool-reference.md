@@ -4,7 +4,7 @@ This article provides an overview of the upgrade tool within your application se
 
 Start the upgrade tool using the `db_upgrade.sh` script in the `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade.bat` on Windows).
 
-## Overview 
+## Overview
 
 * [Upgrade Tool Usage](#database-upgrade-tool-usage)
 * [Configuring the Upgrade Tool](#configuring-the-upgrade-tool)
@@ -138,18 +138,18 @@ See the latest [portal properties reference](https://docs.liferay.com/dxp/portal
 
 #### Configuring portal-upgrade-ext.properties
 
-Specify the following information to configure the upgrade: 
+Specify the following information to configure the upgrade:
 
 * `liferay.home`: The [LIFERAY_HOME folder](../../reference/liferay-home.md).
 
 * `dl.store.impl`: The implementation for persisting documents to the document library store. This property is only mandatory if you're using a `*FileSystemStore` implementation. If you updated this property in your `portal-ext.properties`, copy the new value here. Otherwise, set the property one of these ways:
 
-```properties
-dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
-dl.store.impl=com.liferay.portal.store.db.DBStore
-dl.store.impl=com.liferay.portal.store.file.system.AdvancedFileSystemStore
-dl.store.impl=com.liferay.portal.store.s3.S3Store
-```
+    ```properties
+    dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
+    dl.store.impl=com.liferay.portal.store.db.DBStore
+    dl.store.impl=com.liferay.portal.store.file.system.AdvancedFileSystemStore
+    dl.store.impl=com.liferay.portal.store.s3.S3Store
+    ```
 
 * `hibernate.jdbc.batch_size`: The JDBC batch size used to improve performance (set to _250_ by default). _This property may improve upgrade performance, but it is not required._
 

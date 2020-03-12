@@ -1,7 +1,7 @@
 # Upgrading a Sharded Environment
 
 Since Liferay DXP 7.0, Liferay removed its own physical partitioning implementation (also known as sharding) in favor of the capabilities provided natively by database vendors. Upgrading a sharded installation to DXP 7.0 or higher requires migrating it to as many non-sharded Liferay DXP installations (servers) as you have shards. These steps guide you through configuring the new Liferay DXP servers to use your formerly sharded data.
-`virtual instances <https://help.liferay.com/hc/en-us/articles/360028818692-Setting-Up-a-Virtual-Instance>`_ 
+
 ```note::
    Liferay continues to support its logical partitioning capabilities (also known as `virtual instances <https://help.liferay.com/hc/en-us/articles/360028818692-Setting-Up-a-Virtual-Instance>`_ ).
 ```
