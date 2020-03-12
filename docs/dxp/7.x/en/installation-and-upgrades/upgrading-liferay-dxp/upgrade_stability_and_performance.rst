@@ -10,5 +10,5 @@ Upgrade Stability and Performance
    upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
    upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
 
-.. include:: /upgrading-liferay-dxp/upgrade-stability-and-performance/README.rst
+.. include:: /installation-and-upgrades/upgrading-liferay-dxp/upgrade-stability-and-performance/README.rst
    :start-line: 2

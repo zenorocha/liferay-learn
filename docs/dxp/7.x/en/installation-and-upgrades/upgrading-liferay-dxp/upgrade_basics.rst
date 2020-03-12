@@ -9,5 +9,5 @@ Upgrade Basics
    upgrade-basics/using-the-database-upgrade-tool.md
    upgrade-basics/post-upgrade-considerations.md
 
-.. include:: /upgrading-liferay-dxp/upgrade-basics/README.rst
+.. include:: /installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/README.rst
    :start-line: 2
