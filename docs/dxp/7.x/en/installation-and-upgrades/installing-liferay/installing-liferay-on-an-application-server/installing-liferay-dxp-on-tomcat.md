@@ -308,7 +308,7 @@ The mail session for Tomcat has been configured.
 1. Extract the DXP `.war` file contents to `$CATALINA_BASE/webapps/ROOT`.
 1. Start Tomcat by navigating to `$CATALINA_HOME/bin` and executing `./startup.sh`. Alternatively, execute `./catalina.sh run` to tail DXP's log file. The log audits startup activities and is useful for debugging deployment.
 
-Congratulations! You're running DXP on 
+Congratulations! You're running DXP on Tomcat.
 
 ## Next Steps
 
