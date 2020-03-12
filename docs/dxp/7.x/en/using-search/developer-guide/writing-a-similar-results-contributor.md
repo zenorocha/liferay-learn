@@ -51,7 +51,9 @@ To get an example `SimilarResultsContributor` up and running on your instance of
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    > **Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+    ```note::
+       This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+    ```
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -115,7 +117,7 @@ public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper);
 Implement `detectRoute` to provide a distinctive portion of your entity's URL pattern, so that the Similar Results widget can detect if your contributor should be invoked. The URL pattern is added as an attribute of the `RouteBuilder` object. The `RouteHelper` is useful for retrieving the whole URL String for parsing.
 
 ```note::
-   Only one `SimilarResultsContributor` is supported for each entity.
+   Only one `SimilarResultsContributor` is supported for each display portlet.
 ```
 
 ```java
@@ -128,9 +130,7 @@ Implement `resolveCriteria` to use the main entity on the page to look up the co
 public void writeDestination(DestinationBuilder destinationBuilder, DestinationHelper destinationHelper);
 ```
 
-Implement `writeDestination` to
-- update the main asset when a User clicks a link in the similar results widget
-- Run the backing More Like This Query that's used to populate the Similar Results widget. 
+Implement `writeDestination` to update the main asset when a User clicks a link in the similar results widget.
 
 ### Complete the Similar Results Contributor
 
