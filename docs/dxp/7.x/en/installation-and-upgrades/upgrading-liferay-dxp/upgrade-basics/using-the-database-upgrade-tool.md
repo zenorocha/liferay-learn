@@ -31,7 +31,7 @@ The tool is available to download separately, as described in the table below.
 | Liferay DXP (Subscription) | Go to the [*Downloads* page](https://customer.liferay.com/group/customer/downloads) and select the DXP version and the _Product/Service Packs_ file type. In the listing that appears, click _Download_ for the _Liferay DXP Upgrade Client_. |
 | Liferay DXP CE | Go to the [_Downloads_ page](https://www.liferay.com/downloads-community) and select _Download_ for _Liferay Portal Tools for 7.x_. |
 
-You can a configure the upgrade before invoking the upgrade tool using properties files or at the start of the upgrade tool run using the tool's command line interface (CLI). Both ways produce properties files that specify the database connection, DXP and application server library locations, and required portal properties. To create the properties files ahead of time, follow the [Upgrade Tool Reference](../reference/database-upgrade-tool-reference.md). Otherwise, configure the upgrade on the fly as you run the upgrade tool next.
+Configure the upgrade tool by running it using the tool's command line interface, or by [using properties files](../reference/database-upgrade-tool-reference.md#manual-configuration).
 
 ## Upgrade Tool Usage
 
@@ -53,7 +53,9 @@ JVM options are passed in using this format:
 -j "<JVM Options>"
 ```
 
-Since the database upgrade tool operates on your DXP database, you should also configure the upgrade tool with the same JVM options that you use for your DXP application server. You should specify the `UTF-8` file encoding and the `GMT` user time zone as JVM options. If you used country and language JVM options, specify them for the upgrade tool too. While you're at it, you should allocate the initial memory (`-Xmx value`) for the upgrade tool too. Use 2 GB at a minimum. If your DXP database has over 10 GB of data, increase the initial memory.
+### Upgrade Tool JVM Option Recommendations
+
+Configure the upgrade tool with the same JVM options that you use for your DXP application server. File encoding (`UTF-8`), time zone (`GMT`), country, language, and memory settings (`-Xmx value`) should all match your application server's settings. For databases with >= 10 GB of data, we recommend allocated additional memory over the 2 GB default.
 
 Here's an example command that specifies JVM options and a log file:
 
@@ -63,7 +65,7 @@ db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "outpu
 
 ## Running the Upgrade Tool
 
-Here's how you upgrade the database using the tool:
+To upgrade the database using the tool:
 
 1. Set up a new [Liferay Home](../../reference/liferay-home.md) folder with the contents of your current Liferay Home.
 
@@ -77,12 +79,12 @@ Here's how you upgrade the database using the tool:
     git checkout -b new-version
     ```
 
-1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in `portal-ext.properties` and replace the MySQL JDBC driver JAR your app server uses. See this [Database Drivers](../configuration-and-infrastructure/migrating-configurations-and-properties.md#database-drivers) for more details.
+1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in [`portal-ext.properties`](../../reference/portal-properties.md) and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../configuration-and-infrastructure/migrating-configurations-and-properties.md#database-drivers) for more details.
 
 1. Execute the upgrade tool. Here's an example command:
 
     ```bash
-    cd [Liferay Home]/tools/portal-tools-db-upgrade-client
+    cd /new-version/liferay-home/tools/portal-tools-db-upgrade-client
     db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
     ```
 
@@ -123,7 +125,7 @@ Here's how you upgrade the database using the tool:
 
 You've upgraded your DXP database using the upgrade tool.
 
-If this was a trial upgrade and you want to shorten the upgrade time, tune your database for upgrade (if you haven't already) and if you suspect there's unnecessary data you can prune from the database, go [prune it](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md). Then do another trial upgrade on DXP data backup copy. Otherwise, congratulations on your completed data upgrade!
+If this was a trial upgrade and you want to shorten the upgrade time, tune your database for upgrade (if you haven't already) and [review for and remove unnecessary data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) from the database. Repeat this article as necessary.
 
 ## Next Steps
 

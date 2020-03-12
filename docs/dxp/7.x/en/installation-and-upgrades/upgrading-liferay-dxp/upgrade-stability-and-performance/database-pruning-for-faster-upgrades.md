@@ -23,7 +23,7 @@ If this error occurs, roll back to your previous backup of Liferay Portal 6.2 an
 
 ## Finding and Removing Unused Objects
 
-Identify unused objects in the UI or by using using `SELECT` queries with your database. Then remove them either via the UI, the API through the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console), or a portlet you create.
+Identify unused objects in the UI or by using using `SELECT` queries with your database. Then remove them either via the UI, the API through the [script console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md), or a portlet you create.
 
 ```warning::
    You should only use Liferay's UI or API to manipulate data because they account for relationships between objects in Liferay DXP. Never use SQL directly on your database to remove records. Your SQL may miss object relationships, orphaning objects and causing performance problems.
@@ -65,10 +65,10 @@ Several items stand out in the example database import:
 * There are many `RESOURCEPERMISSION` records.
 * There are many `PORTLETPREFERENCES` records.
 
-Search for unused objects associated with the tables that stand out and use Liferay's API (e.g., using the [script console](https://help.liferay.com/hc/en-us/articles/360029131871-Running-Scripts-From-the-Script-Console)) to delete unneeded objects.
+Search for unused objects associated with the tables that stand out and use Liferay's API (e.g., using the [script console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)) to delete unneeded objects.
 
 ### Common Object Types Worth Checking
-
+<!-- Does the upgrade tool or planner (or one of our utilities) do an assessment for users' databases that reviews these areas? I imagine it'd be a lot more useful to tell someone, "Run tool {x}, it will generate a report about sites/instances/content that has not been used in sometime". If we don't have that kind of feature, we really should consider it - it just seems like it would go a lot further than telling someone to figure it out themselves. -->
 Some specific object types should be checked for unused objects. Here are some reasons for checking them:
 
 * Removing them frees related unused objects for removal

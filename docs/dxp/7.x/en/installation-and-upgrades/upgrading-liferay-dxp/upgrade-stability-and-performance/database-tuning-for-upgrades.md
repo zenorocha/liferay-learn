@@ -46,4 +46,6 @@ The default configuration works well. It configures [asynchronous I/O to disk](h
 
 Turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-commit.html) and set the [write ahead log writer delay](https://www.postgresql.org/docs/10/wal-async-commit.html) to `1000` milliseconds.
 
-Configurations on tuning your database for upgrading. When you're done upgrading, make sure tune your database for production again.
+## Conclusion
+
+When you're done upgrading, make sure revert your database configurations back to their production settings.

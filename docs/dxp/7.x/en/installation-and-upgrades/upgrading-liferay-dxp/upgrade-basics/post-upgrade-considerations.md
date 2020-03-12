@@ -30,7 +30,7 @@ Prior to upgrading your Liferay database, you may have tuned it for upgrade (see
    If you migrated from a sharded environment during your data upgrade, then you must make more adjustments to your configurations to complete the transition to virtual instances. See the `Upgrade and Update Properties <../other-upgrade-scenarios/upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties>`_ section for more information.
 ```
 
-## Installing the Latest Marketplace Apps 
+## Installing the Latest Marketplace Apps
 
 If you were using any Marketplace apps in the previous Liferay version, you should use the version of each app that's compatible with the _new_ DXP version. Download the latest compatible version of each [Marketplace app](../../../system-administration/installing-and-managing-apps/downloading-apps.md) and install it.
 
@@ -46,7 +46,7 @@ commit -a -m "New version of xyz app"
 
 ## Accounting for Feature Changes
 
-Features and behaviors change with new DXP versions. Investigate the how the following changes affect your DXP instance.
+Features and behaviors change with new DXP versions. Review how the following changes affect your DXP instance.
 
 ### Enable Web Content View Permissions
 

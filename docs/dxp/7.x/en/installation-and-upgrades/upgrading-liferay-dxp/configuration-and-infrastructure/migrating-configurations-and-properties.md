@@ -1,6 +1,6 @@
 # Migrating Configurations and Properties
 
-Your current DXP installation's OSGi configurations (7.0+) and properties (such as [portal properties](../../reference/portal-properties.md) and [system properties](../../reference/system-properties.md)) set up your DXP instance to fit your needs. To use these settings in your new DXP instance, you must migrate them to your new Liferay Home and update them. 
+Your current DXP installation's OSGi configurations (7.0+) and properties (such as [portal properties](../../reference/portal-properties.md) and [system properties](../../reference/system-properties.md)) set up your DXP instance to fit your needs. To use these settings in your new DXP instance, you must migrate them to your new Liferay Home and update them.
 
 ## Overview
 
@@ -29,7 +29,7 @@ Upgrade processes in DXP and in some Marketplace apps use portal properties and 
 Here are the settings updates DXP upgrade processes require:
 
 * [Database driver](#database-driver)
-* Document library store implementation name (See [Updating the File Store](./updating-the-file-store#updating-the-store implementation-class-name))
+* Document library store implementation name (See [Updating the File Store](./updating-the-file-store.md#updating-the-store-implementation-class-name)
 
 ```important::
    Check your Marketplace apps and custom code for settings updates they require.
@@ -37,11 +37,11 @@ Here are the settings updates DXP upgrade processes require:
 
 ### Database Drivers
 
-Check your database vendor documentation for the recommended database driver. If a new driver is recommended, replace the existing driver JAR file and update the `jdbc.default.driverClassName` property in your `portal-ext.properties` file with the new driver class name. 
+Check your database vendor documentation for the recommended database driver. If a new driver is recommended, replace the existing driver JAR file and update the `jdbc.default.driverClassName` property in your `portal-ext.properties` file with the new driver class name.
 
 MySQL example:
 
-```properties 
+```properties
 jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
 ```
 

@@ -5,22 +5,14 @@ A DXP Docker image invokes all DXP upgrade processes when an auto upgrade parame
 The Docker Desktop is available from [here](https://www.docker.com/products/docker-desktop). Liferay provides DXP Community Edition images [here](https://hub.docker.com/r/liferay/portal).
 
 ```important::
-   Before running these steps, review the `Upgrade Overview <./upgrade-overview.md>`_.
-```
-
-```important::
-   If you have an Enterprise Subscription, use the Database Upgrade Tool. For more information see `Using the Liferay Upgrade Tool <./using-the-database-upgrade-tool.md>`_.
+   For critical installations and Subscribers, use the Database Upgrade Tool. For more information see `Using the Liferay Upgrade Tool <./using-the-database-upgrade-tool.md>`_.
 ```
 
 ```warning::
    **Always** `back up <../../maintaining-a-liferay-dxp-installation/backing-up.md>`_ your database and installation before upgrading. Testing the upgrade process on backup copies is advised.
 ```
 
-```important::
-   If you're upgrading from 6.2 or earlier, update your file store configuration. See the `Updating the File Store <../configuration-and-infrastructure/updating-the-file-store.md>`_ for more information.
-```
-
-## Using the Latest Docker Image
+## Upgrading with the Latest Docker Image
 
 Here are the steps for using the Docker image:
 
@@ -29,18 +21,19 @@ Here are the steps for using the Docker image:
     ```bash
     cp /old-version/liferay-home/ /new-version/liferay-home/
     ```
+
     Alternatively if your current Liferay Home is in source control, create a new branch.
 
     ```bash
     git checkout -b new-version
     ```
 
-1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in `portal-ext.properties` and replace the MySQL JDBC driver JAR your app server uses. See this [Database Drivers](../configuration-and-infrastructure/migrating-configurations-and-properties.md#database-drivers) for more details.
+1. Make sure you're using the JDBC database driver your database vendor recommends. If you're using MySQL, for example, set `jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver` in [`portal-ext.properties`](../../reference/portal-properties.md) and replace the MySQL JDBC driver JAR your app server uses. See [Database Drivers](../configuration-and-infrastructure/migrating-configurations-and-properties.md#database-drivers) for more details.
 
 1. Disable search indexing during database upgrade by setting `indexReadOnly="true"` in a `com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config`file:
 
     ```bash
-    cd liferay-home
+    cd /new-version/liferay-home
     echo "indexReadOnly=\"true\"" > osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
     ```
 
@@ -48,18 +41,18 @@ Here are the steps for using the Docker image:
 
     ```bash
     docker run -it -p 8080:8080 \
-     -v /path/to/liferay-home:/mnt/liferay \
+     -v /new-version/liferay-home:/mnt/liferay \
      liferay/portal:7.3.0-ga1 \
      -e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true
     ```
 
-    The `-v /path/to/liferay-home:/mnt/liferay` arguments bind mount the `/path/to/liferay-home` folder on the host to `/mnt/liferay` in the container.
+    The `-v /new-version/liferay-home:/mnt/liferay` arguments bind mount the `/new-version/liferay-home` folder on the host to `/mnt/liferay` in the container.
 
     The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade processes to run.
 
 1. In the console or log, confirm successful database upgrade and DXP startup. Upgrade process messages report starting and completing each upgrade process. A message like this one indicates DXP startup completion:
 
-    ```
+    ```bash
     org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds
     ```
 
@@ -78,7 +71,7 @@ Here are the steps for using the Docker image:
 Your Liferay DXP database upgrade is now complete!
 
 ```note::
-   If you're done upgrading the database, then leave off the `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` environment setting from your Docker command the next time you run DXP.
+   If you're done upgrading the database, leave off the `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` environment setting from your Docker command the next time you run DXP.
 ```
 
 ## Conclusion

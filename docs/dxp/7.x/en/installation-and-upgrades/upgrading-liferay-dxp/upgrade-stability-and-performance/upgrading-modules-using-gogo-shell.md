@@ -1,6 +1,6 @@
 # Upgrading Modules Using Gogo Shell
 
-For the purpose of troubleshooting upgrade issues with particular modules, it may be necessary to test and perform upgrades on a per-module basis, instead of en-masse. Liferay has Gogo shell commands for upgrading and verifying individual modules.
+To troubleshoot upgrade issues with particular modules, it may be necessary to test and perform upgrades on a per-module basis, instead of en-masse. Liferay has Gogo shell commands for upgrading and verifying individual modules.
 
 For example, a module may have a new [data schema micro version](https://help.liferay.com/hc/en-us/articles/360030959231-Meaningful-Schema-Versioning). Since it's only a new micro version, upgrading the module data to the new schema is optional. If you deploy the new module version, it activates but its data isn't upgraded. When you want to upgrade the module to the new data schema, you can use the `upgrade` commands in Gogo Shell.
 
