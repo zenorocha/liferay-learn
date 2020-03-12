@@ -1,6 +1,6 @@
 # Setting Up Clustering in DXP Cloud
 
-This article will outline the steps necessary to configure clustering for your Liferay DXP instance in DXP Cloud.
+This article outlines the steps necessary to configure clustering for your Liferay DXP instance in DXP Cloud.
 
 **Contents:**
 
