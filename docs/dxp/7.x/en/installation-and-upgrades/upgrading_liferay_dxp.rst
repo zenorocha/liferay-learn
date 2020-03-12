@@ -10,5 +10,5 @@ Upgrading Liferay DXP
    upgrading-liferay-dxp/other_upgrade_scenarios.rst
    upgrading-liferay-dxp/reference.rst
 
-.. include:: /upgrading-liferay-dxp/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: upgrading-liferay-dxp/landing.html

@@ -1,0 +1,116 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Upgrade Basics',
+					sectionURL: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade_basics.html',
+					subsections: [
+						{
+							name: 'Upgrade Overview',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html'
+						},
+						{
+							name: 'Upgrading via Docker',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrading-via-docker.html'
+						},
+						{
+							name: 'Using the Database Upgrade Tool',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Upgrade Stability and Performance',
+					sectionURL: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade_stability_and_performance.html',
+					subsections: [
+						{
+							name: 'Upgrade Stability and Performance Overview',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade-stability-and-performance/upgrade-stability-and-performance-overview.html'
+						},
+						{
+							name: 'Database Tuning for Upgrades',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade-stability-and-performance/database-tuning-for-upgrades.html'
+						},
+						{
+							name: 'Database Pruning for Faster Upgrades',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/upgrade-stability-and-performance/database-pruning-for-faster-upgrades.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Configuration and Infrastructure',
+					sectionURL: 'installation-and-upgrades/upgrading-liferay-dxp/configuration_and_infrastructure.html',
+					subsections: [
+          {
+							name: 'Migrating Configurations and Properties',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/configuration-and-infrastructure/migrating-configurations-and-properties.html'
+						},
+						{
+							name: 'Updating the File Store',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/configuration-and-infrastructure/updating-the-file-store.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Other Upgrade Scenarios',
+					sectionURL: 'installation-and-upgrades/upgrading-liferay-dxp/other_upgrade_scenarios.html',
+					subsections: [
+          {
+							name: 'Maintaining Clustered Installations',
+							url: 'installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.html'
+						},
+						{
+							name: 'Upgrading a Sharded Environment',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/other-upgrade-scenarios/upgrading-a-sharded-environment.html'
+						},
+          ]
+				},
+				{
+					sectionName: 'Reference',
+					sectionURL: 'installation-and-upgrades/upgrading-liferay-dxp/reference.html',
+					subsections: [
+						{
+							name: 'Database Upgrade Tool Reference',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/reference/database-upgrade-tool-reference.html'
+						},
+						{
+							name: 'Changes to Default Settings',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/reference/changes-to-default-settings.html'
+						},
+            {
+							name: 'Features in Maintenance Mode',
+							url: 'installation-and-upgrades/upgrading-liferay-dxp/reference/features-in-maintenance-mode.html'
+						},
+					]
+				},
+			]
+		}
+	})
+</script>
