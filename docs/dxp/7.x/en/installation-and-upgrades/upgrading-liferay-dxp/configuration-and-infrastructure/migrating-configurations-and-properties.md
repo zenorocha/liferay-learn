@@ -29,7 +29,7 @@ Upgrade processes in DXP and in some Marketplace apps use portal properties and 
 Here are the settings updates DXP upgrade processes require:
 
 * [Database driver](#database-driver)
-* Document library store implementation name (See [Updating the File Store](./updating-the-file-store.md#updating-the-store-implementation-class-name)
+* Document library store implementation name (See [Updating the File Store](./updating-the-file-store.md#updating-the-store-implementation-class-name))
 
 ```important::
    Check your Marketplace apps and custom code for settings updates they require.
