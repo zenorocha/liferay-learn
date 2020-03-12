@@ -33,11 +33,11 @@ The number of nodes for your clustering environment is determined by the `scale`
 Once the Liferay service has been deployed with the `scale` property set to `1`, then update this value to the desired number of nodes.
 
 ```warning::
-Multiple nodes in a clustered environment may conflict with each other if there are any changes to the database schema (such as when you are installing a patch). When this happens, avoid conflicting schema issues by first changing the scale back to 1 and redeploying the Liferay service. Then, change the scale back to the correct number of nodes and redeploy the service again.
+   Multiple nodes in a clustered environment may conflict with each other if there are any changes to the database schema (such as when you are installing a patch). When this happens, avoid conflicting schema issues by first changing the scale back to 1 and redeploying the Liferay service. Then, change the scale back to the correct number of nodes and redeploy the service again.
 ```
 
 ```note::
-Increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../manage-and-optimize/quotas.md) for your plan, then the deployment may fail.
+   Increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum `quota <../manage-and-optimize/quotas.md>`_ for your plan, then the deployment may fail.
 ```
 
 ### Auto-Scaling
