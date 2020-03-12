@@ -48,4 +48,4 @@ Turn off [synchronous commits](https://www.postgresql.org/docs/10/wal-async-comm
 
 ## Conclusion
 
-When you're done upgrading, make sure revert your database configurations back to their production settings.
+When you're done upgrading, make sure to revert your database configurations back to their production settings.
