@@ -1,5 +1,8 @@
 # Similar Results
 
+> **Subscribers**
+> **Available:** Download the app through Liferay Marketplace.
+
 The Similar Results widget shows search results similar to the _main asset_ that's selected on the page.
 
 The concept of the main asset is important. Certain widgets in @product@ display lists of assets: Asset Publisher, Blogs, Wiki, and more. If a user clicks one of the displayed assets and the widget shows its full content on the page, it's now the page's _main asset_. The Similar Results widget, if placed on the same page, shows a list of assets that are similar enough to be returned by a [_More Like This_ query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html).  Note that the concept of a main asset is synonymous with Elasticsearch's [_input document_](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works).
@@ -145,7 +148,7 @@ used to determine whether another asset matches the Main Asset.
 
 **Analyzer:** Specify the analyzer to use on the input document's fields. If left blank, this defaults to the analyzer associated with the first entry in the fields configuration.
 
-**Minimum Should Match:** After the disjunctive query has been formed, this parameter controls the number of terms that must match. The syntax is the same as the minimum should match. (Defaults to `30%`).
+**Minimum Should Match:** After the disjunctive query has been formed, this parameter controls the number of terms that must match (defaults to `30%`). For the accepted syntax, see the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-minimum-should-match.html#query-dsl-minimum-should-match).
 
 **Term Boost:** Set the boost factor to use if boosting terms by their [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) score is desired. If left blank, this defaults to deactivated (`0`). Any other positive value activates terms boosting with the given boost factor.
 
