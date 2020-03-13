@@ -2,7 +2,9 @@
 
 Installing Liferay DXP on WebSphere requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebSphere for DXP.
 
-IBM&reg; WebSphere&reg; is a trademark of International Business Machines Corporation, registered in many jurisdictions worldwide.
+```important::
+   IBM&reg; WebSphere&reg; is a trademark of International Business Machines Corporation, registered in many jurisdictions worldwide.
+ ```
 
 > **Tip:** Throughout this installation and configuration process, WebSphere prompts you to click *Save* to apply changes to the Master Configuration. It is necessary to do so to save the changes.
 
@@ -21,6 +23,16 @@ The following files are required to install Liferay DXP on the WebSphere applica
 See [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
 
 The [`LIFERAY_HOME` directory](../../reference/liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` directory is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
+
+Here are the basic steps for installing DXP on WebSphere:
+
+1. Preparing WebSphere for DXP
+1. Installing DXP Dependencies
+1. Database Configuration
+1. Mail Configuration
+1. Enable Cookies for HTTP Sessions
+1. Deploying the DXP WAR
+1. Setting the JDK Version for Compiling JSPs
 
 ## Preparing WebSphere for DXP
 
@@ -51,7 +63,13 @@ WebSphere then creates the profile and finishes with a message indicating that t
 
 ![Figure 2: Example of the settings before creating the profile.](./installing-liferay-on-websphere/images/02.png)
 
+Lastly , shut down the application server.
+
 ### Configuring the WebSphere Application Server
+
+```important::
+   Do NOT make configuration changes while the application server is running.
+```
 
 In this version of WebSphere, servlet filters are not initialized on web application startup, but rather, on first access. This can cause problems when deploying certain apps to DXP. To configure servlet filters to initialize on application startup (i.e., deployment), set the following `webcontainer` properties in the WebSphere application server:
 
@@ -277,7 +295,6 @@ Note that the DXP `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; thi
 
 ## Start DXP
 
-1. Start the application server.
 1. If administrators are using DXP's [setup wizard](../running-liferay-dxp-for-the-first-time.md), skip to the next step. However, if administrators are using WebSphere's data source and mail session, create a file called `portal-ext.properties` in the Liferay Home folder. Place the following configuration in the file:
 
     ```properties
@@ -286,6 +303,7 @@ Note that the DXP `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; thi
     setup.wizard.enabled=false
     ```
 
+1. Start the application server.
 1. In the WebSphere administrative console, navigate to *Enterprise Applications*, select the DXP application, and click *Start*. While DXP is starting, WebSphere displays a spinning graphic.
 1. In DXP's setup wizard, select and configure the database type. Click *Finish*. DXP then creates the tables it needs in the database.
 
