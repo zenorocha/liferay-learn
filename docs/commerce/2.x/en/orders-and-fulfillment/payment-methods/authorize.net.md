@@ -11,23 +11,25 @@ Before configuring your store to use Authorize.Net, it is necessary to [generate
 
 ## Activating Authorize.net as a Payment Method
 
-1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
-2. Click _Authorize.Net_.
-3. Click _Configuration_.
-4. Enter the following:
+1. Navigate to _Control Panel → Configuration → System Settings_.
+1. In the _Commerce_ section, click _Payment_.
+1. Click _Authorize.Net Payment Engine Group Service_ on the Site Scope left menu.
+1. Enter the following:
     * **API Login ID**
     * **Transaction Key**
-5. Select _Production_ if it is a live site or _Sandbox_ if it is a test environment.
-6. Check the following options to enable to display the following:
+    * **Environment**
+1. Check the following options to enable to display the following:
     * _Show Bank Account_
     * _Show Credit Card_
     * _Show Store Name_
-7. Check the following options to enable to display the following:
+1. Check the following options to enable to display the following:
     * _Require CAPTCHA_
     * _Require Card Code Verification_
-       ![Authorize.Net Settings](./authorize.net/images/01.png)
-8. Click _Save_.
-9. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.
+
+     ![Authorize.Net Settings](./authorize.net/images/01.png)
+
+1. Click _Save_.
+1. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.
 
 Once finished, Authorize.Net is now enabled.
 
