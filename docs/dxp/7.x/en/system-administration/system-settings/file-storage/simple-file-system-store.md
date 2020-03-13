@@ -2,8 +2,6 @@
 
 Simple File System Store is the default file store type. It uses a file system (local or a mounted share) to store files. If Simple File System Store is used in a clustered environment, its the folder must be accessible to all cluster nodes, handle concurrent requests, and support file locking. We recommend using a [Storage Area Network](https://en.wikipedia.org/wiki/Storage_area_network) or a clustered file system.
 
-## Simple File System Store Details
-
 The simple file system store is bound to the Liferay DXP database. The default root folder is `[Liferay Home]/data/document_library`. The Simple File System Store saves files using this file path format:
 
 ```
