@@ -53,38 +53,24 @@ services it provides.
 
 ## Custom SSL
 
-When you specify the load balancer attribute for a service, it adds a service 
-endpoint named after this pattern: 
+When you specify the load balancer attribute for a service, it adds a service endpoint named after this pattern:
 
 - `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
 
-Consider this example: 
+Consider this example:
 
 - Service: webserver
 - Project: acme
 - Environment: prd
 - Service endpoint name: `webserver-acme-prd.lfr.cloud`
 
-These domains created by DXP Cloud's infrastructure at `.lfr.cloud` are covered 
-by a wildcard certificate that will not display in the Network page's SSL 
-certificates section. 
+These domains created by DXP Cloud's infrastructure at `.lfr.cloud` are covered by a wildcard certificate that will not display in the Network page's SSL certificates section.
 
-Also, for all custom domains added through the console or `LCP.json`, Liferay 
-DXP Cloud reaches out to 
-[Let's Encrypt](https://letsencrypt.org/) 
-for a certificate that renews automatically and covers all custom domains you 
-create. 
+Also, for all custom domains added through the console or `LCP.json`, Liferay DXP Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for a certificate that renews automatically and covers all custom domains you create.
 
-You can, however, add your own SSL certificate to cover any custom domains that 
-you want to create. Only one custom certificate can be added to `LCP.json`, so 
-it must cover all custom domains. Also, only one certificate at a time can exist 
-for a service's custom domains: the one Let's Encrypt provides, or the custom 
-one you specify in `LCP.json`. If both exist, your custom certificate takes 
-precedent. 
+You can, however, add your own SSL certificate to cover any custom domains that you want to create. Only one custom certificate can be added to `LCP.json`, so it must cover all custom domains. Also, only one certificate at a time can exist for a service's custom domains: the one Let's Encrypt provides, or the custom one you specify in `LCP.json`. If both exist, your custom certificate takes precedent.
 
-Note that you must manage your custom certificate. This includes updating it 
-when new custom domains are added and renewing it when it expires. To add a 
-custom certificate, provide a key and certificate in Base64 format: 
+Note that you must manage your custom certificate. This includes updating it when new custom domains are added and renewing it when it expires. To add a custom certificate, provide a key and certificate in Base64 format:
 
 ```json
 "ssl": {
@@ -93,9 +79,18 @@ custom certificate, provide a key and certificate in Base64 format:
 }
 ```
 
-The Network page shows any custom certificates, with a maximum of one per 
-service. For more information, see 
-[Custom Domains](./custom-domains.md). 
+```important::
+   DXP Cloud accepts only properly formatted PEM certificates and keys which must include the encapsulation boundaries. See <https://tools.ietf.org/html/rfc4648#section-4>`_
+```
+
+```xml
+-----BEGIN CERTIFICATE-----
+base64encodedcertificate
+-----END CERTIFICATE-----
+```
+
+The Network page shows any custom certificates, with a maximum of one per service. For more information, see [Custom Domains](./custom-domains.md).
+
 
 ![Figure 4: DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/04.png)
 
