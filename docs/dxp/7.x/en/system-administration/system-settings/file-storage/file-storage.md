@@ -25,6 +25,8 @@ dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
 dl.store.impl=com.liferay.portal.store.s3.S3Store
 ```
 
+Switching to a new store type (Simple File System Store is the default) requires restarting DXP.
+
 File store details are configured in the Control Panel at _Configuration_ &rarr; _System Settings_ &rarr; _File Storage_.
 
 ![File Storage screen.](./file-storage/images/01.png)
