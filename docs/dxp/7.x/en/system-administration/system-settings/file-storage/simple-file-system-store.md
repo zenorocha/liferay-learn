@@ -26,9 +26,9 @@ Here's an explanation of the file hierarchy in the `[Liferay Home]/data/document
 * The numeric file entry name is used in the storage file path but the document ID is not.
 * They're stored in different `DLFileEntry` table columns. The numeric file entry name is stored in the `name` column and the document ID is stored in the `fileEntryId` column.
 
-## Changing the Root Storage Directory
+## Configuring the Store
 
-To use the store, follow these steps:
+Follow these steps to configure your Simple File System store:
 
 1. Click the _Menu_ (![Menu](./simple-file-system-store/images/02.png)) button to access the _Control Panel_.
 1. Navigate to _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_.
@@ -40,6 +40,12 @@ To use the store, follow these steps:
 1. Click _Save_.
 
 The file store switches immediately to the new folder.
+
+If you switch from a another store type to Simple File System Store, configure [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) with the following property and restart DXP.
+
+```properties
+dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
+```
 
 ## Using the Store in a Clustered Environment
 
