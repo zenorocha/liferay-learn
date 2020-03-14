@@ -67,3 +67,4 @@ Consult the Amazon Simple Storage documentation for additional details on using 
 * [File Storage Overview](./file-storage.md)
 * [Bucket Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/dev//BucketRestrictions.html#bucketnamingrules)
 * [DBStore](./dbstore.md)
+* [File Store Migration](./file-store-migration.md)
