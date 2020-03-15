@@ -3,6 +3,7 @@ Installing and Managing Apps
 
 -  :doc:`/system-administration/installing-and-managing-apps/introduction-to-managing-apps`
 -  :doc:`/system-administration/installing-and-managing-apps/purchasing-apps-on-liferay-marketplace`
+-  :doc:`/system-administration/installing-and-managing-apps/accessing-ee-plugins-during-a-trial-period`
 -  :doc:`/system-administration/installing-and-managing-apps/installing-the-marketplace-plugin`
 -  :doc:`/system-administration/installing-and-managing-apps/downloading-apps`
 -  :doc:`/system-administration/installing-and-managing-apps/installing-apps`
