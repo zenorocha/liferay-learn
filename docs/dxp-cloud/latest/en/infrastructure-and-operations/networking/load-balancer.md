@@ -1,14 +1,10 @@
 # Load Balancer
 
-The Ingress Load Balancer gives internet access to your environment's services 
-via proxied HTTP(S) connections. Each load balancer has a static IP that can set 
-up custom domains. 
+The Ingress Load Balancer gives internet access to your environment's services via proxied HTTP(S) connections. Each load balancer has a static IP that can set up custom domains.
 
 ![Figure 1: You can configure your environment's load balancer with a custom domain.](./load-balancer/images/01.png)
 
-Having a dedicated load balancer provides a myriad of enhanced features, such as 
-port configuration, custom SSL certificates, and a CDN. Here's an example 
-configuration for a load balancer in an `LCP.json` file: 
+Having a dedicated load balancer provides a myriad of enhanced features, such as port configuration, custom SSL certificates, and a CDN. Here's an example configuration for a load balancer in an `LCP.json` file:
 
 ```json
 {
@@ -27,11 +23,7 @@ configuration for a load balancer in an `LCP.json` file:
 
 ## CDN
 
-Liferay's Content Delivery Network (CDN) is a built-in feature provided with DXP 
-Cloud. This CDN caches your content globally, greatly enhancing your delivery 
-speed. 
-
-This CDN is disabled by default but you can turn it on in your `LCP.json`: 
+Liferay's Content Delivery Network (CDN) is a built-in feature provided with DXP Cloud. This CDN caches your content globally, greatly enhancing your delivery speed. This CDN is disabled by default but you can turn it on in your `LCP.json`:
 
 ```json
 "cdn": true
@@ -41,9 +33,7 @@ This CDN is disabled by default but you can turn it on in your `LCP.json`:
 
 ## Port
 
-You can set which internal port (`targetPort`) the load balancer's service 
-endpoint routes to. DXP Cloud automatically configures the correct port for the 
-services it provides. 
+You can set which internal port (`targetPort`) the load balancer's service endpoint routes to. DXP Cloud automatically configures the correct port for the services it provides.
 
 ```json
 "targetPort": 3000
@@ -79,8 +69,8 @@ Note that you must manage your custom certificate. This includes updating it whe
 }
 ```
 
-```important::
-   DXP Cloud accepts only properly formatted PEM certificates and keys which must include the encapsulation boundaries. See <https://tools.ietf.org/html/rfc4648#section-4>`_
+```warning::
+   DXP Cloud accepts only properly formatted PEM certificates and keys which must include the encapsulation boundaries. See the `spec <https://tools.ietf.org/html/rfc4648#section-4>`_ to learn more.
 ```
 
 ```xml
