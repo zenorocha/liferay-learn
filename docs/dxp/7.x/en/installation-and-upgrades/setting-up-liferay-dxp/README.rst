@@ -2,9 +2,6 @@ Setting Up Liferay DXP
 ======================
 
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-liferay-dxp`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/connecting-to-a-mail-server`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/mail-server-configuration-reference`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/advanced-email-configurations`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
@@ -12,6 +9,12 @@ Setting Up Liferay DXP
 * Using a Content Delivery Network
 * Tuning your JVM
 * Setting Up Remote Staging
+
+Configuring Mail
+----------------
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/configuring-default-email-senders`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/alternative-email-configuration-methods`
 
 Installing a Search Engine
 --------------------------
