@@ -60,5 +60,5 @@ To validate that you configured the mail session correctly, do the following:
 
 ## Additional Information
 
-* [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)
 * [Configuring Default Email Senders](./configuring-default-email-senders.md)
+* [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)
