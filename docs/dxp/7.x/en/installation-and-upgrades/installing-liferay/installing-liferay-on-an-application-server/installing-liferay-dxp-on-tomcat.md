@@ -1,5 +1,11 @@
 # Installing DXP on Tomcat
 
+```important::
+   `Using a Tomcat bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ or `Docker image <../../../getting-started/starting-with-a-dxp-docker-image.md>`_ is the fastest way to get started using Liferay DXP. This article is for users who want to have full control over their Tomcat application server's configuration.
+
+   Review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles before continuing.
+```
+
 Installing Liferay DXP on Tomcat requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring Tomcat for DXP.
 
 The simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../installing-a-liferay-dxp-tomcat-bundle.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. You may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
@@ -10,10 +16,6 @@ In addition to copying dependencies, scripts, and configurations from the Lifera
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-```important::
-   Review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles before continuing.
-```
-
 Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java.com/) to install a JDK.
 
 ```note::
@@ -22,13 +24,13 @@ Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java
 
 Here are the basic steps for installing DXP on Tomcat:
 
-1. [Installing the dependencies](#installing-dependencies)
-1. [Configuring Tomcat for DXP](#configuring-tomcat)
+1. [Installing Dependencies](#installing-dependencies)
+1. [Configuring Tomcat](#configuring-tomcat)
 1. [Database Configuration](#database-configuration)
 1. [Mail Configuration](#mail-configuration)
 1. [Deploying the DXP WAR](#deploying-DXP)
 
-Consider the Tomcat server's parent folder to be [*Liferay Home*](../../reference/liferay-home.md). `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
+The Tomcat server parent folder is [*Liferay Home*](../../reference/liferay-home.md). `$TOMCAT_HOME` refers to Tomcat server folder. It is usually named `tomcat-[version]` or `apache-tomcat-[version]`.
 
 ## Installing Dependencies
 
@@ -43,7 +45,7 @@ DXP communicates with your database via JDBC. Add your database JDBC driver JAR 
 * [MySQL](http://dev.mysql.com/downloads/connector/j)
 * [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
 
-Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, **do not** use it for production DXP instances.
+A Hypersonic database is bundled with DXP and is useful for testing purposes. **Do not** use HSQL for production DXP instances.
 
 ## Configuring Tomcat
 
@@ -84,10 +86,10 @@ Here are the steps:
     ```
 
     ```Note::
-       On JDK 11, it's recommended to add this JVM argument to display four-digit years: `-Djava.locale.providers=JRE,COMPAT,CLDR`
+       On JDK 11, it's recommended to add this JVM argument to display four-digit years: ``-Djava.locale.providers=JRE,COMPAT,CLDR``
     ```
 
-    After installation, tune the system (including these JVM options) for performance.
+    After installation, these configurations (including these JVM options) can be further tuned for improved performance.
 
 1. If you have a DXP Tomcat bundle, copy its `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` file to the corresponding location in the application server. Create the file path if it doesn't exist and the `ROOT.xml` file.
 
@@ -222,13 +224,15 @@ The application server is configured to run DXP.
 
 ## Database Configuration
 
-DXP contains a built-in Hypersonic database which is great for demonstration purposes but _should not be used in production_. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS. See [Configure a Database](../configuring-a-database.md) to set up your database. 
+DXP contains a built-in Hypersonic database which is great for demonstration purposes but **should not be used in production**. For production, use a full-featured, supported RDBMS. See [Configure a Database](../configuring-a-database.md) to set up your database.
 
-Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server. 
+Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server.
 
 To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on the [Database Template](../../reference/database-templates.md) for your database.
 
 Otherwise, you can configure the data source in Tomcat.
+
+### Configuring the Tomcat Data Source
 
 1. Make sure the database server is installed and working. If it's installed on a different machine, verify that DXP machine can access it.
 
@@ -264,7 +268,7 @@ The data source is configured.
 
 ## Mail Configuration
 
-As with database configuration, the easiest way to configure mail is to use the DXP handle the [built-in mail session](https://help.liferay.com/hc/articles/360029031591-Configuring-Mail), skip this section.
+The easiest way to configure mail is to use the DXP [built-in mail session](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md). If you use the built-in mail session, you may skip this section.
 
 If you want to use Tomcat to manage the mail session, follow these steps:
 
@@ -317,5 +321,5 @@ You can [sign in as your administrator user](../../../getting-started/introducti
 * [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/installing-the-marketplace-plugin.md)
 * [Trial Plugin Installation](../../setting-up-liferay-dxp/trial-plugin-installation.md)
 * Installing and Configuring a Search Engine
-* [Securing Liferay DXP](../../securing-liferay/securing-liferay.md)
+* [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
 * [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
