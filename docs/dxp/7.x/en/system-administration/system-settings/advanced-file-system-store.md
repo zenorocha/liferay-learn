@@ -2,7 +2,7 @@
 
 The Advanced File System Store is similar to the [Simple File System Store](./simple-file-system-store.md) (the default store) in that it saves files to a file system (local or a mounted share). It's different in that it uses a more nested folder structure.
 
-![Advanced File System Store folder struture](./advanced-file-system-store/images/01.png)
+![Advanced File System Store folder structure](./advanced-file-system-store/images/01.png)
 
 The Advanced File System Store programmatically creates a structure that can expand to millions of files, by alphabetically nesting the files in folders. This allows more files to be stored and helps to avoid the limitation that some operating system have on the number of files that can be stored per folder. Storing fewer files per folder also improves file lookup performance.
 
