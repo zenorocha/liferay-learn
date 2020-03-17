@@ -53,7 +53,9 @@ Once finished, Authorize.Net is now enabled.
 1. Check the following options to enable to display the following:
     * _Require CAPTCHA_
     * _Require Card Code Verification_
+
        ![Authorize.Net Settings](./authorize.net/images/02.png)
+
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.
 

@@ -2,7 +2,15 @@
 
 Payment methods in Liferay Commerce scoped by [channel](../../managing-a-catalog/creating-and-managing-products/introduction-to-channels.md) and store [site](../sites-and-site-types.md). If a Liferay Commerce instance has more than one storefront hosted on the same instance, administrators can use different payment methods on each site.
 
-To manage payment methods, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the Payment Methods tab.
+## Commerce 2.1.x
+
+To manage payment methods in Commerce 2.1.x, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_. Select the desired channel.
+
+![Payment Methods page](./managing-payment-methods/images/04.png)
+
+## Commerce 2.0.x
+
+To manage payment methods in Commerce 2.0.x, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the Payment Methods tab.
 
 ![Payment Methods page](./managing-payment-methods/images/01.png)
 
