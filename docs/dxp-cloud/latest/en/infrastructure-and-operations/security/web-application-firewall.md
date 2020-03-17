@@ -41,7 +41,7 @@ In the event of a DDoS attack for cacheable content, the requests are sent to
 POPs all over the globe instead of the origin servers, thereby providing a
 larger set of locations to absorb the attack.
 
-## IP Blacklist and Whitelist
+## IP Allow and Deny
 
 The ability to permit or block incoming traffic based on IP addresses or ranges
 using allow lists and deny lists is available through the
