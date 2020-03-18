@@ -1,11 +1,11 @@
 # System Settings: Configuration Files
 
-The [System Settings application](./system-settings.md) is convenient for making system-scoped configuration changes and setting default configurations for other [scopes](./system-settings-and-configuration-scope.md). But there's another supported configuration approach: configuration files. You can use configuration files to transfer configurations from pre-production systems to production systems, or between any other Liferay DXP systems. Sometimes developers choose to distribute the default configuration for their applications via configuration file. Whatever the reason, configuration files offer another configuration approach.
+The [System Settings application](./system-settings.md) is convenient for making system-scoped configuration changes and setting default configurations for other [scopes](./system-settings-and-configuration-scope.md). The same configurations available in the user interface are available to customize via configuration file. You can use configuration files to transfer configurations from pre-production systems to production systems or between any other Liferay DXP systems, as long as the version is identical. Sometimes developers choose to distribute the default configuration for their applications via configuration file. Whatever the reason, configuration files offer another configuration approach.
 
 Configuration files use the `.config` property value format defined by the [Apache Felix Configuration Admin framework](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html). 
 
 ```important::
-   Content generated using templates (e.g., FreeMarker templates and Application Display Templates) is cached. Cached content might not reflect configuration changes until the cache is invalidated (cleared). The [Server Administration &rarr; Resources tab](https://help.liferay.com/hc/en-us/articles/360029131711-Server-Administration-Resources) provides cache clearing options.
+   Content generated using templates (e.g., FreeMarker templates and Application Display Templates) is cached. Cached content might not reflect configuration changes until the cache is invalidated (cleared). The Server Administration &rarr; Resources tab provides cache clearing options.
 ```
 
 ```note::
@@ -14,15 +14,19 @@ Configuration files use the `.config` property value format defined by the [Apac
 
 ## Creating Configuration Files
 
-System Settings provides an [*Export*](./system-settings.md#exporting-and-importing-configurations) option that becomes available once you modify a configuration entry. Exporting is the recommended way to create `.config` files: you download a `.config` file containing the entry's settings in a `key=value` format. @product@ exports an entry's total available configuration keys and values, even if only one value was changed. You can export a single configuration entry or the entire set of modified configurations. 
+System Settings provides an [*Export*](./system-settings.md#exporting-and-importing-configurations) option that becomes available once you modify a configuration entry. Exporting is the best way to create `.config` files: you download a `.config` file containing the entry's settings in a `key=value` format, then modify or distribute as you have need. All available configuration keys and values are exported, even if only one value was changed.
 
-To avoid a file name conflict, name configuration files using a unique identifier. For example, the Journal Service entry, which backs Web Content functionality, has this file name: 
+You can export a single configuration entry or the entire set of modified configurations. 
+
+Configuration files are named after the backing Java class. For example, the Journal Service entry, which backs Web Content functionality, has this file name: 
 
 ```bash
 com.liferay.journal.configuration.JournalServiceConfiguration.config
 ```
 
-![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./system-settings-configuration-files/images/config-web-content-entry.png)
+![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./system-settings-configuration-files/images/01.png)
+
+The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization will never take effect.
 
 ## Key/Value Syntax
 
@@ -46,9 +50,9 @@ Do not use a space character between values (after the comma). The property won'
 
 Open the Web Content category in System Settings (under the Content section), and select *Web Content* for the virtual instance scope. You'll see what looks like multiple single value entries for *Characters Blacklist*: 
 
-![The Web Content System Settings entry has many Characters Blacklist fields.](./system-settings-configuration-files/images/config-web-content-blacklist.png)
+![The Web Content System Settings entry has many Characters Blacklist fields.](./system-settings-configuration-files/images/02.png)
 
-In the configuration file, this is really a single key with an array of comma-separated values: 
+In the configuration file, this is represented by single key with an array of comma-separated values: 
 
 ```properties
 charactersblacklist=["&","'","@","\\","]","}",":","\=",">","/","<","[","{","%","+","#","`","?","\"",";","*","~"]
@@ -56,7 +60,7 @@ charactersblacklist=["&","'","@","\\","]","}",":","\=",">","/","<","[","{","%","
 
 ### Escaping Characters
 
-Double quotes (`"`) and equals signs (`=`) must be *escaped* in `.config` files.  Escaping is using another character to denote that a character shouldn't be used in its normal way. Since double quotes and equals signs are already used in `.config` files, escaping them tells the framework not to read them the normal way, but to pass them through as part of the value. Use a backslash to escape characters in the `.config` file: 
+Double quotes (`"`) and equals signs (`=`) must be *escaped* in `.config` files.  Escaping is using another character to denote that a character shouldn't be used in its normal way. Since double quotes and equals signs are already used in `.config` files, escaping them tells the system not to read them the normal way, but to pass them through as part of the value. Use a backslash to escape characters in the `.config` file: 
 
 ```properties
 charactersblacklist=["&","\"","\="]
@@ -70,11 +74,11 @@ Along with the mandatory escaping of double quotes and equals characters, it's b
 blacklistBundleSymbolicNames=["Liferay\ Marketplace","Liferay\ Sharepoint\ Connector"]
 ```
 
-If you don't escape spaces yourself, the framework adds the backslash for you after deployment. 
+If you don't escape spaces yourself, the system adds the backslash for you after deployment. 
 
 ## Typed Values
 
-The `.config` file format supports specifying the type of a configuration value by inserting a special type marker character. Because @product@ already knows the correct type for each configuration property, the type characters are only useful for informational purposes. For example, a configuration with a boolean type has *B* just before the value to mark it as a boolean type:
+The `.config` file format supports specifying the type of a configuration value by inserting a special type marker character. Because the system already knows the correct type for each configuration property, the type characters are only useful for informational purposes. For example, a configuration with a boolean type has *B* just before the value to mark it as a boolean type:
 
 ```properties
 addDefaultStructures=B"true"
@@ -94,11 +98,8 @@ To deploy the `.config` file, place it in your [Liferay Home's](https://help.lif
 
 ## Configuration Files and Clustering
 
-NEEDS THE NEW NOTE SEE TICKET
+In a clustered environment, each node needs the same configuration values for each entry. For example, all nodes should use the same Blogs configuration settings. To accomplish this, deploy a `.config` file. For transparency and maintainability, deploy the `.config` file to all nodes in the cluster. However, an internal system applies the change to all nodes in the cluster even if the configuration file is only deployed to a single node.
 
-In a clustered environment, each node needs the same configuration values for each entry. For example, all nodes should use the same *Blogs* configuration settings. To accomplish this, deploy a `.config` file to *one* node. An internal system applies the change to all nodes in the cluster. 
-
-<!-- In a clustered environment, each node needs the same configuration values for each entry. For example, all nodes should use the same Blogs configuration settings. To accomplish this, deploy a `.config` file. For transparency and maintainability, deploy the `.config` file to all nodes in the cluster. However, an internal system applies the change to all nodes in the cluster even if the configuration file is only deployed to a single node.
 ```important::
    If storing your Liferay DXP configuration (e.g., Liferay Home) in a source control system, make sure to include the OSGi configuration files (.config files).
--->
+```
