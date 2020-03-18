@@ -27,7 +27,7 @@ To configure the mail session offline or before deploying DXP:
 
 1. Replace the default mail session values with your own.
 
-1. Put the `portal-ext.properties` file into the [LIFERAY_HOME](../../reference/liferay-home.md).
+1. Put the `portal-ext.properties` file into the [Liferay Home](../../reference/liferay-home.md).
 
 DXP connects to the mail session on the next startup.
 
