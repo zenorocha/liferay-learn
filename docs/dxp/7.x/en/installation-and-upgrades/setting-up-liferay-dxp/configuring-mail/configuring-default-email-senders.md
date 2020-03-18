@@ -25,21 +25,21 @@ To change the default email sender, follow these steps:
 
 ### Using Portal Properties to Configure the Default Email Sender
 
-The default email sender can also be configured using a portal-ext.properties file. The following property values can be replaced with your own:
+The default email sender can also be configured using a `portal-ext.properties` file. The following property values can be replaced with your own:
 
-    ```properties
-    admin.email.from.name=Joe Bloggs
-    admin.email.from.address=test@domain.invalid
-    ```
+```properties
+admin.email.from.name=Joe Bloggs
+admin.email.from.address=test@domain.invalid
+```
 
 ## Changing the Email Sender for Announcements
 
-The Announcements application uses its own distinct sender. To configure the sender name and address for announcement emails you must use a portal-ext.properties file. Replace the following property values with your own:
+The Announcements application uses its own distinct sender. To configure the sender name and address for announcement emails you must use a `portal-ext.properties` file. Replace the following property values with your own:
 
-    ```properties
-    announcements.email.to.name=
-    announcements.email.to.address=noreply@domain.invalid
-    ```
+```properties
+announcements.email.to.name=
+announcements.email.to.address=noreply@domain.invalid
+```
 
 ## Blacklisted Emails
 
