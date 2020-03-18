@@ -1,0 +1,3 @@
+Bundle-Name: Acme N4G6 Model Listener
+Bundle-SymbolicName: com.acme.n4g6.impl
+Bundle-Version: 1.0.0
