@@ -169,7 +169,7 @@ Otherwise, you can configure the data source in WebLogic.
 
 ## Mail Configuration
 
-Liferay DXP can be [connected to a mail server](../../setting-up-liferay-dxp/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
+Liferay DXP can be [connected to a mail server](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
 
 1. Start WebLogic and log in to the Admin Server's console.
 1. Select *Services* &rarr; *Mail Sessions* from the *Domain Structure* box on the left hand side of the Admin Server's console UI.
