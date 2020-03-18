@@ -25,7 +25,7 @@ To change the default email sender, follow these steps:
 
 ### Using Portal Properties to Configure the Default Email Sender
 
-The default email sender can also be configured using a `portal-ext.properties` file. The following property values can be replaced with your own:
+The default email sender can also be configured using a [`portal-ext.properties` file](../../reference/portal-properties.md). The following property values can be replaced with your own:
 
 ```properties
 admin.email.from.name=Joe Bloggs
@@ -55,3 +55,8 @@ Attempts to use the above emails result in a logged `WARN` trace:
 ```bash
 Email xxx will be ignored because it is included in mail.send.blacklist
 ```
+## Additional Information
+
+* [Connecting to a Mail Server](./connecting-to-a-mail-server.md)
+* [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)
+* [Portal Properties](../../reference/portal-properties.md)
