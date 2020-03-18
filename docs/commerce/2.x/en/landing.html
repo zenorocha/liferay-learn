@@ -1,0 +1,124 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Installation and Upgrades',
+					sectionURL: 'installation_and_upgrades.html',
+					subsections: [
+						{
+							name: 'Using the Liferay Commerce Docker Image',
+							url: 'installation-and-upgrades/using-the-liferay-commerce-docker-image.html'
+						},
+						{
+							name: 'Activating Liferay Commerce Enterprise',
+							url: 'installation-and-upgrades/activating-liferay-commerce-enterprise.html'
+						},
+						{
+							name: 'Upgrading from Liferay Commerce 1.1.x',
+							url: 'installation-and-upgrades/upgrading-from-liferay-commerce-1.1.x.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Starting a Store',
+					sectionURL: 'starting_a_store.html',
+					subsections: [
+						{
+							name: 'Using the Minium Accelerator to Jump-Start Your B2B Store',
+							url: 'starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.html'
+						},
+						{
+							name: 'Introduction to the Admin Account',
+							url: 'starting-a-store/store-administration/introduction-to-the-admin-account.html'
+						},
+						{
+							name: 'Liferay Commerce Configuration Overview',
+							url: 'starting-a-store/store-administration/liferay-commerce-configuration-overview.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Managing a Catalog',
+					sectionURL: 'managing_a_catalog.html',
+					subsections: [
+						{
+							name: 'Creating a Catalog',
+							url: 'managing-a-catalog/creating-a-catalog.html'
+						},
+						{
+							name: 'Introduction to Channels',
+							url: 'managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.html'
+						},
+						{
+							name: 'Introduction to Managing Inventory',
+							url: 'managing-a-catalog/managing-inventory/introduction-to-managing-inventory.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Creating Store Content',
+					sectionURL: 'creating_store_content.html',
+					subsections: [
+						{
+							name: 'Creating Your Storefront',
+							url: 'creating-store-content/creating-your-storefront.html'
+						},
+						{
+							name: 'Checkout',
+							url: 'creating-store-content/commerce-storefront-pages/checkout.html'
+						},
+						{
+							name: 'Creating a Catalog Page',
+							url: 'creating-store-content/creating-a-catalog-page.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Promoting Products',
+					sectionURL: 'promoting_products.html',
+					subsections: [
+						{
+							name: 'Automating Store Emails by Using Notification Templates',
+							url: 'automating-store-emails-by-using-notification-templates.html'
+						},
+						{
+							name: 'Adding Discounts by Product',
+							url: 'adding-discounts-by-product.html'
+						},
+						{
+							name: 'Adding Discounts to the Subtotal',
+							url: 'adding-discounts-to-the-subtotal.html'
+						}
+					]
+				}
+			]
+		}
+	})
+</script>
