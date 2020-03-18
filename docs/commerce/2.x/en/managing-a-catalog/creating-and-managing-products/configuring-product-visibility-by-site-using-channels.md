@@ -16,6 +16,22 @@ To learn more about the using Channels in Liferay Commerce, see: [Introduction t
 
 ## Configuring Product Filter Channels
 
+### Commerce 2.1
+
+1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
+1. Click on a product.
+1. Click on the _Visibility_ tab.
+
+    ![Product visibility in 2.1](./configuring-product-visibility-by-site-using-channels/images/03.png)
+
+1. Click the Add button.
+1. Click on the desired channel (for example, _Test Channel One_).
+1. Click _Add_.
+
+The channel is now associated with the product.
+
+### Commerce 2.0
+
 To configure a product to be available in a specific channel, follow these steps:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.

@@ -11,7 +11,23 @@ This article documents how to add images to a product.
 
 ## Adding a Single Product Image
 
-1. Navigate to  _Control Panel_ → _Commerce_ → _Products_.
+### Commerce 2.1
+
+1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
+1. Click on a product (in this example, _Microfiber Cloth_).
+1. Click the _Media_ sub-tab.
+1. Click the (+) button to add a product image.
+1. Drag and drop an image or click _Select File_ to upload an image.
+1. Click _Add_.
+1. Enter a title: _Microfiber Cloth_.
+
+    ![Adding a product image](./product-images/images/06.png)
+
+1. Click _Publish_.
+
+### Commerce 2.0
+
+1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product (in this example, _Microfiber Cloth_).
 1. Click the _Images_ sub-tab.
 1. Click the (+) button to add a product image.
