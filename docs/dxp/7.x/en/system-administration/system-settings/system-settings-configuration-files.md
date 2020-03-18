@@ -97,3 +97,8 @@ To deploy the `.config` file, place it in your [Liferay Home's](https://help.lif
 NEEDS THE NEW NOTE SEE TICKET
 
 In a clustered environment, each node needs the same configuration values for each entry. For example, all nodes should use the same *Blogs* configuration settings. To accomplish this, deploy a `.config` file to *one* node. An internal system applies the change to all nodes in the cluster. 
+
+<!-- In a clustered environment, each node needs the same configuration values for each entry. For example, all nodes should use the same Blogs configuration settings. To accomplish this, deploy a `.config` file. For transparency and maintainability, deploy the `.config` file to all nodes in the cluster. However, an internal system applies the change to all nodes in the cluster even if the configuration file is only deployed to a single node.
+```important::
+   If storing your Liferay DXP configuration (e.g., Liferay Home) in a source control system, make sure to include the OSGi configuration files (.config files).
+-->
