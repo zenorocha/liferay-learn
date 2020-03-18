@@ -8,5 +8,5 @@ File Storage
    file-storage/other_file_store_types.rst
    file-storage/file-store-migration.md
 
-.. raw:: html
-   :file: file-storage/landing.html
+.. include:: /system-administration/file-storage/README.rst
+   :start-line: 2

@@ -5,7 +5,7 @@ System Administration
    :maxdepth: 4
 
    system-administration/installing_and_managing_apps.rst
-   system-administration/system_settings.rst
+   system-administration/file_storage.rst
    system-administration/using_the_script_engine.rst
    system-administration/using_the_server_administration_panel.rst
    system-administration/security_settings.rst
