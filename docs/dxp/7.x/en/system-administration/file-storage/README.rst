@@ -1,8 +1,8 @@
 File Storage
 ============
 
--  :doc:`/system-administration/file-storage/other-file-store-types/configuring-file-storage`
--  :doc:`/system-administration/file-storage/other-file-store-types/file-store-migration`
+-  :doc:`/system-administration/file-storage/configuring-file-storage`
+-  :doc:`/system-administration/file-storage/file-store-migration`
 
 
 Other File Store Types
