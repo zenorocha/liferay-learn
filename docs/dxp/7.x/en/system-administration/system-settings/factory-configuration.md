@@ -32,7 +32,7 @@ In the Organization type example, the default Organization type (aptly named _or
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-default.config
 ```
 
-This `-default.config` configuration creates the _organization_ Organization type. Following the example from the [Adding a New Organization Type](../../users-and-permissions/organizations/adding-a-new-organization-type.md) article, you could add the _League_ type with a configuration file named 
+Following the example from the [Adding a New Organization Type](../../users-and-permissions/organizations/adding-a-new-organization-type.md) article, you could add the _League_ type with a configuration file named 
 
 ```bash
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-league.config

@@ -14,7 +14,7 @@ Configuration files use the `.config` property value format defined by the [Apac
 
 ## Creating Configuration Files
 
-System Settings provides an [*Export*](./system-settings.md#exporting-and-importing-configurations) option that becomes available once you modify a configuration entry. Exporting is the best way to create `.config` files: you download a `.config` file containing the entry's settings in a `key=value` format, then modify or distribute as you have need. All available configuration keys and values are exported, even if only one value was changed.
+System Settings provides an [*Export*](./system-settings.md#exporting-and-deploying-configurations) option that becomes available once you modify a configuration entry. Exporting is the best way to create `.config` files: you download a `.config` file containing the entry's settings in a `key=value` format, then modify or distribute as you have need. All available configuration keys and values are exported, even if only one value was changed.
 
 You can export a single configuration entry or the entire set of modified configurations. 
 
@@ -26,7 +26,7 @@ com.liferay.journal.configuration.JournalServiceConfiguration.config
 
 ![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./system-settings-configuration-files/images/01.png)
 
-The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization will never take effect.
+The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization will never take effect. The only exception is for [Factory Configuration](./factory-configuration.md), where a unique subname can be provided in some cases.
 
 ## Key/Value Syntax
 

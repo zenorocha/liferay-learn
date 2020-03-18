@@ -38,7 +38,7 @@ If you make some regrettable configuration decisions and can't recall exactly wh
 
 ![After saving changes to a configuration, the actions Reset Default Values and Export are made available.](./system-settings/images/04.png)
 
-## Exporting and Importing Configurations
+## Exporting and Deploying Configurations
 
 System Settings are portable. To apply the same configurations in another installation, you don't need to remember and duplicate every configuration change you made. The System Settings application lets you export configurations; either a single configuration entry or all the entries that you changed. The exported files are deployable to any Liferay DXP installation of the same version.
 
