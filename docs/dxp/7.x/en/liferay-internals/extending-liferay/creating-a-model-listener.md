@@ -2,9 +2,7 @@
 
 This tutorial will show you how to add a custom model listener by implementing the [ModelListener](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) interface.
 
-Model listeners listen for persistence method calls that signal changes to a specified model (such as `update` or `add` methods). You can define model listeners for out-of-the-box entities (like `JournalArticle` or `AssetEntry`), or for custom entities.
-
-Most of the methods model listeners use are called from DXP's [BasePersistenceImpl](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-kernel/src/com/liferay/portal/kernel/service/persistence/impl/BasePersistenceImpl.java) class.
+Model listeners listen for persistence method calls that signal changes to a specified model (such as `update` or `add` methods). Most of the methods model listeners use are called from DXP's [BasePersistenceImpl](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-kernel/src/com/liferay/portal/kernel/service/persistence/impl/BasePersistenceImpl.java) class. You can define model listeners for out-of-the-box entities (like `JournalArticle` or `AssetEntry`), or for custom entities.
 
 ## Overview
 
@@ -157,7 +155,7 @@ public void onBeforeUpdate(T model) throws ModelListenerException;
 
 ### Complete the Model Listener
 
-The model listener only needs custom logic for the events that are important to you.
+The model listener needs custom logic for the events that are important to you. Override the `ModelListener` interface's methods corresponding to the events you need.
 
 This example only needs logic after a new instance of the model listener's associated entity is created. This means the logic must be added to the `onAfterCreate` method:
 
