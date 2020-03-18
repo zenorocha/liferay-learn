@@ -26,6 +26,10 @@ Here's an explanation of the file hierarchy in the `[Liferay Home]/data/document
 * The numeric file entry name is used in the storage file path but the document ID is not.
 * They're stored in different `DLFileEntry` table columns. The numeric file entry name is stored in the `name` column and the document ID is stored in the `fileEntryId` column.
 
+```warning::
+   If a database transaction rollback occurs in a Document Library, the transaction's file system changes are **not** reversed. Inconsistencies between Document Library files and those in the file system store can occur and may require manual synchronization. All of the DXP stores except `DBStore <./dbstore.md>`_ are vulnerable to this limitation.
+```
+
 ## Configuring the Store
 
 Follow these steps to configure your Simple File System store:
@@ -51,14 +55,9 @@ dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
 
 In a [clustered environment](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md), point the store to a network mounted file system that all the nodes can access. The networked file system must be accessible to all nodes, support concurrent requests, and support file locking. If Simple File System Store is used without such a file system and multiple users attempt writing to the same file concurrently, data corruption can occur.
 
-## Database Rollback Limitation
-
-**Warning:** If a database transaction rollback occurs in a Document Library, the transaction's file system changes are **not** reversed. Inconsistencies between Document Library files and those in the file system store can occur and may require manual synchronization. All of the DXP stores except [DBStore](./dbstore.md) are vulnerable to this limitation.
-
 ## Additional Information
 
-* [File Storage Overview](./file-storage.md)
-* [Advanced File System Store](./advanced-file-system-store.md)
+* [Configuring File Storage](../configuring-file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)
 * [DBStore](./dbstore.md)
 * [File Store Migration](./file-store-migration.md)

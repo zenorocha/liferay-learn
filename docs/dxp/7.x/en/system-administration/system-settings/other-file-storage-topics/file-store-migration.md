@@ -16,16 +16,14 @@ The Data Migration utility facilitates the migration.
 
 Here are the migration steps:
 
-1.  Configure the new file store in *System Settings* &rarr; *File 
-    Storage*.
-1.  In *Server Administration* &rarr; *Data Migration*, select the 
-    repository hook (store implementation class) and click *Execute*.
+1. Configure the new file store in *System Settings* &rarr; *File Storage*.
+1. In *Server Administration* &rarr; *Data Migration*, select the repository hook (store implementation class) and click *Execute*.
 
     ![Data Migration utility](./file-store-migration/images/01.png)
 
-1.  Make sure the data migrated correctly.
+1. Make sure the data migrated correctly.
 
-1.  Configure [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) to the target file store type, using one of these settings:
+1. Configure [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) to the target file store type, using one of these settings:
 
     ```properties
     dl.store.impl=com.liferay.portal.store.db.DBStore
@@ -44,7 +42,6 @@ Your DXP instance is using the migrated files on the newly configured file store
 
 ## Additional Information
 
-* [File Storage Overview](./file-storage.md)
-* [Advanced File System Store](./advanced-file-system-store.md)
+* [Configuring File Storage](../configuring-file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)
 * [DBStore](./dbstore.md)
