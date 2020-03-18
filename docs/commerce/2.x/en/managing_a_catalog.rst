@@ -2,7 +2,7 @@ Managing a Catalog
 ==================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    managing-a-catalog/creating-a-new-catalog.md
 

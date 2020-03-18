@@ -9,18 +9,22 @@ Creating and Managing Products
 Channels
 ~~~~~~~~
 
--  :doc:`/managing-a-catalog/creating-and-managing-products/introduction-to-channels`
--  :doc:`/managing-a-catalog/creating-and-managing-products/managing-channels`
--  :doc:`/managing-a-catalog/creating-and-managing-products/configuring-product-visibility-by-site-using-channels`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/channels/managing-channels`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/channels/configuring-product-visibility-by-site-using-channels`
+
+Product Types
+~~~~~~~~~~~~~
+
+-  :doc:`/managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/product-types/creating-a-grouped-product`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/product-types/creating-a-virtual-product`
+-  :doc:`/managing-a-catalog/creating-and-managing-products/product-types/virtual-product-reference`
 
 Products
 ~~~~~~~~
 
--  :doc:`/managing-a-catalog/creating-and-managing-products/introduction-to-product-types`
--  :doc:`/managing-a-catalog/creating-and-managing-products/creating-a-simple-product`
--  :doc:`/managing-a-catalog/creating-and-managing-products/creating-a-grouped-product`
--  :doc:`/managing-a-catalog/creating-and-managing-products/creating-a-virtual-product`
--  :doc:`/managing-a-catalog/creating-and-managing-products/virtual-product-reference`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/customizing-your-product-with-product-options`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/adding-skus-to-your-products`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/product-images`
