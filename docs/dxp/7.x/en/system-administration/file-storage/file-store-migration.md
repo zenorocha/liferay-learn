@@ -9,7 +9,7 @@ Files can be migrated from one file store type to another. Here are some migrati
 The Data Migration utility facilitates the migration.
 
 ```warning::
-   **Always** `back up <../../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/backing-up.md>`_ your file store and database before migrating. Testing the migration process on backup copies is advised.
+   **Always** `back up <../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/backing-up.md>`_ your file store and database before migrating. Testing the migration process on backup copies is advised.
 ```
 
 ## Migrating Files
@@ -23,7 +23,7 @@ Here are the migration steps:
 
 1. Make sure the data migrated correctly.
 
-1. Configure [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) to the target file store type, using one of these settings:
+1. Configure [`portal-ext.properties`](../../installation-and-upgrades/reference/portal-properties.md) to the target file store type, using one of these settings:
 
     ```properties
     dl.store.impl=com.liferay.portal.store.db.DBStore
@@ -42,6 +42,6 @@ Your DXP instance is using the migrated files on the newly configured file store
 
 ## Additional Information
 
-* [Configuring File Storage](../configuring-file-storage.md)
-* [Amazon S3 Store](./amazon-s3-store.md)
-* [DBStore](./dbstore.md)
+* [Configuring File Storage](./configuring-file-storage.md)
+* [Amazon S3 Store](./other-file-store-types/amazon-s3-store.md)
+* [DBStore](./other-file-store-types/dbstore.md)

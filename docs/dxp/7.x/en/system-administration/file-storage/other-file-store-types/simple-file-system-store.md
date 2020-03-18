@@ -60,4 +60,4 @@ In a [clustered environment](../../../installation-and-upgrades/setting-up-lifer
 * [Configuring File Storage](../configuring-file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)
 * [DBStore](./dbstore.md)
-* [File Store Migration](./file-store-migration.md)
+* [File Store Migration](../file-store-migration.md)

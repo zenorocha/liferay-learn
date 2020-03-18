@@ -54,4 +54,4 @@ Liferay DXP also ships with several other file storage methods that can be confi
 
 ### Migrating Files Across File Stores
 
-The Data Migration utility moves files from one store option to another. For example, it can be used to migrate files from a Simple File System Store (the default store) to an Advanced File System Store to leverage performance and scalability benefits. See [File Store Migration](./other-file-store-types/file-store-migration.md) for more information.
+The Data Migration utility moves files from one store option to another. For example, it can be used to migrate files from a Simple File System Store (the default store) to an Advanced File System Store to leverage performance and scalability benefits. See [File Store Migration](./file-store-migration.md) for more information.
