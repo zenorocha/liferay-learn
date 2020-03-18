@@ -1,6 +1,6 @@
 # Configuring File Storage
 
-Widgets that store files (for example, [Documents and Media](../../../content-authoring-and-management/documents_and_media.html)) and that support file attachments (for example, [Message Boards](../../../collaboration-and-social/collaboration-and-social-overview.md)), use DXP's file store. The files are saved to and retrieved from the file store. The file store can be hosted on the local machine, on a network mounted file system, in a database, or in the cloud.
+Widgets that store files (for example, [Documents and Media](../../../collaboration-and-social/collaboration-and-social-overview.md)) and that support file attachments (for example, [Message Boards](../../../collaboration-and-social/collaboration-and-social-overview.md)), use DXP's file store. The files are saved to and retrieved from the file store. The file store can be hosted on the local machine, on a network mounted file system, in a database, or in the cloud.
 
 ```important::
    If you are going to production, we highly recommend reviewing the various File Store configuration options and choosing the one that best fits your needs, **before** going live. Doing so can avoid painful file store migrations later in a project's life.
@@ -42,16 +42,16 @@ In a [clustered environment](../../../installation-and-upgrades/setting-up-lifer
 
 Liferay DXP also ships with several other file storage methods that can be configured, depending on your project's needs.
 
-* [Simple File System Store](./simple-file-system-store.md) uses the file system (local or a mounted share) to store files. This is the *default* file store.
+* [Simple File System Store](./other-file-storage-topics/simple-file-system-store.md) uses the file system (local or a mounted share) to store files. This is the *default* file store.
 
-* [S3 Store (Amazon Simple Storage Service)](./using-amazon-s3-store.md) uses Amazon's cloud-based storage.
+* [S3 Store (Amazon Simple Storage Service)](./other-file-storage-topics/amazon-s3-store.md) uses Amazon's cloud-based storage.
 
-* [DBStore (Database Storage)](./dbstore.md) stores files to the DXP database as `blobs`. DBStore's file size limit is 1 gigabyte. To store files larger than 1 gigabyte, use the Simple File System Store or the Advanced File System Store.
+* [DBStore (Database Storage)](./other-file-storage-topics/dbstore.md) stores files to the DXP database as `blobs`. DBStore's file size limit is 1 gigabyte. To store files larger than 1 gigabyte, use the Simple File System Store or the Advanced File System Store.
 
 ```warning::
-   When using a file system based store (Simple, Advanced, S3), there is a transaction rollback ability . If a database transaction rollback occurs in a Document Library, the transaction's file system changes are not reversed. Inconsistencies between Document Library files and those in the file system store can occur and may require manual synchronization. All stores except `DBStore <./dbstore.md>`_ are vulnerable to this limitation.
+   File system based stores (Simple, Advanced, S3) do not have transaction rollback capability. If a database transaction rollback occurs in a Document Library, the transaction's file system changes are not reversed. Inconsistencies between Document Library files and those in the file system store can occur and may require manual synchronization. All stores except `DBStore <./other-file-storage-topics/dbstore.md>`_ are vulnerable to this limitation.
 ```
 
 ### Migrating Files Across File Stores
 
-The Data Migration utility moves files from one store option to another. For example, it can be used to migrate files from a Simple File System Store (the default store) to an Advanced File System Store to leverage performance and scalability benefits. See [File Store Migration](./file-store-migration.md) for more information.
+The Data Migration utility moves files from one store option to another. For example, it can be used to migrate files from a Simple File System Store (the default store) to an Advanced File System Store to leverage performance and scalability benefits. See [File Store Migration](./other-file-storage-topics/file-store-migration.md) for more information.
