@@ -12,7 +12,7 @@ Liferay Commerce Enterprise is built on Liferay DXP. In additional to deploying 
 1. On the Help Center ticket, provide the following information: your hostname, IP address, and MAC address.
 1. The Liferay Provisioning Team will provide instructions on how to download the Commerce activation key.
 
-    ```note::
+    ```tip::
        Some activation keys are tied to a particular server. To migrate an activation key to another server, in this circumstance, please contact the Liferay Support Team by opening a `Help Center <https://liferay-support.zendesk.com/agent/>`_ ticket.
     ```
 
