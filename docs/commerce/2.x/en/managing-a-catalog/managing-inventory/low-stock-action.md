@@ -20,9 +20,9 @@ To configure a Low Stock Action:
     * **Allowed Order Quantities**: 1
     * **Multiple Order Quantity**: 1
 
-    ![Product Configuration for Low Stock Action](./low-stock-action/images/01.png "Product Configuration for Low Stock Action")
+    ![Product Configuration for Low Stock Action](./low-stock-action/images/01.png)
 
-1. Click _Save_.
+1. Click _Publish_.
 
 The Low Stock Action for this product has been configured. In the future, should the number of stock fall below _5_, the "U-Joint" product will be unpublished.
 
