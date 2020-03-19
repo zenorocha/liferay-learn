@@ -1,4 +1,4 @@
-# Managing Site Membershsip and Permissions with User Groups
+# Managing Site Membership and Permissions with User Groups
 
 Manage site membership, and the roles and permissions of the site's members, with User Groups.
 
