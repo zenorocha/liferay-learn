@@ -68,7 +68,7 @@ Now you have everything you need to make the call. All web services must be acce
 To call a service using Basic Auth, provide the credentials in the URL: 
 
 ```bash
-curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:test --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20119\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using Curl to call the GraphQL service!","headline":"Curl GraphQL Blog Entry"}},"operationName":"CreateBlog"}'
+curl --request POST --url http://localhost:8080/o/graphql \ -u test@liferay.com:test  --header 'content-type: application/json' --data '{"query":"query {blogPostings(filter: \"\", page: 1, pageSize: 10, search: \"\", siteKey: \"20119\", sort: \"\"){ page  items{ id articleBody headline  creator{ name }}}}"}'
 ```
 
 ### Calling a Service Using OAuth2
@@ -76,7 +76,7 @@ curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:te
 For production, create an [OAuth2 application](../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/creating-oauth2-applications.md) and use the OAuth2 process to get an authorization token. Once you have the token, provide it in the HTTP header:
 
 ```bash
-curl --request POST --url http://localhost:8080/o/graphql -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20119\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using Curl to call the GraphQL service!","headline":"Curl GraphQL Blog Entry"}},"operationName":"CreateBlog"}'
+curl --request POST --url http://localhost:8080/o/graphql -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" --header 'content-type: application/json' --data '{"query":"query {blogPostings(filter: \"\", page: 1, pageSize: 10, search: \"\", siteKey: \"20119\", sort: \"\"){ page  items{ id articleBody headline  creator{ name }}}}"}'
 ```
 
 ## Getting and Posting Data
@@ -144,6 +144,100 @@ Note that a GraphQL client makes the job of calling APIs easier, because it can 
 
 ### Getting All Blog Entries
 
+The first call you made called this API: 
+
+```graphql
+blogPostings (
+   filter:String
+   page: Int
+   pageSize: Int
+   search: String!
+   sort: String
+): BlogPostingPage
+```
+
 Now you can repeat the first query you did to see that the blog entry you posted is there: 
 
+```bash
+curl --request POST --url http://localhost:8080/o/graphql \ -u test@liferay.com:test  --header 'content-type: application/json' --data '{"query":"query {blogPostings(filter: \"\", page: 1, pageSize: 10, search: \"\", siteKey: \"20119\", sort: \"\"){ page  items{ id articleBody headline  creator{ name }}}}"}'
+```
 
+Now Liferay DXP returns JSON containing the data you requested: 
+
+```json
+{
+  "data": {
+    "blogPostings": {
+      "page": 1,
+      "items": [
+        {
+          "id": 35512,
+          "articleBody": "This Blog entry was created by calling the GraphQL service!",
+          "headline": "GraphQL Blog Entry",
+          "creator": {
+            "name": "Test Test"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+### Getting a Single Blog Entry
+
+The API call from the GraphQL schema for getting a single Blog entry has only one parameter: 
+
+```graphql
+blogPosting(
+   blogPostingId: Long
+): BlogPosting
+```
+
+Since the query above revealed your Blog post's ID, you can retrieve just the post you want: 
+
+```bash
+curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:test --header 'content-type: application/json' --data '{"query":"query {blogPosting(blogPostingId: 35512){ id  headline  articleBody}}"}'
+```
+
+This returns the same blog entry: 
+
+```json
+{
+  "data": {
+    "blogPosting": {
+      "id": 35512,
+      "headline": "GraphQL Blog Entry",
+      "articleBody": "This Blog entry was created by calling the GraphQL service!"
+    }
+  }
+}
+```
+
+### Deleting a Blog Entry
+
+Deleting a blog entry is a mutation, like creating one. Its call is almost the same as getting a single blog entry: 
+
+```graphql
+deleteBlogPosting(
+  blogPostingId: Long
+): Boolean
+```
+
+Using Curl, you can make the call like this: 
+
+```bash
+curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:test --header 'content-type: application/json' --data '{"query":"mutation {deleteBlogPosting(blogPostingId: 35512)}"}'
+```
+
+This call returns a Boolean in a JSON document: 
+
+```json
+{
+  "data": {
+    "deleteBlogPosting": true
+  }
+}
+```
+
+Congratulations! You've now learned how to call Liferay DXP's GraphQL services. Remember that the examples above use Basic Auth: for production, use OAuth2 to call services in a secure way.
