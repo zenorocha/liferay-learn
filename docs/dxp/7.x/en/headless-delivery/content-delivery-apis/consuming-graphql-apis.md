@@ -34,6 +34,17 @@ This URL does not require authentication, but calling any API does. The JSON ret
     If you try the ``curl`` command above, you'll see it's quite cumbersome to manage the returned schema. For this reason, it's better to use a GraphQL client, which can display the APIs in a friendly, readable format. You can find a list of clients at the [awesome-graphql](https://github.com/chentsulin/awesome-graphql#tools) GitHub repository. The remainder of the examples below were produced using the [Insomnia](https://insomnia.rest/graphql/) client.
     ```
 
+The `BlogPosting` API looks like this: 
+
+```graphql
+createSiteBlogPosting(
+  blogPosting: InputBlogPosting
+  siteKey: String!
+  ): BlogPosting
+```
+
+Since the API requires you to know the Site containing the Blog where the entry should be posted, you must find the Site ID first.
+
 ## Identify the Site Containing the Data
 
 After Liferay DXP initializes, visit it with your browser at `http://localhost:8080`. 
@@ -52,5 +63,87 @@ The Site ID appears at the top of the Details section. It's an Integer, like `20
 
 Now you have everything you need to make the call. All web services must be accessed using credentials that have access to the data you're requesting. The simplest way is to use Basic Auth, which passes credential data in the URL. Since this is insecure, you should only use this method during development. For production, your application should authorize users via [OAuth2](../../installation-and-upgrades/securing-liferay/configuring-sso/introduction-to-using-oauth2.md). 
 
-The examples below use [curl](https://curl.haxx.se). You, of course, would use your web development framework of choice to make the call. 
+### Calling a GraphQL API Using Basic Auth (During Development Only)
+
+To call a service using Basic Auth, provide the credentials in the URL: 
+
+```bash
+curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:test --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20119\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using Curl to call the GraphQL service!","headline":"Curl GraphQL Blog Entry"}},"operationName":"CreateBlog"}'
+```
+
+### Calling a Service Using OAuth2
+
+For production, create an [OAuth2 application](../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/creating-oauth2-applications.md) and use the OAuth2 process to get an authorization token. Once you have the token, provide it in the HTTP header:
+
+```bash
+curl --request POST --url http://localhost:8080/o/graphql -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20119\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using Curl to call the GraphQL service!","headline":"Curl GraphQL Blog Entry"}},"operationName":"CreateBlog"}'
+```
+
+## Getting and Posting Data
+
+If you run the query above to get all blog postings, you'll see there aren't any: 
+
+```json
+{put json here}
+```
+
+First, you'll post a blog entry. 
+
+### Posting a Blog Entry
+
+The GraphQL schema revealed the call that must be made to post a blog entry. 
+
+1. Construct a JSON document containing the entry you wish to publish: 
+
+   ```json
+    {
+      "blog": {
+          "articleBody": "This Blog entry was created by calling the GraphQL service!",
+          "headline": "GraphQL Blog Entry"
+      }
+    }
+    ```
+
+1. Construct the GraphQL query based on the schema documentation: 
+
+   ```graphql
+    mutation CreateBlog($blog: InputBlogPosting){   
+      createSiteBlogPosting(blogPosting: $blog, siteKey: "20119" ) {
+        headline
+        articleBody
+        id
+        friendlyUrlPath
+      }
+
+    }
+    ```
+1. Make the request: 
+
+   ```bash
+
+   curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:test --header 'content-type: application/json' --data '{"query":"mutation CreateBlog($blog: InputBlogPosting){   createSiteBlogPosting(blogPosting: $blog, siteKey: \"20119\" ) {    headline    articleBody    id    friendlyUrlPath  }    } ","variables":{"blog":{"articleBody":"This Blog entry was created by using Curl to call the GraphQL service!","headline":"Curl GraphQL Blog Entry"}},"operationName":"CreateBlog"}'
+   ```
+
+Liferay DXP returns a JSON representation of your blog entry that contains the fields you requested in the mutation: 
+
+```json
+{
+  "data": {
+    "createSiteBlogPosting": {
+      "headline": "GraphQL Blog Entry",
+      "articleBody": "This Blog entry was created by calling the GraphQL service!",
+      "id": 35512,
+      "friendlyUrlPath": "graphql-blog-entry"
+    }
+  }
+}
+```
+Note that a GraphQL client makes the job of calling APIs easier, because it can auto-parse the schema to provide code completion. 
+
+![A GraphQL client like Insomnia helps you construct your queries and mutations by parsing the schema and giving you code completion.](./consuming-graphql-apis/images/01.png)
+
+### Getting All Blog Entries
+
+Now you can repeat the first query you did to see that the blog entry you posted is there: 
+
 
