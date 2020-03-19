@@ -1,4 +1,0 @@
-Image Editor
-============
-
-Coming soon!
