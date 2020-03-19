@@ -6,7 +6,7 @@ Manage site membership, and the roles and permissions of the site's members, wit
 
 One of the primary use cases for User Groups is to manage Site membership. When you assign a User Group to a Site, all the group's Users instantly become members of that Site.
 
-![The User Groups tab in Memberships shows the User Groups currently assigned to the Site.](./creating-and-managing-user-groups/images/02.png)
+![The User Groups tab in Memberships shows the User Groups currently assigned to the Site.](./managing-site-membership-and-permissions-with-user-groups/images/02.png)
 
 Follow these steps to assign a User Group to a Site:
 
@@ -14,7 +14,7 @@ Follow these steps to assign a User Group to a Site:
 
 1. In the Site Administration menu, select *People* &rarr; *Memberships*.  This opens the Site Memberships screen. 
 
-   ![Select Memberships from the People menu.](./creating-and-managing-user-groups/images/01.png)
+   ![Select Memberships from the People menu.](./managing-site-membership-and-permissions-with-user-groups/images/01.png)
 
 1. In Memberships, select the *User Groups* tab. This tab displays any User Groups currently assigned to the Site. 
 
@@ -37,13 +37,13 @@ The first three steps are covered elsewhere. To assign an existing Site Role to 
 
 1. In the Site Administration menu, select *People* &rarr; *Memberships*.
 
-   ![Select Memberships from the Site Administration menu.](./creating-and-managing-user-groups/images/01.png)
+   ![Select Memberships from the Site Administration menu.](./managing-site-membership-and-permissions-with-user-groups/images/01.png)
 
 1. In Memberships, select the *User Groups* tab to see the User Groups currently assigned to the Site. 
 
 1. Click the *Actions* button (![Actions](../../images/icon-actions.png)) for the User Group you want to assign to a Role, and select *Assign Roles*.
 
-   ![Select Assign Roles for the User Group.](./creating-and-managing-user-groups/images/03.png)
+   ![Select Assign Roles for the User Group.](./managing-site-membership-and-permissions-with-user-groups/images/03.png)
 
 1. In the Assign Roles dialog, select the Role from the list and click *Done*. 
 

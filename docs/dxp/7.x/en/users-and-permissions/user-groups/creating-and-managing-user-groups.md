@@ -44,7 +44,7 @@ To add existing users to a User Group,
 
 ## Configuring User Group Permissions
 
-User Groups are often created so the group's Users can take certain actions, whether across the system or in a specific Site. Whichever scope a User Group needs to act at, it's done by assigning the needed permissions for the action to a Role, and then assigning that Role to the User Group. Once given a properly scoped Role with permissions assigned, the User Group's Users can get to work.
+User Group Users might need to take certain actions, whether across the system or in a specific Site. Whichever scope a User Group needs to act at, it's done by assigning the needed permissions for the action to a Role, and then assigning that Role to the User Group. Once given a properly scoped Role with permissions assigned, the User Group's Users can get to work.
 
 To give User Groups permissions at the portal-wide scope, you'll need a Regular Role.
 
