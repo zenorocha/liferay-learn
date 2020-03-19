@@ -15,16 +15,16 @@ This article is intended to provide a walk through for users who are new to buil
 
 > **Note**: An [Accelerator](../starting-a-store/accelerators.md) may be used to create the store site. Using an Accelerator to create the store site will configure many of the settings mentioned in this section, see [Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) for further details.
 
-Initial store setup is done with the [Admin account](../starting-a-store/store-administration/introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../starting-a-store/store-administration/liferay-commerce-configuration-overview.md) to become more familiar with the Liferay Commerce configuration layout and available options.
+Initial store setup is done with the [Admin account](./introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../store-administration/liferay-commerce-configuration-overview.md) to become more familiar with the Liferay Commerce configuration layout and available options.
 
 ### Configure Global Commerce Settings
 
 Global configurations for Liferay Commerce include setting the store timezone, available languages, adding regions and region specific measurement units, and more. Learn more from the following articles:
 
-* [Setting Locale Options](../starting-a-store/store-administration/locale-options.md)
-* [Adding Regions](../starting-a-store/store-administration/adding-regions.md)
+* [Setting Locale Options](../store-administration/locale-options.md)
+* [Adding Regions](../store-administration/adding-regions.md)
 * [Setting up Warehouses](../managing-a-catalog/managing-inventory/warehouse-reference-guide.md)
-* [Creating Channels](../managing-a-catalog/creating-and-managing-products/introduction-to-channels.md)
+* [Creating Channels](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md)
 
 ### Create a Store Site
 
@@ -40,29 +40,29 @@ The following sections cover configurations that are store site specific.
 
 Liferay Commerce provides support for several third party payment processors and also allows for the use of money orders to accept payment. See:
 
-* [Payments](../starting-a-store/store-administration/payments.md)
-* [Managing Payment Methods](../starting-a-store/store-administration/managing-payment-methods.md)
-* [Authorize.net](../orders-and-fulfillment/payment-methods/authorize.net.md)
-* [PayPal](../orders-and-fulfillment/payment-methods/mercanet.md)
-* [Mercanet](../orders-and-fulfillment/payment-methods/mercanet.md)
-* [Money Orders](../orders-and-fulfillment/payment-methods/mercanet.md)
+* [Payments](../store-administration/payments.md)
+* [Managing Payment Methods](../store-administration/managing-payment-methods.md)
+* [Authorize.net](../store-administration/configuring-payment-methods/authorize.net.md)
+* [PayPal](../store-administration/configuring-payment-methods/mercanet.md)
+* [Mercanet](../store-administration/configuring-payment-methods/mercanet.md)
+* [Money Orders](../store-administration/configuring-payment-methods/mercanet.md)
 
 #### Collecting Applicable Taxes
 
 In order to collect the applicable taxes, Liferay Commerce has the ability to create tax categories and to set tax rates by address or by a fixed rate.
 
-* [Creating Tax Categories](../configuring-taxes/creating-tax-categories.md)
-* [Setting Tax Rate by Address](../configuring-taxes/setting-tax-rate-by-address.md)
-* [Setting Tax Rate by Fixed Rate](../configuring-taxes/setting-tax-rate-by-fixed-rate.md)
+* [Creating Tax Categories](../store-administration/configuring-taxes/creating-tax-categories.md)
+* [Setting Tax Rate by Address](../store-administration/configuring-taxes/setting-tax-rate-by-address.md)
+* [Setting Tax Rate by Fixed Rate](../store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.md)
 
 #### Shipping Products
 
 Liferay Commerce has several options to calculate shipping rates. Commerce Enterprise subscribers receive FedEx carrier integration out-of-the-box.
 
-* [Shipping Methods](../starting-a-store/store-administration/shipping-methods.md)
-* [Variable Rate](../orders-and-fulfillment/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
-* [Flat Rate](../orders-and-fulfillment/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
-* [Using FedEx as a Carrier](../orders-and-fulfillment/configuring-shipping-methods/using-fedex-as-a-carrier-method.md)
+* [Shipping Methods](../store-administration/shipping-methods.md)
+* [Variable Rate](../store-administration/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
+* [Flat Rate](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
+* [Using FedEx as a Carrier](../store-administration/configuring-shipping-methods/using-fedex-as-a-carrier-method.md)
 
 ## Creating the Catalog
 
@@ -70,7 +70,7 @@ After setting up the store, begin [creating a new catalog](../managing-a-catalog
 
 ### Adding Products to a Catalog
 
-When adding a product, there are three product types: **Simple**, **Grouped**, and **Virtual**. See the [Introduction to Product Types](../managing-a-catalog/creating-and-managing-products/introduction-to-product-types.md) for more information.
+When adding a product, there are three product types: **Simple**, **Grouped**, and **Virtual**. See the [Introduction to Product Types](../managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.md) for more information.
 
 #### Adding Product Information
 
@@ -118,7 +118,7 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 
 When an order has been received, the order may be transmitted to an ERP and optionally to a CRM. Once the requested goods are available for shipping, the store's inventory specialists may track the shipment. See the following articles to learn about the life cycle of an order and the shipment processes.
 
-* [Order Life Cycle](../orders-and-fulfillment/order-management/order-life-cycle.md)
+* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
 * [Introduction to Shipments](../orders-and-fulfillment/managing-shipments/introduction-to-shipments.md)
 * [Creating a shipment](../orders-and-fulfillment/managing-shipments/creating-a-shipment.md)
 * [Cancelling a Shipment](../orders-and-fulfillment/managing-shipments/cancelling-a-shipment.md)

@@ -24,4 +24,4 @@ The new warehouse is now active and available as an option in the _Shipment_ tab
 
 Before you can enter the address for a warehouse, you may need to enter and activate the applicable country and region (state or province) in the _Countries_ tab at _Control Panel_ → _Commerce_ → _Settings_.
 
-For more detail see [Adding Regions](../../starting-a-store/store-administration/adding-regions.md) or [Deactivating a Country for Billing or Shipping](../../starting-a-store/store-administration/deactivating-a-country-for-billing-or-shipping.md).
+For more detail see [Adding Regions](../../store-administration/adding-regions.md) or [Deactivating a Country for Billing or Shipping](../../store-administration/deactivating-a-country-for-billing-or-shipping.md).

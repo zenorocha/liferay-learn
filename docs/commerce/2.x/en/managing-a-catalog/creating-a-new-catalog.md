@@ -1,6 +1,6 @@
 # Creating a Catalog
 
-A catalog is the complete list of related products that can be displayed on a store site. Multiple catalogs may be created and associated with [channels](./creating-and-managing-products/introduction-to-channels.md).
+A catalog is the complete list of related products that can be displayed on a store site. Multiple catalogs may be created and associated with [channels](./creating-and-managing-products/channels/introduction-to-channels.md).
 
 To create a new catalog:
 
@@ -21,5 +21,5 @@ The new catalog has been created and will be selectable when adding a new produc
 
 ## Additional Information
 
-* [Locale Options](../starting-a-store/store-administration/locale-options.md)
-* [Adding a New Currency](../starting-a-store/store-administration/adding-a-new-currency.md)
+* [Locale Options](../store-administration/locale-options.md)
+* [Adding a New Currency](../store-administration/adding-a-new-currency.md)

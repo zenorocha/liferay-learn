@@ -13,7 +13,7 @@ Contents
    promoting_products
    account_management
    orders_and_fulfillment
-   configuring_taxes
+   store_administration
    developer_guide
    get_help
 

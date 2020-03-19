@@ -2,7 +2,7 @@
 
 Minium is a Liferay Commerce [Accelerator](./accelerators.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a manufacturer, showcasing a modern B2B digital commerce experience. It is designed with features that make the experience as smooth as possible by having elements that are both functional and elegant.
 
-The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../account-management/account-roles.md), [Account Groups](../account-management/creating-a-new-account-group.md), and [Order Workflows](../orders-and-fulfillment/order-management/order-workflows.md).
+The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../account-management/account-roles.md), [Account Groups](../account-management/creating-a-new-account-group.md), and [Order Workflows](../orders-and-fulfillment/order-workflows/introduction-to-order-workflows.md).
 
 This article serves as a walk-through for the main features of the Minium Accelerator.
 

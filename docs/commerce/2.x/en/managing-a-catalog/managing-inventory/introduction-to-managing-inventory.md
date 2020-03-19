@@ -10,7 +10,7 @@ Warehouses represent the physical locations where product inventory is managed a
 
 See the [Warehouse Reference Guide](./warehouse-reference-guide.md) and the [Adding a New Warehouse](./adding-a-new-warehouse.md) article for more information about how to manage warehouses.
 
-Warehouses must be associated for at least one channel. See the [Introduction to Channels](../creating-and-managing-products/introduction-to-channels.md) article on how channels work.
+Warehouses must be associated for at least one channel. See the [Introduction to Channels](../creating-and-managing-products/channels/introduction-to-channels.md) article on how channels work.
 
 ## Availability Estimates
 
@@ -32,4 +32,4 @@ In Liferay Commerce, inventory management is done per product SKU. To learn more
 
 * [Creating a New Shipment](../../orders-and-fulfillment/managing-shipments/creating-a-shipment.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference.md)
-* [Order Life Cycle](../../orders-and-fulfillment/order-management/order-life-cycle.md)
+* [Order Life Cycle](../../orders-and-fulfillment/order-life-cycle.md)

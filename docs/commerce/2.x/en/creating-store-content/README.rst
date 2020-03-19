@@ -4,7 +4,6 @@ Creating Store Content
 Pages
 -----
 
--  :doc:`/creating-store-content/welcome-to-liferay-commerce`
 -  :doc:`/creating-store-content/creating-your-storefront`
 -  :doc:`/creating-store-content/creating-a-catalog-page`
 -  :doc:`/creating-store-content/widget-reference`

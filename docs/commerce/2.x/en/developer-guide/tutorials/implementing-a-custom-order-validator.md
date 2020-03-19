@@ -44,7 +44,7 @@ In this section, we will get an example order validator up and running on your i
     STARTED com.acme.n9b2.impl_1.0.0
     ```
 
-1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If no such product exists yet, add it yourself; see [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/creating-a-simple-product.md) for more information.
+1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If no such product exists yet, add it yourself; see [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md) for more information.
 
     From the catalog, find the item with this price, then click "Add to Cart". Increase the quantity to 11 or more, then click the arrow to continue. The error message that appears shows that the custom order validator successfully rejected adding the item.
 
@@ -188,5 +188,5 @@ Congratulations! You now know the basics for implementing the `CommerceOrderVali
 
 ## Additional Information
 
-* [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/creating-a-simple-product.md)
+* [Creating a Simple Product](../../managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

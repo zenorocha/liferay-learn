@@ -24,5 +24,5 @@ Note that if a new shipment is created from the same order, a new shipment numbe
 
 ## Additional Information
 
-* [Orders Menu](../order-management/orders-menu.md)
-* [Order Information](../order-management/order-information.md)
+* [Orders Menu](../orders-menu.md)
+* [Order Information](../order-information.md)

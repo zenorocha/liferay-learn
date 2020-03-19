@@ -4,7 +4,6 @@ Creating Store Content
 .. toctree::
    :maxdepth: 2
 
-   creating-store-content/welcome-to-liferay-commerce.md
    creating-store-content/creating-your-storefront.md
    creating-store-content/creating-a-catalog-page.md
    creating-store-content/widget-reference.md

@@ -254,5 +254,5 @@ Congratulations! You now know the basics for implementing the `CommerceShippingE
 
 ## Additional Information
 
-* [Applying Shipping Method Restrictions](../../orders-and-fulfillment/configuring-shipping-methods/applying-shipping-method-restrictions.md)
+* [Applying Shipping Method Restrictions](../../store-administration/configuring-shipping-methods/applying-shipping-method-restrictions.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
