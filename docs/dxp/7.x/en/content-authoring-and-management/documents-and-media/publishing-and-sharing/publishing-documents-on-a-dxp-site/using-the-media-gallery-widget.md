@@ -1,4 +1,4 @@
-# Using the Media Gallery
+# Using the Media Gallery Widget
 
 The _Media Gallery_ widget publishes only media files in a simple gallery-like style. It shows a large thumbnail of each media file, lets the user download files, and has slideshow capabilities. A common way to use the Media Gallery is to create a separate page for displaying media and add a Media Gallery widget to it.
 

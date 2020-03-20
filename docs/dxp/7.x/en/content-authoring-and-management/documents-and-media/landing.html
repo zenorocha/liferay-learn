@@ -1,0 +1,132 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+        {
+					sectionName: 'Introduction to Documents and Media (Coming Soon)',
+					sectionURL: 'content-authoring-and-management/documents-and-media/introduction-to-documents-and-media.html',
+				},
+				{
+					sectionName: 'Uploading and Managing',
+					sectionURL: 'content-authoring-and-management/documents-and-media/uploading_and_managing.html',
+					subsections: [
+						{
+							name: 'Uploading Files',
+							url: 'content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.html'
+						},
+						{
+							name: 'Creating Folders',
+							url: 'content-authoring-and-management/documents-and-media/uploading-and-managing/creating-folders.html'
+						},
+						{
+							name: 'Editing Images (Coming Soon)',
+							url: 'content-authoring-and-management/documents-and-media/uploading-and-managing/editing-images.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Uploading and Managing',
+					sectionURL: 'content-authoring-and-management/documents-and-media/uploading_and_managing.html',
+					subsections: [
+						{
+							name: 'Uploading Files',
+							url: 'content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.html'
+						},
+						{
+							name: 'Creating Folders',
+							url: 'content-authoring-and-management/documents-and-media/uploading-and-managing/creating-folders.html'
+						},
+						{
+							name: 'Editing Images (Coming Soon)',
+							url: 'content-authoring-and-management/documents-and-media/uploading-and-managing/editing-images.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Publishing and Sharing',
+					sectionURL: 'content-authoring-and-management/documents-and-media/publishing_and_sharing.html',
+					subsections: [
+						{
+							name: 'Using the Media Gallery',
+							url: 'content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.html'
+						},
+						{
+							name: 'Documents and Media Permissions Reference',
+							url: 'content-authoring-and-management/documents-and-media/publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.html'
+						},
+						{
+							name: 'How Adaptive Media Works (Coming Soon)',
+							url: 'content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Developer Guide',
+					sectionURL: 'content-authoring-and-management/documents-and-media/developer_guide.html',
+					subsections: [
+						{
+							name: 'Getting Files and Folders (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Moving Media to the Recycle Bin (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Updating Media (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+				{
+					sectionName: 'DevOps',
+					sectionURL: 'content-authoring-and-management/documents-and-media/devops.html',
+					subsections: [
+            {
+							name: 'Configuring Document Previews (Coming Soon)',
+							url: 'content-authoring-and-management/documents-and-media/devops/configuring-document-previews.html'
+						},
+						{
+							name: 'Enabling Document Creation and Editing with Microsoft Office 365 (Coming Soon)',
+							url: 'content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365.html'
+						},
+						{
+							name: 'Enabling Links to Google Drive Documents (Coming Soon)',
+							url: 'content-authoring-and-management/documents-and-media/devops/google-drive-integration/enabling-links-to-google-drive-documents.html'
+						},
+          ]
+				},
+        {
+					sectionName: 'Documents and Media UI Reference (Coming Soon)',
+					sectionURL: 'content-authoring-and-management/documents-and-media/documents-and-media-ui-reference.html',
+				},
+			]
+		}
+	})
+</script>

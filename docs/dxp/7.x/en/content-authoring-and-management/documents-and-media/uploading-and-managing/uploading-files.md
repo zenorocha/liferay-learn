@@ -1,6 +1,6 @@
 # Uploading Files
 
-The _Documents and Media_ application is where users can store their files natively inside the DXP instance. Unless a certain file format is blacklisted, users can upload most types of files: documents, images, and videos.
+The _Documents and Media_ application is where users can store their files natively inside the DXP instance. Unless a certain file format is disallowed, users can upload most types of files: documents, images, and videos.
 
 Users have the ability to upload a single file or multiple files simultaneously. Only authenticated users with the required permissions can upload files. See the [Documents and Media Permissions Reference](./documents-and-media-permissions-reference.md) for more information. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
