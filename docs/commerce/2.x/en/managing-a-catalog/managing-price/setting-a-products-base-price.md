@@ -4,6 +4,21 @@ Each product SKU must have at a set base price. To assign one price to one SKU:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product (_Torque Converters_ in this example).
+1. Click the _SKUs_ tab.
+1. Click on a SKU (_MIN55859_ in this example).
+1. On the _Details_ tab, enter the following in the Pricing section:
+    * **Price**: 34
+    * **Promo Price**: (leave it blank) (If you enter this field, then both the price above and promo price will appear on the product page so that buyers can see the markdown.)
+    * **Cost**: 20
+
+    ![Setting a product's base price in 2.1](./setting-a-products-base-price/images/02.png)
+
+1. Click _Publish_.
+
+## Commerce 2.0 and Below
+
+1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
+1. Click on a product (_Torque Converters_ in this example).
 1. Click the _SKUs_ sub-tab.
 1. Click on a SKU (_MIN55859_ in this example).
 1. Click _Pricing_.

@@ -21,7 +21,7 @@ This article describes how to create a price list.
     * Mike’s Car Repair
     * Fountain Valley Car Wash
 1. Click _Add_.
-1. Choose a Schedule for the price list. (Leave the _Never Expire_checkbox checked in this example. Alternatively, you can set a date range for when the price list is active.)
+1. Choose a Schedule for the price list. (Leave the _Never Expire_ checkbox checked in this example. Alternatively, you can set a date range for when the price list is active.)
 
     ![Adding a price list](./creating-a-price-list/images/01.png)
 
