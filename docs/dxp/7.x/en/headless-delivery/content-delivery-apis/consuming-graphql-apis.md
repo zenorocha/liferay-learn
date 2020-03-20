@@ -90,24 +90,24 @@ The GraphQL schema revealed the call that must be made to post a blog entry.
 1. Construct a JSON document containing the entry you wish to publish:
 
    ```json
-    {
-      "blog": {
-          "articleBody": "This Blog entry was created by calling the GraphQL service!",
-          "headline": "GraphQL Blog Entry"
-      }
-    }
+   {
+     "blog": {
+         "articleBody": "This Blog entry was created by calling the GraphQL service!",
+         "headline": "GraphQL Blog Entry"
+     }
+   }
     ```
 
 1. Construct the GraphQL query based on the schema documentation:
 
    ```graphql
-    mutation CreateBlog($blog: InputBlogPosting){
-      createSiteBlogPosting(blogPosting: $blog, siteKey: "20119" ) {
-        headline
-        articleBody
-        id
-        friendlyUrlPath
-      }
+   mutation CreateBlog($blog: InputBlogPosting){
+     createSiteBlogPosting(blogPosting: $blog, siteKey: "20119" ) {
+       headline
+       articleBody
+       id
+       friendlyUrlPath
+     }
 
     }
     ```
