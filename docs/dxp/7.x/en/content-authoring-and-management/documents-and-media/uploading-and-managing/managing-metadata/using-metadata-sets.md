@@ -1,4 +1,4 @@
-# Creating Metadata Sets
+# Using Metadata Sets
 
 You can define metadata fields that users fill out when they create or edit Documents and Media files. You do this by creating *metadata sets* and then associating them with document types, which wrap Document Library files and thus apply your metadata fields to the files. Although you apply metadata sets via document types, metadata sets exist independently and you can apply them to any number of document types.
 

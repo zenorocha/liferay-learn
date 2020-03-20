@@ -6,10 +6,10 @@ Publishing and Sharing
 
    publishing-and-sharing/accessing-documents-with-webdav.md
    publishing-and-sharing/using-workflow-with-documents-and-media.md
-   publishing-and-sharing/previewing-files.md
-   publishing-and-sharing/deleting-files.md
-   publishing-and-sharing/editing-images.md
-   publishing-and-sharing/linking-to-files-on-google-drive.md
+   publishing-and-sharing/publishing_documents_on_a_dxp_site.rst
+   publishing-and-sharing/serving_device_and_screen_optimized_media.rst
+   publishing-and-sharing/managing_document_access.rst
+   publishing-and-sharing/liferay_sync.rst
 
 .. include:: /content-authoring-and-management/documents-and-media/publishing-and-sharing/README.rst
    :start-line: 2

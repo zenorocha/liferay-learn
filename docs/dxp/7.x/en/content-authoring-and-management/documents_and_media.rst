@@ -4,9 +4,12 @@ Documents and Media
 .. toctree::
    :maxdepth: 3
 
-   documents-and-media/user_guide.rst
+   documents-and-media/introduction-to-documents-and-media.md
+   documents-and-media/uploading_and_managing.rst
+   documents-and-media/publishing_and_sharing.rst
    documents-and-media/developer_guide.rst
-   documents-and-media/apis.rst
+   documents-and-media/devops.rst
+   documents-and-media/documents-and-media-ui-reference.md
 
 .. include:: /content-authoring-and-management/documents-and-media/README.rst
    :start-line: 2

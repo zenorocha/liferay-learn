@@ -1,4 +1,4 @@
-# Managing Folders
+# Creating Folders
 
 Users can use _Documents and Media Folders_ to organize their files. Only authenticated users with the required permissions can add a folder. See the [Documents and Media Permissions Reference](./documents-and-media-permissions-reference.md) for more information. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
