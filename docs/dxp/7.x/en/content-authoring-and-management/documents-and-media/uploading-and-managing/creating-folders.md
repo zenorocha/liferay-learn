@@ -45,8 +45,5 @@ To change a folder's Document Type restrictions:
 ## Additional Information
 
 * [Activating Workflow](../../../process-automation/workflow/user-guide/activating-workflow.md#documents-and-media-folders)
-
-## What's Next
-
 * [Uploading Files](./uploading-files.md)
 * [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)
