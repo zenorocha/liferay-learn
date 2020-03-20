@@ -11,5 +11,5 @@ Documents and Media
    documents-and-media/devops.rst
    documents-and-media/documents-and-media-ui-reference.md
 
-.. include:: /content-authoring-and-management/documents-and-media/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: documents-and-media/landing.html
