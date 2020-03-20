@@ -24,7 +24,7 @@ http://[host]:[port]/o/graphql
 
 You can discover your local installation's APIs, therefore, by requesting the schema: 
 
-```
+```bash
 curl 'http://localhost:8080/o/graphql'  -H 'Content-Type: application/json' --data '{"query":"query{ __schema{ queryType{ name fields{ name args{ name } description } } } }","variables":{}}'
 ```
 
@@ -84,7 +84,7 @@ curl --request POST --url http://localhost:8080/o/graphql -H "Authorization: Bea
 If you run the query above to get all blog postings, you'll see there aren't any: 
 
 ```json
-{put json here}
+{"data":{"blogPostings":{"page":1,"items":[]}}}
 ```
 
 First, you'll post a blog entry. 
@@ -216,7 +216,7 @@ This returns the same blog entry:
 
 ### Deleting a Blog Entry
 
-Deleting a blog entry is a mutation, like creating one. Its call is almost the same as getting a single blog entry: 
+Deleting a blog entry, like creating one, is a mutation. Its call is almost the same as getting a single blog entry: 
 
 ```graphql
 deleteBlogPosting(
@@ -230,7 +230,7 @@ Using Curl, you can make the call like this:
 curl --request POST --url http://localhost:8080/o/graphql -u test@liferay.com:test --header 'content-type: application/json' --data '{"query":"mutation {deleteBlogPosting(blogPostingId: 35512)}"}'
 ```
 
-This call returns a Boolean in a JSON document: 
+This call returns a Boolean in a JSON document denoting success or failure: 
 
 ```json
 {
