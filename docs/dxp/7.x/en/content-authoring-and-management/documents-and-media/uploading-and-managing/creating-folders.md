@@ -1,6 +1,6 @@
 # Creating Folders
 
-Users can use _Documents and Media Folders_ to organize their files. Only authenticated users with the required permissions can add a folder. See the [Documents and Media Permissions Reference](./documents-and-media-permissions-reference.md) for more information. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+Documents and Media Folders can be used to organize their files. Only authenticated users with the required permissions can manage a folder. See the [Documents and Media Permissions Reference](../publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.md) for more information. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Adding a Folder
 
@@ -49,4 +49,4 @@ To change a folder's Document Type restrictions:
 ## What's Next
 
 * [Uploading Files](./uploading-files.md)
-* [Using the Media Gallery](./using-the-media-gallery.md)
+* [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)

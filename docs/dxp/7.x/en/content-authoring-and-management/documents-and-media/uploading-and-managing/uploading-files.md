@@ -2,7 +2,7 @@
 
 The _Documents and Media_ application is where users can store their files natively inside the DXP instance. Unless a certain file format is disallowed, users can upload most types of files: documents, images, and videos.
 
-Users have the ability to upload a single file or multiple files simultaneously. Only authenticated users with the required permissions can upload files. See the [Documents and Media Permissions Reference](./documents-and-media-permissions-reference.md) for more information. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
+Users with adequate permissions have the ability to upload a single file or multiple files simultaneously. See the [Documents and Media Permissions Reference](../publishing-and-sharing/managing-document-access/documents-and-media-permissions-reference.md) for more information. To learn more about DXP Roles and Permissions in general, see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions).
 
 ## Uploading a Single File
 
@@ -39,5 +39,5 @@ The files are now published to the Site.
 
 ## Additional Information
 
-* [Managing Folders](./managing-folders.md)
-* [Using the Media Gallery](./using-the-media-gallery.md)
+* [Creating Folders](./creating-folders.md)
+* [Using the Media Gallery](../publishing-and-sharing/publishing-documents-on-a-dxp-site/using-the-media-gallery-widget.md)
