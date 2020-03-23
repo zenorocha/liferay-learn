@@ -1,39 +1,55 @@
 # Enabling or Disabling Order Workflows
 
-[Order workflows](../.././README.md) are a site-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
+[Order workflows](./order-workflows.md) are a a channel-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
 
 This article documents how to enable and disable Order Workflows.
 
-## Enabling Approval Workflow
+## Enabling Workflow
 
-To enable an approval workflow on the buyer's side, follow these steps:
+To enable an approval workflow for the Seller, Buyer, or both:
 
-1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
-2. Click on the _Order Workflows_ tab.
-3. Click on _Approval Workflow_ field and select from the available options in the drop down.
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
+
+    ![Commerce Channels](./enabling-or-disabling-order-workflows/images/04.png)
+
+1. Click on the desired channel (for example, _Sahara.com_). (If you had used an accelerator to create a site, there is an associated channel created by default.)
+1. Click on the _General_ tab.
+1. Select _Single Approver (Version 1)_ from the Buyer Order Approval Workflow dropdown menu.
+
+    ![Approval Workflow](./enabling-or-disabling-order-workflows/images/03.png)
+
+1. If you want to enable the Seller Order Acceptance Workflow, select  _Single Approver (Version 1)_ from the dropdown menu.
+1. Click _Save_.
+
+The Workflow process has been activated for this this channel. Both workflows can work concurrently.
+
+### Commerce 2.0 and Below
+
+To enable an approval workflow on the buyer's side, or the seller's, or both, follow these steps:
+
+1. Navigate to the site where the store is located (for example, _Sahara.com_).
+1. Expand the _Site Administration_ menu then click _Commerce_ → _Settings_.
+
+    ![Sahara site settings](./enabling-or-disabling-order-workflows/images/05.png)
+
+1. Click on the _Order Workflows_ tab.
+1. Click on _Approval Workflow_ field and select from the available options in the drop down.
 
    ![Approval Workflow](./enabling-or-disabling-order-workflows/images/01.png)
 
-4. Click *Save*.
-
-## Enabling Transmission Workflow
-
-To enable a transmission workflow on the seller's side, follow these steps:
-
-1. Navigate to the _Order Workflows_ tab (per above).
-2. Click on the _Transmission Workflow_ field and select from the available options in the drop down.
+1. To enable the _Transmission Workflow_, click on the _Transmission Workflow_ field and select from the available options in the drop down.
 
    ![Transmission Workflow](./enabling-or-disabling-order-workflows/images/02.png)
 
-3. Click _Save_.
+1. Click _Save_.
 
 ## Disabling an Order Workflow
 
-To disable an order workflow, simply navigate to the _Order Workflows_ tab, select the _No Workflow_ option, and click _Save_.
+To disable an order workflow, select the _No Workflow_ option, and click _Save_.
 
 ## Additional Information
 
-**Note**: Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](https://help.liferay.com/hc/en-us/articles/360018174111-Introduction-to-Workflow) can be created and may then be selected in the _Order Workflows_ tab.
+**Note**: Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](../../../../../dxp/7.x/en/process-automation/workflow/user-guide/introduction-to-workflow.md) can be created and may then be selected in the _Order Workflows_ tab.
 
 * [Order Workflows](../.././README.md)
 * [Approving or Rejecting Orders](./approving-or-rejecting-orders-in-order-workflows.md)

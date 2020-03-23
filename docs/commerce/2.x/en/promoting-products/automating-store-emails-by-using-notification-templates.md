@@ -7,6 +7,9 @@ Notifications are automated emails sent to users. To send email notifications, f
 Once the Mail settings have been configured, follow these steps to create a notification for a received order:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
+
+    ![Commerce 2.1 Channels](./automating-store-emails-by-using-notification-templates/images/05.png)
+
 1. Click on the desired channel (for example, _Sahara.com_). (Note that if you had used an accelerator like Minium or Speedwell, the associated channel is created automatically.)
 1. Click the _Notifications_ tab.
 1. Click the _Notification Templates_ sub-tab.
@@ -50,6 +53,9 @@ There are several Notification Templates available out of the box.
 To create email notifications in Commerce 2.0 and below:
 
 1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
+
+    ![Commerce 2.0 Site Settings](./automating-store-emails-by-using-notification-templates/images/06.png)
+
 1. Click the _Notifications_ tab.
 1. Click the _Notification Templates_ sub-tab.
 1. Click the Add (![Add icon](../images/icon-add.png)) button to create a new Notification Template.
@@ -74,7 +80,7 @@ The new Notification Template has been saved and your store will send an automat
 
 To change the interval for when Liferay Commerce checks for unsent notifications:
 
-1. Navigate to the _Control Panel_ → _Configuration_ → _System Settings_. 
+1. Navigate to the _Control Panel_ → _Configuration_ → _System Settings_.
 1. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
 
     ![Changing Intervals](./automating-store-emails-by-using-notification-templates/images/02.png)
