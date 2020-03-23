@@ -1,12 +1,12 @@
 # Adding Blog Entries
 
-Blog entries are scoped to Sites. By default, only authenticated users with the requisite permissions have the ability to create blog entries. See the [Blogs Permissions Reference](./blog-permissions-reference.md) for more information.
+Blog entries are scoped to Sites. By default, only authenticated users have the ability to create blog entries. See the [Blogs Permissions Reference](./blog-permissions-reference.md) for more information.
 
 The easiest way to create a blog entry is on the _Blogs_ widget deployed on a site page.
 
 ## Creating an Entry
 
-1. Open the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../images/icon-compass.png)) on the _Site Administration_ menu. Select the site where the blog will be created.
+1. Open the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../images/icon-compass.png)) on the _Site Administration_ menu. Select the site where the blog will be created.
 1. Once the _Blogs_ widget has been added to the Site page, Click the _New Entry_ button.
 
     ![Blog Entry Form Editor](./adding-blog-entries/images/01.png)
@@ -18,12 +18,16 @@ The easiest way to create a blog entry is on the _Blogs_ widget deployed on a si
 
 ### Organizing Blog Entries with Tags and Related Assets
 
+Adding Tags and relating other assets to the blog entry can help users better find content on your site.
+
+To add tags:
+
 1. Expand the _Categorization_ section.
 1. Click the _Select_ button to select an existing tag. Alternately, create a new tag by entering the tag name in the _Tags_ field and clicking _Add_. See [the documentation on tags](https://help.liferay.com/hc/articles/360028820472-Tagging-Content) for more information.
 
-Blog entries can be linked to other existing assets in DXP.
+To add an asset relation:
 
-1. To select an existing asset in the portal (e.g., a media file, blog post, etc.) to relate to your thread, expand the _Related Assets_ section and use the _Select_ button to select that asset.
+1. Expand the _Related Assets_ section and use the _Select_ button to select the desired asset to link.
 
 ### Configuring How the Entry is Displayed
 

@@ -1,8 +1,10 @@
 # Blog Permissions Reference
 
+<!-- Really missing an introductory statement here -->
+
 ## Blog Entry Permissions
 
-Navigate to the _Blogs_ widget. Next to a blog entry, click _Actions_ (![Actions](../../../images/icon-actions.png)) then _Permissions_.
+Navigate to the _Blogs_ widget. Next to a blog entry, click _Actions_ (![Actions](../../images/icon-actions.png)) then _Permissions_.
 
 ![Blog Entry Permissions](./blog-permissions-reference/images/01.png)
 

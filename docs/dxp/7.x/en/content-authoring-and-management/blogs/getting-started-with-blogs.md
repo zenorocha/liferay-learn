@@ -4,7 +4,7 @@ The Blogs application's editor has a complete set of WYSIWYG controls that appea
 
 The Blogs application contains a powerful set of tools for customizing how your blogs appear. For example, display templates like Abstract or Full Content let you choose how much of a blog post appears on a page. You can leverage the built-in display templates or create your own. You can also add a cover image to each of your blog entries.
 
-The fastest way to begin using the _Blogs_ app is to deploy the widget to a [Site Page](https://help.liferay.com/hc/articles/360029132211-Creating-Pages).
+The fastest way to begin using the _Blogs_ app is to deploy the widget to a [Site Page](../../site-building/creating-pages/understanding-pages.md).
 
 1. Navigate to the site and page desired (e.g. _Community Blog_).
 1. Click the _Add_ button.

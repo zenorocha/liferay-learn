@@ -1,6 +1,6 @@
 # Blog Entry Editor Reference
 
-The blog entry editor is simple yet powerful. Its editing tools are context-aware which appears only when you need them. There are similar options for adding and editing images, tables, and other types of content. You can switch to code view to edit the content’s HTML. All draft entries are automatically saved every 25 seconds.
+The blog entry editor provides context appropriate editing tools for formatting text, managing images, tables, and other rich features. Users are able to switch to code view to directly edit the content’s HTML. All draft entries are automatically saved every 25 seconds.
 
 ## Using the Editor’s Text View
 
@@ -18,7 +18,7 @@ To style or format text in the _Content_ area, select the text. A toolbar appear
 | Link | Link the selected text to a specific URL, or to an item in the portal. |
 | Twitter | Generates a link to tweet the selected text. |
 
-When the cursor hovers in the entry's content area, the Add icon (+) appears. Clicking the Add icon shows controls for inserting an image, video, table, or horizontal line (![Controls](../../../images/icon-content-insert-controls.png)).
+When the cursor hovers in the entry's content area, the Add icon (+) appears. Clicking the Add icon shows controls for inserting an image, video, table, or horizontal line (![Controls](../../images/icon-content-insert-controls.png)).
 
 ![Add additional elements](./blog-entry-editor-reference/images/02.png)
 
@@ -37,6 +37,6 @@ To switch to code view, click the the Source icon (</>) that appears when you pl
 
 | Function | Description |
 | --- | --- |
-| Fullscreen (![Fullscreen](../../../images/icon-enlarge.png)) | Work in a dual-pane view that shows your HTML code on the left and a preview pane on the right. |
-| Dark/Light Theme (![Dark Theme](../../../images/icon-dark-theme.png) / ![Light Theme](../../../images/icon-light-theme.png)) | Switch the code editor between dark and light theme. |
-| Text View (![Text](../../../images/icon-text.png)) | Switch back to text view. |
+| Fullscreen | Work in a dual-pane view that shows your HTML code on the left and a preview pane on the right. |
+| Dark/Light Theme | Switch the code editor between dark and light theme. |
+| Text View | Switch back to text view. |
