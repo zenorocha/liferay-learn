@@ -17,7 +17,7 @@ Here are the steps:
 A list of EE plugins appears. During your trial period, you can access and use these DXP EE plugins.
 
 ```note::
-   During your trial period, plugin management for EE plugins is only available in the Control Panel; the Purchased &rarr; EE tab on the Marketplace website becomes available only after you've purchased an enterprise subscription.
+   During your trial period, plugin management for EE plugins is only available in the Control Panel; the Purchased -> EE tab on the Marketplace website becomes available only after you've purchased an enterprise subscription.
 ```
 
 ```important::
