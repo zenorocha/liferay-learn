@@ -43,25 +43,6 @@ The price list is now associated with the product.
 
 ![Adding Products to a Price List in 2.1](./adding-products-to-a-price-list/images/03.png)
 
-### Commerce 2.0 and Below
-
-1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (_Premium Brake Fluid_ in this example).
-1. Click the _SKUs_ sub-tab.
-1. Click on a SKU (_MIN93017_)
-1. Click _Price Lists_.
-1. Click the Add (![Add icon](../../images/icon-add.png)) button.
-1. Choose one or more price lists (_VIP Customers_ in this example) to which this SKU will be added.
-1. Click _Add_.
-1. Click on a price list (_VIP Customers_ in this example).
-1. Enter the following fields (example values shown below):
-    * **Price**: 100
-    * **Promo Price**: 95
-
-    ![Adding a product to a price list](./adding-products-to-a-price-list/images/01.png)
-
-1. Click Save.
-
 The product (_Premium Brake Fluid_) is now added to the price list (_VIP Customers_). Repeat the steps to add additional products to this price list or another list.
 
 ## Additional Information
