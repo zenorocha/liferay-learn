@@ -2,17 +2,19 @@
 
 Installing Liferay DXP on WebSphere requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebSphere for DXP.
 
-```important::
-   IBM&reg; WebSphere&reg; is a trademark of International Business Machines Corporation, registered in many jurisdictions worldwide.
- ```
+> IBM&reg; WebSphere&reg; is a trademark of International Business Machines Corporation, registered in many jurisdictions worldwide.
 
-> **Tip:** Throughout this installation and configuration process, WebSphere prompts you to click *Save* to apply changes to the Master Configuration. It is necessary to do so to save the changes.
+```tip::
+   Throughout this installation and configuration process, WebSphere prompts you to click *Save* to apply changes to the Master Configuration. It is necessary to do so to save the changes.
+```
 
 ## Prerequisites
 
 For Liferay DXP to work correctly, WebSphere 9 (Fix Pack 11 is the latest) must be installed. Go to [IBM Support](http://www-01.ibm.com/support/docview.wss?uid=swg24043005) to find out more information about this fix pack. Liferay DXP does not currently support the WebSphere Application Liberty Profile.
 
-> **Important:** Before installing DXP, please review the [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-dxp-tomcat-bundle.md) and [Configuring a Database](../configuring-a-database.md) articles.
+```important::
+   Before installing DXP, please review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles.
+```
 
 The following files are required to install Liferay DXP on the WebSphere application server and are available from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
@@ -48,7 +50,9 @@ When the application server binaries have been installed, start the *Profile Man
 1. Check the box *Deploy the administrative console*. This enables a web-based UI for working with the application server. Skip the default applications. (Install these only on a development machine.) Click *Next*.
 1. Set the profile name and location. Specify a performance tuning settings appropriate for your environment.
 
-    > **Note:** See the WebSphere documentation for more information about performance tuning settings. Click *Next*.
+    ```note::
+       See the WebSphere documentation for more information about performance tuning settings. Click *Next*.
+    ```
 
 1. Choose node, server, and host names for the server. These are specific to a user's environment. Click *Next*.
 1. Administrative security in WebSphere is a way to restrict who has access to the administrative tools. Administrators may want to have it enabled in the environment so that a user name and password are required to administer the WebSphere server. See WebSphere's documentation for more information. Click *Next*.
@@ -67,8 +71,8 @@ Lastly , shut down the application server.
 
 ### Configuring the WebSphere Application Server
 
-```important::
-   Do NOT make configuration changes while the application server is running.
+```warning::
+   Do not make configuration changes while the application server is running.
 ```
 
 In this version of WebSphere, servlet filters are not initialized on web application startup, but rather, on first access. This can cause problems when deploying certain apps to DXP. To configure servlet filters to initialize on application startup (i.e., deployment), set the following `webcontainer` properties in the WebSphere application server:
@@ -92,7 +96,9 @@ As a baseline, add `maximumHeapSize="2560"` inside the `jvmEntries` tag. For exa
 <jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ... maximumHeapSize="2560">
 ```
 
-> **Note:** The JVM parameters used here are defaults intended for initial deployment of production systems. Administrators should change the settings to values that best address their specific environments. These must be tuned depending on need.
+```note::
+   The JVM parameters used here are defaults intended for initial deployment of production systems. Administrators should change the settings to values that best address their specific environments. These must be tuned depending on need.
+```
 
 Administrators can set the UTF-8 properties in the `<jvmEntries genericJvmArguments=.../>` attribute in `server.xml`. This is required or else international characters will not be parsed correctly. Set the maximum and minimum heap sizes to `2560m` there too. Add the following inside the `jvmEntries` tag:
 
@@ -100,7 +106,9 @@ Administrators can set the UTF-8 properties in the `<jvmEntries genericJvmArgume
 <jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ...genericJvmArguments="-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xms2560m -Xmx2560m">
 ```
 
-> **Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```important::
+   For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
+```
 
 Alternately, set the UTF-8 properties from the WebSphere Admin Console. (See below.)
 
@@ -169,7 +177,9 @@ To configure DXP's built-in data source with your database when you run DXP for 
 
 If using WebSphere to manage the database connections, follow the instructions below. Otherwise, skip this section if you plan to use DXP's built in data source.
 
-> **Warning:** Liferay uses HSQL by default for demo purposes. HSQL should _not_ be used in production instances of Liferay DXP.
+```warning::
+   Liferay uses HSQL by default for demo purposes. HSQL should *not* be used in production instances of Liferay DXP.
+```
 
 ![Figure 3: WebSphere JDBC providers](./installing-liferay-on-websphere/images/03.png)
 
@@ -202,7 +212,9 @@ If using WebSphere to manage the database connections, follow the instructions b
     jdbc:mysql://localhost/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
     ```
 
-    > **Tip:** For more example URLs, see the `jdbc.default.url` values in [Database Templates](../../reference/database-templates.md).
+    ```tip::
+       For more example URLs, see the `jdbc.default.url` values in `Database Templates <../../reference/database-templates.md>`_.
+    ```
 
     Click *OK* and save to master configuration.
 
@@ -211,7 +223,7 @@ If using WebSphere to manage the database connections, follow the instructions b
 
 ## Mail Configuration
 
-If using DXP's built-in mail sessions, skip this section. See the [Configuring Mail](https://help.liferay.com/hc/articles/360029031591-Configuring-Mail) article on how to use DXP's built-in mail sessions.
+If using DXP's built-in mail sessions, skip this section. See the [Configuring Mail](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) article on how to use DXP's built-in mail sessions.
 
 If you want to use WebSphere to manage the mail session, follow these steps:
 
