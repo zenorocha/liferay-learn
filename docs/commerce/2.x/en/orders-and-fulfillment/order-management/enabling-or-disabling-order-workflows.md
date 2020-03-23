@@ -6,7 +6,7 @@ This article documents how to enable and disable Order Workflows.
 
 ## Enabling Workflow
 
-To enable an approval workflow for the Seller, Buyer, or both:
+To enable an approval workflow:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
 
@@ -25,7 +25,7 @@ The Workflow process has been activated for this this channel. Both workflows ca
 
 ### Commerce 2.0 and Below
 
-To enable an approval workflow on the buyer's side, or the seller's, or both, follow these steps:
+To enable an approval workflow:
 
 1. Navigate to the site where the store is located (for example, _Sahara.com_).
 1. Expand the _Site Administration_ menu then click _Commerce_ → _Settings_.
