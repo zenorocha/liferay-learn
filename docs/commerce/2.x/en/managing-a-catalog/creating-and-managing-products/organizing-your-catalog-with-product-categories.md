@@ -21,12 +21,12 @@ Once you have created your taxonomy using your Vocabulary and Categories, you ca
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product. (If you used Minium to create a site with sample data, click _Transmission Fluid_. Note that the _Transmission Fluid_ product already has been linked to the sample Vocabulary and Category.)
 
-    ![Associating a Category in Commerce 2.1](./creating-a-new-product-category/images/06.png)
+    ![Associating a Category in Commerce 2.1](./organizing-your-catalog-with-product-categories/images/01.png)
 
 1. On the _Details_ tab, click _Select_ next to the catalog in the _Categorization_ widget.
 1. Click on the _Select_ button under the label for the appropriate vocabulary, and in the pop-up that appears the check the box next to each category that applies.
 
-    ![Selecting a Category](./creating-a-new-product-category/images/07.png)
+    ![Selecting a Category](./organizing-your-catalog-with-product-categories/images/02.png)
 
 1. Click _Done_.
 
@@ -34,23 +34,17 @@ Once you have created your taxonomy using your Vocabulary and Categories, you ca
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product then the _Categorization_ tab. (If you used Minium to create a site with sample data, click _Transmission Fluid_. Note that the _Transmission Fluid_ product already has been linked to the sample Vocabulary and Category.)
+
+    ![Managing categories](./organizing-your-catalog-with-product-categories/images/03.png)
+
 1. Click on the _Select_ button under the label for the appropriate vocabulary, and in the pop-up that appears the check the box next to each category that applies.
-
-    ![Managing categories](./creating-a-new-product-category/images/04.png)
-
 1. Click _Done_.
 
 The category is now associated with the product.
 
-![Selecting a category](./creating-a-new-product-category/images/05.png)
+![Selecting a category](./organizing-your-catalog-with-product-categories/images/04.png)
 
 Repeat as necessary for all other products that might fall under this category.
-
-Navigate to the _Control Panel_ → _Commerce_ → _Products_. Click on a product then the _Categorization_ tab. (If you used Minium to create a site with sample data, click _Transmission Fluid_. Note that the _Transmission Fluid_ product already has been linked to the sample Vocabulary and Category.)
-
-![Categorization tab](./organizing-your-catalog-with-product-categories/images/04.png)
-
-Click on the _Select_ button under the label for the appropriate vocabulary, and in the pop-up that appears the check the box next to each category that applies.
 
 ## Additional Information
 
