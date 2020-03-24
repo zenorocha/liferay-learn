@@ -43,7 +43,11 @@ See the corresponding articles to learn how to activate each payment method:
 
 In Commerce 2.0, payment methods are scoped to a store [site](../sites-and-site-types.md).
 
-To manage payment methods in Commerce 2.0 and below, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the _Payment Methods_ tab.
+To manage payment methods in Commerce 2.0 and below, navigate to _Site Administration_ → _Commerce_ → _Settings_.
+
+![Payment Methods page](./managing-payment-methods/images/07.png)
+
+Select the _Payment Methods_ tab.
 
 ![Payment Methods page](./managing-payment-methods/images/01.png)
 
