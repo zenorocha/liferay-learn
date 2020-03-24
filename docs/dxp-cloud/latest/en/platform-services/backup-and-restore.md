@@ -73,9 +73,9 @@ Once you have prepared your SQL script(s), [deploy your service](../build-and-de
 
 Then, navigate to your production environment's page, and click _Backups_ from the menu on the left.
 
-![Establishing screenshot of Backups page]
+![The Backups page for a production environment.](./backup-and-restore/images/04.png)
 
-Restore from any of the shown backups by clicking the Actions menu (![actions]) and clicking _Restore_.
+Restore from any of the shown backups by clicking the Actions menu and clicking _Restore_.
 
 Choose which environment to restore to, and then click _Restore Backup and Make it the Current Version_. Once the database has been restored, the SQL scripts from your backup service's `script` folder will run:
 
