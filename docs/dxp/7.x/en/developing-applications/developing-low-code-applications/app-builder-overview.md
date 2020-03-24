@@ -13,9 +13,9 @@ Why use App Builder when the [Liferay Forms](../../process-automation/forms/user
 | Create simple or complex forms | &#10004; | &#10004; |
 | Deploy the form in a widget or at a dedicated URL | &#10004; | &#10004; |
 | Keep form data separate from other forms' data |  | &#10004; |
-| Deploy the form to the product menu |     |      &#10004;   |
-| Display collected data in multiple places |     &#10004;   |         |
-| Control over the presentation and display of form data |        |      &#10004;   |
+| Deploy the form to the product menu |      |    &#10004;   |
+| Display collected data in multiple places |        |  &#10004;       |
+| Control the presentation of form data |        |      &#10004;   |
 | Deploy multiple forms for one data object |        |      &#10004;   |
 | Deploy multiple data record views for one data object |        |      &#10004;   |
 
@@ -62,15 +62,15 @@ Once an object is defined and at least one form and table view are created, you 
 | App Name [Form View]  |     &#10004;   |         |          |
 | App Name [Table View] |        |      &#10004;   |      &#10004;       |
 
-![App Builder widgets are placed on Liferay DXP pages.](./app-builder-overview/images/02.png)
+![App Builder widgets are placed on Liferay DXP pages.](./app-builder-overview/images/03.png)
 
 **Standalone:** Deploy the application to a dedicated page that's not part of a site and not visible to any navigation menu. This limits access to only people with the link.
 
-![Standalone App Builder applications are accessible only by direct link](./app-builder-overview/images/03.png)
+![Standalone App Builder applications are accessible only by direct link](./app-builder-overview/images/04.png)
 
 **Product Menu:** Deploy the application to the Control Panel, the Site Menu, or both. This gives you flexibility in deciding where administrative Users will access the application.
 
-![App Builder applications can be added to the Product Menu.](./app-builder-overview/images/04.png)
+![App Builder applications can be added to the Product Menu.](./app-builder-overview/images/02.png)
 
 A Standalone or Product Menu application always includes both the form and table view. The table view is the default view, while an add button provides access to the form view.
 
