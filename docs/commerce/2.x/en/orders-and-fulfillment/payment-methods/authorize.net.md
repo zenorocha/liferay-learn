@@ -14,8 +14,14 @@ Before configuring your store to use Authorize.Net, it is necessary to [generate
 To activate Authorize.net as a payment method:
 
 1. Navigate to _Control Panel_ → Commerce → _Channels_.
+
+    ![Commerce Channels](./authorize.net/images/03.png)
+
 1. Click on the desired Channel.
 1. Scroll down then click _Edit_ next to Authorize.net.
+
+    ![Click Edit to begin configuring Authorize.net](./authorize.net/images/04.png)
+
 1. Switch the _Active_ Toggle to _Yes_.
 1. Click the _Configuration_ tab.
 1. Enter the following:
@@ -40,7 +46,10 @@ Once finished, Authorize.Net is now enabled.
 ### Commerce 2.0 and Below
 
 1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
-1. Click _Authorize.Net_.
+
+    ![Authorize.Net Settings](./authorize.net/images/05.png)
+
+1. Click the Add (+) button then _Authorize.Net_.
 1. Click _Configuration_.
 1. Enter the following:
     * **API Login ID**
