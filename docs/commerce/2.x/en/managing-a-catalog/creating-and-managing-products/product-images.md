@@ -9,11 +9,14 @@ This article documents how to add images to a product.
 To add a single image:
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (in this example, _Microfiber Cloth_).
+1. Click on a product (in this example, _Brake Rotors_).
 1. Click the _Media_ sub-tab.
+
+    ![Adding a product image](./product-images/images/08.png)
+
 1. Click the (+) button to add a product image.
 1. Drag and drop an image or click _Select File_ to upload an image.
-1. Enter a title: _Microfiber Cloth_.
+1. Enter a title: _Brake Rotor_.
 
     ![Adding a product image](./product-images/images/06.png)
 
@@ -52,8 +55,15 @@ Once you have created Product Options and generated the corresponding SKUs, you 
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product, in this example, _Hoses_.
-    >If you had used Minium to create your store and sample data, this product was added by the Minium accelerator.
+
+    ```note::
+       If you had used Minium to create your store and sample data, this product was added by the Minium accelerator.
+    ```
+
 1. Click the _Media_ sub-tab.
+
+    ![Hoses Media tab](./product-images/images/09.png)
+
 1. Click the (+) button to add a product image.
 1. Drag and drop an image or click _Select File_ to insert an image.
 1. Click on the existing image.
