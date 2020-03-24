@@ -2,7 +2,9 @@
 
 Notifications are automated emails sent to users. To send email notifications, first create a _Notification Template_. Notification Templates define the notification sender, trigger, and content of an email notification.
 
-  > **Note:** To use Liferay Commerce's Notifications feature, system administrators _first_ have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See [User Subscriptions and Mailing Lists](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP#configuring-mail) for more information.
+```note::
+   To use Liferay Commerce's Notifications feature, system administrators *first* have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See `User Subscriptions and Mailing Lists <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
+```
 
 Once the Mail settings have been configured, follow these steps to create a notification for a received order:
 
@@ -89,9 +91,9 @@ To change the interval for when Liferay Commerce checks for unsent notifications
 
 ## Additional Notifications
 
-**Note 1**: \* Liferay Commerce offers two snippets to insert programmatically the order creator's name and the order ID.
+Liferay Commerce offers two snippets to programmatically insert the order creator's name and the order ID.
 
 * \[%ORDER_CREATOR%\] inserts the user who created the order
 * \[%ORDER_ID%\] inserts the Order ID
 
-**Note 2**: An extension point lets you implement other notifications: for a shipped order, a restocked product, a carrier exception, or any other event.
+An extension point lets you implement other notifications: for a shipped order, a restocked product, a carrier exception, or any other event.
