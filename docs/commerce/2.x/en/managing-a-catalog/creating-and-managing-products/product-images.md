@@ -22,7 +22,7 @@ To add a single image:
 
 1. Click _Publish_.
 
-The new product image has been added to the product. Note that under _Options_, the message "`There are no options set as the SKU contributor.`" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product. See the section below on how to associate multiple product images to product variants.
+The new product image has been added to the product. Note that under _Options_, the message "*There are no options set as the SKU contributor.*" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product. See the section below on how to associate multiple product images to product variants.
 
 To view the image in the catalog, go to the store site and then search for the product (_Microfiber Cloth_).
 
