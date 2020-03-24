@@ -22,20 +22,6 @@ To add a single image:
 
 1. Click _Publish_.
 
-### Commerce 2.0 and Below
-
-1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (in this example, _Microfiber Cloth_).
-1. Click the _Images_ sub-tab.
-1. Click the (+) button to add a product image.
-1. Drag and drop an image or click _Select File_ to upload an image.
-1. Enter a title: _Microfiber Cloth_.
-1. Set a priority: _1.0_.
-
-    ![Adding a product image](./product-images/images/01.png)
-
-1. Click _Publish_.
-
 The new product image has been added to the product. Note that under _Options_, the message "`There are no options set as the SKU contributor.`" may appear. If this message appears, then the product does not have additional associated SKUs and the image added is the only one associated with the product. See the section below on how to associate multiple product images to product variants.
 
 To view the image in the catalog, go to the store site and then search for the product (_Microfiber Cloth_).
@@ -44,12 +30,10 @@ To view the image in the catalog, go to the store site and then search for the p
 
 ## Adding Multiple Product Images
 
-As noted above, multiple product images can be associated with a single product.
+Multiple product images can be associated with a single product. In order to add multiple images to a product, first review the following:
 
-### Prerequisites
-
-1. [Product Options](./customizing-your-product-with-product-options.md) have been created for this product.
-1. [Multiple SKUs](./adding-skus-to-your-products.md) have been generated for this product.
+* [Product Options](./customizing-your-product-with-product-options.md) have been created for this product.
+* [Multiple SKUs](./adding-skus-to-your-products.md) have been generated for this product.
 
 Once you have created Product Options and generated the corresponding SKUs, you can then associate different product images. To add multiple images to the different SKUs:
 
@@ -73,7 +57,27 @@ Once you have created Product Options and generated the corresponding SKUs, you 
 
 1. Click _Publish_.
 
-### Commerce 2.0.x and Below
+The product image has been updated with the respective Product Option. Repeat these steps as desired for all other available SKUs, such as another package quantity. In this example, different images may be used for the different package quantities. When searching for a product, you can see that all images have been included inside the Product Detail widget.
+
+![Images in Product Detail widget](./product-images/images/05.png)
+
+## Adding Images for Products on Commerce 2.0 and Below
+
+### Single Images
+
+1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
+1. Click on a product (in this example, _Microfiber Cloth_).
+1. Click the _Images_ sub-tab.
+1. Click the (+) button to add a product image.
+1. Drag and drop an image or click _Select File_ to upload an image.
+1. Enter a title: _Microfiber Cloth_.
+1. Set a priority: _1.0_.
+
+    ![Adding a product image](./product-images/images/01.png)
+
+1. Click _Publish_.
+
+### Multiple Images
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product, in this example, _Hoses_.
@@ -87,10 +91,6 @@ Once you have created Product Options and generated the corresponding SKUs, you 
 
 1. Click _Publish_.
 
-The product image has been updated with the respective Product Option. Repeat these steps as desired for all other available SKUs, such as another package quantity. In this example, different images may be used for the different package quantities. When searching for a product, you can see that all images have been included inside the Product Detail widget.
-
-![Images in Product Detail widget](./product-images/images/05.png)
-
 ## Additional Information
 
-**Note**: To configure a default placeholder image for products that do not have an image uploaded, see Setting a Default Catalog Image.
+To configure a default placeholder image for products that do not have an image uploaded, see Setting a Default Catalog Image.
