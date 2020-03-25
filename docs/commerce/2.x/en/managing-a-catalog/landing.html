@@ -1,0 +1,124 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Creating and Managing Products',
+					sectionURL: 'managing-a-catalog/creating_and_managing_products.html',
+					subsections: [
+						{
+							name: 'Adding SKUs to Your Products',
+							url: 'managing-a-catalog/creating-and-managing-products/adding-skus-to-your-products.html'
+						},
+						{
+							name: 'Organizing Your Catalog with Product Categories',
+							url: 'managing-a-catalog/creating-and-managing-products/organizing-your-catalog-with-product-categories.html'
+						},
+						{
+							name: 'Product Images',
+							url: 'managing-a-catalog/creating-and-managing-products/product-images.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Channels',
+					sectionURL: 'managing-a-catalog/creating-and-managing-products/channels.html',
+					subsections: [
+						{
+							name: 'Introduction to Channels',
+							url: 'managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.html'
+						},
+						{
+							name: 'Configuring Product Visibility by Site Using Channels',
+							url: 'managing-a-catalog/creating-and-managing-products/channels/configuring-product-visibility-by-site-using-channels.html'
+						},
+						{
+							name: 'Managing Channels',
+							url: 'managing-a-catalog/creating-and-managing-products/channels/managing-channels.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Product Types',
+					sectionURL: 'managing-a-catalog/creating-and-managing-products/product-types.html',
+					subsections: [
+						{
+							name: 'Introduction to Product Types',
+							url: 'managing-a-catalog/creating-and-managing-products/product-types/introduction-to-product-types.html'
+						},
+						{
+							name: 'Creating a Simple Product',
+							url: 'managing-a-catalog/creating-and-managing-products/product-types/creating-a-simple-product.html'
+						},
+						{
+							name: 'Creating a Virtual Product',
+							url: 'managing-a-catalog/creating-and-managing-products/product-types/creating-a-virtual-product.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Managing Inventory',
+					sectionURL: 'managing-a-catalog/managing_inventory.html',
+					subsections: [
+						{
+							name: 'Introduction to Managing Inventory',
+							url: 'managing-a-catalog/managing-inventory/introduction-to-managing-inventory.html'
+						},
+						{
+							name: 'Managing Product Publication',
+							url: 'managing-a-catalog/managing-inventory/managing-product-publication.html'
+						},
+						{
+							name: 'Adding a New Warehouse',
+							url: 'managing-a-catalog/managing-inventory/adding-a-new-warehouse.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Managing Price',
+					sectionURL: 'managing-a-catalog/managing_price.html',
+					subsections: [
+						{
+							name: 'Introduction to Pricing Methods',
+							url: 'managing-a-catalog/managing-price/introduction-to-pricing-methods.html'
+						},
+						{
+							name: 'Creating a Price List',
+							url: 'managing-a-catalog/managing-price/creating-a-price-list.html'
+						},
+						{
+							name: 'Adding Tiered Pricing',
+							url: 'managing-a-catalog/managing-price/adding-tiered-pricing.html'
+						}
+					]
+				}
+			]
+		}
+	})
+</script>
