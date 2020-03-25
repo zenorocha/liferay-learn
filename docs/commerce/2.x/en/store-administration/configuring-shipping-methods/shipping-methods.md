@@ -1,6 +1,6 @@
 # Shipping Methods
 
-Liferay Commerce supports several shipping methods and carriers. Before choosing any shipping method, verify the [Measurement Units](./configuring-shipping-methods/measurement-units.md) that the store will use.
+Liferay Commerce supports several shipping methods and carriers. Before choosing any shipping method, verify the [Measurement Units](./measurement-units.md) that the store will use.
 
 Here are several shipping methods:
 

@@ -41,7 +41,7 @@ The following sections cover configurations that are store site specific.
 Liferay Commerce provides support for several third party payment processors and also allows for the use of money orders to accept payment. See:
 
 * [Payments](../store-administration/payments.md)
-* [Managing Payment Methods](../store-administration/managing-payment-methods.md)
+* [Managing Payment Methods](../store-administration/configuring-payment-methods/managing-payment-methods.md)
 * [Authorize.net](../store-administration/configuring-payment-methods/authorize.net.md)
 * [PayPal](../store-administration/configuring-payment-methods/mercanet.md)
 * [Mercanet](../store-administration/configuring-payment-methods/mercanet.md)
@@ -59,7 +59,7 @@ In order to collect the applicable taxes, Liferay Commerce has the ability to cr
 
 Liferay Commerce has several options to calculate shipping rates. Commerce Enterprise subscribers receive FedEx carrier integration out-of-the-box.
 
-* [Shipping Methods](../store-administration/shipping-methods.md)
+* [Shipping Methods](../store-administration/configuring-shipping-methods/shipping-methods.md)
 * [Variable Rate](../store-administration/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
 * [Flat Rate](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
 * [Using FedEx as a Carrier](../store-administration/configuring-shipping-methods/using-fedex-as-a-carrier-method.md)

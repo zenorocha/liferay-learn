@@ -46,7 +46,7 @@ Liferay Commerce is optimized for business-to-business transactions with feature
 
 Liferay Commerce offers Order Management that enables buyers and sellers to prepare, place, approve, transmit, and fulfill orders.
 
-Payments for orders may be completed with several different [payment methods](../store-administration/managing-payment-methods.md) available out-of-the-box. Integration with more payment processors may be accomplished with additional customization.
+Payments for orders may be completed with several different [payment methods](../store-administration/configuring-payment-methods/managing-payment-methods.md) available out-of-the-box. Integration with more payment processors may be accomplished with additional customization.
 
 ![Payment Methods page](./introduction-to-liferay-commerce/images/06.png)
 
