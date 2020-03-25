@@ -1,0 +1,74 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+        {
+					sectionName: 'Account Management',
+					sectionURL: 'commerce-storefront-pages/account-management.html',
+				},
+				{
+					sectionName: 'Catalog',
+					sectionURL: 'commerce-storefront-pages/catalog.html',
+				},
+				{
+					sectionName: 'Cart',
+					sectionURL: 'commerce-storefront-pages/cart.html',
+				},
+				{
+					sectionName: 'Checkout',
+					sectionURL: 'commerce-storefront-pages/checkout.html',
+				},
+				{
+					sectionName: 'Compare',
+					sectionURL: 'creating-store-content/compare.html',
+				},
+				{
+					sectionName: 'List',
+					sectionURL: 'creating-store-content/list.html',
+				},
+				{
+					sectionName: 'Pending Orders',
+					sectionURL: 'creating-store-content/pending-orders.html',
+				},
+				{
+					sectionName: 'Placed Orders',
+					sectionURL: 'creating-store-content/placed-orders.html',
+				},
+				{
+					sectionName: 'Product Details',
+					sectionURL: 'creating-store-content/product-details.html',
+				},
+				{
+					sectionName: 'Search',
+					sectionURL: 'creating-store-content/search.html',
+				},
+			]
+		}
+	})
+</script>

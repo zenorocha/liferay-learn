@@ -1,0 +1,50 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+        {
+					sectionName: 'Creating Page Fragments',
+					sectionURL: 'https://help.liferay.com/hc/en-us/articles/360018171331-Creating-Page-Fragments',
+				},
+				{
+					sectionName: 'Building Content Pages From Fragments',
+					sectionURL: 'https://help.liferay.com/hc/en-us/articles/360018171351-Building-Content-Pages-from-Fragments-',
+				},
+				{
+					sectionName: 'Creating and Managing Navigation Menus',
+					sectionURL: 'https://help.liferay.com/hc/en-us/articles/360018171531-Creating-and-Managing-Navigation-Menus',
+				},
+				{
+					sectionName: 'Using Application Display Templates',
+					sectionURL: 'https://help.liferay.com/hc/en-us/articles/360017892632-Styling-Widgets-with-Application-Display-Templates',
+				},
+			]
+		}
+	})
+</script>

@@ -9,6 +9,8 @@ Creating Store Content
    creating-store-content/widget-reference.md
 
    creating-store-content/commerce_storefront_pages.rst
+   creating-store-content/using_web_experience_management.rst
+   creating-store-content/design_and_theme.rst
 
 .. raw:: html
    :file: creating-store-content/landing.html
