@@ -1,0 +1,98 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Store Administration',
+					sectionURL: 'store_administration.html',
+					subsections: [
+						{
+							name: 'Liferay Commerce Configuration Overview',
+							url: 'store-administration/liferay-commerce-configuration-overview.html'
+						},
+						{
+							name: 'Adding a New Currency',
+							url: 'store-administration/adding-a-new-currency.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Configuring Taxes',
+					sectionURL: 'store-administration/configuring_taxes.html',
+					subsections: [
+						{
+							name: 'Creating Tax Categories',
+							url: 'store-administration/configuring-taxes/creating-tax-categories.html'
+						},
+						{
+							name: 'Setting Tax Rate by Address',
+							url: 'store-administration/configuring-taxes/setting-tax-rate-by-address.html'
+						},
+						{
+							name: 'Setting Tax Rate by Fixed Rate',
+							url: 'store-administration/configuring-taxes/setting-tax-rate-by-fixed-rate.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Configuring Payment Methods',
+					sectionURL: 'store-administration/configuring_payment_methods.html',
+					subsections: [
+						{
+							name: 'Managing Payment Methods',
+							url: 'store-administration/configuring-payment-methods/managing-payment-methods.html'
+						},
+						{
+							name: 'Money Orders',
+							url: 'store-administration/configuring-payment-methods/money-orders.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Configuring Shipping Methods',
+					sectionURL: 'store-administration/configuring_shipping_methods.html',
+					subsections: [
+						{
+							name: 'Shipping Methods',
+							url: 'store-administration/configuring-shipping-methods/shipping-methods.html'
+						},
+						{
+							name: 'Measurement Units',
+							url: 'store-administration/configuring-shipping-methods/measurement-units.html'
+						},
+						{
+							name: 'Applying Shipping Method Restrictions',
+							url: 'store-administration/configuring-shipping-methods/applying-shipping-method-restrictions.html'
+						},
+					]
+				}
+			]
+		}
+	})
+</script>

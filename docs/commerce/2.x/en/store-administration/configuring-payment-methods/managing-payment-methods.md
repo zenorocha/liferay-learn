@@ -1,6 +1,6 @@
 # Managing Payment Methods
 
-Payment methods in Liferay Commerce scoped by [channel](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md) and store [site](../starting-a-store/sites-and-site-types.md). If a Liferay Commerce instance has more than one storefront hosted on the same instance, administrators can use different payment methods on each site.
+Payment methods in Liferay Commerce scoped by [channel](../../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md) and store [site](../../starting-a-store/sites-and-site-types.md). If a Liferay Commerce instance has more than one storefront hosted on the same instance, administrators can use different payment methods on each site.
 
 To manage payment methods, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
 
@@ -34,14 +34,14 @@ The _Configuration_ tab for a payment method is where the store administrator co
 
 See the corresponding articles to learn how to activate each payment method:
 
-* [Authorize.net](./configuring-payment-methods/authorize.net.md)
-* [Mercanet](./configuring-payment-methods/mercanet.md)
-* [Money Orders](./configuring-payment-methods/money-orders.md)
-* [PayPal](./configuring-payment-methods/paypal.md)
+* [Authorize.net](./authorize.net.md)
+* [Mercanet](./mercanet.md)
+* [Money Orders](./money-orders.md)
+* [PayPal](./paypal.md)
 
 ## Commerce 2.0 and Below
 
-On previous versions of Liferay Commerce, payment methods are scoped by store [site](../sites-and-site-types.md).
+On previous versions of Liferay Commerce, payment methods are scoped by store [site](../../starting-a-store/sites-and-site-types.md).
 
 To manage payment methods in Commerce 2.0 and below, navigate to _Site Administration_ → _Commerce_ → _Settings_.
 
