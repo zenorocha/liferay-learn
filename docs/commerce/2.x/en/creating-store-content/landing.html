@@ -1,0 +1,66 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Pages',
+					sectionURL: 'creating_store_content.html',
+					subsections: [
+						{
+							name: 'Creating Your Storefront',
+							url: 'creating-store-content/creating-your-storefront.html'
+						},
+						{
+							name: 'Creating a Catalog Page',
+							url: 'creating-store-content/creating-a-catalog-page.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Commerce Storefront Pages',
+					sectionURL: 'creating-store-content/commerce_storefront_pages.html',
+					subsections: [
+						{
+							name: 'Catalog',
+							url: 'creating-store-content/commerce-storefront-pages/catalog.html'
+						},
+						{
+							name: 'Checkout',
+							url: 'creating-store-content/commerce-storefront-pages/checkout.html'
+						},
+						{
+							name: 'Account Management',
+							url: 'creating-store-content/commerce-storefront-pages/account-management.html'
+						},
+					]
+				}
+			]
+		}
+	})
+</script>

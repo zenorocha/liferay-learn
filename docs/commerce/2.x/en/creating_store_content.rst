@@ -18,5 +18,5 @@ Creating Store Content
 
    creating-store-content/commerce_storefront_pages.rst
 
-.. include:: /creating-store-content/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: creating-store-content/landing.html
