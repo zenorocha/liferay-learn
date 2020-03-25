@@ -1,0 +1,84 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Channels',
+					sectionURL: 'creating-and-managing-products/channels/introduction-to-channels.html',
+					subsections: [
+						{
+							name: 'Managing Channels',
+							url: 'creating-and-managing-products/channels/managing-channels.html'
+						},
+						{
+							name: 'Configuring Product Visibility by Site Using Channels',
+							url: 'creating-and-managing-products/channels/configuring-product-visibility-by-site-using-channels.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Product Types',
+					sectionURL: 'creating-and-managing-products/product_types.html',
+					subsections: [
+						{
+							name: 'Introduction to Product Types',
+							url: 'creating-and-managing-products/product-types/introduction-to-product-types.html'
+						},
+						{
+							name: 'Creating a Simple Product',
+							url: 'creating-and-managing-products/product-types/creating-a-simple-product.html'
+						},
+						{
+							name: 'Creating a Virtual Product',
+							url: 'creating-and-managing-products/product-types/creating-a-virtual-product.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Products',
+					sectionURL: 'creating-and-managing-products/products.html',
+					subsections: [
+						{
+							name: 'Customizing Your Products with Product Options',
+							url: 'creating-and-managing-products/products/customizing-your-product-with-product-options.html'
+						},
+						{
+							name: 'Adding SKUs to Your Products',
+							url: 'creating-and-managing-products/products/adding-skus-to-your-products.html'
+						},
+						{
+							name: 'Organizing Your Catalog with Product Categories',
+							url: 'creating-and-managing-products/products/organizing-your-catalog-with-product-categories.html'
+						}
+					]
+				}
+			]
+		}
+	})
+</script>
