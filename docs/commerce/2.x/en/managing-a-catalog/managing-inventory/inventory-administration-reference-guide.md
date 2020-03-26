@@ -1,4 +1,4 @@
-# Inventory Reference Guide
+# Inventory Administration Reference Guide
 
 ```important::
    Liferay Commerce 2.1 and above
@@ -8,11 +8,11 @@ Liferay Commerce 2.1 introduces a dedicated and clear Inventory administration s
 
 To access the dedicated Inventory management section, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Inventory_.
 
-![The Inventory section is in the Control Panel.](./inventory-reference-guide/images/01.png)
+![The Inventory section is in the Control Panel.](./inventory-administration-reference-guide/images/01.png)
 
 The first screen displays all the product variants identified by their SKU code (instead of Product code) and their availability details.
 
-![The Inventory section's initial screen tracks all the SKUs in the catalog.](./inventory-reference-guide/images/02.png)
+![The Inventory section's initial screen tracks all the SKUs in the catalog.](./inventory-administration-reference-guide/images/02.png)
 
 | Field | Description |
 | --- | --- |
@@ -30,7 +30,7 @@ Click on a SKU. (Note that if you had used an accelerator like Minium to create 
 
 The _Overview_ tab displays a short summary of the inventory by warehouse.
 
-![Manage your inventory by SKU.](./inventory-reference-guide/images/03.png)
+![Manage your inventory by SKU.](./inventory-administration-reference-guide/images/03.png)
 
 | Field | Description |
 | --- | --- |
@@ -42,23 +42,23 @@ The _Overview_ tab displays a short summary of the inventory by warehouse.
 
 Click Add (![Add Icon](../../images/icon-add.png)) to update inventory or to transfer inventory between warehouses.
 
-![Add your inventory or transfer inventory between warehouses.](./inventory-reference-guide/images/04.png)
+![Add your inventory or transfer inventory between warehouses.](./inventory-administration-reference-guide/images/04.png)
 
 ### On Order
 
 The _On Order_ tab displays a list of Accounts that have placed an order for this SKU. The tab also displays the Order ID, the quantities ordered, and the expiration date.
 
-![The On Order tab tracks which accounts have ordered this SKU.](./inventory-reference-guide/images/08.png)
+![The On Order tab tracks which accounts have ordered this SKU.](./inventory-administration-reference-guide/images/08.png)
 
 ### Incoming Tab
 
 You can input a quantity that will be delivered to a particular warehouse at a future date.
 
-![Add a quantity for a particular warehouse.](./inventory-reference-guide/images/06.png)
+![Add a quantity for a particular warehouse.](./inventory-administration-reference-guide/images/06.png)
 
 Click Add (![Add Icon](../../images/icon-add.png)) to enter your values.
 
-![Add a quantity for a particular warehouse.](./inventory-reference-guide/images/05.png)
+![Add a quantity for a particular warehouse.](./inventory-administration-reference-guide/images/05.png)
 
 |Field | Description |
 | --- | --- |
@@ -68,7 +68,7 @@ Click Add (![Add Icon](../../images/icon-add.png)) to enter your values.
 
 ### Changelog
 
-![Changelog tracks changes.](./inventory-reference-guide/images/07.png)
+![Changelog tracks changes.](./inventory-administration-reference-guide/images/07.png)
 
 The log tracks six specific events:
 

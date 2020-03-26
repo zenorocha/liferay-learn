@@ -10,6 +10,7 @@ Managing Inventory
    managing-inventory/low-stock-action.md
    managing-inventory/availability-estimates.md
    managing-inventory/managing-product-publication.md
+   managing-inventory/inventory-adminstration-reference-guide.md
    managing-inventory/warehouse-reference-guide.md
    managing-inventory/product-inventory-configuration-reference.md
 
