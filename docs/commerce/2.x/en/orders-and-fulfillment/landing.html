@@ -1,0 +1,78 @@
+<div class="landing-page" id="landingPage">
+	<div class="section-card" v-for="card in cards">
+		<div class="autofit-row autofit-row-center">
+			<div class="autofit-col" v-if="card.icon">
+				<svg class="icon">
+					<use :xlink:href="card.icon"></use>
+				</svg>
+			</div>
+			<div class="autofit-col autofit-col-expand">
+				<a :href="card.sectionURL">
+					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
+					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
+				</a>
+				<ul class="subsection" v-if="card.subsections">
+					<li v-for="subsection in card.subsections">
+						<a :href="subsection.url">{{ subsection.name}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+        {
+					sectionName: 'Order Life Cycle',
+					sectionURL: 'orders-and-fulfillment/order-life-cycle.html',
+				},
+				{
+					sectionName: 'Orders Menu',
+					sectionURL: 'orders-and-fulfillment/orders-menu.html',
+				},
+				{
+					sectionName: 'Order Information',
+					sectionURL: 'orders-and-fulfillment/order-information.html',
+				},
+				{
+					sectionName: 'Order Management Statuses',
+					sectionURL: 'orders-and-fulfillment/order-management-statuses.html',
+				},
+				{
+					sectionName: 'Order Workflows',
+					sectionURL: 'orders-and-fulfillment/order-workflows/introduction-to-order-workflows.html',
+					subsections: [
+						{
+							name: 'Enabling or Disabling Order Workflows',
+							url: 'orders-and-fulfillment/order-workflows/enabling-or-disabling-order-workflows.html'
+						},
+						{
+							name: 'Approving or Rejecting Orders in Order Workflows',
+							url: 'orders-and-fulfillment/order-workflows/approving-or-rejecting-orders-in-order-workflows.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Managing Shipments',
+					sectionURL: 'orders-and-fulfillment/managing-shipments/introduction-to-shipments.html',
+					subsections: [
+						{
+							name: 'Creating a Shipment',
+							url: 'orders-and-fulfillment/managing-shipments/creating-a-shipment.html'
+						},
+						{
+							name: 'Cancelling a Shipment',
+							url: 'orders-and-fulfillment/managing-shipments/cancelling-a-shipment.html'
+						},
+					]
+				},
+			]
+		}
+	})
+</script>
