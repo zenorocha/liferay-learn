@@ -12,5 +12,5 @@ Orders and Fulfillment
    orders-and-fulfillment/order_workflows.rst
    orders-and-fulfillment/managing_shipments.rst
 
-.. include:: /orders-and-fulfillment/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: orders-and-fulfillment/landing.html
