@@ -51,7 +51,7 @@ Payments for orders may be completed with several different [payment methods](..
 ![Payment Methods page](./introduction-to-liferay-commerce/images/06.png)
 
 Orders may be fulfilled using several different [shipping methods](../store-administration/configuring-shipping-methods/shipping-method-reference.md):
-sellers can [impose a flat rate](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md), apply [shipping method restrictions](../store-administration/configuring-shipping-methods/applying-shipping-method-restrictions.md), or integrate with the [carrier rates like FedEx](../store-administration/configuring-shipping-methods/using-fedex-as-a-carrier-method.md).
+sellers can [impose a flat rate](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md), apply [shipping method restrictions](../store-administration/configuring-shipping-methods/applying-shipping-method-restrictions.md), or integrate with the [carrier rates like FedEx](../store-administration/configuring-shipping-methods/using-the-fedex-shipping-method.md).
 
 ## ML Powered Recommendations and Alerts
 

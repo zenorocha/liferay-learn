@@ -1,4 +1,4 @@
-# Using FedEx as a Carrier Method
+# Using the FedEx Shipping Method
 
 > Subscribers
 
@@ -19,12 +19,12 @@ To activate FedEx as a shipping method for your chosen channel:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
 
-    ![Navigating to Channels](./using-fedex-as-a-carrier-method/images/01.png)
+    ![Navigating to Channels](./using-the-fedex-shipping-method/images/01.png)
 
 1. Click on the desired channel (for example, Sahara.com). (Note that if you had used an accelerator like Minium to create your site, there is already a corresponding channel created by default.)
 1. Scroll down to _Shipment Methods_.
 
-    ![Activating FedEx in the Sahara.com Portal Channel](./using-fedex-as-a-carrier-method/images/02.png)
+    ![Activating FedEx in the Sahara.com Portal Channel](./using-the-fedex-shipping-method/images/02.png)
 
 1. Click _Edit_ next to FedEX.
 1. Switch the _Active_ toggle to _YES_.

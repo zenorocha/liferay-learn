@@ -18,7 +18,7 @@
 
 * [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
 * [Measurement Units](./measurement-units.md)
-* [Using FedEx as a Carrier Method](./using-fedex-as-a-carrier-method.md)
+* [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)
 * [Using the Flat Rate Shipping Method](./using-the-flat-rate-shipping-method.md)
 * [Using a Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
   

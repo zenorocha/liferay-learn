@@ -5,7 +5,7 @@ Configuring Shipping Methods
    :maxdepth: 1
 
    configuring-shipping-methods/shipping-methods.md
-   configuring-shipping-methods/using-fedex-as-a-carrier-method.md
+   configuring-shipping-methods/using-the-fedex-shipping-method.md
    configuring-shipping-methods/using-the-flat-rate-shipping-method.md
    configuring-shipping-methods/using-the-variable-rate-shipping-method.md
    configuring-shipping-methods/applying-shipping-method-restrictions.md

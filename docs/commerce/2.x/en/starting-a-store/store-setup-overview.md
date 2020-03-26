@@ -64,7 +64,7 @@ Liferay Commerce has several options to calculate shipping rates. Commerce Enter
 * [Shipping Methods](../store-administration/configuring-shipping-methods/shipping-methods.md)
 * [Variable Rate](../store-administration/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
 * [Flat Rate](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
-* [Using FedEx as a Carrier](../store-administration/configuring-shipping-methods/using-fedex-as-a-carrier-method.md)
+* [Using FedEx as a Carrier](../store-administration/configuring-shipping-methods/using-the-fedex-shipping-method.md)
 
 ## Creating the Catalog
 
