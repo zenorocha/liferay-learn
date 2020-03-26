@@ -4,6 +4,7 @@ Configuring Payment Methods
 .. toctree::
    :maxdepth: 1
 
+   configuring-payment-methods/payments.md
    configuring-payment-methods/managing-payment-methods.md
    configuring-payment-methods/authorize.net.md
    configuring-payment-methods/mercanet.md

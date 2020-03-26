@@ -3,12 +3,16 @@ Store Administration
 
 -  :doc:`/store-administration/liferay-commerce-configuration-overview`
 -  :doc:`/store-administration/locale-options`
--  :doc:`/store-administration/payments`
 -  :doc:`/store-administration/adding-regions`
+-  :doc:`/store-administration/deactivating-a-country-for-billing-or-shipping`
+
+Currencies
+----------
+
 -  :doc:`/store-administration/adding-a-new-currency`
 -  :doc:`/store-administration/currencies-reference`
--  :doc:`/store-administration/deactivating-a-country-for-billing-or-shipping`
 -  :doc:`/store-administration/managing-exchange-rates`
+
 
 Configuring Taxes
 -----------------
@@ -20,6 +24,7 @@ Configuring Taxes
 Configuring Payment Methods
 ---------------------------
 
+-  :doc:`/store-administration/payments`
 -  :doc:`/store-administration/configuring-payment-methods/managing-payment-methods`
 -  :doc:`/store-administration/configuring-payment-methods/authorize.net`
 -  :doc:`/store-administration/configuring-payment-methods/mercanet`
