@@ -18,7 +18,7 @@ Product Types
 -  :doc:`/managing-a-catalog/creating-and-managing-products/product-types/virtual-product-reference`
 
 Products
--------
+--------
 
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options`
 -  :doc:`/managing-a-catalog/creating-and-managing-products/products/adding-skus-to-your-products`

@@ -14,4 +14,4 @@ By default, Liferay Commerce does **not** store customer payment information. St
 
 ## Additional Information
 
-* [Managing Payment Methods](./configuring-payment-methods/managing-payment-methods.md)
+* [Managing Payment Methods](../configuring-payment-methods/managing-payment-methods.md)

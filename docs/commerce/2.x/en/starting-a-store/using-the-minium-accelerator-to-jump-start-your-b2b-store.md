@@ -34,9 +34,9 @@ Minium's catalog includes a range of sample products organized into several pre-
 
 ![Pre-set Categories](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/04.png)
 
-> Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../managing-a-catalog/creating-and-managing-products/organizing-your-catalog-with-product-categories.md).
+> Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../managing-a-catalog/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md).
 
-Sample products also come with pre-set [Options](../managing-a-catalog/creating-and-managing-products/customizing-your-product-with-product-options.md), [Specifications](../managing-a-catalog/creating-and-managing-products/specifications.md), and Images.
+Sample products also come with pre-set [Options](../managing-a-catalog/creating-and-managing-products/products/customizing-your-product-with-product-options.md), [Specifications](../managing-a-catalog/creating-and-managing-products/products/specifications.md), and Images.
 
 ![Product Specifications](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/05.png)
 
@@ -56,13 +56,13 @@ Minium applies a number of other site configurations that are not set out-of-the
 | --- | --- |
 | [Warehouses](../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md) | Italy, United States Northeast, United States Southwest |
 | [Site Type](../starting-a-store/sites-and-site-types.md) | B2B |
-| [Shipping Method Options](../orders-and-fulfillment/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
+| [Shipping Method Options](../store-administration/configuring-shipping-methods/using-the-flat-rate-shipping-method.md) | Standard Delivery, Expedited Delivery |
 | Channels | Minium Portal |
 | Countries | France, China, United States, and 245 more |
-| [Currencies](../starting-a-store/store-administration/adding-a-new-currency.md) | USD, AUD, GBP, and 7 more |
+| [Currencies](../store-administration/currencies/adding-a-new-currency.md) | USD, AUD, GBP, and 7 more |
 | Default Image | &#10003; |
-| [Measurement Units](../orders-and-fulfillment/configuring-shipping-methods/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
-| [Measurement Units](../orders-and-fulfillment/configuring-shipping-methods/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
+| [Measurement Units](../store-administration/configuring-shipping-methods/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
+| [Measurement Units](../store-administration/configuring-shipping-methods/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
 | [Account Roles](../account-management/account-roles.md) | Buyer, Account Manager, Sales Agent
 | [Availability Estimates](../managing-a-catalog/managing-inventory/availability-estimates.md) | 3-5 days, 5-7 days, 7-14 days |
-| [Product Relation Type](../managing-a-catalog/creating-and-managing-products/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |
+| [Product Relation Type](../managing-a-catalog/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |

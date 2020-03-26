@@ -4,7 +4,7 @@ Product Categories are used to organize your products. These groupings allow mul
 
 ## Creating a Vocabulary
 
-1. Navigate to the _Control Panel_ → ![Navigation Compass](../../images/icon-compass.png) _Go to Other Site_ → _My Sites_ → _Global_.
+1. Navigate to the _Control Panel_ → ![Navigation Compass](../../../images/icon-compass.png) _Go to Other Site_ → _My Sites_ → _Global_.
 1. Once on the _Global_ site, click _Categorization_ → _Categories_.
 1. Click the (+) button to create a Vocabulary first.
 1. Enter the following:

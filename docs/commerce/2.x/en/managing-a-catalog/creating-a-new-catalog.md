@@ -22,4 +22,4 @@ The new catalog has been created and will be selectable when adding a new produc
 ## Additional Information
 
 * [Locale Options](../store-administration/locale-options.md)
-* [Adding a New Currency](../store-administration/adding-a-new-currency.md)
+* [Adding a New Currency](../store-administration/currencies/adding-a-new-currency.md)

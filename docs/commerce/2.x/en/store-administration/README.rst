@@ -24,7 +24,7 @@ Configuring Taxes
 Configuring Payment Methods
 ---------------------------
 
--  :doc:`/store-administration/payments`
+-  :doc:`/store-administration/configuring-payment-methods/payments`
 -  :doc:`/store-administration/configuring-payment-methods/managing-payment-methods`
 -  :doc:`/store-administration/configuring-payment-methods/authorize.net`
 -  :doc:`/store-administration/configuring-payment-methods/mercanet`
