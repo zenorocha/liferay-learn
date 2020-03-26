@@ -1,12 +1,12 @@
 # Using FedEx as a Carrier Method
 
->(**Subscribers only**)
+> Subscribers
 
 This article details how to configure and enable FedEx as a shipping method.
 
 ## Prerequisites
 
-Before configuring your store to use FedEX, it is necessary to have the following:
+Before configuring your store to use FedEX as a shipping method, have the following:
 
 1. FedEx business account number
 1. FedEx account password

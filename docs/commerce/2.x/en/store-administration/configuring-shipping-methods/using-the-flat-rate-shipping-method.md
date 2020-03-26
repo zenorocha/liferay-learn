@@ -2,7 +2,7 @@
 
 Buyers can choose a flat rate shipping option to ship any product. By creating multiple flat rate options, you can give customers choices of cost, speed, or security.
 
-Flat rate shipping imposes the same cost on every product in the catalog. You can create exceptions, however, for individual products from the _Shipping Extra Price_ field in the product’s [Configuration](https://help.liferay.com/hc/articles/360017870032-Configuration-#shipping) tab.
+Flat rate shipping imposes the same cost on every product in the catalog. You can create exceptions, however, for individual products from the _Shipping Extra Price_ field in the product’s [Configuration](../../managing-a-catalog/managing-inventory/product-inventory-configuration-reference.md) tab.
 
 By default, the Flat Rate shipping method is enabled.
 
@@ -54,11 +54,9 @@ To add a new Flat Rate Shipping Option:
 
 The new Shipping Option has been added and is available during the checkout process.
 
-   ![Adding a flat rate shipping option](./using-the-flat-rate-shipping-method/images/01.png)
-
 ## Additional Information
 
 * [Using the Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
 * [Using FedEx as a Carrier Method](./using-fedex-as-a-carrier-method.md)
 * [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
-* [Creating New Shipping Methods](https://help.liferay.com/hc/en-us/articles/360020751831)
+* [Implementing a New Shipping Engine](../../developer-guide/tutorials/implementing-a-new-shipping-engine.md)
