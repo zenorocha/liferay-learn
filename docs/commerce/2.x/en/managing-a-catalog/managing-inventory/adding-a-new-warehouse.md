@@ -11,7 +11,7 @@ This article describes how to add warehouses to manage inventory.
 1. Switch the toggle to _Active_.
 1. Enter the warehouse address.
 1. Select any applicable channel.
-1. Enter the geolocation (required):
+1. Enter the geolocation data (required):
     * *Latitude*: 36.282974
     * *Longitude*: -115.136
 
