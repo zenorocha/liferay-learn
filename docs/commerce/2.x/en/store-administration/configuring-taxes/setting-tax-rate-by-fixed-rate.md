@@ -4,6 +4,33 @@ Liferay Commerce supports two types of tax calculations: fixed and by address. T
 
 A fixed tax method sets rates for each tax category independently. The tax collected then depends on the tax category assigned to a product.
 
+To set a fixed tax rate:
+
+1. Navigate to the _Control Panel_ &arr; _Commerce_ &arr; _Channels_.
+1. Click on the desired channel. (Note that if you had used an accelerator like Minium or Speedwell, the associated channel is created by default.)
+1. Scroll down to _Tax Calculations_.
+
+    ![Setting a fixed tax rate](./setting-tax-rate-by-fixed-rate/images/03.png)
+
+1. Click _Edit_ next to Fixed Tax Rate.
+1. Slide the _Percentage_ and _Active_ toggles to _YES_.
+1. Click _Save_.
+
+Next, set the tax rate for the tax category:
+
+1. Click the _Tax Rates_ tab.
+1. Click the Add (![Add icon](../../images/icon-add.png)) button to add a Tax Rate for a Tax Category.
+1. Select the desired Tax Category.
+1. Enter the rate.
+
+    ![Setting a fixed tax rate](./setting-tax-rate-by-fixed-rate/images/04.png)
+
+1. Click _Submit_.
+
+Your store will now collect a fixed rate for all orders that fall under this tax category.
+
+## Commerce 2.0 and Below
+
 First, enable the _Fixed Tax Rate_ function:
 
 1. Go to _Site Administration_ → _Commerce_ → _Settings_.
