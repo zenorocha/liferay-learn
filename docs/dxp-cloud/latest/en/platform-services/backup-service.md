@@ -115,9 +115,8 @@ Name | Type     | Required |
 #### curl Example
 
 ```bash
-curl -X POST \
+curl -X GET \
   https://<HOST-NAME>/backup/download/database/:id \
-  -H 'Content-Type: application/json' \
   -u user@domain.com:password \
   --output database.tgz
 ```
@@ -138,9 +137,8 @@ Name | Type     | Required |
 #### curl Example
 
 ```bash
-curl -X POST \
+curl -X GET \
   https://<HOST-NAME>/backup/download/volume/:id \
-  -H 'Content-Type: application/json' \
   -u user@domain.com:password \
   --output volume.tgz
 ```
