@@ -81,7 +81,6 @@ base64encodedcertificate
 
 The Network page shows any custom certificates, with a maximum of one per service. For more information, see [Custom Domains](./custom-domains.md).
 
-
 ![Figure 4: DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/04.png)
 
 ## Environment Variables Reference
