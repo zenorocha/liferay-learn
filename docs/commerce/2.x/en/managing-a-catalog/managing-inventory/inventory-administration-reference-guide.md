@@ -1,16 +1,14 @@
 # Inventory Administration Reference Guide
 
-```important::
-   Liferay Commerce 2.1 and above
-   ```
+> Commerce 2.1+
 
-Liferay Commerce 2.1 introduces a dedicated and clear Inventory administration section managing product availability in the _Control Panel_. This article serves as a guide for all the features in the _Inventory_ section.
+Liferay Commerce 2.1 introduces a dedicated Inventory Administration section to manage product availability in the _Control Panel_. This article introduces the functionality in the _Inventory_ section.
 
-To access the dedicated Inventory management section, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Inventory_.
+To access the Inventory Management, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Inventory_.
 
 ![The Inventory section is in the Control Panel.](./inventory-administration-reference-guide/images/01.png)
 
-The first screen displays all the product variants identified by their SKU code (instead of Product code) and their availability details.
+The first screen displays product variants identified by their SKU code (instead of Product code) and their availability details.
 
 ![The Inventory section's initial screen tracks all the SKUs in the catalog.](./inventory-administration-reference-guide/images/02.png)
 
@@ -28,15 +26,15 @@ Click on a SKU. (Note that if you had used an accelerator like Minium to create 
 
 ### Overview Tab
 
-The _Overview_ tab displays a short summary of the inventory by warehouse.
+The _Overview_ tab displays a short summary of the inventory of a given SKU by warehouse.
 
 ![Manage your inventory by SKU.](./inventory-administration-reference-guide/images/03.png)
 
 | Field | Description |
 | --- | --- |
-| Warehouse | This is a list of warehouses where that particular SKU is located. |
-| On Hand | This is total quantity in that warehouse. |
-| Safety Stock | This represents a quantity reserved in a specific warehouse that cannot be sold.. Example: if there are 100 units in a warehouse, 20 units can be designated as Safety Stock. |
+| Warehouse | A list of warehouses where a particular SKU is located. |
+| On Hand | Total quantity in a given warehouse. |
+| Safety Stock | Represents a quantity reserved in a specific warehouse that cannot be sold.. Example: if there are 100 units in a warehouse, 20 units can be designated as Safety Stock. |
 | Available | The actual quantity used for calculating the end-user stock availability. |
 | Incoming | This represents quantities that will soon be available in that warehouse. |
 
@@ -70,7 +68,7 @@ Click Add (![Add Icon](../../images/icon-add.png)) to enter your values.
 
 ![Changelog tracks changes.](./inventory-administration-reference-guide/images/07.png)
 
-The log tracks six specific events:
+The Changelog tracks the following events:
 
 * When an order is placed, the quantities are "booked" (allocated) to fulfill the order.
 * When a shipment is created, the previously "booked" quantity is committed; the inventory is updated by removing the amount previously booked.
