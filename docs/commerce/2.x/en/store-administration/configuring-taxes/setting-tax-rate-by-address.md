@@ -4,6 +4,43 @@ Liferay Commerce supports two types of tax calculations: fixed rates and by addr
 
 Calculating taxes by address sets rates for geographical areas independently. You can apply several by address rates to a single tax category. When a product from that category is purchased, the tax rate appropriate to the buyer’s location is used.
 
+To set a tax rate by address:
+
+1. Navigate to the _Control Panel_ &arr; _Commerce_ &arr; _Channels_.
+1. Click on the desired channel. (Note that if you had used an accelerator like Minium or Speedwell, the associated channel is created by default.)
+1. Scroll down to _Tax Calculations_.
+
+    ![Activate tax calculations by address](./setting-tax-rate-by-address/images/03.png)
+
+1. Click _Edit_ next to By Address.
+1. Slide the _Percentage_ and _Active_ toggles to _YES_.
+1. Click _Save_.
+
+Next, set the Tax Rate by Category and by Address:
+
+1. Click _Tax Rate Settings_.
+1. Select whether the taxed address is the Billing Address or the Shipping Address from the _Apply Tax to_ dropdown menu.
+1. Click the Add (![Add icon](../../images/icon-add.png)) button to add a Tax Category.
+1. Select the Tax Category (for example, _Holiday Special_).
+1. Enter the following:
+
+    * **Rate**: your tax rate
+    * **Country**: country
+    * **Region**: leave blank to apply to the whole country
+    * **Zip**: leave blank to apply to the whole country
+
+    ![Activate tax calculations by address](./setting-tax-rate-by-address/images/04.png)
+
+1. Click _Submit_.
+
+The tax had been set by address and tax category.
+
+![Activate tax calculations by address](./setting-tax-rate-by-address/images/05.png)
+
+## Commerce 2.0 and Below
+
+To set a tax rate by address:
+
 1. Go to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Taxes_ tab and then the _Tax Calculations_ sub-tab.
 1. Click _By Address_.
