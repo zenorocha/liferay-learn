@@ -24,7 +24,7 @@ private network, see
 The DXP Cloud Public Load Balancer
 ([Layer 7](https://www.nginx.com/resources/glossary/layer-7-load-balancing/))
 gives internet access to the environment's services via proxied HTTP(S)
-connections. Each load balancer has a static IP that can be used to set up
+connections using TLS (1.0 to 1.2) protocol. Each load balancer has a static IP that can be used to set up
 custom domains. HTTP(S) load balancing can absorb and protect from IP spoofing
 and large SYN flood attacks. This functionality is built-in to DXP Cloud and
 does not require user configuration.
