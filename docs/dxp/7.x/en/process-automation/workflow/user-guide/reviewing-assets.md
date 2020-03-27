@@ -8,7 +8,7 @@ Once an asset has been submitted, the _Workflow_ application sends a notificatio
 
 ## Reviewing an Asset
 
-Because the _Single Approver_ workflow process is assigned tasks to Roles, you have to assign the task to yourself.
+In order to begin reviewing an asset, you must assign the task to yourself. Note that when using the Single Approver workflow, tasks are by default assigned to a Role. (You can also [build custom workflows](./building-workflows.md) which assign review tasks to specific users instead of Roles.)
 
 ### Assigning the Review Task
 
