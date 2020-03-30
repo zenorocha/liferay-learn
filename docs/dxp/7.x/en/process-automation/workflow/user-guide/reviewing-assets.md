@@ -2,13 +2,13 @@
 
 When an asset's workflow has been [activated](./activating-workflow.md), one or more users have to review it before publication. Workflow review processes can be assigned to specific users or to a particular Role (for example: Portal or Site Content Reviewer). In the latter case, anyone assigned to that Role may approve or reject the submission. For example, if you are using the out-of-the-box _Single Approver_ process, the workflow tasks are assigned to a Portal or Site Content Reviewer or anyone with administrator rights.
 
-Once an asset has been submitted, the _Workflow_ application sends a notification to all the potential reviewers who have been assigned to that Role. To access notifications, click your avatar and select _Notifications_.
+Once an asset has been submitted, the _Workflow_ application sends a notification to all the potential reviewers. To access notifications, click your avatar and select _Notifications_.
 
 ![Workflow sends a notification an asset is ready for review.](./reviewing-assets/images/01.png)
 
 ## Reviewing an Asset
 
-In order to begin reviewing an asset, you must assign the task to yourself. Note that when using the Single Approver workflow, tasks are by default assigned to a Role. (You can also [build custom workflows](./building-workflows.md) which assign review tasks to specific users instead of Roles.)
+In order to begin reviewing an asset, you must assign the task to yourself. Note that when using the Single Approver workflow, tasks are by default assigned to a Role. (You can also [build custom workflows](./building-workflows.md) which assign review tasks to specific users instead of by Roles.)
 
 ### Assigning the Review Task
 
@@ -23,7 +23,7 @@ In order to begin reviewing an asset, you must assign the task to yourself. Note
 
 1. Click the asset's _Actions_ button (![Actions](../../../images/icon-actions.png)) and select _Assign to Me_.
 
-    ![Assign the task to self](./reviewing-assets/images/04.png)
+    ![Assign the task to self.](./reviewing-assets/images/04.png)
 
 1. Enter an optional comment in the _Comment_ text field.
 1. Click _Done_.
@@ -48,7 +48,7 @@ Once a task is complete, one of several things happens:
 * If there are more than one reviewers, the task is advanced to the next reviewer in the chain.
 * If the submission is approved and there is only one reviewer, then the task is moved to the _Completed_ section on the _Assigned to Me_ tab. The asset is published.
 
-![The completed task is in Assigned to Me tab](./reviewing-assets/images/07.png)
+![The completed task is in Assigned to Me tab.](./reviewing-assets/images/07.png)
 
 The approved asset (the Wiki Page) is now published in the widget.
 
