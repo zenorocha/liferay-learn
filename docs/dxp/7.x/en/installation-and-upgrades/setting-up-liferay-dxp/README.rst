@@ -2,6 +2,7 @@ Setting Up Liferay DXP
 ======================
 
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-liferay-dxp`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
