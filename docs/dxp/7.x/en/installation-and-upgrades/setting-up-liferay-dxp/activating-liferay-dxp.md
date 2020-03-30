@@ -14,8 +14,8 @@ If you have an activation key, copy it to the `deploy` folder in your [Liferay H
 [LIFERAY_HOME]
     ├── data
     ├── deploy
-    ├── license
     │   └── my-license.xml
+    ├── license
     ├── logs
     ├── osgi
     ├── patching-tool
