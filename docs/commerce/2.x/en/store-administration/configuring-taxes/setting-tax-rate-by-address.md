@@ -6,8 +6,8 @@ Calculating taxes by address sets rates for geographical areas independently. Yo
 
 To set a tax rate by address:
 
-1. Navigate to the _Control Panel_ &arr; _Commerce_ &arr; _Channels_.
-1. Click on the desired channel. (Note that if you had used an accelerator like Minium or Speedwell, the associated channel is created by default.)
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
+1. Click on the channel you are configuring a tax rate for. If you used an accelerator like Minium, a channel is created by default.
 1. Scroll down to _Tax Calculations_.
 
     ![Activate tax calculations by address](./setting-tax-rate-by-address/images/03.png)
@@ -24,16 +24,16 @@ Next, set the Tax Rate by Category and by Address:
 1. Select the Tax Category (for example, _Holiday Special_).
 1. Enter the following:
 
-    * **Rate**: your tax rate
-    * **Country**: country
-    * **Region**: leave blank to apply to the whole country
-    * **Zip**: leave blank to apply to the whole country
+    * **Rate**: Your tax rate
+    * **Country**: Applicable country
+    * **Region**: Leave blank to apply to the whole country
+    * **Zip**: Leave blank to apply to the whole country
 
     ![Activate tax calculations by address](./setting-tax-rate-by-address/images/04.png)
 
 1. Click _Submit_.
 
-The tax had been set by address and tax category.
+Address specific tax rates are now configured.
 
 ![Activate tax calculations by address](./setting-tax-rate-by-address/images/05.png)
 
@@ -62,13 +62,13 @@ Next, set the Tax Rate by Category and by Address:
 
 1. Click _Save_.
 
-Your store now applies this particular tax rate for all goods whose billing address is in the assigned country; in this example, 16% tax applied to buyers from Belgium.
+Address specific tax rates are now configured.
 
 ## Additional Information
 
-**Note 1**: The tax rate applies only to buyers located in the area you designate. To designate an entire country, leave _Region_ and _Zip_ blank; to designate an entire region, leave _Zip_ blank.
+To designate a tax rate for a country, leave _Region_ and _Zip_ blank; to designate a tax rate for a region, leave _Zip_ blank.
 
-**Note 2**: If you assign multiple settings to a single tax category (but specify different geographical areas), the rate appropriate to the buyer’s location is used. If you assign both a by address rate and a fixed rate to a single tax category, both rates will be applied.
+If you assign multiple settings to a single tax category (but specify different geographical areas), the rate appropriate to the buyer’s location is used. If you assign both a by address rate and a fixed rate to a single tax category, both rates will be applied.
 
 * [Setting Tax Rates by Fixed Rate](../configuring-taxes/setting-tax-rate-by-fixed-rate.md)
 * [Creating Tax Categories](../configuring-taxes/creating-tax-categories.md)

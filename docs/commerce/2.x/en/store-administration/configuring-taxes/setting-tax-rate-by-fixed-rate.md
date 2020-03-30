@@ -6,8 +6,8 @@ A fixed tax method sets rates for each tax category independently. The tax colle
 
 To set a fixed tax rate:
 
-1. Navigate to the _Control Panel_ &arr; _Commerce_ &arr; _Channels_.
-1. Click on the desired channel. (Note that if you had used an accelerator like Minium or Speedwell, the associated channel is created by default.)
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_.
+1. Click on the channel you are configuring a tax rate for. If you used an accelerator like Minium, a channel is created by default.
 1. Scroll down to _Tax Calculations_.
 
     ![Setting a fixed tax rate](./setting-tax-rate-by-fixed-rate/images/03.png)
