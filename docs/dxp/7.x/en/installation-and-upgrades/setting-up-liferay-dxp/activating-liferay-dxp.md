@@ -1,30 +1,37 @@
 # Activating Liferay DXP
 
-> subscription
+> Subscribers
 
-Liferay DXP is activated using an XML file (`.xml`) called an activation key.  It specifies your DXP subscription terms or trial agreement. When you [run Liferay DXP for the first time](../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md), the license page appears and requests an activation key.
+Liferay DXP is activated using an XML (`.xml`) activation key.  It specifies your DXP subscription terms or trial agreement. When you [run Liferay DXP for the first time](../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md), the license page appears and requests an activation key.
 
 ![When you run DXP for the first time, it displays the license page.](./activating-liferay-dxp/images/01.png)
 
-Here you'll learn how to do these things:
-
-* [Activate DXP Using a Key](#activating-dxp-using-a-key)
-* [Get an Activation Key](#need-a-key)
-* [Reactivate DXP With a New Key](#reactivating-dxp-with-a-new-key)
-
-### Activating DXP Using a Key 
+## Activating DXP Using a Key
 
 If you have an activation key, copy it to the `deploy` folder in your [Liferay Home](../reference/liferay-home.md).
 
+```
+[LIFERAY_HOME]
+    ├── data
+    ├── deploy
+    ├── license
+    │   └── my-license.xml
+    ├── logs
+    ├── osgi
+    ├── patching-tool
+    ├── tools
+    └── work
+```
+
 A message in the DXP console confirms the registration.
 
-```
+```bash
 License registered ...
 ```
 
 DXP is ready to use.
 
-### Need a Key?
+## Need a Key?
 
 If you have an enterprise subscription, visit the
 [Activation Keys](https://customer.liferay.com/activation-key) page to download an activation key or to request one.
@@ -55,7 +62,7 @@ Here are the steps for reactivating DXP with your new key:
 
 A DXP console message confirms the registration.
 
-```
+```bash
 License registered ...
 ```
 
