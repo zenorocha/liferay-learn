@@ -1,10 +1,10 @@
 # Managing Site Membership and Permissions with User Groups
 
-Manage site membership, and the roles and permissions of the site's members, with User Groups.
+You can use User Groups to manage Site membership, Roles, and permissions.
 
 ## Managing Site Membership with User Groups
 
-One of the primary use cases for User Groups is to manage Site membership. When you assign a User Group to a Site, all the group's Users instantly become members of that Site.
+One of the primary use cases for User Groups is to manage Site membership. When you assign a User Group to a Site, that group's Users instantly become members of that Site.
 
 ![The User Groups tab in Memberships shows the User Groups currently assigned to the Site.](./managing-site-membership-and-permissions-with-user-groups/images/02.png)
 
@@ -22,16 +22,16 @@ Follow these steps to assign a User Group to a Site:
 
 ## Managing Site Permissions with User Groups
 
-In the [Creating and Managing User Groups](./creating-and-managing-user-groups.md) article, you learned to assign a Regular Role to a User Group for Users that need to take action across the portal. User Groups are often created so the group's Users can act only in one Site. Just as with Regular Roles, it starts by assigning the needed permissions for that action to a Site Role, and then assigning that Role to the User Group.
+[Creating and Managing User Groups](./creating-and-managing-user-groups.md) describes how to assign a Regular Role to a User Group for Users who must have permissions across the portal. User Groups are often created so the group's Users can act only in one Site. Just as with Regular Roles, it starts by assigning the needed permissions for that action to a Site Role, and then assigning that Role to the User Group.
 
 To grant Site scoped permissions to Users in a User Group,
 
 1. [Create the User Group](./creating-and-managing-user-groups.md#creating-a-user-group).
 1. Assign the User Group to a Site ([see above](#managing-site-membership-with-user-groups)).
-1. Create the Site Role and define its permissions (see the [Help Center article on Roles and Permissions](https://help.liferay.com/hc/en-us/articles/360028819032-Roles-and-Permissions)).
+1. Create the Site Role and define its permissions (see [Roles and Permissions](../roles-and-permissions/roles-and-permissions.md)).
 1. Assign the Role to the User Group.
 
-The first three steps are covered elsewhere. To assign an existing Site Role to an existing User Group that's already a member of the Site,
+To assign an existing Site Role to an existing User Group that's already a member of the Site,
 
 1. Open the Menu (![Menu](../../images/icon-menu.png)), select the Site to work in, then open its Site Administration menu. 
 
@@ -40,6 +40,8 @@ The first three steps are covered elsewhere. To assign an existing Site Role to 
 1. In Memberships, select the *User Groups* tab to see the User Groups currently assigned to the Site. 
 
 1. Click the *Actions* button (![Actions](../../images/icon-actions.png)) for the User Group you want to assign to a Role, and select *Assign Roles*.
+
+<!-- The image below is the same as the 02 image. I think you meant to put a different image here. -->
 
    ![Select Assign Roles for the User Group.](./managing-site-membership-and-permissions-with-user-groups/images/03.png)
 
