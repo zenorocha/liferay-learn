@@ -5,8 +5,8 @@ Setting Up Liferay DXP
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
 * Installing a Search Engine
 * Selecting Your Locale and Encoding
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-marketplace`
+-  :doc:`../../system-administration/installing-and-managing-apps/accessing-ee-plugins-during-a-trial-period`
+-  :doc:`../../system-administration/installing-and-managing-apps/installing-the-marketplace-plugin`
 * Using a Content Delivery Network
 * Tuning your JVM
 * Setting Up Remote Staging
