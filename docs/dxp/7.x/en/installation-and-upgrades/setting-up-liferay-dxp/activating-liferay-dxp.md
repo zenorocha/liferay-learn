@@ -2,7 +2,7 @@
 
 > Subscribers
 
-Liferay DXP is activated using an XML (`.xml`) activation key.  It specifies your DXP subscription terms or trial agreement. When you [run Liferay DXP for the first time](../installing-liferay-dxp-on-premises/running-liferay-dxp-for-the-first-time.md), the license page appears and requests an activation key.
+Liferay DXP is activated using an XML (`.xml`) activation key.  It specifies your DXP subscription terms or trial agreement. When you [run Liferay DXP for the first time](../installing-liferay/running-liferay-dxp-for-the-first-time.md), the license page appears and requests an activation key.
 
 ![When you run DXP for the first time, it displays the license page.](./activating-liferay-dxp/images/01.png)
 
