@@ -21,3 +21,4 @@ Each warehouse now has the correct quantity available for sale.
 ## Additional Information
 
 * [Adding A New Warehouse](./adding-a-new-warehouse.md)
+* [Inventory Administration Reference Guide](./inventory-administration-reference-guide.md)

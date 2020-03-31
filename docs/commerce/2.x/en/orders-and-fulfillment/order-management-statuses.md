@@ -1,6 +1,8 @@
 # Order Management Statuses
 
-Every order in Liferay Commerce contains important [order information](./order-information.md), including order management statuses.
+> Liferay Commerce 2.0
+
+Every order in Liferay Commerce and below contains important [order information](./order-information.md), including order management statuses.
 
 This article gives a brief overview of the three order management status types – *Order Status*, *Payment Status*, and *Workflow Status* –  found on the [*Orders* Menu](./orders-menu.md).
 
