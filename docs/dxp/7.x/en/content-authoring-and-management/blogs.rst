@@ -17,4 +17,7 @@ Blogs
    blogs/apis.rst
 
 .. raw:: html
+   :file: ../landingpage_template.html
+
+.. raw:: html
    :file: blogs/landing.html
