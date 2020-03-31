@@ -8,6 +8,7 @@ Creating Pages
    creating-pages/adding-a-page-to-a-site.md
    creating-pages/content-pages-overview.md
    creating-pages/building-content-pages.md
+   creating-pages/creating-a-page-template.md
    creating-pages/adding-widgets-to-a-page.md
    creating-pages/managing-web-content-on-content-pages.md
    creating-pages/other-page-types.md

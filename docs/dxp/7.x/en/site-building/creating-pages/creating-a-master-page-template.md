@@ -1,14 +1,14 @@
 # Creating a Master Page Template
 
-```note::
-  Master Page Templates are available since Liferay DXP 7.3.
-```
+> Liferay DXP 7.3+
 
-Custom Master Page Templates provide common elements, such as a Header and Footer Fragment, that were once defined in the Theme. Follow these steps to create a Master Page Template:
+Custom Master Page Templates provide <!-- what does it mean that they "provide" common elements? does everyone know what that means? --> common elements, such as a Header and Footer Fragment.
+
+Follow these steps to create a Master Page Template:
 
 1. Open Product Menu and go to *Site Builder* &rarr; *Page Templates*  under your Site's menu.
 1. Under the *Masters* tab, click the add button to create a new Master Page Template.
-   
+
     ![Create a Master Page Template under the Masters tab.](./creating-a-master-page-template/images/01.png)
 
 1. [Add Page Fragments](adding-page-fragments) for the common elements that you require.

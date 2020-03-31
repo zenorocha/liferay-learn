@@ -18,7 +18,7 @@ Follow these steps to add a page:
        Alternatively, since Liferay DXP 7.3, you can click the page tree icon next to the Site name to open the Page Tree Menu. You can use the Page Tree Menu to quickly find a page by keyword in the search bar, navigate to a page by selecting it, or even add pages through the Actions Menu.
     ```
 
-1. Click the *Blank* [Master Page Template](./master-pages.md) or select a [custom Master Page Template](./creating-a-master-page-template.md) to create a [Content Page](./understanding-pages.md#page-types), or select [another page type](./other-page-types.md) under the *Other* heading or a Page Template listed under the *Global Template* menu. Prior to Liferay DXP 7.3, page types are listed under *Basic Pages*.
+1. Click the *Blank* [Master Page Template](./master-pages.md) to start a content page from scratch, select a [custom Master Page Template](./creating-a-master-page-template.md) to create a [Content Page](./understanding-pages.md#page-types), or select [another page type](./other-page-types.md) under the *Other* heading or a Page Template listed under the *Global Template* menu.
 
     ![You must select a page type when adding pages.](./adding-a-page-to-a-site/images/04.png)
 
