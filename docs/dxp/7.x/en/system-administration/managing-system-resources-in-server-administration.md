@@ -11,7 +11,7 @@ The Server Administration panel's Resources tab contains several functionalities
 | Verification Actions | Verify database accuracy and membership policies | 
 | Cleanup Actions | Reset Docs and Media previews and thumbnails; clean up permissions and orphaned portlet preferences for themes and page revisions | 
 
-![The Resources tab of Server Administration lets you execute several server maintenance tasks.](./managing-resources-in-server-administration/images/01.png)
+![The Resources tab of Server Administration lets you execute several server maintenance tasks.](./managing-system-resources-in-server-administration/images/01.png)
 
 ## Server Administration: Resources Reference
 
