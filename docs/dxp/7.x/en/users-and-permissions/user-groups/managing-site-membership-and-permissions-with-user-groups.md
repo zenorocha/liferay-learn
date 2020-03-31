@@ -41,8 +41,6 @@ To assign an existing Site Role to an existing User Group that's already a membe
 
 1. Click the *Actions* button (![Actions](../../images/icon-actions.png)) for the User Group you want to assign to a Role, and select *Assign Roles*.
 
-<!-- The image below is the same as the 02 image. I think you meant to put a different image here. -->
-
    ![Select Assign Roles for the User Group.](./managing-site-membership-and-permissions-with-user-groups/images/03.png)
 
 1. In the Assign Roles dialog, select the Role from the list and click *Done*. 
