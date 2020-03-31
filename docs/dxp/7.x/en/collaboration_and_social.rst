@@ -16,4 +16,7 @@ Collaboration and Social
 Liferay DXP comes with a wide suite of flexible applications that can be used to build sites and communities that foster collaboration and communication. For an overview of these features, see the `Collaboration and Social Overview <./collaboration-and-social/collaboration-and-social-overview.md>`_.
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: collaboration-and-social/landing.html

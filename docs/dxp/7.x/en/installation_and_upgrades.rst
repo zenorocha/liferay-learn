@@ -12,4 +12,7 @@ Installation and Upgrades
    installation-and-upgrades/reference.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: installation-and-upgrades/landing.html

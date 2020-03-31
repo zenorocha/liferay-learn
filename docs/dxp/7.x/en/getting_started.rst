@@ -11,4 +11,7 @@ Getting Started
    getting-started/changing-your-theme.md
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: getting-started/landing.html

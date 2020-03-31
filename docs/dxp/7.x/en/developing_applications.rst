@@ -13,4 +13,7 @@ Developing Applications
    developing-applications/tooling.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: developing-applications/landing.html

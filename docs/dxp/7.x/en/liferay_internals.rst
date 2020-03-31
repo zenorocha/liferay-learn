@@ -10,4 +10,7 @@ Liferay Internals
    liferay-internals/contributing_to_liferay_development.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: liferay-internals/landing.html

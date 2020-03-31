@@ -11,4 +11,7 @@ Upgrading Liferay DXP
    upgrading-liferay-dxp/reference.rst
 
 .. raw:: html
+   :file: ../../landingpage_template.html
+
+.. raw:: html
    :file: upgrading-liferay-dxp/landing.html

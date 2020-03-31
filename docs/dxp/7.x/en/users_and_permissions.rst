@@ -13,4 +13,7 @@ Users and Permissions
    users-and-permissions/developer_guide.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: users-and-permissions/landing.html

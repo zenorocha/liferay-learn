@@ -12,4 +12,7 @@ System Administration
    system-administration/virtual_instances.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: system-administration/landing.html

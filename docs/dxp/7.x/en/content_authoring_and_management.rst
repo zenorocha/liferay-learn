@@ -12,4 +12,7 @@ Content Authoring and Management
    content-authoring-and-management/recycle_bin.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: content-authoring-and-management/landing.html

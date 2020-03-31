@@ -12,4 +12,7 @@ Documents and Media
    documents-and-media/documents-and-media-ui-reference.md
 
 .. raw:: html
+   :file: ../../landingpage_template.html
+
+.. raw:: html
    :file: documents-and-media/landing.html

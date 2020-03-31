@@ -11,4 +11,7 @@ Building Solutions on DXP
    building-solutions-on-dxp/building_an_integration_platform.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: building-solutions-on-dxp/landing.html

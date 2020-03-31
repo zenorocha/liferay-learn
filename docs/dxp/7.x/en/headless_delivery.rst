@@ -9,4 +9,7 @@ Headless Delivery
    headless-delivery/data_engine_apis.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: headless-delivery/landing.html
