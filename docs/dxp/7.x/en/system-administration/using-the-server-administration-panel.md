@@ -19,15 +19,6 @@ Server Administration's functionality is segmented into tabs:
 | Script             | Write Groovy scripts in a scripting console for executing migration or management code. | [Using the Script Engine](./using-the-script-engine/using-the-script-engine.md) |
 | Shutdown           | Schedule a shutdown (in _x_ minutes from now) that warns logged-in users of the impending shutdown. | [Configuring a Shutdown Event in Server Administration](./configuring-a-shutdown-event-in-server-administration.md) |
 
-<!--
-In addition to a system-defined message, Liferay DXP displays the message you define at the top of users' pages once you save the configuration until the expiration happens. When time expires, all pages display a message saying the portal has been shut down. The server must then be restarted to restore access. 
-
-The Shutdown configuration looks like this:
-![The time until shutdown and the warning message are configurable in the Shutdown tab.](./using-the-server-administration-panel/images/01.png)
-
-Logged in Users see this:
-![The time until shutdown and the warning message are configurable in the Shutdown tab.](./using-the-server-administration-panel/images/03.png)
-
 -->
 <!-- 
 | Log Levels | View and set logging levels. Modify log levels for Liferay DXP classes and packages. Add custom objects. Changes to the log level near the top of the class hierarchy (such as at `com.liferay`) also change log levels for all the classes under that hierarchy.  Modifications unnecessarily high in the hierarchy generate too many messages to be useful. 

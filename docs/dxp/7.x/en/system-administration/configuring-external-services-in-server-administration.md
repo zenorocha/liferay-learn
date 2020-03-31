@@ -2,7 +2,7 @@
 
 <!-- If we moved this to the Documents and Media Section we could just link there -->
 
-Liferay DXP Users can upload and share any type of file via the Documents and Media library, a customizable and permissions-enabled online repository for files (see [Publishing and Sharing](./../content-authoring-and-management/documents-and-media/publishing_and_sharing) for more information).
+Liferay DXP Users can upload and share any type of file via the Documents and Media library, a customizable and permissions-enabled online repository for files (see [Publishing and Sharing](./../content-authoring-and-management/documents-and-media/publishing-and-sharing) for more information).
 
 [PDFBox](https://pdfbox.apache.org/) is included with Liferay DXP for generating automatic previews for certain file types (mostly PDFs). You can install two additional tools to generate previews for other file types: 
 
