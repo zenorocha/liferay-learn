@@ -1,26 +1,3 @@
-<div class="landing-page" id="landingPage">
-	<div class="section-card" v-for="card in cards">
-		<div class="autofit-row autofit-row-center">
-			<div class="autofit-col" v-if="card.icon">
-				<svg class="icon">
-					<use :xlink:href="card.icon"></use>
-				</svg>
-			</div>
-			<div class="autofit-col autofit-col-expand">
-				<a :href="card.sectionURL">
-					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
-					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
-				</a>
-				<ul class="subsection" v-if="card.subsections">
-					<li v-for="subsection in card.subsections">
-						<a :href="subsection.url">{{ subsection.name}}</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
 <script type="module">
 	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 
@@ -86,7 +63,7 @@
 					sectionName: 'Content Sets',
 					sectionURL: 'content-authoring-and-management/content_sets.html',
 					subsections: [
-            {
+						{
 							name: 'Understanding Content Sets (Coming Soon)',
 							url: ''
 						},
@@ -98,13 +75,13 @@
 							name: 'Driving Personalization with Content Sets (Coming Soon)',
 							url: ''
 						},
-          ]
+					]
 				},
 				{
 					sectionName: 'Tags and Categories',
 					sectionURL: 'content-authoring-and-management/tags_and_categories.html',
 					subsections: [
-          {
+						{
 							name: 'Tagging Content (Coming Soon)',
 							url: ''
 						},
@@ -135,7 +112,7 @@
 							url: 'content-authoring-and-management/recycle-bin/user-guide/configuring-the-recycle-bin.html'
 						},
 					]
-        },
+				},
 			]
 		}
 	})

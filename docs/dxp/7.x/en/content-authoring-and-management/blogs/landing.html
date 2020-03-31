@@ -1,26 +1,3 @@
-<div class="landing-page" id="landingPage">
-	<div class="section-card" v-for="card in cards">
-		<div class="autofit-row autofit-row-center">
-			<div class="autofit-col" v-if="card.icon">
-				<svg class="icon">
-					<use :xlink:href="card.icon"></use>
-				</svg>
-			</div>
-			<div class="autofit-col autofit-col-expand">
-				<a :href="card.sectionURL">
-					<h4 class="title" v-if="card.icon">{{ card.sectionName }}</h4>
-					<h4 class="sidebar title" v-else>{{ card.sectionName }}</h4>
-				</a>
-				<ul class="subsection" v-if="card.subsections">
-					<li v-for="subsection in card.subsections">
-						<a :href="subsection.url">{{ subsection.name}}</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
 <script type="module">
 	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
 
@@ -28,39 +5,39 @@
 		el: '#landingPage',
 		data: {
 			cards: [
-        {
+				{
 					sectionName: 'Getting Started with Blogs',
 					sectionURL: 'blogs/getting-started-with-blogs.html',
 				},
-        {
+				{
 					sectionName: 'Adding Blog Entries',
 					sectionURL: 'blogs/adding-blog-entries.html',
 				},
-        {
+				{
 					sectionName: 'Managing Blog Entries',
 					sectionURL: 'blogs/managing-blog-entries.html',
 				},
-        {
+				{
 					sectionName: 'Configuring the Blogs App (Coming Soon)',
 					sectionURL: 'blogs/configuring-the-blogs-app.html',
 				},
-        {
+				{
 					sectionName: 'Displaying Blogs (Coming Soon)',
 					sectionURL: 'blogs/displaying-blogs.html',
 				},
-        {
+				{
 					sectionName: 'Aggregating Blogs (Coming Soon)',
 					sectionURL: 'blogs/aggregating-blogs.html',
 				},
-        {
+				{
 					sectionName: 'Highlighting Recent Bloggers (Coming Soon)',
 					sectionURL: 'blogs/highlighting-recent-bloggers.html',
 				},
-        {
+				{
 					sectionName: 'Blog Entry Editor Reference',
 					sectionURL: 'blogs/blog-entry-editor-reference.html',
 				},
-        {
+				{
 					sectionName: 'Blog Permissions Reference',
 					sectionURL: 'blogs/blog-permissions-reference.html',
 				},
