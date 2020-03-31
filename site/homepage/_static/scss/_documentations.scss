@@ -1,8 +1,12 @@
 .documentations {
 	.article-body {
+		flex: 0 0 58.33333%;
 		margin-bottom: 5rem;
-		padding-bottom: $spacing-default;
-		padding-top: $spacing-default;
+		margin-left: 8.33333%;
+		max-width: 58.33333%;
+		padding: $spacing-default 15px;
+		position: relative;
+		width: 100%;
 	}
 
 	.doc-body,
@@ -92,7 +96,8 @@
 					border-left-color: $brand-primary;
 					color: inherit;
 					font-size: initial;
-					padding: $spacing-xs $spacing-default $spacing-xs $spacing-md;
+					padding: $spacing-xs $spacing-default $spacing-xs
+						$spacing-md;
 				}
 
 				> a {
@@ -163,5 +168,15 @@
 		position: fixed;
 		margin-top: $spacing-default;
 		max-width: 12%;
+	}
+
+	.toc-container {
+		flex: 0 0 16.66667%;
+		margin-left: 8.33333%;
+		max-width: 16.66667%;
+		padding-right: 15px;
+		padding-left: 15px;
+		position: relative;
+		width: 100%;
 	}
 }

@@ -90,14 +90,14 @@
                 </div>
             </div>
 
-            <div class="col-md-12 doc-content row">
-                <div class="col-md-7 article-body offset-md-1">
+            <div class="col-md-12 doc-content row" id="docContent">
+                <div class="article-body">
                     {% block document %}
                     {{ body }}
                     {% endblock %}
                 </div>
 
-                <div class="col-md-2 offset-md-1">
+                <div class="toc-container">
                     <ul class="nav nav-stacked toc" id="articleTOC"></ul>
                 </div>
             </div>

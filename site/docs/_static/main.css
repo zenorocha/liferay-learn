@@ -8199,9 +8199,13 @@ div.admonition {
     box-shadow: 0 0.125rem 0.375rem 0 rgba(2, 19, 51, 0.15); }
 
 .documentations .article-body {
+  flex: 0 0 58.33333%;
   margin-bottom: 5rem;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem; }
+  margin-left: 8.33333%;
+  max-width: 58.33333%;
+  padding: 1.5rem 15px;
+  position: relative;
+  width: 100%; }
 
 .documentations .doc-body,
 .documentations .doc-nav-wrapper {
@@ -8321,6 +8325,15 @@ div.admonition {
   position: fixed;
   margin-top: 1.5rem;
   max-width: 12%; }
+
+.documentations .toc-container {
+  flex: 0 0 16.66667%;
+  margin-left: 8.33333%;
+  max-width: 16.66667%;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  width: 100%; }
 
 h1 {
   font-size: 2rem; }
