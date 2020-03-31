@@ -54,3 +54,14 @@
 		padding-inline-start: 0;
 	}
 }
+
+.landing-page-container {
+	.article-body {
+		flex: initial;
+		max-width: 100%;
+	}
+
+	.toc-container {
+		display: none;
+	}
+}

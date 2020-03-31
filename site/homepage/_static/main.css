@@ -8202,6 +8202,7 @@ div.admonition {
   flex: 0 0 58.33333%;
   margin-bottom: 5rem;
   margin-left: 8.33333%;
+  margin-right: 8.33333%;
   max-width: 58.33333%;
   padding: 1.5rem 15px;
   position: relative;
@@ -8328,7 +8329,6 @@ div.admonition {
 
 .documentations .toc-container {
   flex: 0 0 16.66667%;
-  margin-left: 8.33333%;
   max-width: 16.66667%;
   padding-right: 15px;
   padding-left: 15px;
@@ -8688,6 +8688,13 @@ header {
     font-size: 0.875rem;
     list-style: none;
     padding-inline-start: 0; }
+
+.landing-page-container .article-body {
+  flex: initial;
+  max-width: 100%; }
+
+.landing-page-container .toc-container {
+  display: none; }
 
 .highlight-link {
   display: none; }
