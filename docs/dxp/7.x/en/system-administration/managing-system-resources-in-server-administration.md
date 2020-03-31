@@ -1,70 +1,44 @@
----
-header-id: server-administration-resources
----
+# Managing System Resources in Server Administration
 
-# Server Administration: Resources
+The Server Administration panel's Resources tab contains several functionalities, all related to low-level monitoring and management of the system's resources:
 
-[TOC levels=1-4]
+| Function | Purpose       |
+| --------- | ------------ |
+| System Information | Obtain the Liferay DXP version and uptime data |
+| Memory Monitor | Monitor the Used Memory against the Total Memory and Max Memory |
+| System Actions | Run the garbage collector and generate thread dumps | 
+| Cache Actions | Clear cached content at various levels | 
+| Verification Actions | Verify database accuracy and membership policies | 
+| Cleanup Actions | Reset Docs and Media previews and thumbnails; clean up permissions and orphaned portlet preferences for themes and page revisions | 
 
-The Server Administration app's Resources tab contains several server wide 
-actions that an administrator can execute. These include the following items: 
+![The Resources tab of Server Administration lets you execute several server maintenance tasks.](./managing-resources-in-server-administration/images/01.png)
 
-**Run the garbage collector:** Tells the JVM to free memory by running the 
-garbage collector. 
+## Server Administration: Resources Reference
 
-**Generate a thread dump:** Generates a thread dump for later scrutiny to 
-determine the presence and location of any deadlocks. Useful during 
-performance testing, but you must add a logger category for
-`com.liferay.server.admin.web.internal.portlet.action.EditServerMVCActionCommand`
-and set it to `INFO` before executing.
+**Run the Garbage Collector:** Tell the JVM to free memory by running the garbage collector. 
 
-**Clear content cached by this VM:** Clears content stored in the local 
-cache. Only local JVM scope Ehcache content is cleared, not clustered 
-Ehcache. [1](#one)
+**Generate a Thread Dump:** Generate a thread dump for later scrutiny to determine the presence and location of any deadlocks. This can be useful during performance testing, if you first add a logger category for `com.liferay.server.admin.web.internal.portlet.action.EditServerMVCActionCommand` and set it to `INFO`.
 
-**Clear content cached across the cluster:** Clears the content of the 
-entire clustered Ehcache. [1](#one)
+**Clear Content Cached by This VM:** Clear content stored in the local cache. Only local JVM scope Ehcache content is cleared, not clustered Ehcache. [1](#one)
 
-**Clear the database cache:** Clears the database cache. Does not clear any 
-Ehcache content except database results at the persistence layer. [1](#one)
+**Clear Content Cached Across the Cluster:** Clear the content of the entire clustered Ehcache. [1](#one)
 
-**Clear the direct servlet cache:** Clears the direct servlet cache. In case 
-emergency fixes must be applied, this action allows an administrator to 
-clear out the cache manually to force JSPs to reload.
+**Clear the Database Cache:** Clear the database cache. This doesn't clear any Ehcache content except database results at the persistence layer. [1](#one)
 
-The direct servlet context optimizes JSP serving performance by caching and 
-accessing the generated servlets directly instead of accessing them over the 
-application server's dispatcher chain. This function is only suitable for 
-cases where no filter is required for the JSPs; it should be enabled for 
-production mode to improve performance, but disabled for development mode to 
-allow JSP servlets to be reloaded on the fly. See the Direct Servlet Context 
-section of the `portal.properties` file for details. [1](#one)
+**Clear the Direct Servlet Cache:** Clear the direct servlet cache. If emergency fixes must be applied, this action clears out the cache manually, forcing JSPs to reload.
 
-**Verify database tables of all plugins:** Checks all tables against their 
-indexes for data retrieval accuracy. 
+The direct servlet context optimizes JSP serving performance by caching and accessing the generated servlets directly instead of accessing them over the application server's dispatcher chain. This function is only suitable for cases where no filter is required for the JSPs; it should be enabled for production mode to improve performance, but disabled for development mode to allow JSP servlets to be reloaded on the fly. See the Direct Servlet Context section of the `portal.properties` file for details. [1](#one)
 
-**Verify membership policies:** Checks that existing Site membership 
-policies were correctly applied and automatically makes updates. If the
-@product@ database is changed manually or is hacked---resulting in a user
-assigned to a Site in violation of a site membership policy---this action
-triggers the verification methods of all implemented Site membership policies.
-Changes are automatically made to any memberships in violation. 
+**Verify Database Tables of All Plugins:** Check all tables against their indexes for data retrieval accuracy.
 
-**Reset preview and thumbnail files for Documents and Media:** Regenerates 
-previews of each item in your Documents and Media libraries. 
+**Verify Membership Policies:** Check that existing Site membership policies were correctly applied and automatically apply updates. If the database is changed manually or hacked---resulting in a user assigned to a Site in violation of a site membership policy---this action triggers the verification methods of all implemented Site membership policies. Changes are automatically made to any memberships in violation.
 
-**Clean up permissions:** Removes permissions on the Guest, User, and Power 
-User Roles to simplify the management of User Customizable Pages. The Add To 
-Page permission is removed from the Guest and User Roles for all portlets, 
-and is reduced in scope for Power Users from portal-wide to User Personal 
-Site.
+**Reset Preview and Thumbnail Files for Documents and Media:** Regenerate previews of each item in your Documents and Media libraries.
 
-**Clean up portlet preferences:** This action cleans up database entries if 
-portlet preferences become orphaned in the @product@ database. 
+**Clean Up Permissions:** Remove permissions on the Guest, User, and Power User Roles to simplify the management of User Customizable Pages. The Add To Page permission is removed from the Guest and User Roles for all portlets, and is reduced in scope for Power Users from portal-wide to User Personal Site.
 
-![Figure 1: The Resources tab of Server Administration lets you execute several server maintenance tasks.](../../../../images/server-admin-resources.png)
+**Clean Up Orphaned Page Revision Portlet Preferences:**This process removes all orphaned portlet preferences that belong to page revisions. Portlet preferences that belong to a portlet that does not belong to a page revision will be removed. Portlet preferences that belong to runtime portlets will also be removed.
 
-[<a name="one">1</a>] Caching occurs at multiple levels. Some higher caching 
-layers aren't aware of lower caching layers. Always clear the cache at the
-lowest (most granular) layer possible, even if you've already cleared a higher
-level cache.
+**Clean Up Orphaned Theme Portlet Preferences:** This process removes all orphaned portlet preferences added by themes.Clean up database entries if portlet preferences become orphaned in the database.
+
+[<a name="one">1</a>] Caching occurs at multiple levels. Some higher caching layers aren't aware of lower caching layers. Always clear the cache at the lowest (most granular) layer possible, even if you've already cleared a higher level cache.
