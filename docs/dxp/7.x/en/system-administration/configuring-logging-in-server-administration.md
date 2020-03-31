@@ -14,12 +14,12 @@ To add a category,
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Server Administration, and click the _Log Levels_ tab.
 
-1. Open the Add Category form by clicking the Add button ![Add](../../images-icon-add.png).
+1. Open the Add Category form by clicking the Add button ![Add](./../images-icon-add.png).
 
 1. Fill out the Form:
 
-   *Logger Name*: `my.class.filly.qualified.class.name.MyClass`
-   *Log Level*: Choose the logging level you'd like to see: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+   - *Logger Name*: `my.class.filly.qualified.class.name.MyClass`
+   - *Log Level*: Choose the logging level you'd like to see: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
 
 1. Click _Save_.
 
