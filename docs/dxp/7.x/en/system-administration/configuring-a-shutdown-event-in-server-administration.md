@@ -1,6 +1,8 @@
 # Configuring a Shutdown Event in Server Administration
 
-In addition to a system-defined message, Liferay DXP displays the message you define at the top of users' pages once you save the configuration until the expiration happens. When time expires, all pages display a message saying the portal has been shut down. The server must then be restarted to restore access. 
+Shut Liferay DXP down gracefully, warning Users of the impending shutdown and instructing them to save any work in progress.
+
+When you schedule a shutdown, Liferay DXP displays a system warning message and a message you define at the top of users' pages. When time expires, all pages display your custom message. Once the server is restarted, access is restored.
 
 ## Adding a Shutdown Event
 
@@ -34,7 +36,7 @@ Right away, all logged in Users see the system message and your appended custom 
 
 ![Users are showed a warning about the impending shutdown.](./configuring-a-shutdown-event-in-server-administration/images/03.png)
 
-Once the time has expired, logged in Users trying to navigate to a page in Liferay DXP see this:
+Once the time has expired, logged in Users trying to navigate to a page in Liferay DXP see your custom message, rather than a blank page with no information or invitation to return later.
 
 ![Your custom message is displayed to Users after the shutdown.](./configuring-a-shutdown-event-in-server-administration/images/02.png)
 
