@@ -12,7 +12,7 @@ To add a shutdown event, first enable the Inactive Request Handler configuration
 
 1. Enable _Show Inactive Request Message_ and click _Save_.
 
-This enables display of a message to Users that try to navigate somewhere in Liferay DXP after the shutdown happens. Without, they'll have the unfriendly experience of seeing a totally blank page.
+This enables display of a message to Users that try to navigate somewhere in Liferay DXP after the shutdown happens. Without this they'll have the unfriendly experience of seeing a totally blank page.
 
 Now configure the shutdown itself:
 
