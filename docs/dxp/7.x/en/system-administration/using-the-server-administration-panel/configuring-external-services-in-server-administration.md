@@ -1,8 +1,8 @@
 # Configuring External Services in Server Administration
 
-<!-- If we moved this to the Documents and Media Section we could just link there -->
+<!-- Perhaps better suited for the Documents and Media Section? -->
 
-Liferay DXP Users can upload and share any type of file via the Documents and Media library, a customizable and permissions-enabled online repository for files (see [Publishing and Sharing](./../content-authoring-and-management/documents-and-media/publishing-and-sharing) for more information).
+Liferay DXP Users can upload and share any type of file via the Documents and Media library, a customizable and permissions-enabled online repository for files (see [Publishing and Sharing](./../../content-authoring-and-management/documents-and-media/publishing-and-sharing) for more information).
 
 [PDFBox](https://pdfbox.apache.org/) is included with Liferay DXP for generating automatic previews for certain file types (mostly PDFs). You can install two additional tools to generate previews for other file types: 
 
@@ -35,7 +35,7 @@ Before configuring ImageMagick to generate image and PDF previews, install it an
 
 1. Download and install [Ghostscript](https://www.ghostscript.com/).
 
-Once installed, enable ImageMagick in the Server Administration app's External Services tab, or in a [Portal Properties](./../installation-and-upgrades/reference/portal-properties.md) file. If using `portal-ext.properties`, add the following lines and make sure the search path points to the directories containing the ImageMagick and Ghostscript executables. You may also need to configure the path for fonts used by Ghostscript when in macOS or Unix environments.
+Once installed, enable ImageMagick in the Server Administration app's External Services tab, or in a [Portal Properties](./../../installation-and-upgrades/reference/portal-properties.md) file. If using `portal-ext.properties`, add the following lines and make sure the search path points to the directories containing the ImageMagick and Ghostscript executables. You may also need to configure the path for fonts used by Ghostscript when in macOS or Unix environments.
 
 To enable ImageMagick from the Server Administration app's External Services tab,
 
@@ -49,7 +49,7 @@ To enable ImageMagick from the Server Administration app's External Services tab
 
 ### Configuring ImageMagick in a Portal Properties File
 
-ImageMagick can alternatively be enabled in a [Portal Properties](./../installation-and-upgrades/reference/portal-properties.md) file. If using `portal-ext.properties`, add the following lines and make sure the search path points to the directories containing the ImageMagick and Ghostscript executables. You may also need to configure the path for fonts used by Ghostscript when in macOS or Unix environments. 
+ImageMagick can alternatively be enabled in a [Portal Properties](./../../installation-and-upgrades/reference/portal-properties.md) file. If using `portal-ext.properties`, add the following lines and make sure the search path points to the directories containing the ImageMagick and Ghostscript executables. You may also need to configure the path for fonts used by Ghostscript when in macOS or Unix environments. 
 
 ```properties
 imagemagick.enabled=true
@@ -69,11 +69,13 @@ To install and configure Xuggler,
 
 1. Finish by enabling Xuggler: go back to the External Services tab in Server Administration and select *Enabled*.
 
+   ![Once Xuggler is installed and Liferay DXP is restarted, the Enable check box appears.](./configuring-external-services-in-server-administration/images/02.png)
+
 1. Click *Save*. 
 
 ## Enabling Xuggler with a Portal Properties File
 
-Xuggler can alternatively be enabled with a [Portal Properties](./../installation-and-upgrades/reference/portal-properties.md) file. Add this line to `portal-ext.properties`,
+Xuggler can alternatively be enabled with a [Portal Properties](./../../installation-and-upgrades/reference/portal-properties.md) file. Add this line to `portal-ext.properties`,
 
 ```properties
 xuggler.enabled=true

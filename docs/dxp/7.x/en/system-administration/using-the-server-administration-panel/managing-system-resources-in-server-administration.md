@@ -1,5 +1,7 @@
 # Managing System Resources in Server Administration
 
+<!--Perhaps better suited to the Maintaining Liferay section? -->
+
 The Server Administration panel's Resources tab contains several functionalities, all related to low-level monitoring and management of the system's resources:
 
 | Function | Purpose       |

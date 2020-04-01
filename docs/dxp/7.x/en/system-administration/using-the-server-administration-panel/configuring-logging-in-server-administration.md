@@ -1,5 +1,7 @@
 # Configuring Logging in Server Administration
 
+<!-- Perhaps better suited in the Maintaining Liferay section? -->
+
 In the Server Administration panel's Log Levels tab, you can and set logging levels for classes and packages in Liferay DXP's class hierarchy and add custom objects to be similarly managed using the Server Administration logging UI.re, changes to the log level near the top of the class hierarchy (such as at `com.liferay`) also change log levels for all the classes under that hierarchy. Modifications unnecessarily high in the hierarchy generate too many messages to be useful.
 
 ```tip::
@@ -18,7 +20,7 @@ To add a category,
 
 1. Fill out the Form:
 
-   - *Logger Name*: `my.class.filly.qualified.class.name.MyClass`
+   - *Logger Name*: `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
    - *Log Level*: Choose the logging level you'd like to see: OFF, FATAL, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
 
 1. Click _Save_.

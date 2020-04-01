@@ -1,6 +1,8 @@
 # Configuring a Shutdown Event in Server Administration
 
-Shut Liferay DXP down gracefully, warning Users of the impending shutdown and instructing them to save any work in progress.
+<!-- Perhaps better suited in the Maintaining Liferay section? -->
+
+In the Shutdown tab you can initiate a graceful shutdown event, warning Users of the impending shutdown and instructing them to save any work in progress.
 
 When you schedule a shutdown, Liferay DXP displays a system warning message and a message you define at the top of users' pages. When time expires, all pages display your custom message. Once the server is restarted, access is restored.
 
@@ -26,7 +28,7 @@ Now configure the shutdown itself:
    Maintenance Alert 4:48 PM EST The portal will shutdown for maintenance in 5 minute(s). You will automatically be signed out at that time. Please finish any work in progress. After the maintenance has been completed, you will be able to successfully sign in. [YOUR MESSAGE DISPLAYS HERE]
    ```
 
-   In addition, this message is what Users will see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting)..
+   In addition, this message is what Users will see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting).
 
 1. Click _Save_. The countdown to the shutdown event begins immediately.
 
@@ -36,7 +38,7 @@ Right away, all logged in Users see the system message and your appended custom 
 
 ![Users are showed a warning about the impending shutdown.](./configuring-a-shutdown-event-in-server-administration/images/03.png)
 
-Once the time has expired, logged in Users trying to navigate to a page in Liferay DXP see your custom message, rather than a blank page with no information or invitation to return later.
+Once the time has expired, logged in Users trying to navigate to a page in Liferay DXP see your custom message (perhaps with an invitation to return later), rather than a blank page with no information.
 
 ![Your custom message is displayed to Users after the shutdown.](./configuring-a-shutdown-event-in-server-administration/images/02.png)
 
