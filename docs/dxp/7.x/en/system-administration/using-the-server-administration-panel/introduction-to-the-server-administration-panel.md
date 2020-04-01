@@ -1,10 +1,10 @@
-# Using the Server Administration Panel
+# Introduction to the Server Administration Panel
 
 Server Administration is a system-scoped administration panel holding a variety of low-level Liferay DXP configurations. In Server Administration you can manage and monitor system memory usage, low-level properties, some third-party integrations, document repository migration, logging, scripting, mail server configuration, and portal shutdown.
 
 Access Server Administration by clicking *Control Panel* &rarr; *Configuration* &rarr; *Server Administration*.
 
-![The Resources tab of Server Administration shows a graph of your server's memory usage.](./using-the-server-administration-panel/images/02.png)
+![The Resources tab of Server Administration shows a graph of your server's memory usage.](./introduction-to-the-server-administration-panel/images/02.png)
 
 Server Administration's functionality is segmented into tabs:
 
@@ -16,6 +16,6 @@ Server Administration's functionality is segmented into tabs:
 | Data Migration     | Migrate documents from one repository to another. For example, you can migrate your documents to a new repository on a different disk or in a new format. |  [Document Repository Migration](./document-repository-migration-in-server-administration.md) |
 | Mail               | Instead of a [Portal Properties file](../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/alternative-email-configuration-methods.md#configuring-the-built-in-mail-session-using-portal-properties) configure a mail server from this tab. These settings override any mail server settings in your `portal-ext.properties` file. | [Connecting to a Mail Server](../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) |
 | External Services  | Configure external services for generating file previews for images, audio files, and video files. | [Configuring External Services in Server Administration](./configuring-external-services-in-server-administration.md) |
-| Script             | Write Groovy scripts in a scripting console for executing migration or management code. | [Using the Script Engine](./using-the-script-engine/using-the-script-engine.md) |
+| Script             | Write Groovy scripts in a scripting console for executing migration or management code. | [Using the Script Engine](./../using-the-script-engine/using-the-script-engine.md) |
 | Shutdown           | Schedule a shutdown (in _x_ minutes from now) that warns logged-in users of the impending shutdown. | [Configuring a Shutdown Event in Server Administration](./configuring-a-shutdown-event-in-server-administration.md) |
 
