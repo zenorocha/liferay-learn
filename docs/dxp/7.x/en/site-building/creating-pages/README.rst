@@ -6,6 +6,9 @@ Creating Pages
 -  :doc:`/site-building/creating-pages/content-pages-overview`
 -  :doc:`/site-building/creating-pages/building-content-pages`
 -  :doc:`/site-building/creating-pages/creating-a-page-template`
+-  :doc:`/site-building/creating-pages/master-pages`
+-  :doc:`/site-building/creating-pages/creating-a-master-page-template`
+-  :doc:`/site-building/creating-pages/managing-master-pages`
 -  :doc:`/site-building/creating-pages/adding-widgets-to-a-page`
 -  :doc:`/site-building/creating-pages/managing-web-content-on-content-pages`
 -  :doc:`/site-building/creating-pages/other-page-types`
