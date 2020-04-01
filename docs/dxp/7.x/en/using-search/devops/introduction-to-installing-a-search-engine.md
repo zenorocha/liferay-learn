@@ -1,4 +1,4 @@
-# Installing a Search Engine Overview
+# Introduction to Installing a Search Engine
 
 A search engine is a critical component of your Liferay DXP installation. This overview discusses the fundamentals on how to install a search engine in a **production** environment.
 
