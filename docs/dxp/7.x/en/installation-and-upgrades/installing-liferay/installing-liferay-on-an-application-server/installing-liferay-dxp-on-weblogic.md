@@ -1,16 +1,10 @@
 # Installing Liferay DXP on WebLogic
 
-Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebLogic Server for DXP.
-
-It is **highly recommended** to install DXP to a WebLogic Managed server. Deploying to a Managed Server lets you start or shut down DXP more quickly and facilitates transitioning into a cluster configuration. This article therefore focuses on installing DXP to a Managed Server.
+It is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start or stop DXP quickly and can be converted to a cluster configuration. The instructions below describe installing DXP to a Managed Server.
 
 Before installing DXP, configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html).
 
-Liferay DXP requires a **Java JDK 8 or 11**. See [www.java.com](https://www.java.com/) to install a JDK.
-
-```note::
-   The `Liferay DXP Compatibility Matrix <https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?>`_ specifies supported databases and environments.
-```
+Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) to choose a JDK.
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
@@ -18,20 +12,22 @@ Download these files from the [Help Center](https://customer.liferay.com/downloa
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-Here are the basic steps for installing DXP on WebLogic:
+Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebLogic Server for DXP.
 
-1. [Configuring WebLogic for DXP](#configuring-weblogic)
-1. [Declaring the Liferay Home folder](#declaring-the-liferay-home-folder)
-1. [Installing the dependencies](#installing-dxp-dependencies)
-1. [Database Configuration](#database-configuration)
-1. [Mail Configuration](#mail-configuration)
-1. [Deploying the WAR](#deploying-dxp)
+1. [Configure WebLogic for DXP](#configure-weblogic)
+1. [Declare the Liferay Home folder](#declare-the-liferay-home-folder)
+1. [Install the dependencies](#install-dxp-dependencies)
+1. [Connect to Database](#connect-to-database)
+1. [Connect to Mail Server](#connect-to-mail-server)
+1. [Deploy the WAR](#deploy-dxp)
 
-## Configuring WebLogic
+## Configure WebLogic
 
 ### Configuring WebLogic's Node Manager
 
 WebLogic's Node Manager starts and stops managed servers.
+
+<!-- Can we describe the below "difficulties?" As an admin, I would need justification for disabling encryption. -->
 
 To avoid difficulties running DXP with the encryption requirement enabled in the Node Manager, it's recommended to disable the requirement by setting the following property in the `domains/your_domain_name/nodemanager/nodemanager.properties` file:
 
@@ -66,7 +62,7 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
     ```bash
     export DERBY_FLAG="false"
     export JAVA_OPTIONS="${JAVA_OPTIONS} -Dfile.encoding=UTF-8 -Duser.timezone=GMT -da:org.apache.lucene... -da:org.aspectj..."
-    export MW_HOME="/your/weblogic/directory"
+    export MW_HOME="[/your WebLogic directory]"
     export USER_MEM_ARGS="-Xmx2560m -Xms2560m"
     ```
 
@@ -76,7 +72,7 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
        For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
     ```
 
-    Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example:
+    Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example,
 
     ```bash
     export MW_HOME="/Users/ray/Oracle/wls12210"
@@ -106,13 +102,13 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
 
 1. Click *Save*.
 
-## Declaring the Liferay Home Folder
+## Declare the Liferay Home Folder
 
 Before installing DXP, set your [*Liferay Home*](../../reference/liferay-home.md) folder location.
 
-1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md). (It overrides [portal properties](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html).) 
+1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md). (It overrides [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).) 
 
-1. In the `portal-ext.properties` file, set the `liferay.home` property to your Liferay Home folder path. In WebLogic, the user domain's folder is generally Liferay Home, but any other folder on the machine can be used:
+1. In the `portal-ext.properties` file, set the `liferay.home` property to your Liferay Home folder path. In WebLogic, the domain's folder is generally Liferay Home, but any other folder on the machine can be used:
 
     ```properties
     liferay.home=/full/path/to/your/liferay/home/folder
@@ -126,30 +122,26 @@ Before installing DXP, set your [*Liferay Home*](../../reference/liferay-home.md
    If you need to update `portal-ext.properties` after DXP deploys, it is in the user domain's `autodeploy/ROOT/WEB-INF/classes` folder. Note that the `autodeploy/ROOT` folder contains the DXP deployment.
 ```
 
-## Installing DXP Dependencies
+## Install DXP Dependencies
 
 DXP depends on libraries (Dependencies ZIP) and OSGi modules (OSGi Dependencies ZIP).
 
-1. Unzip the Dependencies ZIP file contents in the WebLogic domain's `lib` folder.
-1. Unzip the OSGi Dependencies ZIP file contents in the `Liferay_Home/osgi` folder (create this folder if it doesn't exist).
+1. Unzip the Dependencies ZIP file into the WebLogic domain's `lib` folder.
+1. Unzip the OSGi Dependencies ZIP file into the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist).
 
-DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. You can download JDBC driver JARs for these databases:
+DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the domain's `lib` folder. 
 
-* [MariaDB](https://downloads.mariadb.org/)
-* [MySQL](http://dev.mysql.com/downloads/connector/j)
-* [PostgreSQL](https://jdbc.postgresql.org/download/postgresql-42.0.0.jar)
+Please see the [compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for a list of supported databases.
 
-Note that although a Hypersonic database is bundled with DXP and is fine for testing purposes, **do not** use it for production DXP instances.
+## Connect to Database
 
-## Database Configuration
+DXP contains a built-in Hypersonic database for demonstration purposes, but _it should not be used in production_. Use a full-featured, supported database. See [Configure a Database](../configuring-a-database.md) to set up your database. 
 
-DXP contains a built-in Hypersonic database which is great for demonstration purposes but _should not be used in production_. Beyond demonstration purposes, we recommend using a full-featured, supported RDBMS. See [Configure a Database](../configuring-a-database.md) to set up your database. 
+Liferay DXP can connect to your database using DXP's built-in data source (recommended) or a JNDI data source on your app server. 
 
-Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server. 
+To configure DXP's built-in data source when you run DXP for the first time, use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Optionally, configure the data source in your `portal-ext.properties` file based on the [Database Template](../../reference/database-templates.md) for your database.
 
-To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on the [Database Template](../../reference/database-templates.md) for your database.
-
-Otherwise, you can configure the data source in WebLogic.
+Otherwise, you can configure the data source in WebLogic:
 
 1. Log in to the AdminServer console.
 1. In the *Domain Structure* tree, find the domain and navigate to *Services* &rarr; *JDBC* &rarr; *Data Sources*.
@@ -161,15 +153,15 @@ Otherwise, you can configure the data source in WebLogic.
 1. Fill in the database information for the MySQL database.
 1. If using MySQL, add the text `?useUnicode=true&characterEncoding=UTF-8&\useFastDateParsing=false` to the URL line and test the connection. If it works, click *Next*.
 1. Select the target for the data source and click *Finish*.
-1. Connect DXP to the JDBC data source: in the `portal-ext.properties` file (see above) in the Liferay Home directory, enter the following line:
+1. Connect DXP to the JDBC data source. In the `portal-ext.properties` file (see above), enter the following line:
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool
     ```
 
-## Mail Configuration
+## Connect to Mail Server
 
-Liferay DXP can be [connected to a mail server](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) of your choice. Another option is WebLogic's mail session:
+You can connect Liferay DXP [to a mail server](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) using its built-in mail session. You can also use WebLogic's mail session:
 
 1. Start WebLogic and log in to the Admin Server's console.
 1. Select *Services* &rarr; *Mail Sessions* from the *Domain Structure* box on the left hand side of the Admin Server's console UI.
@@ -185,24 +177,24 @@ Liferay DXP can be [connected to a mail server](../../setting-up-liferay-dxp/con
     mail.session.jndi.name=mail/MailSession
     ```
 
-DXP references the WebLogic mail session via this property setting. If DXP has already been deployed, the `portal-ext.properties` file can be found in the domain's `autodeploy/ROOT/WEB-INF/classes` folder.
+If DXP has already been deployed, the `portal-ext.properties` file can be found in the domain's `autodeploy/ROOT/WEB-INF/classes` folder.
 
 The changes take effect upon restarting the Managed and Admin servers.
 
-## Deploying DXP on a Managed Server
+## Deploy the WAR
 
 Follow these steps to deploy DXP:
 
-1. Verify that the designated Managed Server where DXP is to be deployed on is shut down.
+1. Verify that the designated Managed Server where you're deploying DXP is shut down.
 1. In the Admin Server's console UI, select *Deployments* from the *Domain Structure* box on the left hand side.
 1. Click *Install* to start a new deployment.
 1. Select the DXP WAR file or its expanded contents on the machine. Alternatively, upload the WAR file by clicking the *Upload your file(s)* link. Click *Next*.
 1. Select *Install this deployment as an application* and click *Next*.
-1. Select the designated Managed Server where DXP is to be deployed and click *Next*.
+1. Select the designated Managed Server where you're deploying DXP and click *Next*.
 1. If the default name is appropriate for the installation, keep it. Otherwise, enter a different name and click *Next*.
 1. Click *Finish*.
 1. After the deployment finishes, click *Save* if the configuration is correct.
-1. Start the Managed Server where DXP is deployed on. DXP precompiles all the JSPs and then launches.
+1. Start the Managed Server where you deployed DXP. DXP precompiles all the JSPs and then launches.
 
 If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md).
 
