@@ -5,7 +5,7 @@ A Simple Product is any physical product for which inventory is tracked. This ar
 ## Create a Simple Product
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click the (+) button then _Simple_.
+1. Click the Add (![Add icon](../../../images/icon-add.png)) button then _Simple_.
 1. Enter the following:
    * **Catalog**: Sahara.com
    * **Name**: Water Bottle
@@ -32,7 +32,20 @@ After the SKUs have been generated, set the base price and quantities in the inv
 
 ![Product SKUs](./creating-a-simple-product/images/02.png)
 
-To set product prices and quantities:
+1. Click the _3-dot_ icon (![Actions icon](../../../images/icon-actions.png)) then _Edit_ next to _6_. (At this point, you can rename the SKU to something more descriptive like _6 Pack_ on the _Details_ menu.)
+1. Enter the following:
+    * **Price**: 19.99
+    * **Promo Price**: 0.00
+    * **Cost**: 0.00
+
+    ![Editing the SKU's price](./creating-a-simple-product/images/03.png)
+
+1. Click _Publish_.
+1. Close the configuration
+
+### Liferay Commerce 2.0 and Below
+
+To set product prices and quantities in previous versions of Liferay Commerce:
 
 1. Click the _3-dot_ icon then _Edit_ next to _6_. (At this point, you can rename the SKU to something more descriptive like _6 Pack_ on the _Details_ menu.)
 1. Click _Pricing_ on the left menu.

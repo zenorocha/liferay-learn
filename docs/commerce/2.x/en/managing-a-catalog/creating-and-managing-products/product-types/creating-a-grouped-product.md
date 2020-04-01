@@ -15,13 +15,13 @@ Before creating a Grouped Product, ensure that the following conditions have bee
 ## Create a Grouped Product
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
-1. Click the (+) button then _Grouped_.
+1. Click the Add (![Add icon](../../../images/icon-add.png)) button then _Grouped_.
 1. Enter the following:
     * **Catalog**: Sahara.com
-    * **Name**: Dog Grooming Kit
-    * **Short Description**: Max's Dog Grooming Kit
+    * **Name**: Brakes Set Combo Kit
+    * **Short Description**: Brakes Set Combo Kit
     * **Friendly URL**: (auto-generated)
-    * **Meta Title**: Dog Grooming Kit
+    * **Meta Title**: Brakes Set Combo Kit
 1. Click _Publish_.
 
 Once the Grouped Product entity has been initially created, store administrators will need to associate the individual products to the grouped product entry.
@@ -30,10 +30,10 @@ Once the Grouped Product entity has been initially created, store administrators
 
 1. Click the _Grouped_ sub-tab.
 
-   ![Details Sub-Tab](./creating-a-grouped-product/images/01.png)
+   ![Grouped Sub-Tab](./creating-a-grouped-product/images/01.png)
 
-1. Click the (+) button to add a Grouped Entry.
-1. Select the following products: _Dog Hair Brush_, _Dog Nail File_, and _Dog Shampoo_.
+1. Click the (![Add icon](../../../images/icon-add.png)) button to add a Grouped Entry.
+1. Select the following products: _Brake Fluid_, _Brake Pads_, and _Brake Rotors_.
 1. Click _Add_.
 
     ![Grouped Sub-Tab](./creating-a-grouped-product/images/02.png)
@@ -58,12 +58,20 @@ Once you have applied product options to the product, SKUs have to be generated.
 
 After the SKUs have been generated, set the base price and quantities in the inventory for each item. Depending on how many SKUs were generated based on the various product options, each SKU can have its own prices. Some products are sold in bulk quantities while others are sold individually.
 
-To set product prices and quantities:
+1. Click the _3-dot_ icon then _Edit_ next to _default_. (At this point, you can rename the SKU to something more descriptive like _Brakes Set Combo Kit_ on the _Details_ menu.)
 
-1. Click the _3-dot_ icon then _Edit_ next to _default_. (At this point, you can rename the SKU to something more descriptive like _Dog Grooming Kit_ on the _Details_ menu.)
+    ![Add the Price](./creating-a-grouped-product/images/07.png)
+
+1. Click _Publish_.
+
+### Liferay Commerce 2.0 and Below
+
+To set product prices and quantities for a Grouped product in previous versions of Liferay Commerce 2.0:
+
+1. Click the _3-dot_ icon then _Edit_ next to _default_. (At this point, you can rename the SKU to something more descriptive like _Brakes Set Combo Kit_ on the _Details_ menu.)
 1. Click _Pricing_ on the left menu.
 1. Enter the following:
-    * **Price**: 21.00
+    * **Price**: 89.99
     * **Promo Price**: 0.00
     * **Cost**: 0.00
 
