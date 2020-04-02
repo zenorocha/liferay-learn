@@ -47,7 +47,7 @@ The Featured Content panel contains complete Fragments (composed of multiple com
    Available in Liferay DXP 7.3+. These Fragments were previously included in the *Sections* panel.
 ```
 
-The *Footers* panel includes Fragments that you can add as the Footer of the page. See [Master Pages](./README.md#creating-pages) for their use in Liferay DXP 7.3.
+The *Footers* panel includes Fragments that you can add as the Footer of the page. See [Master Pages](./master-page-templates/master-page-templates-intro.md) for their use in Liferay DXP 7.3.
 
 ### Navigation Bars
 
@@ -55,7 +55,7 @@ The *Footers* panel includes Fragments that you can add as the Footer of the pag
    Available in Liferay DXP 7.3+. These Fragments were previously included in the *Sections* panel.
 ```
 
-The *Navigation Bars* panel includes Fragments that you can add as the Header of the page. See [Master Pages](./README.md#creating-pages) for their use in Liferay DXP 7.3.
+The *Navigation Bars* panel includes Fragments that you can add as the Header of the page. See [Master Pages](./master-page-templates/master-page-templates-intro.md) for their use in Liferay DXP 7.3.
 
 ### Content Display
 

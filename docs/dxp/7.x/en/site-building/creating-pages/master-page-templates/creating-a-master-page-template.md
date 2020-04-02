@@ -2,11 +2,11 @@
 
 > Liferay DXP 7.3+
 
-Custom Master Page Templates provide <!-- what does it mean that they "provide" common elements? does everyone know what that means? --> common elements, such as a Header and Footer Fragment.
+Although Portal includes default Master Page Templates that you can use to define the look and feel of the Headers and Footers for your site's pages, you may want a more custom solution. You can create custom Master Page Templates for this. 
 
 Follow these steps to create a Master Page Template:
 
-1. Open Product Menu and go to *Site Builder* &rarr; *Page Templates*  under your Site's menu.
+1. Open Product Menu and go to Site &rarr; *Site Builder* &rarr; *Page Templates*.
 1. Under the *Masters* tab, click the add button to create a new Master Page Template.
 
     ![Create a Master Page Template under the Masters tab.](./creating-a-master-page-template/images/01.png)
@@ -15,7 +15,7 @@ Follow these steps to create a Master Page Template:
 
     ![Add the Master Page Template's common elements from the Footers and Navigation Bars sections.](./creating-a-master-page-template/images/02.png)
 
-1. Optionally drag and drop the Drop Zone to a new location in the layout. For example, you can add a row with two columns, move the Drop Zone to one column, so users can only add Page Fragments to that portion of the page.
+1. Optionally drag and drop the Drop Zone to a new location in the layout. For example, you can add a row with two columns and move the Drop Zone to one column, so users can only add Page Fragments to that portion of the page.
 
     ![You can move the Drop Zone to control where users can add Page Fragments.](./creating-a-master-page-template/images/03.png)
 
@@ -26,5 +26,5 @@ Follow these steps to create a Master Page Template:
 1. Click Publish to create the Master Page Template.
 
 ```note::
-  If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See [Changing a Master Page Template's Theme](./managing-master-pages.md#changing-a-master-page-templates-theme) for more information.
+  If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See `Changing a Master Page Template's Theme <./managing-master-pages.md#changing-a-master-page-templates-theme>`_ for more information.
 ```
