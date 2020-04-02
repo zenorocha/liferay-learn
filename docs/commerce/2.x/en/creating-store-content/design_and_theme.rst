@@ -9,7 +9,7 @@ Design and Theme
    Theme Reference Guide<https://help.liferay.com/hc/en-us/articles/360017901512-Theme-Reference-Guide>
 
 .. raw:: html
-   :file: landingpage_template.html
+   :file: ../landingpage_template.html
 
 .. raw:: html
    :file: design-and-theme/landing.html

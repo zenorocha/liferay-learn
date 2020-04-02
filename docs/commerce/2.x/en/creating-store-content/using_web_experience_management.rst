@@ -10,7 +10,7 @@ Using Web Experience Management
    Using Application Display Templates<https://help.liferay.com/hc/en-us/articles/360017892632-Styling-Widgets-with-Application-Display-Templates>
 
 .. raw:: html
-   :file: landingpage_template.html
+   :file: ../landingpage_template.html
 
 .. raw:: html
    :file: using-web-experience-management/landing.html
