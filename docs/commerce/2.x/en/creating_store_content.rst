@@ -13,4 +13,7 @@ Creating Store Content
    creating-store-content/design_and_theme.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: creating-store-content/landing.html

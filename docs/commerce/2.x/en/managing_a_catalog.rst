@@ -11,4 +11,7 @@ Managing a Catalog
    managing-a-catalog/managing_price.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: managing-a-catalog/landing.html

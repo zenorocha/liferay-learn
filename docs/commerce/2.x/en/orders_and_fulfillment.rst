@@ -13,4 +13,7 @@ Orders and Fulfillment
    orders-and-fulfillment/managing_shipments.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: orders-and-fulfillment/landing.html

@@ -16,4 +16,7 @@ Commerce Storefront Pages
    commerce-storefront-pages/search.md
 
 .. raw:: html
+   :file: ../landingpage_template.html
+
+.. raw:: html
    :file: commerce-storefront-pages/landing.html

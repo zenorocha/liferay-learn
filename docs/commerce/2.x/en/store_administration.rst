@@ -15,4 +15,7 @@ Store Administration
    store-administration/configuring_shipping_methods.rst
 
 .. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
    :file: store-administration/landing.html
