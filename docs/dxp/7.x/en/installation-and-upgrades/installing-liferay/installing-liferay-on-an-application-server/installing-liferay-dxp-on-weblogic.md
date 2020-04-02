@@ -27,28 +27,16 @@ Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deployin
 
 WebLogic's Node Manager starts and stops managed servers.
 
-<!-- Can we describe the below "difficulties?" As an admin, I would need justification for disabling encryption. -->
-
-To avoid difficulties running DXP with the encryption requirement enabled in the Node Manager, it's recommended to disable the requirement by setting the following property in the `domains/your_domain_name/nodemanager/nodemanager.properties` file:
-
-```properties
-SecureListener=false
-```
-
-This disables the encryption (SSL) requirement for the Node Manager, allowing it to accept unencrypted connections. With the encryption requirement disabled, configure the machine in the Admin Server's console to accept unencrypted connections from the Node Manager:
-
-1. Log in to the Admin Server and select *Environment* &rarr; *Machines* from the *Domain Structure* box on the left.
-1. Click the corresponding machine in the table and then select the *Configuration* &rarr; *Node Manager* tab.
-1. Select *Plain* from the selector menu in the *Type* field.
-1. Click *Save*.
-1. Restart the Admin Server for this change to take effect.
-
 If you're running WebLogic on a UNIX system other than Solaris or Linux, use the Java Node Manager, instead of the native version of the Node Manager, by configuring these Node Manager properties in the `domains/your_domain_name/nodemanager/nodemanager.properties` file:
 
 ```properties
 NativeVersionEnabled=false
 
 StartScriptEnabled=true
+```
+
+```note::
+   By default, SSL is used with Node Manager. If you want to disable SSL during development, for example, set `SecureListener=false` in your `nodemanager.properties` file.
 ```
 
 See Oracle's [Configuring Java Node Manager](https://docs.oracle.com/middleware/1212/wls/NODEM/java_nodemgr.htm#NODEM173) documentation for details.
