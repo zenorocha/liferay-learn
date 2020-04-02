@@ -1,8 +1,10 @@
 # Creating a Shipment
 
-Beginning in Liferay Commerce 2.1, creating a shipment is now integrated with the _Orders_ menu. You do not have to navigate to the _Shipments_ menu just to create a shipment. (However, you can still manage all shipments in the _Shipments_ menu once an order is in the _Processing_ phase.)
+Creating a shipment is integrated with the _Orders_ menu. You can also manage all shipments in the _Shipments_ menu once an order is in the _Processing_ phase.
 
-To create a shipment:
+## Creating a New Shipment
+
+To create a new shipment:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
 1. Click on the _Pending_ tab and select an order.
@@ -19,7 +21,7 @@ To create a shipment:
 
 1. This redirects to the Shipments menu.
 
-1. Click the Add (![Add Icon](../../images/icon-add.png)).
+1. Click Add (![Add Icon](../../images/icon-add.png)).
 1. Select all the items associated with this order.
 
     ![Orders menu](./creating-a-shipment/images/07.png)
@@ -41,13 +43,9 @@ When the order is ready to be shipped:
 
 1. Click _Ship_ when ready.
 
-## Liferay Commerce 2.0 and Below
+## Creating a New Shipment on Liferay Commerce 2.0 and Below
 
 To create a shipment in previous versions of Liferay Commerce:
-
-![Shipments](./creating-a-shipment/images/01.png)
-
-## Creating a New Shipment
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 1. Click the (+) button to add a new shipment.

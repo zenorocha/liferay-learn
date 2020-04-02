@@ -1,6 +1,6 @@
 # Introduction to Shipments
 
-Beginning with Liferay Commerce 2.1, managers create shipments first in the _Orders_ menu as they process an order and then the _Shipments_ menu to finishing processing the order.
+Create shipments first in the _Orders_ menu as part of processing an order. Once an order is processed you are redirected to the _Shipments_ menu to complete order processing.
 
 Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the _Create Shipment_ button.
 
