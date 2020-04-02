@@ -1,5 +1,5 @@
 # Order Management Statuses
-<!-- Confirming: This entire article is only applicable to Liferay Commerce 2.0 and below? -->
+
 > Liferay Commerce 2.0
 
 Every order in Liferay Commerce has [order information](./order-information.md) and order management statuses associated with it.

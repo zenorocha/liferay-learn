@@ -1,6 +1,6 @@
 # Introduction to Shipments
 
-Create shipments first in the _Orders_ menu as part of processing an order. Once an order is processed you are redirected to the _Shipments_ menu to complete order processing.
+Create shipments first in the _Orders_ menu as part of processing an order. Once an order is processed, you are redirected to the _Shipments_ menu to complete oder processing.
 
 Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the _Create Shipment_ button.
 
@@ -10,7 +10,7 @@ This takes the user automatically to the Shipments menu to finish processing the
 
 ![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
 
-Once all the items and the sourcing warehouse chosen, the order is ready to ship. Here, users can add additional details such as the carrier, tracking number, and estimated delivery date. Click _Ship_ to advance.
+Once all the items and the sourcing warehouse chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date. Clicking the _Ship_ button advances the order's process.
 
 ![Shipments Menu - Ready to Ship](./introduction-to-shipments/images/06.png)
 
@@ -30,7 +30,7 @@ The _Shipments_ menu displays all created shipments in all statuses. Click the A
 
 Clicking on a particular shipment number (for example, _41250_) displays the Shipment's _Details_ tab and the _Items_ tab. (Note that clicking the _Order Number_ (_41241_) redirects to the _Orders_ menu.)
 
-## Shipment Details Tab
+### Shipment Details Tab
 
 The _Shipment Details_ tab contains the following information:
 
@@ -53,7 +53,7 @@ The _Shipment Details_ tab contains the following information:
 | Shipping Date | Date the shipment was delivered to the carrier  |
 | Expected Delivery Date | Date the shipment is expected to arrive  |
 
-## Shipment Items Tab
+### Shipment Items Tab
 
 The _Shipment Items_ Tab contains the following information:
 

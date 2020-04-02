@@ -2,16 +2,13 @@
 
 All orders in Liferay Commerce can be viewed and managed by an administrator in the _Orders_ menu. To access the _Orders_ menu, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
 
-<!-- please update this image so that it includes the side control panel menu open so that someone can see where in the control panel the Orders menu option is - as well as the orders themselves. -->
-![Orders menu](./orders-menu/images/05.png)
+There are five tabs at the top: _All_, _Open_, _Pending_, Processing_, and _Completed_.
 
-There are five tabs at the top: _All_, _Open_, _Pending_, _Processing_, and _Completed_.
+![Orders menu](./orders-menu/images/05.png)
 
 ## All
 
 The _All_ tab displays all orders regardless of their order status.
-
-![Orders menu](./orders-menu/images/05.png)
 
 ## Open
 
@@ -45,7 +42,11 @@ There are three particular fields to note:
 
 ## Processing
 
-An order's status is advanced from Pending to Processing once an order has been accepted. <!-- Where is the Accept Order button? the _Accept Order_ button is clicked. -->
+To advance an order from Pending to Processing, click the _Accept Order_ button.
+
+![Orders menu - Pending tab](./orders-menu/images/10.png)
+
+As the store begins to processing the order, the order is now in the _Processing_ tab.
 
 ![Orders menu - Pending tab](./orders-menu/images/09.png)
 
@@ -59,7 +60,7 @@ When delivery has been confirmed, the order is moved to the Completed tab.
 
 Orders are managed on the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](./order-life-cycle.md).
 
-![Orders Menu Overview](./orders-menu/images/01.png "Orders Menu Overview")
+   ![Orders Menu Overview](./orders-menu/images/01.png "Orders Menu Overview")
 
 This article gives an overview of the _Open_, _Pending_, and _Transmitted_ tabs.
 
@@ -68,29 +69,29 @@ This article gives an overview of the _Open_, _Pending_, and _Transmitted_ tabs.
 In this tab, the order activity is exclusively on the buyer's side. A new order is created in the _Open_ tab when a buyer adds products to their cart. The order remains in this tab until the buyer places the order.
 
 ```note::
-   If *Approval Workflow* is enabled, orders remain in the *Open* tab until the workflow process has completed and the order is placed.
+   If _Approval Workflow_ is enabled, orders remain in the _Open_ tab until the workflow process has completed and the order is placed.
 ```
 
-![Open Tab](./orders-menu/images/02.png "Open Tab")
+   ![Open Tab](./orders-menu/images/02.png "Open Tab")
 
 ### Pending
 
 The _Pending_ tab serves as a holding place for orders – this is helpful for business contexts where not all placed orders are immediately transmitted. When a buyer places an order, the order moves to the _Pending_ tab. Here, the seller can modify, cancel or transmit the order.
 
 ```note::
-   If *Transmission Workflow* is enabled, orders remain in the *Pending* tab throughout the workflow process, even if the seller rejects an order, sending it back to the buyer.
+   If _Transmission Workflow_ is enabled, orders remain in the _Pending_ tab throughout the workflow process, even if the seller rejects an order, sending it back to the buyer.
 ```
 
-![Pending Tab](./orders-menu/images/03.png "Pending Tab")
+   ![Pending Tab](./orders-menu/images/03.png "Pending Tab")
 
 ### Transmitted
 
 In this tab, the order activity is exclusively on the seller's side. The seller transmits a _Pending_ order by changing the order status (manually or via automation) from the “_To Transmit_” status to any other order status. At this point, the order moves to the _Transmitted_ tab and, if configured,  is sent to an external system, such as Microsoft’s Dynamics GP, Oracle’s NetSuite, or SAP. The seller may then proceed with delivery of the ordered products to the buyer. Additional information may also be added to the order, such as an updated order status, shipping information and estimated arrival time.
 
-![Transmitted Tab](./orders-menu/images/04.png "Transmitted Tab")
+   ![Transmitted Tab](./orders-menu/images/04.png "Transmitted Tab")
 
 ## Additional Information
-<!-- Is this "Additional Information" supposed to be for 2.1+ or for 2.0 and below? Restructure this accordingly. -->
+
 Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../../creating-store-content/commerce-storefront-pages/pending-orders.md) and [Placed Orders](../../creating-store-content/commerce-storefront-pages/placed-orders.md) for details.
 
 * [Order Life Cycle](./order-life-cycle.md)
