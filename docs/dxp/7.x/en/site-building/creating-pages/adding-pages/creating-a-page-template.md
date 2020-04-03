@@ -21,7 +21,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
     ![Creating a new Page Template Collection.](./creating-a-page-template/images/02.png)
 
-1. Click the *Add* icon (![Add Page Template](../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can return to the Page Template's configuration at any time by clicking the *Actions* icon (![Actions](../../images/icon-actions.png)) next to the Page Template in the Collection and selecting *Configure*.
+1. Click the *Add* icon (![Add Page Template](../../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can return to the Page Template's configuration at any time by clicking the *Actions* icon (![Actions](../../../images/icon-actions.png)) next to the Page Template in the Collection and selecting *Configure*.
 
 1. Enter a Name.
 

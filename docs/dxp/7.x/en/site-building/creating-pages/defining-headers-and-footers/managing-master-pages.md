@@ -31,7 +31,7 @@ To manage a Master Page Template, follow these steps:
 You can change the Master Page Template of a page through the page's [*Look and Feel* Menu](../building-and-managing-content-pages/content-pages-overview.md#look-and-feel). Follow these steps:
 
 1. Navigate to the page that you want to change the Master Page Template for.
-1. Click the *Look and Feel* icon (![Look and Feel](../../images/icon-look-and-feel.png)).
+1. Click the *Look and Feel* icon (![Look and Feel](../../../images/icon-look-and-feel.png)).
 1. Click the *Change Master* button under the *Look and Feel* tab.
 
     ![Click the Change Master button to choose a different Master Page Template.](./managing-master-pages/images/03.png)
@@ -45,7 +45,7 @@ You can change the Master Page Template of a page through the page's [*Look and 
 When a custom Master Page Template is applied to a page, the Theme is no longer defined through the page. It is defined through the Master Page Template. Follow these steps to update the Theme for the Master Page Template:
 
 1. Edit the Master Page Template through the Actions Menu as described above.
-1. Open the page's *Look and Feel* Menu (![Look and Feel](../../images/icon-look-and-feel.png)).
+1. Open the page's *Look and Feel* Menu (![Look and Feel](../../../images/icon-look-and-feel.png)).
 1. Select the *Define a specific look and feel for this page* button.
 
     ![Select a new Master Page Template from the available options.](./managing-master-pages/images/05.png)

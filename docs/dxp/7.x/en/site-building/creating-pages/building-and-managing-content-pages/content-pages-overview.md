@@ -85,7 +85,7 @@ The Widgets section functions just like the *Add* menu on a Widget Page. The ful
    Available in Liferay DXP 7.3+
 ```
 
-The Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform a variety of actions to edit and manage web content. See [Managing Web Content on Content Pages](./managing-web-content-on-content-pages.md) for more information.
+The Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform a variety of actions to edit and manage web content. See [Managing Web Content on Content Pages](./managing-web-content-on-content-pages.md) for more information.
 
 ## Page Structure
 
@@ -95,7 +95,7 @@ Page Structure provides a hierarchical view of every Fragment and field within e
 
 ## Look and Feel
 
-Click the *Look and Feel* icon (![Look and Feel](../../images/icon-look-and-feel.png)) to change the Theme or manage other options for the page. These options are further explored in [Configuring Individual Pages](../page-settings/configuring-individual-pages.md#look-and-feel).
+Click the *Look and Feel* icon (![Look and Feel](../../../images/icon-look-and-feel.png)) to change the Theme or manage other options for the page. These options are further explored in [Configuring Individual Pages](../page-settings/configuring-individual-pages.md#look-and-feel).
 
 ## Comments
 

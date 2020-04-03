@@ -48,7 +48,7 @@ Many elements that can be added to a content page can be configured and customiz
 You can set the background color of a Layout. Follow these steps:
 
 1. Click the Layout to select it.
-1. Click the (![Background Color](../../images/icon-color.png)) icon to select a color.
+1. Click the (![Background Color](../../../images/icon-color.png)) icon to select a color.
 
 ![You can set the background color of a Layout.](./building-content-pages/images/05.png)
 
@@ -79,7 +79,7 @@ You can configure a background image for a Layout. Follow these steps:
 ### Editing a Hyperlink
 
 1. Click on the link or button that you want to edit.
-1. Click on (![Edit](../../images/icon-edit.png)) to edit the link text, (![Link](../../images/icon-link.png)) to edit the link properties, or (![Map](../../images/icon-map.png)) to edit the link mapping (described earlier).
+1. Click on (![Edit](../../../images/icon-edit.png)) to edit the link text, (![Link](../../../images/icon-link.png)) to edit the link properties, or (![Map](../../../images/icon-map.png)) to edit the link mapping (described earlier).
 
     From the Link Properties popup, you can define these link options:
 
@@ -137,7 +137,7 @@ Available for some out-of-the-box fragments. This menu option presents context s
 
 ### Mapping Content
 
-You can also map these elements to content. You can set the *Content* for the element (web content article, document, or blog) and choose its applicable *Field* to display (e.g., title, author name, tags, etc.). You can configure this by selecting the element's *Map* button (![Map](../../images/icon-map.png)).
+You can also map these elements to content. You can set the *Content* for the element (web content article, document, or blog) and choose its applicable *Field* to display (e.g., title, author name, tags, etc.). You can configure this by selecting the element's *Map* button (![Map](../../../images/icon-map.png)).
 
 ```note::
    Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map custom fields.
