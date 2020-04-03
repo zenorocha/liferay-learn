@@ -61,7 +61,7 @@ You can share your Page Templates with other sites using the same process as you
 ### Staging and Page Templates
 
 ```important::
-   Staging functionality has been deprecated as of 7.3+.
+   Staging functionality is in `*maintenance mode* <../../installation-and-upgrades/upgrading-liferay-dxp/reference/features-in-maintenance-mode.md>`_ as of 7.3 GA1+.
 ```
 
 If staging has been enabled, changes to the Widget Page Template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of Widget Page Template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.

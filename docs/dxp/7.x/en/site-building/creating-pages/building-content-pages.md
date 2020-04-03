@@ -66,7 +66,7 @@ You can configure a background image for a Layout. Follow these steps:
     ![Layouts have options for background color, background image, and spacing.](./building-content-pages/images/06.png)
 
     ```note::
-      Mapping a Layout background image is available in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+.
+       Mapping a Layout background image is available in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+.
     ```
 
 ### Editing Text
@@ -128,7 +128,7 @@ If a [Layout](./content-pages-overview.md#layouts) has multiple columns, you can
 ![You can adjust the spacing of columns in a Layout to create a custom Layout.](./building-content-pages/images/10.png)
 
 ```note::
-  Layouts must contain the same number of columns. You can't remove a column by dragging it. Choose a Layout that has the number of columns you want, then readjust the sizing if you need to.
+   Layouts must contain the same number of columns. You can't remove a column by dragging it. Choose a Layout that has the number of columns you want, then readjust the sizing if you need to.
 ```
 
 ### General Configuration
@@ -140,7 +140,7 @@ Available for some out-of-the-box fragments. This menu option presents context s
 You can also map these elements to content. You can set the *Content* for the element (web content article, document, or blog) and choose its applicable *Field* to display (e.g., title, author name, tags, etc.). You can configure this by selecting the element's *Map* button (![Map](../../images/icon-map.png)).
 
 ```note::
-  Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map custom fields.
+   Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map custom fields.
 ```
 
 When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../personalizing-site-experience/experience-personalization/content-page-personalization.md).
