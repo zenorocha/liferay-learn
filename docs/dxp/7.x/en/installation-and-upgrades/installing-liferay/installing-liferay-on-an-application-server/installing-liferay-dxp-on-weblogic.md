@@ -1,6 +1,6 @@
 # Installing Liferay DXP on WebLogic
 
-It is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start or stop DXP quickly and can be converted to a cluster configuration. The instructions below describe installing DXP to a Managed Server.
+If you are choosing to use Weblogic as your application server, it is *highly recommended* to install DXP to a WebLogic Managed server. A managed server can start or stop DXP quickly and can be converted to a cluster configuration. The instructions below describe installing DXP to a Managed Server.
 
 Before installing DXP, configure an Admin Server and a Managed Server following [WebLogic's documentation](http://www.oracle.com/technetwork/middleware/weblogic/documentation/index.html).
 
@@ -12,14 +12,14 @@ Download these files from the [Help Center](https://customer.liferay.com/downloa
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-Installing Liferay DXP on WebLogic requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring WebLogic Server for DXP.
+Installing Liferay DXP on WebLogic requires the following steps:
 
 1. [Configure WebLogic for DXP](#configure-weblogic)
 1. [Declare the Liferay Home folder](#declare-the-liferay-home-folder)
 1. [Install the dependencies](#install-dxp-dependencies)
 1. [Connect to Database](#connect-to-database)
 1. [Connect to Mail Server](#connect-to-mail-server)
-1. [Deploy the WAR](#deploy-dxp)
+1. [Deploy the WAR](#deploy-the-war)
 
 ## Configure WebLogic
 
@@ -36,7 +36,7 @@ StartScriptEnabled=true
 ```
 
 ```note::
-   By default, SSL is used with Node Manager. If you want to disable SSL during development, for example, set `SecureListener=false` in your `nodemanager.properties` file.
+   By default, SSL is used with Node Manager. If you want to disable SSL during development, for example, set ``SecureListener=false`` in your ``nodemanager.properties`` file.
 ```
 
 See Oracle's [Configuring Java Node Manager](https://docs.oracle.com/middleware/1212/wls/NODEM/java_nodemgr.htm#NODEM173) documentation for details.
@@ -57,7 +57,7 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
     The `DERBY_FLAG` setting disables the Derby server built in to WebLogic, as DXP does not require this server. The remaining settings support DXP's memory requirements, UTF-8 requirement, Lucene usage, and Aspect Oriented Programming via AspectJ.
 
     ```important::
-       For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+       For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
     ```
 
     Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example,
@@ -94,7 +94,7 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
 
 Before installing DXP, set your [*Liferay Home*](../../reference/liferay-home.md) folder location.
 
-1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md). (It overrides [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).) 
+1. Create a file called [`portal-ext.properties`](../../reference/portal-properties.md). (It overrides [portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html).)
 
 1. In the `portal-ext.properties` file, set the `liferay.home` property to your Liferay Home folder path. In WebLogic, the domain's folder is generally Liferay Home, but any other folder on the machine can be used:
 
@@ -102,12 +102,12 @@ Before installing DXP, set your [*Liferay Home*](../../reference/liferay-home.md
     liferay.home=/full/path/to/your/liferay/home/folder
     ```
 
-1. Package the `portal-ext.properties` in your DXP WAR file by expanding the DXP WAR file and copying the `portal-ext.properties` file into the `WEB-INF/classes` folder. 
+1. Package the `portal-ext.properties` in your DXP WAR file by expanding the DXP WAR file and copying the `portal-ext.properties` file into the `WEB-INF/classes` folder.
 
 1. Optionally, you can re-WAR the expanded DXP WAR. When you're ready to deploy DXP, you can deploy it as an expanded archive or WAR file. In both cases, DXP reads the property settings once it starts up.
 
 ```note::
-   If you need to update `portal-ext.properties` after DXP deploys, it is in the user domain's `autodeploy/ROOT/WEB-INF/classes` folder. Note that the `autodeploy/ROOT` folder contains the DXP deployment.
+   If you need to update ``portal-ext.properties`` after DXP deploys, it is in the user domain's ``autodeploy/ROOT/WEB-INF/classes`` folder. Note that the ``autodeploy/ROOT`` folder contains the DXP deployment.
 ```
 
 ## Install DXP Dependencies
@@ -117,15 +117,15 @@ DXP depends on libraries (Dependencies ZIP) and OSGi modules (OSGi Dependencies 
 1. Unzip the Dependencies ZIP file into the WebLogic domain's `lib` folder.
 1. Unzip the OSGi Dependencies ZIP file into the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist).
 
-DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the domain's `lib` folder. 
+DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the domain's `lib` folder.
 
 Please see the [compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for a list of supported databases.
 
 ## Connect to Database
 
-DXP contains a built-in Hypersonic database for demonstration purposes, but _it should not be used in production_. Use a full-featured, supported database. See [Configure a Database](../configuring-a-database.md) to set up your database. 
+DXP contains a built-in Hypersonic database for demonstration purposes, but _it should not be used in production_. Use a full-featured, supported database. See [Configure a Database](../configuring-a-database.md) to set up your database.
 
-Liferay DXP can connect to your database using DXP's built-in data source (recommended) or a JNDI data source on your app server. 
+Liferay DXP can connect to your database using DXP's built-in data source (recommended) or a JNDI data source on your app server.
 
 To configure DXP's built-in data source when you run DXP for the first time, use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Optionally, configure the data source in your `portal-ext.properties` file based on the [Database Template](../../reference/database-templates.md) for your database.
 
@@ -171,7 +171,7 @@ The changes take effect upon restarting the Managed and Admin servers.
 
 ## Deploy the WAR
 
-Follow these steps to deploy DXP:
+Follow these steps to deploy the DXP WAR file:
 
 1. Verify that the designated Managed Server where you're deploying DXP is shut down.
 1. In the Admin Server's console UI, select *Deployments* from the *Domain Structure* box on the left hand side.
@@ -189,7 +189,7 @@ If you have a Liferay DXP Enterprise subscription, DXP requests your activation 
 Congratulations! You're running DXP on WebLogic.
 
 ```note::
-   Adjust the application server's logging level or log filters to avoid excessive benign log messages such as the ones below involving `PhaseOptimizer`.
+   Adjust the application server's logging level or log filters to avoid excessive benign log messages such as the ones below involving ``PhaseOptimizer``.
 ```
 
 ```
@@ -207,7 +207,7 @@ May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass pr
 You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
 * [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/installing-the-marketplace-plugin.md)
-* [Trial Plugin Installation](../../setting-up-liferay-dxp/trial-plugin-installation.md)
+* [Accessing EE Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * Installing and Configuring a Search Engine
-* [Securing Liferay DXP](../../securing-liferay/securing-liferay.md)
+* [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
 * [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
