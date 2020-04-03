@@ -45,7 +45,7 @@ After the SKUs have been generated, set the base price and quantities in the inv
 
 ### Liferay Commerce 2.0 and Below
 
-To set product prices and quantities in previous versions of Liferay Commerce:
+To set product prices and quantities:
 
 1. Click the _3-dot_ icon then _Edit_ next to _6_. (At this point, you can rename the SKU to something more descriptive like _6 Pack_ on the _Details_ menu.)
 1. Click _Pricing_ on the left menu.

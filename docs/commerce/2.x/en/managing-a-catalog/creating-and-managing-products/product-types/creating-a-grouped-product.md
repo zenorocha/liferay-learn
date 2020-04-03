@@ -66,7 +66,7 @@ After the SKUs have been generated, set the base price and quantities in the inv
 
 ### Liferay Commerce 2.0 and Below
 
-To set product prices and quantities for a Grouped product in previous versions of Liferay Commerce 2.0:
+To set product prices and quantities for a Grouped product:
 
 1. Click the _3-dot_ icon then _Edit_ next to _default_. (At this point, you can rename the SKU to something more descriptive like _Brakes Set Combo Kit_ on the _Details_ menu.)
 1. Click _Pricing_ on the left menu.
