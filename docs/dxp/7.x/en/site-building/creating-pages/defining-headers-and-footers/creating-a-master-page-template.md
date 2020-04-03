@@ -2,7 +2,7 @@
 
 > Liferay DXP 7.3+
 
-Although Portal includes default Master Page Templates that you can use to define the look and feel of the Headers and Footers for your site's pages, you may want a more custom solution. You can create custom Master Page Templates for this. 
+Although Portal includes default Master Page Templates that you can use to define the look and feel of the Headers and Footers for your site's pages, you may want a more custom solution. You can create custom Master Page Templates for this.
 
 Follow these steps to create a Master Page Template:
 

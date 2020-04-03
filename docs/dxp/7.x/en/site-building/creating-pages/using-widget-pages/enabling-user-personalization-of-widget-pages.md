@@ -1,8 +1,6 @@
-# Personalizing Sections of Widget Pages
+# Enabling User Personalization of Widget Pages
 
-Coming soon!
-
-<!-- Administrators can designate some or all of the sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations are only visible to the user who made the customizations. The steps below cover these topics:
+Administrators can designate some or all of the sections (rows and columns of the page layout) of a Widget Page as customizable for site members. Page customizations are only visible to the user who made the customizations. The steps below cover these topics:
 
 * [Making page sections customizable](#enabling-page-customizations)
 * [Modifying customizable page sections](#customizing-pages)
@@ -20,7 +18,7 @@ To enable page customizations, follow these steps:
 
 1. Toggle the *Customizable* option to Yes.
 
-  ![To enable page customizations, click on the Configure Page button next to the page, expand the Customization Settings area, and click on the Customizable button.](./personalizing-pages/images/01.png)
+    ![To enable page customizations, click on the Configure Page button next to the page, expand the Customization Settings area, and click on the Customizable button.](./personalizing-pages/images/01.png)
 
 1. Toggle the *Not Customizable* option to *Customizable* for each section you want to make customizable.
 
@@ -35,7 +33,7 @@ With customization activated for a page, site members can add apps to the custom
   Site members can't change a non-instanceable app's configuration inside a customizable region since those apps are tied to the site they've been added to.
 ```
 
-Site members have access to these contextual options from the page's *Options* menu (![Options](../../../../images/icon-options.png)) in the Control Menu:
+Site members have access to these contextual options from the page's *Options* menu (![Options](../../../images/icon-options.png)) in the Control Menu:
 
 * *View Page without my customizations*: Displays the default page and hides the Add menu.
 
@@ -63,4 +61,4 @@ By default, site members can make page customizations but non-site members and g
 
 ```note::
   The *Customize* permission also lets users customize the look and feel of apps and import or export app settings.
-``` -->
+```

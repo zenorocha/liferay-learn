@@ -1,4 +1,4 @@
-# Master Page Templates Intro
+# Master Page Templates
 
 Master Page Templates provide a way to define elements common to every page (e.g. Headers and Footers previously provided by Themes) using Fragments, so you can easily maintain and manage them in Portal without having to deploy a plugin. You can use the same Master Page Template across an entire Site or have a unique one for each page. Each Page and Page Template must have an associated Master Page Template. By default, this is the "Blank" Master, which doesn't provide any common elements.
 
