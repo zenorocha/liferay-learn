@@ -9,5 +9,5 @@ Building and Managing Content Pages
    building-and-managing-content-pages/managing-web-content-on-content-pages.md
    building-and-managing-content-pages/using-fragment-comments.md
 
-.. include:: /creating-pages/building-and-managing-content-pages/README.rst
+.. include:: /site-building/creating-pages/building-and-managing-content-pages/README.rst
    :start-line: 2

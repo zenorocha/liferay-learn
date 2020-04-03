@@ -1,6 +1,6 @@
 # Building Content Pages
 
-Once you've [added a Content Page](./adding-a-page-to-a-site.md) you may begin building your page by adding and configuring the various [Content Page elements](./content-pages-overview.md).
+Once you've [added a Content Page](../adding-pages/adding-a-page-to-a-site.md) you may begin building your page by adding and configuring the various [Content Page elements](./content-pages-overview.md).
 
 ## Adding Elements to a Content Page
 
@@ -148,5 +148,5 @@ When you create Content Pages, you can create different **Experiences** for user
 ## Additional Information
 
 * Developing a Page Fragment
-* [Using Master Pages](./master-page-templates/master-page-templates-intro.md)
+* [Using Master Pages](../defining-headers-and-footers/master-page-templates.md)
 * [Changing Content Pages Look and Feel](./content-pages-overview.md#look-and-feel)

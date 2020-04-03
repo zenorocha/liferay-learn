@@ -6,8 +6,8 @@ Page Templates help you efficiently create pages based on predefined layouts and
 
 You may also create your own Page Templates:
 
-* [Content Page](./building-content-pages.md) Templates
-* [Widget Page](./understanding-pages.md#widget-pages) Templates
+* [Content Page](../building-and-managing-content-pages/building-content-pages.md) Templates
+* [Widget Page](../understanding-pages/understanding-pages.md#widget-pages) Templates
 
 ## Creating a New Page Template
 
@@ -27,7 +27,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
 1. Click *Save*.
 
-1. You're automatically transported to the new Page Template. Follow the instructions in [Widget Pages](./understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](./building-content-pages.md) to configure your Content Page Template.
+1. You're automatically transported to the new Page Template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](../building-and-managing-content-pages/building-content-pages.md) to configure your Content Page Template.
 
 ## Sharing a New Page Template
 
@@ -48,7 +48,7 @@ Users with the roles specified now have access to the page template.
 
 ### Propagating Changes for Widget Pages
 
-When creating a page from a Widget Page Template, changes are inherited from the Page Template by default, so future changes are *automatically* propagated to the pages that use the Page Template. Site Administrators can disable this behavior through the [settings for the individual page](./06-configuring-individual-pages.md#general).
+When creating a page from a Widget Page Template, changes are inherited from the Page Template by default, so future changes are *automatically* propagated to the pages that use the Page Template. Site Administrators can disable this behavior through the [settings for the individual page](../page-settings/configuring-individual-pages.md#general).
 
 ### Propagating Changes for Content Pages
 

@@ -4,7 +4,7 @@ Pages on Liferay DXP are primarily used to display content and applications to u
 
 ## Page Sets
 
-When adding Pages to a site, the pages are created as part of a Site's [Page Set](./05-configuring-page-sets.md): **Public Pages** or **Private Pages**. Public and Private Page Sets are compared below:
+When adding Pages to a site, the pages are created as part of a Site's [Page Set](../page-settings/configuring-page-sets.md): **Public Pages** or **Private Pages**. Public and Private Page Sets are compared below:
 
 | Behavior | Public Pages | Private Pages |
 | --- | --- |---|
@@ -14,7 +14,7 @@ When adding Pages to a site, the pages are created as part of a Site's [Page Set
 
 ## Page Types
 
-There are several page types available when you [add a page](./adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
+There are several page types available when you [add a page](../adding-pages/adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
 
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
@@ -34,13 +34,13 @@ Using Content Pages allows access to additional powerful features and benefits:
 * [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
 * Approachable Content and Site Building Experience
 
-To learn more about Content Pages see the [Content Page Overview](./content-pages-overview.md). To jump right into building one, see [Building Content Pages](./building-content-pages.md).
+To learn more about Content Pages see the [Content Page Overview](../building-and-managing-content-pages/content-pages-overview.md). To jump right into building one, see [Building Content Pages](../building-and-managing-content-pages/building-content-pages.md).
 
 ### Widget Pages
 
 <!-- Should there be an article that covers layouts and layout templates? -->
 
-A Widget Page is a page with a set layout that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](./adding-widgets-to-a-page.md) for more information.
+A Widget Page is a page with a set layout that allows *widgets* (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. When you first start Liferay Portal, the starting home page is a Widget Page. See [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md) for more information.
 
 ![Widget Pages can provide a number of functions, such as a dedicated Wiki Page solution.](./understanding-pages/images/05.png)
 
@@ -60,7 +60,7 @@ This table compares some of the distinctions between a Content Page and a Widget
 
 ### Other Page Types
 
-There are several other page types that are available - each can help to satisfy particular use cases. See [Other Page Types](./other-page-types.md) for more information.
+There are several other page types that are available - each can help to satisfy particular use cases. See [Other Page Types](../understanding-pages/other-page-types.md) for more information.
 
 ## Global Page Templates
 
@@ -85,6 +85,6 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 ## Next Steps
 
-* [Adding a Page](./adding-a-page-to-a-site.md)
-* [Configuring Individual Pages](./06-configuring-individual-pages.md)
-* [Personalizing Pages](./09-personalizing-pages.md)
+* [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
+* [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)
+* [Personalizing Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)

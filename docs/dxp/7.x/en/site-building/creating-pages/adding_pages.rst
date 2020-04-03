@@ -8,5 +8,5 @@ Adding Pages
    adding-pages/creating-a-page-template.md
    adding-pages/using-the-full-page-application-page-type.md
 
-.. include:: /creating-pages/adding-pages/README.rst
+.. include:: /site-building/creating-pages/adding-pages/README.rst
    :start-line: 2

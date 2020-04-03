@@ -4,7 +4,7 @@ The _Wiki_ application includes a rich-text WYSIWYG editor, version tracking, an
 
 ## Adding a Wiki Widget to a Site
 
-The fastest way to begin using the _Wiki_ widget is deploying it on a [Site Page](../../../site-building/creating-pages/understanding-pages.md).
+The fastest way to begin using the _Wiki_ widget is deploying it on a [Site Page](../../../site-building/creating-pages/understanding-pages/understanding-pages.md).
 
 1. Navigate to the site page where the wiki will be created (for example, the DXP _Guest_ site's _Wiki page_).
 1. Click the _Add_ button.

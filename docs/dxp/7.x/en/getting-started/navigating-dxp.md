@@ -50,7 +50,7 @@ The DXP _Site Menu_ drop down contains actions, content, and configurations that
 
 The following common site building and management activities can be done in the _Site Menu_:
 
-* [Adding Pages](../site-building/creating-pages/adding-a-page-to-a-site.md)
+* [Adding Pages](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [Creating Content](../content-authoring-and-management/README.md)
 * [Managing Site Memberships](../site-building/building-sites/adding-members-to-sites.md)
 * [Configuring and Optimizing Site Behavior and Functionality](../site-building/optimizing-sites/README.md)

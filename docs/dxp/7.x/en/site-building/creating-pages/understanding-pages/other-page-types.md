@@ -1,6 +1,6 @@
 # Other Page Types
 
-[Content Pages](./content-pages-overview.md) are the most commonly used page type, but other page types are available for certain use cases.
+[Content Pages](../building-and-managing-content-pages/content-pages-overview.md) are the most commonly used page type, but other page types are available for certain use cases.
 
 ## Full Page Application
 

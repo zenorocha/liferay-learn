@@ -1,6 +1,6 @@
 # Adding a Page to a Site
 
-The steps below describe how to add a new page to your Site and configure the general options. To learn how to configure the remaining page settings, see [Configuring Individual Pages](./06-configuring-individual-pages.md), or see [Configuring Page Sets](./05-configuring-page-sets.md) to configure options for a [Page Set](./understanding-pages.md#page-sets).
+The steps below describe how to add a new page to your Site and configure the general options. To learn how to configure the remaining page settings, see [Configuring Individual Pages](../page-settings/configuring-individual-pages.md), or see [Configuring Page Sets](../page-settings/configuring-page-sets.md) to configure options for a [Page Set](../understanding-pages/understanding-pages.md#page-sets).
 
 ## Adding a New Page
 
@@ -18,7 +18,7 @@ Follow these steps to add a page:
        Alternatively, since Liferay DXP 7.3, you can click the page tree icon next to the Site name to open the Page Tree Menu. You can use the Page Tree Menu to quickly find a page by keyword in the search bar, navigate to a page by selecting it, or even add pages through the Actions Menu.
     ```
 
-1. Click the *Blank* [Master Page Template](./master-page-templates/master-page-templates-intro.md) to start a [Content Page](./understanding-pages.md#page-types) from scratch, select a [custom Master Page Template](./master-page-templates/creating-a-master-page-template.md) to create a Content Page based on a template, or select [another page type](./other-page-types.md) under the *Other* heading or a Page Template listed under the *Global Template* menu.
+1. Click the *Blank* [Master Page Template](../defining-headers-and-footers/master-page-templates.md) to start a [Content Page](../understanding-pages/understanding-pages.md#page-types) from scratch, select a [custom Master Page Template](../defining-headers-and-footers/creating-a-master-page-template.md) to create a Content Page based on a template, or select [another page type](../understanding-pages/other-page-types.md) under the *Other* heading or a Page Template listed under the *Global Template* menu.
 
     ![You must select a page type when adding pages.](./adding-a-page-to-a-site/images/04.png)
 
@@ -49,5 +49,5 @@ To add a child page through the Pages screen, follow these steps:
 
 ## Additional Information
 
-* [Understanding Pages](./understanding-pages.md)
-* [Content Page Overview](./content-pages-overview.md)
+* [Understanding Pages](../understanding-pages/understanding-pages.md)
+* [Content Page Overview](../building-and-managing-content-pages/content-pages-overview.md)

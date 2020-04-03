@@ -2,7 +2,7 @@
 
 Coming soon!
 
-<!-- Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./06-configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
+<!-- Options configured for the Page Set apply to all its pages and override options set at the Site level. However, [customizations to an individual page](./configuring-individual-pages.md) override those for the Page Set. To configure a Page Set, follow these steps:
 
 1. Open the Product Menu and go to *Site Builder* &rarr; *Pages* under the Site Menu. Alternatively, since Liferay DXP 7.3, you can click the (![icon-page-tree](../../../../icon-page-tree.png)) icon next to the Site name to open the Page Tree Menu.
 
@@ -22,7 +22,7 @@ Page Set configuration starts with the *Look and Feel* tab. Here you can choose 
 
 ### Current Theme
 
-Themes create the overall feel for the Site and can transform the look entirely. The *Current Theme* section displays the Theme currently applied to the Page Set, along with any configurable theme settings and color schemes that the Theme has. Many Themes include more than one color scheme, which keeps the existing look and feel while giving the Site a different flavor. The *CSS* section lets you enter custom CSS for tweaking your Theme. You can apply Themes to the entire Site (described here) or to individual pages (described in [Configuring Pages](./06-configuring-individual-pages.md#look-and-feel)).
+Themes create the overall feel for the Site and can transform the look entirely. The *Current Theme* section displays the Theme currently applied to the Page Set, along with any configurable theme settings and color schemes that the Theme has. Many Themes include more than one color scheme, which keeps the existing look and feel while giving the Site a different flavor. The *CSS* section lets you enter custom CSS for tweaking your Theme. You can apply Themes to the entire Site (described here) or to individual pages (described in [Configuring Pages](./configuring-individual-pages.md#look-and-feel)).
 
 To apply a Theme to the Page Set, follow these steps:
 

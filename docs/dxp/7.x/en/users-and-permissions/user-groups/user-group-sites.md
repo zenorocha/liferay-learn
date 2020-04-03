@@ -48,7 +48,7 @@ Instead of basing User Group Sites on a Site Template, you can create them manua
 
 1. Go to *Control Panel* &rarr; *Users* &rarr; *Users Groups*.
 
-1. Click *Actions* (![Actions](../../images/icon-actions.png)) &rarr; *Manage Pages* for the User Group. This *Pages* window is the same one you use for [creating pages](../../site-building/creating-pages/understanding-pages.md).
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) &rarr; *Manage Pages* for the User Group. This *Pages* window is the same one you use for [creating pages](../../site-building/creating-pages/understanding-pages/understanding-pages.md).
 
     ![The controls for adding User Group Sites manually are the same as for creating pages.](./user-group-sites/images/03.png)
 
