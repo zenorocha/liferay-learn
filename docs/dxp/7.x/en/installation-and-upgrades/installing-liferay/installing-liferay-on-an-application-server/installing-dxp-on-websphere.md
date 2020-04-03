@@ -45,7 +45,7 @@ When the application server binaries have been installed, start the *Profile Man
 1. Click *Create...*, choose *Application Server*, and then click *Next*.
 1. Click the *Advanced* profile creation option and then click *Next*. Use the advanced profile to specify the values for settings such as the location of the profile and names of the profile, node and host, to assign specific ports, or to optionally choose whether to deploy the administrative console and sample application and also add web-server definitions for IBM HTTP Server. See the WebSphere documentation for more information about these options.
 
-    ![Figure 1: Choose the Advanced profile option to specify your own settings.](./installing-liferay-on-websphere/images/01.png)
+    ![Figure 1: Choose the Advanced profile option to specify your own settings.](./installing-dxp-on-websphere/images/01.png)
 
 1. Check the box *Deploy the administrative console*. This enables a web-based UI for working with the application server. Skip the default applications. (Install these only on a development machine.) Click *Next*.
 1. Set the profile name and location. Specify a performance tuning settings appropriate for your environment.
@@ -65,7 +65,7 @@ When the application server binaries have been installed, start the *Profile Man
 
 WebSphere then creates the profile and finishes with a message indicating that the profile was created successfully.
 
-![Figure 2: Example of the settings before creating the profile.](./installing-liferay-on-websphere/images/02.png)
+![Figure 2: Example of the settings before creating the profile.](./installing-dxp-on-websphere/images/02.png)
 
 Lastly , shut down the application server.
 
@@ -181,7 +181,7 @@ If using WebSphere to manage the database connections, follow the instructions b
    Liferay uses HSQL by default for demo purposes. HSQL should *not* be used in production instances of Liferay DXP.
 ```
 
-![Figure 3: WebSphere JDBC providers](./installing-liferay-on-websphere/images/03.png)
+![Figure 3: WebSphere JDBC providers](./installing-dxp-on-websphere/images/03.png)
 
 1. Start WebSphere.
 1. Open the Administrative Console and log in.
@@ -191,7 +191,7 @@ If using WebSphere to manage the database connections, follow the instructions b
 1. Clear any text in the class path settings. The necessary JARs have already been copied to a location on the server's class path. Click *Next*.
 1. Review the settings and click *Finish*. The final configuration should look like this:
 
-    ![Figure 4: Completed JDBC provider configurations.](./installing-liferay-on-websphere/images/04.png)
+    ![Figure 4: Completed JDBC provider configurations.](./installing-dxp-on-websphere/images/04.png)
 
 1. Click the new provider configuration when it appears in the table.
 1. Click *Data Sources* under *Additional Properties*.
@@ -202,7 +202,7 @@ If using WebSphere to manage the database connections, follow the instructions b
 1. Click the *Show Filter Function* button. This is the second from last of the small icons under the *New* and *Delete* buttons.
 1. Enter *user* into the search terms and click *Go*.
 
-    ![Figure 5: Modifying data source properties in WebSphere](././installing-liferay-on-websphere/images/05.png)
+    ![Figure 5: Modifying data source properties in WebSphere](././installing-dxp-on-websphere/images/05.png)
 
 1. Select the *user* property and give it the value of the user name to the database.
 1. Click *OK* and save to master configuration.
@@ -236,7 +236,7 @@ If you want to use WebSphere to manage the mail session, follow these steps:
 1. Click the mail session when it appears in the table and select *Custom Properties* under the *Additional Properties* section. Set any other JavaMail properties required by the mail server, such as the protocol, ports, whether to use SSL, and so on.
 1. Click *Security &rarr; Global Security* and de-select *Use Java 2 security to restrict application access to local resources* if it is selected.
 
-    ![Figure 6: Applying Java security in the Mail Session](./installing-liferay-on-websphere/images/06.png)
+    ![Figure 6: Applying Java security in the Mail Session](./installing-dxp-on-websphere/images/06.png)
 
 1. Click *Apply*.
 
@@ -285,7 +285,7 @@ Once the changes have been saved, DXP can parse special characters if there is l
 1. Verify that the settings are correct and click *Finish*.
 1. When DXP has installed, click *Save to Master Configuration*.
 
-   ![Figure 7: Review the deployment options before deploying.](./installing-liferay-on-websphere/images/07.png)
+   ![Figure 7: Review the deployment options before deploying.](./installing-dxp-on-websphere/images/07.png)
 
 DXP has been installed. There are a few more required steps before starting DXP.
 
