@@ -34,7 +34,8 @@ Here are the steps for using the Docker image:
 
     ```bash
     cd /new-version/liferay-home
-    echo "indexReadOnly=\"true\"" > osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
+    mkdir -p files/osgi/configs
+    echo "indexReadOnly=\"true\"" > files/osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
     ```
 
 1. Run the DXP Docker image mounted to your new Liferay Home using the following command, substituting your environment values as needed:
@@ -61,7 +62,7 @@ Here are the steps for using the Docker image:
 1. Re-enable search indexing by setting `indexReadOnly="false"` or by deleting the `com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config` file.
 
     ```bash
-    rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
+    rm files/osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
     ```
 
 1. Validate your upgraded database.
