@@ -4,7 +4,8 @@ To get things done in Liferay DXP, [Users](./../users/understanding-users.md) mu
 
 ![Manage Roles from the Control Panel.](./understanding-roles-and-permissions/images/03.png)
 
-```note:: Some permissions cannot be handled from the control panel. Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset. See `the Widget Permissions<./../../site-building>`__ article for details.
+```note::
+   Some permissions cannot be handled from the control panel. Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset. See `the Widget Permissions<./../../site-building>`__ article for details.
 
    `Site Teams<./../../site-building/building-sites/creating-teams-for-sites.md>`__ have a dedicated permissions management User Interface, as well.
 ```
