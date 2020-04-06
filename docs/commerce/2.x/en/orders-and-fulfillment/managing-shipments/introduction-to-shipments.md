@@ -8,11 +8,31 @@ Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is
 
 This takes the user automatically to the Shipments menu to finish processing the order. There are four stages: Processing, Ready to Ship, Shipped, and Delivered.
 
+## Processing
+
 ![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
 
-Once all the items and the sourcing warehouse chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date. Clicking the _Ship_ button advances the order's process.
+Once all the items and the sourcing warehouse chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date.
+
+## Ready to Ship
+
+ Clicking the _Ship_ button advances the order's process.
 
 ![Shipments Menu - Ready to Ship](./introduction-to-shipments/images/06.png)
+
+## Shipped
+
+Once an order has been shipped and awaiting confirmation of delivery, the order is in the Shipped phase. Click _Deliver_ when the delivery has been made.
+
+![Shipments Menu - Shipped](./introduction-to-shipments/images/08.png)
+
+## Delivered
+
+Once delivery has been confirmed, the _Delivered_ tab marks each phase in green as completed.
+
+![Shipments Menu - Shipped](./introduction-to-shipments/images/09.png)
+
+## Completed
 
 When delivery has been confirmed, the shipment process marked delivered and the order is marked completed.
 

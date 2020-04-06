@@ -2,7 +2,7 @@
 
 All orders in Liferay Commerce can be viewed and managed by an administrator in the _Orders_ menu. To access the _Orders_ menu, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
 
-There are five tabs at the top: _All_, _Open_, _Pending_, Processing_, and _Completed_.
+There are five tabs at the top: _All_, _Open_, _Pending_, _Processing_, and _Completed_.
 
 ![Orders menu](./orders-menu/images/05.png)
 
