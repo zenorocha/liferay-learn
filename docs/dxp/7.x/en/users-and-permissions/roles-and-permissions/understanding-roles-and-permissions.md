@@ -1,25 +1,84 @@
 # Understanding Roles and Permissions
 
-How do [Users](./../users/understanding-users.md) get things done in Liferay DXP? They must have the proper Permissions.
+To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles are the vehicle for granting those permissions.
 
-Combine Permissions with Roles, Users, and User collections, and a complicated responsibility becomes much simpler to manage.
-
-Consider a new employee at _The Peoples Bank_, Jane Slaughter. Jane is working as a Human Resources employee for the bank, so she must be able to manage Users throughout the Liferay DXP Virtual Instance. If there's already a Human Resources Organization, Jane is added to it and immediately has all the permissions that a Human Resources employee needs.
+Combine Permissions with Roles, Users, and User collections, and the complex task of managing Users and their permissions becomes a much simpler job.
 
 ![Roles exist to get permissions to Users.](./understanding-roles-and-permissions/images/02.png)
+<!-- Probably need to rename the Role column to Regular Role? Leaves out Accounts, Asset Libraries -->
 
-<!-- Descriptive table or, even better, a diagram that makes clear the terms Role Permission User and User Collection (User Group, Site, Organization) --> 
+Regular Roles, those that apply permissions at the global scope (throughout the Virtual Instance), are defined and .
 
-New Employee ----> HR Organization ----> User Administrator Regular Role ----> Global Permissions for Adding, Deleting, Updating Users
+Consider a new employee of your company, Jane Slaughter. Jane will work as a Human Resources Manager, so she must be able to manage Users throughout the Liferay DXP Virtual Instance. If there's already a Human Resources Organization with a Role collecting these permissions, Jane is added to the Organization and immediately has all the permissions that a Human Resources employee needs.
 
-To experience this, follow this logical flow while setting up your User Management paradigm:
+The diagram above shows only one fully-executed Role assignment (for the Human Resources Manager User--Jane slaughter), but you can see how drawing new arrows would link the User with permissions via other User collections.
+<!-- New Employee ----> HR Organization ----> User Administrator Regular Role ----> Global Permissions for Adding, Deleting, Updating Users
+-->
 
-1. Determine the functions needed
-2. Determine the scope for each function
-3. Create the Role
-4. Create the User collection
-5. Assign Users (preferably via User collection) to the Role
-Roles collect Users that perform a particular function at a particular scope. The function the Role Users can fulfill depends entirely on the permissions assigned to the Role (and, by proxy, the Role Users). Roles collect permissions, and Users are assigned to Roles. Remember though, it's not efficient to manage Users one-by-one. There are various ways of grouping Users in Liferay DXP ([Organizations](./../organizations/understanding-organizations.md), [User Groups](./../user-groups/creating-and-managing-user-groups.md), [Sites](./../../site-building/building-sites/adding-members-to-sites.md), and [Teams](./../../site-building/building-sites/creating-teams-for-sites.md), for example). Assigning Roles to these User collections eases the burden of User permission delegation.
+The flow of Role creation could look like this:
+
+1. Determine the function needed: Manage Users in Liferay DXP.
+1. Determine the scope: Throughout the Virtual Instance (globally).
+1. Create the Role, assigning the permissions that power the function. HR Manager Role.
+1. Create the User collection: Human Resources Department = Organization.
+1. Assign the Role to the User Collection: Human Resources Department &rarr; HR Manager Role.
+1. Assign Users to the User Collection: Jane Slaughter &rarr; Human Resources Department.
+
+There are several User collections that can be assigned Regular Roles:
+
+- [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
+- [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
+- [Sites](./../../site-building/building-sites/adding-members-to-sites.md) hold Users that might need to perform actions scoped only to that Site. <!-- Don't really understand this one -->
+- [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)]
+
+The details around assigning permissions to the Role and assigning the Role to Users are covered in the articles of this section.
+
+First, though, it's helpful to understand the scope at which Roles can be defined.
+
+## 
+
+| Permission Scope | Role Type | Where are its permissions defined?      | Where is it assigned to Users? |
+| ---------------- | --------- | --------------------------------------- | -------- |
+| Global           | Regular   | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Roles |
+| A single Organization | Organization | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Users and Organizations (Organizations) |
+| A single Site    | Site   | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Roles |
+| A single Account | Account   | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Roles |
+| A single Asset Library | Asset Library | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Roles |
+
+<!-- Left Segments out since they're not a Role type for a permission level, they're just for assigning a role. -->
+
+Regular Roles Assignments
+User Groups
+Organizations
+Sites
+Segments
+Single Users
+
+Done in Roles Admin
+
+Organization Role Assignments
+Assign directly to Users
+
+Done in User and Organizations &rarr; Organizations, in the Actions menu or the Org options menu after clicking into the Org
+
+Site Role Assignments
+Assign directly to Users OR
+Assign to Teams
+
+Assign Roles to Users in the Members section of Site Admin
+
+Account Roles are applied to an account and assigned within the account. Permissions defined in roles admin
+
+Asset Library Roles? Same paradigm as account roles but i don't know where these things live in portal
+
+
+
+To get a little more into the details, Roles collect Users that perform a particular function at a particular scope. The function the Role Users can fulfill depends entirely on the permissions assigned to the Role (and, by proxy, the Role Users). Roles collect permissions, and Users are assigned to Roles. Remember though, it's not efficient to manage Users and their permissions one-by-one. There are various ways of grouping Users in Liferay DXP, and all of them can be used to grant regular scoped permissions:
+
+- [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
+- [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
+- [Sites](./../../site-building/building-sites/adding-members-to-sites.md) hold Users that might need to perform actions scoped only to that Site. <!-- Don't really understand this one -->
+- [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)]
 
 <!-- NOTE: To create the minimal HR Manager Role I outlined above you need this permissions rubric
 
@@ -42,10 +101,6 @@ Delete | Deactivate and delete Users
 
 But just provide the screenshot
 -->
-
-```tip::
-   It's more efficient to assign User collections to a Role than individual Users. Even if there's just one user who surrently fulfills the function, things change. If the original Portal Content Reviewer wass Jane, when Jane leaves the company, it becomes a trivial task to assign John to the Portal Content Reviewer Role. Or a more optimistic scenario: Jane is overwhelmed as the only Portal Content Reviewer, because business is booming and new content must be created constantly. Well, assign John to the Portal Content Reviewer User Group that already has the Portal Content Reviewer Role.
-```
 
 ![Assign Users to a role, directly or by their association with a Site, Organization, User Group, or Segment.](./understanding-roles-and-permissions/images/01.png)
 
