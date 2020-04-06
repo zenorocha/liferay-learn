@@ -42,8 +42,8 @@ Here are the steps for using the Docker image:
     ```bash
     docker run -it -p 8080:8080 \
      -v /new-version/liferay-home:/mnt/liferay \
-     liferay/portal:7.3.1-ga2 \
-     -e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true
+     -e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true \
+     liferay/portal:7.3.1-ga2
     ```
 
     The `-v /new-version/liferay-home:/mnt/liferay` arguments bind mount the `/new-version/liferay-home` folder on the host to `/mnt/liferay` in the container.
