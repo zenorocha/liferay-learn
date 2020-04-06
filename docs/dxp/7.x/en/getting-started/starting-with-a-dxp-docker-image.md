@@ -9,17 +9,17 @@ The latest version of Liferay DXP is available as a Docker image. Follow these s
     ```
 
     ```bash
-    docker pull liferay/portal:7.3.0-ga1
+    docker pull liferay/portal:7.3.1-ga2
     ```
 
 1. Start Liferay DXP
 
     ```bash
-    docker run -it -p 8080:8080 liferay/portal:7.3.0-ga1
+    docker run -it -p 8080:8080 liferay/portal:7.3.1-ga2
     ```
 
     ```tip::
-       Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds` to indicate startup completion.
+       Wait until you see ``org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`` to indicate startup completion.
     ```
 
 1. Open your browser to `https://localhost:8080`
