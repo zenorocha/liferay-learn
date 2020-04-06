@@ -71,7 +71,7 @@ Here are the steps for using the Docker image:
 Your Liferay DXP database upgrade is now complete!
 
 ```note::
-   If you're done upgrading the database, leave off the `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` environment setting from your Docker command the next time you run DXP.
+   If you're done upgrading the database, leave off the ``-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true`` environment setting from your Docker command the next time you run DXP.
 ```
 
 ## Conclusion
