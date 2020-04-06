@@ -26,6 +26,7 @@ To begin building a Content Page:
     * [Using a Background Image](#using-a-background-image)
     * [Editing Text](#editing-text)
     * [Editing a Hyperlink](#editing-a-hyperlink)
+    * [Editing an Image](#editing-an-image)
     * [Copying a Fragment](#copying-a-fragment)
     * [Adjusting Spacing](#adjusting-spacing)
     * [General Configuration](#general-configuration)
@@ -78,7 +79,7 @@ You can configure a background image for a Layout. Follow these steps:
 
 ### Editing a Hyperlink
 
-1. Click on the link or button that you want to edit.
+1. Click on the link, button, or image that you want to edit.
 1. Click on (![Edit](../../../images/icon-edit.png)) to edit the link text, (![Link](../../../images/icon-link.png)) to edit the link properties, or (![Map](../../../images/icon-map.png)) to edit the link mapping (described earlier).
 
     From the Link Properties popup, you can define these link options:
@@ -107,6 +108,18 @@ You can configure a background image for a Layout. Follow these steps:
     * Basic Web Content
 
 ![You can modify editable links.](./building-content-pages/images/08.png)
+
+### Editing an Image
+
+1.  Click on the image you want to replace.
+1.  Click the (![Image Properties](../../../images/icon-edit.png)) icon.
+
+    ![Editing an image allows you to enter a URL, select an image from Documents and Media or set a link for the image.](../building-content-pages/images/09.png)
+
+1. Click *Select* to upload an image from Docs and Media or define an image URL. Click *Clear* to reset the image. You can also specify an
+image description.
+
+You can also [specify a background image for a layout](#using-a-background-image) and [provide a link for your image](#editing-a-hyperlink).
 
 ### Copying a Fragment
 
@@ -143,7 +156,7 @@ You can also map these elements to content. You can set the *Content* for the el
    Many mapping improvements were released in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+. For example, mapping editable elements to text/URL fields of existing content and mapping Fragment background images to image fields of existing content. You can also map custom fields.
 ```
 
-When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../personalizing-site-experience/experience-personalization/content-page-personalization.md).
+When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../../personalizing-site-experience/README.md).
 
 ## Additional Information
 
