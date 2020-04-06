@@ -13,7 +13,7 @@ This example uses a Docker image with a fresh install of Liferay DXP.
 You need a running Liferay DXP to call its GraphQL APIs. To obtain one using Docker, run this command:
 
 ```bash
-docker run -it -p 8080:8080 liferay/portal:7.3.0-ga1
+docker run -it -p 8080:8080 liferay/portal:7.3.1-ga2
 ```
 
 After Liferay DXP initializes, you can find the service you need. You can discover your local installation's APIs by requesting the schema:
