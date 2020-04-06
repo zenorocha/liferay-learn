@@ -7,13 +7,13 @@ The latest version Liferay Commerce is available as a docker image. Follow these
     >_Don't have Docker_? Go here first: [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/)
 
     ```bash
-    docker pull liferay/commerce:2.0.5
+    docker pull liferay/commerce:2.0.6
     ```
 
 1. Start Liferay Commerce
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.5
+    docker run -it -p 8080:8080 liferay/commerce:2.0.6
     ```
 
     > Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`

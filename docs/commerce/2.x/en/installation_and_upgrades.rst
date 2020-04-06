@@ -10,7 +10,7 @@ Installation and Upgrades
    installation-and-upgrades/deploying-liferay-commerce-to-an-existing-liferay-installation.md
    installation-and-upgrades/using-the-liferay-commerce-tomcat-bundle.md
    installation-and-upgrades/activating-liferay-commerce-enterprise.md
-   installation-and-upgrades/upgrading-from-liferay-commerce-1.1.x.md
+   installation-and-upgrades/upgrading-liferay-commerce.md
    installation-and-upgrades/maintenance-versions.md
 
 .. include:: /installation-and-upgrades/README.rst

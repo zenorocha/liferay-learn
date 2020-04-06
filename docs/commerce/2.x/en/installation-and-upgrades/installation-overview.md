@@ -14,6 +14,8 @@ See the [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/docu
 
 See the [Liferay Digital Experience Platform 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513) for information about Liferay DXP architecture and performance tuning guidelines.
 
+See the [Liferay Digital Experience Platform 7.2 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.2+Deployment+Checklist.pdf/22dee290-6b06-0bdc-aa89-30bb88d1d42e?t=1566483298239) for information about Liferay DXP architecture and performance tuning guidelines.
+
 ## Installing Liferay Commerce
 
 Liferay offers several methods of installing Liferay Commerce.

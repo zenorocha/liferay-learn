@@ -8,7 +8,7 @@ To use the Liferay Commerce bundle, follow these steps:
 
 1. Get the Liferay Commerce Tomcat Bundle
 
-    * [Download Page](https://commerce.liferay.dev/download)
+    * [Download Page](https://www.liferay.com/downloads-community)
 
 1. Unzip the bundle to the target location.
 
@@ -25,5 +25,5 @@ To use the Liferay Commerce bundle, follow these steps:
 ## Additional Information
 
 * [Installation Overview](./installation-overview.md)
-* [Installing Liferay DXP](https://help.liferay.com/hc/en-us/articles/360028711012-Installing-Liferay-DXP)
+* [Installing Liferay DXP](../../../../dxp/7.x/en/installation-and-upgrades/installing-liferay/installing-a-liferay-dxp-tomcat-bundle.md)
 * [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f)

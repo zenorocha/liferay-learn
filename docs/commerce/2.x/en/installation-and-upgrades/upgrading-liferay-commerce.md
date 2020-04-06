@@ -1,21 +1,35 @@
-# Upgrading from Liferay Commerce 1.1.x
+# Upgrading Liferay Commerce
 
 This article documents how to upgrade Liferay Commerce to the latest Commerce 2.x version. Store administrators should consider regularly updating to the latest available product version to receive bug fixes and new features.
 
-## Roadmap
+## Upgrading the Base DXP Version
 
-1. Download and Deploy.
-1. Apply the Latest Fix Pack (Subscribers Only).
-1. Clear Stale Data and Verify the Upgrade Process.
-1. Execute Post-Upgrade Reindex.
+If administrators are upgrading both DXP and Commerce, upgrade DXP 7.1 to 7.2 first. To learn more about the DXP upgrade process:
 
-## Download and Deploy
+* [Upgrade Overview](../../../../dxp/7.x/en/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.md)
+
+Once DXP has been successfully upgraded from 7.1 to 7.2, follow the steps below to upgrade Liferay Commerce.
+
+Alternately, administrators can chose to upgrade just Liferay Commerce.
+
+## Upgrading Commerce
+
+Liferay Commerce provides a seamless upgrade process to the latest version. Users can perform either one of the following:
+
+* From 1.1.x to 2.1.x
+* From 2.0.x to 2.1.x
+
+```tip::
+   If upgrading from 1.1.x, there is no need for an incremental upgrade from 1.1.x to 2.0.x.
+```
+
+### Download and Deploy
 
 1. Download the latest Liferay Commerce Enterprise `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-    >The latest Liferay Commerce `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://commerce.liferay.dev/download).
+    >The latest Liferay Commerce `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community).
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
-    > To learn more about deploying applications to Liferay DXP, see [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
+    > To learn more about deploying applications to Liferay DXP, see [Liferay Home](../../../../dxp/7.x/en/installation-and-upgrades/reference/liferay-home.md).
 1. Verify that the messages similar to those shown below appear in the application server console:
 
     ```
@@ -32,7 +46,7 @@ This article documents how to upgrade Liferay Commerce to the latest Commerce 2.
 
 1. Shut down the application server.
 
-## Apply the Latest Fix Pack (Subscribers Only)
+### Apply the Latest Fix Pack (Subscribers Only)
 
 Before upgrading Liferay Commerce, update Liferay Digital Experience Platform (DXP) to the latest available fix pack release. For example, if upgrading to Liferay Commerce Enterprise 2.0.6 - upgrading Liferay DXP to Fix Pack 14 is required. The latest fix pack releases are available from [Help Center](https://customer.liferay.com/downloads).
 
@@ -56,7 +70,7 @@ To verify Fix Pack installation do the following:
 
 Fix Packs are cumulative in nature and include all previously release fix packs. After patching, remove Liferay DXP's cache of deployed code by deleting the contents of the `${liferay.home}/work` folder. See the next section on how to remove other stale data.
 
-## Clear Stale Data and Verify the Upgrade Process
+### Clear Stale Data and Verify the Upgrade Process
 
 1. Delete the `${liferay.home}/osgi/state` folder.
     > To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
@@ -91,7 +105,7 @@ Fix Packs are cumulative in nature and include all previously release fix packs.
 
 The Liferay Commerce instance has been upgraded.
 
-## Execute Post-Upgrade Reindex
+### Execute Post-Upgrade Reindex
 
 After upgrading from Liferay Commerce 1.1.x to the latest version, execute a full search reindex.
 
