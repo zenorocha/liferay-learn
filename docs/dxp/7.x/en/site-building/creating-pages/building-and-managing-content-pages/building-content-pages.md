@@ -114,7 +114,7 @@ You can configure a background image for a Layout. Follow these steps:
 1.  Click on the image you want to replace.
 1.  Click the (![Image Properties](../../../images/icon-edit.png)) icon.
 
-    ![Editing an image allows you to enter a URL, select an image from Documents and Media or set a link for the image.](../building-content-pages/images/09.png)
+    ![Editing an image allows you to enter a URL, select an image from Documents and Media or set a link for the image.](./building-content-pages/images/09.png)
 
 1. Click *Select* to upload an image from Docs and Media or define an image URL. Click *Clear* to reset the image. You can also specify an
 image description.
@@ -129,7 +129,7 @@ You can duplicate a Fragment on the page to save time. Follow these steps:
 1. Click the Fragment to select it.
 1. Click the Duplicate Fragment button in the context menu that appears.
 
-![You can duplicate Fragments on the page.](./building-content-pages/images/09.png)
+![You can duplicate Fragments on the page.](./building-content-pages/images/10.png)
 
 ### Adjusting Spacing
 
@@ -138,7 +138,7 @@ If a [Layout](./content-pages-overview.md#layouts) has multiple columns, you can
 1. Click on the Layout to select it. A blue dot appears between each of the columns, indicating that they can be resized.
 1. Click one of the blue dots and drag to the left or right to adjust the size of the column.
 
-![You can adjust the spacing of columns in a Layout to create a custom Layout.](./building-content-pages/images/10.png)
+![You can adjust the spacing of columns in a Layout to create a custom Layout.](./building-content-pages/images/11.png)
 
 ```note::
    Layouts must contain the same number of columns. You can't remove a column by dragging it. Choose a Layout that has the number of columns you want, then readjust the sizing if you need to.
