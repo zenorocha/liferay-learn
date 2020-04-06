@@ -38,7 +38,7 @@ To create a site using a Site Template, follow these steps:
 1. Click *Actions* and select *Go to Public Pages* or *Go to Private Pages* next to your new Site to view it.
 
     ```tip::
-       In order to view a newly created *blank site*, you must first create a page for it. See `Adding a Page to a Site <../creating-pages/README.md>`_ for more information.
+       To view a newly created *blank site*, you must first create a page for it. See `Adding a Page to a Site <../creating-pages/adding-pages/adding-a-page-to-a-site.md>`_ for more information.
     ```
 
 ## Additional Information

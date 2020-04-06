@@ -6,7 +6,7 @@ The steps below describe how to add a new page to your Site and configure the ge
 
 Follow these steps to add a page:
 
-1. Navigate to your desired Site by using the [Site Menu](../../getting-started/navigating-dxp.md#site-menu).
+1. Navigate to your desired Site by using the [Site Menu](../../../getting-started/navigating-dxp.md#site-menu).
 
 1. Go to *Site Builder* &rarr; *Pages* under the Site Menu.
 
@@ -27,7 +27,7 @@ Follow these steps to add a page:
 1. Click *Save* to create the page.
 
     ```tip::
-       Creating a page by default also adds it to any Navigation Menus that are configured to have new pages added to them. Learn more about `Configuring Site Navigation <../04-site-navigation/README.md>`_.
+       Creating a page by default also adds it to any Navigation Menus that are configured to have new pages added to them. Learn more about `Configuring Site Navigation <../../04-site-navigation/README.md>`_.
     ```
 
 ## Adding a Child Page

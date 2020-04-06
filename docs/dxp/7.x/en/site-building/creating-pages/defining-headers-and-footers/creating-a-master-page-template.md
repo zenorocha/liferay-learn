@@ -11,7 +11,7 @@ Follow these steps to create a Master Page Template:
 
     ![Create a Master Page Template under the Masters tab.](./creating-a-master-page-template/images/01.png)
 
-1. [Add Page Fragments](adding-page-fragments) for the common elements that you require.
+1. Add Page Fragments for the common elements that you require.
 
     ![Add the Master Page Template's common elements from the Footers and Navigation Bars sections.](./creating-a-master-page-template/images/02.png)
 
@@ -26,5 +26,5 @@ Follow these steps to create a Master Page Template:
 1. Click Publish to create the Master Page Template.
 
 ```note::
-  If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See `Changing a Master Page Template's Theme <./managing-master-pages.md#changing-a-master-page-templates-theme>`_ for more information.
+  If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See `Changing a Master Page Template's Theme <./managing-master-pages.md#changing-a-master-page-template-s-theme>`_ for more information.
 ```

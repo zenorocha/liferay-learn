@@ -28,7 +28,7 @@ Once you've [created User Segments](./segmentation/creating-and-managing-user-se
 
 ### Content Pages
 
-Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../creating-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./experience-personalization/content-page-personalization.md) for more information.
+Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../creating-pages/building-and-managing-content-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./experience-personalization/content-page-personalization.md) for more information.
 
 ![You can create unique experiences for different segments of Users.](./introduction-to-personalizing-site-experience/images/02.png)
 

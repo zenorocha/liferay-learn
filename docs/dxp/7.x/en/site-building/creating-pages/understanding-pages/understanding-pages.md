@@ -14,7 +14,7 @@ When adding Pages to a site, the pages are created as part of a Site's [Page Set
 
 ## Page Types
 
-There are several page types available when you [add a page](../adding-pages/adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](./07-creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
+There are several page types available when you [add a page](../adding-pages/adding-a-page-to-a-site.md). The default page type is a **Content Page**. You can also create a page based on a [Page Template](../adding-pages/creating-a-page-template.md). Page Types and Page Templates are described in more detail below.
 
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 

@@ -52,16 +52,16 @@ When creating a page from a Widget Page Template, changes are inherited from the
 
 ### Propagating Changes for Content Pages
 
-Changes for Content Pages **are not automatically propagated** when created using a Content Page Template. Changes to Fragments used on a Content Page can be propagated. See [Propagating Fragment Changes](TODO) for more information.
+Changes for Content Pages **are not automatically propagated** when created using a Content Page Template. Changes to Fragments used on a Content Page can be propagated. See [Propagating Fragment Changes](../../03-displaying-content/04-using-fragments/README.md) for more information.
 
 ### Sharing Page Templates With Other Sites
 
-You can share your Page Templates with other sites using the same process as you would for pages. Follow the instructions in [Importing and Exporting Pages and Content](../building-sites/importing-exporting-pages-and-content.md) to learn how.
+You can share your Page Templates with other sites using the same process as you would for pages. Follow the instructions in [Importing and Exporting Pages and Content](../../building-sites/importing-exporting-pages-and-content.md) to learn how.
 
 ### Staging and Page Templates
 
 ```important::
-   Staging functionality is in `*maintenance mode* <../../installation-and-upgrades/upgrading-liferay-dxp/reference/features-in-maintenance-mode.md>`_ as of 7.3 GA1+.
+   Staging functionality is in `maintenance mode <../../installation-and-upgrades/upgrading-liferay-dxp/reference/features-in-maintenance-mode.md>`_ as of 7.3 GA1+.
 ```
 
 If staging has been enabled, changes to the Widget Page Template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of Widget Page Template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.

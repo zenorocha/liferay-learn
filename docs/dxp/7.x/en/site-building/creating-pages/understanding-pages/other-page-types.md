@@ -4,7 +4,7 @@
 
 ## Full Page Application
 
-The *Full Page Application* page type creates a page that displays a single application that fills the entire page. See [Using the Full Page Application Page](./using-the-full-page-application-page.md) for more information.
+The *Full Page Application* page type creates a page that displays a single application that fills the entire page. See [Using the Full Page Application Page](../adding-pages/using-the-full-page-application-page-type.md) for more information.
 
 ![A Full Page Application page displays a single application that spans the entire width of the page.](./other-page-types/images/01.png)
 

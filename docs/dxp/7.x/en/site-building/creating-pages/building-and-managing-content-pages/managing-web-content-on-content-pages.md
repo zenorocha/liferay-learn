@@ -2,7 +2,7 @@
 
 > Liferay DXP 7.3+
 
-From the [Contents panel](./content-pages-overview.md#contents) on a Content Page, you can manage and edit web content that's used on the page ([mapped](./building-content-pages.md#mapping-elements), or displayed in a widget). To Manage the web content that's used on a Content Page, follow these steps:
+From the [Contents panel](./content-pages-overview.md#contents) on a Content Page, you can manage and edit web content that's used on the page ([mapped](./building-content-pages.md#mapping-content), or displayed in a widget). To Manage the web content that's used on a Content Page, follow these steps:
 
 1. Click the *Contents* button (![Contents](../../../images/icon-contents.png)) in the sidebar to open the Contents panel. Content used on the page is listed here, along with how many pages it's used on. Hover over the content in the list to highlight the widget(s), mapped content fields, and Fragments that display the content on the page.
 

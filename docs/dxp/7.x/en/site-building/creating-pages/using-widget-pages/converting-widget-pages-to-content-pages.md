@@ -24,7 +24,7 @@ Some features of Widget Pages aren't supported by Content Pages and therefore ca
 
 * **Nested Applications:** Nested Applications are instead placed in the same column of the layout during the conversion. You may need to reorganize these applications after the best-effort conversion is complete.
 
-* **Customizable Sections:** If the page is [customizable](./personalizing-pages.md), any customizations made by the user are lost during conversion.
+* **Customizable Sections:** If the page is [customizable](./enabling-user-personalization-of-widget-pages.md), any customizations made by the user are lost during conversion.
 
 * **Custom Page Layouts:** If the layout can be converted, the structure of the layout is conserved and the user is warned and given a chance to review the conversion draft before proceeding. If the layout can't be converted, all widgets are placed in a single row and column and you must manually reorganize them after the page is converted.
 
@@ -50,7 +50,7 @@ You can bulk convert all Widget Pages on a Site to Content Pages using the built
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *Server Administration* &rarr; *Script*.
 
-1. Enter this script in the script window, making sure to replace the Group ID with your own. The Groovy script uses the [`BulkLayoutConverter` interface](https://github.com/liferay/liferay-portal/blob/master/modules/apps/layout/layout-api/src/main/java/com/liferay/layout/util/BulkLayoutConverter.java) to convert all Widget Pages with the given Group ID to Content Pages:
+1. Enter this script in the script window, making sure to replace the Group ID with your own. The Groovy script uses the [`BulkLayoutConverter` interface](https://docs.liferay.com/portal/7.3-latest/apps/layout-3.0.0/javadocs/com/liferay/layout/util/BulkLayoutConverter.html) to convert all Widget Pages with the given Group ID to Content Pages:
 
     ```groovy
     import com.liferay.layout.util.BulkLayoutConverter
