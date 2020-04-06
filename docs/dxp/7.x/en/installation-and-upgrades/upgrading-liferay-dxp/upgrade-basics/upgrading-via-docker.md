@@ -19,7 +19,7 @@ Here are the steps for using the Docker image:
 1. Set up a new [Liferay Home](../../reference/liferay-home.md) folder with the contents of your current Liferay Home. You'll bind this new Liferay Home to the Docker image in a later step.
 
     ```bash
-    cp /old-version/liferay-home/ /new-version/liferay-home/
+    cp -r /old-version/liferay-home/* /new-version/liferay-home/
     ```
 
     Alternatively if your current Liferay Home is in source control, create a new branch.
