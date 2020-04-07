@@ -20,8 +20,6 @@ Consult the [Elasticsearch compatibility matrix](https://www.elastic.co/support/
 
 This consideration is not necessary for Solr, because no JVM level serialization happens between the servers. All communication occurs at the HTTP level.
 
-## Configuring a Search Engine
-
 ## Enabling Clustering in the Search Engine
 
 As note above, a production environment's search engine should be clustered. This enables the search engine to handle the load and optimizes DXP's overall performance. Both Elasticsearch and Solr can be configured successfully on multiple nodes in the remote environment.
