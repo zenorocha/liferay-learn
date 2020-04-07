@@ -12,7 +12,7 @@ To configure the spell check settings:
 
 1. Open its configuration screen. Click the widget Options button (![Options](../../images/icon-widget-options.png)) and select *Configuration*.
 
-![Configure the suggestion settings to allow for user input mistakes and help lead users to results.](./searching-for-content/images/07.png)
+![Configure the suggestion settings to allow for user input mistakes and help lead users to results.](./enabling-search-suggestions/images/01.png)
 
 There are three main settings here:
 
