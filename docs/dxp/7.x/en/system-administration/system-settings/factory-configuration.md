@@ -2,13 +2,15 @@
 
 Configurations supporting multiple entries are called *factory configurations*. 
 
-> Factory Configuration Example: [Adding Organization types](../../users-and-permissions/organizations/adding-a-new-organization-type.md) is supported, and is useful if you need to model real-life hierarchies or enforce hierarchical rules. In Liferay DXP, each Organization type is created via a factory configuration entry in System Settings.
+```tip::
+    Factory Configuration Example: [Adding Organization types](../../users-and-permissions/organizations/adding-a-new-organization-type.md) is supported, and is useful if you need to model real-life hierarchies or enforce hierarchical rules. In Liferay DXP, each Organization type is created via a factory configuration entry in System Settings.
+```
 
-If a service is meant to support factory configurations, its System Settings entry has an Add button. 
+If a service supports factory configurations, its System Settings entry has an Add button. 
 
 ![If a System Settings entry has an ADD button, it's suitable for factory configurations.](./factory-configuration/images/01.png)
 
-As with single-instance configurations, you can set factory configurations in the System Settings interface (using the Add button described above) or via configuration files. A standard single-instance configuration file is named with the fully qualified class name of the configuration object, appended by `.config`: 
+As with single-instance configurations, you can set factory configurations in the System Settings interface (using the Add button described above) or via configuration files. A standard single-instance configuration file uses the fully qualified class name of the configuration object, appended by `.config`: 
 
 ```bash
 my.service.ServiceConfiguration.config
@@ -32,7 +34,7 @@ In the Organization type example, the default Organization type (aptly named _or
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-default.config
 ```
 
-Following the example from the [Adding a New Organization Type](../../users-and-permissions/organizations/adding-a-new-organization-type.md) article, you could add the _League_ type with a configuration file named 
+Following the example from [Adding a New Organization Type](../../users-and-permissions/organizations/adding-a-new-organization-type.md), you could add the _League_ type with a configuration file named 
 
 ```bash
 com.liferay.organizations.internal.configuration.OrganizationTypeConfiguration-league.config
@@ -44,12 +46,12 @@ Some System Settings entries that support factory configuration don't ship with 
 com.liferay.user.associated.data.web.internal.configuration.AnonymousUserConfiguration-6befcd73-7c8b-4597-b396-a18f64f8c308.config
 ```
 
-If you're exporting the configuration file for deployment in a separate system, you can rename part of the exported filename after the `-` to use a more descriptive subname. Be careful though, if you rename the file and deploy it to the same system it was exported from, the new subname marks it as an entirely new configuration. You'll end up with an additional configuration instance in this case, not just a renamed one.
+If you're exporting the configuration file for deployment in a separate system, you can rename part of the exported filename after the first `-` to use a more descriptive subname. Be careful: if you rename the file and deploy it to the same system it was exported from, the new subname marks it as an entirely new configuration. You'll end up with an additional configuration instance in this case, not just a renamed one.
 
 ```warning::
    For configuration entries supporting factory configurations, omitting the subname from a `.config` file's name causes System Settings to disallow adding new entries for the configuration entry targeted by this `.config` file. This is caused by a known bug. See [LPS-76352](https://issues.liferay.com/browse/LPS-76352) for more information. Once an improperly named configuration file is deployed, you can't add any entries for the configuration in question from its System Settings entry.
 
-   Deploying an erroneous (lacking a subname) `.config` file doesn't disable anything permanently. Just rename the file using the proper convention described above or remove it entirely and start over.
+   Deploying an erroneous (lacking a subname) `.config` file doesn't disable anything permanently. Rename the file using the proper convention described above or remove it entirely and start over.
 ```
 
 ## Forced Factory Configuration
