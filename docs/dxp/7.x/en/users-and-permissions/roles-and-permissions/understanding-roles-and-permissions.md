@@ -5,12 +5,12 @@ To get things done in Liferay DXP, [Users](./../users/understanding-users.md) mu
 ![Manage Roles from the Control Panel.](./understanding-roles-and-permissions/images/03.png)
 
 ```note::
-   Some permissions cannot be handled from the control panel. Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset. See `the Widget Permissions<./../../site-building>`__ article for details.
+   Some permissions aren't managed in the control panel. Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset. See `the Widget Permissions<./../../site-building>`__ article for details.
 
    `Site Teams<./../../site-building/building-sites/creating-teams-for-sites.md>`__ have a dedicated permissions management User Interface, as well.
 ```
 
-To get started immediately creating Roles and assigning Users, see the articles in this section:
+To skip straight to creating Roles and assigning Users, see
 
 - [Role Creation and Management](./role-creation-and-management.md)
 - [Defining Role Permissions](./defining-roles-and-permissions.md)
@@ -20,7 +20,7 @@ The conceptual diagram below shows how a User assigned to an Organization (Human
 
 ![Roles exist to get permissions to Users.](./understanding-roles-and-permissions/images/02.png)
 
-A step-by-step definition of the Role creation process (using the HR Manager example) could look like this:
+The Role creation process (using the HR Manager example) could look like this:
 
 1. Determine the function needed: _Manage Users in Liferay DXP._
 1. Determine the scope: _Throughout the Virtual Instance (globally)._
@@ -29,20 +29,22 @@ A step-by-step definition of the Role creation process (using the HR Manager exa
 1. Assign the Role to the User Collection: _Human Resources Department &rarr; HR Manager Role._
 1. Assign Users to the User Collection: _Jane Slaughter &rarr; Human Resources Department._
 
+## Managing Assignments with User Collections
+
 Maximize permission management efficiency by assigning User collections to Roles (as opposed to individual Users). There are several User collections that can be assigned Roles:
 
 - [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
 - [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
 - [Sites](./../../site-building/building-sites/adding-members-to-sites.md) hold Users that might need to perform actions scoped only to that Site. <!-- Don't really understand this one -->
-- [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)]
+- [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
 
-In addition, individual [Users](./../users/understanding-users.md) can be directly assigned to Roles. It's just less efficient than using collections of Users, as mentioned above.
+Individual [Users](./../users/understanding-users.md) can be directly assigned to Roles. It's just less efficient than using collections of Users.
 
 ## Defining Roles and Assigning Users
 
 The remaining articles in this section provide the detailed instructions on [Role Creation and Management](./role-creation-and-management.md), [Defining Role Permissions](defining-role-permissions.md), and [Assigning Users to Roles](./assigning-user-to-roles.md). Conceptually, it's good to understand how Liferay DXP structures the User Interface for managing Roles and permissions.
 
-| Permission Scope | Role Type Name | Where are its permissions defined?      | Where is it assigned to Users? |
+| Permission Scope | Role Type | Where are its permissions defined?      | Where is it assigned to Users? |
 | ---------------- | --------- | --------------------------------------- | -------- |
 | Global           | Regular   | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Roles |
 | A single Organization | Organization | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Users and Organizations (Organizations) |
@@ -91,7 +93,7 @@ These are some of the pre-configured Organization Roles:
 ```note::
    It's easy to overlook the differences between owner type Roles and administrator type Roles for Sites and Organizations. Site and Organization administrators cannot remove the administrator or owner Role from any other administrator or owner, and they cannot appoint other Users as Site or Organization administrators or owners.
 
-In contrast, Site and Organization owners can do those things.
+   In contrast, Site and Organization owners can do those things.
 ```
 
 <!-- Preserving this for inclusion in a Creating and Managing Roles article
