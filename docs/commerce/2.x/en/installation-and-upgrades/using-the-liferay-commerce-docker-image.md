@@ -5,7 +5,7 @@ The latest version Liferay Commerce is available as a docker image. Follow these
 1. Get Liferay Commerce
 
     ```tip::
-       Don't have Docker? Go here first: <Linux <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_ | `Windows <https://docs.docker.com/docker-for-windows/install/>`_ | `OSX <https://docs.docker.com/docker-for-mac/install/>`_
+       Don't have Docker? Go here first: `Linux <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_ | `Windows <https://docs.docker.com/docker-for-windows/install/>`_ | `OSX <https://docs.docker.com/docker-for-mac/install/>`_
     ```
 
     ```bash
