@@ -2,7 +2,7 @@
 
 The default search page is backed by a Global scope page template (on the Global Site), and manually created search pages can use the template, too. Out-of-the-box, the Search Page Template includes a Search Bar, Search Results, Search Suggestions, Search Options, and a bunch of Search Facets:
 
-![The Search Page template gets you up and running.](./working-with-search-pages/images/01.png)
+![The Search Page template gets you up and running.](./using-a-search-page-template/images/01.png)
 
 The template can be used in two ways:
 
