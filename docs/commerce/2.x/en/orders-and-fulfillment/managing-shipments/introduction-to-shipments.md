@@ -50,7 +50,7 @@ The _Shipments_ menu displays all created shipments in all statuses. Click the A
 
 Clicking on a particular shipment number (for example, _41250_) displays the Shipment's _Details_ tab and the _Items_ tab. (Note that clicking the _Order Number_ (_41241_) redirects to the _Orders_ menu.)
 
-### Shipment Details Tab
+### Details
 
 The _Shipment Details_ tab contains the following information:
 
@@ -73,7 +73,7 @@ The _Shipment Details_ tab contains the following information:
 | Shipping Date | Date the shipment was delivered to the carrier  |
 | Expected Delivery Date | Date the shipment is expected to arrive  |
 
-### Shipment Items Tab
+### Items
 
 The _Shipment Items_ Tab contains the following information:
 
