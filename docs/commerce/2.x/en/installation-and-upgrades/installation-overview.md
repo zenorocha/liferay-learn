@@ -18,11 +18,11 @@ See the [Liferay Digital Experience Platform 7.2 Deployment Checklist](https://w
 
 ## Installing Liferay Commerce
 
-Liferay offers several methods of installing Liferay Commerce.
+There are several methods of installing Liferay Commerce.
 
 ### Using a Docker Image
 
-The latest version Liferay Commerce is available as a docker image. See [Using Liferay Commerce Docker Image](./using-the-liferay-commerce-docker-image.md) for more information.
+The latest version Liferay Commerce is available as a Docker image. See [Using Liferay Commerce Docker Image](./using-the-liferay-commerce-docker-image.md) for more information.
 
 ### Using a Bundle
 
@@ -42,8 +42,8 @@ Subscribers who have purchased Liferay Commerce Enterprise may download the `LPK
 
 There are periodic updates and upgrades that contain the latest features and bug fixes.
 
-* [Maintenance Versions](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
-* [Upgrading from Liferay Commerce 1.1.x](./upgrading-from-liferay-commerce-1.1.x.md)
+* [Maintenance Versions](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
+* [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)
 
 ## Additional Information
 
