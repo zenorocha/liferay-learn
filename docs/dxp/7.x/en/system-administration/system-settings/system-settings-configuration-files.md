@@ -1,6 +1,8 @@
 # System Settings: Configuration Files
 
-The [System Settings application](./system-settings.md) is convenient for making system-scoped configuration changes and setting default configurations for other [scopes](./system-settings-and-configuration-scope.md). The same configurations available in the user interface are available to customize via configuration file. You can use configuration files to transfer configurations from pre-production systems to production systems or between any other Liferay DXP systems, as long as the version is identical. Sometimes developers choose to distribute the default configuration for their applications via configuration file. Whatever the reason, configuration files offer another configuration approach.
+[System Settings](./system-settings.md) provides a user interface for making system-scoped configuration changes and setting default configurations for other [scopes](./system-settings-and-configuration-scope.md). The same configurations in the UI can be made via configuration file. 
+
+You can use configuration files to transfer configurations from pre-production systems to production systems or between any other Liferay DXP systems, as long as the version is identical. 
 
 Configuration files use the `.config` property value format defined by the [Apache Felix Configuration Admin framework](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html). 
 
@@ -9,7 +11,7 @@ Configuration files use the `.config` property value format defined by the [Apac
 ```
 
 ```note::
-   The `.cfg` file format is common in OSGi environments, and it's a supported format, but `.config` files are preferable since they allow specifying a property value's type, and allow multi-valued properties. The syntax described in these articles is for `.config` files.
+   The `.cfg` file format is common in OSGi environments, and it's a supported format, but `.config` files are preferred because you can both specify a property value's type, and allow multi-valued properties. For this reason, `.config` files are used, recommended, and documented as a best practice. 
 ```
 
 ## Creating Configuration Files
@@ -26,7 +28,7 @@ com.liferay.journal.configuration.JournalServiceConfiguration.config
 
 ![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./system-settings-configuration-files/images/01.png)
 
-The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization will never take effect. The only exception is for [Factory Configuration](./factory-configuration.md), where a unique subname can be provided in some cases.
+The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./factory-configuration.md), where a unique subname can be provided in some cases.
 
 ## Key/Value Syntax
 
@@ -36,7 +38,7 @@ The syntax for all keys and values in a `.config` file is the same:
 configurationName="value"
 ```
 
-For single value configurations without special characters, that's all there is to know. Settings with multiple values and certain characters require slight modifications. 
+For single value configurations without special characters, that's all there is to know. Settings with multiple values and certain characters are slightly different.
 
 ### Multi-Value Settings
 
@@ -46,9 +48,9 @@ Configuration entries can have properties that accept multiple values. For examp
 multiValueSetting=["Value 1","Value 2", ...]
 ```
 
-Do not use a space character between values (after the comma). The property won't be loaded.
+If you use a space character between values (after the comma), the property is ignored.
 
-Open the Web Content category in System Settings (under the Content section), and select *Web Content* for the virtual instance scope. You'll see what looks like multiple single value entries for *Characters Blacklist*: 
+Open the Web Content category in System Settings (under the Content section), and select *Web Content* for the virtual instance scope. You'll see multiple single value entries for *Characters Blacklist*: 
 
 ![The Web Content System Settings entry has many Characters Blacklist fields.](./system-settings-configuration-files/images/02.png)
 
@@ -94,7 +96,7 @@ addDefaultStructures="true"
 
 Once you have a configuration file, deploy it. It's registered and the targeted configuration values are updated automatically. 
 
-To deploy the `.config` file, place it in your [Liferay Home's](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home) `osgi/configs` folder. To change the configuration further, you can edit the `.config` file directly or use System Settings. 
+To deploy the `.config` file, place it in your [Liferay Home's](../../reference/liferay-home.md) `osgi/configs` folder. To change the configuration further, you can edit the `.config` file directly or use System Settings. 
 
 ## Configuration Files and Clustering
 
