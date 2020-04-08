@@ -1,10 +1,11 @@
 # Contributing Custom Content to the Similar Results Widget
 
 > **Subscribers**
+
 > Available: This functionality relies on a Service Provider Interface (SPI) that's bundled with Liferay DXP 7.3+. It's available in Liferay DXP 7.2, from Fix Pack 5+, via installation of the Similar Results widget from [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/MP_ID_FOR_SIMILAR_RESULTS_APP).
 
 You can display your application's custom content in the [Similar Results widget](https://help.liferay.com/hc/en-us/sections/360004673411-Search) by implementing a `SimilarResultsContributor`. Note that for the contributor to work, the Similar Results widget must be able to detect your content as the main asset on a page. That means it must be displayable via a URL in a "Display Widget", like the supported Liferay DXP assets (e.g., blogs entries and wiki pages). Keep in mind that the Similar Results widget can already be used with any content displayed in Lifery DXP's Asset Publisher, without the need for a custom contributor.
-
+<!-- I'd like to see the image highlight what someone should be noticing in this image because it is not immediately obvious. -->
 ![The Blogs display widget works with Similar Results because of its contributor.](./writing-a-similar-results-contributor/images/01.png "Blogs Similar Results")
 
 Since the Knowledge Base application does not implement a `SimilarResultsContributor` for KB Articles out of the box, this example implements one. For simplicity, only KB Articles in the root folder of the application are dealt with here.
@@ -28,14 +29,7 @@ To get an example `SimilarResultsContributor` up and running on your instance of
     If you're running a different Liferay Portal CE version or Liferay DXP, adjust the above command accordingly.
 <!--7.2.10-sp2 is my guess at the DXP container ID for a docker image with support for similar results-->
 
-    If you already have a docker container, use
-
-    ```bash 
-    docker start [container_name] 
-    ```
-
-
-1. Download and unzip [the KB Article Similar Results Contributor example](./liferay-r1s1.zip).
+1. Download and unzip the [KB Article Similar Results Contributor example](./liferay-r1s1.zip).
 
     ```bash
     curl https://learn.liferay.com/dxp-7.x/using-search/02-developer-guide/liferay-r1s1.zip -O
@@ -63,7 +57,7 @@ To get an example `SimilarResultsContributor` up and running on your instance of
 
 1. Verify that the example contributor is working. Begin by opening your browser to `https://localhost:8080`
 
-1.  Add some KB Articles at  _Site Menu_ &rarr; _Content_ &rarr; _Knowledge Base_.
+1. Add some KB Articles at  _Site Menu_ &rarr; _Content_ &rarr; _Knowledge Base_.
 
     Make sure they have similar _Title_ and _Content_ fields. You can use these Strings to create three articles (use the same string for title and content):
 
@@ -73,18 +67,18 @@ To get an example `SimilarResultsContributor` up and running on your instance of
 
     _Test KB Article three_
 
-1.  Add the Knowledge Base Display widget to a page, followed by the Similar Results widget.
+1. Add the Knowledge Base Display widget to a page, followed by the Similar Results widget.
 
-1.  Open the widget configuration of the Similar Results widget, and make sure to set a value of _1_ for these settings:
+1. Open the widget configuration of the Similar Results widget, and make sure to set a value of _1_ for these settings:
 
-    Minimum Term Frequency: 1 
+    Minimum Term Frequency: 1
     Minimum Document Frequency: 1
 
-1.  Click on one of the KB Articles to select it for display, as the main asset.
+1. Click on one of the KB Articles to select it for display, as the main asset.
 
     The Similar Results widget now shows other related KB Articles.
 
-![The Similar Results widget can display KB Articles.](./adding-a-new-product-type/images/01.png "KB Similar Results")
+![The Similar Results widget can display KB Articles.](./adding-a-new-product-type/images/02.png "KB Similar Results")
 
 Now that you verified that the example behaves properly, learn how it works.
 
@@ -93,7 +87,7 @@ Now that you verified that the example behaves properly, learn how it works.
 Review the deployed example. It contains just one class: the contributor that enables custom content for the Similar Results widget.
 
 * [Annotate the Contributor Class for OSGi Registration](#annotate-the-contributor-class-for-osgi-registration)
-* [Review the `SimilarResultsContributor` Interface](#review-the-cptype-interface)
+* [Review the `SimilarResultsContributor` Interface](#review-the-SimilarResultsContributor-interface)
 
 ### Annotate the Contributor Class for OSGi Registration
 
