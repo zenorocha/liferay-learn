@@ -1,7 +1,7 @@
 # Similar Results
 
 > **Subscribers**
->
+
 > **Availability:** Liferay Marketplace
 <!-- please use a more generic example for screenshots (instead of lunar resort) -->
 The Similar Results widget shows search results similar to the _main asset_ that's selected on the page.
@@ -32,7 +32,7 @@ Learn more by considering two use cases.
 
 ## Use Case 1: Similar Results on Asset Publisher Pages
 
-> **End Result:** Similar Results (those that would be returned as matching search hits) of the same asset type are displayed when an asset is selected in the Asset Publisher.
+Similar Results (those that would be returned as matching search hits) of the same asset type are displayed when an asset is selected in the Asset Publisher.
 
 To configure this example,
 <!-- One or two screenshots here would be beneficial. -->
@@ -58,7 +58,7 @@ To configure this example,
 
 Click on an asset displayed by the Asset Publisher widget, and similar results appear in the Similar Results widget.
 
-![Similar Results are displayed for the Asset Publisher's main asset, if the Asset Publisher is configured to display full content.](./similar-results/images/02.png)
+<!-- ![Similar Results are displayed for the Asset Publisher's main asset, if the Asset Publisher is configured to display full content.](./similar-results/images/02.png) -->
 
 Click on one of the similar results. The Asset Publisher updates its main asset, and Similar Results are recalculated for the new main asset.
 
@@ -85,7 +85,7 @@ To configure an example for using Similar Results with Blogs,
 
 1. Click one of the similar results. Its Blog content is now rendered on the Blogs widget on the current page.
 
-![The Similar Results widget must accompany widgets that display a main asset on the page.](./similar-results/images/03.png)
+<!-- ![The Similar Results widget must accompany widgets that display a main asset on the page.](./similar-results/images/03.png) -->
 
 ## Similar Results Widget Templates
 
@@ -93,14 +93,14 @@ By default, similar results render using a _Compact Layout_ [widget template](ht
 
 Two additional widget templates are available out of the box: _List Layout_ and _Card Layout_.
 
-The Compact Layout looks like this:
-![The compact layout is a list of hyperlinked titles.](./similar-results/images/02.png)
+<!--The Compact Layout looks like this:
+![The compact layout is a list of hyperlinked titles.](./similar-results/images/02.png) -->
 
-The List Layout looks like this:
-![The list layout shows a summary of the asset, and includes the title, the User, modified date, asset type, and a snippet of content.](./similar-results/images/04.png)
+<!--The List Layout looks like this:
+![The list layout shows a summary of the asset, and includes the title, the User, modified date, asset type, and a snippet of content.](./similar-results/images/04.png) -->
 
-The Card Layout looks like this:
-![Similar to the list, the card layout puts the asset's summary fields into a card container.](./similar-results/images/05.png)
+<!--The Card Layout looks like this:
+![Similar to the list, the card layout puts the asset's summary fields into a card container.](./similar-results/images/05.png) -->
 
 ### Add a Custom Widget Template for Similar Results
 
