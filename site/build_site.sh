@@ -14,30 +14,33 @@ function check_utils {
 	done
 }
 
-function parse_args_generate_input {
-
-	rm -fr build
-
-	cd ../docs
-
-	./update_examples.sh && ./update_permissions.sh
-
-	cd ../site
+function parse_args_generate_sphinx_input {
+# This deals with the arguments for product names and versions, calling the populate_product_input_dir method for the handled product(s)
 
     product_name=$1
     version_name=$2
+
+    # Hard-coding the current versions as defaults so we don't have to always specify the version
     commerce_default_version="2.x"
     dxp_default_version="7.x"
     dxp_cloud_default_version="latest"
 
+    # these 4 lines stolen from the function I replaced: clean the build folder, call some other scripts, come back to the site folder
+	rm -fr build
+	cd ../docs
+	./update_examples.sh && ./update_permissions.sh
+	cd ../site
+
+    # deal with each argument we want to accept
     case $product_name in
+        # For each specific product, set the default version name if none is provided, then populate the input dir with only that product/ver
         "commerce")      
             if [[ $version_name=="default" ]]; then
               version_name=${commerce_default_version}
             fi
             echo "Building $product_name $version_name"
             sleep 2
-            generate_sphinx_input 
+            populate_product_input_dir 
         ;;
         "dxp")
             if [[ $version_name=="default" ]]; then
@@ -45,7 +48,7 @@ function parse_args_generate_input {
             fi
             echo "Building $product_name $version_name"
             sleep 2
-            generate_sphinx_input 
+            populate_product_input_dir 
         ;; 
         "dxp-cloud")
             if [[ $version_name=="default" ]]; then
@@ -53,12 +56,12 @@ function parse_args_generate_input {
             fi
             echo "Building $product_name $version_name"
             sleep 2
-            generate_sphinx_input 
+            populate_product_input_dir 
         ;;
         "all")      
-        # The for loops are the same for prod and all. I could combine them into one case and just check for "prod"
+        # The for loops are the same for prod and all, copied form the original version of the script. I could combine them into one case and just check for "prod"
         # to run the git clean and the upload_to_server; would be shorter but maybe messier
-        # must use the loops to find all products and versions 
+        # Use loops to pupulate the input dir with all products and versions 
             echo "Building All Products and Versions"
             sleep 2
             # must use the loops to find everything 
@@ -66,12 +69,12 @@ function parse_args_generate_input {
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                     echo "Currently Building $product_name $version_name"
                     sleep 2
-                    generate_sphinx_input
+                    populate_product_input_dir
                 done
             done
         ;;
         "prod")
-        # git clean and must use the loops to find all products and versions 
+        # same as "all" plus a git clean, and a todo for the upload_to_server stuff
         # git clean -dfx .
             echo "Building All Products and Versions for Production"
             sleep 2
@@ -79,7 +82,7 @@ function parse_args_generate_input {
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                     echo "Currently Building: $product_name $version_name"
                     sleep 2
-                    generate_sphinx_input
+                    populate_product_input_dir
                 done
             done
             # TODO: upload_to_server should somehow only be called for the "prod" case, after html is generated.
@@ -92,10 +95,12 @@ function parse_args_generate_input {
         ;;
     esac
 
+    # this was in the original script
 	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
 }
 
-function generate_sphinx_input {
+function populate_product_input_dir {
+
             mkdir -p build/input/${product_name}-${version_name}/docs
 
 			cp -R docs/* build/input/${product_name}-${version_name}
@@ -189,7 +194,7 @@ function main {
 
 	pip_install recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
 
-	parse_args_generate_input ${1:-all} ${2:-default}
+	parse_args_generate_sphinx_input ${1:-all} ${2:-default}
 
  	generate_static_html
 
