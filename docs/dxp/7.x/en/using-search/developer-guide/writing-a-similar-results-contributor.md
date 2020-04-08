@@ -77,7 +77,7 @@ To get an example `SimilarResultsContributor` up and running on your instance of
 1. Click on one of the KB Articles to select it for display, as the main asset.
 
     The Similar Results widget now shows other related KB Articles.
-
+<!-- This image could be a bit larger and also have some sort of highlighting to indicate the element that we want to draw the readers attention towards. -->
 ![The Similar Results widget can display KB Articles.](./writing-a-similar-results-contributor/images/02.png "KB Similar Results")
 
 Now that you verified that the example behaves properly, learn how it works.
