@@ -14,22 +14,89 @@ function check_utils {
 	done
 }
 
-function generate_sphinx_input {
+function parse_args_generate_input {
+
 	rm -fr build
 
 	cd ../docs
-
-	git clean -dfx .
 
 	./update_examples.sh && ./update_permissions.sh
 
 	cd ../site
 
-	for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
-	do
-		for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
-		do
-			mkdir -p build/input/${product_name}-${version_name}/docs
+    product_name=$1
+    version_name=$2
+    commerce_default_version="2.x"
+    dxp_default_version="7.x"
+    dxp_cloud_default_version="latest"
+
+    case $product_name in
+        "commerce")      
+            if [[ $version_name=="default" ]]; then
+              version_name=${commerce_default_version}
+            fi
+            echo "Building $product_name $version_name"
+            sleep 2
+            generate_sphinx_input 
+        ;;
+        "dxp")
+            if [[ $version_name=="default" ]]; then
+              version_name=${dxp_default_version}
+            fi
+            echo "Building $product_name $version_name"
+            sleep 2
+            generate_sphinx_input 
+        ;; 
+        "dxp-cloud")
+            if [[ $version_name=="default" ]]; then
+              version_name=${dxp_cloud_default_version}
+            fi
+            echo "Building $product_name $version_name"
+            sleep 2
+            generate_sphinx_input 
+        ;;
+        "all")      
+        # The for loops are the same for prod and all. I could combine them into one case and just check for "prod"
+        # to run the git clean and the upload_to_server; would be shorter but maybe messier
+        # must use the loops to find all products and versions 
+            echo "Building All Products and Versions"
+            sleep 2
+            # must use the loops to find everything 
+            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
+                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
+                    echo "Currently Building $product_name $version_name"
+                    sleep 2
+                    generate_sphinx_input
+                done
+            done
+        ;;
+        "prod")
+        # git clean and must use the loops to find all products and versions 
+        # git clean -dfx .
+            echo "Building All Products and Versions for Production"
+            sleep 2
+            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
+                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
+                    echo "Currently Building: $product_name $version_name"
+                    sleep 2
+                    generate_sphinx_input
+                done
+            done
+            # TODO: upload_to_server should somehow only be called for the "prod" case, after html is generated.
+        ;;
+        *)
+        #handle invalid args: because I'm passing defaults (all default), this only gets called if an unhandled case gets passed
+                echo "You must enter at least one argument: product_name"
+                echo "Product name options: all | prod | commerce | dxp | dxp-cloud" 
+                exit 1
+        ;;
+    esac
+
+	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
+}
+
+function generate_sphinx_input {
+            mkdir -p build/input/${product_name}-${version_name}/docs
 
 			cp -R docs/* build/input/${product_name}-${version_name}
 
@@ -39,10 +106,6 @@ function generate_sphinx_input {
 			then
 				mv build/input/${product_name}-${version_name}/contents.rst build/input/${product_name}-${version_name}
 			fi
-		done
-	done
-
-	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
 }
 
 function generate_static_html {
@@ -126,9 +189,9 @@ function main {
 
 	pip_install recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
 
-	generate_sphinx_input
+	parse_args_generate_input ${1:-all} ${2:-default}
 
-	generate_static_html
+ 	generate_static_html
 
 	upload_to_server
 }
@@ -146,7 +209,7 @@ function pip_install {
 function upload_to_server {
 
 	#
-	# TODO
+	# TODO: Should only be called when the "prod" arg is passes
 	#
 
 	echo upload_to_server
