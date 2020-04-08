@@ -2,7 +2,7 @@
 
 A search engine is a critical component of your Liferay DXP installation. This overview discusses the fundamentals on how to install a search engine in a **production** environment.
 
-As noted in the [Configuration Overview](placeholder), DXP includes an Elasticsearch server that runs in the same JVM. The embedded server is supported for development but not for a production environment. As best practice, administrators should **not** use the [embedded version in your production deployment](https://help.liferay.com/hc/en-us/articles/360029031631-Elasticsearch#embedded-vs-remote-operation-mode).
+As noted in the [Configuration Overview](placeholder), DXP includes an Elasticsearch server that runs in the same JVM. The embedded server is supported for development but not for production environments. Administrators should **not** use the [embedded version in a production deployment](https://help.liferay.com/hc/en-us/articles/360029031631-Elasticsearch#embedded-vs-remote-operation-mode).
 
 Besides Elasticsearch, DXP also supports [Solr](http://lucene.apache.org/solr). Note that Solr is not embedded and has to be connected remotely. To use Solr, see the [Installing Solr](https://help.liferay.com/hc/articles/360032264052-Installing-Solr) article.
 
@@ -47,33 +47,33 @@ Implementation for the following APIs may be added in the future, but they are n
 
 * From Portal Core (Module: `portal-kernel`, Artifact:
     `com.liferay.portal.kernel`):
-    * `com.liferay.portal.kernel.search.generic.NestedQuery`
-    * `com.liferay.portal.kernel.search.filter`:
-        * `ComplexQueryPart`
-        * `GeoBoundingBoxFilter`
-        * `GeoDistanceFilter`
-        * `GeoDistanceRangeFilter`
-        * `GeoPolygonFilter`
+  * `com.liferay.portal.kernel.search.generic.NestedQuery`
+  * `com.liferay.portal.kernel.search.filter`:
+    * `ComplexQueryPart`
+    * `GeoBoundingBoxFilter`
+    * `GeoDistanceFilter`
+    * `GeoDistanceRangeFilter`
+    * `GeoPolygonFilter`
 * From the Portal Search API (Module: `portal-search-api`, Artifact:
     `com.liferay.portal.search.api`):
-    * `com.liferay.portal.search.filter`:
-        * `ComplexQueryPart`
-        * `TermsSetFilter`
-    * `com.liferay.portal.search.geolocation.*`
-    * `com.liferay.portal.search.highlight.*`
-    * `com.liferay.portal.search.query.function.*`
-    * `com.liferay.portal.search.query.*`:
-    * `com.liferay.portal.search.script.*`
-    * `com.liferay.portal.search.significance.*`
-    * `com.liferay.portal.search.sort.*`: only `Sort`,`FieldSort`, and `ScoreSort` are supported
+  * `com.liferay.portal.search.filter`:
+    * `ComplexQueryPart`
+    * `TermsSetFilter`
+  * `com.liferay.portal.search.geolocation.*`
+  * `com.liferay.portal.search.highlight.*`
+  * `com.liferay.portal.search.query.function.*`
+  * `com.liferay.portal.search.query.*`:
+  * `com.liferay.portal.search.script.*`
+  * `com.liferay.portal.search.significance.*`
+  * `com.liferay.portal.search.sort.*`: only `Sort`,`FieldSort`, and `ScoreSort` are supported
 * Portal Search Engine Adapter API (Module: `portal-search-engine-adapter-api`,
     Artifact: `com.liferay.portal.search.engine.adapter.api`)
-    * `com.liferay.portal.search.engine.adapter.cluster.*`
-    * `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
-    * `com.liferay.portal.search.engine.adapter.index.*`: only `RefreshIndexRequest` is supported
-    * `com.liferay.portal.search.engine.adapter.search.*`:
-        * `MultisearchSearchRequest`
-        * `SuggestSearchRequest`
-    * `com.liferay.portal.search.engine.adapter.snapshot.*`
+  * `com.liferay.portal.search.engine.adapter.cluster.*`
+  * `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
+  * `com.liferay.portal.search.engine.adapter.index.*`: only `RefreshIndexRequest` is supported
+  * `com.liferay.portal.search.engine.adapter.search.*`:
+    * `MultisearchSearchRequest`
+    * `SuggestSearchRequest`
+  * `com.liferay.portal.search.engine.adapter.snapshot.*`
 
 Liferay Commerce requires the `TermsSetFilter` implementation which is only available in the Elasticsearch connector.
