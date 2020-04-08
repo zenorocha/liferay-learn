@@ -39,7 +39,6 @@ function parse_args_generate_sphinx_input {
               version_name=${commerce_default_version}
             fi
             echo "Building $product_name $version_name"
-            sleep 2
             populate_product_input_dir 
         ;;
         "dxp")
@@ -47,7 +46,6 @@ function parse_args_generate_sphinx_input {
               version_name=${dxp_default_version}
             fi
             echo "Building $product_name $version_name"
-            sleep 2
             populate_product_input_dir 
         ;; 
         "dxp-cloud")
@@ -55,7 +53,6 @@ function parse_args_generate_sphinx_input {
               version_name=${dxp_cloud_default_version}
             fi
             echo "Building $product_name $version_name"
-            sleep 2
             populate_product_input_dir 
         ;;
         "all")      
@@ -63,25 +60,21 @@ function parse_args_generate_sphinx_input {
         # to run the git clean and the upload_to_server; would be shorter but maybe messier
         # Use loops to pupulate the input dir with all products and versions 
             echo "Building All Products and Versions"
-            sleep 2
             # must use the loops to find everything 
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                     echo "Currently Building $product_name $version_name"
-                    sleep 2
                     populate_product_input_dir
                 done
             done
         ;;
         "prod")
         # same as "all" plus a git clean, and a todo for the upload_to_server stuff
-        # git clean -dfx .
+            git clean -dfx .
             echo "Building All Products and Versions for Production"
-            sleep 2
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                     echo "Currently Building: $product_name $version_name"
-                    sleep 2
                     populate_product_input_dir
                 done
             done
