@@ -78,7 +78,7 @@ To get an example `SimilarResultsContributor` up and running on your instance of
 
     The Similar Results widget now shows other related KB Articles.
 
-![The Similar Results widget can display KB Articles.](./adding-a-new-product-type/images/02.png "KB Similar Results")
+![The Similar Results widget can display KB Articles.](./writing-a-similar-results-contributor/images/02.png "KB Similar Results")
 
 Now that you verified that the example behaves properly, learn how it works.
 
@@ -98,7 +98,7 @@ The `KBSimilarResultsContributor` implements the `SimilarResultsContributor` int
 public class KBSimilarResultsContributor implements SimilarResultsContributor {
 ```
 
-The `service` component property registers your implementation as a `SimilarResultsContributor` service. 
+The `service` component property registers your implementation as a `SimilarResultsContributor` service.
 
 ### Review the `SimilarResultsContributor` Interface
 
