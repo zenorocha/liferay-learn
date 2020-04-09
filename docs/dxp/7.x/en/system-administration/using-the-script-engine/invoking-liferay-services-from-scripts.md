@@ -45,5 +45,5 @@ Importing `com.liferay.portal.kernel.model.User` and `java.util.List` isn't nece
 ## Next Steps
 
 * [Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
-* [Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
+* [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
 * [Script Examples](./script-examples.md)

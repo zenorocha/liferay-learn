@@ -28,7 +28,7 @@ To grant Site scoped permissions to Users in a User Group,
 
 1. [Create the User Group](./creating-and-managing-user-groups.md#creating-a-user-group).
 1. Assign the User Group to a Site ([see above](#managing-site-membership-with-user-groups)).
-1. Create the Site Role and define its permissions (see [Roles and Permissions](../roles-and-permissions/roles-and-permissions.md)).
+1. Create the Site Role and define its permissions (see [Roles and Permissions](../roles-and-permissions/README.md)).
 1. Assign the Role to the User Group.
 
 To assign an existing Site Role to an existing User Group that's already a member of the Site,

@@ -21,7 +21,7 @@ Once you create the User, additional information can be added.
 
 ### Setting Passwords for New Users
 
-When you create a User, Liferay DXP generates his/her password. If a [mail server was set up](../../installation-and-upgrades/setting-up-liferay-dxp/connecting-to-a-mail-server.md), Liferay DXP sends an email message with the User's new password.
+When you create a User, Liferay DXP generates his/her password. If a [mail server was set up](../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md), Liferay DXP sends an email message with the User's new password.
 
 If you haven't set up a mail server, click the *Password* item from the General menu and manually set a password for your new user. Enter the new password twice.
 

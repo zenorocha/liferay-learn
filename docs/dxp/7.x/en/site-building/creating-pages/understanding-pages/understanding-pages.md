@@ -30,8 +30,8 @@ Content Pages enable users to build professional pages that can be easily manage
 
 Using Content Pages allows access to additional powerful features and benefits:
 
-* [Personalized and Adaptive Site Experiences](../personalizing-site-experience/README.md)
-* [A/B Testing](../07-optimizing-sites/02-ab-testing/README.md)
+* [Personalized and Adaptive Site Experiences](../../personalizing-site-experience/README.md)
+* [A/B Testing](../../optimizing-sites/02-ab-testing/README.md)
 * Approachable Content and Site Building Experience
 
 To learn more about Content Pages see the [Content Page Overview](../building-and-managing-content-pages/content-pages-overview.md). To jump right into building one, see [Building Content Pages](../building-and-managing-content-pages/building-content-pages.md).
@@ -75,7 +75,7 @@ When adding a page, you also have the option to choose a Page Template. Page Tem
 Learn more about Page Templates:
 
 * Adding a Page Using a Page Template
-* [Creating a Page Template](./07-creating-a-page-template)
+* [Creating a Page Template](../adding-pages/creating-a-page-template.md)
 
 ## Child Pages and Page Hierarchy
 
@@ -87,4 +87,4 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 * [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
 * [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)
-* [Personalizing Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)
+* [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)

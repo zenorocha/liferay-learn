@@ -4,7 +4,7 @@ This article documents how to configure a mailing list for a message board categ
 
 ## Prerequisites
 
-Before configuring the Message Boards app's email lists, see the [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/connecting-to-a-mail-server.md) article for general instructions on how to configure a mail server for the entire DXP instance.
+Before configuring the Message Boards app's email lists, see the [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) article for general instructions on how to configure a mail server for the entire DXP instance.
 
 ## Adding a Mailing List to a Message Boards Category
 
@@ -44,5 +44,5 @@ The mailing list is now active for this category. Users who have subscribed to t
 
 ## Related Information
 
-* [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/connecting-to-a-mail-server.md)
+* [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md)
 * [Creating Message Board Categories](./creating-message-boards-categories.md)

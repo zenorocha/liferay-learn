@@ -24,7 +24,7 @@ You'll find the settings in Configuration &rarr; System Settings &rarr; Security
 | **URL Pattern** | Use the Plus button to add as many patterns as you need. Define patterns that match URLs to the resources you want to share. For example, if you have many attachments in the Knowledge Base application, you could define this pattern: <br> `/knowledge_base/*` <br> This would define resources stored in the Knowledge Base as applicable to the policy you set in the response header below. |
 | **CORS Response Headers** | Use the Plus button to add as many headers as you need. Define policies for any of the [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#CORS) here. |
 
-You can also use a [configuration file](../../platfrom/understanding-system-configuration-files.md) to configure CORS.
+You can also use a configuration file <!-- future link required --> to configure CORS.
 
 ## Enabling CORS for JAX-RS Applications
 
@@ -43,7 +43,7 @@ You'll find the settings in Configuration &rarr; System Settings &rarr; Security
 | **URL Pattern** | Use the Plus button to add as many patterns as you need. Define patterns that match URLs to the web services you want to access. |
 | **CORS Response Headers** | Use the Plus button to add as many headers as you need. Define policies for any of the [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#CORS) here. |
 
-[JAX-RS](../../platform/web-services/jax-rs.md) developers can use the `@CORS` annotation to set policies for their deployed applications.
+JAX-RS<!-- future link required --> developers can use the `@CORS` annotation to set policies for their deployed applications.
 
 ## Additional Information
 

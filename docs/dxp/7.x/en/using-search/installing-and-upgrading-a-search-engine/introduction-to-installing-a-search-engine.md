@@ -2,7 +2,7 @@
 
 A search engine is a critical component of your Liferay DXP installation. This overview discusses the fundamentals on how to install a search engine in a **production** environment.
 
-As noted in the [Configuration Overview](placeholder), DXP includes an Elasticsearch server that runs in the same JVM. The embedded server is supported for development but not for production environments. Administrators should **not** use the [embedded version in a production deployment](https://help.liferay.com/hc/en-us/articles/360029031631-Elasticsearch#embedded-vs-remote-operation-mode).
+As noted in the Configuration Overview<!-- TODO link -->, DXP includes an Elasticsearch server that runs in the same JVM. The embedded server is supported for development but not for production environments. Administrators should **not** use the [embedded version in a production deployment](https://help.liferay.com/hc/en-us/articles/360029031631-Elasticsearch#embedded-vs-remote-operation-mode).
 
 Besides Elasticsearch, DXP also supports [Solr](http://lucene.apache.org/solr). Note that Solr is not embedded and has to be connected remotely. To use Solr, see the [Installing Solr](https://help.liferay.com/hc/articles/360032264052-Installing-Solr) article.
 
@@ -36,8 +36,8 @@ There are some drawbacks to using Solr as the search engine. These limitations a
 
 * [Liferay Commerce](https://help.liferay.com/hc/en-us/articles/360017869952)
 * [Workflow Metrics](https://help.liferay.com/hc/en-us/articles/360029042071-Workflow-Metrics-The-Service-Level-Agreement-SLA-)
-* [Custom Filter search widget](/docs/7-2/user/-/knowledge_base/u/filtering-search-results-with-the-custom-filter-widget)
-* [The Low Level Search Options widget](/docs/7-2/user/-/knowledge_base/u/low-level-search-options-searching-additional-or-alternate-indexes)
+* [Custom Filter search widget](https://help.liferay.com/hc/en-us/articles/360028721272-Filtering-Search-Results-with-the-Custom-Filter-Widget)
+* [The Low Level Search Options widget](https://help.liferay.com/hc/en-us/articles/360032607571-Low-Level-Search-Options-Searching-Additional-or-Alternate-Indexes)
 * [Search Tuning: Customizing Search Results](https://help.liferay.com/hc/en-us/articles/360034473872-Search-Tuning-Customizing-Search-Results)
 * [Search Tuning: Synonyms](https://help.liferay.com/hc/articles/360034473852-Search-Tuning-Synonym-Sets)
 

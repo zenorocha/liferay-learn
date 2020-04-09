@@ -102,4 +102,4 @@ Now that you're familiar with the DXP upgrade components, you can upgrade your D
 Additionally, refer to these other upgrade scenarios if they relate to your upgrade:
 
 * [Upgrading a Sharded Environment](../other-upgrade-scenarios/upgrading-a-sharded-environment.md)
-* [Maintaining Clustered Installations](../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
+* [Maintaining Clustered Installations](../../maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

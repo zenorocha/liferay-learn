@@ -47,7 +47,7 @@ Administrators of customizable pages have the same two views as Site members: th
 
 ## Granting Roles Permission to Customize Pages
 
-By default, site members can make page customizations but non-site members and guests can't. Administrators can update permissions for an existing Role or [create a new Role](TODO) and assign it to other users to give them the ability to customize pages. Follow these steps to grant a Role permissions to customize pages:
+By default, site members can make page customizations but non-site members and guests can't. Administrators can update permissions for an existing Role or [create a new Role](../../../users-and-permissions/roles-and-permissions/README.md) and assign it to other users to give them the ability to customize pages. Follow these steps to grant a Role permissions to customize pages:
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 

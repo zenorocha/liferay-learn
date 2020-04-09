@@ -31,4 +31,4 @@ To configure Form email notifications:
 ## Additional Information
 
 * [Using Forms with a Workflow](./advanced-forms-usage/using-forms-with-a-workflow.md)
-* [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/connecting-to-a-mail-server.md)
+* [Connecting to a Mail Server](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md)

@@ -1,6 +1,6 @@
 # Creating and Managing User Groups
 
-A User Group is a list of Users created for a specific purpose. User Groups can be created across the hierarchical boundaries of [Organizations](../organizations/understanding-organizations.md). For example, an administrator could create a Teachers User Group for adding all members to multiple Sites, assign them all to a [Regular Role](../roles-and-permissions/roles-and-permissions.md), and create a common set of profile pages for all teachers in the User Group.
+A User Group is a list of Users created for a specific purpose. User Groups can be created across the hierarchical boundaries of [Organizations](../organizations/understanding-organizations.md). For example, an administrator could create a Teachers User Group for adding all members to multiple Sites, assign them all to a [Regular Role](../roles-and-permissions/README.md), and create a common set of profile pages for all teachers in the User Group.
 
 ![Adding a User Group requires only a small amount of information.](./creating-and-managing-user-groups/images/01.png)
 

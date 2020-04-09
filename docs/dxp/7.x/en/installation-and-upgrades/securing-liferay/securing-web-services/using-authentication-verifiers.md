@@ -63,7 +63,7 @@ This Auth Verifier is not enabled by default.
 
 As Liferay embraced modularity, this extender was written to enable modules to be part of `TunnelServlet`. It maps `TunnelServlet` and `TunnelingServletAuthVerifier` to the module servlet context. Modules with `Http-Tunnel` in the manifest can make use of the Tunnel Servlet, and can expose the API via `/o/_module_/api/liferay/do`.
 
-Configure it by setting client IP addresses allowed to tunnel. For more information, please see [the properties documentation](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#HTTP%20Tunneling) as well as [remote staging](../../site-building/staging.md).
+Configure it by setting client IP addresses allowed to tunnel. For more information, please see [the properties documentation](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#HTTP%20Tunneling) as well as remote staging<!-- future link required -->.
 
 Note that this is not a recommended way to export remote APIs; it's far better to expose remote services using JAX-RS or Liferay JSON Web Service technologies.
 
@@ -95,7 +95,7 @@ An example of a trusted remote client is the Staging remote publishing feature.
 
 Trusted remote clients authenticate using a shared secret stored in the portal property `tunneling.servlet.shared.secret`. The default value is empty and forbids all access.
 
-Even though the default configuration is enabled by default, access is limited to localhost only. Configure it by setting client IP addresses allowed to tunnel. For more information, please see [the properties documentation](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#HTTP%20Tunneling) as well as [remote staging](../../site-building/staging.md).
+Even though the default configuration is enabled by default, access is limited to localhost only. Configure it by setting client IP addresses allowed to tunnel. For more information, please see [the properties documentation](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#HTTP%20Tunneling) as well as remote staging<!-- future link required -->.
 
 ## Related Topics
 

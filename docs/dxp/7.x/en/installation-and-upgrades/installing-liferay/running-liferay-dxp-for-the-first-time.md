@@ -45,7 +45,7 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
 
 The Setup Wizard stores your configuration values in a `portal-setup-wizard.properties` file in your [Liferay Home](../reference/liferay-home.md).
 
-If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](./activating-liferay-dxp.md).
+If you have a Liferay DXP Enterprise subscription, DXP requests your activation key. See [Activating Liferay DXP](../setting-up-liferay-dxp/activating-liferay-dxp.md).
 
 Lastly DXP prompts you to restart your server.
 
@@ -76,7 +76,7 @@ Congratulations! You have launched your on premises Liferay DXP instance.
 You can [sign in as your administrator user](../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
 * [Introduction to Managing Apps](../../system-administration/installing-and-managing-apps/introduction-to-managing-apps.md)
-* [Trial Plugin Installation](../setting-up-liferay-dxp/trial-plugin-installation.md)
+* [Accessing Plugins During a Trial Period](../../system-administration/installing-and-managing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../securing-liferay/introduction-to-securing-liferay.md)
 * [Introduction to Clustering Liferay DXP](../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)

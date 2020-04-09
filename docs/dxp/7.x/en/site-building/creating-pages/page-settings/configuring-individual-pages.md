@@ -136,4 +136,4 @@ Apply rules for how this page should render for various mobile devices here. See
 
 ### Customization Settings
 
-This configuration option is only available for Widget Pages. It lets you make portions of the page customizable for site members. You can learn more about page customizations in [Personalizing Pages](./09-personalizing-pages.md). -->
+This configuration option is only available for Widget Pages. It lets you make portions of the page customizable for site members. You can learn more about page customizations in [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md). -->

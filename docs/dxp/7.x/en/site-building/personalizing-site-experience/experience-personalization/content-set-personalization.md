@@ -3,7 +3,7 @@
 You can modify Content Sets to create a personalized variation for members of a specific User Segment. Follow these steps:
 
 1. Open the Product Menu and select *Content & Data* &rarr; *Content Sets* under your Site's menu.
-1. Select an existing Content Set or [create a new Content Set](TODO).
+1. Select an existing Content Set or create a new Content Set<!-- Link required -->.
 1. Click the *Actions* button ![Actions](../../../images/icon-actions.png) &rarr; *Edit* for the Content Set you wish to personalize.
 1. Click the *New Personalized Variation* button next to the Content Set if there are *No Personalized Variations yet*, otherwise click the `+` button next to Personalized Variations.
 

@@ -70,4 +70,4 @@ You can translate each of a metadata set's field values to any supported locales
 
 ## Additional Information
 
-* [Creating Document Types](./creating-document-types.md)
+* [Creating Document Types](./defining-document-types.md)

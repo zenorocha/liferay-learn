@@ -1,6 +1,6 @@
 # Defining Document Types
 
-Document types are made of metadata fields and help users define the purpose of Document Library files. Document types also help users integrate files with other features like [search](../../../../using-search/01-user-guide/README.rst) and [workflow](../../../../process-automation/workflow/user-guide/introduction-to-workflow.md).
+Document types are made of metadata fields and help users define the purpose of Document Library files. Document types also help users integrate files with other features like [search](../../../../using-search/README.md) and [workflow](../../../../process-automation/workflow/user-guide/introduction-to-workflow.md).
 
 To create a document type:
 
@@ -17,7 +17,7 @@ To create a document type:
     ![Drag and drop main metadata fields](./defining-document-types/images/01.png)
 
 1. Expand the _Additional Metadata Fields_.
-1. Select a metadata set to associate with the document type. To learn more, see [Creating Metadata Sets](./creating-metadata-sets.md).
+1. Select a metadata set to associate with the document type. To learn more, see [Setting and Defining Metadata](./setting-and-defining-metadata.md).
 
     ![Associate additional metadata sets.](./defining-document-types/images/02.png)
 
@@ -33,4 +33,4 @@ When users create new files of the document type, they're presented with metadat
 
 ## Additional Information
 
-* [Creating Metadata Sets](./creating-metadata-sets.md)
+* [Setting and Defining Metadata](./setting-and-defining-metadata.md)

@@ -110,7 +110,3 @@ These modules provide the service access policy management UI that's accessible 
 1. The default service access policy configuration can be edited. You can also force a default policy to be applied even when no policies are applied by the `AuthVerifier`.
 
 There's also an `AuthenticatedAccessControlPolicy`. This policy doesn't do anything if a `ServiceAccessPolicyManager` implementation is present. If the service access policy module is disabled, however, the `AuthenticatedAccessControlPolicy` provides a fallback that still requires authenticated access for web services.
-
-## Related Topics
-
-[Creating Service Access Policies]()
