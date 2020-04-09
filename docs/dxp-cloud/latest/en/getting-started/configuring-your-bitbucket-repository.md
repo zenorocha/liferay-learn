@@ -5,9 +5,26 @@ Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub reposit
 1. Transfer the initial provisioned repository to their own private Bitbucket repository.
 1. Integrate that repository with the Jenkins (CI) service in DXP Cloud using a Webhook.
 
+## Preparing the Jenkins service
+
+Before you start, make sure that you're running the following Jenkins service or higher:
+
+```
+liferaycloud/jenkins:2.222.1-3.2.0
+```
+
+If not, then follow these steps to upgrade:
+
+1. Update to version `liferaycloud/jenkins:2.222.1-3.2.0`
+1. Delete the `Jenkinsfile` located on the root folder
+1. Add the following environment variable: `JENKINS_USE_DEFAULT_JENKINSFILE: true`
+1. Deploy Jenkins service
+
+> Note: if you've customized your Jenkinsfile, follow this guide to [extend the Default Jenkinsfile](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile).
+
 ## Creating a Bitbucket Repository
 
-First, we'll create a new Bitbucket repository.
+First, you'll create a new Bitbucket repository.
 
 1. Go to [Bitbucket](https://bitbucket.org)
 1. Click the "+" icon in the sidebar under the search icon
@@ -55,12 +72,6 @@ Now you'll create an access token that will be used on the Webhook triggers Jenk
 1. Copy the app password (BitBucket's equivalent of a personal access token)
 
 ## Connecting BitBucket to your Jenkins service
-
-Before we continue, make sure that you're running the following Jenkins service or higher:
-
-```
-liferaycloud/jenkins:TBD
-```
 
 Lastly, you will set four environment variables in the Jenkins service's to point to your new repository:
 
