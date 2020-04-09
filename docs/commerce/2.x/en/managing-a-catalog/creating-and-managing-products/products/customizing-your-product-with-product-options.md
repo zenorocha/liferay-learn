@@ -28,16 +28,12 @@ To create an option template:
 
 The Option Template has been added and can be applied to all products.
 
-When _Use in Faceted Navigation_ is switched to _Active_, this enable to allow search results to be filtered for this option.
+When _Use in Faceted Navigation_ is switched to _Active_, users have the ability to filter search results based on the specified option.
 
 A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
 
 ```warning::
-   You cannot use Boolean Question as a SKU contributor otherwise you will see the following warning message:
-```
-
-```error::
-   SKU Contributor cannot be set as true for the selected Field Type.
+   You cannot use a Boolean option as a SKU contributor. Attempting to use a Boolean option as a SKU contributor shows the following warning message: ``SKU Contributor cannot be set as true for the selected Field Type.``
 ```
 
 ## Adding Option Values
