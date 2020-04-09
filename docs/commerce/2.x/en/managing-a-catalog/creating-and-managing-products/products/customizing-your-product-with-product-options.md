@@ -6,12 +6,6 @@ Before applying an option to a product, it is _necessary_ to create an option te
 
 An option template can be applied to any product in the catalog. This makes it easy to apply frequently-used options to a large number of products. This article describes how to create an option template. Option Templates are created independently from a product so that changes to the template do not affect the product's description.
 
-## Roadmap
-
-* [Creating an Option Template](#creating-an-option-template)
-* [Adding Option Values](#adding-option-values)
-* [Applying an Option Template to a Product](#applying-an-option-template-to-a-product)
-
 ## Creating an Option Template
 
 To create an option template:
@@ -34,9 +28,17 @@ To create an option template:
 
 The Option Template has been added and can be applied to all products.
 
-**Note 1**: When _Use in Faceted Navigation_ is switched to _Active_, this enable to allow search results to be filtered for this option.
+When _Use in Faceted Navigation_ is switched to _Active_, this enable to allow search results to be filtered for this option.
 
-**Note 2**: A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
+A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](./adding-skus-to-your-products.md). If enabled, the option must have a SKU in order to be sold.
+
+```warning::
+   You cannot use Boolean Question as a SKU contributor otherwise you will see the following warning message:
+```
+
+```error::
+   SKU Contributor cannot be set as true for the selected Field Type.
+```
 
 ## Adding Option Values
 
