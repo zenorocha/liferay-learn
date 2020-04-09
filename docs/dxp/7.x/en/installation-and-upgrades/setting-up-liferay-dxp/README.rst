@@ -18,15 +18,16 @@ File Storage
 -  :doc:`../../system-administration/file-storage/other-file-store-types/amazon-s3-store`
 -  :doc:`../../system-administration/file-storage/other-file-store-types/dbstore`
 
-Localization
-------------
-
 Installing and Managing Apps
 ----------------------------
 
 -  :doc:`../../system-administration/installing-and-managing-apps/getting-started/installing-and-managing-apps`
 -  :doc:`../../system-administration/installing-and-managing-apps/getting-started/using-marketplace`
 -  :doc:`../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period`
+
+Localization
+------------
+- :doc:`/installation-and-upgrades/setting-up-liferay-dxp/localization/configuring-localization`
 
 Installing a Search Engine
 --------------------------
