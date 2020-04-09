@@ -17,7 +17,7 @@ If not, then follow these steps to upgrade:
 
 1. Update to version `liferaycloud/jenkins:2.222.1-3.2.0`
 1. Delete the `Jenkinsfile` located on the root folder
-1. Add the following environment variable: `JENKINS_USE_DEFAULT_JENKINSFILE: true`
+1. Add the following environment variable: `LCP_CI_JENKINS_USE_DEFAULT_JENKINSFILE: true`
 1. Deploy Jenkins service
 
 > Note: if you've customized your Jenkinsfile, follow this guide to [extend the Default Jenkinsfile](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile).

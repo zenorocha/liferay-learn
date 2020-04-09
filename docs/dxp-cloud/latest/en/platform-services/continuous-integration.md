@@ -20,7 +20,7 @@ Apart from that, we're providing a powerful set of extension points for you to c
 
 1. Update to version `liferaycloud/jenkins:2.222.1-3.2.0`
 1. Delete the `Jenkinsfile` located on the root folder
-1. Add the following environment variable: `JENKINS_USE_DEFAULT_JENKINSFILE: true`
+1. Add the following environment variable: `LCP_CI_JENKINS_USE_DEFAULT_JENKINSFILE: true`
 1. Deploy Jenkins service
 
 ## Extending the Default Jenkinsfile
@@ -41,8 +41,8 @@ Here is a basic overview of the steps in the CI build process:
 1. Load `lcp/ci/Jenkinsfile-before-cloud-deploy`, if it exists.
 1. Optionally deploy the build to an environment in the cloud, depending on if
    the current branch has been specified as the deploy branch. This is
-   configured through the `DEPLOY_BRANCH` environment variable. The
-   `DEPLOY_TARGET` environment variable specifies which environment to deploy
+   configured through the `LCP_CI_DEPLOY_BRANCH` environment variable. The
+   `LCP_CI_DEPLOY_TARGET` environment variable specifies which environment to deploy
    to.
 1. Load `lcp/ci/Jenkinsfile-post-always`, if it exists. This will run both when the
    build fails and when it succeeds.
@@ -73,15 +73,15 @@ util.sendSlackMessage("About to create DXP Cloud build...")
 
 The following environment variables are only used in the default Jenkinsfile. To see what they do please refer to [Jenkins documentation regarding pipeline options](https://jenkins.io/doc/book/pipeline/syntax/#options).
 
-Name                                   | Default Value   | Description |
--------------------------------------- | --------------- | ----------- |
-`JENKINS_USE_DEFAULT_JENKINSFILE`      | `false`         | Option to enable of disable the Default Jenkinsfile |
-`JENKINS_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline |
-`JENKINS_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Preserve stashes from completed builds, for use with stage restarting |
-`JENKINS_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that will be stored |
-`JENKINS_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds will be stored |
-`JENKINS_ARTIFACT_NUM_TO_KEEP`         | `1`             | Number of artifacts that will be stored |
-`JENKINS_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts that will be stored |
+Name                                          | Default Value   | Description |
+--------------------------------------------- | --------------- | ----------- |
+`LCP_CI_JENKINS_USE_DEFAULT_JENKINSFILE`      | `false`         | Option to enable of disable the Default Jenkinsfile |
+`LCP_CI_JENKINS_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
+`LCP_CI_JENKINS_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Preserve stashes from completed builds, for use with stage restarting |
+`LCP_CI_JENKINS_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that will be stored |
+`LCP_CI_JENKINS_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds will be stored |
+`LCP_CI_JENKINS_ARTIFACT_NUM_TO_KEEP`         | `1`             | Number of artifacts that will be stored |
+`LCP_CI_JENKINS_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts that will be stored |
 
 ## Additional Information
 
