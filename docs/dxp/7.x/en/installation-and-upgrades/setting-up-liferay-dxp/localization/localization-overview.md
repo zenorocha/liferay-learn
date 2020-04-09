@@ -9,14 +9,14 @@ To configure an individual user's display settings:
 1. Navigate to the _Control Panel_ &rarr; _Users and Organizations_.
 1. Select a language in the _Language_ dropdown menu.
 
-    ![Change the user's default language](./configuring-localization/images/01.png)
+    ![Change the user's default language](./localization-overview/images/01.png)
 
 1. Click _Save_.
 1. Click the _Preference_ tab.
 1. Click _Display Settings_ in the left menu.
 1. Select the desired time zone.
 
-    ![Change the user's time zone](./configuring-localization/images/03.png)
+    ![Change the user's time zone](./localization-overview/images/03.png)
 
 1. Click _Save_.
 
@@ -31,7 +31,7 @@ Administrators can set time zones in the _Control Panel_ which changes the time 
 1. Click _Localization_.
 1. Click _Time Zone_ in the left menu.
 
-    ![Change the time zone in Instance Settings.](./configuring-localization/images/04.png)
+    ![Change the time zone in Instance Settings.](./localization-overview/images/04.png)
 
 1. Select the desired time zone.
 1. Click _Save_.
@@ -55,7 +55,7 @@ The root case is because the system assumes each date stored in the database is 
 1. Select the default language in the _Default Language_ dropdown menu.
 1. Use the central left and right arrows to add or remove available languages and locales.
 
-    ![Change the default and available languages in Instance Settings.](./configuring-localization/images/02.png)
+    ![Change the default and available languages in Instance Settings.](./localization-overview/images/02.png)
 
 1. Click _Save_.
 
