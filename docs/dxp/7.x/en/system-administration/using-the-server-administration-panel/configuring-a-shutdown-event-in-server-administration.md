@@ -1,7 +1,5 @@
 # Configuring a Shutdown Event in Server Administration
 
-<!-- Perhaps better suited in the Maintaining Liferay section? -->
-
 In the Shutdown tab you can initiate a graceful shutdown event, warning Users of the impending shutdown and instructing them to save any work in progress.
 
 When you schedule a shutdown, Liferay DXP displays a system warning message and a message you define at the top of users' pages. When time expires, all pages display your custom message. Once the server is restarted, access is restored.
@@ -20,15 +18,15 @@ Now configure the shutdown itself:
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Server Administration, and click the _Shutdown_ tab.
 
-1. Enter the time (in minutes) until the shutdown will occur.
+1. Enter the time (in minutes) until the shutdown happens.
 
-1. Enter a special message. Whatever you enter will be appended to the system default message:
+1. Enter a special message. Whatever you enter is appended to the system default message:
 
    ```bash
-   Maintenance Alert 4:48 PM EST The portal will shutdown for maintenance in 5 minute(s). You will automatically be signed out at that time. Please finish any work in progress. After the maintenance has been completed, you will be able to successfully sign in. [YOUR MESSAGE DISPLAYS HERE]
+   Maintenance Alert 4:48 PM EST The portal will shut down for maintenance in 5 minute(s). You will automatically be signed out at that time. Please finish any work in progress. After the maintenance has been completed, you will be able to successfully sign in. [YOUR MESSAGE DISPLAYS HERE]
    ```
 
-   In addition, this message is what Users will see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting).
+   In addition, this message is what Users see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting).
 
 1. Click _Save_. The countdown to the shutdown event begins immediately.
 

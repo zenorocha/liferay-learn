@@ -1,8 +1,6 @@
 # Managing System Resources in Server Administration
 
-<!--Perhaps better suited to the Maintaining Liferay section? -->
-
-The Server Administration panel's Resources tab contains several functionalities, all related to low-level monitoring and management of the system's resources:
+The Server Administration panel's Resources tab contains several features, all related to low-level monitoring and management of the system's resources:
 
 | Function | Purpose       |
 | --------- | ------------ |
@@ -13,7 +11,7 @@ The Server Administration panel's Resources tab contains several functionalities
 | Verification Actions | Verify database accuracy and membership policies | 
 | Cleanup Actions | Reset Docs and Media previews and thumbnails; clean up permissions and orphaned portlet preferences for themes and page revisions | 
 
-![The Resources tab of Server Administration lets you execute several server maintenance tasks.](./managing-system-resources-in-server-administration/images/01.png)
+![You can execute several server maintenance tasks from the Resources tab of Server Administration.](./managing-system-resources-in-server-administration/images/01.png)
 
 ## Server Administration: Resources Reference
 
@@ -39,8 +37,8 @@ The direct servlet context optimizes JSP serving performance by caching and acce
 
 **Clean Up Permissions:** Remove permissions on the Guest, User, and Power User Roles to simplify the management of User Customizable Pages. The Add To Page permission is removed from the Guest and User Roles for all portlets, and is reduced in scope for Power Users from portal-wide to User Personal Site.
 
-**Clean Up Orphaned Page Revision Portlet Preferences:**This process removes all orphaned portlet preferences that belong to page revisions. Portlet preferences that belong to a portlet that does not belong to a page revision will be removed. Portlet preferences that belong to runtime portlets will also be removed.
+**Clean Up Orphaned Page Revision Portlet Preferences:** Removes all orphaned portlet preferences that belong to page revisions. Portlet preferences that belong to a portlet that does not belong to a page revision are removed. Portlet preferences that belong to runtime portlets are removed.
 
-**Clean Up Orphaned Theme Portlet Preferences:** This process removes all orphaned portlet preferences added by themes.Clean up database entries if portlet preferences become orphaned in the database.
+**Clean Up Orphaned Theme Portlet Preferences:** Removes all orphaned portlet preferences added by themes. Clean up database entries if portlet preferences become orphaned in the database.
 
 [<a name="one">1</a>] Caching occurs at multiple levels. Some higher caching layers aren't aware of lower caching layers. Always clear the cache at the lowest (most granular) layer possible, even if you've already cleared a higher level cache.

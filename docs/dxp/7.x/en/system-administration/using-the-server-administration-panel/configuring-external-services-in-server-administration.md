@@ -1,10 +1,8 @@
 # Configuring External Services in Server Administration
 
-<!-- Perhaps better suited for the Documents and Media Section? -->
-
 Liferay DXP Users can upload and share any type of file via the Documents and Media library, a customizable and permissions-enabled online repository for files (see [Publishing and Sharing](./../../content-authoring-and-management/documents-and-media/publishing-and-sharing) for more information).
 
-[PDFBox](https://pdfbox.apache.org/) is included with Liferay DXP for generating automatic previews for certain file types (mostly PDFs). You can install two additional tools to generate previews for other file types: 
+[PDFBox](https://pdfbox.apache.org/) by default generates Liferay DXP's automatic previews for certain file types (mostly PDFs). You can install two additional tools to generate previews for other file types: 
 
 <!--
 -   [**OpenOffice:**](https://www.openoffice.org/) or [**LibreOffice:**](https://www.libreoffice.org/)
@@ -24,7 +22,7 @@ Liferay DXP Users can upload and share any type of file via the Documents and Me
 First install ImageMagick and Xuggler on the server, then use the Server Administration app's External Services tab to configure their use with Liferay DXP. Make sure to choose the correct versions of these tools for your operating system. Install the latest stable versions, as older versions may not run properly with Liferay DXP. ImageMagick must be installed manually, but you can install Xuggler from the Control Panel. 
 
 ```tip:::
-   If you're running Liferay DXP on a Linux server and experience a problem enabling Xuggler, check your server's glibc version. For Xuggler to work, you may need to update glibc to version 2.6 or later.
+   Xuggler requires glibc version 2.6 or later on Linux.
 ```
 
 ## Configuring ImageMagick in Server Administration
@@ -65,7 +63,7 @@ To install and configure Xuggler,
 
 1. In the Xuggler section, select the Xuggler `.jar` file that matches your operating system. Then click *Install*. 
 
-1. Shut down the application server. If you're going to enable Xuggler with a Portal Properties file rather than in Server Administration, jump to the [Enabling Xuggler with a Portal Properties File](#enabling-xuggler-wtih-a-portal-properties-file) section. Otherwise, restart your application server now and then perform the next step. 
+1. Shut down the application server. If you're enabling Xuggler with a Portal Properties file rather than in Server Administration, jump to the [Enabling Xuggler with a Portal Properties File](#enabling-xuggler-wtih-a-portal-properties-file) section. Otherwise, restart your application server now and then perform the next step. 
 
 1. Finish by enabling Xuggler: go back to the External Services tab in Server Administration and select *Enabled*.
 
