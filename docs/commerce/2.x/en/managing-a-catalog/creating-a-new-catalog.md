@@ -1,6 +1,6 @@
-# Creating a Catalog
+# Creating a New Catalog
 
-A catalog is the complete list of related products that can be displayed on a store site. Store administrators can create multiple catalogs (each with their corresponding currencies) on the same Liferay Commerce instance.
+A catalog is the complete list of related products that can be displayed on a store site. Store administrators can create multiple catalogs (each with their own corresponding currencies) on a single Liferay Commerce instance.
 
 To create a new catalog:
 
