@@ -1,0 +1,67 @@
+# Managing Subscriptions
+
+Subscriptions (recurring orders) are a special type of order and is managed slightly differently than a regular order. While all orders, including subscriptions, are initially accepted and processed in the [Orders Menu](./orders-menu.md), once this order has been accepted, it displayed in the Subscriptions Menu.
+
+## Fulfilling a Subscription Order
+
+To begin fulfilling a subscription order once it has been placed:
+
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
+1. Click on the _Open_ tab.
+
+    ![Orders Open tab](./managing-subscriptions/images/01.png)
+
+1. Click on the _Order ID_ to begin.
+1. Click the _Pending_ button. This moves the order into the Pending status.
+
+    ![Orders Open tab](./managing-subscriptions/images/07.png)
+
+1. Click the _Accept Order_ button. This moves the order into the Processing status.
+
+    ![Orders Accept Order](./managing-subscriptions/images/02.png)
+
+1. Once the subscription order has been accepted, follow the steps to create a shipment. See [Creating a Shipment](./managing-shipments/creating-a-shipment.md) to learn more.
+
+Once the order has been accepted, it appears on the Subscription menu.
+
+## Managing a Subscription Order
+
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Subscriptions_.
+
+    ![Subscription menu](managing-subscriptions/images/03.png)
+
+1. Click on the _ID_ (43811). This ID is unique, that is, not the same as the Order ID or shipment ID.
+1. On the _General_ tab, make any changes to either the Payment or Delivery options. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
+
+    ![You can change the next delivery date.](managing-subscriptions/images/04.png)
+
+1. Click the _Save_ button.
+
+### Suspending or Cancelling a Subscription Order
+
+To suspend or cancel a subscription order:
+
+1. On the _General_ tab, scroll down to the _Delivery Subscription_.
+1. Select _Suspended_ or _Cancelled_ from the _Status dropdown menu.
+
+    ![Suspending or Cancelling an order](./managing-subscriptions/images/08.png)
+
+1. Click _Save_ to apply the changes.
+
+### Tracking Shipment Status
+
+1. Click the _Shipments_ tab. From here, store managers can track the shipment status.
+
+    ![You can change track the shipment status.](managing-subscriptions/images/05.png)
+
+## Tracking Payment History
+
+1. Click the _Payments_ tab. From here, store managers can track the payment history.
+
+    ![You can track the payment history.](managing-subscriptions/images/06.png)
+
+## Additional Information
+
+* [Subscription Management Reference Guide](./subscription-management-reference-guide.md)
+* [Enabling a Subscription](../managing-a-catalog/creating-and-managing-products/products/enabling-a-subscription.md)
+* [Orders Menu](./orders-menu.md)
