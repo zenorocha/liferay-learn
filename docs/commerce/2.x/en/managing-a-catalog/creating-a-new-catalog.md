@@ -1,11 +1,11 @@
 # Creating a Catalog
 
-A catalog is the complete list of related products that can be displayed on a store site. Multiple catalogs may be created and associated with [channels](./creating-and-managing-products/channels/introduction-to-channels.md).
+A catalog is the complete list of related products that can be displayed on a store site. Store administrators can create multiple catalogs (each with their corresponding currencies) on the same Liferay Commerce instance.
 
 To create a new catalog:
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Catalogs_.
-1. Click the (+) button to add a new catalog.
+1. Click the Add (![Add icon](../images/icon-add.png)) button to add a new catalog.
 1. Enter the following:
     * **Name**: Medical Supplies
     * **Default Catalog Language**: (your Language) (for example, _English (United States)_)
