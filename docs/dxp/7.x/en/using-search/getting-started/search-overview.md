@@ -29,7 +29,7 @@ To add search widgets to a page, click the Add button on the page, select _Widge
 
 To read more about building a search page, read [here](https://help.liferay.com/hc/en-us/articles/360028821052-Configuring-Search-Pages).
 
-To read more about the functionality of each widget, read [here](./configuring-search.md).
+To read more about the functionality of each widget, read [here](../search-pages-and-widgets/README.md).
 
 ## Search Configuration and Administration
 
@@ -43,7 +43,7 @@ Additional administrative screens are located in the Control Panel &rarr; Config
 
 ![The search admin screens are informative and useful.](./search-overview/images/08.png)
 
-To read more about configuring search, read [here](./configuring-search.md).
+To read more about configuring search, read [here](../search-administration-and-tuning/README.md).
 
 ## Custom Development in Search
 
