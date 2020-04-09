@@ -79,7 +79,7 @@ The Changelog tracks the following events:
 
 ## Additional Information
 
-* [Adding SKUs to Your Products](../creating-and-managing-products/adding-skus-to-your-products.md)
+* [Adding SKUs to Your Products](../creating-and-managing-products/products/adding-skus-to-your-products.md)
 * [Low Stock Action](./low-stock-action.md)
 * [Adding a New Warehouse](./adding-a-new-warehouse.md)
 * [Warehouse Reference Guide](./warehouse-reference-guide.md)
