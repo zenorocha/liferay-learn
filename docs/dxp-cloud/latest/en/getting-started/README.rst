@@ -1,6 +1,7 @@
 Getting Started
 ===============
 
+-  :doc:`/getting-started/introduction-to-dxp-cloud`
 -  :doc:`/getting-started/development-requirements`
 -  :doc:`/getting-started/configuring-your-github-repository`
 -  :doc:`/getting-started/logging-into-your-dxp-cloud-services`

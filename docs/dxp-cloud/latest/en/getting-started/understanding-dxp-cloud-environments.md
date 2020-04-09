@@ -2,7 +2,9 @@
 
 A DXP Cloud project can have multiple environments, each for a different purpose (e.g., development, staging, production, etc.). Each environment has a unique name that is the project ID plus the environment ID. For example, the staging and production environments for a project named *acme* can be named *acme-uat* and *acme-prd*, respectively.
 
-> **Note:** Once an environment name and location have been chosen, it's not possible to rename or change to a different location automatically. If you need to perform such actions, please contact support.
+```warning::
+   Once an environment name and location have been chosen, it's not possible to rename or change to a different location automatically. If you need to perform such actions, please contact support.
+```
 
 Despite this naming connection, each environment is independent. They're segregated by a [private network](../infrastructure-and-operations/networking/private-network.md) that allows services from the same environment to communicate in a secure manner without having to access the public internet.
 
