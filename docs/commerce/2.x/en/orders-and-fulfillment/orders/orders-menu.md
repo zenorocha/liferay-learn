@@ -38,7 +38,7 @@ There are three particular fields to note:
 | --- | --- |
 | Order Date | This is the date the order was created. |
 | Order Status | This is the status of the order. |
-| Acceptance Workflow Status | This displays the order's [buyer's acceptance workflow](./order-workflows/enabling-or-disabling-order-workflows.md) status. |
+| Acceptance Workflow Status | This displays the order's [buyer's acceptance workflow](../order-workflows/enabling-or-disabling-order-workflows.md) status. |
 
 ## Processing
 
@@ -92,9 +92,6 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 ## Additional Information
 
-* [Order Life Cycle](./order-life-cycle.md)
-* [Order Information](./order-information.md)
-* [Introduction to Order Workflows](./order-workflows/introduction-to-order-workflows.md)
-* [Order Management Statuses](./order-management-statuses.md)
-* [Enabling or Disabling Order Workflows](./order-workflows/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](./order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
+* [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
+* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)

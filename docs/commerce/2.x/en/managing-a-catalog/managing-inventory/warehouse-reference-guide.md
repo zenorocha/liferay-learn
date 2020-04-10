@@ -44,6 +44,6 @@ A warehouse's geolocation is used to calculate shipping costs based on distance.
 
 ## Additional Information
 
-* [Introduction to Shipments](../../orders-and-fulfillment/managing-shipments/introduction-to-shipments.md)
+* [Introduction to Shipments](../../orders-and-fulfillment/shipments/introduction-to-shipments.md)
 * [Adding a New Warehouse](./adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](./setting-inventory-by-warehouse.md)

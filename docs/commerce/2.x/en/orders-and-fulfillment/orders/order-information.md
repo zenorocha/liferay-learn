@@ -36,9 +36,6 @@ The _Emails_ tab contains all the communications between the buyer and seller.
 
 ## Additional Information
 
-* [Order Life Cycle](./order-life-cycle.md)
-* [Orders Menu](./orders-menu.md)
-* [Introduction to Order Workflows](./order-workflows/introduction-to-order-workflows.md)
-* [Order Management Statuses](./order-management-statuses.md)
-* [Enabling or Disabling Order Workflows](./order-workflows/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](./order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
+* [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
+* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)

@@ -134,4 +134,4 @@ The new shipping option has been created. To finish configuring this shipping op
 * [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
 * [Measurement Units](./measurement-units.md)
 * [Shipping Method Reference](./shipping-method-reference.md)
-* [Creating a New Shipment](../../orders-and-fulfillment/managing-shipments/creating-a-shipment.md)
+* [Creating a New Shipment](../../orders-and-fulfillment/shipments/creating-a-shipment.md)

@@ -1,6 +1,6 @@
 # Managing Subscriptions
 
-Subscriptions are a special type of recurring order and are managed differently from regular orders. All orders, including Subscriptions, are accepted and processed in the [Orders Menu](./orders-menu.md). However, once a *Subscription* order has been accepted, it is displayed in the Subscriptions Menu.
+Subscriptions are a special type of recurring order and are managed differently from regular orders. All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu.md). However, once a *Subscription* order has been accepted, it is displayed in the Subscriptions Menu.
 
 ## Fulfilling a Subscription Order
 
@@ -20,7 +20,7 @@ To begin fulfilling a subscription order that has been placed:
 
     ![Orders Accept Order](./managing-subscriptions/images/02.png)
 
-1. Once the subscription order has been accepted, follow the steps to create a shipment. See [Creating a Shipment](./managing-shipments/creating-a-shipment.md) to learn more.
+1. Once the subscription order has been accepted, follow the steps to create a shipment. See [Creating a Shipment](../shipments/creating-a-shipment.md) to learn more.
 
 Once the order has been accepted, it appears on the Subscription menu.
 
@@ -28,12 +28,12 @@ Once the order has been accepted, it appears on the Subscription menu.
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Subscriptions_.
 
-    ![Subscription menu](managing-subscriptions/images/03.png)
+    ![Subscription menu](./managing-subscriptions/images/03.png)
 
 1. Click on the _ID_ (43811). This ID is distinct from normal Order or Shipment IDs.
 1. On the _General_ tab, make any changes to either the Payment or Delivery options. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
 
-    ![You can change the next delivery date.](managing-subscriptions/images/04.png)
+    ![You can change the next delivery date.](./managing-subscriptions/images/04.png)
 
 1. Click the _Save_ button.
 
@@ -88,5 +88,5 @@ To configure subscriptions:
 ## Additional Information
 
 * [Subscription Management Reference Guide](./subscription-management-reference-guide.md)
-* [Enabling a Subscription](../managing-a-catalog/creating-and-managing-products/products/enabling-a-subscription.md)
-* [Orders Menu](./orders-menu.md)
+* [Enabling Subscriptions for a Product](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
+* [Orders Menu](../orders/orders-menu.md)

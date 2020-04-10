@@ -10,7 +10,7 @@ This article reviews the three order management status types – *Order Status*,
 
 ## Order Status
 
-The *Order Status* gives information about where an order is in the [order life cycle](./order-life-cycle.md). Each order status appears on one of the following [*Orders* Menu](./orders-menu.md) tabs: [*Open*](../orders-and-fulfillment/orders-menu.md#open), [*Pending*](../orders-and-fulfillment/orders-menu.md#pending), or [*Transmitted*](../orders-and-fulfillment/orders-menu.md#transmitted).
+The *Order Status* gives information about where an order is in the [order life cycle](./order-life-cycle.md). Each order status appears on one of the following [*Orders* Menu](./orders-menu.md) tabs: [*Open*](./orders-menu.md#open), [*Pending*](./orders-menu.md#pending), or [*Transmitted*](./orders-menu.md#transmitted).
 
 ### Open
 
@@ -68,7 +68,7 @@ The *Payment Status* gives information about whether payment has been made and r
 
 ## Workflow Status
 
-The *Workflow Status* gives information about where an order is in one of the two [order workflows](./order-workflows/introduction-to-order-workflows.md). (./orders-menu.md) it is found.)
+The *Workflow Status* gives information about where an order is in one of the two [order workflows](../order-workflows/introduction-to-order-workflows.md). (./orders-menu.md) it is found.)
 
 ### Open
 
@@ -84,7 +84,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 ### Pending
 
-*Workflow Status* on the *Pending* tab refers to the order's progress through the [*Transmission Workflow*](./order-workflows/introduction-to-order-workflows.md#transmission-workflow-seller-side-order-approval-only). For this order workflow, there are two workflow statuses available: *Pending* and *Approved*.
+*Workflow Status* on the *Pending* tab refers to the order's progress through the [*Transmission Workflow*](../order-workflows/introduction-to-order-workflows.md#transmission-workflow-seller-side-order-approval-only). For this order workflow, there are two workflow statuses available: *Pending* and *Approved*.
 
    ![Workflow Status Pending and Transmitted Tab](./order-management-statuses/images/07.png)
 
@@ -95,9 +95,6 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 ## Additional Information
 
-* [Orders Menu](./orders-menu.md)
-* [Order Information](./order-information.md)
-* [Order Life Cycle](./order-life-cycle.md)
-* [Introduction to Order Workflows](./order-workflows/introduction-to-order-workflows.md)
-* [Enabling or Disabling Order Workflows](./order-workflows/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](./order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
+* [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
+* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
