@@ -29,11 +29,11 @@ Your store now has an active discount with 20% off selected goods for those in t
 
 You can create rules that limit the buyer's discount conditions. There are three types of rules:
 
-**Cart Total**: Cart subtotal must meet a minimum threshold to receive the discount.
+* **Cart Total**: Cart subtotal must meet a minimum threshold to receive the discount.
 
-**Has all of these products**: Orders must include all specified products in order to receive the discount.
+* **Has all of these products**: Orders must include all specified products in order to receive the discount.
 
-**Has one of these products**: Orders must contain at least one product from a list of specified products to receive the discount.
+* **Has one of these products**: Orders must contain at least one product from a list of specified products to receive the discount.
 
 These rules may be combined as needed to meet your sales and marketing goals.
 
