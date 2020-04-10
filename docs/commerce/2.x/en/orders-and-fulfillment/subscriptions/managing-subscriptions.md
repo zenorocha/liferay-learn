@@ -87,6 +87,6 @@ To configure subscriptions:
 
 ## Additional Information
 
-* [Subscription Management Reference Guide](./subscription-management-reference-guide.md)
+* [Subscription Management Reference Guide](./subscription-administration-reference-guide.md)
 * [Enabling Subscriptions for a Product](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Orders Menu](../orders/orders-menu.md)
