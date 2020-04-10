@@ -22,9 +22,7 @@ Now configure the shutdown itself:
 
 1. Enter a special message. Whatever you enter is appended to the system default message:
 
-   ```bash
-   Maintenance Alert 4:48 PM EST The portal will shut down for maintenance in 5 minute(s). You will automatically be signed out at that time. Please finish any work in progress. After the maintenance has been completed, you will be able to successfully sign in. [YOUR MESSAGE DISPLAYS HERE]
-   ```
+    `Maintenance Alert 4:48 PM EST The portal will shut down for maintenance in 5 minute(s). You will automatically be signed out at that time. Please finish any work in progress. After the maintenance has been completed, you will be able to successfully sign in. [YOUR MESSAGE DISPLAYS HERE]`
 
    In addition, this message is what Users see if they navigate to a portal page after the shutdown (because you enabled the _Show Inactive Request Message_ setting).
 

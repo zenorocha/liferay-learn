@@ -14,9 +14,9 @@ To add a category,
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Server Administration, and click the _Log Levels_ tab.
 
-1. Open the Add Category form by clicking the Add button ![Add](./../images-icon-add.png).
+1. Open the Add Category form by clicking the Add button ![Add](../../images/icon-add.png).
 
-1. Fill out the form and click *Save*. 
+1. Fill out the form and click *Save*.
 
 1. Click _Save_.
 
