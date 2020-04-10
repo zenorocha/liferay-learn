@@ -7,7 +7,7 @@ Orders and Fulfillment
    orders-and-fulfillment/orders.rst
    orders-and-fulfillment/order_workflows.rst
    orders-and-fulfillment/subscriptions.md
-   orders-and-fulfillment/managing_shipments.rst
+   orders-and-fulfillment/shipments.rst
 
 .. raw:: html
    :file: landingpage_template.html

@@ -1,7 +1,7 @@
 Orders
 ======
 
--  :doc:`/orders-and-fulfillment/order-life-cycle`
--  :doc:`/orders-and-fulfillment/orders-menu`
--  :doc:`/orders-and-fulfillment/order-information`
--  :doc:`/orders-and-fulfillment/order-management-statuses`
+-  :doc:`/orders-and-fulfillment/orders/order-life-cycle`
+-  :doc:`/orders-and-fulfillment/orders/orders-menu`
+-  :doc:`/orders-and-fulfillment/orders/order-information`
+-  :doc:`/orders-and-fulfillment/orders/order-management-statuses`
