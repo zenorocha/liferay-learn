@@ -1,4 +1,4 @@
-# Configuring a Shutdown Event in Server Administration
+# Configuring a Shutdown Event
 
 In the Shutdown tab you can initiate a graceful shutdown event, warning Users of the impending shutdown and instructing them to save any work in progress.
 
@@ -28,15 +28,15 @@ Now configure the shutdown itself:
 
 1. Click _Save_. The countdown to the shutdown event begins immediately.
 
-![The time until shutdown and the warning message are configurable in the Shutdown tab.](./configuring-a-shutdown-event-in-server-administration/images/01.png)
+![The time until shutdown and the warning message are configurable in the Shutdown tab.](./configuring-a-shutdown-event/images/01.png)
 
 Right away, all logged in Users see the system message and your appended custom message at the top of the page.
 
-![Users are showed a warning about the impending shutdown.](./configuring-a-shutdown-event-in-server-administration/images/03.png)
+![Users are showed a warning about the impending shutdown.](./configuring-a-shutdown-event/images/03.png)
 
 Once the time has expired, logged in Users trying to navigate to a page in Liferay DXP see your custom message (perhaps with an invitation to return later), rather than a blank page with no information.
 
-![Your custom message is displayed to Users after the shutdown.](./configuring-a-shutdown-event-in-server-administration/images/02.png)
+![Your custom message is displayed to Users after the shutdown.](./configuring-a-shutdown-event/images/02.png)
 
 ## Canceling a Shutdown Event
 

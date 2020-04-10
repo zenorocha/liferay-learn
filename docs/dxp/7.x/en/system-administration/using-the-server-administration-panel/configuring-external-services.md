@@ -1,4 +1,4 @@
-# Configuring External Services in Server Administration
+# Configuring External Services
 
 There are several external services that can be added on to a Liferay DXP installation to improve user experience.
 
@@ -17,7 +17,7 @@ Liferay DXP Users can upload and share any type of file via the Documents and Me
 
 * [**Xuggler:**](http://www.xuggle.com/xuggler/) Convert and generate previews for audio and video files.
 
-![Enable ImageMagick, Ghostscript, and Xuggler from the External Services tab.](./configuring-external-services-in-server-administration/images/01.png)
+![Enable ImageMagick, Ghostscript, and Xuggler from the External Services tab.](./configuring-external-services/images/01.png)
 
 ```note::
    As of Liferay 7.1, OpenOffice/LibreOffice is configured in OSGi Configuration Admin instead of Server Administration or portal properties. To adjust these settings, go to System Settings and find the OpenOffice Integration entry. Alternatively, deploy a com.liferay.document.library.document.conversion.internal.configuration.OpenOfficeConfiguration.config file with the settings you need.
@@ -72,7 +72,7 @@ To install and configure Xuggler,
 
 1. Finish by enabling Xuggler: go back to the External Services tab in Server Administration and select *Enabled*.
 
-   ![Once Xuggler is installed and Liferay DXP is restarted, the Enable check box appears.](./configuring-external-services-in-server-administration/images/02.png)
+   ![Once Xuggler is installed and Liferay DXP is restarted, the Enable check box appears.](./configuring-external-services/images/02.png)
 
 1. Click *Save*.
 

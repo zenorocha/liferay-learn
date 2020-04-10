@@ -1,4 +1,4 @@
-# Managing System Resources in Server Administration
+# Managing System Resources
 
 The Server Administration panel's Resources tab contains several features, all related to low-level monitoring and management of the system's resources:
 
@@ -11,7 +11,7 @@ The Server Administration panel's Resources tab contains several features, all r
 | Verification Actions | Verify database accuracy and membership policies | 
 | Cleanup Actions | Reset Docs and Media previews and thumbnails; clean up permissions and orphaned portlet preferences for themes and page revisions | 
 
-![You can execute several server maintenance tasks from the Resources tab of Server Administration.](./managing-system-resources-in-server-administration/images/01.png)
+![You can execute several server maintenance tasks from the Resources tab of Server Administration.](./managing-system-resources/images/01.png)
 
 ## Server Administration: Resources Reference
 
