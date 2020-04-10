@@ -40,21 +40,15 @@ Follow these steps to transfer the initial GitHub repository to your own Bitbuck
 
 1. Clone your initial GitHub repository locally:
 
-    ```
-git clone git@github.com:dxpcloud/example.git
-    ```
+    ```git clone git@github.com:dxpcloud/example.git```
 
 1. Add a new Git remote and point to Bitbucket:
 
-    ```
-git remote add bitbucket git@bitbucket.org:example/example.git
-    ```
+    ```git remote add bitbucket git@bitbucket.org:example/example.git```
 
 1. Push the cloned repository to the new remote repository:
 
-    ```
-git push bitbucket master
-    ```
+    ```git push bitbucket master```
 
 If you need help creating, cloning, and pushing repositories, see [Bitbucket's documentation](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html).
 

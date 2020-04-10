@@ -39,21 +39,15 @@ Follow these steps to transfer the initial GitHub repository to your own GitLab 
 
 1. Clone your initial GitHub repository locally:
 
-    ```
-git clone git@github.com:dxpcloud/example.git
-    ```
+    ```git clone git@github.com:dxpcloud/example.git```
 
 1. Add a new Git remote and point to GitLab:
 
-    ```
-git remote add gitlab git@gitlab.com:example/example.git
-    ```
+    ```git remote add gitlab git@gitlab.com:example/example.git```
 
 1. Push the cloned repository to the new remote repository:
 
-    ```
-git push gitlab master
-    ```
+    ```git push gitlab master```
 
 If you need help creating, cloning, and pushing repositories, see [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
 
