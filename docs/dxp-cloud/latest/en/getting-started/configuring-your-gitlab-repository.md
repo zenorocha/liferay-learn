@@ -59,7 +59,7 @@ If you need help creating, cloning, and pushing repositories, see [GitLab's docu
 
 ## Generating access tokens for GitLab
 
-Now you'll create an access token that will be used on the Webhook triggers Jenkins builds.
+Now you'll create an access token that will be used by the Webhook to trigger Jenkins builds.
 
 1. Navigate to [this page](https://gitlab.com/profile/personal_access_tokens)
 1. Provide a name and an expiration date for this access token
