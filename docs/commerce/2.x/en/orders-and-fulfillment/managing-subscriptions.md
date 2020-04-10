@@ -74,7 +74,7 @@ To configure subscriptions:
     ![Control Panel - System Settings](managing-subscriptions/images/09.png)
 
 1. Scroll down to _Commerce_ and click _Catalog_.
-1. Click _Subcriptions_ in the left menu.
+1. Click _Subscriptions_ in the left menu.
 
      ![Control Panel - System Settings](managing-subscriptions/images/10.png)
 

@@ -51,6 +51,12 @@ A delivery subscription has been enabled for this product.
    You can implement a custom payment method that has supports recurring methods. See `Implementing a New Payment Method <../../../developer-guide/tutorials/implementing-a-new-payment-method.md>`_ to learn more.
 ```
 
+## Viewing Subscriptions in Product Details
+
+If a product has subscription enabled, users can view the payment and subscription details on the Product Details widget in the catalog.
+
+![Payment and Delivery Subscription details are displayed in the Product Detail widget.](./enabling-subscriptions-for-a-product/images/05.png)
+
 ## Additional Information
 
 * [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscription-administration-reference-guide.md)
