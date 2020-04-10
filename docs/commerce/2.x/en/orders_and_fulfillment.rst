@@ -9,7 +9,7 @@ Orders and Fulfillment
    orders-and-fulfillment/order-information.md
    orders-and-fulfillment/order-management-statuses.md
    orders-and-fulfillment/managing-subscriptions.md
-   orders-and-fulfillment/subscription-management-reference-guide.md
+   orders-and-fulfillment/subscription-administration-reference-guide.md
 
    orders-and-fulfillment/order_workflows.rst
    orders-and-fulfillment/managing_shipments.rst

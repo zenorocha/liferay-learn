@@ -12,7 +12,7 @@ Before configuring your store to use PayPal, it is necessary to generate a PayPa
     * **Client Secret**
 1. Select _Live_ if it is a live site or _Sandbox_ if it is a test environment.
 1. In the _Payment Attempts Max Count_ field, enter the number of attempts to make payment on a subscription before cancelling the subscription.
-    * For more information, read PayPal's [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/reattempt-failed-payment/) article.
+    * For more information, read PayPal's [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/reattempt-failed-payment/) article.
     ![PayPal Settings](./paypal/images/01.png)
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _PayPal_ then _Activate_.
@@ -26,4 +26,4 @@ Here is more information about adding other payment methods:
 * [Adding a New Currency](../currencies/adding-a-new-currency.md)
 * [Authorize.net](./authorize.net.md)
 * [Mercanet](./mercanet.md)
-* [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/reattempt-failed-payment/)
+* [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/reattempt-failed-payment/)

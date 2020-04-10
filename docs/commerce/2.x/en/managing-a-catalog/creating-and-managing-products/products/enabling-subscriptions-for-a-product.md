@@ -10,7 +10,7 @@ In order to enable subscriptions for a product, store administrators must activa
 
 Subscriptions can be enabled for [Simple](../product-types/creating-a-simple-product.md), [Grouped](../product-types/creating-a-grouped-product.md), or [Virtual](../product-types/creating-a-virtual-product.md) products. In this example, we are using a Simple Product.
 
-1. Create a [Simple](../product-types/creating-a-simple-product.md).
+1. Create a [Simple Product](../product-types/creating-a-simple-product.md), if you don't already have one.
 1. Enter the following:
 
     * **Catalog**: Sahara.com
@@ -53,16 +53,16 @@ To enable a Delivery Subscription:
 A delivery subscription is now enabled for this product.
 
 ```tip::
-   You can implement a custom payment method that has supports recurring methods. See `Implementing a New Payment Method <../../../developer-guide/tutorials/implementing-a-new-payment-method.md>`_ to learn more.
+   Other payment methods can be implemented to support recurring payments. See `Implementing a New Payment Method <../../../developer-guide/tutorials/implementing-a-new-payment-method.md>`_ to learn more.
 ```
 
 ## Viewing Subscriptions in Product Details
 
-If a product has subscription enabled, users can view the payment and subscription details on the Product Details widget in the catalog.
+If a product has Subscriptions enabled, users can view the payment and subscription details on the Product Details widget in the catalog.
 
 ![Payment and Delivery Subscription details are displayed in the Product Detail widget.](./enabling-subscriptions-for-a-product/images/05.png)
 
 ## Additional Information
 
-* [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscription-administration-reference-guide.md)
 * [Managing Subscriptions](../../../orders-and-fulfillment/managing-subscriptions.md)
+* [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscription-administration-reference-guide.md)
