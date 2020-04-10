@@ -1,6 +1,6 @@
 # Managing Subscriptions
 
-Subscriptions are a special type of recurring orders and are managed differently than a regular order. While all orders, including subscriptions, are initially accepted and processed in the [Orders Menu](./orders-menu.md), once this order has been accepted, it displayed in the Subscriptions Menu.
+Subscriptions are a special type of recurring order and are managed differently from regular orders. All orders, including Subscriptions, are accepted and processed in the [Orders Menu](./orders-menu.md). However, once a *Subscription* order has been accepted, it is displayed in the Subscriptions Menu.
 
 ## Fulfilling a Subscription Order
 
@@ -30,7 +30,7 @@ Once the order has been accepted, it appears on the Subscription menu.
 
     ![Subscription menu](managing-subscriptions/images/03.png)
 
-1. Click on the _ID_ (43811). This ID is unique, that is, not the same as the Order ID or shipment ID.
+1. Click on the _ID_ (43811). This ID is distinct from normal Order or Shipment IDs.
 1. On the _General_ tab, make any changes to either the Payment or Delivery options. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
 
     ![You can change the next delivery date.](managing-subscriptions/images/04.png)
@@ -55,13 +55,13 @@ To suspend or cancel a subscription order:
 
 ### Tracking Shipment Status
 
-1. Click the _Shipments_ tab. From here, store managers can track the shipment status.
+1. Click the _Shipments_ tab. From here, store managers can track shipment status.
 
     ![You can change track the shipment status.](managing-subscriptions/images/05.png)
 
 ## Tracking Payment History
 
-1. Click the _Payments_ tab. From here, store managers can track the payment history.
+1. Click the _Payments_ tab. From here, store managers can track payment history.
 
     ![You can track the payment history.](managing-subscriptions/images/06.png)
 
@@ -76,11 +76,13 @@ To configure subscriptions:
 1. Scroll down to _Commerce_ and click _Catalog_.
 1. Click _Subscriptions_ in the left menu.
 
-     ![Control Panel - System Settings](managing-subscriptions/images/10.png)
+    ![Control Panel - System Settings](managing-subscriptions/images/10.png)
 
-1. Update the _Renew Check Interval_ (in minutes).
-1. Check the _Subscription Cancellation Allowed_ checkbox to allow users to cancel a subscription.
-1. Check the _Subscription Cancellation Allowed_ checkbox to allow users to suspend a subscription.
+    Review the following available configurations:
+      * **Renew Check Interval** - Determines how often the system will check check for renewals <!-- what does this really do? -->.
+      * **Subscription Cancellation Allowed** - If checked, allows users to cancel a subscription.
+      * **Subscription Suspension Allowed** - If checked, allows users to suspend a subscription.
+
 1. Click the _Save_ button to apply the changes.
 
 ## Additional Information
