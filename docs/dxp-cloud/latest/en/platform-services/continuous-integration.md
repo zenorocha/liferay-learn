@@ -27,14 +27,15 @@ Apart from that, we're providing a powerful set of extension points for you to c
 
 To extend the Default Jenkinsfile, you can add the following files to the `lcp/ci` folder:
 
-- `Jenkinsfile-before-project-build`
+- `Jenkinsfile-before-all`
 - `Jenkinsfile-before-cloud-build`
 - `Jenkinsfile-before-cloud-deploy`
+- `Jenkinsfile-after-all`
 - `Jenkinsfile-post-always`
 
 Here is a basic overview of the steps in the CI build process:
 
-1. Load `lcp/ci/Jenkinsfile-before-project-build`, if it exists.
+1. Load `lcp/ci/Jenkinsfile-before-all`, if it exists.
 1. Build the Liferay Workspace.
 1. Load `lcp/ci/Jenkinsfile-before-cloud-build`, if it exists.
 1. Create the DXP Cloud build that you see in console.
@@ -44,6 +45,7 @@ Here is a basic overview of the steps in the CI build process:
    configured through the `LCP_CI_DEPLOY_BRANCH` environment variable. The
    `LCP_CI_DEPLOY_TARGET` environment variable specifies which environment to deploy
    to.
+1. Load `lcp/ci/Jenkinsfile-after-all`, if it exists. This will run when all steps are done.
 1. Load `lcp/ci/Jenkinsfile-post-always`, if it exists. This will run both when the
    build fails and when it succeeds.
 
