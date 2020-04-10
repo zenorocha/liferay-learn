@@ -20,7 +20,7 @@ Apart from that, we're providing a powerful set of extension points for you to c
 
 1. Update to version `liferaycloud/jenkins:2.222.1-3.2.0`
 1. Delete the `Jenkinsfile` located on the root folder
-1. Add the following environment variable: `LCP_CI_JENKINS_USE_DEFAULT_JENKINSFILE: true`
+1. Add the following environment variable: `LCP_CI_USE_DEFAULT_JENKINSFILE: true`
 1. Deploy Jenkins service
 
 ## Extending the Default Jenkinsfile
@@ -75,13 +75,13 @@ The following environment variables are only used in the default Jenkinsfile. To
 
 Name                                          | Default Value   | Description |
 --------------------------------------------- | --------------- | ----------- |
-`LCP_CI_JENKINS_USE_DEFAULT_JENKINSFILE`      | `false`         | Option to enable of disable the Default Jenkinsfile |
-`LCP_CI_JENKINS_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
-`LCP_CI_JENKINS_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Preserve stashes from completed builds, for use with stage restarting |
-`LCP_CI_JENKINS_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that will be stored |
-`LCP_CI_JENKINS_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds will be stored |
-`LCP_CI_JENKINS_ARTIFACT_NUM_TO_KEEP`         | `1`             | Number of artifacts that will be stored |
-`LCP_CI_JENKINS_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts that will be stored |
+`LCP_CI_USE_DEFAULT_JENKINSFILE`      | `false`         | Option to enable of disable the Default Jenkinsfile |
+`LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
+`LCP_CI_PRESERVE_STASHES_BUILD_COUNT` | `20`            | Preserve stashes from completed builds, for use with stage restarting |
+`LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that will be stored |
+`LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds will be stored |
+`LCP_CI_ARTIFACT_NUM_TO_KEEP`         | `1`             | Number of artifacts that will be stored |
+`LCP_CI_ARTIFACT_DAYS_TO_KEEP`        | `-1`            | Number of days that artifacts that will be stored |
 
 ## Additional Information
 
