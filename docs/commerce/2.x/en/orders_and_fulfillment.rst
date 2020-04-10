@@ -4,14 +4,9 @@ Orders and Fulfillment
 .. toctree::
    :maxdepth: 2
 
-   orders-and-fulfillment/order-life-cycle.md
-   orders-and-fulfillment/orders-menu.md
-   orders-and-fulfillment/order-information.md
-   orders-and-fulfillment/order-management-statuses.md
-   orders-and-fulfillment/managing-subscriptions.md
-   orders-and-fulfillment/subscription-administration-reference-guide.md
-
+   orders-and-fulfillment/orders.rst
    orders-and-fulfillment/order_workflows.rst
+   orders-and-fulfillment/subscriptions.md
    orders-and-fulfillment/managing_shipments.rst
 
 .. raw:: html
