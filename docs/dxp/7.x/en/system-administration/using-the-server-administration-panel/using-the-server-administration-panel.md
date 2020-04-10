@@ -4,7 +4,7 @@ Server Administration is a system-scoped administration panel holding a variety 
 
 You can access Server Administration by clicking *Control Panel* &rarr; *Configuration* &rarr; *Server Administration*.
 
-![The Resources tab of Server Administration shows a graph of your server's memory usage.](./using-the-server-administration-panel/images/02.png)
+![The Resources tab of Server Administration shows a graph of your server's memory usage.](using-the-server-administration-panel/images/01.png)
 
 Server Administration's functionality is segmented into tabs:
 
