@@ -64,5 +64,5 @@ If a product has Subscriptions enabled, users can view the payment and subscript
 
 ## Additional Information
 
-* [Managing Subscriptions](../../../orders-and-fulfillment/managing-subscriptions.md)
-* [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscription-administration-reference-guide.md)
+* [Managing Subscriptions](../../../orders-and-fulfillment/subscriptions/managing-subscriptions.md)
+* [Subscription Administration Reference Guide](../../../orders-and-fulfillment/subscriptions/subscription-administration-reference-guide.md)

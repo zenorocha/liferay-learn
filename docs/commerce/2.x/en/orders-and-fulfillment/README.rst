@@ -19,8 +19,8 @@ Order Workflows
 Subscriptions
 -------------
 
--  :doc:`/orders-and-fulfillment/managing-subscriptions`
--  :doc:`/orders-and-fulfillment/subscription-administration-reference-guide`
+-  :doc:`/orders-and-fulfillment/subscriptions/managing-subscriptions`
+-  :doc:`/orders-and-fulfillment/subscriptions/subscription-administration-reference-guide`
 
 Shipments
 ---------

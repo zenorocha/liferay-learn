@@ -120,7 +120,7 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 
 When an order has been received, the order may be transmitted to an ERP and optionally to a CRM. Once the requested goods are available for shipping, the store's inventory specialists may track the shipment. See the following articles to learn about the life cycle of an order and the shipment processes.
 
-* [Order Life Cycle](../orders-and-fulfillment/order-life-cycle.md)
+* [Order Life Cycle](../orders-and-fulfillment/orders/order-life-cycle.md)
 * [Introduction to Shipments](../orders-and-fulfillment/shipments/introduction-to-shipments.md)
 * [Creating a shipment](../orders-and-fulfillment/shipments/creating-a-shipment.md)
 * [Cancelling a Shipment](../orders-and-fulfillment/shipments/cancelling-a-shipment.md)

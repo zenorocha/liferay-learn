@@ -92,5 +92,5 @@ The _Payments_ tab tracks the order's payment history.
 
 ## Additional Information
 
-* [Enabling a Subscription](../managing-a-catalog/creating-and-managing-products/products/enabling-a-subscription.md)
+* [Enabling a Subscription](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Managing Subscriptions](./managing-subscriptions.md)
