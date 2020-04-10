@@ -6,7 +6,7 @@ Files can be migrated from one file store type to another. Here are some migrati
 * Migrating from Simple, Advanced, or S3 to DBStore to avoid transaction rollback vulnerabilities.
 * Migrating from DBStore to Advanced File System Store to accommodate files larger than 1 gigabyte.
 
-The Data Migration utility in [Server Administration](./../using-the-server-administration-panel/introduction-to-the-server-administration-panel.md) facilitates the migration.
+The Data Migration utility in [Server Administration](./../using-the-server-administration-panel/using-the-server-administration-panel.md) facilitates the migration.
 
 ```warning::
    **Always** `back up <../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/backing-up.md>`_ your file store and database before migrating. Testing the migration process on backup copies is advised.

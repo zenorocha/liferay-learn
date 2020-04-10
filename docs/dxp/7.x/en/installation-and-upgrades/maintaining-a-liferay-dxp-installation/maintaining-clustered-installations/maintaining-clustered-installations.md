@@ -49,4 +49,4 @@ backward-compatible include, but are not limited to these:
 
 * [Rolling Restarts](./rolling-restarts.md)
 * [Blue-Green Deployments](./blue-green-deployments.md)
-* [Server Administration](./../../../system-administration/using-the-server-administration-panel/introduction-to-the-server-administration-panel.md)
+* [Server Administration](./../../../system-administration/using-the-server-administration-panel/using-the-server-administration-panel.md)
