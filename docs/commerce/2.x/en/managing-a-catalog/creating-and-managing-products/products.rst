@@ -9,7 +9,7 @@ Products
    products/product-images.md
    products/specifications.md
    products/creating-a-new-product-category.md
-   products/enabling-a-subscription.md
+   products/enabling-subscriptions-for-a-product.md
    products/organizing-your-catalog-with-product-categories.md
    products/related-products-up-sells-and-cross-sells.md
 

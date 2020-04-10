@@ -21,6 +21,7 @@ Managing Shipments
 -  :doc:`/orders-and-fulfillment/managing-shipments/cancelling-a-shipment`
 
 Subscriptions
+-------------
 
 -  :doc:`/orders-and-fulfillment/managing-subscriptions`
--  :doc:`/orders-and-fulfillment/subscription-management-reference-guide`
+-  :doc:`/orders-and-fulfillment/subscription-administration-reference-guide`

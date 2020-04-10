@@ -1,10 +1,10 @@
 # Managing Subscriptions
 
-Subscriptions (recurring orders) are a special type of order and is managed slightly differently than a regular order. While all orders, including subscriptions, are initially accepted and processed in the [Orders Menu](./orders-menu.md), once this order has been accepted, it displayed in the Subscriptions Menu.
+Subscriptions are a special type of recurring orders and are managed differently than a regular order. While all orders, including subscriptions, are initially accepted and processed in the [Orders Menu](./orders-menu.md), once this order has been accepted, it displayed in the Subscriptions Menu.
 
 ## Fulfilling a Subscription Order
 
-To begin fulfilling a subscription order once it has been placed:
+To begin fulfilling a subscription order that has been placed:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
 1. Click on the _Open_ tab.
@@ -64,6 +64,24 @@ To suspend or cancel a subscription order:
 1. Click the _Payments_ tab. From here, store managers can track the payment history.
 
     ![You can track the payment history.](managing-subscriptions/images/06.png)
+
+## Configuring Subscriptions
+
+To configure subscriptions:
+
+1. Navigate to the _Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_.
+
+    ![Control Panel - System Settings](managing-subscriptions/images/09.png)
+
+1. Scroll down to _Commerce_ and click _Catalog_.
+1. Click _Subcriptions_ in the left menu.
+
+     ![Control Panel - System Settings](managing-subscriptions/images/10.png)
+
+1. Update the _Renew Check Interval_ (in minutes).
+1. Check the _Subscription Cancellation Allowed_ checkbox to allow users to cancel a subscription.
+1. Check the _Subscription Cancellation Allowed_ checkbox to allow users to suspend a subscription.
+1. Click the _Save_ button to apply the changes.
 
 ## Additional Information
 

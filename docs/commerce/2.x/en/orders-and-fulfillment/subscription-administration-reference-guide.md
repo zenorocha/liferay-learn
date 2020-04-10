@@ -1,16 +1,16 @@
-# Subscription Management Reference Guide
+# Subscription Administration Reference Guide
 
-This is the guide for the _Subscription_ menu in the _Control Panel_.
+Subscriptions are managed in the _Subscriptions_ menu in the _Control Panel_. This article describes the various functions and fields available in the _Subscriptions_ menu.
 
 Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Subscriptions_.
 
-![Subscriptions Management](./subscription-management-reference-guide/images/01.png)
+![Subscriptions Management](./subscription-administration-reference-guide/images/01.png)
 
 There are five fields:
 
 | Field | Description |
 | --- | --- |
- ID | This is the Subscription's ID. |
+| ID | This is the Subscription's ID. |
 | Status | The Status displays the order's status |
 | Order ID | This is the Order ID that the subscription is based on. |
 | Account ID | The Account ID corresponds to the account that created the subscription. |
@@ -28,11 +28,11 @@ The _General_ tab contains the basic details of the subscription order.
 
 The _Reference Order_ section displays information about the Order:
 
-![Payments section](./subscription-management-reference-guide/images/02.png)
+![Payments section](./subscription-administration-reference-guide/images/02.png)
 
 ### Payment Subscription
 
-![Reference](./subscription-management-reference-guide/images/03.png)
+![Reference](./subscription-administration-reference-guide/images/03.png)
 
 The Payment Subscription section tracks the following information:
 
@@ -48,7 +48,7 @@ The Payment Subscription section tracks the following information:
 
 The _Delivery Subscription_ section tracks the following information:
 
-![Delivery](./subscription-management-reference-guide/images/04.png)
+![Delivery](./subscription-administration-reference-guide/images/04.png)
 
 | Field | Description |
 | --- | --- |
@@ -62,7 +62,7 @@ The _Delivery Subscription_ section tracks the following information:
 
 The _Items_ section lists all the products in the subscription.
 
-![Items](./subscription-management-reference-guide/images/05.png)
+![Items](./subscription-administration-reference-guide/images/05.png)
 
 ## Shipments Tab
 
@@ -81,7 +81,7 @@ The _Shipments_ tab displays the following information:
 
 The _Payments_ tab tracks the order's payment history.
 
-![Items](./subscription-management-reference-guide/images/07.png)
+![Items](./subscription-administration-reference-guide/images/07.png)
 
 | Field | Description |
 | --- | --- |
