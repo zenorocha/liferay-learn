@@ -14,7 +14,7 @@ There are five fields:
 | Status | The Status displays the order's status |
 | Order ID | This is the Order ID that the subscription is based on. |
 | Account ID | The Account ID corresponds to the account that created the subscription. |
-| Account Name  The Account Name corresponds to the account name.||
+| Account Name | The Account Name corresponds to the account name.||
 
 Click on the Subscription's _ID_ to view the subscription order's details.
 
