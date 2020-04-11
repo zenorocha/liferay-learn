@@ -12,6 +12,7 @@ Products
    products/enabling-subscriptions-for-a-product.md
    products/organizing-your-catalog-with-product-categories.md
    products/related-products-up-sells-and-cross-sells.md
+   products/managing-boms.md
 
 .. include:: /managing-a-catalog/creating-and-managing-products/products/README.rst
    :start-line: 2
