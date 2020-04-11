@@ -9,7 +9,7 @@ The following article documents all the Liferay Commerce Widgets and their funct
 | Type | Description |
 | --- | --- |
 | Accounts | List of all accounts created in the instance on the Account Management page |
-| BOM | Displays a diagram which is mapped to all related products in the catalog |
+| BOM | Displays a diagram which maps to all related products in the catalog |
 | Cart | Displays all items to be purchased before checkout |
 | Category Facet | Displays and sorts all product categories |
 | Dashboard Date Range Selector | Allows users to specify a date range to refine their search  |
