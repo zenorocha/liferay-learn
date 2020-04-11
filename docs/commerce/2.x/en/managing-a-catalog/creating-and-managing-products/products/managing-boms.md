@@ -1,6 +1,6 @@
 # Managing BOMs
 
-Bill of Materials (BOM) diagrams identify component parts belonging to a product. 
+Bill of Materials (BOM) diagrams identify component parts belonging to a product.
 
 To add a new BOM:
 
