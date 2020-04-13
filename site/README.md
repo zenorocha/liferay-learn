@@ -24,7 +24,7 @@ Most of the site generation related logic and assets (e.g. templates, css) are s
 
 ### Docs
 
-The `docs` directory contains all of the written documentation related to a product in markdown. All the images referenced throughout the documentation are also stored there, under its respective section name. 
+The `docs` directory contains all of the written documentation related to a product in markdown. All the images referenced throughout the documentation are also stored there, under its respective section name.
 
 At the root of each product directory, there is a set of `rst` files that serve as a table of contents for navigating the site. These `rst` files are compiled to be the site's side navigation with the rendering logic stored in `site/docs/templates/page.html`.
 
