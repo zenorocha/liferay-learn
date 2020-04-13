@@ -58,7 +58,7 @@ function parse_args_generate_sphinx_input {
         "all")      
         # The for loops are the same for prod and all, copied form the original version of the script. I could combine them into one case and just check for "prod"
         # to run the git clean and the upload_to_server; would be shorter but maybe messier
-        # Use loops to pupulate the input dir with all products and versions 
+        # Use loops to populate the input dir with all products and versions 
             echo "Building All Products and Versions"
             # must use the loops to find everything 
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
