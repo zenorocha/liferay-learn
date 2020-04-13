@@ -20,7 +20,7 @@ To begin building a Content Page:
 
     ![Add Fragments to the page to create the mockup you want.](./building-content-pages/images/03.png)
 
-1. Configure the editable portions of the Page Fragments to customize the look of your Content Page. Elements can be configured in some of the following ways:
+1. Configure the editable portions of the Page Fragments to customize the look of your Content Page. Elements can be configured in some of these ways:
 
     * [Setting a Background Color](#setting-a-background-color)
     * [Using a Background Image](#using-a-background-image)
@@ -123,7 +123,7 @@ You can also [specify a background image for a layout](#using-a-background-image
 
 ### Copying a Fragment
 
-You can duplicate a Fragment on the page to save time. Follow these steps:
+You can duplicate a Fragment on the page (Component, Section, Row, etc.) to save time. Follow these steps:
 
 1. Hover over the Fragment you want to copy.
 1. Click the Fragment to select it.
@@ -131,18 +131,47 @@ You can duplicate a Fragment on the page to save time. Follow these steps:
 
 ![You can duplicate Fragments on the page.](./building-content-pages/images/10.png)
 
+```note::
+  Duplicated Sections and Rows appear directly below the Section or Row that is duplicated. The Fragments, mappings, and customizations are duplicated as well.
+```
+
+```warning::
+  Layouts (Sections or Rows) containing instanceable Widgets cannot be duplicated. In this case, a message will appear, indicating the Widget preventing the duplication.
+```
+
 ### Adjusting Spacing
 
-If a [Layout](./content-pages-overview.md#layouts) has multiple columns, you can adjust the spacing between the columns to create a custom layout. Follow these steps:
+You can adjust the spacing for Sections and Rows through the Fragment's Configuration Menu.
 
-1. Click on the Layout to select it. A blue dot appears between each of the columns, indicating that they can be resized.
+#### Configuring Section Width and Padding
+
+To configure the Section, follow these steps:
+
+1. Click the Section to select it.
+1. Click the (![Cog icon](../../../images/icon-control-menu-gear.png)) to open the Section's Configuration Menu.
+1. Update the Section's *Container* setting to adjust the width styling (*Fixed Width* or *Fluid*), and update the *Padding Top* and *Padding Bottom* setting to adjust the padding for the Section container.
+
+![You can configure basic styling through the Section's Configuration Menu.](./building-content-pages/images/11.png)
+
+You can also configure a background image and color for a layout Section. See 
+[Using a Background Image](#using-a-background-image) for more information.
+
+#### Configuring a Row's Columns
+
+To configure a Row, follow these steps:
+
+1. Click the Row to select it.
+1. Click the (![Cog icon](../../../images/icon-control-menu-gear.png)) to open the Row's Configuration Menu.
+1. Update the *Number of Columns* setting (from 1 to 6) to specify the number of columns for the Row, and disable/enable the *Columns Gutter* setting to remove/add padding between columns.
+
+![You can configure basic styling through the Section's Configuration Menu.](./building-content-pages/images/12.png)
+
+You can adjust the width of the columns to create a more custom layout. Follow these steps:
+
+1. Click on the Row to select it. A blue dot appears between each of the columns, indicating that they can be resized.
 1. Click one of the blue dots and drag to the left or right to adjust the size of the column.
 
-![You can adjust the spacing of columns in a Layout to create a custom Layout.](./building-content-pages/images/11.png)
-
-```note::
-   Layouts must contain the same number of columns. You can't remove a column by dragging it. Choose a Layout that has the number of columns you want, then readjust the sizing if you need to.
-```
+![You can adjust the spacing of columns in a Layout to create a custom Layout.](./building-content-pages/images/13.png)
 
 ### General Configuration
 

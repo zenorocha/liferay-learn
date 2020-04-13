@@ -23,9 +23,16 @@ Liferay Portal ships with several Layouts, Fragments, and Widgets that you can u
 
 You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./building-content-pages.md#editing-text), [images](./building-content-pages.md#editing-an-image), or [links](./building-content-pages.md#editing-a-hyperlink), that you can replace with custom content. You can also [map these elements](./building-content-pages.md#mapping-content) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](./README.md#using-fragments).
 
-### Layouts
+### Layout Elements
 
-Layouts provide a canvas where you can add Fragments or Widgets. Each Layout you add fills the width of the page. Multiple layouts can be added to a page.
+```note::
+  In Liferay Portal CE 7.3 GA2+ this section is called Layout Elements. Previously this section was called Layouts and contained layout options with preconfigured sections and rows.
+```
+
+The Layout Elements section contains two Fragments:
+
+* Section: A container Fragment that can contain Rows. Each Section you add fills the width of the page. A Section can contain multiple Rows stacked.
+* Row: A Fragment containing a set of columns that you can add Fragments or Widgets to. A Row can be nested inside another Row to create more complex layouts. You can [adjust the spacing](./building-content-pages.md#configuring-a-row-s-columns) of a Row's columns to create new designs.
 
 ![The Layouts section contains layouts for organizing Fragments.](content-pages-overview/images/16.png)
 
