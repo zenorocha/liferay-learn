@@ -5,7 +5,7 @@ Orders
    :maxdepth: 1
 
    orders/order-life-cycle.md
-   orders/orders-menu.md
+   orders/orders-menu-reference-guide.md
    orders/order-information.md
    orders/order-management-statuses.md
 

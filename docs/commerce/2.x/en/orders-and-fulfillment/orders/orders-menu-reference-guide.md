@@ -1,10 +1,10 @@
-# Orders Menu
+# Orders Menu Reference Guide
 
 Orders can be viewed and managed by an administrator in the _Orders_ menu. To access the _Orders_ menu, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
 
 There are five tabs at the top: _All_, _Open_, _Pending_, _Processing_, and _Completed_.
 
-![Orders menu](./orders-menu/images/05.png)
+![Orders menu](./orders-menu-reference-guide/images/05.png)
 
 ## All
 
@@ -14,7 +14,7 @@ The _All_ tab displays all orders regardless of their order status.
 
 The _Open_ tab displays all the orders that have not completed the checkout process.
 
-![Orders menu - Open tab](./orders-menu/images/07.png)
+![Orders menu - Open tab](./orders-menu-reference-guide/images/07.png)
 
 | Field | Description|
 | --- | --- |
@@ -30,7 +30,7 @@ The _Open_ tab displays all the orders that have not completed the checkout proc
 
 The Pending tab displays all orders that have completed the checkout process.
 
-![Orders menu - Pending tab](./orders-menu/images/06.png)
+![Orders menu - Pending tab](./orders-menu-reference-guide/images/06.png)
 
 There are three particular fields to note:
 
@@ -44,23 +44,23 @@ There are three particular fields to note:
 
 To advance an order from Pending to Processing, click the _Accept Order_ button.
 
-![Orders menu - Pending tab](./orders-menu/images/10.png)
+![Orders menu - Pending tab](./orders-menu-reference-guide/images/10.png)
 
 As the store begins to processing the order, the order is now in the _Processing_ tab.
 
-![Orders menu - Pending tab](./orders-menu/images/09.png)
+![Orders menu - Pending tab](./orders-menu-reference-guide/images/09.png)
 
 ## Completed
 
 When delivery has been confirmed, the order is moved to the Completed tab.
 
-![Orders menu - Pending tab](./orders-menu/images/08.png)
+![Orders menu - Pending tab](./orders-menu-reference-guide/images/08.png)
 
 ## Liferay Commerce 2.0 and below
 
 Orders are managed on the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](./order-life-cycle.md).
 
-![Orders Menu Overview](./orders-menu/images/01.png "Orders Menu Overview")
+![Orders Menu Overview](./orders-menu-reference-guide/images/01.png "Orders Menu Overview")
 
 Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../../creating-store-content/commerce-storefront-pages/pending-orders.md) and [Placed Orders](../../creating-store-content/commerce-storefront-pages/placed-orders.md) for details.
 
@@ -72,7 +72,7 @@ In this tab, the order activity is exclusively on the buyer's side. A new order 
    If *Approval Workflow* is enabled, orders remain in the *Open* tab until the workflow process has completed and the order is placed.
 ```
 
-![Open Tab](./orders-menu/images/02.png "Open Tab")
+![Open Tab](./orders-menu-reference-guide/images/02.png "Open Tab")
 
 ### Pending
 
@@ -82,13 +82,13 @@ The _Pending_ tab serves as a holding place for orders – this is helpful for b
    If *Transmission Workflow* is enabled, orders remain in the *Pending* tab throughout the workflow process, even if the seller rejects an order, sending it back to the buyer.
 ```
 
-![Pending Tab](./orders-menu/images/03.png "Pending Tab")
+![Pending Tab](./orders-menu-reference-guide/images/03.png "Pending Tab")
 
 ### Transmitted
 
 In this tab, the order activity is exclusively on the seller's side. The seller transmits a _Pending_ order by changing the order status (manually or via automation) from the “_To Transmit_” status to any other order status. At this point, the order moves to the _Transmitted_ tab and, if configured, is sent to an external system, such as Microsoft’s Dynamics GP, Oracle’s NetSuite, or SAP. The seller may then proceed with delivery of the ordered products to the buyer. Additional information may also be added to the order, such as an updated order status, shipping information and estimated arrival time.
 
-![Transmitted Tab](./orders-menu/images/04.png "Transmitted Tab")
+![Transmitted Tab](./orders-menu-reference-guide/images/04.png "Transmitted Tab")
 
 ## Additional Information
 

@@ -1,5 +1,7 @@
 # Order Life Cycle
 
+> Liferay Commerce 2.0
+
 An Order stores data regarding a potential or past transaction. This article provides an overview of the order life cycle from open cart to fulfilled order.
 
 ![Order life cycle](./order-life-cycle/images/01.png)
