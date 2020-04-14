@@ -15,6 +15,10 @@ The Content Page sidebar contains these elements and tools for Content Pages:
 
 Liferay Portal ships with several Layouts, Fragments, and Widgets that you can use to build pages. Developers can [create their own Fragments](./README.md#dev-guide) to add to these.
 
+```note::
+ Since Liferay Portal CE 7.3 GA2, Workflow is supported for Content Pages.
+```
+
 ## Fragments
 
 ```note::
