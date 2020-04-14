@@ -74,15 +74,7 @@ The *Content Display* section lets you add the Content Display Fragment to displ
 
 ## Widgets
 
-<!-- Suggestion for improving this content:
-
-Rather than spend valuable real estate here comparing to how its different from a widget page - we should focus on what it is here:
-
-"The widgets section shows a full list of out of the box applications and tools. There are some limitations to using a widget on a content page that distinguish it from its use on a widget page. See "Using Widgets on a Content Page" for more information."
-
--->
-
-The Widgets section functions just like the *Add* menu on a Widget Page. The full list of available widgets is displayed, and you can add them to the page. The main difference is that only the main configuration options for Widgets on Content Pages. Various other configurations like *Look and Feel* are only available for Widgets on Widget Pages.
+The Widgets section list the applications and tools available out-of-the-box that you can add to the page. There are some limitations to using Widgets on Content Pages. See [Using Widgets on Content Pages](./using-widgets-on-content-pages.md) for more information.
 
 ![The Widgets section provides a list of Widgets that can be added inside of a Layout.](./content-pages-overview/images/06.png)
 
