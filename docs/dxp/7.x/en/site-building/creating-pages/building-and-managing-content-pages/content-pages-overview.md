@@ -22,7 +22,7 @@ Liferay Portal ships with several Layouts, Fragments, and Widgets that you can u
 ## Fragments
 
 ```note::
-   Available in Liferay DXP 7.3+. This section was previously divided between the *Sections* and *Section Builder* panels.
+   Available in Liferay DXP 7.3+. This panel was previously divided between the *Sections* and *Section Builder* panels.
 ```
 
 You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./building-content-pages.md#editing-text), [images](./building-content-pages.md#editing-an-image), or [links](./building-content-pages.md#editing-a-hyperlink), that you can replace with custom content. You can also [map these elements](./building-content-pages.md#mapping-content) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](./README.md#using-fragments).
@@ -30,15 +30,15 @@ You can drag-and-drop Fragments on a page. Fragments can have editable elements,
 ### Layout Elements
 
 ```note::
-  In Liferay Portal CE 7.3 GA2+ this section is called Layout Elements. Previously this section was called Layouts and contained layout options with preconfigured sections and rows.
+  In Liferay Portal CE 7.3 GA2+ this panel is called Layout Elements. Previously this panel was called Layouts and contained layout options with preconfigured panels and rows.
 ```
 
-The Layout Elements section contains two Fragments:
+The Layout Elements panel contains two Fragments:
 
 * Section: A container Fragment that can contain Rows. Each Section you add fills the width of the page. A Section can contain multiple Rows stacked.
 * Row: A Fragment containing a set of columns that you can add Fragments or Widgets to. A Row can be nested inside another Row to create more complex layouts. You can [adjust the spacing](./building-content-pages.md#configuring-a-row-s-columns) of a Row's columns to create new designs.
 
-![The Layouts section contains layouts for organizing Fragments.](content-pages-overview/images/16.png)
+![The Layouts panel contains layouts for organizing Fragments.](content-pages-overview/images/16.png)
 
 ### Basic Components
 
@@ -74,13 +74,13 @@ The *Navigation Bars* panel includes Fragments that you can add as the Header of
    Available in Liferay DXP 7.3+.
 ```
 
-The *Content Display* section lets you add the Content Display Fragment to display a single existing web content, blog entry, or document. See [Using the Content Display Fragment](./README.md#using-fragments) for more information.<!--Including this doc in the Page Fragments section-->
+The *Content Display* panel lets you add the Content Display Fragment to display a single existing web content, blog entry, or document. See [Using the Content Display Fragment](./README.md#using-fragments) for more information.<!--Including this doc in the Page Fragments panel-->
 
 ## Widgets
 
-The Widgets section list the applications and tools available out-of-the-box that you can add to the page. There are some limitations to using Widgets on Content Pages. See [Using Widgets on Content Pages](./using-widgets-on-content-pages.md) for more information.
+The Widgets panel list the applications and tools available out-of-the-box that you can add to the page. There are some limitations to using Widgets on Content Pages. See [Using Widgets on Content Pages](./using-widgets-on-content-pages.md) for more information.
 
-![The Widgets section provides a list of Widgets that can be added inside of a Layout.](./content-pages-overview/images/06.png)
+![The Widgets panel provides a list of Widgets that can be added inside of a Layout.](./content-pages-overview/images/06.png)
 
 ```note::
   While portlets are rendered according to `render-weight <https://docs.liferay.com/ce/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight>`_ on Widget Pages, that is not true for Content Pages. Portlets are rendered in the order they appear on the page on Content Pages (i.e. left to right, top to bottom).
@@ -92,7 +92,7 @@ The Widgets section list the applications and tools available out-of-the-box tha
    Available in Liferay DXP 7.3+
 ```
 
-The Contents section provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../../images/icon-contents.png)) to open the Contents panel. From this section, you can perform a variety of actions to edit and manage web content. See [Managing Web Content on Content Pages](./managing-web-content-on-content-pages.md) for more information.
+The Contents panel provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../../images/icon-contents.png)) to open the Contents panel. From this panel, you can perform a variety of actions to edit and manage web content. See [Managing Web Content on Content Pages](./managing-web-content-on-content-pages.md) for more information.
 
 ## Page Structure
 

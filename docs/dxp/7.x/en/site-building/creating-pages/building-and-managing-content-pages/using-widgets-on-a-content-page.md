@@ -6,7 +6,7 @@ The Widgets section functions just like the [*Add* menu on a Widget Page](../usi
 
 Follow these steps to add a widget to a Content Page:
 
-1. While [building the Content Page](./building-content-pages.md), open the [Widgets section](./content-pages-overview.md#widgets) and either browse through the categories of available widgets until you find the one you want, or you can search for widgets by name.
+1. While [building the Content Page](./building-content-pages.md), open the [Widgets panel](./content-pages-overview.md#widgets) and either browse through the categories of available widgets until you find the one you want, or you can search for widgets by name.
 1. Drag the widget to the column and row of the layout where you want to place it.
 
 A widget can be a wiki display or a dynamic publishing tool like the Asset Publisher. The content you display with widgets can be long-form text or an image gallery, or anything in between.
@@ -27,9 +27,7 @@ Follow these steps to configure a Widget on a Content Page:
 
 ## Configuring Widget Permissions on Content Pages
 
-> Available since Liferay Portal CE 7.3 GA2 and Liferay DXP 7.3
-
-Follow these steps to configure a Widget on a Content Page:
+Since Liferay Portal CE 7.3 GA2, you can configure permissions for widgets from a Content Page. Follow these steps to configure Widget permissions on a Content Page:
 
 1. Hover over the widget.
 1. Open the Options Menu (![Options Menu](../../../images/icon-app-options.png)) and select *Permissions*. 
@@ -44,7 +42,7 @@ Follow these steps to configure a Widget on a Content Page:
 
 ## Content Page Limitations for Widgets
 
-Although you can still access basic configuration options and permissions (since Liferay CE GA2) for widgets on Content Pages, there are still some options that are only available for Widgets on Widget Pages:
+Although you can still access basic configuration options and permissions for widgets on Content Pages, there are still some options that are only available for Widgets on Widget Pages:
 
 * *Nested applications*: Nested applications (widgets within widgets) are only supported on Widget Pages.
 * *Widget Look & Feel*: On Widget Pages you can access the Look and Feel menu through the  widget's Configuration Menu, offering fine-grained control over its CSS. This is not available for widgets on Content Pages, since the look and feel of your content is defined in the Theme or by using Fragments.
