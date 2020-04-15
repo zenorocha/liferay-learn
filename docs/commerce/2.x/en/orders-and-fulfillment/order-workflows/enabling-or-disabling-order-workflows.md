@@ -1,6 +1,6 @@
 # Enabling or Disabling Order Workflows
 
-[Order workflows](./introduction-to-order-workflows.md) are a a channel-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
+[Order workflows](./introduction-to-order-workflows.md) are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
 
 This article documents how to enable and disable Order Workflows.
 
