@@ -213,4 +213,4 @@ function upload_to_server {
 	echo upload_to_server
 }
 
-main
+main $1 $2
