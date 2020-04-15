@@ -1,10 +1,10 @@
 # Processing an Order
 
-Processing an order in Liferay Commerce consists of three major stages: accepting the order, processing the order, and finally creating a shipment. All orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), start initially in the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
+Processing an order in Liferay Commerce consists of three major stages: accepting the order, processing the order, and finally creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
 
 ## Accepting the Order
 
-Users can accept an order once it has completed the checkout process. Note that if [Seller Order Acceptance or Buyer Order Approval Workflows](../order-workflows/enabling-or-disabling-order-workflows.md) have been enabled, the order must first be reviewed and then [approved (or rejected)](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md). Until the order is reviewed, the order has not completed the checkout process and thus cannot be accepted at this point.
+Users can accept an order once it has completed the checkout process. Note that if [Workflows](../order-workflows/enabling-or-disabling-order-workflows.md) have been enabled, the order must first be reviewed and then [approved (or rejected)](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md). Until the order is reviewed, the order has not completed the checkout process and thus cannot be accepted at this point.
 
 To accept an order:
 
@@ -22,11 +22,13 @@ The order has been accepted and can be processed.
 
 ## Processing an Accepted Order
 
-After the order has been accepted, there are three buttons at the top right:
+After the order has been accepted, there are three options:
 
-* **Cancel**: All work is stopped and no further actions are required. The order is moved automatically to the _Completed_ tab.
-* **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, items are restocked or address any payment issues).
+* **Cancel**: The order is cancelled and on the Orders menu is moved automatically from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
+* **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
 * **Create Shipment**: The order is ready to be shipped.
+
+![Cancel, Hold, or Create Shipment](./processing-an-order/images/04.png)
 
 ### Processing Subscription Orders
 
