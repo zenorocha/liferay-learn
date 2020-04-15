@@ -1,4 +1,4 @@
-# Configuring Your Github Repository
+# Configuring Your GitHub Repository
 
 Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository should be used as a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users are expected to:
 
@@ -64,3 +64,46 @@ Name | Default Value | Description |
 After updating these environment variables, deploy a new build with the changes. 
 Any pushed branches and pull requests in your new repository should now trigger 
 a Jenkins build. 
+
+## Verifying Builds
+
+Pushed branches and pull requests should trigger builds that you can see or deploy from the _Builds_ tab in the DXP Cloud console. After setting up integration with the Jenkins service, a good next step to verify these builds, to ensure that the integration was successful.
+
+### Verifying Builds from Pushed Branches
+
+To confirm that new Git pushes are triggering Jenkins builds:
+
+1. Make a change to the repository (like adding a file), then commit it to the branch:
+
+    ```bash
+    git commit -m "Add file to test builds"
+    ```
+
+1. Push the branch up to GitHub:
+
+    ```bash
+    git push origin branch-name
+    ```
+
+1. Navigate to the _Builds_ page in the DXP Cloud console.
+
+1. Verify that the build displays for the pushed branch on the _Builds_ page.
+
+### Verifying Builds from Pull Requests
+
+To confirm that new pull requests are triggering Jenkins builds:
+
+1. Create a pull request from the any branch to the `develop` branch.
+
+1. Verify that a new build is created for the pull request.
+
+1. Navigate to the _Builds_ page in the DXP Cloud console.
+
+1. Click the links for the branch and commit in the appropriate build.
+
+1. Verify that the links redirect to the correct GitHub pages.
+
+## Additional Information
+
+* [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
+* [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)
