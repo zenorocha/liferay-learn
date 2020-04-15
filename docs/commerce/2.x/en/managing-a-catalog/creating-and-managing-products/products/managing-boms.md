@@ -1,8 +1,12 @@
 # Managing BOMs
 
-Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create  and annotate BOM diagrams in Liferay Commerce that reference other products in the store. BOM diagrams can also then be displayed on a site page.
+> Subscribers
 
-BOM diagram requires two parts: the product image and the Mapped Products.
+Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create and annotate BOM diagrams in Liferay Commerce that reference other products in the store. BOM diagrams can then be displayed on a site page.
+
+BOM diagrams are comprised of two parts: the product image and the Mapped Products.
+
+## Adding a New BOM Diagram
 
 To add a new BOM diagram:
 
@@ -16,7 +20,7 @@ To add a new BOM diagram:
 1. Enter a name for the product (Generic Diesel Engine).
 1. Click _Save_.
 
-## Creating a Definition
+## Mapping Products to a BOM Diagram
 
 1. Click the _Entries_ tab.
 
@@ -27,29 +31,34 @@ To add a new BOM diagram:
     ![BOM Entries tab](./managing-boms/images/03.png)
 
 1. Click on the part of the diagram that is associated with product (for example, _Fuel Injector 1_).
+
 1. Enter the following:
 
-    * **Number**: 1 (order of the Mapped Products)
+    * **Number**: 1 (numeric ordering of the mapped product list)
     * **Product**: MIN59999 (the product name or SKU)
+
+      ```tip::
+         Text auto-complete will show suggestions as you type in the name of a product.
+      ```
 
     ![Begin associating products in the BOM diagram.](./managing-boms/images/04.png)
 
 1. Click _Save_.
 
-Continue adding the rest of the products. Each entry must have a unique identifier in the Maps, even if there are more than one component. (In this example, there are four fuel injectors and all four have different number of the map.) As each entry is added, it appears on the right pane.
+Continue adding the rest of the products. Each entry must have a unique numeric identifier in the list of Mapped Products, even if there is more than one of the same product. In this example, there are four fuel injectors and all four have a different product mapping number.
 
 ![Continue to associating products in the BOM diagram.](./managing-boms/images/05.png)
 
-## Displaying BOM
+## Displaying a BOM
 
-The Commerce BOM widget displays each BOM diagram.
+The Commerce BOM widget is used to display BOM diagrams.
 
-1. Navigate to the site page where the BOM widget has been deployed.
+<!-- Needs to give steps to deploy the bom widget -->
+1. Navigate to the desired store site page and add the BOM widget. The BOM widget displays all created BOMs and folders.
 
     ![Deploy the BOM widget on site page.](./managing-boms/images/06.png)
 
-1. Navigate to where the BOM definition was created (in a folder or at root level).
-1. Click the BOM thumbnail.
+1. In the BOM Widget, select a BOM definition by clicking a BOM thumbnail.
 
     ![The Commerce BOM widget displays the diagram.](./managing-boms/images/07.png)
 
@@ -57,7 +66,7 @@ The BOM widget displays the diagram.
 
 ## Adding a BOM Folder
 
-As an option, you can create folders to group BOMs.
+You can create folders to group and organize your store's BOMs.
 
 To add a folder:
 
