@@ -37,7 +37,11 @@ First, create a new GitLab repository:
 
 1. Click _New project_.
 
+![Click New project to begin creating a new GitLab repository.](./configuring-your-gitlab-repository/images/01.png)
+
 1. Provide a project slug (the repository name in the url).
+
+![Fill in the details for your new repository.](./configuring-your-gitlab-repository/images/02.png)
 
 1. Configure the visibility level to private (free users have unlimited private repositories).
 
@@ -72,6 +76,8 @@ If you need help creating, cloning, and pushing repositories, see [GitLab's docu
 Next, create an access token that will be used by the Webhook to trigger Jenkins builds:
 
 1. Navigate to the [personal access tokens page](https://gitlab.com/profile/personal_access_tokens).
+
+![Create a personal access token for GitLab, which cannot be accessed again later.](./configuring-your-gitlab-repository/images/03.png)
 
 1. Provide a name and an expiration date for this access token.
 
@@ -116,6 +122,8 @@ Liferay DXP Cloud's Jenkins service automatically creates a webhook for your sel
 
 1. Click the _Edit_ button for the CI webhook.
 
+![Edit the webhook that has been automatically created for your repository.](./configuring-your-gitlab-repository/images/04.png)
+
 1. Uncheck _Tags push events_ and _Comments_.
 
 1. Check _Enable SSL verification_.
@@ -157,6 +165,8 @@ To confirm that new merge requests are triggering Jenkins builds:
 1. Navigate to the _Builds_ page in the DXP Cloud console.
 
 1. Click the links for the branch and commit in the appropriate build.
+
+![Check the links for the branch and commit for your build, on the Builds page.](./configuring-your-gitlab-repository/images/05.png)
 
 1. Verify that the links redirect to the correct GitLab pages.
 
