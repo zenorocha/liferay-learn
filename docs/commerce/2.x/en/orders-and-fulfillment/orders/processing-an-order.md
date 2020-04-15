@@ -4,7 +4,7 @@ Processing an order in Liferay Commerce consists of three major stages: acceptin
 
 ## Accepting the Order
 
-Users can accept an order once it has completed the checkout process. Note that if [Workflows](../order-workflows/enabling-or-disabling-order-workflows.md) have been enabled, the order must first be reviewed and then [approved (or rejected)](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md). Until the order is reviewed, the order has not completed the checkout process and thus cannot be accepted at this point.
+Users can accept an order once it has completed the checkout process. Note that if [Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md) have been enabled, the order must first be reviewed and then [approved (or rejected)](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md). Until the order is reviewed, the order has not completed the checkout process and thus cannot be accepted at this point.
 
 To accept an order:
 
