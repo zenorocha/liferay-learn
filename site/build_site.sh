@@ -27,29 +27,29 @@ function parse_args_generate_sphinx_input {
 
     # these 4 lines stolen from the function I replaced: clean the build folder, call some other scripts, come back to the site folder
 	rm -fr build
-	cd ../docs
-	./update_examples.sh && ./update_permissions.sh
-	cd ../site
+	pushd ../docs
+    ./update_examples.sh && ./update_permissions.sh
+	popd
 
     # deal with each argument we want to accept
     case $product_name in
         # For each specific product, set the default version name if none is provided, then populate the input dir with only that product/ver
         "commerce")      
-            if [[ $version_name=="default" ]]; then
+            if [[ $version_name == "default" ]]; then
               version_name=${commerce_default_version}
             fi
             echo "Building $product_name $version_name"
             populate_product_input_dir 
         ;;
         "dxp")
-            if [[ $version_name=="default" ]]; then
+            if [[ $version_name == "default" ]]; then
               version_name=${dxp_default_version}
             fi
             echo "Building $product_name $version_name"
             populate_product_input_dir 
         ;; 
         "dxp-cloud")
-            if [[ $version_name=="default" ]]; then
+            if [[ $version_name == "default" ]]; then
               version_name=${dxp_cloud_default_version}
             fi
             echo "Building $product_name $version_name"
@@ -70,7 +70,9 @@ function parse_args_generate_sphinx_input {
         ;;
         "prod")
         # same as "all" plus a git clean, and a todo for the upload_to_server stuff
+            pushd ../docs
             git clean -dfx .
+            popd
             echo "Building All Products and Versions for Production"
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
@@ -82,9 +84,9 @@ function parse_args_generate_sphinx_input {
         ;;
         *)
         #handle invalid args: because I'm passing defaults (all default), this only gets called if an unhandled case gets passed
-                echo "You must enter at least one argument: product_name"
-                echo "Product name options: all | prod | commerce | dxp | dxp-cloud" 
-                exit 1
+            echo "You must enter at least one argument: product_name"
+            echo "Product name options: all | prod | commerce | dxp | dxp-cloud" 
+            exit 1
         ;;
     esac
 
