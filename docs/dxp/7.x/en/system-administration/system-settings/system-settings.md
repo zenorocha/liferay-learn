@@ -1,8 +1,8 @@
 # System Settings
 
-You can make System-scoped configurations from Control Panel &rarr; Configuration &rarr; System Settings.
+You can make [System-scoped](./understanding-configuration-scope.md) configurations from Control Panel &rarr; Configuration &rarr; System Settings.
 
-System Settings shows settings in categories. Since there are so many categories, you can search for the name of a specific configuration entry, or even a specific field within an entry.
+The System Settings application shows configuration sections underneath four categories: Platform, Security, Content and Data, and Other. Each section  contains one or more configuration entries. If navigating the categories and sections doesn't lead you to the configuration screen you need, you can search for the name of a specific configuration entry, or even a specific field within an entry.
 
 Navigate to the configuration you need by finding a section (e.g., Content and Data) of interest, then browse its categories (e.g., Workflow).
 

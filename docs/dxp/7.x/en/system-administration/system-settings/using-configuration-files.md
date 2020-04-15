@@ -1,6 +1,6 @@
-# System Settings: Configuration Files
+# Using Configuration Files
 
-[System Settings](./system-settings.md) provides a user interface for making system-scoped configuration changes and setting default configurations for other [scopes](./system-settings-and-configuration-scope.md). The same configurations in the UI can be made via configuration file. 
+[System Settings](./system-settings.md) provides a user interface for making system-scoped configuration changes and setting default configurations for other [scopes](./understanding-configuration-scope.md). The same configurations in the UI can be made via configuration file. 
 
 You can use configuration files to transfer configurations from pre-production systems to production systems or between any other Liferay DXP systems, as long as the version is identical. 
 
@@ -26,9 +26,9 @@ Configuration files are named after the backing Java class. For example, the Jou
 com.liferay.journal.configuration.JournalServiceConfiguration.config
 ```
 
-![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./system-settings-configuration-files/images/01.png)
+![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./using-configuration-file/images/01.png)
 
-The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./factory-configuration.md), where a unique subname can be provided in some cases.
+The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./using-configuration-files.md), where a unique subname can be provided in some cases.
 
 ## Key/Value Syntax
 
@@ -52,7 +52,7 @@ If you use a space character between values (after the comma), the property is i
 
 Open the Web Content category in System Settings (under the Content section), and select *Web Content* for the virtual instance scope. You'll see multiple single value entries for *Characters Blacklist*: 
 
-![The Web Content System Settings entry has many Characters Blacklist fields.](./system-settings-configuration-files/images/02.png)
+![The Web Content System Settings entry has many Characters Blacklist fields.](./using-configuration-file/images/02.png)
 
 In the configuration file, this is represented by single key with an array of comma-separated values: 
 
@@ -96,7 +96,7 @@ addDefaultStructures="true"
 
 Once you have a configuration file, deploy it. It's registered and the targeted configuration values are updated automatically. 
 
-To deploy the `.config` file, place it in your [Liferay Home's](../../reference/liferay-home.md) `osgi/configs` folder. To change the configuration further, you can edit the `.config` file directly or use System Settings. 
+To deploy the `.config` file, place it in your [Liferay Home's](../../installation-and-upgrades/reference/liferay-home.md) `osgi/configs` folder. To change the configuration further, you can edit the `.config` file directly or use System Settings. 
 
 ## Configuration Files and Clustering
 

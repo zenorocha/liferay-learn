@@ -5,9 +5,9 @@ System Settings
    :maxdepth: 4
 
    system-settings/system-settings.md
-   system-settings/system-settings-and-configuration-scope.md
-   system-settings/system-settings-configuration-files.md
-   system-settings/factory-configuration.md
+   system-settings/understanding-configuration-scope.md
+   system-settings/using-configuration-files.md
+   system-settings/using-factory-configuration.md
 
 .. include:: /system-administration/system-settings/README.rst
    :start-line: 2
