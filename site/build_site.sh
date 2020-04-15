@@ -187,7 +187,7 @@ function main {
 
 	pip_install recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
 
-	parse_args_generate_sphinx_input ${1:-all} ${2:-default}
+	parse_args_generate_sphinx_input $1 $2
 
  	generate_static_html
 
@@ -213,4 +213,4 @@ function upload_to_server {
 	echo upload_to_server
 }
 
-main $1 $2
+main ${1:-all} ${2:-default}
