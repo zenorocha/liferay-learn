@@ -1,8 +1,10 @@
 # Managing BOMs
 
-Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create BOM diagrams in Liferay Commerce and then display them on a site page.
+Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create  and annotate BOM diagrams in Liferay Commerce that reference other products in the store. BOM diagrams can also then be displayed on a site page.
 
-To add a new BOM:
+BOM diagram requires two parts: the product image and the Mapped Products.
+
+To add a new BOM diagram:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
 1. Click _BOM_.
@@ -20,11 +22,11 @@ To add a new BOM:
 
     ![BOM Entries tab](./managing-boms/images/02.png)
 
-1. The _Mapped Products_ pane on the right lists all subparts. WHen users hover the mouse over the diagram, a plus sign appears.
+1. The _Mapped Products_ pane on the right lists all subparts. When users hover the mouse over the diagram, a plus sign appears.
 
     ![BOM Entries tab](./managing-boms/images/03.png)
 
-1. Click on the part of the diagram that is associated wih product (for example, _Fuel Injector 1_).
+1. Click on the part of the diagram that is associated with product (for example, _Fuel Injector 1_).
 1. Enter the following:
 
     * **Number**: 1 (order of the Mapped Products)
