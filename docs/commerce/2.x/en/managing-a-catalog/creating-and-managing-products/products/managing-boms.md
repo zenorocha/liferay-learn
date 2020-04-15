@@ -2,7 +2,7 @@
 
 > Subscribers
 
-Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create and annotate BOM diagrams in Liferay Commerce that reference other products in the store. BOM diagrams can then be displayed on a site page.
+Bill of Materials (BOM) diagrams identify component parts belonging to a product. Users can create and annotate BOM diagrams in Liferay Commerce that reference products in the store. BOM diagrams can then be displayed on a site page.
 
 BOM diagrams are comprised of two parts: the product image and the Mapped Products.
 
@@ -45,7 +45,7 @@ To add a new BOM diagram:
 
 1. Click _Save_.
 
-Continue adding the rest of the products. Each entry must have a unique numeric identifier in the list of Mapped Products, even if there is more than one of the same product. In this example, there are four fuel injectors and all four have a different product mapping number.
+Continue adding the rest of the products. Each entry must have a unique numeric identifier in the list of Mapped Products, even if there is more than one of the same product. In this example, there are two fuel injectors and both have a distinct product mapping number.
 
 ![Continue to associating products in the BOM diagram.](./managing-boms/images/05.png)
 
@@ -53,7 +53,6 @@ Continue adding the rest of the products. Each entry must have a unique numeric 
 
 The Commerce BOM widget is used to display BOM diagrams.
 
-<!-- Needs to give steps to deploy the bom widget -->
 1. Navigate to the desired store site page and add the BOM widget. The BOM widget displays all created BOMs and folders.
 
     ![Deploy the BOM widget on site page.](./managing-boms/images/06.png)
@@ -78,5 +77,5 @@ To add a folder:
 ## Additional Information
 
 * [Adding SKUs to Your Products](./adding-skus-to-your-products.md)
-* [Adding Pages to a Site](https://learn.liferay.com/dxp-7.x/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [Adding a Widget to a Page](https://learn.liferay.com/dxp-7.x/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+* [Adding a Page to a Site](https://learn.liferay.com/dxp-7.x/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
+* [Adding Widgets to a Page](https://learn.liferay.com/dxp-7.x/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
