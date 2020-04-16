@@ -1,6 +1,6 @@
 # Maintenance Versions
 
-Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. In particular, Maintenance Versions refer to the change in the third digit of the version number. Each maintenance version includes the latest bug fixes and provides an improved level of security and reliability. Customizations are generally safe, but reviewing the customizations are highly recommended before implementation. No new features are included.
+Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. In particular, Maintenance Versions refer to the change in the third digit of the version number. Each maintenance version includes the latest bug fixes and provides an improved level of security and reliability. Customizations are generally safe, but reviewing the customizations are highly recommended before implementation.
 
 Updating to a new maintenance version is very similar to upgrading to a new major or minor version of Liferay Commerce.
 
