@@ -63,7 +63,7 @@ Run this command to invoke the API and upload the zipped files:
 
 ```bash
 curl -X POST /
-  http://<HOST-NAME>/projects/<PROJECT-NAME>/services/backup/upload /
+  https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload /
   -H 'Content-Type: multipart/form-data' /
   -F 'database=@/my-folder/database.tgz' /
   -F 'volume=@/my-folder/volume.tgz' /

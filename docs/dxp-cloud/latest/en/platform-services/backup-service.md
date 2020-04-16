@@ -84,7 +84,7 @@ Here's an example that uses token authentication with the upload API:
 
 ```bash
 curl -X POST \
-  http://<HOST-NAME>/backup/upload \
+  https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
   -H 'dxpcloud-authorization: Bearer <USER_TOKEN>' \
   -F 'database=@/my-folder/database.tgz' \
@@ -116,7 +116,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://<HOST-NAME>/backup/download/database/:id \
+  https://backup-<PROJECT-NAME>.lfr.cloud/backup/download/database/:id \
   -u user@domain.com:password \
   --output database.tgz
 ```
@@ -138,7 +138,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://<HOST-NAME>/backup/download/volume/:id \
+  https://backup-<PROJECT-NAME>.lfr.cloud/backup/download/volume/:id \
   -u user@domain.com:password \
   --output volume.tgz
 ```
@@ -200,7 +200,7 @@ Name       | Type   | Required |
 
 ```bash
 curl -X POST \
-  http://<HOST-NAME>/backup/upload \
+  https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
   -F 'database=@/my-folder/database.tgz' \
   -F 'volume=@/my-folder/volume.tgz' \
