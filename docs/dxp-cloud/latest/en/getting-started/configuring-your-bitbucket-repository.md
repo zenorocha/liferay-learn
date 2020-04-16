@@ -37,11 +37,11 @@ First, create a new Bitbucket repository.
 
 1. Click the "+" icon in the sidebar under the search icon.
 
-![Click the + icon to begin creating a new BitBucket repository.](./configuring-your-bitbucket-repository/images/01.png)
+    ![Click the + icon to begin creating a new BitBucket repository.](./configuring-your-bitbucket-repository/images/01.png)
 
 1. Click _Repository_ to start creating a new repository.
 
-![Fill in the details for your new repository.](./configuring-your-bitbucket-repository/images/02.png)
+    ![Fill in the details for your new repository.](./configuring-your-bitbucket-repository/images/02.png)
 
 1. Provide a name for the repository.
 
@@ -79,11 +79,11 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. From your user settings page, under _Access Management_ click _App passwords_.
 
-![Click App passwords under the user settings page.](./configuring-your-bitbucket-repository/images/03.png)
+    ![Click App passwords under the user settings page.](./configuring-your-bitbucket-repository/images/03.png)
 
 1. Click _Create app password_.
 
-![Generate a new app password, which cannot be accessed again later.](./configuring-your-bitbucket-repository/images/04.png)
+    ![Generate a new app password, which cannot be accessed again later.](./configuring-your-bitbucket-repository/images/04.png)
 
 1. Provide a label for the app password.
 
@@ -151,7 +151,7 @@ To confirm that new pull requests are triggering Jenkins builds:
 
 1. Click the links for the branch and commit in the appropriate build.
 
-![Check the links for the branch and commit for your build, on the Builds page.](./configuring-your-bitbucket-repository/images/05.png)
+    ![Check the links for the branch and commit for your build, on the Builds page.](./configuring-your-bitbucket-repository/images/05.png)
 
 1. Verify that the links redirect to the correct BitBucket pages.
 
