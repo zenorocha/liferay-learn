@@ -1,6 +1,6 @@
 # Introduction to Personalizing Site Experience
 
-Liferay DXP comes out of the box with powerful tools to understand and deliver personalized experiences to your site's users. The first step to delivering a personalized experience is to start with understanding, or Segmenting your users.
+Liferay DXP comes out of the box with powerful tools to understand and deliver personalized experiences to your site's users. The first step to delivering a personalized experience is to start with understanding, or Segmenting your users. User Segments are synamically assigned User collections. Instead of manually assigning Users to the collection, Users are dynamically assigned to Segments based on shared attributes or behaviors.
 
 ## Segmentation
 
