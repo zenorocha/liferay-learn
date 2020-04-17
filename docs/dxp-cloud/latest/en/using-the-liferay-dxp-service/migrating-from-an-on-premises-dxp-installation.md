@@ -18,7 +18,7 @@ This step should be done when the database is not being updated in order to prev
 Begin by exporting the data to a database dump. The export from MySQL can be accomplished using the following command:
 
 ```bash
-mysqldump -uroot -ppassword --databases --add-drop-database lportal | tar -czvf database.tgz
+mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | cat > database.gz
 ```
 
 ```important::
@@ -51,7 +51,7 @@ Run this command to invoke the API and upload the zipped files:
 curl -X POST \
   https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
-  -F 'database=@/my-folder/database.tgz' \
+  -F 'database=@/my-folder/database.gz' \
   -F 'volume=@/my-folder/volume.tgz' \
   -u user@domain.com:password
 ```

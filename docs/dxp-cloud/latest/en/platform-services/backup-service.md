@@ -158,7 +158,7 @@ you must follow these steps:
 To create a MySQL dump file, run this command: 
 
 ```bash
-mysqldump -uroot -ppassword --databases --add-drop-database lportal | tar -czvf database.tgz
+mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | cat > database.gz
 ```
 
 The `databases` and `add-drop-database` options are necessary for backup 
@@ -202,7 +202,7 @@ Name       | Type   | Required |
 curl -X POST \
   https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
-  -F 'database=@/my-folder/database.tgz' \
+  -F 'database=@/my-folder/database.gz' \
   -F 'volume=@/my-folder/volume.tgz' \
   -u user@domain.com:password
 ```
