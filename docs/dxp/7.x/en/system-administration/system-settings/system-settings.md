@@ -2,7 +2,7 @@
 
 You can make [System-scoped](./understanding-configuration-scope.md) configurations from Control Panel &rarr; Configuration &rarr; System Settings.
 
-The System Settings application shows configuration sections underneath four categories: Platform, Security, Content and Data, and Other. Each section  contains one or more configuration entries. If navigating the categories and sections doesn't lead you to the configuration screen you need, you can search for the name of a specific configuration entry, or even a specific field within an entry.
+The System Settings application shows configuration sections underneath four categories: Platform, Security, Content and Data, and Other. Each section contains one or more configuration entries.
 
 Navigate to the configuration you need by finding a section (e.g., Content and Data) of interest, then browse its categories (e.g., Workflow).
 
@@ -16,7 +16,7 @@ If you can't locate a System Settings entry by browsing, search for it using the
    Some system-scoped configurations can be made in properties files and in the Server Administration application in the Control Panel.
 ```
 
-Liferay DXP contains many applications. The applications and their services may be configurable at several [scopes](./system-settings-configuration-scope.md), as defined by the application's developers. Configuration made in System Settings is system scoped or sets system-wide default configurations that can be overridden at another scope.
+Liferay DXP contains many applications. The applications and their services may be configurable at several [scopes](./understanding-configuration-scope.md), as defined by the application's developers. Configuration made in System Settings is system scoped or sets system-wide default configurations that can be overridden at another scope.
 
 If you don't know what a configuration option does, check the documentation for that feature. 
 
@@ -26,15 +26,15 @@ Once you find the configuration to modify,
 
 1. Open the configuration form for the entry.
 
-1. Make any changes, then click *Save*. Your configuration changes are saved and applied throughout the system. 
+1. Make any changes, then click *Save*. Your configuration changes are saved and applied throughout the system.
 
     ```important::
-       Content generated using templates (e.g., FreeMarker templates and Application Display Templates) is cached. Cached content might not reflect configuration changes until the cache is invalidated (cleared). The Server Administration &rarr; Resources tab provides cache clearing options.
+       Content generated using templates (e.g., FreeMarker templates and Application Display Templates) is cached. Cached content might not reflect configuration changes until the cache is invalidated (cleared). The Server Administration -> Resources tab provides cache clearing options.
     ```
 
 ## Resetting a System Settings Entry
 
-If you make some regrettable configuration decisions and can't recall exactly what you did, start over by clicking the actions button (![Actions](../../images/icon-actions.png)), then clicking *Reset Default Values*. 
+If you make some regrettable configuration decisions and can't recall exactly what you did, start over by clicking the actions button (![Actions](../../images/icon-actions.png)), then clicking *Reset Default Values*.
 
 ![After saving changes to a configuration, the actions Reset Default Values and Export are made available.](./system-settings/images/04.png)
 
