@@ -18,7 +18,7 @@
 	"private": true,
 	"scripts": {
 		"build": "npm run build-css && npm run propagate-img && npm run propagate-js && npm run propagate-template",
-		"build-css": "node-sass --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css && cp _static/main.css ../docs/_static",
+		"build-css": "node-sass --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css && cp _static/{main,pygments}.css ../docs/_static",
 		"css:watch": "node-sass -w --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css",
 		"propagate-img": "cp _static/img/* ../docs/_static/img",
 		"propagate-js": "cp _static/js/* ../docs/_static/",

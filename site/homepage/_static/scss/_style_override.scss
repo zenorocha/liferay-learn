@@ -12,6 +12,11 @@ span.highlighted {
 	background-color: $highlight-color;
 }
 
+pre {
+	background-color: inherit;
+	color: inherit;
+}
+
 table {
 	font-size: $h5-font-size;
 
@@ -37,4 +42,8 @@ ul.search {
 		color: $default-color;
 		max-width: initial;
 	}
+}
+
+.highlight {
+	border-radius: 0.25rem;
 }

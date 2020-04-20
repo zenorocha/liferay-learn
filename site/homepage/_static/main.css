@@ -8783,6 +8783,10 @@ dt:target,
 span.highlighted {
   background-color: #C4D6F8; }
 
+pre {
+  background-color: inherit;
+  color: inherit; }
+
 table {
   font-size: 0.875rem; }
 
@@ -8796,3 +8800,6 @@ ul.search {
 .document .body {
   color: #30313F;
   max-width: initial; }
+
+.highlight {
+  border-radius: 0.25rem; }
