@@ -18,7 +18,7 @@ If you can't locate a System Settings entry by browsing, search for it using the
 
 Liferay DXP contains many applications. The applications and their services may be configurable at several [scopes](./understanding-configuration-scope.md), as defined by the application's developers. Configuration made in System Settings is system scoped or sets system-wide default configurations that can be overridden at another scope.
 
-If you don't know what a configuration option does, check the documentation for that feature. 
+If you don't know what a configuration option does, check the documentation for that feature.
 
 ## Editing System Configurations
 
@@ -34,7 +34,7 @@ Once you find the configuration to modify,
 
 ## Resetting a System Settings Entry
 
-If you make some regrettable configuration decisions and can't recall exactly what you did, start over by clicking the actions button (![Actions](../../images/icon-actions.png)), then clicking *Reset Default Values*.
+System settings can be reset to their default value by clicking the actions button (![Actions](../../images/icon-actions.png)), then clicking *Reset Default Values*.
 
 ![After saving changes to a configuration, the actions Reset Default Values and Export are made available.](./system-settings/images/04.png)
 
@@ -44,6 +44,8 @@ System Settings are portable. To apply the same configurations in another instal
 
 To export a single entry's configurations, click the actions button (![Actions](../../images/icon-actions.png)), then click *Export*. A `.config` file containing your configuration downloads to your system.
 
-To export all the configuration changes you've made in System Settings, click the System Settings options button (![Options](../../images/icon-options.png)), then click *Export All Settings*. The `.config` files for all the entries you edited then download in a ZIP file. 
+To export all the configuration changes you've made in System Settings, click the System Settings options button (![Options](../../images/icon-options.png)), then click *Export All Settings*. The `.config` files for all the entries you edited then download in a ZIP file.
 
-To make these configurations active in the destination system, unzip and place the `.config` files in the `[Liferay_Home]/osgi/configs` folder. 
+To make these configurations active in the destination system, unzip and place the `.config` files in the [`[Liferay_Home]/osgi/configs` folder](../../installation-and-upgrades/reference/liferay-home.md).
+
+See [Using Configuration Files](./using-configuration-files.md) to learn more.

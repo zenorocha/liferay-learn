@@ -40,7 +40,7 @@ Here is a breakdown of each folder with a brief description of its purpose:
 * `license`: DXP's copyright and version files are here.
 * `logs`: DXP creates this folder and writes log files here. Examine them as you diagnose problems. `portal-impl.jar`'s `portal-impl/src/META-INF/portal-log4j.xml` file sets the log file location. To override the log file location, you must [use an `ext-impl/src/META-INF/portal-log4j-ext.xml` file in an Ext plugin](https://help.liferay.com/hc/articles/360029030791-Customizing-Core-Functionality-with-Ext).
 * `osgi`: All the JAR files and a few configuration files for the OSGi runtime belong in this folder. The [portal property `module.framework.base.dir`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Module%20Framework) sets the OSGi folder location. Here are its subfolders:
-  * `configs`: Component configuration files.
+  * `configs`: Component [configuration files](../../system-administration/system-settings/system-settings.md#exporting-and-deploying-configurations).
   * `core`: DXP's core modules.
   * `marketplace`: Marketplace applications and application suites.
   * `modules`: Modules you've deployed.

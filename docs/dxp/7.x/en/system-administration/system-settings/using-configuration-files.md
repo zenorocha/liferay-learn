@@ -6,12 +6,8 @@ You can use configuration files to transfer configurations from pre-production s
 
 Configuration files use the `.config` property value format defined by the [Apache Felix Configuration Admin framework](http://felix.apache.org/documentation/subprojects/apache-felix-config-admin.html).
 
-```important::
-   Content generated using templates (e.g., FreeMarker templates and Application Display Templates) is cached. Cached content might not reflect configuration changes until the cache is invalidated (cleared). The Server Administration &rarr; Resources tab provides cache clearing options.
-```
-
 ```note::
-   The `.cfg` file format is common in OSGi environments, and it's a supported format, but `.config` files are preferred because you can both specify a property value's type, and allow multi-valued properties. For this reason, `.config` files are used, recommended, and documented as a best practice.
+   The ``.cfg`` file format is common in OSGi environments, and it's a supported format, but ``.config`` files are preferred because you can both specify a property value's type, and allow multi-valued properties. For this reason, ``.config`` files are used, recommended, and documented as a best practice.
 ```
 
 ## Creating Configuration Files
@@ -28,7 +24,7 @@ com.liferay.journal.configuration.JournalServiceConfiguration.config
 
 ![The Web Content System Settings entry has the back-end ID com.liferay.journal.configuration.JournalServiceConfiguration.](./using-configuration-files/images/01.png)
 
-The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./using-configuration-files.md), where a unique subname can be provided in some cases.
+The system enforces the configuration file's name. If you edit the name, the link to the configuration entry is broken and further customization never takes effect. The only exception is for [Factory Configuration](./using-factory-configuration.md), where a unique subname can be provided in some cases.
 
 ## Key/Value Syntax
 
