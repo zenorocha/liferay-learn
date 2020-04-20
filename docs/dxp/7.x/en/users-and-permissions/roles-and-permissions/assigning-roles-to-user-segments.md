@@ -2,15 +2,20 @@
 
 > Available: Liferay DXP 7.2 SP2+
 
-User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, [personalized experiences](../../../site-building/personalizing-site-experience/introduction-to-personalizing-site-experience.md) can be defined for User Segments, ensuring that the Users see the most relevant content in your Site.
+User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, [personalized experiences](../../../site-building/personalizing-site-experience/introduction-to-personalizing-site-experience.md) can be defined for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
+
+| Where Do I Create User Segments? | What Are They For? | Where Do I Assign Roles To a Segment? |
+| -------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------- |
+| Site Segments (Site Menu &rarr; Segments)                            | Create personalized experiences for a Site's Users             | Site Menu &rarr; People &rarr; Segments (![Actions](../../../images/icon-actions.png) |
+| Instance Segments (Control Panel &rarr; Users &rarr; Roles (Regular) | Efficiently and dynamically manage Users and their permissions | Control Panel &rarr; Users &rarr; Roles (Regular Roles) |
 
 ## Assigning a Regular Role to a User Segment
 
-To assign Regular Roles to a User Segment,
+Regular Roles can be assigned to User Segments created at the Global Scope. To assign Regular Roles to a User Segment,
 
 1. Open the Product Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
-1. Open the Actions Menu (![Actions](../../../images/icon-actions.png)) next to the Role and select *Edit*.
+1. Open the Actions Menu (![Actions](../../../images/icon-actions.png)) next to the Regular Role and select *Edit*.
 
     ![Edit a Role to assign the User Segment to it.](./assigning-roles-to-user-segments/images/01.png)
 
