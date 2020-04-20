@@ -2,6 +2,7 @@ Managing a Catalog
 ==================
 
 -  :doc:`/managing-a-catalog/creating-a-new-catalog`
+-  :doc:`/managing-a-catalog/customizing-a-catalogs-placeholder-image`
 
 Creating and Managing Products
 ------------------------------
