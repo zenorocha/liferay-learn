@@ -24,7 +24,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
     * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
     * **From Name**: Name of the store or a customer service representative
     * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Email body \*
+    * **Body**: Enter a message. You can create a generic message that uses tokens ("Terms") which contain placeholder values such as customer's name and order ID. (See the [Notification Template Terms Reference Guide](./notification-template-terms-reference-guide.md).)
 
     ![Adding a Notification Template in 2.1](./automating-store-emails-by-using-notification-templates/images/03.png)
 
@@ -70,7 +70,7 @@ To create email notifications in Commerce 2.0 and below:
     * **Type**: Order Placed
     * **Enabled**: Switch the Toggle to _YES_
     * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Email body \*
+    * **Body**: Enter a message. You can create a generic message that uses tokens ("Terms") which contain placeholder values such as customer's name and order ID. (See the [Notification Template Terms Reference Guide](./notification-template-terms-reference-guide.md).)
 
     ![Adding a Notification Template](./automating-store-emails-by-using-notification-templates/images/01.png)
 
@@ -91,9 +91,4 @@ To change the interval for when Liferay Commerce checks for unsent notifications
 
 ## Additional Notifications
 
-Liferay Commerce offers two snippets to programmatically insert the order creator's name and the order ID.
-
-* \[%ORDER_CREATOR%\] inserts the user who created the order
-* \[%ORDER_ID%\] inserts the Order ID
-
-An extension point lets you implement other notifications: for a shipped order, a restocked product, a carrier exception, or any other event.
+* [Definition of Terms Reference Guide](./definition-of-terms-reference-guide.md)
