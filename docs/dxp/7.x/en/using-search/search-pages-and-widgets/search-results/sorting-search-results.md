@@ -1,6 +1,6 @@
 # Sorting Search Results
 
-Search results are displayed in the [Search Results](./search-results.md) widget, ordered by [relevance](./understanding-search-results.md) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, you can exert control over the order of returned results, no code necessary.
+Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./understanding-search-results.md) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, you can exert control over the order of returned results, no code necessary.
 
 Add the widget to a [Search Page](../../search-pages-and-widgets/working_with_search_pages.rst) and begin sorting results.
 
@@ -11,7 +11,7 @@ Out of the box, order results in these ways as an alternative to relevance sorti
 - by the Create date (newest first by default, or choose oldest first)
 - alphabetically by the User that created each matching asset
 
-Choose from one of the Sort widget's pre-configured sorting strategies or one you configure. 
+Choose from one of the Sort widget's pre-configured sorting strategies or configure your own. 
 
 It's also possible to delete unwanted sort options from the widget.
 
@@ -27,7 +27,7 @@ To get started with the Sort widget,
 
 ## Configuring the Sort Widget
 
-From the Sort widget's ![App Options](../../../images/icon-app-options.png) &rarr; Configuration screen, you can
+From the Sort widget's Configuration screen, you can
 
 - Edit existing Sort options
 - Delete options
@@ -37,15 +37,15 @@ From the Sort widget's ![App Options](../../../images/icon-app-options.png) &rar
 
 To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
 
-Each Sort option has two fields: _Label_ and _Field_.
+Each Sort option has two settings: _Label_ and _Field_.
 
 **Label:** Set the displayed label for the type of sort being configured.
 
-**Field:** The `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html). There's even a way for persistent search administrators to coerce `text` fields into behaving with the Sort widget. Keep reading for details.
+**Field:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget. Keep reading for details.
 
 ## Finding Sortable Fields
 
-To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for each index.  Scroll to the `properties` section of the mapping, and find any `keyword` field, `date` field, or a field with any numeric datatype. The `type` field is instructive:
+To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for each index.  Scroll to the `properties` section of the mapping, and find any `keyword` field, `date` field, or a field with a numeric datatype. The `type` field is instructive:
  
     "type" : "keyword"
 
@@ -53,7 +53,7 @@ To find the fields available for use in the Sort widget, Users with the proper p
 
     "type" : "long"
 
-What if you really need to sort by a `text` field? You can do it by adding a new version of the field to the index, with the type `keyword`. Don't worry; you don't need to code anything to do this. From the field mappings screen mentioned above, look at the `firstName` field in the index called `liferay-[companyID]`.  In fact, look at the next entry as well:
+If you really need to sort by a `text` field, do it by adding a new version of the field to the index, with the type `keyword`. Don't worry; you don't need to code anything to do this. From the field mappings screen mentioned above, look at the `firstName` field in the index called `liferay-[companyID]`. In fact, look at the next entry as well:
 
 ```json
 "firstName" : {
@@ -66,7 +66,7 @@ What if you really need to sort by a `text` field? You can do it by adding a new
 },
 ```
 
-There's a corresponding field with the suffix `_sortable`, and of the correct type for sorting (`keyword`). How did that get there? Via the [portal property](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Lucene%20Search):
+There's a corresponding field with the suffix `_sortable`, and of the correct type for sorting (`keyword`). The sortable field got there via a [portal property](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Lucene%20Search):
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
@@ -76,7 +76,7 @@ All the text fields listed here have a `fieldName_sortable` counterpart created 
 
 ## Adding New Sort Options
 
-To sort by the new field, use the plus symbol below any option's _Field_ configuration make sure to use the `fieldName_sortable` version of the field in the widget configuration. 
+To sort by the new field or an existing field of the proper type, use the plus symbol below any existing option's _Field_ configuration make sure to use the `fieldName_sortable` version of the field in the widget configuration. 
 
 To add a new sort option that's already of the proper datatype, use the plus symbol below any option's _Field_ configuration and fill in the fields. The order of options here in the configuration screen matches the order Users see in the select list while configuring the widget for their search.
 
