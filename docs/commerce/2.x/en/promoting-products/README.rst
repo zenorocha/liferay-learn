@@ -5,7 +5,7 @@ Communications
 --------------
 
 -  :doc:`/promoting-products/automating-store-emails-by-using-notification-templates`
--  :doc:`/promoting-products/notification-template-terms-reference-guide`
+-  :doc:`/promoting-products/notification-template-variables-reference-guide`
 
 Promotions
 ----------

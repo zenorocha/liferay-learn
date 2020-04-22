@@ -24,7 +24,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
     * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
     * **From Name**: Name of the store or a customer service representative
     * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Enter a message. You can create a generic message that uses tokens ("Terms") which contain placeholder values such as customer's name and order ID. (See the [Notification Template Terms Reference Guide](./notification-template-terms-reference-guide.md).)
+    * **Body**: Enter a message. You can create a generic message that uses variables which contain placeholder values such as customer's name and order ID. (See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md).)
 
     ![Adding a Notification Template in 2.1](./automating-store-emails-by-using-notification-templates/images/03.png)
 
@@ -70,7 +70,7 @@ To create email notifications in Commerce 2.0 and below:
     * **Type**: Order Placed
     * **Enabled**: Switch the Toggle to _YES_
     * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Enter a message. You can create a generic message that uses tokens ("Terms") which contain placeholder values such as customer's name and order ID. (See the [Notification Template Terms Reference Guide](./notification-template-terms-reference-guide.md).)
+    * **Body**: Enter a message. You can create a generic message that uses variables which contain placeholder values such as customer's name and order ID. (See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md).)
 
     ![Adding a Notification Template](./automating-store-emails-by-using-notification-templates/images/01.png)
 
@@ -91,4 +91,4 @@ To change the interval for when Liferay Commerce checks for unsent notifications
 
 ## Additional Notifications
 
-* [Definition of Terms Reference Guide](./definition-of-terms-reference-guide.md)
+* [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)
