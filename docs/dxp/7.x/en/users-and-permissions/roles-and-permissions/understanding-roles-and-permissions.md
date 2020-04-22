@@ -1,11 +1,29 @@
 # Understanding Roles and Permissions
 
-To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles are the vehicle for granting those permissions, and most Role administration work is done in Control Panel &rarr; Users &rarr; Roles.
+<!-- This intro needs rework. Here's a recommended outline: 
+
+I. Understanding Roles and Permissions
+   Describe here how roles join users with permissions
+  A. Roles
+    1. Regular Roles (System Scope)
+    2. Organization Roles (Organization Scope)
+    3. Site Roles (Site Scope)
+  B. Permissions
+    1. Application Scope
+    2. Asset Scope
+  C. Default Roles
+  D. Related Topics
+
+I have also started a new diagram in the Drawings folder; you can use it or something else, but the example you had with an HR Manager Role didn't seem real-world enough to me. 
+Also, where are the other articles in this section? 
+  -Rich -->
+
+To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles join Users with permissions. Most Role administration work is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
 ![Manage Roles from the Control Panel.](./understanding-roles-and-permissions/images/03.png)
 
 ```note::
-   Some permissions aren't managed in the control panel. Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset. See `the Widget Permissions<./../../site-building>`__ article for details.
+   Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See `the Widget Permissions<./../../site-building>`__ article for details.
 
    `Site Teams<./../../site-building/building-sites/creating-teams-for-sites.md>`__ have a dedicated permissions management User Interface, as well.
 ```
@@ -20,14 +38,16 @@ The conceptual diagram below shows how a User assigned to an Organization (Human
 
 ![Roles exist to get permissions to Users.](./understanding-roles-and-permissions/images/02.png)
 
-The Role creation process (using the HR Manager example) could look like this:
+<!-- This used to have an HR Manager Role defined that granted administrative access to the entire portal to everyone in the HR Organization. This didn't seem like a real example to me, so I changed it to a Message Boards Administrator Role. -Rich -->
 
-1. Determine the function needed: _Manage Users in Liferay DXP._
+Here are the steps for creating a Role, using a _Message Boards Admin_ Role as an example:
+
+1. Determine the function needed: _Manage Message Boards in Liferay DXP._
 1. Determine the scope: _Throughout the Virtual Instance (globally)._
-1. Create the Role, assigning the permissions that power the function: _HR Manager Role._
-1. Create the User collection: _Human Resources Department = Organization._
-1. Assign the Role to the User Collection: _Human Resources Department &rarr; HR Manager Role._
-1. Assign Users to the User Collection: _Jane Slaughter &rarr; Human Resources Department._
+1. Create the Role, assigning the permissions that power the function: _Message Boards Admin._
+1. Create the User collection: _Message Boards Administrators = User Group._
+1. Assign the Role to the User Collection: _Message Boards Administrators &rarr; HR Manager Role._
+1. Assign Users to the User Collection: _Jane Slaughter &rarr; Message Boards Administrators._
 
 ## Managing Assignments with User Collections
 
@@ -42,7 +62,9 @@ Individual [Users](./../users/understanding-users.md) can be directly assigned t
 
 ## Defining Roles and Assigning Users
 
-The remaining articles in this section provide the detailed instructions on [Role Creation and Management](./role-creation-and-management.md), [Defining Role Permissions](defining-role-permissions.md), and [Assigning Users to Roles](./assigning-user-to-roles.md). Conceptually, it's good to understand how Liferay DXP structures the User Interface for managing Roles and permissions.
+Conceptually, it's good to understand how Liferay DXP structures the User Interface for managing Roles and permissions.
+
+<!-- Not sure the third column is needed, since all its values are the same. -Rich -->
 
 | Permission Scope | Role Type | Where are its permissions defined?      | Where is it assigned to Users? |
 | ---------------- | --------- | --------------------------------------- | -------- |
@@ -62,17 +84,17 @@ Role _Assignment_ is the association of the Role with Liferay DXP Users. Assignm
 
 ## Default Roles in Liferay DXP
 
-In the Roles Application appears a list of all the Roles in Liferay, by scope. 
+In the Roles Application appears a list of all the Roles in Liferay DXP, by scope. 
 
 These are some of the pre-configured regular Roles:
 
-**Guest:** The Guest Role is assigned to unauthenticated Users and grants the lowest-level permissions. 
+**Guest:** The Guest Role is assigned to unauthenticated visitors and has the lowest-level permissions. 
 
 **User:** The User Role is assigned to authenticated Users and grants basic permissions (mostly *Add to Page* permissions for their own Sites).
 
-**Power User:** The Power User Role grants more permissions than the User Role. It's an extension point for distinguishing regular Users from more privileged Users. For example, you can set things up so that only Power Users have personal Sites.
+**Power User:** The Power User Role grants more permissions than the User Role. It's an distinguishes regular Users from more privileged Users. For example, you can define it so that only Power Users have personal Sites.
 
-**Administrator:** The administrator Role grants permission manage the entire portal, including global portal settings and individual Sites, Organizations, and Users.
+**Administrator:** The administrator Role grants permission to manage the entire installation, including global settings and individual Sites, Organizations, and Users.
 
 These are some of the pre-configured Site Roles:
 
@@ -106,3 +128,11 @@ A Web Content Folder contains Web Content articles. The Web Content Folder is an
 
 Besides Web Content Folders, examples of asset containers include Bookmarks Folders, Message Boards Categories, Wiki Nodes, and Documents and Media Folders.
 -->
+
+## Related Topics
+
+[Role Creation and Management](./role-creation-and-management.md) 
+
+[Defining Role Permissions](./defining-role-permissions.md) 
+
+[Assigning Users to Roles](./assigning-user-to-roles.md). 
