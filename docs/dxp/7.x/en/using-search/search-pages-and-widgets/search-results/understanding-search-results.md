@@ -1,6 +1,6 @@
 # Understanding Search Results
 
-Search results are must be simple and intuitive for end Users. To achieve that, administrators optimizing the search experience have a lot of conceptual ground to cover.
+Search results must be simple and intuitive for end Users. To achieve that, administrators optimizing the search experience have a lot of conceptual ground to cover.
 
 ## Filtering Results with Facets
 

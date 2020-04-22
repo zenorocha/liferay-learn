@@ -1,12 +1,21 @@
 # Filtering Search Results with the Custom Filter Widget
 
-You often need to exert control over the displayed search results. One viable approach is to develop your own search portlets using the @product@ APIs. That can be overkill if you just want to make a slight modification to how the search is executed, so many of the out-of-the-box search widgets give you this type of control without coding anything (Search Options, Custom Facet, and more). In @product-ver@, new widgets have been added: Sort and Custom Filter.
+With Custom Filters, you can contribute queries to the main search query, filtering search results to exert control over what's returned in the Search Results widget. Make the filter widgets visible or invisible to the search Users, and decide if they're changeable or immutable.
 
-With Custom Filters, you can contribute queries to the main search query, exerting control over the search results. Make the filter widgets visible or invisible to the search Users, and decide if they're changeable or immutable.
+![Apply a custom filter to weed out certain search results.](./filtering-search-results/images/03.png)
+
+There are many use cases you can satisfy by incorporating Custom Filters into your search page. Some demonstrative articles are planned to show you some of the filtering capabilities at your disposal.
+
+| Use Case | `Configuration` _(Value)_ |
+| -----------| ----------- |
+| **User Title Filter:** End Users directly manipulate the filter key to refine results to the one they were looking for, using the Title |`Filter Field` _(title\_en\_US)_ <br /> `Filter Value` _(podcast)_ <br /> `Filter Query Type` _(Match)_ <br /> `Occur Type` _(must_not)_|
+| **Hard-Coded Filtering:** An administrative User configures the Search Page with filters that are invisible and unchangeable for end Users | ***Add to the above configuration*** <br /> `Invisible` _(True--checked)_ <br /> `Immutable` _(True--checked)_|
+
+Custom filters can do so many things, it's impossible to list them all. What follows is a widget configuration tour. Separate documentation will be written to provide a how-to demonstration of Custom Filters.
 
 To explore all the options you have with the Custom Filter widget, you need one on the page.
 
-## Adding and Configuring Custom Filters
+## Adding a Custom Filter
 
 To get started with Custom Filters,
 
@@ -14,20 +23,20 @@ To get started with Custom Filters,
 
 1. From the Search section, drag a Custom Filter onto the page.
 
-![Figure 1: A custom filter has no impact until it's configured.](./filtering-results/images/search-custom-filter.png)
+![A custom filter has no impact until it's configured.](./filtering-search-results/images/01.png)
 
-Custom filters can do so many things, it's impossible to list them all. What follows is a widget configuration tour. Separate documentation will be written to provide a how-to demonstration of Custom Filters.
+## Custom Filter Configuration
 
-### Custom Filter Configuration Options
+To begin filtering search results, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
 
-Open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
-
-![Figure 2: Once the Custom Filter is added to the page, mold it like soft clay into the beautiful sculpture you've envisioned.](./filtering-results/images/search-custom-filter-configuration.png)
+![Once the Custom Filter is added to the page, mold it like soft clay into the beautiful sculpture you've envisioned.](./filtering-search-results/images/search-custom-filter-configuration.png)
 
 **Filter Field (text):** Most often, filters operate on a specific field. Set the name of the indexed field to be filtered (for example, `title`). You won't need this if the Filter Query Type is set to a type that doesn't require a field, such as _Regexp_.
 
 The Query String and Script queries do not require a Filter Field to be set.  All other queries require at least one field. 
-<!--Note: Multi Match and Simple Query String take an array of fields accoring to the Elasticsearch docs, but our config doesn't seem to support it. -->
+<!--Note: Multi Match and Simple Query String take an array of fields according to the Elasticsearch docs, but our config doesn't seem to support it. -->
+
+To find the fields present in the Liferay DXP index, use [the Field Mappings UI in the Control Panel](#finding-fields)
 
 **Filter Value (text):** For most filters, you must enter a text value here that specifies the text to apply the filter on in the specified field (for example, set a _Match_ query to the text _street_ on the `title_en_US` field). Some Filter Query Types require special notation, as in the case of the _Regexp_ filter. 
 
@@ -56,11 +65,8 @@ value is used.
 
 **Federated Search Key (text):** Enter the key of an alternate Search this widget is participating on. If it's set, be aware that the default @product@ index isn't searched at all. If not set, this widget participates on the default search. Values in this field typically match the name of an application-defined index.
 
-There are many use cases you can satisfy by incorporating Custom Filters into your search page. Two demonstrative articles are planned to show you some of the filtering capabilities at your disposal:
+## Finding Fields
 
-- _Refine to One_ (or _Needle in a Haystack_) will show you how to add user-operated filters to the page so results can be refined down to just the result they were looking for.
+To find the fields you can filter by in the Custom Filter widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for the `liferay-[companyId]` index. Scroll to the `properties` section of the mapping
 
-- _Complex filtering_ shows you some more advanced filters and how they work.
-
-Check out the Custom Filter and see what it adds to your search page.
-
+![Browse the field mappings to find Liferay DXP's indexed fields.](./filtering-search-results/images/04.png)
