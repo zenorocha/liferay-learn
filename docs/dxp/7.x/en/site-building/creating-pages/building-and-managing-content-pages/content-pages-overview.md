@@ -101,7 +101,7 @@ Click the *Look and Feel* icon (![Look and Feel](../../../images/icon-look-and-f
 
 You can comment on a Page Fragment to discuss changes and collaborate. Comments are disabled by default in Liferay DXP 7.2+, but Administrators can enable them. See [Using Fragment Comments](./using-fragment-comments.md) for more information.
 
-## Next Steps
+## Related Information
 
 * [Building Content Pages](./building-content-pages.md)
 * [Page Fragments](./README.md#using-fragments)

@@ -158,7 +158,7 @@ You can also map these elements to content. You can set the *Content* for the el
 
 When you create Content Pages, you can create different **Experiences** for users based on User Segments. You can create a unique Experience on any Content Page for any existing User Segment. For more information, see the [Content Page Personalization guide](../../personalizing-site-experience/README.md).
 
-## Additional Information
+## Related Information
 
 * Developing a Page Fragment
 * [Using Master Pages](../defining-headers-and-footers/master-page-templates.md)

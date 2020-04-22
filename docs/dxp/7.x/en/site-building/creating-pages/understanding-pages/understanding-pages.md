@@ -83,7 +83,7 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 
 ![You can add a child Page to a top-level page to organize pages hierarchically.](./understanding-pages/images/06.png)
 
-## Next Steps
+## Related Information
 
 * [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
 * [Configuring Individual Pages](../page-settings/configuring-individual-pages.md)

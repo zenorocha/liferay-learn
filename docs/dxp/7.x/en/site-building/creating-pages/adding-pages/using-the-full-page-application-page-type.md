@@ -18,6 +18,6 @@ All applications supported by the Full Page Application page type are non-instan
 
 1. From the *Wiki - Configuration* page, select the *Scope* tab.
 
-1. Open the *Scope* menu and select Wiki page you want.
+1. Open the *Scope* menu and select the Wiki page you want.
 
 ![Configuring the scope.](./using-the-full-page-application-page/images/02.png)

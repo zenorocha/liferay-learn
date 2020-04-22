@@ -4,10 +4,7 @@ Page Templates help you efficiently create pages based on predefined layouts and
 
 ![Basic Page Templates are available.](./creating-a-page-template/images/01.png)
 
-You may also create your own Page Templates:
-
-* [Content Page](../building-and-managing-content-pages/building-content-pages.md) Templates
-* [Widget Page](../understanding-pages/understanding-pages.md#widget-pages) Templates
+You may also create your own [Content Page](../building-and-managing-content-pages/building-content-pages.md) Templates and [Widget Page](../understanding-pages/understanding-pages.md#widget-pages) Templates, as described below.
 
 ## Creating a New Page Template
 
@@ -52,7 +49,7 @@ When creating a page from a Widget Page Template, changes are inherited from the
 
 ### Propagating Changes for Content Pages
 
-Changes for Content Pages **are not automatically propagated** when created using a Content Page Template. Changes to Fragments used on a Content Page can be propagated. See [Propagating Fragment Changes](../../03-displaying-content/04-using-fragments/README.md) for more information.
+Changes for Content Pages **are not automatically propagated** when created using a Content Page Template. However, you can propagate changes to Fragments used on a Content Page. See [Propagating Fragment Changes](../../03-displaying-content/04-using-fragments/README.md) for more information.
 
 ### Sharing Page Templates With Other Sites
 

@@ -18,7 +18,7 @@ The *Page Set* option creates a container for subpages that is not actually a pa
 
 The *Link to a Page of this Site* option links to a page within the same Site. This is often used to make a page available in multiple parts of a Sites hierarchy.
 
-### Panel
+## Panel
 
 The *Panel* option creates a page containing any number of applications as selected by an Administrator, but only one is displayed at a time. Users select the widget they want to display from a menu on the left side of the page. The selected application takes up the entire page.
 
@@ -28,6 +28,6 @@ The *Panel* option creates a page containing any number of applications as selec
 
 The *Embedded* option displays content from another website inside your instance in an iframe. The website appears in context and within the navigation of your Liferay DXP instance.
 
-### Link to URL
+## Link to URL
 
 The *Link to URL* option adds a link to the provided URL. This can be an external page or a link across Sites in the same Liferay Portal instance.
