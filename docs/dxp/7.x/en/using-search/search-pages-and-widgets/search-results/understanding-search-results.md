@@ -18,7 +18,7 @@ Results relevance is configurable:
 - [Search Tuning lets you customize result rankings in a brute-force way](./../../search_administration_and_tuning.rst)
 - [Liferay Enterprise Search's Learning to Rank feature lets you train a machine learning model to return more relevant results.](./../../liferay_enterprise_search.rst)
 - [The Search Insights widget lets you inspect the relevance scoring to understand why a result is listed in a certain position.]()
-- [Override relevance scoring by sorting the results by an indexed field](./sorting-results.md) 
+- [Override relevance scoring by sorting the results by an indexed field](./sorting-search-results.md) 
 
 ## Permissions and Search Results
 

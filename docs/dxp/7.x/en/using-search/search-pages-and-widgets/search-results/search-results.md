@@ -12,9 +12,9 @@ The Search Results behavior configurable through the UI is covered in this secti
 
 - [Configuring the Search Results Widget](./configuring-the-search-results-widget.md)
 
-- [Filtering Results](./filtering-results.md) 
+- [Filtering Results](./filtering-search-results.md) 
 
-- [Sorting Results](./sorting-results.md) 
+- [Sorting Results](./sorting-search-results.md) 
 
 - [Search Results Behavior](./understanding-search-results.md)
 
