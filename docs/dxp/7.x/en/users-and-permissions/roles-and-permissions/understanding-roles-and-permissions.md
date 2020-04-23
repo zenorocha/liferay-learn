@@ -6,8 +6,8 @@ To get things done in Liferay DXP, [Users](./../users/understanding-users.md) mu
 
 To skip straight to creating Roles and assigning Users, see
 
-- [Role Creation and Management](./role-creation-and-management.md)
-- [Defining Role Permissions](./defining-roles-and-permissions.md)
+- [Role Creation and Management](./creating-and-managing-roles.md)
+- [Defining Role Permissions](./defining-role-permissions.md)
 - [Assigning Users to Roles](./assigning-users-to-roles.md)
 
 ```note::
@@ -38,6 +38,7 @@ The conceptual diagram below shows how the User inherits the necessary permissio
 Roles have scope, so they apply at different levels.
 
 <!-- To Rich: I removed the former third column as you suggested, but added another, to show which assignments are possible -->
+
 | Permission Scope | Role Type | Where is it assigned to Users? | Available Assignments |
 | ---------------- | --------- | -------- | --------- |
 | Throughout the Virtual Instance (global) | Regular   | Control Panel &rarr; Users &rarr; Roles (Click on the Role) &rarr; Assignees | User Groups <br />Organizations <br />Sites <br />Segments <br />Individual Users |
