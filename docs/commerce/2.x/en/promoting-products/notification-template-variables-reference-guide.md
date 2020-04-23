@@ -1,6 +1,6 @@
 # Notification Template Variables Reference Guide
 
-When creating an Email Notification Template, store administrators can insert a variable as a substitute for key values in the Email Content's _Body_ field. Key values include a customer's name, the Order ID, shipping and billing addresses, or a list of items in the order.
+When creating an Email Notification Template, you can insert a variable as a substitute for key values in the Email Content's _Body_ field. Key values include a customer's name, the Order ID, shipping and billing addresses, and a list of items in the order.
 
 ![Use these variables in the Email Body field.](./notification-template-variables-reference-guide/images/02.png)
 

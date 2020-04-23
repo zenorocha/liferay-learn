@@ -3,7 +3,7 @@
 Notifications are automated emails sent to users. To send email notifications, first create a _Notification Template_. Notification Templates define the notification sender, trigger, and content of an email notification.
 
 ```note::
-   To use Liferay Commerce's Notifications feature, system administrators *first* have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See `User Subscriptions and Mailing Lists <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
+   To use Liferay Commerce's Notifications feature, system administrators first have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See `Connecting to a Mail Server <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
 ```
 
 Once the Mail settings have been configured, follow these steps to create a notification for a received order:
@@ -24,7 +24,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
     * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
     * **From Name**: Name of the store or a customer service representative
     * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Enter a message. You can create a generic message that uses variables which contain placeholder values such as customer's name and order ID. (See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md).)
+    * **Body**: Enter a message. You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
     ![Adding a Notification Template in 2.1](./automating-store-emails-by-using-notification-templates/images/03.png)
 
@@ -35,8 +35,6 @@ The new Notification Template has been saved and your store will send an automat
 ## Available Notification Templates
 
 There are several Notification Templates available out of the box.
-
-![Adding a Notification Template in 2.1](./automating-store-emails-by-using-notification-templates/images/04.png)
 
 | Template Type | Description |
 | --- | --- |
@@ -70,7 +68,7 @@ To create email notifications in Commerce 2.0 and below:
     * **Type**: Order Placed
     * **Enabled**: Switch the Toggle to _YES_
     * **Subject**: Email subject (for example: _Your order has been received._)
-    * **Body**: Enter a message. You can create a generic message that uses variables which contain placeholder values such as customer's name and order ID. (See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md).)
+    * **Body**: You can use variables such as `[%ORDER_CREATOR%]` and `[%ORDER_ID%]` to represent a customer's name and order ID respectively. See the [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md) to learn more.
 
     ![Adding a Notification Template](./automating-store-emails-by-using-notification-templates/images/01.png)
 
