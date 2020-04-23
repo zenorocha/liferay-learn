@@ -1,32 +1,8 @@
 # Understanding Roles and Permissions
 
-<!-- This intro needs rework. Here's a recommended outline: 
-
-I. Understanding Roles and Permissions
-   Describe here how roles join users with permissions
-  A. Roles
-    1. Regular Roles (System Scope)
-    2. Organization Roles (Organization Scope)
-    3. Site Roles (Site Scope)
-  B. Permissions
-    1. Application Scope
-    2. Asset Scope
-  C. Default Roles
-  D. Related Topics
-
-I have also started a new diagram in the Drawings folder; you can use it or something else, but the example you had with an HR Manager Role didn't seem real-world enough to me. 
-Also, where are the other articles in this section? 
-  -Rich -->
-
-To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles join Users with permissions. Most Role administration work is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
+To get things done in Liferay DXP, [Users](./../users/understanding-users.md) must have the proper permissions. Roles join Users with permissions. Most administrative work for Roles and permissions is done in *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
 ![Manage Roles from the Control Panel.](./understanding-roles-and-permissions/images/03.png)
-
-```note::
-   Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See `the Widget Permissions<./../../site-building>`__ article for details.
-
-   `Site Teams<./../../site-building/building-sites/creating-teams-for-sites.md>`__ have a dedicated permissions management User Interface, as well.
-```
 
 To skip straight to creating Roles and assigning Users, see
 
@@ -34,55 +10,77 @@ To skip straight to creating Roles and assigning Users, see
 - [Defining Role Permissions](./defining-roles-and-permissions.md)
 - [Assigning Users to Roles](./assigning-users-to-roles.md)
 
-The conceptual diagram below shows how a User assigned to an Organization (Human Resources) inherits the Role that was assigned to the Organization (HR Manager), with all its permissions. Only one fully-wired Role assignment is displayed here (for the User who becomes a Human Resources Manager), but you can see how drawing new arrows would link the User with permissions via other User collections and Role assignments.
+```note::
+   `Site Teams <./../../site-building/building-sites/creating-teams-for-sites.md>`_ have a dedicated permissions management User Interface.
+```
 
-![Roles exist to get permissions to Users.](./understanding-roles-and-permissions/images/02.png)
+## Roles
 
-<!-- This used to have an HR Manager Role defined that granted administrative access to the entire portal to everyone in the HR Organization. This didn't seem like a real example to me, so I changed it to a Message Boards Administrator Role. -Rich -->
+To give Users the permissions they need to perform their intended function within Liferay DXP, you must first mate the set of permissions with a Role.
 
-Here are the steps for creating a Role, using a _Message Boards Admin_ Role as an example:
+Using a _Message Boards Admin_ Role and a User _Jane Slaughter_ as an example, here are the steps you might follow:
 
 1. Determine the function needed: _Manage Message Boards in Liferay DXP._
 1. Determine the scope: _Throughout the Virtual Instance (globally)._
-1. Create the Role, assigning the permissions that power the function: _Message Boards Admin._
-1. Create the User collection: _Message Boards Administrators = User Group._
-1. Assign the Role to the User Collection: _Message Boards Administrators &rarr; HR Manager Role._
+1. Create the properly scoped Role, assigning the permissions that power the function: _Message Boards Admin (Regular Role)._
+1. Create the User collection: _a User Group called Message Boards Administrators._
+1. Assign the Role to the User Collection: _Message Boards Administrators &rarr; Message Boards Admin Role._
 1. Assign Users to the User Collection: _Jane Slaughter &rarr; Message Boards Administrators._
 
-## Managing Assignments with User Collections
+The conceptual diagram below shows how the User inherits the necessary permissions in Liferay DXP's Roles and Permissions system. Only one fully-wired Role assignment is displayed here (for the User who becomes a Message Boards Administrator), but you can see how drawing new arrows would link the User with permissions via other User collections and Role assignments.
 
-Maximize permission management efficiency by assigning User collections to Roles (as opposed to individual Users). There are several User collections that can be assigned Roles:
+![Roles exist to link permissions efficiently with Users.](./understanding-roles-and-permissions/images/02.png)
+
+<!-- Save for the How-to article; clutters it up here ![Define the permissions of the Role.](./understanding-roles-and-permissions/images/04.png) -->
+
+<!--![Assign the Role to Users.](./understanding-roles-and-permissions/images/05.png) -->
+
+Roles have scope, so they apply at different levels.
+
+<!-- To Rich: I removed the former third column as you suggested, but added another, to show which assignments are possible -->
+| Permission Scope | Role Type | Where is it assigned to Users? | Available Assignments |
+| ---------------- | --------- | -------- | --------- |
+| Throughout the Virtual Instance (global) | Regular   | Control Panel &rarr; Users &rarr; Roles (Click on the Role) &rarr; Assignees | User Groups <br />Organizations <br />Sites <br />Segments <br />Individual Users |
+| A single Organization | Organization | Control Panel &rarr; Users &rarr; Users and Organizations &rarr; Organizations (Organization actions menu) | Individual Users |
+| A single Site    | Site   | Site Administration &rarr; People &rarr; Memberships | User Groups <br />Organizations <br />Segments <br />Individual Site Members |
+| A single Account | Account   | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles | Individual Account Members
+| A single Asset Library | Asset Library | Site/Library Administration of Asset Library &rarr; People &rarr; Memberships | Organizations <br />User Groups <br /> Individual Users |
+
+Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. It's just less efficient than using collections of Users. Users can also be [automatically](../../system-administration/virtual-instances/configuring-a-virtual-instance-users.md#default-user-associations) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
+
+### Regular Roles 
+
+Instance scoped Roles are called Regular Roles. These Roles are used for granting permissions globally, or throughout the [Virtual Instance](./../../system-administration/virtual_instances.rst).
+
+Several User collections can be assigned to Regular Roles:
 
 - [Organizations](./../organizations/understanding-organizations.md) hold Users of a shared hierarchical level.
 - [User Groups](./../user-groups/creating-and-managing-user-groups.md) hold Users that only share the need to perform the same function.
-- [Sites](./../../site-building/building-sites/adding-members-to-sites.md) hold Users that might need to perform actions scoped only to that Site. <!-- Don't really understand this one -->
+- [Sites](./../../site-building/building-sites/adding-members-to-sites.md) hold Users (as Site Members) that might need to perform a certain action.
 - [Segments](./../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) hold Users of a Site that match certain conditions.
 
-Individual [Users](./../users/understanding-users.md) can be directly assigned to Roles. It's just less efficient than using collections of Users.
+### Organization Roles
 
-## Defining Roles and Assigning Users
+Organization scoped Roles are called Organization Roles. Permissions for Organization Roles are defined at the global level and are applied to one specific [Organization](../../users-and-permissions/organizations/understanding-organizations.md). Users are added to Organizations individually and are assigned to Organization Roles individually.
 
-Conceptually, it's good to understand how Liferay DXP structures the User Interface for managing Roles and permissions.
+### Site Roles
 
-<!-- Not sure the third column is needed, since all its values are the same. -Rich -->
+Site scoped Roles are called Site Roles. Permissions for Site Roles are defined at the global level and are applied to one specific [Site](../../site-building/introduction-to-site-building.md). Individual Users, Organizations, and User Groups can be used both to control Site Membership and assign Site Roles.
 
-| Permission Scope | Role Type | Where are its permissions defined?      | Where is it assigned to Users? |
-| ---------------- | --------- | --------------------------------------- | -------- |
-| Global           | Regular   | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Roles |
-| A single Organization | Organization | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Users &rarr; Users and Organizations (Organizations) |
-| A single Site    | Site   | Control Panel &rarr; Users &rarr; Roles | Site Administration &rarr; People &rarr; Memberships (User/Organizations/User Groups |
-| A single Account | Account   | Control Panel &rarr; Users &rarr; Roles | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles |
-| A single Asset Library | Asset Library | Control Panel &rarr; Users &rarr; Roles | Site/Library Administration of Asset Library &rarr; People &rarr; Memberships (User/Organization/User Group) |
+## Permissions
 
-Role _Definition_ involves the creation of the Role and declaring the permissions it provides. Regular Roles, Site Roles, and Organization Roles, Asset Library Roles, and Account Roles are all defined in Control Panel &rarr; Users &rarr; Roles.
+Permissions for higher level scopes are granted via [Roles](#roles) defined in the Control Panel, and are covered in detail in this section. Managing permissions in the Control Panel covers a lot of use cases, but there are some cases where permissions must be granted in a more granular fashion: for instance, for  individual applications and even individual Assets. 
 
-![Define the permissions of the Role.](./understanding-roles-and-permissions/images/04.png)
+### Application Scoped Permissions
 
-Role _Assignment_ is the association of the Role with Liferay DXP Users. Assignment of Regular Roles happens in Control Panel &rarr; User and Organizations &rarr; Roles. The other scopes have different assignment UI locations.
+Permissions can be granted on each widget instance that's placed on a page in Liferay DXP, and each administrative application in the Site Menu &rarr; Content and Data section. See [Widget Permissions](./../../site-building/displaying_content.rst) for details.
 
-![Assign the Role to Users.](./understanding-roles-and-permissions/images/05.png)
+### Asset Scoped Permissions
 
-## Default Roles in Liferay DXP
+Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/displaying_content.rst) for details.
+
+<!-- To Rich: Should this section be moved to a separate reference article? It adds 466 words -->
+## Default Roles
 
 In the Roles Application appears a list of all the Roles in Liferay DXP, by scope. 
 
@@ -136,3 +134,4 @@ Besides Web Content Folders, examples of asset containers include Bookmarks Fold
 [Defining Role Permissions](./defining-role-permissions.md) 
 
 [Assigning Users to Roles](./assigning-user-to-roles.md). 
+
