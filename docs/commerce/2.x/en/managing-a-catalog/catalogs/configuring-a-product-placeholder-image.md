@@ -1,34 +1,32 @@
 # Configuring a Product Placeholder Image
 
-Normally an item in the catalog can have at least one associated [product image](./creating-and-managing-products/products/product-images.md). If an product does not have a product image, Liferay Commerce uses the following image:
+Products in a catalog that do not have an associated [product image](./creating-and-managing-products/products/product-images.md) use a placeholder image until one is configured. The default placeholder image is defined for each catalog.
 
-![Liferay Commerce uses a default placeholder image.](./configuring-a-product-placeholder-image/images/01.png)
+## Setting a Placeholder Image
 
-If there are multiple catalogs on the same Liferay Commerce instance, you can use a different placeholder image for each catalog.
-
-To customize a catalog's placeholder image:
+To set a catalog placeholder image:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Catalogs_.
 1. Click on the catalog (for example, _Sahara.com_).
-1. Click the Refresh icon.
+1. Click the Refresh icon. <!-- Please just add a refresh icon in line here and take out the following image. -->
 
     ![Click the Refresh button to change the image.](./configuring-a-product-placeholder-image/images/02.png)
 
-1. Drag and drop a new file or click _Select File_ to add a new image.
+1. Drag and drop a new file or click _Select File_ to add a new image. <!-- Replace the following screenshot with one that shows me where to drag and drop or click "Select File" - I don't see it in any of the screenshots. -->
 
      ![Verify the image.](./configuring-a-product-placeholder-image/images/03.png)
 
 1. Click _Save_ when finished.
 
-The new image has been applied to all products without their own product images.
+The placeholder image is now set for this catalog and is used for all products in the catalog without an image.
 
 ## Liferay Commerce 2.0 and Below
 
 ```tip::
-   The same placeholder image is used for all catalogs created on the same Liferay Commerce instance.
+   On Liferay Commerce 2.0 and below, the same placeholder image is used globally across catalogs created on a Liferay Commerce instance.
 ```
 
-To customize your placeholder image:
+To configure your placeholder image:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Settings_.
 
