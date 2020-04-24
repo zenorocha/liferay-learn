@@ -21,6 +21,7 @@ html_title = "Liferay Learn"
 language = "en"
 locale_dirs = ["_locale"]
 master_doc = "contents"
+notfound_no_urls_prefix = True
 notfound_template = "404.html"
 project = "Liferay Learn"
 release = "1.0"
