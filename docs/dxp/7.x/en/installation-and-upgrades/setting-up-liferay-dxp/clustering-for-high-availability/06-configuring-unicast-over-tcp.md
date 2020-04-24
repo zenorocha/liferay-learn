@@ -17,7 +17,7 @@ Use the following steps to configure Unicast:
     ```bash
     -Djgroups.bind_addr=[node_ip_address]
     ```
-
+ 
     Use the node's IP address.
 
 1. Select a discovery protocol for the nodes to use to find each other. Here are the protocol choices:
@@ -55,7 +55,7 @@ Use the following steps to configure Unicast:
     * Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
     * An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this: `-Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]`.
 
-1. Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. For example, on the node with IP address `192.168.224.155`, configure TCPPing like this:
+1. Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. On the node with IP address `192.168.224.155`, for example, configure TCPPing like this:
 
     ```xml
     <TCP bind_port="7800"/>
@@ -64,7 +64,7 @@ Use the following steps to configure Unicast:
         port_range="0"/>
     ```
 
-1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -74,7 +74,9 @@ Use the following steps to configure Unicast:
 
     The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the parameter `external_addr` must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.
 
-    > **Note:** The `singleton_name` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
+    ```note::
+       The `singleton_name` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
+    ```
 
 You're now set up for Unicast over TCP clustering! Repeat either TCPPING process for each node you want to add to the cluster.
 
