@@ -9,8 +9,9 @@ from recommonmark.transform import AutoStructify
 #
 
 author = "Liferay"
+copybutton_image_path="img/paste.svg"
 copyright = "2019, Liferay"
-extensions = ["notfound.extension", "recommonmark", "sphinx_markdown_tables"]
+extensions = ["notfound.extension", "recommonmark", "sphinx_copybutton", "sphinx_markdown_tables"]
 html_css_files = ["main.css"]
 html_favicon = "_static/img/favicon.ico"
 #html_js_files = ["main.js"]

@@ -3,9 +3,10 @@
 #
 
 author = "Liferay"
+copybutton_image_path="img/paste.svg"
 copyright = "2019, Liferay"
 exclude_patterns = ['node_modules']
-extensions = ["notfound.extension", "recommonmark", "sphinx_markdown_tables"]
+extensions = ["notfound.extension", "recommonmark", "sphinx_copybutton", "sphinx_markdown_tables"]
 html_additional_pages = {"index": "index.html"}
 html_css_files = ["main.css"]
 html_favicon = "_static/img/favicon.ico"

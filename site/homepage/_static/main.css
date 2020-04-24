@@ -8198,6 +8198,54 @@ div.admonition {
   .btn.btn-secondary:active, .btn.btn-secondary:focus, .btn.btn-secondary:hover, .btn.btn-secondary:not(:disabled):not(.disabled):active {
     box-shadow: 0 0.125rem 0.375rem 0 rgba(2, 19, 51, 0.15); }
 
+a.copybtn {
+  cursor: pointer;
+  height: 26px;
+  left: initial;
+  opacity: 0;
+  right: 6px;
+  top: 6px;
+  transition: none;
+  width: 26px; }
+  a.copybtn > img {
+    background-color: #373F52;
+    border-radius: 4px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.55);
+    box-sizing: border-box;
+    display: block;
+    height: 26px;
+    padding: 4px;
+    width: 26px; }
+
+.o-tooltip--left {
+  position: relative; }
+  .o-tooltip--left:after {
+    background-color: #272833;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.4);
+    color: #FFF;
+    content: attr(data-tooltip);
+    font-size: 14px;
+    left: 50%;
+    max-width: 230px;
+    opacity: 0;
+    padding: 12px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    transform: translateX(-50%) translateY(4px);
+    transition: none;
+    visibility: hidden;
+    white-space: nowrap;
+    z-index: 2; }
+  .o-tooltip--left:hover:after {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(4px);
+    visibility: visible; }
+
 .documentations .article-body {
   flex: 0 0 58.33333%;
   margin-bottom: 5rem;
