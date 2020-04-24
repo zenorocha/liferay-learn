@@ -68,7 +68,7 @@ Liferay Commerce has several options to calculate shipping rates. Commerce Enter
 
 ## Creating the Catalog
 
-After setting up the store, begin [creating a new catalog](../managing-a-catalog/creating-a-new-catalog.md).
+After setting up the store, begin [creating a new catalog](../managing-a-catalog/catalogs/creating-a-new-catalog.md).
 
 ### Adding Products to a Catalog
 
