@@ -79,6 +79,10 @@ The Widgets section functions just like the *Add* menu on a Widget Page. The ful
 
 ![The Widgets section provides a list of Widgets that can be added inside of a Layout.](./content-pages-overview/images/06.png)
 
+```note::
+  While portlets are rendered according to `render-weight <https://docs.liferay.com/ce/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight>`_ on Widget Pages, that is not true for Content Pages. Portlets are rendered in the order they appear on the page on Content Pages (i.e. left to right, top to bottom).
+```
+
 ## Contents
 
 ```note::
