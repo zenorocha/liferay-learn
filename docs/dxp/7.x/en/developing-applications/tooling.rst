@@ -4,8 +4,8 @@ Tooling
 .. toctree::
    :maxdepth: 3
 
-   tooling/liferay-workspace.md
-   tooling/blade-cli.md
+   tooling/developer-tools-intro.md
+   tooling/blade-cli.rst
    tooling/developer-studio.md
    tooling/rest-builder.md
 
