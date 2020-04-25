@@ -72,7 +72,7 @@ The _Shipments_ tab displays the following information:
 | --- | --- |
 | Create Date | This is the date the order was created. |
 | Shipment ID | This number is generated as the [Shipment](./shipments/introduction-to-shipments.md) ID |
-| Status | This is the [Order](./orders-menu.md)'s status. |
+| Status | This is the [Order](./orders-menu-reference-guide.md)'s status. |
 | Order ID | This refers to the subscription's underlying order. |
 | Sent To | This is the account's shipping address. |
 | Tracking | This is the carrier's tracking number. |

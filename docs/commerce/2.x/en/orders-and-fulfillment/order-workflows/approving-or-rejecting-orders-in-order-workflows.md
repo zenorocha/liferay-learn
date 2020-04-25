@@ -39,5 +39,5 @@ The order has been approved (or rejected). To review additional orders, return t
 ## Additional Information
 
 * [Order Life Cycle](../orders/order-life-cycle.md)
-* [Orders Menu](../orders/orders-menu.md)
+* [Orders Menu](../orders/orders-menu-reference-guide.md)
 * [Order Management Statuses](../orders/order-management-statuses.md)

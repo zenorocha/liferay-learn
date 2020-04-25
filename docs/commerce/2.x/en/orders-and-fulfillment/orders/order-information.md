@@ -1,6 +1,6 @@
 # Order Information
 
-Administrators can view and edit order information by clicking an order in the [Orders Menu](./orders-menu.md).
+Administrators can view and edit order information by clicking an order in the [Orders Menu](./orders-menu-reference-guide.md).
 
 There are five tabs: General, Payments, Shipments, Notes, and Emails.
 

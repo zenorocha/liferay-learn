@@ -31,5 +31,5 @@ If both _Approval Workflow_ and _Transmission Workflow_ are enabled, then the ad
 * [Order Life Cycle](../orders/order-life-cycle.md)
 * [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
-* [Orders Menu](../orders/orders-menu.md)
+* [Orders Menu](../orders/orders-menu-reference-guide.md)
 * [Order Management Statuses](../orders/order-management-statuses.md)

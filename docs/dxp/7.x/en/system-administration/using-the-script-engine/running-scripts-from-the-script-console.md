@@ -86,5 +86,5 @@ The script engine can be used outside of the Script Console, such as in a Kaleo 
 ## Additional Information
 
 * [Invoking Liferay services](./invoking-liferay-services-from-scripts.md)
-* [Using the Script Engine in Workflow](./using-the-script-engine-in-workflow.md)
+* [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)
 * [Script Examples](./script-examples.md)

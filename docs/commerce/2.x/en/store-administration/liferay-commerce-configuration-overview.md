@@ -10,7 +10,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 
 * [Channels](../managing-a-catalog/creating-and-managing-products/channels/managing-channels.md)
 * [Price Lists](../managing-a-catalog/managing-price/creating-a-price-list.md)
-* [Orders](../orders-and-fulfillment/orders/orders-menu.md)
+* [Orders](../orders-and-fulfillment/orders/orders-menu-reference-guide.md)
 
 The Commerce Global Settings menu contains the following tabs:
 

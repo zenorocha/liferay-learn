@@ -52,5 +52,5 @@ To disable an order workflow, select the _No Workflow_ option, and click _Save_.
 Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](https://learn.liferay.com/dxp-7.x/process-automation/workflow/user-guide/introduction-to-workflow.html) can be created and may then be selected in the _Order Workflows_ tab.
 
 * [Order Life Cycle](../orders/order-life-cycle.md)
-* [Orders Menu](../orders/orders-menu.md)
+* [Orders Menu](../orders/orders-menu-reference-guide.md)
 * [Order Management Statuses](../orders/order-management-statuses.md)
