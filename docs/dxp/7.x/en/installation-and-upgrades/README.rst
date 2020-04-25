@@ -1,7 +1,7 @@
 Installation and Upgrades
 ==================================
 
--  :doc:`../getting-started/starting-with-a-dxp-docker-image`
+-  :doc:`../getting-started/starting-with-a-docker-image`
 -  :doc:`/installation-and-upgrades/hosting-liferay-dxp`
 
 Installing Liferay on Premises

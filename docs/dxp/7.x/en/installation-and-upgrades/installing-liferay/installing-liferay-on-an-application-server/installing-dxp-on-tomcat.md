@@ -1,7 +1,7 @@
 # Installing DXP on Tomcat
 
 ```important::
-   `Using a Tomcat bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ or `Docker image <../../../getting-started/starting-with-a-dxp-docker-image.md>`_ is the fastest way to get started using Liferay DXP. This article is for users who want to have full control over their Tomcat application server's configuration.
+   `Using a Tomcat bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ or `Docker image <../../../getting-started/starting-with-a-docker-image.md>`_ is the fastest way to get started using Liferay DXP. This article is for users who want to have full control over their Tomcat application server's configuration.
 
    Review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles before continuing.
 ```

@@ -28,7 +28,7 @@ Liferay Portal CE is the open source and community supported platform for buildi
 
 1. Open your browser to `https://localhost:8080`.
 
-    ![The Liferay Portal initial landing page.](starting-with-a-dxp-docker-image/images/01.png)
+    ![The Liferay Portal initial landing page.](./starting-with-a-docker-image/images/01.png)
 
 ### Get Started With Liferay DXP
 
