@@ -96,7 +96,7 @@ function parse_args_generate_sphinx_input {
 
 function populate_product_input_dir {
 
-            mkdir -p build/input/${product_name}-${version_name}/docs
+      mkdir -p build/input/${product_name}-${version_name}/docs
 
 			cp -R docs/* build/input/${product_name}-${version_name}
 
