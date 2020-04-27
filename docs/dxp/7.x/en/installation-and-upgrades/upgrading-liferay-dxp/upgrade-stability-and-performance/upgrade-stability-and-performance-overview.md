@@ -26,11 +26,7 @@ After you've pruned and tuned your test database, upgrade it [using the database
 
 ## Testing the Upgraded Database
 
-Lastly, take time to test your DXP instance with your upgraded database. 
-
-```note::
-   The `Liferay Upgrade Planner Steps <../reference/liferay-upgrade-planner-steps.md>`_ is a terse listing of steps that use all these approaches to maximize stability and performance.
-```
+Lastly, take time to test your DXP instance with your upgraded database.
 
 After you've upgraded your DXP instance successfully, you can orchestrate releasing it to production.
 

@@ -68,7 +68,7 @@ Several items stand out in the example database import:
 Search for unused objects associated with the tables that stand out and use Liferay's API (e.g., using the [script console](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)) to delete unneeded objects.
 
 ### Common Object Types Worth Checking
-<!-- Does the upgrade tool or planner (or one of our utilities) do an assessment for users' databases that reviews these areas? I imagine it'd be a lot more useful to tell someone, "Run tool {x}, it will generate a report about sites/instances/content that has not been used in sometime". If we don't have that kind of feature, we really should consider it - it just seems like it would go a lot further than telling someone to figure it out themselves. -->
+
 Some specific object types should be checked for unused objects. Here are some reasons for checking them:
 
 * Removing them frees related unused objects for removal
