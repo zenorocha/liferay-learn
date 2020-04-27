@@ -1,0 +1,24 @@
+<div class="alert alert-dismissible alert-fluid alert-info page-alert-hidden" id="pageAlert" role="alert">
+	<div class="container-fluid">
+		<span class="alert-indicator">
+			<svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation"
+			viewBox="0 0 512 512">
+				<use xlink:href="#info-circle" />
+			</svg>
+		</span>
+
+		<strong class="lead">{% trans %}IMPORTANT: {% endtrans %}</strong>{% trans %}As we transition our docs, you may find the articles you need on <a href="https://help.liferay.com/hc"><strong>Liferay's Help Center</strong></a>.{% endtrans %}
+
+		<button
+			aria-label="Close"
+			class="close"
+			data-dismiss="alert"
+			type="button"
+		>
+			<svg class="lexicon-icon lexicon-icon-times" focusable="false" role="presentation"
+			viewBox="0 0 512 512">
+				<use xlink:href="#times" />
+			</svg>
+		</button>
+	</div>
+</div>

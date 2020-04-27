@@ -80,13 +80,17 @@
         </div>
 
         <div class="col-md-10 doc-body">
-            <div class="col-md-12 general-info info-bar">
-                <div class="breadcrumb-wrapper col-md-7 offset-md-1">
-                    {% include "breadcrumb.html" %}
-                </div>
+            <div class="col-md-12 general-info p-0">
+                <div class="col-12 p-0">{% include "page-alert.html" %}</div>
 
-                <div class="actions col-md-2 offset-md-1">
-                    {{ githubEdit() }}
+                <div class="col-12 info-bar">
+                    <div class="breadcrumb-wrapper col-md-7 offset-md-1">
+                        {% include "breadcrumb.html" %}
+                    </div>
+
+                    <div class="actions col-md-2 offset-md-1">
+                        {{ githubEdit() }}
+                    </div>
                 </div>
             </div>
 
@@ -226,7 +230,7 @@
         const grandparent = document.querySelector(`.toctree-l${level - 2}.current`);
         const parent = lastActiveItem || document.querySelector(`.toctree-l${level - 1}.current`);
         const parentSiblings = document.querySelectorAll(`.toctree-l${level - 1}:not(.current)`);
-    
+
         const currentLevel = parent ?
             parent.querySelectorAll(`li.toctree-l${level}`) :
             document.querySelectorAll(`li.toctree-l${level}`);

@@ -4,6 +4,10 @@
 
 @import "_custom_variable";
 
+@import "atlas/variables/alerts";
+
+@import "variables/alerts";
+
 // Clay Base-Variables
 
 @import "variables/_bs4-variable-overwrites";
@@ -21,6 +25,7 @@
 @import "bootstrap/bootstrap-reboot";
 
 @import "bootstrap/_type";
+@import "bootstrap/utilities/_text";
 
 @import "components/_grid";
 @import "components/_utilities";
@@ -29,6 +34,7 @@
 
 @import "bootstrap/_alert";
 @import "bootstrap/_buttons";
+@import "bootstrap/_close";
 @import "bootstrap/_code";
 @import "bootstrap/_forms";
 @import "bootstrap/_nav";
@@ -60,5 +66,6 @@
 @import "_header";
 @import "_homepage";
 @import "_landing_page";
+@import "_page_alert";
 @import "_search";
 @import "_style_override";

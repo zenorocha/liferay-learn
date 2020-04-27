@@ -1,0 +1,12 @@
+// Overriding property from {@link ./_documentations.scss}
+body.page-alert-open .documentations .doc-content {
+	margin-top: calc(#{$info-bar-height} + 56px);
+}
+
+.page-alert-container {
+	margin: 0 -15px;
+}
+
+.page-alert-hidden {
+	display: none;
+}

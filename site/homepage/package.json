@@ -21,7 +21,7 @@
 		"build-css": "node-sass --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css && cp _static/{main,pygments}.css ../docs/_static",
 		"css:watch": "node-sass -w --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css",
 		"propagate-img": "cp _static/img/* ../docs/_static/img",
-		"propagate-js": "cp _static/js/* ../docs/_static/",
+		"propagate-js": "cp _static/js/* ../docs/_static/js",
 		"propagate-template": "cp _templates/* ../docs/_templates"
 	},
 	"version": "1.0.0"

@@ -50,6 +50,10 @@
 
 {% block body %}
 <div class="container-fluid homepage main-content">
+	<div class="row no-gutters page-alert-container">
+		<div class="col-12">{% include "page-alert.html" %}</div>
+	</div>
+
     <div class="row">
         <section class="banner col-12">
             <div class="max-820">
@@ -115,7 +119,7 @@
                     <div class="col-lg-4">
                         {{ productCard(href="/commerce-2.x/index.html", iconId="#commerce-logo", title="Commerce") }}
                     </div>
-                    
+
                     <div class="col-lg-4">
                         {{ productCard(href="/dxp-7.x/index.html", iconId="#dxp-logo", title="DXP") }}
                     </div>
