@@ -1,6 +1,6 @@
 # Assigning Roles to User Segments
 
-> Available: Liferay DXP 7.2 SP2+
+> Available: Liferay DXP 7.2 SP2+, Liferay CE 7.3.1 GA2
 
 User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, [personalized experiences](../../../site-building/personalizing-site-experience/introduction-to-personalizing-site-experience.md) can be defined for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
 
@@ -10,6 +10,8 @@ User Segments are dynamically assigned User collections. If a [Segment can be we
 | Instance Segments (Control Panel &rarr; Users &rarr; Roles (Regular Roles)) | Efficiently and dynamically manage Users and their permissions | Control Panel &rarr; Users &rarr; Roles (Regular Roles) |
 
 ## Assigning a Regular Role to a User Segment
+
+> Available: Liferay DXP 7.2 SP2+
 
 Regular Roles can be assigned to User Segments created at the Global scope. To assign Regular Roles to a User Segment,
 

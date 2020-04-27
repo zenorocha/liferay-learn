@@ -21,7 +21,7 @@ Segments use User data like the *Job Title* field and Organization membership fo
     ![You can view the list of Segment members at any time.](./creating-and-managing-user-segments/images/04.png)
 
 1. Click *Save* to save your User Segment.
-1. After you create your User Segment, you can see it in the list of User Segments on the *Segments* page. From here you can manage the User Segment (edit it, delete it, [assign Site Roles](../../../users-and-permissions/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md) or change the permissions (who can access the User Segment) for it) through it's Actions Menu (![Actions](../../../images/icon-actions.png)). You can also click on the User Segment's name to edit it.
+1. After you create your User Segment, you can see it in the list of User Segments on the *Segments* page. From here you can manage the User Segment (edit it, delete it, [assign Site Roles](../../../users-and-permissions/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md) or change the permissions (who can access the User Segment) for it) through its Actions Menu (![Actions](../../../images/icon-actions.png)). You can also click on the User Segment's name to edit it.
 
     ![You can edit, delete or manage permissions from the actions menu.](./creating-and-managing-user-segments/images/05.png)
 
