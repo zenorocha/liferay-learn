@@ -9,7 +9,6 @@ Reference
    reference/system-properties.md
    reference/database-templates.md
    reference/jvm-configurations.md
-   reference/liferay-upgrade-planner-steps.md
    reference/comparing-patch-levels.md
    reference/patching-tool-configuration-properties.md
 

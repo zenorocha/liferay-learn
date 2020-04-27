@@ -118,7 +118,6 @@ Reference
 ~~~~~~~~~
 
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/reference/liferay-database-upgrade-tool-reference`
--  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/reference/liferay-upgrade-planner-steps`
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/reference/deprecations-in-liferay-dxp-7-3`
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/reference/deprecations-in-liferay-dxp-7-2`
 -  :doc:`/installation-and-upgrades/upgrading-liferay-dxp/reference/features-in-maintenance-mode`
@@ -178,6 +177,5 @@ Reference
 -  :doc:`/installation-and-upgrades/reference/system-properties`
 -  :doc:`/installation-and-upgrades/reference/jvm-configurations`
 -  :doc:`/installation-and-upgrades/reference/database-templates`
--  :doc:`/installation-and-upgrades/reference/liferay-upgrade-planner-steps`
 -  :doc:`/installation-and-upgrades/reference/comparing-patch-levels`
 -  :doc:`/installation-and-upgrades/reference/patching-tool-configuration-properties`
