@@ -32,7 +32,7 @@ Prior to upgrading your Liferay database, you may have tuned it for upgrade (see
 
 ## Installing the Latest Marketplace Apps
 
-If you were using any Marketplace apps in the previous Liferay version, you should use the version of each app that's compatible with the _new_ DXP version. Download the latest compatible version of each [Marketplace app](../../../system-administration/installing-and-managing-apps/downloading-apps.md) and install it.
+If you were using any Marketplace apps in the previous Liferay version, you should use the version of each app that's compatible with the _new_ DXP version. Download the latest compatible version of each [Marketplace app](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md) and install it.
 
 ```bash
 cp new-app-version.lpkg /new-version/liferay-home/deploy
