@@ -52,7 +52,14 @@ Now Blade can use your proxy server when accessing Liferay samples and templates
 
 ## Updating Blade CLI
 
-When you use Blade CLI, it checks to see if there's an update. If there is, you can update it with this command: 
+When you use Blade CLI, it checks to see if there's an update. If an update is available, you'll see this message when your command completes:
+
+```bash
+Update available 3.9.1 -> 3.9.2
+Run `blade update` to install
+```
+
+To update Blade, run the following command:
 
 ```bash
 blade update
