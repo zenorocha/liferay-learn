@@ -14,7 +14,7 @@ Installing Blade CLI for Linux and Mac operating systems is a one-line command:
 curl -L https://raw.githubusercontent.com/liferay/liferay-blade-cli/master/cli/installers/local | sh
 ```
 
-Once that's done, make sure `~/jpm/bin` is in your path, and you're all set. 
+After the install completes, open a new command line and type `blade`. If you get a command not found error, you must [add the `blade` command to your path](./troubleshooting-blade-cli.md#the-blade-command-is-not-available-in-my-cli). 
 
 ### Installing from the Graphical Installer
 
@@ -38,7 +38,7 @@ If you're a Windows developer or you're more comfortable with an installer, down
 
 1. Click *Next* to install Blade CLI. 
 
-On Windows environments, the `blade` command is added to your path automatically. On Linux or Mac, you must add `~/jpm/bin` to your path. 
+On Windows environments, the `blade` command is added to your path automatically on Windows or if you're using `bash` or `zsh` on Mac and Linux. See [Troubleshooting Blade CLI](./troubleshooting-blade-cli.md) for further information.
 
 ## Configuring a Proxy
 

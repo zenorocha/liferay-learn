@@ -6,7 +6,7 @@ Blade CLI's main reason for existence is to create, build, and deploy Liferay pr
 
 Liferay Workspace is a set of folders on your machine where you store projects and DevOps configurations. See [Liferay Workspace](../liferay-workspace/understanding-liferay-workspace.md) for further information: 
 
-1. In your CLI, navigate to the folder where you want your Liferay Workspace generated. 
+1. In your CLI, navigate to the folder where you want to create a Liferay Workspace. 
 
 1. Run this command: 
 
@@ -14,9 +14,9 @@ Liferay Workspace is a set of folders on your machine where you store projects a
    blade init -v 7.3 [workspace name]
    ```
 
-## Creating a Standalone Project 
+## Creating a Project 
 
-Most of the time, projects exist in a Liferay Workspace. If, however, you want to create a standalone project, you can do that with Blade CLI. The important options to remember are these: 
+Most of the time, projects exist in a Liferay Workspace. Whether inside a Workspace or standalone, creating a project is done the same way. The important options to remember are these: 
 
 **-t:** Specify the project template to use. You can get a list of these by typing `blade create -l`. 
 
@@ -32,7 +32,7 @@ Putting these together, if you want to create a Liferay MVC Portlet called "gues
 blade create -t mvc-portlet -p com.liferay.docs.portlet -c GuestbookPortlet -v 7.3 guestbook
 ```
 
-This creates a standalone MVC Portlet project suitable for importing into any IDE. 
+This creates an MVC Portlet project. Standalone projects can be imported into any IDE. Liferay Workspaces can be imported into IntelliJ by using the Liferay IntelliJ plugin, or into Eclipse by using Liferay Developer Studio. 
 
 ```tip::
 If you run this command from inside a Liferay Workspace, your project is created in the Workspace, and can take advantage of all the infrastructure and automation that Workspace offers. 

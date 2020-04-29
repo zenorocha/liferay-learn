@@ -18,7 +18,7 @@ echo 'export PATH="$PATH:$HOME/Library/PackageManager/bin"' >> ~/.bash_profile
 echo 'export PATH="$PATH:$HOME/jpm/bin"' >> ~/.bash_profile
 ```
 
-If you're using a shell other than `bash`, you're savvy enough to change your shell from the default, so add the path to the `blade` executable manually. 
+If you're using a shell other than `bash`, you must add the path to the `blade` executable manually. 
 
 ## I can't update blade
 
