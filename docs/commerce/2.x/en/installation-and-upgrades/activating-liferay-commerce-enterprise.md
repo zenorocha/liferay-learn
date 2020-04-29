@@ -11,45 +11,39 @@ The activation key is an `XML` file which is copied to the `{liferay.home}\deplo
 1. Once Liferay Commerce Enterprise has been purchased or added to an existing DXP subscription, open a [Help Center](https://liferay-support.zendesk.com/agent/) ticket and request a Liferay Commerce activation key.
 1. The Liferay Provisioning Team will provide an activation key download.
 1. Deploy the activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/liferay-home.html) folder.
-1. Verify that the activation success message appears in the console. <!-- @Justin TODO: Add what the actual success message is here. -->
+1. Verify that a similar activation success message appears in the console:
+
+```
+2019-10-17 18:36:53.774 INFO  [fileinstall-C:/Users/Liferay/liferay-commerce-enterprise-2.0.6/osgi/modules][LicenseManager:?] Liferay Commerce license validation passed
+2019-10-17 18:36:53.780 INFO  [fileinstall-C:/Users/Liferay/liferay-commerce-enterprise-2.0.6/osgi/modules][LicenseManager:?] License registered for Liferay Commerce
+```
 
 Liferay Commerce Enterprise is now ready to be used.
 
 ## Updating an Activation Key
 
-<!-- We should add a sentence or two that explain the use case/purpose for this header: I assume it would sound something like: "Activation keys expire after a set duration of time as determined by a user's subscription. In order to re-activate an instance of Commerce with a new, valid activation key these steps must be followed."
+Activation keys expire after a set duration based on the user's subscription. In order to reactivate Liferay Commerce Enterprise, deploy the new key to the `liferay.home/deploy` folder. Be sure to remove any expired keys that have been deployed to the server.
 
-I'd also consider restructuring this section to be:
-
-Activation keys expire after a set duration of time as determined by a user's subscription. In order to reactivate a Commerce Enterprise installation with a new valid activation key follow these steps:
-
-1. First remove any expired keys. To know which keys are expired go to x.
-1. Deploy the new key to liferay/home
-1. etc.
-
--->
-When updating a Liferay Commerce Enterprise instance with a new activation key, remove any expired keys that have been deployed to the server.
-
-If the expired keys are not removed, there will be an error message in the console:
+If the expired keys are not removed, there will be an error message in the console during the next server restart:
 
 ```
 06:30:42,020 ERROR [main][LicenseManager:?] Liferay Commerce license is expired
 ```
 
-To update a Liferay Commerce Enterprise activation key:
-
-1. Deploy the new activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/liferay-home.html) folder.
+Follow these steps to reactivate Liferay Commerce Enterprise:
 
 1. Navigate to the folders below:
 
-    * `${liferay.home}/data/license`
+    * `${liferay.home}/data/license` and
     * `${liferay.home}/osgi/modules`
 
-1. Remove any expired Commerce Enterprise activation keys (for example, `activation-key-commerce-1.xml`). <!-- How does someone know which keys are expired? -->
+1. In both folders, remove any expired Commerce Enterprise activation keys; to know which keys have expired, use a text editor to open `activation-key-commerce-1.xml`. Look for the `<expiration-date>` element: for example, `<expiration-date>Saturday, September 23, 2020 2:05:47 PM GMT</expiration-date>`.
 
-```warning::
-   Be careful to not *not* delete any *DXP* specific activation keys.
-```
+    ```warning::
+       Be careful to not *not* delete any *DXP* specific activation keys.
+     ```
+
+1. Deploy the new activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/liferay-home.html) folder.
 
 ```tip::
    You do not have to shut down the application server to deploy or remove activation keys.
