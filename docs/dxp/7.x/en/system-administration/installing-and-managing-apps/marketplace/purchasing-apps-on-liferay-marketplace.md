@@ -16,7 +16,7 @@ The Marketplace plugin makes the Marketplace available in the Control Panel. The
 
 Here's how to enter the Marketplace from within DXP:
 
-1. In the Control Panel, navigate to *Apps* &rarr; *Store*.
+1. In the Control Panel, navigate to _Apps_ &rarr; _Store_.
 
 1. Sign in with your liferay.com account.
 
@@ -30,19 +30,19 @@ The Marketplace appears. It's time to check out some apps.
 
 Marketplace provides a familiar app store experience. Apps are in the center of the page, in the following sections:
 
-* *Featured Apps:* Liferay features a different set of apps each month.
+* _Featured Apps:_ Liferay features a different set of apps each month.
 
-* *New and Interesting:* The latest apps added to Marketplace.
+* _New and Interesting:_ The latest apps added to Marketplace.
 
-* *Most Viewed in the Past Month:* The top 5 most viewed apps in the last month.
+* _Most Viewed in the Past Month:_ The top 5 most viewed apps in the last month.
 
-* *Liferay Subscription Apps:* Apps available to enterprise subscribers only.
+* _Liferay Subscription Apps:_ Apps available to enterprise subscribers only.
 
-* *Templates and Themes:* Apps for organizing site content and changing your site's look and feel.
+* _Templates and Themes:_ Apps for organizing site content and changing your site's look and feel.
 
-* And app categories: *Communication*, *Productivity*, *Security*, and more.
+* And app categories: _Communication_, _Productivity_, _Security_, and more.
 
-Each section's *See All* link lists all the apps for that section.
+Each section's _See All_ link lists all the apps for that section.
 
 ![Each app category page, such as the Communication app page, lists the apps published to that category.](./purchasing-apps-on-liferay-marketplace/images/02.png)
 
@@ -53,7 +53,7 @@ At the top of the page, you can search Marketplace in these ways:
 * Liferay (DXP) version
 * Price (free or paid)
 
-At the bottom of the page, *Weekly Stats* lists the newest apps and latest updated apps, and shows a trend chart for app downloads and views.
+At the bottom of the page, _Weekly Stats_ lists the newest apps and latest updated apps, and shows a trend chart for app downloads and views.
 
 ![Weekly stats shows lists new apps, app updates, and Marketplace activity trends.](./purchasing-apps-on-liferay-marketplace/images/03.png)
 
@@ -69,20 +69,20 @@ Click an app to view details:
 
 Here are the app purchase steps:
 
-1. Click the *Purchase* (Free or Paid) button. You're prompted to choose a purchase type.
+1. Click the _Purchase_ (Free or Paid) button. You're prompted to choose a purchase type.
 
 1. Choose a purchase type. You can purchase an app for your personal account or for a Liferay project associated with your company.
 
-    A *Liferay project* is a space where teammates share apps they have purchased or developed. If you have the necessary permissions, you can also create a new project for your company.
+    A _Liferay project_ is a space where teammates share apps they have purchased or developed. If you have the necessary permissions, you can also create a new project for your company.
 
 1. Accept the EULA and Terms of Service.
 
-1. Click *Purchase* to complete the transaction.
+1. Click _Purchase_ to complete the transaction.
 
 The app downloads and installs to Liferay DXP automatically. Congratulations! You know how to find, purchase, and install Liferay Marketplace apps.
 
 ## Additional information
 
-* [Installing Apps](./installing-apps.md)
-* [Renewing Apps](./renewing-apps.md)
+* [Installing Apps](../installing-apps/installing-apps.md)
+* [Renewing Apps](../managing-apps/renewing-apps.md)
 * [Liferay Marketplace Developer Portal](https://marketplace.liferay.dev/)

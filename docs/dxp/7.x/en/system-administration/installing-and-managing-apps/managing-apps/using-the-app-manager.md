@@ -41,7 +41,7 @@ Here are steps for using the App Manager to install an app:
 
 1. Click _Install_.
 
-The app installs via [auto deploy](../installing-apps/installing-apps.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
+The app installs via [auto deploy](../installing-apps/installing-apps.md#installing-apps-via-the-file-system). When the install completes, close the dialog and you're ready to roll!
 
 ## Uninstalling Apps
 
