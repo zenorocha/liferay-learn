@@ -1,0 +1,103 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Installing and Managing Apps',
+					sectionURL: 'installing-and-managing-apps/installing-and-managing-apps.html',
+					subsections: [
+						{
+							name: 'Installing and Managing Apps',
+							url: 'installing-and-managing-apps/installing-and-managing-apps/installing-and-managing-apps.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Marketplace',
+					sectionURL: 'installing-and-managing-apps/upgrade_basics.html',
+					subsections: [
+						{
+							name: 'Upgrade Overview',
+							url: 'installing-and-managing-apps/upgrade-basics/upgrade-overview.html'
+						},
+						{
+							name: 'Upgrading via Docker',
+							url: 'installing-and-managing-apps/upgrade-basics/upgrading-via-docker.html'
+						},
+						{
+							name: 'Using the Database Upgrade Tool',
+							url: 'installing-and-managing-apps/upgrade-basics/using-the-database-upgrade-tool.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Upgrade Stability and Performance',
+					sectionURL: 'installing-and-managing-apps/upgrade_stability_and_performance.html',
+					subsections: [
+						{
+							name: 'Upgrade Stability and Performance Overview',
+							url: 'installing-and-managing-apps/upgrade-stability-and-performance/upgrade-stability-and-performance-overview.html'
+						},
+						{
+							name: 'Database Tuning for Upgrades',
+							url: 'installing-and-managing-apps/upgrade-stability-and-performance/database-tuning-for-upgrades.html'
+						},
+						{
+							name: 'Database Pruning for Faster Upgrades',
+							url: 'installing-and-managing-apps/upgrade-stability-and-performance/database-pruning-for-faster-upgrades.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Configuration and Infrastructure',
+					sectionURL: 'installing-and-managing-apps/configuration_and_infrastructure.html',
+					subsections: [
+						{
+							name: 'Migrating Configurations and Properties',
+							url: 'installing-and-managing-apps/configuration-and-infrastructure/migrating-configurations-and-properties.html'
+						},
+						{
+							name: 'Updating the File Store',
+							url: 'installing-and-managing-apps/configuration-and-infrastructure/updating-the-file-store.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Other Upgrade Scenarios',
+					sectionURL: 'installing-and-managing-apps/other_upgrade_scenarios.html',
+					subsections: [
+						{
+							name: 'Maintaining Clustered Installations',
+							url: 'maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.html'
+						},
+						{
+							name: 'Upgrading a Sharded Environment',
+							url: 'installing-and-managing-apps/other-upgrade-scenarios/upgrading-a-sharded-environment.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Reference',
+					sectionURL: 'installing-and-managing-apps/reference.html',
+					subsections: [
+						{
+							name: 'Database Upgrade Tool Reference',
+							url: 'installing-and-managing-apps/reference/database-upgrade-tool-reference.html'
+						},
+						{
+							name: 'Changes to Default Settings',
+							url: 'installing-and-managing-apps/reference/changes-to-default-settings.html'
+						},
+						{
+							name: 'Features in Maintenance Mode',
+							url: 'installing-and-managing-apps/reference/features-in-maintenance-mode.html'
+						},
+					]
+				},
+			]
+		}
+	})
+</script>
