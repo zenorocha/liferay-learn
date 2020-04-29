@@ -1,3 +1,0 @@
-# Blade CLI
-
-Coming soon!

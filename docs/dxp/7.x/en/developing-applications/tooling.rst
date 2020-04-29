@@ -4,8 +4,8 @@ Tooling
 .. toctree::
    :maxdepth: 3
 
-   tooling/developer-tools-intro.md
-   tooling/blade-cli.rst
+   tooling/developer-tools-overview.md
+   tooling/blade_cli.rst
    tooling/developer-studio.md
    tooling/rest-builder.md
 
