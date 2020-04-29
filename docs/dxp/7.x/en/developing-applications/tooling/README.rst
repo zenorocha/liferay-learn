@@ -1,10 +1,30 @@
 Tooling
 =======
 
+-  :doc:`/developing-applications/tooling/developer-tools-overview`
+
+Blade CLI
+~~~~~~~~~
+
+-  :doc:`/developing-applications/tooling/blade-cli/installing-and-updating-blade-cli`
+-  :doc:`/developing-applications/tooling/blade-cli/generating-projects-with-blade-cli`
+-  :doc:`/developing-applications/tooling/blade-cli/troubleshooting-blade-cli`
+
+Liferay Workspace
+~~~~~~~~~~~~~~~~~
+
 -  :doc:`/developing-applications/tooling/liferay-workspace`
+
+Developer Studio
+~~~~~~~~~~~~~~~~
+
 -  :doc:`/developing-applications/tooling/developer-studio`
--  :doc:`/developing-applications/tooling/blade-cli`
+
+REST Builder
+~~~~~~~~~~~~
+
 -  :doc:`/developing-applications/tooling/rest-builder`
+
 
 Other Tools
 ~~~~~~~~~~~
