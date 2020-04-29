@@ -4,7 +4,7 @@ Installing And Managing Apps
 .. toctree::
    :maxdepth: 2
 
-   installing-and-managing-apps/installing_and_managing_apps.rst
+   installing-and-managing-apps/installing-and-managing-apps.md
    installing-and-managing-apps/marketplace.rst
    installing-and-managing-apps/installing_apps.rst
    installing-and-managing-apps/managing_apps.rst
