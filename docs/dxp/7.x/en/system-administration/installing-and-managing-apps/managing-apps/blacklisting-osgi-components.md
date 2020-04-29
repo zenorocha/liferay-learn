@@ -1,6 +1,6 @@
 # Blacklisting OSGi Components
 
-The Component Blacklist is a convenient way to manage multiple [OSGi Declarative Service Components](https://help.liferay.com/hc/en-us/articles/360028846452-Declarative-Services) (components). The list is an [OSGi configuration](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings#exporting-and-importing-configurations) that DXP uses to disable components. These lists save you the trouble of modifying them individually with the [Application Manager](./using-the-app-manager.md) or [Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell).
+The Component Blacklist is a convenient way to manage multiple [OSGi Declarative Service Components](https://help.liferay.com/hc/articles/360028846452-Declarative-Services) (components). The list is an [OSGi configuration](../../system-settings/using-configuration-files.md#creating-configuration-files) that DXP uses to disable components. These lists save you the trouble of modifying them individually with the [Application Manager](./using-the-app-manager.md) or [Gogo shell](https://help.liferay.com/hc/articles/360029070351-Using-the-Felix-Gogo-Shell).
 
 The blacklist can be exported from the Control Panel to an OSGi configuration (`.config`) file. Modifying the file and deploying it to DXP has these additional effects:
 
@@ -53,4 +53,4 @@ Congratulations! Now you can manage multiple components using a simple list.
 
 * [Blacklisting Apps](./blacklisting-apps.md)
 * [Managing Apps](./using-the-app-manager.md)
-* [Using the Felix Gogo shell](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell)
+* [Using the Felix Gogo shell](https://help.liferay.com/hc/articles/360029070351-Using-the-Felix-Gogo-Shell)

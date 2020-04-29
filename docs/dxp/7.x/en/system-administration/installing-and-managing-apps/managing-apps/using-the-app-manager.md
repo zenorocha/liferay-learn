@@ -2,19 +2,19 @@
 
 The App Manager is a Control Panel screen where you can install, uninstall, activate, and deactivate apps in your DXP installation. You can also use it to inspect details for installed apps (and their modules and OSGi components).
 
-Access the App Manager by selecting *Control Panel* &rarr; *Apps* &rarr; *App Manager*. The App Manager lists installed apps and modules and provides app upload functionality.
+Access the App Manager by selecting _Control Panel_ &rarr; _Apps_ &rarr; _App Manager_. The App Manager lists installed apps and modules and provides app upload functionality.
 
 ## The App Listing
 
-The *Filter and Order* menu filters items and orders them by category, status, or title. Click the up or down arrows to sort items in ascending or descending order, respectively. To search for an app or module, use the search bar. This is often the quickest way to find items.
+The _Filter and Order_ menu filters items and orders them by category, status, or title. Click the up or down arrows to sort items in ascending or descending order, respectively. To search for an app or module, use the search bar. This is often the quickest way to find items.
 
 ![The App Manager manages apps, modules, and components installed in your DXP instance.](./using-the-app-manager/images/01.png)
 
 Each item listed in the table contains the item's description, version, and status. Here are the statuses:
 
-* *Installed:* The item is installed to DXP.
-* *Resolved:* The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be  activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services).
-* *Active:* The item is running on DXP.
+* _Installed:_ The item is installed to DXP.
+* _Resolved:_ The item's dependencies are active. Resolved items can typically be activated. Some items, however, can't be  activated and are intended to remain in the Resolved state (e.g., WSDD modules containing SOAP web services).
+* _Active:_ The item is running on DXP.
 
 Clicking each item's Actions button (![Actions](./using-the-app-manager/images/02.png)) brings up a menu in which you can activate, deactivate, or uninstall that item.
 
@@ -27,21 +27,21 @@ The component/portlet level is the farthest you can go without getting into the 
 
 ## Installing Apps
 
-The App Manager is a convenient way to install a [downloaded app](./downloading-apps.md) from your local machine to a local or remote DXP server.
+The App Manager is a convenient way to install a [downloaded app](../installing-apps/downloading-apps.md) from your local machine to a local or remote DXP server.
 
 ```important::
-   For installing and uninstalling apps in production-grade environments, install apps `using server startup <../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup>`_ instead of using the App Manager.
+   For installing and uninstalling apps in production-grade environments, install apps `using server startup <../../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup>`_ instead of using the App Manager.
 ```
 
 Here are steps for using the App Manager to install an app:
 
-1. Select *Upload* from the options button (![Options](./using-the-app-manager/images/03.png)). The Upload dialog appears.
+1. Select _Upload_ from the options button (![Options](./using-the-app-manager/images/03.png)). The Upload dialog appears.
 
 1. Browse to and select the app on your machine
 
-1. Click *Install*.
+1. Click _Install_.
 
-The app installs via [auto deploy](./installing-apps.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
+The app installs via [auto deploy](../installing-apps/installing-apps.md#auto-deployment). When the install completes, close the dialog and you're ready to roll!
 
 ## Uninstalling Apps
 
@@ -57,4 +57,4 @@ Congratulations! You can use the App Manager to examine and manage application d
 
 * [Blacklisting Apps](./blacklisting-apps.md)
 * [Blacklisting OSGi Components](./blacklisting-osgi-components.md)
-* [Maintaining a Clustered Installation](../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)
+* [Maintaining a Clustered Installation](../../../installation-and-upgrades/maintaining-a-liferay-dxp-installation/maintaining-clustered-installations/maintaining-clustered-installations.md)

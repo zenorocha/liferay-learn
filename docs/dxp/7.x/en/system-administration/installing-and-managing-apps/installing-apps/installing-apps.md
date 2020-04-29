@@ -15,11 +15,11 @@ You can use either of the following methods to install a new app to your instanc
 
 Follow these steps to install an app via the file system with a server restart:
 
-1. [Stop your DXP server](../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#shutdown).
+1. [Stop your DXP server](../../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#shutdown).
 
-1. Copy your app file (LPKG, module JAR, or plugin WAR) to your `[Liferay Home]/deploy` folder. The [Liferay Home](../../installation-and-upgrades/reference/liferay-home.md) folder is typically the app server's parent folder. DXP deploys apps from the `[Liferay Home]/deploy` folder.
+1. Copy your app file (LPKG, module JAR, or plugin WAR) to your `[Liferay Home]/deploy` folder. The [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) folder is typically the app server's parent folder. DXP deploys apps from the `[Liferay Home]/deploy` folder.
 
-1. [Start your DXP server](../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup).
+1. [Start your DXP server](../../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup).
 
 The app file is copied from the `[Liferay Home]/deploy` folder to one an appropriate subfolder under `[Liferay Home]/osgi`:
 
@@ -43,7 +43,7 @@ The sections below describe the interfaces you can  use to install apps via the 
 
 ### Marketplace via the Control Panel
 
-The DXP Control Panel accesses the Marketplace. You browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Purchasing Apps on Liferay Marpletace](./purchasing-apps-on-liferay-marketplace.md) for more information.
+The DXP Control Panel accesses the Marketplace. You browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Purchasing Apps on Liferay Marpletace](../marketplace/purchasing-apps-on-liferay-marketplace.md) for more information.
 
 ``` note::
    If you are using the Marketplace screen to install your apps, the easiest way to uninstall them is through the Purchased Apps screen in the Control Panel.
@@ -51,10 +51,10 @@ The DXP Control Panel accesses the Marketplace. You browse the Marketplace the s
 
 ### Purchased Apps Screen
 
-The Purchased page in the Control Panel at *Apps* &rarr; *Purchased* lists apps that you've previously purchased. Apps that aren't installed have an *Install* button for installing the app on the DXP instance.
+The Purchased page in the Control Panel at _Apps_ &rarr; _Purchased_ lists apps that you've previously purchased. Apps that aren't installed have an _Install_ button for installing the app on the DXP instance.
 
 ![The Purchased Apps screen as it appears in the Control Panel.](./installing-apps/images/01.png)
 
 ### Application Manager
 
-In DXP's App Manager, you can upload and install Marketplace apps. See [Using the App Manager](./using-the-app-manager.md) for more information.
+In DXP's App Manager, you can upload and install Marketplace apps. See [Using the App Manager](../managing-apps/using-the-app-manager.md) for more information.
