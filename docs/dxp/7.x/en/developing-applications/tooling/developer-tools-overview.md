@@ -27,7 +27,7 @@ Blade CLi is x. Use it to do a, b, and c quickly and efficiently.
 
 ### Dev Studio
 -->
-[Blade CLI](./blade-cli/installing-and-updating-blade-cli.md) makes it easy to create and build both standalone projects and Liferay Workspaces from your command line interface.
+[**Blade CLI**](./blade-cli/installing-and-updating-blade-cli.md) makes it easy to create and build both standalone projects and Liferay Workspaces from your command line interface.
 
 **Liferay Workspace** is an environment in your file system that holds your projects and their configurations. You can deploy to Liferay DXP, create and store Docker configurations, and perform all your DevOps from this single environment.
 
