@@ -44,7 +44,7 @@ To re-enable and permit enabling of blacklisted OSGi components, follow these st
 To enable *all* the blacklisted components, remove the configuration file.
 
 ```note::
-   To temporarily re-enable a blacklisted component, remove its name from the Component Blacklist Configuration module in System Settings and click *Update*. If you're using a component blacklist config file (in the `[Liferay Home]/osgi/configs` folder) and want the component to enable on subsequent server startup, make sure to remove the component's name from the file.
+   To temporarily re-enable a blacklisted component, remove its name from the Component Blacklist Configuration module in System Settings and click *Update*. If you're using a component blacklist config file (in the ``[Liferay Home]/osgi/configs`` folder) and want the component to enable on subsequent server startup, make sure to remove the component's name from the file.
 ```
 
 Congratulations! Now you can manage multiple components using a simple list.
