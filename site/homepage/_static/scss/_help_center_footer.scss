@@ -1,0 +1,32 @@
+.help-center-footer {
+	border-top: 1px solid $hr-color;
+	margin-top: 32px;
+	padding-top: 18px;
+
+	a strong {
+		font-weight: 600;
+	}
+
+	h3 {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.icon-container {
+		margin-top: 0.75rem;
+	}
+
+	.liferay-waffle-icon {
+		fill: #0B63CE;
+		height: 24px;
+		margin-top: 0;
+		width: 24px;
+	}
+}
+
+.landing-page-container {
+	.help-center-footer {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
