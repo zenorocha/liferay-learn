@@ -1,13 +1,11 @@
 Installing and Managing Apps
 ============================
 
--  :doc:`/system-administration/installing-and-managing-apps/installing-and-managing-apps`
+Getting Started
+---------------
 
-Marketplace
------------
-
--  :doc:`/system-administration/installing-and-managing-apps/marketplace/using-marketplace`
--  :doc:`/system-administration/installing-and-managing-apps/marketplace/installing-the-marketplace-plugin`
+-  :doc:`/system-administration/installing-and-managing-apps/getting-started/installing-and-managing-apps`
+-  :doc:`/system-administration/installing-and-managing-apps/getting-started/using-marketplace`
 
 Installing Apps
 ---------------
