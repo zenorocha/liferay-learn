@@ -6,7 +6,7 @@ Installing and Managing Apps
 Marketplace
 -----------
 
--  :doc:`/system-administration/installing-and-managing-apps/marketplace/purchasing-apps-on-liferay-marketplace`
+-  :doc:`/system-administration/installing-and-managing-apps/marketplace/using-marketplace`
 -  :doc:`/system-administration/installing-and-managing-apps/marketplace/installing-the-marketplace-plugin`
 
 Installing Apps

@@ -318,7 +318,7 @@ Congratulations! You're running DXP on Tomcat.
 
 You can [sign in as your administrator user](../../../getting-started/introduction-to-the-admin-account.md) and start [building a solution on DXP](../../../building-solutions-on-dxp/README.md). Or you can explore [additional Liferay DXP setup](../../setting-up-liferay-dxp/setting-up-liferay-dxp.md) topics:
 
-* [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/marketplace/purchasing-apps-on-liferay-marketplace.md#appendix-installing-the-marketplace-plugin)
+* [Installing the Marketplace Plugin](../../../system-administration/installing-and-managing-apps/marketplace/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [Accessing Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)

@@ -43,7 +43,7 @@ The sections below describe the interfaces you can  use to install apps via the 
 
 ### Marketplace via the Control Panel
 
-The DXP Control Panel accesses the Marketplace. You browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Purchasing Apps on Liferay Marpletace](../marketplace/purchasing-apps-on-liferay-marketplace.md) for more information.
+The DXP Control Panel accesses the Marketplace. You browse the Marketplace the same way you would from the Marketplace website. Purchasing an app in the Control Panel downloads the app and installs it to the DXP instance automatically. See [Purchasing Apps on Liferay Marpletace](../marketplace/using-marketplace.md) for more information.
 
 ``` note::
    If you are using the Marketplace screen to install your apps, the easiest way to uninstall them is through the Purchased Apps screen in the Control Panel.

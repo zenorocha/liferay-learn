@@ -1,8 +1,8 @@
-# Purchasing Apps on Liferay Marketplace
+# Using Marketplace
 
 Liferay Marketplace is a hub for sharing, browsing, and downloading apps. Marketplace leverages the entire Liferay ecosystem to release and share apps in a user-friendly, one-stop shop.
 
-![The Liferay Marketplace home page highlights new apps, lists apps by categories, and has search.](./purchasing-apps-on-liferay-marketplace/images/01.png)
+![The Liferay Marketplace home page highlights new apps, lists apps by categories, and has search.](./using-marketplace/images/01.png)
 
 The Marketplace plugin makes the Marketplace available in the Control Panel. The plugin is built-in to the DXP Tomcat Bundle but it can be installed to DXP installations on application servers too. If you still need to install Marketplace in your installation, then see [Appendix: Installing the Marketplace Plugin](#appendix-installing-the-marketplace-plugin).
 
@@ -45,7 +45,7 @@ Marketplace provides a familiar app store experience. Apps are in the center of 
 
 Each section's _See All_ link lists all the apps for that section.
 
-![Each app category page, such as the Communication app page, lists the apps published to that category.](./purchasing-apps-on-liferay-marketplace/images/02.png)
+![Each app category page, such as the Communication app page, lists the apps published to that category.](./using-marketplace/images/02.png)
 
 At the top of the page, you can search Marketplace in these ways:
 
@@ -56,11 +56,11 @@ At the top of the page, you can search Marketplace in these ways:
 
 At the bottom of the page, _Weekly Stats_ lists the newest apps and latest updated apps, and shows a trend chart for app downloads and views.
 
-![Weekly stats shows lists new apps, app updates, and Marketplace activity trends.](./purchasing-apps-on-liferay-marketplace/images/03.png)
+![Weekly stats shows lists new apps, app updates, and Marketplace activity trends.](./using-marketplace/images/03.png)
 
 Click an app to view details:
 
-![Click an app to see screenshots and app details.](./purchasing-apps-on-liferay-marketplace/images/04.png)
+![Click an app to see screenshots and app details.](./using-marketplace/images/04.png)
 
 ## Purchasing an App
 
