@@ -1,0 +1,63 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Developer Tools Overview',
+					sectionURL: 'tooling/developer-tools-overview.html',
+				},
+				{
+					sectionName: 'Blade CLI',
+					sectionURL: 'tooling/blade_cli.html',
+					subsections: [
+						{
+							name: 'Installing and Updating Blade CLI',
+							url: 'tooling/blade-cli/installing-and-updating-blade-cli.html'
+						},
+						{
+							name: 'Generating Projects With Blade CLI',
+							url: 'tooling/blade-cli/generating-projects-with-blade-cli.html'
+						},
+						{
+							name: 'Troubleshooting Blade CLI',
+							url: 'tooling/blade-cli/troubleshooting-blade-cli.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Liferay Workspace (Coming Soon)',
+					sectionURL: 'tooling/liferay_workspace.html',
+				},
+				{
+					sectionName: 'Developer Studio (Coming Soon)',
+					sectionURL: 'tooling/developer_studio.html',
+				},
+				{
+					sectionName: 'REST Builder (Coming Soon)',
+					sectionURL: 'tooling/rest_builder.html',
+				},
+				{
+					sectionName: 'Other Tools',
+					sectionURL: 'tooling/other_tools.html',
+					subsections: [
+						{
+							name: 'Fragments CLI (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Theme Generator (Coming Soon)',
+							url: ''
+						},
+						{
+							name: 'Liferay JS Generator (Coming Soon)',
+							url: ''
+						},
+					]
+				},
+			]
+		}
+	})
+</script>

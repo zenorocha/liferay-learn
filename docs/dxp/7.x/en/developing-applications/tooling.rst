@@ -11,5 +11,8 @@ Tooling
 
    tooling/other_tools.rst
 
-.. include:: /developing-applications/tooling/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: landingpage_template.html
+
+.. raw:: html
+   :file: tooling/landing.html

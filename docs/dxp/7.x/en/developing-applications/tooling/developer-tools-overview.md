@@ -1,7 +1,32 @@
 # Developer Tools Overview
 
 Liferay's developer tools run the gamut from lightweight CLI utilities all the way to a full-blown IDE based on Eclipse. This is to serve all developers, whether you're just starting out or have been writing code for many years. All of Liferay's development tools work on Linux, Mac, and Windows platforms.
+<!-- JR: the mental image I have from all these tools (initially) is a variety of jigsaw puzzle pieces that I don't (yet) see how they piece together. Perhaps by presenting them with more structure, it can help guide a reader to build a better mental model for how all these tools relate to (and don't duplicate) one another. In some ideal world we have a nice diagram that visualizes how these tools relate to one another. One off the cuff organizational model:
 
+# Title
+
+(intro paragraph)
+
+## General Development Tools
+
+### Blade CLI
+
+Blade CLi is x. Use it to do a, b, and c quickly and efficiently.
+
+### Liferay Workspace
+
+## Frontend Tooling
+
+### Theme Generator
+
+### JS Generator
+
+## IDE Plugins
+
+### IntelliJ Plugin
+
+### Dev Studio
+-->
 [Blade CLI](./blade-cli/installing-and-updating-blade-cli.md) makes it easy to create and build both standalone projects and Liferay Workspaces from your command line interface.
 
 **Liferay Workspace** is an environment in your file system that holds your projects and their configurations. You can deploy to Liferay DXP, create and store Docker configurations, and perform all your DevOps from this single environment.
