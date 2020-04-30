@@ -31,13 +31,13 @@ The conceptual diagram below shows how the User inherits the necessary permissio
 
 ![Roles exist to link permissions efficiently with Users.](./understanding-roles-and-permissions/images/02.png)
 
+<!-- Please save elsewhere before submitting for publication. -Rich --> 
+
 <!-- Save for the How-to article; clutters it up here ![Define the permissions of the Role.](./understanding-roles-and-permissions/images/04.png) -->
 
 <!--![Assign the Role to Users.](./understanding-roles-and-permissions/images/05.png) -->
 
 Roles have scope, so they apply at different levels.
-
-<!-- To Rich: I removed the former third column as you suggested, but added another, to show which assignments are possible -->
 
 | Permission Scope | Role Type | Where is it assigned to Users? | Available Assignments |
 | ---------------- | --------- | -------- | --------- |
@@ -51,7 +51,7 @@ Individual [Users](./../users/understanding-users.md) can be manually assigned t
 
 ### Regular Roles 
 
-Instance scoped Roles are called Regular Roles. These Roles are used for granting permissions globally, or throughout the [Virtual Instance](./../../system-administration/virtual_instances.rst).
+Instance scoped Roles are called Regular Roles. These Roles grant permissions globally, or throughout the [Virtual Instance](./../../system-administration/virtual_instances.rst).
 
 Several User collections can be assigned to Regular Roles:
 
@@ -70,7 +70,7 @@ Site scoped Roles are called Site Roles. Permissions for Site Roles are defined 
 
 ## Permissions
 
-Permissions for higher level scopes are granted via [Roles](#roles) defined in the Control Panel, and are covered in detail in this section. Managing permissions in the Control Panel covers a lot of use cases, but there are some cases where permissions must be granted in a more granular fashion: for instance, for  individual applications and even individual Assets. 
+Permissions are created by developers of applications. They define actions Users can perform or how much access a User has to a particular asset. 
 
 ### Application Scoped Permissions
 
@@ -81,6 +81,9 @@ Permissions can be granted on each widget instance that's placed on a page in Li
 Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/displaying_content.rst) for details.
 
 <!-- To Rich: Should this section be moved to a separate reference article? It adds 466 words -->
+
+<!-- Definitely. Let's put this somewhere else; it doesn't belong in the intro. -Rich -->
+
 ## Default Roles
 
 In the Roles Application appears a list of all the Roles in Liferay DXP, by scope. 
@@ -116,6 +119,7 @@ These are some of the pre-configured Organization Roles:
 
    In contrast, Site and Organization owners can do those things.
 ```
+<!-- Please don't preserve the below text in this file; we don't want comments in the Markdown we publish. -Rich -->
 
 <!-- Preserving this for inclusion in a Creating and Managing Roles article
 ## Deleting Asset Containers Deletes their Assets
