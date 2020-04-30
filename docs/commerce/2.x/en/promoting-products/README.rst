@@ -12,5 +12,5 @@ Communications
 Promotions
 ----------
 
--  :doc:`/promoting-products/adding-discounts-by-product`
--  :doc:`/promoting-products/adding-discounts-to-the-subtotal`
+-  :doc:`/promoting-products/introduction-to-discounts`
+-  :doc:`/promoting-products/creating-a-discount`

@@ -1,0 +1,43 @@
+# Creating a Discount
+
+Discounts can be applied to a combination of target customers and can be set as a flat sum or as a percentage. See the [Introduction to Discounts](./introduction-to-discounts.md/#types-of-discounts) article to review the types of discounts available.
+
+To create a new discount:
+
+1. Go to the _Control Panel_ → _Commerce_ → _Discounts_.
+1. Click the (![Add](../images/icon-add.png)) button to add a new Discount.
+1. Enter a name: _Spring Sale_.
+1. Select a discount type (for example, _Apply to Subtotal_) from the _Target_ drop down.
+1. Check the box for which channel this discount applies to.
+1. Select which [Account Groups](../account-management/creating-a-new-account-group.md) this discount applies to. In this example, _US East Coast_.
+1. If using a coupon code, switch the _Use Coupon Code_ toggle to _Yes_. Then enter a code in the _Couple Code_ field. Otherwise leave it as _NO_.
+1. If using a percentage, switch the _Use Percentage_ toggle to _Yes_.
+1. Enter the _Maximum Discount Amount_: 20%.
+1. Enter the _Level_: 1.00
+1. Switch the _Active_ toggle to _YES_.
+
+    ![New discount](./creating-a-discount/images/01.png)
+
+1. Click _Publish_.
+
+Your store now has an active discount with 20% off selected goods for those in the specified Account Group.
+
+## Adding Rules to a Discount
+
+You can create rules that limit the buyer's discount conditions. These rules may be combined as needed to meet your sales and marketing goals. See the [Discount Rules](./introduction-to-discounts.md#discount-rules) section to learn more.
+
+1. Once the discount has been created, there are 2 tabs: _Detail_, and _Rules_. Click on the _Rules_ tab.
+
+    ![Discount rules tab](./creating-a-discount/images/02.png)
+
+1. Click (+) button to add a new Discount Rule.
+1. Select _Cart Total_ from the _Type_ drop down menu.
+1. Enter 25.00 in the _Cart Total Minimum Amount_ field.
+1. Click _Save_.
+
+In this example, a Discount Rule has been applied to this particular Discount. Customers will receive this discount for all purchases over the set amount.
+
+## Additional Information
+
+* [Introduction to Discounts](./introduction-to-discounts.md)
+* [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
