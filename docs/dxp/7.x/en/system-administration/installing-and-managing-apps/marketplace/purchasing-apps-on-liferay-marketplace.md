@@ -4,13 +4,14 @@ Liferay Marketplace is a hub for sharing, browsing, and downloading apps. Market
 
 ![The Liferay Marketplace home page highlights new apps, lists apps by categories, and has search.](./purchasing-apps-on-liferay-marketplace/images/01.png)
 
-The Marketplace plugin makes the Marketplace available in the Control Panel. The plugin is built-in to the DXP Tomcat Bundle but it can be installed to DXP installations on application servers too. If you still need to install Marketplace in your installation, then see [Installing the Marketplace Plugin](./installing-the-marketplace-plugin.md).
+The Marketplace plugin makes the Marketplace available in the Control Panel. The plugin is built-in to the DXP Tomcat Bundle but it can be installed to DXP installations on application servers too. If you still need to install Marketplace in your installation, then see [Appendix: Installing the Marketplace Plugin](#appendix-installing-the-marketplace-plugin).
 
 **Contents:**
 
 * [Visiting the Marketplace](#visiting-the-marketplace)
 * [Browsing Apps](#browsing-apps)
 * [Purchasing an App](#purchasing-an-app)
+* [Appendix: Installing the Marketplace Plugin](#appendix-installing-the-marketplace-plugin)
 
 ## Visiting the Marketplace
 
@@ -80,6 +81,22 @@ Here are the app purchase steps:
 1. Click _Purchase_ to complete the transaction.
 
 The app downloads and installs to Liferay DXP automatically. Congratulations! You know how to find, purchase, and install Liferay Marketplace apps.
+
+## Appendix: Installing the Marketplace Plugin
+
+If you installed DXP on an application server, you must install the Marketplace plugin to access the Marketplace via the Control Panel.
+
+``` note::
+   If you are using the DXP Tomcat bundle, then the Marketplace plugin is pre-installed in your bundle.
+```
+
+Follow these steps to install the Marketplace plugin:
+
+1. Download the [Marketplace plugin](https://www.liferay.com/marketplace/download).
+
+2. Deploy the plugin (`.lpkg` file) by copying it to the `deploy` folder in [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) or installing it using the [App Manager](../managing-apps/using-the-app-manager.md).
+
+The Marketplace is now available to use in the Control Panel.
 
 ## Additional information
 
