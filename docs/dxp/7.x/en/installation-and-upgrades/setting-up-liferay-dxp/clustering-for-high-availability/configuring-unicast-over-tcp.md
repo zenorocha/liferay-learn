@@ -1,6 +1,6 @@
 # Configuring Unicast over TCP
 
-If your network configuration or the geographical distance between cluster nodes prevents you from using UDP Multicast clustering, you can configure TCP Unicast. You must use this if you have a firewall separating any of your nodes or if your nodes are in different geographical locations.
+If your network configuration or the geographical distance between cluster nodes prevents you from using [UDP Multicast clustering](./configuring-cluster-link.md#using-multicast-over-udp), you can configure TCP Unicast. You must use this if you have a firewall separating any of your nodes or if your nodes are in different geographical locations.
 
 **Contents:**
 
@@ -17,18 +17,18 @@ Use the following steps to configure Unicast:
     ```bash
     -Djgroups.bind_addr=[node_ip_address]
     ```
- 
+
     Use the node's IP address.
 
 1. Select a discovery protocol for the nodes to use to find each other. Here are the protocol choices:
 
-    * TCPPing
-    * JDBCPing
-    * S3_Ping
-    * Rackspace_Ping
+    * `TCPPing`
+    * `JDBCPing`
+    * `S3_Ping`
+    * `Rackspace_Ping`
 
     If you aren't sure which one to choose, use TCPPing. The rest of these steps use TCPPing. See [Alternative Discovery Protocols](#alternative-discovery-protocols) for more information on the others.
-
+<!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. -->
 1. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
 
     ```
@@ -75,10 +75,10 @@ Use the following steps to configure Unicast:
     The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the parameter `external_addr` must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.
 
     ```note::
-       The `singleton_name` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
+       The ``singleton_name`` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
     ```
 
-You're now set up for Unicast over TCP clustering! Repeat either TCPPING process for each node you want to add to the cluster.
+You're now set up for Unicast over TCP clustering! Repeat either `TCPPing` process for each node you want to add to the cluster. <!-- "Repeat 'either' TCPPing process? I only see one?  -->
 
 ## Alternative Discovery Protocols
 
@@ -150,12 +150,13 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
     For example, your first two nodes might assign these bind ports:
 
+    <!-- Unfortunately Sphinx does not play nice with this table and it messes up the rendering of the text below it.
     | Node   | Properties File     | Port   |
     | :----- | :------------------ | :----- |
     | Node 1 | `tcp-control.xml`   | `7800` |
     | Node 1 | `tcp-transport.xml` | `7801` |
     | Node 2 | `tcp-control.xml`   | `7802` |
-    | Node 2 | `tcp-transport.xml` | `7803` |
+    | Node 2 | `tcp-transport.xml` | `7803` | -->
 
     Here are example TCP and TCPPing elements using the bind ports on nodes running on the same system (i.e., same IP address):
 

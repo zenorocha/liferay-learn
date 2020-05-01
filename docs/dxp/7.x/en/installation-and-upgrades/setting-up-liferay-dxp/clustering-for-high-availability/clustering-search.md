@@ -15,6 +15,8 @@ Once DXP servers and Elasticsearch have both been properly configured as a clust
 
     ![Change your Elasticsearch configuration to Remote mode from the Control Panel.](./clustering-search/images/01.png)
 
+<!-- no other configuration required other than choosing "Remote" mode? -->
+
 On the first connection, the two sets of clustered servers communicate with each other the list of all IP addresses. In case of a node going down, the proper failover protocols activate, and queries and indexes continue to be sent for all nodes.
 
 ## Configuring DXP to Use a Solr Cluster

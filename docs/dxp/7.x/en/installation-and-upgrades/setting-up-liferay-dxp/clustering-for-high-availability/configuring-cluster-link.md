@@ -1,6 +1,6 @@
 # Configuring Cluster Link
 
-Enabling Cluster Link automatically activates distributed caching. The cache is distributed across multiple Liferay DXP nodes running concurrently. Cluster Link uses [Ehcache](http://www.ehcache.org) replication. The Ehcache global settings are in the [`portal.properties` file](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Ehcache).
+Enabling Cluster Link activates distributed caching. The cache is distributed across multiple Liferay DXP nodes running concurrently. Cluster Link uses [Ehcache](http://www.ehcache.org) replication. The Ehcache global settings are in the [`portal.properties` file](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Ehcache).
 
 By default Liferay does not copy cached entities between nodes. If an entity is deleted or changed, for example, Cluster Link sends a *remove* message to the other nodes to invalidate this entity in their local caches. Requesting that entity on another node results in a cache *miss*; the entity is then retrieved from the database and put into the local cache. Entities added to one node's local cache are not copied to local caches of the other nodes. An attempt to retrieve a new entity on a node which doesn't have that entity cached results in a cache *miss*. The miss triggers the node to retrieve the entity from the database and store it in its local cache.
 
@@ -45,6 +45,8 @@ Cluster Link contains an enhanced algorithm that provides one-to-many type commu
 ## Configuring Cluster Link
 
 When you enable Cluster Link, DXP's default clustering configuration is enabled. This configuration defines *IP multicast over UDP*. If you cannot use multicast for your own nodes (for example, because they are separated geographically or by a firewall), then you can instead configure a unicast implementation. See [Configuring Unicast Over TCP](./06-configuring-unicast-over-tcp.md) for more information.
+
+### Using Multicast Over UDP
 
 DXP uses two groups of [channels from JGroups](http://www.jgroups.org/manual4/index.html#_channel) to implement multicast over UDP: a control group and a transport group. If you want to customize the [channel properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link), you can do so by adding the following to `portal-ext.properties`:
 
