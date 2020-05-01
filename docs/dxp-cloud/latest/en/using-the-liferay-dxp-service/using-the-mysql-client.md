@@ -32,15 +32,19 @@ Then, update to these versions (or newer) and [re-deploy the services](../build-
 
 1. Navigate to the correct environment, and click _Services_:
 
+   ![Navigate to Services to see all services for your environment.](./using-the-mysql-client/images/01.png)
+
 1. Click on the _liferay_ service.
 
 1. If you set your own password for the default user with the `LCP_DATABASE_READONLY_USER_PASSWORD`, then add the same environment variable to your `liferay` service. Otherwise, do not add this variable, so that the service uses the default password.
 
    You can add this variable by clicking on the _Environment Variables_ tab within the `liferay` service:
 
-   ![Click the Environment Variables tab to configure the password if necessary.]
+   ![Click the Environment Variables tab to configure the password if necessary.](./using-the-mysql-client/images/02.png)
 
 1. Click on the _Shell_ tab:
+
+   ![Click on the Shell tab to access the shell, where the MySQL client is available.](./using-the-mysql-client/images/03.png)
 
 1. Type `mysql` into the shell on this screen. This logs you into the MySQL client, where you can perform any read-only queries.
 
