@@ -25,6 +25,11 @@ Customizations
 -  `Deploying Apps, Themes, and Modules <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules>`__
 -  `Deploying Customizations from Source <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code>`__
 
+Liferay Service Shell
+---------------------
+
+-  :doc:`/using-the-liferay-dxp-service/using-the-mysql-client`
+
 Migrations
 ----------
 
