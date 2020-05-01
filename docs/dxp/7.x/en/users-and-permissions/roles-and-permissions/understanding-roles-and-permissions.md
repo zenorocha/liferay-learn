@@ -31,12 +31,6 @@ The conceptual diagram below shows how the User inherits the necessary permissio
 
 ![Roles exist to link permissions efficiently with Users.](./understanding-roles-and-permissions/images/02.png)
 
-<!-- Please save elsewhere before submitting for publication. -Rich --> 
-
-<!-- Save for the How-to article; clutters it up here ![Define the permissions of the Role.](./understanding-roles-and-permissions/images/04.png) -->
-
-<!--![Assign the Role to Users.](./understanding-roles-and-permissions/images/05.png) -->
-
 Roles have scope, so they apply at different levels.
 
 | Permission Scope | Role Type | Where is it assigned to Users? | Available Assignments |
@@ -79,19 +73,6 @@ Permissions can be granted on each widget instance that's placed on a page in Li
 ### Asset Scoped Permissions
 
 Asset-level permissions (for instance, permission to edit an individual blog post, or view a folder in the Documents and Media library) are managed from the individual asset, not the Control Panel. See [Widget Permissions](./../../site-building/displaying_content.rst) for details.
-
-<!-- Please don't preserve the below text in this file; we don't want comments in the Markdown we publish. -Rich -->
-
-<!-- Preserving this for inclusion in a Creating and Managing Roles article
-## Deleting Asset Containers Deletes their Assets
-
-A Web Content Folder contains Web Content articles. The Web Content Folder is an asset container, and the Web Content Article is an asset. It's possible to give a Role permission to delete an asset container without giving the Role permission to delete individual assets. In that case, beware: if a Role assignee deletes an asset container with individual assets in it, the individual assets themselves are deleted as well.
-
-| Asset Container | Asset |
-| --------------- | ------- |
-
-Besides Web Content Folders, examples of asset containers include Bookmarks Folders, Message Boards Categories, Wiki Nodes, and Documents and Media Folders.
--->
 
 ## Related Topics
 
