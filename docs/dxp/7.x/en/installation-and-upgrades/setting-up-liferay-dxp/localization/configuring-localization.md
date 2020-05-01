@@ -1,6 +1,6 @@
 # Configuring Localization
 
-Liferay DXP supports localization by language, time zone, and more. The English (US) language translation and GMT time zone are the defaults, but DXP has over forty translations and can be set to any time zone. Localization is scoped for virtual instances, widgets in each instance, and individual users.
+Liferay DXP supports localization by language, time zone, and more. The English (US) language translation and GMT time zone are the defaults, but DXP has over 40 translations and can be set to any time zone. Localization is scoped for virtual instances, widgets in each instance, and individual users.
  
 Localization can be configured using these interfaces:
 
@@ -10,7 +10,7 @@ Localization can be configured using these interfaces:
 
 ## Setup Wizard
 
-The [Setup Wizard](../../installing-liferay/running-liferay-dxp-for-the-first-time.md) sets the DXP instance's default language and time zone. They're available to select in the _Default Language_ and _Time Zone_ dropdown menus.
+The [Setup Wizard](../../installing-liferay/running-liferay-dxp-for-the-first-time.md) sets the DXP instance's default language and time zone. They're available to select in the _Default Language_ and _Time Zone_ selectors.
 
 ![Use the Setup Wizard to set the DXP instance's default language and time zone](./configuring-localization/images/01.png)
 
@@ -31,7 +31,7 @@ Localization for instances and their configurable widgets can be set in that ins
 Here's how to set an individual user's language and time zone:
 
 1. Navigate to the _Control Panel_ &rarr; _Users and Organizations_.
-1. Select a language in the _Language_ dropdown menu.
+1. Select a language in the _Language_ selector.
 
     ![Change the user's language](./configuring-localization/images/02.png)
 
