@@ -1,8 +1,8 @@
 # Installing Liferay DXP on Wildfly
 
-Installing Liferay DXP on Wildfly requires deploying dependencies, modifying scripts, modifying config `xml`s file, and deploying the DXP WAR file. In addition, make the optional database and mail server configurations to optimize the DXP instance.
+Installing Liferay DXP on Wildfly requires deploying dependencies, modifying scripts, modifying config `xml` files, and deploying the DXP WAR file. In addition, make the optional database and mail server configurations to optimize the DXP instance.
 
-Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) to choose a JDK.
+Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for further information.
 
 Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):Administrators must download the following:
 
@@ -27,7 +27,7 @@ Installing Liferay DXP on Wildfly requires the following steps:
 ## Installing Dependencies
 
 1. Create the folder `$WILDFLY_HOME/modules/com/liferay/portal/main` if it does not already exist and extract the Dependencies ZIP JARs here.
-1. Download a database driver `.jar` file and copy it into the same folder. For example, download and extract [MySQL's driver](http://dev.mysql.com/downloads/connector/j/) into the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder. For a list of supported databases, see Liferay's [Support Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?).
+1. Download a database driver `.jar` file and copy it into the same folder. For a list of supported databases, see Liferay's [Support Matrix](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7?).
 1. Create the file `module.xml` in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder and declare all the dependencies:
 
     ```xml
@@ -47,7 +47,7 @@ Installing Liferay DXP on Wildfly requires the following steps:
             <resource-root path="com.liferay.petra.string.jar" />
             <resource-root path="com.liferay.registry.api.jar" />
             <resource-root path="hsql.jar" />
-            <resource-root path="mysql.jar" />
+            <resource-root path="[place your database driver here]" />
             <resource-root path="portal-kernel.jar" />
             <resource-root path="portlet.jar" />
         </resources>
@@ -61,7 +61,7 @@ Installing Liferay DXP on Wildfly requires the following steps:
     </module>
     ```
 
-    For a different database, replace the `resource-root` element for the MySQL `.jar` with the driver JAR for that database (e.g., HSQL, PostgreSQL, etc.).
+    Replace the indicated `resource-root` element with the driver JAR for your database.
 
 1. Create an `osgi` folder in your [Liferay Home](../../14-reference/01-liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
@@ -70,7 +70,7 @@ Installing Liferay DXP on Wildfly requires the following steps:
 **Checkpoint:**
 
 1. The contents of the Dependencies zip have been placed in the `$WILDFLY_HOME/modules/com/liferay/portal/main` folder:
-1. If using a database than HSQL, a database JAR such as the MySQL J Connector has been placed `$WILDFLY_HOME/modules/com/liferay/portal/main` folder and listed as a dependency.
+1. Your database vendor's JDBC driver has been placed in `$WILDFLY_HOME/modules/com/liferay/portal/main` folder and listed as a dependency.
 1. The `module.xml` has listed all JARs in the `<resource-root>` elements.
 1. The OSGi dependencies have been unzipped in the `osgi` folder located inside the `${Liferay.home}` folder.
 
@@ -83,7 +83,9 @@ Administrators can run DXP on Wildfly in domain mode, but this method is not ful
 
 The command line interface is recommended for domain mode deployments.
 
-| **Note:** This does not prevent DXP from running in a clustered environment on multiple Wildfly servers. Administrators can set up a cluster of DXP instances running on Wildfly servers running in standalone mode. Please refer to the [DXP clustering articles](https://help.liferay.com/hc/articles/360029123831-Liferay-DXP-Clustering) for more information.
+```note::
+This does not prevent DXP from running in a clustered environment on multiple Wildfly servers. Administrators can set up a cluster of DXP instances running on Wildfly servers running in standalone mode. Please refer to the .. _DXP clustering articles: ../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md for more information.
+```
 
 ## Configuring Wildfly
 
@@ -92,10 +94,6 @@ Configuring Wildfly to run DXP includes these things:
 * Setting environment variables
 * Setting properties and descriptors
 * Removing unnecessary configurations
-
-There are optional configurations in Wildfly to manage DXP's data source and mail session.
-
-Start with configuring Wildfly to run DXP.
 
 Make the following modifications to `$WILDFLY_HOME/standalone/configuration/standalone.xml`:
 
@@ -151,12 +149,6 @@ Make the following modifications to `$WILDFLY_HOME/standalone/configuration/stan
     </handlers>
     ```
 
-1. Find the `<jsp-config/>` tag and set the `development`, `source-vm`, and `target-vm` attributes in the tag. Once finished, the tag should look like this:
-
-    ```xml
-    <jsp-config development="true" source-vm="1.8" target-vm="1.8" />
-    ```
-
 **Checkpoint:**
 
 Before continuing, verify the following properties have been set in the `standalone.xml` file:
@@ -167,7 +159,6 @@ Before continuing, verify the following properties have been set in the `standal
 1. The new `<security-domain>` is created.
 1. Weld tags are removed.
 1. Welcome content is removed.
-1. The `<jsp-config>` tag contains its new attributes.
 
 Next, configure the JVM and startup scripts:
 
@@ -178,7 +169,9 @@ In the `$WILDFLY_HOME/bin/` folder, open the standalone domain's configuration s
 * Set the preferred protocol stack
 * Increase the default amount of memory available.
 
-| **Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```note::
+**Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```
 
 Make the following edits as applicable for the respective operating system:
 
@@ -218,7 +211,7 @@ Make the following edits as applicable for the respective operating system:
 
 This sets the file encoding to UTF-8, prefers an IPv4 stack over IPv6, sets the time zone to GMT, gives the JVM 2GB of RAM, and limits Metaspace to 512MB.
 
-On JDK 11, it's recommended to add this JVM argument to display four-digit years.
+On JDK 11, add this JVM argument to display four-digit years.
 
 ```bash
 -Djava.locale.providers=JRE,COMPAT,CLDR
@@ -226,7 +219,7 @@ On JDK 11, it's recommended to add this JVM argument to display four-digit years
 
 After installation, tune the system (including these JVM options) for performance.
 
-**Note:** If using the IBM JDK with the Wildfly server, complete the following additional steps.
+**Note:** If using the IBM JDK with the Wildfly server, complete the following additional steps:
 
 1. Navigate to the `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` file and insert the following dependency within the `<dependencies>` element:
 
@@ -252,9 +245,7 @@ The prescribed script modifications are now complete for the DXP installation on
 
 ## Connect to a Database
 
-The easiest way to handle database configuration is to let DXP manage the data source. The [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) page lets administrators configure DXP's built-in data source. If using the built-in data source, skip this section.
-
-MySQL is used as the example below. If using a different database, modify the data source and driver snippets as necessary.
+The easiest way to handle database configuration is to let DXP manage the data source. Use [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) to configure DXP's built-in data source. If using the built-in data source, skip this section.
 
 If using Wildfly to manage the data source, follow these steps:
 
@@ -262,25 +253,27 @@ If using Wildfly to manage the data source, follow these steps:
 
     ```xml
     <datasource jndi-name="java:jboss/datasources/ExampleDS" pool-name="ExampleDS" enabled="true" jta="true" use-java-context="true" use-ccm="true">
-        <connection-url>jdbc:mysql://localhost/lportal</connection-url>
-        <driver>mysql</driver>
+        <connection-url>[place the URL to your database here]</connection-url>
+        <driver>[place your driver name here]</driver>
         <security>
-            <user-name>root</user-name>
-            <password>root</password>
+            <user-name>[place your user name here]</user-name>
+            <password>[place your password here]</password>
         </security>
     </datasource>
     ```
 
-    Make sure to replace the database name (i.e., `lportal`), user name, and password with the appropriate values.
+    Make sure to replace the database URL, user name, and password with the appropriate values.
 
-    | **Note:** If the data source `jndi-name` has to be changed to something different, it is necessary to edit the `datasource` element in the `<default-bindings>` tag.
+    ```note::
+    **Note:** If the data source `jndi-name` must be changed, edit the `datasource` element in the `<default-bindings>` tag.
+    ```
 
 1. Add the driver to the `standalone.xml` file's `<drivers>` element also found within the `<datasources>` element.
 
     ```xml
     <drivers>
-        <driver name="mysql" module="com.liferay.portal">
-            <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <driver name="[name of database driver]" module="com.liferay.portal">
+            <driver-class>[JDBC driver class]</driver-class>
         </driver>
     </drivers>
     ```
@@ -333,7 +326,7 @@ If you want to manage your mail session with Wildfly, follow these steps:
     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
     ...
     <outbound-socket-binding name="mail-smtp">
-            <remote-destination host="smtp.gmail.com" port="465"/>
+            <remote-destination host="[place SMTP host here]" port="[place SMTP port here]"/>
         </outbound-socket-binding>
     </socket-binding-group>
     ```
@@ -355,7 +348,7 @@ If you want to manage your mail session with Wildfly, follow these steps:
    After deploying DXP, you may see excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust your app server's logging level or log filters to avoid excessive benign log messages.
 ```
 
-```
+```log
 May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
 WARNING: Skipping pass gatherExternProperties
 May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process

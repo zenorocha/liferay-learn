@@ -1,10 +1,10 @@
 # Installing Liferay DXP on JBoss EAP
 
-Installing Liferay DXP on JBoss EAP requires deploying dependencies, modifying scripts, modifying config `xml`s file, and deploying the DXP WAR file. In addition, make the optional database and mail server configurations to optimize the DXP instance.
+Installing Liferay DXP on JBoss EAP requires deploying dependencies, modifying scripts, modifying config `xml` files, and deploying the DXP WAR file. You must also configure your database and mail server connections.
 
-Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) to choose a JDK.
+Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for further information.
 
-Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):Administrators must download the following:
+Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 
 * DXP WAR file
 * Dependencies ZIP file
@@ -23,8 +23,8 @@ Installing DXP on JBoss EAP takes the following steps:
 ## Installing Dependencies
 
 1. Create the folder `$JBOSS_HOME/modules/com/liferay/portal/main` if it doesn't exist and extract the JARs from the dependencies ZIP into this folder.
-1. Download the database driver `.jar` file and copy it into the same folder. For example, download and extract [MySQL's driver](http://dev.mysql.com/downloads/connector/j/) into the `$JBOSS_HOME/modules/com/liferay/portal/main` folder.
-1. Create the file `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder and and declare all the dependencies:
+1. Copy your database vendor's JDBC .jar file to the same location. Please see the [compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for a list of supported databases.
+1. Create the file `module.xml` in the `$JBOSS_HOME/modules/com/liferay/portal/main` folder and declare all the dependencies:
 
     ```xml
     <?xml version="1.0"?>
@@ -43,7 +43,7 @@ Installing DXP on JBoss EAP takes the following steps:
             <resource-root path="com.liferay.petra.string.jar" />
             <resource-root path="com.liferay.registry.api.jar" />
             <resource-root path="hsql.jar" />
-            <resource-root path="mysql.jar" />
+            <resource-root path="[place your database vendor's jar here]" />
             <resource-root path="portal-kernel.jar" />
             <resource-root path="portlet.jar" />
         </resources>
@@ -57,16 +57,16 @@ Installing DXP on JBoss EAP takes the following steps:
     </module>
     ```
 
-    For a different database, replace the MySQL `.jar` with the driver JAR for the database (e.g., HSQL, PostgreSQL, etc.).
+   Replace `[place your database vendor's jar here]` with the driver JAR for your database.
 
 1. Create an `osgi` folder in the [Liferay Home](../../14-reference/01-liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
-    The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
+   The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
 
 **Checkpoint:**
 
 1. The dependencies files have been unzipped into the `$JBOSS_HOME/modules/com/liferay/portal/main` folder and a database jar.
-1. The `module.xml` has listed all JARs in the `<resource-root-path>` elements.
+1. The `module.xml` contains all JARs in the `<resource-root-path>` elements.
 1. The `osgi` dependencies have been unzipped into the `osgi` folder.
 
 ### Running DXP on JBoss EAP in Standalone Mode vs. Domain Mode
@@ -77,7 +77,9 @@ DXP supports JBoss EAP when it runs in standalone mode but not when it runs in d
 
 The command line interface is recommended for domain mode deployments.
 
-| **Note:** This does not prevent DXP from running in a clustered environment on multiple JBoss servers. You can set up a cluster of DXP instances running on JBoss EAP servers running in standalone mode. Please refer to the [DXP clustering articles](https://help.liferay.com/hc/articles/360029123831-Liferay-DXP-Clustering) for more information.
+```note::
+This does not prevent DXP from running in a clustered environment on multiple JBoss servers. You can set up a cluster of DXP instances running on JBoss EAP servers running in standalone mode. Please refer to the [DXP clustering articles](../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md) for more information.
+```
 
 ## Configuring JBoss
 
@@ -86,10 +88,6 @@ Configuring JBoss to run DXP includes these things:
 * Setting environment variables
 * Setting properties and descriptors
 * Removing unnecessary configurations
-
-There are optional configurations in JBoss EAP to manage DXP's data source and mail session.
-
-Start with configuring JBoss to run DXP.
 
 Make the following modifications to `$JBOSS_HOME/standalone/configuration/standalone.xml`:
 
@@ -140,12 +138,6 @@ Make the following modifications to `$JBOSS_HOME/standalone/configuration/standa
     </handlers>
     ```
 
-1. Find the `<jsp-config/>` tag and set the `development`, `source-vm`, and `target-vm` attributes in the tag. Once finished, the tag should look like this:
-
-    ```xml
-    <jsp-config development="true" source-vm="1.8" target-vm="1.8"/>
-    ```
-
 **Checkpoint:**
 
 Before continuing, verify the following properties have been set in the `standalone.xml` file:
@@ -155,7 +147,6 @@ Before continuing, verify the following properties have been set in the `standal
 1. The `<deployment-timeout>` is set to `360`.
 1. The new `<security-domain>` is created.
 1. Welcome content is removed.
-1. The `<jsp-config>` tag contains its new attributes.
 
 Next, configure the JVM and startup scripts.
 
@@ -166,7 +157,9 @@ In the `$JBOSS_HOME/bin/` folder, modify the standalone domain's configuration s
 * Set the preferred protocol stack
 * Increase the default amount of memory available.
 
-| **Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```Note::
+**Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```
 
 Make the following edits as applicable to the respective operating system:
 
@@ -205,13 +198,13 @@ Make the following edits as applicable to the respective operating system:
     JAVA_OPTS="$JAVA_OPTS -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Djboss.as.management.blocking.timeout=480 -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxMetaspaceSize=512m"
     ```
 
-On JDK 11, it's recommended to add this JVM argument to display four-digit years.
+On JDK 11, add this JVM argument to display four-digit years.
 
 ```bash
 -Djava.locale.providers=JRE,COMPAT,CLDR
 ```
 
-| **Note:** If using the IBM JDK with the JBoss server, complete some additional steps.
+**Note:** If using the IBM JDK with the JBoss server, complete these additional steps:
 
 1. Navigate to the `$JBOSS_HOME/modules/com/liferay/portal/main/module.xml` file and insert the following dependency within the `<dependencies>` element:
 
@@ -239,9 +232,7 @@ The prescribed script modifications are now complete for the DXP installation on
 
 ## Connect to a Database
 
-The easiest way to handle database configuration is to let DXP manage the data source. The [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) page lets administrators configure DXP's built-in data source. If using the built-in data source, skip this section.
-
-This section demonstrates configuring a MySQL database. If using a different database, modify the data source and driver snippets as necessary.
+The easiest way to handle database configuration is to let DXP manage the data source. Administrators can use [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) to configure DXP's built-in data source. If using the built-in data source, skip this section.
 
 If using JBoss to manage the data source, follow these steps:
 
@@ -249,30 +240,32 @@ If using JBoss to manage the data source, follow these steps:
 
     ```xml
     <datasource jndi-name="java:jboss/datasources/ExampleDS" pool-name="ExampleDS" enabled="true" jta="true" use-java-context="true" use-ccm="true">
-        <connection-url>jdbc:mysql://localhost/lportal</connection-url>
-        <driver>mysql</driver>
+        <connection-url>[place the URL to your database here]</connection-url>
+        <driver>[place the driver name here]</driver>
         <security>
-            <user-name>root</user-name>
-            <password>root</password>
+            <user-name>[place your user name here]</user-name>
+            <password>[place your password here]</password>
         </security>
     </datasource>
     ```
 
-    Make sure to replace the database name (i.e., `lportal`), user name, and password with the appropriate values.
+    Make sure to replace the database URL, user name, and password with the appropriate values.
 
-    | **Note:** If the data source `jndi-name` has to be changed to something different, it is necessary to edit the `datasource` element in the `<default-bindings>` tag.
+    ```note::
+    If the data source `jndi-name` must be changed, edit the `datasource` element in the `<default-bindings>` tag.
+    ```
 
 1. Add the driver to the `standalone.xml` file's `<drivers>` element also found within the `<datasources>` element.
 
     ```xml
     <drivers>
-        <driver name="mysql" module="com.liferay.portal">
-            <driver-class>com.mysql.jdbc.Driver</driver-class>
+        <driver name="[name of driver must match name above]" module="com.liferay.portal">
+            <driver-class>[place your JDBC driver class here]</driver-class>
         </driver>
     </drivers>
     ```
 
-    A final data sources subsystem that uses MySQL should look like this:
+    A final data source subsystem that uses MySQL should look like this:
 
     ```xml
     <subsystem xmlns="urn:jboss:domain:datasources:5.0">
@@ -313,7 +306,7 @@ If you want to manage the mail session with JBoss, follow these steps:
     <subsystem xmlns="urn:jboss:domain:mail:3.0">
         <mail-session jndi-name="java:jboss/mail/MailSession" >
             <smtp-server ssl="true" outbound-socket-binding-ref="mail-smtp">
-                <login username="USERNAME" password="PASSWORD"/>
+                <login username="[place user name here]" password="[place password here]"/>
             </smtp-server>
        </mail-session>
     </subsystem>
@@ -321,7 +314,7 @@ If you want to manage the mail session with JBoss, follow these steps:
     <socket-binding-group name="standard-sockets" default-interface="public" port-offset="${jboss.socket.binding.port-offset:0}">
     ...
     <outbound-socket-binding name="mail-smtp">
-            <remote-destination host="smtp.gmail.com" port="465"/>
+            <remote-destination host="[place SMTP mail host here]" port="[place mail port here]"/>
         </outbound-socket-binding>
     </socket-binding-group>
     ```
@@ -339,7 +332,7 @@ If you want to manage the mail session with JBoss, follow these steps:
 1. To trigger deployment of `ROOT.war`, create an empty file named `ROOT.war.dodeploy` in the `$JBOSS_HOME/standalone/deployments/` folder. On startup, JBoss detects this file and deploys it as a web application.
 1. Start the JBoss application server by navigating to `$JBOSS_HOME/bin` and running `standalone.bat` or `standalone.sh`.
 
-After deploying DXP, you may see excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust the app server's logging level or log filters to avoid excessive benign log messages.
+After deploying DXP, you may see excessive warnings and log messages such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust the app server's logging level or log filters to avoid excessive benign log messages.
 
 ```log
 May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
