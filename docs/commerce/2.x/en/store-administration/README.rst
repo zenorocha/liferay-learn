@@ -13,6 +13,14 @@ Currencies
 -  :doc:`/store-administration/currencies/currencies-reference`
 -  :doc:`/store-administration/currencies/managing-exchange-rates`
 
+Emails
+------
+
+-  :doc:`/store-administration/emails/store-emails`
+-  :doc:`/store-administration/emails/using-notification-templates`
+-  :doc:`/store-administration/emails/configuring-the-commerce-notification-queue`
+-  :doc:`/store-administration/emails/notification-template-variables-reference-guide`
+
 
 Configuring Taxes
 -----------------
