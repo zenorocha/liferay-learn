@@ -25,3 +25,7 @@ Name                                   | Acceptable Value | Default Value |
 -------------------------------------- | ---------------- | ------------- |
 `LCP_GCP_DATABASE_FLAG_GENERAL_LOG`    | `on, off`        | `off`         |
 `LCP_GCP_DATABASE_FLAG_SLOW_QUERY_LOG` | `on, off`        | `off`         |
+
+## Related Information
+
+* [Using the MySQL Client](../using-the-liferay-dxp-service/using-the-mysql-client.md)
