@@ -63,9 +63,9 @@ Aug 26 09:42:22.778 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-2,
 Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,liferay-channel-control,liferay-68b8f6b48d-hdj9t-17435][JGroupsReceiver:91] Accepted view [liferay-68b8f6b48d-r8r5f-29669|8] (3) [liferay-68b8f6b48d-r8r5f-29669, liferay-68b8f6b48d-gzsg4-48301, liferay-68b8f6b48d-hdj9t-17435]
 ```
 
-> `Accepted view [liferay-68b8f6b48d-r8r5f-1292|8]` indicates that `liferay-68b8f6b48d-r8r5f-1292` is the master node.
->
-> `(3) [liferay-68b8f6b48d-r8r5f-29669, liferay-68b8f6b48d-gzsg4-48301, liferay-68b8f6b48d-hdj9t-17435]` indicates that `(3)` nodes are part of the cluster as well as the IDs of the nodes. This list includes the master node in addition to the slave nodes.
+`Accepted view [liferay-68b8f6b48d-r8r5f-1292|8]` indicates that `liferay-68b8f6b48d-r8r5f-1292` is the master node.
+
+`(3) [liferay-68b8f6b48d-r8r5f-29669, liferay-68b8f6b48d-gzsg4-48301, liferay-68b8f6b48d-hdj9t-17435]` indicates that `(3)` nodes are part of the cluster as well as the IDs of the nodes. This list includes the master node in addition to the slave nodes.
 
 ## Additional Information
 

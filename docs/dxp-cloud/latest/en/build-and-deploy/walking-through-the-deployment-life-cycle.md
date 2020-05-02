@@ -32,13 +32,17 @@ Begin the deployment life cycle by adding your sample module into the Git reposi
 cp path-to-module/my-module my-repository-path/lcp/liferay/deploy/dev
 ```
 
-> **Note:** this tutorial will assume your development environment is named `dev`, by default. If your development environment is named differently, substitute `dev` with the correct name.
+```note::
+   This tutorial will assume your development environment is named ``dev``, by default. If your development environment is named differently, substitute ``dev`` with the correct name.
+```
 
 ## Deploy the Sample to the Development Environment
 
 Deployment to DXP Cloud normally consists of pushing the changes in Git, the GitHub webhook triggering a build with the DXP Cloud CI service, and finally deploying the successful build. However, you can also skip pushing your changes to GitHub by using the CLI if desired.
 
-> In general, pushing to GitHub and using the DXP Cloud Management Console is recommended for deployments.
+```tip::
+   In general, pushing to GitHub and using the DXP Cloud Management Console is recommended for deployments.
+```
 
 ### Commit the Sample in Git
 
@@ -66,7 +70,9 @@ Once you have sent the pull request to the upstream repository, the CI service w
 
 ![PR Triggered Build in CI](./walking-through-the-deployment-life-cycle/images/09.png)
 
-> You may view triggered builds in the Jenkins [CI service](../platform-services/continuous-integration.md) by visiting `https://ci-<project>-<environment>.lfr.cloud`.
+```tip::
+   You may view triggered builds in the Jenkins `CI service <../platform-services/continuous-integration.md>`_ by visiting ``https://ci-<project>-<environment>.lfr.cloud``.
+```
 
 ### Deploy the Build to the Development Environment from the DXP Cloud Management Console
 
@@ -109,7 +115,9 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
 
 For each of these properties, copy the value and use it to replace the placeholder value for the `image` property in the corresponding service's `LCP.json` file. This will allow the CLI to use the correct Docker images when it searches within the `lcp` directory.
 
-> **Note:** the `liferay.workspace.lcp.jenkins.image` property corresponds to the `ci` service.
+```note::
+   The ``liferay.workspace.lcp.jenkins.image`` property corresponds to the ``ci`` service.
+```
 
 For example, use the value from the `liferay.workspace.lcp.search.image` property as the new value in `lcp/search/LCP.json` for this line:
 
@@ -153,7 +161,9 @@ When the `webserver` service is ready to use, navigate to it, and then click on 
 
 ![Link from the webserver Service](./walking-through-the-deployment-life-cycle/images/07.png)
 
-> **Note:** you can also go directly to `https://webserver-<project-name>-<environment>.lfr.cloud/` to get to the same location.
+```tip::
+   You can also go directly to ``https://webserver-<project-name>-<environment>.lfr.cloud/`` to get to the same location.
+```
 
 You can use the Gogo shell to easily confirm whether your module was deployed. Navigate to the Control Panel → Configuration → Gogo Shell. From here, use this command to check whether the module has been deployed:
 

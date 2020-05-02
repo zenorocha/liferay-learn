@@ -35,7 +35,9 @@ The `.lcpignore` file uses globbing patterns to match against file names. (These
 
 As best practice, keep the `.lcpignore` file in the top level folder of your project. If your repository has multiple `.lcpignore` files (not recommended), DXP Cloud will read them as a unified document.
 
-> **Note:** If a file or folder has been deployed and administrators want to ignore it later, DXP Cloud will not ignore the file if a subsequent rule tries to include that file or folder. Rather, that file or folder will not be updated.
+```note::
+   If a file or folder has been deployed and administrators want to ignore it later, DXP Cloud will not ignore the file if a subsequent rule tries to include that file or folder. Rather, that file or folder will not be updated.
+```
 
 ## Additional Information
 

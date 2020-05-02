@@ -47,7 +47,7 @@ _Authentication Type_ can be configured through the Control Panel or a propertie
 
 ### Configuring Authentication Type Using Properties
 
-To use the [`portal-ext.properties`](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) file, paste in the below properties and uncomment the desired authentication type:
+To use the [`portal-ext.properties`](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/portal-properties.html) file, paste in the below properties and uncomment the desired authentication type:
 
 ```properties
 company.security.auth.type=emailAddress

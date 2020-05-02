@@ -23,7 +23,7 @@ The deprecations in DXP 7.2 are as follows:
 | CMIS Store | Archived | Migrate to another [Document Repository Store option](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration). Before [upgrading to DXP 7.2](../upgrade-basics/upgrade-overview.md), migrate your document store data using [Data Migration in Server Administration](https://help.liferay.com/hc/en-us/articles/360029131691-Server-Administration). |
 | JCRStore | Archived | Migrate to another [Document Repository Store option](https://help.liferay.com/hc/en-us/articles/360028810112-Document-Repository-Configuration). Before [upgrading to DXP 7.2](../upgrade-basics/upgrade-overview.md), migrate your document store data using [Data Migration in Server Administration](https://help.liferay.com/hc/en-us/articles/360029131691-Server-Administration). |
 | Legacy Search Portlet | Bundled | Will be archived in a future release. This will be replaced by the [Search widgets](https://help.liferay.com/hc/en-us/articles/360029133791-Introduction-to-Search). |
-| Sprite framework | Bundled | Liferay's image sprite framework is deprecated and is disabled by default via the `sprite.enabled` [portal property](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties). You can still build image sprites using any framework you like and deploy them in your plugins. |
+| Sprite framework | Bundled | Liferay's image sprite framework is deprecated and is disabled by default via the `sprite.enabled` [portal property](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/portal-properties.html). You can still build image sprites using any framework you like and deploy them in your plugins. |
 
 ## Personalization
 

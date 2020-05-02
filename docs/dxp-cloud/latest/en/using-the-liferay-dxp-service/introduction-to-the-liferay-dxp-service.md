@@ -28,7 +28,9 @@ You can check the [Services Changelog](https://help.liferay.com/hc/en-us/section
 
 Use the new version from the release notes to update the `liferay.workspace.lcp.liferay.image` property value. The new Docker image will be used when your instance starts up or the next time you deploy the Liferay service from your repository. You can also use the Docker images for new releases to upgrade the properties for your other services.
 
-> **Note:** if any `LCP.json` files in your repository directly reference the Docker image for a version of Liferay, then these will need to be updated as well when upgrading to a new Docker image.
+```note::
+   If any ``LCP.json`` files in your repository directly reference the Docker image for a version of Liferay, then these will need to be updated as well when upgrading to a new Docker image.
+```
 
 ## Deployment (Customization, Patching, and Licensing)
 
@@ -44,12 +46,14 @@ To install themes, portlets, or OSGi modules, include a WAR or JAR file in one o
 
 For example, to deploy a custom JAR file to your development environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
 
-	lcp
-    └── liferay
-    	├── deploy
-    	│   └── dev
-    	│       └── com.liferay.apio.samples.portlet-1.0.0.jar
-    	└── LCP.json
+```
+lcp
+  └── liferay
+    ├── deploy
+    │   └── dev
+    │       └── com.liferay.apio.samples.portlet-1.0.0.jar
+    └── LCP.json
+```
 
 ### Source Code
 
@@ -61,7 +65,9 @@ A CI build will compile source code within these folders:
 * The `themes` folder for custom themes
 * The `wars` folder for exploded WARs
 
-> **Note:** source code will only be included in a deployment if it is deployed from a build in CI.
+```note::
+   Source code will only be included in a deployment if it is deployed from a build in CI.
+```
 
 ### Hotfixes
 
@@ -69,12 +75,14 @@ To apply hotfixes, add the hotfix ZIP file to one of the folders in `hotfix/` wi
 
 For example, you can deploy a hotfix to your development environment with a structure like the following:
 
-	lcp
-    └── liferay
-    	├── hotfix
-    	│   └── dev
-    	│       └── liferay-hotfix-2-7110.zip
-    	└── LCP.json
+```
+lcp
+  └── liferay
+    ├── hotfix
+    │   └── dev
+    │       └── liferay-hotfix-2-7110.zip
+    └── LCP.json
+```
 
 Note that hotfixes will each need to be re-applied each time the server starts up. For this reason, updating to the latest Fix Pack or Service pack of the Liferay DXP Docker image in your `gradle.properties` file is better than adding many hotfixes into this folder for the long term; you can update the Docker version by replacing the `liferay.workspace.lcp.liferay.image` property in this file. The `gradle.properties` file can be found at the root of the repository.
 
@@ -84,13 +92,15 @@ You can add your own license by putting it into one of the folders in `license/`
 
 For example, you can add licenses to your development environment with a structure like this in your Liferay DXP service directory:
 
-	lcp
-    └── liferay
-    	├── license
-    	│   └── dev
-    	│       └── license.xml
-    	│       └── license.aatf
-    	└── LCP.json
+```
+lcp
+  └── liferay
+    ├── license
+    │   └── dev
+    │       └── license.xml
+    │       └── license.aatf
+    └── LCP.json
+```
 
 Behind the scenes, XML licenses are copied to `$LIFERAY_HOME/deploy`, and AATF licenses are copied to `$LIFERAY_HOME/data`.
 
@@ -102,7 +112,9 @@ Applying configurations to the Liferay service, like `portal.properties` changes
 
 Hot deploy can be done via the Liferay DXP UI. To do so, navigate to the Control Panel → Apps → App Manager. Then, click the dots in the upper-right corner, and click "Upload." From this screen, you can choose a file from your local file system to deploy and install.
 
-> **Note:** using hot deploy in DXP Cloud is _not_ recommended because any customizations deployed with this method will be lost upon a subsequent DXP service deployment.
+```note::
+   Using hot deploy in DXP Cloud is *not* recommended because any customizations deployed with this method will be lost upon a subsequent DXP service deployment.
+```
 
 ## Enabling Clustering
 
@@ -114,12 +126,14 @@ Any `.sh` files found in the `script` folder are automatically run prior to star
 
 For example, to include a script that removes all log files, place it in the following directory structure within the project's Git repository:
 
-    lcp
-    └──liferay
-        ├── script
-        │   └── dev
-        │       └── remove-log-files.sh
-        └── LCP.json
+```
+lcp
+└──liferay
+    ├── script
+    │   └── dev
+    │       └── remove-log-files.sh
+    └── LCP.json
+```
 
 ## Environment Variables Reference
 

@@ -55,7 +55,9 @@ The second service (`service2`) declares a volume in the same location, allowing
 
 Both services will be able to access the specified volume in NFS on the next deployment after the services are restarted.
 
-> **Note:** To delete your service volumes, you can delete the environment that your services belong to. However, volumes for `StatefulSet` type services can be deleted by deleting the single service.
+```note::
+   To delete your service volumes, you can delete the environment that your services belong to. However, volumes for ``StatefulSet`` type services can be deleted by deleting the single service.
+```
 
 ## Additional Information
 
