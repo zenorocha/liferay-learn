@@ -45,9 +45,11 @@ Then, update to the appropriate Docker image versions (or newer) and [re-deploy 
 
     ![Click on the Shell tab to access the shell, where the MySQL client is available.](./using-the-mysql-client/images/03.png)
 
-1. Type `mysql` into the shell on this screen. This logs you into the MySQL client, where you can perform any read-only queries.
+1. Type `mysql` into the shell on this screen. This logs you into the MySQL client, where you can perform any read-only queries. For example, you can see all the tables by executing `show tables;`.
 
-You have now successfully logged in as the default user.
+    ![Run the mysql command and show tables command](./using-the-mysql-client/images/04.png)
+
+Please refer to the official [MySQL Client documentation](https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html) to see all the commands available.
 
 ### Logging in with Read and Write Privileges
 
