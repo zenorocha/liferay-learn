@@ -1,6 +1,6 @@
 # Using the MySQL Client
 
-Viewing data in the database is sometimes necessary to troubleshoot an issue with your application or do custom development. In order to access the database, you must use an exposed MySQL client to interface directly with the database. This feature is available in up-to-date versions of DXP Cloud, and can be accessed in a few short steps.
+Viewing data in the database is sometimes necessary to troubleshoot an issue with your application or do custom development. In order to access the database, you must use a built-in MySQL client to interface directly with the database. This feature is available in up-to-date versions of DXP Cloud, and can be accessed in a few short steps.
 
 ```note::
    Only DXP Cloud users with *Admin* and *Contributor* privileges can make use of the MySQL client.
@@ -8,7 +8,7 @@ Viewing data in the database is sometimes necessary to troubleshoot an issue wit
 
 ## Prerequisites
 
-<!-- JR: Do we have an article that describes clearly how to upgrade a service? -->Before you can use the MySQL Client through the Liferay service, you must have your services upgraded to at least the following supported image versions:
+Before you can use the MySQL Client through the Liferay service, you must have your services upgraded to at least the following supported image versions:
 
 | **Service** | **Minimum Supported Image Version** |
 | --- | --- |
