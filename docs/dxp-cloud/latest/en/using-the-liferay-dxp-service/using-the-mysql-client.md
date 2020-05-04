@@ -12,7 +12,6 @@ Viewing data in the database is sometimes necessary to troubleshoot an issue wit
 
 | **Service** | **Minimum Supported Image Version** |
 | --- | --- |
-| **Backup** | liferaycloud/backup:3.2.11 |
 | **Database** | liferaycloud/database:3.2.8 |
 | **DXP (using 7.0)** | liferaycloud/liferay-dxp:7.0.10-ga1-fp90-3.0.19 |
 | **DXP (using 7.1)** | liferaycloud/liferay-dxp-7.1.10-ga1-fp17-3.0.19 |
