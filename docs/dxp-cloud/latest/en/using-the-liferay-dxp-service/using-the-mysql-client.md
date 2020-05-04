@@ -58,10 +58,10 @@ The default user can only perform read queries on the database, and cannot manip
 However, if it is *critical* to be able to manipulate data in the database, you can login using the database credentials by typing this command into the shell (instead of only typing `mysql`):
 
 ```bash
-mysql -u USER_NAME -p DATABASE_NAME
+mysql -u <user_name> -p <database_name>
 ```
 
-Enter the database user's password at the prompt to authenticate as a user with read and write privileges.
+You can find the database name, user name, and password on your `portal.properties` file.
 
 ## Related Information
 
