@@ -3,7 +3,7 @@
 Viewing data in the database is sometimes necessary to troubleshoot an issue with your application or do custom development. In order to access the database, you must use an exposed MySQL client to interface directly with the database. This feature is available in up-to-date versions of DXP Cloud, and can be accessed in a few short steps.
 
 ```note::
-   Only DXP Cloud users with *Administrator* privileges can make use of the MySQL client.
+   Only DXP Cloud users with *Admin* and *Contributor* privileges can make use of the MySQL client.
 ```
 
 ## Prerequisites
