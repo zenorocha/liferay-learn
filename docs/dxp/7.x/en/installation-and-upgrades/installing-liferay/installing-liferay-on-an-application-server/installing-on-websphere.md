@@ -13,7 +13,7 @@ Installing Liferay DXP on WebSphere requires deploying the DXP WAR file, deployi
 For Liferay DXP to work correctly, WebSphere 9 (Fix Pack 11 is the latest) must be installed. Go to [IBM Support](http://www-01.ibm.com/support/docview.wss?uid=swg24043005) to find out more information about this fix pack. Liferay DXP does not currently support the WebSphere Application Liberty Profile.
 
 ```important::
-   Before installing DXP, please review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles.
+   Before installing DXP, please review the `Installing a Liferay-Tomcat Bundle <../installing-a-liferay-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles.
 ```
 
 The following files are required to install Liferay DXP on the WebSphere application server and are available from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
@@ -22,7 +22,7 @@ The following files are required to install Liferay DXP on the WebSphere applica
 * Dependencies ZIP file
 * OSGi Dependencies ZIP file
 
-See [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
+See [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
 
 The [`LIFERAY_HOME` directory](../../reference/liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` directory is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
 
@@ -333,7 +333,7 @@ After deploying DXP, there may be excessive warnings and log messages, such as t
 
 ## Next Steps
 
-* [Installing a Liferay DXP Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md)
+* [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md)
 * [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md)
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
