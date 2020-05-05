@@ -9,6 +9,7 @@ Store Administration
    store-administration/adding-regions.md
    store-administration/deactivating-a-country-for-billing-or-shipping.md
 
+   store-administration/sending-emails.rst
    store-administration/currencies.rst
    store-administration/configuring_taxes.rst
    store-administration/configuring_payment_methods.rst

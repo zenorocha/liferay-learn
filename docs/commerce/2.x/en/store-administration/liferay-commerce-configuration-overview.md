@@ -24,6 +24,8 @@ The Commerce Global Settings menu contains the following tabs:
 
 ## Commerce Site Settings
 
+> Commerce 2.0 and below
+
 The following configurations are scoped to the selected store site. Changes here are not applied to other stores hosted on the same Liferay Commerce instance.
 
 Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
@@ -32,7 +34,7 @@ Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
 
 The following site settings are found here:
 
-* [Notifications](../promoting-products/automating-store-emails-by-using-notification-templates.md)
+* [Notifications](./emails/using-notification-templates.md)
 * [Introduction to Order Workflows](../orders-and-fulfillment/order-workflows/introduction-to-order-workflows.md)
 * [Payment Methods](../store-administration/configuring-payment-methods/payments.md)
 * Product Display Pages

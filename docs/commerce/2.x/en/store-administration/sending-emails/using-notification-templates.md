@@ -52,6 +52,8 @@ To define the recipient, sender address, and sender name, enter the following:
 
 ![Using placeholder values in the emails.](./using-notification-templates/images/06.png)
 
+If notifying more than one recipient, as noted above, you can a comma-delimited list by entering in the _to_ field: `[%ORDER_CREATOR%]`,`[%ACCOUNT_ROLE_ADMINISTRATOR%]`. This sends the email to the person who placed the order and the account administrator.
+
 ### Email Body
 
 To define the content of the notification, enter the following:
