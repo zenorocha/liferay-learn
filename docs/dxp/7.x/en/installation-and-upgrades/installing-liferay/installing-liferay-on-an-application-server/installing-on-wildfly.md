@@ -4,7 +4,7 @@ Installing on WildFly requires deploying dependencies, modifying scripts, modify
 
 Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for further information.
 
-Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):Administrators must download the following:
+Download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community). Administrators must download the following:
 
 * DXP WAR file
 * Dependencies ZIP file
@@ -63,7 +63,7 @@ Installing Liferay DXP on WildFly requires the following steps:
 
     Replace the indicated `resource-root` element with the driver JAR for your database.
 
-1. Create an `osgi` folder in your [Liferay Home](../../14-reference/01-liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
+1. Create an `osgi` folder in your [Liferay Home](../../reference/liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
     The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
 
@@ -84,7 +84,7 @@ Administrators can run DXP on WildFly in domain mode, but this method is not ful
 The command line interface is recommended for domain mode deployments.
 
 ```note::
-This does not prevent DXP from running in a clustered environment on multiple WildFly servers. Administrators can set up a cluster of DXP instances running on WildFly servers running in standalone mode. Please refer to the .. _DXP clustering articles: ../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md for more information.
+   This does not prevent DXP from running in a clustered environment on multiple WildFly servers. Administrators can set up a cluster of DXP instances running on WildFly servers running in standalone mode. Please refer to the `DXP clustering articles <../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md>`_ for more information.
 ```
 
 ## Configuring WildFly
@@ -169,8 +169,8 @@ In the `$WILDFLY_HOME/bin/` folder, open the standalone domain's configuration s
 * Set the preferred protocol stack
 * Increase the default amount of memory available.
 
-```note::
-**Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```important::
+   For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
 ```
 
 Make the following edits as applicable for the respective operating system:
@@ -219,7 +219,7 @@ On JDK 11, add this JVM argument to display four-digit years.
 
 After installation, tune the system (including these JVM options) for performance.
 
-**Note:** If using the IBM JDK with the WildFly server, complete the following additional steps:
+If using the IBM JDK with the WildFly server, complete the following additional steps:
 
 1. Navigate to the `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` file and insert the following dependency within the `<dependencies>` element:
 
@@ -265,7 +265,7 @@ If using WildFly to manage the data source, follow these steps:
     Make sure to replace the database URL, user name, and password with the appropriate values.
 
     ```note::
-    **Note:** If the data source `jndi-name` must be changed, edit the `datasource` element in the `<default-bindings>` tag.
+       If the data source ``jndi-name`` must be changed, edit the ``datasource`` element in the ``<default-bindings>`` tag.
     ```
 
 1. Add the driver to the `standalone.xml` file's `<drivers>` element also found within the `<datasources>` element.
@@ -310,7 +310,7 @@ The data source is now configured and ready to go.
 
 ## Connect to a Mail Server
 
-As with database configuration, the easiest way to configure mail is to let DXP handle the mail session. If you want to use DXP's built-in mail session, skip this section and [configure the mail session](../../connecting-to-a-mail-server.md) in the Control Panel.
+As with database configuration, the easiest way to configure mail is to let DXP handle the mail session. If you want to use DXP's built-in mail session, skip this section and [configure the mail session](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) in the Control Panel.
 
 If you want to manage your mail session with WildFly, follow these steps:
 
@@ -331,7 +331,7 @@ If you want to manage your mail session with WildFly, follow these steps:
     </socket-binding-group>
     ```
 
-1. In the [`portal-ext.properties`](../../14-reference/03-portal-properties.md) file in Liferay Home, reference the mail session:
+1. In the [`portal-ext.properties`](../../reference/portal-properties.md) file in Liferay Home, reference the mail session:
 
     ```properties
     mail.session.jndi.name=java:jboss/mail/MailSession
@@ -345,7 +345,7 @@ If you want to manage your mail session with WildFly, follow these steps:
 1. Start the WildFly application server by navigating to `$WILDFLY_HOME/bin` and running `standalone.bat` or `standalone.sh`.
 
 ```note::
-   After deploying DXP, you may see excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust your app server's logging level or log filters to avoid excessive benign log messages.
+   After deploying DXP, you may see excessive warnings and log messages, such as the ones below, involving ``PhaseOptimizer``. These are benign and can be ignored. Make sure to adjust your app server's logging level or log filters to avoid excessive benign log messages.
 ```
 
 ```log

@@ -59,7 +59,7 @@ Installing DXP on JBoss EAP takes the following steps:
 
    Replace `[place your database vendor's jar here]` with the driver JAR for your database.
 
-1. Create an `osgi` folder in the [Liferay Home](../../14-reference/01-liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
+1. Create an `osgi` folder in the [Liferay Home](../../reference/liferay-home.md) folder. Extract the OSGi Dependencies ZIP file that you downloaded into the `[Liferay Home]/osgi` folder.
 
    The `osgi` folder provides the necessary modules for DXP's OSGi runtime.
 
@@ -78,7 +78,7 @@ DXP supports JBoss EAP when it runs in standalone mode but not when it runs in d
 The command line interface is recommended for domain mode deployments.
 
 ```note::
-This does not prevent DXP from running in a clustered environment on multiple JBoss servers. You can set up a cluster of DXP instances running on JBoss EAP servers running in standalone mode. Please refer to the [DXP clustering articles](../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md) for more information.
+   This does not prevent DXP from running in a clustered environment on multiple JBoss servers. You can set up a cluster of DXP instances running on JBoss EAP servers running in standalone mode. Please refer to the [DXP clustering articles](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md) for more information.
 ```
 
 ## Configuring JBoss
@@ -157,8 +157,8 @@ In the `$JBOSS_HOME/bin/` folder, modify the standalone domain's configuration s
 * Set the preferred protocol stack
 * Increase the default amount of memory available.
 
-```Note::
-**Important:** For DXP to work properly, the application server JVM must use the `GMT` time zone and `UTF-8` file encoding.
+```important::
+   For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
 ```
 
 Make the following edits as applicable to the respective operating system:
@@ -252,7 +252,7 @@ If using JBoss to manage the data source, follow these steps:
     Make sure to replace the database URL, user name, and password with the appropriate values.
 
     ```note::
-    If the data source `jndi-name` must be changed, edit the `datasource` element in the `<default-bindings>` tag.
+       If the data source ``jndi-name`` must be changed, edit the ``datasource`` element in the ``<default-bindings>`` tag.
     ```
 
 1. Add the driver to the `standalone.xml` file's `<drivers>` element also found within the `<datasources>` element.
@@ -285,7 +285,7 @@ If using JBoss to manage the data source, follow these steps:
     </subsystem>
     ```
 
-1. In a [`portal-ext.properties`](../../14-reference/03-portal-properties.md) file in the Liferay Home, specify the data source:
+1. In a [`portal-ext.properties`](../../reference/portal-properties.md) file in the Liferay Home, specify the data source:
 
     ```properties
     jdbc.default.jndi.name=java:jboss/datasources/ExampleDS
@@ -295,7 +295,7 @@ The data source is now configured and ready to be connected to the database.
 
 ## Connect to a Mail Server
 
-As with database configuration, the easiest way to configure mail is to let DXP handle the mail session. If you want to use DXP's built-in mail session, skip this section and [connect DXP to a mail server](../../connecting-to-a-mail-server.md) in the Control Panel.
+As with database configuration, the easiest way to configure mail is to let DXP handle the mail session. If you want to use DXP's built-in mail session, skip this section and [connect DXP to a mail server](../../setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.md) in the Control Panel.
 
 If you want to manage the mail session with JBoss, follow these steps:
 
