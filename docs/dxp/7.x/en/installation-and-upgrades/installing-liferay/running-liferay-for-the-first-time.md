@@ -11,7 +11,7 @@ Once you've [installed Liferay DXP](./installing-a-liferay-tomcat-bundle.md#inst
     ```
 
     ```note::
-       By default, DXP writes log files to `[Liferay Home]/logs`
+       By default, DXP writes log files to ``[Liferay Home]/logs``
     ```
 
     The Setup Wizard appears in your web browser at `http://localhost:8080`.
