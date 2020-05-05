@@ -1,6 +1,6 @@
-# Installing Liferay DXP on Wildfly
+# Installing on WildFly
 
-Installing Liferay DXP on Wildfly requires deploying dependencies, modifying scripts, modifying config `xml` files, and deploying the DXP WAR file. In addition, make the optional database and mail server configurations to optimize the DXP instance.
+Installing on WildFly requires deploying dependencies, modifying scripts, modifying config `xml` files, and deploying the DXP WAR file. In addition, make the optional database and mail server configurations to optimize the DXP instance.
 
 Liferay DXP requires a Java JDK 8 or 11. See [the compatibility matrix](https://www.liferay.com/documents/10182/246659966/Liferay+DXP+7.2+Compatibility+Matrix.pdf/ed234765-db47-c4ad-7c82-2acb4c73b0f9) for further information.
 
@@ -12,11 +12,11 @@ Download these files from the [Help Center](https://customer.liferay.com/downloa
 
 Before proceeding, you should understand the difference between [*Liferay Home*](../../reference/liferay-home.md) and `$WILDFLY_HOME` because they are referenced below as shorthand:
 
-* `Liferay.home` is the folder containing the Wildfly server folder. After installing and deploying DXP, the Liferay Home folder contains the Wildfly server folder as well as `data`, `deploy`, `logs`, and `osgi` folders.
+* `Liferay.home` is the folder containing the WildFly server folder. After installing and deploying DXP, the Liferay Home folder contains the WildFly server folder as well as `data`, `deploy`, `logs`, and `osgi` folders.
 
-* `$WILDFLY_HOME` refers to the Wildfly server folder. It is usually named `wildfly-[version]`.
+* `$WILDFLY_HOME` refers to the WildFly server folder. It is usually named `wildfly-[version]`.
 
-Installing Liferay DXP on Wildfly requires the following steps:
+Installing Liferay DXP on WildFly requires the following steps:
 
 1. [Installing dependencies to the application server](#installing-dependencies)
 1. [Configuring the application server for DXP](#configuring-wildfly)
@@ -74,22 +74,22 @@ Installing Liferay DXP on Wildfly requires the following steps:
 1. The `module.xml` has listed all JARs in the `<resource-root>` elements.
 1. The OSGi dependencies have been unzipped in the `osgi` folder located inside the `${Liferay.home}` folder.
 
-### Running DXP on Wildfly in Standalone Mode vs. Domain Mode
+### Running DXP on WildFly in Standalone Mode vs. Domain Mode
 
-Wildfly can be launched in either *standalone* mode or *domain* mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a *domain*. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [Wildfly Admin Guide](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes).
-DXP fully supports Wildfly in standalone mode but not in domain mode.
+WildFly can be launched in either *standalone* mode or *domain* mode. Domain mode allows multiple application server instances to be managed from a single control point. A collection of such application servers is known as a *domain*. For more information on standalone mode vs. domain mode, please refer to the section on this topic in the [WildFly Admin Guide](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes).
+DXP fully supports WildFly in standalone mode but not in domain mode.
 
-Administrators can run DXP on Wildfly in domain mode, but this method is not fully supported. In particular, DXP's auto-deploy does not work with a managed deployment, since Wildfly manages the content of a managed deployment by copying files (exploded or non-exploded). This prevents JSP hooks and Ext plugins from working as intended. For example, JSP hooks don't work on Wildfly running in managed domain mode, since DXP's JSP override mechanism relies on the application server. Since JSP hooks and Ext plugins are deprecated, however, you may not be using them.
+Administrators can run DXP on WildFly in domain mode, but this method is not fully supported. In particular, DXP's auto-deploy does not work with a managed deployment, since WildFly manages the content of a managed deployment by copying files (exploded or non-exploded). This prevents JSP hooks and Ext plugins from working as intended. For example, JSP hooks don't work on WildFly running in managed domain mode, since DXP's JSP override mechanism relies on the application server. Since JSP hooks and Ext plugins are deprecated, however, you may not be using them.
 
 The command line interface is recommended for domain mode deployments.
 
 ```note::
-This does not prevent DXP from running in a clustered environment on multiple Wildfly servers. Administrators can set up a cluster of DXP instances running on Wildfly servers running in standalone mode. Please refer to the .. _DXP clustering articles: ../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md for more information.
+This does not prevent DXP from running in a clustered environment on multiple WildFly servers. Administrators can set up a cluster of DXP instances running on WildFly servers running in standalone mode. Please refer to the .. _DXP clustering articles: ../../../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/clustering-intro.md for more information.
 ```
 
-## Configuring Wildfly
+## Configuring WildFly
 
-Configuring Wildfly to run DXP includes these things:
+Configuring WildFly to run DXP includes these things:
 
 * Setting environment variables
 * Setting properties and descriptors
@@ -219,7 +219,7 @@ On JDK 11, add this JVM argument to display four-digit years.
 
 After installation, tune the system (including these JVM options) for performance.
 
-**Note:** If using the IBM JDK with the Wildfly server, complete the following additional steps:
+**Note:** If using the IBM JDK with the WildFly server, complete the following additional steps:
 
 1. Navigate to the `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` file and insert the following dependency within the `<dependencies>` element:
 
@@ -241,13 +241,13 @@ The added paths resolve issues with deployment exceptions and image uploading pr
 1. The file encoding, user time-zone, preferred protocol stack have been set in the `JAVA_OPTS` in the `standalone.conf.bat` file.
 1. The default amount of memory available has been increased.
 
-The prescribed script modifications are now complete for the DXP installation on Wildfly.
+The prescribed script modifications are now complete for the DXP installation on WildFly.
 
 ## Connect to a Database
 
 The easiest way to handle database configuration is to let DXP manage the data source. Use [Basic Configuration](../../../getting-started/using-the-setup-wizard.md) to configure DXP's built-in data source. If using the built-in data source, skip this section.
 
-If using Wildfly to manage the data source, follow these steps:
+If using WildFly to manage the data source, follow these steps:
 
 1. Add the data source inside the `$WILDFLY_HOME/standalone/configuration/standalone.xml` file's `<datasources>` element:
 
@@ -312,7 +312,7 @@ The data source is now configured and ready to go.
 
 As with database configuration, the easiest way to configure mail is to let DXP handle the mail session. If you want to use DXP's built-in mail session, skip this section and [configure the mail session](../../connecting-to-a-mail-server.md) in the Control Panel.
 
-If you want to manage your mail session with Wildfly, follow these steps:
+If you want to manage your mail session with WildFly, follow these steps:
 
 1. Specify your mail subsystem in the `$WILDFLY_HOME/standalone/configuration/standalone.xml` file like this:
 
@@ -339,10 +339,10 @@ If you want to manage your mail session with Wildfly, follow these steps:
 
 ## Deploying DXP
 
-1. If the folder `$WILDFLY_HOME/standalone/deployments/ROOT.war` already exists in the Wildfly installation, delete all of its subfolders and files. Otherwise, create a new folder called `$WILDFLY_HOME/standalone/deployments/ROOT.war`.
+1. If the folder `$WILDFLY_HOME/standalone/deployments/ROOT.war` already exists in the WildFly installation, delete all of its subfolders and files. Otherwise, create a new folder called `$WILDFLY_HOME/standalone/deployments/ROOT.war`.
 1. Unzip the DXP `.war` file into the `ROOT.war` folder.
-1. To trigger deployment of `ROOT.war`, create an empty file named `ROOT.war.dodeploy` in the `$WILDFLY_HOME/standalone/deployments/` folder. On startup, Wildfly detects this file and deploys it as a web application.
-1. Start the Wildfly application server by navigating to `$WILDFLY_HOME/bin` and running `standalone.bat` or `standalone.sh`.
+1. To trigger deployment of `ROOT.war`, create an empty file named `ROOT.war.dodeploy` in the `$WILDFLY_HOME/standalone/deployments/` folder. On startup, WildFly detects this file and deploys it as a web application.
+1. Start the WildFly application server by navigating to `$WILDFLY_HOME/bin` and running `standalone.bat` or `standalone.sh`.
 
 ```note::
    After deploying DXP, you may see excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust your app server's logging level or log filters to avoid excessive benign log messages.

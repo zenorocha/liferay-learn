@@ -89,7 +89,7 @@ Command | Description
 `init` | Initializes a new Liferay Workspace.
 `samples` | Generates a sample project.
 `server init` | Initializes the Liferay server configured in Liferay Workspace's `gradle.properties` file. Set the `liferay.workspace.bundle.url` property to configure the server to initialize.
-`server start` | Starts the Liferay server in the background. You can add the `-d` flag to start the server in debug mode. Debug mode can be customized by adding the `-p` tag to set the custom remote debugging port (defaults are `8000` for Tomcat and `8787` for Wildfly) and/or the boolean `-s` tag to set whether you want to suspend the started server until the debugger is connected.
+`server start` | Starts the Liferay server in the background. You can add the `-d` flag to start the server in debug mode. Debug mode can be customized by adding the `-p` tag to set the custom remote debugging port (defaults are `8000` for Tomcat and `8787` for WildFly) and/or the boolean `-s` tag to set whether you want to suspend the started server until the debugger is connected.
 `server stop` | Stops the Liferay server.
 `server run` | Starts the Liferay server in the foreground. See the `server start` property for more information.
 `sh` | Connects to Liferay DXP, executes a Gogo command, and returns the output. For example, `blade sh lb` lists all bundles using the Gogo shell.

@@ -1,4 +1,4 @@
-# Installing DXP on Tomcat
+# Installing on Tomcat
 
 ```important::
    `Using a Tomcat bundle <../installing-a-liferay-tomcat-bundle.md>`_ or `Docker image <../../../getting-started/starting-with-a-docker-image.md>`_ is the fastest way to get started using Liferay DXP. This article is for users who want to have full control over their Tomcat application server's configuration.
