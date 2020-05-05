@@ -4,7 +4,7 @@ In the Roles administrative application appears a list of all the Roles in Lifer
 
 ![Roles Admin is the hub of permissions management in Liferay DXP.](./default-roles-reference/images/01.png)
 
-## Pre-Configured Regular Roles
+## Regular Roles
 
 **Guest:** The Guest Role is assigned to unauthenticated visitors and has the lowest-level permissions. 
 
@@ -12,9 +12,9 @@ In the Roles administrative application appears a list of all the Roles in Lifer
 
 **Power User:** The Power User Role grants more permissions than the User Role. It's an distinguishes regular Users from more privileged Users. For example, you can define it so that only Power Users have personal Sites.
 
-**Administrator:** The administrator Role grants permission to manage the entire installation, including global settings and individual Sites, Organizations, and Users.
+**Administrator:** The administrator Role grants permission to manage the entire installation, including global settings and individual Sites, Organizations, and Users. The Administrator's permissions are hard-coded and cannot be overridden.
 
-## Pre-Configured Site Roles
+## Site Roles
 
 **Site Member:** The Site Member Role grants basic privileges within a Site, such as permission to visit the Site's private pages.
 
@@ -22,7 +22,7 @@ In the Roles administrative application appears a list of all the Roles in Lifer
 
 **Site Owner:** The Site Owner Role is the same as the Site Administrator Role except that it grants permission to manage *all* aspects of a Site, including permission to delete the membership of or remove Roles from Site Administrators or other Site Owners. They *can* assign other Users as Site Administrators or Site Owners.
 
-## Pre-Configured Organization Roles
+## Organization Roles
 
 **Organization User:** The Organization User Role grants basic privileges within an Organization. If the Organization has an attached Site, the Organization User Role implicitly grants the Site member Role within the attached Site.
 
@@ -32,7 +32,7 @@ In the Roles administrative application appears a list of all the Roles in Lifer
 
 **Account Manager:** The Account Manager Role is a unique Organization Role that allows any User with the Role and membership in an Organization to administer _all_ accounts associated to the Organization. It grants permission to manage *all* aspects of the Accounts it has access to, including permission to delete the membership of or remove Roles from Account Administrators. Account Managers *can* assign other Users as Account Administrators or Account Managers.
 
-## Pre-Configured Asset Library Roles
+## Asset Library Roles
 
 **Asset Library Member:** The Asset Library Member Role grants basic privileges within an Asset Library, such as permission to visit the Asset Library's private pages.
 
@@ -41,7 +41,7 @@ In the Roles administrative application appears a list of all the Roles in Lifer
 **Asset Library Owner:** The Asset Library Owner Role is the same as the Asset Library Administrator Role except that it grants permission to manage *all* aspects of a Asset Library, including permission to delete the membership of or remove Roles from Asset Library Administrators or other Asset Library Owners. They *can* assign other Users as Asset Library Administrators or Asset Library Owners.
 
 
-## Pre-Configured Account Roles
+## Account Roles
 
 **Account Member:** The Account Member Role grants basic privileges within a Account, such as permission to visit the Account's private pages.
 

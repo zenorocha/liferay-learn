@@ -76,14 +76,14 @@ Site application permissions affect the application as a whole, throughout the s
 
 **User:** By default, Users inherit the User Role, and can manage their User accounts via the permissions belonging to the User category.
 
-These permissions can be used to define a new Role for Users, to provide less permissions on the Users' accounts than the default User Role. You can then use the [Default Associations](./assigning-users-to-roles.md#default-associations) configuration to replace the original User Role with your more restrictive Role (perhaps named _Restricted User_ or _Custom User_ to differentiate it).
+These permissions can be used to define a new Role for Users, to provide less permissions on the Users' accounts than the default User Role. You can then use the [Default Associations](./assigning-users-to-roles.md#default-user-associations) configuration to replace the original User Role with your more restrictive Role (perhaps named _Restricted User_ or _Custom User_ to differentiate it).
 
 ----
 
 Don't limit yourself to just one category: when defining a custom Role you're able to mix and match permissions from all of these categories.
 
 ```tip::
-   You can change the scope of a permission: click the *Change* link in the _Scope_ column of the permissions table, then choose a new scope. Click *Save* and you'll see a list of all permissions currently granted to the Role, and the scope they're for. From the Summary view, you can add more permissions or go back to the Role Application default view by clicking on the *Back* (![Back](../../images/icon-back.png)) icon.
+   You can change the scope of a permission: click the *Change* link in the _Scope_ column of the permissions table, then choose a new scope. Click *Save* and you'll see a list of all permissions currently granted to the Role, and the scope they're for. From the Summary view, you can add more permissions or go back to the Role Application default view by clicking on the *Back* (<) icon.
 ```
 
 ![You can fine-tune Role permissions by changing the scope of the permissions.](./defining-role-permissions/images/03.png)
