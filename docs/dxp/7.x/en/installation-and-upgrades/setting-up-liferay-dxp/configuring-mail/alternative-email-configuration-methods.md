@@ -54,5 +54,5 @@ The mail server has been connected to DXP and ready to send notifications.
 ## Additional Information
 
 * [Configuring a Tomcat-Managed Mail Session](../../installing-liferay/installing-liferay-on-an-application-server/installing-liferay-on-tomcat.md#mail-configuration)
-* [Configuring a WebSphere-Managed Mail Session](../../installing-liferay/installing-liferay-on-an-application-server/installing-dxp-on-websphere.md#mail-configuration)
+* [Configuring a WebSphere-Managed Mail Session](../../installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md#mail-configuration)
 * [Apache Tomcat 9 JavaMail Sessions](https://tomcat.apache.org/tomcat-9.0-doc/jndi-resources-howto.html#JavaMail_Sessions)

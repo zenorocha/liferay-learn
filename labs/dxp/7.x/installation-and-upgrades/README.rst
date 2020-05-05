@@ -19,7 +19,7 @@ Installing Liferay on an Application Server
 * Installing Liferay on WildFly
 * Installing Liferay on JBoss
 * Installing Liferay on WebLogic
--  :doc:`/installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-dxp-on-websphere`
+-  :doc:`/installation-and-upgrades/installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere`
 
 Setting Up Liferay DXP
 ----------------------
