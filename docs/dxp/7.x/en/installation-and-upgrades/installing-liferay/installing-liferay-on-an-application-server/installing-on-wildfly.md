@@ -300,7 +300,7 @@ If using WildFly to manage the data source, follow these steps:
     </subsystem>
     ```
 
-1. In a [`portal-ext.properties`](../../14-reference/03-portal-properties.md) file in the Liferay Home folder, specify the data source:
+1. In a [`portal-ext.properties`](../../reference/portal-properties.md) file in the Liferay Home folder, specify the data source:
 
     ```properties
     jdbc.default.jndi.name=java:jboss/datasources/ExampleDS
