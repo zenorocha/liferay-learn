@@ -82,7 +82,7 @@ If you're connecting to a proprietary database, like Oracle or DB2, download the
 
 ## Configuring a Data Source
 
-The best option for most people is to set up a built-in data source connection during [DXP startup](../installing-liferay/running-liferay-dxp-for-the-first-time.md) using the Setup Wizard.
+The best option for most people is to set up a built-in data source connection during [DXP startup](../installing-liferay/running-liferay-for-the-first-time.md) using the Setup Wizard.
 
 ![The Setup Wizard's database section lets you configure DXP's built-in data source.](./database-configurations/images/01.png)
 

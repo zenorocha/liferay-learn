@@ -4,10 +4,10 @@ Installation and Upgrades
 Installing Liferay DXP
 ----------------------
 
--  :doc:`/installation-and-upgrades/hosting-liferay-dxp`
--  :doc:`/installation-and-upgrades/installing-liferay/installing-a-liferay-dxp-tomcat-bundle`
+-  :doc:`/installation-and-upgrades/hosting-liferay`
+-  :doc:`/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle`
 -  :doc:`/installation-and-upgrades/installing-liferay/configuring-a-database`
--  :doc:`/installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time`
+-  :doc:`/installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time`
 * [Using Liferay on DXP Cloud](../../../../dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`

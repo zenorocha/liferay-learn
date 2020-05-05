@@ -1,6 +1,6 @@
-# Running Liferay DXP for the First Time
+# Running Liferay for the First Time
 
-Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#installing) and [configured a database](./configuring-a-database.md) for it, Liferay DXP is ready to run.
+Once you've [installed Liferay DXP](./installing-a-liferay-tomcat-bundle.md#installing) and [configured a database](./configuring-a-database.md) for it, Liferay DXP is ready to run.
 
 ## Start Liferay DXP
 
@@ -16,7 +16,7 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
 
     The Setup Wizard appears in your web browser at `http://localhost:8080`.
 
-    ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-dxp-for-the-first-time/images/01.png)
+    ![On completing startup, DXP launches a web browser that displays the Basic Configuration page.](./running-liferay-for-the-first-time/images/01.png)
 
 2. Set your portal's *Name*, *Default Language* and *Time Zone*.
 
@@ -28,7 +28,7 @@ Once you've [installed Liferay DXP](./installing-a-liferay-dxp-tomcat-bundle.md#
        DO NOT use HSQL in production-grade Liferay DXP instances.
     ```
 
-    ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-dxp-for-the-first-time/images/02.png)
+    ![The Setup Wizard's database form lets you specify the database you created for DXP.](./running-liferay-for-the-first-time/images/02.png)
 
 5. Specify your database.
 
@@ -67,7 +67,7 @@ Restart your server using the shutdown and startup scripts bundled with your app
 
 DXP initializes using the database and portal configuration values you specified in the Setup Wizard. The DXP home page appears at `http://localhost:8080`.
 
-![Once you've configured DXP and restarted the server, the DXP home page appears and is ready for you to sign in!](./running-liferay-dxp-for-the-first-time/images/03.png)
+![Once you've configured DXP and restarted the server, the DXP home page appears and is ready for you to sign in!](./running-liferay-for-the-first-time/images/03.png)
 
 Congratulations! You have launched your on premises Liferay DXP instance.
 

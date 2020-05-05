@@ -15,11 +15,11 @@ You can use either of the following methods to install a new app to your instanc
 
 Follow these steps to install an app via the file system with a server restart:
 
-1. [Stop your DXP server](../../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#shutdown).
+1. [Stop your DXP server](../../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#shutdown).
 
 1. Copy your app file (LPKG, module JAR, or plugin WAR) to your `[Liferay Home]/deploy` folder. The [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) folder is typically the app server's parent folder. DXP deploys apps from the `[Liferay Home]/deploy` folder.
 
-1. [Start your DXP server](../../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup).
+1. [Start your DXP server](../../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#startup).
 
 The app file is copied from the `[Liferay Home]/deploy` folder to one an appropriate subfolder under `[Liferay Home]/osgi`:
 

@@ -2,14 +2,14 @@ Installation and Upgrades
 ==================================
 
 -  :doc:`../getting-started/starting-with-a-docker-image`
--  :doc:`/installation-and-upgrades/hosting-liferay-dxp`
+-  :doc:`/installation-and-upgrades/hosting-liferay`
 
 Installing Liferay on Premises
 ------------------------------
 
--  :doc:`/installation-and-upgrades/installing-liferay/installing-a-liferay-dxp-tomcat-bundle`
+-  :doc:`/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle`
 -  :doc:`/installation-and-upgrades/installing-liferay/configuring-a-database`
--  :doc:`/installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time`
+-  :doc:`/installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time`
 -  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`

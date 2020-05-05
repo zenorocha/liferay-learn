@@ -1,14 +1,14 @@
 # Installing DXP on Tomcat
 
 ```important::
-   `Using a Tomcat bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ or `Docker image <../../../getting-started/starting-with-a-docker-image.md>`_ is the fastest way to get started using Liferay DXP. This article is for users who want to have full control over their Tomcat application server's configuration.
+   `Using a Tomcat bundle <../installing-a-liferay-tomcat-bundle.md>`_ or `Docker image <../../../getting-started/starting-with-a-docker-image.md>`_ is the fastest way to get started using Liferay DXP. This article is for users who want to have full control over their Tomcat application server's configuration.
 
-   Review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-dxp-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles before continuing.
+   Review the `Installing a Liferay DXP Tomcat Bundle <../installing-a-liferay-tomcat-bundle.md>`_ and `Configuring a Database <../configuring-a-database.md>`_ articles before continuing.
 ```
 
 Installing Liferay DXP on Tomcat requires deploying the DXP WAR file, deploying DXP's dependencies, and configuring Tomcat for DXP.
 
-The simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../installing-a-liferay-dxp-tomcat-bundle.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. You may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
+The simplest and easiest way to accomplish this is by [downloading the Liferay DXP Tomcat](../installing-a-liferay-tomcat-bundle.md) bundle that is created by Liferay and copying the dependencies, scripts, and `ROOT.xml` provided there. You may also opt to download the dependencies and to create/modify their Tomcat scripts and configurations by hand.
 
 In addition to copying dependencies, scripts, and configurations from the Liferay Tomcat bundle files (or manually downloading and configuring), you must also download these files from the [Help Center](https://customer.liferay.com/downloads) (subscription) or from [Liferay Community Downloads](https://www.liferay.com/downloads-community):
 

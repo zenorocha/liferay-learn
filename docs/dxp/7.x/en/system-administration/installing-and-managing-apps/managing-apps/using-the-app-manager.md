@@ -30,7 +30,7 @@ The component/portlet level is the farthest you can go without getting into the 
 The App Manager is a convenient way to install a [downloaded app](../installing-apps/downloading-apps.md) from your local machine to a local or remote DXP server.
 
 ```important::
-   For installing and uninstalling apps in production-grade environments, install apps `using server startup <../../../installation-and-upgrades/installing-liferay/running-liferay-dxp-for-the-first-time.md#startup>`_ instead of using the App Manager.
+   For installing and uninstalling apps in production-grade environments, install apps `using server startup <../../../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md#startup>`_ instead of using the App Manager.
 ```
 
 Here are steps for using the App Manager to install an app:

@@ -1,0 +1,3 @@
+# Hosting Liferay
+
+Coming soon!

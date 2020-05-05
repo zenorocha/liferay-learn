@@ -1,4 +1,4 @@
-# Installing a Liferay DXP Tomcat Bundle
+# Installing a Liferay-Tomcat Bundle
 
 The Tomcat Bundle includes the Apache Tomcat application server with Liferay DXP pre-deployed. It's the easiest, fastest way to install Liferay DXP on premises.
 

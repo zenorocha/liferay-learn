@@ -40,4 +40,4 @@ Congratulations! You configured a database for Liferay DXP.
 
 ## Next Steps
 
-* [Running Liferay DXP for the First Time](./running-liferay-dxp-for-the-first-time.md)
+* [Running Liferay for the First Time](./running-liferay-for-the-first-time.md)
