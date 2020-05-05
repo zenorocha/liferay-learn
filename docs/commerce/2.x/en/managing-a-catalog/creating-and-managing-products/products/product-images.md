@@ -93,4 +93,4 @@ The product image has been updated with the respective Product Option. Repeat th
 
 ## Additional Information
 
-To configure a default placeholder image for products that do not have an image uploaded, see Setting a Default Catalog Image.
+To configure a default placeholder image for products that do not have an image uploaded, see [Configuring a Product Placeholder Image](../../catalogs/configuring-a-product-placeholder-image.md).
