@@ -1,14 +1,6 @@
 # Example: Creating a DXP Cluster
 
-<!--
-
-# Example: Creating a Simple(?) Cluster
-
-Maybe we should remove DXP from the article title?
-
--->
-
-An easy way to learn DXP clustering is to set up a cluster environment on a single machine using [Docker containers](https://docs.docker.com/get-started/overview/). Here you'll prepare each required server and each DXP app server node in their own containers. The containers will refer to each other by container name over a Docker bridge network. This is a fast way to set up a DXP cluster development environment.
+An easy way to learn DXP clustering is to set up a two node DXP cluster environment on a single machine using [Docker containers](https://docs.docker.com/get-started/overview/). Here you'll prepare each required server and two DXP app server nodes in their own containers. The containers will refer to each other by container name over a Docker bridge network. This is a fast way to set up a DXP cluster development environment.
 
 Here are the server's you'll create:
 
@@ -111,7 +103,7 @@ Your database server is ready for DXP.
 
 A DXP cluster requires a search engine server that's accessible to all of the app server nodes. See [Configuring a Search Engine in a Cluster](./clustering-search.md) for more information.
 
-Create a search engine server container based on a [Elasticsearch Docker image](https://hub.docker.com/_/elasticsearch):
+Create a search engine server container based on an [Elasticsearch Docker image](https://hub.docker.com/_/elasticsearch):
 
 1. Download the Elasticsearch Docker image that's compatible with your DXP version.
 
@@ -135,7 +127,7 @@ Create a search engine server container based on a [Elasticsearch Docker image](
 
     The `docker run` command creates an Elasticsearch Docker container that publishes on ports `9200` and `9300`, and has an Elasticsearch cluster called `LiferayElasticsearchCluster`. `512m` of initial memory is allocated to the server. The `-v ...` option maps the container's data folder to the host machine folder you created.
 
-1. In a shell on the container, install the required Elasticsearch plugins. <!-- these plugins are all required?  -->
+1. In a shell on the container, install the required Elasticsearch plugins.
 
     Connect to the Elasticsearch container terminal.
 
@@ -200,13 +192,13 @@ One way to organize your node configurations is to create a folder for each node
 mkdir dxp-1 dxp-2
 ```
 
-You're ready to configure the DXP server nodes. <!-- Just occurred to me that we never explicitly said that this example is creating a 2-node DXP cluster. Can we add that to the intro paragraph? -->
+You're ready to configure the DXP server nodes.
 
 ### Configure the Search Engine Connection
 
 1. Create a search engine configuration file:
 
-    Create a `/osgi/config/` directory.
+    Create an `/osgi/config/` folder.
 
     ```bash
     mkdir -p dxp-1/files/osgi/configs
@@ -441,10 +433,10 @@ The OSGi container mapping is for using Gogo shell on each container. The volume
 
 It's time to start the DXP cluster nodes:
 
-1. Start `dxp-1`: <!-- there's a `-p TODO` part in the command, is that intentional? -->
+1. Start `dxp-1`:
 
     ```bash
-    docker run -it --name dxp-1 --network my-bridge -p 8009:8009 -p 8080:8080 -p 11311:11311 -p TODO -v ${PWD}/dxp-1/files:/mnt/liferay liferay/portal:7.3.1-ga2
+    docker run -it --name dxp-1 --network my-bridge -p 8009:8009 -p 8080:8080 -p 11311:11311 -v ${PWD}/dxp-1/files:/mnt/liferay liferay/portal:7.3.1-ga2
     ```
 
     As DXP finishes stating up, it prints JGroups cluster messages like these to the console:
@@ -497,7 +489,7 @@ DXP is available at <http://localhost>. The web server directs your request to t
 
 Test your cluster to make sure they show the same content changes and that DXP stays available when there is at least one cluster node running.
 
-Start by adding content (e.g., the Language Selector widget) to your site at <http://localhost>. 
+Start by adding content (e.g., the Language Selector widget) to your site at <http://localhost>.
 
 Note the node's address and port (`Node: [address]:[port]`). Since the node is running in a Docker container the container ID is displayed instead of an IP address. See the figure below as an example.
 
