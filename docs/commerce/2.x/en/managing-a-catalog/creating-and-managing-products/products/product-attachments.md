@@ -1,6 +1,8 @@
 # Product Attachments
 
-Catalog managers can upload a downloadable document as an attachment for a product. A product attachment often provides additional information that is not already in the product's description or specifications. You can upload multiple attachments, especially if there are more than one SKU (product variant).
+Users can upload attachments to provide supplemental information about a product available. Multiple attachments can be added to a single product; this is particularly useful for products with multiple variants or SKUs.
+
+## Adding a Product Attachment
 
 To add a product attachment:
 
@@ -16,7 +18,7 @@ To add a product attachment:
 1. Enter the following:
 
     * **Title**: Product Attachment 1
-    * **Priority**: 1.0
+    * **Priority**: 1.0 <!-- What does this do? -->
 
 1. Select any applicable product variant (SKU).
 
