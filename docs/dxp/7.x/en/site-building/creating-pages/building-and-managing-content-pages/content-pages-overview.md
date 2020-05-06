@@ -13,7 +13,7 @@ The Content Page sidebar contains these elements and tools for Content Pages:
 * [Look and Feel](#look-and-feel)
 * [Comments](#comments)
 
-Liferay Portal ships with several Layouts, Fragments, and Widgets that you can use to build pages. Developers can [create their own Fragments](./README.md#dev-guide) to add to these.
+Liferay Portal ships with several Layouts, Fragments, and Widgets that you can use to build pages. Developers can [create their own Fragments](../developer-guide/developing-page-fragments/developing-fragments-intro.md) to add to these.
 
 ## Fragments
 
@@ -23,7 +23,7 @@ Liferay Portal ships with several Layouts, Fragments, and Widgets that you can u
 
 > Available: Liferay 7.3+; previously divided between *Sections* and *Section Builder* panels.
 
-You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./building-content-pages.md#editing-text), [images](./building-content-pages.md#editing-an-image), or [links](./building-content-pages.md#editing-a-hyperlink), that you can replace with custom content. You can also [map these elements](./building-content-pages.md#mapping-content) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](./README.md#using-fragments).
+You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./building-content-pages.md#editing-text), [images](./building-content-pages.md#editing-an-image), or [links](./building-content-pages.md#editing-a-hyperlink), that you can replace with custom content. You can also [map these elements](./building-content-pages.md#mapping-content) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](../../developer-guide/developing-page-fragments/fragment-specific-tags-reference.md).
 
 ### Layout Elements
 
@@ -123,5 +123,5 @@ As of Liferay Portal CE 7.3 GA2, [Workflow](../../../process-automation/workflow
 ## Related Information
 
 * [Building Content Pages](./building-content-pages.md)
-* [Page Fragments](./README.md#using-fragments)
+* [Page Fragments](../../displaying-content/using-fragments/page-fragments-intro.md)
 * [Using Fragment Comments](./using-fragment-comments.md)

@@ -186,6 +186,6 @@ When you create Content Pages, you can create different **Experiences** for user
 
 ## Related Information
 
-* Developing a Page Fragment
+* [Developing a Page Fragment](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)
 * [Using Master Pages](../defining-headers-and-footers/master-page-templates.md)
 * [Changing Content Pages Look and Feel](./content-pages-overview.md#look-and-feel)

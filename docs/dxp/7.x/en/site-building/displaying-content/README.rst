@@ -15,7 +15,7 @@ Coming soon!
 
 Using Fragments
 ---------------
-Coming soon!
+* [Using Page Fragments](./using-fragments/using-page-fragments.md)
 
 Configuring Content Recommendations
 -----------------------------------
