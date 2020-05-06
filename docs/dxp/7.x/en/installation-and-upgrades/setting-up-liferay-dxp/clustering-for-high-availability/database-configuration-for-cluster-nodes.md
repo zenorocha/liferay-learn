@@ -1,18 +1,18 @@
 # Database Configuration for Cluster Nodes
 
-Each node should have a data source that points to one Liferay DXP database (or database cluster) that all the nodes share. This means that DXP cannot (and should not) use the embedded HSQL database that is shipped with the bundles. And, of course, the database server should be set up on a separate system from the DXP server.
+Each DXP cluster node must share the same Liferay DXP database (or database cluster). This means that DXP cannot (and should not) use the embedded HSQL database that is shipped with DXP bundles. And, of course, the database server should be set up on a server separate from the DXP server.
 
 ## Database Replication
-<!-- Does _everyone_ who uses DXP in a cluster need to setup a database cluster/replication? Why or why not? In what circumstances? Right now it reads like this is required for everyone. -->
-Database clusters support high availability and improve DXP performance. Database clustering requires databases to stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All supported databases support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
+
+Using a database cluster improves fault tolerance and DXP performance. Database cluster instances must be stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All supported databases support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
 
 ## Read-Writer Database Configuration
 
-For even better performance, you can also use a read-writer database configuration. Instead of using the same data source for read and read-write operations, this strategy use a separate data source for each operation type. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source.
+For even better performance, you can also use a read-writer database configuration. Instead of using the same data source for read and read-write operations, this strategy uses a separate data source for each operation type. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source.
 
-<!-- diagram very much needed here. -->
+![Read-Writer Database Interaction](./database-configuration-for-cluster-nodes/images/01.png)
 
-Connections to separate read and write [data sources](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../reference/portal-properties.md) (e.g., in a [`portal-ext.properties` file](../../reference/portal-properties.md)), as explained in the following sections.
+Connections to separate read and read-write [data sources](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#JDBC) are configured using JDBC or JNDI [Portal Properties](../../reference/portal-properties.md) (e.g., in a [`portal-ext.properties` file](../../reference/portal-properties.md)), as explained in the following sections. The data sources should use separate instances of the DXP database, where the read-write database instance is replicated to the read database instance.
 
 ### JDBC
 
