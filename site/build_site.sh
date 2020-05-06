@@ -61,8 +61,8 @@ function parse_args_generate_sphinx_input {
         # Use loops to populate the input dir with all products and versions
             echo "Building All Products and Versions"
             # must use the loops to find everything
-            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
-                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
+            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
                     echo "Currently Building $product_name $version_name"
                     populate_product_input_dir
                 done
@@ -74,8 +74,8 @@ function parse_args_generate_sphinx_input {
             git clean -dfx .
             popd
             echo "Building All Products and Versions for Production"
-            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
-                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
+            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
                     echo "Currently Building: $product_name $version_name"
                     populate_product_input_dir
                 done
@@ -109,7 +109,7 @@ function populate_product_input_dir {
 }
 
 function generate_static_html {
-	for dir_name in `find build/input -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
+	for dir_name in `find build/input -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`
 	do
 
 		#
