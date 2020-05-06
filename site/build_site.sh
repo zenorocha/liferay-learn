@@ -34,33 +34,33 @@ function parse_args_generate_sphinx_input {
     # deal with each argument we want to accept
     case $product_name in
         # For each specific product, set the default version name if none is provided, then populate the input dir with only that product/ver
-        "commerce")      
+        "commerce")
             if [[ $version_name == "default" ]]; then
               version_name=${commerce_default_version}
             fi
             echo "Building $product_name $version_name"
-            populate_product_input_dir 
+            populate_product_input_dir
         ;;
         "dxp")
             if [[ $version_name == "default" ]]; then
               version_name=${dxp_default_version}
             fi
             echo "Building $product_name $version_name"
-            populate_product_input_dir 
-        ;; 
+            populate_product_input_dir
+        ;;
         "dxp-cloud")
             if [[ $version_name == "default" ]]; then
               version_name=${dxp_cloud_default_version}
             fi
             echo "Building $product_name $version_name"
-            populate_product_input_dir 
+            populate_product_input_dir
         ;;
-        "all")      
+        "all")
         # The for loops are the same for prod and all, copied form the original version of the script. I could combine them into one case and just check for "prod"
         # to run the git clean and the upload_to_server; would be shorter but maybe messier
-        # Use loops to populate the input dir with all products and versions 
+        # Use loops to populate the input dir with all products and versions
             echo "Building All Products and Versions"
-            # must use the loops to find everything 
+            # must use the loops to find everything
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`; do
                     echo "Currently Building $product_name $version_name"
@@ -85,7 +85,7 @@ function parse_args_generate_sphinx_input {
         *)
         #handle invalid args: because I'm passing defaults (all default), this only gets called if an unhandled case gets passed
             echo "You must enter at least one argument: product_name"
-            echo "Product name options: all | prod | commerce | dxp | dxp-cloud" 
+            echo "Product name options: all | prod | commerce | dxp | dxp-cloud"
             exit 1
         ;;
     esac
