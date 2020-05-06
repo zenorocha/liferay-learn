@@ -12,7 +12,7 @@ If your network configuration or the geographical distance between cluster nodes
 
 Use the following steps to configure Unicast:
 
-1. Add a parameter to your app server's JVM on each node:
+1. Add a JGroups bind address parameter to your app server's JVM on each node:
 
     ```bash
     -Djgroups.bind_addr=[node_ip_address]
@@ -28,7 +28,8 @@ Use the following steps to configure Unicast:
     * `Rackspace_Ping`
 
     If you aren't sure which one to choose, use TCPPing. The rest of these steps use TCPPing. See [Alternative Discovery Protocols](#alternative-discovery-protocols) for more information on the others.
-<!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. -->
+    <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. -->
+
 1. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
 
     ```
@@ -53,7 +54,11 @@ Use the following steps to configure Unicast:
     **Regarding Initial Hosts:**
 
     * Make sure the initial hosts value accounts for all your nodes. If `initial_hosts` is not specified in a TCP XML file or in a JVM argument, `localhost` is the initial host.
-    * An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this: `-Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]`.
+    * An alternative to specifying initial hosts in a TCP XML file is to specify them to your app server using a JVM argument like this:
+
+        ```
+        -Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]
+        ```
 
 1. Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. On the node with IP address `192.168.224.155`, for example, configure TCPPing like this:
 
@@ -64,7 +69,7 @@ Use the following steps to configure Unicast:
         port_range="0"/>
     ```
 
-1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in each node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -72,13 +77,13 @@ Use the following steps to configure Unicast:
     cluster.link.channel.properties.transport.0=/jgroups/tcp.xml
     ```
 
-    The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the parameter `external_addr` must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.
+The JGroups configuration demonstrated above is typically all that Unicast over TCP requires. However, in a very specific case, if *(and only if)* cluster nodes are deployed across multiple networks, then the `external_addr` TCP transport parameter must be set on each host to the external (public IP) address of the firewall. This kind of configuration is usually only necessary when nodes are geographically separated. By setting this, clustered nodes deployed to separate networks (e.g. separated by different firewalls) can communicate together. This configuration may be flagged in security audits of your system. See [JGroups documentation](http://www.jgroups.org/manual4/index.html#_transport_protocols) for more information.
 
-    ```note::
-       The ``singleton_name`` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
-    ```
+```note::
+   The ``singleton_name`` TCP attribute was deprecated in JGroups v4.0.0 and has therefore been removed since Liferay DXP 7.2 SP1 and Liferay Portal CE GA2 which use JGroups v 4.1.1-Final.
+```
 
-You're now set up for Unicast over TCP clustering! Repeat either `TCPPing` process for each node you want to add to the cluster. <!-- "Repeat 'either' TCPPing process? I only see one?  -->
+You're now set up for Unicast over TCP clustering!
 
 ## Alternative Discovery Protocols
 
@@ -146,55 +151,54 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
 
 1. Modify each `tcp-*.xml` file's TCP and TCPPing elements to account for each node's IP address and bind port.
 
-    If you're vertically clustering (i.e., you have multiple servers running on the same physical or virtual system), every channel must use a unique unused bind port for discovery communication. In each `tcp-*.xml` file, assign the TCP tag's `bind_port` attribute to a unique, unused port.
+If you're vertically clustering (i.e., you have multiple servers running on the same physical or virtual system), every channel must use a unique unused bind port for discovery communication. In each `tcp-*.xml` file, assign the TCP tag's `bind_port` attribute to a unique, unused port.
 
-    For example, your first two nodes might assign these bind ports:
+For example, your first two nodes might assign these bind ports.
 
-    <!-- Unfortunately Sphinx does not play nice with this table and it messes up the rendering of the text below it.
-    | Node   | Properties File     | Port   |
-    | :----- | :------------------ | :----- |
-    | Node 1 | `tcp-control.xml`   | `7800` |
-    | Node 1 | `tcp-transport.xml` | `7801` |
-    | Node 2 | `tcp-control.xml`   | `7802` |
-    | Node 2 | `tcp-transport.xml` | `7803` | -->
+| Node   | Properties File     | Port   |
+| :----- | :------------------ | :----- |
+| Node 1 | `tcp-control.xml`   | `7800` |
+| Node 1 | `tcp-transport.xml` | `7801` |
+| Node 2 | `tcp-control.xml`   | `7802` |
+| Node 2 | `tcp-transport.xml` | `7803` |
 
-    Here are example TCP and TCPPing elements using the bind ports on nodes running on the same system (i.e., same IP address):
+Here are example TCP and TCPPing elements using the bind ports on nodes running on the same system (i.e., same IP address):
 
-    **Node 1 `tcp-control.xml`**
+**Node 1 `tcp-control.xml`**
 
-    ```xml
-    <TCP bind_port="7800"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
-        port_range="0"/>
-    ```
+```xml
+<TCP bind_port="7800"/>
+<TCPPING async_discovery="true"
+    initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
+    port_range="0"/>
+```
 
-    **Node 1 `tcp-transport.xml`**
+**Node 1 `tcp-transport.xml`**
 
-    ```xml
-    <TCP bind_port="7801"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
-        port_range="0"/>
-    ```
+```xml
+<TCP bind_port="7801"/>
+<TCPPING async_discovery="true"
+    initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
+    port_range="0"/>
+```
 
-    **Node 2 `tcp-control.xml`**
+**Node 2 `tcp-control.xml`**
 
-    ```xml
-    <TCP bind_port="7802"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
-        port_range="0"/>
-    ```
+```xml
+<TCP bind_port="7802"/>
+<TCPPING async_discovery="true"
+    initial_hosts="192.168.224.154[7800],192.168.224.154[7802]"
+    port_range="0"/>
+```
 
-    **Node 2 `tcp-transport.xml`**
+**Node 2 `tcp-transport.xml`**
 
-    ```xml
-    <TCP bind_port="7803"/>
-    <TCPPING async_discovery="true"
-        initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
-        port_range="0"/>
-    ```
+```xml
+<TCP bind_port="7803"/>
+<TCPPING async_discovery="true"
+    initial_hosts="192.168.224.154[7801],192.168.224.154[7803]"
+    port_range="0"/>
+```
 
 If you have added entities that can be cached or you want to tune the cache configuration for your system, you can do so using a module.
 
