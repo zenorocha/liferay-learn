@@ -1,4 +1,4 @@
-# Example: Creating a DXP Cluster
+# Example: Creating a Simple DXP Cluster
 
 An easy way to learn DXP clustering is to set up a two node DXP cluster environment on a single machine using [Docker containers](https://docs.docker.com/get-started/overview/). Here you'll prepare each required server and two DXP app server nodes in their own containers. The containers will refer to each other by container name over a Docker bridge network. This is a fast way to set up a DXP cluster development environment.
 
