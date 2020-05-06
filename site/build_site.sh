@@ -63,8 +63,10 @@ function parse_args_generate_sphinx_input {
             # must use the loops to find everything
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-                    echo "Currently Building $product_name $version_name"
-                    populate_product_input_dir
+					for language in `find ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+							echo "Currently Building $product_name $version_name $language"
+							populate_product_input_dir
+					done
                 done
             done
         ;;
@@ -94,85 +96,101 @@ function parse_args_generate_sphinx_input {
 	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
 }
 
+# Sets up an input directory for sphinx-build to generate separate sites for each of the product versions
 function populate_product_input_dir {
+	input_path="build/input/docs/${product_name}/${version_name}/${language}"
 
-      mkdir -p build/input/${product_name}-${version_name}/docs
+	mkdir -p ${input_path}
 
-			cp -R docs/* build/input/${product_name}-${version_name}
+	cp -R docs/* ${input_path}
 
-			cp -R ../docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}
-
-			if [ ! -f "build/input/${product_name}-${version_name}/contents.rst" ]
-			then
-				mv build/input/${product_name}-${version_name}/contents.rst build/input/${product_name}-${version_name}
-			fi
+	cp -R ../docs/${product_name}/${version_name}/${language}/* ${input_path}
 }
 
-function generate_static_html {
-	for dir_name in `find build/input -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`
-	do
+# Generates the static HTML for the homepage
+function generate_homepage_static_html {
+	echo "Generating static html for homepage"
 
-		#
-		# Use Sphinx to generate static HTML.
-		#
+	input_path="build/input/homepage"
+	output_path="build/output/homepage"
 
-		sphinx-build -M html build/input/${dir_name} build/output/${dir_name}
+	generate_static_html
+}
 
-		mv build/output/${dir_name}/html/* build/output/${dir_name}
+# Loops through the different directories in docs and builds each one as a spearate docs site
+function generate_docs_static_html {
+	for product_name in `find build/input/docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+		for version_name in `find build/input/docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+			for language in `find build/input/docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+				echo "Generating static html for $product_name $version_name $language"
 
-		#
-		# Fix broken links.
-		#
+				input_path="build/input/docs/${product_name}/${version_name}/${language}"
+				output_path="build/output/${product_name}/${version_name}/${language}"
 
-		for html_file_name in `find build/output/${dir_name} -name *.html -type f`
-		do
-			sed -i 's/.md"/.html"/g' ${html_file_name}
-			sed -i 's/.md#/.html#/g' ${html_file_name}
-			sed -i 's/README.html"/index.html"/g' ${html_file_name}
-			sed -i 's/README.html#/index.html#/g' ${html_file_name}
-		done
-
-		#
-		# Rename README.html to index.html.
-		#
-
-		for readme_file_name in `find build/output/${dir_name} -name *README.html -type f`
-		do
-			mv ${readme_file_name} $(dirname ${readme_file_name})/index.html
-		done
-
-		#
-		# Update search references for README.html to index.html.
-		#
-
-		sed -i 's/README"/index"/g' build/output/${dir_name}/searchindex.js
-
-		#
-		# Make ZIP files.
-		#
-
-		for zip_dir_name in `find build/input/${dir_name} -name *.zip -type d`
-		do
-			pushd ${zip_dir_name}
-
-			local zip_file_name=$(basename ${zip_dir_name})
-
-			zip -r ${zip_file_name} .
-
-			local output_dir_name=$(dirname ${zip_dir_name})
-
-			output_dir_name=$(dirname ${output_dir_name})
-			output_dir_name=${output_dir_name/input/output}
-
-			popd
-
-			mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
+				generate_static_html
+			done
 		done
 	done
+}
 
-	mv build/output/homepage/* build/output
+# Generates the static HTML for a single site
+function generate_static_html {
+	#
+	# Use Sphinx to generate static HTML.
+	#
 
-	rmdir build/output/homepage
+	sphinx-build -M html ${input_path} ${output_path}
+
+	mv ${output_path}/html/* ${output_path}
+
+	#
+	# Fix broken links.
+	#
+
+	for html_file_name in `find ${output_path} -name *.html -type f`
+	do
+		sed -i 's/.md"/.html"/g' ${html_file_name}
+		sed -i 's/.md#/.html#/g' ${html_file_name}
+		sed -i 's/README.html"/index.html"/g' ${html_file_name}
+		sed -i 's/README.html#/index.html#/g' ${html_file_name}
+	done
+
+	#
+	# Rename README.html to index.html.
+	#
+
+	for readme_file_name in `find ${output_path} -name *README.html -type f`
+	do
+		mv ${readme_file_name} $(dirname ${readme_file_name})/index.html
+	done
+
+	#
+	# Update search references for README.html to index.html.
+	#
+
+	sed -i 's/README"/index"/g' ${output_path}/searchindex.js
+
+	#
+	# Make ZIP files.
+	#
+
+	for zip_dir_name in `find ${input_path} -name *.zip -type d`
+	do
+		pushd ${zip_dir_name}
+
+		local zip_file_name=$(basename ${zip_dir_name})
+
+		zip -r ${zip_file_name} .
+
+		local output_dir_name=$(dirname ${zip_dir_name})
+
+		output_dir_name=$(dirname ${output_dir_name})
+		output_dir_name=${output_dir_name/input\/docs/output}
+
+		popd
+
+		mv ${zip_dir_name}/${zip_file_name} ${output_dir_name}
+	done
 }
 
 function main {
@@ -191,7 +209,13 @@ function main {
 
 	parse_args_generate_sphinx_input $1 $2
 
- 	generate_static_html
+	generate_homepage_static_html
+
+ 	generate_docs_static_html
+
+	mv build/output/homepage/* build/output
+
+	rmdir build/output/homepage
 
 	upload_to_server
 }
