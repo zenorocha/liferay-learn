@@ -245,7 +245,7 @@ Otherwise, you can configure the data source in Tomcat.
             name="jdbc/LiferayPool"
             auth="Container"
             type="javax.sql.DataSource"
-            driverClassName="com.mysql.jdbc.Driver"
+            driverClassName="com.mysql.cj.jdbc.Driver"
             url="jdbc:mysql://localhost/lportal?useUnicode=true&amp;characterEncoding=UTF-8"
             username="root"
             password="root"

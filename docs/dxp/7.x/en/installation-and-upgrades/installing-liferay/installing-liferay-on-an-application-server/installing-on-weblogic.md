@@ -135,7 +135,7 @@ Otherwise, you can configure the data source in WebLogic:
 1. In the *Domain Structure* tree, find the domain and navigate to *Services* &rarr; *JDBC* &rarr; *Data Sources*.
 1. To create a new data source, click *New*.
 1. Enter the *Name* field with `Liferay Data Source` and the *JNDI Name* field with `jdbc/LiferayPool`.
-1. Select the database type and driver. For example, MySQL is *MySQL's Driver (Type 4) Versions:using com.mysql.jdbc.Driver*.
+1. Select the database type and driver. For example, MySQL is *MySQL's Driver (Type 4) Versions:using com.mysql.cj.jdbc.Driver*.
 1. Click *Next* to continue.
 1. Accept the default settings on this page and click *Next* to move on.
 1. Fill in the database information for the MySQL database.

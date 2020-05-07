@@ -293,7 +293,7 @@ If using WildFly to manage the data source, follow these steps:
             </datasource>
             <drivers>
                 <driver name="mysql" module="com.liferay.portal">
-                    <driver-class>com.mysql.jdbc.Driver</driver-class>
+                    <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
                 </driver>
             </drivers>
         </datasources>
