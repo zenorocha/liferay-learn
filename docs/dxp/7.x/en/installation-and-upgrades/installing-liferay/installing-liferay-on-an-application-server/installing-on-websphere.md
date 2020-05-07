@@ -24,7 +24,7 @@ The following files are required to install Liferay DXP on the WebSphere applica
 
 See [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
 
-The [`LIFERAY_HOME` folder](../../reference/liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` folder is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
+The [`[Liferay Home]`](../../reference/liferay-home.md) folder is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `[Liferay Home]` folder is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
 
 Here are the basic steps for installing DXP on WebSphere:
 
@@ -140,7 +140,7 @@ By this point, the following steps should be completed:
 
 1. Unzip the Dependencies ZIP file and place its contents in the WebSphere application server's `[Install Location]/WebSphere/AppServer/lib/ext` folder. Add the appropriate JDBC connector JAR for the database being used to this location as well.
 1. From the same archive, copy `portlet.jar` into `[Install Location]/WebSphere/AppServer/javaext` for WebSphere 9.0.0.x. WebSphere already contains an older version of `portlet.jar` which must be overridden at the highest class loader level. The new `portlet.jar` (version 3) is backwards-compatible.
-1. Unzip the OSGi Dependencies ZIP file and place its contents in the `[LIFERAY_HOME]/osgi` folder (create this folder if it doesn't already exist). This is typically `[Install Location]/WebSphere/AppServer/profiles/your-profile/liferay/osgi`.
+1. Unzip the OSGi Dependencies ZIP file and place its contents in the `[Liferay Home]/osgi` folder (create this folder if it doesn't already exist). This is typically `[Install Location]/WebSphere/AppServer/profiles/your-profile/liferay/osgi`.
 
 DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's lib folder. You can download JDBC driver JARs for these databases:
 
