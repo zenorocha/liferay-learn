@@ -17,6 +17,10 @@ Before you can use the MySQL Client through the Liferay service, you must have y
 | **DXP (using 7.1)** | liferaycloud/liferay-dxp-7.1.10-ga1-fp17-3.0.19 |
 | **DXP (using 7.2)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19 |
 
+```warning::
+   Upgrading your database image to a version that supports MySQL client will initialize the read-only user for the database. If you do not set a password for this user before upgrading, then it will use a default, and it cannot be changed later. See `Changing the Read-Only Database Password <#changing-the-read-only-database-password>`__ for more information.
+```
+
 ## Accessing the MySQL Client
 
 1. Log into the DXP Cloud console.
@@ -53,7 +57,7 @@ You can find the database name, user name, and password on your `portal.properti
 
 If you have not yet deployed the database service on a supported version, then you can set your own password for the default user by setting the `LCP_DATABASE_READONLY_USER_PASSWORD` environment variable in the database service's `LCP.json`.
 
-```warning::
+```important::
    If you have already deployed your database service using a version that supports the MySQL client, then the default user will already be initialized with a default password. This password cannot be changed later, so you can only add the ``LCP_DATABASE_READONLY_USER_PASSWORD`` environment variable before you deploy the database service (either for the first time, or updating from an older image version than the above). Otherwise, you must use the default, generated password.
 ```
 
