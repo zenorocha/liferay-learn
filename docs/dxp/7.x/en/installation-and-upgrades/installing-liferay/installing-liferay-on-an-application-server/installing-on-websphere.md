@@ -24,7 +24,7 @@ The following files are required to install Liferay DXP on the WebSphere applica
 
 See [Installing a Liferay-Tomcat Bundle](../installing-a-liferay-tomcat-bundle.md) to learn more about available Liferay DXP downloads.
 
-The [`LIFERAY_HOME` directory](../../reference/liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` directory is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
+The [`LIFERAY_HOME` folder](../../reference/liferay-home.md) is where Liferay DXP stores and manages files and folders required to function. On WebSphere, the `LIFERAY_HOME` folder is typically `[Install Location]/WebSphere/AppServer/profiles/[your-profile]/liferay`.
 
 Here are the basic steps for installing DXP on WebSphere:
 

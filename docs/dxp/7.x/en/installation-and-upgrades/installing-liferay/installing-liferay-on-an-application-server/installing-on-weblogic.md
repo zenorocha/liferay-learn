@@ -50,7 +50,7 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
     ```bash
     export DERBY_FLAG="false"
     export JAVA_OPTIONS="${JAVA_OPTIONS} -Dfile.encoding=UTF-8 -Duser.timezone=GMT -da:org.apache.lucene... -da:org.aspectj..."
-    export MW_HOME="[/your WebLogic directory]"
+    export MW_HOME="[/your WebLogic folder]"
     export USER_MEM_ARGS="-Xmx2560m -Xms2560m"
     ```
 
@@ -60,7 +60,7 @@ Configure the JVM using variables and options in the WebLogic scripts and Manage
        For DXP to work properly, the application server JVM must use the ``GMT`` time zone and ``UTF-8`` file encoding.
     ```
 
-    Also make sure to set `MW_HOME` to the directory containing the WebLogic server on the machine. For example,
+    Also make sure to set `MW_HOME` to the folder containing the WebLogic server on the machine. For example,
 
     ```bash
     export MW_HOME="/Users/ray/Oracle/wls12210"
