@@ -173,7 +173,7 @@ DXP contains a built-in Hypersonic database which is great for demonstration pur
 
 Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server.
 
-To configure DXP's built-in data source with your database when you run DXP for the first time, use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on [the Database Template](../../reference/database-templates.md) for your database.
+To configure DXP's built-in data source with your database when you run DXP for the first time, use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in a [`portal-ext.properties` file](../../reference/portal-properties.md) based on [the Database Template](../../reference/database-templates.md) for your database.
 
 If using WebSphere to manage the database connections, follow the instructions below. Otherwise, skip this section if you plan to use DXP's built in data source.
 

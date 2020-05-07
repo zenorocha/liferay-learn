@@ -37,7 +37,7 @@ The Tomcat server parent folder is [*Liferay Home*](../../reference/liferay-home
 DXP depends on many JARs included in DXP Tomcat bundle. Some of the bundle's JARs are not strictly required but can still be useful. If you're not using a Tomcat bundle, you'll use the Liferay JARs in the *Dependencies* archive and the *OSGi Dependencies* archive you downloaded and third-party JARs as described below.
 
 1. Unzip the Dependencies ZIP file contents in the `$TOMCAT_HOME/lib/ext` folder (create this folder if it doesn't exist).
-1. Unzip the OSGi Dependencies ZIP file contents in the `Liferay_Home/osgi` folder (create this folder if it doesn't exist).
+1. Unzip the OSGi Dependencies ZIP file contents in the `[Liferay Home]/osgi` folder (create this folder if it doesn't exist).
 
 DXP communicates with your database via JDBC. Add your database JDBC driver JAR file to the user domain's `lib` folder. You can download JDBC driver JARs for these databases:
 
@@ -228,7 +228,7 @@ DXP contains a built-in Hypersonic database which is great for demonstration pur
 
 Liferay DXP can connect with your database using DXP's built-in data source (recommended) or using a data source you create on your app server.
 
-To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in your `portal-ext.properties` file based on the [Database Template](../../reference/database-templates.md) for your database.
+To configure DXP's built-in data source with your database when you run DXP for the first time, you can use the [Setup Wizard](../../../getting-started/using-the-setup-wizard.md). Or you can configure the data source in a [`portal-ext.properties` file](../../reference/portal-properties.md) based on the [Database Template](../../reference/database-templates.md) for your database.
 
 Otherwise, you can configure the data source in Tomcat.
 
