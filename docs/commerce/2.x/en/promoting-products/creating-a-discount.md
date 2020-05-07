@@ -24,7 +24,7 @@ Your store now has an active discount with 20% off selected goods for those in t
 
 ## Adding Rules to a Discount
 
-You can create rules that limit the buyer's discount conditions. These rules may be combined as needed to meet your sales and marketing goals. See the [Discount Rules](./introduction-to-discounts.md#discount-rules) section to learn more.
+You can define rules that specify conditions to be met to qualify for a discount. See the [Discount Rules](./introduction-to-discounts.md#discount-rules) section to learn more.
 
 1. Once the discount has been created, there are 2 tabs: _Detail_, and _Rules_. Click on the _Rules_ tab.
 

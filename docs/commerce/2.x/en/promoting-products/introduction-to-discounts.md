@@ -1,10 +1,12 @@
 # Introduction to Discounts
 
-A discount applies a modifier to a product’s base price. Discounts can be an absolute number or a percentage, and can be applied to a limited number of products or to the entire catalog. Furthermore, a discount can be made available to all buyers, a defined Account Group, or to a more narrowly defined group of customers that meet certain qualifications. Unlike a price list, a discount always _reduces_ the base price. For more information on Pricing see [Introduction to Product Pricing Methods](../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md).
+Discounts are created in the _Control Panel_ &rarr; _Commerce_ &rarr; _Discounts_. Users can create multiple types of discounts, from reducing the price for specific products to offering free shipment. Furthermore, a discount can be applied to all buyers, a specific [Account Group](../account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers that meet certain qualifications.
 
-To create a discount, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Discounts_.
+```tip::
+   Discounts are not the same as price lists. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_.
+```
 
-## Types of Discounts
+## Discount Types
 
 The following types of discounts are available:
 
@@ -28,9 +30,23 @@ The devs inadvertently added Pricing Class as a new discount type which adds a t
 
 ## Coupon Codes
 
-Users can generate a coupon code (or a promotion code) that buyers can enter to obtain a discount on the current purchase. These codes can be shared in regular communications with the customers. Activate the feature then enter your own code.
+Regardless of which discount type you choose, you can make a discount even more exclusive by offering a coupon code. This code can be shared through emails, newsletters, or ads.
 
 ![Activate the Coupon Code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/02.png)
+
+To enable customers to enter the coupon code, the _Coupon Code Entry_ widget must be deployed on a store's [Checkout](../creating-store-content/commerce-storefront-pages/checkout.md) page. (The Checkout page is created automatically if you had used the [Minium accelerator](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) to build the store site.) In this example, the _Coupon Code Entry_ widget is placed on the page so that customers can enter their coupon code while they review their order.
+
+![Place the Coupon Code Entry widget on the Checkout page.](./introduction-to-discounts/images/07.png)
+
+Once the customer has enter his coupon code to apply the discount, the discount is reflected in the updated Order Summary.
+
+![Place the Coupon Code Entry widget on the Checkout page.](./introduction-to-discounts/images/08.png)
+
+## Discount Percentages
+
+If you want to use a percentage instead of a flat rate, you can create multiple tiers (Levels). For example, you can set a base discount of 20% off as Level 1 and then offer an additional 5% off as Level 2 if your customer makes the purchase before a deadline.
+
+![Set different levels for a discount based on a percentage.](./introduction-to-discounts/images/06.png)
 
 ## Expiration Date
 
@@ -40,32 +56,24 @@ Usually, a promotion or a discount has a set duration, like a summer special or 
 
 ## Discount Rules
 
-You can create rules that further limit the buyer's discount conditions. These rules may be combined as needed to meet your sales and marketing goals. There are three types of rules:
+You can define rules that specify conditions to be met to qualify for a discount. There are three types of rules:
 
 | Rule | Description |
 | --- | --- |
 | Cart Total | Cart subtotal must meet a minimum threshold to receive the discount. |
-| Has all of these products | Orders must include all specified products in order to receive the discount. See below to learn how to select products. |
-| Has one of these products | Orders must contain at least one product from a list of specified products to receive the discount. See below to learn how to select products. |
+| Has all of these products | Orders must include all specified products in order to receive the discount. |
+| Has one of these products | Orders must contain at least one product from a list of specified products to receive the discount. |
 
-To add a discount rule, click the _Rules_ tab after creating a discount then the _Add_ (![add icon](../images/icon-add.png))  button.
+The discount rules are added on the _Rules_ tab.
 
 ![Add a discount rule.](./introduction-to-discounts/images/04.png)
 
-### Selecting Specific Products in a Discount Rule
+If using the _Has all of these products_ or the _Has one of these products_ discount rules, select which products in the catalog are eligible for the discount.
 
-The _Has all of these products_ and _Has one of these products_ discount rules function by allowing the seller to select which products in the catalog are eligible for the discount.
-
-1. Select one of these two rules:
-
-   ![Discount rule types dropdown](./introduction-to-discounts/images/05.png)
-
-1. Select which products are to be included:
-
-   ![Product selection for the discount](./introduction-to-discounts/images/06.png)
+![Discount rule types dropdown](./introduction-to-discounts/images/05.png)
 
 After selecting the applicable products, customers will receive a discount for these goods depending on which of these rules has been chosen.
 
-## Additional Information
+## What's Next
 
 * [Creating a Discount](./creating-a-discount.md)
