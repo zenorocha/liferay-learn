@@ -18,7 +18,7 @@ Before you can use the MySQL Client through the Liferay service, you must have y
 | **DXP (using 7.2)** | liferaycloud/liferay-dxp-7.2.10-sp1-fp4-3.0.19 |
 
 ```warning::
-   Upgrading your database image to a version that supports MySQL client will initialize the read-only user for the database. If you do not set a password for this user before upgrading, then it will use a default, and it cannot be changed later. See `Changing the Read-Only Database Password <#changing-the-read-only-database-password>`__ for more information.
+   Upgrading your database image to a version that supports MySQL client will initialize the read-only user for the database. If you do not set a password for this user before upgrading, then it will use a default, and it cannot be changed later. See `Changing the Read-Only Database Password <#changing-the-read-only-database-password>`_ for more information.
 ```
 
 ## Accessing the MySQL Client
