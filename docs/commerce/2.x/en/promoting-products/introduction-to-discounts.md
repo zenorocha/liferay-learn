@@ -3,7 +3,7 @@
 Discounts are created in the _Control Panel_ &rarr; _Commerce_ &rarr; _Discounts_. Users can create multiple types of discounts, from reducing the price for specific products to offering free shipment. Furthermore, a discount can be applied to all buyers, a specific [Account Group](../account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers that meet certain qualifications.
 
 ```tip::
-   Discounts are not the same as price lists. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_.
+   Discounts are not the same as price lists. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_, `Creating a Price List <../managing-a-catalog/managing-price/creating-a-price-list.md>`_, and `Adding Tiered Pricing <../managing-a-catalog/managing-price/adding-tiered-pricing.md>`_.
 ```
 
 ## Discount Types
@@ -13,7 +13,7 @@ The following types of discounts are available:
 | Discount Type | Description |
 | --- | --- |
 | Categories | The discount is applied to all products tagged with a specific [Category](../managing-a-catalog/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md). |
-| Products | The discount is applied to a specific product.  |
+| Products | The discount is applied to a specific product or list of products.  |
 | Shipments | The discount is applied to the shipment costs, either by a percentage or flat sum. |
 | Subtotal | The order's subtotal is reduced, usually before taxes and other fees are applied. |
 | Total | The discount is applied to the entire total. |
@@ -30,7 +30,7 @@ The devs inadvertently added Pricing Class as a new discount type which adds a t
 
 ## Coupon Codes
 
-Regardless of which discount type you choose, you can make a discount even more exclusive by offering a coupon code. This code can be shared through emails, newsletters, or ads.
+Regardless of which discount type you choose, you can make a discount more exclusive by requiring a coupon code. You can generate a coupon code then share it through emails, newsletters, or ads.
 
 ![Activate the Coupon Code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/02.png)
 
@@ -40,7 +40,7 @@ To enable customers to enter the coupon code, the _Coupon Code Entry_ widget mus
 
 Once the customer has enter his coupon code to apply the discount, the discount is reflected in the updated Order Summary.
 
-![Place the Coupon Code Entry widget on the Checkout page.](./introduction-to-discounts/images/08.png)
+![Once applied, the discount is reflected in the order summary.](./introduction-to-discounts/images/08.png)
 
 ## Discount Percentages
 
