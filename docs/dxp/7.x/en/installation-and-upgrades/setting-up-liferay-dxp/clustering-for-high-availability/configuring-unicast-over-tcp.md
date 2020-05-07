@@ -95,13 +95,13 @@ Rather than use TCP Ping to discover cluster members, you can use a central data
 
 ```xml
 <JDBC_PING
-    connection_url="jdbc:mysql://[DATABASE_IP]/[DATABASE_NAME]?useUnicode=true&amp;characterEncoding=UTF-8&amp;useFastDateParsing=false"
-    connection_username="[DATABASE_USER]"
-    connection_password="[DATABASE_PASSWORD]"
-    connection_driver="com.mysql.jdbc.Driver"/>
+    connection_url="[place the URL to your database here]"
+    connection_username="[place your user name here]"
+    connection_password="[place your password here]"
+    connection_driver="[place your driver name here]"/>
 ```
 
-The above example uses MySQL as the database. For further information about JDBC Ping, please see the [JGroups Documentation](http://www.jgroups.org/manual4/index.html#DiscoveryProtocols).
+For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md). For further information about JDBC Ping, please see the [JGroups Documentation](http://www.jgroups.org/manual4/index.html#DiscoveryProtocols).
 
 ### S3 Ping
 

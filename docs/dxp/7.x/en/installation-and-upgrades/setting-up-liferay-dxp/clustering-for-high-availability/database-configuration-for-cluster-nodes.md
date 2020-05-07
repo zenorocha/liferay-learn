@@ -27,16 +27,18 @@ Follow these steps to use [JDBC](../../installing-liferay/configuring-a-database
 1. Configure JDBC connections to your separate read and write data sources. Here's an example:
 
     ```properties
-    jdbc.read.driverClassName=org.mariadb.jdbc.Driver
-    jdbc.read.url=jdbc:mariadb://dbread.com/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-    jdbc.read.username=**your user name**
-    jdbc.read.password=**your password**
+    jdbc.read.driverClassName=[place your driver name here]
+    jdbc.read.url=[place the URL to your "read" database here]
+    jdbc.read.username=[place your user name here]
+    jdbc.read.password=[place your password here]
 
-    jdbc.write.driverClassName=org.mariadb.jdbc.Driver
-    jdbc.write.url=jdbc:mariadb://dbreadwrite.com/lportal?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
-    jdbc.write.username=**your user name**
-    jdbc.write.password=**your password**
+    jdbc.write.driverClassName=[place your driver name here]
+    jdbc.write.url=[place the URL to your "read-write" database here]
+    jdbc.write.username=[place your user name here]
+    jdbc.write.password=[place your password here]
     ```
+
+    For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).
 
 1. Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
