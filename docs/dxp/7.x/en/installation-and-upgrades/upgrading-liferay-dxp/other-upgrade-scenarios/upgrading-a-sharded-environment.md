@@ -16,17 +16,17 @@ Here is how to configure the upgrade to migrate from sharding:
 
     ```properties
     jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.default.url=jdbc:mysql://database-server/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.default.url=jdbc:mysql://database-server/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.default.username=
     jdbc.default.password=
 
     jdbc.one.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.one.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.one.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.one.username=
     jdbc.one.password=
 
     jdbc.two.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.two.url=jdbc:mysql://database-server/lportal_two?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.two.url=jdbc:mysql://database-server/lportal_two?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.two.username=
     jdbc.two.password=
     ```
@@ -37,7 +37,7 @@ Here is how to configure the upgrade to migrate from sharding:
 
     ```properties
     jdbc.one.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.one.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.one.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.one.username=
     jdbc.one.password=
     ```
@@ -46,7 +46,7 @@ Here is how to configure the upgrade to migrate from sharding:
 
     ```properties
     jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.default.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.default.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.default.username=
     jdbc.default.password=
     ```
@@ -65,17 +65,17 @@ After the database upgrade has been completed, make the following configuration 
 
     ```properties
     jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.default.url=jdbc:mysql://database-server/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.default.url=jdbc:mysql://database-server/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.default.username=
     jdbc.default.password=
 
     jdbc.one.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.one.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.one.url=jdbc:mysql://database-server/lportal_one?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.one.username=
     jdbc.one.password=
 
     jdbc.two.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.two.url=jdbc:mysql://database-server/lportal_two?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.two.url=jdbc:mysql://database-server/lportal_two?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.two.username=
     jdbc.two.password=
     ```
@@ -84,7 +84,7 @@ After the database upgrade has been completed, make the following configuration 
 
     ```properties
     jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver
-    jdbc.default.url=jdbc:mysql://database-server/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&useFastDateParsing=false&useUnicode=true
+    jdbc.default.url=jdbc:mysql://database-server/lportal?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
     jdbc.default.username=
     jdbc.default.password=
     ```
