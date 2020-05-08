@@ -5,9 +5,8 @@ Clustering for High Availability
    :maxdepth: 2
 
    clustering-for-high-availability/clustering-for-high-availability.md
-   clustering-for-high-availability/example-creating-a-dxp-cluster.md
+   clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
    clustering-for-high-availability/database-configuration-for-cluster-nodes.md
-   clustering-for-high-availability/clustering-search.md
    clustering-for-high-availability/configuring-cluster-link.md
    clustering-for-high-availability/configuring-unicast-over-tcp.md
 
