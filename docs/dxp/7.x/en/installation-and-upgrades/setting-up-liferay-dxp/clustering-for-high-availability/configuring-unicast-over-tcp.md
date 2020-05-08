@@ -28,7 +28,7 @@ Use the following steps to configure Unicast:
     * `Rackspace_Ping`
 
     If you aren't sure which one to choose, use TCPPing. The rest of these steps use TCPPing. See [Alternative Discovery Protocols](#alternative-discovery-protocols) for more information on the others.
-    <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. -->
+    <!-- the craziness in the next step is probably an example of something that Brian Chan would want to see get improved in the product. We should bring this up w/ the core team or with Brian Chan himself to see his thoughts. jrhoun -->
 
 1. Extract the `tcp.xml` file from `$LIFERAY.HOME/osgi/marketplace/Liferay Foundation - Liferay Portal - Impl.lpkg/com​.​liferay​.​portal​.​cluster​.​multiple​-​[version].​jar/lib​/​jgroups​-​[version].​Final​.​jar/tcp.xml` to a location accessible to DXP, such as a folder called `jgroups` in the DXP web application's `WEB-INF/classes` folder.
 
@@ -141,7 +141,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
     * `tcp-control.xml`
     * `tcp-transport.xml`
 
-1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -204,5 +204,5 @@ If you have added entities that can be cached or you want to tune the cache conf
 
 ## Additional Information
 
-* [Cluster Link Overview](./05-cluster-link-overview.md)
-* [Introduction to Clustering Liferay DXP](./01-introduction-to-clustering-liferay-dxp.md)
+* [Configuring Cluster Link](./configuring-cluster-link.md)
+* [Clustering for High Availability](./clustering-for-high-availability.md)
