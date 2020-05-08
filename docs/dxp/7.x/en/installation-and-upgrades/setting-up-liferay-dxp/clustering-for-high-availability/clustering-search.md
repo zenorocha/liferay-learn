@@ -27,6 +27,10 @@ Once DXP servers have been properly configured as a cluster, deploy the Liferay 
 
 Create a Solr Cloud (cluster) managed by _Apache Solr Zookeeper_. Connect the DXP cluster to Zookeeper and finish the final configurations to connect the two clusters.
 
+## What's Next
+
+Now that you've configured a search engine cluster for DXP, you can continue addressing the [DXP clustering requirements](./clustering-for-high-availability.md#clustering-requirements). The next requirement is to [configure Cluster Link](./configuring-cluster-link.md) to enable communication and cache replication between DXP cluster nodes.
+
 ## Additional Information
 
 * [Installing Elasticsearch](https://help.liferay.com/hc/en-us/articles/360028711132-Installing-Elasticsearch)
