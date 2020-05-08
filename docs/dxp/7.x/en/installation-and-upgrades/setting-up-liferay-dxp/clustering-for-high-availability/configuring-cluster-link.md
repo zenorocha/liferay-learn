@@ -4,7 +4,7 @@ Enabling Cluster Link activates distributed caching. The cache is distributed ac
 
 By default Liferay does not copy cached entities between nodes. If an entity is deleted or changed, for example, Cluster Link sends a *remove* message to the other nodes to invalidate this entity in their local caches. Requesting that entity on another node results in a cache *miss*; the entity is then retrieved from the database and put into the local cache. Entities added to one node's local cache are not copied to local caches of the other nodes. An attempt to retrieve a new entity on a node which doesn't have that entity cached results in a cache *miss*. The miss triggers the node to retrieve the entity from the database and store it in its local cache.
 
-![Figure 1: Liferay DXP's cache algorithm is extremely efficient.](./configuring-cluster-link/images/01.png)
+![Liferay DXP's cache algorithm is extremely efficient.](./configuring-cluster-link/images/01.png)
 
 Clustering in DXP may be configured in different ways depending on your network and the location of your cluster nodes. The following topics concerning cluster link are covered in this article:
 
@@ -17,13 +17,13 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 ## Enabling Cluster Link
 
-To enable Cluster Link, add this [portal property](../../reference/portal-properties.md) to a `portal-ext.properties` file:
+To enable Cluster Link, add this [Portal Property](../../reference/portal-properties.md) to a `portal-ext.properties` file:
 
 ```properties
 cluster.link.enabled=true
 ```
 
-The [Cluster Link portal properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs.
+The [Cluster Link Portal Properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs.
 
 Many of the defaults use `localhost`, instead of a real address. In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If you still need this configuration, you can make DXP auto detect the real address with this property:
 
@@ -44,11 +44,11 @@ Cluster Link contains an enhanced algorithm that provides one-to-many type commu
 
 ## Configuring Cluster Link
 
-When you enable Cluster Link, DXP's default clustering configuration is enabled. This configuration defines *IP multicast over UDP*. If you cannot use multicast for your own nodes (for example, because they are separated geographically or by a firewall), then you can instead configure a unicast implementation. See [Configuring Unicast Over TCP](./06-configuring-unicast-over-tcp.md) for more information.
+When you enable Cluster Link, DXP's default clustering configuration is enabled. This configuration defines *IP multicast over UDP*. If you cannot use multicast for your own nodes (for example, because they are separated geographically or by a firewall), then you can instead configure a unicast implementation. See [Configuring Unicast Over TCP](./configuring-unicast-over-tcp.md) for more information.
 
 ### Using Multicast Over UDP
 
-DXP uses two groups of [channels from JGroups](http://www.jgroups.org/manual4/index.html#_channel) to implement multicast over UDP: a control group and a transport group. If you want to customize the [channel properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link), you can do so by adding the following to `portal-ext.properties`:
+DXP uses two groups of [channels from JGroups](http://www.jgroups.org/manual4/index.html#_channel) to implement multicast over UDP: a control group and a transport group. If you want to customize the [channel properties](https://docs.liferay.com/portal/7.2-latest/propertiesdoc/portal.properties.html#Cluster%20Link), you can do so by adding the following Portal Properties to `portal-ext.properties`:
 
 ```properties
 cluster.link.channel.name.control=[your control channel name]
@@ -89,7 +89,7 @@ Your network configuration may preclude the use of multicast over TCP, so below 
 
 ## Conclusion
 
-Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`): 
+Once you've configured your cluster, you can start it. A log file message shows your cluster's  name (e.g., `cluster=liferay-channel-control`):
 
 ```bash
 -------------------------------------------------------------------
@@ -102,4 +102,4 @@ Congratulations! Your cluster is using Cluster Link.
 ## Additional Information
 
 * [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md)
-* [Clustering Liferay DXP for High Availability](./clustering-for-high-availability.md)
+* [Clustering for High Availability](./clustering-for-high-availability.md)
