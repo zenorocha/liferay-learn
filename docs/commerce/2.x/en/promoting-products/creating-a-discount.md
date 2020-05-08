@@ -1,6 +1,6 @@
 # Creating a Discount
 
-Discounts can be applied to a combination of products and target customers or a reduced shipping costs. Furthermore, discounts can be set as a flat sum or as a percentage.
+Follow the steps below to create a discount by selecting the discount type, the target customers, and setting the discount rates. Once the discount has been created, specify additional conditions to qualify for the discount.
 
 To create a new discount:
 
