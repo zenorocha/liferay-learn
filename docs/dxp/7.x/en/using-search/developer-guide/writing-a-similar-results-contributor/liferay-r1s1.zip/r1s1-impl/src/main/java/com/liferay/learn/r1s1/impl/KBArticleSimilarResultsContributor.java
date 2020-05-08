@@ -80,8 +80,6 @@ public class KBArticleSimilarResultsContributor implements SimilarResultsContrib
 
 		String uidField = String.valueOf(kbArticle.getPrimaryKeyObj());
 
-		int buildNumber = ReleaseInfo.getBuildNumber();
-
 		if (ReleaseInfo.getBuildNumber() == ReleaseInfo.RELEASE_7_2_10_BUILD_NUMBER) {
 
 			uidField = String.valueOf(kbArticle.getResourcePrimKey());
