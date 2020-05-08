@@ -15,7 +15,7 @@ Here are the server's you'll create:
 
 The following figure depicts the DXP cluster environment you'll create.
 
-![DXP cluster environment.](./example-creating-a-dxp-cluster/images/01.png)
+![DXP cluster environment.](./example-creating-a-simple-dxp-cluster/images/01.png)
 
 Here are the steps for creating the cluster:
 
@@ -28,7 +28,7 @@ Here are the steps for creating the cluster:
 1. [Test the Cluster](#test-the-cluster)
 
 ```note::
-   DXP cluster environments can also be set up using an `on-premises DXP Tomcat bundle <../../installing-liferay/installing-a-liferay-dxp-tomcat-bundle.md>`_, using `DXP installed to an app server <../../installing-liferay/installing-liferay-on-an-application-server/README.md>`_ on-premises, or using any combination of Docker containers and DXP installations.
+   DXP cluster environments can also be set up using an `on-premises DXP Tomcat bundle <../../installing-liferay/installing-a-liferay-tomcat-bundle.md>`_, using `DXP installed to an app server <../../installing-liferay/installing-liferay-on-an-application-server/README.md>`_ on-premises, or using any combination of Docker containers and DXP installations.
 ```
 
 ## Configure a Network for the Containers
@@ -169,7 +169,7 @@ Your search engine server is ready to store and retrieve search indexes for DXP.
 
 ## Prepare a File Store
 
-A DXP cluster requires a File Store that's accessible to all of the app server nodes. For convenience, this example uses a [DBStore File Store](../../../system-administration/file-storage/other-file-store-types/dbstore.md) configured on the DXP database. It's configured by the app server nodes (described next). See [File Store](../../..//system-administration/file-storage/configuring-file-storage.md) for other file store types.
+A DXP cluster requires a File Store that's accessible to all of the app server nodes. For convenience, this example uses a [DBStore File Store](../../../system-administration/file-storage/other-file-store-types/dbstore.md) configured on the DXP database. It's configured by the app server nodes (described next). See [File Store](../../../system-administration/file-storage/configuring-file-storage.md) for other file store types.
 
 ## Configure the DXP Server Cluster
 
@@ -184,7 +184,7 @@ Here's a summary of the items to configure:
 | File Store connection | `portal-ext.properties` file. Some File Store types require a configuration file too. | See [Configuring a File Store](../../..//system-administration/file-storage/configuring-file-storage.md) |
 | Cluster Link | `portal-ext.properties` file | See [Configuring Cluster Link](./configuring-cluster-link.md) |
 
-The portal properties can be specified using Docker environment variables or a `portal-ext.properties` file. Since this example uses several properties, properties files are used.
+The Portal Properties can be specified using Docker environment variables or a `portal-ext.properties` file. Since this example uses several properties, properties files are used.
 
 One way to organize your node configurations is to create a folder for each node:
 
@@ -236,7 +236,7 @@ See [Using Configuration Files](../../../system-administration/system-settings/u
 
 ### Configure Cluster Link and the Other Server Connections
 
-On each DXP server, use [portal properties](../../reference/portal-properties.md) to enable Cluster Link and to configure connections with the data source and file store.
+On each DXP server, use [Portal Properties](../../reference/portal-properties.md) to enable Cluster Link and to configure connections with the data source and file store.
 
 1. Create a `portal-ext.properties` file for each node:
 
@@ -493,7 +493,7 @@ Start by adding content (e.g., the Language Selector widget) to your site at <ht
 
 Note the node's address and port (`Node: [address]:[port]`). Since the node is running in a Docker container the container ID is displayed instead of an IP address. See the figure below as an example.
 
-![Your DXP cluster node has a Language Selector widget at the top and displays the container ID and port at the bottom.](./example-creating-a-dxp-cluster/images/02.png)
+![Your DXP cluster node has a Language Selector widget at the top and displays the container ID and port at the bottom.](./example-creating-a-simple-dxp-cluster/images/02.png)
 
 You can match the container ID with the DXP container using the `docker container ls -a` command:
 
@@ -512,7 +512,7 @@ docker stop dxp-1
 
 Refresh your browser to verify that the remaining DXP server handles your request and shows the content you added earlier.
 
-![Content is synchronized between the cluster nodes.](./example-creating-a-dxp-cluster/images/03.png)
+![Content is synchronized between the cluster nodes.](./example-creating-a-simple-dxp-cluster/images/03.png)
 
 Congratulations on creating a working DXP cluster!
 
