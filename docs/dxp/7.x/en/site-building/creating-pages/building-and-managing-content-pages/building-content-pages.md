@@ -28,7 +28,8 @@ To begin building a Content Page:
     * [Editing a Hyperlink](#editing-a-hyperlink)
     * [Editing an Image](#editing-an-image)
     * [Copying a Fragment](#copying-a-fragment)
-    * [Adjusting Spacing](#adjusting-spacing)
+    * [Configuring Section Width and Padding](#configuring-section-width-and-padding)
+    * [Configuring a Row's Columns](#configuring-a-rows-columns)
     * [General Configuration](#general-configuration)
     * [Mapping Content](#mapping-content)
 
@@ -111,8 +112,8 @@ You can configure a background image for a Layout. Follow these steps:
 
 ### Editing an Image
 
-1.  Click on the image you want to replace.
-1.  Click the (![Image Properties](../../../images/icon-edit.png)) icon.
+1. Click on the image you want to replace.
+1. Click the (![Image Properties](../../../images/icon-edit.png)) icon.
 
     ![Editing an image allows you to enter a URL, select an image from Documents and Media or set a link for the image.](./building-content-pages/images/09.png)
 
@@ -139,11 +140,7 @@ You can duplicate a Fragment on the page (Component, Section, Row, etc.) to save
   Layouts (Sections or Rows) containing instanceable Widgets cannot be duplicated. In this case, a message will appear, indicating the Widget preventing the duplication.
 ```
 
-### Adjusting Spacing
-
-You can adjust the spacing for Sections and Rows through the Fragment's Configuration Menu.
-
-#### Configuring Section Width and Padding
+### Configuring Section Width and Padding
 
 To configure the Section, follow these steps:
 
@@ -156,7 +153,7 @@ To configure the Section, follow these steps:
 You can also configure a background image and color for a layout Section. See 
 [Using a Background Image](#using-a-background-image) for more information.
 
-#### Configuring a Row's Columns
+### Configuring a Row's Columns
 
 To configure a Row, follow these steps:
 

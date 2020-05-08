@@ -1,6 +1,6 @@
 # Managing Master Page Templates
 
-> Liferay DXP 7.3+
+> Available: Liferay DXP 7.3+
 
 To manage a Master Page Template, follow these steps:
 

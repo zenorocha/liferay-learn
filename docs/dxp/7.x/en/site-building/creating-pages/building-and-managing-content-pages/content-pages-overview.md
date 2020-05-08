@@ -15,23 +15,23 @@ The Content Page sidebar contains these elements and tools for Content Pages:
 
 Liferay Portal ships with several Layouts, Fragments, and Widgets that you can use to build pages. Developers can [create their own Fragments](./README.md#dev-guide) to add to these.
 
-```note::
- Since Liferay Portal CE 7.3 GA2, Workflow is supported for Content Pages.
-```
-
 ## Fragments
 
-```note::
+<!-- ```note::
    Available in Liferay DXP 7.3+. This panel was previously divided between the *Sections* and *Section Builder* panels.
-```
+``` -->
+
+> Available: Liferay 7.3+; previously divided between *Sections* and *Section Builder* panels.
 
 You can drag-and-drop Fragments on a page. Fragments can have editable elements, such as [text](./building-content-pages.md#editing-text), [images](./building-content-pages.md#editing-an-image), or [links](./building-content-pages.md#editing-a-hyperlink), that you can replace with custom content. You can also [map these elements](./building-content-pages.md#mapping-content) to content that is already available on the site itself. For more information on developing these elements, see [Fragment Specific Tags](./README.md#using-fragments).
 
 ### Layout Elements
 
-```note::
+<!-- ```note::
   In Liferay Portal CE 7.3 GA2+ this panel is called Layout Elements. Previously this panel was called Layouts and contained layout options with preconfigured panels and rows.
-```
+``` -->
+
+> Available: Liferay Portal CE 7.3 GA2+; previously called Layouts and contained layout options with preconfigured panels and rows.
 
 The Layout Elements panel contains two Fragments:
 
@@ -54,31 +54,37 @@ The Featured Content panel contains complete Fragments (composed of multiple com
 
 ### Footers
 
-```note::
+<!-- ```note::
    Available in Liferay DXP 7.3+. These Fragments were previously included in the *Sections* panel.
-```
+``` -->
+
+> Available: Liferay DXP 7.3+; previously included in the *Sections* panel.
 
 The *Footers* panel includes Fragments that you can add as the Footer of the page. See [Master Pages](../defining-headers-and-footers/master-page-templates.md) for their use in Liferay DXP 7.3.
 
 ### Navigation Bars
 
-```note::
+<!-- ```note::
    Available in Liferay DXP 7.3+. These Fragments were previously included in the *Sections* panel.
-```
+``` -->
+
+> Available: Liferay DXP 7.3+; previously included in the *Sections* panel.
 
 The *Navigation Bars* panel includes Fragments that you can add as the Header of the page. See [Master Pages](../defining-headers-and-footers/master-page-templates.md) for their use in Liferay DXP 7.3.
 
 ### Content Display
 
-```note::
+<!-- ```note::
    Available in Liferay DXP 7.3+.
-```
+``` -->
+
+> Available: Liferay DXP 7.3+
 
 You can display a single existing web content, blog entry, or document by adding a Content Display Fragment from the *Content Display* panel. See [Using the Content Display Fragment](./README.md#using-fragments) for more information.
 
 ## Widgets
 
-The Widgets panel list the applications and tools available out-of-the-box that you can add to the page. There are some limitations to using Widgets on Content Pages. See [Using Widgets on Content Pages](./using-widgets-on-content-pages.md) for more information.
+The Widgets panel list the applications and tools available out-of-the-box that you can add to the page. There are some limitations to using Widgets on Content Pages. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
 ![The Widgets panel provides a list of Widgets that can be added inside of a Layout.](./content-pages-overview/images/06.png)
 
@@ -88,9 +94,11 @@ The Widgets panel list the applications and tools available out-of-the-box that 
 
 ## Contents
 
-```note::
+<!-- ```note::
    Available in Liferay DXP 7.3+
-```
+``` -->
+
+> Available: Liferay DXP 7.3+
 
 The Contents panel provides a list of the web content that's used on the page. This includes content displayed in a widget and content mapped to content fields. Click the *Contents* button (![Contents](../../../images/icon-contents.png)) to open the Contents panel. From this panel, you can perform a variety of actions to edit and manage web content. See [Managing Web Content on Content Pages](./managing-web-content-on-content-pages.md) for more information.
 
@@ -107,6 +115,10 @@ Click the *Look and Feel* icon (![Look and Feel](../../../images/icon-look-and-f
 ## Comments
 
 You can comment on a Page Fragment to discuss changes and collaborate. Comments are disabled by default in Liferay DXP 7.2+, but Administrators can enable them. See [Using Fragment Comments](./using-fragment-comments.md) for more information.
+
+## Workflow
+
+As of Liferay Portal CE 7.3 GA2, [Workflow](../../../process-automation/workflow/user-guide/introduction-to-workflow.md) is supported for Content Pages.
 
 ## Related Information
 
