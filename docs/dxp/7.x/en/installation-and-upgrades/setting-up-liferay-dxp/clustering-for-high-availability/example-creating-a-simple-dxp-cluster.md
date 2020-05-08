@@ -21,7 +21,7 @@ Here are the steps for creating the cluster:
 
 1. [Configure a Network for the Containers](#configure-a-network-for-the-containers) (example-specific)
 1. [Prepare a Database Server](#prepare-a-database-server)
-1. [Prepare a Search Engine Server](#prepare-a-search-engine-server)
+1. [Prepare a Search Engine](#prepare-a-search-engine)
 1. [Prepare a File Store](#prepare-a-file-store)
 1. [Configure the DXP Server Cluster](#configure-the-dxp-server-cluster)
 1. [Front the Cluster with a Web Server](#front-the-cluster-with-a-web-server)
@@ -99,11 +99,11 @@ See [Database Configuration for Cluster Nodes](./database-configuration-for-clus
 
 Your database server is ready for DXP.
 
-## Prepare a Search Engine Server
+## Prepare a Search Engine
 
-A DXP cluster requires a search engine server that's accessible to all of the app server nodes. See [Configuring a Search Engine in a Cluster](./clustering-search.md) for more information.
+A DXP cluster requires a search engine (running as a separate process) that's accessible to all of the app server nodes. See [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/introduction-to-installing-a-search-engine.md) for more information.
 
-Create a search engine server container based on an [Elasticsearch Docker image](https://hub.docker.com/_/elasticsearch):
+Create a search engine container based on an [Elasticsearch Docker image](https://hub.docker.com/_/elasticsearch):
 
 1. Download the Elasticsearch Docker image that's compatible with your DXP version.
 
@@ -111,7 +111,7 @@ Create a search engine server container based on an [Elasticsearch Docker image]
     docker pull elasticsearch:6.8.7
     ```
 
-1. Start an Elasticsearch server container, mounting the container's data folder to a host machine folder.
+1. Start an Elasticsearch container, mounting the container's data folder to a host machine folder.
 
     Create a folder to hold the Elasticsearch indexes.
 
@@ -165,7 +165,7 @@ Create a search engine server container based on an [Elasticsearch Docker image]
     exit
     ```
 
-Your search engine server is ready to store and retrieve search indexes for DXP.
+Your search engine is ready to store and retrieve search indexes for DXP.
 
 ## Prepare a File Store
 
@@ -527,5 +527,4 @@ Tune your [database](./database-configuration-for-cluster-nodes.md) for your DXP
 ## Additional Information
 
 * [Database Configuration for Cluster Nodes](./database-configuration-for-cluster-nodes.md)
-* [Clustering Search](./clustering-search.md)
 * [Configuring Cluster Link](./configuring-cluster-link.md)
