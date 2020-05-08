@@ -2,9 +2,10 @@
 
 Each DXP cluster node must share the same Liferay DXP database (or database cluster). This means that DXP cannot (and should not) use the embedded HSQL database that is shipped with DXP bundles. And, of course, the database server should be set up on a server separate from the DXP server.
 
-## Database Replication
+**Outline:**
 
-Using a database cluster improves fault tolerance and DXP performance. Database cluster instances must be stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All supported databases support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
+* [Read-Writer Database Configuration](#read-writer-database-configuration)
+* [Database Replication](#database-replication)
 
 ## Read-Writer Database Configuration
 
@@ -64,7 +65,7 @@ Follow these steps to use [JDBC](../../installing-liferay/configuring-a-database
         [..]
     ```
 
-    For more information, see the [Spring configuration portal properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring).
+    For more information, see the [Spring configuration Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring).
 
 ### JNDI
 
@@ -73,15 +74,15 @@ Follow these steps to use JNDI to connect to your read and write data sources on
 1. Set your read and write JNDI data source usernames and passwords.
 
     ```properties
-    jdbc.read.jndi.name=**your user name**
+    jdbc.read.jndi.name=[place your "read" data source JNDI name here]
 
-    jdbc.read.username=**your user name**
-    jdbc.read.password=**your password**
+    jdbc.read.username=*[place your user name here]
+    jdbc.read.password=[place your password here]
 
-    jdbc.write.jndi.name=**your password**
+    jdbc.write.jndi.name=[place your "read-write" data source JNDI name here]
 
-    jdbc.write.username=**your user name**
-    jdbc.write.password=**your password**
+    jdbc.write.username=[place your user name here]
+    jdbc.write.password=[place your password here]
     ```
 
 1. Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
@@ -108,6 +109,14 @@ Follow these steps to use JNDI to connect to your read and write data sources on
         [..]
     ```
 
-    For more information, see the [Spring configuration portal properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring).
+    For more information, see the [Spring configuration Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring).
 
 DXP uses a read data source, a write data source, and a counter data source the next time it starts.
+
+## Database Replication
+
+Using a database cluster improves fault tolerance and DXP performance. Database cluster instances must be stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All supported databases support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
+
+## What's Next
+
+Now that you've configured the database for your cluster, you can continue addressing the [DXP clustering requirements](./clustering-for-high-availability.md#clustering-requirements). The next requirement is to make your [File Store](../../../system-administration/file-storage/configuring-file-storage.md) accessible to all nodes and configure each node with that File Store.
