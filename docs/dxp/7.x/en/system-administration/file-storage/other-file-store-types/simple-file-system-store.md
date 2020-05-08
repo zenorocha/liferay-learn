@@ -53,7 +53,7 @@ dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
 
 ## Using the Store in a Clustered Environment
 
-In a [clustered environment](../../../installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md), point the store to a network mounted file system that all the nodes can access. The networked file system must be accessible to all nodes, support concurrent requests, and support file locking. If Simple File System Store is used without such a file system and multiple users attempt writing to the same file concurrently, data corruption can occur.
+In a [clustered environment](../../../installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md), point the store to a network mounted file system that all the nodes can access. The networked file system must be accessible to all nodes, support concurrent requests, and support file locking. If Simple File System Store is used without such a file system and multiple users attempt writing to the same file concurrently, data corruption can occur.
 
 ## Additional Information
 

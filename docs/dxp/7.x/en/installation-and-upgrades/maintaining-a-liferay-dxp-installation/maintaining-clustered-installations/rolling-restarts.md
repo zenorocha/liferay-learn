@@ -59,5 +59,5 @@ All rolling restart eligible updates can be applied using the rolling restart st
 ## Related Topics
 
 * [Blue Green Deployment](./blue-green-deployments.md)
-* [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
 * [Installing Patches](../installing-patches/introduction-to-installing-patches.md)

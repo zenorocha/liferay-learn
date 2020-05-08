@@ -78,7 +78,7 @@ DXP supports JBoss EAP when it runs in standalone mode but not when it runs in d
 The command line interface is recommended for domain mode deployments.
 
 ```note::
-   This does not prevent DXP from running in a clustered environment on multiple JBoss servers. You can set up a cluster of DXP instances running on JBoss EAP servers running in standalone mode. Please refer to the `DXP clustering articles <../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md>`_ for more information.
+   This does not prevent DXP from running in a clustered environment on multiple JBoss servers. You can set up a cluster of DXP instances running on JBoss EAP servers running in standalone mode. Please refer to the `DXP clustering articles <../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md>`_ for more information.
 ```
 
 ## Configuring JBoss

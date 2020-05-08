@@ -84,7 +84,7 @@ Administrators can run DXP on WildFly in domain mode, but this method is not ful
 The command line interface is recommended for domain mode deployments.
 
 ```note::
-   This does not prevent DXP from running in a clustered environment on multiple WildFly servers. Administrators can set up a cluster of DXP instances running on WildFly servers running in standalone mode. Please refer to the `DXP clustering articles <../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md>`_ for more information.
+   This does not prevent DXP from running in a clustered environment on multiple WildFly servers. Administrators can set up a cluster of DXP instances running on WildFly servers running in standalone mode. Please refer to the `DXP clustering articles <../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md>`_ for more information.
 ```
 
 ## Configuring WildFly

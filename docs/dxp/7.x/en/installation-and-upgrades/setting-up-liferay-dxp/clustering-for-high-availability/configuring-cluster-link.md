@@ -12,7 +12,6 @@ Clustering in DXP may be configured in different ways depending on your network 
 
 * [Enabling Cluster Link](#enabling-cluster-link)
 * [Configuring Cluster Link](#configuring-cluster-link)
-* [Optimizing Cluster Cache Performance](#optimizing-cluster-cache-performance)
 * [Conclusion](#conclusion)
 
 ## Enabling Cluster Link
@@ -78,14 +77,14 @@ Your network configuration may preclude the use of multicast over TCP, so below 
 
 ### Test Your Cluster Link Configuration
 
-1.  If you are binding the IP address instead of using `localhost`, make sure the right IP addresses are declared using these properties:
+1. If you are binding the IP address instead of using `localhost`, make sure the right IP addresses are declared using these properties:
 
     ```properties
     cluster.link.bind.addr["cluster-link-control"]=localhost
     cluster.link.bind.addr["cluster-link-udp"]=localhost
     ```
 
-2.  Test your load and then optimize your settings if necessary.
+1. Test your load and then optimize your settings if necessary.
 
 ## Conclusion
 

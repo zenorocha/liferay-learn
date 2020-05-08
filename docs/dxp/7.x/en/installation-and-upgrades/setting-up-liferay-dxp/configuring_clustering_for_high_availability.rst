@@ -1,14 +1,14 @@
-Configuring Clustering for High Availability
+Clustering for High Availability
 ============================================
 
 .. toctree::
    :maxdepth: 2
 
-   configuring-clustering-for-high-availability/configuring-clustering-for-high-availability.md
-   configuring-clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
-   configuring-clustering-for-high-availability/database-configuration-for-cluster-nodes.md
-   configuring-clustering-for-high-availability/configuring-cluster-link.md
-   configuring-clustering-for-high-availability/configuring-unicast-over-tcp.md
+   clustering-for-high-availability/clustering-for-high-availability.md
+   clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
+   clustering-for-high-availability/database-configuration-for-cluster-nodes.md
+   clustering-for-high-availability/configuring-cluster-link.md
+   clustering-for-high-availability/configuring-unicast-over-tcp.md
 
-.. include:: /installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/README.rst
+.. include:: /installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/README.rst
    :start-line: 2

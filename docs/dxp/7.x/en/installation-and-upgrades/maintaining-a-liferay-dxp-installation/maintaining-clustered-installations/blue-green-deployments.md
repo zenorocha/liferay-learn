@@ -22,5 +22,5 @@ For more information, refer to these blue-green deployment articles:
 ## Related Topics
 
 * [Rolling Restarts](./rolling-restarts.md)
-* [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
 * [Installing Patches](../installing-patches/introduction-to-installing-patches.md)

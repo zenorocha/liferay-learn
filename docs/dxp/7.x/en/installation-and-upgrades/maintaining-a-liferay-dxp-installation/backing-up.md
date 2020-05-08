@@ -53,7 +53,7 @@ This file can then be backed up. On restoring the database you can import this f
 ## Search Indexes
 
 ```important::
-   If you've placed your search index into a database (not recommended; see the `DXP Clustering <https://help.liferay.com/hc/en-us/articles/360029123831-Liferay-DXP-Clustering>`_ article for information on using Cluster Link or Solr), you should back up that database too.
+   If you've placed your search index into a database (not recommended; see the `DXP Clustering <../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md>`_ article for information on using Cluster Link or Solr), you should back up that database too.
 ```
 
 Users with large data sets may want to avoid re-indexing all of their content and assets when restoring from a backup. In this case we recommend backing up your search indexes. This is easiest to do if you have a separate [Elasticsearch or Solr](https://help.liferay.com/hc/en-us/articles/360028711092-Introduction-to-Installing-a-Search-Engine) environment on which your index is stored. If you're in a clustered configuration and you're replicating indexes, you must back up each index replica.

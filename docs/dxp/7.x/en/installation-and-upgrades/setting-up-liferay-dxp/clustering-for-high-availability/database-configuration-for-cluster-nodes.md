@@ -1,15 +1,14 @@
 # Database Configuration for Cluster Nodes
 
-Each DXP cluster node must share the same Liferay DXP database (or database cluster). This means that DXP cannot (and should not) use the embedded HSQL database that is shipped with DXP bundles. And, of course, the database server should be set up on a server separate from the DXP server.
+At minimum, nodes in a DXP cluster must be [configured to share the same database](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) (or database cluster) in order to function. Optimizations discussed here can further improve database performance for a DXP cluster and should be considered with consideration for your usage of DXP and expected transaction volume.
 
-**Outline:**
-
-* [Read-Writer Database Configuration](#read-writer-database-configuration)
-* [Database Replication](#database-replication)
+```warning::
+   Clustering will not work with the embedded HSQL database.
+```
 
 ## Read-Writer Database Configuration
 
-For even better performance, you can also use a read-writer database configuration. Instead of using the same data source for read and read-write operations, this strategy uses a separate data source for each operation type. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source.
+To improve database performance, you can use a read-writer database configuration. Instead of using the same data source for read and read-write operations, this strategy uses a separate data source for each operation type. DXP's Aspect Oriented Programming (AOP) transaction infrastructure directs read transactions to the read data source and read-write transactions to the write data source.
 
 ![Read-Writer Database Interaction](./database-configuration-for-cluster-nodes/images/01.png)
 

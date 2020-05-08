@@ -58,15 +58,14 @@ Configuring the Document Library Repository
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-the-document-library-repository/using-the-dbstore`
 -  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-the-document-library-repository/using-the-file-system-store`
 
-Configuring Clustering for High Availability
+Clustering for High Availability
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/02-database-configuration-for-cluster-nodes`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/03-documents-and-media-configuration-with-clustering`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/04-clustering-search`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/05-cluster-link-overview`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-clustering-for-high-availability/06-configuring-unicast-over-tcp`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/example-creating-a-simple-dxp-cluster`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/database-configuration-for-cluster-nodes`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/configuring-cluster-link`
+-  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/clustering-for-high-availability/configuring-unicast-over-tcp`
 
 Securing Liferay
 ----------------

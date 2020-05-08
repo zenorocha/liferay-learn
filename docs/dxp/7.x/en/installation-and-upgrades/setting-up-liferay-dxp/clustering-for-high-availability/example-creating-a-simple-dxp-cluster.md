@@ -28,7 +28,7 @@ Here are the steps for creating the cluster:
 1. [Test the Cluster](#test-the-cluster)
 
 ```note::
-   DXP cluster environments can also be set up using an `on-premises DXP Tomcat bundle <../../installing-liferay/installing-a-liferay-tomcat-bundle.md>`_, using `DXP installed to an app server <../../installing-liferay/installing-liferay-on-an-application-server/README.md>`_ on-premises, or using any combination of Docker containers and DXP installations.
+   DXP cluster environments can also be set up using an `on-premises DXP Tomcat bundle <../../installing-liferay/installing-a-liferay-tomcat-bundle.md>`_, using `DXP installed to an app server <../../installing-liferay/installing_liferay_on_an_application_server.md>`_ on-premises, or using any combination of Docker containers and DXP installations.
 ```
 
 ## Configure a Network for the Containers

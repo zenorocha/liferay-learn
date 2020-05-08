@@ -337,5 +337,5 @@ After deploying DXP, there may be excessive warnings and log messages, such as t
 * [Activating Liferay DXP](../../setting-up-liferay-dxp/activating-liferay-dxp.md)
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
-* [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
 * Maintaining Liferay DXP

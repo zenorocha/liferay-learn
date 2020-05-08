@@ -322,4 +322,4 @@ You can [sign in as your administrator user](../../../getting-started/introducti
 * [Accessing Plugins During a Trial Period](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * Installing and Configuring a Search Engine
 * [Securing Liferay DXP](../../securing-liferay/introduction-to-securing-liferay.md)
-* [Introduction to Clustering Liferay DXP](../../setting-up-liferay-dxp/configuring-clustering-for-high-availability/01-introduction-to-clustering-liferay-dxp.md)
+* [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
