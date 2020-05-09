@@ -22,7 +22,7 @@ To enable Cluster Link, add this [Portal Property](../../reference/portal-proper
 cluster.link.enabled=true
 ```
 
-The [Cluster Link Portal Properties](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs.
+The [Cluster Link Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) provide a default configuration that you can override to fit your needs.
 
 Many of the defaults use `localhost`, instead of a real address. In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If you still need this configuration, you can make DXP auto detect the real address with this property:
 

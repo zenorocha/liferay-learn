@@ -10,7 +10,7 @@ Liferay DXP works well in clusters of multiple machines (horizontal cluster) or 
 
 Here is what's required to create an effectively functional DXP cluster.
 
-1. Liferay DXP [installed](../../installing-liferay.html) on separate application server nodes
+1. Liferay DXP [installed](../../installing_liferay.md) on separate application server nodes
 
 1. A [database or database cluster](./database-configuration-for-cluster-nodes.md) that's accessible to all nodes
 
