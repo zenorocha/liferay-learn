@@ -27,6 +27,10 @@ Here are the steps for creating the cluster:
 1. [Front the Cluster with a Web Server](#front-the-cluster-with-a-web-server)
 1. [Test the Cluster](#test-the-cluster)
 
+```important::
+    Don't have Docker? Go here first: `Linux <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_ | `Windows <https://docs.docker.com/docker-for-windows/install/>`_ | `OSX <https://docs.docker.com/docker-for-mac/install/>`_
+```
+
 ```note::
    DXP cluster environments can also be set up using an `on-premises DXP Tomcat bundle <../../installing-liferay/installing-a-liferay-tomcat-bundle.md>`_, using `DXP installed to an app server <../../installing-liferay/installing_liferay_on_an_application_server.md>`_ on-premises, or using any combination of Docker containers and DXP installations.
 ```
@@ -179,12 +183,12 @@ Here's a summary of the items to configure:
 
 | Item | Configuration Method |
 | :--- | :---------- |
-| Search engine connection | Configuration file |
+| Search engine connection | [Configuration file](../../../system-administration/system-settings/using-configuration-files.md) |
 | Data source connection | `portal-ext.properties` file | See [Database Templates](../../reference/database-templates.md) |
 | File Store connection | `portal-ext.properties` file. Some File Store types require a configuration file too. | See [Configuring a File Store](../../..//system-administration/file-storage/configuring-file-storage.md) |
 | Cluster Link | `portal-ext.properties` file | See [Configuring Cluster Link](./configuring-cluster-link.md) |
 
-The Portal Properties can be specified using Docker environment variables or a `portal-ext.properties` file. Since this example uses several properties, properties files are used.
+The [Portal Properties](../../reference/portal-properties.md) can be specified using Docker environment variables or a `portal-ext.properties` file. Since this example uses several properties, properties files are used.
 
 One way to organize your node configurations is to create a folder for each node:
 
@@ -196,7 +200,7 @@ You're ready to configure the DXP server nodes.
 
 ### Configure the Search Engine Connection
 
-1. Create a search engine configuration file:
+1. Create a search engine [configuration file](../../../system-administration/system-settings/using-configuration-files.md):
 
     Create an `/osgi/config/` folder.
 
@@ -417,7 +421,7 @@ The DXP cluster node containers will have this configuration:
 | OSGi container port mapping | ``11311:11311`` | `11312:11311` |
 | Volume bind mount | `${PWD}/dxp-1/files:/mnt/liferay` | `${PWD}/dxp-2/files:/mnt/liferay` |
 
-The port mappings are from the host port to the container port. The host ports are unique to avoid collisions between them on the host. The container ports need only be unique within each container, and can therefore be the same on each node (e.g., each container uses the `8080` as its web server HTTP port). Remember that the example proxy server and load balancer directs requests to each container via each container's HTTP port. Here's an excerpt from the proxy configuration:
+The host ports are mapped to container ports. The unique host ports prevent collisions on the host. The container ports need only be unique within each container, and can therefore be the same on each node (e.g., each container uses the `8080` as its web server HTTP port). Remember that the example proxy server and load balancer directs requests to containers via each container's HTTP port. Here's a proxy configuration excerpt from the `httpd.conf` file:
 
 ```xml
   ...
@@ -429,7 +433,7 @@ The port mappings are from the host port to the container port. The host ports a
   ...
 ```
 
-The OSGi container mapping is for using Gogo shell on each container. The volume bind mount, leverages the DXP container's configuration phase to copy the `portal-ext.properties` files to the DXP server's [Liferay Home](../../reference/liferay-home.md).
+In the table above, the OSGi container port mapping is for using Gogo shell on each container. The volume bind mount, leverages the DXP container's configuration phase to copy the `portal-ext.properties` files to the DXP server's [Liferay Home](../../reference/liferay-home.md).
 
 It's time to start the DXP cluster nodes:
 
@@ -487,7 +491,7 @@ DXP is available at <http://localhost>. The web server directs your request to t
 
 ### Test the Cluster
 
-Test your cluster to make sure they show the same content changes and that DXP stays available when there is at least one cluster node running.
+Test your cluster to make sure the nodes show the same content changes and that DXP stays available when there is at least one cluster node running.
 
 Start by adding content (e.g., the Language Selector widget) to your site at <http://localhost>.
 
