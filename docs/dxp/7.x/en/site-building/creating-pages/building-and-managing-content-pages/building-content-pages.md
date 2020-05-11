@@ -29,7 +29,7 @@ To begin building a Content Page:
     * [Editing an Image](#editing-an-image)
     * [Copying a Fragment](#copying-a-fragment)
     * [Configuring Section Width and Padding](#configuring-section-width-and-padding)
-    * [Configuring a Row's Columns](#configuring-a-rows-columns)
+    * [Configuring a Row's Columns](#configuring-a-row-s-columns)
     * [General Configuration](#general-configuration)
     * [Mapping Content](#mapping-content)
 
