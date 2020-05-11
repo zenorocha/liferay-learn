@@ -16,7 +16,7 @@ Connections to separate read and read-write [data sources](https://docs.liferay.
 
 ### JDBC
 
-Follow these steps to use [JDBC](../../installing-liferay/configuring-a-database.md) to connect directly to your read and write data sources:
+Edit your `portal-ext.properties` file following these steps to connect directly to your separate read and write data sources using [JDBC](../../installing-liferay/configuring-a-database.md):
 
 1. Set the default connection pool provider. For provider information, see the [JDBC properties reference](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#JDBC). The default setting specifies [HikariCP](https://github.com/brettwooldridge/HikariCP) as the pool provider:
 
@@ -40,37 +40,37 @@ Follow these steps to use [JDBC](../../installing-liferay/configuring-a-database
 
     For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).
 
-1. Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
+1. Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
     ```
 
-1. Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections.
+1. Optionally validate the data connections to make sure bad connections are handled gracefully.
 
     Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
-1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
+1. Enable the read-writer database configuration by copying the default [`spring.configs` and `spring.infrastructure.configs` Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and adding the following Spring configuration file paths to them.
 
-    ```properties
-    spring.configs=\
-        [..]
-        META-INF/dynamic-data-source-spring.xml,\
-        [..]
+    Add to `spring.configs`:
 
-    spring.infrastructure.configs=\
-        [..]
-        META-INF/dynamic-data-source-infrastructure-spring.xml,\
-        [..]
+    ```
+        META-INF/dynamic-data-source-spring.xml
+    ```
+
+    Add to `spring.infrastructure.configs`:
+
+    ```
+    META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
     For more information, see the [Spring configuration Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring).
 
 ### JNDI
 
-Follow these steps to use JNDI to connect to your read and write data sources on your app server:
+Edit your `portal-ext.properties` file following these steps to connect to your read and write data sources on your app server using JNDI:
 
-1. Set your read and write JNDI data source usernames and passwords.
+1. Set your read and write JNDI data source user names and passwords.
 
     ```properties
     jdbc.read.jndi.name=[place your "read" data source JNDI name here]
@@ -84,28 +84,28 @@ Follow these steps to use JNDI to connect to your read and write data sources on
     jdbc.write.password=[place your password here]
     ```
 
-1. Apply the following setting so that DXP uses the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
+1. Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
     ```
 
-1. Validating a database connection before using it, lets you handle bad connections gracefully. Validation is optional and might have a small cost, but avoids bad connections.
+1. Optionally validate the data connections to make sure bad connections are handled gracefully.
 
     Some connection pools used with JDBC4 (check your driver's JDBC version) validate connections automatically. Other connection pools may require additional, vendor-specific connection validation properties---specify them in a Portal Properties file. Refer to your connection pool provider documentation for connection validation details.
 
-1. Enable the read-writer database configuration by uncommenting the following Spring configuration files from the `spring.configs` and `spring.infrastructure.configs` properties:
+1. Enable the read-writer database configuration by copying the default [`spring.configs` and `spring.infrastructure.configs` Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and adding the following Spring configuration file paths to them.
 
-    ```properties
-    spring.configs=\
-        [..]
-        META-INF/dynamic-data-source-spring.xml,\
-        [..]
+    Add to `spring.configs`:
 
-    spring.infrastructure.configs=\
-        [..]
-        META-INF/dynamic-data-source-infrastructure-spring.xml,\
-        [..]
+    ```
+        META-INF/dynamic-data-source-spring.xml
+    ```
+
+    Add to `spring.infrastructure.configs`:
+
+    ```
+    META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
     For more information, see the [Spring configuration Portal Properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Spring).
@@ -114,7 +114,7 @@ DXP uses a read data source, a write data source, and a counter data source the 
 
 ## Database Replication
 
-Using a database cluster improves fault tolerance and DXP performance. Database cluster instances must be stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All supported databases support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
+Using a database cluster improves fault tolerance and DXP performance. Database cluster instances must be stay in sync. Replication is the process of copying changed data and changed schema from one database instance to another. All [supported databases](https://web.liferay.com/documents/14/21598941/Liferay+DXP+7.2+Compatibility+Matrix/b6e0f064-db31-49b4-8317-a29d1d76abf7) support replication. If you're using a database cluster, set up the databases for replication by following the database vendor's instructions.
 
 ## What's Next
 
