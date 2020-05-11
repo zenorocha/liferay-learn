@@ -1,4 +1,4 @@
-# Configuring The Commerce Notification Queue
+# Configuring the Commerce Notification Queue
 
 When an event triggers an notification (for example, an order is placed), the notification is logged in the channel's _Notification Queue_ tab. By default, the Liferay Commerce instance checks whether a notification has been sent every 15 minutes and deletes any unsent notifications after 43200 minutes (30 days).
 
