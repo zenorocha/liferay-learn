@@ -97,7 +97,7 @@ Congratulations! Your cluster is using Cluster Link.
 
 ## What's Next
 
-It's best to test your DXP cluster under load and investigate optimizing your system. DXP's cache is a good place to start optimizing. You can configure cache for Liferay entities and entities you've created using Service Builder. For information on configuring entity cache, please see [Cache Configuration](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration).
+It's best to test your DXP cluster under load and investigate optimizing your system. Consider the entities used most on your site and adjust their cache settings appropriately. For information on configuring cache, please see [Cache Configuration](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration).
 
 ## Additional Information
 
