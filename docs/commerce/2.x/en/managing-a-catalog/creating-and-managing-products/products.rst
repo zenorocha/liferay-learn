@@ -14,6 +14,7 @@ Products
    products/organizing-your-catalog-with-product-categories.md
    products/related-products-up-sells-and-cross-sells.md
    products/managing-boms.md
+   products/creating-shipping-overrides.md
 
 .. include:: /managing-a-catalog/creating-and-managing-products/products/README.rst
    :start-line: 2

@@ -47,3 +47,7 @@ To modify this SKU:
 1. Click _Publish_.
 
 The SKU has successfully been renamed.
+
+## Additional Information
+
+* [Creating Shipping Overrides](./creating-shipping-overrides.md)
