@@ -60,7 +60,7 @@ Use the following steps to configure Unicast:
         -Djgroups.tcpping.initial_hosts=192.168.224.154[7800],192.168.224.155[7800]
         ```
 
-1. Copy your `tcp.xml` file to each node, making sure to set the TCP bind port to the node's bind port. On the node with IP address `192.168.224.155`, for example, configure TCPPing like this:
+1. Copy your `tcp.xml` file to the same location on each node, making sure to set the TCP bind port to an unused port on each node. On the node with IP address `192.168.224.155`, for example, configure TCPPing like this:
 
     ```xml
     <TCP bind_port="7800"/>
@@ -69,7 +69,7 @@ Use the following steps to configure Unicast:
         port_range="0"/>
     ```
 
-1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in each node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in each node's [`portal-ext.properties` file](../../reference/portal-properties.md) to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -91,7 +91,7 @@ TCP Ping is the default discovery protocol you can use to fit a majority of use 
 
 ### JDBC Ping
 
-Rather than use TCP Ping to discover cluster members, you can use a central database accessible by all the nodes to help them find each other. Cluster members write their own and read the other members' addresses from this database. To enable this configuration, replace the `TCPPING` tag with the corresponding `JDBC_PING` tag:
+Rather than use TCP Ping to discover cluster members, you can use a central database accessible by all the nodes to help them find each other. Cluster members write their own and read the other members' addresses from this database. To enable this configuration, replace the `TCPPING` tag referenced in the [Unicast Configuration](#unicast-configuration) steps with the corresponding `JDBC_PING` tag:
 
 ```xml
 <JDBC_PING
@@ -107,7 +107,7 @@ For example JDBC connection values, please see [Database Templates](../../refere
 
 Amazon S3 Ping can be used for servers running on Amazon's EC2 cloud service. Each node uploads a small file to an S3 bucket, and all the other nodes read the files from this bucket to discover the other nodes. When a node leaves, its file is deleted.
 
-To configure S3 Ping, replace the `TCPPING` tag with the corresponding `S3_PING` tag:
+To configure S3 Ping, replace the `TCPPING` tag in the [Unicast Configuration](#unicast-configuration) steps with the corresponding `S3_PING` tag:
 
 ```xml
 <S3_PING
@@ -141,7 +141,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
     * `tcp-control.xml`
     * `tcp-transport.xml`
 
-1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's `portal-ext.properties` file to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
+1. Modify the [Cluster Link properties](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Cluster%20Link) in the node's [`portal-ext.properties` file](../../reference/portal-properties.md) to enable Cluster Link and point to the TCP XML file for each Cluster Link channel:
 
     ```properties
     cluster.link.enabled=true
@@ -149,7 +149,7 @@ The following steps use Unicast over TCPPing to demonstrate the approach.
     cluster.link.channel.properties.transport.0=/jgroups/tcp-transport.xml
     ```
 
-1. Modify each `tcp-*.xml` file's TCP and TCPPing elements to account for each node's IP address and bind port.
+1. Modify each `tcp-*.xml` file's TCP and discovery protocol tags (e.g., `TCPPing` tag if you're using TCPPing) to account for each node's IP address and bind port.
 
 If you're vertically clustering (i.e., you have multiple servers running on the same physical or virtual system), every channel must use a unique unused bind port for discovery communication. In each `tcp-*.xml` file, assign the TCP tag's `bind_port` attribute to a unique, unused port.
 
@@ -200,7 +200,7 @@ Here are example TCP and TCPPing elements using the bind ports on nodes running 
     port_range="0"/>
 ```
 
-If you have added entities that can be cached or you want to tune the cache configuration for your system, you can do so using a module.
+If you have added entities that can be cached or you want to tune the cache configuration for your system, you can do so using a module. <!--TODO Link to caching articles. jhinkey -->
 
 ## Additional Information
 
