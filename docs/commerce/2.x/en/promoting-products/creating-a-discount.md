@@ -7,13 +7,13 @@ To create a new discount:
 1. Go to the _Control Panel_ → _Commerce_ → _Discounts_.
 1. Click the (![Add](../images/icon-add.png)) button to add a new Discount.
 1. Enter a name: _Spring Sale_.
-1. Select a discount type (for example, _Apply to Subtotal_) from the _Target_ drop down. (See [Discount Types](./introduction-to-discounts.md/#types-of-discounts) to learn more about the different discount types.)
+1. Select a discount type (for example, _Apply to Subtotal_) from the _Target_ drop down. (See [Discount Types](./introduction-to-discounts.md#types-of-discounts) to learn more about the different discount types.)
 1. Check the box for which channel this discount applies to.
 1. Select which [Account Groups](../account-management/creating-a-new-account-group.md) this discount applies to. In this example, _US East Coast_.
 1. If using a coupon code, switch the _Use Coupon Code_ toggle to _Yes_. Then enter a code in the _Couple Code_ field. Otherwise leave it as _NO_.
-1. If using a percentage, switch the _Use Percentage_ toggle to _Yes_. (See [Discount Percentages](./introduction-to-discounts.md/#discount-percentages) to learn more.)
+1. If using a percentage, switch the _Use Percentage_ toggle to _Yes_.
 1. Enter the _Maximum Discount Amount_: $20.00
-1. Enter the _Level_: 20.00. This takes 20% off the subtotal.
+1. Enter the [_Level_](./introduction-to-discounts.md#tiered-discounts): 20.00. This takes 20% off the subtotal.
 1. Switch the _Active_ toggle to _YES_.
 
     ![New discount](./creating-a-discount/images/01.png)
@@ -24,7 +24,7 @@ Your store now has an active discount with 20% off selected goods for those in t
 
 ## Adding Rules to a Discount
 
-You can define rules that specify conditions to be met to qualify for a discount. See the [Discount Rules](./introduction-to-discounts.md#discount-rules) section to learn more.
+You can define rules that specify requirements to qualify for a discount. See [Discount Rules](./introduction-to-discounts.md#discount-rules) to learn more.
 
 1. Once the discount has been created, there are 2 tabs: _Detail_, and _Rules_. Click on the _Rules_ tab.
 

@@ -4,11 +4,11 @@ Discounts are created in the _Discounts_ menu in the _Control Panel_. Users can 
 
 * Reducing the price of specific products
 * Offering free shipping
-* Tailoring the discount for specific [Account Groups](../account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers
-* Schedule the promotion for a period of time
+* Tailoring a discount for specific [Account Groups](../account-management/creating-a-new-account-group.md), or to a more narrowly defined group of customers
+* Schedule a promotion for a period of time
 
 ```tip::
-   Discounts are not the same as price lists. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_, `Creating a Price List <../managing-a-catalog/managing-price/creating-a-price-list.md>`_, and `Adding Tiered Pricing <../managing-a-catalog/managing-price/adding-tiered-pricing.md>`_.
+   Discounts are not the same as a *Price List*. For more information on Pricing see `Introduction to Product Pricing Methods <../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md>`_, `Creating a Price List <../managing-a-catalog/managing-price/creating-a-price-list.md>`_, and `Adding Tiered Pricing <../managing-a-catalog/managing-price/adding-tiered-pricing.md>`_.
 ```
 
 ## Discount Types
@@ -35,7 +35,7 @@ The devs inadvertently added Pricing Class as a new discount type which adds a t
 
 ## Coupon Codes
 
-Regardless of which discount type you choose, you can make a discount more exclusive by requiring a coupon code. You can generate a coupon code then share it through emails, newsletters, or ads.
+Regardless of which discount type you choose, you can require a coupon code to qualify for a discount. User can specify a coupon code then share it through emails, newsletters, or ads.
 
 ![Activate the Coupon Code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/02.png)
 
@@ -61,7 +61,7 @@ All discounts can be configured to have expiration dates to coincide with promot
 
 ## Discount Rules
 
-You can define rules that specify conditions to be met to qualify for a discount. There are three types of rules:
+You can define rules that specify requirements to qualify for a discount. There are three types of rules:
 
 | Rule | Description |
 | --- | --- |
@@ -69,7 +69,7 @@ You can define rules that specify conditions to be met to qualify for a discount
 | Has all of these products | Orders must include all specified products in order to receive the discount. |
 | Has one of these products | Orders must contain at least one product from a list of specified products to receive the discount. |
 
-The discount rules are added on the _Rules_ tab.
+The discount rules are added on the _Rules_ tab. Developers can also [implement new discount rules](../developer-guide/tutorials/adding-a-new-discount-rule-type.md).
 
 ![Add a discount rule.](./introduction-to-discounts/images/04.png)
 
