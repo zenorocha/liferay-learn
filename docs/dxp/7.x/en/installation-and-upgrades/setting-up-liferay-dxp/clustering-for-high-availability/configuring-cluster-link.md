@@ -58,33 +58,30 @@ Please see [JGroups's documentation](http://www.jgroups.org/manual4/index.html#p
 
 Multicast broadcasts to all devices on the network. Clustered environments on the same network communicate with each other by default. Messages and information (e.g., scheduled tasks) sent between them can lead to unintended consequences. Isolate such cluster environments by either separating them logically or physically on the network, or by configuring each cluster's `portal-ext.properties` to use different sets of [multicast group address and port values](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html#Multicast).
 
-JGroups sets a bind address automatically, using `localhost` by default. If you want to set a manual address, you can set it in `portal-ext.properties`:
-
-```properties
-cluster.link.bind.addr["cluster-link-control"]=localhost
-cluster.link.bind.addr["cluster-link-udp"]=localhost
-```
-
-In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. If for some reason you need this configuration, you can make DXP automatically detect its real address with this property:
+JGroups sets a bind address automatically, using `localhost` by default. In some configurations, however, `localhost` is bound to the internal loopback network (`127.0.0.1` or `::1`), rather than the host's real address. As long as DXP's `cluster.link.autodetect.address` Portal Property points to a server that's contactable, DXP uses that server to automatically detect your host's real address. Here's the default setting:
 
 ```properties
 cluster.link.autodetect.address=www.google.com:80
 ```
 
-Set it to connect to some other host that's contactable by your server. By default, it points to Google, but this may not work if your server is behind a firewall. If you set the address manually using the properties above, you don't need to set the auto-detect address.
+Contacting Google may not work if your server is behind a firewall.
 
-Your network configuration may preclude the use of multicast over TCP, so below are some other ways you can get your cluster communicating. Note that these methods are all provided by JGroups.
+An alternative to detecting the host address automatically for the bind address, you can set the bind address manually in your `portal-ext.properties` file.
 
-### Test Your Cluster Link Configuration
-
-1. If you are binding the IP address instead of using `localhost`, make sure the right IP addresses are declared using these properties:
+1. Disable address auto-detection by setting the `cluster.link.autodetect.address` property to an empty value:
 
     ```properties
-    cluster.link.bind.addr["cluster-link-control"]=localhost
-    cluster.link.bind.addr["cluster-link-udp"]=localhost
+    cluster.link.autodetect.address=
     ```
 
-1. Test your load and then optimize your settings if necessary.
+2. Set the following properties to your host's IP address:
+
+    ```properties
+    cluster.link.bind.addr["cluster-link-control"]=[place your IP address here]
+    cluster.link.bind.addr["cluster-link-udp"]=[place your IP address here]
+    ```
+
+Your network configuration may preclude the use of multicast over TCP, so below are some other ways you can get your cluster communicating. Note that these methods are all provided by JGroups.
 
 ## Conclusion
 
@@ -100,7 +97,7 @@ Congratulations! Your cluster is using Cluster Link.
 
 ## What's Next
 
-It's best to test your DXP cluster under load and investigate optimizing your system. DXP's cache is a good place to start optimizing. You can configure cache for Liferay entities and entities you've created using Service Builder. For information on configuring cache for these entities, please see [Cache Configuration](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration).
+It's best to test your DXP cluster under load and investigate optimizing your system. DXP's cache is a good place to start optimizing. You can configure cache for Liferay entities and entities you've created using Service Builder. For information on configuring entity cache, please see [Cache Configuration](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration).
 
 ## Additional Information
 
