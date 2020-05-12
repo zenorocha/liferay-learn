@@ -42,6 +42,30 @@ See the [Managing Subscriptions](../subscriptions/managing-subscriptions.md) art
 
 Creating a shipment begins in the _Orders_ menu as a continuation of processing an order. See the [Creating a Shipment](../shipments/creating-a-shipment.md) article to learn more.
 
+## Commerce 2.0 and Below
+
+Processing an order requires two major stages: to transmit the order and then to create a shipment.
+
+To process an order:
+
+1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_.
+1. Click on the _Pending_ tab.
+1. Click on an order (_40926_).
+
+    ![Click on the Pending Tab to process an order.](./processing-an-order/images/05.png)
+
+1. Click on the _Overview_ tab.
+1. Click _Edit Order Status_.
+
+     ![Click on the Pending Tab to process an order.](./processing-an-order/images/06.png)
+
+1. Select _Transmitted_ from the Order Status dropdown menu.
+1. Click _Save_ when finished.
+
+The order is then moved to the _Transmitted_ tab. Once an order is transmitted, it is ready to be shipped.
+
+See the [Creating a Shipment in Liferay Commerce 2.0](../shipments/creating-a-shipment.md#creating-a-new-shipment-on-liferay-commerce-2-0-and-below) article to learn more.
+
 ## Additional Information
 
 * [Introduction to Orders Workflows](../order-workflows/introduction-to-order-workflows.md)
