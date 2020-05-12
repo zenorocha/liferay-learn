@@ -10,11 +10,11 @@ Localization can be configured using these interfaces:
 
 ## Setup Wizard
 
-The [Setup Wizard](../../installing-liferay/running-liferay-for-the-first-time.md) sets the DXP instance's default language and time zone. They're available to select in the _Default Language_ and _Time Zone_ selectors.
+The [Setup Wizard](../installing-liferay/running-liferay-for-the-first-time.md) sets the DXP instance's default language and time zone. They're available to select in the _Default Language_ and _Time Zone_ selectors.
 
 ![Use the Setup Wizard to set the DXP instance's default language and time zone](./configuring-localization/images/01.png)
 
-The Setup Wizard is enabled by default for [Liferay-Tomcat Bundles](../../installing-liferay/installing-a-liferay-tomcat-bundle.md) and [application server installations](../../installing-liferay/installing_liferay_on_an_application_server.html).
+The Setup Wizard is enabled by default for [Liferay-Tomcat Bundles](../installing-liferay/installing-a-liferay-tomcat-bundle.md) and [application server installations](../installing-liferay/installing_liferay_on_an_application_server.html).
 
 If you have already launched DXP, change the instance's default language and time zone in the Control Panel.
 
@@ -24,7 +24,7 @@ Localization settings at every scope (virtual instance, widget, and user) can be
 
 ### Virtual Instance and Widget Settings
 
-Localization for instances and their configurable widgets can be set in that instance's _Localization_ pages. See [Configuring a Virtual Instance Localization](../../../system-administration/virtual_instances.html) <!-- placeholder link for now--> for instructions.
+Localization for instances and their configurable widgets can be set in that instance's _Localization_ pages. See [Configuring a Virtual Instance Localization](../../system-administration/virtual_instances.html) <!-- placeholder link for now--> for instructions.
 
 ### User-Specific Settings
 
@@ -48,7 +48,7 @@ For this user, the DXP instance is now displayed in her specific language and al
 
 ## Portal Properties
 
-If you want to configure the default virtual instance's localization before starting DXP, use a [`portal-ext.properties` file](../../reference/portal-properties.md).
+If you want to configure the default virtual instance's localization before starting DXP, use a [`portal-ext.properties` file](../reference/portal-properties.md).
 
 | **Portal Property** | **Description** |
 | :------------------ | :-------------- |
@@ -66,7 +66,7 @@ The properties above localize the virtual instance for users in Lisbon, Portugal
 
 ## Additional Information
 
-* [Configuring a Virtual Instance Localization](../../../system-administration/virtual_instances.html)
+* [Configuring a Virtual Instance Localization](../../system-administration/virtual_instances.html)
 
 * [Overriding Global Language Keys](https://help.liferay.com/hc/en-us/articles/360029122551-Overriding-Global-Language-Keys)
 
