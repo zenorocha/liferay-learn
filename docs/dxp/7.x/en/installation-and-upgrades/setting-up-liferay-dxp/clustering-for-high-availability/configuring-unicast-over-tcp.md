@@ -91,7 +91,7 @@ TCP Ping is the default discovery protocol you can use to fit a majority of use 
 
 ### JDBC Ping
 
-Rather than use TCP Ping to discover cluster members, you can use a central database accessible by all the nodes to help them find each other. Cluster members write their own and read the other members' addresses from this database. To enable this configuration, replace the `TCPPING` tag referenced in the [Unicast Configuration](#unicast-configuration) steps with the corresponding `JDBC_PING` tag:
+Rather than use TCP Ping to discover cluster members, you can use a central database accessible by all the nodes to help them find each other. Cluster members write their own and read the other members' addresses from this database. To enable this configuration, replace the `TCPPING` tag referenced in the [Unicast Configuration](#unicast-configurations) steps with the corresponding `JDBC_PING` tag:
 
 ```xml
 <JDBC_PING
@@ -107,7 +107,7 @@ For example JDBC connection values, please see [Database Templates](../../refere
 
 Amazon S3 Ping can be used for servers running on Amazon's EC2 cloud service. Each node uploads a small file to an S3 bucket, and all the other nodes read the files from this bucket to discover the other nodes. When a node leaves, its file is deleted.
 
-To configure S3 Ping, replace the `TCPPING` tag in the [Unicast Configuration](#unicast-configuration) steps with the corresponding `S3_PING` tag:
+To configure S3 Ping, replace the `TCPPING` tag in the [Unicast Configuration](#aunicast-configurations) steps with the corresponding `S3_PING` tag:
 
 ```xml
 <S3_PING

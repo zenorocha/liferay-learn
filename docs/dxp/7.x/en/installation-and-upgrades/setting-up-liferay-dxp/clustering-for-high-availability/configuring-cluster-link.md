@@ -81,7 +81,7 @@ An alternative to detecting the host address automatically for the bind address,
     cluster.link.bind.addr["cluster-link-udp"]=[place your IP address here]
     ```
 
-Your network configuration may preclude the use of multicast over TCP, so below are some other ways you can get your cluster communicating. Note that these methods are all provided by JGroups.
+Your network configuration may preclude the use of multicast over TCP, see [Configuring Unicast over TCP](./configuring-unicast-over-tcp.md) for information for those situations. Note that these methods are all provided by JGroups.
 
 ## Conclusion
 
