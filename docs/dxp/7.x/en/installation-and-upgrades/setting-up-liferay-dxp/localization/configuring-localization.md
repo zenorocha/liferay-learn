@@ -1,7 +1,7 @@
 # Configuring Localization
 
 Liferay DXP supports localization by language, time zone, and more. The English (US) language translation and GMT time zone are the defaults, but DXP has over 40 translations and can be set to any time zone. Localization is scoped for virtual instances, widgets in each instance, and individual users.
- 
+
 Localization can be configured using these interfaces:
 
 * [Setup Wizard](#setup-wizard)
@@ -10,21 +10,21 @@ Localization can be configured using these interfaces:
 
 ## Setup Wizard
 
-The [Setup Wizard](../../installing-liferay/running-liferay-dxp-for-the-first-time.md) sets the DXP instance's default language and time zone. They're available to select in the _Default Language_ and _Time Zone_ selectors.
+The [Setup Wizard](../../installing-liferay/running-liferay-for-the-first-time.md) sets the DXP instance's default language and time zone. They're available to select in the _Default Language_ and _Time Zone_ selectors.
 
 ![Use the Setup Wizard to set the DXP instance's default language and time zone](./configuring-localization/images/01.png)
 
-The Setup Wizard is enabled by default for [DXP Tomcat Bundles](../../installing-liferay/installing-a-liferay-dxp-tomcat-bundle.md) and [DXP application server installations](../../installing-liferay/installing-liferay-dxp-on-an-application-server.html).
+The Setup Wizard is enabled by default for [Liferay-Tomcat Bundles](../../installing-liferay/installing-a-liferay-tomcat-bundle.md) and [application server installations](../../installing-liferay/installing_liferay_on_an_application_server.html).
 
 If you have already launched DXP, change the instance's default language and time zone in the Control Panel.
 
 ## Control Panel
 
-Localization settings at every scope (virtual instance, widget, and user) can be set in the Control Panel. 
+Localization settings at every scope (virtual instance, widget, and user) can be set in the Control Panel.
 
 ### Virtual Instance and Widget Settings
 
-Localization for instances and their configurable widgets can be set in that instance's _Localization_ pages. See [Configuring a Virtual Instance Localization](../../../system-administration/virtual-instances/configuring-a-virtual-instance-localization.md) for instructions.
+Localization for instances and their configurable widgets can be set in that instance's _Localization_ pages. See [Configuring a Virtual Instance Localization](../../../system-administration/virtual_instances.html) <!-- placeholder link for now--> for instructions.
 
 ### User-Specific Settings
 
@@ -46,9 +46,9 @@ Here's how to set an individual user's language and time zone:
 
 For this user, the DXP instance is now displayed in her specific language and all assets are time-stamped in her time zone.
 
-## Portal Properties 
+## Portal Properties
 
-If you want to configure the default virtual instance's localization before starting DXP, use a [`portal-ext.properties` file](../../../reference/portal-properties.md).
+If you want to configure the default virtual instance's localization before starting DXP, use a [`portal-ext.properties` file](../../reference/portal-properties.md).
 
 | **Portal Property** | **Description** |
 | :------------------ | :-------------- |
@@ -57,7 +57,7 @@ If you want to configure the default virtual instance's localization before star
 
 For example,
 
-```properties 
+```properties
 company.default.locale=pt_PT
 company.default.time.zone=Europe/Lisbon
 ```
@@ -66,7 +66,7 @@ The properties above localize the virtual instance for users in Lisbon, Portugal
 
 ## Additional Information
 
-* [Configuring a Virtual Instance Localization](../../system-administration/virtual-instances/configuring-a-virtual-instance-localization.md)
+* [Configuring a Virtual Instance Localization](../../../system-administration/virtual_instances.html)
 
 * [Overriding Global Language Keys](https://help.liferay.com/hc/en-us/articles/360029122551-Overriding-Global-Language-Keys)
 
