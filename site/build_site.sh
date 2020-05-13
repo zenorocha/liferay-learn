@@ -185,9 +185,9 @@ function main {
 
 	source venv/bin/activate
 
-	check_utils pip3 sphinx-build zip
+	check_utils pip3 zip
 
-	pip_install recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
+	pip_install sphinx recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
 
 	parse_args_generate_sphinx_input $1 $2
 
