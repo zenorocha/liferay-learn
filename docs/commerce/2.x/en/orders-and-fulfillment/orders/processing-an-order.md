@@ -1,8 +1,8 @@
 # Processing an Order
 
-Processing an order in Liferay Commerce consists of three major stages: accepting the order, processing the order, and finally creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
+Processing an order in Liferay Commerce consists of three stages: accepting an order, processing an order, and creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
 
-## Accepting the Order
+## Accepting an Order
 
 Users can accept an order once it has completed the checkout process. Note that if [Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md) have been enabled, the order must first be reviewed and then [approved (or rejected)](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md). Until the order is reviewed, the order has not completed the checkout process and thus cannot be accepted at this point.
 
@@ -44,7 +44,7 @@ Creating a shipment begins in the _Orders_ menu as a continuation of processing 
 
 ## Commerce 2.0 and Below
 
-Processing an order requires two major stages: to transmit the order and then to create a shipment.
+Order processing is done in two stages: transmitting an order and creating a shipment.
 
 To process an order:
 
