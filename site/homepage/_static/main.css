@@ -8656,9 +8656,12 @@ a.copybtn {
       width: 100%; }
       .documentations .doc-nav-wrapper .doc-nav-footer .dropdown button {
         color: #a7a9bc;
+        padding: 0.25rem;
         width: 100%; }
         .documentations .doc-nav-wrapper .doc-nav-footer .dropdown button svg {
           margin-right: 4px; }
+      .documentations .doc-nav-wrapper .doc-nav-footer .dropdown .dropdown-menu {
+        width: calc(100% - 1.5rem); }
 
 .documentations .info-bar {
   align-items: center;

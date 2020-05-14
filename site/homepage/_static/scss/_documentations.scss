@@ -136,11 +136,16 @@
 
 				button {
 					color: $secondary-l1;
+					padding: 0.25rem;
 					width: 100%;
 
 					svg {
 						margin-right: 4px;
 					}
+				}
+
+				.dropdown-menu {
+					width: calc(100% - 1.5rem);
 				}
 			}
 		}
