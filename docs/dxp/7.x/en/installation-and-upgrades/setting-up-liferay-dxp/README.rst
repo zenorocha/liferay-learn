@@ -28,7 +28,7 @@ Installing and Managing Apps
 Localization
 ------------
 
-- :doc:`/installation-and-upgrades/setting-up-liferay-dxp/configuring-localization`
+- :doc:`/installation-and-upgrades/setting-up-liferay-dxp/initial-instance-localization`
 
 Installing a Search Engine
 --------------------------
