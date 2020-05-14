@@ -107,7 +107,7 @@ For example JDBC connection values, please see [Database Templates](../../refere
 
 Amazon S3 Ping can be used for servers running on Amazon's EC2 cloud service. Each node uploads a small file to an S3 bucket, and all the other nodes read the files from this bucket to discover the other nodes. When a node leaves, its file is deleted.
 
-To configure S3 Ping, replace the `TCPPING` tag in the [Unicast Configuration](#aunicast-configurations) steps with the corresponding `S3_PING` tag:
+To configure S3 Ping, replace the `TCPPING` tag in the [Unicast Configuration](#unicast-configurations) steps with the corresponding `S3_PING` tag:
 
 ```xml
 <S3_PING
