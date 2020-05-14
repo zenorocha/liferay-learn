@@ -2,9 +2,9 @@
 
 Liferay DXP supports localization by language, time zone, and more. The English (US) language translation and GMT time zone are the defaults, but DXP has over 40 translations and can be set to any time zone. Localization is scoped for virtual instances, widgets in each instance, and individual users. As you set up DXP, you can configure the virtual instance default language and time zone using these interfaces:
 
-* [Portal Properties](#portal-properties): Specify the defaults in a properties file before starting the application server.
-* [Setup Wizard](#setup-wizard): Set the defaults via a UI as a part of launching DXP.
-* [Control Panel](#control-panel): Modify the defaults via a UI after launching the DXP instance.
+* [Portal Properties](#portal-properties): Specify defaults in a properties file before starting the application server.
+* [Setup Wizard](#setup-wizard): Set defaults via a UI as a part of launching DXP.
+* [Control Panel](#control-panel): Modify defaults via a UI after launching the DXP instance.
 
 ## Portal Properties
 
@@ -37,6 +37,10 @@ If you have already launched DXP, change the instance's default language and tim
 ## Control Panel
 
 A virtual instance's default language and time zone can be modified using the instance's _Localization_ page. See [Configuring a Virtual Instance Localization](../../system-administration/virtual_instances.html) <!-- placeholder link for now--> for instructions.
+
+## Conclusion
+
+You have configured your DXP instance's default language and time zone. If want to explore more information on localizing DXP, including how to facilitate choosing locales, please see [Site Localization](../../site-building/06-site-settings/site_localization.html)<!-- placeholder link for now-->.
 
 ## Additional Information
 
