@@ -1,6 +1,11 @@
 Manage and Optimize
 ===================
 
+Repository Management
+---------------------
+
+-  :doc:`/manage-and-optimize/upgrading-your-dxp-cloud-project-to-version-4`
+
 Performance and Monitoring
 --------------------------
 
