@@ -3571,7 +3571,7 @@ mark,
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 300 !important; }
+  font-weight: 200 !important; }
 
 .font-weight-lighter {
   font-weight: lighter !important; }
@@ -8569,12 +8569,13 @@ a.copybtn {
   margin-top: 4.8125rem; }
 
 .documentations .doc-nav,
+.documentations .doc-nav-footer,
 .documentations .doc-nav-wrapper {
   background-color: #F4F6F9; }
 
 .documentations .doc-nav {
   font-weight: 600;
-  height: 80vh;
+  height: calc(100% - 8.3125rem);
   overflow: auto;
   padding: 1rem 0; }
   .documentations .doc-nav > ul {
@@ -8636,12 +8637,28 @@ a.copybtn {
       padding: 0.5rem 2rem; }
 
 .documentations .doc-nav-wrapper {
-  height: 100%;
+  height: calc(100vh - 3.5rem);
   margin-left: -15px;
   max-width: 16.66667%;
   position: fixed;
   width: 100%;
   z-index: 1; }
+  .documentations .doc-nav-wrapper .doc-nav-footer {
+    align-items: center;
+    border-top: 1px solid #DADEE3;
+    bottom: 0;
+    display: flex;
+    height: 3.5rem;
+    padding: 0 0.75rem;
+    position: absolute;
+    width: 100%; }
+    .documentations .doc-nav-wrapper .doc-nav-footer .dropdown {
+      width: 100%; }
+      .documentations .doc-nav-wrapper .doc-nav-footer .dropdown button {
+        color: #a7a9bc;
+        width: 100%; }
+        .documentations .doc-nav-wrapper .doc-nav-footer .dropdown button svg {
+          margin-right: 4px; }
 
 .documentations .info-bar {
   align-items: center;
@@ -8776,7 +8793,7 @@ pre {
   padding: 1rem 1.25rem; }
   pre code {
     background-color: inherit;
-    font-weight: 300; }
+    font-weight: 200; }
 
 .documentations h1 {
   margin-bottom: 1rem; }

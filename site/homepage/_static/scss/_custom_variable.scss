@@ -35,12 +35,6 @@ $card-sidebar: #42BFC2 !default;
 // Variables from atlas/variables/_globals for alerts
 // https://github.com/liferay/clay/blob/0568f0a1ffb82b0bc85321b10cb32ff5f68e2cc1/packages/clay-css/src/scss/atlas/variables/_globals.scss
 
-$font-weight-light: 300 !default;
-$font-weight-normal: 400 !default;
-$font-weight-semi-bold: 600 !default;
-$font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default; // Changed from atlas
-
 $grid-gutter-width: 30px !default; // 30px is the original from bootstrap instead of the 24px defined in Atlas. This variable is needed to be defined earlier for alerts.
 
 $primary: #0B5FFF !default;
@@ -103,7 +97,10 @@ $font-family-base: "Source Sans Pro", "Source Serif Pro", -apple-system,
 	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $font-weight-light: 200 !default;
+$font-weight-normal: 400 !default;
 $font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
 
 $small-font-size: 0.75rem !default; // 12px
 
@@ -139,6 +136,7 @@ $breadcrumb-divider-svg-icon: clay-icon(angle-right, $breadcrumb-divider-color) 
 $breadcrumb-divider-svg-icon-height: 0.75em !default; // 12px
 $breadcrumb-divider-svg-icon-width: $breadcrumb-divider-svg-icon-height !default;
 
+$footer-height: 3.5rem !default; // 56px
 $header-height: 3.5rem !default; // 56px
 $info-bar-height: 4.8125rem !default; // 77px
 

@@ -32,6 +32,14 @@
     {%- endif %}
 {%- endmacro %}
 
+{% macro getCurrentLanguageLabel() -%}
+	{% if language == "jp" %}
+		日本語
+	{% else %}
+		English
+	{% endif %}
+{%- endmacro %}
+
 {% block content %}
 <div class="container-fluid documentations main-content" role="main">
     <div class="row">
@@ -75,7 +83,32 @@
                     {% block sidebar1 %}
                         {{ toctree(titles_only=True) }}
                     {% endblock %}
-                </div>
+				</div>
+
+				<div class="doc-nav-footer">
+					<div class="dropdown dropdown-action">
+						<button
+							aria-expanded="false"
+							aria-haspopup="true"
+							class="btn btn-unstyled"
+							data-toggle="dropdown"
+							id="languageSelector"
+							type="button"
+						>
+							<svg class="lexicon-icon" focusable="false" role="presentation"
+							viewBox="0 0 512 512">
+								<use xlink:href="#language" />
+							</svg>
+
+							<span>{{ getCurrentLanguageLabel() }}</span>
+						</button>
+
+						<ul aria-labelledby="languageSelector" class="dropdown-menu">
+							<li><a class="dropdown-item" href="#1">English</a></li>
+							<li><a class="dropdown-item" href="#1">日本語</a></li>
+						</ul>
+					</div>
+				</div>
             </div>
         </div>
 

@@ -20,13 +20,14 @@
 	}
 
 	.doc-nav,
+	.doc-nav-footer,
 	.doc-nav-wrapper {
 		background-color: $background-color;
 	}
 
 	.doc-nav {
 		font-weight: $font-weight-semi-bold;
-		height: 80vh;
+		height: calc(100% - #{$footer-height + $info-bar-height});
 		overflow: auto;
 		padding: $spacing-md 0;
 
@@ -113,12 +114,36 @@
 	}
 
 	.doc-nav-wrapper {
-		height: 100%;
+		height: calc(100vh - #{$header-height});
 		margin-left: -15px;
 		max-width: 16.66667%;
 		position: fixed;
 		width: 100%;
 		z-index: 1;
+
+		.doc-nav-footer {
+			align-items: center;
+			border-top: 1px solid $hr-color;
+			bottom: 0;
+			display: flex;
+			height: $footer-height;
+			padding: 0 $spacing-sm;
+			position: absolute;
+			width: 100%;
+
+			.dropdown {
+				width: 100%;
+
+				button {
+					color: $secondary-l1;
+					width: 100%;
+
+					svg {
+						margin-right: 4px;
+					}
+				}
+			}
+		}
 	}
 
 	.info-bar {
