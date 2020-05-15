@@ -4,7 +4,6 @@ Manage and Optimize
 .. toctree::
    :maxdepth: 1
 
-   manage-and-optimize/upgrading-your-dxp-cloud-project-to-version-4.md
    manage-and-optimize/auto-scaling.md
    manage-and-optimize/application-metrics.md
    manage-and-optimize/real-time-alerts.md

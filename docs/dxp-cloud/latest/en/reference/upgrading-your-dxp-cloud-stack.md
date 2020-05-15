@@ -1,32 +1,22 @@
-# Upgrading Your DXP Cloud Project to Version 4
+# Upgrading Your DXP Cloud Stack
 
-Upgrading your repository to use the new structure in DXP Cloud version 4 allows you to take advantage of the Liferay workspace within your repository, keep your services up to date, and use a range of other features. See the [list of new features](#new-features) to learn more.
+Upgrading your repository to use the new structure in DXP Cloud version 4 allows you to take advantage of the Liferay workspace within your repository, keep your services up to date, and use a range of other features.
 
 Upgrading to the new repository structure involves downloading an [upgrade script](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip) specifically for this purpose.
 
-## Reviewing Key Changes
+## Preparing to Upgrade
 
-Review the following changes from running the script that will affect how you manage your repository:
+Before performing the upgrade, check to ensure you are using version 3.x of the DXP Cloud stack. Check this by looking at the version of any of your services.
 
-* In the new repository structure, image versions for each service are always declared in their `LCP.json` files instead of the repository's `gradle.properties` file. All service images are automatically updated from `3.x` to `4.x` versions.
+If you are using version 3.x, then you can check the `gradle.properties` file at the root of your repository for any of your Docker images:
 
-* Each service's files have been moved to a folder at the root of the repository. The `lcp` folder is removed.
+```properties
+liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
+```
 
-* The `Jenkinsfile` is moved to the `ci` service folder. A default pipeline is now defined in the new Jenkins image version, so a default `Jenkinsfile` is no longer required.
+> The number at the end of the Docker image name indicates the version of the DXP Cloud stack you are using. Ensure that this number is some version 3.x.x (in this example, 3.0.19).
 
-* The `liferay` service folder is now a Liferay workspace. <!-- Point to workspace documentation? -->
-
-* Within the Liferay workspace, configurations now belong in a `configs` subdirectory. The old `config`, `deploy`, `scripts`, and `hotfixes` folders are removed in favor of environment-specific locations within the new `configs` folder (`configs/{ENV}`, `configs/{ENV}/deploy`, configs/{ENV}/scripts`, and `configs/{ENV}/patching`, respectively).
-
-    Note that all configurations at the root of `configs/{ENV}` override files within that environment's `LIFERAY_HOME`, in the Liferay container in DXP Cloud.
-
-* Customizations to the search service now belong in environment-specific locations within the new `configs` subdirectory of the `search` folder. Custom shell scripts belong in `configs/{ENV}/scripts` and licenses belong in `search/configs/{ENV}/license`.
-   
-    Note that all configurations at the root of `configs/{ENV}` are copied to that environment's `usr/share/elasticsearch` folder, in the search container in DXP Cloud.
-
-* Customizations to the webserver service now belong in environment-specific locations within the new `configs` subdirectory of the `webserver` folder. Static content belongs in `configs/{ENV}/public`, custom shell scripts belong in `configs/{ENV}/scripts`. Customize the root location for your webserver within a `webserver/configs/{ENV}/conf.d/liferay.conf`.
-
-    Note that all configurations at the root of `configs/{ENV}` are copied to that environment's `etc/nginx` folder, in the webserver container in DXP Cloud.
+Next, make sure your Git repository is on a clean branch with no uncommitted files. The upgrade script will clean uncommitted files and check out a new branch, so you must ensure all necessary files are committed.
 
 ## Running the Upgrade Script
 
@@ -91,10 +81,10 @@ Perform the following steps to upgrade:
 
 The script creates and checks out a new branch in your repository, with the upgrade script added to your `.gitignore` file.
 
-Your repository is now reorganized into a structure where the `liferay` folder is now a Liferay workspace, and you services are upgraded to 4.x services.
+Your repository is now reorganized into a structure where the `liferay` folder is now a Liferay workspace, and your services are upgraded to 4.x versions.
 
 ## Next Steps
 
 After your local repository has changed, you may want to [deploy the new service versions](../build-and-deploy/walking-through-the-deployment-life-cycle.md) to a development environment.
 
-<!-- You may also want to explore some of the new functionality in the new versions of your DXP Cloud services. See the following articles for more information... -->
+You may also want to explore some of the new functionality in the new versions of your DXP Cloud services. See the [explanation of the changes](./understanding-the-dxp-cloud-stack-changes-in-version-4.md) to learn more.
