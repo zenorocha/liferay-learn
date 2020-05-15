@@ -1,16 +1,16 @@
 # Introduction to Managing Inventory
 
-Liferay Commerce provides the tools to manage product inventory for merchants with a single store, to organizations with multiple warehouses and stores. Store administrators can use these features to maintain quantities for sales and handle shipments to complete orders.
+Liferay Commerce provides tools for product inventory management that scale from users with a single storefront and warehouse to larger organizations with multiple sales channels and geographically distributed warehouses.
 
 There are several key features used in managing inventory: Warehouses, Availability Estimates, Low Stock Actions, and the ability to set inventory by warehouse.
 
 ## Warehouses
 
-Warehouses represent the physical locations where product inventory is managed and sourced for order fulfillment.
+Warehouses represent the physical locations where product inventory is managed and sourced for order fulfillment. Products inventory quantities are managed on a per warehouse basis.
 
 See the [Warehouse Reference Guide](./warehouse-reference-guide.md) and the [Adding a New Warehouse](./adding-a-new-warehouse.md) article for more information about how to manage warehouses.
 
-Warehouses must be associated for at least one channel. See the [Introduction to Channels](../creating-and-managing-products/channels/introduction-to-channels.md) article on how channels work.
+In order for a store to accept orders for a product, the related channel must have a warehouse associated with it. See the [Introduction to Channels](../creating-and-managing-products/channels/introduction-to-channels.md) article on how channels work.
 
 ## Availability Estimates
 

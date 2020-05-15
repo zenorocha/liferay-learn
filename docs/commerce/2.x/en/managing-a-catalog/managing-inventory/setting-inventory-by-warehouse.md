@@ -1,6 +1,6 @@
 # Setting Inventory by Warehouse
 
-Some stores may have multiple warehouses and store managers can set product quantity per location. The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse. If the [Minium Accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) was used to create the store, there are three warehouses already created.
+Stores with multiple warehouses can manage product inventory on a per warehouse basis. The _Inventory_ menu is where users manage the number of products available for sale in each warehouse. If the [Minium Accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) was used to create the store, there are three warehouses already created.
 
 To set inventory by warehouse:
 

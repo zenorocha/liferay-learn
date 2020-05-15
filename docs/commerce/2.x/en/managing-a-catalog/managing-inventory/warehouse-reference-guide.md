@@ -1,8 +1,6 @@
 # Warehouse Reference Guide
 
-Warehouses represent physical locations where product inventory is managed and shipped for order fulfillment. Store administrators set inventory quantities per warehouse. Available inventory is then calculated by Liferay Commerce to determine the total available inventory for sale across warehouses. Warehouses are associated with a channel so that the store can draw its inventory from the nearest location.
-
-Liferay Commerce allows multiple warehouses across geographic locations.
+Warehouses represent physical locations where product inventory is managed and shipped for order fulfillment. Product inventory quantities can be managed per warehouse. Available inventory is then calculated by Liferay Commerce to determine the total available inventory for sale across warehouses. Channels must have a warehouse associated with it in order to source product inventory. Multiple warehouses can be created and associated with a given channel.
 
 To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _Settings_. Click the _Warehouses_ tab.
 

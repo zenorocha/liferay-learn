@@ -1,8 +1,10 @@
 # Adding a New Warehouse
 
-Warehouses represent physical locations where product inventory is stored. If the [Minium Accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) was used to create the store, there are three warehouses already created. Users can add additional warehouses, especially for other geographic regions.
+Warehouses represent physical locations where product inventory is stored. If the [Minium Accelerator](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) was used to create the store, there are three warehouses already created.
 
-Before users can enter the address for a warehouse, they may need to enter and activate the applicable country and region (state or province) in the _Countries_ tab at _Control Panel_ → _Commerce_ → _Settings_.
+```note::
+   When adding a new warehouse, users may need to first enable the applicable country and region location of the warehouse (state or province). See `Adding Regions <../../store-administration/adding-regions.md>`_ for more information.
+```
   
 To add a warehouse:
 
@@ -14,7 +16,7 @@ To add a warehouse:
    * *Description:* _Warehouse description_ (e.g. North Vegas Processing Center)
 1. Switch the toggle to _Active_.
 1. Enter the warehouse address.
-1. Select any applicable channel. This allows the channel to draw inventory from this warehouse.
+1. Select a channel. Product inventory for the channel will be based on the associated warehouse.
 1. Enter the geolocation data (required):
     * *Latitude*: 36.282974
     * *Longitude*: -115.136

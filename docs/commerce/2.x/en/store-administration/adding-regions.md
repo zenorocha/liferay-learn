@@ -1,6 +1,6 @@
 # Adding Regions
 
-This article describes to how to add states, provinces, or other administrative regions in Liferay Commerce. By default only the United States and Italy have all of their respective country's states and provinces listed in the _Countries_ settings.
+This article describes to how to add states, provinces, or other administrative regions in Liferay Commerce. By default the United States and Italy have all of their respective country's states and provinces listed in the _Countries_ settings.
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Settings_.
 1. Click _Countries_.
