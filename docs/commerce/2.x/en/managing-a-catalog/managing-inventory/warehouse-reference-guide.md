@@ -1,6 +1,6 @@
 # Warehouse Reference Guide
 
-Warehouses represent physical locations where product inventory is managed and shipped for order fulfillment. Store administrators set inventory quantities per warehouse. Available inventory is then calculated by Liferay Commerce to determine the total available inventory for sale across warehouses.
+Warehouses represent physical locations where product inventory is managed and shipped for order fulfillment. Store administrators set inventory quantities per warehouse. Available inventory is then calculated by Liferay Commerce to determine the total available inventory for sale across warehouses. Warehouses are associated with a channel so that the store can draw its inventory from the nearest location.
 
 Liferay Commerce allows multiple warehouses across geographic locations.
 
