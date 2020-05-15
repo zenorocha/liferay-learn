@@ -8662,6 +8662,13 @@ a.copybtn {
           margin-right: 4px; }
       .documentations .doc-nav-wrapper .doc-nav-footer .dropdown .dropdown-menu {
         width: calc(100% - 1.5rem); }
+        .documentations .doc-nav-wrapper .doc-nav-footer .dropdown .dropdown-menu li {
+          padding: 0; }
+        .documentations .doc-nav-wrapper .doc-nav-footer .dropdown .dropdown-menu .dropdown-item {
+          display: block;
+          padding: 0.375rem 0.75rem; }
+          .documentations .doc-nav-wrapper .doc-nav-footer .dropdown .dropdown-menu .dropdown-item:hover {
+            text-decoration: none; }
 
 .documentations .info-bar {
   align-items: center;

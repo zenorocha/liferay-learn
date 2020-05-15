@@ -146,6 +146,19 @@
 
 				.dropdown-menu {
 					width: calc(100% - 1.5rem);
+
+					li {
+						padding: 0;
+					}
+
+					.dropdown-item {
+						display: block;
+						padding: 0.375rem 0.75rem;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
 				}
 			}
 		}
