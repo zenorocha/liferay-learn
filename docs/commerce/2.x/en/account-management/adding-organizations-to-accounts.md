@@ -18,7 +18,7 @@ There are two ways to add organizations to an account: 1) using the _Account Man
 
 The Organization has been added to the Account.
 
-(old stuff below)
+(a lot of old stuff below, though not 100% of it is old)
 
 ## Using the Control Panel
 
@@ -40,32 +40,9 @@ The new account has been created using the Control Panel. Click _Addresses_ to u
 
 ## Additional Information
 
-* [Introduction to Accounts](../account-management/introduction-to-accounts.md)
-* [Assigning User Roles](../account-management/assigning-account-roles.md)
-* [Inviting Users to an Account](../account-management/inviting-users-to-an-account.md)
-* [Adding Addresses to an Account](../account-management/adding-addresses-to-an-account.md)
-* [Creating a New Account Group](../account-management/creating-a-new-account-group.md)
-
-
-# Assigning User Roles
-
-To assign an account role:
-
-1. Click on the name link (for example _Mike Smith_).
-
-    ![User Mike Smith](./assigning-account-roles/images/01.png)
-
-1. Click _Roles_.
-1. Check all the applicable roles.
-
-    ![Assigning the Buyer Role to Mike Smith](./assigning-account-roles/images/02.png)
-
-1. Click _Done_.
-
-This user has been assigned to the _Buyer_ role.
-
-![Mike Smith is now a Buyer](./assigning-account-roles/images/03.png)
-
-## Additional Information
-
 * [Account Roles](../account-management/account-roles.md)
+* [Commerce Roles Permissions Reference](../account-management/commerce-roles-permissions-reference.md)
+* [Introduction to Accounts](../account-management/introduction-to-accounts.md)
+* [Adding Users to Organizations](../account-management/adding-users-to-organizations.md)
+
+# Adding Users to Organizations
