@@ -4,6 +4,7 @@ Products
 .. toctree::
    :maxdepth: 1
 
+   products/products-overview.md
    products/customizing-your-product-with-product-options.md
    products/adding-skus-to-your-products.md
    products/product-images.md
@@ -14,7 +15,7 @@ Products
    products/organizing-your-catalog-with-product-categories.md
    products/related-products-up-sells-and-cross-sells.md
    products/managing-boms.md
-   products/creating-shipping-overrides.md
+   products/overriding-product-level-information.md
 
 .. include:: /managing-a-catalog/creating-and-managing-products/products/README.rst
    :start-line: 2

@@ -50,4 +50,4 @@ The SKU has successfully been renamed.
 
 ## Additional Information
 
-* [Creating Shipping Overrides](./creating-shipping-overrides.md)
+* [Overriding Product Level Information](./overriding-product-level-information.md)
