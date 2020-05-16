@@ -2,7 +2,7 @@
 
 {% macro githubEdit() -%}
     {%- if parents|length > 1 %}
-        {% set product = parents[0].title.lower() %}
+        {% set product = parents[0].title.lower().replace(' ', '-') %}
 
         {# hardcode version values for now #}
         {% if product == "commerce" %}
