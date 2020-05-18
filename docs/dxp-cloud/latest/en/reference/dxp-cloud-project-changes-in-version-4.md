@@ -1,6 +1,6 @@
 # DXP Cloud Project Changes in Version 4
 
-Several changes are made between version 3.x and 4.x of the DXP Cloud stack, including the structure of the repository, how `Jenkinsfiles` are used, and where Docker image versions are defined for your services.
+Several changes are made between version 3.x and 4.x of the DXP Cloud stack, including where Docker image versions are defined for your services, the structure of the repository, and how `Jenkinsfiles` are used.
 
 **Contents:**
 
@@ -26,7 +26,7 @@ Several other files previously at the root of the repository (including `gradle.
 
 ## Liferay Service Changes
 
-The `liferay` service folder is a Liferay workspace in version 4.x. <!-- TODO: Point to workspace documentation -->
+The `liferay` service folder now follows the functional structure of a Liferay Workspace in version 4.x. <!-- TODO: Point to workspace documentation -->
 
 All configurations within the `liferay` service now belong in an environment-specific `configs` directory. Additionally, the `license` folder has been removed; add your licenses into the `deploy` folder instead.
 
@@ -42,7 +42,7 @@ See the following table for the new organization of your `liferay` service confi
 | Licenses | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/ |
 
 ```note::
-   Files within the configs/{ENV}/ directory will be copied as overrides into the LIFERAY_HOME directory in the Liferay container in DXP Cloud.
+   Files within the ``configs/{ENV}/ directory`` will be copied as overrides into the LIFERAY_HOME directory in the Liferay container in DXP Cloud.
 ```
 
 ### Custom Script Execution
@@ -60,7 +60,7 @@ All configurations within the `search` service now belong in an environment-spec
 | Elasticsearch license (.json) files | lcp/search/license/{ENV}/ | search/configs/{ENV}/license/ |
 
 ```note::
-   Files in search/configs/{ENV}/ will be copied as overrides into usr/shared/elasticsearch/ in the Search container in DXP Cloud. Thus, configurations in search/configs/{ENV}/config/ such as elasticsearch.yml will be copied into usr/shared/elasticsearch/config/, overriding the default.
+   Files in ``search/configs/{ENV}/`` will be copied as overrides into ``usr/shared/elasticsearch/`` in the Search container in DXP Cloud. Thus, configurations in ``search/configs/{ENV}/config/` such as elasticsearch.yml will be copied into ``usr/shared/elasticsearch/config/``, overriding the default.
 ```
 
 ### Elasticsearch Plugins
@@ -68,7 +68,7 @@ All configurations within the `search` service now belong in an environment-spec
 Elasticsearch plugins may be installed to your `search` service. To see the installed Elasticsearch plugins, use the shell within the `search` service and run the following command:
 
 ```bash
-   bin/elasticsearch-plugin list
+bin/elasticsearch-plugin list
 ```
 
 If you would like to install additional Elasticsearch plugins beyond the ones our image installs by default, you can set the `LCP_SERVICE_SEARCH_ES_PLUGINS` environment variable in your `search` service to a comma-delimited list of plugin names to be installed. They will be installed during the service's deployment.
@@ -92,7 +92,7 @@ See the following table for the new organization of your `webserver` service con
 | Static content | lcp/webserver/deploy/{ENV}/ | webserver/configs/{ENV}/public/ |
 
 ```note::
-   Files in /webserver/configs/{ENV}/ will be copied as overrides into /etc/nginx/ in the Webserver container in DXP Cloud. Files in /webserver/configs/{ENV}/public/ will be copied as overrides into var/www/html/.
+   Files in ``/webserver/configs/{ENV}/`` will be copied as overrides into ``/etc/nginx/`` in the Webserver container in DXP Cloud. Files in ``/webserver/configs/{ENV}/public/`` will be copied as overrides into ``var/www/html/``.
 ```
 
 ### Webserver Configuration Overrides
@@ -100,7 +100,9 @@ See the following table for the new organization of your `webserver` service con
 You can customize the root location for the `webserver` service by adding a `liferay.conf` file into `webserver/configs/{ENV}/conf.d/`. This will override the default `liferay.conf` available in the `webserver` service image's container. Access the shell in the DXP Cloud Console to see the default `liferay.conf` file as a reference when customizing the root location.
 
 ```warning::
-   Do not customize the root location using a file name other than liferay.conf, so that this file overrides the default liferay.conf and avoids an error. Other file names are instead used to define additional locations for your webserver.
+   Do not customize the root location using a file name other than ``liferay.conf``, so that this file specifically overrides the default ``liferay.conf``. Otherwise, both files may exist together in the container and two root locations may be found, causing an error.
+
+   Other file names are instead used to define additional locations for your webserver.
 ```
 
 You can also override the default NGINX configuration by adding an `nginx.conf` file into `webserver/configs/{ENV}/`. You can use this to further define the webserver's behavior, overriding the default `nginx.conf` file. See the [official NGINX documentation](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) for more information.
