@@ -1,6 +1,6 @@
 # Adding Organizations to Accounts
 
-There are two ways to add organizations to an account: 1) using the _Account Management_ widget and 2) through the _Control Panel_. Access to the _Control Panel_ is typically restricted to those with administrative permissions for the store or installation.
+There are two ways to add an existing organization to an account: 1) using the _Account Management_ widget and 2) through the _Control Panel_. Access to the _Control Panel_ is typically restricted to those with administrative permissions for the store or installation.
 
 ## Using the Account Management Widget
 
@@ -39,5 +39,3 @@ The organization has been added to the account using the Control Panel.
 * [Commerce Roles Permissions Reference](../account-management/commerce-roles-permissions-reference.md)
 * [Introduction to Accounts](../account-management/introduction-to-accounts.md)
 * [Adding Users to Organizations](../account-management/adding-users-to-organizations.md)
-
-# Adding Users to Organizations
