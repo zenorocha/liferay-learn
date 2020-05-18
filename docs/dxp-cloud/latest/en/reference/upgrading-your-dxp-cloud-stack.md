@@ -6,9 +6,26 @@ Upgrading to the new repository structure involves the use of an [upgrade script
 
 ## Preparing to Upgrade
 
-Before performing the upgrade, check to ensure you are using version 3.x of the DXP Cloud stack. Check this by looking at the version of any of your services.
+In order to upgrade to version 4.x of the DXP Cloud stack, your current services must be at 3.x. To verify your current version, locate the gradle.properties file in your repository:
 
-If you are using version 3.x, then you can check the `gradle.properties` file at the root of your repository for any of your Docker images:
+```
+build >
+gradle >
+lcp >
+liferay >
+modules >
+themes >
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+Jenkinsfile
+README.md
+README-dxpcloud.md
+settings.gradle
+```
+
+If you are using version 3.x, check the `gradle.properties` file for any of your Docker images:
 
 ```properties
 liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
