@@ -10,7 +10,7 @@ There are two ways to add an existing organization to an account: 1) using the _
 
     ![Add Organizations Button](./adding-organizations-to-accounts/images/01.png)
 
-1. Enter a valid Organization or select one from the list (for example, _Italy - South_)
+1. Enter a valid Organization or select one from the list (for example, _Italy - South_).
 
     ![Add Organization with the Widget](./adding-organizations-to-accounts/images/02.png)
 
@@ -25,8 +25,8 @@ Users who have administrative permissions for the store or installation may crea
 1. Navigate to the _Control Panel_ → _Users_ → _Accounts_.
 1. Click on an account (for example _South Bay Auto Parts Distributors_).
 1. Click _Organizations_ on the left.
-1. Click the (+) button to add a new organization
-1. Check the boxes for all the organizations to be added.
+1. Click the (+) button to add a new organization.
+1. Check the boxes for all the organizations to be added (for example, _Italy - South_).
 1. Click Add.
 
     ![Adding Organization in the Control Panel](./adding-organizations-to-accounts/images/03.png)
