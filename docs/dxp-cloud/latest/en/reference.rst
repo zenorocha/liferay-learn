@@ -9,8 +9,8 @@ Reference
    reference/defining-environment-variables.md
    reference/support-access.md
    reference/tracking-dxp-cloud-status-and-getting-help.md
-   reference/understanding-the-dxp-cloud-project-changes-in-version-4.md
    reference/upgrading-your-dxp-cloud-stack.md
+   reference/dxp-cloud-project-changes-in-version-4.md
 
 
 .. include:: /reference/README.rst

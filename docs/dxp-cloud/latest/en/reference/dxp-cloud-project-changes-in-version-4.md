@@ -1,4 +1,4 @@
-# Understanding the DXP Cloud Project Changes in Version 4
+# DXP Cloud Project Changes in Version 4
 
 Several changes are made between version 3.x and 4.x of the DXP Cloud stack, including the structure of the repository, how `Jenkinsfiles` are used, and where Docker image versions are defined for your services.
 

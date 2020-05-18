@@ -10,5 +10,5 @@ Reference
 Repository Management
 ---------------------
 
--  :doc:`/reference/understanding-the-dxp-cloud-project-changes-in-version-4`
 -  :doc:`/reference/upgrading-your-dxp-cloud-stack`
+-  :doc:`/reference/dxp-cloud-project-changes-in-version-4`
