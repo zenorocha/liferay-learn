@@ -4,20 +4,16 @@ When a User (for example, a Sales Agent) belongs to a specific Organization in L
 
 To add a User to an Organization:
 
-(old content below)
-
 1. Navigate to the _Control Panel_ → _Users_ → _Users and Organizations_.
-1. Click on a user (for example _Federico Rossi_).
-1. Click _Organizations_ on the left.
-1. Click _Select_.
-1. Click _Choose_ to select the Organization (for example, _Italy - South_)
-1. Click Save.
+2. Click on a user (for example _Federico Rossi_).
+3. Click _Organizations_ on the left.
+4. Click _Select_.
+5. Click _Choose_ to select the Organization (for example, _Italy - South_)
+6. Click Save.
 
     ![Adding Users to Organizations in the Control Panel - via User](./adding-users-to-organizations/images/01.png)
 
-The user has been added to the organization using the Control Panel.
-
-To remove a User from an Organization, repeat the first three steps above and then:
+The user has been added to the organization using the Control Panel via the User. To remove a User from an Organization, repeat the first three steps above and then:
 
 1. Click the "x" to the far right of an Organization.
 1. Click Save.
@@ -35,7 +31,7 @@ There's another way to add a User to an Organization in the Control Panel. Simpl
 
     ![Adding Users to Organizations in the Control Panel - via Organization](./adding-users-to-organizations/images/03.png)
 
-To remove a User from an Organization, repeat the first three steps above and then:
+The user has been added to the organization using the Control Panel via the Organization. To remove a User from an Organization, repeat the first three steps above and then:
 
 1. Click the 3-dot icon to the far right of an Organization.
 2. Click Remove.
