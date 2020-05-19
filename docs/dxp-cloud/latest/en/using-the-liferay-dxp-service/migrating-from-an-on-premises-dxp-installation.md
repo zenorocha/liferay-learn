@@ -49,7 +49,7 @@ Run this command to invoke the API and upload the zipped files:
 
 ```bash
 curl -X POST \
-  https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
+  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
   -F 'database=@/my-folder/database.gz' \
   -F 'volume=@/my-folder/volume.tgz' \
@@ -57,7 +57,7 @@ curl -X POST \
 ```
 
 ```note::
-   Substitute ``<HOST-NAME>`` and ``<PROJECT-NAME>`` with the appropriate names for your DXP Cloud host name and project, respectively. Substitute ``/my-folder`` with the correct path to the zipped files.
+   Substitute ``<PROJECT-NAME>`` with the appropriate name for your DXP Cloud project. Substitute ``/my-folder`` with the correct path to the zipped files.
 ```
 
 Once these are uploaded, the backup service will initialize a DXP Cloud backup. At this point, the biggest step of the migration to DXP Cloud is complete.
