@@ -120,11 +120,16 @@ Maintaining a Liferay DXP Installation
 -  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/introduction-to-maintaining-a-liferay-dxp-installation`
 -  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/backing-up`
 
-Installing Patches
-~~~~~~~~~~~~~~~~~~
+Patching Liferay
+~~~~~~~~~~~~~~~~
 
--  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/introduction-to-installing-patches`
--  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/installing-patches/updating-community-edition`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/patching-liferay`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/understanding-patch-types`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/installing-patches`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/uninstalling-patches`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/installing-the-patching-tool`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/configuring-the-patching-tool`
+-  :doc:`/installation-and-upgrades/maintaining-a-liferay-dxp-installation/patching-liferay/getting-patch-information`
 
 Maintaining Clustered Installations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
