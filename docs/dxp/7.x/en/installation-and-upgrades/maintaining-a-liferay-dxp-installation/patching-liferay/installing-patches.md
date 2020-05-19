@@ -118,7 +118,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
 Congratulations! Your DXP instance is patched and running.
 
 ```note::
-   If the patch doesn't install or if you're unable to resolve errors that occur, please open a `Help Center ticket <https://help.liferay.com/hc/>`_ and provide the `full Patching Tool output <https://help.liferay.com/hc/articles/360018156132>`_.
+   If the patch doesn't install or if you're unable to resolve errors that occur, please open a `Help Center ticket <https://help.liferay.com/hc/>`_ and provide the full Patching Tool ``info`` output by running ``./patching-tool.sh info > output.txt`` and attaching the ``output.txt`` file to the ticket.
 ````
 
 ## Prepare to Patch DXP on an Application Server
@@ -141,9 +141,7 @@ Now you know how to patch a DXP Bundle and a DXP application server installation
 ## Additional Information
 
 * [Installing the Patching Tool](./installing-the-patching-tool.md)
-
 * [Configuring the Patching Tool](./configuring-the-patching-tool.md)
-
-* [Working With Patches](./working-with-patches.md)
-
-* Comparing Patch Levels (Coming soon)
+* [Uninstalling Patches](./uninstalling-patches.md)
+* [Slimming Down Patched Installations](./advanced-patching/slimming-down-patched-installations.md)
+* [Using Slim Bundles](./advanced-patching/using-slim-bundles.md)

@@ -27,7 +27,7 @@ If you want to remove all or most of your patches, it may be easier to use the P
 
     All of the patches are removed from your `patches` folder.
 
-2. bring your installation up to a desired patch level, by [installing the applicable patches](./installing-patches.md).
+1. Bring your installation up to a desired patch level, by [installing the applicable patches](./installing-patches.md).
 
 ```tip::
    It's helpful to store your patches in a convenient location in case you want to restore your installation to a particular patch level. You can always download fix packs again from the `Customer Portal <https://customer.liferay.com/downloads>`_.
@@ -38,7 +38,5 @@ Now you know how to restore your DXP installation by uninstalling and reverting 
 ## Additional Information
 
 * [Installing Patches](./installing-patches.md)
-
 * [Understanding Patch Types](./understanding-patch-types.md)
-
-* [Slimming Down Patched Installations](./slimming-down-patched-installations.md)
+* [Slimming Down Patched Installations](./advanced-patching/slimming-down-patched-installations.md)

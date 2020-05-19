@@ -52,8 +52,8 @@ Liferay Portal CE GA releases are based on DXP Service Packs and are typically a
 
 The following table describes the testing applied to each patch type.
 
-| **Patch Type** | **Testing** |
-| :------------- | :---------- |
+| Patch Type     | Testing |
+| :------------- | :------ |
 | Hotfixes       | Hotfixes receive automated regression testing similar to Fix Packs (see below), and the support engineer who fixes the reported issue tests it. |
 | Fix packs      | Go through both automated regression testing and manual testing. |
 | Service packs  | Liferay runs test suites on the packaged service pack. |
@@ -87,9 +87,5 @@ Now that you know the patch types Liferay provides for delivering fixes, you can
 ## Additional Information
 
 * [Installing Patches](./installing-patches.md)
-
 * [Installing the Patching Tool](./installing-the-patching-tool.md)
-
-* [Keeping Up With Fix Packs and Service Packs](./keeping-up-with-patches.md)
-
 * [Updating Liferay Portal CE](./advanced-patching/updating-liferay-portal-ce.md)

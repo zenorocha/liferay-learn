@@ -6,7 +6,7 @@ Patching DXP on an application server and updating the Patching Tool are done ma
 
 1.  Download the Patching Tool from the [Customer Portal](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191019&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191066).
 
-2.  Unzip the Patching Tool to your [Liferay Home](../../reference/liferay-home.md) folder (recommended) or to another folder.
+1.  Unzip the Patching Tool to your [Liferay Home](../../reference/liferay-home.md) folder (recommended) or to another folder.
 
 The Patching Tool folder `patching-tool` includes the `patching-tool.sh` script.
 
@@ -32,9 +32,5 @@ The Patching Tool is ready to configure with your DXP installation.
 ## Additional Information
 
 * [Configuring the Patching Tool](./configuring-the-patching-tool.md)
-
 * [Installing Patches](./installing-patches.md)
-
-* [Patching a DXP WAR](./patching-dxp-on-an-application-server.md)
-
-* [Comparing Patch Levels](./comparing-patch-levels.md)
+* [Custom Code and Patch Compatibility](./advanced-patching/custom-code-and-patch-compatibility.md)

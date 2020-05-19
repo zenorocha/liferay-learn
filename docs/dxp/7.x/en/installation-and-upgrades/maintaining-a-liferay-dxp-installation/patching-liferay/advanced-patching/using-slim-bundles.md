@@ -47,5 +47,4 @@ You have learned the benefits of using a Slim Bundle and you know how to patch i
 ## Additional Information
 
 * [Installing Patches](./installing-patches.md)
-
 * [Slimming Down Patched Installations](./slimming-down-patched-installations.md)
