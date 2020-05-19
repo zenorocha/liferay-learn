@@ -5,32 +5,32 @@ Several changes are made between version 3.x and 4.x of the DXP Cloud stack, inc
 **Contents:**
 
 * [Changes to Docker Image Definitions](#changes-to-docker-image-definitions)
-* [General Organizational Changes](#general-organizational-changes)
+* [Project Organization Changes](#project-organization-changes)
 * [Liferay Service Changes](#liferay-service-changes)
 * [Search Service Changes](#search-service-changes)
-* [CI Service Changes](#ci-service-changes) 
+* [CI Service Changes](#ci-service-changes)
 * [Webserver Service Changes](#webserver-service-changes)
 * [Backup Service Changes](#backup-service-changes)
 
 ## Changes to Docker Image Definitions
 
-Docker images for your services in version 4.x of DXP Cloud are no longer defined in the project's `gradle.properties` file. These are now defined in the `LCP.json` for each service.
+Docker images for your services in version 4.x of DXP Cloud are no longer defined in the project's `gradle.properties` file. They are now defined in the `LCP.json` for each service.
 
-Together with the upgrade to the repository's structure, each service's Docker image version is also upgraded from a `3.x.x` version to a `4.x.x` version.
+Upgrading to DXP Cloud Stack version 4 changes every service's Docker image version from `3.x.x` to `4.x.x`. These image changes are in addition to organizational changes to how DXP Cloud projects are structured and function.
 
-## General Organizational Changes
+## Project Organization Changes
 
-The biggest change to the repository is that each service's files have been moved to a folder at the root of the repository. The `lcp` folder is removed, so it is no longer in the path for any of these services. These folders themselves have been reorganized to resemble a Liferay workspace structure. <!-- TODO: Point to workspace documentation -->
+The biggest change to the repository is that each service's files have been moved to a folder at the root of the repository. The `lcp` folder is removed and is no longer in the path for any of these services. These folders themselves have been reorganized to resemble a Liferay workspace structure. <!-- TODO: Point to workspace documentation -->
 
 Several other files previously at the root of the repository (including `gradle.properties`, `build.gradle`, and `settings.gradle`) have also been moved into the `liferay` service.
 
 ## Liferay Service Changes
 
-The `liferay` service folder now follows the functional structure of a Liferay Workspace in version 4.x. <!-- TODO: Point to workspace documentation -->
+The `liferay` service folder now follows the functional structure of a Liferay Workspace. <!-- TODO: Point to workspace documentation -->
 
-All configurations within the `liferay` service now belong in an environment-specific `configs` directory. Additionally, the `license` folder has been removed; add your licenses into the `deploy` folder instead.
+All configurations within the `liferay` service now belong in an environment-specific `configs` directory that corresponds to a project's DXP Cloud environments. Additionally, the `license` folder has been removed; add your licenses into the `deploy` folder instead.
 
-See the following table for the new organization of your `liferay` service configurations:
+The following table summarizes the new organization of your `liferay` service configurations:
 
 | **Files** | **Location in 3.x** | **Location in 4.x** |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ See the following table for the new organization of your `liferay` service confi
 | Licenses | lcp/liferay/license/{ENV}/ | lcp/configs/{ENV}/deploy/ |
 
 ```note::
-   Files within the ``configs/{ENV}/ directory`` will be copied as overrides into the LIFERAY_HOME directory in the Liferay container in DXP Cloud.
+   Files within the ``configs/{ENV}/`` directory will be copied as overrides into the ``LIFERAY_HOME`` directory in the Liferay container in DXP Cloud.
 ```
 
 ### Custom Script Execution
@@ -60,12 +60,12 @@ All configurations within the `search` service now belong in an environment-spec
 | Elasticsearch license (.json) files | lcp/search/license/{ENV}/ | search/configs/{ENV}/license/ |
 
 ```note::
-   Files in ``search/configs/{ENV}/`` will be copied as overrides into ``usr/shared/elasticsearch/`` in the Search container in DXP Cloud. Thus, configurations in ``search/configs/{ENV}/config/` such as elasticsearch.yml will be copied into ``usr/shared/elasticsearch/config/``, overriding the default.
+   Files in ``search/configs/{ENV}/`` will be copied as overrides into ``usr/shared/elasticsearch/`` in the Search container in DXP Cloud. For example, configurations in ``search/configs/{ENV}/config/``, such as ``elasticsearch.yml``, will be copied into ``usr/shared/elasticsearch/config/`` and override existing defaults.
 ```
 
 ### Elasticsearch Plugins
 
-Elasticsearch plugins may be installed to your `search` service. To see the installed Elasticsearch plugins, use the shell within the `search` service and run the following command:
+Elasticsearch plugins may now be installed to your `search` service. To see the installed Elasticsearch plugins, use the shell within the `search` service and run the following command:
 
 ```bash
 bin/elasticsearch-plugin list
@@ -92,7 +92,7 @@ See the following table for the new organization of your `webserver` service con
 | Static content | lcp/webserver/deploy/{ENV}/ | webserver/configs/{ENV}/public/ |
 
 ```note::
-   Files in ``/webserver/configs/{ENV}/`` will be copied as overrides into ``/etc/nginx/`` in the Webserver container in DXP Cloud. Files in ``/webserver/configs/{ENV}/public/`` will be copied as overrides into ``var/www/html/``.
+   Files in ``/webserver/configs/{ENV}/`` will be copied as overrides into ``/etc/nginx/`` in the webserver container in DXP Cloud. Files in ``/webserver/configs/{ENV}/public/`` will be copied as overrides into ``var/www/html/``.
 ```
 
 ### Webserver Configuration Overrides
@@ -105,7 +105,7 @@ You can customize the root location for the `webserver` service by adding a `lif
    Other file names are instead used to define additional locations for your webserver.
 ```
 
-You can also override the default NGINX configuration by adding an `nginx.conf` file into `webserver/configs/{ENV}/`. You can use this to further define the webserver's behavior, overriding the default `nginx.conf` file. See the [official NGINX documentation](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) for more information.
+You can also override the default NGINX configuration by adding an `nginx.conf` file into `webserver/configs/{ENV}/`. You can use this to further define the webserver's behavior. See the [official NGINX documentation](https://docs.nginx.com/nginx/admin-guide/basic-functionality/managing-configuration-files/) for more information.
 
 ### Configuring the Public Directory
 
@@ -113,7 +113,7 @@ If you wish to add custom static content, then place these files in `webserver/c
 
 You will need to add additional locations within your `conf.d` folder to configure the public folder. For example, to add a `.html` file (such as `index.html`) to a new `webserver/configs/{ENV}/public/static` folder, add a unique `.conf` configuration file to `webserver/configs/{ENV}/conf.d` with the following content:
 
-```
+```apacheconf
 location /static/ {
   root /var/www/html;
 }
