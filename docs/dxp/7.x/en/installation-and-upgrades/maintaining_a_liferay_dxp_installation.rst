@@ -5,7 +5,7 @@ Maintaining a Liferay DXP Installation
    :maxdepth: 2
 
    maintaining-a-liferay-dxp-installation/backing-up.md
-   maintaining-a-liferay-dxp-installation/installing_patches.rst
+   maintaining-a-liferay-dxp-installation/patching_liferay.rst
    maintaining-a-liferay-dxp-installation/maintaining_clustered_installations.rst
 
 .. include:: /installation-and-upgrades/maintaining-a-liferay-dxp-installation/README.rst

@@ -30,7 +30,7 @@ For a new version of an existing plugin or module to be eligible for rolling res
 
 > Subscription
 
-The Customer Portal identifies [fix packs](../installing-patches/introduction-to-installing-patches.md) that are not revertible, and therefore ineligible for rolling restart. All other fix packs are eligible.
+The Customer Portal identifies [fix packs](../patching-liferay/patching-liferay.md) that are not revertible, and therefore ineligible for rolling restart. All other fix packs are eligible.
 
 ## Reverting Fix Packs
 
@@ -60,4 +60,4 @@ All rolling restart eligible updates can be applied using the rolling restart st
 
 * [Blue Green Deployment](./blue-green-deployments.md)
 * [Clustering for High Availability](../../setting-up-liferay-dxp/clustering-for-high-availability/clustering-for-high-availability.md)
-* [Installing Patches](../installing-patches/introduction-to-installing-patches.md)
+* [Patching](../patching-liferay/patching-liferay.md)
