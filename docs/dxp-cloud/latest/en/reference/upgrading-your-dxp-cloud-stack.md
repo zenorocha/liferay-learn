@@ -41,10 +41,6 @@ Next, make sure your Git repository is on a clean branch. The upgrade script wil
 
 ## Running the Upgrade Script
 
-<!-- ```warning::
-   Before you upgrade, make sure your repository is on a clean branch with no uncommitted files. Otherwise, these files may be deleted during the script execution.
-``` Is this warning still necessary since we already said, to do things on a clean branch AND we confirmed that the script commits uncommitted files?-->
-
 Perform the following steps to upgrade:
 
 1. Download the [upgrade script](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip), and extract it into the root of your local DXP Cloud repository:
