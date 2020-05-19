@@ -31,7 +31,7 @@ Open the `gradle.properties` file and review the versions specified for any of y
 liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-sp1-fp4-3.0.19
 ```
 
-The number at the end of the Docker image name indicates the version of the DXP Cloud stack you are using. Ensure that this number is some version 3.x.x (in this example, liferay-dxp:7.2.10-sp1-fp4-**3.0.19**).
+The number at the end of the Docker image name indicates the version of the DXP Cloud stack you are using. Ensure that the image name ends with `3.x.x` (in this example, liferay-dxp:7.2.10-sp1-fp4-**3.0.19**).
 
 Next, make sure your Git repository is on a clean branch. The upgrade script will commit any previously uncommitted files and check out a new branch called `upgrade-workspace`.
 
