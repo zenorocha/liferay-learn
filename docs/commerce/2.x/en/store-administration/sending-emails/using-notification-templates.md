@@ -81,7 +81,7 @@ To create email notifications in Commerce 2.0 and below:
 
 1. Click the _Notifications_ tab.
 1. Click the _Notification Templates_ sub-tab.
-1. Click the Add (![Add icon](../images/icon-add.png)) button to create a new Notification Template.
+1. Click the Add (![Add icon](../../images/icon-add.png)) button to create a new Notification Template.
 1. Enter the following:
     * **Name**: New Orders
     * **Description**: New orders template
