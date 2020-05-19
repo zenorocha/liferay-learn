@@ -45,24 +45,22 @@ Perform the following steps to upgrade:
 
 1. Download the [upgrade script](https://github.com/LiferayCloud/stack-upgrade/archive/release.zip), and extract it into the root of your local DXP Cloud repository:
 
-    <!-- ```bash
-    curl https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
-    ```
-    JR: I tested this curl and it did not download a correctly formatted zip file. -->
-
-<!-- 
     ```bash
-    unzip -d /path/to/project/folder/ release.zip
-    ``` -->
+    curl -L https://github.com/LiferayCloud/stack-upgrade/archive/release.zip -O
+    ```
+
+    ```bash
+    unzip -j release.zip stack-upgrade-release/upgrade-workspace.sh -d path/to/project/folder
+    ```
 
 1. Run the upgrade script:
 
-    <!-- ```bash
+    ```bash
     cd /path/to/project/folder
-    ``` -->
+    ```
 
     ```bash
-    ./upgrade-script.sh
+    ./upgrade-workspace.sh
     ```
 
 1. Read the script's starting output, and enter your project's ID at the prompt:
