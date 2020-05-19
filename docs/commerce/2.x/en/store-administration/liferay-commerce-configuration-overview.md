@@ -34,7 +34,7 @@ Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
 
 The following site settings are found here:
 
-* [Notifications](./emails/using-notification-templates.md)
+* [Notifications](./sending-emails/using-notification-templates.md)
 * [Introduction to Order Workflows](../orders-and-fulfillment/order-workflows/introduction-to-order-workflows.md)
 * [Payment Methods](../store-administration/configuring-payment-methods/payments.md)
 * Product Display Pages

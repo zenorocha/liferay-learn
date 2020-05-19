@@ -24,4 +24,4 @@ This product SKU’s base price, promo price (optional), and cost (optional) hav
 ## Additional Information
 
 * [Creating a Price List](./creating-a-price-list.md)
-* [Adding Discounts by Product](../../promoting-products/adding-discounts-by-product.md)
+* [Creating a Discount](../../promoting-products/creating-a-discount.md)

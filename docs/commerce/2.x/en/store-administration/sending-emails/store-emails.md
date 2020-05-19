@@ -8,7 +8,7 @@ Liferay Commerce can be configured to send email notifications that are triggere
 
 ## Configuring Store Email Notifications
 
-Once the Liferay Commerce's mail settings have been configured, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_ to begin creating store email notifications. Email notifications are configured per [channel](../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md). Using an [accelerator](../starting-a-store/accelerators.md) creates a store, catalog, and channel for you to start with.
+Once the Liferay Commerce's mail settings have been configured, navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Channels_ to begin creating store email notifications. Email notifications are configured per [channel](../../managing-a-catalog/creating-and-managing-products/channels/introduction-to-channels.md). Using an [accelerator](../../starting-a-store/accelerators.md) creates a store, catalog, and channel for you to start with.
 
 ![Available Notification Templates](./store-emails/images/02.png)
 
@@ -57,7 +57,7 @@ See the [Notification Template Variables Reference Guide](./notification-templat
 
 ## Viewing Order Communications History
 
-Email notifications related to an order are tracked and can be reviewed in the *Emails* tab when viewing an order. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_. Click on an Order ID then the _Email_ tab. See [Orders Information](../orders-and-fulfillment/orders/order-information.md) to learn more.
+Email notifications related to an order are tracked and can be reviewed in the *Emails* tab when viewing an order. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Orders_. Click on an Order ID then the _Email_ tab. See [Orders Information](../../orders-and-fulfillment/orders/order-information.md) to learn more.
 
 ![Message Logs are in the Orders information.](./store-emails/images/04.png)
 

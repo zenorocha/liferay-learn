@@ -92,7 +92,7 @@ There are several ways to price products and these methods are related to one an
 
 * [Pricing](../managing-a-catalog/managing-price/introduction-to-product-pricing-methods.md)
 * [Price Lists](../managing-a-catalog/managing-price/creating-a-price-list.md)
-* [Discounts](../promoting-products/adding-discounts-by-product.md)
+* [Discounts](../promoting-products/introduction-to-discounts.md)
 
 #### Managing Inventory
 
