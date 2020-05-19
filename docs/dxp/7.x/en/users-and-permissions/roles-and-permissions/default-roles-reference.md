@@ -34,7 +34,7 @@ In the Roles administrative application appears a list of all the Roles in Lifer
 
 ## Asset Library Roles
 
-**Asset Library Member:** The Asset Library Member Role grants basic privileges within an Asset Library, such as permission to visit the Asset Library's private pages.
+**Asset Library Member:** The Asset Library Member Role grants basic privileges within an Asset Library, such as permission to view Asset Library content.
 
 **Asset Library Administrator:** The Asset Library Administrator Role grants permission to manage *almost* all aspects of a Asset Library including Asset Library content, Asset Library memberships, and Asset Library settings. Asset Library Administrators cannot delete the membership of or remove Roles from other Asset Library Administrators or Asset Library Owners. They also *cannot* assign other Users as Asset Library Administrators or Asset Library Owners.
 
