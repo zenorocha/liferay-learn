@@ -130,11 +130,6 @@ Make the following modifications to `$WILDFLY_HOME/standalone/configuration/stan
     </security-domain>
     ```
 
-1. Remove the following Weld-related tags:
-
-    * `<extension module="org.jboss.as.weld"/>`
-    * `<subsystem xmlns="urn:jboss:domain:weld:4.0"/>`
-
 1. Remove the welcome content code snippets:
 
     ```xml
@@ -157,7 +152,6 @@ Before continuing, verify the following properties have been set in the `standal
 1. The new `<filter-spec>` is added.
 1. The `<deployment-timeout>` is set to `600`.
 1. The new `<security-domain>` is created.
-1. Weld tags are removed.
 1. Welcome content is removed.
 
 Next, configure the JVM and startup scripts:
