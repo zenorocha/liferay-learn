@@ -110,3 +110,5 @@ This generates a copy of the original survey form. Users can begin modifying the
 
 * [Sharing Forms](./sharing-forms.md)
 * [Managing Form Entries](./managing-form-entries.md)
+* [Validating Text and Numeric Field Entries](./advanced-forms-usage/validating-text-and-numeric-field-entries.md)
+* [Enabling CAPTCHA on Form Submissions](./advanced-forms-usage/enabling-captcha-on-form-submissions.md)

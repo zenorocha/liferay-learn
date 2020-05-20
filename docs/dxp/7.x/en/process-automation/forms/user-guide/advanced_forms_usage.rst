@@ -15,6 +15,7 @@ Advanced Forms Usage
    advanced-forms-usage/using-data-providers-to-populate-form-options.md
    advanced-forms-usage/using-forms-with-a-workflow.md
    advanced-forms-usage/validating-text-and-numeric-field-entries.md
+   advanced-forms-usage/validation-conditions-reference.md
    advanced-forms-usage/kaleo_forms.rst
    advanced-forms-usage/dynamic_data_lists.rst
 
