@@ -2,6 +2,10 @@
 
 Element Sets in the Liferay Forms application allow users to create reusable form elements, such as asking a user's contact information (name, address, and phone number). These element sets also include the layout and configuration of the fields.
 
+```note::
+   Editing an Element Set doesn't retroactively affect the Forms where the Element Set was used.
+```
+
 ## Creating Element Sets
 
 To create an Element Set:
@@ -51,10 +55,6 @@ To use an Element Set in a Form:
     ```
 
 1. Click _Publish Form_ button when finished.
-
-```note::
-   Editing an Element Set doesn't retroactively affect the Forms where the Element Set was used.
-```
 
 ## Additional Information
 
