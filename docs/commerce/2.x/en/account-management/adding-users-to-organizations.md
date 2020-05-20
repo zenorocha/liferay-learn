@@ -23,8 +23,6 @@ The user has been added to the organization. To remove a User from an Organizati
 
 ## Additional Information
 
-(To do still: update this list of articles. What are the most relevant articles?)
-
 * [Adding Organizations to Accounts](../account-management/adding-organizations-to-accounts.md)
 * [Introduction to Accounts](../account-management/introduction-to-accounts.md)
 * [Account Roles](../account-management/account-roles.md)
