@@ -75,8 +75,6 @@ Assign Users to a Organization Role in the Organizations tab of the Users and Or
 | ---------------- | --------- |
 | A single Asset Library | Organizations <br />User Groups <br /> Individual Users |
 
- Site/Library Administration of Asset Library &rarr; People &rarr; Memberships |
-
 Making Role assignments for Asset Libraries is nearly identical to making assignments for Sites: assign Users to an Asset Library Role in the Memberships section of the Asset Library's People sub-menu. To make these assignments,
 
 1. Go to the [Asset Library](../../site-building/understanding-asset-libraries.md) Menu &rarr; People &rarr; Memberships.
@@ -96,8 +94,6 @@ Making Role assignments for Asset Libraries is nearly identical to making assign
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
 | A single Account | Individual Account Members
-
- Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles |
 
 Assign Users to an Account Role in the Accounts Control Panel section. To make these assignments,
 
