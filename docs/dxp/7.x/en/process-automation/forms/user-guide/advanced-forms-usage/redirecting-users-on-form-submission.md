@@ -14,4 +14,4 @@ Follow these steps to set up a redirect URL:
 
 ## Additional Information
 
-* [success page](../creating-forms.md)
+* [Creating Forms](../creating-forms.md)
