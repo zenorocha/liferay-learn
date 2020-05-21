@@ -1,8 +1,17 @@
+from pathlib import Path
+
 import os
 from sphinx.builders.html import StandaloneHTMLBuilder
 
 import recommonmark
 from recommonmark.transform import AutoStructify
+
+# Variables to set product name, version, and language using directory paths
+language_path = Path(os.path.dirname(__file__));
+
+version_path = language_path.parent;
+
+product_path = version_path.parent;
 
 #
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
@@ -12,9 +21,12 @@ author = "Liferay"
 copybutton_image_path="img/paste.svg"
 copyright = "2019, Liferay"
 extensions = ["notfound.extension", "recommonmark", "sphinx_copybutton", "sphinx_markdown_tables"]
+html_context = {
+	"product_name": os.path.basename(product_path),
+	"product_version": os.path.basename(version_path)
+}
 html_css_files = ["main.css"]
 html_favicon = "_static/img/favicon.ico"
-#html_js_files = ["main.js"]
 html_logo = "_static/img/liferay-waffle.svg"
 html_short_title = "Documentation"
 html_show_copyright = False
@@ -22,13 +34,7 @@ html_show_sphinx = False
 html_static_path = ["_static"]
 html_theme = "basic"
 html_title = "Liferay Learn"
-
-# Set the language by using the last 2 characters of the project directory
-
-parent_dir_path, parent_dir_name = os.path.split(os.path.dirname(__file__))
-
-language = parent_dir_name
-
+language = os.path.basename(language_path)
 locale_dirs = ["_locale"]
 master_doc = "contents"
 notfound_no_urls_prefix = True
