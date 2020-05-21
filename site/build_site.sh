@@ -66,7 +66,7 @@ function parse_args_generate_sphinx_input {
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
 					for language in `find ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-							echo "Currently Building $product_name $version_name $language"
+							echo "Currently Building: $product_name $version_name $language"
 							populate_product_input_dir
 					done
                 done
@@ -80,8 +80,10 @@ function parse_args_generate_sphinx_input {
             echo "Building All Products and Versions for Production"
             for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
                 for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-                    echo "Currently Building: $product_name $version_name"
-                    populate_product_input_dir
+					for language in `find ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+							echo "Currently Building: $product_name $version_name $language"
+							populate_product_input_dir
+					done
                 done
             done
             # TODO: upload_to_server should somehow only be called for the "prod" case, after html is generated.
