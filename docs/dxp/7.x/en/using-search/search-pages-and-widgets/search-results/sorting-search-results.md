@@ -1,6 +1,6 @@
 # Sorting Search Results
 
-Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./understanding-search-results.md) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, you can exert control over the order of returned results.
+Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./understanding-search-results.md) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, you can control the order of returned results.
 
 Add the widget to a [Search Page](../../search-pages-and-widgets/working_with_search_pages.rst) to begin sorting results.
 
@@ -45,7 +45,7 @@ Each Sort option has two settings: _Label_ and _Field_.
 
 ## Finding Sortable Fields
 
-To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for each index.  Scroll to the `properties` section of the mapping and find any `keyword` field, `date` field, or a field with a numeric datatype. The `type` field is instructive:
+To find the fields available for use in the Sort widget, Users with the proper permissions can navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.  From there, open the Field Mappings tab and browse the mappings for each index.  Scroll to the `properties` section of the mapping and find any `keyword` field, `date` field, or a field with a numeric data type. The `type` field is instructive:
  
     "type" : "keyword"
 

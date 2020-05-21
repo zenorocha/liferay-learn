@@ -1,10 +1,10 @@
 # Filtering Search Results
 
-With Custom Filters, you can contribute queries to the main search query, filtering search results to exert control over what's returned in the Search Results widget. Make the filter widgets visible or invisible to the search Users, and decide if they're changeable or immutable.
+With Custom Filters, you can contribute queries to the main search query, filtering search results to exert control over what's returned in the Search Results widget. You can make the filter widgets visible or invisible and decide if they're changeable or immutable.
 
 ![Apply a custom filter to weed out certain search results.](./filtering-search-results/images/03.png)
 
-There are many use cases satisfied by incorporating Custom Filters into your search page. Some demonstrative articles are planned to show you some of the filtering capabilities at your disposal.
+There are many use cases satisfied by incorporating Custom Filters into your search page. 
 
 For now, consider these basic usages:
 
@@ -34,64 +34,40 @@ To begin filtering search results, open the widget's Options Menu (![Options](..
 The Query String and Script queries do not require a Filter Field to be set.  All other queries require at least one field. 
 <!--Note: Multi Match and Simple Query String take an array of fields according to the Elasticsearch docs, but our config doesn't seem to support it. -->
 
-To find the fields present in the Liferay DXP index, use [the Field Mappings UI in the Control Panel](#finding-fields)
-
-----
+To find the fields present in the Liferay DXP index, use [the Field Mappings UI in the Control Panel](#finding-fields).
 
 **Filter Value (text):** For most filters, you must enter a text value here that specifies the text to apply the filter on in the specified field (for example, set a _Match_ query to the text _street_ on the `title_en_US` field). Some Filter Query Types require special notation, as in the case of the [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-regexp-query.html) query. 
-
-----
 
 **Filter Query Type (select list):** Select the query type to filter results by. Available types include Bool, Exists, Fuzzy, Match, Match Phrase, Match Phrase Prefix, Multi Match, Prefix, Query String, Regexp, Script, Simple Query String, Term, Wildcard.
 
 To learn more about these queries, visit the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html).
 
-----
-
 **Occur (select list):** Set the occurrence type for the query being contributed to the search. Options include Filter, must, must_not, and should.
 
 To understand each type, see the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html). 
 
-----
-
 **Query Name (text):** Set the name of the contributed query. This is unnecessary unless this filter acts as a parent query to another filter that contributes child clauses; in that case set this filter's Query Name as the child filter's Parent Query Name.  This parent/child behavior is only available for filters of type Bool.
-
-----
 
 **Parent Query Name (text):** When contributing a child clause to a Bool query, set this to match the Query
 Name configured in the parent Custom Filter widget. Otherwise, leave it blank.
-
-----
 
 **Boost (number):** [Boost](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) the score of the results matching this query. Specify any whole or decimal number here that makes sense.
 
 If you always want results matching this at the top, set the Boost value really high (e.g., _1000_).
 
-----
-
 **Custom Heading (text):** Enter the heading to display for this filter. If not set, the Filter Field's
 value is displayed.
-
-----
 
 **Custom Parameter Name (text):** Specify a URL parameter name for the filter. If not set, the Filter Field's
 value is used.
 
-----
-
 **Invisible (boolean):** If checked, the widget is invisible to regular users. The Filter Value from the configuration is applied by default, but users can still filter for other values via URL Parameter. You can prevent URL parameter filtering with the Immutable setting (see below).
-
-----
 
 **Immutable (boolean):** Enable this to ensure that the Filter Value cannot be changed by regular users. The widget becomes invisible to them _and_ filter values set via URL parameters are not accepted. The Filter Value set in the widget configuration is applied at all times (unless it's disabled).
 
-----
+**Disabled (boolean):** If checked, the query is ignored and doesn't participate in searches. This gives you a quick way to stop the filter but keep the configuration so it can be re-enabled later.
 
-**Disabled (boolean):** If checked, the query is ignored and doesn't participate in searches. This gives you a quick way to stop the filter, but keep the configuration so it can be re-enabled later.
-
-----
-
-**Federated Search Key (text):** Enter the key of an alternate Search this widget is participating on. If it's set, be aware that the default @product@ index isn't searched at all. If not set, this widget participates on the default search.
+**Federated Search Key (text):** Enter the key of an alternate Search this widget is participating on. If it's set, be aware that the default index isn't searched at all. If not set, this widget participates on the default search.
 
 Values in this field typically match the name of an application-defined index.
 
