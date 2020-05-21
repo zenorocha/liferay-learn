@@ -32,8 +32,8 @@
     {%- endif %}
 {%- endmacro %}
 
-{% macro getCurrentLanguageLabel() -%}
-	{% if language == "jp" %}
+{% macro getLanguageLabel(language_code) -%}
+	{% if language_code == 'ja' %}
 		日本語
 	{% else %}
 		English
@@ -100,12 +100,15 @@
 								<use xlink:href="#language" />
 							</svg>
 
-							<span>{{ getCurrentLanguageLabel() }}</span>
+							<span>{{ getLanguageLabel(language) }}</span>
 						</button>
 
 						<ul aria-labelledby="languageSelector" class="dropdown-menu">
-							<li><a class="dropdown-item" href="#1">English</a></li>
-							<li><a class="dropdown-item" href="#1">日本語</a></li>
+							<li>
+								<a class="dropdown-item" href="/{{ product_name }}/{{ product_version }}/en/index.html">
+									{{ getLanguageLabel('en') }}
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
