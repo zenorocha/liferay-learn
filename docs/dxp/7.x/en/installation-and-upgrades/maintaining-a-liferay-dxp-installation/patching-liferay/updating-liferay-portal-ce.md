@@ -8,15 +8,14 @@ Fixes for Liferay Portal CE are delivered as new Portal CE GA releases. For exam
 
 1. Install the new Portal CE GA release to a new location or source control branch.
 
-1. Migrate your Portal CE files to the new location, making sure to point your new server at your current DXP database.
+1. Migrate your apps, plugins and modules, and any files that you've created or customized (e.g., `portal-ext.properties`, `web.xml`, and OSGi `.config` files) to the new location/branch.
 
 1. Clean up DXP cache.
 
     Delete the `[Liferay Home]/osgi/state` folder.
 
     ```bash
-    cd [Liferay Home]
-    rm -rf osgi/state
+    rm -rf [Liferay Home]/osgi/state
     ```
 
     Empty the `[Liferay Home]/work` folder.
@@ -28,7 +27,7 @@ Fixes for Liferay Portal CE are delivered as new Portal CE GA releases. For exam
     Delete the application server cache. Please consult the application vendor documentation on where where to find the cache.
 
     ```warning::
-       **Do not delete these two files: ```patching-backup-deps.zip``` and ``patching-backup.zip``.** The Patching Tool creates them in the DXP application's `WEB-INF` folder. The Patching Tool examines them to determine previous Fix Pack files to revert before installing a new Fix Pack.
+       **Do not delete these two files:** ``patching-backup-deps.zip`` and ``patching-backup.zip``. The Patching Tool creates them in the DXP application's ``WEB-INF`` folder. The Patching Tool examines them to determine previous Fix Pack files to revert before installing a new Fix Pack.
     ```
 
     ```note::
