@@ -2,7 +2,7 @@
 
 Fixes for Liferay Portal CE are delivered as new Portal CE GA releases. For example, CE 7.2 GA2 fixes bugs that exist in CE 7.2 GA1. There is no Patching Tool for Liferay Portal CE. Here are the steps for updating to your Portal CE installation to a new GA release:
 
-1. [Back up your DXP system](../../backing-up.md) in case you want to revert to it.
+1. [Back up your DXP system](../backing-up.md) in case you want to revert to it.
 
 1. Shut down the application server.
 
