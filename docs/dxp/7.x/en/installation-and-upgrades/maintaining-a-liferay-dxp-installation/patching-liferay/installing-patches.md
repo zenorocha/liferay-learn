@@ -3,7 +3,7 @@
 The patching steps for DXP bundles and DXP application server installations are similar. Since DXP bundles include the Patching Tool preconfigured, you can apply patches right away. DXP application server installations, however, require installing and configuring the Patching Tool before patching.
 
 ```warning::
-   **Always** `back up <../../backing-up.md>`_ your database and installation before patching.
+   **Always** `back up <../backing-up.md>`_ your database and installation before patching.
 ```
 
 If you're patching a DXP bundle, continue with the basic patching steps below. If you're patching DXP on an application server, [prepare to patch DXP on an application server](#configuring-a-dxp-application-server-for-patching) _before_ following the patching steps.
@@ -26,7 +26,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
 
     ```bash
     cd patching-tool
-    ./patching-tool.sh  install
+    ./patching-tool.sh install
     ```
 
     The output looks like this:
@@ -63,7 +63,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
     ...
     ```
 
-1.  If you installed a Service Pack and its release notes mention [micro or minor schema/data changes](https://help.liferay.com/hc/en-us/articles/360030959231-Meaningful-Schema-Versioning), use the [Database Upgrade Tool](../upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.md) to apply minor changes (required) and any micro changes you want.
+1.  If you installed a Service Pack and its release notes mention [micro or minor schema/data changes](https://help.liferay.com/hc/en-us/articles/360030959231-Meaningful-Schema-Versioning), use the [Database Upgrade Tool](../../upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.md) to apply minor changes (required) and any micro changes you want.
 
     ```important::
        If you're updating from Liferay DXP 7.2 GA1 or Fix Pack 1 to DXP 7.2 SP1 / Fix Pack 2 (or above), you must update the data and database using the Database Upgrade Tool.
@@ -87,7 +87,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
     Delete the application server cache. Please consult the application vendor documentation on where where to find the cache.
 
     ```warning::
-       **Do not delete these two files: ```patching-backup-deps.zip``` and ``patching-backup.zip``.** The Patching Tool creates them in the DXP application's `WEB-INF` folder. The Patching Tool examines them to determine previous Fix Pack files to revert before installing a new Fix Pack.
+       **Do not delete these two files:** ``patching-backup-deps.zip`` and ``patching-backup.zip``. The Patching Tool creates them in the DXP application's `WEB-INF` folder. The Patching Tool examines them to determine previous Fix Pack files to revert before installing a new Fix Pack.
     ```
 
     ```note::
@@ -105,7 +105,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
     ./patching-tool.sh info
     ```
 
-    If there are index updates, set the [`database.indexes.update.on.startup`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Database) Portal Property to `true` in a [`portal-ext.properties` file](../../../reference/portal-properties.md).
+    If there are index updates, set the [`database.indexes.update.on.startup`](https://docs.liferay.com/dxp/portal/7.2-latest/propertiesdoc/portal.properties.html#Database) Portal Property to `true` in a [`portal-ext.properties` file](../../reference/portal-properties.md).
 
     ```properties
     database.indexes.update.on.startup=true

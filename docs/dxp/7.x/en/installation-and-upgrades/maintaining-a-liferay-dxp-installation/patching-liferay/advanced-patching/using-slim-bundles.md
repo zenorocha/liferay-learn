@@ -8,8 +8,8 @@ Liferay DXP Fix Packs and Service Packs are available bundled with the Tomcat ap
 
 Without the patching files for the Slim Bundle's respective Fix Pack/Service Pack, Slim Bundles are limited to these Patching Tool commands:
 
-* [`auto-discovery`](./configuring-the-patching-tool.md)
-* [`info`](./getting-patch-information.md)
+* [`auto-discovery`](../configuring-the-patching-tool.md)
+* [`info`](../getting-patch-information.md)
 * `setup`
 
 Slim Bundles can still be patched, but require the extra step of restoring the Patching Files. Each patch's Patching Files for each patch are available on the [Help Center](https://customer.liferay.com/downloads).
@@ -40,11 +40,11 @@ Here are the Patching File setup steps:
 
     Your Slim Bundle has the Patching Files and is ready for patching.
 
-1. Patch your Slim Bundle following the instructions at [Installing Patches](./installing-patches.md).
+1. Patch your Slim Bundle following the instructions at [Installing Patches](../installing-patches.md).
 
 You have learned the benefits of using a Slim Bundle and you know how to patch it.
 
 ## Additional Information
 
-* [Installing Patches](./installing-patches.md)
+* [Installing Patches](../installing-patches.md)
 * [Slimming Down Patched Installations](./slimming-down-patched-installations.md)

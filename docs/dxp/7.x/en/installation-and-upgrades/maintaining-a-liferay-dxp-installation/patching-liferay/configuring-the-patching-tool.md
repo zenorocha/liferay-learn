@@ -23,13 +23,13 @@ Follow these steps to automatically configure the Patching Tool:
 
 1. Run the auto-discovery command.
 
-    If [Liferay Home](../../../reference/liferay-home.md) is the Patching Tool's parent folder, run this command:
+    If [Liferay Home](../../reference/liferay-home.md) is the Patching Tool's parent folder, run this command:
 
     ```bash
     ./patching-tool.sh auto-discovery
     ```
 
-    If [Liferay Home](../../../reference/liferay-home.md) is in a different location, specify the Liferay Home path to the command:
+    If [Liferay Home](../../reference/liferay-home.md) is in a different location, specify the Liferay Home path to the command:
 
     ```bash
     ./patching-tool.sh auto-discovery [path to Liferay Home]
@@ -87,7 +87,7 @@ Edit the Patching Tool properties file. The `auto-discovery` command creates a `
 | Property | Description |
 | :------- | :---------- |
 | `global.lib.path` (`binary` mode only) | Specifies the location for storing `.jar` files on the global classpath. Hint: `portal-kernel.jar` is on the global classpath. |
-| `liferay.home` | Specifies the [Liferay Home](../../../reference/liferay-home.md) folder, which is typically the parent folder to DXP's `osgi` and `tools` folders. |
+| `liferay.home` | Specifies the [Liferay Home](../../reference/liferay-home.md) folder, which is typically the parent folder to DXP's `osgi` and `tools` folders. |
 | `module.framework.core.path` | Path to DXP's `osgi/core` folder. |
 | `module.framework.marketplace.path` | Path to DXP's `osgi/marketplace` folder. |
 | `module.framework.modules.path` | Path to DXP's `osgi/modules` folder. |
@@ -100,7 +100,7 @@ Edit the Patching Tool properties file. The `auto-discovery` command creates a `
 
 ### Proxy Settings
 
-Service Pack detection is available behind a proxy server. To configure your proxy, use on of the following setting groups and replace all of the values, including `[PROXY_IP_ADDRESS]`:
+Service Pack detection is available behind a proxy server. To configure your proxy, use one of the following setting groups and replace all of the values, including `[PROXY_IP_ADDRESS]`:
 
 ```properties
 ### Proxy settings
