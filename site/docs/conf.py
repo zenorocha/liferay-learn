@@ -22,6 +22,7 @@ copybutton_image_path="img/paste.svg"
 copyright = "2019, Liferay"
 extensions = ["notfound.extension", "recommonmark", "sphinx_copybutton", "sphinx_markdown_tables"]
 html_context = {
+	"available_languages": os.listdir('..'),
 	"product_name": os.path.basename(product_path),
 	"product_version": os.path.basename(version_path)
 }
