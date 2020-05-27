@@ -39,6 +39,20 @@
 		margin-top: 0;
 	}
 
+	ul.search li div.context {
+		margin: 8px 0;
+	}
+
+	.custom-radio {
+		margin-bottom: 8px;
+
+		.custom-control-label {
+			font-size: $h5-font-size;
+			font-weight: $font-weight-semi-bold;
+			padding-left: $spacing-xs;
+		}
+	}
+
 	.filter-input-container {
 		padding-top: $spacing-md;
 
@@ -49,13 +63,6 @@
 		label {
 			display: block;
 		}
-	}
-
-	.filter-input-label {
-		font-size: $h5-font-size;
-		font-weight: $font-weight-semi-bold;
-		padding-left: $spacing-xs;
-		vertical-align: text-bottom;
 	}
 
 	.no-results {
