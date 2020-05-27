@@ -14,7 +14,7 @@ A new order is created when a buyer places products into the cart. At this start
 
 ## Step 2: Order Placed
 
-After providing information -- such as shipping address and payment method -- to the seller and viewing an order summary, the buyer places the order. _(Place statement here about notifications. Possibly add link to doc/docs about emails.)_
+After providing information to the seller -- such as shipping address and payment method -- and viewing an order summary, the buyer places the order. If configured, an order placed can trigger an [email notification](../../store-administration/sending-emails/store-emails.md).
 
 ## Step 3: Order Transmitted
 
@@ -22,7 +22,7 @@ When the seller advances an order from pending to transmitted, the order is sent
 
 ## Step 4: Order Fulfilled
 
-The seller completes the remaining steps to deliver the ordered products to the buyer. Additional information can be added to the order, such as an updated order status, shipping information, and estimated arrival time. _(Place statement here about notifications. Possibly add link to doc/docs about emails.) (Place statement here about shipment info. Possibly add link to doc/docs about shipment info.)_
+The seller completes the remaining steps to deliver the ordered products to the buyer. Additional information can be added to the order, such as an updated order status, [shipping information](../shipments/introduction-to-shipments.md), and estimated arrival time. Again, if configured, various events (for example, an order shipped) can trigger an [email notification](../../store-administration/sending-emails/store-emails.md).
 
 ## Additional Information
 
