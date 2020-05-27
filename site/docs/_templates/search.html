@@ -14,6 +14,14 @@
 {{ super() }}
 {% endblock %}
 
+{% macro getLanguageLabel(language_code) -%}
+    {% if language_code == 'ja' %}
+        {% trans %}Japanese{% endtrans %}
+    {% else %}
+        {% trans %}English{% endtrans %}
+    {% endif %}
+{%- endmacro %}
+
 {% block content %}
 <div class="container-fluid search-page">
     <div class="row">
@@ -62,6 +70,19 @@
                             <input class="filter-input" name="productName" type="radio" value="commerce">
                             <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
                         </label>
+                    </div>
+                </div>
+
+                <div class="search-filters">
+                    <h4>{% trans %}Language{% endtrans %}</h4>
+
+                    <div class="filter-input-container">
+                        {% for language_code in available_languages %}
+                        <label>
+                            <input class="filter-input" name="language" type="radio" value="{{ language_code }}">
+                            <span class="filter-input-label">{{ getLanguageLabel(language_code) }}</span>
+                        </label>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -136,6 +157,24 @@
                 pathname = docProducts.filter(product => product.name == selectedDocProduct)[0].pathname;
 
                 window.location.pathname = pathname;
+            }
+        });
+    });
+
+    // Add event listeners to navigate to the selected language site
+
+    const languageSelect = document.querySelectorAll('[name="language"]');
+
+    languageSelect.forEach(languageElement => {
+		if (languageElement.value === '{{ language }}') {
+            languageElement.checked = true;
+        }
+
+        languageElement.addEventListener('click', event => {
+            const selectedValue = event.currentTarget.value;
+
+            if (selectedValue !== '{{ language }}') {
+                window.location.pathname = '{{ product_name }}/{{ product_version }}/' + selectedValue + '/search.html';
             }
         });
     });
