@@ -1,6 +1,6 @@
 # Enabling Captcha on Form Submissions
 
-[CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA) prevents a bot from submitting forms.
+A [CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA) is a visual device that ensures that a human being, rather than a computer, is interacting with the site. Once CAPTCHA is enabled, it prevents a bot from submitting forms.
 
 To enable CAPTCHA:
 
