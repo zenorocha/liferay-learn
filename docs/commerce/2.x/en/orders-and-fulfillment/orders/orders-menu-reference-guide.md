@@ -28,7 +28,7 @@ The _Open_ tab displays all the orders that have not completed the checkout proc
 
 ## Pending
 
-The Pending tab displays all orders that have completed the checkout process.
+The _Pending_ tab displays all orders that have completed the checkout process.
 
 ![Orders menu - Pending tab](./orders-menu-reference-guide/images/06.png)
 
@@ -42,7 +42,7 @@ There are three particular fields to note:
 
 ## Processing
 
-To advance an order from Pending to Processing, click the _Accept Order_ button.
+To advance an order from _Pending_ to _Processing_, click the _Accept Order_ button.
 
 ![Orders menu - Pending tab](./orders-menu-reference-guide/images/10.png)
 
@@ -52,7 +52,7 @@ As the store begins to processing the order, the order is now in the _Processing
 
 ## Completed
 
-When delivery has been confirmed, the order is moved to the Completed tab.
+When delivery has been confirmed, the order is moved to the _Completed_ tab.
 
 ![Orders menu - Pending tab](./orders-menu-reference-guide/images/08.png)
 

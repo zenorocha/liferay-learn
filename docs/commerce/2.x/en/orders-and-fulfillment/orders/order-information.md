@@ -2,7 +2,7 @@
 
 Administrators can view and edit order information by clicking an order in the [Orders Menu](./orders-menu-reference-guide.md).
 
-There are five tabs: General, Payments, Shipments, Notes, and Emails.
+There are five tabs: _General_, _Payments_, _Shipments_, _Notes_, and _Emails_.
 
 ## General
 
@@ -12,7 +12,7 @@ You can manage and track the order's status from start to finish on the _General
 
 ## Payments
 
-The Payments tab tracks the order's transaction history, payment method, and the payment status.
+The _Payments_ tab tracks the order's transaction history, payment method, and the payment status.
 
 ![Orders Menu - Payments tab](./order-information/images/02.png)
 
