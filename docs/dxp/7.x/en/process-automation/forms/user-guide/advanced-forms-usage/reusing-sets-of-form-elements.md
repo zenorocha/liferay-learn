@@ -1,6 +1,6 @@
 # Reusing Sets of Form Elements
 
-Element Sets in the Liferay Forms application allow users to create reusable form elements, such as asking a user's contact information (name, address, and phone number). These element sets also include the layout and configuration of the fields.
+Forms often request the same sets of information, such as name, birthdays, and addresses. Rather than recreating these fields every time users create a new form, these elements can be grouped as a set and reused. Element Sets include the layout and configuration of the fields.
 
 ```note::
    Editing an Element Set doesn't retroactively affect the Forms where the Element Set was used.

@@ -1,4 +1,4 @@
-# Providing Predefined Values for a Form
+# Providing Help Text and Predefined Values
 
 Form fields can have help text, placeholder text, and predefined values.
 
@@ -10,20 +10,35 @@ Form fields can have help text, placeholder text, and predefined values.
 
 All form field types can have help text, and all form field types that accept user input can have predefined values. Only text and numeric fields can have placeholder text.
 
-To enter placeholder text or predefined values:
+## Entering Help and Placeholder Texts
+
+To enter placeholder text:
 
 1. Open a field's sidebar menu.
 1. Click the _Basic_ tab.
 
-    ![Enter predefined values and placeholder text.](./providing-predefined-values-for-a-form/images/01.png)
+    ![Enter the placeholder text.](./providing-help-text-and-predefined-values/images/01.png)
 
-1. Enter the desired the placeholder text or predefined values.
-1. Click _Save Form_.
+1. Enter the following:
+
+    * **Placeholder Text**: John Smith
+    * **Help Text**: Enter your full name.
+
+1. Click _Save Form_ when finished.
 
 The form now has placeholder values.
 
-![Enter predefined values and placeholder text.](./providing-predefined-values-for-a-form/images/02.png)
+![Enter predefined values and placeholder text.](./providing-help-text-and-predefined-values/images/02.png)
 
-```important::
-   Placeholder values are not submitted if the field is left blank.
-```
+## Entering a Predefined Value
+
+1. Click the _Advanced_ tab.
+1. Enter the Predefined Value.
+
+    ![Enter the predefined value.](./providing-help-text-and-predefined-values/images/03.png)
+
+1. Click _Save Form_ when finished.
+
+## Additional Information
+
+* [Creating Forms](./creating-forms.md)
