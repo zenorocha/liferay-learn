@@ -1,12 +1,10 @@
 # Overriding Product Level Information
 
-In Liferay Commerce, SKUs inherit the parent product's specifications and [subscription](./enabling-subscriptions-for-a-product) settings. However, users can override certain product information at the SKU level.
+Product SKUs in a catalog typically inherit the specifications and configurations from the parent product. You can override certain product configurations or specifications on a per SKU basis.
 
-This is useful if a product has multiple SKUs and each SKU has unique specifications or sold differently.
+## Overriding Product Shipping Values
 
-## Overriding Shipping Information
-
-One use case is if a product offers a 6-pack and a 12-pack and each is assigned a different SKU. Users must enter different weights for each SKU which in turn affects shipping calculations.
+SKUs can be configured to have shipping weights and dimensions that are distinct from the those configured for the product. Altering SKU weights and dimensions will update shipping calculations for that particular SKU, independently from the product.
 
 To create a shipping override:
 
@@ -24,11 +22,13 @@ To create a shipping override:
 
 1. Click _Publish_ when finished.
 
-The Shipping Override has been created for this SKU. Repeat these steps for all other SKUs.
+A Shipping Override has been created for this SKU.
 
-## Overriding Subscriptions
+## Overriding Product Subscription Settings
 
-If each SKU is sold differently where one SKU is a subscription and another is not, follow the steps below to create a Subscription Override:
+Individual product SKUs can be configured to be available on a subscription basis, even when the Product itself is not configured for subscription.
+
+To override a product's Subscription settings for a specific SKU:
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Products_.
 1. Click on a product (for example, _Generic Coffee_).
@@ -47,6 +47,8 @@ If each SKU is sold differently where one SKU is a subscription and another is n
     ![Enter the dimensions](./overriding-product-level-information/images/04.png)
 
 1. Click _Save_ when finished.
+
+The SKU is now available on a subscription basis.
 
 ## Additional Information
 
