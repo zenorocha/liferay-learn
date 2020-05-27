@@ -5,7 +5,6 @@ Search Results
    :maxdepth: 1
 
    search-results/search-results.md
-   search-results/understanding-search-results.md
    search-results/configuring-the-search-results-widget.md
    search-results/sorting-search-results.md
    search-results/filtering-search-results.md
