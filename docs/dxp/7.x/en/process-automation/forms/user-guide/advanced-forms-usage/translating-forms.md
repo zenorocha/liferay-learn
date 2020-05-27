@@ -1,8 +1,8 @@
 # Translating Forms
 
-Forms can be translated to any locale that Liferay DXP supports.
+Forms can be be translated and presented in any language that is currently enabled on the current site.
 
-To add a translate a form:
+To add a translation:
 
 1. Open the _Product Menu_ (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the _Site Administration_ menu.
 1. Select the site where the form has been created.
