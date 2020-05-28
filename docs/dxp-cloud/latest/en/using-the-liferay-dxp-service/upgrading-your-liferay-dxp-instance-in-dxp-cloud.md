@@ -6,7 +6,7 @@ When upgrading your `liferay` image version to a new version, you are required t
    For large data sets in production, there are several extra considerations that are important for a smooth upgrade. See `the guide to upgrading Liferay DXP <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html>`__ for a comprehensive overview of the core upgrade.
 ```
 
-**Walk through the following steps of the Liferay upgrade procedure:**
+**Walk through the Liferay upgrade procedure:**
 
 1. [Install prerequisites](#install-prerequisites)
 1. [Download a backup](#download-a-backup)
@@ -18,7 +18,7 @@ When upgrading your `liferay` image version to a new version, you are required t
 
 ## Install Prerequisites
 
-Before beginning the upgrade procedure, make sure you have done the following steps:
+Before beginning the upgrade procedure, make sure you have installed the following prerequisites:
 
 * [Install MySQL](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
 * Download a bundle for the version of DXP you are upgrading to.
@@ -196,7 +196,7 @@ Follow these steps to restore a backup to your chosen environment:
 
 1. Navigate to your production environment, then click _Backups_ from the side menu.
 
-1. Choose a backup from the list, and then click Restore to from the Actions menu for that backup.
+1. Choose a backup from the list, and then click _Restore to_ from the Actions menu for that backup.
 
     ![Select Restore to... from the Actions menu for the uploaded backup.](./upgrading-your-liferay-dxp-instance-in-dxp-cloud/images/03.png)
 
