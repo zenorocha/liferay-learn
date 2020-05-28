@@ -85,7 +85,7 @@
                     const productToggleWrapper = document.querySelector('.product-toggle-wrapper');
                     const searchForm = document.querySelector('.search-form');
 
-                    searchForm.action = '/dxp-7.x/' + `{{ pathto('search') }}`;
+                    searchForm.action = '/dxp/7.x/{{ language }}/' + `{{ pathto('search') }}`;
 
                     const toggleProductDropdown = show => productDropdown.classList.toggle('show', show);
 
