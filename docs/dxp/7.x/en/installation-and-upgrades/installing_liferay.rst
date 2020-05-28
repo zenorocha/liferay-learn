@@ -4,7 +4,7 @@ Installing Liferay
 .. toctree::
    :maxdepth: 2
 
-   installing-liferay//hosting-liferay.md
+   installing-liferay/hosting-liferay.md
 
    installing-liferay/using-liferay-dxp-docker-images.rst
 
