@@ -37,7 +37,7 @@ in the service's `LCP.json`:
 
 ```json
 {
-  "id": "liferay",
+  "id": "webserver",
   "loadBalancer": {
     "customDomains": ["acme.com", "www.acme.com"]
   }
