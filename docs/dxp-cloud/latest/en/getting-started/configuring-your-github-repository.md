@@ -44,14 +44,24 @@ Jenkins service:
 
 ### Setting Environment Variables
 
-Lastly, you must set two environment variables in the Jenkins service's `LCP.json` to point to your new repository:
+Lastly, set environment variables in the Jenkins service's to point to your new repository:
 
-Name | Default Value | Description |
-| --- | --- | --- |
-| `GITHUB_REPOSITORY` |   | Point to your new GitHub repository (remote) |
-| `GITHUB_TOKEN` |   | Point to a personal access token that you created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line). |
+1. Log in to the DXP Cloud console and navigate to your Jenkins service in the `infra` environment.
 
-After updating these environment variables, deploy a new build with the changes. Any pushed branches and pull requests in your new repository should now trigger a Jenkins build.
+1. Navigate to the _Environment Variables_ tab.
+
+1. Configure the following environment variables:
+
+| Name | Value |
+| ---  | ---   |
+| `LCP_CI_SCM_PROVIDER` | github  |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | <repo_owner> |
+| `LCP_CI_SCM_REPOSITORY_NAME` | <repo_name> |
+| `LCP_CI_SCM_TOKEN` | <access_token> |
+
+For the `LCP_CI_SCM_TOKEN` value, use the personal access token that you created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line).
+
+After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in your new repository should now trigger.
 
 ## Verifying Builds
 
