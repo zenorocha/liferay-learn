@@ -21,11 +21,6 @@ Installing Liferay on Premises
 -  :doc:`/installation-and-upgrades/installing-liferay/configuring-a-database`
 -  :doc:`/installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time`
 -  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/activating-liferay-dxp`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/trial-plugin-installation`
--  :doc:`/installation-and-upgrades/setting-up-liferay-dxp/setting-up-marketplace`
-* Using the Liferay Marketplace
-* Installing Apps Manually
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
