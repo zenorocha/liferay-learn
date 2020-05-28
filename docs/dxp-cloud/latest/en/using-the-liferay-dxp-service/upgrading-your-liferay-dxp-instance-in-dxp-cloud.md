@@ -32,17 +32,17 @@ Perform the following steps to download a backup of the DXP instance currently r
 The next step is to extract the data from the downloaded archives and move the data to where it is needed for the upgrade.
 
 ```important::
-   If you have previously used the Liferay bundle that you are using for this data upgrade, then temporarily move any existing subfolders in the LIFERAY_HOME/data folder beforehand. This step will prevent the data from your previous usage of the bundle from interfering with the data from the backup.
+   If you have previously used the Liferay bundle that you are using for this data upgrade, then temporarily move any existing subfolders in the ``LIFERAY_HOME/data`` folder beforehand. This step will prevent the data from your previous usage of the bundle from interfering with the data from the backup.
 ```
 
 Perform the following steps to extract and import the data from the backup:
 
-1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the LIFERAY_HOME/data folder of your Liferay bundle.
+1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of your Liferay bundle.
 
 1. Open a command prompt within this folder and run the following command to extract the archive:
 
     ```bash
-    tar -xvzf archive.tgz
+    tar -xvzf ARCHIVE_NAME.tgz
     ```
 
 1. Run the following commands to extract the database archive:
@@ -52,7 +52,7 @@ Perform the following steps to extract and import the data from the backup:
     ```
 
     ```bash
-    tar -xvzf archive.tgz
+    tar -xvzf ARCHIVE_NAME.tgz
     ```
 
 1. Log into the MySQL client on your local system:
@@ -107,7 +107,8 @@ The upgrade tool prompts you for information about your installation before begi
 
 Here is an example interaction with the upgrade tool entering this information:
 
-```Please enter your application server (tomcat):
+```
+Please enter your application server (tomcat):
 tomcat
 
 Please enter your application server directory (../../tomcat-9.0.17):
@@ -142,7 +143,7 @@ Now that your Liferay installation has been upgraded, use the following steps to
     ```
 
     ```important::
-       If the data volume you downloaded contained more folders (such as a `license/` folder), then add these as additional arguments after `document_library`.
+       If the data volume you downloaded contained more folders (such as a ``license/`` folder), then add these as additional arguments after ``document_library``.
     ```
 
 1. Run the following command to perform a database dump:
@@ -157,7 +158,7 @@ Now that your Liferay installation has been upgraded, use the following steps to
     tar zcvf database.tgz database.gz && rm database.gz
     ```
 
-The database and Liferay data volume are now ready for you to upload them using the `backup ` service's upload API.
+The database and Liferay data volume are now ready for you to upload them using the `backup` service's upload API.
 
 ## Call the Upload API
 
@@ -187,11 +188,11 @@ Follow these steps to restore a backup to your chosen environment:
 
 1. Choose a backup from the list, and then click Restore to from the Actions menu for that backup.
 
-		![Select Restore to... from the Actions menu for the uploaded backup.](./upgrading-your-liferay-dxp-instance-in-dxp-cloud/images/03.png)
+    ![Select Restore to... from the Actions menu for the uploaded backup.](./upgrading-your-liferay-dxp-instance-in-dxp-cloud/images/03.png)
 
-1. Select one of your environments to restore to from the drop-down list (e.g., your dev environment).
+1. Select one of your environments to restore to from the drop-down list (e.g., your `dev` environment).
 
-		![Select an environment to deploy the backup to.](./upgrading-your-liferay-dxp-instance-in-dxp-cloud/images/04.png)
+    ![Select an environment to deploy the backup to.](./upgrading-your-liferay-dxp-instance-in-dxp-cloud/images/04.png)
 
 1. Click _Restore to environment_.
 
