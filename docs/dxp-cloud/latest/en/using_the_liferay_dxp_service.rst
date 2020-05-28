@@ -7,6 +7,7 @@ Using the Liferay DXP Service
    using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md
    Applying Patches <using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#hotfixes>
    Activating Products </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#licenses>
+   using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance-in-dxp-cloud.md
    using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md
    using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md
    Deploying Apps, Themes, and Modules </using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service#themes-portlets-and-osgi-modules>

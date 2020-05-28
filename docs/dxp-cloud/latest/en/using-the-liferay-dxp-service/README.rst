@@ -8,6 +8,7 @@ Maintenance and Upgrades
 
 -  `Applying Patches <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#hotfixes>`__
 -  `Activating Products <./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#licenses>`__
+-  :doc:`/using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance-in-dxp-cloud`
 
 Configuration
 -------------
