@@ -6,7 +6,17 @@ When upgrading your `liferay` image version to a new version, you are required t
    For large data sets in production, there are several extra considerations that are important for a smooth upgrade. See `the guide to upgrading Liferay DXP <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html>`__ for a comprehensive overview of the core upgrade.
 ```
 
-## Prerequisites
+**Walk through the following steps of the Liferay upgrade procedure:**
+
+1. [Install prerequisites](#install-prerequisites)
+1. [Download a backup](#download-a-backup)
+1. [Extract and import the data](#extract-and-import-the-data)
+1. [Perform the data upgrade](#perform-the-data-upgrade)
+1. [Compress the database and document library](#compress-the-database-and-document-library)
+1. [Call the upload API](#call-the-upload-api)
+1. [Restore the backup](#restore-the-backup)
+
+## Install Prerequisites
 
 Before beginning the upgrade procedure, make sure you have done the following steps:
 
@@ -89,7 +99,7 @@ Perform the following steps to extract and import the data from the backup:
 
 The database and document library are now in place and ready for you to perform the data upgrade.
 
-## Perform the Upgrade
+## Perform the Data Upgrade
 
 DXP bundles provide an upgrade tool that is used for data upgrades. This tool is invoked through a script included in the bundle, `db_upgrade.sh`.
 
