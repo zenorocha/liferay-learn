@@ -1,9 +1,9 @@
 # Reusing Sets of Form Elements
 
-Forms often request the same sets of information, such as name, birthdays, and addresses. Rather than recreating these fields every time users create a new form, these elements can be grouped as a set and reused. Element Sets include the layout and configuration of the fields.
+Forms often request the same sets of information, such as name, birthday, and address. Rather than adding these fields for every new form, these elements can be grouped as a set and reused. Element Sets include the layout and configuration of the fields.
 
 ```note::
-   Editing an Element Set doesn't retroactively affect the Forms where the Element Set was used.
+   Forms created using an Element Set *do not* inherit changes that are made later to an Element set.
 ```
 
 ## Creating Element Sets
@@ -50,9 +50,7 @@ To use an Element Set in a Form:
 
     ![Drag and drag the element set into the builder.](./reusing-sets-of-form-elements/images/03.png)
 
-    ```note::
-       Once an Element Set is added to a Form, there's no connection with the root Element Set. Users can move or configure the Fields and Elements.
-    ```
+    Once the Element Set has been added to a form, the layout and individual elements can be configured and updated without affecting the base Element Set.
 
 1. Click _Publish Form_ button when finished.
 

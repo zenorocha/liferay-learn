@@ -1,6 +1,6 @@
 # Providing Help Text and Predefined Values
 
-Form fields can have help text, placeholder text, and predefined values.
+Form fields can be configured to have help text, placeholder text, and predefined values that assist users in understanding and filling out a form.
 
 * **Help Text:** Text that appears as a sub-heading to the field label, but does not appear in the field entry area. Enter help text in the Basic tab of the field's sidebar menu.
 
@@ -10,7 +10,7 @@ Form fields can have help text, placeholder text, and predefined values.
 
 All form field types can have help text, and all form field types that accept user input can have predefined values. Only text and numeric fields can have placeholder text.
 
-## Entering Help and Placeholder Texts
+## Entering Help or Placeholder Texts
 
 To enter placeholder text:
 

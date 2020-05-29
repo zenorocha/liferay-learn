@@ -1,6 +1,6 @@
 # Redirecting Users on Form Submission
 
-An alternative to a [success page](../creating-forms.md#adding-a-success-page) is to redirect the user to a specific URL after they have submitted their form.
+By default, when a user submits a form response, they are directed to a [success page](../creating-forms.md#adding-a-success-page). This behavior can be configured to instead redirect a user to a specific URL after submitting a form response.
 
 Follow these steps to set up a redirect URL:
 
