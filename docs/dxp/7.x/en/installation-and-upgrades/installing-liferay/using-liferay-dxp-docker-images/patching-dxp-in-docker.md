@@ -20,7 +20,7 @@ Installing a Hotfix or Security Fix Pack requires a folder in your volume or bin
 
 Here are two methods for installing these patches:
 
-1. [Install to your existing container](#install-to-your-existing-container), if it has existing qualified volume or bind mount that maps to its `/mnt/liferay/patching` folder.
+1. [Install to your existing container](#install-to-your-existing-container), if it has an existing qualified volume or bind mount that maps to the `/mnt/liferay/patching` folder.
 
 1. [Install to a new container](#install-to-a-new-container).
 
