@@ -1,0 +1,47 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					sectionName: 'Working with Search Pages',
+					sectionURL: 'search-pages-and-widgets/working-with-search-pages/search-pages.html',
+					subsections: [
+						{
+							name: 'Using a Search Page Template',
+							url: 'search-pages-and-widgets/working-with-search-pages/using-a-search-page-template.html'
+						},
+						{
+							name: 'Manually Creating a Search Page',
+							url: 'search-pages-and-widgets/working-with-search-pages/manually-creating-a-search-page.html'
+						},
+					]
+				},
+				{
+					sectionName: 'Search Results',
+					sectionURL: 'search-pages-and-widgets/search-results/search-results.html',
+					subsections: [
+						{
+							name: 'Configuring the Search Results Widget',
+							url: 'search-pages-and-widgets/search-results/configuring-the-search-results-widget.html'
+						},
+						{
+							name: 'Sorting Search Results',
+							url: 'search-pages-and-widgets/search-results/sorting-search-results.html'
+						},
+						{
+							name: 'Enabling Search Suggestions',
+							url: 'search-pages-and-widgets/search-results/enabling-search-suggestions.html'
+						}
+					]
+				},
+				{
+					sectionName: 'Similar Results',
+          sectionURL: 'search-pages-and-widgets/similar-results.html',
+        }
+			]
+		}
+	})
+</script>

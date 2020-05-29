@@ -8,5 +8,8 @@ Search Pages and Widgets
    search-pages-and-widgets/search_results.rst
    search-pages-and-widgets/similar-results.md
 
-.. include:: /using-search/search-pages-and-widgets/README.rst
-   :start-line: 2
+.. raw:: html
+   :file: ../landingpage_template.html
+
+.. raw:: html
+   :file: search-pages-and-widgets/landing.html

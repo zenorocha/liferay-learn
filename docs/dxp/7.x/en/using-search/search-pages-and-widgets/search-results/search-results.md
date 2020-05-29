@@ -26,13 +26,14 @@ Facets are configurable. Read about configuring facets<!-- Future link to facets
 
 ## Search Results Relevance
 
-The search engine processes and orders results by *relevance*. Relevance is a score calculated by the search engine. The score is calculated by algorithms provided by the [search engine](https://www.elastic.co/guide/en/elasticsearch/reference/current/relevance-intro.html#relevance-intro).
+The search engine processes and orders results by *relevance*. Relevance is a score calculated by the search engine. The score is calculated by [algorithms provided by the search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro).
 
 Results relevance is configurable:
-- [Search Tuning is a brute-force way to customize rankings](../../search_administration_and_tuning.md).
-- [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay_enterprise_search.md)
-- [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](../../search_administration_and_tuning.md)
-- [Sort the results by an indexed field to override relevance scoring](./sorting-search-results.md).
+
+* [Search Tuning is a brute-force way to customize rankings](../../search_administration_and_tuning.md).
+* [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay_enterprise_search.md)
+* [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](../../search_administration_and_tuning.md)
+* [Sort the results by an indexed field to override relevance scoring](./sorting-search-results.md).
 
 ## Permissions and Search Results
 

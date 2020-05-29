@@ -2,7 +2,7 @@
 
 Search results displayed in the [Search Results](./search-results.md) widget are ordered by [relevance score](./search-results.md#search-results-relevance) (as calculated by the [search engine](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) by default. With the Sort widget, users can control the order of returned results.
 
-Add the widget to a [Search Page](../../search-pages-and-widgets/search-pages.md) to begin sorting results.
+Add the widget to a [Search Page](../working-with-search-pages/search-pages.md) to begin sorting results.
 
 Out of the box, you can order results in these ways as an alternative to relevance sorting:
 
