@@ -80,8 +80,6 @@ The Patching Tool installs the patch and DXP launches.
 
 Using a new Fix Pack or a new Service Pack requires migrating to a container that is created from an image based on that Fix Pack or Service Pack. Here are steps for creating such a container.
 
-<!-- TODO handle case of applying hot fix on top of new fix pack -->
-
 1. Stop your current DXP container.
 
 1. Back up your container's artifacts and configuration files using a source control repository or some other means.
