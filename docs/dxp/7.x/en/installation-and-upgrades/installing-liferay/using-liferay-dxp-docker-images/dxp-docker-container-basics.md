@@ -5,18 +5,18 @@ Docker Hub hosts [Liferay DXP](https://hub.docker.com/r/liferay/dxp) and [Lifera
 * [Liferay DXP Images](https://hub.docker.com/r/liferay/dxp)
 * [Liferay Portal CE Images](https://hub.docker.com/r/liferay/portal)
 
-Here are the fundamentals for using Liferay Docker containers:
+Here are the fundamentals for using the containers:
 
-* [Starting a DXP Container for the First Time](#starting-a-dxp-container-for-the-first-time)
+* [Starting a Container for the First Time](#starting-a-container-for-the-first-time)
 * [Viewing Log Files](#viewing-log-files)
-* [Stopping DXP](#stopping-dxp)
-* [Restarting DXP](#restarting-dxp)
+* [Stopping a Container](#stopping-a-container)
+* [Restarting a Container](#restarting-a-container
 
-DXP containers are standard Docker containers that can be started and stopped as such. The following examples use [Docker CLI (`docker`)](https://docs.docker.com/engine/reference/commandline/docker/), but you can use whatever Docker container tools you like.
+These containers are standard Docker containers that can be started and stopped as such. The following examples use [Docker CLI (`docker`)](https://docs.docker.com/engine/reference/commandline/docker/), but you can use whatever Docker container tools you like.
 
-## Starting a DXP Container for the First Time
+## Starting a Container for the First Time
 
-The DXP container listens on port `8080` and starts like all Docker containers.
+The containers listens on port `8080` and starts like all Docker containers.
 
 1. [Run a container](https://docs.docker.com/engine/reference/commandline/run/) that maps a host port (e.g., `8080`) to the container's `8080` port.
 
@@ -28,7 +28,7 @@ The DXP container listens on port `8080` and starts like all Docker containers.
        Naming your container is optional but can facilitate managing the container.
     ```
 
-    The DXP container runs and prints log messages, including this startup completion message:
+    The container runs and prints log messages, including this Tomcat startup completion message:
 
     ```
     INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [xx,xxx] milliseconds
@@ -42,7 +42,7 @@ DXP is ready to use.
 
 ## Viewing Logs
 
-DXP log messages and log files are accessible.
+DXP log messages and log files are available to view live and to copy to your host.
 
 ```tip::
    The ``[container]``` is the name you entered via ``--name [some name]`` in your ``run`` command.
@@ -56,19 +56,19 @@ The [`docker logs`](https://docs.docker.com/engine/reference/commandline/logs/) 
 | :------ | :----- |
 | `docker logs [container]` | Outputs all of the current log messages |
 | `docker logs -f [container]` | Streams new log messages, like `tail -f [file]` does |
-| `docker logs -t [container]` | Appends a timestamp to each log message |
+| `docker logs -t [container]` | Appends a time stamp to each log message |
 
 ### `docker cp` command
 
-You can use a [`docker cp`](https://docs.docker.com/engine/reference/commandline/cp/) command like the one below to copy a DXP log file to your host machine.
+You can use a [`docker cp`](https://docs.docker.com/engine/reference/commandline/cp/) command like the one below to copy a log file to your host machine.
 
 ```bash
 docker cp [container]:/opt/liferay/logs/liferay.[timestamp].log .
 ```
 
-## Stopping DXP
+## Stopping a Container
 
-Here is the most graceful way to stop the DXP container:
+Here is the most graceful way to stop the container:
 
 ```bash
 docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh
@@ -79,9 +79,9 @@ Here are the fastest ways to stop the container:
 * `Ctrl-C`: This sends a [`SIGINT` or `SIGKILL` signal to an attached container](https://docs.docker.com/engine/reference/commandline/attach/#extended-description) (a container started with the `-it` argument).
 * `docker kill [container]`: This sends a `KILL` signal to the container.
 
-## Restarting DXP
+## Restarting a Container
 
-DXP containers can be restarted like all Docker containers.
+The containers can be restarted like all Docker containers.
 
 ```bash
 docker start [container]
@@ -91,7 +91,7 @@ Now you know the basics of starting, stopping, and monitoring a DXP container.
 
 ## What's Next
 
-If you want to know what the DXP container entry point does and learn the container's API, see the [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md). If you want to start using DXP containers, exercise one of the following use cases:
+If you want to know what the container entry point does and learn the container's API, see the [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md). If you want to start using the containers, exercise one of the following use cases:
 
 * [Configuring DXP Containers](./configuring-dxp-containers.md)
 * [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
