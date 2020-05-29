@@ -15,9 +15,9 @@ Outline:
 * [Lifecycle](#lifecycle)
 * [API](#api)
 
-## Lifecycle Phases
+## Lifecycle
 
-After you create a DXP container in an environment, the container entry point executes the following lifecycle phases in that environment:
+After you create a container in an environment, the container entry point executes the following lifecycle phases in that environment:
 
 1. **Pre-configure:** Runs user-provided scripts before configuring Tomcat and DXP.
 1. **Configure:** Prepares for running DXP on Tomcat.
@@ -31,54 +31,52 @@ After you create a DXP container in an environment, the container entry point ex
 1. **Tomcat startup:** Launches Tomcat using the Catalina script.
 1. **Post-shutdown:** Runs user-provided scripts after Tomcat stops.
 
-All of the lifecycle phases, except Tomcat startup, act on user-provided files.
-
 ## API
 
-The container entry point scans the following container folders for files and uses those files to configure the container, Tomcat, and DXP and act on DXP.
+The container entry point scans the following container folders for files and uses those files to configure the container, Tomcat, and DXP and to act on DXP.
 
 * `/mnt/liferay`
 * `/user/local/liferay/scripts`
 
 ```note::
-   You can pass files to these container folders several different ways, including using `bind mounts <https://docs.docker.com/storage/bind-mounts/>`_, `volumes <https://docs.docker.com/storage/volumes/>`_, and ``docker cp``. See `Providing Files to the Container <./providing-files-to-the-container.md>`_ for more information.
+   You can pass files to these container folders in several different ways, including using `bind mounts <https://docs.docker.com/storage/bind-mounts/>`_, `volumes <https://docs.docker.com/storage/volumes/>`_, and ``docker cp``. See `Providing Files to the Container <./providing-files-to-the-container.md>`_ for more information.
 ```
 
 The key folders above have subfolders that are designated for specific actions. The subfolders, the actions taken on their files, and associated use cases are listed in lifecycle phase order in the following sections.
 
 The following lifecycle phases act on user-provided files.
 
-* [Pre-Configure Phase](#pre-configure-phase)
-* [Configure Phase](#configure-phase)
-* [Pre-Startup Phase](#pre-startup-phase)
-* [Post-Shutdown Phase](#post-shutdown-phase)
+* [Pre-Configure Phase API](#pre-configure-phase-api)
+* [Configure Phase API](#configure-phase-api)
+* [Pre-Startup Phase API](#pre-startup-phase-api)
+* [Post-Shutdown Phase API](#post-shutdown-phase-api)
 
-### Pre-Configure Phase
-
-| File Location | Action | Use Cases |
-| :------------ | :----- | :-------- |
-| `/usr/local/liferay/scripts/pre-configure` | Run scripts in alphabetical order | Running scripts in DXP containers before the Configure Phase |
-
-### Configure Phase
+### Pre-Configure Phase API
 
 | File Location | Action | Use Cases |
 | :------------ | :----- | :-------- |
-| `/mnt/liferay/files` | Copy files to corresponding folders under Liferay Home (`/opt/liferay`) | [Configuring DXP Containers](./configuring-dxp-containers.md)<br><br>Configuring Tomcat |
+| `/usr/local/liferay/scripts/pre-configure` | Run scripts in alphabetical order | Running scripts in the container before the Configure Phase |
+
+### Configure Phase API
+
+| File Location | Action | Use Cases |
+| :------------ | :----- | :-------- |
+| `/mnt/liferay/files` | Copy files to corresponding folders under Liferay Home (`/opt/liferay`) | [Configuring DXP Containers](./configuring-dxp-containers.md)<br><br>[Configuring Tomcat](./configuring-dxp-containers.md#jvm-options) |
 | `/mnt/liferay/scripts` | Run scripts in alphabetical order | Running scripts during configuration |
-| `/mnt/liferay/deploy` | Symbolically link `/mnt/liferay/deploy` to `/opt/liferay/deploy` for auto-deploying artifacts at DXP startup.<br><br>At run time, any artifacts copied into `/mnt/liferay/deploy`, into `/opt/liferay/deploy`, or into any folder mounted to either folder are auto-deployed.<br><br>Auto-deployed artifacts are moved to appropriate folders under `/opt/liferay/osgi`. | [Installing apps and other artifacts to DXP Containers](./installing-apps-and-other-artifacts-to-containers.md) |
+| `/mnt/liferay/deploy` | Symbolically link `/mnt/liferay/deploy` to `/opt/liferay/deploy` for auto-deploying artifacts at DXP startup.<br><br>At run time, auto-deploy any artifacts copied into `/mnt/liferay/deploy`, into `/opt/liferay/deploy`, or into any folder mounted to either folder.<br><br>Note: Auto-deployed artifacts are moved to appropriate folders under `/opt/liferay/osgi`. | [Installing apps and other artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md) |
 | `/mnt/liferay/patching` | If a Patching Tool is provided, install it. Install any patches provided. | [Patching DXP in Docker](./patching-dxp-in-docker.md) |
 
-### Pre-Startup Phase
+### Pre-Startup Phase API
 
 | File Location | Action | Use Cases |
 | :------------ | :----- | :-------- |
-| `/usr/local/liferay/scripts/pre-startup` | Run scripts in alphabetical order | Running scripts in DXP containers before starting Tomcat |
+| `/usr/local/liferay/scripts/pre-startup` | Run scripts in alphabetical order | Running scripts in the container before starting Tomcat |
 
-### Post-Shutdown Phase
+### Post-Shutdown Phase API
 
 | File Location | Action | Use Cases |
 | :------------ | :----- | :-------- |
-| `/usr/local/liferay/scripts/post-shutdown` | Run scripts in alphabetical order | Running scripts in DXP containers after shutting down Tomcat |
+| `/usr/local/liferay/scripts/post-shutdown` | Run scripts in alphabetical order | Running scripts in the container after shutting down Tomcat |
 
 ## What's Next
 
