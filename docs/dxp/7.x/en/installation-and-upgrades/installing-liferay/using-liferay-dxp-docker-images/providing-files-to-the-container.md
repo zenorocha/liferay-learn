@@ -9,56 +9,34 @@ The DXP container uses the files you provide to execute the following use cases:
 * Patch DXP
 * Run scripts
 
+All of the use cases can be triggered on container creation when the container finds files in specific folders within these key container folders:
+
+* `/mnt/liferay`
+* `/user/local/liferay/scripts`
+
+The [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md) describes when the subfolders are scanned and the actions taken on their files.
+
 You can provide files to the container in several ways, including these:
 
 * [Bind mounts](https://docs.docker.com/storage/bind-mounts/)
 * [Volumes](https://docs.docker.com/storage/volumes/)
 * [Using `docker cp`](https://docs.docker.com/engine/reference/commandline/cp/)
 
-All of the use cases, except for deploying apps and using `.config` files, require making files available on container creation using bind mounts or volumes, for example.
+All of the use cases, except for deploying artifacts and using `.config` files, require making files available on container creation. Bind mounts and volumes accomplish this. Deploying artifacts and applying `.config` files can be accomplished on container creation using bind mounts and volumes, or at run time using `docker cp`.
 
-The use cases are triggered by files you provide to specific subfolders in the following container folders:
-
-* `/mnt/liferay`
-* `/user/local/liferay/scripts`
-
-The [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md) specify the subfolders and the container's actions on files in those subfolders. Exercising use cases requires providing files to the appropriate subfolders.
-
-Since most of the user cases are triggered by files at container creation, you must prepare your files and decide how you want to mount those files into the container's subfolders. It's helpful and necessary, in some cases, to organize your files by use case too.
-
-Since preparing bind mounts is simpler than preparing volumes, bind mounts are demonstrated here. Also `docker cp` commands are demonstrated for deploying apps and `.config` files to running containers.
-
-<!--
-
-All of the use cases, except for deploying apps and using `.config` files, require making files available under these folders on container creation. This is done using bind mounts or [volumes](https://docs.docker.com/storage/).
-
-Files must be mapped to appropriate locations under the `/mnt/liferay` and `/user/local/liferay/scripts` container folders to execute the use cases. So you must take care in organizing your files. You could use a strict approach of replicating the folder structures that the container uses, manage files in an ad-hoc manner, or use a hybrid approach.
-
-Since preparing a bind mount is simpler than preparing a volume, bind mounts are demonstrated here. Also `docker cp` commands are demonstrated for deploying apps and `.config` files to running containers.
--->
+Bind mounts are used in the examples here as they are simpler than volumes for providing files. As you prepare files for mounting to a container, it's helpful to organize them in a way that's easiest for you to manage. All of these topics and using `docker cp` are covered here.
 
 Outline:
 
-<!--* [Bind Mount Format](#bind-mount-format)-->
+* [Bind Mount Format](#bind-mount-format)
+* [Scanned Container Folders](#scanned-container-folders)
 * [Organizing Files for Bind Mounting](#organizing-files-for-bind-mounting)
-* [Bind Mounting `/mnt/liferay` to a Host Folder](#bind-mounting-mnt-liferay-to-a-host-folder)
+* [Bind Mounting a Host Folder to `/mnt/liferay`](#bind-mounting-a-host-folder-to-mnt-liferay)
 * [Using `docker cp`](#copying-files-to-the-container)
 
-## Organizing Files for Bind Mounting
+## Bind Mount Format
 
-The DXP container expects input files to be within these folders.
-
-* `/mnt/liferay/deploy`
-* `/mnt/liferay/files`
-* `/mnt/liferay/patching`
-* `/mnt/liferay/scripts`
-* `/usr/local/liferay/scripts/post-shutdown`
-* `/usr/local/liferay/scripts/pre-configure`
-* `/usr/local/liferay/scripts/pre-startup`
-
-Please see the [API](./dxp-container-lifecycle-and-api.md#api) for more actions and use cases associated with each folder.
-
-The bind mount format looks like this:
+You can specify any number of bind mounts to a `docker run` command. Each bind mount follows this format:
 
 ```
 -v [source path in host]:[destination path in container]
@@ -66,27 +44,49 @@ The bind mount format looks like this:
 
 The bind mount source can be any folder path or file path in the host. The bind mount destination can be any folder path or file path in the container.
 
+## Scanned Container Folders
+
+The DXP container scans for files in these folders.
+
+* `/mnt/liferay/deploy`
+* `/mnt/liferay/files` (all files and folders are processed)
+* `/mnt/liferay/patching`
+* `/mnt/liferay/scripts`
+* `/usr/local/liferay/scripts/post-shutdown`
+* `/usr/local/liferay/scripts/pre-configure`
+* `/usr/local/liferay/scripts/pre-startup`
+
+Please see the [API](./dxp-container-lifecycle-and-api.md#api) for the actions and use cases associated with each folder.
+
+## Organizing Files for Bind Mounting
+
 You can organize DXP container bind mounts in several different ways:
 
 * Bind to one or both of the key folders: `/mnt/liferay` and `/usr/local/liferay/scripts`
 * Bind to their subfolders
 * Bind to a mix of subfolders and files
 
-The table below shows some example bind mounts.
+The table below shows some example bind mounts and the pros and cons of using them.
 
 ### Example Bind Mounts
 
-| Example | `-v` Option Format | Benefits | Limitations |
-| :------ | :----------------- | :------- | :---------- |
-| Mounting to `/mnt/liferay` | `-v [host-path]:/mnt/liferay` | Centralizes the input files. | Input files must be organized in subfolders that the container expects (see the locations listed above). |
-| Mounting to `/mnt/liferay` subfolders separately  | `-v [host-path]/[folder-1]:/mnt/liferay/deploy `<br><br>`-v [host-path]/[folder-2]:/mnt/liferay/files`<br><br><br>Note: `[host-path]` can be the same path or different paths. | Flexibility to use input file groups in different locations on the host. | More host file locations to manage. |
-| Mounting individual files | `-v [host path]/setenv.sh:/mnt/liferay/files/tomcat/bin/setenv.sh` | Input files are clearly visible in the `docker run` command. | Lengthy docker run commands. Even more host file locations to manage. |
+| Example | Pros | Cons |
+| :------ | :------- | :---------- |
+| Mounting to `/mnt/liferay`:<br><br>`-v [host-path]:/mnt/liferay` | Centralizes the input files. | Input files must be organized in subfolders that the container expects (see the locations listed above). |
+| Mounting to `/mnt/liferay` subfolders separately:<br><br>`-v [host-path]/[folder-1]:/mnt/liferay/deploy -v [host-path]/[folder-2]:/mnt/liferay/files`<br><br><br>Note: `[host-path]` can be the same path or different paths. | Flexibility to use input file groups in different locations on the host. | More host file locations to manage. |
+| Mounting individual files:<br><br>`-v [host path]/setenv.sh:/mnt/liferay/files/tomcat/bin/setenv.sh` | Input files are clearly visible in the `docker run` command. | Lengthy docker run commands. Even more host file locations to manage. |
 
-The most general way to provide files to the container's [configuration phase](./dxp-container-lifecycle-and-api.md#liferay-phases) is to bind mount `/mnt/liferay`.
+The most general way to provide files to the container's [configuration phase](./dxp-container-lifecycle-and-api.md#lifecycle) is to bind mount a host folder to the container's `/mnt/liferay` folder.
 
-## Bind Mounting `/mnt/liferay` to a Host Folder
+## Bind Mounting a Host Folder to `/mnt/liferay`
 
-If you want to centralize files for configuring DXP, patching DXP, and deploying to DXP, consider bind mounting a host folder to the container's `/mnt/liferay` folder.
+If you want to centralize files for configuring, patching, and deploying to DXP, consider bind mounting a host folder to the container's `/mnt/liferay` folder.
+
+```note::
+   Most of the examples in the use case articles use this bind mount strategy.
+```
+
+Hre are the steps:
 
 1. Designate a folder on your host to serve as a base folder.
 
@@ -124,7 +124,7 @@ If you want to centralize files for configuring DXP, patching DXP, and deploying
     └───scripts
     ```
 
-1. In your `docker run` command, specify a bind mount from the container's `/mnt/liferay` folder to the base host folder.
+1. In your `docker run` command, specify a bind mount your base host folder to the container's `/mnt/liferay` folder.
 
     ```bash
     docker run -v [host folder path]:/mnt/liferay ...
@@ -140,9 +140,11 @@ If you have a new app, artifact, or `.config` file that you want to deploy to a 
 docker cp ~/my-apps/some-app.lpkg [container]:/mnt/liferay/deploy
 ```
 
+Applying a `.config` file requires copying it to the container's `/mnt/liferay/files/osgi/configs` folder.
+
 ## Conclusion
 
-Now you know how to provide files to the DXP container using bind mounts and `docker cp` commands. When the DXP container detects files in one of the designated folders, it triggers the appropriate use case. Please see the [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md) for more details. For use case details, please see these articles:
+Now you know how to provide files to the DXP container using bind mounts and `docker cp` commands. Please see the [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md) for more details. For use case details, please see these articles:
 
 * [Configuring DXP Containers](./configuring-dxp-containers.md)
 * [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
