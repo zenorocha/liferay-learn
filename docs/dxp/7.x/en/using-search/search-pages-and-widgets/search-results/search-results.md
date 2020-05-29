@@ -12,7 +12,7 @@ Multiple factors affect search results:
 
 Developers of content types (_assets_ in Liferay DXP) control much about how the asset's information is indexed and how its information is searched and returned in the search results. For further control, an *Indexer Post Processor* can modify an asset's indexing behavior and how search queries are constructed to look up the assets.
 
-Keep in mind though, almost everything you do when [configuring search](../../search_administration_and_tuning.rst) has an impact on search results, particularly [Synonym Sets](./../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../search-administration-and-tuning/result-rankings.md).
+Keep in mind though, almost everything you do when [configuring search](../../search_administration_and_tuning.md) has an impact on search results, particularly [Synonym Sets](../../search_administration_and_tuning.md) and [Result Rankings](../../search_administration_and_tuning.md).
 
 The concepts below are essential to understand before you begin changing any settings.
 
@@ -22,21 +22,21 @@ Results are filtered using *facets*. Most users have encountered similar filteri
 
 ![The Type facet is one of the facets provided out of the box.](./search-results/images/02.png)
 
-Facets are configurable. Read about [configuring facets](../search_facets.rst) to learn more.
+Facets are configurable. Read about configuring facets<!-- Future link to facets article --> to learn more.
 
 ## Search Results Relevance
 
 The search engine processes and orders results by *relevance*. Relevance is a score calculated by the search engine. The score is calculated by algorithms provided by the [search engine](https://www.elastic.co/guide/en/elasticsearch/reference/current/relevance-intro.html#relevance-intro).
 
 Results relevance is configurable:
-- [Search Tuning is a brute-force way to customize rankings](./../../search_administration_and_tuning.rst).
-- [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay_enterprise_search.rst)
-- [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](./../search-insights.md)
+- [Search Tuning is a brute-force way to customize rankings](../../search_administration_and_tuning.md).
+- [Liferay Enterprise Search's Learning to Rank feature is a machine learning model you can train to return more relevant results.](./../../liferay_enterprise_search.md)
+- [The Search Insights widget displays the relevance scoring to reveal why a result appears in a certain position.](../../search_administration_and_tuning.md)
 - [Sort the results by an indexed field to override relevance scoring](./sorting-search-results.md).
 
 ## Permissions and Search Results
 
-Search results don't appear for Users lacking [View permission](/docs/7-2/user/-/knowledge_base/u/roles-and-permissions) for them. A logged in User with the Site Administrator Role likely sees more search results than an anonymous guest.
+Search results don't appear for Users lacking View permission <!-- link placeholder for Roles and Permissions --> for them. A logged in User with the Site Administrator Role likely sees more search results than an anonymous guest.
 
 There are two rounds of permissions checks:
 
@@ -66,7 +66,7 @@ Post-filtering is configurable at *Control Panel* &rarr; *Configuration* &rarr; 
 
 ## Search and Staging
 
-With [staging](./../../../site-building/site_settings.rst), content is placed first in a preview and testing environment before being published to the live Site. Indexed content is marked so the search API knows if an item is live or not. In the live version of the Site, only live indexed content is searchable.
+With [staging](./../../../site-building/site_settings.md), content is placed first in a preview and testing environment before being published to the live Site. Indexed content is marked so the search API knows if an item is live or not. In the live version of the Site, only live indexed content is searchable.
 
 In the staged version of the Site, all content---live or staged---is searchable.
 
