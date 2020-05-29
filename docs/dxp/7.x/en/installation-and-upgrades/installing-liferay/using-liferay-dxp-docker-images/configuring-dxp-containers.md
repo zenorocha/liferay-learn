@@ -58,7 +58,7 @@ You can override Tomcat's `setenv.sh` script wholesale. A fast way to create a `
     cp setenv.sh [host folder]/files/tomcat/bin
     ```
 
-1. Run the container with the `-v` option and a [bind mount](./providing-files-to-the-container.md) your host folder to the container.
+1. Run the container with a `-v` option that bind mounts your host folder:
 
     ```bash
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
@@ -119,7 +119,7 @@ You can override a DXP container's portal properties using a `portal-ext.propert
     echo "jdbc.default.jndi.name=jdbc/MyPool" >> [host folder]/files/portal-ext.properties
     ```
 
-1. Run a DXP container with the `-v` option and a bind mount to your host folder:
+1. Run a DXP container with a `-v` option that bind mounts your host folder:
 
     ```bash
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
@@ -190,7 +190,7 @@ DXP [system properties](https://docs.liferay.com/ce/portal/7.3-latest/properties
 
 1. Add new system property values to the `system-ext.properties` file.
 
-1. Run your DXP container with the `-v` option and a bind mount to your host folder:
+1. Run your DXP container with a `-v` option that bind mounts your host folder:
 
     ```bash
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
@@ -216,13 +216,13 @@ Here are steps for providing a `.config` file to a new container using a [bind m
     mkdir -p [host folder]/files/osgi/configs
     ```
 
-1. Copy your `.config` files to the host folder's `files/osgi/configs` subfolder.
+1. Copy your `.config` files to the host folder's `files/osgi/configs` subfolder. For example,
 
     ```
     cp ~/*.config [host folder path]/files/osgi/configs
     ```
 
-1. Run the DXP container with the `-v` option and a bind mount to your host folder:
+1. Run the DXP container with a `-v` option that bind mounts your host folder:
 
     ```bash
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
@@ -234,12 +234,12 @@ Here are steps for providing a `.config` file to a new container using a [bind m
 
 The system component configurations are visible in DXP's Control Panel at _Configuration_ &rarr; _System Settings_, in the screen for that component.
 
-### Applying Configurations to Existing Containers
+### Applying Configurations to an Existing Container
 
 At runtime, you can copy `.config` files to your container using a `docker cp` command like this one:
 
 ```bash
-docker cp ~/my-configs/[some.configuration.file].config [container]:/mnt/liferay/deploy
+docker cp ~/my-configs/[some.configuration.file].config [container]:/mnt/liferay/osgi/configs
 ```
 
 ## Conclusion
