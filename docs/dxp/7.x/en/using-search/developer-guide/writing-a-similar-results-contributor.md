@@ -2,9 +2,9 @@
 
 > **Subscribers**
 
-> **Availability:** This functionality relies on a Service Provider Interface (SPI) that's bundled with Liferay DXP 7.3+. It's available in Liferay DXP 7.2, from Fix Pack 5+, via installation of the Similar Results widget from [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/MP_ID_FOR_SIMILAR_RESULTS_APP).
+> **Availability:** This functionality relies on a Service Provider Interface (SPI) that's bundled with Liferay DXP 7.3+. It's available in Liferay DXP 7.2, from Fix Pack 5+, via installation of the Similar Results widget from [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/172465398).
 
-You can display your application's custom content in the [Similar Results widget](https://help.liferay.com/hc/en-us/sections/360004673411-Search) by implementing a `SimilarResultsContributor`. Note that for the contributor to work, the Similar Results widget must be able to detect your content as the main asset on a page. That means it must be displayable via a URL in a "Display Widget", like the supported Liferay DXP assets (e.g., blogs entries and wiki pages). Keep in mind that the Similar Results widget can already be used with any content displayed in Lifery DXP's Asset Publisher, without the need for a custom contributor.
+You can display your application's custom content in the [Similar Results widget](../search-pages-and-widgets/similar-results.md) by implementing a `SimilarResultsContributor`. Note that for the contributor to work, the Similar Results widget must be able to detect your content as the main asset on a page. That means it must be displayable via a URL in a "Display Widget", like the supported Liferay DXP assets (e.g., blogs entries and wiki pages). Keep in mind that the Similar Results widget can already be used with any content displayed in Lifery DXP's Asset Publisher, without the need for a custom contributor.
 <!-- I'd like to see the image highlight what someone should be noticing in this image because it is not immediately obvious. -->
 ![The Blogs display widget works with Similar Results because of its contributor.](./writing-a-similar-results-contributor/images/01.png "Blogs Similar Results")
 
@@ -87,7 +87,7 @@ Now that you verified that the example behaves properly, learn how it works.
 Review the deployed example. It contains just one class: the contributor that enables custom content for the Similar Results widget.
 
 * [Annotate the Contributor Class for OSGi Registration](#annotate-the-contributor-class-for-osgi-registration)
-* [Review the `SimilarResultsContributor` Interface](#review-the-SimilarResultsContributor-interface)
+* [Review the `SimilarResultsContributor` Interface](#review-the-similarresultscontributor-interface)
 
 ### Annotate the Contributor Class for OSGi Registration
 
@@ -237,16 +237,16 @@ private KBArticleLocalService _kbArticleLocalService;
 
 ## Additional Information
 
-Since each implementation of an entity's URLs is likely to differ significantly, see the `SimilarResultsContributor` [interface](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java) and the bundled [implementations](https://github.com/liferay/liferay-portal/tree/7.3.0-ga1/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor) on GitHub if you need more inspiration when writing your own application's contributor.
+Since each implementation of an entity's URLs is likely to differ significantly, see the `SimilarResultsContributor` [interface](https://github.com/liferay/liferay-portal/blob/7.3.2-ga3/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java) and the bundled [implementations](https://github.com/liferay/liferay-portal/tree/7.3.2-ga3/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor) on GitHub if you need more inspiration when writing your own application's contributor.
 
 Much of the work involved in contributing your application's custom content to the Similar Results widget is in working with the display URL. To learn how Liferay's own assets create their display URLs, inspect the `getURLView` method of an entity's `*AssetRenderer` class.
 
-* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383), Liferay DXP 7.3.0 GA1
-* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249), Liferay DXP 7.3.0 GA1
-* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218), Liferay DXP 7.3.0 GA1
-* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297), Liferay DXP 7.3.0 GA1
+* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.2-ga3/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383), Liferay DXP 7.3.2 GA3
+* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.2-ga3/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249), Liferay DXP 7.3.2 GA3
+* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.2-ga3/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218), Liferay DXP 7.3.2 GA3
+* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/7.3.2-ga3/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297), Liferay DXP 7.3.2 GA3
 
-As mentioned earlier, this example demonstrates creating a `SimilarResultsModelDocumentContributor` that will work with KB Articles in the root folder of the application. Adding support for KB Folders is possible, and is an interesting exercise for the motivated reader. Look at the source code for the [`DocumentLibrarySimilarResultsContributor`](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/document/library/DocumentLibrarySimilarResultsContributor.java) for inspiration.
+As mentioned earlier, this example demonstrates creating a `SimilarResultsModelDocumentContributor` that will work with KB Articles in the root folder of the application. Adding support for KB Folders is possible, and is an interesting exercise for the motivated reader. Look at the source code for the [`DocumentLibrarySimilarResultsContributor`](https://github.com/liferay/liferay-portal/blob/7.3.2-ga3/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/document/library/DocumentLibrarySimilarResultsContributor.java) for inspiration.
 
 ### Troubleshooting: Asset UID Architecture
 
