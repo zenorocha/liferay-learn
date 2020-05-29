@@ -1,8 +1,8 @@
 # DXP Container Lifecycle and API
 
-At a high level, the container entry point starts Tomcat with DXP deployed on it. At a lower level, the container provides an API for these use cases:
+At a high level, the container starts Tomcat with DXP deployed on it. Additionally, however, the container entry point provides an API for executing these use cases:
 
-* Executing scripts
+* Invoking scripts
 * Configuring Tomcat and DXP
 * Deploying artifacts
 * Installing patches
