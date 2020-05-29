@@ -1,6 +1,6 @@
 # Search Pages
 
-The default search page is located at [`localhost:8080/web/guest/search`](http://localhost:8080/web/guest/search). If you have a running Liferay DXP with some content in it, you can navigate there and execute a search. By default, this page is hidden page in the default site. Users are routed to this hidden page when they enter search terms in a *Search Bar* widget. The search page is also where users browse search results.
+The default search page is located at [`localhost:8080/web/guest/search`](http://localhost:8080/web/guest/search). If you have a running Liferay DXP with some content in it, you can navigate there and execute a search. By default, this page is a hidden page in the default site. Users are routed to this hidden page when they enter search terms in a *Search Bar* widget. The search page is also where users browse search results.
 
 ![The default search page is hidden and accessible by direct URL or by using the Search Bar widget.](./search-pages/images/05.png)
 

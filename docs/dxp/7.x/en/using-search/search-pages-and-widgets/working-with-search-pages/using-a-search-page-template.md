@@ -1,6 +1,6 @@
 # Using a Search Page Template
 
-The default search page is backed by a Global scope page template. Manually created search pages can use the template that same template as a baseline. Out-of-the-box, the Search Page Template includes a Search Bar, Search Results, Search Suggestions, Search Options, and several Search Facet widgets:
+The default search page is backed by a Global scope page template. Manually created search pages can use that same template as a baseline. Out-of-the-box, the Search Page Template includes a Search Bar, Search Results, Search Suggestions, Search Options, and several Search Facet widgets:
 
 <!-- Please update image without Lunar Resort. ![The Search Page template gets you up and running.](./using-a-search-page-template/images/01.png) -->
 
