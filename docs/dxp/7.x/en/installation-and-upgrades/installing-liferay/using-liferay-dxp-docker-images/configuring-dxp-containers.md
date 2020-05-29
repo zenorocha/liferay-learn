@@ -67,6 +67,10 @@ You can override Tomcat's `setenv.sh` script wholesale. A fast way to create a `
 The container uses your `setenv.sh` script's JVM options.
 
 ```note::
+   Please see `Providing Files to the Container <./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay>`_ for more information on bind mounting to to the container's ``/mnt/liferay`` folder.
+```
+
+```note::
    See `DXP Docker Container Basics <./dxp-docker-container-basics.md>`_ for details on starting and operating DXP containers.
 ```
 
@@ -122,7 +126,7 @@ You can override a DXP container's Portal Properties using a `portal-ext.propert
     echo "jdbc.default.jndi.name=jdbc/MyPool" >> [host folder]/files/portal-ext.properties
     ```
 
-1. Run a DXP container with a `-v` option that bind mounts to your host folder:
+1. Create a container, that includes a bind mount that maps your `portal-ext.properties` file's folder to the container's `/mnt/liferay/files` folder. Since this example's `portal-ext.properties` is in a folder called `files`, you can [bind mount to the container's `/mnt/liferay` folder](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay).
 
     ```bash
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
@@ -178,6 +182,10 @@ You can specify the Env variable using a Portal Property and point the container
     docker run -e LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED  -v [host folder path]:/mnt/liferay
     ```
 
+    ```note::
+       Please see `Providing Files to the Container <./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay>`_ for more information on bind mounting to to the container's ``/mnt/liferay`` folder.
+    ```
+
 Your container is using your new Env variable value.
 
 ## System Properties
@@ -199,9 +207,9 @@ Your container is using your new Env variable value.
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
     ```
 
-```note::
-   See `DXP Docker Container Basics <./dxp-docker-container-basics.md>`_ for details on starting and operating DXP containers.
-```
+    ```note::
+       Please see `Providing Files to the Container <./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay>`_ for more information on bind mounting to to the container's ``/mnt/liferay`` folder.
+    ```
 
 The properties are visible in the Control Panel at _Configuration_ &rarr; _Server Administration_ &rarr; _Properties_ &rarr; _System Properties_.
 
@@ -237,9 +245,9 @@ If you have not yet created a container, follow these steps to provide a `.confi
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
     ```
 
-```note::
-   See `DXP Docker Container Basics <./dxp-docker-container-basics.md>`_ for details on starting and operating DXP containers.
-```
+    ```note::
+       Please see `Providing Files to the Container <./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay>`_ for more information on bind mounting to to the container's ``/mnt/liferay`` folder.
+    ```
 
 The system component configurations are visible in DXP's Control Panel at _Configuration_ &rarr; _System Settings_, in the screen for that component.
 

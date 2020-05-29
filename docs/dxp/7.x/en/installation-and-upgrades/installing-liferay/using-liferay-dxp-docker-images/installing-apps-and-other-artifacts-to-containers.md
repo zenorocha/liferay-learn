@@ -27,7 +27,7 @@ Here are the steps:
     cp my-app.lpkg [host folder]/deploy
     ```
 
-1. Create a container, binding the host folder to the container's `/mnt/liferay` folder.
+1. Create a container, that includes a bind mount that maps your artifact's folder to the container's `/mnt/liferay/deploy` folder. Since this example's artifact is in a folder called `deploy`, you can [bind mount to the container's `/mnt/liferay` folder](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay).
 
     ```bash
     docker run -it --name [container] -p 8080:8080 -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
@@ -45,7 +45,7 @@ DXP launches and installs the artifact. The container reports a message like thi
 
 ## Installing Artifacts Using `docker cp`
 
-Use a `docker cp` command like this one to copy your artifact to a running container's `/mnt/liferay/deploy` folder.
+Use a `docker cp` command like this one to copy your artifact to your running container's `/mnt/liferay/deploy` folder.
 
 ```bash
 docker cp ~/my-apps/some-app.lpkg [container]:/mnt/liferay/deploy

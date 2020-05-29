@@ -52,19 +52,10 @@ Here are steps for installing the patch to a new container:
 
 1. Stop your current DXP container, if it's running.
 
-1. Create a new container, specifying a bind mount that maps the patch file on your host to the container's `/mnt/liferay/patching` folder.
-
-    Example 1 - Mounting `/mnt/liferay`:
+1. Create a container, that includes a bind mount that maps the patch file's folder to the container's `/mnt/liferay/patching` folder. Since this example's patch file is in a folder called `patching`, you can [bind mount to the container's `/mnt/liferay` folder](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay).
 
     ```bash
     docker run ... -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
-    ```
-
-    Example 2 - Mounting `/mnt/liferay/patching`:
-
-    ```bash
-    docker run ... -v [host folder path]/patching:/mnt/liferay/patching liferay/dxp:[tag]
-    ```
 
     ```note::
        Please see `Providing Files to the Container <./providing-files-to-the-container.md>`_ for more information on specifying bind mounts.
@@ -106,7 +97,7 @@ Using a new Fix Pack or a new Service Pack requires migrating to a container tha
     └───scripts
     ```
 
-    then you can use a [bind mount](./providing-files-to-the-container.md) like the one used in this command:
+    then you can [bind mount to the container's `/mnt/liferay` folder](./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay).
 
     ```bash
     docker run ... -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
