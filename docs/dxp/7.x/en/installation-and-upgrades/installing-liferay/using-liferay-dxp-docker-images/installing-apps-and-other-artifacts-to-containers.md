@@ -1,14 +1,14 @@
 # Installing Apps and Other Artifacts to Containers
 
-Applications (such as LPKG, module JAR, or plugin WARs files) and other artifacts (such as [DXP activation keys](../../setting-up-liferay-dxp/activating-liferay-dxp.md)) are installed to DXP Docker containers via the container's `/mnt/liferay/deploy` folder. The container entry point symbolically links the `/mnt/liferay/deploy` folder to the container's `[Liferay Home]/deploy` folder (i.e., `/opt/liferay/deploy`). Any artifacts that you provide to the `/mnt/liferay/deploy` folder are auto-deployed to DXP.
+Applications and other artifacts (such as [DXP activation keys](../../setting-up-liferay-dxp/activating-liferay-dxp.md)) are installed to DXP Docker containers via the container's `/mnt/liferay/deploy` folder. The container entry point symbolically links the `/mnt/liferay/deploy` folder to the container's `[Liferay Home]/deploy` folder (i.e., `/opt/liferay/deploy`). Any artifacts that you provide to the `/mnt/liferay/deploy` folder are auto-deployed to DXP.
 
-The artifact installation is demonstrated here in these ways:
+Here are two ways to install artifacts:
 
 * [Installing Artifacts Using a Bind Mount](#installing-artifacts-using-a-bind-mount)
 * [Installing Artifacts Using `docker cp`](#installing-artifacts-using-docker-cp)
 
 ```note::
-   A `Docker volume <https://docs.docker.com/storage/volumes/>`_ can also be used to provide artifacts to a container.
+   A `Docker volume <https://docs.docker.com/storage/volumes/>`_ can also be used to install artifacts to a container.
 ```
 
 ## Installing Artifacts Using a Bind Mount
@@ -21,7 +21,7 @@ Here are the steps:
     mkdir -p [host folder]/deploy
     ```
 
-1. Copy your artifact into the `[host folder]/deploy` folder.
+1. Copy your artifact into the `[host folder]/deploy` folder. For example,
 
     ```bash
     cp my-app.lpkg [host folder]/deploy
@@ -40,18 +40,18 @@ DXP launches and installs the artifact. The container reports a message like thi
 ```
 
 ```note::
-   After DXP launches, you can install additional artifacts to DXP by copying them to your `[host folder]/deploy` folder.
+   After DXP launches, you can install additional artifacts to DXP by copying them to your ``[host folder]/deploy`` folder.
 ```
 
 ## Installing Artifacts Using `docker cp`
 
-Use a `docker cp` command like this one to copy your artifact to the running container's `/mnt/liferay/deploy` folder.
+Use a `docker cp` command like this one to copy your artifact to a running container's `/mnt/liferay/deploy` folder.
 
 ```bash
 docker cp ~/my-apps/some-app.lpkg [container]:/mnt/liferay/deploy
 ```
 
-Now you know how to install apps and other artifacts.
+Now you know how to install apps and other artifacts to DXP.
 
 ## Additional Information
 
