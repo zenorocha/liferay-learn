@@ -1,4 +1,4 @@
-# Order Management Statuses
+# Order Management Statuses Reference Guide
 
 > Liferay Commerce 2.0
 
