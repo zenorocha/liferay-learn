@@ -87,6 +87,10 @@ The containers can be restarted like all Docker containers.
 docker start [container]
 ```
 
+```warning::
+   When a container is restarted, its entry point runs again (Please see `DXP Container Lifecycle and API <./dxp-container-lifecycle-and-api.md#lifecycle>`_). Make sure any scripts you're executing via the entry point can run again safely.
+```
+
 Now you know the basics of starting, stopping, and monitoring a DXP container.
 
 ## What's Next
