@@ -18,7 +18,7 @@ Once validation has been enabled, specify the _If Input_ condition and enter the
 
 ## Text Fields
 
-See the [Validation Conditions Reference](./validation-rules.md) for more information about the other validation conditions.
+See the [Validation Conditions Reference](./validation-conditions-reference.md) for more information about the other validation conditions.
 
 ### Validating Email Addresses
 

@@ -38,6 +38,6 @@ Fixes for Liferay Portal CE are delivered as new Portal CE GA releases. For exam
 
 1. Run the `upgrade:check` [Gogo Shell command](https://help.liferay.com/hc/en-us/articles/360029070351-Using-the-Felix-Gogo-Shell) to list all modules whose data hasn't been upgraded.
 
-1. Use [Gogo Shell commands](../../upgrading-liferay-dxp/upgrade-stability-and-performance/upgrading-modules-using-gogo-shell-commands.md) to upgrade data for these modules.
+1. Use [Gogo Shell commands](../../upgrading-liferay-dxp/upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) to upgrade data for these modules.
 
 Congratulations! You've updated your Portal CE installation to the new GA release!
