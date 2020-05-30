@@ -55,9 +55,9 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | Name | Value |
 | ---  | ---   |
 | `LCP_CI_SCM_PROVIDER` | github  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | <repo_owner> |
-| `LCP_CI_SCM_REPOSITORY_NAME` | <repo_name> |
-| `LCP_CI_SCM_TOKEN` | <access_token> |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
+| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
+| `LCP_CI_SCM_TOKEN` | [access_token] |
 
 For the `LCP_CI_SCM_TOKEN` value, use the personal access token that you created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line).
 

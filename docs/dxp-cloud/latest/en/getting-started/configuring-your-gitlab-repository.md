@@ -104,9 +104,9 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | Name | Value |
 | ---  | ---   |
 | `LCP_CI_SCM_PROVIDER` | gitlab  |
-| `LCP_CI_SCM_REPOSITORY_OWNER` | <repo_owner> |
-| `LCP_CI_SCM_REPOSITORY_NAME` | <repo_name> |
-| `LCP_CI_SCM_TOKEN` | <access_token> |
+| `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
+| `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
+| `LCP_CI_SCM_TOKEN` | [access_token] |
 
 After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in your new repository should now trigger.
 
