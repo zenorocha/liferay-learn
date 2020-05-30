@@ -1,8 +1,8 @@
 # Validation Conditions Reference
 
-In Liferay Forms, users can ensure that only certain values are entered in a text or numeric field. If the condition is not met, an error message is displayed to the user. This article is a guide on the conditions available for validation.
+There are several out-of-the-box validation conditions that can be used to validate form responses before they are submitted.
 
-## Validating Text Fields
+## Text Field Validation Conditions
 
 | Condition | Description |
 | --- | --- |
@@ -12,9 +12,7 @@ In Liferay Forms, users can ensure that only certain values are entered in a tex
 | Is not Email | This condition ensures email addresses are valid. |
 | Does not Match | This condition ensures [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) are valid; for example, this RegEx expression `^[0-9]{10}$` ensures that ten consecutive numeric digits must be entered. |
 
-## Numeric fields
-
-Numeric field conditions check the inputted value against the validation rules. For example, to ensure users do not enter a number over 10, the use *Is greater than* with a value of *10*.
+## Numeric Field Validation Conditions
 
 | Condition | Description |
 | --- | --- |

@@ -4,21 +4,18 @@ Forms can be be translated and presented in any language that is currently enabl
 
 To add a translation:
 
-1. Open the _Product Menu_ (![Product Menu](../../../../images/icon-product-menu.png)) then click the compass icon (![Compass](../../../../images/icon-compass.png)) on the _Site Administration_ menu.
-1. Select the site where the form has been created.
-1. Navigate to _Content & Data_ &rarr; _Forms_.
-1. Click on the existing Form (_Guest Feedback Survey_) to be translated.
+1. Begin by viewing an existing form (_Guest Feedback Survey_) to be translated.
 1. Click the (+) sign next to the language dropdown menu.
-1. Select the desired language.
+1. Select a language to translate the form to.
 
     ![Select the desired language.](./translating-forms/images/01.png)
 
-1. This opens a new tab inside the Form. Entering new values will not override those in the default language. Users can navigate back and forth.
+1. A new language tab is added to the form. Translation text entered does not override the default language.
 
     ![View the additional form in the next tab.](./translating-forms/images/03.png)
 
 1. Enter a new title.
-1. To modify a field's label, click on the field. This opens the side navigation.
+1. To modify a field's label, click on the field. This opens the field configuration menu.
 
     ![Translate the field's labels.](./translating-forms/images/02.png)
 
@@ -28,11 +25,11 @@ To add a translation:
 
 ## Viewing Translated Forms
 
-If an authenticated user accesses the form and a translation is available in the user’s language, the user sees the translated form by default.
+Authenticated users that have configured a matching default language for the site now see the translated form by default.
 
 ![Authenticated users whose language settings are localized will see the form in their language.](./translating-forms/images/04.png)
 
-If accessed in the [Form widget on a Liferay DXP page](../sharing-forms.md), the Form is displayed in the User’s language automatically. If there’s no translation available for the User’s language, the default language of the Form is displayed.
+If accessed in the [Form widget on a Liferay DXP page](../sharing-forms.md), the Form is displayed in the User’s language automatically. If there’s no translation available in a user's selected language, the default language of the Form is displayed.
 
 ## Additional Information
 
