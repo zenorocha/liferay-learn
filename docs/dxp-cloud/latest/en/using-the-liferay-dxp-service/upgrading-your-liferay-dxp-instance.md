@@ -6,6 +6,10 @@ Liferay periodically releases new minor and major versions of Liferay DXP that i
    For large data sets in production, there are several additional considerations to performing for a smooth upgrade. See `the guide to upgrading Liferay DXP <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html>`__ for a comprehensive overview of the core upgrade.
 ```
 
+```important::
+   Upgrading an environment in DXP Cloud requires restoring an upgraded database, and therefore involves downtime for the Liferay service to restart. Plan ahead for this downtime for production environments.
+```
+
 Review the following steps to perform a database upgrade:
 
 1. [Install prerequisites](#install-prerequisites)
@@ -214,7 +218,7 @@ Follow these steps to restore a backup to your chosen environment:
        The chosen environment will be unavailable for some time while the the backup is being deployed.
     ```
 
-<!-- Based on the above - so we're saying that restoring from backup / upgrading requires downtime. We should probably not that at the very top - upgrading an environment requires restoring an upgraded database and therefore involves downtime. I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
+<!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
 
 Upgrading the liferay service requires a database upgrade and restoring the liferay service using the upgraded database. The process of restoring the upgraded database from backup requires some downtime and we recommend testing your upgrade on the DEV or UAT environments first. Zero downtime upgrades are possible using a DR environment. 
 
