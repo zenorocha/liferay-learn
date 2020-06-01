@@ -1,6 +1,6 @@
 # Upgrading Your Liferay DXP Instance
 
-Liferay periodically releases new minor and major versions of Liferay DXP that include security and bug fixes, as well as enhancements. For major Liferay DXP version increments, you must upgrade the DXP database.
+Liferay periodically releases new minor and major versions of Liferay DXP that include security and bug fixes, as well as enhancements. To upgrade to a new major Liferay DXP version increment, you must upgrade the DXP database.
 
 ```note::
    For large data sets in production, there are several additional considerations to performing for a smooth upgrade. See `the guide to upgrading Liferay DXP <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html>`__ for a comprehensive overview of the core upgrade.
