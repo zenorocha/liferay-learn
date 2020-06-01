@@ -23,6 +23,10 @@ Before beginning the upgrade procedure, make sure you have the following prerequ
 * [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
 * [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to.
 
+```important::
+   Download a fresh bundle for the upgrade instead of reusing an old one. Otherwise, data from previous usage of the bundle may interfere with the data upgrade.
+```
+
 ## Download a Backup
 
 Perform the following steps to download a backup of the DXP instance currently running in your `prd` environment:
@@ -40,11 +44,6 @@ Perform the following steps to download a backup of the DXP instance currently r
 ## Extract and Import the Data
 
 The next step is to extract the data from the downloaded archives and move the data to where it is needed for the upgrade.
-
-<!-- Is this admonition needed? I'm confused by it a little bit as well. Can we just say, always start with a new bundle? Don't re-use one? -->
-```important::
-   If you have previously used the Liferay bundle that you are using for this data upgrade, then temporarily move any existing subfolders in the ``LIFERAY_HOME/data`` folder beforehand. This step will prevent the data from your previous usage of the bundle from interfering with the data from the backup.
-```
 
 <!-- this whole section feels long and somewhat askew from performing the upgrade - it's a lot of text to basically just extract and import the database. Really strongly consider heavily revising this section. -->
 
