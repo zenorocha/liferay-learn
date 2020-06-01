@@ -33,4 +33,4 @@ If both _Approval Workflow_ and _Transmission Workflow_ are enabled, then the ad
 * [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Orders Menu](../orders/orders-menu-reference-guide.md)
-* [Order Management Statuses](../orders/order-management-statuses.md)
+* [Order Management Statuses Reference Guide](../orders/order-management-statuses-reference-guide.md)
