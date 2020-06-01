@@ -33,7 +33,7 @@ Before beginning the upgrade procedure, make sure you have the following prerequ
 
 ## Download a Backup
 
-Perform the following steps to download a backup of the DXP instance currently running in your `prd` environment:
+Perform the following steps to download a backup (both the database and data volume) of the DXP instance currently running in your `prd` environment:
 
 1. Log in to the DXP Cloud console.
 
@@ -41,7 +41,7 @@ Perform the following steps to download a backup of the DXP instance currently r
 
     ![Navigate to the Backups page in your production environment.](./upgrading-your-liferay-dxp-instance/images/01.png)
 
-1. Choose one of the backups listed and select _Download_ from the Actions menu. Repeat this to download both the data volume and database as separate zip files. <!-- Is this common knowledge -- That a "backup" is comprised of a data volume zip and a database zip? Is it explained somewhere? I checked the backup articles and didn't see any reference. We should add that information to the existing backup articles and reference that. -->
+1. Choose one of the backups listed and select _Download_ from the Actions menu. Repeat this to download both the data volume and database as separate zip files.
 
     ![Click each option to download both the data volume and database archives.](./upgrading-your-liferay-dxp-instance/images/02.png)
 

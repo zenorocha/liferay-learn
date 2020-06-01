@@ -1,8 +1,8 @@
 # Backup Service
 
-The backup service creates regular backups of your Liferay DXP database and 
-Document Library. Here, you'll learn how to configure the backup service to your 
-needs: 
+The backup service creates regular backups of your Liferay DXP database and Document Library. These backups include both the database and the full contents of the Liferay image's `LIFERAY_HOME/data` folder.
+
+Here, you'll learn how to configure the backup service to your needs:
 
 * [Scheduling](#scheduling)
 * [Backup APIs](#backup-apis)
@@ -84,7 +84,7 @@ Here's an example that uses token authentication with the upload API:
 
 ```bash
 curl -X POST \
-  https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
+  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
   -H 'dxpcloud-authorization: Bearer <USER_TOKEN>' \
   -F 'database=@/my-folder/database.tgz' \
@@ -121,9 +121,9 @@ curl -X GET \
   --output database.tgz
 ```
 
-### Download Volume API
+### Download Data Volume API
 
-The API for downloading a volume contains an endpoint that returns a TGZ file. 
+The API for downloading a data volume contains an endpoint that returns a TGZ file. 
 The `id` parameter represents the backup ID, which you can find on the Backups 
 page. This ID is comprised of three strings separated by two dashes (e.g., 
 `dxpcloud-lqgqnewltbexuewymq-201910031723`). 
@@ -138,7 +138,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>.lfr.cloud/backup/download/volume/:id \
+  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/download/volume/:id \
   -u user@domain.com:password \
   --output volume.tgz
 ```
@@ -155,10 +155,14 @@ you must follow these steps:
 
 #### Creating the Database File
 
-To create a MySQL dump file, run this command: 
+To create a MySQL dump and compress it into a `.tgz` archive, run the following commands: 
 
 ```bash
 mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | cat > database.gz
+```
+
+```bash
+tar zcvf database.tgz database.gz && rm database.gz
 ```
 
 The `databases` and `add-drop-database` options are necessary for backup 
@@ -181,7 +185,7 @@ USE `lportal`;
 
 #### Creating the Volume File
 
-Run this command to create the volume file: 
+Run this command to compress the data volume: 
 
 ```bash
 cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
@@ -200,7 +204,7 @@ Name       | Type   | Required |
 
 ```bash
 curl -X POST \
-  https://backup-<PROJECT-NAME>.lfr.cloud/backup/upload \
+  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
   -F 'database=@/my-folder/database.gz' \
   -F 'volume=@/my-folder/volume.tgz' \
