@@ -9,6 +9,7 @@ Using Liferay DXP Docker Images
    using-liferay-dxp-docker-images/configuring-dxp-containers.md
    using-liferay-dxp-docker-images/installing-apps-and-other-artifacts-to-containers.md
    using-liferay-dxp-docker-images/patching-dxp-in-docker.md
+   using-liferay-dxp-docker-images/running-scripts-in-containers.md
    using-liferay-dxp-docker-images/providing-files-to-the-container.md
 
 .. include:: /installation-and-upgrades/installing-liferay/using-liferay-dxp-docker-images/README.rst
