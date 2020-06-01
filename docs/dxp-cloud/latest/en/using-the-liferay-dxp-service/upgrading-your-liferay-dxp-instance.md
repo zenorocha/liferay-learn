@@ -49,11 +49,17 @@ Perform the following steps to download a backup of the DXP instance currently r
 
 The next step is to extract the data from the downloaded archives and move the data to where it is needed for the upgrade.
 
-<!-- this whole section feels long and somewhat askew from performing the upgrade - it's a lot of text to basically just extract and import the database. Really strongly consider heavily revising this section. -->
+### Extract the Data Volume
 
-Perform the following steps to extract and import the data from the backup:
+Perform the following steps to extract the data volume from the backup:
 
-1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of your Liferay bundle. <!-- Didn't realize I was supposed to have extracted the bundle. -->
+1. If you have not done so already, extract the downloaded DXP bundle:
+
+    ```bash
+    tar -xvzf BUNDLE_NAME.tar.gz
+    ```
+
+1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of your Liferay bundle.
 
 1. Extract the archive by running this command:
 
@@ -61,11 +67,11 @@ Perform the following steps to extract and import the data from the backup:
     tar -xvzf ARCHIVE_NAME.tgz
     ```
 
-1. Run the following commands to extract the database archive:
+### Extract and Import the Database
 
-    ```bash
-    cd path/to/archive
-    ```
+Open a command prompt at the location of the downloaded database archive (named `backup-db-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) and perform the following steps to import it to MySQL:
+
+1. Extract the database archive:
 
     ```bash
     tar -xvzf ARCHIVE_NAME.tgz
@@ -77,7 +83,7 @@ Perform the following steps to extract and import the data from the backup:
     mysql -u root -ppassword
     ```
 
-1. If the database does not yet exist, then create the database before importing. The default database name is `lportal`:
+1. Create the database before importing, using the name of the file (minus the extension) as the database name:
 
     ```
     create database DATABASE_NAME;
