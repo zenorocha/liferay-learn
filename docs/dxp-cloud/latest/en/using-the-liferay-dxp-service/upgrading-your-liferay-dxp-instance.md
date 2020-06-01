@@ -190,8 +190,6 @@ Upload the database and document library archives to the `backup` service by cal
     curl -X POST https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload -H 'Content-Type: multipart/form-data' -H 'Authorization: Bearer <USER-TOKEN>' -F 'database=@/path/to/folder/database.tgz' -F 'volume=@/path/to/folder/volume.tgz'
     ```
 
-<!-- Is there a success message? -->
-
 When the call is complete, a new backup appears from your upload, on the _Backups_ page in the DXP Cloud console.
 
 ## Restore the Backup
