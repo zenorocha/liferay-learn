@@ -115,7 +115,7 @@ Open a command prompt within your `LIFERAY_HOME/tools/portal-tools-db-upgrade-cl
 db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx2048m" -l "output.log"
 ```
 
-The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you have downloaded a Liferay bundle with Tomcat, then it <!-- may -- we should avoid language that makes us sound uncertain --> automatically detects some of the directories as default values.
+The upgrade tool prompts you for information about your installation before beginning the data upgrade. If you have downloaded a Liferay bundle with Tomcat, then it automatically detects some of the directories as default values.
 
 Here is an example interaction with the upgrade tool entering this information:
 
@@ -140,7 +140,9 @@ Please enter your database host (localhost):
 (etc.)
 ```
 
-Once you enter the required information, the upgrade tool performs the data upgrade, and your instance is ready to be pushed back into DXP Cloud. <!-- This is probably the most critical place to indicate what success looks like. Success message? Completion message? -->
+Once you enter the required information, the upgrade tool performs the data upgrade. Watch the console logs as the upgrade processes execute to observe when the last upgrade process finishes. You can use the bundle itself to run your DXP instance and make sure the upgrade completed smoothly: `LIFERAY_HOME/tomcat-9.x.x/bin/`.
+
+Once the upgrade is complete and verified, your instance is ready to be pushed back into DXP Cloud.
 
 ## Compress the Database and Document Library
 
