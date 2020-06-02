@@ -53,7 +53,7 @@ The next step is to extract the data from the downloaded archives and move the d
 
 Perform the following steps to extract the data volume from the backup:
 
-1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of Liferay bundle you extracted earlier.
+1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of the Liferay bundle you extracted earlier.
 
 1. Extract the archive by running this command:
 
