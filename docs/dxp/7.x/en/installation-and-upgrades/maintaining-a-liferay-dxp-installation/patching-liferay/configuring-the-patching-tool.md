@@ -1,6 +1,6 @@
 # Configuring the Patching Tool
 
-The Patching Tool can be adapted to the way you installed DXP. The tool's auto-discovery option is the easiest way to configure the Patching Tool. If you installed DXP on an application server or if you need to proxy Patching Tool requests, you can configure the Patching Tool manually where you need to.
+The Patching Tool can be adapted to any DXP installation. The tool's auto-discovery option is the easiest way to configure the Patching Tool. If you installed DXP on an application server or if you need to proxy Patching Tool requests, you can configure the Patching Tool manually where you need to.
 
 **Outline:**
 

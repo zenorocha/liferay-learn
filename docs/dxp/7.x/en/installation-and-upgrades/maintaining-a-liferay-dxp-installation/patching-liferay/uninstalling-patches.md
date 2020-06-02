@@ -1,6 +1,6 @@
 # Uninstalling Patches
 
-After you install a patch, you may determine that you're not ready for the patch and decide to restore you installation to a previous patch level. Here you'll learn how to:
+After you install a patch, you may determine that you're not ready for the patch and decide to restore your installation to a previous patch level. Here you'll learn how to:
 
 * Uninstall Patches
 * Revert (uninstall) all patches at once.
@@ -11,7 +11,7 @@ You can uninstall patches and restore your installation to a desired patch level
 
 1. Remove the unwanted patch from your `patches` folder.
 
-1. Run the `./patching-tool.sh install` command to restore your installation to the patch level that the remaining patches in your `patches` folder define.
+1. Run the `./patching-tool.sh install` command to restore your installation to the patch level that the remaining patches in the remaining `patches` folder define.
 
 Your DXP installation now has the patch level that your patches specify.
 

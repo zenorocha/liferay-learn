@@ -6,7 +6,7 @@ The patching steps for DXP bundles and DXP application server installations are 
    **Always** `back up <../backing-up.md>`_ your database and installation before patching.
 ```
 
-If you're patching a DXP bundle, continue with the basic patching steps below. If you're patching DXP on an application server, [prepare to patch DXP on an application server](#configuring-a-dxp-application-server-for-patching) _before_ following the patching steps.
+If you're patching a DXP bundle, continue with the basic patching steps below. If you're patching DXP on an application server, [prepare to patch DXP on an application server](#preparing-to-patch-dxp-on-an-application-server) _before_ following the patching steps.
 
 ## Patching Steps
 
@@ -22,7 +22,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
     * On Windows systems, files in use are locked and can't be patched.
     * On Unix-style systems, you can usually replace files that are running but the old ones reside in memory.
 
-1.  Install the patch by running the `install` command:
+1.  Install the patch by running the Patching Tool's `install` command from the `patching-tool` folder:
 
     ```bash
     cd patching-tool
@@ -121,7 +121,7 @@ Congratulations! Your DXP instance is patched and running.
    If the patch doesn't install or if you're unable to resolve errors that occur, please open a `Help Center ticket <https://help.liferay.com/hc/>`_ and provide the full Patching Tool ``info`` output by running ``./patching-tool.sh info > output.txt`` and attaching the ``output.txt`` file to the ticket.
 ````
 
-## Prepare to Patch DXP on an Application Server
+## Preparing to Patch DXP on an Application Server
 
 If you installed DXP on an application server, you must first install and configure the Patching Tool before patching DXP.
 
