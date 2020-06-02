@@ -25,7 +25,7 @@ Review the following steps to perform a database upgrade:
 Before beginning the upgrade procedure, make sure you have the following prerequisites:
 
 * [A locally available MySQL installation](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/).
-* [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to.
+* [Downloaded bundle of Liferay DXP](https://customer.liferay.com/en_US/downloads) for the version of DXP you are upgrading to. Extract this bundle to a location of your choosing.
 
 ```important::
    Download a fresh bundle for the upgrade instead of reusing an old one. Otherwise, data from previous usage of the bundle may interfere with the data upgrade.
@@ -33,15 +33,15 @@ Before beginning the upgrade procedure, make sure you have the following prerequ
 
 ## Download a Backup
 
-Perform the following steps to download a backup (both the database and data volume) of the DXP instance currently running in your `prd` environment:
+Perform the following steps to download a backup (consisting of both the database and data volume) of the DXP instance currently running in your `prd` environment:
 
-1. Log in to the DXP Cloud console.
+1. Log in to the [DXP Cloud console](https://console.liferay.cloud/login).
 
 1. Navigate to your production environment, then select _Backups_ from the menu.
 
     ![Navigate to the Backups page in your production environment.](./upgrading-your-liferay-dxp-instance/images/01.png)
 
-1. Choose one of the backups listed and select _Download_ from the Actions menu. Repeat this to download both the data volume and database as separate zip files.
+1. Choose one of the backups listed and select _Download_ from the Actions menu. Download the data volume and database zip files.
 
     ![Click each option to download both the data volume and database archives.](./upgrading-your-liferay-dxp-instance/images/02.png)
 
@@ -53,13 +53,7 @@ The next step is to extract the data from the downloaded archives and move the d
 
 Perform the following steps to extract the data volume from the backup:
 
-1. If you have not done so already, extract the downloaded DXP bundle:
-
-    ```bash
-    tar -xvzf BUNDLE_NAME.tar.gz
-    ```
-
-1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of your Liferay bundle.
+1. Move the downloaded `.tgz` archive of the data volume (named `backup-lfr-<PROJECT_NAME>-prd-<BACKUP_ID>.tgz`) into the `LIFERAY_HOME/data` folder of Liferay bundle you extracted earlier.
 
 1. Extract the archive by running this command:
 
@@ -83,14 +77,10 @@ Open a command prompt at the location of the downloaded database archive (named 
     mysql -u root -ppassword
     ```
 
-1. Create the database before importing, using the name of the file (minus the extension) as the database name:
+1. Create a database to import the data into, using the name of the file (minus the extension) as the database name:
 
     ```
     create database DATABASE_NAME;
-    ```
-
-    ```note::
-       If the database already exists, then this command will fail (with ``ERROR 1007``). This error will not affect any data, so it is still safe to run.
     ```
 
 1. Import the database from the extracted `.sql` dump:
@@ -163,11 +153,13 @@ Test the bundle locally to ensure the upgrade completed smoothly. You can test t
 ./catalina.sh run
 ```
 
-Once the upgrade is complete and verified, your instance is ready to be pushed back into DXP Cloud.
+Once the upgrade is complete and verified, your database and data volume are ready to be uploaded back to DXP Cloud.
 
-## Compress the Database and Document Library
+## Compress the Document Library and Database
 
-Now that your Liferay installation has been upgraded, use the following steps to prepare to upload them again to your `backup` service:
+Now that your Liferay installation has been upgraded, use the following steps to prepare to upload them again to your `backup` service
+
+### Compress the Document Library
 
 1. Open a command prompt within your `LIFERAY_HOME/data` folder.
 
@@ -181,29 +173,31 @@ Now that your Liferay installation has been upgraded, use the following steps to
        If the data volume you downloaded contained more folders (such as a ``license/`` folder), then add these as additional arguments after ``document_library``.
     ```
 
+### Export and Compress the Upgraded Database
+
 1. Run the following command to perform a database dump:
 
     ```
     mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | cat > database.gz
     ```
 
-1. Further compress this file into a `.tgz` archive with the following command:
+1. Compress this file into a `.tgz` archive with the following command:
 
     ```bash
-    tar zcvf database.tgz database.gz && rm database.gz
+    tar zcvf database.tgz database.gz
     ```
 
-The database and Liferay data volume are now ready for you to upload them using the `backup` service's upload API.
+The database and Liferay data volume are now ready to upload using the `backup` service's upload API.
 
 ## Call the Upload API
 
 Upload the database and document library archives to the `backup` service by calling the upload API:
 
-1. If you are not already logged in, log into the DXP Cloud console.
+1. If you are not already logged in, log into the [DXP Cloud console](https://console.liferay.cloud/login).
 
 1. Open `https://api.liferay.cloud/user` in a browser.
 
-1. Copy your user session token from the JSON string shown at this URL. Copy only the value for the `token` property (removing the quotation marks). 
+1. Copy your user session token from the JSON string shown at this URL. Copy only the value for the `token` property (removing the quotation marks).
 
 1. Run the following command to call the upload API:
 
