@@ -199,7 +199,7 @@ Upload the database and document library archives to the `backup` service by cal
 
 1. Copy your user session token from the JSON string shown at this URL. Copy only the value for the `token` property (removing the quotation marks).
 
-1. Run the following command to call the upload API:
+1. Run the following command to call the upload API after modifying it for your project:
 
     ```bash
     curl -X POST https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload -H 'Content-Type: multipart/form-data' -H 'Authorization: Bearer <USER-TOKEN>' -F 'database=@/path/to/folder/database.tgz' -F 'volume=@/path/to/folder/volume.tgz'
@@ -226,7 +226,7 @@ Follow these steps to restore a backup to your chosen environment:
 1. Click _Restore to environment_.
 
     ```note::
-       The chosen environment will be unavailable for some time while the the backup is being deployed.
+       The chosen environment will be unavailable while the the backup is being deployed.
     ```
 
 <!-- I'd also want to know if there is a zero downtime way to do an upgrade - because that's one of the next questions I would ask if I put myself in the shoes of someone trying to run a prod and business critical env. We may not be ready to say anything about that - but just a thought to put in your mind as potentially a future iteration of this - or let's say if we find out that you CAN do a zero downtime upgrade using a DR environment, then we should update this article to say so. An example:
@@ -239,7 +239,7 @@ Congratulations! You have upgraded your DXP database to the new version and depl
 
 ## Additional Information
 
-See the following information pertaining to general DXP upgrades:
+Learn more about DXP upgrades:
 
 * [Liferay DXP Upgrade Overview](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html)
 * [Using the Database Upgrade Tool](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.html)
