@@ -150,7 +150,18 @@ Please enter your database host (localhost):
 (etc.)
 ```
 
-Once you enter the required information, the upgrade tool performs the data upgrade. Watch the console logs as the upgrade processes execute to observe when the last upgrade process finishes. You can use the bundle itself to run your DXP instance and make sure the upgrade completed smoothly: `LIFERAY_HOME/tomcat-9.x.x/bin/`.
+Once you enter the required information, the upgrade tool performs the data upgrade. When the following messages appear in the console, the upgrade is complete:
+
+```
+Completed Liferay core upgrade and verify processes in 64 seconds
+Checking to see if all upgrades have completed... done.
+```
+
+Test the bundle locally to ensure the upgrade completed smoothly. You can test the instance locally by running the following command from `LIFERAY_HOME/tomcat-9.x.x/bin/`:
+
+```bash
+./catalina.sh run
+```
 
 Once the upgrade is complete and verified, your instance is ready to be pushed back into DXP Cloud.
 
@@ -162,7 +173,7 @@ Now that your Liferay installation has been upgraded, use the following steps to
 
 1. Run the following command to compress your document library into a `.tgz` archive:
 
-    ```
+    ```bash
     tar -czvf volume.tgz document_library
     ```
 
