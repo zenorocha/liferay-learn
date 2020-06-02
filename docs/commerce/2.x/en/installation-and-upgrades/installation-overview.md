@@ -1,14 +1,14 @@
 # Installation Overview
 
-The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce. Liferay Commerce is built on Liferay Digital Experience Platform. Therefore, it is necessary to install Liferay DXP first before installing Liferay Commerce.
+This article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce. Liferay Commerce is built on Liferay Digital Experience Platform. Therefore, it is necessary to install Liferay DXP before installing Liferay Commerce.
 
 ## Prerequisites
 
-Before installing, consult the systems requirements and the Liferay DXP deployment documentation.
+Before installing, consult system requirements and the Liferay DXP deployment checklist.
 
 ### System Requirements
 
-See the [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) to view the list of supported technologies.
+See the [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) for the list of supported technologies.
 
 ### Liferay DXP Deployment Checklist
 
@@ -18,15 +18,15 @@ See the [Liferay Digital Experience Platform 7.2 Deployment Checklist](https://w
 
 ## Installing Liferay Commerce
 
-There are several methods of installing Liferay Commerce.
+There are several methods for installing Liferay Commerce.
 
 ### Using a Docker Image
 
-The latest version Liferay Commerce is available as a Docker image. See [Using Liferay Commerce Docker Image](./using-the-liferay-commerce-docker-image.md) for more information.
+The latest version of Liferay Commerce is available as a Docker image. See [Using Liferay Commerce Docker Image](./using-the-liferay-commerce-docker-image.md) for more information.
 
 ### Using a Bundle
 
-The latest version of Liferay Commerce is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md) for more information.
+The latest version of Liferay Commerce is available for download as a bundle at the [Liferay Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md) for more information.
 
 ### Using an Existing Liferay DXP Installation
 
