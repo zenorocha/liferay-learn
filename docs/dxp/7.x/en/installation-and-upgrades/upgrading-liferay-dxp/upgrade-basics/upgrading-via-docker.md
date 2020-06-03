@@ -2,7 +2,7 @@
 
 A DXP Docker image invokes all DXP upgrade processes when an auto upgrade parameter is passed to the command for running the image. When the upgrade processes complete, DXP launches on the upgraded database.
 
-The Docker Desktop is available from [here](https://www.docker.com/products/docker-desktop). Liferay provides DXP Community Edition images [here](https://hub.docker.com/r/liferay/portal).
+The Docker Desktop is available from [here](https://www.docker.com/products/docker-desktop). The Liferay Portal Community Edition (CE) Docker images are [here](https://hub.docker.com/r/liferay/portal).<!-- Add DXP link once the 7.3 image is ready - jhinkey -->
 
 ```important::
    For critical installations and Subscribers, use the Database Upgrade Tool. For more information see `Using the Liferay Upgrade Tool <./using-the-database-upgrade-tool.md>`_.
