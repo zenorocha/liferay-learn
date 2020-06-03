@@ -2,7 +2,7 @@
 
 > **Subscribers**
 
-> **Availability:** Liferay Marketplace
+> **Availability:** [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/172465398)
 <!-- please use a more generic example for screenshots (instead of lunar resort) -->
 The Similar Results widget shows search results similar to the _main asset_ that's selected on the page.
 
