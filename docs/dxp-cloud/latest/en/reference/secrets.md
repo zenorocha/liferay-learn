@@ -8,7 +8,7 @@ Secrets are environment variables with extra security measures to protect their 
 
 Users with permission to view secrets can see them on the _Environment Variables_ tab for any service. They are shown on the same page as other environment variables, but they are in their own distinct section.
 
-    (screenshot of environment variables page)
+![The Environment Variables page lists both regular environment variables and secrets.](./secrets/images/01.png)
 
 By default, secrets can only be viewed by Users with the _Admin_ role. However, secrets can be configured to be viewable by Users with other roles, as well.
 
@@ -28,41 +28,41 @@ Follow these steps to add a new secret:
 
 1. Navigate to the _Settings_ screen for any environment.
 
-    (screenshot)
+    ![Navigate to the Settings screen to access secrets.](./secrets/images/02.png)
 
 1. Under the _Secrets_ section on the page, click _Create New Secret._
 
-    (screenshot)
+    ![Create a new secret from an environment's Settings screen.](./secrets/images/03.png)
 
 1. Enter a name and description.
 
-    (screenshot)
+    ![Enter a name and description for the new secret.](./secrets/images/04.png)
 
 1. Enter the value for the secret to securely store. This value works the same as the value for any environment variable, except it is encrypted before it's stored.
 
-    (another screenshot?)
+    ![Enter a value for the secret to encrypt behind the scenes.](./secrets/images/05.png)
 
 1. If applicable, select whether to allow the _Contributor_ or _Guest_ roles to view the secret. Users with the _Admin_ role can always view secrets.
 
-    (another?)
+    ![Choose which roles to give view permissions to, in addition to the Admin role.](./secrets/images/06.png)
 
 1. Select which services to add the new secret environment variable to. For each selected service, fill in the key used for the environment variable.
 
-    (another?)
+    ![Choose which services to add the new secret to.](./secrets/images/07.png)
 
 1. If any services were selected in the previous step, then check the boxes that appear below, indicating that you accept the effects of adding this secret on the affected services. You must check these boxes to enable the button to create the secret.
 
-    (another?)
+    ![Check the boxes that appear to continue creating the secret.](./secrets/images/08.png)
 
 1. Click _Create Secret._
 
-The service restarts with the new secret applied as an environment variable.
+The chosen services restart with the new secret applied as an environment variable.
 
 ## Viewing and Modifying an Existing Secret
 
-To modify an existing secret, navigate to the _Settings_ page for any environment. Then, within the _Secrets_ section, click the Actions menu for any secret listed. The options to view, edit, or delete the secret are shown. 
+To view or modify an existing secret, navigate to the _Settings_ page for any environment. Then, within the _Secrets_ section, click the Actions menu for any secret listed. The options to view, edit, or delete the secret are shown. 
 
-    (screenshot of the options shown)
+![View, edit, or delete an existing secret from the Settings page.](./secrets/images/09.png)
 
 ```note::
    Even if a User has permission to view a secret, only Users with the `Admin` role can edit or delete an existing secret. If a User without the `Admin` role clicks the Actions menu for a secret, then only the option to view the secret is shown.
@@ -70,7 +70,7 @@ To modify an existing secret, navigate to the _Settings_ page for any environmen
 
 This is the page shown when a User (with the permission to view) clicks the _View_ option for a secret:
 
-    (screenshot of view page)
+![The view page for an existing secret.](./secrets/images/10.png)
 
 ## Additional Information
 
