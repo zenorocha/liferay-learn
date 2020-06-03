@@ -1,6 +1,6 @@
 # Processing an Order
 
-Processing an order in Liferay Commerce consists of three stages: accepting an order, processing an order, and creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
+Processing an order in Liferay Commerce consists of three stages: accepting an order, processing an accepted order, and creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
 
 ## Accepting an Order
 
@@ -40,7 +40,7 @@ See the [Managing Subscriptions](../subscriptions/managing-subscriptions.md) art
 
 ## Creating a Shipment
 
-Creating a shipment begins in the _Orders_ menu as a continuation of processing an order. See the [Creating a Shipment](../shipments/creating-a-shipment.md) article to learn more.
+Creating a shipment begins in the _Orders_ menu as a continuation of processing an accepted order. See the [Creating a Shipment](../shipments/creating-a-shipment.md) article to learn more.
 
 ## Commerce 2.0 and Below
 
@@ -64,7 +64,7 @@ To process an order:
 
 The order is then moved to the _Transmitted_ tab. Once an order is transmitted, it is ready to be shipped.
 
-See the [Creating a Shipment in Liferay Commerce 2.0](../shipments/creating-a-shipment.md#creating-a-new-shipment-on-liferay-commerce-2-0-and-below) article to learn more.
+See the [Creating a New Shipment on Liferay Commerce 2.0 and Below](../shipments/creating-a-shipment.md#creating-a-new-shipment-on-liferay-commerce-2-0-and-below) article section to learn more.
 
 ## Additional Information
 

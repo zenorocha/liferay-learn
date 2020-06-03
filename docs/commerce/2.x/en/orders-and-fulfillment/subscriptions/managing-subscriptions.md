@@ -30,7 +30,7 @@ Once the order has been accepted, it appears on the Subscription menu.
 
     ![Subscription menu](./managing-subscriptions/images/03.png)
 
-1. Click on the _ID_ (43811). This ID is distinct from normal Order or Shipment IDs.
+1. Click on the _ID_ (43811). This ID specific to subscriptions and is distinct from normal Order or Shipment IDs.
 1. On the _General_ tab, make any changes to either the Payment or Delivery options. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
 
     ![You can change the next delivery date.](./managing-subscriptions/images/04.png)
@@ -89,4 +89,5 @@ To configure subscriptions:
 
 * [Subscription Management Reference Guide](./subscription-administration-reference-guide.md)
 * [Enabling Subscriptions for a Product](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
+* [Processing an Order](../orders/processing-an-order.md)
 * [Orders Menu](../orders/orders-menu-reference-guide.md)

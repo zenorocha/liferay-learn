@@ -18,7 +18,7 @@ There are five fields:
 
 Click on the Subscription's _ID_ to view the subscription order's details.
 
-There are three tabs: General, Shipments, and Payments.
+There are three tabs: _General_, _Shipments_, and _Payments_.
 
 ## General Tab
 
@@ -32,9 +32,9 @@ The _Reference Order_ section displays information about the Order:
 
 ### Payment Subscription
 
-![Reference](./subscription-administration-reference-guide/images/03.png)
-
 The Payment Subscription section tracks the following information:
+
+![Reference](./subscription-administration-reference-guide/images/03.png)
 
 | Field | Description |
 | --- | --- |
@@ -68,6 +68,9 @@ The _Items_ section lists all the products in the subscription.
 
 The _Shipments_ tab displays the following information:
 
+<!--- Why is there no screenshot for the _Shipments_ tab section, here?
+-->
+
 | Field | Description |
 | --- | --- |
 | Create Date | This is the date the order was created. |
@@ -94,3 +97,5 @@ The _Payments_ tab tracks the order's payment history.
 
 * [Enabling a Subscription](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Managing Subscriptions](./managing-subscriptions.md)
+* [Processing an Order](../orders/processing-an-order.md)
+* [Intro to Shipments](../shipments/introduction-to-shipments.md)

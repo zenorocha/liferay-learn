@@ -1,6 +1,6 @@
 # Introduction to Shipments
 
-Create shipments first in the _Orders_ menu as part of processing an order. Once an order is processed, you are redirected to the _Shipments_ menu to complete order processing.
+Create shipments first in the _Orders_ menu as part of [processing an order](../orders/processing-an-order.md). Once an order is processed, you are redirected to the _Shipments_ menu to complete oder processing.
 
 Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the _Create Shipment_ button.
 
@@ -34,13 +34,16 @@ Once delivery has been confirmed, the _Delivered_ tab marks each phase in green 
 
 ## Completed
 
-When delivery has been confirmed, the shipment process marked delivered and the order is marked completed.
+When delivery has been confirmed, the shipment process is marked delivered and the order is marked completed.
 
 ![Shipments Menu - Ready to Ship](./introduction-to-shipments/images/07.png)
 
 ## Liferay Commerce 2.0 and Below
 
-The _Shipments_ menu is where store managers can create and track a shipment after receiving an order.
+The _Shipments_ menu is where store managers can create and track a shipment after [receiving an order](../orders/processing-an-order.md#commerce-2-0-and-below).
+
+<!--- Waiting to hear back whether the above link is formatted correctly using the "#" after the ".md".
+-->
 
 Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 
@@ -92,3 +95,4 @@ In addition, clicking the (+) Add Shipment button opens a window to add more ite
 
 * [Creating a Shipment](./creating-a-shipment.md)
 * [Cancelling a Shipment](./cancelling-a-shipment.md)
+* [Processing an Order](../orders/processing-an-order.md)
