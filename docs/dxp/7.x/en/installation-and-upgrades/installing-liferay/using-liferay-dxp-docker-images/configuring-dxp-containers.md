@@ -113,14 +113,13 @@ The properties are visible in the Control Panel at _Configuration_ &rarr; _Serve
 
 You can override a DXP container's Portal Properties using a `portal-ext.properties` file. This example uses a [bind mount](./providing-files-to-the-container.md).
 
-1. Create a host folder, a subfolder called `files`, and a `portal-ext.properties` file.
+1. Create a host folder and a subfolder called `files`.
 
     ```bash
     mkdir -p [host folder]/files
-    touch [host folder]/files/portal-ext.properties
     ```
 
-1. Add your property overrides to the `portal-ext.properties` file. For example,
+1. Add your property overrides to a `portal-ext.properties` file in the `files` subfolder you created. For example,
 
     ```bash
     echo "jdbc.default.jndi.name=jdbc/MyPool" >> [host folder]/files/portal-ext.properties
@@ -163,14 +162,13 @@ You can use a `docker run -e [VAR_NAME=value] ...` command to pass in your new E
 
 You can specify the Env variable using a Portal Property and point the container to it at container creation. Here's an example:
 
-1. Create a `portal-ext.properties` file:
+1. Create a host folder and a subfolder called `files`:
 
     ```bash
     mkdir -p [host folder]/files
-    touch [host folder]/files/portal-ext.properties
     ```
 
-1. Specify the Env variable assignment using a corresponding _property_ assignment in `portal-ext.properties`. For example,
+1. Specify the Env variable assignment using a corresponding _property_ assignment in a `portal-ext.properties` file in the `files` subfolder you created. For example,
 
     ```bash
     echo "setup.wizard.enabled=true" >> [host folder]/files/portal-ext.properties
@@ -192,14 +190,17 @@ Your container is using your new Env variable value.
 
 [System Properties](https://docs.liferay.com/ce/portal/7.3-latest/propertiesdoc/system.properties.html) can be overridden using a `system-ext.properties` file. This example uses a [bind mount](./providing-files-to-the-container.md).
 
-1. Create a host folder, subfolders to create the path `files/tomcat/webapps/ROOT/WEB-INF/classes`, and a `system-ext.properties` file.
+1. Create a host folder and subfolders to create the path `[host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes`.
 
     ```bash
     mkdir -p [host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes
-    touch [host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes/system-ext.properties
     ```
 
-1. Add your property overrides to the `system-ext.properties` file.
+1. Add your property overrides to a `system-ext.properties` file in the `[host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes` folder you created. For example,
+
+    ```bash
+    echo "net.sf.ehcache.skipUpdateCheck=false" >> [host folder]/files/tomcat/webapps/ROOT/WEB-INF/classes/system-ext.properties
+    ```
 
 1. Run a new container with a `-v` option that bind mounts to your host folder:
 
@@ -256,7 +257,7 @@ The system component configurations are visible in DXP's Control Panel at _Confi
 If you have a container already, you can copy `.config` files to your container at run time using a `docker cp` command like this one:
 
 ```bash
-docker cp ~/my-configs/[some.configuration.file].config [container]:/mnt/liferay/osgi/configs
+docker cp [config file] [container]:/mnt/liferay/osgi/configs
 ```
 
 ## Conclusion
