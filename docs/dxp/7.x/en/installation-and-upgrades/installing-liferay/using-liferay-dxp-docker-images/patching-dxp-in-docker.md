@@ -9,6 +9,7 @@ Here are the DXP container patching topics:
 * [Installing a Hotfix or Security Fix Pack](#installing-a-hotfix-or-security-fix-pack)
 * [Using Fix Pack and Service Pack Images](#using-fix-pack-and-service-pack-images)
 * [Updating the Patching Tool](#updating-the-patching-tool)
+* [Upgrading the Database for a Patch](#upgrading-the-database-for-a-patch)
 
 ## Installing a Hotfix or Security Fix Pack
 
@@ -123,9 +124,16 @@ Here are steps to install a new Patching Tool version:
 
 On restarting your container or running a new container, the container entry point installs the new Patching Tool.
 
+## Upgrading the Database for a Patch
+
+If a patch requires upgrading the database, you must upgrade it using the Database Upgrade Tool in a non-containerized environment, such as a [Liferay Tomcat Bundle installation](../installing-a-liferay-tomcat-bundle.md) or [Liferay on an Application Server](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/installing-liferay/installing_liferay_on_an_application_server.html). Please see [Using the Database Upgrade Tool](../../upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.md) for more information.
+
+After the database is upgraded, run your container that uses that database.
+
 ## Additional Topics
 
 * [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
 * [DXP Docker Container Basics](./dxp-docker-container-basics.md)
 * [Providing Files to the Container](./providing-files-to-the-container.md)
 * [DXP Container Lifecycle and API](./dxp-container-lifecycle-and-api.md)
+* [Using the Database Upgrade Tool](../../upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.md)
