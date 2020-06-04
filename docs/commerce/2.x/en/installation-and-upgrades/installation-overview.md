@@ -4,9 +4,9 @@ This article details prerequisites, information about required software, install
 
 ## Prerequisites
 
-Before installing, consult systems requirements and the Liferay DXP deployment checklist.
+Before installing, consult system requirements and the Liferay DXP deployment checklist.
 
-### Systems Requirements
+### System Requirements
 
 See the [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) for the list of supported technologies.
 
