@@ -40,10 +40,10 @@ Environment variables can be added by configuring the `LCP.json` by using the `e
 
 Normal environment variables do not have special security measures. Any Users that can access your DXP Cloud project can also see the variables for your services.
 
-However, to store sensitive values (such as credentials) as variables, you can use secrets instead. Secrets are encrypted in the backend, and they can be hidden from Users without the _Admin_ role. See [Secrets](./secrets.md) for more information.
+However, to store sensitive values (such as credentials) as variables, you can use secrets instead. Secrets are encrypted in the backend, and they can be hidden from Users without the _Admin_ role. See [this article](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
 
 ## Additional Information
 
 * [Configuration via LCP JSON](../reference/configuration-via-lcp-json.md)
 * [Database Service](../platform-services/database-service.md)
-* [Secrets](./secrets.md)
+* [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)
