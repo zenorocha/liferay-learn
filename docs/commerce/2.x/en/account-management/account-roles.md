@@ -19,7 +19,7 @@ Accounts can also be managed by Administrators and Sales Agents. The Sales Agent
 To give a sales agent access to accounts:
 
 1. Group your organizations in accounts using the Accounts Widget.
-2. Associate sales agents with the same organizations.
+1. Associate sales agents with the same organizations.
 
 ![List of Users with the Sales Agent Role](./account-roles/images/01.png)
 

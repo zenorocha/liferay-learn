@@ -28,7 +28,7 @@ Assigning Roles with associated permissions to users specifies what they can and
 
 ![There are several Organization Roles available out of the box.](./using-organizations-to-create-a-sales-network/images/02.png)
 
-Assigning a collection of permissions to each role defines that role's access within Liferay Commerce (which can then be applied to users). Some examples of Permissions include: view sub-Organizations (for example, Regions), account data or order history; manage orders, and assign Roles. For more on Permissions, see [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions).
+Assigning a collection of permissions to each role defines that role's access within Liferay Commerce (which can then be applied to users). Some examples of permissions include: view sub-organizations (for example, Regions), account data or order history; manage orders, and assign Roles. For more on Permissions, see [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions).
 
 ![Each role can have permissions defined for it.](./using-organizations-to-create-a-sales-network/images/03.png)
 
@@ -48,4 +48,4 @@ Managing Roles and Permissions long-term can be easily accomplished within Lifer
 * [Adding a New Organization Type](https://learn.liferay.com/dxp-7.x/users-and-permissions/organizations/adding-a-new-organization-type.html)
 * [Managing Roles](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
 * [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
-<!-- Don't include links that go nowhere because that can be a confusing and frustrating experience for users. * [Connecting Accounts and Organizations](about:blank) -->
+* [Adding Organizations to Accounts](./adding-organizations-to-accounts.md)
