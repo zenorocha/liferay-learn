@@ -1,48 +1,46 @@
 # Using Organizations to Create a Sales Network
 
-A B2B business' real world sales network hierarchy can be mirrored in Liferay Commerce running on DXP using the Organizations feature. In Commerce and DXP, an Organization is a hierarchical arrangement of Users that can model real-world organizational hierarchies – such as a sales network – and that enables distributed and simplified management of Users, Roles, Permissions and Accounts, for enhanced security and collaboration.
+The organizational structure of B2B sales networks can be mirrored in Liferay Commerce using the Organizations feature. Organizations are hierarchical arrangements of Users that can model real-world organizational hierarchies that enable distributed and simplified management of Users, Roles, Permissions and Accounts.
 
-> **Note:** A Role is a collection of permissions that can be granted to a User. A Permission is any specific assignable action a User may take, such as view a menu, account or widget, assign Roles, add Users, etc. For more on [Roles](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles) and [Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions), see these articles.
+```note::
+   A Role is a collection of permissions that can be assigned to a User. A Permission is any specific assignable action a User may take, such as viewing a menu, account or widget, assigning Roles to other users, or adding a new product. See the articles on `Roles <https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles>`_ and `Permissions <https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions>`_, for more information.
+```
 
-When Organizations are used along with assigning permissions to Organization Roles, Users simply need to be assigned to an Organization to inherit the correct Permissions that were defined for it. For example, a B2B company can give everyone in their sales network access to the right Account information through their organizational membership.
+When Organizations are used along with assigning permissions to Organization Roles, Users assigned to an Organization automatically inherit the role-based permissions that were defined for that Organization.
+<!-- The following sentence is removed because I read it and I don't know what specifically it's telling someone - maybe: Organizations (and sub-organizations) can have accounts assigned to them - ensuring that members of an organization have access to the right accounts at the right time.
 
-Additionally, when someone transfers to another part of the organization, simply move the user to another Organization in Liferay Commerce and there's no need to hassle with updating the user's individual Roles and Permissions. For example, a B2B company can quickly and easily add or remove access to Account information when there are sales network personnel changes, by simply changing the user's organizational membership.
+For example, a B2B company can give everyone in their sales network access to the right Account information through their organizational membership.
 
-Next, we'll illustrate each of these aspects of using Organizations to create a sales network.
+-->
+
+Organizations make user management simple. When a user in an organization is re-assigned or transfers to another organization, their roles and permissions automatically update based on their new organization membership. For a sales network, this means streamlined and secure access management to customer accounts.
 
 ## Mirror Real-World Organizational Hierarchies
 
-   <img src="../images/01.png" width="700px" style="border: #000000 1px solid;">
+<!-- I'm commenting out the following image because I don't think it clearly depicts how to use organizations to model a sales network. First - it would seem that the image states that "Minium" is the company - and then the company has a sub-org named "Italy". And then "Italy" has sub-orgs per region. I don't think real companies organize like that. The correct model (I think) would be - to make it extremely clear how to understand the image: "Minium Corporation" (Parent Org) > Minium Corporation - Italy Sales Department > [Regions]. Or alternatively: Minium Sales Group > Italy Sales Region > [Regions] - something in the naming to make the hierarchy clearer.
+![Image 01](./using-organizations-to-create-a-sales-network/images/01.png) -->
 
-Organizing a sales network and accounts exactly as in the real world makes it easy for sales team members to navigate within Liferay Commerce.
+Organizing a sales network and accounts exactly as in the real world makes it easy for sales team members to navigate within Liferay Commerce. To learn more about creating and structuring organizations learn more [here](https://learn.liferay.com/dxp-7.x/users-and-permissions/organizations/creating-and-managing-organizations.html).
 
-## Define Account Access With Organizational Roles and Permissions
+## Define Account Management and Access With Organization Roles and Permissions
 
-   <img src="../images/02.png" width="700px" style="border: #000000 1px solid;">
+Assigning Roles with associated permissions to users specifies what they can and can't do within the system. Liferay Commerce comes with several Organization Roles available out-of-the-box:
 
-Assigning Roles to every salesperson specifies what they can and can't do within Liferay Commerce (that is, once permissions are defined and assigned to roles).
+![There are several Organization Roles available out of the box.](./using-organizations-to-create-a-sales-network/images/02.png)
 
-   <img src="../images/03.png" width="700px" style="border: #000000 1px solid;">
+Assigning a collection of permissions to each role defines that role's access within Liferay Commerce (which can then be applied to users). Some examples of Permissions include: view sub-Organizations (for example, Regions), account data or order history; manage orders, and assign Roles. For more on Permissions, see [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions).
 
-Assigning a collection of Permissions to each Role defines that Role within Liferay Commerce (which can then be applied to users). Some examples of Permissions include: view sub-Organizations (for example, Regions), account data or order history; manage orders, and assign Roles. For more on Permissions, see [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions).
+![Each role can have permissions defined for it.](./using-organizations-to-create-a-sales-network/images/03.png)
 
 ## Manage Long-Term Access With Organizational Membership
 
-   <img src="../images/04.png" width="700px" style="border: #000000 1px solid;">
+Managing Roles and Permissions long-term can be easily accomplished within Liferay Commerce by updating a user's organizational membership (once Organizations, Roles and Permissions are set up and assigned).
 
-Managing Roles and Permissions long-term can be easily accomplished within Liferay Commerce by managing a user's organizational membership (once Organizations, Roles and Permissions are set up and assigned).
+![By assigning or un-assigning an organization from a user, you can manage that person's access permissions.](./using-organizations-to-create-a-sales-network/images/04.png)
 
-<!---
+<!--
 (Double/Dual-Screenshot: Show User's permissions before the move and after the move)
 -->
-
-## Organized, Assigned, Defined and Managed
-
-By organizing a sales network and accounts (or any organizational hierarchy) to mirror the real world hierarchy, assigning Roles to every salesperson (or team member) as well as defining Roles via Permissions, then managing Roles and Permissions long-term via organizational membership, a B2B business can use Organizations to create a sales network.
-
-For step-by-step guidance how to set up Organizations, Roles and Permissions, as well as how to connect Accounts and Organizations for a sales network, see the [Additional Information](#additional-information) section, below.
-
-Organizations, Roles & Permissions are a versatile feature of Liferay Commerce and DXP, capable of being used for numerous solutions.
 
 ## Additional Information
 
@@ -50,4 +48,4 @@ Organizations, Roles & Permissions are a versatile feature of Liferay Commerce a
 * [Adding a New Organization Type](https://learn.liferay.com/dxp-7.x/users-and-permissions/organizations/adding-a-new-organization-type.html)
 * [Managing Roles](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
 * [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
-* [Connecting Accounts and Organizations](about:blank)
+<!-- Don't include links that go nowhere because that can be a confusing and frustrating experience for users. * [Connecting Accounts and Organizations](about:blank) -->
