@@ -1,6 +1,6 @@
 # Processing an Order
 
-Processing an order in Liferay Commerce consists of three stages: accepting an order, processing an accepted order, and creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [Orders](./orders-menu-reference-guide.md) menu in the _Control Panel_.
+Processing an order in Liferay Commerce consists of three stages: accepting an order, processing an accepted order, and creating a shipment. To begin processing all orders, including [Subscriptions](../subscriptions/managing-subscriptions.md) (recurring orders), navigate to the [_Orders_ menu](./orders-menu-reference-guide.md) in the _Control Panel_.
 
 ## Accepting an Order
 
@@ -24,7 +24,7 @@ The order has been accepted and can be processed.
 
 After the order has been accepted, there are three options:
 
-* **Cancel**: The order is cancelled and on the Orders menu is moved automatically from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
+* **Cancel**: The order is cancelled and – on the Orders menu – moved automatically from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
 * **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
 * **Create Shipment**: The order is ready to be shipped.
 
@@ -72,4 +72,5 @@ See the [Creating a New Shipment on Liferay Commerce 2.0 and Below](../shipments
 * [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
 * [Inventory Administration Reference Guide](../../managing-a-catalog/managing-inventory/inventory-administration-reference-guide.md)
-* [Subscription Administration Reference GUide](../subscriptions/subscription-administration-reference-guide.md)
+* [Subscription Administration Reference Guide](../subscriptions/subscription-administration-reference-guide.md)
+* [Introduction to Shipments](../shipments/introduction-to-shipments.md)

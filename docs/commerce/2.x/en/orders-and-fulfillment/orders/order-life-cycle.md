@@ -2,7 +2,7 @@
 
 > Liferay Commerce 2.0
 
-An Order stores data regarding a potential or past transaction. This article provides an overview of the order life cycle from open cart to fulfilled order.
+An Order stores data regarding a potential or past transaction. This article provides an overview of the order life cycle from open cart to [fulfilled order](../shipments/introduction-to-shipments.md).
 
 ![Order life cycle](./order-life-cycle/images/01.png)
 
@@ -36,3 +36,4 @@ The seller completes the remaining steps to deliver the ordered products to the 
 * [Approving/Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
 * [Store Emails](../../store-administration/sending-emails/store-emails.md)
+* [Processing an Order](./processing-an-order.md)]
