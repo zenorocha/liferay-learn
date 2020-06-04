@@ -4,7 +4,7 @@ Secrets allow you to securely store variables for any environment within DXP Clo
 
 ## What is a Secret?
 
-Secrets are environment variables with extra security measures to protect their values. Any environment variables that define sensitive or private information (such as credentials) should be stored as secrets.
+Secrets are environment variables with extra security measures to protect their values. Any environment variables that define sensitive or private information (such as credentials) should be stored as secrets. A secret may be defined as a secure variable for any number of services in the environment.
 
 Users with permission to view secrets can see them on the _Environment Variables_ tab for any service. They are shown on the same page as other environment variables, but they are in their own distinct section.
 
@@ -12,14 +12,14 @@ Users with permission to view secrets can see them on the _Environment Variables
 
 By default, secrets can only be viewed by Users with the _Admin_ role. However, secrets can be configured to be viewable by Users with other roles, as well.
 
-Secrets are also stored with encryption, so they have more security in the backend of DXP Cloud than regular environment variables. Viewing a secret through the UI will decrypt the value again before it is shown.
+Secrets are also stored with encryption, so they have more security in the backend of DXP Cloud than regular environment variables. Viewing a secret through the UI decrypts the stored value before it is shown.
 
 ## Adding a New Secret
 
 New secrets are added through the _Settings_ screen in DXP Cloud. Only Users with the _Admin_ role can add new secrets.
 
 ```warning::
-   Adding a new service causes the service to restart, so that the value can take effect.
+   Adding a new secret to a service causes the service to restart, so that the value can take effect.
 ```
 
 Follow these steps to add a new secret:
@@ -46,7 +46,7 @@ Follow these steps to add a new secret:
 
     ![Choose which roles to give view permissions to, in addition to the Admin role.](./managing-secure-environment-variables-with-secrets/images/06.png)
 
-1. Select which services to add the new secret environment variable to. For each selected service, fill in the key used for the environment variable.
+1. Select which services to add the new secret environment variable to. For each selected service, fill in the key used for the environment variable (multiple services can use the secret with the same key).
 
     ![Choose which services to add the new secret to.](./managing-secure-environment-variables-with-secrets/images/07.png)
 
