@@ -11,6 +11,7 @@ Several changes are made between version 3.x and 4.x of the DXP Cloud stack, inc
 * [CI Service Changes](#ci-service-changes)
 * [Webserver Service Changes](#webserver-service-changes)
 * [Backup Service Changes](#backup-service-changes)
+* [Known Limitations](#known-limitations)
 
 ## Changes to Docker Image Definitions
 
@@ -126,6 +127,10 @@ All configurations within the `backup` service now belong in an environment-spec
 | **File** | **Location in 3.x** | **Location in 4.x** |
 | --- | --- | --- |
 | Custom SQL scripts | lcp/backup/script/{ENV}/ | backup/configs/{ENV}/scripts/ |
+
+## Known Limitations
+
+The new stack does not contain a docker-compose file to spin up a local environment. However, we're planning a much better local development experience in the future.
 
 ## Additional Information
 
