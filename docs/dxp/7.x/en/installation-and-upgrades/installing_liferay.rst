@@ -6,7 +6,7 @@ Installing Liferay
 
    installing-liferay/hosting-liferay.md
 
-   installing-liferay/using-liferay-dxp-docker-images.rst
+   installing-liferay/using_liferay_dxp_docker_images.rst
 
    installing-liferay/installing-a-liferay-tomcat-bundle.md
    installing-liferay/configuring-a-database.md
