@@ -30,11 +30,11 @@ Install Liferay Commerce using a bundle from the [Liferay Community Downloads](h
 
 ### Using an Existing Liferay DXP Installation
 
-Deploy Liferay Commerce using an `LPKG` file with your preinstalled Liferay DXP. See [Deploying Liferay Commerce to an Existing Installation](./deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
+Deploy Liferay Commerce using an `LPKG` file onto your preexisting Liferay DXP installation. See [Deploying Liferay Commerce to an Existing Installation](./deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
 
 ### Activating Commerce Enterprise
-<!-- Is this a distinct 'method' of 'installation', per the section header? It seems to track the distinction between CE and EE products. If that's the case, I would recommend making these distinctions explicit and integrating this material into the preceding section, 'Using an Existing Liferay DXP Installation' -->
-Subscribers who have purchased Liferay Commerce Enterprise may download their `LPKG` file from the [Help Center](https://customer.liferay.com/downloads). See [Activating Liferay Commerce Enterprise](./activating-liferay-commerce-enterprise.md) on how to activate Liferay Commerce Enterprise.
+
+Subscribers who have purchased Liferay Commerce Enterprise may download the `LPKG` from [Help Center](https://customer.liferay.com/downloads). See [Activating Liferay Commerce Enterprise](./activating-liferay-commerce-enterprise.md) on how to activate Liferay Commerce Enterprise.
 
 ## Maintaining Liferay Commerce
 
@@ -53,5 +53,6 @@ See [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md) for installing
 * [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
 * [Deploying Liferay DXP Using Docker](https://www.liferay.com/documents/10182/1645493/Deploying%20Liferay%20DXP%20Using%20Docker)
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)
+
 
 <!-- Concerning Consistency: 'Deploy' and 'Install'? Is there a clear distinction between these terms that we want to maintain in our documentation? -->
