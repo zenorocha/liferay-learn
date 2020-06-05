@@ -1,6 +1,6 @@
 # Enabling or Disabling Order Workflows
 
-[Order workflows](./introduction-to-order-workflows.md) are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be processed.
+[Order workflows](./introduction-to-order-workflows.md) are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be [processed](../orders/processing-an-order.md).
 
 This article documents how to enable and disable Order Workflows.
 
@@ -55,5 +55,5 @@ Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [
 * [Approving or Rejecting Orders in Order Workflows](approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Order Life Cycle](../orders/order-life-cycle.md)
-* [Orders Menu](../orders/orders-menu-reference-guide.md)
+* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
 * [Order Management Statuses Reference Guide](../orders/order-management-statuses-reference-guide.md)

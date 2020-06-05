@@ -1,6 +1,6 @@
 # Managing Subscriptions
 
-Subscriptions are a special type of recurring order and are managed differently from regular orders. All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu-reference-guide.md). However, once a *Subscription* order has been accepted, it is displayed in the Subscriptions Menu.
+Subscriptions are a special type of recurring order and are managed differently from [regular orders](../orders/processing-an-order.md). All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu-reference-guide.md). However, once a *Subscription* order has been accepted, it is displayed in the Subscriptions Menu.
 
 ## Fulfilling a Subscription Order
 

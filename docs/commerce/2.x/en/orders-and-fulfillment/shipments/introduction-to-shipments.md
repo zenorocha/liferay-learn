@@ -1,6 +1,6 @@
 # Introduction to Shipments
 
-Create shipments first in the _Orders_ menu as part of [processing an order](../orders/processing-an-order.md). Once an order is processed, you are redirected to the _Shipments_ menu to complete oder processing.
+Create shipments first in the _Orders_ menu as part of [processing an order](../orders/processing-an-order.md). Once an order is processed, you are redirected to the _Shipments_ menu to complete order processing.
 
 Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the _Create Shipment_ button.
 
@@ -10,9 +10,9 @@ This takes the user automatically to the Shipments menu to finish processing the
 
 ## Processing
 
-![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
+Once all the items and the sourcing warehouse are chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date.
 
-Once all the items and the sourcing warehouse chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date.
+![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
 
 ## Ready to Ship
 
@@ -22,7 +22,7 @@ Once all the items and the sourcing warehouse chosen, the order is ready to ship
 
 ## Shipped
 
-Once an order has been shipped and awaiting confirmation of delivery, the order is in the Shipped phase. Click _Deliver_ when the delivery has been made.
+Once an order has been shipped and awaits confirmation of delivery, the order is in the Shipped phase. Click _Deliver_ when the delivery has been made.
 
 ![Shipments Menu - Shipped](./introduction-to-shipments/images/08.png)
 
@@ -34,7 +34,7 @@ Once delivery has been confirmed, the _Delivered_ tab marks each phase in green 
 
 ## Completed
 
-When delivery has been confirmed, the shipment process is marked delivered and the order is marked completed.
+When delivery has been confirmed, the shipment process is marked delivered and the order is marked completed on the Orders menu.
 
 ![Shipments Menu - Ready to Ship](./introduction-to-shipments/images/07.png)
 
@@ -96,3 +96,4 @@ In addition, clicking the (+) Add Shipment button opens a window to add more ite
 * [Creating a Shipment](./creating-a-shipment.md)
 * [Cancelling a Shipment](./cancelling-a-shipment.md)
 * [Processing an Order](../orders/processing-an-order.md)
+* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)

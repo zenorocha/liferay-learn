@@ -92,7 +92,7 @@ The order manager can update the status of the shipment as needed, until the ord
 * [Adding a New Warehouse](../../managing-a-catalog/managing-inventory/adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](../../managing-a-catalog/managing-inventory/setting-inventory-by-warehouse.md)
 * [Introduction to Shipments](./introduction-to-shipments.md)
-* [Processing an Order](../orders/processing-an-order.md)
 * [Cancelling a Shipment](./cancelling-a-shipment.md)
+* [Processing an Order](../orders/processing-an-order.md)
 * [Order Information](../orders/order-information.md)
 * [Order Life Cycle](../orders/order-life-cycle.md)
