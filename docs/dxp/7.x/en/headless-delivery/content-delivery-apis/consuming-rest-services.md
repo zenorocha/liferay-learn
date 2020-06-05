@@ -13,7 +13,7 @@ This example uses Docker image with a fresh install of Liferay DXP.
 You need a running Liferay DXP to call its REST services. To obtain one using Docker, run this command:
 
 ```bash
-docker run -it -p 8080:8080 liferay/portal:7.3.1-ga2
+docker run -it -p 8080:8080 liferay/portal:7.3.2-ga3
 ```
 
 Liferay DXP's REST services are published at this URL:
@@ -28,7 +28,15 @@ On your Docker instance, you can find them here:
 http://localhost:8080/o/api
 ```
 
-This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the published services.
+APIs are divided into several categories. This example uses the `BlogPosting` service to retrieve blog posts from the Blogs widget, but you can use this procedure with any of the published services. 
+
+1. Select the *Headless Delivery* category. This category contains the `BlogPosting` service. You can use the filter to search for services. 
+
+1. Click the *Show Schemas* button, and on the right side of the screen a list of all the schemas in this category appears. 
+
+1. Keep a browser tab open to the schema browser; when you want to PUT a `BlogPosting`, you'll need its schema. 
+
+![The schema browser makes it convenient to find and call the service you want. ](./consuming-rest-services/images/01.png)
 
 ## Identify the Site Containing the Data
 
@@ -42,7 +50,7 @@ Now you must find the default Site ID:
 1. Go to Control Panel &rarr; Sites &rarr; Sites.
 1. Click the Actions button, and then choose *Go to Site Settings*.
 
-The Site ID appears at the top of the Details section. It's an Integer, like `20119`.
+The Site ID appears at the top of the Details section. It's an Integer, like `20122`.
 
 ## Make the Service Call Using Credentials with Access to the Data
 
@@ -55,7 +63,7 @@ The examples below use [curl](https://curl.haxx.se).
 To call a service using Basic Auth, provide the credentials in the URL:
 
 ```bash
-curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings/" -u 'test@liferay.com:test'
+curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:test'
 ```
 
 ### Calling a Service Using OAuth2
@@ -63,7 +71,7 @@ curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings/"
 For production, create an [OAuth2 application](../../installation-and-upgrades/securing-liferay/configuring-sso/using-oauth2/creating-oauth2-applications.md) and use the OAuth2 process to get an authorization token. Once you have the token, provide it in the HTTP header:
 
 ```bash
-curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings
+curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings
 ```
 
 ## Getting and Posting Data
@@ -98,15 +106,11 @@ First, you'll post a blog entry.
 
 ### Posting a Blog Entry
 
-The API discovery revealed that blog posting services are available in the `headless-delivery` application.
+You can use the schema browser to learn how to post a blog entry. 
 
-1. Query `headless-delivery` to find the `BlogPosting` schema:
+![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/blog-posting-schema.png)
 
-    ```bash
-    curl "http://localhost:8080/o/headless-delivery/v1.0/openapi.yaml" -u test@liferay.com:test
-    ```
-
-    This reveals the schema for a `BlogPosting` (among many others). There are only two required fields:
+1. Go back to your browser tab containing the schema browser. On the right side, click the `BlogPosting` entry to display its schema (see above). This shows the whole data structure for a `BlogPosting`, but there are only two required fields:
 
     * `articleBody`
     * `headline`
@@ -123,7 +127,7 @@ The API discovery revealed that blog posting services are available in the `head
 3. Make the request:
 
     ```bash
-    curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings -u test@liferay.com:test
+    curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings -u test@liferay.com:test
     ```
 
 Liferay DXP returns the full JSON representation of your blog entry:
@@ -181,7 +185,7 @@ Liferay DXP returns the full JSON representation of your blog entry:
 Now you can repeat the first query you did to see that the blog entry you posted is there:
 
 ```bash
-curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20119/blog-postings/" -u 'test@liferay.com:test'
+curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:test'
 ```
 
 This returns a list of blog entries. The entry you added is the only one in the list:
