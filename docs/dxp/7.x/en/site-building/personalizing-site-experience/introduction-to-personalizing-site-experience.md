@@ -1,12 +1,12 @@
-# Introduction to Personalizing Site Experience
+# Personalizing Site Experience
 
-Liferay DXP comes out of the box with powerful tools to understand and deliver personalized experiences to your site's users. The first step to delivering a personalized experience is to start with understanding, or Segmenting your users. User Segments are dynamically assigned User collections. Instead of manually assigning Users to the collection, Users are assigned to Segments based on shared attributes or behaviors.
+Liferay DXP comes out of the box with powerful tools to understand and deliver personalized experiences. The first step to delivering a personalized experience is to start with understanding, or Segmenting your users. User Segments are dynamically assigned User collections. Instead of manually assigning Users to the collection, Users are assigned to Segments based on shared attributes or behaviors.
 
 ## Segmentation
 
 Using the Segment Builder, you can group similar Users by user profile attributes, behavior, Site Role, and more.
 
-![Build User Segments by checking for different User property values.](./introduction-to-personalizing-site-experience/images/01.png)
+![Build User Segments by checking for different User property values.](./personalizing-site-experience/images/01.png)
 
 See [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md) to get started.
 
@@ -16,11 +16,11 @@ See [Creating and Managing a Segment](./segmentation/creating-and-managing-user-
 
 ### Tracking Behavior of User Segments with Liferay Analytics Cloud
 
-Supercharge your Segments by integrating your Liferay DXP instance with Liferay Analytics Cloud. Analytics Cloud enables you to integrate DXP with Salesforce(tm) and other data sources to provide even more ways to understand your user base.
+Supercharge your Segments by integrating your Liferay DXP instance with Liferay Analytics Cloud. Analytics Cloud integrates DXP with Salesforce(tm) and other data sources to provide even more ways to understand your user base.
 
-Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics capabilities to help you understand user behavior and engagement for every page of your DXP Site. Analytics Cloud enables you to see how users and visitors on your Site behave and interact with both standard and targeted content. See [Getting Analytics for User Segments](./segmentation/getting-analytics-for-user-segments.md) for more information.
+Integration with Analytics Cloud provides in-depth, machine-learning powered, data analytics capabilities to help you understand user behavior and engagement for every page of your DXP Site. Analytics Cloud enables you to see user behavior and interaction with both standard and targeted content. See [Getting Analytics for User Segments](./segmentation/getting-analytics-for-user-segments.md) for more information.
 
-![Site Metrics using Analytics Cloud.](./introduction-to-personalizing-site-experience/images/05.png)
+![Site Metrics using Analytics Cloud.](./personalizing-site-experience/images/05.png)
 
 ## Personalization
 

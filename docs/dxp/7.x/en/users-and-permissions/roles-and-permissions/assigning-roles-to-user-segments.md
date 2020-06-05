@@ -2,7 +2,7 @@
 
 > Available: Liferay DXP 7.2 SP2+, Liferay CE 7.3.1 GA2
 
-User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, [personalized experiences](../../../site-building/personalizing-site-experience/introduction-to-personalizing-site-experience.md) can be defined for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
+User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, you can define [personalized experiences](../../../site-building/personalizing-site-experience/introduction-to-personalizing-site-experience.md) for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
 
 | Where Do I Create User Segments? | What Are They For? | Where Do I Assign Roles To a Segment? |
 | --------------------------------------------------------------------------- | -------------------------------------------------------------- | --------------------- |
@@ -25,7 +25,7 @@ Regular Roles can be assigned to User Segments created at the Global scope. To a
 
     ![Go to the Segments tab under Assignees to assign the Role.](./assigning-roles-to-user-segments/images/02.png)
 
-1. Check the box next to an existing User Segment and click *Add* to assign the Role to it. If the User Segment doesn't exist, you can click the (![Add Button](../../images/icon-add.png)) to create a new User Segment.
+1. Check the box next to an existing User Segment and click *Add* to assign the Role to it. If the User Segment doesn't exist, click the (![Add Button](../../images/icon-add.png)) to create a new User Segment.
 
     ![Check the box next to the User Segment you want to assign the Role to.](./assigning-roles-to-user-segments/images/03.png)
 
