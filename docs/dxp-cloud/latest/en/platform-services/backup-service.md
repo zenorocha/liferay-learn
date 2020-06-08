@@ -141,7 +141,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>.lfr.cloud/backup/download/database/:id \
+  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/download/database/id \
   -u user@domain.com:password \
   --output database.tgz
 ```
@@ -163,7 +163,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/download/volume/:id \
+  https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/download/volume/id \
   -u user@domain.com:password \
   --output volume.tgz
 ```
@@ -187,7 +187,7 @@ mysqldump -uroot -ppassword --databases --add-drop-database lportal | gzip -c | 
 ```
 
 ```bash
-tar zcvf database.tgz database.gz && rm database.gz
+tar zcvf database.tgz database.gz
 ```
 
 The `databases` and `add-drop-database` options are necessary for backup 
@@ -231,7 +231,7 @@ Name       | Type   | Required |
 curl -X POST \
   https://backup-<PROJECT-NAME>-prd.lfr.cloud/backup/upload \
   -H 'Content-Type: multipart/form-data' \
-  -F 'database=@/my-folder/database.gz' \
+  -F 'database=@/my-folder/database.tgz' \
   -F 'volume=@/my-folder/volume.tgz' \
   -u user@domain.com:password
 ```
