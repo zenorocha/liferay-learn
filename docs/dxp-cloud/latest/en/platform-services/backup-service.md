@@ -2,8 +2,9 @@
 
 The backup service creates regular backups of your Liferay DXP database and Document Library. These backups include both the database and the full contents of the Liferay image's `LIFERAY_HOME/data` folder.
 
-Here, you'll learn how to configure the backup service to your needs:
+Here, you'll learn how to use and configure the backup service to your needs:
 
+* [Downloading a Backup](#downloading-a-backup)
 * [Scheduling](#scheduling)
 * [Backup APIs](#backup-apis)
 * [Environment Variables Reference](#environment-variables-reference)
@@ -12,6 +13,30 @@ For instructions on creating and restoring backups manually, see
 [Backup and Restore](./backup-and-restore.md). 
 
 ![Figure 1: The backup service is one of several services available in DXP Cloud.](./backup-service/images/01.png)
+
+## Downloading a Backup
+
+The _Backups_ page of a production environment is the primary method of downloading a backup in DXP Cloud. This includes a backup of both the database, and the data volume (including the document library and other files from the Liferay image's file system).
+
+Follow these steps to download a backup of your production intance:
+
+1. Log into the DXP Cloud console, and navigate to a production environment.
+
+1. Click _Backups_ from the menu on the left.
+
+    ![Click Backups from the menu on the left from your production environment.](./backup-service/images/02.png)
+
+1. Click the Actions menu for any of the backups listed, then click _Download._
+
+    ![Choose a backup from the list, and click Download.](./backup-service/images/03.png)
+
+1. From the options that appear, click to download both options to download both the database and the data volume as zip archives, respectively.
+
+    ![Download both the database and the data volume for your chosen backup.](./backup-service/images/04.png)
+
+The two downloaded `.tgz` archives comprise the chosen backup. You can now extract and import these into a local Liferay environment to run this backup on your system.
+
+You can also download a backup using the download API. See [this section](#download-database-api) for more information.
 
 ## Scheduling
 
@@ -62,7 +87,7 @@ can invoke these APIs using a command line tool such as `curl`.
 
 To invoke the backup APIs, you must have the backup service's host name, which you can find on the Services page:
 
-![Backup service's host name](./backup-service/images/02.png)
+![Backup service's host name](./backup-service/images/05.png)
 
 The service name, project name, and environment name combine to make up the host name. 
 
