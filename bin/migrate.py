@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
 
     if (len(sys.argv) < 2):
-        print("Usage: migrate.py article [dest_folder]\nIMPORTANT: Run this script in the folder containing the liferay-docs article so that it copies the liferay-docs image files to [dest_folder]/images.")
+        print("Usage: python migrate.py article [dest_folder]\nIMPORTANT: Run this script in the folder containing the liferay-docs article so that it copies the liferay-docs image files to [dest_folder]/images.")
         sys.exit()
 
     article = sys.argv[1]
@@ -141,7 +141,7 @@ if __name__ == "__main__":
         elif (para_line != ""):
             if (re.search("^[\d\-]", trimmed_line)):
                 # Write the existing paragraph and start a list item
-                list_item_line = line 
+                list_item_line = line
 
                 newFile.write(para_line)
                 para_line = ""
