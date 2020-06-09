@@ -57,6 +57,7 @@ Here are steps for installing the patch to a new container:
 
     ```bash
     docker run ... -v [host folder path]:/mnt/liferay liferay/dxp:[tag]
+    ```
 
     ```note::
        Please see `Providing Files to the Container <./providing-files-to-the-container.md>`_ for more information on specifying bind mounts.
@@ -130,7 +131,7 @@ If a patch requires upgrading the database, you must upgrade it using the Databa
 
 After the database is upgraded, run your container that uses that database.
 
-## Additional Topics
+## Additional Information
 
 * [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
 * [DXP Docker Container Basics](./dxp-docker-container-basics.md)

@@ -10,7 +10,7 @@ Here are the fundamentals for using the containers:
 * [Starting a Container for the First Time](#starting-a-container-for-the-first-time)
 * [Viewing Log Files](#viewing-log-files)
 * [Stopping a Container](#stopping-a-container)
-* [Restarting a Container](#restarting-a-container
+* [Restarting a Container](#restarting-a-container)
 
 These containers are standard Docker containers that can be started and stopped as such. The following examples use [Docker CLI (`docker`)](https://docs.docker.com/engine/reference/commandline/docker/), but you can use whatever Docker container tools you like.
 
@@ -45,7 +45,7 @@ DXP is ready to use.
 DXP log messages and log files are available to view live and to copy to your host.
 
 ```tip::
-   The ``[container]``` is the name you entered via ``--name [some name]`` in your ``run`` command.
+   The ``[container]`` value is the name you entered via ``--name [some name]`` in your ``run`` command.
 ```
 
 ### `docker logs` commands
@@ -68,12 +68,12 @@ docker cp [container]:/opt/liferay/logs/liferay.[timestamp].log .
 
 ## Stopping a Container
 
-Here is the most graceful way to stop the container:
+The most graceful way to stop the container:
 
 ```bash
 docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh
 ```
-
+<!-- what are the reasons for and against each method? -->
 Here are the fastest ways to stop the container:
 
 * `Ctrl-C`: This sends a [`SIGINT` or `SIGKILL` signal to an attached container](https://docs.docker.com/engine/reference/commandline/attach/#extended-description) (a container started with the `-it` argument).

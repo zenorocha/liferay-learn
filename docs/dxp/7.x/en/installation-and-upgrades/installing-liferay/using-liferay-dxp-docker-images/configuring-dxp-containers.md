@@ -1,6 +1,6 @@
 # Configuring DXP Containers
 
-Everything that is configurable in DXP installations is configurable in DXP Docker containers too.
+Everything that is configurable in a DXP installation is configurable in a DXP Docker container.
 
 Here are the most common things to configure:
 
@@ -33,7 +33,7 @@ The container runs with the `LIFERAY_JVM_OPTS` value appended to Tomcat's `CATAL
 
 ### Replacing the setenv.sh File
 
-You can override Tomcat's `setenv.sh` script wholesale. A fast way to create a `setenv.sh` script is to copy one from a DXP container. Here's how to modify a copy of the script and use it in a new container:
+Another method of configuring JVM options involves overriding Tomcat's `setenv.sh` script. A fast way to create a `setenv.sh` script is to copy one from a DXP container. Here's how to modify a copy of the script and use it in a new container:
 
 1. If you have an existing DXP container, start it. Otherwise, run a new one.
 
@@ -134,7 +134,7 @@ You can override a DXP container's Portal Properties using a `portal-ext.propert
 The properties are visible in the Control Panel at _Configuration_ &rarr; _Server Administration_ &rarr; _Properties_ &rarr; _Portal Properties_.
 
 ### Overriding DXP Image Env Variable Defaults
-
+<!-- TODO: Improve the messaging to specify that once a ENV variable is configured, it CANNOT be overriden by a portal.property for the life of the container. -->
 The official Liferay images preconfigure these Env variables ([Portal Properties](../../reference/portal-properties.md)):
 
 ```properties
@@ -154,9 +154,9 @@ You can override them in one of two ways:
 
 You can use a `docker run -e [VAR_NAME=value] ...` command to pass in your new Env variable setting. Example,
 
-    ```bash
-    docker run -e LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED=true
-    ```
+  ```bash
+  docker run -e LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED=true
+  ```
 
 #### Overriding an Env Variable Using a Portal Property
 
