@@ -31,7 +31,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
 
     The output looks like this:
 
-    ```messages
+    ```
     One patch is ready to be installed. Applying dxp...
     Cleaning up: [1%..10%..20%..30%..40%..50%..60%..70%..80%..90%..100%]
     Installing patches: [1%..10%..20%..30%..40%..50%..60%..70%..80%..90%...100%]
@@ -46,7 +46,7 @@ If you're patching a DXP bundle, continue with the basic patching steps below. I
 
     The output lists the currently installed patches:
 
-    ```messages
+    ```
     Loading product and patch information...
     Product information:
       * installation type: binary

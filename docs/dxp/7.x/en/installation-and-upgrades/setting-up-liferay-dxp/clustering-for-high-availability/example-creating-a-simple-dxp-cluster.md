@@ -368,7 +368,7 @@ This example fronts the application server cluster with an [Apache Web Server](h
 
 1. Configure the request proxy and load balancing (using Apache's [`byrequests` method](https://httpd.apache.org/docs/2.4/mod/mod_lbmethod_byrequests.html)), by adding the [`VirtualHost` element](https://httpd.apache.org/docs/2.4/vhosts/) to the end of `httpd.conf` file:
 
-    ```xml
+    ```
     <VirtualHost *:80>
       ProxyRequests off
       ProxyPass / balancer://liferaycluster/
@@ -423,7 +423,7 @@ The DXP cluster node containers will have this configuration:
 
 The host ports are mapped to container ports. The unique host ports prevent collisions on the host. The container ports need only be unique within each container, and can therefore be the same on each node (e.g., each container uses the `8080` as its web server HTTP port). Remember that the example proxy server and load balancer directs requests to containers via each container's HTTP port. Here's a proxy configuration excerpt from the `httpd.conf` file:
 
-```xml
+```
   ...
   <Proxy balancer://liferaycluster>
     BalancerMember "http://dxp-1:8080" route=liferay1

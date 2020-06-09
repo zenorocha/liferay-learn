@@ -30,7 +30,7 @@ This URL does not require authentication, but calling any API does. The JSON ret
 
 The `BlogPosting` API looks like this:
 
-```graphql
+```
 createSiteBlogPosting(
   blogPosting: InputBlogPosting
   siteKey: String!
@@ -100,7 +100,7 @@ The GraphQL schema revealed the call that must be made to post a blog entry.
 
 1. Construct the GraphQL query based on the schema documentation:
 
-   ```graphql
+   ```
    mutation CreateBlog($blog: InputBlogPosting){
      createSiteBlogPosting(blogPosting: $blog, siteKey: "20119" ) {
        headline
@@ -140,7 +140,7 @@ Note that a GraphQL client makes the job of calling APIs easier, because it can 
 
 The first call you made called this API:
 
-```graphql
+```
 blogPostings (
    filter:String
    page: Int
@@ -182,7 +182,7 @@ Now Liferay DXP returns JSON containing the data you requested:
 
 The API call from the GraphQL schema for getting a single Blog entry has only one parameter:
 
-```graphql
+```
 blogPosting(
    blogPostingId: Long
 ): BlogPosting
@@ -212,7 +212,7 @@ This returns the same blog entry:
 
 Deleting a blog entry, like creating one, is a mutation. Its call is almost the same as getting a single blog entry:
 
-```graphql
+```
 deleteBlogPosting(
   blogPostingId: Long
 ): Boolean

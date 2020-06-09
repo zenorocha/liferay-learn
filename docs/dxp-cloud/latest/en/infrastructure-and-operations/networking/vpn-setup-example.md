@@ -12,7 +12,7 @@ To configure an IPsec test server:
 
 1. Save the following file as `~/ipsec.conf` and replace the `leftid` value with your VPN server's external IP.
 
-    ```properties
+    ```
     config setup
       charondebug="ike 1, knl 1, cfg 0"
       uniqueids=no
@@ -137,7 +137,7 @@ Follow these steps if using an OpenVPN server:
 
 1. Create a `~/server.conf` with the following values:
 
-    ```properties
+    ```
     #Port where the VPN server will answer requests
     port 1194
 

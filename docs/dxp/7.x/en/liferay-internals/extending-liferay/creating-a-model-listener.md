@@ -25,7 +25,7 @@ First, deploy an example model listener for the `JournalArticle` model on your i
 
 1. Download and unzip `Acme Model Listener`.
 
-    ```curl
+    ```bash
     curl https://learn.liferay.com/dxp-7.x/liferay-internals/extending-liferay/liferay-n4g6.zip -O
     ```
 

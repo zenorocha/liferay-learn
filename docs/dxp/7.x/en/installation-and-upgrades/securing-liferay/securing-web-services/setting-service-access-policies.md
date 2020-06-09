@@ -51,7 +51,7 @@ For example, `com.liferay.portal.kernel.service.UserService` allows any method f
 
 The following example allows any method from the `UserService` class to be invoked and any method from the `DLAppService` whose name starts with `get` to be invoked:
 
-```java
+```
 com.liferay.portal.kernel.service.UserService
 com.liferay.document.library.kernel.service.DLAppService#get*
 ```

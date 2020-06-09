@@ -342,7 +342,7 @@ If you want to manage your mail session with WildFly, follow these steps:
    After deploying DXP, you may see excessive warnings and log messages, such as the ones below, involving ``PhaseOptimizer``. These are benign and can be ignored. Make sure to adjust your app server's logging level or log filters to avoid excessive benign log messages.
 ```
 
-```log
+```
 May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
 WARNING: Skipping pass gatherExternProperties
 May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process

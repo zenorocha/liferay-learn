@@ -134,7 +134,7 @@ Here are the steps:
 
 1. Provide Catalina access to the JARs in `$CATALINA_BASE/lib/ext` by opening your `$CATALINA_BASE/conf/catalina.properties` file and appending this value to the `common.loader` property:
 
-    ```properties
+    ```
     ,"${catalina.home}/lib/ext/global","${catalina.home}/lib/ext/global/*.jar","${catalina.home}/lib/ext","${catalina.home}/lib/ext/*.jar"
     ```
 

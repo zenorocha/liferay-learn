@@ -55,7 +55,7 @@ To find the fields available for use in the Sort widget, Users with the proper p
 
 If you really must sort by a `text` field, add a new version of the field to the index with the type `keyword`. From the field mappings screen mentioned above, look at the `firstName` field in the index called `liferay-[companyID]`: 
 
-```json
+```
 "firstName" : {
     "type" : "text",
     "store" : true

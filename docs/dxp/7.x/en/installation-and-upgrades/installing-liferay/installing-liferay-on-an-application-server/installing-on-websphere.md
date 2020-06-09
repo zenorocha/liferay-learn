@@ -92,7 +92,7 @@ Next, in the WebSphere profile, set an argument that supports DXP's JVM requirem
 
 As a baseline, add `maximumHeapSize="2560"` inside the `jvmEntries` tag. For example:
 
-```xml
+```
 <jvmEntries xmi:id="JavaVirtualMachine_1183122130078" ... maximumHeapSize="2560">
 ```
 
@@ -120,7 +120,7 @@ In `[Install Location]/WebSphere/AppServer/profiles/your-profile/config/cells/yo
 
 If this tag is not removed, an error similar to this may occur:
 
-```log
+```
 WSVR0501E: Error creating component com.ibm.ws.runtime.component.CompositionUnitMgrImpl@d74fa901
 com.ibm.ws.exception.RuntimeWarning: com.ibm.ws.webcontainer.exception.WebAppNotLoadedException: Failed to load webapp: Failed to load webapp: SRVE8111E: The application, LiferayEAR, is trying to modify a cookie which matches a pattern in the restricted programmatic session cookies list [domain=*, name=JSESSIONID, path=/].
 ```
@@ -250,7 +250,7 @@ To validate that the mail session has been configured correctly, there are a num
 
 WebSphere restricts cookies to HTTPS sessions by default. If using HTTP, this prevents users from signing in to DXP and displays the following error in the console:
 
-```log
+```
 20:07:14,021 WARN  [WebContainer : 1][SecurityPortletContainerWrapper:341]
 User 0 is not allowed to access URL http://localhost:9081/web/guest/home and portlet com_liferay_login_web_portlet_LoginPortlet
 ```
@@ -321,7 +321,7 @@ Note that the DXP `.war` comes pre-packaged with the `ibm-web-ext.xmi` file; thi
 
 After deploying DXP, there may be excessive warnings and log messages, such as the ones below, involving `PhaseOptimizer`. These are benign and can be ignored. Make sure to adjust the app server's logging level or log filters to avoid excessive benign log messages.
 
-```log
+```
 |     May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
 |     WARNING: Skipping pass gatherExternProperties
 |     May 02, 2018 9:12:27 PM com.google.javascript.jscomp.PhaseOptimizer$NamedPass process
