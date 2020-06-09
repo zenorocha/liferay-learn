@@ -1,6 +1,9 @@
 # Managing Subscriptions
 
-Subscriptions are a special type of recurring order and are managed differently from [regular orders](../orders/processing-an-order.md). All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu-reference-guide.md). However, once a *Subscription* order has been accepted, it is displayed in the Subscriptions Menu.
+<!---Reviewer's Comment: Consider whether to break up this one article into multiple how-to articles. To me, the article feels long, with section after section. However, when I asked, the article's author (JC) advised against breaking it up because the content is highly sequential, where one part flows to another with very few discrete parts. Perhaps a solution would be to add a bit more connecting-tissue from section to section, so that the reader knows what/why he's looking at a new header.
+--->
+
+Subscriptions are a special type of recurring order and are managed differently from [regular orders](../orders/processing-an-order.md). All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu-reference-guide.md). However, once a *Subscription* order has been accepted, it is displayed in the [Subscriptions menu](./subscription-administration-reference-guide.md).
 
 ## Fulfilling a Subscription Order
 
@@ -22,7 +25,7 @@ To begin fulfilling a subscription order that has been placed:
 
 1. Once the subscription order has been accepted, follow the steps to create a shipment. See [Creating a Shipment](../shipments/creating-a-shipment.md) to learn more.
 
-Once the order has been accepted, it appears on the Subscription menu.
+Once the order has been accepted, it appears on the [Subscriptions menu](./subscription-administration-reference-guide.md).
 
 ## Managing a Subscription Order
 
@@ -30,12 +33,12 @@ Once the order has been accepted, it appears on the Subscription menu.
 
     ![Subscription menu](./managing-subscriptions/images/03.png)
 
-1. Click on the _ID_ (43811). This ID specific to subscriptions and is distinct from normal Order or Shipment IDs.
-1. On the _General_ tab, make any changes to either the Payment or Delivery options. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
+2. Click on the _ID_ (43811). This ID is specific to subscriptions. (It is distinct from normal Order or Shipment IDs.)
+3. On the _General_ tab, make any changes to either the Payment or Delivery options. For example, change the _Next Iteration Date_ under Delivery Subscription to an earlier date.
 
     ![You can change the next delivery date.](./managing-subscriptions/images/04.png)
 
-1. Click the _Save_ button.
+4. Click the _Save_ button.
 
 ### Suspending or Cancelling a Subscription Order
 
@@ -59,7 +62,7 @@ To suspend or cancel a subscription order:
 
     ![You can change track the shipment status.](managing-subscriptions/images/05.png)
 
-## Tracking Payment History
+### Tracking Payment History
 
 1. Click the _Payments_ tab. From here, store managers can track payment history.
 
@@ -91,3 +94,5 @@ To configure subscriptions:
 * [Enabling Subscriptions for a Product](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Orders Menu](../orders/orders-menu-reference-guide.md)
+* [Creating a Shipment](../shipments/creating-a-shipment.md)
+* [Introduction to Shipments](../shipments/introduction-to-shipments.md)
