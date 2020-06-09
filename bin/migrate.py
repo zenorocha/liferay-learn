@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
 
     if (len(sys.argv) < 2):
-        print("Usage: python migrate.py article [dest_folder]\nIMPORTANT: Run this script in the folder containing the liferay-docs article so that it copies the liferay-docs image files to [dest_folder]/images.")
+        print("Usage:\n\tpython migrate.py article [dest_folder]\n\nDescription:\n\tMigrates the article to a .md file and converts the content to liferay-learn Markdown/RST syntax. The converted article destination folder [dest_folder] is the current folder by default but is typically set to a liferay-learn folder.\n\n\tIMPORTANT: Run this script in the liferay-docs article's folder so that the script can use the image file paths found in the article to copy the image files to the [dest_folder]/images/ folder.")
         sys.exit()
 
     article = sys.argv[1]
