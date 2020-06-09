@@ -4,7 +4,7 @@ Liferay Commerce is a digital commerce platform built on Liferay DXP. This artic
 
 ## Prerequisites
 
-Before installing Liferay Commerce, ensure your device meets minimum system requirements, and consult the Liferay DXP deployment checklist. Liferay DXP is necessary for installing Liferay Commerce.
+Before installing Liferay Commerce, review the system requirements and consult the Liferay DXP deployment checklist.
 
 ### System Requirements
 
@@ -30,7 +30,7 @@ Install Liferay Commerce using a bundle from the [Liferay Community Downloads](h
 
 ### Using an Existing Liferay DXP Installation
 
-Deploy Liferay Commerce using an `LPKG` file onto your preexisting Liferay DXP installation. See [Deploying Liferay Commerce to an Existing Installation](./deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
+Install Liferay Commerce by deploying the `LPKG` file to your preexisting Liferay DXP installation. See [Deploying Liferay Commerce to an Existing Installation](./deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
 
 ### Activating Commerce Enterprise
 
@@ -53,6 +53,3 @@ See [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md) for installing
 * [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
 * [Deploying Liferay DXP Using Docker](https://www.liferay.com/documents/10182/1645493/Deploying%20Liferay%20DXP%20Using%20Docker)
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)
-
-
-<!-- Concerning Consistency: 'Deploy' and 'Install'? Is there a clear distinction between these terms that we want to maintain in our documentation? -->
