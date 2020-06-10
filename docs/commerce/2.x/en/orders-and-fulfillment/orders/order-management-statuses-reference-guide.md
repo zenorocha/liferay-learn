@@ -41,30 +41,30 @@ There are twelve order statuses available on the *Transmitted* tab, as listed be
 
 | Order Status | Description |
 | --- | --- |
-| Transmitted | The order has been transmitted, with no additional status update. (This is the default order status of transmitted orders.) |
-| Awaiting Fulfillment | The order has been transmitted and payment confirmed, but is not yet ready for shipment by the carrier. |
-| Awaiting Pickup | The order has been prepared (and possibly shipped) and is awaiting pickup by the buyer from a seller-specified location. |
-| Awaiting Shipment | The order is ready to ship, and is awaiting pickup and shipment by the carrier. |
+| Transmitted | The order has been [transmitted](./processing-an-order.md#commerce-20-and-below), with no additional status update. (This is the default order status of transmitted orders.) |
+| Awaiting Fulfillment | The order has been [transmitted](./processing-an-order.md#commerce-20-and-below) and payment confirmed, but is not yet ready for [shipment](../shipments/introduction-to-shipments.md) by the carrier. |
+| Awaiting Pickup | The order has been prepared (and possibly [shipped](../shipments/introduction-to-shipments.md)) and is awaiting pickup by the buyer from a seller-specified location. |
+| Awaiting Shipment | The order is ready to [ship](../shipments/introduction-to-shipments.md), and is awaiting pickup and shipment by the carrier. |
 | Partially Refunded | The seller refunded the buyer for less than the total price of the order. |
-| Partially Shipped | Only a portion of the ordered products were shipped. |
+| Partially Shipped | Only a portion of the ordered products were [shipped](../shipments/introduction-to-shipments.md). |
 | Refunded | The seller refunded the buyer for the total price of the order. |
-| Shipped | The order was shipped, but not yet confirmed as received. |
-| Completed | The order was shipped (or picked up) and confirmed as received; or the virtual products were paid for and are available for download. |
+| Shipped | The order was [shipped](../shipments/introduction-to-shipments.md), but not yet confirmed as received. |
+| Completed | The order was [shipped](../shipments/introduction-to-shipments.md) (or picked up) and confirmed as received; or the virtual products were paid for and are available for download. |
 | Cancelled | The order was cancelled by the seller. |
-| Declined | The order was shipped, but the buyer declined to receive it. |
+| Declined | The order was [shipped](../shipments/introduction-to-shipments.md), but the buyer declined to receive it. |
 | Disputed | The buyer initiated a dispute resolution for the payment transaction (such as via PayPal). |
 
 ## Payment Status
 
-The *Payment Status* gives information about whether payment has been made and received for an order. On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](./orders-menu-reference-guide.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
+The *Payment Status* gives information about whether payment has been made and received for an [order](./processing-an-order.md). On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](./orders-menu-reference-guide.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
 
    ![Payment Status](./order-management-statuses-reference-guide/images/05.png)
 
 | Payment Status | Description |
 | --- | --- |
-| Authorized | Payment has been authorized by the  financial institutions involved, and steps will be taken to deposit the funds into the seller's account. (This may be the case for online payment methods such as PayPal, or a credit card or debit card.) |
-| Paid | Payment for the order has been received by the seller. |
-| Pending | Payment for the order has not been received or authorized. (This may be the case for offline payment methods such as money orders and purchase orders, if the payment has not yet been received or checked, or the payment status has not been updated. It may also be the case for online payment methods such as PayPal, if the buyer stops the payment process.) |
+| Authorized | Payment has been authorized by the financial institutions involved, and steps will be taken to deposit the funds into the seller's account. (This may be the case for online payment methods such as PayPal, or a credit card or debit card.) |
+| Paid | Payment for the [order](./processing-an-order.md) has been received by the seller. |
+| Pending | Payment for the [order](./processing-an-order.md) has not been received or authorized. (This may be the case for offline payment methods such as money orders and purchase orders, if the payment has not yet been received or checked, or the payment status has not been updated. It may also be the case for online payment methods such as PayPal, if the buyer stops the payment process.) |
 
 ## Workflow Status
 
@@ -78,9 +78,9 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 | Workflow Status | Description |
 | --- | --- |
-| Draft | Products have been added to the cart, but the cart has not yet been submitted for review and approval by the buyer. |
-| Pending | The cart (order) has been submitted for review and approval, but it has not yet been approved by the buyer. |
-| Approved | The order has been reviewed and approved by the buyer, and the order may now proceed to checkout. |
+| Draft | Products have been added to the cart, but the cart has not yet been submitted for review and [approval](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the buyer. |
+| Pending | The cart (order) has been submitted for review and [approval](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md), but it has not yet been approved by the buyer. |
+| Approved | The order has been reviewed and [approved](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the buyer, and the order may now proceed to checkout. |
 
 ### Pending
 
@@ -90,8 +90,8 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 | Workflow Status | Description |
 | --- | --- |
-| Pending | The order has been placed, but it has not yet been approved by the seller. |
-| Approved | The order has been reviewed and approved by the seller, and the order may now be [transmitted](./processing-an-order.md#commerce-20-and-below). (Note: This workflow status appears also on the *Transmitted* tab.) 
+| Pending | The order has been placed, but it has not yet been [approved](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the seller. |
+| Approved | The order has been reviewed and [approved](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) by the seller, and the order may now be [transmitted](./processing-an-order.md#commerce-20-and-below). (Note: This workflow status appears also on the *Transmitted* tab.) 
 
 ## Additional Information
 
@@ -99,3 +99,4 @@ The *Workflow Status* gives information about where an order is in one of the tw
 * [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](./processing-an-order.md)
+* [Introduction to Shipments](../shipments/introduction-to-shipments.md)

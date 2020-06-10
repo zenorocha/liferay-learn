@@ -1,6 +1,6 @@
 # Cancelling a Shipment
 
-If a buyer cancels [an order](../orders/processing-an-order.md) before it is shipped, the seller may cancel the shipment in Liferay Commerce. Note that cancelling a shipment does **not** close an order. [Managing an order's status](../orders/processing-an-order.md) is done on the _Orders_ menu in the Control Panel.
+If a buyer cancels [an order](../orders/processing-an-order.md) before it is [shipped](./introduction-to-shipments.md), the seller may cancel the shipment in Liferay Commerce. Note that cancelling a shipment does **not** close an order. [Managing an order's status](../orders/processing-an-order.md) is done on the _Orders_ menu in the Control Panel.
 
 To cancel a shipment:
 
@@ -16,11 +16,11 @@ The shipment has been canceled.
 
 ![Shipment has been deleted](./cancelling-a-shipment/images/02.png)
 
-Canceling a shipment changes the status in the _Transmitted_ tab in the _Orders_ menu.
+Canceling a shipment changes the status in the _Transmitted_ tab in the [_Orders_ menu](../orders/orders-menu-reference-guide.md).
 
 ![Updated Transmitted Tab](./cancelling-a-shipment/images/03.png)
 
-Note that if a new shipment is created from the same order, a new shipment number is generated (for example, _42888_).
+Note that if a new shipment is [created](./creating-a-shipment.md) from the same order, a new shipment number is generated (for example, _42888_).
 
 ## Additional Information
 

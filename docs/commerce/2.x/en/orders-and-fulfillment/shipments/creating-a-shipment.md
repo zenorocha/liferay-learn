@@ -1,6 +1,6 @@
 # Creating a Shipment
 
-Creating a shipment is integrated with the [_Orders_ menu](../orders/processing-an-order.md). You can also [manage all shipments](./introduction-to-shipments.md) in the _Shipments_ menu once an order is in the _Processing_ phase.
+Creating a shipment is integrated with the [_Orders_ menu](../orders/orders-menu-reference-guide.md). You can also [manage all shipments](./introduction-to-shipments.md) in the _Shipments_ menu once an order is in the [_Processing_ phase](../orders/processing-an-order.md).
 
 ## Creating a New Shipment
 
@@ -27,7 +27,7 @@ To create a new shipment:
     ![Orders menu](./creating-a-shipment/images/07.png)
 
 1. Click _Submit_.
-1. Click _Edit_ next to the item to select a quantity and the sourcing warehouse.
+1. Click _Edit_ next to the [item](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md) to select a quantity and the sourcing [warehouse](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md).
 1. Enter the quantity in the _Quantity in Shipment_ field.
 
     ![Orders menu](./creating-a-shipment/images/08.png)
@@ -48,13 +48,13 @@ When the order is ready to be shipped:
 To create a shipment in previous versions of Liferay Commerce:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
-1. Click the (+) button to add a new shipment.
+1. Click the Add (![add-icon](../../images/icon-add.png)) button to add a new shipment. 
 1. Select an order from the dropdown menu (for example, _41241_).
 
     ![Select an Order](./creating-a-shipment/images/02.png)
 
 1. Click _Save_.
-1. Enter the quantity from the corresponding warehouse.
+1. Enter the quantity from the corresponding [warehouse](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md).
 
     ![Entering Quantity from US NE Warehouse](./creating-a-shipment/images/03.png)
 
@@ -71,7 +71,7 @@ Once a shipment has been created, there are several further actions an order man
 
 ### Verify the Items
 
-1. Click the _Items_ tab to verify that the items are correct.
+1. Click the _Items_ tab to verify that the [items](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md) are correct.
 
     ![Verify Items](./creating-a-shipment/images/05.png)
 
@@ -96,3 +96,6 @@ The order manager can update the status of the shipment as needed, until the ord
 * [Processing an Order](../orders/processing-an-order.md)
 * [Order Information](../orders/order-information.md)
 * [Order Life Cycle](../orders/order-life-cycle.md)
+* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
+* [Products Overview](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md)
+* [Warehouse Reference Guide](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md).

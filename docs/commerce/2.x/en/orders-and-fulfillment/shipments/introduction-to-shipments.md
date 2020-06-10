@@ -1,8 +1,8 @@
 # Introduction to Shipments
 
-Create shipments first in the _Orders_ menu as part of [processing an order](../orders/processing-an-order.md). Once an order is processed, you are redirected to the _Shipments_ menu to complete order processing.
+Create shipments first in the [_Orders_ menu](../orders/orders-menu-reference-guide.md) as part of [processing an order](../orders/processing-an-order.md). Once an order is processed, you are redirected to the _Shipments_ menu to complete order processing.
 
-Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the _Create Shipment_ button.
+Navigate to _Control Panel_ → _Commerce_ → _Orders_. Select an order that is ready to be shipped and click the [_Create Shipment_](./creating-a-shipment.md) button.
 
 ![Shipments Menu](./introduction-to-shipments/images/04.png)
 
@@ -10,7 +10,7 @@ This takes the user automatically to the Shipments menu to finish processing the
 
 ## Processing
 
-Once all the items and the sourcing warehouse are chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date.
+Once all the [items](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md) and the sourcing [warehouse](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md) are chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date.
 
 ![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
 
@@ -34,13 +34,13 @@ Once delivery has been confirmed, the _Delivered_ tab marks each phase in green 
 
 ## Completed
 
-When delivery has been confirmed, the shipment process is marked delivered and the order is marked completed on the Orders menu.
+When delivery has been confirmed, the shipment process is marked delivered and the [order](../orders/processing-an-order.md) is marked completed on the [Orders menu](../orders/orders-menu-reference-guide.md).
 
 ![Shipments Menu - Ready to Ship](./introduction-to-shipments/images/07.png)
 
 ## Liferay Commerce 2.0 and Below
 
-The _Shipments_ menu is where store managers can create and track a shipment after [receiving an order](../orders/processing-an-order.md#commerce-2-0-and-below).
+The _Shipments_ menu is where store managers can [create](./creating-a-shipment.md) and track a shipment after [receiving an order](../orders/processing-an-order.md#commerce-2-0-and-below).
 
 <!--- Waiting to hear back whether the above link is formatted correctly using the "#" after the ".md".
 -->
@@ -51,7 +51,7 @@ Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 
 The _Shipments_ menu displays all created shipments in all statuses. Click the Add (![add-icon](../../images/icon-add.png)) button to add a new shipment.
 
-Clicking on a particular shipment number (for example, _41250_) displays the Shipment's _Details_ tab and the _Items_ tab. (Note that clicking the _Order Number_ (_41241_) redirects to the _Orders_ menu.)
+Clicking on a particular shipment number (for example, _41250_) displays the Shipment's _Details_ tab and the _Items_ tab. (Note that clicking the _Order Number_ (_41241_) redirects to the [_Orders_ menu](../orders/orders-menu-reference-guide.md).)
 
 ### Details
 
@@ -84,12 +84,12 @@ The _Shipment Items_ Tab contains the following information:
 
 | Field | Description |
 | --- | --- |
-| SKU | SKU Number |
-| Name | Name of the item |
+| SKU | [SKU](../../managing-a-catalog/creating-and-managing-products/products/adding-skus-to-your-products.md) Number |
+| Name | Name of the [item](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md) |
 | Quantity | Number of items in the shipment |
-| Warehouse | Name of the warehouse sourcing the shipment |
+| Warehouse | Name of the [warehouse](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md) sourcing the shipment |
 
-In addition, clicking the (+) Add Shipment button opens a window to add more items to the order.
+In addition, clicking the Add (![add-icon](../../images/icon-add.png)) button opens a window to add more items to the order.
 
 ## Additional Information
 
@@ -97,3 +97,6 @@ In addition, clicking the (+) Add Shipment button opens a window to add more ite
 * [Cancelling a Shipment](./cancelling-a-shipment.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
+* [Warehouse Reference Guide](../../managing-a-catalog/managing-inventory/warehouse-reference-guide.md)
+* [Products Overview](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md)
+* [Adding SKUs to Your Product](../../managing-a-catalog/creating-and-managing-products/products/adding-skus-to-your-products.md)

@@ -1,6 +1,6 @@
 # Enabling or Disabling Order Workflows
 
-[Order workflows](./introduction-to-order-workflows.md) are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior approval for an order before it can be [processed](../orders/processing-an-order.md).
+[Order workflows](./introduction-to-order-workflows.md) are a channel-specific setting that, if enabled, require the buyer or seller to give internal prior [approval](./approving-or-rejecting-orders-in-order-workflows.md) for an order before it can be [processed](../orders/processing-an-order.md).
 
 This article documents how to enable and disable Order Workflows.
 
@@ -33,11 +33,11 @@ To enable an approval workflow:
     ![Sahara site settings](./enabling-or-disabling-order-workflows/images/05.png)
 
 1. Click on the _Order Workflows_ tab.
-1. Click on _Approval Workflow_ field and select from the available options in the drop down.
+1. Click on [_Approval Workflow_](./introduction-to-order-workflows.md) field and select from the available options in the drop down.
 
    ![Approval Workflow](./enabling-or-disabling-order-workflows/images/01.png)
 
-1. To enable the _Transmission Workflow_, click on the _Transmission Workflow_ field and select from the available options in the drop down.
+1. To enable the [_Transmission Workflow_](./introduction-to-order-workflows.md), click on the _Transmission Workflow_ field and select from the available options in the drop down.
 
    ![Transmission Workflow](./enabling-or-disabling-order-workflows/images/02.png)
 

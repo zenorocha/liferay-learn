@@ -26,7 +26,7 @@ After the order has been accepted, there are three options:
 
 * **Cancel**: The order is cancelled and – on the Orders menu – moved automatically from the _Pending_ to the _Completed_ tab. The order cannot be edited again and customers must submit a new order.
 * **Hold**: Processing the order is temporarily halted until additional actions are taken (for example, the store has to restock low inventory or resolve payment issues).
-* **Create Shipment**: The order is ready to be shipped.
+* **Create Shipment**: The order is ready to be [shipped](../shipments/introduction-to-shipments.md).
 
 ![Cancel, Hold, or Create Shipment](./processing-an-order/images/04.png)
 

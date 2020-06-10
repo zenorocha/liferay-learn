@@ -11,7 +11,7 @@ There are five fields:
 | Field | Description |
 | --- | --- |
 | ID | This is the Subscription's ID. |
-| Status | The Status displays the order's status |
+| Status | The Status displays the [order's](../orders/processing-an-order.md) status |
 | Order ID | This is the Order ID that the subscription is based on. |
 | Account ID | The Account ID corresponds to the account that created the subscription. |
 | Account Name | The Account Name corresponds to the account name.||
@@ -99,3 +99,5 @@ The _Payments_ tab tracks the order's payment history.
 * [Processing an Order](../orders/processing-an-order.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
 * [Order Information](../orders/order-information.md)
+* [Products Overview](../../managing-a-catalog/creating-and-managing-products/products/products-overview.md)
+* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
