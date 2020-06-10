@@ -108,7 +108,7 @@ First, you'll post a blog entry.
 
 You can use the schema browser to learn how to post a blog entry. 
 
-![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/blog-posting-schema.png)
+![The schema for any service is published on your Liferay DXP instance.](./consuming-rest-services/images/02.png)
 
 1. Go back to your browser tab containing the schema browser. On the right side, click the `BlogPosting` entry to display its schema (see above). This shows the whole data structure for a `BlogPosting`, but there are only two required fields:
 
