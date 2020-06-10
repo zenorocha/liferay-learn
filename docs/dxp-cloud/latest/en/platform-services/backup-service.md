@@ -18,7 +18,7 @@ For instructions on creating and restoring backups manually, see
 
 The _Backups_ page of a production environment is the primary method of downloading a backup in DXP Cloud. This includes a backup of both the database, and the data volume (including the document library and other files from the Liferay image's file system).
 
-Follow these steps to download a backup of your production intance:
+Follow these steps to download a backup of your production instance:
 
 1. Log into the DXP Cloud console, and navigate to a production environment.
 
@@ -26,7 +26,7 @@ Follow these steps to download a backup of your production intance:
 
     ![Click Backups from the menu on the left from your production environment.](./backup-service/images/02.png)
 
-1. Click the Actions menu for any of the backups listed, then click _Download._
+1. Click the Actions menu for any of the backups listed, then click _Download_.
 
     ![Choose a backup from the list, and click Download.](./backup-service/images/03.png)
 
@@ -34,7 +34,7 @@ Follow these steps to download a backup of your production intance:
 
     ![Download both the database and the data volume for your chosen backup.](./backup-service/images/04.png)
 
-The two downloaded `.tgz` archives comprise the chosen backup. You can now extract and import these into a local Liferay environment to run this backup on your system.
+The two downloaded `.tgz` archives comprise the backup. You can now extract and import these into a local Liferay environment.
 
 You can also download a backup using the download API. See [this section](#download-database-api) for more information.
 
@@ -116,13 +116,9 @@ curl -X POST \
   -F 'volume=@/my-folder/volume.tgz'
 ```
 
-> **Note:** Passing the user token in the header `dxpcloud-authorization` only 
-> works for versions `3.2.0` or greater of the backup service. Previous versions 
-> should be upgraded to at least `3.2.0`. Requests to earlier versions must use 
-> the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. You can find the 
-> project master token by running the command 
-> `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay DXP Cloud 
-> console. 
+```note::
+   Passing the user token in the header ``dxpcloud-authorization`` only works for versions ``3.2.0`` or greater of the backup service. Previous versions should be upgraded to at least ``3.2.0``. Requests to earlier versions must use the header ``Authorization: Bearer <PROJECT_MASTER_TOKEN>``. You can find the project master token by running the command ``env | grep LCP_PROJECT_MASTER_TOKEN`` in any shell in the Liferay DXP Cloud console.
+```
 
 ### Download Database API
 
