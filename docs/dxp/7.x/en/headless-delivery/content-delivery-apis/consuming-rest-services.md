@@ -175,7 +175,7 @@ Liferay DXP returns the full JSON representation of your blog entry:
   "keywords" : [ ],
   "numberOfComments" : 0,
   "relatedContents" : [ ],
-  "siteId" : 20119,
+  "siteId" : 20122,
   "taxonomyCategories" : [ ]
 }
 ```
@@ -248,7 +248,7 @@ This returns a list of blog entries. The entry you added is the only one in the 
     "keywords" : [ ],
     "numberOfComments" : 0,
     "relatedContents" : [ ],
-    "siteId" : 20119,
+    "siteId" : 20122,
     "taxonomyCategories" : [ ]
   } ],
   "lastPage" : 1,
