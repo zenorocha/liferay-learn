@@ -21,12 +21,12 @@ After you create a container in an environment, the container entry point execut
 
 1. **Pre-configure:** [Runs user-provided scripts](./running-scripts-in-containers.md) before configuring Tomcat and DXP.
 1. **Configure:** Prepares for running DXP on Tomcat.
-    1. Set Tomcat's Java runtime environment.
-    1. Copy user-provided files to [Liferay Home](../../reference/liferay-home.md).
+    1. [Set Tomcat's Java runtime environment](./configuring-dxp-containers.md#jvm-options).
+    1. [Copy user-provided files](./configuring-dxp-containers.md) to [Liferay Home](../../reference/liferay-home.md).
     1. [Run user-provided scripts](./running-scripts-in-containers.md).
-    1. Deploy user-provided artifacts.
-    1. Update the Patching Tool with the user-provided version.
-    1. Install user-provided patches.
+    1. [Deploy user-provided artifacts](./installing-apps-and-other-artifacts-to-containers.md).
+    1. [Update the Patching Tool](./patching-dxp-in-docker.md#updating-the-patching-tool) with the user-provided version.
+    1. [Install user-provided patches](./patching-dxp-in-docker.md).
 1. **Pre-startup:** [Runs user-provided scripts](./running-scripts-in-containers.md) before starting Tomcat.
 1. **Tomcat startup:** Launches Tomcat using the Catalina script.
 1. **Post-shutdown:** [Runs user-provided scripts](./running-scripts-in-containers.md) after Tomcat stops.
