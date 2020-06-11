@@ -1,9 +1,9 @@
 # Assigning Users to Roles
 
-The location of a Role's assignment UI is determined by the Role's scope. At first it might seem inconvenient to have these UIs in disparate locations, but consider that
+The location of a Role's assignment UI is determined by the Role's scope. At first it might seem inconvenient to configure Roles in different locations, but consider that
 
-- It wouldn't make sense for a globally scoped Role to be assigned within a site: Liferay DXP has an administrative Control Panel for global actions, so this is the best place for assigning globally scoped Roles.
-- It wouldn't make sense for a Role scoped to a single Site to be assigned in the Control Panel: then Site Administrators would need Control Panel access to do a simple task they're better equipped to do from within the affected site.
+- It wouldn't make sense for a globally scoped Role to be assigned within a Site: Liferay DXP has an administrative Control Panel for global actions, so this is the best place for assigning globally scoped Roles.
+- It wouldn't make sense for a Role scoped to a single Site to be assigned in the Control Panel: then Site Administrators would need Control Panel access for a simple task they can do from within the affected Site.
 
 ## Regular Roles
 
@@ -11,7 +11,7 @@ The location of a Role's assignment UI is determined by the Role's scope. At fir
 | ---------------- | --------- |
 | Throughout the Virtual Instance (global) | User Groups <br />Organizations <br />Sites <br />Segments <br />Individual Users |
 
-Assign Users to a Regular Role in the Assignees tab of the Add/Edit Role form. To make these assignments,
+You can assign Users to a Regular Role in the Assignees tab of the Add/Edit Role form. 
 
 1. Go to Control Panel &rarr; Users &rarr; Roles, and click on a Regular Role.
 
@@ -31,7 +31,7 @@ Assign Users to a Regular Role in the Assignees tab of the Add/Edit Role form. T
 | ---------------- | --------- |
 | A single Site    | User Groups <br />Organizations <br />Segments <br />Individual Site Members |
 
-Assign Users to a Site Role in the Memberships section of a Site's People sub-menu. To make these assignments,
+You can assign Users to a Site Role in the Memberships section of a Site's People sub-menu. 
 
 1. Go to Site Menu &rarr; People &rarr; Memberships.
 
@@ -55,7 +55,7 @@ Assign Users to a Site Role in the Memberships section of a Site's People sub-me
 | ---------------- | --------- |
 | A single Organization | Individual Users |
 
-Assign Users to a Organization Role in the Organizations tab of the Users and Organizations Control Panel section. To make these assignments,
+You can assign Users to a Organization Role in the Organizations tab of the Users and Organizations Control Panel section. 
 
 1. Go to Control Panel &rarr; Users &rarr; Users and Organizations, and click on the _Organizations_ tab.
 
@@ -75,7 +75,7 @@ Assign Users to a Organization Role in the Organizations tab of the Users and Or
 | ---------------- | --------- |
 | A single Asset Library | Organizations <br />User Groups <br /> Individual Users |
 
-Making Role assignments for Asset Libraries is nearly identical to making assignments for Sites: assign Users to an Asset Library Role in the Memberships section of the Asset Library's People sub-menu. To make these assignments,
+Making Role assignments for Asset Libraries is nearly identical to making assignments for Sites: assign Users to an Asset Library Role in the Memberships section of the Asset Library's People sub-menu. 
 
 1. Go to the [Asset Library](../../site-building/understanding-asset-libraries.md) Menu &rarr; People &rarr; Memberships.
 
@@ -95,7 +95,7 @@ Making Role assignments for Asset Libraries is nearly identical to making assign
 | ---------------- | --------- |
 | A single Account | Individual Account Members
 
-Assign Users to an Account Role in the Accounts Control Panel section. To make these assignments,
+You can assign Users to an Account Role in the Accounts Control Panel section. 
 
 1. Go to Control Panel &rarr; Accounts &rarr; Accounts, and click on the Account of interest.
 
@@ -115,7 +115,7 @@ Assign Users to an Account Role in the Accounts Control Panel section. To make t
 | ---------------- | --------- |
 | Throughout the Virtual Instance (global) | All new Users |
 
-By default, new Users receive only the Users Role, but you can manage the default Role associations to add new Roles or remove the User assignment. To make these assignments, 
+By default, new Users receive only the Users Role, but you can manage the default Role associations to add new Roles or remove the User assignment. 
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Instance Settings.
 
