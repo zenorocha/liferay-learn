@@ -20,7 +20,7 @@ Organizations make user management simple. When a user in an organization is re-
 <!-- I'm commenting out the following image because I don't think it clearly depicts how to use organizations to model a sales network. First - it would seem that the image states that "Minium" is the company - and then the company has a sub-org named "Italy". And then "Italy" has sub-orgs per region. I don't think real companies organize like that. The correct model (I think) would be - to make it extremely clear how to understand the image: "Minium Corporation" (Parent Org) > Minium Corporation - Italy Sales Department > [Regions]. Or alternatively: Minium Sales Group > Italy Sales Region > [Regions] - something in the naming to make the hierarchy clearer.
 ![Image 01](./using-organizations-to-create-a-sales-network/images/01.png) -->
 
-Organizing a sales network and accounts exactly as in the real world makes it easy for sales team members to navigate within Liferay Commerce. To learn more about creating and structuring organizations learn more [here](https://learn.liferay.com/dxp-7.x/users-and-permissions/organizations/creating-and-managing-organizations.html).
+Organizing a sales network and accounts exactly as in the real world makes it easy for sales team members to navigate within Liferay Commerce. To learn more about creating and structuring organizations learn more [here](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/creating-and-managing-organizations.html).
 
 ## Define Account Management and Access With Organization Roles and Permissions
 
@@ -44,8 +44,8 @@ Managing Roles and Permissions long-term can be easily accomplished within Lifer
 
 ## Additional Information
 
-* [Creating and Managing Organizations](https://learn.liferay.com/dxp-7.x/users-and-permissions/organizations/creating-and-managing-organizations.html)
-* [Adding a New Organization Type](https://learn.liferay.com/dxp-7.x/users-and-permissions/organizations/adding-a-new-organization-type.html)
+* [Creating and Managing Organizations](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/creating-and-managing-organizations.html)
+* [Adding a New Organization Type](https://learn.liferay.com/dxp/7.x/en/users-and-permissions/organizations/adding-a-new-organization-type.html)
 * [Managing Roles](https://help.liferay.com/hc/en-us/articles/360018174371-Managing-Roles)
 * [Defining Role Permissions](https://help.liferay.com/hc/en-us/articles/360018174391-Defining-Role-Permissions)
 * [Adding Organizations to Accounts](./adding-organizations-to-accounts.md)

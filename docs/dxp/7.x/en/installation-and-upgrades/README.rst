@@ -21,7 +21,7 @@ Installing Liferay on Premises
 -  :doc:`/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle`
 -  :doc:`/installation-and-upgrades/installing-liferay/configuring-a-database`
 -  :doc:`/installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time`
--  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud-latest/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
+-  `Using DXP Cloud <https://learn.liferay.com/dxp-cloud/latest/en/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html>`__
 
 Installing Liferay on an Application Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

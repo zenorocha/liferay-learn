@@ -25,7 +25,7 @@ In this section, we will get an example low stock activity up and running on you
 1. Download and unzip [Acme Commerce Low Stock Activity](./liferay-j1e4.zip).
 
     ```bash
-    curl .https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-j1e4.zip -O
+    curl .https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-j1e4.zip -O
     ```
 
     ```bash

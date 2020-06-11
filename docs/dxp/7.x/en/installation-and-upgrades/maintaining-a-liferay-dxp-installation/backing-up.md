@@ -11,7 +11,7 @@ When considering a back up plan for Liferay DXP, we recommend backing up the fol
 * [Source Code](#source-code)
 
 ```note::
-   DXP Cloud automates and simplifies the process of creating and managing backups of the Document Library and Liferay DXP database. Because DXP Cloud uses a Git-based DevOps pipeline, all configurations for Liferay are also automatically backed up as well. To learn more, see `DXP Cloud Backup Service <https://learn.liferay.com/dxp-cloud-latest/platform-services/backup-service.html>`_ for more information.
+   DXP Cloud automates and simplifies the process of creating and managing backups of the Document Library and Liferay DXP database. Because DXP Cloud uses a Git-based DevOps pipeline, all configurations for Liferay are also automatically backed up as well. To learn more, see `DXP Cloud Backup Service <https://learn.liferay.com/dxp-cloud/latest/en/platform-services/backup-service.html>`_ for more information.
 ```
 
 ## Liferay Home

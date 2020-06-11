@@ -21,7 +21,7 @@ function parse_args_generate_sphinx_input {
     product_name=$1
     version_name=$2
 
-    # Hard-coding the current versions as defaults so we don't have to always
+  # Hard-coding the current versions as defaults so we don't have to always
 	# specify the version
     commerce_default_version="2.x"
     dxp_default_version="7.x"
@@ -29,7 +29,7 @@ function parse_args_generate_sphinx_input {
 
 	language="en"
 
-    # These 4 lines stolen from the function I replaced: clean the build folder,
+  # These 4 lines stolen from the function I replaced: clean the build folder,
 	# call some other scripts, come back to the site folder
 	rm -fr build
 	pushd ../docs
@@ -38,7 +38,7 @@ function parse_args_generate_sphinx_input {
 
     # Deal with each argument we want to accept
     case $product_name in
-        # For each specific product, set the default version name if none is
+    # For each specific product, set the default version name if none is
 		# provided, then populate the input dir with only that product/ver
         "commerce")
             if [[ $version_name == "default" ]]; then
@@ -62,7 +62,7 @@ function parse_args_generate_sphinx_input {
             populate_product_input_dir
         ;;
         "all")
-        # The `for` loops are the same for prod and all, copied form the
+    # The `for` loops are the same for prod and all, copied form the
 		# original version of the script. I could combine them into one case and
 		# just check for "prod" to run the git clean and the upload_to_server;
 		# would be shorter but maybe messier.

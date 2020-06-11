@@ -25,7 +25,7 @@ In this section, we will get an example exchange rate provider up and running on
 1. Download and unzip [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-f2y1.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-f2y1.zip -O
     ```
 
     ```bash

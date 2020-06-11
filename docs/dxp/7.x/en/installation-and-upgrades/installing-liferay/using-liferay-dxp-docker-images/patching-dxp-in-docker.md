@@ -127,7 +127,7 @@ On restarting your container or running a new container, the container entry poi
 
 ## Upgrading the Database for a Patch
 
-If a patch requires upgrading the database, you must upgrade it using the Database Upgrade Tool in a non-containerized environment, such as a [Liferay Tomcat Bundle installation](../installing-a-liferay-tomcat-bundle.md) or [Liferay on an Application Server](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/installing-liferay/installing_liferay_on_an_application_server.html). Please see [Using the Database Upgrade Tool](../../upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.md) for more information.
+If a patch requires upgrading the database, you must upgrade it using the Database Upgrade Tool in a non-containerized environment, such as a [Liferay Tomcat Bundle installation](../installing-a-liferay-tomcat-bundle.md) or [Liferay on an Application Server](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing-liferay/installing_liferay_on_an_application_server.html). Please see [Using the Database Upgrade Tool](../../upgrading-liferay-dxp/upgrade-basics/using-the-database-upgrade-tool.md) for more information.
 
 After the database is upgraded, run your container that uses that database.
 

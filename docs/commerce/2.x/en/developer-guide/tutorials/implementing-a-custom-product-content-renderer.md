@@ -25,7 +25,7 @@ In this section, we will get an example product content renderer up and running 
 1. Download and unzip [Acme Commerce Product Content Renderer](./liferay-q4f7.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-q4f7.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-q4f7.zip -O
     ```
 
     ```bash

@@ -27,7 +27,7 @@ In this section, we will get an example shipping engine up and running on your i
 1. Download and unzip [Acme Commerce Shipping Engine](./liferay-j6x8.zip)
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-j6x8.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-j6x8.zip -O
     ```
 
     ```bash

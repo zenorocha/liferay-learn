@@ -6,7 +6,7 @@ This article documents how to upgrade Liferay Commerce to the latest Commerce ve
 
 If administrators are upgrading both DXP and Commerce, upgrade DXP 7.1 to 7.2 first. To learn more about the DXP upgrade process:
 
-* [Upgrade Overview](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html)
+* [Upgrade Overview](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/upgrading-liferay-dxp/upgrade-basics/upgrade-overview.html)
 
 Once DXP has been successfully upgraded from 7.1 to 7.2, follow the steps below to upgrade Liferay Commerce.
 
@@ -56,7 +56,7 @@ Fix Packs are cumulative in nature and include all previously release fix packs.
     * Commerce Enterprise is available from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
     * Commerce Community is available from the [Liferay Commerce Community Download Page](https://www.liferay.com/downloads-community)
 
-1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/dxp-7.x/system-administration/installing-and-managing-apps/installing-apps.html).
+1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.To learn more about deploying applications to Liferay DXP, see [Installing Apps](https://learn.liferay.com/dxp/7.x/en/system-administration/installing-and-managing-apps/installing-apps.html).
 
 1. Verify that the messages similar to those shown below appear in the application server console:
 
@@ -76,7 +76,7 @@ Fix Packs are cumulative in nature and include all previously release fix packs.
 
 ### Clear Stale Data and Verify the Upgrade Process
 
-1. Delete the `${liferay.home}/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/dxp-7.x/system-administration/installing-and-managing-apps/installing-apps.html).
+1. Delete the `${liferay.home}/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps](https://learn.liferay.com/dxp/7.x/en/system-administration/installing-and-managing-apps/installing-apps.html).
 1. Start the application server.
 1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:
 
@@ -124,5 +124,5 @@ Once reindexing is complete, the upgraded Liferay Commerce instance is ready for
 
 ## Additional Information
 
-* [Installing Apps](https://learn.liferay.com/dxp-7.x/system-administration/installing-and-managing-apps/installing-apps.html)
+* [Installing Apps](https://learn.liferay.com/dxp/7.x/en/system-administration/installing-and-managing-apps/installing-apps.html)
 * [Liferay Commerce Fix Delivery Method](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

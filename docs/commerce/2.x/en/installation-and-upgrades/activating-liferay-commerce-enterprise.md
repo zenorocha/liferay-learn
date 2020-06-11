@@ -11,7 +11,7 @@ The activation key is an `XML` file which is copied to the `{liferay.home}\deplo
 1. [Purchase or add to an existing subscription](https://www.liferay.com/contact-sales) Liferay Commerce Enterprise.
 1. Open a [Help Center](https://liferay-support.zendesk.com/agent/) ticket and request a Liferay Commerce activation key.
 1. The Liferay Provisioning Team will provide an activation key download.
-1. Deploy the activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/liferay-home.html) folder.
+1. Deploy the activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/reference/liferay-home.html) folder.
 1. Verify that a similar activation success message appears in the console:
 
 ```
@@ -48,7 +48,7 @@ Follow these steps to reactivate Liferay Commerce Enterprise:
        While reviewing and removing expired keys be careful to *not* delete any valid keys, including your valid *DXP* specific activation keys.
     ```
 
-1. Deploy the new activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/liferay-home.html) folder.
+1. Deploy the new activation key to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/reference/liferay-home.html) folder.
 
     ```tip::
       You do not have to shut down the application server to deploy or remove activation keys.

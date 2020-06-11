@@ -25,7 +25,7 @@ In this section, we will get an example checkout step up and running on your ins
 1. Download and unzip [Acme Commerce Checkout Step](./liferay-n8n6.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-n8n6.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-n8n6.zip -O
     ```
 
     ```bash

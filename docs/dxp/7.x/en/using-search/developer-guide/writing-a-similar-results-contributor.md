@@ -32,7 +32,7 @@ To get an example `SimilarResultsContributor` up and running on your instance of
 1. Download and unzip the [KB Article Similar Results Contributor example](./liferay-r1s1.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp-7.x/using-search/developer-guide/liferay-r1s1.zip -O
+    curl https://learn.liferay.com/dxp/7.x/en/using-search/developer-guide/liferay-r1s1.zip -O
     ```
 
     ```bash

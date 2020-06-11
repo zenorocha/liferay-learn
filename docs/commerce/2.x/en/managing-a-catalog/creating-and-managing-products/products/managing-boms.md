@@ -77,5 +77,5 @@ To add a folder:
 ## Additional Information
 
 * [Adding SKUs to Your Products](./adding-skus-to-your-products.md)
-* [Adding a Page to a Site](https://learn.liferay.com/dxp-7.x/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
-* [Adding Widgets to a Page](https://learn.liferay.com/dxp-7.x/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)
+* [Adding a Page to a Site](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)
+* [Adding Widgets to a Page](https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/using-widget-pages/adding-widgets-to-a-page.html)

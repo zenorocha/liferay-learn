@@ -23,7 +23,7 @@ In this section, we will get an example order validator up and running on your i
 1. Download and unzip [Acme Commerce Order Validator](./liferay-n9b2.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-n9b2.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-n9b2.zip -O
     ```
 
     ```bash

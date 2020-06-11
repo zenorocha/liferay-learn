@@ -3,7 +3,7 @@
 Liferay Commerce can be configured to send email notifications that are triggered by a variety of store events. Templates are customizable and define the content of an email. A single event can be configured to trigger emails to different target audiences (a customer, a sales agent, an administrator) and use a template specific to each party.
 
 ```note::
-   To use Liferay Commerce's Notifications feature, first configure the Mail settings for Liferay Digital Experience Platform (DXP). See `Connecting to a Mail Server <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
+   To use Liferay Commerce's Notifications feature, first configure the Mail settings for Liferay Digital Experience Platform (DXP). See `Connecting to a Mail Server <https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/setting-up-liferay-dxp/configuring-mail/connecting-to-a-mail-server.html>`_ for more information.
 ```
 
 ## Configuring Store Email Notifications

@@ -25,7 +25,7 @@ In this section, we will get an example tax engine up and running on your instan
 1. Download and unzip [Acme Commerce Tax Engine](./liferay-q4b9.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-q4b9.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-q4b9.zip -O
     ```
 
     ```bash

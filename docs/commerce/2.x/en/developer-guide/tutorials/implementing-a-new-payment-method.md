@@ -25,7 +25,7 @@ In this section, we will get an example payment method up and running on your in
 1. Download and unzip [Acme Commerce Payment Method](./liferay-b1c3.zip).
 
     ```bash
-    curl https://learn.liferay.com/commerce-2.x/developer-guide/tutorials/liferay-b1c3.zip -O
+    curl https://learn.liferay.com/commerce/2.x/en/developer-guide/tutorials/liferay-b1c3.zip -O
     ```
 
     ```bash

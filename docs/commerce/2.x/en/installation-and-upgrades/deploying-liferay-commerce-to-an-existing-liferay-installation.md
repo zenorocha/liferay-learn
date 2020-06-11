@@ -12,7 +12,7 @@ To begin using Liferay Commerce:
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
 
     ```note::
-       To learn more about deploying applications to Liferay DXP, see `Liferay Home <https://learn.liferay.com/dxp-7.x/installation-and-upgrades/reference/liferay-home.html>`_.
+       To learn more about deploying applications to Liferay DXP, see `Liferay Home <https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/reference/liferay-home.html>`_.
     ```
 
 1. (_Subscribers_) Deploy the activation key to the `${liferay.home}/deploy` folder.
