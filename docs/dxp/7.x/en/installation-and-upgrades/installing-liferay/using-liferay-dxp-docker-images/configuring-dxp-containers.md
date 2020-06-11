@@ -133,6 +133,26 @@ You can override a DXP container's Portal Properties using a `portal-ext.propert
 
 The properties are visible in the Control Panel at _Configuration_ &rarr; _Server Administration_ &rarr; _Properties_ &rarr; _Portal Properties_.
 
+### Overriding Image-Defined Environment Variables
+
+Liferay images define some environment variables. Some of them configure internal things, such as your Liferay Home path and the option to start Tomcat in debug mode. The environment variables listed below set [Portal Properties].
+
+```properties
+LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE=0.0.0.0:11311
+LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ADD_PERIOD_SAMPLE_PERIOD_DATA=false
+LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED=false
+LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
+LIFERAY_USERS_PERIOD_REMINDER_PERIOD_QUERIES_PERIOD_ENABLED=false
+```
+
+You can override any image-defined environment variables using `-e [VAR_Name=value]` when running a container.
+
+If TODO
+
+
+
+You can change these via -e param when invoking docker run
+
 ### Overriding DXP Image Env Variable Defaults
 <!-- TODO: Improve the messaging to specify that once a ENV variable is configured, it CANNOT be overriden by a portal.property for the life of the container. -->
 The official Liferay images preconfigure these Env variables ([Portal Properties](../../reference/portal-properties.md)):
