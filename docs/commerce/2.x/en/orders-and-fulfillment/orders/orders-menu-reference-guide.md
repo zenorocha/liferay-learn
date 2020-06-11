@@ -42,11 +42,11 @@ There are three particular fields to note:
 
 ## Processing
 
-To [advance an order](./processing-an-order.md) from _Pending_ to _Processing_, click the _Accept Order_ button.
+To advance an order from _Pending_ to _Processing_, click the _Accept Order_ button.
 
 ![Orders menu - Pending tab](./orders-menu-reference-guide/images/10.png)
 
-As the store begins to [processing the order](./processing-an-order.md), the order is now in the _Processing_ tab.
+As the store begins to processing the order, the order is now in the _Processing_ tab.
 
 ![Orders menu - Pending tab](./orders-menu-reference-guide/images/09.png)
 

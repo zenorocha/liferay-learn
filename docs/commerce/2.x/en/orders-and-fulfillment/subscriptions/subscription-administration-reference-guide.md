@@ -11,7 +11,7 @@ There are five fields:
 | Field | Description |
 | --- | --- |
 | ID | This is the Subscription's ID. |
-| Status | The Status displays the [order's](../orders/processing-an-order.md) status |
+| Status | The Status displays the order's status |
 | Order ID | This is the Order ID that the subscription is based on. |
 | Account ID | The Account ID corresponds to the account that created the subscription. |
 | Account Name | The Account Name corresponds to the account name.||

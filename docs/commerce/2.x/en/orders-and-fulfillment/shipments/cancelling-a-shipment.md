@@ -1,6 +1,6 @@
 # Cancelling a Shipment
 
-If a buyer cancels [an order](../orders/processing-an-order.md) before it is [shipped](./introduction-to-shipments.md), the seller may cancel the shipment in Liferay Commerce. Note that cancelling a shipment does **not** close an order. [Managing an order's status](../orders/processing-an-order.md) is done on the _Orders_ menu in the Control Panel.
+If a buyer cancels [an order](../orders/processing-an-order.md) before it is [shipped](./introduction-to-shipments.md), the seller may cancel the shipment in Liferay Commerce. Note that cancelling a shipment does **not** close an order. Managing an order's status is done on the _Orders_ menu in the Control Panel.
 
 To cancel a shipment:
 

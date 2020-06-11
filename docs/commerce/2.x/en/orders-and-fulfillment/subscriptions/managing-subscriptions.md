@@ -1,8 +1,5 @@
 # Managing Subscriptions
 
-<!---Reviewer's Comment: Consider whether to break up this one article into multiple how-to articles. To me, the article feels long, with section after section. However, when I asked, the article's author (JC) advised against breaking it up because the content is highly sequential, where one part flows to another with very few discrete parts. Perhaps a solution would be to add a bit more connecting-tissue from section to section, so that the reader knows what/why he's looking at a new header.
---->
-
 Subscriptions are a special type of recurring order and are managed differently from [regular orders](../orders/processing-an-order.md). All orders, including Subscriptions, are accepted and processed in the [Orders Menu](../orders/orders-menu-reference-guide.md). However, once a *Subscription* order has been accepted, it is displayed in the [Subscriptions menu](./subscription-administration-reference-guide.md).
 
 ## Fulfilling a Subscription Order
