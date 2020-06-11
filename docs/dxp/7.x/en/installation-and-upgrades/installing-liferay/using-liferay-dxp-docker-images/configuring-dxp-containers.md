@@ -6,6 +6,7 @@ Here are the most common things to configure:
 
 * [JVM Options](#jvm-options)
 * [Portal Properties](#portal-properties)
+* [Image-defined Environment Variables](#image-defined-environment-variables)
 * [System Properties](#system-properties)
 * [System Settings](#system-settings)
 
@@ -133,29 +134,9 @@ You can override a DXP container's Portal Properties using a `portal-ext.propert
 
 The properties are visible in the Control Panel at _Configuration_ &rarr; _Server Administration_ &rarr; _Properties_ &rarr; _Portal Properties_.
 
-### Overriding Image-Defined Environment Variables
+## Image-Defined Environment Variables
 
-Liferay images define some environment variables. Some of them configure internal things, such as your Liferay Home path and the option to start Tomcat in debug mode. The environment variables listed below set [Portal Properties].
-
-```properties
-LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE=0.0.0.0:11311
-LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ADD_PERIOD_SAMPLE_PERIOD_DATA=false
-LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED=false
-LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
-LIFERAY_USERS_PERIOD_REMINDER_PERIOD_QUERIES_PERIOD_ENABLED=false
-```
-
-You can override any image-defined environment variables using `-e [VAR_Name=value]` when running a container.
-
-If TODO
-
-
-
-You can change these via -e param when invoking docker run
-
-### Overriding DXP Image Env Variable Defaults
-<!-- TODO: Improve the messaging to specify that once a ENV variable is configured, it CANNOT be overriden by a portal.property for the life of the container. -->
-The official Liferay images preconfigure these Env variables ([Portal Properties](../../reference/portal-properties.md)):
+Liferay images define several environment variables. Some of the variables configure internal things, such as the [Liferay Home](../../reference/liferay-home.md) path and the option to start Tomcat in debug mode. Other variables set [Portal Properties](../../reference/portal-properties.md). Here are the image-defined environment variables that set Portal Properties.
 
 ```properties
 LIFERAY_MODULE_PERIOD_FRAMEWORK_PERIOD_PROPERTIES_PERIOD_OSGI_PERIOD_CONSOLE=0.0.0.0:11311
@@ -165,46 +146,57 @@ LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
 LIFERAY_USERS_PERIOD_REMINDER_PERIOD_QUERIES_PERIOD_ENABLED=false
 ```
 
-You can override them in one of two ways:
+Environment variables that correspond to Portal Properties are prioritized over Portal Properties file settings.
 
-* Specify it using `-e [VAR_Name=value]`
-* Specify it using a `portal-ext.properties` file.
+All Docker environment variables, including the ones above, are immutable. If you set any environment variables or rely on the Liferay image-defined environment variables, make sure the have the values you want.
 
-#### Overriding an Env Variable Using a Docker Environment Variable
+### Environment Variable Options
 
-You can use a `docker run -e [VAR_NAME=value] ...` command to pass in your new Env variable setting. Example,
+Here are the options for working with image-defined environment variables:
 
-  ```bash
-  docker run -e LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED=true
-  ```
+1. Use the image-defined defaults. They're set automatically.
 
-#### Overriding an Env Variable Using a Portal Property
+1. Override a default value by setting the environment variable when running the container. For example, `docker run -e [variable]=[value] ...`.
 
-You can specify the Env variable using a Portal Property and point the container to it at container creation. Here's an example:
+1. Disable an environment variable by declaring it with no assignment (i.e., no `=` character). Here's the format: `-e [varable]`
 
-1. Create a host folder and a subfolder called `files`:
-
-    ```bash
-    mkdir -p [host folder]/files
+    Disabling an image-defined Portal Property environment variable gives you flexibility to specify the value you want in a [Portal Properties file](#using-a-portal-properties-file) on container startup. For example,
+    
+    ```bash 
+    docker run -e [varable] -v [host folder path]:/mnt/liferay ...
     ```
 
-1. Specify the Env variable assignment using a corresponding _property_ assignment in a `portal-ext.properties` file in the `files` subfolder you created. For example,
+### Example: Working with an Image-Defined Portal Property Environment Variable
 
-    ```bash
-    echo "setup.wizard.enabled=true" >> [host folder]/files/portal-ext.properties
+The following image-defined Portal Property environment variable declares that users don't have to agree to your terms of use. 
+
+```properties
+LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED=false
+```
+
+Here's how to disable it and work with it using a Portal Properties file:
+
+1. Disable the environment variable and set a bind mount for a Portal Properties file:
+
+    ```bash 
+    docker run -e LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED -v $(pwd):/mnt/liferay ... 
     ```
 
-1. Run a new container that specifies the Env variable name and a that specifies a bind mount to your host folder.
+    The terms of use requirement is based on your Portal Properties. The [default Portal Property setting](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html) (search for `LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED`) requires the terms of use:
 
-    ```bash
-    docker run -e LIFERAY_SETUP_PERIOD_WIZARD_PERIOD_ENABLED  -v [host folder path]:/mnt/liferay
+    ```properties
+    terms.of.use.required=true
     ```
 
-    ```note::
-       Please see `Providing Files to the Container <./providing-files-to-the-container.md#bind-mounting-a-host-folder-to-mnt-liferay>`_ for more information on bind mounting to to the container's ``/mnt/liferay`` folder.
+1. Specify the setting you want in a `portal-ext.properties` file that is in your bind mount path. See [using a Portal Properties file](#using-a-portal-properties-file).
+
+    ```bash 
+    echo "terms.of.use.required=false" >> ./files/portal-ext.properties
     ```
 
-Your container is using your new Env variable value.
+1. Restart the container.
+
+The container uses your property setting.
 
 ## System Properties
 
