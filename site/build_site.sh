@@ -70,9 +70,9 @@ function parse_args_generate_sphinx_input {
         # Use loops to populate the input dir with all products and versions
             echo "Building All Products and Versions"
             # Must use the loops to find everything
-            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-					for language in `find ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+            for product_name in `${fnd} ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+                for version_name in `${fnd} ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+					for language in `${fnd} ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
 							echo "Currently Building: $product_name $version_name $language"
 							populate_product_input_dir
 					done
@@ -85,9 +85,9 @@ function parse_args_generate_sphinx_input {
             git clean -dfx .
             popd
             echo "Building All Products and Versions for Production"
-            for product_name in `find ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-                for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-					for language in `find ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+            for product_name in `${fnd} ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+                for version_name in `${fnd} ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+					for language in `${fnd} ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
 							echo "Currently Building: $product_name $version_name $language"
 							populate_product_input_dir
 					done
@@ -136,9 +136,9 @@ function generate_homepage_static_html {
 
 # Loops through the different directories in docs and builds each one as a spearate docs site
 function generate_docs_static_html {
-	for product_name in `find build/input/docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-		for version_name in `find build/input/docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-			for language in `find build/input/docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+	for product_name in `${fnd} build/input/docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+		for version_name in `${fnd} build/input/docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+			for language in `${fnd} build/input/docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
 				echo "Generating static html for $product_name $version_name $language"
 
 				input_path="build/input/docs/${product_name}/${version_name}/${language}"
@@ -164,19 +164,19 @@ function generate_static_html {
 	# Fix broken links.
 	#
 
-	for html_file_name in `find ${output_path} -name *.html -type f`
+	for html_file_name in `${fnd} ${output_path} -name *.html -type f`
 	do
-		sed -i 's/.md"/.html"/g' ${html_file_name}
-		sed -i 's/.md#/.html#/g' ${html_file_name}
-		sed -i 's/README.html"/index.html"/g' ${html_file_name}
-		sed -i 's/README.html#/index.html#/g' ${html_file_name}
+		${sd} -i 's/.md"/.html"/g' ${html_file_name}
+		${sd} -i 's/.md#/.html#/g' ${html_file_name}
+		${sd} -i 's/README.html"/index.html"/g' ${html_file_name}
+		${sd} -i 's/README.html#/index.html#/g' ${html_file_name}
 	done
 
 	#
 	# Rename README.html to index.html.
 	#
 
-	for readme_file_name in `find ${output_path} -name *README.html -type f`
+	for readme_file_name in `${fnd} ${output_path} -name *README.html -type f`
 	do
 		mv ${readme_file_name} $(dirname ${readme_file_name})/index.html
 	done
@@ -185,13 +185,13 @@ function generate_static_html {
 	# Update search references for README.html to index.html.
 	#
 
-	sed -i 's/README"/index"/g' ${output_path}/searchindex.js
+	${sd} -i 's/README"/index"/g' ${output_path}/searchindex.js
 
 	#
 	# Make ZIP files.
 	#
 
-	for zip_dir_name in `find ${input_path} -name *.zip -type d`
+	for zip_dir_name in `${fnd} ${input_path} -name *.zip -type d`
 	do
 		pushd ${zip_dir_name}
 
@@ -216,10 +216,25 @@ function main {
 	# sudo dnf install python3-sphinx
 	#
 
-	python3 -m venv venv
+    if hash python3 2>/dev/null; then
+        python3 -m venv venv
+    else
+        python -m venv ${PWD}/venv
+    fi
 
-	source venv/bin/activate
+    if [[ -d ${PWD}/venv/bin ]]; then
+        source venv/bin/activate
+    else
+        source ${PWD}/venv/scripts/activate
+    fi
 
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        fnd="gfind"
+        sd="gsed"
+    else
+        fnd="find"
+        sd="sed"
+    fi
 	check_utils pip3 zip
 
 	pip_install sphinx recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
@@ -235,6 +250,7 @@ function main {
 	rmdir build/output/homepage
 
 	upload_to_server
+
 }
 
 function pip_install {
