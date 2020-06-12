@@ -76,6 +76,8 @@ Asset-level permissions (for instance, permission to edit an individual blog pos
 
 ## Related Topics
 
-[Role Creation and Management](./creating-and-managing-roles.md)
-[Defining Role Permissions](./defining-role-permissions.md)
-[Assigning Users to Roles](./assigning-user-to-roles.md)
+* [Role Creation and Management](./creating-and-managing-roles.md)
+
+* [Defining Role Permissions](./defining-role-permissions.md)
+
+* [Assigning Users to Roles](./assigning-user-to-roles.md)
