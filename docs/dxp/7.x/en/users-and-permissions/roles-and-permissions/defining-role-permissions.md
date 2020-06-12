@@ -1,6 +1,6 @@
 # Defining Role Permissions
 
-Roles collect permissions, so when Users are given a Role, they receive all the permissions defined by the Role. 
+Roles collect permissions, so when Users are given a Role, they inherit all Role's permissions. 
 
 If you create a Role with permission to access something in the Control Panel, the *View Control Panel Menu* permission is automatically granted.
 
