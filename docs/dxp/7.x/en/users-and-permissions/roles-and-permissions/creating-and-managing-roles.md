@@ -42,7 +42,9 @@ The _Permissions_ entry in a Role's Actions menu (![Actions](../../images/icon-a
 
 By default, every Role, at every scope, can be managed by the _Owner_ Regular Role and the _Administrator_ Regular Role. The Administrator Role doesn't appear in the permissions matrix because its permissions cannot be modified. If you're using the default User in a testing installation, you have this permission at the global scope and can carry out all actions, as well as assign Users and define permissions for a Role.
 
-Be careful about granting these permissions. This is administrative functionality that's best left to a few trusted Users.
+```warning::
+   Be careful about granting these permissions. This is administrative functionality that's best left to a few trusted Users.
+```
 
 ## Deleting Asset Containers Deletes their Assets
 

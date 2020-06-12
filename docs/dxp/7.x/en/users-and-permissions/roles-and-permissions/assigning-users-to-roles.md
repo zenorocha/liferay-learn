@@ -1,11 +1,10 @@
 # Assigning Users to Roles
 
-The location of a Role's assignment UI is determined by the Role's scope. At first it might seem inconvenient to configure Roles in different locations, but consider that
-
-- It wouldn't make sense for a globally scoped Role to be assigned within a Site: Liferay DXP has an administrative Control Panel for global actions, so this is the best place for assigning globally scoped Roles.
-- It wouldn't make sense for a Role scoped to a single Site to be assigned in the Control Panel: then Site Administrators would need Control Panel access for a simple task they can do from within the affected Site.
+The location of a Role's assignment UI corresponds with the [Role's scope](./understanding-roles-and-permissions.md#roles-and-scope).
 
 ## Regular Roles
+
+Globally scoped regular roles are available for configuration in the DXP [Control Panel](../../getting-started/navigating-dxp.md#control-panel).
 
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
@@ -27,11 +26,11 @@ You can assign Users to a Regular Role in the Assignees tab of the Add/Edit Role
 
 ## Site Roles
 
+You can assign Users to a Site Role in the Memberships section of a Site's People sub-menu. 
+
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
 | A single Site    | User Groups <br />Organizations <br />Segments <br />Individual Site Members |
-
-You can assign Users to a Site Role in the Memberships section of a Site's People sub-menu. 
 
 1. Go to Site Menu &rarr; People &rarr; Memberships.
 
@@ -51,11 +50,11 @@ You can assign Users to a Site Role in the Memberships section of a Site's Peopl
 
 ## Organization Roles
 
+You can assign Users to a Organization Role in the Organizations tab of the Users and Organizations Control Panel section. 
+
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
 | A single Organization | Individual Users |
-
-You can assign Users to a Organization Role in the Organizations tab of the Users and Organizations Control Panel section. 
 
 1. Go to Control Panel &rarr; Users &rarr; Users and Organizations, and click on the _Organizations_ tab.
 
@@ -71,11 +70,11 @@ You can assign Users to a Organization Role in the Organizations tab of the User
 
 ## Asset Library Roles
 
+Making Role assignments for Asset Libraries is nearly identical to making assignments for Sites: assign Users to an Asset Library Role in the Memberships section of the Asset Library's People sub-menu. 
+
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
 | A single Asset Library | Organizations <br />User Groups <br /> Individual Users |
-
-Making Role assignments for Asset Libraries is nearly identical to making assignments for Sites: assign Users to an Asset Library Role in the Memberships section of the Asset Library's People sub-menu. 
 
 1. Go to the [Asset Library](../../site-building/understanding-asset-libraries.md) Menu &rarr; People &rarr; Memberships.
 
@@ -91,11 +90,11 @@ Making Role assignments for Asset Libraries is nearly identical to making assign
 
 ## Account Roles
 
+You can assign Users to an Account Role in the Accounts Control Panel section. 
+
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
 | A single Account | Individual Account Members
-
-You can assign Users to an Account Role in the Accounts Control Panel section. 
 
 1. Go to Control Panel &rarr; Accounts &rarr; Accounts, and click on the Account of interest.
 
@@ -111,11 +110,11 @@ You can assign Users to an Account Role in the Accounts Control Panel section.
 
 ## Default User Associations
 
+By default, new Users receive only the Users Role, but you can manage the default Role associations to add new Roles or remove the User assignment. 
+
 | Permission Scope | Available Assignments |
 | ---------------- | --------- |
 | Throughout the Virtual Instance (global) | All new Users |
-
-By default, new Users receive only the Users Role, but you can manage the default Role associations to add new Roles or remove the User assignment. 
 
 1. Navigate to Control Panel &rarr; Configuration &rarr; Instance Settings.
 

@@ -2,13 +2,13 @@
 
 Roles collect permissions, so when Users are given a Role, they receive all the permissions defined by the Role. 
 
-If you create a Role with permission to access something in the Control Panel, keep in mind that the *View Control Panel Menu* permission is automatically granted.
+If you create a Role with permission to access something in the Control Panel, the *View Control Panel Menu* permission is automatically granted.
 
 To determine the permissions to carry out an action within Liferay DXP, iteration is necessary. Add one or two permissions, then test the Role to ensure the behavior you see is what you expected. As you create more Roles, you'll better understand how to combine permissions to accomplish a given task. 
 
 ```tip::
    Assigning a User to the Role and then `Impersonating the User <./../users/adding-and-managing-users.md#impersonating-users>`__ is a good way to see what permissions the User has inherited from the Role.
-``` 
+```
 
 To define permissions for any Role in Liferay DXP,
 
@@ -27,9 +27,10 @@ Of course, the bulk of the work is in choosing the permissions for the Role. Use
 ```note::
    The Roles application in the Control Panel is the main, but not the only place where permissions are configured. You can configure a Role's permissions on a resource at a more granular level. For example, you can configure permissions on a particular widget from its Permissions menu. Permissions granted or removed in the Control Panel override permissions defined at the more granular level.
 ```
-## Defining a User Group Manager
 
-The permissions for a User Group Manager Role must be defined so that assigned [Role Users](./assigning-users-to-roles.md) can act on all User Groups in a Virtual Instance:
+## Example: Defining a User Group Manager
+
+In order to create a new role that can manage User Groups in a Virtual instance, the permissions for a User Group Manager Role must be defined so that assigned [Role Users](./assigning-users-to-roles.md) can act on all User Groups in a Virtual Instance:
 
 - Add Users to any User Group.
 - Remove Users from any User Group.
@@ -67,7 +68,7 @@ Site application permissions affect the application as a whole, throughout the s
 Don't limit yourself to just one category: when defining a custom Role you can mix and match permissions from all of these categories.
 
 ```tip::
-   You can change the scope of a permission: click the *Change* link in the _Scope_ column of the permissions table, then choose a new scope. Click *Save* to see a list of all permissions currently granted to the Role along with their scope. From the Summary view, you can add more permissions or go back to the Role Application default view by clicking on the *Back* (<) icon.
+   You can change the scope of a permission: click the *Change* link in the *Scope* column of the permissions table, then choose a new scope. Click *Save* to see a list of all permissions currently granted to the Role along with their scope. From the Summary view, you can add more permissions or go back to the Role Application default view by clicking on the *Back* (<) icon.
 ```
 
 ![You can fine-tune Role permissions by changing the scope of the permissions.](./defining-role-permissions/images/03.png)

@@ -1,6 +1,6 @@
 # Default Roles Reference
 
-In the Roles administrative application appears a list of all the Roles in Liferay DXP, by scope. Navigate there using Control Panel &rarr; Users &rarr; Roles.
+All roles available in a Liferay DXP installation can be viewed in the Roles administrative application, organized by scope. Navigate there using Control Panel &rarr; Users &rarr; Roles. Roles that are available out of the box are described in detail below.
 
 ![Roles Admin is the hub of permissions management in Liferay DXP.](./default-roles-reference/images/01.png)
 

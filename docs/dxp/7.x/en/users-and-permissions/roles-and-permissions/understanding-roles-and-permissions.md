@@ -14,9 +14,9 @@ To skip straight to creating Roles and assigning Users, see
    `Site Teams <./../../site-building/building-sites/creating-teams-for-sites.md>`_ have a dedicated permissions management User Interface.
 ```
 
-## Roles
+## Roles and Scope
 
-To give Users the permissions they need to perform their intended function within Liferay DXP, you must first mate the set of permissions with a Role.
+To give Users the permissions they need to perform their intended function within Liferay DXP, you must first associate the set of permissions with a Role.
 
 Using a _Message Boards Admin_ Role and a User _Jane Slaughter_ as an example, here are the steps you might follow:
 
@@ -41,9 +41,9 @@ Roles have scope, so they apply at different levels.
 | A single Account | Account   | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles | Individual Account Members
 | A single Asset Library | Asset Library | Site/Library Administration of Asset Library &rarr; People &rarr; Memberships | Organizations <br />User Groups <br /> Individual Users |
 
-Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. It's just less efficient than using collections of Users. Users can also be [automatically](../../system-administration/virtual-instances/configuring-a-virtual-instance-users.md#default-user-associations) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
+Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/virtual-instances/configuring-a-virtual-instance-users.md#default-user-associations) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
 
-### Regular Roles 
+### Regular Roles
 
 Instance scoped Roles are called Regular Roles. These Roles grant permissions globally, or throughout the [Virtual Instance](./../../system-administration/virtual_instances.rst).
 
@@ -76,9 +76,6 @@ Asset-level permissions (for instance, permission to edit an individual blog pos
 
 ## Related Topics
 
-[Role Creation and Management](./creating-and-managing-roles.md) 
-
-[Defining Role Permissions](./defining-role-permissions.md) 
-
-[Assigning Users to Roles](./assigning-user-to-roles.md). 
-
+[Role Creation and Management](./creating-and-managing-roles.md)
+[Defining Role Permissions](./defining-role-permissions.md)
+[Assigning Users to Roles](./assigning-user-to-roles.md)

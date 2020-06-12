@@ -31,6 +31,6 @@ Segments use User data like the *Job Title* field and Organization membership fo
 
 ## Related Information
 
-* [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md)
+* [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)
 * [Getting Analytics for User Segments](./getting-analytics-for-user-segments.md)
 * [Content Page Personalization](../experience-personalization/content-page-personalization.md)

@@ -11,7 +11,7 @@ Using the Segment Builder, you can group similar Users by user profile attribute
 See [Creating and Managing a Segment](./segmentation/creating-and-managing-user-segments.md) to get started.
 
 ```note::
-   User Segments can also be used to assign Roles. See `Assigning Roles to User Segments <../../users-and-permissions/roles-and-permissions/advanced-roles-and-permissions/assigning-roles-to-user-segments.md>`_ for more information.
+   User Segments can also be used to assign Roles. See `Assigning Roles to User Segments <../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md>`_ for more information.
 ```
 
 ### Tracking Behavior of User Segments with Liferay Analytics Cloud
