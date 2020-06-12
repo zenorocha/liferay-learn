@@ -6,8 +6,6 @@ As your Site grows, you'll have many Collections of Page Fragments. You can orga
 * You can export and import them. 
 * You can move and copy Fragments between Collections. 
 
-These functions and more are described below. 
-
 ## Managing Collections of Page Fragments
 
 To access the collections management menu, follow these steps:
@@ -22,9 +20,9 @@ To access the collections management menu, follow these steps:
 
 **Edit**: change the name or description for the collection.
 
-**Export**: Download a `.zip` file containing all Page Fragments in the Collection without exporting any Collection data. To export the Collection with Collection data, select the *Export* option from the Actions Menu next to the *Collections* heading and select a Collection or multiple Collections to export. Each collection exports in a separate `.zip` file.
+**Export**: Download a `.zip` file containing all Page Fragments in the Collection without exporting any Collection data. To export the Collection with Collection data, select the *Export* option from the Actions Menu next to the *Collections* heading and choose one or more Collections to export. Each collection exports in a separate `.zip` file.
 
-**Import**: Select a `.zip` file to upload with additional Page Fragments. If you want to replace an existing collection, make sure the box is checked for *Overwrite Existing Files*. You can import a Collection that was created in Liferay Portal, a Collection created using external tools, or Page Fragments without a Collection.
+**Import**: Select a `.zip` file to upload with additional Page Fragments. If you want to replace an existing collection, make sure the box is checked for *Overwrite Existing Files*. You can import a Collection that was created in Liferay DXP, a Collection created using external tools, or Page Fragments without a Collection.
 
 ```note::
 Exporting and importing Page Fragments is the preferred way to share code or bring it into your Site.
@@ -66,7 +64,7 @@ To access the Page Fragment management menu, follow these steps:
   Copying default Page Fragments is available in Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+.
 ```
 
-You can't edit a default Page Fragment. However, you can copy the default Page Fragment and move it to your custom Collection and edit it there.
+You can't edit a default Page Fragment. However, you can copy the default Page Fragment, move it to your custom Collection, and edit it there.
 
 1. Navigate to the default Page Fragment Collection.
 1. Open the Page Fragment's *Actions* (![Actions](../../../images/icon-actions.png)) Menu and select *Copy To*. 
