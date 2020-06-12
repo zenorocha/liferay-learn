@@ -12,6 +12,30 @@ Using this feature, a service can automatically increase (upscale) the number of
    Auto-scaling is only available for the Liferay DXP service in production environments. For more information on how auto-scaling is charged, see `How Auto-scaling is Charged <https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged->`_.
 ```
 
+## JVM Memory Configuration
+
+For auto-scaling to work properly, it is important to set an appropriate memory allocation for your Liferay image's JVM. This allocation is necessary to allow the memory usage to expand or contract depending on the server's load.
+
+Set the memory allocation using the `-Xms` and `-Xmx` flags, within the `liferay` service's `LIFERAY_JAVA_OPTS` environment variable. The `-Xms` flag sets the initial memory allocation when the service starts, while the `-Xmx` flag determines the maximum memory allocation for the JVM. For example, if you have a total of 16 GB provisioned and available for this service, then you may set the property to the following:
+
+```
+-Xms4096m -Xmx12288m
+```
+
+The recommended configuration is to set the `-Xms` flag using 25% of the available memory, and to set the `-Xmx` flag using 75% of the available memory. See the following table for reference on recommended values, for different levels of memory available to your `liferay` service:
+
+| **Available Memory** | **Recommended LIFERAY_JAVA_OPTS** |
+| --- | --- |
+| 8 GB | -Xms2048m -Xmx6144m |
+| 16 GB | -Xms4096m -Xmx12288m |
+| 24 GB | -Xms6144m -Xmx18432m |
+| 32 GB | -Xms8192m -Xmx24576m |
+| 64 GB | -Xms16384m -Xmx49152m |
+
+```note::
+   The ``LIFERAY_JAVA_OPTS`` variable may sometimes be used with other flags, in addition to ``-Xms`` and ``-Xmx``. If other flags are present, then update the environment variable with the memory arguments without removing the others.
+```
+
 ## Managing Auto-scaling
 
 Follow these steps to enable or disable auto-scaling in the DXP Cloud Management Console:
