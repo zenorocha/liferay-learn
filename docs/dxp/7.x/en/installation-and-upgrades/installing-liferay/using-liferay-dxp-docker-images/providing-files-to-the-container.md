@@ -30,14 +30,6 @@ All of the use cases, except for deploying artifacts and using `.config` files, 
 
 Bind mounts are used in the examples here as they are simpler than volumes for providing files. As you prepare files for mounting to a container, it's helpful to organize them in a way that's easiest for you to manage. Bind mounting to DXP containers, organizing files, and using `docker cp` are covered here.
 
-**Outline:**
-
-* [Bind Mount Format](#bind-mount-format)
-* [Scanned Container Folders](#scanned-container-folders)
-* [Organizing Files for Bind Mounting](#organizing-files-for-bind-mounting)
-* [Bind Mounting a Host Folder to `/mnt/liferay`](#bind-mounting-a-host-folder-to-mnt-liferay)
-* [Using `docker cp`](#copying-files-to-the-container)
-
 ## Bind Mount Format
 
 You can specify any number of bind mounts to a `docker run` command. Each bind mount follows this format:

@@ -10,11 +10,6 @@ At a high level, the container starts Tomcat with DXP deployed on it. Additional
 
 The container provides an API for triggering and configuring these use cases. It executes the use cases in different phases of its lifecycle.
 
-Outline:
-
-* [Lifecycle](#lifecycle)
-* [API](#api)
-
 ## Lifecycle
 
 After you create a container in an environment, the container entry point executes the following lifecycle phases in that environment:
