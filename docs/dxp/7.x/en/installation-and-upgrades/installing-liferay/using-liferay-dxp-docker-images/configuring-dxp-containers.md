@@ -161,8 +161,8 @@ Here are the options for working with image-defined environment variables:
 1. Disable an environment variable by declaring it with no assignment (i.e., no `=` character). Here's the format: `-e [varable]`
 
     Disabling an image-defined Portal Property environment variable gives you flexibility to specify the value you want in a [Portal Properties file](#using-a-portal-properties-file) on container startup. For example,
-    
-    ```bash 
+
+    ```bash
     docker run -e [varable] -v [host folder path]:/mnt/liferay ...
     ```
 
@@ -178,8 +178,8 @@ Here's how to disable it and work with it using a Portal Properties file:
 
 1. Disable the environment variable and set a bind mount for a Portal Properties file:
 
-    ```bash 
-    docker run -e LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED -v $(pwd):/mnt/liferay ... 
+    ```bash
+    docker run -e LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED -v $(pwd):/mnt/liferay ...
     ```
 
     The terms of use requirement is based on your Portal Properties. The [default Portal Property setting](https://docs.liferay.com/portal/7.3-latest/propertiesdoc/portal.properties.html) (search for `LIFERAY_TERMS_PERIOD_OF_PERIOD_USE_PERIOD_REQUIRED`) requires the terms of use:
@@ -190,7 +190,7 @@ Here's how to disable it and work with it using a Portal Properties file:
 
 1. Specify the setting you want in a `portal-ext.properties` file that is in your bind mount path. See [using a Portal Properties file](#using-a-portal-properties-file).
 
-    ```bash 
+    ```bash
     echo "terms.of.use.required=false" >> ./files/portal-ext.properties
     ```
 
