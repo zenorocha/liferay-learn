@@ -36,6 +36,8 @@ The recommended configuration is to set the `-Xms` flag using 25% of the availab
    The ``LIFERAY_JAVA_OPTS`` variable may sometimes be used with other flags, in addition to ``-Xms`` and ``-Xmx``. If other flags are present, then update the environment variable with the memory arguments without removing the others.
 ```
 
+See [Defining Environment Variables](../reference/defining-environment-variables.md) for help adding this environment variable to your `liferay` service.
+
 ## Managing Auto-scaling
 
 Follow these steps to enable or disable auto-scaling in the DXP Cloud Management Console:
