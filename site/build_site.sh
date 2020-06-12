@@ -16,6 +16,7 @@ function check_utils {
 
 # This deals with the arguments for product names and versions, calling the
 # populate_product_input_dir method for the handled product(s)
+
 function parse_args_generate_sphinx_input {
 
     product_name=$1
@@ -23,64 +24,76 @@ function parse_args_generate_sphinx_input {
 
   # Hard-coding the current versions as defaults so we don't have to always
 	# specify the version
+
     commerce_default_version="2.x"
     dxp_default_version="7.x"
     dxp_cloud_default_version="latest"
 
-	language="en"
+	  language="en"
 
-  # These 4 lines stolen from the function I replaced: clean the build folder,
-	# call some other scripts, come back to the site folder
-	rm -fr build
-	pushd ../docs
-    ./update_examples.sh && ./update_permissions.sh
-	popd
+    # These 4 lines stolen from the function I replaced: clean the build folder,
+    # call some other scripts, come back to the site folder
+
+    rm -fr build
+
+    pushd ../docs
+      ./update_examples.sh && ./update_permissions.sh
+    popd
 
     # Deal with each argument we want to accept
+
     case $product_name in
+
     # For each specific product, set the default version name if none is
 		# provided, then populate the input dir with only that product/ver
-        "commerce")
-            if [[ $version_name == "default" ]]; then
-              version_name=${commerce_default_version}
-            fi
-            echo "Building $product_name $version_name $language"
-            populate_product_input_dir
-        ;;
-        "dxp")
-            if [[ $version_name == "default" ]]; then
-              version_name=${dxp_default_version}
-            fi
-            echo "Building $product_name $version_name $language"
-            populate_product_input_dir
-        ;;
-        "dxp-cloud")
-            if [[ $version_name == "default" ]]; then
-              version_name=${dxp_cloud_default_version}
-            fi
-            echo "Building $product_name $version_name $language"
-            populate_product_input_dir
-        ;;
-        "all")
+
+      "commerce")
+          if [[ $version_name == "default" ]]; then
+            version_name=${commerce_default_version}
+          fi
+          echo "Building $product_name $version_name $language"
+          populate_product_input_dir
+      ;;
+      "dxp")
+          if [[ $version_name == "default" ]]; then
+            version_name=${dxp_default_version}
+          fi
+          echo "Building $product_name $version_name $language"
+          populate_product_input_dir
+      ;;
+      "dxp-cloud")
+          if [[ $version_name == "default" ]]; then
+            version_name=${dxp_cloud_default_version}
+          fi
+          echo "Building $product_name $version_name $language"
+          populate_product_input_dir
+      ;;
+      "all")
+
     # The `for` loops are the same for prod and all, copied form the
 		# original version of the script. I could combine them into one case and
 		# just check for "prod" to run the git clean and the upload_to_server;
 		# would be shorter but maybe messier.
 		#
-        # Use loops to populate the input dir with all products and versions
-            echo "Building All Products and Versions"
-            # Must use the loops to find everything
-            for product_name in `${fnd} ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-                for version_name in `${fnd} ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-					for language in `${fnd} ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
-							echo "Currently Building: $product_name $version_name $language"
-							populate_product_input_dir
-					done
-                done
-            done
-        ;;
-        "prod")
+    # Use loops to populate the input dir with all products and versions
+
+        echo "Building All Products and Versions"
+
+          # Must use the loops to find everything
+
+        for product_name in `${fnd} ../docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+            for version_name in `${fnd} ../docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+        for language in `${fnd} ../docs/${product_name}/${version_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
+            echo "Currently Building: $product_name $version_name $language"
+            populate_product_input_dir
+        done
+              done
+          done
+      ;;
+      "prod")
+
         # Same as "all" plus a git clean, and a todo for the upload_to_server stuff
+
             pushd ../docs
             git clean -dfx .
             popd
@@ -93,10 +106,14 @@ function parse_args_generate_sphinx_input {
 					done
                 done
             done
+
             # TODO: upload_to_server should somehow only be called for the "prod" case, after html is generated.
+
         ;;
         *)
+
         # Handle invalid args: because I'm passing defaults (all default), this only gets called if an unhandled case gets passed
+
             echo "You must enter at least one argument: product_name"
             echo "Product name options: all | prod | commerce | dxp | dxp-cloud"
             exit 1
@@ -104,14 +121,17 @@ function parse_args_generate_sphinx_input {
     esac
 
     # this was in the original script
+
 	rsync -a homepage/* build/input/homepage --exclude={'*.json','node_modules'}
 }
 
 # Sets up an input directory for sphinx-build to generate separate sites for each of the product versions
+
 function populate_product_input_dir {
 	input_path="build/input/docs/${product_name}/${version_name}/${language}"
 
 	# Don't copy directory into input path if contents.rst does not exist
+
 	if [ ! -f "../docs/${product_name}/${version_name}/${language}/contents.rst" ]; then
 		echo "Skipping since docs/${product_name}/${version_name}/${language}/contents.rst does not exist"
 		return
@@ -125,6 +145,7 @@ function populate_product_input_dir {
 }
 
 # Generates the static HTML for the homepage
+
 function generate_homepage_static_html {
 	echo "Generating static html for homepage"
 
@@ -135,6 +156,7 @@ function generate_homepage_static_html {
 }
 
 # Loops through the different directories in docs and builds each one as a spearate docs site
+
 function generate_docs_static_html {
 	for product_name in `${fnd} build/input/docs -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
 		for version_name in `${fnd} build/input/docs/${product_name} -maxdepth 1 -mindepth 1 -type d -printf "%f\n"`; do
@@ -151,7 +173,9 @@ function generate_docs_static_html {
 }
 
 # Generates the static HTML for a single site
+
 function generate_static_html {
+
 	#
 	# Use Sphinx to generate static HTML.
 	#
@@ -235,6 +259,7 @@ function main {
         fnd="find"
         sd="sed"
     fi
+
 	check_utils pip3 zip
 
 	pip_install sphinx recommonmark sphinx-intl sphinx-copybutton sphinx-markdown-tables sphinx-notfound-page
