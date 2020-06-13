@@ -28,12 +28,8 @@ The seller completes the remaining steps to deliver the ordered products to the 
 
 **Note 1**: [Order Workflows](../order-workflows/introduction-to-order-workflows.md) may be implemented that alter or add additional steps to the workflow outlined above.
 
-* [Orders Menu](./orders-menu-reference-guide.md)
-* [Order Information](./order-information.md)
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
-* [Order Management Statuses Reference Guide](./order-management-statuses-reference-guide.md)
-* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
-* [Approving/Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
+* [Processing an Order](./processing-an-order.md)
+* [Orders Menu](./orders-menu-reference-guide.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
 * [Store Emails](../../store-administration/sending-emails/store-emails.md)
-* [Processing an Order](./processing-an-order.md)

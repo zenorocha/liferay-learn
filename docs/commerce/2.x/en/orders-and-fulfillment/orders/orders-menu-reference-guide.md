@@ -86,7 +86,7 @@ The _Pending_ tab serves as a holding place for orders – this is helpful for b
 
 ### Transmitted
 
-In this tab, the order activity is exclusively on the seller's side. The seller transmits a _Pending_ order by [changing the order status](./processing-an-order.md#commerce-20-and-below) (manually or via automation) from the “_To Transmit_” status to any other order status. At this point, the order moves to the _Transmitted_ tab and, if configured, is sent to an external system, such as Microsoft’s Dynamics GP, Oracle’s NetSuite, or SAP. The seller may then proceed with [delivery]() of the ordered products to the buyer. Additional information may also be added to the order, such as an updated [order status](./order-management-statuses-reference-guide.md), [shipping information](../shipments/introduction-to-shipments.md) and estimated arrival time.
+In this tab, the order activity is exclusively on the seller's side. The seller transmits a _Pending_ order by [changing the order status](./processing-an-order.md#commerce-20-and-below) (manually or via automation) from the “_To Transmit_” status to any other order status. At this point, the order moves to the _Transmitted_ tab and, if configured, is sent to an external system, such as Microsoft’s Dynamics GP, Oracle’s NetSuite, or SAP. The seller may then proceed with delivery of the ordered products to the buyer. Additional information may also be added to the order, such as an updated [order status](./order-management-statuses-reference-guide.md), [shipping information](../shipments/introduction-to-shipments.md) and estimated arrival time.
 
 ![Transmitted Tab](./orders-menu-reference-guide/images/04.png "Transmitted Tab")
 
@@ -94,7 +94,6 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](./processing-an-order.md)
 * [Order Management Statuses Reference Guide](./order-management-statuses-reference-guide.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)

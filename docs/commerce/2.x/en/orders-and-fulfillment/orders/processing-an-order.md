@@ -69,8 +69,7 @@ See the [Creating a New Shipment on Liferay Commerce 2.0 and Below](../shipments
 ## Additional Information
 
 * [Introduction to Orders Workflows](../order-workflows/introduction-to-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
-* [Inventory Administration Reference Guide](../../managing-a-catalog/managing-inventory/inventory-administration-reference-guide.md)
-* [Subscription Administration Reference Guide](../subscriptions/subscription-administration-reference-guide.md)
+* [Managing Subscriptions](../subscriptions/managing-subscriptions.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+* [Inventory Administration Reference Guide](../../managing-a-catalog/managing-inventory/inventory-administration-reference-guide.md)

@@ -96,7 +96,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 ## Additional Information
 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
-* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](./processing-an-order.md)
+* [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)

@@ -37,8 +37,7 @@ The _Emails_ tab contains all the [communications](../../store-administration/se
 ## Additional Information
 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
-* [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)
-* [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)
+* [Orders Menu Reference Guide](./orders-menu-reference-guide.md)
 * [Managing Payment Methods](../../store-administration/configuring-payment-methods/managing-payment-methods.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
 * [Store Emails](../../store-administration/sending-emails/store-emails.md)
