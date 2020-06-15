@@ -10,9 +10,9 @@ This takes the user automatically to the Shipments menu to finish processing the
 
 ## Processing
 
-![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
-
 Once all the items and the sourcing warehouse chosen, the order is ready to ship. Here, you can view additional details such as the carrier, tracking number, and estimated delivery date.
+
+![Shipments Menu - Finish Processing](./introduction-to-shipments/images/05.png)
 
 ## Ready to Ship
 

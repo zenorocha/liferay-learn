@@ -91,5 +91,4 @@ To configure subscriptions:
 * [Enabling Subscriptions for a Product](../../managing-a-catalog/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
-* [Creating a Shipment](../shipments/creating-a-shipment.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)

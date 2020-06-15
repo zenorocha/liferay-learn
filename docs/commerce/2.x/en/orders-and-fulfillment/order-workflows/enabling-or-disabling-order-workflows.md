@@ -55,5 +55,4 @@ Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [
 * [Approving or Rejecting Orders in Order Workflows](approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](../orders/processing-an-order.md)
 * [Order Life Cycle](../orders/order-life-cycle.md)
-* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
 * [Order Management Statuses Reference Guide](../orders/order-management-statuses-reference-guide.md)

@@ -28,10 +28,8 @@ If both _Approval Workflow_ and _Transmission Workflow_ are enabled, then the ad
 
 ## Additional Information
 
-* [Order Life Cycle](../orders/order-life-cycle.md)
 * [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)
 * [Processing an Order](../orders/processing-an-order.md)
-* [Orders Menu Reference Guide](../orders/orders-menu-reference-guide.md)
-* [Order Management Statuses Reference Guide](../orders/order-management-statuses-reference-guide.md)
 * [Introduction to Shipments](../shipments/introduction-to-shipments.md)
+* [Order Life Cycle](../orders/order-life-cycle.md)
