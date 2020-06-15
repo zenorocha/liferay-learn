@@ -4,7 +4,7 @@ Personalizing Site Experience
 .. toctree::
    :maxdepth: 3
 
-   personalizing-site-experience/introduction-to-personalizing-site-experience.md
+   personalizing-site-experience/personalizing-site-experience.md
    personalizing-site-experience/segmentation.rst
    personalizing-site-experience/experience_personalization.rst
 

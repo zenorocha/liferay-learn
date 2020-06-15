@@ -30,13 +30,13 @@ Once you've [created User Segments](./segmentation/creating-and-managing-user-se
 
 Content Page Personalization dynamically changes the page layout and content based on who is viewing the page. You can create *Experiences* for any [Content Page](../creating-pages/building-and-managing-content-pages/building-content-pages.md) which provide different text, images, widgets, and even different layouts based on the User Segment criteria of the User viewing the page. See [Content Page Personalization](./experience-personalization/content-page-personalization.md) for more information.
 
-![You can create unique experiences for different segments of Users.](./introduction-to-personalizing-site-experience/images/02.png)
+![You can create unique experiences for different segments of Users.](./personalizing-site-experience/images/02.png)
 
 ### Content Sets
 
 Content Sets <!-- Link to Content Sets documentation placeholder --> organize and display content. Content Set Personalization provides selection of Content Sets based on User Segments. This means the Content Set which displays in a given context is determined by the User Segment criteria. For example, you could use a Content Set to display "featured" articles at the top of a page. Then you could create User Segments containing users who should receive more specialized content, rather than the default. Those Segments would then see content personalized to their interest rather than the default. See [Content Set Personalization](./experience-personalization/content-set-personalization.md) for more information.
 
-![You can personalize Content Sets to display assets for specific User Segments.](./introduction-to-personalizing-site-experience/images/03.png)
+![You can personalize Content Sets to display assets for specific User Segments.](./personalizing-site-experience/images/03.png)
 
 ### Previewing User Experiences
 
@@ -44,7 +44,7 @@ You can preview the different experiences that users can have on a page by click
 
 Viewing the perspective of a User Segment previews any personalizations for Content Pages or Content Sets for that User Segment.
 
-![You can preview different experiences from the Preview Panel.](./introduction-to-personalizing-site-experience/images/04.png)
+![You can preview different experiences from the Preview Panel.](./personalizing-site-experience/images/04.png)
 
 ## Next Steps
 
