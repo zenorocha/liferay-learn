@@ -68,16 +68,12 @@ docker cp [container]:/opt/liferay/logs/liferay.[timestamp].log .
 
 ## Stopping a Container
 
-The most graceful way to stop the container:
+Here are two ways to stop the container.
 
-```bash
-docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh
-```
-<!-- what are the reasons for and against each method? -->
-Here are the fastest ways to stop the container:
-
-* `Ctrl-C`: This sends a [`SIGINT` or `SIGKILL` signal to an attached container](https://docs.docker.com/engine/reference/commandline/attach/#extended-description) (a container started with the `-it` argument).
-* `docker kill [container]`: This sends a `KILL` signal to the container.
+| Method | Pros | Cons |
+| :----- | :--- | :--- |
+| `docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh` | Allows DXP, Tomcat, and other apps to free resources. The container entry point runs any [post-shutdown scripts](./dxp-container-lifecycle-and-api.md#post-shutdown-phase-api). | |
+| `Ctrl-C` in the terminal session where you are running with the `-i` argument.<br><br>Note, this sends a [`SIGINT` or `SIGKILL` signal to the attached container](https://docs.docker.com/engine/reference/commandline/attach/#extended-description). | Fastest method to stop the container. | DXP, Tomcat, and the container entry point stop immediately, without freeing resources. The entry point's [post-shutdown phase](./dxp-container-lifecycle-and-api.md#post-shutdown-phase-api) is skipped. Don't use this method in production environments |
 
 ## Restarting a Container
 
