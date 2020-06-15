@@ -115,8 +115,45 @@ Perform the following steps to upgrade:
 
 Your repository is now reorganized into a structure where the `liferay` folder is a Liferay Workspace, and your services are upgraded to 4.x.x.
 
+## Verify CI Service's Environment Variables
+
+The environment variables within your project's `ci/LCP.json` file may now behave differently after you have completed the service stack upgrade. Before continuing with your upgraded project, make sure that your `ci` service's environment variables reflect the correct configuration.
+
+Verify that the following properties are set up correctly for your project's integration with version control (in this example, using GitHub):
+
+```json
+{
+    "LCP_CI_SCM_PROVIDER": "github",
+    "LCP_CI_SCM_REPOSITORY_OWNER": "OWNER_NAME",
+    "LCP_CI_SCM_REPOSITORY_NAME": "PROJECT_NAME",
+    "LCP_CI_SCM_TOKEN": "AUTH_TOKEN",
+}
+```
+
+Since a default Jenkinsfile is [no longer required](./dxp-cloud-project-changes-in-version-4.md#ci-service-changes) in your project, the Jenkinsfile at the root of your project may also be removed after the upgrade. If you intend to use the default Jenkinsfile for your project, ensure that the `ci` services environment variables reflect this:
+
+```json
+{
+    "LCP_CI_USE_DEFAULT_JENKINSFILE": "true",
+    "LCP_CI_SCM_JENKINSFILE_HOOKS_DIR": "ci/",
+}
+```
+
+```note::
+   You must define the ``LCP_CI_SCM_JENKINSFILE_HOOKS_DIR`` variable if you want to use hooks to extend the default Jenkinsfile.
+```
+
+If you are defining your own Jenkinsfile within your `ci` service directory to override the default, then ensure your environment variables instead look like this:
+
+```json
+{
+    "LCP_CI_USE_DEFAULT_JENKINSFILE": "false",
+    "LCP_CI_SCM_JENKINSFILE_PATH": "ci/Jenkinsfile",
+}
+```
+
 ## Next Steps
 
-After your local repository has changed, you may want to [deploy the new service versions](../build-and-deploy/walking-through-the-deployment-life-cycle.md) to a development environment.
+After your local repository has changed, use the [CI tool](./command-line-tool.md)'s `lcp deploy` command to deploy your `ci` service to the `infra` environment. This ensures that the changes to the `ci` service are deployed first, which will allow further changes to deploy correctly.
 
-You may also want to explore some of the new functionality in the new versions of your DXP Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
+You may then want to [deploy the new service versions](../build-and-deploy/walking-through-the-deployment-life-cycle.md) to a development environment, or explore some of the new functionality in the new versions of your DXP Cloud services. See the [explanation of the changes](./dxp-cloud-project-changes-in-version-4.md) to learn more.
