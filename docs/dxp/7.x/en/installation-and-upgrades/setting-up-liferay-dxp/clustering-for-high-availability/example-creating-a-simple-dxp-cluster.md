@@ -419,7 +419,7 @@ The DXP cluster node containers will have this configuration:
 | AJP port mapping | `8009:8009` | `9009:8009` |
 | HTTP port mapping | `8080:8080` | `9080:8080` |
 | OSGi container port mapping | ``11311:11311`` | `11312:11311` |
-| Volume bind mount | `${PWD}/dxp-1/files:/mnt/liferay` | `${PWD}/dxp-2/files:/mnt/liferay` |
+| Volume bind mount | `${PWD}/dxp-1:/mnt/liferay` | `${PWD}/dxp-2:/mnt/liferay` |
 
 The host ports are mapped to container ports. The unique host ports prevent collisions on the host. The container ports need only be unique within each container, and can therefore be the same on each node (e.g., each container uses the `8080` as its web server HTTP port). Remember that the example proxy server and load balancer directs requests to containers via each container's HTTP port. Here's a proxy configuration excerpt from the `httpd.conf` file:
 
@@ -440,7 +440,7 @@ It's time to start the DXP cluster nodes:
 1. Start `dxp-1`:
 
     ```bash
-    docker run -it --name dxp-1 --network my-bridge -p 8009:8009 -p 8080:8080 -p 11311:11311 -v ${PWD}/dxp-1/files:/mnt/liferay liferay/portal:7.3.1-ga2
+    docker run -it --name dxp-1 --network my-bridge -p 8009:8009 -p 8080:8080 -p 11311:11311 -v ${PWD}/dxp-1:/mnt/liferay liferay/portal:7.3.1-ga2
     ```
 
     As DXP finishes stating up, it prints JGroups cluster messages like these to the console:
@@ -474,7 +474,7 @@ It's time to start the DXP cluster nodes:
 1. Start `dxp-2`:
 
     ```bash
-    docker run -it --name dxp-2 --network my-bridge -p 9009:8009 -p 9080:8080 -p 11312:11311 -v ${PWD}/dxp-2/files:/mnt/liferay liferay/portal:7.3.1-ga2
+    docker run -it --name dxp-2 --network my-bridge -p 9009:8009 -p 9080:8080 -p 11312:11311 -v ${PWD}/dxp-2:/mnt/liferay liferay/portal:7.3.1-ga2
     ```
 
     As the `dxp-2` node starts, the `dxp-1` prints cluster messages like these to the console:
