@@ -75,7 +75,9 @@ If you need help creating, cloning, and pushing repositories, see [Bitbucket's d
 
 ## Generating App Password for BitBucket
 
-Next, create an access token that will be used by the Webhook to trigger Jenkins builds:
+Next, create an app password that will be used by the Webhook to authenticate with Bitbucket and trigger Jenkins builds. Note that the Bitbucket user that generates the app password **must** have admin-level access to the repository.
+
+Perform the following steps to generate an app password:
 
 1. From your user settings page, under _Access Management_ click _App passwords_.
 
