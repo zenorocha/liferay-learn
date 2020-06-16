@@ -96,6 +96,10 @@ Next, create an access token that will be used by the Webhook to trigger Jenkins
 
 1. Copy the app password (you won't see it again otherwise). This is BitBucket's equivalent of a personal access token.
 
+```important::
+   The user that generated the app password must use their username for the ``LCP_CI_SCM_USERNAME`` environment variable.
+```
+
 ## Connecting BitBucket to Your Jenkins service
 
 Lastly, set environment variables in the Jenkins service's to point to your new repository:
@@ -104,7 +108,7 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 1. Navigate to the _Environment Variables_ tab.
 
-1. Configure the following environment variables:
+1. Configure the following environment variables (defining `LCP_CI_SCM_USERNAME` as the user that [generated the app password](#generating-app-password-for-bitbucket)):
 
 | Name | Value |
 | ---  | ---   |
@@ -112,6 +116,7 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | `LCP_CI_SCM_REPOSITORY_OWNER` | [repo_owner] |
 | `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
 | `LCP_CI_SCM_TOKEN` | [app_password] |
+| `LCP_CI_SCM_USERNAME` | [auth_username] |
 
 After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in your new repository should now trigger.
 
