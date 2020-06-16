@@ -63,3 +63,4 @@ By default, the services in DXP Cloud are pre-configured in order to fit a major
 ## Additional Information
 
 * [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md)
+* [Understanding Deployment Strategies](./understanding-deployment-strategies.md)
