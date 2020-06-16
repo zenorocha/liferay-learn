@@ -108,7 +108,7 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 
 1. Navigate to the _Environment Variables_ tab.
 
-1. Configure the following environment variables (defining `LCP_CI_SCM_USERNAME` as the user that [generated the app password](#generating-app-password-for-bitbucket)):
+1. Configure the following environment variables:
 
 | Name | Value |
 | ---  | ---   |
@@ -117,6 +117,8 @@ Lastly, set environment variables in the Jenkins service's to point to your new 
 | `LCP_CI_SCM_REPOSITORY_NAME` | [repo_name] |
 | `LCP_CI_SCM_TOKEN` | [app_password] |
 | `LCP_CI_SCM_USERNAME` | [auth_username] |
+
+Define `LCP_CI_SCM_USERNAME` as the user that [generated the app password](#generating-app-password-for-bitbucket).
 
 After updating these environment variables, the Jenkins service will restart. Any pushed branches and pull requests in your new repository should now trigger.
 
