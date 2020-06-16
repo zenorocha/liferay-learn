@@ -123,5 +123,5 @@ As of Liferay Portal CE 7.3 GA2, [Workflow](../../../process-automation/workflow
 ## Related Information
 
 * [Building Content Pages](./building-content-pages.md)
-* [Page Fragments](../../displaying-content/using-fragments/page-fragments-intro.md)
+* [Page Fragments](../../displaying-content/using-fragments/using-page-fragments.md)
 * [Using Fragment Comments](./using-fragment-comments.md)

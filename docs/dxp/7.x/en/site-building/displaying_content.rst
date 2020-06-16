@@ -11,5 +11,5 @@ Displaying Content
    displaying-content/using_fragments.rst
    displaying-content/customizing_widgets.rst
 
-.. include:: /site-building/03-displaying-content/README.rst
+.. include:: /site-building/displaying-content/README.rst
    :start-line: 2

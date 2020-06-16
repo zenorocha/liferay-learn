@@ -15,7 +15,15 @@ Coming soon!
 
 Using Fragments
 ---------------
-* [Using Page Fragments](./using-fragments/using-page-fragments.md)
+
+-  :doc:`/site-building/displaying-content/using-fragments/using-page-fragments`
+-  :doc:`/site-building/displaying-content/using-fragments/managing-page-fragments`
+-  :doc:`/site-building/displaying-content/using-fragments/propagating-page-fragment-changes`
+
+Customizing Widgets
+-------------------
+
+-  :doc:`/site-building/displaying-content/customizing-widgets/styling-widgets-with-widget-templates`
 
 Configuring Content Recommendations
 -----------------------------------

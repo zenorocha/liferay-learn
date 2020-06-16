@@ -10,26 +10,28 @@ By default, updates made to Page Fragments don't automatically appear on the [Co
 
 1. Open the _Actions_ menu (![Actions](../../../images/icon-actions.png)) for the Page Fragment and select _View Usages_.
 
-```note::
-  You can propagate changes from global Page Fragments to their usages on child Sites. Select *View Site Usages* from the Page Fragment's Actions Menu in the Global Site.
-```
+    ```note::
+      You can propagate changes from global Page Fragments to their usages on child Sites. Select *View Site Usages* from the Page Fragment's Actions Menu in the Global Site.
+    ```
 
-1. From the _Usages and Propagation_ page, select the Content Page(s), Content Page Template(s), and Display Page(s) where Page Fragment changes should propagate. You can use the various filters and selection options to apply updates to pages quickly. 
+1. From the _Usages and Propagation_ page, select the Content Page(s), Content Page Template(s), and Display Page(s) where Page Fragment changes should propagate. You can use the various filters and selection options to apply updates to pages quickly.
 
-![The Usages and Propagation page shows the pages updated by the propagation.](./propagating-page-fragment-changes/images/01.png)
+    ![The Usages and Propagation page shows the pages updated by the propagation.](./propagating-page-fragment-changes/images/01.png)
 
 1. Click the _Propagate_ icon (![Propagate](../../../images/icon-propagate.png)) to propagate your changes.
 
 ```note::
-  Changes to existing ``editable`` fields are not propagated since this overwrites content currently in Content Pages. To force propagation to content in an ``editable`` field, you must change the field ID. Content created in that field no longer appears in the Content Page when the changes are propagated, but it remains in the database and can be retrieved using the old ID.
+   Changes to existing ``editable`` fields are not propagated since this overwrites content currently in Content Pages. To force propagation to content in an ``editable`` field, you must change the field ID. Content created in that field no longer appears in the Content Page when the changes are propagated, but it remains in the database and can be retrieved using the old ID.
 ```
 
 ## Enabling Automatic Page Fragment Propagation
 
-During development testing, manually propagating Page Fragment changes can be tedious. For development purposes, since Liferay DXP 7.2 SP1+ and Liferay Portal CE GA2+, you can enable automatic Page Fragment propagation.
+> Availability: Liferay DXP 7.2 SP1+ and Liferay Portal CE GA2+
 
-```note::
-  Automatic Page Fragment propagation should only be enabled for development testing, as automatic propagation can lead to unintended consequences in the production environment, such as typos or inaccurate content being published. Automatic propagation only works for HTML, CSS, and JavaScript Page Fragment code, not the editable values.
+During development testing, manually propagating Page Fragment changes can be tedious. For development purposes, you can enable automatic Page Fragment propagation.
+
+```warning::
+   Automatic Page Fragment propagation should only be enabled for development testing, as automatic propagation can lead to unintended consequences in the production environment, such as typos or inaccurate content being published. Automatic propagation only works for HTML, CSS, and JavaScript Page Fragment code, not the editable values.
 ```
 
 Follow these steps to enable automatic Page Fragment propagation:
