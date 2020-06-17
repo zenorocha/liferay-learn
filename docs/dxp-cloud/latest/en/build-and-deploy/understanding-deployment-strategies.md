@@ -24,7 +24,9 @@ By default, the services in DXP Cloud are pre-configured to use the `RollingUpda
 ```json
 {
     "id": "myservice",
-    "strategy": "Recreate"
+    "strategy": {
+        "type": "Recreate"
+    }
 }
 ```
 

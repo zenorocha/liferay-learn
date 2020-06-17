@@ -18,7 +18,7 @@ This table lists and describes the properties you can add in `LCP.json`:
 | `livenessProbe` | Object | `{"timeoutSeconds": 5}` | Service liveness check |
 | `dependencies` | Array | `[]` | Dependency deployment order |
 | `kind` | String | `Deployment` | Deployment type (e.g, Deployment or StatefulSet) |
-| `strategy` | String | `RollingUpdate` | Deployment strategy (e.g, RollingUpdate or Recreate) |
+| `strategy` | Object | `{ "type": "RollingUpdate" }` | Deployment strategy (e.g, RollingUpdate or Recreate) |
 | `ports` | Array | `[]` | Declaration of ports and protocols |
 | `environments` | Object | `{}` | Environment-specific configurations |
 | `deploy` | Boolean | `true` | Whether the service will be deployed for the specified environment. Only use this property inside the `environments` property; not at the root level. See the sample `LCP.json` file. |
@@ -71,7 +71,9 @@ Here's an example `LCP.json` file that uses all the properties:
   },
   "dependencies": ["service1", "service2"],
   "kind": "StatefulSet",
-  "strategy": "RollingUpdate",
+  "strategy": {
+    "type": "RollingUpdate"
+  },
   "ports": [
     {
       "port": 3400,
